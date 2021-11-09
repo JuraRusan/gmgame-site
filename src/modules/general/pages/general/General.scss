@@ -1,4 +1,4 @@
-@import "../../../Variables.scss";
+@import "../../../../Variables.scss";
 
 @keyframes animate {
 	0% {
@@ -17,7 +17,7 @@
 .main {
 	display: flex;
 	flex-direction: column;
-	justify-content: start;
+	justify-content: flex-start;
 	.colum-1 {
 		position: relative;
 		width: 100%;
@@ -25,7 +25,7 @@
 		display: flex;
 		flex-direction: column;
 		// justify-content: center;
-		background: url(../../../common/images/bg.png);
+		background: url(../../../../common/images/bg.png);
 		background-color: $bg-gark-color;
 		background-repeat: no-repeat;
 		background-position-x: center;
@@ -82,10 +82,11 @@
 	.colum-2 {
 		display: flex;
 		flex-direction: column;
-		justify-content: start;
+		justify-content: flex-start;
 		background-color: #181715;
 		// box-shadow: inset 0px 150px 150px -10px $bg-gark-color, inset 0px -150px 150px -10px $bg-gark-color;
-		padding-top: 150px;
+		padding-top: 80px;
+		padding-bottom: 80px;
 		.card-container {
 			width: 80%;
 			max-width: 1600px;

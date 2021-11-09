@@ -102,7 +102,7 @@ function DropdownMenuSingIn() {
   return (
     <div className="dropdown">
       <DropdownItem
-        href="#"
+        href="/auth"
         leftIcon={<SvgMyProfile width="100%" height="100%" />}
       >
         &nbsp;&nbsp;Войти
