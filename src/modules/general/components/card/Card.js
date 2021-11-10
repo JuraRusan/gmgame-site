@@ -16,7 +16,7 @@ const Card = ({ name, info, image, to }) => {
         <div className="card-next">
           <span></span>
           <span>Подробнее</span>
-          <span></span>
+          <span className="arrow">&#10230;</span>
         </div>
       </div>
       <div className="photo">

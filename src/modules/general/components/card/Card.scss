@@ -15,11 +15,15 @@
 	text-decoration: none;
 	background-color: transparent;
 	transition: all 0.3s ease;
+	:hover > .arrow {
+		margin-left: 40px;
+	}
 	.card-info {
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
 		width: 65%;
+		transition: all 0.3s ease;
 		.card-header {
 			.name {
 				font-size: 26px;
@@ -42,7 +46,16 @@
 			display: flex;
 			flex-direction: row;
 			justify-content: flex-end;
+			left: -70%;
+			width: auto;
+			height: auto;
 			padding-right: 100px;
+			transition: all 0.3s ease;
+			.arrow {
+				width: auto;
+				transition: all 0.3s ease;
+				margin-left: 10px;
+			}
 		}
 	}
 	.photo {
@@ -74,6 +87,9 @@
 }
 .card:nth-child(2n) {
 	flex-direction: row-reverse;
+	border-width: 1px;
+	border-style: solid;
+	border-image: linear-gradient(to bottom, lightgreen, rgba(0, 0, 0, 0)) 1 100%;
 	.card-info {
 		padding-left: 15px;
 	}
