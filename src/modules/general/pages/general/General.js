@@ -1,5 +1,4 @@
 import React from "react";
-
 import "./General.scss";
 import Card from "../../components/card/Card.js";
 import Image1 from "../../assets/image 1.png";

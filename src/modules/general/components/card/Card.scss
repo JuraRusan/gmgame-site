@@ -1,4 +1,7 @@
+@import "../../../../Variables.scss";
+
 .card {
+	color: $card-dark-text-color;
 	position: relative;
 	flex: 100%;
 	display: flex;
@@ -8,15 +11,16 @@
 	max-width: 1600px;
 	min-height: 300px;
 	height: auto;
-	max-height: 400px;
 	margin-bottom: 100px;
 	margin-top: 100px;
-	padding: 12px 25px;
+	padding: 25px;
 	text-decoration: none;
 	background-color: transparent;
 	transition: all 0.3s ease;
-	:hover > .arrow {
-		margin-left: 40px;
+	:active,
+	:visited {
+		outline: none;
+		color: $card-dark-text-color;
 	}
 	.card-info {
 		display: flex;
@@ -28,7 +32,7 @@
 			.name {
 				font-size: 26px;
 				font-weight: 900;
-				color: lightgreen;
+				color: $card-dark-text-color;
 				margin-bottom: 10px;
 			}
 		}
@@ -37,25 +41,13 @@
 			flex-direction: column;
 			justify-content: flex-start;
 			.info {
+				font-size: 18px;
 				width: 90%;
 				padding: 15px 15px 15px 0;
 				line-height: 2;
 			}
 		}
 		.card-next {
-			display: flex;
-			flex-direction: row;
-			justify-content: flex-end;
-			left: -70%;
-			width: auto;
-			height: auto;
-			padding-right: 100px;
-			transition: all 0.3s ease;
-			.arrow {
-				width: auto;
-				transition: all 0.3s ease;
-				margin-left: 10px;
-			}
 		}
 	}
 	.photo {
@@ -79,17 +71,13 @@
 	flex-direction: row;
 	border-width: 1px;
 	border-style: solid;
-	border-image: linear-gradient(to bottom, white, rgba(0, 0, 0, 0)) 1 100%;
-	// border-bottom: 2px solid transparent;
-	// border-image: linear-gradient(90deg, rgba(255, 255, 255), rgba(56, 2, 155, 0));
-	// border-image-slice: 1;
-	// width: 100%;
+	border-image: linear-gradient(to right, $card-dark-border-color, rgba(0, 0, 0, 0)) 1 0%;
 }
 .card:nth-child(2n) {
 	flex-direction: row-reverse;
 	border-width: 1px;
 	border-style: solid;
-	border-image: linear-gradient(to bottom, lightgreen, rgba(0, 0, 0, 0)) 1 100%;
+	border-image: linear-gradient(to left, $card-dark-border-color, rgba(0, 0, 0, 0)) 1 0%;
 	.card-info {
 		padding-left: 15px;
 	}

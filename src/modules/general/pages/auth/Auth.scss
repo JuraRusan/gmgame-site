@@ -7,12 +7,12 @@
 	flex-direction: row;
 	justify-content: center;
 	background: url(../../../../common/images/bg.png);
-	background-color: $bg-gark-color;
+	// background-color: $bg-gark-color;
 	background-repeat: no-repeat;
 	background-position-x: center;
 	background-size: cover;
 	background-attachment: fixed;
-	box-shadow: inset 0px 150px 150px -10px $bg-gark-color, inset 0px -150px 150px -10px $bg-gark-color;
+	// box-shadow: inset 0px 150px 150px -10px $bg-gark-color, inset 0px -150px 150px -10px $bg-gark-color;
 	.container {
 		border: 1px solid blue;
 		width: 50%;

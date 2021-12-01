@@ -1,6 +1,19 @@
-$bg-gark-color: #121212;
-$bg-light-color: #edf0f2;
-$text-color-light: #ffffffe5;
-$text-dark-light: #17262a;
-$button-dark-color: #484a4d5d;
-$button-dark-border-color: #474a4d;
+/* gark версия исопльзуется когда включенна кнопка  */
+
+/**---header---**/
+$header-gark-text-color: #edf0f2;
+$header-gark-background-color: #181818;
+$header-gark-border-color: black;
+$header-gark-button-color: rgba(17, 17, 17, 0.712);
+$header-gark-button-color-hover: rgba(36, 36, 36, 0.712);
+
+/**---general---**/
+$general-gark-background-color: #181818;
+$general-gark-text-color: #edf0f2;
+$general-gark-shadow-color: #181818;
+$general-gark-border-color: #edf0f283;
+
+/**---card---**/
+$card-dark-text-color: #edf0f2;
+$card-dark-border-color: rgba(101, 255, 101, 0.315);
+
