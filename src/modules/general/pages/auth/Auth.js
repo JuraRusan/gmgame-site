@@ -5,7 +5,7 @@ import AuthComponent from "../../components/auth-comp/Auth-comp.js";
 
 const auth = () => {
   return (
-    <div className="main">
+    <div className="main-reg">
       <AuthComponent />
     </div>
   );

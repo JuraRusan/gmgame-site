@@ -1,50 +1,17 @@
 @import "../../../../Variables.scss";
 
-.auth-block {
-	width: 100%;
-	height: 100vh;
+.main-reg {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	background: url(../../../../common/images/bg.png);
-	// background-color: $bg-gark-color;
-	background-repeat: no-repeat;
-	background-position-x: center;
-	background-size: cover;
-	background-attachment: fixed;
-	// box-shadow: inset 0px 150px 150px -10px $bg-gark-color, inset 0px -150px 150px -10px $bg-gark-color;
-	.container {
-		border: 1px solid blue;
-		width: 50%;
-		max-width: 1600px;
-		height: auto;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		.reg-1 {
-			width: 50%;
-			.line {
-				.input-custom {
-					width: 500px;
-					height: 50px;
-					border: 1px solid red;
-					outline: none;
-					padding: 15px;
-					background: transparent;
-					font-size: 16px;
-					font-weight: 500;
-					color: lightgreen;
-					// color: lightgreen;
-					:active,
-					:hover {
-						outline: none;
-						border: none;
-					}
-				}
-			}
-		}
-		.reg-2 {
-			width: 50%;
-		}
-	}
+	width: auto;
+	height: auto;
+	background: url(../../../../common/images/bg2.png);
+    background-color: $general-gark-background-color;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 0px 150px 150px -10px $general-gark-shadow-color,
+        inset 0px -150px 150px -10px $general-gark-shadow-color;
 }

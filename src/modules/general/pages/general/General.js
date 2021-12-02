@@ -52,7 +52,7 @@ const general = () => {
       <div className="colum-1">
         <h1 className="main-title">GMGame</h1>
         <h2 className="main-info">
-          Бесплатный строительно - выживательный сервер.
+          Бесплатный строительно - выживательный сервер
         </h2>
         <div className="next">
           <div class="arrow">
