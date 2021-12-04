@@ -5,7 +5,8 @@
   justify-content: space-around;
   width: auto;
   max-width: 1600px;
-  height: 100vh;
+  height: auto;
+  margin-bottom: 80px;
   .container {
     width: auto;
     height: auto;
@@ -13,11 +14,13 @@
     flex-direction: column;
     margin-top: 40px;
     justify-content: start;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.3);
     box-shadow: -50px -50px 150px 0px $auth-dark-shadow-color, -50px 50px 150px 0px $auth-dark-shadow-color,
       50px -50px 150px 0px $auth-dark-shadow-color, 50px 50px 150px 0px $auth-dark-shadow-color;
     .reg-1 {
       width: auto;
-      padding: 50px 15px 0 15px;
+      padding: 45px 15px 0 15px;
       .title-reg-1 {
         text-align: center;
         width: auto;
@@ -36,19 +39,9 @@
         height: auto;
         flex-direction: row;
         justify-content: start;
-        border-width: 1px;
+        border-width: 2px;
         border-bottom-style: solid;
         border-image: linear-gradient(to right, rgba(0, 0, 0, 0), $auth-dark-border-color, rgba(0, 0, 0, 0)) 1 0%;
-        .no {
-          border-width: 1px;
-          border-bottom-style: solid;
-          border-image: linear-gradient(to right, rgba(0, 0, 0, 0), $auth-dark-border-no-color, rgba(0, 0, 0, 0)) 1 0%;
-        }
-        .yes {
-          border-width: 1px;
-          border-bottom-style: solid;
-          border-image: linear-gradient(to right, rgba(0, 0, 0, 0), $auth-dark-border-yes-color, rgba(0, 0, 0, 0)) 1 0%;
-        }
         .icon-span {
           width: 50px;
           height: 50px;
@@ -58,8 +51,8 @@
           min-width: 500px;
           max-width: 500px;
           min-height: 50px;
+          max-height: 150px;
           height: auto;
-          max-width: 300px;
           outline: none;
           border: none;
           padding: 15px;
@@ -72,6 +65,11 @@
             outline: none;
             border: none;
           }
+          option {
+            color: $auth-dark-text-color;
+            background-color: $auth-gark-background-color;
+            padding: 15px;
+          }
         }
         .war-span {
           width: 50px;
@@ -83,52 +81,86 @@
           color: $auth-dark-text-color;
         }
       }
+      .no {
+        border-width: 2px;
+        border-bottom-style: solid;
+        border-image: linear-gradient(to right, rgba(0, 0, 0, 0), $auth-dark-border-no-color, rgba(0, 0, 0, 0)) 1 0%;
+      }
+      .yes {
+        border-width: 2px;
+        border-bottom-style: solid;
+        border-image: linear-gradient(to right, rgba(0, 0, 0, 0), $auth-dark-border-yes-color, rgba(0, 0, 0, 0)) 1 0%;
+      }
     }
     .reg-2 {
       width: auto;
-display: flex;
-flex-direction: row;
-justify-content: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       padding: 50px 15px 15px 15px;
-      input[type="checkbox"] {
-        display: none;
+      .check-block {
+        margin: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        input[type="checkbox"] {
+          display: none;
+        }
+        input[type="checkbox"] + label {
+          display: block;
+          position: relative;
+          padding-left: 35px;
+          margin-bottom: 20px;
+          font: 14px/20px "Open Sans", Arial, sans-serif;
+          color: #ddd;
+          cursor: pointer;
+        }
+        input[type="checkbox"] + label:last-child {
+          margin-bottom: 0;
+        }
+        input[type="checkbox"] + label:before {
+          content: "";
+          display: block;
+          width: 20px;
+          height: 20px;
+          border: 1px solid white;
+          position: absolute;
+          left: 0;
+          top: 0;
+          opacity: 0.6;
+          transition: all 0.12s, border-color 0.08s;
+        }
+        input[type="checkbox"]:checked + label:before {
+          width: 10px;
+          top: -5px;
+          left: 5px;
+          border-radius: 0;
+          opacity: 1;
+          border-top-color: transparent;
+          border-left-color: transparent;
+          transform: rotate(45deg);
+        }
       }
-      input[type="checkbox"] + label {
-        display: block;
-        position: relative;
-        padding-left: 35px;
-        margin-bottom: 20px;
-        font: 14px/20px "Open Sans", Arial, sans-serif;
-        color: #ddd;
-        cursor: pointer;
-      }
-      input[type="checkbox"] + label:last-child {
-        margin-bottom: 0;
-      }
-      input[type="checkbox"] + label:before {
-        content: "";
-        display: block;
-        width: 20px;
-        height: 20px;
-        border: 1px solid white;
-        position: absolute;
-        left: 0;
-        top: 0;
-        opacity: 0.6;
-        transition: all 0.12s, border-color 0.08s;
-      }
-      input[type="checkbox"]:checked + label:before {
-        width: 10px;
-        top: -5px;
-        left: 5px;
-        border-radius: 0;
-        opacity: 1;
-        border-top-color: transparent;
-        border-left-color: transparent;
-        transform: rotate(45deg);
+      .regulation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+        width: 50%;
+        height: 35px;
+        line-height: 35px;
+        font-weight: 500;
+        font-size: 16px;
+        background: transparent;
+        outline: none;
+        border: 1px solid $auth-dark-border-color;
+        border-radius: 5px;
+        color: white;
       }
     }
   }
+
   .card-visual {
     margin: 50px;
     margin-top: 15%;
@@ -137,15 +169,16 @@ justify-content: center;
     display: flex;
     flex-direction: column;
     justify-content: start;
-  }
-  .card-vis-block {
-    min-width: 550px;
-    max-width: 550px;
-    min-height: 350px;
-    max-height: 650px;
-    padding: 15px;
-    border-radius: 15px;
-    box-shadow: -50px -50px 150px 0px $auth-dark-shadow-color, -50px 50px 150px 0px $auth-dark-shadow-color,
-      50px -50px 150px 0px $auth-dark-shadow-color, 50px 50px 150px 0px $auth-dark-shadow-color;
+    .card-vis-block {
+      min-width: 550px;
+      max-width: 550px;
+      min-height: 350px;
+      max-height: 650px;
+      padding: 15px;
+      border-radius: 15px;
+      background: rgba(0, 0, 0, 0.3);
+      box-shadow: -50px -50px 150px 0px $auth-dark-shadow-color, -50px 50px 150px 0px $auth-dark-shadow-color,
+        50px -50px 150px 0px $auth-dark-shadow-color, 50px 50px 150px 0px $auth-dark-shadow-color;
+    }
   }
 }

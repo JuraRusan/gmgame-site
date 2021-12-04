@@ -32,7 +32,7 @@ const authComponent = () => {
               className="war-span"
               data-html="true"
             >
-              &#33;
+              ?
             </span>
           </div>
           <div className="line">
@@ -55,7 +55,7 @@ const authComponent = () => {
               className="war-span"
               data-html="true"
             >
-              &#33;
+              ?
             </span>
           </div>
           <div className="line">
@@ -78,7 +78,7 @@ const authComponent = () => {
               className="war-span"
               data-html="true"
             >
-              &#33;
+              ?
             </span>
           </div>
           <div className="line">
@@ -101,7 +101,7 @@ const authComponent = () => {
               className="war-span"
               data-html="true"
             >
-              &#33;
+              ?
             </span>
           </div>
           <div className="line">
@@ -124,7 +124,7 @@ const authComponent = () => {
               className="war-span"
               data-html="true"
             >
-              &#33;
+              ?
             </span>
           </div>
           <div className="line">
@@ -148,7 +148,7 @@ const authComponent = () => {
               className="war-span"
               data-html="true"
             >
-              &#33;
+              ?
             </span>
           </div>
           <div className="line">
@@ -172,7 +172,7 @@ const authComponent = () => {
               className="war-span"
               data-html="true"
             >
-              &#33;
+              ?
             </span>
           </div>
           <div className="line">
@@ -196,17 +196,22 @@ const authComponent = () => {
               className="war-span"
               data-html="true"
             >
-              &#33;
+              ?
             </span>
           </div>
         </div>
         <div className="reg-2">
-          <input type="checkbox" id="box-1" />
-          <label for="box-1">Да я согласен со всей хуйней </label>
+          <button className="regulation">Правила</button>
+          <div className="check-block">
+            <input type="checkbox" id="box-1" />
+            <label for="box-1">Да я согласен со всей хуйней</label>
+          </div>
         </div>
       </div>
       <div className="card-visual">
-        <div className="card-vis-block"></div>
+        <div className="card-vis-block">
+          
+        </div>
       </div>
     </div>
   );
