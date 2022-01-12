@@ -15,9 +15,11 @@
     margin-top: 40px;
     justify-content: start;
     border-radius: 15px;
-    background: rgba(0, 0, 0, 0.3);
-    box-shadow: -50px -50px 150px 0px $auth-dark-shadow-color, -50px 50px 150px 0px $auth-dark-shadow-color,
-      50px -50px 150px 0px $auth-dark-shadow-color, 50px 50px 150px 0px $auth-dark-shadow-color;
+    background: rgba(0, 0, 0, 0.45);
+    box-shadow: -50px -50px 150px 0px $auth-dark-shadow-color,
+      -50px 50px 150px 0px $auth-dark-shadow-color,
+      50px -50px 150px 0px $auth-dark-shadow-color,
+      50px 50px 150px 0px $auth-dark-shadow-color;
     .reg-1 {
       width: auto;
       padding: 45px 15px 0 15px;
@@ -41,7 +43,13 @@
         justify-content: start;
         border-width: 2px;
         border-bottom-style: solid;
-        border-image: linear-gradient(to right, rgba(0, 0, 0, 0), $auth-dark-border-color, rgba(0, 0, 0, 0)) 1 0%;
+        border-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0),
+            $auth-dark-border-color,
+            rgba(0, 0, 0, 0)
+          )
+          1 0%;
         .icon-span {
           width: 50px;
           height: 50px;
@@ -84,12 +92,24 @@
       .no {
         border-width: 2px;
         border-bottom-style: solid;
-        border-image: linear-gradient(to right, rgba(0, 0, 0, 0), $auth-dark-border-no-color, rgba(0, 0, 0, 0)) 1 0%;
+        border-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0),
+            $auth-dark-border-no-color,
+            rgba(0, 0, 0, 0)
+          )
+          1 0%;
       }
       .yes {
         border-width: 2px;
         border-bottom-style: solid;
-        border-image: linear-gradient(to right, rgba(0, 0, 0, 0), $auth-dark-border-yes-color, rgba(0, 0, 0, 0)) 1 0%;
+        border-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0),
+            $auth-dark-border-yes-color,
+            rgba(0, 0, 0, 0)
+          )
+          1 0%;
       }
     }
     .reg-2 {
@@ -97,8 +117,9 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 50px 15px 15px 15px;
+      padding: 15px ;
       .check-block {
+        z-index: 500;
         margin: 20px;
         display: flex;
         flex-direction: row;
@@ -141,29 +162,12 @@
           transform: rotate(45deg);
         }
       }
-      .regulation {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        text-align: center;
-        margin: 0 auto;
-        width: 50%;
-        height: 35px;
-        line-height: 35px;
-        font-weight: 500;
-        font-size: 16px;
-        background: transparent;
-        outline: none;
-        border: 1px solid $auth-dark-border-color;
-        border-radius: 5px;
-        color: white;
-      }
     }
   }
 
   .card-visual {
     margin: 50px;
-    margin-top: 15%;
+    margin-top: 7%;
     width: auto;
     height: auto;
     display: flex;
@@ -176,9 +180,46 @@
       max-height: 650px;
       padding: 15px;
       border-radius: 15px;
-      background: rgba(0, 0, 0, 0.3);
-      box-shadow: -50px -50px 150px 0px $auth-dark-shadow-color, -50px 50px 150px 0px $auth-dark-shadow-color,
-        50px -50px 150px 0px $auth-dark-shadow-color, 50px 50px 150px 0px $auth-dark-shadow-color;
+      background: rgba(0, 0, 0, 0.45);
+      box-shadow: -50px -50px 150px 0px $auth-dark-shadow-color,
+        -50px 50px 150px 0px $auth-dark-shadow-color,
+        50px -50px 150px 0px $auth-dark-shadow-color,
+        50px 50px 150px 0px $auth-dark-shadow-color;
+      .block-l-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        width: auto;
+        height: auto;
+        .player-img {
+          width: 130px;
+          height: 130px;
+          border: none;
+          border-radius: 10px;
+          margin: 5px;
+          padding: 5px;
+        }
+        .player-info-card-block {
+          width: 100%;
+          height: auto;
+          min-height: 130px;
+        }
+      }
+      .block-l-2 {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+      }
+      .player-inf {
+        color: $auth-dark-text-color;
+        padding: 5px;
+        margin: 5px;
+        font-size: 16px;
+        font-weight: 500;
+        width: auto;
+        height: auto;
+      }
     }
   }
 }

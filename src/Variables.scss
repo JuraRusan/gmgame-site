@@ -19,11 +19,14 @@ $card-dark-border-color: rgba(101, 255, 101, 0.315);
 
 /**---auth---**/
 $auth-dark-text-color: #edf0f2;
-$auth-dark-shadow-color: rgba(0,0,0,0.1);
+$auth-dark-shadow-color: rgba(0,0,0,0.15);
 $auth-dark-hover-color: rgba(228, 15, 15, 0.233);
 $auth-dark-border-color: rgba(255, 255, 255, 0.315);
 $auth-dark-border-yes-color: rgba(0, 255, 0, 0.315);
 $auth-dark-border-no-color: rgba(255, 0, 0, 0.315);
 $auth-gark-background-color: #181818;
 
-
+/*--- regulations---*/
+$regulations-dark-text-color: #edf0f2;
+$regulations-dark-border-color: rgba(255, 255, 255, 0.315);
+$regulations-gark-button-color: rgba(17, 17, 17, 0.99);

@@ -1,0 +1,74 @@
+@import "../../../../Variables.scss";
+
+.regulation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  .btn-regulation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid $regulations-dark-border-color;
+    border-radius: 10px;
+    width: 50%;
+    height: 50px;
+    line-height: 50px;
+    color: $regulations-dark-text-color;
+    outline: none;
+    cursor: pointer;
+  }
+  .regulation-modal,
+  .regulation-overlay {
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    transition: all 0.35 ease;
+    background: rgba(22, 22, 22, 0.4);
+    .modal-content {
+      position: absolute;
+      top: 5%;
+      background-color: $regulations-gark-button-color;
+      padding: 14px 28px;
+      border-radius: 3px;
+      width: 1000px;
+      height: 800px;
+      z-index: 1100;
+      .reg-header {
+        color: $regulations-dark-text-color;
+        font-size: 24px;
+        font-weight: 500;
+        text-align: center;
+        padding: 5px;
+        margin: 10px;
+      }
+      .close-regulation {
+        position: absolute;
+        color: $regulations-dark-text-color;
+        font-weight: 600;
+        font-size: 18px;
+        top: 10px;
+        right: 10px;
+        padding: 5px 7px;
+        background: transparent;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+}
