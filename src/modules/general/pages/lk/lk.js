@@ -21,7 +21,7 @@ const Lk = () => {
           </div>
           <div class="border-line">
               <p> { data.version }</p>
-              <span>версия</span>
+              <span>версия11</span>
           </div>
           <div class="border-line">
           </div>

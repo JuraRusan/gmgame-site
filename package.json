@@ -12,6 +12,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "aos": "^2.3.4",
+    "axios": "0.27.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-modal": "^3.14.4",
@@ -23,14 +24,14 @@
     "reactjs-popup": "^2.0.5",
     "sass": "^1.53.0",
     "styled-components": "^5.3.3",
-    "web-vitals": "^1.0.1",
-    "axios": "0.27.2"
+    "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "watch": "npm-watch"
   },
   "eslintConfig": {
     "extends": [
@@ -50,5 +51,11 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://193.124.206.25:5001/"
+  "proxy": "http://193.124.206.25:5001/",
+  "devDependencies": {
+    "npm-watch": "^0.11.0"
+  },
+  "watch": {
+    "build": "src/"
+  }
 }
