@@ -7,6 +7,7 @@ import Resources from "./modules/general/pages/resources/Resources.js";
 import Farm from "./modules/general/pages/farm/Farm.js";
 import Creative from "./modules/general/pages/creative/Creative.js";
 import Auth from "./modules/general/pages/auth/Auth.js";
+import Lk from "./modules/general/pages/lk/lk.js";
 
 const Router = () => {
   return (
@@ -18,6 +19,7 @@ const Router = () => {
       <Route exact path="/farm-server" component={Farm} />
       <Route exact path="/creative-server" component={Creative} />
       <Route exact path="/auth" component={Auth} />
+      <Route exact path="/me" component={Lk} />
     </Switch>
   );
 };

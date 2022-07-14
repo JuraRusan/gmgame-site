@@ -23,7 +23,8 @@
     "reactjs-popup": "^2.0.5",
     "sass": "^1.53.0",
     "styled-components": "^5.3.3",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "axios": "0.27.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -48,5 +49,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "http://193.124.206.25:5001/"
 }

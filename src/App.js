@@ -6,10 +6,10 @@ import Routes from "./Routes";
 
 function App() {
   return (
-    <Router>
-      <Header />
-      <Routes />
-    </Router>
+      <Router>
+        <Header />
+        <Routes />
+      </Router>
   );
 }
 
