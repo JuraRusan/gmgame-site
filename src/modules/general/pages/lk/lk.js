@@ -1,9 +1,11 @@
 import "../../../../Variables.scss";
-import useAxiosPost from '../../../../DataProvider';
+import useAxios from '../../../../DataProvider';
 
 const Lk = () => {
-  const { data, loaded } = useAxiosPost(
+  const { cancel, data, error, loaded } = useAxios(
     "/api/me/",
+    'GET',
+    {}
   );
   
   if (loaded) {
@@ -21,7 +23,7 @@ const Lk = () => {
           </div>
           <div class="border-line">
               <p> { data.version }</p>
-              <span>версия11</span>
+              <span>версия</span>
           </div>
           <div class="border-line">
           </div>
