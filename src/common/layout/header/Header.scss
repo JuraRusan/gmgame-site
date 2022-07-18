@@ -2,97 +2,11 @@
 
 .header {
 	width: 100%;
-	height: 60px;
+	height: 50px;
 	display: flex;
-	background-color: $header-gark-background-color;
+	background-color: $color-1;
 	flex-direction: row;
 	justify-content: flex-end;
-	color: $header-gark-text-color;
+	color: $color-2;
 	z-index: 1000;
-	a {
-		color: $header-gark-text-color;
-		text-decoration: none;
-	}
-	.navbar {
-		height: 59px;
-		width: auto;
-		padding: 0 2px;
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-end;
-		z-index: 1100;
-		.navbar-nav {
-			list-style: none;
-			margin: 0;
-			padding: 0 30px 0 0;
-			max-width: 100%;
-			height: 100%;
-			width: auto;
-			display: flex;
-			justify-content: flex-end;
-			z-index: 1100;
-			.nav-item {
-				width: auto;
-				max-width: 300px;
-				height: 50px;
-				margin: auto 2px;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: center;
-				:hover {
-					background-color: $header-gark-button-color-hover;
-				}
-				.icon-button {
-					text-decoration: none;
-					width: auto;
-					height: 45px;
-					line-height: 45px;
-					border-radius: 5px;
-					padding: 10px;
-					margin: 2px;
-					display: flex;
-					flex-direction: row;
-					align-items: center;
-					justify-content: center;
-					transition: filter 300ms;
-					transition: all 0.35s ease;
-				}
-				.dropdown {
-					position: absolute;
-					top: 58px;
-					width: 250px;
-					transform: translateX(-45%);
-					background-color: $header-gark-background-color;
-					border: 1px solid $header-gark-border-color;
-					border-radius: 8px;
-					padding: 5px;
-					overflow: hidden;
-					transition: height 0.3s ease;
-					z-index: 1200;
-					.menu-item {
-						height: 50px;
-						display: flex;
-						align-items: center;
-						border-radius: 8px;
-						transition: all 0.3s ease;
-						padding: 10px;
-						.icon-button {
-							width: 35px;
-							height: 35px;
-							border-radius: 5px;
-							padding: 5px;
-							margin: 2px;
-							display: flex;
-							align-items: center;
-							justify-content: center;
-							:hover {
-								filter: none;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
 }

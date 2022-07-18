@@ -13,13 +13,13 @@
     display: flex;
     flex-direction: column;
     margin-top: 40px;
-    justify-content: start;
+    justify-content: flex-start;
     border-radius: 15px;
     background: rgba(0, 0, 0, 0.45);
-    box-shadow: -50px -50px 150px 0px $auth-dark-shadow-color,
-      -50px 50px 150px 0px $auth-dark-shadow-color,
-      50px -50px 150px 0px $auth-dark-shadow-color,
-      50px 50px 150px 0px $auth-dark-shadow-color;
+    box-shadow: -50px -50px 150px 0px red,
+      -50px 50px 150px 0px red,
+      50px -50px 150px 0px red,
+      50px 50px 150px 0px red;
     .reg-1 {
       width: auto;
       padding: 45px 15px 0 15px;
@@ -28,7 +28,7 @@
         width: auto;
         height: 50px;
         line-height: 50px;
-        color: $auth-dark-text-color;
+        color: red;
         font-size: 24px;
         font-weight: 600;
         margin-bottom: 15px;
@@ -40,13 +40,13 @@
         display: flex;
         height: auto;
         flex-direction: row;
-        justify-content: start;
+        justify-content: flex-start;
         border-width: 2px;
         border-bottom-style: solid;
         border-image: linear-gradient(
             to right,
             rgba(0, 0, 0, 0),
-            $auth-dark-border-color,
+            red,
             rgba(0, 0, 0, 0)
           )
           1 0%;
@@ -67,15 +67,15 @@
           background: transparent;
           font-size: 16px;
           font-weight: 500;
-          color: $auth-dark-text-color;
+          color: red;
           :active,
           :hover {
             outline: none;
             border: none;
           }
           option {
-            color: $auth-dark-text-color;
-            background-color: $auth-gark-background-color;
+            color: red;
+            background-color: red;
             padding: 15px;
           }
         }
@@ -86,7 +86,7 @@
           font-size: 28px;
           text-align: center;
           font-weight: 500;
-          color: $auth-dark-text-color;
+          color: red;
         }
       }
       .no {
@@ -95,7 +95,7 @@
         border-image: linear-gradient(
             to right,
             rgba(0, 0, 0, 0),
-            $auth-dark-border-no-color,
+            red,
             rgba(0, 0, 0, 0)
           )
           1 0%;
@@ -106,7 +106,7 @@
         border-image: linear-gradient(
             to right,
             rgba(0, 0, 0, 0),
-            $auth-dark-border-yes-color,
+            red,
             rgba(0, 0, 0, 0)
           )
           1 0%;
@@ -172,7 +172,7 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     .card-vis-block {
       min-width: 550px;
       max-width: 550px;
@@ -181,14 +181,14 @@
       padding: 15px;
       border-radius: 15px;
       background: rgba(0, 0, 0, 0.45);
-      box-shadow: -50px -50px 150px 0px $auth-dark-shadow-color,
-        -50px 50px 150px 0px $auth-dark-shadow-color,
-        50px -50px 150px 0px $auth-dark-shadow-color,
-        50px 50px 150px 0px $auth-dark-shadow-color;
+      box-shadow: -50px -50px 150px 0px red,
+        -50px 50px 150px 0px red,
+        50px -50px 150px 0px red,
+        50px 50px 150px 0px red;
       .block-l-1 {
         display: flex;
         flex-direction: row;
-        justify-content: start;
+        justify-content: flex-start;
         width: auto;
         height: auto;
         .player-img {
@@ -212,7 +212,7 @@
         height: auto;
       }
       .player-inf {
-        color: $auth-dark-text-color;
+        color: red;
         padding: 5px;
         margin: 5px;
         font-size: 16px;

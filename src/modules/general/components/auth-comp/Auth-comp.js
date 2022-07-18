@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import ReactTooltip from "react-tooltip";
 
+import "./Auth-comp.scss";
+
 import Regulations from "../regulations/Regulations.js";
 import SvgMyProfile from "../../../../common/icons/SvgMyProfile.js";
-
-import "./Auth-comp.scss";
 
 const AuthComponent = () => {
   const [outputName, setOutputName] = useState(' - ')
@@ -252,7 +252,7 @@ const AuthComponent = () => {
           </div>
         </div>
         <div className="reg-2">
-          <Regulations/>
+          <Regulations />
           <div className="check-block">
             <input type="checkbox" id="box-1" />
             <label for="box-1">Да я согласен со всей хуйней</label>

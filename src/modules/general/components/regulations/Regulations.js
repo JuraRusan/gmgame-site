@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Accordion from "../Accordion/Accordion.js";
 
 import "./Regulations.scss";
 
@@ -18,7 +17,6 @@ const Regulations = () => {
      <div onClick={toggleModal} className="regulation-overlay"></div>
      <div className="modal-content">
       <h2 className="reg-header">Правила GMGame</h2>
-      <Accordion />
       <p >
        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
        perferendis suscipit officia recusandae, eveniet quaerat assumenda

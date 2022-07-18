@@ -1,12 +1,160 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
-
 @import "./reset.scss";
 
-* {
-  font-family: "Montserrat", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
+
+//
+// --------------------------------------------------
+//
+
+@font-face {
+  font-family: "Inter";
+  src: url("./font/Inter/Inter-Regular.woff2") format("woff2"),
+    url("./font/Inter/Inter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
+
+@font-face {
+  font-family: "Inter";
+  src: url("./font/Inter/Inter-Black.woff2") format("woff2"),
+    url("./font/Inter/Inter-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./font/Inter/Inter-ExtraBold.woff2") format("woff2"),
+    url("./font/Inter/Inter-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./font/Inter/Inter-Bold.woff2") format("woff2"),
+    url("./font/Inter/Inter-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./font/Inter/Inter-ExtraLight.woff2") format("woff2"),
+    url("./font/Inter/Inter-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./font/Inter/Inter-Medium.woff2") format("woff2"),
+    url("./font/Inter/Inter-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./font/Inter/Inter-Light.woff2") format("woff2"),
+    url("./font/Inter/Inter-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./font/Inter/Inter-Thin.woff2") format("woff2"),
+    url("./font/Inter/Inter-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./font/Inter/Inter-Regular.woff2") format("woff2"),
+    url("./font/Inter/Inter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./font/Inter/Inter-SemiBold.woff2") format("woff2"),
+    url("./font/Inter/Inter-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+//
+// --------------------------------------------------
+//
+
+@font-face {
+  font-family: "Minecraft Title Cyrillic";
+  src: url("./font/MinecraftTitleCyrillic/Minecraft-Title-Cyrillic.woff")
+      format("woff2"),
+    url("./font/MinecraftTitleCyrillic/Minecraft-Title-Cyrillic.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+//
+// --------------------------------------------------
+//
+
+@font-face {
+  font-family: "Minecraft Rus";
+  src: url("./font/MinecraftRusRegular/Minecraft.woff2") format("woff2"),
+    url("./font/MinecraftRusRegular/Minecraft.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+//
+// --------------------------------------------------
+//
+
+@font-face {
+  font-family: "Minecraft Ten";
+  src: url("./font/MinecraftTen/MinecraftTen.woff2") format("woff2"),
+    url("./font/MinecraftTen/MinecraftTen.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+//
+// --------------------------------------------------
+//
 
 code {
   font-family: "Source Code Pro", monospace;
+}
+
+* {
+  font-family: "Inter";
+}
+
+.font-custom-1 {
+  font-family: "Minecraft Title Cyrillic";
+}
+.font-custom-2 {
+  font-family: "Minecraft Rus";
+}
+.font-custom-3 {
+  font-family: "Minecraft Ten";
 }
