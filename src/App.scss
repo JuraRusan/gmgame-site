@@ -40,28 +40,28 @@ div#root {
 .lin-top {
   height: 200px;
   width: 100%;
-  background: #e4007f;
-  background: linear-gradient(180deg, #e4007f 0%, rgba(228, 0, 127, 0) 100%);
+  background: $color-2;
+  background: linear-gradient(180deg, $color-2 0%, rgba(228, 0, 127, 0) 100%);
   background: -webkit-linear-gradient(
     180deg,
-    #e4007f 0%,
+    $color-2 0%,
     rgba(228, 0, 127, 0) 100%
   );
   background: -moz-linear-gradient(
     180deg,
-    #e4007f 0%,
+    $color-2 0%,
     rgba(228, 0, 127, 0) 100%
   );
 }
 .lin-bot {
   height: 200px;
   width: 100%;
-  background: #011625;
-  background: linear-gradient(0deg, #011625 0%, rgba(1, 22, 37, 0) 100%);
+  background: $color-2;
+  background: linear-gradient(0deg, $color-2 0%, rgba(1, 22, 37, 0) 100%);
   background: -webkit-linear-gradient(
     0deg,
-    #011625 0%,
+    $color-2 0%,
     rgba(1, 22, 37, 0) 100%
   );
-  background: -moz-linear-gradient(0deg, #011625 0%, rgba(1, 22, 37, 0) 100%);
+  background: -moz-linear-gradient(0deg, $color-2 0%, rgba(1, 22, 37, 0) 100%);
 }

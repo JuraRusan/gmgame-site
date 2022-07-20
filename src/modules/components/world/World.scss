@@ -1,0 +1,74 @@
+@import "../../../Variables.scss";
+
+.worlds {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  max-width: 500px;
+  min-width: 350px;
+  .circle {
+    display: flex;
+    border: 5px solid $color-3;
+    border-radius: 50%;
+    width: 27px;
+    height: 27px;
+    margin: 0 auto;
+  }
+  .world-name {
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    line-height: 30px;
+    font-size: 30px;
+    color: $color-3;
+    text-align: center;
+  }
+  .hr-90 {
+    margin-left: auto;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-bottom: 15px;
+    width: auto;
+    height: 90px;
+    border-left: 2px solid $color-3;
+  }
+  .world-img-text {
+    display: flex;
+    flex-direction: column;
+    min-width: 325px;
+    max-height: 550px;
+    min-height: 350px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    transition: all 0.8s ease;
+    img {
+      width: 325px;
+      height: 325px;
+      z-index: 2;
+    }
+  }
+  .inf-text {
+    width: auto;
+    max-width: 300px;
+    min-width: 250px;
+    margin-top: 50px;
+    color: $color-3;
+    height: auto;
+    min-height: 100px;
+    max-height: 150px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    position: relative;
+    top: -100px;
+    opacity: 0;
+    transition: all 1.5s ease;
+    z-index: 1;
+  }
+}
+.world-img-text:hover .inf-text {
+  opacity: 1;
+  top: 0;
+}

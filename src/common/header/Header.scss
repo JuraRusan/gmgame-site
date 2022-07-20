@@ -1,0 +1,10 @@
+@import "../../Variables.scss";
+
+.header {
+  z-index: 1000;
+  min-height: 250px;
+  max-height: 250px;
+  height: 250px;
+  width: 100%;
+  background: linear-gradient(180deg, $color-5 0%, rgba(228, 0, 127, 0) 100%);
+}

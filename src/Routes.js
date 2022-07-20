@@ -1,13 +1,15 @@
 import { Switch, Route } from "react-router-dom";
 
-import General from "./modules/general/pages/general/General.js";
-import Auth from "./modules/general/pages/auth/Auth.js";
-import Lk from "./modules/general/pages/lk/lk.js";
+import General from "./modules/pages/general/General.js";
+import Auth from "./modules/pages/auth/Auth.js";
+import Lk from "./modules/pages/lk/lk.js";
+import SvgList from "./modules/pages/svg-list/Svg-list.js";
 
 const Router = () => {
   return (
     <Switch>
       <Route exact path="/" component={General} />
+      <Route exact path="/svgList" component={SvgList} />
       <Route exact path="/auth" component={Auth} />
       <Route exact path="/me" component={Lk} />
     </Switch>
