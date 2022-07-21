@@ -7,7 +7,8 @@ import SvgWarn from "../../../bases/icons/SvgWarn.js";
 import "./Auth-comp.scss";
 
 const AuthComponent = () => {
-
+  const { register, handleSubmit, watch, formState: { errors } } = useForm({mode: 'onChange'});
+  
   const NameSer = "Игровой ник *";
   const passSer = "Пароль для входа на сервер *";
   const ageSer = "Возраст *";
@@ -40,7 +41,6 @@ const AuthComponent = () => {
     }
   }, [watch])
 
-  const { register, handleSubmit, watch, formState: { errors } } = useForm({mode: 'onChange'});
   const onSubmit = data => console.log(data);
 
   function ErrorRender(name) {
