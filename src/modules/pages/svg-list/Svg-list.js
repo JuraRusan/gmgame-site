@@ -22,6 +22,7 @@ import SvgMonitiring from "../../../bases/icons/SvgMonitiring.js";
 import SvgMyProfile from "../../../bases/icons/SvgMyProfile.js";
 import SvgSettings from "../../../bases/icons/SvgSettings.js";
 import SvgVk from "../../../bases/icons/SvgVk.js";
+import SvgWarn from "../../../bases/icons/SvgWarn.js";
 
 const SvgList = () => {
   const all = [
@@ -124,6 +125,11 @@ const SvgList = () => {
       id: 20,
       name: "SvgVk",
       link: <SvgVk />,
+    },
+    {
+      id: 21,
+      name: "SvgWarn",
+      link: <SvgWarn />,
     },
   ];
 

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useForm } from "react-hook-form";
 import ReactTooltip from "react-tooltip";
 
 import "./Auth-comp.scss";
@@ -9,7 +8,7 @@ import SvgWarn from "../../../bases/icons/SvgWarn.js";
 
 const AuthComponent = () => {
 
-  const { register } = useForm();
+  const GMGame = "Создание заявки на GMGame";
 
   const NameSer = "Игровой ник *";
   const passSer = "Пароль для входа на сервер *";
@@ -17,7 +16,7 @@ const AuthComponent = () => {
   const ofSer = "Откуда узнали о проекте *";
   const friendSer = "Ник друга, если играете с кем-то *";
   const interestsSer = "Интересы в майнкрафте *";
-  const backSer = "Предыдущие сервера *";
+  const backSer = "Предыдущие серверы *";
 
   const warAuth = "Относитесь ответственно к заполнению заявки";
   
@@ -74,9 +73,7 @@ const AuthComponent = () => {
     <div className="auth-block">
       <div className="container">
         <div className="reg-1">
-          <h4 className="title-reg-1 font-custom-2">
-            Создание заявки на GMGame
-          </h4>
+          <h4 className="title-reg-1 font-custom-2">{GMGame}</h4>
           <ReactTooltip />
           <div className="line">
             <span className="icon-span"><SvgMyProfile width="100%" height="100%" color="#f4f4f4" /></span>
@@ -285,9 +282,9 @@ const AuthComponent = () => {
           </div>
         </div>
       </div>
-      <div id="visual" className="card-visual">
+      <div className="card-visual">
         <div className="card-vis-block">
-          <button className="reset" onClick={resetCard}>Сброс</button>
+          <button className="reset" onClick={resetCard}>Очистить</button>
           <div className="block-l-1">
             <img className="player-img" src={outputImg} alt="avatar"></img>
             <div className="player-info-card-block">
@@ -298,7 +295,7 @@ const AuthComponent = () => {
             </div>
           </div>
           <div className="block-l-2">
-            <p className="player-inf">Мои прошлые сервера: <label>{outputServers}</label></p>
+            <p className="player-inf">Мои прошлые серверы: <label>{outputServers}</label></p>
             <p className="player-inf">Мои интересы в майнкрафте: <label>{outputInter}</label></p>
             <p className="player-inf">Я узнал о проекте: <label>{outputInfo}</label></p>
           </div>
