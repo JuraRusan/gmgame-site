@@ -1,5 +1,8 @@
 @import "../../../Variables.scss";
 
+.error{
+  color: red;
+}
 .auth-block {
   display: flex;
   justify-content: space-around;
@@ -65,7 +68,7 @@
           background: transparent;
           font-size: 16px;
           font-weight: 500;
-          color: $color-1;
+          color: $color-8;
           transition: all 0.5 ease;
           :active,
           :hover {
