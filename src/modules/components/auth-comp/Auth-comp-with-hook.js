@@ -226,8 +226,10 @@ const AuthComponent = () => {
             <p className="player-inf">Мои интересы в майнкрафте: <label>{watch("interests")}</label></p>
             <p className="player-inf">Я узнал о проекте: <label>{watch("about")}</label></p>
           </div>
-        </div>         
-        <input id="submitButton" type="Submit" className="style-button font-custom-3" />            
+        </div>
+        <from>
+          <input id="submitButton" type="Submit" className="style-button font-custom-3" onClick={handleSubmit((d) => console.log(d))} />
+        </from>
       </div>
     </div>
   );
