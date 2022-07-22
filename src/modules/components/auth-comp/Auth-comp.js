@@ -10,17 +10,17 @@ const AuthComponent = () => {
 
   const GMGame = "Создание заявки на GMGame";
 
-  const NameSer = "Игровой ник *";
+  const serverUserNameTitle = "Игровой ник *";
   const passSer = "Пароль для входа на сервер *";
   const ageSer = "Возраст *";
-  const ofSer = "Откуда узнали о проекте *";
-  const friendSer = "Ник друга, если играете с кем-то *";
-  const interestsSer = "Интересы в майнкрафте *";
-  const backSer = "Предыдущие серверы *";
+  const serverUserAboutTitle = "Откуда узнали о проекте *";
+  const serverUserFriendTitle = "Ник друга, если играете с кем-то *";
+  const serverUserInterestsTitle = "Интересы в майнкрафте *";
+  const serverUserBackServersTitle = "Предыдущие серверы *";
 
-  const warAuth = "Относитесь ответственно к заполнению заявки";
+  const AttentionAuth = "Относитесь ответственно к заполнению заявки";
   
-  const checkReg = "Да я согласен со всей хуйней";
+  const YesIAgreeRules = "Да я согласен со всей хуйней";
   const dataTip = "<ul><li>* - Обязательно к заполнению</li><li>Зелёная черта - правильно</li><li>Зелёная черта - не правильно</li></ul>";
 
   const [outputName, setOutputName] = useState(" - ");
@@ -82,7 +82,7 @@ const AuthComponent = () => {
               onChange={OutputImg}
               className="input-custom"
               type="text"
-              placeholder={NameSer}
+              placeholder={serverUserNameTitle}
               required
             />
             <span
@@ -179,7 +179,7 @@ const AuthComponent = () => {
               onInput={OutputNameMyPlayer}
               className="input-custom"
               type="text"
-              placeholder={friendSer}
+              placeholder={serverUserFriendTitle}
               required
             />
             <span
@@ -204,7 +204,7 @@ const AuthComponent = () => {
               className="input-custom"
               type="text"
               rows="1"
-              placeholder={ofSer}
+              placeholder={serverUserAboutTitle}
               required
             />
             <span
@@ -229,7 +229,7 @@ const AuthComponent = () => {
               className="input-custom"
               type="text"
               rows="1"
-              placeholder={interestsSer}
+              placeholder={serverUserInterestsTitle}
               required
             />
             <span
@@ -254,7 +254,7 @@ const AuthComponent = () => {
               className="input-custom"
               type="text"
               rows="1"
-              placeholder={backSer}
+              placeholder={serverUserBackServersTitle}
               required
             />
             <span
@@ -272,13 +272,13 @@ const AuthComponent = () => {
           </div>
           <div className="warn-block">
             <span><SvgWarn width="24px" height="24px" color="#f4f4f4"/></span>
-            <h4 className="war-h4-auth">{warAuth}</h4>
+            <h4 className="war-h4-auth">{AttentionAuth}</h4>
           </div>
         </div>
         <div className="reg-2">
           <div className="check-block">
             <input type="checkbox" id="box-1" />
-            <label for="box-1">{checkReg}</label>
+            <label for="box-1">{YesIAgreeRules}</label>
           </div>
         </div>
       </div>

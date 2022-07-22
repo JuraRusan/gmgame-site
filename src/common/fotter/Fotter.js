@@ -9,9 +9,7 @@ import SvgInstagram from "../../bases/icons/SvgInstagram.js";
 import SvgVk from "../../bases/icons/SvgVk.js";
 
 const Fotter = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
+  useEffect(() => { AOS.init({ duration: 1000 });}, []);
 
   return (
     <div className="fotter">

@@ -6,9 +6,7 @@ import "aos/dist/aos.css";
 
 const Header = () => {
 
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
+  useEffect(() => { AOS.init({ duration: 1000 });}, []);
 
   return <div className="header" data-aos="fade-down">
     

@@ -19,19 +19,21 @@ import Image6 from "../../../bases/assets/6.png";
 
 const General = () => {
 
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
+  useEffect(() => { AOS.init({ duration: 1000 });}, []);
 
-  const serverInf1 = "Бесплатный строительно-выживательный сервер.";
-  const serverInf2 = "Без приватов и донат магазина.";
+  const serverInformation1 = "Бесплатный строительно-выживательный сервер.";
+  const serverInformation2 = "Без приватов и донат магазина.";
 
-  const concept = "Мы строительный сервер, на котором каждый может реализовать свои творческие идеи.Игроки не только строят красивые здания и города, но и реализуют себя в строительстве ферм и механизмов.Архитектор, механизмер, копатель, добытчик – каждый найдёт себе место у нас.";
-  const community = "Здесь поддерживается дружеская атмосфера, токсики и неадекваты не задерживаются надолго. Каждый найдёт себе друга или даже соберет целую команду.";
-  const gameProcess = "На сервере нет приватов, однако вы всегда находитесь под защитой администрации. Гриф и воровство запрещены, но даже если это случится, каждый игрок может рассчитывать на помощь модераторов. Сервер оснащен плагинами, повышающими комфортность игры и, вместе с тем, позволяющими не потерять полуванильный облик игрового процесса.";
+  const serverBlockTitleConcept = "Концепция";
+  const serverBlockTitleCommunity = "Комьюнити";
+  const serverBlockTitleGameProcess = "Игровой процесс";
+  const serverConcept = "Мы строительный сервер, на котором каждый может реализовать свои творческие идеи.Игроки не только строят красивые здания и города, но и реализуют себя в строительстве ферм и механизмов.Архитектор, механизмер, копатель, добытчик – каждый найдёт себе место у нас.";
+  const serverCommunity = "Здесь поддерживается дружеская атмосфера, токсики и неадекваты не задерживаются надолго. Каждый найдёт себе друга или даже соберет целую команду.";
+  const serverGameProcess = "На сервере нет приватов, однако вы всегда находитесь под защитой администрации. Гриф и воровство запрещены, но даже если это случится, каждый игрок может рассчитывать на помощь модераторов. Сервер оснащен плагинами, повышающими комфортность игры и, вместе с тем, позволяющими не потерять полуванильный облик игрового процесса.";
 
-  const serverTps = "Для поддержания стабильного TPS, сохранения красивых нетронутых территорий и экономии аппаратных ресурсов сервер разделен на 3 мира:";
+  const serverInformationTps = "Для поддержания стабильного TPS, сохранения красивых нетронутых территорий и экономии аппаратных ресурсов сервер разделен на 3 мира:";
 
+  const DivisionIntoWorlds = "Разделение на миры";
   const worldNameRes = "Ресурсный";
   const worldNameGmgame = "Основной";
   const worldNameFarm = "Фермерский";
@@ -40,10 +42,11 @@ const General = () => {
   const skyBlock = "Скайблок";
   const creative = "Креатив";
 
-  const infRes = "Здесь добываются все необходимые ресурсы. Мир можно копать где и как угодно. Вайпается каждое обновление майнкрафта.";
-  const infGmgame = "Мир со всеми постройками и проектами. Игроки выбирают территорию и занимаются строительством. Вайпов нет, но при обновлении генерации мир расширяют.";
-  const infFarm = "Все механизмы и фермы с редстоуном строятся здесь, чтобы не нагружать основной сервер. Не вайпается и расширяется по необходимости.";
+  const serverInformationRes = "Здесь добываются все необходимые ресурсы. Мир можно копать где и как угодно. Вайпается каждое обновление майнкрафта.";
+  const serverInformationGmgame = "Мир со всеми постройками и проектами. Игроки выбирают территорию и занимаются строительством. Вайпов нет, но при обновлении генерации мир расширяют.";
+  const serverInformationFarm = "Все механизмы и фермы с редстоуном строятся здесь, чтобы не нагружать основной сервер. Не вайпается и расширяется по необходимости.";
 
+  const serverModeServer = "режимы";
   const survivalInfo = "Главный режим всего сервера, где игроки выживают и творят. Вход только по заявкам.";
   const skyBlockInfo = "Неклассический режим скайблока с квестами и миссиями и другими плагинами. Без вайтлиста.";
   const creativeInfo = "Креатив с WorldEdit и другими упрощающими жизнь инструментами. Без вайтлиста.";
@@ -57,8 +60,8 @@ const General = () => {
             <span className="colored-title-span-1">G</span>
             <span className="colored-title-span-2">M</span>GAME
           </h1>
-          <h3 className="main-h3" data-aos="fade-up">{serverInf1}</h3>
-          <h3 className="main-h3" data-aos="fade-up">{serverInf2}</h3>
+          <h3 className="main-h3" data-aos="fade-up">{serverInformation1}</h3>
+          <h3 className="main-h3" data-aos="fade-up">{serverInformation2}</h3>
           <div className="button-container" data-aos="fade-up">
             <Button />
           </div>
@@ -68,8 +71,8 @@ const General = () => {
       <div className="row-2">
         <div className="content-info" data-aos="fade-up">
           <div className="info-style">
-            <h2 className="h2-info font-custom-3 h2-left">Концепция</h2>
-            <h4 className="h4-info h4-left">{concept}</h4>
+            <h2 className="h2-info font-custom-3 h2-left">{serverBlockTitleConcept}</h2>
+            <h4 className="h4-info h4-left">{serverConcept}</h4>
           </div>
           <div className="info-img">
             <img src={Image1} alt="" />
@@ -80,14 +83,14 @@ const General = () => {
             <img src={Image2} alt="" />
           </div>
           <div className="info-style">
-            <h2 className="h2-info font-custom-3 h2-right">Комьюнити</h2>
-            <h4 className="h4-info h4-right">{community}</h4>
+            <h2 className="h2-info font-custom-3 h2-right">{serverBlockTitleCommunity}</h2>
+            <h4 className="h4-info h4-right">{serverCommunity}</h4>
           </div>
         </div>
         <div className="content-info" data-aos="fade-up">
           <div className="info-style">
-            <h2 className="h2-info font-custom-3 h2-left">Игровой процесс</h2>
-            <h4 className="h4-info h4-left">{gameProcess}</h4>
+            <h2 className="h2-info font-custom-3 h2-left">{serverBlockTitleGameProcess}</h2>
+            <h4 className="h4-info h4-left">{serverGameProcess}</h4>
           </div>
           <div className="info-img">
             <img src={Image3} alt="" />
@@ -97,19 +100,19 @@ const General = () => {
       <div className="row-3">
         <div className="lin-top"></div>
         <div className="tit-block" data-aos="fade-up">
-          <h2 className="title-h3 font-custom-3">Разделение на миры</h2>
-          <h4 className="title-h4">{serverTps}</h4>
+          <h2 className="title-h3 font-custom-3">{DivisionIntoWorlds}</h2>
+          <h4 className="title-h4">{serverInformationTps}</h4>
         </div>
         <div className="block-w" data-aos="fade-up">
           <div className="hover-me-block"><SvgHoverMe width="500px" height="500px" color="#292929" /></div>
-          <World name={worldNameRes} src={Image4} inf={infRes} />
-          <World name={worldNameGmgame} src={Image5} inf={infGmgame} />
-          <World name={worldNameFarm} src={Image6} inf={infFarm} />
+          <World name={worldNameRes} src={Image4} inf={serverInformationRes} />
+          <World name={worldNameGmgame} src={Image5} inf={serverInformationGmgame} />
+          <World name={worldNameFarm} src={Image6} inf={serverInformationFarm} />
         </div>
         <div className="lin-bot"></div>
       </div>
       <div className="row-4">
-        <h3 className="mode-title font-custom-3" data-aos="fade-up">режимы</h3>
+        <h3 className="mode-title font-custom-3" data-aos="fade-up">{serverModeServer}</h3>
         <div className="mode">
           <Mode name={survival} info={survivalInfo} />
           <Mode name={skyBlock} info={skyBlockInfo} />
