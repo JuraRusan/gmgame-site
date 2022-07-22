@@ -1,6 +1,5 @@
 @import "../../../Variables.scss";
 
-
 @keyframes shine {
   from {
     margin-left: 0;
@@ -48,7 +47,4 @@
   transform: rotate(-45deg);
   transition: all 0.85s ease-in-out;
   animation: shine 3s infinite ease;
-}
-.style-button:hover:after {
-  margin-left: 300%;
 }

@@ -5,7 +5,6 @@ import AOS from "aos";
 
 import "./Auth-comp.scss";
 import "aos/dist/aos.css";
-import "../button/Button.scss"
 
 import Authcard from "../auth-card/Auth-Card.js";
 import SvgMyProfile from "../../../bases/icons/SvgMyProfile.js";
@@ -151,7 +150,7 @@ const AuthComponent = () => {
               <textarea
                 className="input-custom"
                 type="text"
-                rows="1"
+                rows="4"
                 placeholder={serverUserAboutTitle}
                 {...register("about", {
                   required: { value: true, message: "Обязательное поле" },
@@ -166,7 +165,7 @@ const AuthComponent = () => {
               <textarea
                 className="input-custom"
                 type="text"
-                rows="1"
+                rows="4"
                 placeholder={serverUserInterestsTitle}
                 {...register("interests", {
                   required: { value: true, message: "Обязательное поле" },
@@ -181,7 +180,7 @@ const AuthComponent = () => {
               <textarea
                 className="input-custom"
                 type="text"
-                rows="1"
+                rows="4"
                 placeholder={serverUserBackServersTitle}
                 {...register("back_servers", {
                   required: { value: true, message: "Обязательное поле" },
@@ -208,6 +207,7 @@ const AuthComponent = () => {
           </div>
         </div>
       </div>
+      {watch("checkbox") && document.getElementById("submitButton").classList.add("card-button-show")}
       {watch("username") && document.getElementById("card-visual").classList.add("card-visual-show")}
       {/* <Authcard /> */}
       <div id="card-visual" className="card-visual">
@@ -226,10 +226,8 @@ const AuthComponent = () => {
             <p className="player-inf">Мои интересы в майнкрафте: <label>{watch("interests")}</label></p>
             <p className="player-inf">Я узнал о проекте: <label>{watch("about")}</label></p>
           </div>
-          <input id="submitButton" type="Submit" className="style-button hidden font-custom-3" />
-        </div>
-        {watch("checkbox") && document.getElementById("submitButton").classList.add("card-button-show")}
-        
+        </div>         
+        <input id="submitButton" type="Submit" className="style-button font-custom-3" />            
       </div>
     </div>
   );
