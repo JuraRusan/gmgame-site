@@ -226,7 +226,9 @@ const AuthComponent = () => {
             <p className="player-inf">Мои интересы в майнкрафте: <label>{watch("interests")}</label></p>
             <p className="player-inf">Я узнал о проекте: <label>{watch("about")}</label></p>
           </div>
-          <input id="submitButton" type="Submit" className="style-button hidden font-custom-3" />
+          <from>
+          <input id="submitButton" type="Submit" className="style-button hidden font-custom-3" onClick={handleSubmit((d) => console.log(d))} />
+          </from>
         </div>
         {watch("checkbox") && document.getElementById("submitButton").classList.add("card-button-show")}
         
