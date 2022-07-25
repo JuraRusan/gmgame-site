@@ -31,6 +31,14 @@
     width: 250px;
   }
 }
+@keyframes shine-1 {
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: 300%;
+  }
+}
 
 .auth-block {
   display: flex;
@@ -200,10 +208,9 @@
   .card-visual {
     width: 0px;
     height: auto;
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    transition: all 0.85 ease-in-out;
     opacity: 0;
     .card-vis-block {
       display: flex;
@@ -258,47 +265,53 @@
         }
       }
     }
-    .style-button {
-      width: 300px;
-      height: 75px;
-      line-height: 75px;
-      font-size: 30px;
-      background-color: $color-4;
-      border-radius: 22px;
-      border: none;
-      margin: 0 auto;
-      margin-top: 50px;
-      overflow: hidden;
-      position: relative;
-      cursor: pointer;
-      opacity: 0;
+    .margin-block{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: auto;
+      .style-button-auth {
+        width: 300px;
+        height: 75px;
+        line-height: 75px;
+        font-size: 30px;
+        background-color: $color-4;
+        border-radius: 22px;
+        border: none;
+        margin: 0 auto;
+        margin-top: 50px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        opacity: 0;
+      }
+      .style-button-auth:before {
+        content: " ";
+        display: block;
+        width: 200px;
+        height: 40px;
+        background: $color-6;
+        position: absolute;
+        top: -10px;
+        left: -200px;
+        transform: rotate(-45deg);
+        transition: all 0.85s ease-in-out;
+        animation: shine-1 3s infinite ease;
+      }
+      .style-button-auth:after {
+        content: " ";
+        display: block;
+        width: 200px;
+        height: 30px;
+        background: $color-6;
+        position: absolute;
+        top: -10px;
+        left: -120px;
+        transform: rotate(-45deg);
+        transition: all 0.85s ease-in-out;
+        animation: shine-1 3s infinite ease;
+      } 
     }
-    .style-button:before {
-      content: " ";
-      display: block;
-      width: 200px;
-      height: 40px;
-      background: $color-6;
-      position: absolute;
-      top: -10px;
-      left: -200px;
-      transform: rotate(-45deg);
-      transition: all 0.85s ease-in-out;
-      animation: shine 3s infinite ease;
-    }
-    .style-button:after {
-      content: " ";
-      display: block;
-      width: 200px;
-      height: 30px;
-      background: $color-6;
-      position: absolute;
-      top: -10px;
-      left: -120px;
-      transform: rotate(-45deg);
-      transition: all 0.85s ease-in-out;
-      animation: shine 3s infinite ease;
-    } 
   }
   .card-visual-show {
     animation: opacityBlock 0.85s both ease;

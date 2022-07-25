@@ -227,8 +227,8 @@ const AuthComponent = () => {
             <p className="player-inf">Я узнал о проекте: <label>{watch("about")}</label></p>
           </div>
         </div>
-        <from>
-          <input id="submitButton" type="Submit" className="style-button font-custom-3" onClick={handleSubmit((d) => console.log(d))} />
+        <from className="margin-block">
+          <input id="submitButton" type="Submit" className="style-button-auth font-custom-3" onClick={handleSubmit((d) => console.log(d))} />
         </from>
       </div>
     </div>
