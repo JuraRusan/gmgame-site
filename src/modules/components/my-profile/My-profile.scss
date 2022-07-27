@@ -55,6 +55,7 @@
     margin-bottom: 25px;
    }
    .label-cout {
+    position: relative;
     width: 333px;
     height: 64px;
     font-weight: 600;
@@ -66,23 +67,51 @@
     border-radius: 12px;
     border: none;
     margin: 0 auto;
+    .copy-button {
+     position: absolute;
+     top: 30%;
+     right: -60px;
+     height: 26px;
+     text-align: center;
+     line-height: 26px;
+     width: 50px;
+     cursor: pointer;
+     color: $color-3;
+     box-shadow: 1px 1px 2px rgba(163, 177, 198, 0.6), -1px -1px 2px rgba(255, 255, 255, 0.5);
+     border: none;
+     border-radius: 2px;
+     background: #292e3e;
+     &:focus {
+      outline: none;
+     }
+     &:active {
+      outline: none;
+     }
+    }
+    .scanner {
+     height: 30px;
+     width: 15px;
+     position: absolute;
+     top: 10;
+     left: 10px;
+    }    
    }
    .profile-application-not-submitted {
     color: $color-16 !important;
    }
-   .profile-application-under-consideration{
+   .profile-application-under-consideration {
     color: $color-17 !important;
    }
-   .profile-application-not-accepted{
+   .profile-application-not-accepted {
     color: $color-18 !important;
    }
-   .profile-application-on-whitelist{
+   .profile-application-on-whitelist {
     color: $color-19 !important;
    }
-   .profile-application-dropped-off-whitelist{
+   .profile-application-dropped-off-whitelist {
     color: $color-20 !important;
    }
-   .profile-application-banned-heck{
+   .profile-application-banned-heck {
     color: $color-18 !important;
    }
   }
