@@ -4,7 +4,11 @@ import { gsap } from "gsap";
 import "./My-profile.scss";
 
 
-const MyProfile = () => {
+const MyProfile = (params) => {
+
+const user = params.user;
+const userDC = params.userDC;
+const version = params.version;
 
  const profileApplicationNotSubmitted = "Заявка не подана";
  const profileApplicationUnderConsideration = "Заявка на рассмотрении";
@@ -18,7 +22,7 @@ const MyProfile = () => {
  const profileServerVersion = "Версия игры";
 
  const profileServerAdressOutput = "mine.gmgame.ru";
- const profileServerVersionOutput = "Java Edition 1.19";
+ const profileServerVersionOutput = "Java Edition " + version;
 
  const button = document.getElementById("copy-button");
  function isTweening() {
@@ -116,40 +120,41 @@ function activateAnimated() {
    );
 //  });
 }
+    // const tag = JSON.parse(user.tag);
 
+    return (
+        
 
- return (
-
-  <div className="profile-block">
-   <div className="ds-link">
-    <img className="ds-img" src="https://minotar.net/avatar/prestig9110/75" alt="none"></img>
-    <h5 className="h5-ds">prestig9110@1026</h5>
-   </div>
-   <div className="prof-block">
-    <div className="prof-cont">
-     <h5 className="h5-cont">{profileServerAdress}</h5>
-
-     <div className="label-cout">
-      <div className="font-custom-2">{profileServerAdressOutput}</div>
-      <button className="copy-button" onClick={activateAnimated}>Copy</button>
-      <div className="scanner"></div>
-     </div>
+    <div className="profile-block">
+    <div className="ds-link">
+        <img className="ds-img" src={`https://cdn.discordapp.com/avatars/${userDC.id}/${userDC.avatar}.png`} alt="none"></img>
+        <h5 className="h5-ds">{userDC.username}@{userDC.discriminator}</h5>
     </div>
+    <div className="prof-block">
+        <div className="prof-cont">
+        <h5 className="h5-cont">{profileServerAdress}</h5>
 
-    <div className="prof-cont">
-     <h5 className="h5-cont">{profileApplicationAkk}</h5>
-     <label className="label-cout profile-application-under-consideration">{profileApplicationUnderConsideration}</label>
-    </div>
-    <div className="prof-cont">
+        <div className="label-cout">
+        <div className="font-custom-2">{profileServerAdressOutput}</div>
+        <button className="copy-button" onClick={activateAnimated}>Copy</button>
+        <div className="scanner"></div>
+        </div>
+        </div>
 
+        <div className="prof-cont">
+        <h5 className="h5-cont">{profileApplicationAkk}</h5>
+        <label className="label-cout profile-application-under-consideration">{user.status}</label>
+        </div>
+        <div className="prof-cont">
+
+        </div>
+        <div className="prof-cont">
+        <h5 className="h5-cont">{profileServerVersion}</h5>
+        <label className="label-cout font-custom-2">{profileServerVersionOutput}</label>
+        </div>
     </div>
-    <div className="prof-cont">
-     <h5 className="h5-cont">{profileServerVersion}</h5>
-     <label className="label-cout font-custom-2">{profileServerVersionOutput}</label>
     </div>
-   </div>
-  </div>
- );
+    );
 }
 
 export default MyProfile;

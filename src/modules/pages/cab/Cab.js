@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
+import useAxios from '../../../DataProvider';
 
 import "./Cab.scss";
 import "aos/dist/aos.css";
@@ -16,6 +17,11 @@ import ChangePassword from "../../components/change-password/Change-password.js"
 
 
 const Cab = () => {
+  const { cancel, data, error, loaded } = useAxios(
+    "/api/me/",
+    'GET',
+    {}
+  );
 
   useEffect(() => { AOS.init({ duration: 1000 }); }, []);
 
@@ -27,39 +33,41 @@ const Cab = () => {
   const profileMenuMyChangePassword = "Изменить пароль";
   const profileMenuMyGoOut = "Выйти";
 
-
-  return (
-    <div className="main-cab" data-aos="fade-up">
-      <Header />
-      <div className="box">
-        <div className="col-1">
-          <PlayerCabinet />
-          <div className="menu-cabinet">
-            <div className="m1">
-              <label className="tab checked">{profileMenuMyProfile}</label>
-              <label className="tab">{profileMenuMyTerritories}</label>
-              <label className="tab">{profileMenuMyMarker}</label>
-              <label className="tab">{profileMenuMyArticles}</label>
-              <label className="tab">{profileMenuMyPrizes}</label>
-            </div>
-            <div className="m1">
-              <label className="tab">{profileMenuMyChangePassword}</label>
-              <label className="tab">{profileMenuMyGoOut}</label>
+  if (loaded && data.user) {
+    return (
+      <div className="main-cab" data-aos="fade-up">
+        <Header />
+        <div className="box">
+          <div className="col-1">
+            <PlayerCabinet {... data.user} />
+            <div className="menu-cabinet">
+              <div className="m1">
+                <label className="tab checked">{profileMenuMyProfile}</label>
+                <label className="tab">{profileMenuMyTerritories}</label>
+                <label className="tab">{profileMenuMyMarker}</label>
+                <label className="tab">{profileMenuMyArticles}</label>
+                <label className="tab">{profileMenuMyPrizes}</label>
+              </div>
+              <div className="m1">
+                <label className="tab">{profileMenuMyChangePassword}</label>
+                <label className="tab">{profileMenuMyGoOut}</label>
+              </div>
             </div>
           </div>
+          <div className="col-2">
+            <MyProfile userDC = {data.discordUser} user = {data.user} version = {data.version} />
+            {/* <MyTerritories /> */}
+            {/* <MyMarkers /> */}
+            {/* <Articles /> */}
+            {/* <MyPrizes /> */}
+            {/* <ChangePassword /> */}
+          </div>
         </div>
-        <div className="col-2">
-          <MyProfile />
-          {/* <MyTerritories /> */}
-          {/* <MyMarkers /> */}
-          {/* <Articles /> */}
-          {/* <MyPrizes /> */}
-          {/* <ChangePassword /> */}
-        </div>
+        <Fotter />
       </div>
-      <Fotter />
-    </div>
-  );
+    );
+  }
+  return <span>Loading...</span>;
 };
 
 export default Cab;
