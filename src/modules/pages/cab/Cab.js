@@ -6,7 +6,6 @@ import "aos/dist/aos.css";
 
 import Header from "../../../common/header/Header.js";
 import Fotter from "../../../common/fotter/Fotter.js";
-import PlayerCabinet from "../../components/player-cabinet/Player-cabinet.js";
 import MyProfile from "../../components/my-profile/My-profile.js";
 import MyTerritories from "../../components/my-territories/My-territories.js";
 import MyMarkers from "../../components/my-markers/My-markers.js";
@@ -33,7 +32,10 @@ const Cab = () => {
       <Header />
       <div className="box">
         <div className="col-1">
-          <PlayerCabinet />
+          <div className="player-box">
+            <img className="img-player" src="https://minotar.net/avatar/prestig9110/100" alt="none"></img>
+            <h5 className="h5-name-player font-custom-2">prestig9110</h5>
+          </div>
           <div className="menu-cabinet">
             <div className="m1">
               <label className="tab checked">{profileMenuMyProfile}</label>

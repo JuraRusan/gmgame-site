@@ -7,8 +7,8 @@ import "./Auth-comp.scss";
 import "aos/dist/aos.css";
 
 import Authcard from "../auth-card/Auth-Card.js";
+import Warn from "../warn/Warn.js";
 import SvgMyProfile from "../../../bases/icons/SvgMyProfile.js";
-import SvgWarn from "../../../bases/icons/SvgWarn.js";
 
 const AuthComponent = () => {
 
@@ -189,10 +189,7 @@ const AuthComponent = () => {
             </div>
             <ErrorRender name="back_servers" />
           </form>
-          <div className="warn-block">
-            <span><SvgWarn width="24px" height="24px" color="#f4f4f4" /></span>
-            <h4 className="war-h4-auth">{AttentionAuth}</h4>
-          </div>
+          <Warn inf={AttentionAuth}/>
         </div>
         <div className="reg-2">
           <div className="check-block">

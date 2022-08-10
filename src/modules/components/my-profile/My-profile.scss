@@ -46,7 +46,7 @@
    .h5-cont {
     width: 333px;
     height: 64px;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 20px;
     text-align: center;
     line-height: 64px;
@@ -58,7 +58,7 @@
     position: relative;
     width: 333px;
     height: 64px;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 22px;
     text-align: center;
     line-height: 64px;
@@ -69,18 +69,19 @@
     margin: 0 auto;
     .copy-button {
      position: absolute;
-     top: 30%;
-     right: -60px;
-     height: 26px;
+     left: 0;
+     top: 0;
+     width: 333px !important;
+     height: 64px;
      text-align: center;
      line-height: 26px;
      width: 50px;
      cursor: pointer;
      color: $color-3;
-     box-shadow: 1px 1px 2px rgba(163, 177, 198, 0.6), -1px -1px 2px rgba(255, 255, 255, 0.5);
+     // box-shadow: 1px 1px 2px rgba(163, 177, 198, 0.6), -1px -1px 2px rgba(255, 255, 255, 0.5);
      border: none;
-     border-radius: 2px;
-     background: #292e3e;
+     border-radius: 12px;
+     background: transparent;
      &:focus {
       outline: none;
      }

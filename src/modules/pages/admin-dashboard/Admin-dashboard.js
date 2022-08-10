@@ -6,7 +6,6 @@ import "aos/dist/aos.css";
 
 import Header from "../../../common/header/Header.js";
 import Fotter from "../../../common/fotter/Fotter.js";
-import PlayerCabinet from "../../components/player-cabinet/Player-cabinet.js";
 
 const AdminDashboard = () => {
 
