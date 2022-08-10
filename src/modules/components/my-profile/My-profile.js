@@ -4,7 +4,12 @@ import { gsap } from "gsap";
 import "./My-profile.scss";
 
 
-const MyProfile = () => {
+const MyProfile = (params) => {
+
+  const user = params.user;
+  const userDC = params.userDC;
+  const version = params.version;
+
 
   const profileApplicationNotSubmitted = "Заявка не подана";
   const profileApplicationUnderConsideration = "Заявка на рассмотрении";
@@ -18,8 +23,7 @@ const MyProfile = () => {
   const profileServerVersion = "Версия игры";
 
   const profileServerAdressOutput = "mine.gmgame.ru";
-  const profileServerVersionOutput = "Java Edition 1.19";
-
+  const profileServerVersionOutput = "Java Edition " + version;
 
   function isTweening() {
     let scanner = gsap.isTweening(".scanner");
@@ -29,11 +33,6 @@ const MyProfile = () => {
 
   function activateAnimated() {
 
-    var copyText = document.getElementById("myInput");
-    copyText.select();
-    copyText.setSelectionRange(0, 99999); /* For mobile devices */
-    navigator.clipboard.writeText(copyText.value);
-
     if (isTweening()) return;
 
     const tl = gsap.timeline();
@@ -41,7 +40,8 @@ const MyProfile = () => {
     gsap.set(".scanner", {
       x: 0,
       background: "#292e3e",
-      boxShadow: `0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #228dff, 0 0 0px #228dff, 0 0 0px #228dff, 0 0 0px #228dff, 0 0 0px #228dff`
+      boxShadow: `0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #228dff,
+    0 0 0px #228dff, 0 0 0px #228dff, 0 0 0px #228dff, 0 0 0px #228dff`
     });
 
     gsap.set("button", {
@@ -51,9 +51,8 @@ const MyProfile = () => {
     tl.to("button", {
       innerHTML: " ",
       outline: "none",
-      boxShadow: `0px 0px 0px rgba(163, 177, 198, 0.6), 0px 0px 0px rgba(255, 255, 255, 0.5)`,
       cursor: "wait",
-      duration: 0.01,
+      duration: 0.01
     })
       .to("button", {
         innerHTML: " ",
@@ -67,63 +66,68 @@ const MyProfile = () => {
         innerHTML: " ",
         duration: 0.4
       })
-      .to(".scanner", {
-        display: "block",
-        x: 30,
-        boxShadow: `0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff, 0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff`,
-        background: "white",
-        duration: 0.2,
-        ease: "none"
-      },
+      .to(
+        ".scanner",
+        {
+          boxShadow: `0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,
+    0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff`,
+          background: "white",
+          duration: 0.2,
+          ease: "none"
+        },
         "-=1.4"
       )
       .to(".scanner", {
-        x: 300,
+        x: 420,
         duration: 1,
-        ease: "none",
-        display: "none"
+        ease: "none"
       },
         "-=1"
       )
       .to(".scanner", {
-        boxShadow: `0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #228dff, 0 0 0px #228dff, 0 0 0px #228dff, 0 0 0px #228dff, 0 0 0px #228dff`,
+        boxShadow: `0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #228dff,
+    0 0 0px #228dff, 0 0 0px #228dff, 0 0 0px #228dff, 0 0 0px #228dff`,
         background: "#292e3e",
         duration: 0.2,
-        ease: "none",
+        ease: "none"
       })
-      .to("button", {
-        innerHTML: " ",
-        outline: "none",
-      },
+      .to("button",
+        {
+          innerHTML: " ",
+          outline: "none"
+        },
         "-=0.1"
       )
-      .to("button", {
-        innerHTML: " ",
-        cursor: "pointer",
-      },
+      .to("button",
+        {
+          innerHTML: " ",
+          cursor: "pointer"
+        },
         "+=1"
       );
   }
 
+
   return (
     <div className="profile-block">
       <div className="ds-link">
-        <img className="ds-img" src="https://minotar.net/avatar/prestig9110/75" alt="none"></img>
-        <h5 className="h5-ds">prestig9110@1026</h5>
+        <img className="ds-img" src={`https://cdn.discordapp.com/avatars/${userDC.id}/${userDC.avatar}.png`} alt="none"></img>
+        <h5 className="h5-ds">{userDC.username}@{userDC.discriminator}</h5>
       </div>
       <div className="prof-block">
         <div className="prof-cont">
           <h5 className="h5-cont">{profileServerAdress}</h5>
+
           <div className="label-cout">
-            <input className="label-cout font-custom-2" type="text" value={profileServerAdressOutput} id="myInput" disabled />
-            <button className="copy-button" onClick={activateAnimated}> </button>
+            <div className="font-custom-2">{profileServerAdressOutput}</div>
+            <button className="copy-button" onClick={activateAnimated}>Copy</button>
             <div className="scanner"></div>
           </div>
         </div>
 
         <div className="prof-cont">
           <h5 className="h5-cont">{profileApplicationAkk}</h5>
-          <label className="label-cout profile-application-under-consideration">{profileApplicationUnderConsideration}</label>
+          <label className="label-cout profile-application-under-consideration">{user.status}</label>
         </div>
         <div className="prof-cont">
 
