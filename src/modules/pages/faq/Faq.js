@@ -40,8 +40,8 @@ const Faq = () => {
            return (
             <div className="list-one" key={el.id} data-aos="fade-up">
              <input className="one-input" id={el.forIndex} type="checkbox" />
-             <label className="one-label" for={el.forIndex}>{el.name}</label>
-             <h3 className="one-content-h3">{el.about}</h3>
+             <label className="one-label" for={el.forIndex}>{el.question}</label>
+             <h3 className="one-content-h3">{el.answer}</h3>
             </div>
            );
           })}
