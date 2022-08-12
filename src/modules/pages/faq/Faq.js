@@ -38,7 +38,7 @@ const Faq = () => {
          <div className="lists">
           {tab.itfContent.map((el) => {
            return (
-            <div className="list-one" key={el.id} data-aos="fade-up">
+            <div className="list-one" key={el.id}>
              <input className="one-input" id={el.forIndex} type="checkbox" />
              <label className="one-label" for={el.forIndex}>{el.question}</label>
              <h3 className="one-content-h3">{el.answer}</h3>

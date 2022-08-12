@@ -1,5 +1,3 @@
-import * as React from "react";
-
 export const faqDBTab6 = [
  {
   id: 1,
