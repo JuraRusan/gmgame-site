@@ -7,6 +7,7 @@
   width: auto;
   height: auto;
   margin: 75px auto;
+
   .mode-name {
     display: flex;
     flex-direction: column;
@@ -16,6 +17,7 @@
     color: $color-3;
     border: 7px solid $color-1;
     border-radius: 35px;
+
     h3 {
       width: auto;
       height: auto;
@@ -26,6 +28,7 @@
       color: $color-3;
     }
   }
+
   .circle {
     display: flex;
     border: 5px solid $color-3;
@@ -34,6 +37,7 @@
     height: 27px;
     margin: auto 75px;
   }
+
   .h4-mode {
     width: 400px;
     height: 81px;
@@ -42,5 +46,24 @@
     color: $color-3;
     font-weight: 400;
     margin: auto 0;
+  }
+}
+
+
+@media screen and (max-width: 1280px) {
+  .mode-block {
+    .circle {
+      width: 24px;
+      height: 24px;
+      border: 4px solid $color-3;
+    }
+
+    .mode-name {
+      border: 5px solid $color-1;
+
+      h3 {
+        font-size: 38px;
+      }
+    }
   }
 }

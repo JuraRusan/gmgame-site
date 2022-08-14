@@ -22,6 +22,12 @@ const Header = () => {
         {/* <div id="toggle" onClick={toggle()}></div> */}
         <div className="content-menu">
           <ul className="links" id="links">
+            <li className="links-li li-custom-right links-li-ho-hover">
+              <a className="title-logo desktop-link" href="/">
+                <span className="colored-title-span-1 font-custom-1">G</span>
+                <span className="colored-title-span-2 font-custom-1">M</span>
+                <span className="font-custom-1">GAME</span></a>
+            </li>
             <li className="links-li">
               <a className="desktop-link font-custom-3" href="/">
                 Главная
