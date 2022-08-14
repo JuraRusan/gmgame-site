@@ -75,12 +75,12 @@ const General = () => {
             <h4 className="h4-info h4-left">{serverConcept}</h4>
           </div>
           <div className="info-img">
-            <img src={Image1} alt="" />
+            <img className='info-img-wight' src={Image1} alt="" />
           </div>
         </div>
         <div className="content-info" data-aos="fade-up">
           <div className="info-img">
-            <img src={Image2} alt="" />
+            <img className='info-img-wight' src={Image2} alt="" />
           </div>
           <div className="info-style">
             <h2 className="h2-info font-custom-3 h2-right">{serverBlockTitleCommunity}</h2>
@@ -93,7 +93,7 @@ const General = () => {
             <h4 className="h4-info h4-left">{serverGameProcess}</h4>
           </div>
           <div className="info-img">
-            <img src={Image3} alt="" />
+            <img className='info-img-wight' src={Image3} alt="" />
           </div>
         </div>
       </div>
@@ -104,7 +104,7 @@ const General = () => {
           <h4 className="title-h4">{serverInformationTps}</h4>
         </div>
         <div className="block-w" data-aos="fade-up">
-          <div className="hover-me-block"><SvgHoverMe width="500px" height="500px" color="#292929" /></div>
+          <div className="hover-me-block"><SvgHoverMe width="100%" height="100%" color="#292929" /></div>
           <World name={worldNameRes} src={Image4} inf={serverInformationRes} />
           <World name={worldNameGmgame} src={Image5} inf={serverInformationGmgame} />
           <World name={worldNameFarm} src={Image6} inf={serverInformationFarm} />

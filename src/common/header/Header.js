@@ -21,6 +21,12 @@ const Header = () => {
         {/* <div id="toggle" onClick={toggle()}></div> */}
         <div className="content-menu">
           <ul className="links" id="links">
+            <li className="links-li li-custom-right links-li-ho-hover">
+              <a className="title-logo desktop-link" href="/">
+                <span className="colored-title-span-1 font-custom-1">G</span>
+                <span className="colored-title-span-2 font-custom-1">M</span>
+                <span className="font-custom-1">GAME</span></a>
+            </li>
             <li className="links-li">
               <a className="desktop-link font-custom-3" href="/">Главная</a>
               <input type="checkbox" id="one-menu" />
@@ -29,7 +35,7 @@ const Header = () => {
             <li className="links-li">
               <a className="desktop-link font-custom-3" href="/">Полезное</a>
               <input type="checkbox" id="two-menu" />
-              <label for="two-menu font-custom-3">Полезное</label>
+              <label for="two-menu" className="font-custom-3">Полезное</label>
               <ul className="drop">
                 <li className="drop-li"><a href="/">Вики</a></li>
                 <li className="drop-li"><a href="/">Моды</a></li>
@@ -41,18 +47,18 @@ const Header = () => {
             <li className="links-li">
               <a className="desktop-link font-custom-3" href="/">Правила</a>
               <input type="checkbox" id="three-menu" />
-              <label for="three-menu font-custom-3">Правила</label>
+              <label for="three-menu" className="font-custom-3">Правила</label>
             </li>
             <li className="links-li">
               <a className="desktop-link font-custom-3" href="/faq">faq</a>
               <input type="checkbox" id="four-menu" />
-              <label for="four-menu font-custom-3">faq</label>
+              <label for="four-menu" className="font-custom-3">faq</label>
             </li>
-            <li className="links-li">
+            <li className="links-li li-custom-left">
               <a className="desktop-link font-custom-3" href="/cab">Профиль</a>
               <input type="checkbox" id="five-menu" />
-              <label for="five-menu font-custom-3">Профиль</label>
-              <ul className="drop">
+              <label for="five-menu" className="font-custom-3">Профиль</label>
+              {/* <ul className="drop">
                 <li className="drop-li ico-pl-li">
                   <img className="ico-player" src="https://minotar.net/avatar/prestig9110/30" alt="none"></img>
                   <a href="/cab" className="ico-name-player font-custom-2">prestig9110</a></li>
@@ -61,7 +67,7 @@ const Header = () => {
                 <li className="drop-li"><a href="/cab">Мои метки</a></li>
                 <li className="drop-li"><a href="/cab">Статьи</a></li>
                 <li className="drop-li"><a href="/cab">Призы</a></li>
-              </ul>
+              </ul> */}
             </li>
           </ul>
         </div>

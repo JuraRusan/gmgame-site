@@ -22,8 +22,7 @@
 
 @font-face {
   font-family: "Inter";
-  src: url("./font/Inter/Inter-ExtraBold.woff2") format("woff2"),
-    url("./font/Inter/Inter-ExtraBold.woff") format("woff");
+  src: url("./font/Inter/Inter-ExtraBold.woff2") format("woff2"), url("./font/Inter/Inter-ExtraBold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -39,8 +38,7 @@
 
 @font-face {
   font-family: "Inter";
-  src: url("./font/Inter/Inter-ExtraLight.woff2") format("woff2"),
-    url("./font/Inter/Inter-ExtraLight.woff") format("woff");
+  src: url("./font/Inter/Inter-ExtraLight.woff2") format("woff2"), url("./font/Inter/Inter-ExtraLight.woff") format("woff");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
@@ -90,8 +88,7 @@
 
 @font-face {
   font-family: "Minecraft Title Cyrillic";
-  src: url("./font/MinecraftTitleCyrillic/Minecraft-Title-Cyrillic.woff") format("woff2"),
-    url("./font/MinecraftTitleCyrillic/Minecraft-Title-Cyrillic.woff") format("woff");
+  src: url("./font/MinecraftTitleCyrillic/Minecraft-Title-Cyrillic.woff") format("woff2"), url("./font/MinecraftTitleCyrillic/Minecraft-Title-Cyrillic.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -101,8 +98,7 @@
 
 @font-face {
   font-family: "Minecraft Rus";
-  src: url("./font/MinecraftRusRegular/Minecraft.woff2") format("woff2"),
-    url("./font/MinecraftRusRegular/Minecraft.woff") format("woff");
+  src: url("./font/MinecraftRusRegular/Minecraft.woff2") format("woff2"), url("./font/MinecraftRusRegular/Minecraft.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -112,8 +108,7 @@
 
 @font-face {
   font-family: "Minecraft Ten";
-  src: url("./font/MinecraftTen/MinecraftTen.woff2") format("woff2"),
-    url("./font/MinecraftTen/MinecraftTen.woff") format("woff");
+  src: url("./font/MinecraftTen/MinecraftTen.woff2") format("woff2"), url("./font/MinecraftTen/MinecraftTen.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -132,28 +127,38 @@ code {
 .font-custom-1 {
   font-family: "Minecraft Title Cyrillic";
 }
+
 .font-custom-2 {
   font-family: "Minecraft Rus";
 }
+
 .font-custom-3 {
   font-family: "Minecraft Ten";
 }
 
-@media only screen and (min-width: 1401px) and (max-width: 1600px) {
+@media screen and (max-width: 1600px) {
 }
-@media only screen and (min-width: 1281px) and (max-width: 1400px) {
+
+@media screen and (max-width: 1400px) {
 }
-@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+
+@media screen and (max-width: 1280px) {
 }
-@media only screen and (min-width: 961px) and (max-width: 1024px) {
+
+@media screen and (max-width: 1024px) {
 }
-@media only screen and (min-width: 769px) and (max-width: 960px) {
+
+@media screen and (max-width: 960px) {
 }
-@media only screen and (min-width: 641px) and (max-width: 768px) {
+
+@media screen and (max-width: 768px) {
 }
-@media only screen and (min-width: 481px) and (max-width: 640px) {
+
+@media screen and (max-width: 640px) {
 }
-@media only screen and (min-width: 361px) and (max-width: 480px) {
+
+@media screen and (max-width: 480px) {
 }
-@media only screen and (min-width: 320px) and (max-width: 360px) {
+
+@media screen and (max-width: 360px) {
 }
