@@ -25,7 +25,7 @@ const Fotter = () => {
         </a>
       </div>
       <div className="gmgame-title-f">
-        <h3 class="span loader">
+        <h3 className="span loader">
           <span>G</span>
           <span>M</span>
           <span>G</span>
