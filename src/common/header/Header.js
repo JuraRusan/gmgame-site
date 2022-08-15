@@ -79,33 +79,33 @@ const Header = () => {
               </a>
               <input type="checkbox" id="five-menu" />
               <label htmlFor="five-menu font-custom-3">Профиль</label>
-              <ul className="drop">
-                <li className="drop-li ico-pl-li">
-                  <img
-                    className="ico-player"
-                    src="https://minotar.net/avatar/prestig9110/30"
-                    alt="none"
-                  ></img>
-                  <a href="/cab" className="ico-name-player font-custom-2">
-                    prestig9110
-                  </a>
-                </li>
-                <li className="drop-li">
-                  <a href="/cab">Профиль</a>
-                </li>
-                <li className="drop-li">
-                  <a href="/cab">Мои территории</a>
-                </li>
-                <li className="drop-li">
-                  <a href="/cab">Мои метки</a>
-                </li>
-                <li className="drop-li">
-                  <a href="/cab">Статьи</a>
-                </li>
-                <li className="drop-li">
-                  <a href="/cab">Призы</a>
-                </li>
-              </ul>
+              {/*<ul className="drop">*/}
+              {/*  <li className="drop-li ico-pl-li">*/}
+              {/*    <img*/}
+              {/*      className="ico-player"*/}
+              {/*      src="https://minotar.net/avatar/prestig9110/30"*/}
+              {/*      alt="none"*/}
+              {/*    ></img>*/}
+              {/*    <a href="/cab" className="ico-name-player font-custom-2">*/}
+              {/*      prestig9110*/}
+              {/*    </a>*/}
+              {/*  </li>*/}
+              {/*  <li className="drop-li">*/}
+              {/*    <a href="/cab">Профиль</a>*/}
+              {/*  </li>*/}
+              {/*  <li className="drop-li">*/}
+              {/*    <a href="/cab">Мои территории</a>*/}
+              {/*  </li>*/}
+              {/*  <li className="drop-li">*/}
+              {/*    <a href="/cab">Мои метки</a>*/}
+              {/*  </li>*/}
+              {/*  <li className="drop-li">*/}
+              {/*    <a href="/cab">Статьи</a>*/}
+              {/*  </li>*/}
+              {/*  <li className="drop-li">*/}
+              {/*    <a href="/cab">Призы</a>*/}
+              {/*  </li>*/}
+              {/*</ul>*/}
             </li>
           </ul>
         </div>
