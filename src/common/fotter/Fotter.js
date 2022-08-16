@@ -13,7 +13,7 @@ const Fotter = () => {
 
   return (
     <div className="fotter">
-      <div className="rows-bt" data-aos="fade-up">
+      <div className="rows-bt" data-aos="zoom-in">
         <a className="bt-links" href="https://vk.com/gmgameru">
           <SvgVk width="40px" height="40px" color="black" />
         </a>

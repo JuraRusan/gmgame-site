@@ -1,9 +1,10 @@
+import React, {useEffect, useMemo, useState} from "react";
 import AOS from "aos";
-import React, { useEffect, useMemo, useState } from "react";
 
-import { tabsFaqList } from "../../../bases/db/faq/tabsFaqList.js";
+import {tabsFaqList} from "../../../bases/db/faq/tabsFaqList.js";
 import Header from "../../../common/header/Header.js";
 import Fotter from "../../../common/fotter/Fotter.js";
+import SvgFaq from "../../../bases/icons/SvgFaq.js";
 
 import "aos/dist/aos.css";
 import "./Faq.scss";
@@ -18,16 +19,19 @@ const Faq = () => {
   };
 
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({duration: 1000});
   }, []);
 
   return (
     <div className="main-faq">
-      <Header />
-      <div className="faq-box">
-        <h2 className="h2-faq font-custom-2" data-aos="fade-up">
-          Часто задаваемые вопросы
-        </h2>
+      <Header/>
+      <div className="faq-box" data-aos="fade-up">
+        <div className="title-faq" data-aos="fade-up">
+          <span><SvgFaq width="100%" height="100%" color="#f4f4f4"/></span>
+          <h2 className="h2-faq font-custom-2">
+            Часто задаваемые вопросы
+          </h2>
+        </div>
         <div className="wrapper-tabs-faq">
           <div className="tabs" data-aos="fade-up">
             {tabsFaqList.map((tab, i) => (
@@ -56,7 +60,7 @@ const Faq = () => {
                           id={el.forIndex}
                           type="checkbox"
                         />
-                        <label className="one-label" htmlFor={el.forIndex}>
+                        <label className="one-label" for={el.forIndex}>
                           {el.question}
                         </label>
                         <h3 className="one-content-h3">{el.answer}</h3>
@@ -69,7 +73,7 @@ const Faq = () => {
           </div>
         </div>
       </div>
-      <Fotter />
+      <Fotter/>
     </div>
   );
 };

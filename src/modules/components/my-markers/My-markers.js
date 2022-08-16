@@ -1,6 +1,6 @@
 import {React, useState} from "react";
 import useAxios from '../../../DataProvider';
-import { Audio } from  'react-loader-spinner';
+import { Triangle } from  'react-loader-spinner';
 import EditAddMarker from './EditAddMarker';
 
 import "./My-markers.scss";
@@ -25,7 +25,7 @@ const MyMarkers = () => {
     }
 
     if (resParams.loading) {
-        return < Audio />
+        return <div className="preloader-box">< Triangle wrapperClass="preloader"/></div>
     }
 
     if (isShowMarker) {
