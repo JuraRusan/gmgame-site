@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, {useEffect, useState} from "react";
 import AOS from "aos";
 import useAxios from '../../../DataProvider';
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import { Audio } from  'react-loader-spinner'
+import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
+import {Triangle} from 'react-loader-spinner'
 
 import "./Cab.scss";
 import "aos/dist/aos.css";
@@ -17,7 +17,6 @@ import Articles from "../../components/articles/Articles.js";
 import MyPrizes from "../../components/my-prizes/My-prizes.js";
 import ChangePassword from "../../components/change-password/Change-password.js";
 
-
 const Cab = (props) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
@@ -29,7 +28,9 @@ const Cab = (props) => {
 
   const data = resParams.data;
 
-  useEffect(() => { AOS.init({ duration: 1000 }); }, []);
+  useEffect(() => {
+    AOS.init({duration: 1000});
+  }, []);
 
   const profileMenuMyProfile = "Профиль";
   const profileMenuMyTerritories = "Мои территории";
@@ -39,71 +40,71 @@ const Cab = (props) => {
   const profileMenuMyChangePassword = "Изменить пароль";
   const profileMenuMyGoOut = "Выйти";
 
-  
+
   if (resParams.loading) {
-    return <Audio />
+    return <div className="preloader-box">< Triangle wrapperClass="preloader"/></div>
   }
   return (
     <div className="main-cab" data-aos="fade-up">
-      <Header />
+      <Header/>
       <Tabs
         selectedIndex={selectedIndex}
         onSelect={(selectedIndex) => setSelectedIndex(selectedIndex)}
         selectedTabClassName="checked"
-        // selectedTabPanelClassName="avengers-tab-panel--selected"
+        selectedTabPanelClassName="tab-panel-selected"
       >
-      <div className="box">
-      <TabList>
-        <div className="col-1">
-          <PlayerCabinet {...data.user} />
-          <div className="menu-cabinet">
-            <div className="m1">
-              <Tab className="tab">{profileMenuMyProfile}</Tab>
-              <Tab className="tab">{profileMenuMyTerritories}</Tab>
-              <Tab className="tab" >{profileMenuMyMarker}</Tab>
-              <Tab className="tab">{profileMenuMyArticles}</Tab>
-              <Tab className="tab">{profileMenuMyPrizes}</Tab>
-              <Tab className="tab">{profileMenuMyChangePassword}</Tab>
+        <div className="box">
+          <TabList>
+            <div className="col-1">
+              <PlayerCabinet {...data.user} />
+              <div className="menu-cabinet">
+                <div className="m1">
+                  <Tab className="tab">{profileMenuMyProfile}</Tab>
+                  <Tab className="tab">{profileMenuMyTerritories}</Tab>
+                  <Tab className="tab">{profileMenuMyMarker}</Tab>
+                  <Tab className="tab">{profileMenuMyArticles}</Tab>
+                  <Tab className="tab">{profileMenuMyPrizes}</Tab>
+                  <Tab className="tab">{profileMenuMyChangePassword}</Tab>
+                </div>
+                <div className="m1">
+                  <label className="tab">{profileMenuMyGoOut}</label>
+                </div>
+              </div>
             </div>
-            <div className="m1">
-              <label className="tab">{profileMenuMyGoOut}</label>
+          </TabList>
+          <TabPanel>
+            <div className="col-2">
+              <MyProfile userDC={data.discordUser} user={data.user} version={data.version}/>
             </div>
-          </div>
+          </TabPanel>
+          <TabPanel>
+            <div className="col-2">
+              <MyTerritories/>
+            </div>
+          </TabPanel>
+          <TabPanel>
+            <div className="col-2">
+              <MyMarkers/>
+            </div>
+          </TabPanel>
+          <TabPanel>
+            <div className="col-2">
+              <Articles/>
+            </div>
+          </TabPanel>
+          <TabPanel>
+            <div className="col-2">
+              <MyPrizes/>
+            </div>
+          </TabPanel>
+          <TabPanel>
+            <div className="col-2">
+              <ChangePassword/>
+            </div>
+          </TabPanel>
         </div>
-        </TabList>
-          <TabPanel>
-            <div className="col-2">
-              <MyProfile userDC={data.discordUser} user={data.user} version={data.version} />
-            </div>
-          </TabPanel>
-          <TabPanel>
-            <div className="col-2">
-              <MyTerritories />
-            </div>
-          </TabPanel>
-          <TabPanel>
-            <div className="col-2">
-              <MyMarkers />
-            </div>
-          </TabPanel>
-          <TabPanel>
-            <div className="col-2">
-              <Articles />
-            </div>
-          </TabPanel>
-          <TabPanel>
-            <div className="col-2">
-              <MyPrizes />
-            </div>
-          </TabPanel>
-          <TabPanel>
-            <div className="col-2">
-              <ChangePassword />
-            </div>
-          </TabPanel>
-      </div>
       </Tabs>
-      <Fotter />
+      <Fotter/>
     </div>
   );
 };

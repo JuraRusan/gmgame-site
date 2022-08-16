@@ -1,33 +1,39 @@
 @import "../../../Variables.scss";
 
 .main-cab {
- width: 100%;
- height: auto;
- background: url(../../../bases/assets/bg3_blur_4.png);
- background-position-x: center;
- background-attachment: fixed;
- background-repeat: no-repeat;
- background-size: cover;
- position: relative;
- .box {
-  width: 1500px;
-  height: 800px;
-  background: $color-11;
-  margin: 10px auto 50px auto;
-  padding: 50px;
+  width: 100%;
+  height: auto;
+  background: url(../../../bases/assets/bg3_blur_4.png);
+  background-position-x: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  .box {
+    width: 1500px;
+    height: 800px;
+    background: $color-11;
+    margin: 25px auto 50px auto;
+    padding: 35px;
+    display: flex;
+    flex-direction: row;
+    z-index: 1500 !important;
+
+  }
+}
+
+.col-1 {
+  width: 350px;
   display: flex;
-  flex-direction: row;
-  z-index: 1500 !important;
-  .col-1 {
-   width: 350px;
-   display: flex;
-   flex-direction: column;
-   height: 100%;
-   border-width: 1px;
-   border-right-style: solid;
-   border-left-style: solid;
-   border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), $color-3, rgba(0, 0, 0, 0)) 1 100%;
-   .player-box {
+  flex-direction: column;
+  height: 100%;
+  border-width: 1px;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), $color-3, rgba(0, 0, 0, 0)) 1 100%;
+
+  .player-box {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -37,23 +43,25 @@
     border-width: 1px;
     border-bottom-style: solid;
     border-image: linear-gradient(to right, rgba(0, 0, 0, 0), $color-3, rgba(0, 0, 0, 0)) 1 0%;
-    .img-player {
-     width: 100px;
-     height: 100px;
-     margin: 0 auto 10px auto;
-    }
-    .h5-name-player {
-     font-weight: 400;
-     font-size: 22px;
-     color: $color-3;
-     width: 100%;
-     height: 22px;
-     line-height: 22px;
-     text-align: center;
-    }
-   }
 
-   .menu-cabinet {
+    .img-player {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto 10px auto;
+    }
+
+    .h5-name-player {
+      font-weight: 400;
+      font-size: 22px;
+      color: $color-3;
+      width: 100%;
+      height: 22px;
+      line-height: 22px;
+      text-align: center;
+    }
+  }
+
+  .menu-cabinet {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -62,38 +70,51 @@
     max-height: 550px;
     min-height: 550px;
     padding: 15px;
+
     .m1 {
-     display: flex;
-     flex-direction: column;
-     .tab {
-      background: transparent;
-      cursor: pointer;
-      transition: all 0.5s ease;
-      width: 90%;
-      height: 50px;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 50px;
-      margin: 2.5px;
-      padding-left: 20px;
-      color: $color-3;
-      border-radius: 15px;
-      &:hover {
-       background: $color-14;
+      display: flex;
+      flex-direction: column;
+
+      .tab {
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        width: 90%;
+        height: 50px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 50px;
+        margin: 2.5px;
+        padding-left: 20px;
+        color: $color-3;
+        border-radius: 15px;
+        outline: none;
+
+        &:active,
+        &:hover {
+          outline: none;
+        }
+
+        &:hover {
+          background: $color-14;
+        }
       }
-     }
-     .checked {
-      background-color: $color-4 !important;
-     }
+
+      .checked {
+        background-color: $color-4 !important;
+      }
     }
-   }
   }
-  .col-2 {
-   width: 100%;
-   height: 100%;
-   padding: 15px;
-   display: flex;
-   color: $color-3;
-  }
- }
+}
+
+.col-2 {
+  width: 100% !important;
+  height: 100%;
+  padding: 15px;
+  display: flex;
+  color: $color-3;
+}
+
+.tab-panel-selected {
+  width: 100%;
 }
