@@ -5,6 +5,8 @@ const useAxios = (url, method, payload) => {
     const [data, setData] = useState(null);
     const [error, setError] = useState("");
     const [loaded, setLoaded] = useState(false);
+    const [loading, setLoading] = useState(true);
+
     const controllerRef = useRef(new AbortController());
     const cancel = () => {
       controllerRef.current.abort();
@@ -26,10 +28,11 @@ const useAxios = (url, method, payload) => {
           setError(error.message);
         } finally {
           setLoaded(true);
+          setLoading(false);
         }
       })();
-    }, []);
-    return { cancel, data, error, loaded };
+    }, [payload, method, url]);
+    return { cancel: cancel, data: data, error: error, loaded: loaded, loading: loading };
   };
 
 export default useAxios;

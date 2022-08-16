@@ -6,7 +6,7 @@ import AOS from "aos";
 import "./Auth-comp.scss";
 import "aos/dist/aos.css";
 
-import Authcard from "../auth-card/Auth-Card.js";
+// import Authcard from "../auth-card/Auth-Card.js";
 import Warn from "../warn/Warn.js";
 import SvgMyProfile from "../../../bases/icons/SvgMyProfile.js";
 

@@ -11,12 +11,12 @@ const MyProfile = (params) => {
   const version = params.version;
 
 
-  const profileApplicationNotSubmitted = "Заявка не подана";
-  const profileApplicationUnderConsideration = "Заявка на рассмотрении";
-  const profileApplicationNotAccepted = "Заявка не принята";
-  const profileApplicationOnWhitelist = "В вайт листе";
-  const profileApplicationDroppedOffWhitelist = "Выпал из вайтлиста";
-  const profileApplicationBannedCheck = "Забанен, чекай";
+  // const profileApplicationNotSubmitted = "Заявка не подана";
+  // const profileApplicationUnderConsideration = "Заявка на рассмотрении";
+  // const profileApplicationNotAccepted = "Заявка не принята";
+  // const profileApplicationOnWhitelist = "В вайт листе";
+  // const profileApplicationDroppedOffWhitelist = "Выпал из вайтлиста";
+  // const profileApplicationBannedCheck = "Забанен, чекай";
 
   const profileServerAdress = "Адрес сервера";
   const profileApplicationAkk = "Статус аккаунта";

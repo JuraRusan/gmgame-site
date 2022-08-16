@@ -1,42 +1,55 @@
 import React from "react";
-import { marker } from "../../../bases/db/marker/marker.js";
+import useAxios from '../../../DataProvider';
+import { Audio } from  'react-loader-spinner'
 
 import "./My-markers.scss";
 
-import Warn from "../warn/Warn.js";
 import SvgAddMarker from "../../../bases/icons/SvgAddMarker.js";
 
 const MyMarkers = () => {
 
- const AttentionCoords = "Учтите, что визуально точки смещаются примерно на 30-50 блоков вниз!"
+  const resParams = useAxios(
+    "/api/get_markers/",
+    'GET',
+    {}
+  );
 
- return (
-  <div className="box-marker">
-   <div className="box-searth">
-    <input className="search-input" />
-    <h4 className="nomer-list">1111 колич.</h4>
-   </div>
-   <div className="box-list">
-    <a href="/cab" className="str">
-     <div className="margin-add">
-      <SvgAddMarker width="100%" height="100%" color="#f4f4f4" />
-     </div>
-    </a>
-    {marker.map((el) => {
-     return (
-      <div key={el.id} className="str">
-       <div className="colums-1">
-        <p className="str-p">{el.id}</p>
-        <h3 className="str-h3">{el.text}</h3>
-       </div>
-       <div className="colums-2">
-        <button className="str-bt">Настроить</button>
-       </div>
-      </div>
-     );
-    })}
-   </div>
-  </div>
+  const data = resParams.data;
+
+//  const AttentionCoords = "Учтите, что визуально точки смещаются примерно на 30-50 блоков вниз!"
+
+ if (resParams.loading) {
+    return < Audio />
+ }
+    return (
+        <div className="box-marker">
+        <div className="box-searth">
+            <input className="search-input" />
+            <h4 className="nomer-list">{data.count} количиство</h4>
+        </div>
+        <div className="box-list">
+            <a href="/cab" className="str">
+            <div className="margin-add">
+            <SvgAddMarker width="100%" height="100%" color="#f4f4f4" />
+            </div>
+            </a>
+            {data.markers.map((el, index) => {
+                return (
+                    <div key={el.id} className="str">
+                    <div className="colums-1">
+                        <p className="str-p">{index + 1}</p>
+                        <h3 className="str-h3">{el.description}</h3>
+                    </div>
+                    <div className="colums-2">
+                        <button className="str-bt">Настроить</button>
+                    </div>
+                    </div>
+                );
+            })}
+        </div>
+        </div>
+    )
+ }
   // <div className="box-marker-add">
   //  <div className="colums-add-1">
   //   <div className="col-row">
@@ -75,7 +88,7 @@ const MyMarkers = () => {
   //   <iframe src="https://map.gmgame.ru/#/-7/64/-54/-4/GMGameWorld%20-%20overworld/over" width="100%" height="100%" />
   //  </div>
   // </div>
- );
-};
+//  );
+// };
 
 export default MyMarkers;

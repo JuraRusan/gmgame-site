@@ -9,12 +9,12 @@ const Header = () => {
     AOS.init({ duration: 1000 });
   }, []);
 
-  function toggle() {
-    const toggleButton = document.getElementById("toggle");
-    const togglelinks = document.getElementById("links");
-    toggleButton.classList.toggle("active");
-    togglelinks.classList.toggle("active");
-  }
+  // function toggle() {
+  //   const toggleButton = document.getElementById("toggle");
+  //   const togglelinks = document.getElementById("links");
+  //   toggleButton.classList.toggle("active");
+  //   togglelinks.classList.toggle("active");
+  // }
 
   return (
     <div className="header" data-aos="fade-down">
