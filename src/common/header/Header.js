@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, {useEffect} from "react";
 import AOS from "aos";
 
 import "./Header.scss";
@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 
 const Header = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({duration: 1000});
   }, []);
 
   function toggle() {
@@ -28,18 +28,18 @@ const Header = () => {
                 <span className="colored-title-span-2 font-custom-1">M</span>
                 <span className="font-custom-1">GAME</span></a>
             </li>
-            <li className="links-li">
-              <a className="desktop-link font-custom-3" href="/">
-                Главная
-              </a>
-              <input type="checkbox" id="one-menu" />
-              <label htmlFor="one-menu font-custom-3">Главная</label>
-            </li>
+            {/*<li className="links-li">*/}
+            {/*  <a className="desktop-link font-custom-3" href="/">*/}
+            {/*    Главная*/}
+            {/*  </a>*/}
+            {/*  <input type="checkbox" id="one-menu" />*/}
+            {/*  <label htmlFor="one-menu font-custom-3">Главная</label>*/}
+            {/*</li>*/}
             <li className="links-li">
               <a className="desktop-link font-custom-3" href="/">
                 Полезное
               </a>
-              <input type="checkbox" id="two-menu" />
+              <input type="checkbox" id="two-menu"/>
               <label htmlFor="two-menu font-custom-3">Полезное</label>
               <ul className="drop">
                 <li className="drop-li">
@@ -60,24 +60,24 @@ const Header = () => {
               </ul>
             </li>
             <li className="links-li">
-              <a className="desktop-link font-custom-3" href="/">
+              <a className="desktop-link font-custom-3" href="/regulations">
                 Правила
               </a>
-              <input type="checkbox" id="three-menu" />
+              <input type="checkbox" id="three-menu"/>
               <label htmlFor="three-menu font-custom-3">Правила</label>
             </li>
             <li className="links-li">
               <a className="desktop-link font-custom-3" href="/faq">
                 faq
               </a>
-              <input type="checkbox" id="four-menu" />
+              <input type="checkbox" id="four-menu"/>
               <label htmlFor="four-menu font-custom-3">faq</label>
             </li>
-            <li className="links-li">
+            <li className="links-li li-custom-left">
               <a className="desktop-link font-custom-3" href="/cab">
                 Профиль
               </a>
-              <input type="checkbox" id="five-menu" />
+              <input type="checkbox" id="five-menu"/>
               <label htmlFor="five-menu font-custom-3">Профиль</label>
               {/*<ul className="drop">*/}
               {/*  <li className="drop-li ico-pl-li">*/}
