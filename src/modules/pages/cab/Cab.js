@@ -19,7 +19,7 @@ import ChangePassword from "../../components/change-password/Change-password.js"
 
 
 const Cab = (props) => {
-  const [selectedIndex, setSelectedIndex] = useState(0);
+  let [selectedIndex, setSelectedIndex] = useState(0);
 
   const resParams = useAxios(
     "/api/me/",
@@ -82,9 +82,7 @@ const Cab = (props) => {
             </div>
           </TabPanel>
           <TabPanel>
-            <div className="col-2">
               <MyMarkers />
-            </div>
           </TabPanel>
           <TabPanel>
             <div className="col-2">
