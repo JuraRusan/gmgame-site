@@ -55,7 +55,8 @@ const MyProfile = () => {
     const tl = gsap.timeline();
 
     gsap.set(".scanner", {
-      x: 0,
+      display: "flex",
+      x: 10,
       background: "#292e3e",
       boxShadow: `0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #228dff,
     0 0 0px #228dff, 0 0 0px #228dff, 0 0 0px #228dff, 0 0 0px #228dff`
@@ -95,9 +96,10 @@ const MyProfile = () => {
         "-=1.4"
       )
       .to(".scanner", {
-        x: 420,
+        x: 310,
         duration: 1,
-        ease: "none"
+        display: "none",
+        ease: "none",
       },
         "-=1"
       )
@@ -137,7 +139,7 @@ const MyProfile = () => {
 
           <div className="label-cout">
             <div className="font-custom-2">{profileServerAdressOutput}</div>
-            <button className="copy-button" onClick={activateAnimated}>Copy</button>
+            <button className="copy-button" onClick={activateAnimated}> </button>
             <div className="scanner"></div>
           </div>
         </div>
