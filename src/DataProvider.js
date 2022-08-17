@@ -37,27 +37,42 @@ const useAxios = (url, method, payload) => {
   return { cancel: cancel, data: data, error: error, loaded: loaded, loading: loading };
 };
 
-// function sendRequest(url, method, payload) {
-//   let {data, error, loaded, loading} = null;
+function sendRequest(url, method, payload) {
+  let {data, error} = undefined || {};
 
-//   try {
-//     const response = axios.request({
-//       data: payload,
-//       method,
-//       url,
-//     });
-//     data = response.data;
-//   } catch (error) {
-//       if (error.response.status === 401){
-//           window.location.replace("/login")
-//       }
-//       error = error.message;
-//   } finally {
-//     loaded = true;
-//     loading = false;
-//   }
+  const xhr = new XMLHttpRequest();
+  xhr.open(method, url, false);
+  xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+  try {
+    xhr.send(JSON.stringify(payload));
+    if (xhr.status !== 200) {
+      console.log(`Error ${xhr.status}`);
+    } else {
+      data = JSON.parse(xhr.response).data;
+    }
+  } catch(err) {
+    error = err.message;
+  }
+  // (async () => {
+  //   try {
+  //     const response = await axios.request({
+  //       data: payload,
+  //       method,
+  //       url,
+  //     });
+  //     data = response.data;
+  //   } catch (err) {
+  //       if (error.response.status === 401){
+  //           window.location.replace("/login")
+  //       }
+  //       error = err.message;
+  //   } finally {
+  //     loaded = true;
+  //     loading = false;
+  //   }
+  // })();
 
-//   return { data: data, error: error, loaded: loaded, loading: loading };
-// }
+  return { data: data, error: error};
+}
 
-export {useAxios};
+export {useAxios, sendRequest};

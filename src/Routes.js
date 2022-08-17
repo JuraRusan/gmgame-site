@@ -1,4 +1,6 @@
 import { Routes, Route } from "react-router-dom";
+import { positions, Provider } from "react-alert";
+import AlertTemplate from "react-alert-template-basic";
 
 import General from "./modules/pages/general/General.js";
 import Auth from "./modules/pages/auth/Auth.js";
@@ -15,25 +17,32 @@ import Articles from "./modules/components/articles/Articles.js"
 import ChangePassword from "./modules/components/change-password/Change-password.js"
 import MyTerritories from "./modules/components/my-territories/My-territories.js"
 
+const options = {
+  timeout: 5000,
+  position: positions.BOTTOM_CENTER
+};
+
 const Router = () => {
   return (
-    <Routes>
-      <Route path="/" element={<General/>} />
-      <Route path="/svgList" element={<SvgList/>} />
-      <Route path="/auth" element={<Auth/>} />
-      <Route exact path="/cab" element={<Cab/>}>
-        <Route path="profile" element={<MyProfile/>} />
-        <Route path="territories" element={<MyTerritories/>} />
-        <Route path="markers" element={<MyMarkers />} />
-        <Route path="markers/edit_add_marker/:id" element={<EditAddMarker />} />
-        <Route path="articles" element={<Articles/>} />
-        <Route path="prize" element={<MyPrizes/>} />
-        <Route path="change_password" element={<ChangePassword/>} />
-      </Route>
-      <Route path="/faq" element={<Faq/>} />
-      <Route path="/regulations" element={<Regulations/>} />
-      <Route path="/admin-dashboard" element={<AdminDashboard/>} />
-    </Routes>
+    <Provider template={AlertTemplate} {...options}>
+      <Routes>
+        <Route path="/" element={<General/>} />
+        <Route path="/svgList" element={<SvgList/>} />
+        <Route path="/auth" element={<Auth/>} />
+        <Route exact path="/cab" element={<Cab/>}>
+          <Route path="profile" element={<MyProfile/>} />
+          <Route path="territories" element={<MyTerritories/>} />
+          <Route path="markers" element={<MyMarkers />} />
+          <Route path="markers/edit_add_marker/:id" element={<EditAddMarker />} />
+          <Route path="articles" element={<Articles/>} />
+          <Route path="prize" element={<MyPrizes/>} />
+          <Route path="change_password" element={<ChangePassword/>} />
+        </Route>
+        <Route path="/faq" element={<Faq/>} />
+        <Route path="/regulations" element={<Regulations/>} />
+        <Route path="/admin-dashboard" element={<AdminDashboard/>} />
+      </Routes>
+    </Provider>
   );
 };
 
