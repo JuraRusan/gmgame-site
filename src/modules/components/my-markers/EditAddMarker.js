@@ -2,7 +2,6 @@ import {React, useState} from "react";
 import Warn from "../warn/Warn.js";
 import {useAxios} from '../../../DataProvider';
 import { Triangle } from  'react-loader-spinner';
-import Select, { Option } from 'rc-select';
 import {useNavigate, useParams} from 'react-router-dom';
 
 import "./My-markers.scss";
@@ -20,7 +19,6 @@ const EditAddMarker = (params) => {
 
     const saveMarker = () => {
         console.log(selectedOption, formName, formX, formY);
-
     }
 
     const resParams = useAxios(
@@ -36,10 +34,6 @@ const EditAddMarker = (params) => {
     if (resParams.loaded && !data.marker.x) {
         isNew = true;
     }
-
-    // function showMarkers() {
-    //     return params.setIsShowMarker(false) && <MyMarkers />
-    // }
 
     const AttentionCoords = "Учтите, что визуально точки смещаются примерно на 30-50 блоков вниз!"
     
@@ -58,23 +52,18 @@ const EditAddMarker = (params) => {
                 </div>
                 <div className="col-row">
                     <h5 className="input-name font-custom-2">Мир</h5>
-                    <Select 
-                        className="input-str font-custom-2"
-                        onChange={setSelectedOption}
-                        value={selectedOption || data.marker.id_type || ''}
-                        dropdownClassName="option-list font-custom-2"
-                    >
-                        <Option value="basePlayers">Базы игроков</Option>
-                        <Option value="city">Города</Option>
-                        <Option value="shopping_centers">Торговые центры - over</Option>
-                        <Option value="turquoise">Бирюзовая - nether</Option>
-                        <Option value="orange">Оранжевая - nether</Option>
-                        <Option value="lime">Лаймовая - nether</Option>
-                        <Option value="pink">Розовая - nether</Option>
-                        <Option value="farm">Фермы - nether</Option>
-                        <Option value="end_portals">Энд порталы - nether</Option>
-                        <Option value="pixel_arts">Пиксель арты - end</Option>
-                    </Select>
+                    <select className="input-str font-custom-2" onChange={(e) => setSelectedOption(e.target.value)}>
+                        <option className="option-list font-custom-2" value="basePlayers">Базы игроков</option>
+                        <option className="option-list font-custom-2" value="city">Города</option>
+                        <option className="option-list font-custom-2" value="shopping_centers">Торговые центры - over</option>
+                        <option className="option-list font-custom-2" value="turquoise">Бирюзовая - nether</option>
+                        <option className="option-list font-custom-2" value="orange">Оранжевая - nether</option>
+                        <option className="option-list font-custom-2" value="lime">Лаймовая - nether</option>
+                        <option className="option-list font-custom-2" value="pink">Розовая - nether</option>
+                        <option className="option-list font-custom-2" value="farm">Фермы - nether</option>
+                        <option className="option-list font-custom-2" value="end_portals">Энд порталы - nether</option>
+                        <option className="option-list font-custom-2" value="pixel_arts">Пиксель арты - end</option>
+                    </select>
                 </div>
                 <div className="coord">
                     <h5 className="input-name font-custom-2">Координаты</h5>
