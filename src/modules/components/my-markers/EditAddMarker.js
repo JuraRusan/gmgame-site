@@ -45,24 +45,23 @@ const EditAddMarker = (params) => {
     <div className="box-marker-add">
       <div className="colums-add-1">
         <div className="col-row">
-          {/* <h5 className="input-name font-custom-2" onClick={() => params.setIsShowMarker(false)}>вертать в зад</h5> */}
-          <button onClick={() => navigate(-1)}>Go back</button>
+          <button onClick={() => navigate(-1)} className="go-back font-custom-2">{"<--"} Вертать в зад</button>
           <h5 className="input-name font-custom-2">Название</h5>
           <input className="input-str font-custom-2" defaultValue={`${data.marker.description || ''}`} onChange={(e) => setFormName(e.target.value)} />
         </div>
         <div className="col-row">
           <h5 className="input-name font-custom-2">Мир</h5>
           <select className="input-str font-custom-2" onChange={(e) => setSelectedOption(e.target.value)}>
-            <option className="option-list font-custom-2" value="basePlayers">Базы игроков</option>
-            <option className="option-list font-custom-2" value="city">Города</option>
-            <option className="option-list font-custom-2" value="shopping_centers">Торговые центры - over</option>
-            <option className="option-list font-custom-2" value="turquoise">Бирюзовая - nether</option>
-            <option className="option-list font-custom-2" value="orange">Оранжевая - nether</option>
-            <option className="option-list font-custom-2" value="lime">Лаймовая - nether</option>
-            <option className="option-list font-custom-2" value="pink">Розовая - nether</option>
-            <option className="option-list font-custom-2" value="farm">Фермы - nether</option>
-            <option className="option-list font-custom-2" value="end_portals">Энд порталы - nether</option>
-            <option className="option-list font-custom-2" value="pixel_arts">Пиксель арты - end</option>
+            <option className="option-list" value="basePlayers">Базы игроков</option>
+            <option className="option-list" value="city">Города</option>
+            <option className="option-list" value="shopping_centers">Торговые центры - over</option>
+            <option className="option-list" value="turquoise">Бирюзовая - nether</option>
+            <option className="option-list" value="orange">Оранжевая - nether</option>
+            <option className="option-list" value="lime">Лаймовая - nether</option>
+            <option className="option-list" value="pink">Розовая - nether</option>
+            <option className="option-list" value="farm">Фермы - nether</option>
+            <option className="option-list" value="end_portals">Энд порталы - nether</option>
+            <option className="option-list" value="pixel_arts">Пиксель арты - end</option>
           </select>
         </div>
         <div className="coord">
@@ -73,7 +72,7 @@ const EditAddMarker = (params) => {
               <input className="input-str-custom font-custom-2" defaultValue={`${data.marker.x || ''}`} onChange={(e) => setFormX(e.target.value)} />
             </div>
             <div className="col-row-custom">
-              <h5 className="input-name font-custom-2">Y</h5>
+              <h5 className="input-name font-custom-2">Z</h5>
               <input className="input-str-custom font-custom-2" defaultValue={`${data.marker.y || ''}`} onChange={(e) => setFormY(e.target.value)} />
             </div>
           </div>
