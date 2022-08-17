@@ -2,15 +2,16 @@ import { useEffect, useState, useRef } from 'react'
 import axios from "axios";
 
 const useAxios = (url, method, payload) => {
-    const [data, setData] = useState(null);
-    const [error, setError] = useState("");
-    const [loaded, setLoaded] = useState(false);
-    const [loading, setLoading] = useState(true);
+    let [data, setData] = useState(null);
+    let [error, setError] = useState("");
+    let [loaded, setLoaded] = useState(false);
+    let [loading, setLoading] = useState(true);
 
     const controllerRef = useRef(new AbortController());
     const cancel = () => {
       controllerRef.current.abort();
     };
+
     useEffect(() => {
       (async () => {
         try {
@@ -31,7 +32,8 @@ const useAxios = (url, method, payload) => {
           setLoading(false);
         }
       })();
-    }, [payload, method, url]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [method, url]);
     return { cancel: cancel, data: data, error: error, loaded: loaded, loading: loading };
   };
 
