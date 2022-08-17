@@ -1,36 +1,25 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect } from "react";
 import AOS from "aos";
-import useAxios from '../../../DataProvider';
-import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
-import {Triangle} from 'react-loader-spinner'
+import {useAxios} from '../../../DataProvider';
+import { Link, Outlet } from "react-router-dom";
+import { Triangle } from  'react-loader-spinner';
 
 import "./Cab.scss";
 import "aos/dist/aos.css";
 
 import Header from "../../../common/header/Header.js";
 import Fotter from "../../../common/fotter/Fotter.js";
-import MyProfile from "../../components/my-profile/My-profile.js";
 import PlayerCabinet from "../../components/player-cabinet/Player-cabinet.js";
-import MyTerritories from "../../components/my-territories/My-territories.js";
-import MyMarkers from "../../components/my-markers/My-markers.js";
-import Articles from "../../components/articles/Articles.js";
-import MyPrizes from "../../components/my-prizes/My-prizes.js";
-import ChangePassword from "../../components/change-password/Change-password.js";
 
-const Cab = (props) => {
-  let [selectedIndex, setSelectedIndex] = useState(0);
 
+const Cab = () => {
   const resParams = useAxios(
     "/api/me/",
     'GET',
     {}
   );
 
-  const data = resParams.data;
-
-  useEffect(() => {
-    AOS.init({duration: 1000});
-  }, []);
+  useEffect(() => { AOS.init({ duration: 1000 }); }, []);
 
   const profileMenuMyProfile = "Профиль";
   const profileMenuMyTerritories = "Мои территории";
@@ -40,71 +29,52 @@ const Cab = (props) => {
   const profileMenuMyChangePassword = "Изменить пароль";
   const profileMenuMyGoOut = "Выйти";
 
+  const data = resParams.data;
 
   if (resParams.loading) {
     return <div className="preloader-box">< Triangle wrapperClass="preloader"/></div>
   }
+  
   return (
     <div className="main-cab" data-aos="fade-up">
-      <Header/>
-      <Tabs
-        selectedIndex={selectedIndex}
-        onSelect={(selectedIndex) => setSelectedIndex(selectedIndex)}
-        selectedTabClassName="checked"
-        selectedTabPanelClassName="tab-panel-selected"
-      >
-        <div className="box">
-          <TabList>
-            <div className="col-1">
-              <PlayerCabinet {...data.user} />
-              <div className="menu-cabinet">
-                <div className="m1">
-                  <Tab className="tab">{profileMenuMyProfile}</Tab>
-                  <Tab className="tab">{profileMenuMyTerritories}</Tab>
-                  <Tab className="tab">{profileMenuMyMarker}</Tab>
-                  <Tab className="tab">{profileMenuMyArticles}</Tab>
-                  <Tab className="tab">{profileMenuMyPrizes}</Tab>
-                  <Tab className="tab">{profileMenuMyChangePassword}</Tab>
-                </div>
-                <div className="m1">
-                  <label className="tab">{profileMenuMyGoOut}</label>
-                </div>
-              </div>
+      <Header />
+      <div className="box">
+        <div className="col-1">
+          <PlayerCabinet {...data.user} />
+          <div className="menu-cabinet">
+            <div className="m1">
+              <Link to="profile" className="link">
+                <label className="tab">{profileMenuMyProfile}</label>
+              </Link>
+              <Link to="territories" className="link">
+                <label className="tab">{profileMenuMyTerritories}</label>
+              </Link>
+              <Link to="markers" className="link">
+                <label className="tab">{profileMenuMyMarker}</label>
+              </Link>
+              <Link to="articles" className="link">
+                <label className="tab">{profileMenuMyArticles}</label>
+              </Link>
+              <Link to="prize" className="link">
+                <label className="tab">{profileMenuMyPrizes}</label>
+              </Link>
             </div>
-          </TabList>
-          <TabPanel>
-            <div className="col-2">
-              <MyProfile userDC={data.discordUser} user={data.user} version={data.version}/>
+            <div className="m1">
+              <Link to="change_password" className="link">
+                <label className="tab">{profileMenuMyChangePassword}</label>
+              </Link>
+              <label className="tab">{profileMenuMyGoOut}</label>
             </div>
-          </TabPanel>
-          <TabPanel>
-            <div className="col-2">
-              <MyTerritories/>
-            </div>
-          </TabPanel>
-          <TabPanel>
-            <MyMarkers />
-          </TabPanel>
-          <TabPanel>
-            <div className="col-2">
-              <Articles/>
-            </div>
-          </TabPanel>
-          <TabPanel>
-            <div className="col-2">
-              <MyPrizes/>
-            </div>
-          </TabPanel>
-          <TabPanel>
-            <div className="col-2">
-              <ChangePassword/>
-            </div>
-          </TabPanel>
+          </div>
         </div>
-      </Tabs>
-      <Fotter/>
+        <div className="col-2">
+          <Outlet />
+        </div>
+      </div>
+      <Fotter />
     </div>
   );
-};
+}
+
 
 export default Cab;

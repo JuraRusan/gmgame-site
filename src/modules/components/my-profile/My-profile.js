@@ -1,14 +1,31 @@
 import React from "react";
 import { gsap } from "gsap";
+import {useAxios} from '../../../DataProvider';
+import { Triangle } from  'react-loader-spinner';
 
 import "./My-profile.scss";
 
 
-const MyProfile = (params) => {
+const MyProfile = () => {
+  console.log('elkjfbnwkfbkjfwe')
 
-  const user = params.user;
-  const userDC = params.userDC;
-  const version = params.version;
+  const resParams = useAxios(
+    "/api/me/",
+    'GET',
+    {}
+  );
+
+  if (resParams.loading) {
+    return <div className="preloader-box">< Triangle wrapperClass="preloader"/></div>
+  }
+
+  const data = resParams.data;
+
+
+
+  // const user = params.user;
+  // const userDC = params.userDC;
+  // const version = params.version;
 
 
   // const profileApplicationNotSubmitted = "Заявка не подана";
@@ -23,7 +40,7 @@ const MyProfile = (params) => {
   const profileServerVersion = "Версия игры";
 
   const profileServerAdressOutput = "mine.gmgame.ru";
-  const profileServerVersionOutput = "Java Edition " + version;
+  const profileServerVersionOutput = "Java Edition " + data.version;
 
   function isTweening() {
     let scanner = gsap.isTweening(".scanner");
@@ -111,8 +128,8 @@ const MyProfile = (params) => {
   return (
     <div className="profile-block">
       <div className="ds-link">
-        <img className="ds-img" src={`https://cdn.discordapp.com/avatars/${userDC.id}/${userDC.avatar}.png`} alt="none"></img>
-        <h5 className="h5-ds">{userDC.username}@{userDC.discriminator}</h5>
+        <img className="ds-img" src={`https://cdn.discordapp.com/avatars/${data.discordUser.id}/${data.discordUser.avatar}.png`} alt="none"></img>
+        <h5 className="h5-ds">{data.discordUser.username}@{data.discordUser.discriminator}</h5>
       </div>
       <div className="prof-block">
         <div className="prof-cont">
@@ -127,7 +144,7 @@ const MyProfile = (params) => {
 
         <div className="prof-cont">
           <h5 className="h5-cont">{profileApplicationAkk}</h5>
-          <label className="label-cout profile-application-under-consideration">{user.status}</label>
+          <label className="label-cout profile-application-under-consideration">{data.user.status}</label>
         </div>
         <div className="prof-cont">
 

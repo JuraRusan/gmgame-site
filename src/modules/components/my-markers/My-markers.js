@@ -1,36 +1,24 @@
-import {React, useState} from "react";
-import useAxios from '../../../DataProvider';
+import {React} from "react";
+import {useAxios} from '../../../DataProvider';
 import { Triangle } from  'react-loader-spinner';
-import EditAddMarker from './EditAddMarker';
+import {Link} from 'react-router-dom';
 
 import "./My-markers.scss";
 
 import SvgAddMarker from "../../../bases/icons/SvgAddMarker.js";
 
 const MyMarkers = () => {
-    let [isShowMarker, setIsShowMarker] = useState(false);
-    let [markerId, setMarkerId] = useState(null);
-
     const resParams = useAxios(
         "/api/get_markers/",
         'GET',
         {}
     );
 
-    const data = resParams.data;
-
-    function showMarker(id) {
-        setMarkerId(id);
-        setIsShowMarker(true);
-    }
-
     if (resParams.loading) {
         return <div className="preloader-box">< Triangle wrapperClass="preloader"/></div>
     }
 
-    if (isShowMarker) {
-        return <EditAddMarker markerId={markerId} />
-    }
+    const data = resParams.data;
 
     return (
         <div className="col-2">
@@ -40,7 +28,8 @@ const MyMarkers = () => {
                     <h4 className="nomer-list">{data.count} количиство</h4>
                 </div>
                 <div className="box-list">
-                    <a href="/#" className="str" onClick={() => showMarker()}>
+                    {/* eslint-disable-next-line */}
+                    <a className="str">
                     <div className="margin-add">
                     <SvgAddMarker width="100%" height="100%" color="#f4f4f4" />
                     </div>
@@ -53,7 +42,7 @@ const MyMarkers = () => {
                                 <h3 className="str-h3">{el.description}</h3>
                             </div>
                             <div className="colums-2">
-                                <button className="str-bt" onClick={() => showMarker(el.id)}>Настроить</button>
+                                <Link to={`edit_add_marker/${el.id}`}>Настроить</Link>
                             </div>
                             </div>
                         );

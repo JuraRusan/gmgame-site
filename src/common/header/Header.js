@@ -74,7 +74,7 @@ const Header = () => {
               <label htmlFor="four-menu font-custom-3">faq</label>
             </li>
             <li className="links-li li-custom-left">
-              <a className="desktop-link font-custom-3" href="/cab">
+              <a className="desktop-link font-custom-3" href="/cab/profile">
                 Профиль
               </a>
               <input type="checkbox" id="five-menu"/>
