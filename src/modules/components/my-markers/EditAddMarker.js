@@ -36,6 +36,21 @@ const EditAddMarker = (params) => {
             alert.error(response.error);
         }
     }
+
+    const deleteMarker = () => {
+        const response = sendRequest(
+            '/api/delete_markers',
+            'POST',
+            {markerID: id}
+        )
+
+        if (response.data) {
+            alert.success(response.data);
+            navigate(-1);
+        } else {
+            alert.error(response.error);
+        }
+    }
     
     const resParams = useAxios(
         `/api/get_marker/${id}`,
@@ -110,7 +125,7 @@ const EditAddMarker = (params) => {
                     <button className="bt-all bt-add font-custom-2" onClick={saveMarker} >Сохранить</button>
                     {id === 'new'
                         ? ''
-                        : <button className="bt-all bt-del font-custom-2">Удалить</button>
+                        : <button className="bt-all bt-del font-custom-2" onClick={deleteMarker}>Удалить</button>
                     }
                 </div>
             </div>
