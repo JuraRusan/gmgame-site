@@ -13,40 +13,96 @@
 
   .regulations-box {
     width: 100%;
-    height: 900px;
+    height: auto;
+    padding-top: 35px;
 
-    .regulations-list {
-      .regulations-title {
+    .box-one {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      height: auto;
+      width: auto;
+      max-width: 1600px;
+      margin: 20px auto 20px auto;
+      //background: $color-11;
+      //border: none;
+      //border-radius: 15px;
+
+      .title-division {
         width: 100%;
-        height: auto;
+        height: 35px;
+        line-height: 35px;
+        color: $color-8;
+        font-size: 22px;
+        font-weight: 400;
+        padding-left: 25px;
+        margin-bottom: 15px;
       }
 
-      .punishment-and-arrow {
+      .regulations-list {
         display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
+        flex-direction: column;
         width: 100%;
         height: auto;
 
+        .one-content-p {
+          width: 100%;
+          height: auto;
+          font-size: 16px;
+          font-weight: 400;
+          color: $color-3;
+          line-height: 30px;
+
+          .content-ul {
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+
+            .ul-content-li {
+              list-style: inside;
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+      }
+
+      .svg-punishment-one {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        padding-left: 15px;
+
         .svg-rotate {
-          width: 15px !important;
-          height: 15px !important;
-          position: relative;
-          display: flex;
+          width: 25px;
+          height: 25px;
           transform: rotate(-90deg);
         }
 
-        .punishment-block {
+        .punishment-one {
+          width: auto;
+          max-width: 90%;
+          margin-left: 5px;
+          font-size: 16px;
+          font-weight: 400;
           color: $color-3;
-          background: #e4007f;
-        }
+          line-height: 30px;
 
-        .h4-punishment {
-          width: 100%;
+          .span-war {
+            width: auto;
+            height: 35px;
+            line-height: 35px;
+            background: lighten($color-9, 15);
+            text-align: center;
+            padding: 5px 10px 5px 10px;
+            border: none;
+            border-radius: 5px;
+            color: $color-15;
+          }
         }
       }
     }
-
   }
 }
 

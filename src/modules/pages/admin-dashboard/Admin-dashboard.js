@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, {useEffect} from "react";
 import AOS from "aos";
 
 import "./Admin-dashboard.scss";
@@ -9,17 +9,19 @@ import Fotter from "../../../common/fotter/Fotter.js";
 
 const AdminDashboard = () => {
 
- useEffect(() => { AOS.init({ duration: 1000 }); }, []);
+  useEffect(() => {
+    AOS.init({duration: 1000});
+  }, []);
 
- return (
-  <div className="main-dashboard" data-aos="fade-up">
-   <Header />
-   <div className="box-dashboard">
+  return (
+    <div className="main-dashboard" data-aos="fade-up">
+      <Header/>
+      <div className="box-dashboard">
 
-   </div>
-   <Fotter />
-  </div>
- );
+      </div>
+      <Fotter/>
+    </div>
+  );
 };
 
 export default AdminDashboard;
