@@ -10,7 +10,7 @@ import Button from "../../../modules/components/button/Button.js";
 import Mode from "../../../modules/components/mode/Mode.js";
 import World from "../../../modules/components/world/World.js";
 import SvgHoverMe from "../../../bases/icons/SvgHoverMe.js";
-import Image1 from "../../../bases/assets/1.png";
+import Image1 from "../../../bases/assets/psd.png";
 import Image2 from "../../../bases/assets/2.png";
 import Image3 from "../../../bases/assets/3.png";
 import Image4 from "../../../bases/assets/4.png";
