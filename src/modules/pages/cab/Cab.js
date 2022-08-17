@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import AOS from "aos";
 import {useAxios} from '../../../DataProvider';
-import {Link, Outlet} from "react-router-dom";
+import {NavLink, Outlet} from "react-router-dom";
 import {Triangle} from 'react-loader-spinner';
 
 import "./Cab.scss";
@@ -36,6 +36,10 @@ const Cab = () => {
     return <div className="preloader-box">< Triangle wrapperClass="preloader"/></div>
   }
 
+  function setActive(isActive) {
+    return isActive ? "tab checked" : "tab";
+  }
+
   return (
     <div className="main-cab" data-aos="fade-up">
       <Header/>
@@ -44,14 +48,14 @@ const Cab = () => {
           <PlayerCabinet {...data.user} />
           <div className="menu-cabinet">
             <div className="m1">
-              <Link to="profile" className="tab checked">{profileMenuMyProfile}</Link>
-              <Link to="territories" className="tab">{profileMenuMyTerritories}</Link>
-              <Link to="markers" className="tab">{profileMenuMyMarker}</Link>
-              <Link to="articles" className="tab">{profileMenuMyArticles}</Link>
-              <Link to="prize" className="tab">{profileMenuMyPrizes}</Link>
+              <NavLink to="profile" className={({ isActive }) => setActive(isActive)}>{profileMenuMyProfile}</NavLink>
+              <NavLink to="territories" className={({ isActive }) => setActive(isActive)}>{profileMenuMyTerritories}</NavLink>
+              <NavLink to="markers" className={({ isActive }) => setActive(isActive)}>{profileMenuMyMarker}</NavLink>
+              <NavLink to="articles" className={({ isActive }) => setActive(isActive)}>{profileMenuMyArticles}</NavLink>
+              <NavLink to="prize" className={({ isActive }) => setActive(isActive)}>{profileMenuMyPrizes}</NavLink>
             </div>
             <div className="m1">
-              <Link to="change_password" className="tab">{profileMenuMyChangePassword}</Link>
+              <NavLink to="change_password" className={({ isActive }) => setActive(isActive)}>{profileMenuMyChangePassword}</NavLink>
               <label className="tab">{profileMenuMyGoOut}</label>
             </div>
           </div>
