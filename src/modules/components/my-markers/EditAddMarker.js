@@ -29,11 +29,11 @@ const EditAddMarker = (params) => {
             {server: formServer, id_type: selectedOption, name: formName, x: formX, z: formZ, description: formDescription, markerID: id}
         )
 
-        if (response.data) {
-            alert.success(response.data);
+        if (response.body.data) {
+            alert.success(response.body.data);
             navigate(-1);
         } else {
-            alert.error(response.error);
+            alert.error(response.body.error);
         }
     }
 
@@ -44,11 +44,11 @@ const EditAddMarker = (params) => {
             {markerID: id}
         )
 
-        if (response.data) {
-            alert.success(response.data);
+        if (response.body.data) {
+            alert.success(response.body.data);
             navigate(-1);
         } else {
-            alert.error(response.error);
+            alert.error(response.body.error);
         }
     }
     

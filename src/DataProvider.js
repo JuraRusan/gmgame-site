@@ -48,7 +48,7 @@ function sendRequest(url, method, payload) {
     if (xhr.status !== 200) {
       console.log(`Error ${xhr.status}`);
     } else {
-      data = JSON.parse(xhr.response).data;
+      data = JSON.parse(xhr.response);
     }
   } catch(err) {
     error = err.message;
@@ -72,7 +72,7 @@ function sendRequest(url, method, payload) {
   //   }
   // })();
 
-  return { data: data, error: error};
+  return { body: data, error: error};
 }
 
 export {useAxios, sendRequest};
