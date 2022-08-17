@@ -29,11 +29,13 @@ const MyMarkers = () => {
                 </div>
                 <div className="box-list">
                     {/* eslint-disable-next-line */}
-                    <a className="str">
-                    <div className="margin-add">
-                    <SvgAddMarker width="100%" height="100%" color="#f4f4f4" />
-                    </div>
-                    </a>
+                    <Link to={'edit_add_marker/new'}>
+                        <a className="str">
+                        <div className="margin-add">
+                        <SvgAddMarker width="100%" height="100%" color="#f4f4f4" />
+                        </div>
+                        </a>
+                    </Link>
                     {data.markers.map((el, index) => {
                         return (
                             <div key={el.id} className="str">
