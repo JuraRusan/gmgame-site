@@ -10,6 +10,7 @@ import "aos/dist/aos.css";
 import Header from "../../../common/header/Header.js";
 import Fotter from "../../../common/fotter/Fotter.js";
 import PlayerCabinet from "../../components/player-cabinet/Player-cabinet.js";
+import Auth from "../../../modules/pages/auth/Auth.js";
 
 const Cab = () => {
   const resParams = useAxios(
@@ -34,6 +35,10 @@ const Cab = () => {
 
   if (resParams.loading) {
     return <div className="preloader-box"><Triangle wrapperClass="preloader"/></div>
+  }
+
+  if (data.user === 'not_found') {
+    return <Auth />
   }
 
   function setActive(isActive) {

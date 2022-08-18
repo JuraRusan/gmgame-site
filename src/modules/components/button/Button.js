@@ -1,10 +1,11 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 
 import "./Button.scss";
 
 const Button = () => {
   return (
-    <button className="style-button font-custom-3">Подать заявку</button>
+    <Link to={'/cab'} ><button className="style-button font-custom-3">Подать заявку</button></Link>
   );
 };
 

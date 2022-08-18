@@ -199,7 +199,7 @@ const AuthComponent = () => {
               {...register("checkbox", {
                 required: {value: true, message: "Обязательное подтверждение"},
               })} />
-            <label for="box-1">{YesIAgreeRules}</label>
+            <label htmlFor="box-1">{YesIAgreeRules}</label>
             <ErrorRender name="checkbox"/>
           </div>
         </div>
@@ -224,10 +224,10 @@ const AuthComponent = () => {
             <p className="player-inf">Я узнал о проекте: <label>{watch("about")}</label></p>
           </div>
         </div>
-        <from className="margin-block">
+        <form className="margin-block">
           <input id="submitButton" type="Submit" className="style-button-auth font-custom-3"
                  onClick={handleSubmit((d) => console.log(d))}/>
-        </from>
+        </form>
       </div>
     </div>
   );
