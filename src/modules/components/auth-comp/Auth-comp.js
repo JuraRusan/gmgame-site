@@ -2,6 +2,9 @@ import React, {useState, useEffect} from "react";
 import {useForm} from "react-hook-form";
 import {ErrorMessage} from "@hookform/error-message";
 import AOS from "aos";
+import {sendRequest} from '../../../DataProvider';
+import { Navigate } from "react-router-dom";
+import {useAlert} from "react-alert";
 
 import "./Auth-comp.scss";
 import "aos/dist/aos.css";
@@ -11,6 +14,7 @@ import Warn from "../warn/Warn.js";
 import SvgMyProfile from "../../../bases/icons/SvgMyProfile.js";
 
 const AuthComponent = () => {
+  const alert = useAlert();
 
   useEffect(() => {
     AOS.init({duration: 1000});
@@ -59,6 +63,21 @@ const AuthComponent = () => {
     return (
       <ErrorMessage errors={errors} name={name.name} render={({message}) => <span className="error">{message}</span>}/>
     );
+  }
+
+  function registration(d) {
+    const response = sendRequest(
+      '/api/registration_user',
+      'POST',
+      {login: d.username, password: d.password, type: d.type_account, age: d.age, from_about: d.about, you_about: d.interests, servers: d.back_servers, friend_name: d.friend_name}
+    )
+
+    if (response.body.success) {
+      alert.success(response.body.success);
+      return <Navigate to="/cab/profile" replace={true} />
+    } else {
+      alert.error(response.body.error);
+    }
   }
 
   return (
@@ -226,7 +245,7 @@ const AuthComponent = () => {
         </div>
         <form className="margin-block">
           <input id="submitButton" type="Submit" className="style-button-auth font-custom-3"
-                 onClick={handleSubmit((d) => console.log(d))}/>
+                 onClick={handleSubmit((d) => registration(d))}/>
         </form>
       </div>
     </div>
