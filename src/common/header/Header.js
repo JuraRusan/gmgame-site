@@ -43,7 +43,7 @@ const Header = () => {
               <label htmlFor="two-menu font-custom-3">Полезное</label>
               <ul className="drop">
                 <li className="drop-li">
-                  <a href="/">Вики</a>
+                  <a href="/articlesWiki">Вики</a>
                 </li>
                 <li className="drop-li">
                   <a href="/">Моды</a>

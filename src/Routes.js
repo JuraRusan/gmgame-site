@@ -14,6 +14,7 @@ import MyPrizes from "./modules/components/my-prizes/My-prizes.js"
 import Articles from "./modules/components/articles/Articles.js"
 import ChangePassword from "./modules/components/change-password/Change-password.js"
 import MyTerritories from "./modules/components/my-territories/My-territories.js"
+import ArticlesWiki from "./modules/pages/articles/Articles-wiki";
 
 const Router = () => {
   return (
@@ -32,7 +33,8 @@ const Router = () => {
       </Route>
       <Route path="/faq" element={<Faq/>} />
       <Route path="/regulations" element={<Regulations/>} />
-      <Route path="/admin-dashboard" element={<AdminDashboard/>} />
+      <Route path="/adminDashboard" element={<AdminDashboard/>} />
+      <Route path="/articlesWiki" element={<ArticlesWiki/>} />
     </Routes>
   );
 };

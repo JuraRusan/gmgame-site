@@ -1,0 +1,31 @@
+@import "../../../Variables.scss";
+
+.main-wiki {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  background: url(../../../bases/assets/bg4.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  .box-wiki {
+    width: 100%;
+    height: auto;
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .h3-wiki {
+      width: auto;
+      height: auto;
+      margin: 0 auto;
+      font-weight: 400;
+      font-size: 32px;
+      color: $color-3;
+    }
+  }
+}
