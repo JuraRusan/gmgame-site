@@ -88,6 +88,31 @@
             display: none;
           }
 
+          .custon-header {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: auto;
+            padding: 5px;
+
+            .ico-player {
+              display: flex;
+              width: 30px;
+              height: 30px;
+            }
+
+            .ico-name-player {
+              color: $color-4;
+              width: 100%;
+              line-height: 24px;
+              height: 24px;
+              margin: auto 1px auto 5px;
+              font-size: 18px !important;
+              overflow: hidden;
+            }
+
+          }
+
           .drop {
             z-index: 6000;
             position: absolute;
@@ -121,33 +146,6 @@
                 margin: 10px;
               }
             }
-
-            .ico-pl-li {
-              display: flex;
-              flex-direction: row;
-              justify-content: start;
-              height: auto;
-              width: 100%;
-
-              .ico-player {
-                display: flex;
-                width: 30px;
-                height: 30px;
-                margin: auto 5px;
-              }
-
-              .ico-name-player {
-                color: $color-4;
-                width: 100%;
-                min-width: auto;
-                line-height: 24px;
-                height: 24px;
-                margin: 10px;
-                font-size: 20px;
-                overflow: hidden;
-                text-overflow: ellipsis;
-              }
-            }
           }
         }
 
@@ -170,6 +168,9 @@
         .li-custom-left {
           left: 0;
           margin-left: auto;
+          width: auto !important;
+          min-width: 225px !important;
+          max-width: 265px !important;
         }
       }
     }
