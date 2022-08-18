@@ -1,14 +1,40 @@
 @import "../../../Variables.scss";
 
-@keyframes money {
+@keyframes animation-item {
   0% {
     background: url("../../../bases/еnchanted-item/Netherite_Pickaxe.gif");
+    background-position-x: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  25% {
+    background: url("../../../bases/еnchanted-item/Netherite_Axe.gif");
+    background-position-x: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   50% {
-    background: url("../../../bases/еnchanted-item/Netherite_Axe.gif");
+    background: url("../../../bases/еnchanted-item/Netherite_Shovel.gif");
+    background-position-x: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  75% {
+    background: url("../../../bases/еnchanted-item/Netherite_Sword.gif");
+    background-position-x: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   100% {
     background: url("../../../bases/еnchanted-item/Netherite_Pickaxe.gif");
+    background-position-x: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -30,20 +56,24 @@
 
   .one-prizes {
     width: 100%;
-    height: 150px;
+    height: 130px;
     display: flex;
     flex-direction: row;
+    padding: 5px;
+    border: 0.5px solid $color-22;
+    border-radius: 7px;
 
     .img-block {
       display: flex;
-      width: 150px;
-      height: 150px;
+      width: 100px;
+      height: 100px;
+      margin: auto 15px auto 15px;
 
       .animation-bg {
+        display: flex;
         width: 100%;
         height: 100%;
-        transition: all 1s ease;
-        animation: 6s infinite money;
+        animation: 10s infinite animation-item;
       }
     }
 
@@ -51,6 +81,20 @@
       display: flex;
       width: 90%;
       height: auto;
+      padding: 15px;
+      border-width: 1px;
+      border-left-style: solid;
+      border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), $color-22, rgba(0, 0, 0, 0)) 1 100%;
+
+      .text-h5 {
+        font-weight: 400;
+        font-size: 16px;
+        color: $color-3;
+        text-align: center;
+        height: auto;
+        line-height: 30px;
+        width: auto;
+      }
     }
   }
 }
