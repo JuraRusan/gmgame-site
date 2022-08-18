@@ -16,6 +16,7 @@ import MyPrizes from "./modules/components/my-prizes/My-prizes.js"
 import Articles from "./modules/components/articles/Articles.js"
 import ChangePassword from "./modules/components/change-password/Change-password.js"
 import MyTerritories from "./modules/components/my-territories/My-territories.js"
+import EditAddTerr from "./modules/components/my-territories/EditAddTerr";
 
 const options = {
   timeout: 5000,
@@ -32,6 +33,7 @@ const Router = () => {
         <Route exact path="/cab" element={<Cab/>}>
           <Route path="profile" element={<MyProfile/>} />
           <Route path="territories" element={<MyTerritories/>} />
+          <Route path="territories/edit_add_terr/:id" element={<EditAddTerr />} />
           <Route path="markers" element={<MyMarkers />} />
           <Route path="markers/edit_add_marker/:id" element={<EditAddMarker />} />
           <Route path="articles" element={<Articles/>} />
