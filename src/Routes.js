@@ -1,4 +1,4 @@
-import {Routes, Route} from "react-router-dom";
+import {Routes, Route, Navigate} from "react-router-dom";
 import {positions, Provider} from "react-alert";
 import AlertTemplate from "react-alert-template-basic";
 
@@ -16,8 +16,13 @@ import MyPrizes from "./modules/components/my-prizes/My-prizes.js"
 import Articles from "./modules/components/articles/Articles.js"
 import ChangePassword from "./modules/components/change-password/Change-password.js"
 import MyTerritories from "./modules/components/my-territories/My-territories.js"
-import EditAddTerr from "./modules/components/my-territories/EditAddTerr";
-import ArticlesWiki from "./modules/pages/articles/Articles-wiki";
+import EditAddTerr from "./modules/components/my-territories/EditAddTerr.js";
+import ArticlesWiki from "./modules/pages/articles/Articles-wiki.js";
+import NotFound from "./modules/pages/not-found/NotFound.js"
+import Mods from "./modules/pages/mods/Mods.js";
+import Statistic from "./modules/pages/statistic/Statistic.js";
+import Maps from "./modules/pages/maps/Maps.js";
+import Support from "./modules/pages/support/Support.js";
 
 const options = {
   timeout: 7000,
@@ -29,6 +34,8 @@ const Router = () => {
   return (
     <Provider template={AlertTemplate} {...options}>
       <Routes>
+        <Route path="*" element={<Navigate to="notFound"/>}/>
+        <Route path="/notFound" element={<NotFound/>}/>
         <Route path="/" element={<General/>}/>
         <Route path="/svgList" element={<SvgList/>}/>
         <Route path="/auth" element={<Auth/>}/>
@@ -46,6 +53,10 @@ const Router = () => {
         <Route path="/regulations" element={<Regulations/>}/>
         <Route path="/adminDashboard" element={<AdminDashboard/>}/>
         <Route path="/articlesWiki" element={<ArticlesWiki/>}/>
+        <Route path="/mods" element={<Mods/>}/>
+        <Route path="/statistic" element={<Statistic/>}/>
+        <Route path="/support" element={<Support/>}/>
+        <Route path="/onlineMaps" element={<Maps/>}/>
       </Routes>
     </Provider>
   );

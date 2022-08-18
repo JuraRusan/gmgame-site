@@ -1,0 +1,28 @@
+@import "../../../Variables.scss";
+
+.main-statistic {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  background: url(../../../bases/assets/Main-background.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  .statistic {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h4 {
+      font-size: 32px;
+      font-weight: 400;
+      color: $color-3;
+      margin: 0 auto;
+    }
+  }
+}

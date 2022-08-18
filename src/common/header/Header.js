@@ -36,10 +36,10 @@ const Header = () => {
               <label htmlFor="two-menu">Полезное</label>
               <ul className="drop">
                 <li className="drop-li"><a href="/articlesWiki">Вики</a></li>
-                <li className="drop-li"><a href="/">Моды</a></li>
-                <li className="drop-li"><a href="/">Онлайн карты</a></li>
-                <li className="drop-li"><a href="/">Статистика</a></li>
-                <li className="drop-li"><a href="/">Поддержать</a></li>
+                <li className="drop-li"><a href="/mods">Моды</a></li>
+                <li className="drop-li"><a href="/onlineMaps">Онлайн карты</a></li>
+                <li className="drop-li"><a href="/statistic">Статистика</a></li>
+                <li className="drop-li"><a href="/support">Поддержать</a></li>
               </ul>
             </li>
             <li className="links-li">
@@ -67,6 +67,7 @@ const Header = () => {
                 <li className="drop-li"><a href="/cab/markers">Мои метки</a></li>
                 <li className="drop-li"><a href="/cab/articles">Статьи</a></li>
                 <li className="drop-li"><a href="/cab/prize">Призы</a></li>
+                <li className="drop-li"><a href="/cab/change_password">Изменить пароль</a></li>
               </ul>
             </li>
           </ul>
