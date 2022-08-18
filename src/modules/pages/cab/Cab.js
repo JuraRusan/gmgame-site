@@ -33,7 +33,7 @@ const Cab = () => {
   const data = resParams.data;
 
   if (resParams.loading) {
-    return <div className="preloader-box">< Triangle wrapperClass="preloader"/></div>
+    return <div className="preloader-box"><Triangle wrapperClass="preloader"/></div>
   }
 
   function setActive(isActive) {

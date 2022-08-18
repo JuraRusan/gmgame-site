@@ -20,8 +20,9 @@ import EditAddTerr from "./modules/components/my-territories/EditAddTerr";
 import ArticlesWiki from "./modules/pages/articles/Articles-wiki";
 
 const options = {
-  timeout: 5000,
-  position: positions.BOTTOM_CENTER
+  timeout: 7000,
+  position: positions.BOTTOM_CENTER,
+  offset: '15px',
 };
 
 const Router = () => {
@@ -32,14 +33,14 @@ const Router = () => {
         <Route path="/svgList" element={<SvgList/>}/>
         <Route path="/auth" element={<Auth/>}/>
         <Route exact path="/cab" element={<Cab/>}>
-          <Route path="profile" element={<MyProfile/>} />
-          <Route path="territories" element={<MyTerritories/>} />
-          <Route path="territories/edit_add_terr/:id" element={<EditAddTerr />} />
-          <Route path="markers" element={<MyMarkers />} />
-          <Route path="markers/edit_add_marker/:id" element={<EditAddMarker />} />
-          <Route path="articles" element={<Articles/>} />
-          <Route path="prize" element={<MyPrizes/>} />
-          <Route path="change_password" element={<ChangePassword/>} />
+          <Route path="profile" element={<MyProfile/>}/>
+          <Route path="territories" element={<MyTerritories/>}/>
+          <Route path="territories/edit_add_terr/:id" element={<EditAddTerr/>}/>
+          <Route path="markers" element={<MyMarkers/>}/>
+          <Route path="markers/edit_add_marker/:id" element={<EditAddMarker/>}/>
+          <Route path="articles" element={<Articles/>}/>
+          <Route path="prize" element={<MyPrizes/>}/>
+          <Route path="change_password" element={<ChangePassword/>}/>
         </Route>
         <Route path="/faq" element={<Faq/>}/>
         <Route path="/regulations" element={<Regulations/>}/>

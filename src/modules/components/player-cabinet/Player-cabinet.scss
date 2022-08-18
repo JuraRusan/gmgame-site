@@ -1,27 +1,29 @@
 @import "../../../Variables.scss";
 
 .player-box {
- display: flex;
- flex-direction: column;
- width: 100%;
- height: 100%;
- max-width: 350px;
- padding-bottom: 15px;
- border-width: 1px;
- border-bottom-style: solid;
- border-image: linear-gradient(to right, rgba(0, 0, 0, 0), $color-3, rgba(0, 0, 0, 0)) 1 0%;
- .img-player {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto 10px auto;
- }
- .h5-name-player {
-  font-weight: 400px;
-  font-size: 22px;
-  color: $color-3;
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 22px;
-  line-height: 22px;
-  text-align: center;
- }
+  height: 100%;
+  max-width: 350px;
+  padding-bottom: 15px;
+  border-width: 1px;
+  border-bottom-style: solid;
+  border-image: linear-gradient(to right, rgba(0, 0, 0, 0), $color-3, rgba(0, 0, 0, 0)) 1 0%;
+
+  .img-player {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 10px auto;
+  }
+
+  .h5-name-player {
+    font-weight: 400px;
+    font-size: 22px;
+    color: $color-3;
+    width: 100%;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+  }
 }

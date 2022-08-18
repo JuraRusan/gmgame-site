@@ -1,305 +1,233 @@
-import React, { useState } from "react";
-import ReactTooltip from "react-tooltip";
+import React, {useState, useEffect} from "react";
+import {useForm} from "react-hook-form";
+import {ErrorMessage} from "@hookform/error-message";
+import AOS from "aos";
 
 import "./Auth-comp.scss";
+import "aos/dist/aos.css";
 
+// import Authcard from "../auth-card/Auth-Card.js";
+import Warn from "../warn/Warn.js";
 import SvgMyProfile from "../../../bases/icons/SvgMyProfile.js";
-import SvgWarn from "../../../bases/icons/SvgWarn.js";
 
 const AuthComponent = () => {
 
-  const GMGame = "Создание заявки на GMGame";
+  useEffect(() => {
+    AOS.init({duration: 1000});
+  }, []);
 
+  const {register, handleSubmit, watch, formState: {errors},} = useForm({mode: "onChange"});
+
+  const titleCreateApplication = "Создание заявки на GMGame";
   const serverUserNameTitle = "Игровой ник *";
-  const passSer = "Пароль для входа на сервер *";
-  const ageSer = "Возраст *";
+  const serverUserPasswordTitle = "Пароль для входа на сервер *";
+  const serverUserAgeTitle = "Возраст *";
+  const serverTypeAkkTitle = "Тип аккаунта *";
+  const serverTypeAkkLicenseTitle = "Лицензия";
+  const serverTypeAkkPirateTitle = "Пиратка";
   const serverUserAboutTitle = "Откуда узнали о проекте *";
-  const serverUserFriendTitle = "Ник друга, если играете с кем-то *";
+  const serverUserFriendTitle = "Ник друга, если играете с кем-то";
   const serverUserInterestsTitle = "Интересы в майнкрафте *";
-  const serverUserBackServersTitle = "Предыдущие серверы *";
+  const serverUserBackServersTitle = "Предыдущие сервера *";
 
   const AttentionAuth = "Относитесь ответственно к заполнению заявки";
-  
   const YesIAgreeRules = "Да я согласен со всей хуйней";
-  const dataTip = "<ul><li>* - Обязательно к заполнению</li><li>Зелёная черта - правильно</li><li>Зелёная черта - не правильно</li></ul>";
 
-  const [outputName, setOutputName] = useState(" - ");
   const [outputImg, setOutputImg] = useState("https://minotar.net/avatar/steve/100");
-  const [outputTypeAkk, setOutputTypeAkk] = useState(" - ");
-  const [outputAge, setOutputAge] = useState(" - ");
-  const [outputMyPlayer, setOutputMyPlayer] = useState(" - ");
-  const [outputServers, setOutputServers] = useState(" - ");
-  const [outputInter, setOutputInter] = useState(" - ");
-  const [outputInfo, setOutputInfo] = useState(" - ");
+  const [outputTypeAkk, setOutputTypeAkk] = useState("");
 
-  function OutputName(event) {
-    return setOutputName(event.target.value || " - ");
+  React.useEffect(() => {
+    const subscription = watch((data) => {
+      let username = "steve";
+
+      if (data.username && data.username.length < 17) {
+        username = data.username;
+      }
+
+      setOutputImg("https://minotar.net/avatar/" + username + "/100");
+      setOutputTypeAkk(data.type_account === "1" ? "лицензия" : "пиратка");
+    });
+
+    return () => {
+      subscription.unsubscribe();
+    };
+  }, [watch]);
+
+  const onSubmit = (data) => console.log(data);
+
+  function ErrorRender(name) {
+    return (
+      <ErrorMessage errors={errors} name={name.name} render={({message}) => <span className="error">{message}</span>}/>
+    );
   }
-  function OutputImg(event) {
-    if (event.target.value === "") {
-      setOutputImg("https://minotar.net/avatar/steve/100");
-    } else {
-      setOutputImg("https://minotar.net/avatar/" + event.target.value + "/100");
-    }
-  }
-  function OutputTypeAkk(event) {
-    // setOutputTypeAkk(event.target.value);
-    if (event.target.value === "0") {
-      setOutputTypeAkk("Лицензия");
-    } else if (event.target.value === "1") {
-      setOutputTypeAkk("Пиратка");
-    } else {
-      setOutputTypeAkk(" - ");
-    }
-  }
-  function OutputAge(event) {
-    setOutputAge(event.target.value);
-  }
-  function OutputNameMyPlayer(event) {
-    setOutputMyPlayer(event.target.value);
-  }
-  function OutputServers(event) {
-    setOutputServers(event.target.value);
-  }
-  function OutputInter(event) {
-    setOutputInter(event.target.value);
-  }
-  function OutputInfo(event) {
-    setOutputInfo(event.target.value);
-  }
-  function resetCard() { }
 
   return (
     <div className="auth-block">
-      <div className="container">
+      <div className="container" data-aos="fade-up">
         <div className="reg-1">
-          <h4 className="title-reg-1 font-custom-2">{GMGame}</h4>
-          <ReactTooltip />
-          <div className="line">
-            <span className="icon-span"><SvgMyProfile width="100%" height="100%" color="#f4f4f4" /></span>
-            <input
-              onInput={OutputName}
-              onChange={OutputImg}
-              className="input-custom"
-              type="text"
-              placeholder={serverUserNameTitle}
-              required
-            />
-            <span
-              data-tip={dataTip}
-              data-text-color="white"
-              data-background-color="rgba(22, 18, 18, 0.555)"
-              data-border="true"
-              data-border-color="rgba(240, 255, 255, 0.541)"
-              data-effect="float"
-              className="war-span"
-              data-html="true"
-            >
-              ?
-            </span>
-          </div>
-          <div className="line">
-            <span className="icon-span">
-              <SvgMyProfile width="100%" height="100%" color="#f4f4f4" />
-            </span>
-            <input
-              className="input-custom"
-              type="text"
-              placeholder={passSer}
-              required
-            />
-            <span
-              data-tip={dataTip}
-              data-text-color="white"
-              data-background-color="rgba(22, 18, 18, 0.555)"
-              data-border="true"
-              data-border-color="rgba(240, 255, 255, 0.541)"
-              data-effect="float"
-              className="war-span"
-              data-html="true"
-            >
-              ?
-            </span>
-          </div>
-          <div className="line">
-            <span className="icon-span">
-              <SvgMyProfile width="100%" height="100%" color="#f4f4f4" />
-            </span>
-            <select
-              className="input-custom"
-              type="text"
-              onChange={OutputTypeAkk}
-            >
-              <option value="">Тип аккаунта *</option>
-              <option value="0">Лицензия</option>
-              <option value="1">Пиратка</option>
-            </select>
-            <span
-              data-tip={dataTip}
-              data-text-color="white"
-              data-background-color="rgba(22, 18, 18, 0.555)"
-              data-border="true"
-              data-border-color="rgba(240, 255, 255, 0.541)"
-              data-effect="float"
-              className="war-span"
-              data-html="true"
-            >
-              ?
-            </span>
-          </div>
-          <div className="line">
-            <span className="icon-span">
-              <SvgMyProfile width="100%" height="100%" color="#f4f4f4" />
-            </span>
-            <input
-              onInput={OutputAge}
-              className="input-custom"
-              type="text"
-              placeholder={ageSer}
-              required
-            />
-            <span
-              data-tip={dataTip}
-              data-text-color="white"
-              data-background-color="rgba(22, 18, 18, 0.555)"
-              data-border="true"
-              data-border-color="rgba(240, 255, 255, 0.541)"
-              data-effect="float"
-              className="war-span"
-              data-html="true"
-            >
-              ?
-            </span>
-          </div>
-          <div className="line">
-            <span className="icon-span">
-              <SvgMyProfile width="100%" height="100%" color="#f4f4f4" />
-            </span>
-            <input
-              onInput={OutputNameMyPlayer}
-              className="input-custom"
-              type="text"
-              placeholder={serverUserFriendTitle}
-              required
-            />
-            <span
-              data-tip={dataTip}
-              data-text-color="white"
-              data-background-color="rgba(22, 18, 18, 0.555)"
-              data-border="true"
-              data-border-color="rgba(240, 255, 255, 0.541)"
-              data-effect="float"
-              className="war-span"
-              data-html="true"
-            >
-              ?
-            </span>
-          </div>
-          <div className="line">
-            <span className="icon-span">
-              <SvgMyProfile width="100%" height="100%" color="#f4f4f4" />
-            </span>
-            <textarea
-              onChange={OutputServers}
-              className="input-custom"
-              type="text"
-              rows="1"
-              placeholder={serverUserAboutTitle}
-              required
-            />
-            <span
-              data-tip={dataTip}
-              data-text-color="white"
-              data-background-color="rgba(22, 18, 18, 0.555)"
-              data-border="true"
-              data-border-color="rgba(240, 255, 255, 0.541)"
-              data-effect="float"
-              className="war-span"
-              data-html="true"
-            >
-              ?
-            </span>
-          </div>
-          <div className="line">
-            <span className="icon-span">
-              <SvgMyProfile width="100%" height="100%" color="#f4f4f4" />
-            </span>
-            <textarea
-              onChange={OutputInter}
-              className="input-custom"
-              type="text"
-              rows="1"
-              placeholder={serverUserInterestsTitle}
-              required
-            />
-            <span
-              data-tip={dataTip}
-              data-text-color="white"
-              data-background-color="rgba(22, 18, 18, 0.555)"
-              data-border="true"
-              data-border-color="rgba(240, 255, 255, 0.541)"
-              data-effect="float"
-              className="war-span"
-              data-html="true"
-            >
-              ?
-            </span>
-          </div>
-          <div className="line">
-            <span className="icon-span">
-              <SvgMyProfile width="100%" height="100%" color="#f4f4f4" />
-            </span>
-            <textarea
-              onChange={OutputInfo}
-              className="input-custom"
-              type="text"
-              rows="1"
-              placeholder={serverUserBackServersTitle}
-              required
-            />
-            <span
-              data-tip={dataTip}
-              data-text-color="white"
-              data-background-color="rgba(22, 18, 18, 0.555)"
-              data-border="true"
-              data-border-color="rgba(240, 255, 255, 0.541)"
-              data-effect="float"
-              className="war-span"
-              data-html="true"
-            >
-              ?
-            </span>
-          </div>
-          <div className="warn-block">
-            <span><SvgWarn width="24px" height="24px" color="#f4f4f4"/></span>
-            <h4 className="war-h4-auth">{AttentionAuth}</h4>
-          </div>
+          <h4 className="title-reg-1 font-custom-2">{titleCreateApplication}</h4>
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <div className="line">
+              <span className="icon-span">
+                <SvgMyProfile width="100%" height="100%" color="#f4f4f4"/>
+              </span>
+              <input
+                className="input-custom"
+                type="text"
+                placeholder={serverUserNameTitle}
+                {...register("username", {
+                  required: {value: true, message: "Обязательное поле"},
+                  maxLength: {value: 16, message: "Слишком длинный логин"},
+                  pattern: {
+                    value: /^[a-zA-Z0-9_]+$/,
+                    message: "Недопустимые символы",
+                  },
+                })}
+              />
+            </div>
+            <ErrorRender name="username"/>
+            <div className="line">
+              <span className="icon-span">
+                <SvgMyProfile width="100%" height="100%" color="#f4f4f4"/>
+              </span>
+              <input
+                className="input-custom"
+                type="password"
+                placeholder={serverUserPasswordTitle}
+                {...register("password", {
+                  required: {value: true, message: "Обязательное поле"},
+                })}
+              />
+            </div>
+            <ErrorRender name="password"/>
+            <div className="line">
+              <span className="icon-span">
+                <SvgMyProfile width="100%" height="100%" color="#f4f4f4"/>
+              </span>
+              <select
+                className="input-custom"
+                type="text"
+                {...register("type_account", {
+                  required: {value: true, message: "Обязательное поле"},
+                })}
+              >
+                <option value=" ">{serverTypeAkkTitle}</option>
+                <option value="1">{serverTypeAkkLicenseTitle}</option>
+                <option value="0">{serverTypeAkkPirateTitle}</option>
+              </select>
+            </div>
+            <ErrorRender name="type_account"/>
+            <div className="line">
+              <span className="icon-span">
+                <SvgMyProfile width="100%" height="100%" color="#f4f4f4"/>
+              </span>
+              <input
+                className="input-custom"
+                type="text"
+                placeholder={serverUserAgeTitle}
+                {...register("age", {
+                  required: {value: true, message: "Обязательное поле"},
+                  pattern: {value: /^[0-9]+$/, message: "Только цифры"},
+                })}
+              />
+            </div>
+            <ErrorRender name="age"/>
+            <div className="line">
+              <span className="icon-span">
+                <SvgMyProfile width="100%" height="100%" color="#f4f4f4"/>
+              </span>
+              <input
+                className="input-custom"
+                type="text"
+                placeholder={serverUserFriendTitle}
+                {...register("friend_name")}
+              />
+            </div>
+            <div className="line">
+              <span className="icon-span">
+                <SvgMyProfile width="100%" height="100%" color="#f4f4f4"/>
+              </span>
+              <textarea
+                className="input-custom"
+                type="text"
+                rows="4"
+                placeholder={serverUserAboutTitle}
+                {...register("about", {
+                  required: {value: true, message: "Обязательное поле"},
+                })}
+              />
+            </div>
+            <ErrorRender name="about"/>
+            <div className="line">
+              <span className="icon-span">
+                <SvgMyProfile width="100%" height="100%" color="#f4f4f4"/>
+              </span>
+              <textarea
+                className="input-custom"
+                type="text"
+                rows="4"
+                placeholder={serverUserInterestsTitle}
+                {...register("interests", {
+                  required: {value: true, message: "Обязательное поле"},
+                })}
+              />
+            </div>
+            <ErrorRender name="interests"/>
+            <div className="line">
+              <span className="icon-span">
+                <SvgMyProfile width="100%" height="100%" color="#f4f4f4"/>
+              </span>
+              <textarea
+                className="input-custom"
+                type="text"
+                rows="4"
+                placeholder={serverUserBackServersTitle}
+                {...register("back_servers", {
+                  required: {value: true, message: "Обязательное поле"},
+                })}
+              />
+            </div>
+            <ErrorRender name="back_servers"/>
+          </form>
+          <Warn inf={AttentionAuth}/>
         </div>
         <div className="reg-2">
           <div className="check-block">
-            <input type="checkbox" id="box-1" />
+            <input
+              type="checkbox"
+              id="box-1"
+              {...register("checkbox", {
+                required: {value: true, message: "Обязательное подтверждение"},
+              })} />
             <label for="box-1">{YesIAgreeRules}</label>
+            <ErrorRender name="checkbox"/>
           </div>
         </div>
       </div>
-      <div className="card-visual">
+      {watch("checkbox") && document.getElementById("submitButton").classList.add("card-button-show")}
+      {watch("username") && document.getElementById("card-visual").classList.add("card-visual-show")}
+      {/* <Authcard /> */}
+      <div id="card-visual" className="card-visual">
         <div className="card-vis-block">
-          <button className="reset" onClick={resetCard}>Очистить</button>
           <div className="block-l-1">
             <img className="player-img" src={outputImg} alt="avatar"></img>
             <div className="player-info-card-block">
-              <p className="player-inf">Мой ник в игре: <label>{outputName}</label></p>
-              <p className="player-inf">Мой возраст: <label>{outputAge}</label></p>
+              <p className="player-inf">Мой ник в игре: <label>{watch("username")}</label></p>
+              <p className="player-inf">Мой возраст: <label>{watch("age")}</label></p>
               <p className="player-inf">Тип аккаунта: <label>{outputTypeAkk}</label></p>
-              <p className="player-inf">Ник друга с которым я играю: <label>{outputMyPlayer}</label></p>
+              <p className="player-inf">Ник друга с которым я играю: <label>{watch("friend_name")}</label></p>
             </div>
           </div>
           <div className="block-l-2">
-            <p className="player-inf">Мои прошлые серверы: <label>{outputServers}</label></p>
-            <p className="player-inf">Мои интересы в майнкрафте: <label>{outputInter}</label></p>
-            <p className="player-inf">Я узнал о проекте: <label>{outputInfo}</label></p>
+            <p className="player-inf">Мои прошлые сервера: <label>{watch("back_servers")}</label></p>
+            <p className="player-inf">Мои интересы в майнкрафте: <label>{watch("interests")}</label></p>
+            <p className="player-inf">Я узнал о проекте: <label>{watch("about")}</label></p>
           </div>
         </div>
+        <from className="margin-block">
+          <input id="submitButton" type="Submit" className="style-button-auth font-custom-3"
+                 onClick={handleSubmit((d) => console.log(d))}/>
+        </from>
       </div>
     </div>
   );

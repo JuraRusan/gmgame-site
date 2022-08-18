@@ -90,44 +90,37 @@ const EditAddTerr = (params) => {
     <div className="box-marker-add">
       <div className="colums-add-1">
         <div className="col-row">
-          {/* <h5 className="input-name font-custom-2" onClick={() => params.setIsShowMarker(false)}>вертать в зад</h5> */}
-          <button onClick={() => navigate(-1)} className="go-back font-custom-2">{"<--"}</button>
-          <h5 className="input-name font-custom-2">Название</h5>
-          <input className="input-str font-custom-2" defaultValue={formName}
-                 onChange={(e) => setFormName(e.target.value)}/>
+          <button onClick={() => navigate(-1)} className="go-back">{"<--вертать в зад"}</button>
+          <h5 className="input-name">Название</h5>
+          <input className="input-str" defaultValue={formName} onChange={(e) => setFormName(e.target.value)}/>
         </div>
         <div className="col-row">
-          <h5 className="input-name font-custom-2">Сервер</h5>
-          <select className="input-str font-custom-2" onChange={(e) => setFormServer(e.target.value)}
-                  defaultValue={formServer}>
+          <h5 className="input-name">Сервер</h5>
+          <select className="input-str" onChange={(e) => setFormServer(e.target.value)} defaultValue={formServer}>
             <option className="option-list" value="gmgame">Основной мир</option>
             <option className="option-list" value="farm">Фермерский мир</option>
           </select>
         </div>
         <div className="coord">
-          <h5 className="input-name font-custom-2">Координаты</h5>
+          <h5 className="input-name">Координаты</h5>
           <div className="block-row">
             <div className="col-row-custom">
-              <h5 className="input-name font-custom-2">StartX</h5>
-              <input className="input-str-custom font-custom-2" defaultValue={formXStart}
-                     onChange={(e) => setFormXStart(e.target.value)}/>
+              <h5 className="input-name">StartX</h5>
+              <input className="input-str-custom" defaultValue={formXStart} onChange={(e) => setFormXStart(e.target.value)}/>
             </div>
             <div className="col-row-custom">
-              <h5 className="input-name font-custom-2">StopX</h5>
-              <input className="input-str-custom font-custom-2" defaultValue={formXStop}
-                     onChange={(e) => setFormXStop(e.target.value)}/>
+              <h5 className="input-name">StopX</h5>
+              <input className="input-str-custom" defaultValue={formXStop} onChange={(e) => setFormXStop(e.target.value)}/>
             </div>
           </div>
           <div className="block-row">
             <div className="col-row-custom">
-              <h5 className="input-name font-custom-2">StartZ</h5>
-              <input className="input-str-custom font-custom-2" defaultValue={formZStart}
-                     onChange={(e) => setFormZStart(e.target.value)}/>
+              <h5 className="input-name">StartZ</h5>
+              <input className="input-str-custom" defaultValue={formZStart} onChange={(e) => setFormZStart(e.target.value)}/>
             </div>
             <div className="col-row-custom">
-              <h5 className="input-name font-custom-2">StopZ</h5>
-              <input className="input-str-custom font-custom-2" defaultValue={formZStop}
-                     onChange={(e) => setFormZStop(e.target.value)}/>
+              <h5 className="input-name">StopZ</h5>
+              <input className="input-str-custom" defaultValue={formZStop} onChange={(e) => setFormZStop(e.target.value)}/>
             </div>
           </div>
           <Warn inf={AttentionCoords}/>
@@ -142,11 +135,8 @@ const EditAddTerr = (params) => {
       </div>
       <div className="colums-add-2">
         {id === 'new'
-          ? <iframe title="map" src="https://map.gmgame.ru/#/-7/64/-54/-4/GMGameWorld%20-%20overworld/over" width="100%"
-                    height="100%"/>
-          : <iframe title="map"
-                    src={`https://map.gmgame.ru/#/${data.terr.xStart}/64/${data.terr.zStart}/-4/${data.terr.world_name}/over`}
-                    width="100%" height="100%"/>
+          ? <iframe title="map" src="https://map.gmgame.ru/#/-7/64/-54/-4/GMGameWorld%20-%20overworld/over" width="100%" height="100%"/>
+          : <iframe title="map" src={`https://map.gmgame.ru/#/${data.terr.xStart}/64/${data.terr.zStart}/-4/${data.terr.world_name}/over`} width="100%" height="100%"/>
         }
       </div>
     </div>

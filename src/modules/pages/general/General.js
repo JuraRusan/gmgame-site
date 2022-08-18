@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, {useEffect} from "react";
 import AOS from "aos";
 
 import "./General.scss";
@@ -19,7 +19,9 @@ import Image6 from "../../../bases/assets/6.png";
 
 const General = () => {
 
-  useEffect(() => { AOS.init({ duration: 1000 });}, []);
+  useEffect(() => {
+    AOS.init({duration: 1000});
+  }, []);
 
   const serverInformation1 = "Бесплатный строительно-выживательный сервер.";
   const serverInformation2 = "Без приватов и донат магазина.";
@@ -54,7 +56,7 @@ const General = () => {
   return (
     <div className="main">
       <div className="row-1">
-        <Header />
+        <Header/>
         <div className="main-content">
           <h1 className="main-h1 font-custom-1" data-aos="fade-up">
             <span className="colored-title-span-1">G</span>
@@ -63,7 +65,7 @@ const General = () => {
           <h3 className="main-h3" data-aos="fade-up">{serverInformation1}</h3>
           <h3 className="main-h3" data-aos="fade-up">{serverInformation2}</h3>
           <div className="button-container" data-aos="fade-up">
-            <Button />
+            <Button/>
           </div>
         </div>
         <div className="lin-bot"></div>
@@ -75,12 +77,12 @@ const General = () => {
             <h4 className="h4-info h4-left">{serverConcept}</h4>
           </div>
           <div className="info-img">
-            <img className='info-img-wight' src={Image1} alt="" />
+            <img className='info-img-wight' src={Image1} alt=""/>
           </div>
         </div>
         <div className="content-info" data-aos="fade-up">
           <div className="info-img">
-            <img className='info-img-wight' src={Image2} alt="" />
+            <img className='info-img-wight' src={Image2} alt=""/>
           </div>
           <div className="info-style">
             <h2 className="h2-info font-custom-3 h2-right">{serverBlockTitleCommunity}</h2>
@@ -93,7 +95,7 @@ const General = () => {
             <h4 className="h4-info h4-left">{serverGameProcess}</h4>
           </div>
           <div className="info-img">
-            <img className='info-img-wight' src={Image3} alt="" />
+            <img className='info-img-wight' src={Image3} alt=""/>
           </div>
         </div>
       </div>
@@ -104,24 +106,24 @@ const General = () => {
           <h4 className="title-h4">{serverInformationTps}</h4>
         </div>
         <div className="block-w" data-aos="fade-up">
-          <div className="hover-me-block"><SvgHoverMe width="100%" height="100%" color="#292929" /></div>
-          <World name={worldNameRes} src={Image4} inf={serverInformationRes} />
-          <World name={worldNameGmgame} src={Image5} inf={serverInformationGmgame} />
-          <World name={worldNameFarm} src={Image6} inf={serverInformationFarm} />
+          <div className="hover-me-block"><SvgHoverMe width="100%" height="100%" color="#292929"/></div>
+          <World name={worldNameRes} src={Image4} inf={serverInformationRes}/>
+          <World name={worldNameGmgame} src={Image5} inf={serverInformationGmgame}/>
+          <World name={worldNameFarm} src={Image6} inf={serverInformationFarm}/>
         </div>
         <div className="lin-bot"></div>
       </div>
       <div className="row-4">
         <h3 className="mode-title font-custom-3" data-aos="fade-up">{serverModeServer}</h3>
         <div className="mode">
-          <Mode name={survival} info={survivalInfo} />
-          <Mode name={skyBlock} info={skyBlockInfo} />
-          <Mode name={creative} info={creativeInfo} />
+          <Mode name={survival} info={survivalInfo}/>
+          <Mode name={skyBlock} info={skyBlockInfo}/>
+          <Mode name={creative} info={creativeInfo}/>
         </div>
         <div className="lin-bot-two"></div>
       </div>
       <div className="row-5">
-        <Fotter />
+        <Fotter/>
       </div>
     </div>
   );

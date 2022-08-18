@@ -7,7 +7,7 @@ const MyPrizes = () => {
 
   return (
     <div className="box-prizes">
-      <h4 className="prizes-h4 font-custom-2">У Вас 100500 выигрышей</h4>
+      <h4 className="prizes-h4">У Вас 100500 выигрышей</h4>
       <div className="all-prizes">
         <div className="one-prizes">
           <div className="img-block">

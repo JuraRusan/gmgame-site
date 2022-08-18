@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, {useEffect} from "react";
 import AOS from "aos";
 
 import "./Fotter.scss";
@@ -9,19 +9,21 @@ import SvgInstagram from "../../bases/icons/SvgInstagram.js";
 import SvgVk from "../../bases/icons/SvgVk.js";
 
 const Fotter = () => {
-  useEffect(() => { AOS.init({ duration: 1000 });}, []);
+  useEffect(() => {
+    AOS.init({duration: 1000});
+  }, []);
 
   return (
     <div className="fotter">
       <div className="rows-bt" data-aos="zoom-in">
         <a className="bt-links" href="https://vk.com/gmgameru">
-          <SvgVk width="40px" height="40px" color="black" />
+          <SvgVk width="40px" height="40px" color="black"/>
         </a>
         <a className="bt-links" href="https://www.instagram.com/gmgameserver/">
-          <SvgInstagram width="40px" height="40px" color="black" />
+          <SvgInstagram width="40px" height="40px" color="black"/>
         </a>
         <a className="bt-links" href="https://discord.gg/cAM6tUYEuX">
-          <SvgDiscord width="40px" height="40px" color="black" />
+          <SvgDiscord width="40px" height="40px" color="black"/>
         </a>
       </div>
       <div className="gmgame-title-f">

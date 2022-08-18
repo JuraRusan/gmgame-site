@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from 'react'
+import {useEffect, useState, useRef} from 'react'
 import axios from "axios";
 
 const useAxios = (url, method, payload) => {
@@ -23,18 +23,18 @@ const useAxios = (url, method, payload) => {
         });
         setData(response.data);
       } catch (error) {
-          if (error.response.status === 401){
-              window.location.replace("/login")
-          }
+        if (error.response.status === 401) {
+          window.location.replace("/login")
+        }
         setError(error.message);
       } finally {
         setLoaded(true);
         setLoading(false);
       }
     })();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [method, url]);
-  return { cancel: cancel, data: data, error: error, loaded: loaded, loading: loading };
+  return {cancel: cancel, data: data, error: error, loaded: loaded, loading: loading};
 };
 
 function sendRequest(url, method, payload) {
@@ -50,7 +50,7 @@ function sendRequest(url, method, payload) {
     } else {
       data = JSON.parse(xhr.response);
     }
-  } catch(err) {
+  } catch (err) {
     error = err.message;
   }
   // (async () => {
@@ -72,7 +72,7 @@ function sendRequest(url, method, payload) {
   //   }
   // })();
 
-  return { body: data, error: error};
+  return {body: data, error: error};
 }
 
 export {useAxios, sendRequest};

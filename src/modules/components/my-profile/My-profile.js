@@ -1,7 +1,7 @@
 import React from "react";
-import { gsap } from "gsap";
+import {gsap} from "gsap";
 import {useAxios} from '../../../DataProvider';
-import { Triangle } from  'react-loader-spinner';
+import {Triangle} from 'react-loader-spinner';
 
 import "./My-profile.scss";
 
@@ -18,7 +18,6 @@ const MyProfile = () => {
   }
 
   const data = resParams.data;
-
 
 
   // const user = params.user;
@@ -94,11 +93,11 @@ const MyProfile = () => {
         "-=1.4"
       )
       .to(".scanner", {
-        x: 310,
-        duration: 1,
-        display: "none",
-        ease: "none",
-      },
+          x: 310,
+          duration: 1,
+          display: "none",
+          ease: "none",
+        },
         "-=1"
       )
       .to(".scanner", {
@@ -128,7 +127,9 @@ const MyProfile = () => {
   return (
     <div className="profile-block">
       <div className="ds-link">
-        <img className="ds-img" src={`https://cdn.discordapp.com/avatars/${data.discordUser.id}/${data.discordUser.avatar}.png`} alt="none"></img>
+        <img className="ds-img"
+             src={`https://cdn.discordapp.com/avatars/${data.discordUser.id}/${data.discordUser.avatar}.png`}
+             alt="none"></img>
         <h5 className="h5-ds">{data.discordUser.username}@{data.discordUser.discriminator}</h5>
       </div>
       <div className="prof-block">
@@ -137,7 +138,7 @@ const MyProfile = () => {
 
           <div className="label-cout">
             <div className="font-custom-2">{profileServerAdressOutput}</div>
-            <button className="copy-button" onClick={activateAnimated}> </button>
+            <button className="copy-button" onClick={activateAnimated}></button>
             <div className="scanner"></div>
           </div>
         </div>

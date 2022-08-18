@@ -1,26 +1,27 @@
 @import "../../../Variables.scss";
 
 .main-dashboard {
- display: flex;
- flex-direction: column;
- width: auto;
- height: auto;
- background: url(../../../bases/assets/bg4.png);
- background-repeat: no-repeat;
- background-position-x: center;
- background-size: cover;
- background-attachment: fixed;
- .box-dashboard {
-  width: 96%;
-  height: auto;
-  min-height: 800px;
-  background: $color-11;
-  margin: 0 auto 75px auto;
-  top: -175px;
-  position: relative;
-  padding: 50px;
   display: flex;
-  flex-direction: row;
-  z-index: 2000;
- }
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  background: url(../../../bases/assets/bg4.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  .box-dashboard {
+    width: 96%;
+    height: auto;
+    min-height: 800px;
+    background: $color-11;
+    margin: 0 auto 75px auto;
+    top: -175px;
+    position: relative;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    z-index: 2000;
+  }
 }

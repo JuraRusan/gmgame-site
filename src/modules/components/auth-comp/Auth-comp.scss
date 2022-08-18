@@ -19,6 +19,7 @@
     margin-top: 7%;
   }
 }
+
 @keyframes opacityButton {
   0% {
     opacity: 0;
@@ -27,10 +28,11 @@
   }
   100% {
     opacity: 1;
-    height: 75px;    
+    height: 75px;
     width: 250px;
   }
 }
+
 @keyframes shine-1 {
   from {
     margin-left: 0;
@@ -51,6 +53,7 @@
   margin-left: auto;
   margin-right: auto;
   z-index: 2000;
+
   .error {
     bottom: 25px;
     width: auto;
@@ -62,6 +65,7 @@
     color: $color-9;
     transition: all 0.85;
   }
+
   .container {
     width: auto;
     height: auto;
@@ -70,9 +74,11 @@
     justify-content: flex-start;
     border-radius: 15px;
     background: rgba(0, 0, 0, 0.5);
+
     .reg-1 {
       width: auto;
       padding: 45px 15px 0 15px;
+
       .title-reg-1 {
         text-align: center;
         width: auto;
@@ -83,9 +89,11 @@
         font-weight: 400;
         margin-bottom: 15px;
       }
+
       form {
         display: flex;
         flex-direction: column;
+
         .line {
           position: relative;
           margin-top: 10px;
@@ -97,17 +105,18 @@
           border-width: 2px;
           border-bottom-style: solid;
           border-image: linear-gradient(
-              to right,
-              rgba(0, 0, 0, 0),
-              $color-3,
-              rgba(0, 0, 0, 0)
-            )
-            1 0%;
+                          to right,
+                          rgba(0, 0, 0, 0),
+                          $color-3,
+                          rgba(0, 0, 0, 0)
+          ) 1 0%;
+
           .icon-span {
             width: 50px;
             height: 50px;
             padding: 8px;
           }
+
           .input-custom {
             min-width: 500px;
             max-width: 500px;
@@ -122,11 +131,13 @@
             font-weight: 400;
             color: $color-8;
             transition: all 0.5 ease;
+
             :active,
             :hover {
               outline: none;
               border: none;
             }
+
             option {
               color: $color-12;
               background-color: $color-2;
@@ -136,21 +147,25 @@
         }
       }
     }
+
     .reg-2 {
       width: auto;
       display: flex;
       flex-direction: row;
       justify-content: center;
       padding: 15px;
+
       .check-block {
         z-index: 500;
         margin: 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
+
         input[type="checkbox"] {
           display: none;
         }
+
         input[type="checkbox"] + label {
           display: block;
           position: relative;
@@ -159,9 +174,11 @@
           color: $color-3;
           cursor: pointer;
         }
+
         input[type="checkbox"] + label:last-child {
           margin-bottom: 0;
         }
+
         input[type="checkbox"] + label:before {
           content: "";
           display: block;
@@ -174,6 +191,7 @@
           opacity: 0.6;
           transition: all 0.12s, border-color 0.08s;
         }
+
         input[type="checkbox"]:checked + label:before {
           width: 10px;
           top: -5px;
@@ -195,6 +213,7 @@
     display: flex;
     flex-direction: column;
     opacity: 0;
+
     .card-vis-block {
       display: flex;
       flex-direction: column;
@@ -206,12 +225,14 @@
       border-radius: 15px;
       background: $color-10;
       position: relative;
+
       .block-l-1 {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         width: auto;
         height: auto;
+
         .player-img {
           width: 130px;
           height: 130px;
@@ -220,21 +241,25 @@
           margin: 5px;
           padding: 5px;
         }
+
         .player-info-card-block {
           width: 100%;
           height: auto;
           min-height: 130px;
         }
       }
+
       .block-l-2 {
         display: flex;
         flex-direction: column;
         width: auto;
         height: auto;
-        .hidden{
+
+        .hidden {
           opacity: 0;
         }
       }
+
       .player-inf {
         color: $color-3;
         padding: 5px;
@@ -243,16 +268,19 @@
         font-weight: 400;
         width: auto;
         height: auto;
+
         label {
           color: $color-12;
         }
       }
     }
-    .margin-block{
+
+    .margin-block {
       display: flex;
       flex-direction: row;
       width: 100%;
       height: auto;
+
       .style-button-auth {
         width: 300px;
         height: 75px;
@@ -268,6 +296,7 @@
         cursor: pointer;
         opacity: 0;
       }
+
       .style-button-auth:before {
         content: " ";
         display: block;
@@ -281,6 +310,7 @@
         transition: all 0.85s ease-in-out;
         animation: shine-1 3s infinite ease;
       }
+
       .style-button-auth:after {
         content: " ";
         display: block;
@@ -293,14 +323,16 @@
         transform: rotate(-45deg);
         transition: all 0.85s ease-in-out;
         animation: shine-1 3s infinite ease;
-      } 
+      }
     }
   }
+
   .card-visual-show {
     animation: opacityBlock 0.85s both ease;
   }
+
   .card-button-show {
     animation: opacityButton 0.85s both ease;
-  } 
+  }
 }
 

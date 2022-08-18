@@ -1,4 +1,4 @@
-import { BrowserRouter as Router } from "react-router-dom";
+import {BrowserRouter as Router} from "react-router-dom";
 import Routes from "./Routes";
 
 import "./App.scss";
@@ -6,7 +6,7 @@ import "./App.scss";
 function App() {
   return (
     <Router>
-      <Routes />
+      <Routes/>
     </Router>
   );
 }

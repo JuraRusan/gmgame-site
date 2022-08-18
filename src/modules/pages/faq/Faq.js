@@ -28,15 +28,13 @@ const Faq = () => {
       <div className="faq-box" data-aos="fade-up">
         <div className="title-faq" data-aos="fade-up">
           <span><SvgFaq width="100%" height="100%" color="#f4f4f4"/></span>
-          <h2 className="h2-faq font-custom-2">
-            Часто задаваемые вопросы
-          </h2>
+          <h2 className="h2-faq font-custom-2">Часто задаваемые вопросы</h2>
         </div>
         <div className="wrapper-tabs-faq">
           <div className="tabs" data-aos="fade-up">
             {tabsFaqList.map((tab, i) => (
               <button
-                className="btn-click font-custom-2"
+                className="btn-click"
                 key={i}
                 id={tab.id}
                 disabled={currentTab === i}
@@ -49,7 +47,7 @@ const Faq = () => {
           <div className="content" data-aos="fade-up">
             <div className="div-id-tab">
               <div className="tab-one">
-                <h3 className="title font-custom-2">{selectedTab.tabTitle}</h3>
+                <h3 className="title">{selectedTab.tabTitle}</h3>
                 <p className="info">{selectedTab.titleInf}</p>
                 <div className="lists">
                   {selectedTab.itfContent.map((el) => {
