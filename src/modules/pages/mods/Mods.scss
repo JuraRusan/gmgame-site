@@ -1,0 +1,31 @@
+@import "../../../Variables.scss";
+
+.main-mods {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  background: url(../../../bases/assets/Main-background.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  .box-mods {
+    width: 100%;
+    height: auto;
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .h3-mods {
+      width: auto;
+      height: auto;
+      margin: 0 auto;
+      font-weight: 400;
+      font-size: 32px;
+      color: $color-3;
+    }
+  }
+}

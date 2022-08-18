@@ -13,7 +13,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background: url(../../../bases/assets/bg4.png);
+    background: url(../../../bases/assets/Main-background.png);
 
     .main-content {
       display: flex;
@@ -62,6 +62,7 @@
       .button-container {
         display: flex;
         flex-direction: row;
+        justify-content: center;
         width: 100%;
         margin-top: 55px;
         height: 75px;
