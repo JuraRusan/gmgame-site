@@ -22,6 +22,7 @@
     margin-top: 10px;
     line-height: 30px;
     font-size: 30px;
+    font-weight: 400;
     color: $color-3;
     text-align: center;
   }
@@ -80,6 +81,12 @@
   top: 0;
 }
 
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1400px) {
+}
+
 @media screen and (max-width: 1280px) {
   .worlds {
     width: auto;
@@ -102,6 +109,7 @@
 
     .world-img-text {
       min-width: 300px;
+      max-width: 350px;
 
       img {
         width: 300px;
@@ -114,3 +122,46 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 960px) {
+}
+
+@media screen and (max-width: 768px) {
+  .worlds {
+
+    .circle {
+      width: 22px;
+      height: 22px;
+    }
+
+    .world-name {
+      font-size: 24px;
+    }
+
+    .hr-90 {
+      height: 70px;
+    }
+
+    .world-img-text {
+      min-width: 300px;
+
+      img {
+        width: 275px;
+        height: 275px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+}
+
+@media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 360px) {
+}
+

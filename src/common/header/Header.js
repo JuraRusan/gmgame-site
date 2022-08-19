@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <div className="header" data-aos="fade-down">
       <div className="menu">
-        {/* <div id="toggle" onClick={toggle()}></div> */}
+        {/*<div id="toggle" onClick={toggle()}></div>*/}
         <div className="content-menu">
           <ul className="links" id="links">
             <li className="links-li li-custom-right links-li-ho-hover">
