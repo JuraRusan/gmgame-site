@@ -1,4 +1,4 @@
-import {Routes, Route, Navigate} from "react-router-dom";
+import {Routes, Route} from "react-router-dom";
 import {positions, Provider} from "react-alert";
 import AlertTemplate from "react-alert-template-basic";
 
@@ -37,7 +37,7 @@ const Router = () => {
         <Route path="/" element={<General/>}/>
         {/* <Route path='/login' component={() => window.location.replace('http://193.124.206.25:5001/login')}/> */}
         <Route path="/svgList" element={<SvgList/>}/>
-        {/* <Route path="/auth" element={<Auth/>}/> */}
+        {/*<Route path="/auth" element={<Auth/>}/>*/}
         <Route exact path="/cab" element={<Cab/>}>
           <Route path="profile" element={<MyProfile/>}/>
           <Route path="territories" element={<MyTerritories/>}/>
