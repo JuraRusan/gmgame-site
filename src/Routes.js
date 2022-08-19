@@ -3,7 +3,7 @@ import {positions, Provider} from "react-alert";
 import AlertTemplate from "react-alert-template-basic";
 
 import General from "./modules/pages/general/General.js";
-import Auth from "./modules/pages/auth/Auth.js";
+// import Auth from "./modules/pages/auth/Auth.js";
 import SvgList from "./modules/pages/svg-list/Svg-list.js";
 import Cab from "./modules/pages/cab/Cab.js";
 import Faq from "./modules/pages/faq/Faq.js";
@@ -34,11 +34,10 @@ const Router = () => {
   return (
     <Provider template={AlertTemplate} {...options}>
       <Routes>
-        <Route path="*" element={<Navigate to="notFound"/>}/>
-        <Route path="/notFound" element={<NotFound/>}/>
         <Route path="/" element={<General/>}/>
+        {/* <Route path='/login' component={() => window.location.replace('http://193.124.206.25:5001/login')}/> */}
         <Route path="/svgList" element={<SvgList/>}/>
-        <Route path="/auth" element={<Auth/>}/>
+        {/* <Route path="/auth" element={<Auth/>}/> */}
         <Route exact path="/cab" element={<Cab/>}>
           <Route path="profile" element={<MyProfile/>}/>
           <Route path="territories" element={<MyTerritories/>}/>
@@ -57,6 +56,7 @@ const Router = () => {
         <Route path="/statistic" element={<Statistic/>}/>
         <Route path="/support" element={<Support/>}/>
         <Route path="/onlineMaps" element={<Maps/>}/>
+        <Route exac path="*" element={<NotFound/>}/>
       </Routes>
     </Provider>
   );

@@ -1,8 +1,10 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useContext} from "react";
 import AOS from "aos";
-import {useAxios} from '../../../DataProvider';
+// import {useAxios} from '../../../DataProvider';
 import {NavLink, Outlet} from "react-router-dom";
-import {Triangle} from 'react-loader-spinner';
+import {UserContext} from '../../../Context';
+// import {Triangle} from 'react-loader-spinner';
+import { Navigate } from "react-router-dom";
 
 import "./Cab.scss";
 import "aos/dist/aos.css";
@@ -13,11 +15,13 @@ import PlayerCabinet from "../../components/player-cabinet/Player-cabinet.js";
 import Auth from "../../../modules/pages/auth/Auth.js";
 
 const Cab = () => {
-  const resParams = useAxios(
-    "/api/me/",
-    'GET',
-    {}
-  );
+  const user = useContext(UserContext);
+  console.log(user)
+  // const resParams = useAxios(
+  //   "/api/me/",
+  //   'GET',
+  //   {}
+  // );
 
   useEffect(() => {
     AOS.init({duration: 1000});
@@ -31,13 +35,17 @@ const Cab = () => {
   const profileMenuMyChangePassword = "Изменить пароль";
   const profileMenuMyGoOut = "Выйти";
 
-  const data = resParams.data;
+  // const data = resParams.data;
 
-  if (resParams.loading) {
-    return <div className="preloader-box"><Triangle wrapperClass="preloader"/></div>
+  // if (resParams.loading) {
+  //   return <div className="preloader-box"><Triangle wrapperClass="preloader"/></div>
+  // }
+  console.log(user.discordUser)
+  if (user.discordUser === 'not_auth') {
+    return <Navigate to="/login" replace={true} />
   }
 
-  if (data.user === 'not_found') {
+  if (user.serverUser === 'not_found') {
     return <Auth />
   }
 
@@ -50,7 +58,7 @@ const Cab = () => {
       <Header/>
       <div className="box">
         <div className="col-1">
-          <PlayerCabinet {...data.user} />
+          <PlayerCabinet {...UserContext.userServer} />
           <div className="menu-cabinet">
             <div className="m1">
               <NavLink to="profile" className={({ isActive }) => setActive(isActive)}>{profileMenuMyProfile}</NavLink>
