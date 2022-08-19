@@ -118,7 +118,7 @@
     }
 
     .inf-text {
-      font-size: 16px;
+      font-size: 15px;
     }
   }
 }
@@ -157,6 +157,38 @@
 }
 
 @media screen and (max-width: 640px) {
+  .worlds {
+    .circle {
+      width: 20px;
+      height: 20px;
+      border: 3px solid $color-3;
+    }
+
+    .world-name {
+      font-size: 22px;
+    }
+
+    .hr-90 {
+      height: 65px;
+    }
+
+    .world-img-text {
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 15px;
+
+      img {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+      }
+
+      .inf-text {
+        font-size: 14px;
+      }
+    }
+  }
+
 }
 
 @media screen and (max-width: 480px) {
