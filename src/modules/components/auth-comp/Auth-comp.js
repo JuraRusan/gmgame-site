@@ -1,10 +1,11 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, useContext} from "react";
 import {useForm} from "react-hook-form";
 import {ErrorMessage} from "@hookform/error-message";
 import AOS from "aos";
 import {sendRequest} from '../../../DataProvider';
-import { Navigate } from "react-router-dom";
+import {Navigate, useNavigate} from "react-router-dom";
 import {useAlert} from "react-alert";
+import {UserContext} from '../../../Context';
 
 import "./Auth-comp.scss";
 import "aos/dist/aos.css";
@@ -14,7 +15,9 @@ import Warn from "../warn/Warn.js";
 import SvgMyProfile from "../../../bases/icons/SvgMyProfile.js";
 
 const AuthComponent = () => {
+  const {userContext} = useContext(UserContext);
   const alert = useAlert();
+  let navigate = useNavigate();
 
   useEffect(() => {
     AOS.init({duration: 1000});
@@ -57,6 +60,10 @@ const AuthComponent = () => {
     };
   }, [watch]);
 
+  if (userContext.user) {
+    return <Navigate to="/cab/profile" replace={true} />
+  }
+
   const onSubmit = (data) => console.log(data);
 
   function ErrorRender(name) {
@@ -72,11 +79,14 @@ const AuthComponent = () => {
       {login: d.username, password: d.password, type: d.type_account, age: d.age, from_about: d.about, you_about: d.interests, servers: d.back_servers, friend_name: d.friend_name}
     )
 
-    if (response.body.success) {
+    if (response.body.status_code === 200) {
       alert.success(response.body.success);
-      return <Navigate to="/cab/profile" replace={true} />
+      // setUserContext({user: {login: d.username, password: d.password, type: d.type_account, age: d.age, from_about: d.about, you_about: d.interests, servers: d.back_servers, friend_name: d.friend_name}, discordUser: userContext.discordUser});
+      // console.log(userContext);
+      navigate('/cab/profile');
+      // return <Navigate to="/cab/profile" replace={true} />
     } else {
-      alert.error(response.body.error);
+      alert.error(response.error);
     }
   }
 
@@ -115,6 +125,7 @@ const AuthComponent = () => {
                 placeholder={serverUserPasswordTitle}
                 {...register("password", {
                   required: {value: true, message: "Обязательное поле"},
+                  minLength: {value: 8, message: "Пароль должен быть от 8 символов"},
                 })}
               />
             </div>

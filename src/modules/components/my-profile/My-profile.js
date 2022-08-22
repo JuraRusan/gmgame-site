@@ -8,7 +8,7 @@ import "./My-profile.scss";
 
 const MyProfile = () => {
   const resParams = useAxios(
-    "/api/me/",
+    "/api/profile",
     'GET',
     {}
   );

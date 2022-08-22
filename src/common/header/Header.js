@@ -6,7 +6,7 @@ import "./Header.scss";
 import "aos/dist/aos.css";
 
 const Header = () => {
-  const user = useContext(UserContext);
+  const {userContext} = useContext(UserContext);
 
   useEffect(() => {
     AOS.init({duration: 1000});
@@ -54,7 +54,7 @@ const Header = () => {
               <label htmlFor="four-menu">faq</label>
             </li>
             <li className="links-li li-custom-left">
-                { user.discordUser === 'not_auth'
+                { userContext.discordUser === 'not_auth'
                 ? <>
                     <a className="desktop-link custon-header" href="/login">
                       <p className="ico-name-player font-custom-2">Войти</p>
@@ -62,8 +62,8 @@ const Header = () => {
                   </>
                 : <>
                     <a className="desktop-link custon-header" href="/cab/profile">
-                      <img className="ico-player" src={`https://cdn.discordapp.com/avatars/${user.discordUser.id}/${user.discordUser.avatar}.png`} alt="none"></img>
-                      <p className="ico-name-player font-custom-2">{user.discordUser.username}</p>
+                      <img className="ico-player" src={`https://cdn.discordapp.com/avatars/${userContext.discordUser.id}/${userContext.discordUser.avatar}.png`} alt="none"></img>
+                      <p className="ico-name-player font-custom-2">{userContext.discordUser.username}</p>
                       <input type="checkbox" id="five-menu"/>
                       <ul className="drop">
                         <li className="drop-li"><a href="/cab/territories">Мои территории</a></li>

@@ -26,6 +26,9 @@ const useAxios = (url, method, payload) => {
         if (error.response.status === 401) {
           window.location.replace("/login")
         }
+        if (error.response.status === 402) {
+          window.location.replace("/auth")
+        }
         setError(error.message);
       } finally {
         setLoaded(true);

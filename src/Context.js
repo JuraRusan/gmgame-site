@@ -13,6 +13,8 @@ const resParams = sendRequest(
 //     return <div className="preloader-box"><Triangle wrapperClass="preloader"/></div>
 // }
 
-const data = resParams.body;
+const userContext = resParams.body;
 
-export const UserContext = React.createContext(data);
+export const UserContext = React.createContext({
+    userContext
+});
