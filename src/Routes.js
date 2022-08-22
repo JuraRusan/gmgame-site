@@ -1,4 +1,4 @@
-import {Routes, Route, Navigate} from "react-router-dom";
+import {Routes, Route} from "react-router-dom";
 import {positions, Provider} from "react-alert";
 import AlertTemplate from "react-alert-template-basic";
 

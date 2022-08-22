@@ -49,6 +49,11 @@
   }
 }
 
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1400px) {
+}
 
 @media screen and (max-width: 1280px) {
   .mode-block {
@@ -62,8 +67,91 @@
       border: 5px solid $color-1;
 
       h3 {
-        font-size: 38px;
+        font-size: 44px;
       }
     }
   }
+}
+
+@media screen and (max-width: 1024px) {
+  .mode-block {
+    .mode-name {
+      h3 {
+        font-size: 40px;
+      }
+    }
+
+    .circle {
+      margin: auto 45px;
+    }
+
+    .h4-mode {
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+}
+
+@media screen and (max-width: 768px) {
+  .mode-block {
+    width: 100%;
+    margin: 45px auto;
+
+    .mode-name {
+      border: 5px solid $color-1;
+      width: 275px;
+      height: 96px;
+
+      h3 {
+        font-size: 30px;
+      }
+    }
+
+    .circle {
+      width: 22px;
+      height: 22px;
+      margin: auto 25px;
+    }
+
+    .h4-mode {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .mode-block {
+    flex-direction: column;
+    width: 100%;
+    margin: 45px auto 45px auto;
+
+    .mode-name {
+      margin: 0 auto;
+
+      .h3 {
+        font-size: 24px;
+      }
+    }
+
+    .circle {
+      width: 22px;
+      height: 22px;
+      margin: 15px auto;
+    }
+
+    .h4-mode {
+      width: 100%;
+      text-align: center;
+      padding-left: 75px;
+      padding-right: 75px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 360px) {
 }

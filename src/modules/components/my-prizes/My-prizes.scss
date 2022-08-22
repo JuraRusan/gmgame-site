@@ -23,7 +23,7 @@
     background-size: cover;
   }
   75% {
-    background: url("../../../bases/еnchanted-item/Netherite_Sword.gif");
+    background: url("../../../bases/еnchanted-item/Netherite_Hoe.gif");
     background-position-x: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -149,6 +149,7 @@
         height: auto;
         line-height: 30px;
         width: auto;
+        margin-right: 15px;
       }
 
       .pick {
