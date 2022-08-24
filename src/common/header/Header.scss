@@ -1,7 +1,7 @@
 @import "../../Variables.scss";
 
 .header {
-  z-index: 10000 !important;
+  z-index: 1000;
   min-height: 75px;
   max-height: 75px;
   height: 75px;
@@ -24,7 +24,6 @@
         justify-content: center;
         align-items: center;
         transition: all 0.15s ease;
-        z-index: 150;
         width: 100%;
         height: auto;
 
@@ -42,7 +41,6 @@
           margin-right: 17px;
           margin-top: 25px;
           margin-bottom: 25px;
-          z-index: 5000 !important;
           transition: all 0.35s ease;
 
           &:hover {
@@ -114,7 +112,7 @@
           }
 
           .drop {
-            z-index: 6000;
+            z-index: 2000;
             position: absolute;
             background: $color-21;
             top: 0;

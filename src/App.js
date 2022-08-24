@@ -20,9 +20,9 @@ function App() {
   return (
     <Router>
       <div id="dynamic" className="main-wrapper-bg">
-        <Header/>
-        <Routes/>
-        <Fotter/>
+        <div className="class-z-index-10000"><Header/></div>
+        <div className="class-z-index-1000"><Routes/></div>
+        <div className="class-z-index-10000"><Fotter/></div>
       </div>
     </Router>
   );
