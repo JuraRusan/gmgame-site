@@ -4,7 +4,6 @@ import AlertTemplate from "react-alert-template-basic";
 
 import General from "./modules/pages/general/General.js";
 import Auth from "./modules/pages/auth/Auth.js";
-// import SvgList from "./modules/pages/svg-list/Svg-list.js";
 import Cab from "./modules/pages/cab/Cab.js";
 import Faq from "./modules/pages/faq/Faq.js";
 import AdminDashboard from "./modules/pages/admin-dashboard/Admin-dashboard.js";
@@ -35,8 +34,6 @@ const Router = () => {
     <Provider template={AlertTemplate} {...options}>
       <Routes>
         <Route path="/" element={<General/>}/>
-        {/* <Route path='/login' component={() => window.location.replace('http://193.124.206.25:5001/login')}/> */}
-        {/*<Route path="/svgList" element={<SvgList/>}/>*/}
         <Route path="/auth" element={<Auth/>}/>
         <Route exact path="/cab" element={<Cab/>}>
           <Route path="profile" element={<MyProfile/>}/>

@@ -54,7 +54,7 @@ const Header = () => {
               <label htmlFor="four-menu">faq</label>
             </li>
             <li className="links-li li-custom-left">
-              {userContext.discordUser === 'not_auth'
+              { !userContext?.discordUser
                 ? <>
                   <a className="desktop-link custon-header" href="/login">
                     <p className="ico-name-player font-custom-2">Войти</p>
@@ -66,6 +66,7 @@ const Header = () => {
                     <p className="ico-name-player font-custom-2">{userContext.discordUser.username}</p>
                     <input type="checkbox" id="five-menu"/>
                     <ul className="drop">
+                      <li className="drop-li"><a href="/cab/profile">Профиль</a></li>
                       <li className="drop-li"><a href="/cab/territories">Мои территории</a></li>
                       <li className="drop-li"><a href="/cab/markers">Мои метки</a></li>
                       <li className="drop-li"><a href="/cab/articles">Статьи</a></li>
