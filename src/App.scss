@@ -2,15 +2,18 @@
 
 html {
   height: 100%;
+  width: 100%;
 }
 
 body {
   height: 100%;
-  background: rgb(23, 55, 75);
+  width: 100%;
+  background-color: rgb(23, 55, 75);
 }
 
 div#root {
   height: 100%;
+  width: 100%;
 }
 
 * {
@@ -35,6 +38,20 @@ div#root {
 
 *::-webkit-scrollbar-thumb:hover {
   background-color: rgb(34, 78, 105);
+}
+
+.main-wrapper-bg{
+  width: 100%;
+  height: 100%;
+  background: url(./bases/assets/Main-background.webp);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main-wrapper-bg-scrolling-color{
+  background: $color-7 !important;
 }
 
 .lin-top {

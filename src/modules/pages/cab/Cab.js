@@ -9,8 +9,6 @@ import { Navigate } from "react-router-dom";
 import "./Cab.scss";
 import "aos/dist/aos.css";
 
-import Header from "../../../common/header/Header.js";
-import Fotter from "../../../common/fotter/Fotter.js";
 import PlayerCabinet from "../../components/player-cabinet/Player-cabinet.js";
 // import Auth from "../../../modules/pages/auth/Auth.js";
 
@@ -54,7 +52,6 @@ const Cab = () => {
 
   return (
     <div className="main-cab" data-aos="fade-up">
-      <Header/>
       <div className="box">
         <div className="col-1">
           <PlayerCabinet {...userContext.user} />
@@ -76,7 +73,6 @@ const Cab = () => {
           <Outlet/>
         </div>
       </div>
-      <Fotter/>
     </div>
   );
 }

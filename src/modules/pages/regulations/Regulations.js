@@ -1,8 +1,6 @@
 import React, {useEffect} from "react";
 import AOS from "aos";
 
-import Header from "../../../common/header/Header.js";
-import Fotter from "../../../common/fotter/Fotter.js";
 import {regulationsDB} from "../../../bases/db/regulations/regulationsDB.js";
 
 import "aos/dist/aos.css";
@@ -17,7 +15,6 @@ const Regulations = () => {
 
   return (
     <div className="main-regulations">
-      <Header/>
       <div className="regulations-box" data-aos="fade-up">
         <div className="box-one" data-aos="fade-up">
           <h2 className="title-division font-custom-2">{regulationsDB.oneTitle}</h2>
@@ -170,7 +167,6 @@ const Regulations = () => {
           </div>
         </div>
       </div>
-      <Fotter/>
     </div>
   );
 };

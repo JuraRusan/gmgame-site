@@ -4,8 +4,6 @@ import AOS from "aos";
 import "./General.scss";
 import "aos/dist/aos.css";
 
-import Header from "../../../common/header/Header.js";
-import Fotter from "../../../common/fotter/Fotter.js";
 import Button from "../../../modules/components/button/Button.js";
 import Mode from "../../../modules/components/mode/Mode.js";
 import World from "../../../modules/components/world/World.js";
@@ -56,7 +54,6 @@ const General = () => {
   return (
     <div className="main">
       <div className="row-1">
-        <Header/>
         <div className="main-content">
           <h1 className="main-h1 font-custom-1" data-aos="fade-up">
             <span className="colored-title-span-1">G</span>
@@ -121,9 +118,6 @@ const General = () => {
           <Mode name={creative} info={creativeInfo}/>
         </div>
         <div className="lin-bot-two"></div>
-      </div>
-      <div className="row-5">
-        <Fotter/>
       </div>
     </div>
   );

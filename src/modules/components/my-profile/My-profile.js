@@ -1,5 +1,4 @@
 import React from "react";
-import {gsap} from "gsap";
 import {useAxios} from '../../../DataProvider';
 import {Triangle} from 'react-loader-spinner';
 
@@ -39,90 +38,12 @@ const MyProfile = () => {
   const profileServerAdressOutput = "mine.gmgame.ru";
   const profileServerVersionOutput = "Java Edition " + data.version;
 
-  function isTweening() {
-    let scanner = gsap.isTweening(".scanner");
-    let button = gsap.isTweening("button");
-    return scanner || button;
-  }
-
   function activateAnimated() {
-
-    if (isTweening()) return;
-
-    const tl = gsap.timeline();
-
-    gsap.set(".scanner", {
-      display: "flex",
-      x: 10,
-      background: "#292e3e",
-      boxShadow: `0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #228dff,
-    0 0 0px #228dff, 0 0 0px #228dff, 0 0 0px #228dff, 0 0 0px #228dff`
-    });
-
-    gsap.set("button", {
-      innerHTML: " "
-    });
-
-    tl.to("button", {
-      innerHTML: " ",
-      outline: "none",
-      cursor: "wait",
-      duration: 0.01
-    })
-      .to("button", {
-        innerHTML: " ",
-        duration: 0.4
-      })
-      .to("button", {
-        innerHTML: " ",
-        duration: 0.4
-      })
-      .to("button", {
-        innerHTML: " ",
-        duration: 0.4
-      })
-      .to(
-        ".scanner",
-        {
-          boxShadow: `0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,
-    0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff`,
-          background: "white",
-          duration: 0.2,
-          ease: "none"
-        },
-        "-=1.4"
-      )
-      .to(".scanner", {
-          x: 310,
-          duration: 1,
-          display: "none",
-          ease: "none",
-        },
-        "-=1"
-      )
-      .to(".scanner", {
-        boxShadow: `0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #228dff,
-    0 0 0px #228dff, 0 0 0px #228dff, 0 0 0px #228dff, 0 0 0px #228dff`,
-        background: "#292e3e",
-        duration: 0.2,
-        ease: "none"
-      })
-      .to("button",
-        {
-          innerHTML: " ",
-          outline: "none"
-        },
-        "-=0.1"
-      )
-      .to("button",
-        {
-          innerHTML: " ",
-          cursor: "pointer"
-        },
-        "+=1"
-      );
+    var copyText = document.getElementById("myInput");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /* For mobile devices */
+    navigator.clipboard.writeText(copyText.value);
   }
-
 
   return (
     <div className="profile-block">
@@ -137,9 +58,9 @@ const MyProfile = () => {
           <h5 className="h5-cont">{profileServerAdress}</h5>
 
           <div className="label-cout">
-            <div className="font-custom-2">{profileServerAdressOutput}</div>
+            <input className="label-cout font-custom-2" type="text" value={profileServerAdressOutput} id="myInput"
+                   disabled/>
             <button className="copy-button" onClick={activateAnimated}></button>
-            <div className="scanner"></div>
           </div>
         </div>
 

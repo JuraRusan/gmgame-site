@@ -2,8 +2,6 @@ import React, {useEffect, useMemo, useState} from "react";
 import AOS from "aos";
 
 import {tabsFaqList} from "../../../bases/db/faq/tabsFaqList.js";
-import Header from "../../../common/header/Header.js";
-import Fotter from "../../../common/fotter/Fotter.js";
 import SvgFaq from "../../../bases/icons/SvgFaq.js";
 
 import "aos/dist/aos.css";
@@ -24,7 +22,6 @@ const Faq = () => {
 
   return (
     <div className="main-faq">
-      <Header/>
       <div className="faq-box" data-aos="fade-up">
         <div className="title-faq" data-aos="fade-up">
           <span><SvgFaq width="100%" height="100%" color="#f4f4f4"/></span>
@@ -71,7 +68,6 @@ const Faq = () => {
           </div>
         </div>
       </div>
-      <Fotter/>
     </div>
   );
 };

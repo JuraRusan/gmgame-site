@@ -54,27 +54,27 @@ const Header = () => {
               <label htmlFor="four-menu">faq</label>
             </li>
             <li className="links-li li-custom-left">
-                { userContext.discordUser === 'not_auth'
+              {userContext.discordUser === 'not_auth'
                 ? <>
-                    <a className="desktop-link custon-header" href="/login">
-                      <p className="ico-name-player font-custom-2">Войти</p>
-                    </a>
-                  </>
+                  <a className="desktop-link custon-header" href="/login">
+                    <p className="ico-name-player font-custom-2">Войти</p>
+                  </a>
+                </>
                 : <>
-                    <a className="desktop-link custon-header" href="/cab/profile">
-                      <img className="ico-player" src={`https://cdn.discordapp.com/avatars/${userContext.discordUser.id}/${userContext.discordUser.avatar}.png`} alt="none"></img>
-                      <p className="ico-name-player font-custom-2">{userContext.discordUser.username}</p>
-                      <input type="checkbox" id="five-menu"/>
-                      <ul className="drop">
-                        <li className="drop-li"><a href="/cab/territories">Мои территории</a></li>
-                        <li className="drop-li"><a href="/cab/markers">Мои метки</a></li>
-                        <li className="drop-li"><a href="/cab/articles">Статьи</a></li>
-                        <li className="drop-li"><a href="/cab/prize">Призы</a></li>
-                        <li className="drop-li"><a href="/cab/change_password">Изменить пароль</a></li>
-                      </ul>
-                    </a>
-                  </>
-                }
+                  <a className="desktop-link custon-header" href="/cab/profile">
+                    <img className="ico-player" src={`https://cdn.discordapp.com/avatars/${userContext.discordUser.id}/${userContext.discordUser.avatar}.png`} alt="none"></img>
+                    <p className="ico-name-player font-custom-2">{userContext.discordUser.username}</p>
+                    <input type="checkbox" id="five-menu"/>
+                    <ul className="drop">
+                      <li className="drop-li"><a href="/cab/territories">Мои территории</a></li>
+                      <li className="drop-li"><a href="/cab/markers">Мои метки</a></li>
+                      <li className="drop-li"><a href="/cab/articles">Статьи</a></li>
+                      <li className="drop-li"><a href="/cab/prize">Призы</a></li>
+                      <li className="drop-li"><a href="/cab/change_password">Изменить пароль</a></li>
+                    </ul>
+                  </a>
+                </>
+              }
             </li>
           </ul>
         </div>

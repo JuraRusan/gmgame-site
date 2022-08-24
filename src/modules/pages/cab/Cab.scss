@@ -1,13 +1,10 @@
 @import "../../../Variables.scss";
 
 .main-cab {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: auto;
   height: auto;
-  background: url(../../../bases/assets/Main-background.png);
-  background-position-x: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
 
   .box {

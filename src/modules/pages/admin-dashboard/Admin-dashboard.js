@@ -4,9 +4,6 @@ import AOS from "aos";
 import "./Admin-dashboard.scss";
 import "aos/dist/aos.css";
 
-import Header from "../../../common/header/Header.js";
-import Fotter from "../../../common/fotter/Fotter.js";
-
 const AdminDashboard = () => {
 
   useEffect(() => {
@@ -15,11 +12,9 @@ const AdminDashboard = () => {
 
   return (
     <div className="main-dashboard" data-aos="fade-up">
-      <Header/>
       <div className="box-dashboard">
 
       </div>
-      <Fotter/>
     </div>
   );
 };
