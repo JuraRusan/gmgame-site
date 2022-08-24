@@ -7,15 +7,17 @@ import "./App.scss";
 
 function App() {
 
-  // const element = document.getElementById("dynamic");
+  window.onscroll = function () {
+    myFunction()
+  };
 
-  // window.addEventListener("scroll", function () {
-  //   if (this.scrollY > 2000) {
-  //     element.classList.add("main-wrapper-bg-scrolling-color");
-  //   } else {
-  //     element.classList.remove("main-wrapper-bg-scrolling-color");
-  //   }
-  // });
+  function myFunction() {
+    if (document.documentElement.scrollTop > 1500) {
+      document.getElementById("dynamic").className = "main-wrapper-bg-scrolling-color";
+    } else {
+      document.getElementById("dynamic").className = "main-wrapper-bg";
+    }
+  }
 
   return (
     <Router>
