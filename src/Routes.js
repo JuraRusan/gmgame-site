@@ -35,7 +35,6 @@ const Router = () => {
     <Provider template={AlertTemplate} {...options}>
       <Routes>
         <Route path="/" element={<General/>}/>
-        {/* <Route path='/login' component={() => window.location.replace('http://193.124.206.25:5001/login')}/> */}
         <Route path="/svgList" element={<SvgList/>}/>
         <Route path="/auth" element={<Auth/>}/>
         <Route exact path="/cab" element={<Cab/>}>
