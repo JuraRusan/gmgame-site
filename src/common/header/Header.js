@@ -54,14 +54,14 @@ const Header = () => {
               <label htmlFor="four-menu">faq</label>
             </li>
             <li className="links-li li-custom-left">
-              { !userContext?.discordUser
+              {!userContext?.discordUser
                 ? <>
                   <a className="desktop-link custon-header" href="/login">
                     <p className="ico-name-player font-custom-2">Войти</p>
                   </a>
                 </>
                 : <>
-                  <a className="desktop-link custon-header" href="/cab/profile">
+                  <div className="replace desktop-link custon-header">
                     <img className="ico-player" src={`https://cdn.discordapp.com/avatars/${userContext.discordUser.id}/${userContext.discordUser.avatar}.png`} alt="none"></img>
                     <p className="ico-name-player font-custom-2">{userContext.discordUser.username}</p>
                     <input type="checkbox" id="five-menu"/>
@@ -73,7 +73,7 @@ const Header = () => {
                       <li className="drop-li"><a href="/cab/prize">Призы</a></li>
                       <li className="drop-li"><a href="/cab/change_password">Изменить пароль</a></li>
                     </ul>
-                  </a>
+                  </div>
                 </>
               }
             </li>

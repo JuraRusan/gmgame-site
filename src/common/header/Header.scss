@@ -70,6 +70,7 @@
             }
           }
 
+          .replace,
           a,
           label {
             color: $color-3;
@@ -151,6 +152,7 @@
           background: transparent !important;
         }
 
+        .custon-header:hover > .drop,
         .links-li:hover > .drop {
           top: 50px;
           opacity: 1;

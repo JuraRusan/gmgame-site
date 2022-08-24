@@ -12,7 +12,7 @@ function App() {
   };
 
   function myFunction() {
-    if (document.documentElement.scrollTop > 1500) {
+    if (document.documentElement.scrollTop > 3500) {
       document.getElementById("dynamic").className = "main-wrapper-bg-scrolling-color";
     } else {
       document.getElementById("dynamic").className = "main-wrapper-bg";
