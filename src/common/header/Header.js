@@ -32,7 +32,7 @@ const Header = () => {
                 <span className="font-custom-1">GAME</span></a>
             </li>
             <li className="links-li">
-              <a className="desktop-link font-custom-3" href="/">Полезное</a>
+              <div className="replace desktop-link font-custom-3">Полезное</div>
               <input type="checkbox" id="two-menu"/>
               <label htmlFor="two-menu">Полезное</label>
               <ul className="drop">

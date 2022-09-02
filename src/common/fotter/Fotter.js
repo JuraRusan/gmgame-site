@@ -17,13 +17,13 @@ const Fotter = () => {
     <div className="fotter">
       <div className="rows-bt" data-aos="zoom-in">
         <a className="bt-links" href="https://vk.com/gmgameru">
-          <SvgVk width="40px" height="40px" color="black"/>
+          <SvgVk width="100%" height="100%" color="black"/>
         </a>
         <a className="bt-links" href="https://www.instagram.com/gmgameserver/">
-          <SvgInstagram width="40px" height="40px" color="black"/>
+          <SvgInstagram width="100%" height="100%" color="black"/>
         </a>
         <a className="bt-links" href="https://discord.gg/cAM6tUYEuX">
-          <SvgDiscord width="40px" height="40px" color="black"/>
+          <SvgDiscord width="100%" height="100%" color="black"/>
         </a>
       </div>
       <div className="gmgame-title-f">

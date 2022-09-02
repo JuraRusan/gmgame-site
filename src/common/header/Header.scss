@@ -266,11 +266,11 @@
         .links {
 
           .links-li {
-            width: auto;
-            min-width: 185px;
+            width: 100%;
+            min-width: auto;
             max-width: 210px;
-            margin-left: 12px;
-            margin-right: 12px;
+            margin-left: 5px;
+            margin-right: 5px;
             margin-top: 25px;
             margin-bottom: 25px;
 
@@ -329,32 +329,7 @@
       .content-menu {
         .links {
           .links-li {
-            margin-left: 5px;
-            margin-right: 5px;
-            min-width: 150px;
-            max-width: 185px;
-
-            .custon-header {
-              .ico-name-player {
-                font-size: 16px !important;
-              }
-            }
-
-            .drop {
-              padding: 2.5px;
-
-              .drop-li {
-                a {
-                  font-size: 18px;
-                  margin: 5px;
-                }
-              }
-            }
-          }
-
-          .li-custom-left {
-            min-width: 200px !important;
-            max-width: 265px !important;
+            display: none;
           }
         }
       }
@@ -363,17 +338,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .header {
-    .menu {
-      .content-menu {
-        .links {
-          .links-li {
-            display: none;
-          }
-        }
-      }
-    }
-  }
 }
 
 @media screen and (max-width: 640px) {

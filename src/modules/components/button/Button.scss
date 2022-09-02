@@ -86,7 +86,19 @@
 }
 
 @media screen and (max-width: 480px) {
+  .style-button {
+    width: 215px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 360px) {
+  .style-button {
+    width: 180px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+  }
 }

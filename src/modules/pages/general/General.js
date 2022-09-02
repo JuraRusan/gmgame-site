@@ -77,7 +77,7 @@ const General = () => {
             <img className='info-img-wight' src={Image1} alt=""/>
           </div>
         </div>
-        <div className="content-info" data-aos="fade-up">
+        <div className="content-info rev" data-aos="fade-up">
           <div className="info-img">
             <img className='info-img-wight' src={Image2} alt=""/>
           </div>

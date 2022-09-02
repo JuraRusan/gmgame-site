@@ -9,7 +9,7 @@
   .faq-box {
     display: flex;
     flex-direction: column;
-    width: 78%;
+    width: 85%;
     height: auto;
     margin: 25px auto 0 auto;
     padding: 25px;
@@ -49,7 +49,6 @@
         justify-content: flex-start;
         width: auto;
         height: 100%;
-        margin-right: 25px;
         position: sticky;
         top: 50px;
         bottom: 0;
@@ -65,7 +64,7 @@
           transition: all 0.5s ease-out;
           color: $color-3;
           font-weight: 400;
-          font-size: 16px;
+          font-size: 20px;
 
           &:hover {
             color: white;
@@ -119,7 +118,7 @@
               flex-direction: column;
               width: 100%;
               height: 100%;
-              padding-top: 20px;
+              margin-top: 20px;
               padding-right: 15px;
 
               .list-one {
@@ -127,6 +126,7 @@
                 height: 100%;
                 display: flex;
                 flex-direction: column;
+                margin-bottom: 5px;
 
                 .one-input {
                   position: absolute;
@@ -139,7 +139,6 @@
                   display: flex;
                   justify-content: space-between;
                   padding: 16px;
-                  margin-bottom: 5px;
                   background: transparent;
                   border: 0.5px solid $color-22;
                   border-radius: 6px;
@@ -148,6 +147,8 @@
                   font-size: 16px;
                   cursor: pointer;
                   transition: all 0.25s ease;
+                  position: relative;
+                  align-items: center;
 
                   &:hover {
                     background: $color-7;
@@ -179,29 +180,289 @@
       }
     }
   }
+
+  .one-input:checked ~ .one-content-h3 {
+    opacity: 1 !important;
+    max-height: 100vh !important;
+    margin-bottom: 10px;
+    padding: 16px;
+    border-right: 0.5px solid $color-22;
+    border-left: 0.5px solid $color-22;
+    border-bottom: 0.5px solid $color-22;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+
+  .one-input:checked ~ .one-label {
+    margin-bottom: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    background: $color-7 !important;
+    color: $color-8 !important;
+
+    &::after {
+      transform: rotate(90deg);
+      color: $color-8;
+    }
+  }
 }
 
-.one-input:checked ~ .one-content-h3 {
-  opacity: 1 !important;
-  max-height: 100vh !important;
-  margin-bottom: 10px;
-  padding: 16px;
-  border-right: 0.5px solid $color-22;
-  border-left: 0.5px solid $color-22;
-  border-bottom: 0.5px solid $color-22;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
+@media screen and (max-width: 1600px) {
+  .main-faq {
+    .faq-box {
+      width: 95%;
+    }
+  }
 }
 
-.one-input:checked ~ .one-label {
-  margin-bottom: 0px !important;
-  border-bottom-left-radius: 0px !important;
-  border-bottom-right-radius: 0px !important;
-  background: $color-7 !important;
-  color: $color-8 !important;
+@media screen and (max-width: 1400px) {
+  .main-faq {
+    .faq-box {
+      width: 96%;
+      padding: 15px;
 
-  &::after {
-    transform: rotate(90deg);
-    color: $color-8;
+      .title-faq {
+        margin-top: 15px;
+      }
+
+      .wrapper-tabs-faq {
+        padding: 10px;
+
+        .tabs {
+          .btn-click {
+            width: 180px;
+          }
+        }
+
+        .content {
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .main-faq {
+    .faq-box {
+      .wrapper-tabs-faq {
+        padding: 10px;
+
+        .tabs {
+
+          .btn-click {
+            width: 170px;
+            margin: 10px;
+            height: 65px;
+            font-size: 18px;
+          }
+        }
+
+        .content {
+          margin: 0;
+          margin-left: 5px;
+
+          .div-id-tab {
+            .tab-one {
+              .lists {
+                padding-right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 960px) {
+}
+
+@media screen and (max-width: 768px) {
+  .main-faq {
+    .faq-box {
+      .title-faq {
+        margin-bottom: 10px;
+      }
+
+      .wrapper-tabs-faq {
+        padding: 7px;
+
+        .tabs {
+
+          .btn-click {
+            width: 150px;
+            margin: 7px;
+            height: 50px;
+            font-size: 16px;
+          }
+        }
+
+        .content {
+          .div-id-tab {
+            .tab-one {
+              .lists {
+                .list-one {
+                  .one-label {
+                    padding: 12px;
+                  }
+
+                  .one-content-h3 {
+                    font-size: 14px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .one-input:checked ~ .one-content-h3 {
+      padding: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .main-faq {
+    .faq-box {
+      padding: 7px;
+
+      .title-faq {
+        .h2-faq {
+          font-size: 20px;
+          padding-left: 15px;
+        }
+      }
+
+      .wrapper-tabs-faq {
+        flex-direction: column;
+        padding: 0;
+
+        .tabs {
+          margin-top: 15px;
+          margin-bottom: 10px;
+          top: 0;
+          position: relative;
+
+          .btn-click {
+            margin: 6px auto;
+            font-size: 15px;
+            height: 45px;
+            width: 250px;
+          }
+        }
+
+        .content {
+          margin: 0;
+
+          .div-id-tab {
+            .tab-one {
+              .lists {
+                .list-one {
+                  .one-label {
+                    padding: 10px;
+                  }
+
+                  .one-content-h3 {
+                    font-size: 14px;
+                    line-height: 1.1;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .one-input:checked ~ .one-content-h3 {
+      padding: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-faq {
+    .faq-box {
+      .title-faq {
+        height: 30px;
+
+        .h2-faq {
+          font-size: 16px;
+          padding-left: 7px;
+          height: 30px;
+          line-height: 30px;
+        }
+      }
+
+      .wrapper-tabs-faq {
+        .tabs {
+          margin-top: 10px;
+        }
+
+        .content {
+          padding: 7px;
+
+          .div-id-tab {
+            .tab-one {
+              .title {
+                height: 30px;
+                line-height: 30px;
+                font-size: 22px;
+              }
+
+              .info {
+                height: auto;
+                line-height: 1.1;
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .main-faq {
+    .faq-box {
+      .wrapper-tabs-faq {
+        .content {
+          .div-id-tab {
+            .tab-one {
+              .title {
+                height: 30px;
+                line-height: 30px;
+                font-size: 20px;
+              }
+
+              .info {
+                height: auto;
+                line-height: 1.1;
+                font-size: 13px;
+              }
+
+              .lists {
+                .list-one {
+                  .one-label {
+                    font-size: 14px;
+                  }
+
+                  .one-content-h3{
+                    font-size: 12px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

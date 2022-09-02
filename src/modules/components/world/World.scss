@@ -185,13 +185,46 @@
 
       .inf-text {
         font-size: 14px;
+        opacity: 1;
+        top: 0;
       }
     }
   }
-
 }
 
 @media screen and (max-width: 480px) {
+  .worlds {
+    width: 100%;
+    min-width: auto;
+    max-width: none;
+
+    .hr-90 {
+      height: 45px;
+    }
+
+    .world-name {
+      font-size: 20px;
+    }
+
+    .world-img-text {
+      margin: 5px;
+      margin-bottom: 15px;
+      max-width: none;
+      width: auto;
+
+      .inf-text {
+        margin-top: 16px;
+        max-width: none;
+        min-width: auto;
+        width: auto;
+        height: auto;
+        min-height: auto;
+        max-height: 200px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 360px) {
