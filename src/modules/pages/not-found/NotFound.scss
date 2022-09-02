@@ -39,8 +39,8 @@
 
       .inf-404 {
         width: 100%;
-        height: 35px;
-        line-height: 35px;
+        height: auto;
+        line-height: 1.1;
         font-size: 24px;
         font-weight: 400;
         color: $color-3;
@@ -59,12 +59,80 @@
         margin: 0 auto;
         outline: none;
         color: $color-3;
+        transition: all 0.35s ease;
 
         &:active,
         &:hover,
         &:visited {
           color: $color-3;
           outline: none;
+        }
+
+        &:hover {
+          color: $color-8;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 960px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 640px) {
+}
+
+@media screen and (max-width: 480px) {
+  .main-not-404 {
+    .all-404 {
+      .fof {
+        .h1-404 {
+          font-size: 64px;
+        }
+
+        .inf-404 {
+          font-size: 20px;
+          padding: 0 10px;
+          margin-bottom: 30px;
+        }
+
+        .back-404 {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .main-not-404 {
+    .all-404 {
+      .fof {
+        .h1-404 {
+          font-size: 54px;
+        }
+
+        .inf-404 {
+          font-size: 16px;
+        }
+
+        .back-404 {
+          font-size: 13px;
         }
       }
     }
