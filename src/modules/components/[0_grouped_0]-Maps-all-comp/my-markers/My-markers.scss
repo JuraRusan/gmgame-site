@@ -1,0 +1,318 @@
+@import "../../../../Variables";
+
+.box-marker {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+
+  .box-searth {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    height: 35px;
+    padding: 2.5px;
+
+    .nomer-list {
+      display: flex;
+      width: 250px;
+      height: 35px;
+      line-height: 35px;
+      margin: 0 0 0 15px;
+      padding: 0;
+      font-weight: 400;
+      font-size: 18px;
+      color: $color-3;
+    }
+
+    .search-input {
+      display: flex;
+      width: 225px;
+      height: 35px;
+      line-height: 35px;
+      outline: none;
+      background: $color-7;
+      border: 0.5px solid $color-22;
+      border-radius: 5px;
+      transition: all 0.25s ease-in-out;
+      color: $color-8;
+      padding-left: 10px;
+      padding-right: 10px;
+
+      &:hover,
+      &:focus,
+      &:active {
+        outline: none;
+      }
+    }
+  }
+
+  .box-list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    margin-top: 20px;
+    padding-right: 20px;
+
+    .str {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      height: 65px !important;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      border: 0.5px solid $color-22;
+      border-radius: 5px;
+      padding: 7.5px;
+      transition: all 0.25s ease;
+
+      &:hover {
+        background: $color-7;
+      }
+
+      &:hover > .margin-add {
+        padding: 0;
+      }
+
+      .margin-add {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 5px;
+        transition: all 0.25s ease;
+      }
+
+      .colums-1 {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: auto 0;
+
+        .str-p {
+          height: 40px;
+          line-height: 40px;
+          color: $color-3;
+          width: 50px;
+          text-align: center;
+        }
+
+        .str-h3 {
+          height: 40px;
+          line-height: 40px;
+          font-size: 18px;
+          font-weight: 400;
+          color: $color-3;
+          width: 100%;
+          padding-left: 15px;
+          padding-right: 15px;
+          border-width: 1px;
+          border-left-style: solid;
+          border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), $color-22, rgba(0, 0, 0, 0)) 1 100%;
+        }
+      }
+
+      .colums-2 {
+        display: flex;
+        flex-direction: row;
+        margin: auto 0;
+
+        .str-bt {
+          cursor: pointer;
+          height: 40px;
+          line-height: 40px;
+          margin: 0;
+          width: 125px;
+          color: $color-3;
+          background: $color-4;
+          text-decoration: none;
+          text-align: center;
+          border: none;
+          border-radius: 5px;
+          outline: none;
+          font-size: 16px;
+          font-weight: 400;
+
+          &:hover,
+          &:active,
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.box-marker-add {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+
+  .colums-add-1 {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 700px;
+    margin-right: 15px;
+
+    .input-name {
+      width: auto;
+      height: 28px;
+      line-height: 28px;
+      font-size: 16px;
+      font-weight: 400;
+      color: $color-3;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .col-row {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      margin-bottom: 25px;
+
+      .go-back {
+        background: transparent;
+        border: none;
+        border-radius: 0px;
+        font-weight: 400;
+        font-size: 14px;
+        text-align: center;
+        color: $color-3;
+        margin-bottom: 15px;
+        cursor: pointer;
+        outline: none;
+        transition: all 0.15s ease;
+
+        &:hover,
+        &:active,
+        &:focus {
+          outline: none;
+          color: $color-4;
+        }
+      }
+
+      .input-str {
+        width: auto;
+        min-width: 50%;
+        height: auto;
+        border: 0.5px solid $color-22;
+        border-radius: 7px;
+        color: $color-8;
+        text-align: start;
+        font-size: 16px;
+        font-weight: 400;
+        outline: none !important;
+        padding: 7px;
+        background: $color-7;
+
+        &:hover,
+        &:active,
+        &:focus {
+          outline: none;
+        }
+
+        .option-list {
+          color: $color-3;
+          background: $color-7;
+          font-size: 14px;
+          border-radius: 7px;
+
+          &:hover,
+          &:active,
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+
+    .coord {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+
+      .block-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+        height: auto;
+        margin-bottom: 22px;
+
+        .col-row-custom {
+          display: flex;
+          flex-direction: row;
+
+          .input-str-custom {
+            width: 100px;
+            height: auto;
+            border: 0.5px solid $color-22;
+            border-radius: 7px;
+            color: $color-8;
+            text-align: start;
+            font-size: 16px;
+            font-weight: 400;
+            outline: none !important;
+            padding: 5px;
+            background: $color-7;
+
+            &:hover,
+            &:active,
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+      }
+    }
+
+    .box-bt {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      margin-top: auto;
+
+      .bt-all {
+        width: 140px;
+        height: 36px;
+        line-height: 36px;
+        border: none;
+        border-radius: 12px;
+        font-weight: 400;
+        font-size: 14px;
+        color: $color-3;
+        text-align: center;
+        margin: 0 auto;
+        cursor: pointer;
+      }
+
+      .bt-add {
+        background: $color-4;
+      }
+
+      .bt-del {
+        background: $color-9;
+      }
+    }
+  }
+
+  .colums-add-2 {
+    display: flex;
+    width: 100%;
+    max-width: 750px;
+    height: 100%;
+    margin: 0 auto;
+  }
+}

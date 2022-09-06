@@ -7,93 +7,155 @@
   height: auto;
 
   .regulations-box {
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    min-height: 700px;
     height: auto;
-    padding-top: 35px;
+    margin: 25px auto 0 auto;
+    padding: 25px;
+    background: $color-11;
+    border: none;
+    border-radius: 7px;
 
-    .box-one {
+    .list-reg {
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
-      height: auto;
-      width: auto;
-      max-width: 1600px;
-      margin: 20px auto 20px auto;
-      //background: $color-11;
-      //border: none;
-      //border-radius: 15px;
+      width: 200px;
 
-      .title-division {
-        width: 100%;
-        height: 35px;
-        line-height: 35px;
-        color: $color-8;
-        font-size: 22px;
+      .btn-click {
         font-weight: 400;
-        padding-left: 25px;
-        margin-bottom: 15px;
-      }
+        color: white;
+        height: auto;
+        line-height: 1;
+        text-align: start;
+        font-size: 14px;
+        outline: none;
+        border-radius: 7px;
+        border: none;
+        background: $color-21;
+        transition: all 0.35s ease;
+        padding: 10px;
+        margin: 10px 0;
+        cursor: pointer;
 
-      .regulations-list {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+        &:hover {
+          background: $color-22;
+        }
+
+        &:disabled {
+          background: $color-4;
+          color: $color-3;
+        }
+      }
+    }
+
+    .content-reg {
+      display: flex;
+      width: 100%;
+      height: auto;
+      margin-left: 25px;
+
+      .wrapper {
+        width: auto;
         height: auto;
 
-        .one-content-p {
+        .div-id-tab-content {
           width: 100%;
           height: auto;
-          font-size: 16px;
-          font-weight: 400;
-          color: $color-3;
-          line-height: 30px;
+          display: flex;
+          flex-direction: column;
 
-          .content-ul {
-            display: flex;
-            flex-direction: column;
-            margin-left: 20px;
-
-            .ul-content-li {
-              list-style: inside;
-              width: 100%;
-              height: auto;
-            }
-          }
-        }
-      }
-
-      .svg-punishment-one {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        height: auto;
-        padding-left: 15px;
-
-        .svg-rotate {
-          width: 25px;
-          height: 25px;
-          transform: rotate(-90deg);
-        }
-
-        .punishment-one {
-          width: auto;
-          max-width: 90%;
-          margin-left: 5px;
-          font-size: 16px;
-          font-weight: 400;
-          color: $color-3;
-          line-height: 30px;
-
-          .span-war {
-            width: auto;
+          .title-division {
+            width: 100%;
             height: 35px;
             line-height: 35px;
-            background: lighten($color-9, 15);
-            text-align: center;
-            padding: 5px 10px 5px 10px;
-            border: none;
-            border-radius: 5px;
-            color: $color-15;
+            color: $color-8;
+            font-size: 20px;
+            font-weight: 400;
+            padding-left: 25px;
+          }
+
+          .regulations-list {
+            margin-top: 20px;
+            width: 100%;
+            height: auto;
+
+            .one-content-p {
+              display: flex;
+              flex-direction: row;
+              width: 100%;
+              height: auto;
+              font-size: 16px;
+              font-weight: 400;
+              color: $color-3;
+              line-height: 1.5;
+
+              span {
+                width: 15px;
+                height: 100%;
+                margin-right: 10px;
+              }
+
+              label {
+                width: 100%;
+                height: auto;
+
+                .content-ul {
+                  display: flex;
+                  flex-direction: column;
+                  margin-left: 10px;
+
+                  .ul-content-li {
+                    list-style: inside;
+                    width: 100%;
+                    height: auto;
+                    font-size: 14px;
+                  }
+                }
+              }
+            }
+
+            .svg-punishment-one {
+              display: flex;
+              flex-direction: row;
+              width: 100%;
+              height: auto;
+              padding-left: 30px;
+              margin-bottom: 15px;
+
+              .svg-rotate-div {
+                width: auto;
+                height: auto;
+                display: flex;
+                flex-direction: row;
+
+                .rotate {
+                  height: 20px;
+                  width: 20px;
+                  margin: 0 0 auto 0;
+                  transform: rotate(-90deg);
+                }
+
+                .span-war {
+                  width: auto;
+                  height: 25px;
+                  line-height: 25px;
+                  margin: 0 8px auto 8px;
+                  color: $color-9;
+                }
+              }
+
+              .punishment-one {
+                width: auto;
+                max-width: 90%;
+                margin-left: 5px;
+                font-size: 14px;
+                font-weight: 400;
+                color: $color-3;
+                line-height: 1.5;
+              }
+            }
           }
         }
       }

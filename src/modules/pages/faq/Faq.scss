@@ -67,13 +67,12 @@
           font-size: 20px;
 
           &:hover {
-            color: white;
             background: $color-22;
           }
 
           &:disabled {
             background: $color-4;
-            color: white;
+            color: $color-3;
           }
         }
       }

@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Auth.scss";
 
-import AuthComponent from "../../components/auth-comp/Auth-comp.js";
+import AuthComponent from "../../components/[0_grouped_0]-Auth/auth-comp/Auth-comp.js";
 
 const auth = () => {
   return (

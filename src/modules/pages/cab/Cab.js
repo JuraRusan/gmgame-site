@@ -9,7 +9,7 @@ import { Navigate } from "react-router-dom";
 import "./Cab.scss";
 import "aos/dist/aos.css";
 
-import PlayerCabinet from "../../components/player-cabinet/Player-cabinet.js";
+import PlayerCabinet from "../../components/[0_grouped_0]-Profile/player-cabinet/Player-cabinet.js";
 // import Auth from "../../../modules/pages/auth/Auth.js";
 
 const Cab = () => {
