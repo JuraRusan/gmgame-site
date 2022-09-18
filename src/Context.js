@@ -4,7 +4,7 @@ import {sendRequest} from './DataProvider';
 
 
 const resParams = sendRequest(
-    "/api/me/",
+    "/api/auth",
     'GET',
     {}
 );

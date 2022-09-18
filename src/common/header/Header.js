@@ -1,12 +1,18 @@
-import React, {useEffect, useContext} from "react";
+import React, {useEffect} from "react";
+import {useAxios} from '../../DataProvider';
 import AOS from "aos";
-import {UserContext} from '../../Context';
 
 import "./Header.scss";
 import "aos/dist/aos.css";
 
 const Header = () => {
-  const {userContext} = useContext(UserContext);
+  const resParams = useAxios(
+    "/api/",
+    'GET',
+    {}
+  );
+
+  console.log(resParams);
 
   useEffect(() => {
     AOS.init({duration: 1000});
@@ -16,7 +22,6 @@ const Header = () => {
     document.getElementById("toggle").classList.toggle("activeBt");
     document.getElementById('links').classList.toggle('linksActive');
   }
-
   return (
     <div className="header" data-aos="fade-down">
       <div className="menu">
@@ -52,18 +57,18 @@ const Header = () => {
               <label htmlFor="four-menu">faq</label>
             </li>
             <li className="links-li li-custom-left">
-              {!userContext?.discordUser
+              {!resParams?.data?.discordUser
                 ? <>
-                  <a className="desktop-link custon-header" href="/login">
+                  <a className="desktop-link custon-header" href="/api/login">
                     <p className="ico-name-player font-custom-2">Войти</p>
                   </a>
                 </>
                 : <>
                   <div className="replace desktop-link custon-header">
                     <img className="ico-player"
-                         src={`https://cdn.discordapp.com/avatars/${userContext.discordUser.id}/${userContext.discordUser.avatar}.png`}
+                         src={`https://cdn.discordapp.com/avatars/${resParams.data.discordUser.id}/${resParams.data.discordUser.avatar}.png`}
                          alt="none"></img>
-                    <p className="ico-name-player font-custom-2">{userContext.discordUser.username}</p>
+                    <p className="ico-name-player font-custom-2">{resParams.data.discordUser.username}</p>
                     <input type="checkbox" id="five-menu"/>
                     <ul className="drop">
                       <li className="drop-li"><a href="/cab/profile">Профиль</a></li>
