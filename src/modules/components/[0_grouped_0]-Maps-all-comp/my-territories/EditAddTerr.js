@@ -135,7 +135,7 @@ const EditAddTerr = (params) => {
       </div>
       <div className="colums-add-2">
         {id === 'new'
-          ? <iframe title="map" src="src/modules/components/[0_grouped_0]-Maps-all-comp/my-territories/EditAddTerr#/-7/64/-54/-4/GMGameWorld%20-%20overworld/over" width="100%" height="100%"/>
+          ? <iframe title="map" src="https://map.gmgame.ru/#/-7/64/-54/-4/GMGameWorld%20-%20overworld/over" width="100%" height="100%"/>
           : <iframe title="map" src={`https://map.gmgame.ru/#/${data.terr.xStart}/64/${data.terr.zStart}/-4/${data.terr.world_name}/over`} width="100%" height="100%"/>
         }
       </div>

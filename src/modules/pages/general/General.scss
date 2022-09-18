@@ -13,7 +13,6 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    //background: url(../../../bases/assets/Main-background.png);
 
     .main-content {
       display: flex;
@@ -220,6 +219,35 @@
     }
   }
 
+  .lin-top {
+    height: 200px;
+    width: 100%;
+    background: $color-2;
+    background: linear-gradient(180deg, $color-2 0%, rgba(228, 0, 127, 0) 100%);
+    background: -webkit-linear-gradient(
+                    180deg,
+                    $color-2 0%,
+                    rgba(228, 0, 127, 0) 100%
+    );
+    background: -moz-linear-gradient(
+                    180deg,
+                    $color-2 0%,
+                    rgba(228, 0, 127, 0) 100%
+    );
+  }
+
+  .lin-bot {
+    height: 200px;
+    width: 100%;
+    background: $color-2;
+    background: linear-gradient(0deg, $color-2 0%, rgba(1, 22, 37, 0) 100%);
+    background: -webkit-linear-gradient(
+                    0deg,
+                    $color-2 0%,
+                    rgba(1, 22, 37, 0) 100%
+    );
+    background: -moz-linear-gradient(0deg, $color-2 0%, rgba(1, 22, 37, 0) 100%);
+  }
 }
 
 @media screen and (max-width: 1600px) {
@@ -382,6 +410,14 @@
         height: 150px;
       }
     }
+
+    .lin-top {
+      height: 160px;
+    }
+
+    .lin-bot {
+      height: 160px;
+    }
   }
 }
 
@@ -515,6 +551,14 @@
       .lin-bot-two {
         height: 130px;
       }
+    }
+
+    .lin-top {
+      height: 130px;
+    }
+
+    .lin-bot {
+      height: 130px;
     }
   }
 }

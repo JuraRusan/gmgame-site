@@ -1,5 +1,23 @@
 @import "../../../Variables.scss";
 
+@keyframes appearance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1 !important;
+  }
+}
+
+@keyframes disappearance {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .main-cab {
   display: flex;
   flex-direction: column;
@@ -8,20 +26,27 @@
   position: relative;
 
   .box {
-    width: 1500px;
+    max-width: 1500px;
+    width: 100%;
     height: 800px;
     background: $color-11;
     margin: 25px auto 50px auto;
     padding: 35px;
     display: flex;
     flex-direction: row;
-    z-index: 1500 !important;
 
+    .bt-ph {
+      display: none;
+      z-index: 15000;
+    }
   }
 }
 
 .col-1 {
-  width: 350px;
+  z-index: 10000;
+  width: 275px;
+  min-width: 275px;
+  max-width: 275px;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -30,60 +55,31 @@
   border-left-style: solid;
   border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), $color-3, rgba(0, 0, 0, 0)) 1 100%;
 
-  .player-box {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    max-width: 350px;
-    padding-bottom: 15px;
-    border-width: 1px;
-    border-bottom-style: solid;
-    border-image: linear-gradient(to right, rgba(0, 0, 0, 0), $color-3, rgba(0, 0, 0, 0)) 1 0%;
-
-    .img-player {
-      width: 100px;
-      height: 100px;
-      margin: 0 auto 10px auto;
-    }
-
-    .h5-name-player {
-      font-weight: 400;
-      font-size: 22px;
-      color: $color-3;
-      width: 100%;
-      height: 22px;
-      line-height: 22px;
-      text-align: center;
-    }
-  }
-
   .menu-cabinet {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    height: auto;
-    max-height: 550px;
-    min-height: 550px;
+    height: 100%;
     padding: 15px;
 
     .m1 {
       display: flex;
       flex-direction: column;
+      width: auto;
 
       .tab {
         background: transparent;
         cursor: pointer;
         transition: all 0.5s ease;
-        width: 90%;
-        height: 50px;
+        width: 100%;
+        height: 40px;
         text-decoration: none;
         font-weight: 400;
         font-size: 20px;
-        line-height: 50px;
-        margin: 2.5px;
-        padding-left: 20px;
+        line-height: 40px;
+        margin: 3px 0 3px 0;
+        padding-left: 12px;
         color: $color-3;
         border-radius: 15px;
         outline: none;
@@ -106,13 +102,145 @@
 }
 
 .col-2 {
-  width: 100% !important;
+  z-index: 10000;
+  width: 100%;
   height: 100%;
   padding: 15px;
   display: flex;
   color: $color-3;
 }
 
-.tab-panel-selected {
-  width: 100%;
+@media screen and (max-width: 1600px) {
+  .main-cab {
+    .box {
+      max-width: none;
+      width: auto;
+      height: 800px;
+      margin: 25px 50px 50px 50px;
+    }
+
+    .col-1 {
+      .menu-cabinet {
+        padding: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .main-cab {
+    .box {
+      margin: 25px 27px 50px 27px;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .main-cab {
+    .box {
+      margin: 20px 20px 50px 20px;
+      padding: 20px;
+    }
+
+    .col-1 {
+      width: 250px;
+      min-width: 250px;
+      max-width: 250px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main-cab {
+    .box {
+      margin: 20px 20px 50px 20px;
+      padding: 15px;
+    }
+
+    .col-1 {
+      width: 225px;
+      min-width: 225px;
+      max-width: 225px;
+
+      .menu-cabinet {
+        .m1 {
+          .tab {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 960px) {
+
+  .main-cab {
+    .box {
+      position: relative;
+
+      .bt-ph {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: absolute;
+        background: transparent;
+        color: $color-3;
+        text-align: center;
+        border: none;
+        font-weight: 400;
+        font-size: 20px;
+        width: 32px;
+        right: 15px;
+        cursor: pointer;
+        animation: appearance 0.85s both ease;
+        transition: all 0.25s ease;
+
+        &:hover {
+          color: $color-8;
+        }
+      }
+
+      .bt-no {
+        display: none !important;
+        opacity: 0 !important;
+      }
+
+      .col-1 {
+        display: none;
+        opacity: 0;
+        transition: all 0.25s ease;
+      }
+
+      .col-1-render {
+        display: flex !important;
+        opacity: 1;
+        animation: appearance 0.85s both ease;
+      }
+
+      .col-2 {
+        transition: all 0.25s ease;
+        animation: appearance 0.85s both ease;
+      }
+
+      .col-2-render {
+        display: none !important;
+        opacity: 0;
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 640px) {
+}
+
+@media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 360px) {
 }
