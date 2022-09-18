@@ -1,24 +1,22 @@
-import React, {useEffect, useContext} from "react";
+import React, {useEffect} from "react";
 import AOS from "aos";
-// import {useAxios} from '../../../DataProvider';
+import {useAxios} from '../../../DataProvider';
 import {NavLink, Outlet} from "react-router-dom";
-import {UserContext} from '../../../Context';
-// import {Triangle} from 'react-loader-spinner';
+import {Triangle} from 'react-loader-spinner';
 import { Navigate } from "react-router-dom";
 
 import "./Cab.scss";
 import "aos/dist/aos.css";
 
 import PlayerCabinet from "../../components/[0_grouped_0]-Profile/player-cabinet/Player-cabinet.js";
-// import Auth from "../../../modules/pages/auth/Auth.js";
+import Auth from "../../../modules/pages/auth/Auth.js";
 
 const Cab = () => {
-  const {userContext} = useContext(UserContext);
-  // const resParams = useAxios(
-  //   "/api/me/",
-  //   'GET',
-  //   {}
-  // );
+  const resParams = useAxios(
+    "/api/profile",
+    'GET',
+    {}
+  );
 
   useEffect(() => {
     AOS.init({duration: 1000});
@@ -32,19 +30,18 @@ const Cab = () => {
   const profileMenuMyChangePassword = "Изменить пароль";
   const profileMenuMyGoOut = "Выйти";
 
-  // const data = resParams.data;
-
-  // if (resParams.loading) {
-  //   return <div className="preloader-box"><Triangle wrapperClass="preloader"/></div>
-  // }
-  console.log(userContext.discordUser)
-  if (userContext.discordUser === 'not_auth') {
-    return <Navigate to="/login" replace={true} />
+  if (resParams.loading) {
+    return <div className="preloader-box">< Triangle wrapperClass="preloader"/></div>
   }
 
-  // if (userContext.user === 'not_found') {
-  //   return <Auth />
-  // }
+  console.log(resParams)
+  if (!resParams.data?.discordUser) {
+    return <Navigate to="/api/login" replace={true} />
+  }
+
+  if (!resParams.data.user) {
+    return <Auth />
+  }
 
   function setActive(isActive) {
     return isActive ? "tab checked" : "tab";
@@ -54,7 +51,7 @@ const Cab = () => {
     <div className="main-cab" data-aos="fade-up">
       <div className="box">
         <div className="col-1">
-          <PlayerCabinet {...userContext.user} />
+          <PlayerCabinet {...resParams.data.user} />
           <div className="menu-cabinet">
             <div className="m1">
               <NavLink to="profile" className={({ isActive }) => setActive(isActive)}>{profileMenuMyProfile}</NavLink>

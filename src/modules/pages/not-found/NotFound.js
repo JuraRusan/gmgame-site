@@ -10,8 +10,8 @@ const NotFound = () => {
     AOS.init({duration: 1000});
   }, []);
 
-  if (window.location.pathname === '/login') {
-    window.location = 'http://193.124.206.25:5001/login';
+  if (window.location.pathname === '/api/login') {
+    window.location = 'http://193.124.206.25:3001/api/login';
     return;
   }
 

@@ -1,11 +1,14 @@
-import React, {useState, useEffect, useContext} from "react";
+import React, {useState, useEffect} from "react";
 import {useForm} from "react-hook-form";
 import {ErrorMessage} from "@hookform/error-message";
 import AOS from "aos";
 import {sendRequest} from '../../../../DataProvider';
 import {Navigate, useNavigate} from "react-router-dom";
 import {useAlert} from "react-alert";
-import {UserContext} from '../../../../Context';
+import {useAxios} from '../../../../DataProvider';
+import {Triangle} from 'react-loader-spinner';
+import axios from "axios";
+// import {UserContext} from '../../../../Context';
 
 import "./Auth-comp.scss";
 import "aos/dist/aos.css";
@@ -15,7 +18,8 @@ import Warn from "../../warn/Warn.js";
 import SvgMyProfile from "../../../../bases/icons/SvgMyProfile.js";
 
 const AuthComponent = () => {
-  const {userContext} = useContext(UserContext);
+  // const {userContext} = useContext(UserContext);
+  const [responseData, setResponseData] = React.useState(null);
   const alert = useAlert();
   let navigate = useNavigate();
 
@@ -60,9 +64,9 @@ const AuthComponent = () => {
     };
   }, [watch]);
 
-  if (userContext.user) {
-    return <Navigate to="/cab/profile" replace={true} />
-  }
+  // if (userContext.user) {
+  //   return <Navigate to="/cab/profile" replace={true} />
+  // }
 
   const onSubmit = (data) => console.log(data);
 
@@ -72,22 +76,45 @@ const AuthComponent = () => {
     );
   }
 
-  function registration(d) {
-    const response = sendRequest(
+  const registration = (d) => {
+    // axios(
+    //   '/api/registration_user',
+    //   {
+    //     method: 'POST',
+    //     data: {login: d.username, password: d.password, type: d.type_account, age: d.age, from_about: d.about, you_about: d.interests, servers: d.back_servers, friend_name: d.friend_name}
+    //   }
+    // )
+    // .then(res => {
+    //   console.log(res);
+    //   setResponseData(res);
+    //   if (!response.error && response.body.error) {
+    //     alert.success(response.body.message);
+    //     // setUserContext({user: {login: d.username, password: d.password, type: d.type_account, age: d.age, from_about: d.about, you_about: d.interests, servers: d.back_servers, friend_name: d.friend_name}, discordUser: userContext.discordUser});
+    //     // console.log(userContext);
+    //     navigate('/cab/profile');
+    //     // return <Navigate to="/cab/profile" replace={true} />
+    //   } else {
+    //     alert.error(response.body?.error || response.error);
+    //   }
+    // })
+    // .catch(error => console.log(error))
+    sendRequest(
       '/api/registration_user',
       'POST',
       {login: d.username, password: d.password, type: d.type_account, age: d.age, from_about: d.about, you_about: d.interests, servers: d.back_servers, friend_name: d.friend_name}
-    )
-
-    if (response.body.status_code === 200) {
-      alert.success(response.body.success);
-      // setUserContext({user: {login: d.username, password: d.password, type: d.type_account, age: d.age, from_about: d.about, you_about: d.interests, servers: d.back_servers, friend_name: d.friend_name}, discordUser: userContext.discordUser});
-      // console.log(userContext);
-      navigate('/cab/profile');
-      // return <Navigate to="/cab/profile" replace={true} />
-    } else {
-      alert.error(response.error);
-    }
+    ).then(response => { console.log(response)
+    
+      if (!response.error) {
+        alert.success(response.message);
+        // setUserContext({user: {login: d.username, password: d.password, type: d.type_account, age: d.age, from_about: d.about, you_about: d.interests, servers: d.back_servers, friend_name: d.friend_name}, discordUser: userContext.discordUser});
+        // console.log(userContext);
+        navigate('/cab/profile');
+        // return <Navigate to="/cab/profile" replace={true} />
+      } else {
+        alert.error(response.body?.error || response.error);
+      }
+    });
+  
   }
 
   return (
