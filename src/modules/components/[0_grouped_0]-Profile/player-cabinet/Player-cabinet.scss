@@ -4,9 +4,10 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
-  max-width: 350px;
+  height: auto;
+  max-width: 275px;
   padding-bottom: 15px;
+  padding-top: 15px;
   border-width: 1px;
   border-bottom-style: solid;
   border-image: linear-gradient(to right, rgba(0, 0, 0, 0), $color-3, rgba(0, 0, 0, 0)) 1 0%;
@@ -14,16 +15,55 @@
   .img-player {
     width: 100px;
     height: 100px;
-    margin: 0 auto 10px auto;
+    margin: 0 auto;
   }
 
   .h5-name-player {
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 22px;
     color: $color-3;
     width: 100%;
     height: 22px;
     line-height: 22px;
     text-align: center;
+    margin-top: 10px
   }
+}
+
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+  .player-box {
+    .img-player {
+      height: 75px;
+      width: 75px;
+    }
+
+    .h5-name-player {
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 640px) {
+}
+
+@media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 360px) {
 }

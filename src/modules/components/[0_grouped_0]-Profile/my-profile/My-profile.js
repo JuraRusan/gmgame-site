@@ -54,6 +54,7 @@ const MyProfile = () => {
         <h5 className="h5-ds">{data.discordUser.username}@{data.discordUser.discriminator}</h5>
       </div>
       <div className="prof-block">
+
         <div className="prof-cont">
           <h5 className="h5-cont">{profileServerAdress}</h5>
 
@@ -68,13 +69,14 @@ const MyProfile = () => {
           <h5 className="h5-cont">{profileApplicationAkk}</h5>
           <label className="label-cout profile-application-under-consideration">{data.user.status}</label>
         </div>
-        <div className="prof-cont">
 
-        </div>
+        <div className="prof-cont"></div>
+
         <div className="prof-cont">
           <h5 className="h5-cont">{profileServerVersion}</h5>
           <label className="label-cout font-custom-2">{profileServerVersionOutput}</label>
         </div>
+
       </div>
     </div>
   );

@@ -12,19 +12,17 @@ const Header = () => {
     AOS.init({duration: 1000});
   }, []);
 
-  // function toggle() {
-  //   const toggleButton = document.getElementById("toggle");
-  //   const togglelinks = document.getElementById("links");
-  //   toggleButton.classList.toggle("active");
-  //   togglelinks.classList.toggle("active");
-  // }
+  function toggle() {
+    document.getElementById("toggle").classList.toggle("activeBt");
+    document.getElementById('links').classList.toggle('linksActive');
+  }
 
   return (
     <div className="header" data-aos="fade-down">
       <div className="menu">
-        {/*<div id="toggle" onClick={toggle()}></div>*/}
-        <div className="content-menu">
-          <ul className="links" id="links">
+        <div id="toggle" className="togglePhone" onClick={toggle}></div>
+        <div className="content-menu" id="links">
+          <ul className="links">
             <li className="links-li li-custom-right links-li-ho-hover">
               <a className="title-logo desktop-link" href="/">
                 <span className="colored-title-span-1 font-custom-1">G</span>
@@ -62,7 +60,9 @@ const Header = () => {
                 </>
                 : <>
                   <div className="replace desktop-link custon-header">
-                    <img className="ico-player" src={`https://cdn.discordapp.com/avatars/${userContext.discordUser.id}/${userContext.discordUser.avatar}.png`} alt="none"></img>
+                    <img className="ico-player"
+                         src={`https://cdn.discordapp.com/avatars/${userContext.discordUser.id}/${userContext.discordUser.avatar}.png`}
+                         alt="none"></img>
                     <p className="ico-name-player font-custom-2">{userContext.discordUser.username}</p>
                     <input type="checkbox" id="five-menu"/>
                     <ul className="drop">
