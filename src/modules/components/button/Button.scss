@@ -22,34 +22,34 @@
   overflow: hidden;
   position: relative;
   cursor: pointer;
-}
 
-.style-button:before {
-  content: " ";
-  display: block;
-  width: 200px;
-  height: 40px;
-  background: $color-6;
-  position: absolute;
-  top: -10px;
-  left: -200px;
-  transform: rotate(-45deg);
-  transition: all 0.85s ease-in-out;
-  animation: shine 3s infinite ease;
-}
+  &:before {
+    content: " ";
+    display: block;
+    width: 200px;
+    height: 40px;
+    background: $color-6;
+    position: absolute;
+    top: -10px;
+    left: -200px;
+    transform: rotate(-45deg);
+    transition: all 0.85s ease-in-out;
+    animation: shine 3s infinite ease;
+  }
 
-.style-button:after {
-  content: " ";
-  display: block;
-  width: 200px;
-  height: 30px;
-  background: $color-6;
-  position: absolute;
-  top: -10px;
-  left: -120px;
-  transform: rotate(-45deg);
-  transition: all 0.85s ease-in-out;
-  animation: shine 3s infinite ease;
+  &:after {
+    content: " ";
+    display: block;
+    width: 200px;
+    height: 30px;
+    background: $color-6;
+    position: absolute;
+    top: -10px;
+    left: -120px;
+    transform: rotate(-45deg);
+    transition: all 0.85s ease-in-out;
+    animation: shine 3s infinite ease;
+  }
 }
 
 @media screen and (max-width: 1600px) {

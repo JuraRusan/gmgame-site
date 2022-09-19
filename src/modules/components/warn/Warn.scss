@@ -21,3 +21,46 @@
     font-size: 14px;
   }
 }
+
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 960px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 640px) {
+}
+
+@media screen and (max-width: 480px) {
+  .warn-block {
+    height: 100%;
+    line-height: 20px;
+    min-height: 40px;
+    max-height: 40px;
+
+    .span-war {
+      margin: auto 0;
+    }
+
+    .war-h4-auth {
+      text-align: center;
+      line-height: 1.5;
+      font-size: 13px;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+}

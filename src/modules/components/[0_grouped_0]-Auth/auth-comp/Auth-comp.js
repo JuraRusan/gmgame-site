@@ -6,7 +6,6 @@ import {sendRequest} from '../../../../DataProvider';
 import {Navigate, useNavigate} from "react-router-dom";
 import {useAlert} from "react-alert";
 import {useAxios} from '../../../../DataProvider';
-import {Triangle} from 'react-loader-spinner';
 import axios from "axios";
 // import {UserContext} from '../../../../Context';
 
@@ -42,7 +41,7 @@ const AuthComponent = () => {
   const serverUserBackServersTitle = "Предыдущие сервера *";
 
   const AttentionAuth = "Относитесь ответственно к заполнению заявки";
-  const YesIAgreeRules = "Да я согласен со всей хуйней";
+  const YesIAgreeRules = "Да, я прочитал правила и обязуюсь им следовать.";
 
   const [outputImg, setOutputImg] = useState("https://minotar.net/avatar/steve/100");
   const [outputTypeAkk, setOutputTypeAkk] = useState("");
@@ -128,6 +127,7 @@ const AuthComponent = () => {
                 <SvgMyProfile width="100%" height="100%" color="#f4f4f4"/>
               </span>
               <input
+                autocomplete="off"
                 className="input-custom"
                 type="text"
                 placeholder={serverUserNameTitle}
@@ -204,10 +204,9 @@ const AuthComponent = () => {
               <span className="icon-span">
                 <SvgMyProfile width="100%" height="100%" color="#f4f4f4"/>
               </span>
-              <textarea
+              <input
                 className="input-custom"
                 type="text"
-                rows="4"
                 placeholder={serverUserAboutTitle}
                 {...register("about", {
                   required: {value: true, message: "Обязательное поле"},
@@ -219,10 +218,9 @@ const AuthComponent = () => {
               <span className="icon-span">
                 <SvgMyProfile width="100%" height="100%" color="#f4f4f4"/>
               </span>
-              <textarea
+              <input
                 className="input-custom"
                 type="text"
-                rows="4"
                 placeholder={serverUserInterestsTitle}
                 {...register("interests", {
                   required: {value: true, message: "Обязательное поле"},
@@ -234,10 +232,9 @@ const AuthComponent = () => {
               <span className="icon-span">
                 <SvgMyProfile width="100%" height="100%" color="#f4f4f4"/>
               </span>
-              <textarea
+              <input
                 className="input-custom"
                 type="text"
-                rows="4"
                 placeholder={serverUserBackServersTitle}
                 {...register("back_servers", {
                   required: {value: true, message: "Обязательное поле"},
@@ -272,7 +269,7 @@ const AuthComponent = () => {
               <p className="player-inf">Мой ник в игре: <label>{watch("username")}</label></p>
               <p className="player-inf">Мой возраст: <label>{watch("age")}</label></p>
               <p className="player-inf">Тип аккаунта: <label>{outputTypeAkk}</label></p>
-              <p className="player-inf">Ник друга с которым я играю: <label>{watch("friend_name")}</label></p>
+              <p className="player-inf">Ник друга: <label>{watch("friend_name")}</label></p>
             </div>
           </div>
           <div className="block-l-2">
@@ -282,8 +279,7 @@ const AuthComponent = () => {
           </div>
         </div>
         <form className="margin-block">
-          <input id="submitButton" type="Submit" className="style-button-auth font-custom-3"
-                 onClick={handleSubmit((d) => registration(d))}/>
+          <button id="submitButton" type="Submit" className="style-button-auth font-custom-3" onClick={handleSubmit((d) => registration(d))}>Отправить</button>
         </form>
       </div>
     </div>
