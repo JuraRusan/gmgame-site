@@ -1,11 +1,11 @@
 import {React, useState} from "react";
 import {useAxios} from '../../../../DataProvider';
-import {Triangle} from 'react-loader-spinner';
 import {Link} from 'react-router-dom';
 
 import SvgAddMarker from "../../../../bases/icons/SvgAddMarker.js";
 
 import "../my-markers/My-markers.scss";
+import Preload from "../../preloader/Preload.js";
 
 const MyTerritories = () => {
   let [fileter, setFileter] = useState(null);
@@ -17,7 +17,7 @@ const MyTerritories = () => {
   );
 
   if (resParams.loading) {
-    return <div className="preloader-box">< Triangle wrapperClass="preloader"/></div>
+    return <Preload />
   }
 
   const data = resParams.data;

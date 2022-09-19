@@ -1,15 +1,13 @@
-import React, {useEffect} from "react";
-import AOS from "aos";
+import React from "react";
 import {useAxios} from '../../../DataProvider';
 import {NavLink, Outlet} from "react-router-dom";
-import {Triangle} from 'react-loader-spinner';
-import { Navigate } from "react-router-dom";
+import {Navigate} from "react-router-dom";
 
 import "./Cab.scss";
-import "aos/dist/aos.css";
 
 import PlayerCabinet from "../../components/[0_grouped_0]-Profile/player-cabinet/Player-cabinet.js";
 import Auth from "../../../modules/pages/auth/Auth.js";
+import Preload from "../../components/preloader/Preload.js";
 
 const Cab = () => {
   const resParams = useAxios(
@@ -17,10 +15,6 @@ const Cab = () => {
     'GET',
     {}
   );
-
-  useEffect(() => {
-    AOS.init({duration: 1000});
-  }, []);
 
   const profileMenuMyProfile = "Профиль";
   const profileMenuMyTerritories = "Мои территории";
@@ -31,7 +25,7 @@ const Cab = () => {
   const profileMenuMyGoOut = "Выйти";
 
   if (resParams.loading) {
-    return <div className="preloader-box">< Triangle wrapperClass="preloader"/></div>
+    return <Preload />
   }
 
   console.log(resParams)

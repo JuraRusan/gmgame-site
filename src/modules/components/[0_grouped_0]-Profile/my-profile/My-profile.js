@@ -1,8 +1,8 @@
 import React from "react";
 import {useAxios} from '../../../../DataProvider';
-import {Triangle} from 'react-loader-spinner';
 
 import "./My-profile.scss";
+import Preload from "../../preloader/Preload.js";
 
 
 const MyProfile = () => {
@@ -13,7 +13,7 @@ const MyProfile = () => {
   );
 
   if (resParams.loading) {
-    return <div className="preloader-box">< Triangle wrapperClass="preloader"/></div>
+    return <Preload />
   }
 
   const data = resParams.data;

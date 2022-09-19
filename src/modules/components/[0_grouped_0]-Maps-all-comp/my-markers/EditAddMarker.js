@@ -1,12 +1,12 @@
 import {React, useState} from "react";
 import Warn from "../../warn/Warn.js";
 import {useAxios, sendRequest} from '../../../../DataProvider';
-import {Triangle} from 'react-loader-spinner';
 import {useNavigate, useParams} from 'react-router-dom';
 import {useAlert} from "react-alert";
 
 import "./My-markers.scss";
 
+import Preload from "../../preloader/Preload.js";
 
 const EditAddMarker = (params) => {
   const navigate = useNavigate();
@@ -67,7 +67,7 @@ const EditAddMarker = (params) => {
   );
 
   if (resParams.loading) {
-    return <div className="preloader-box">< Triangle wrapperClass="preloader"/></div>
+    return <Preload />
   }
 
   const data = resParams.data;
