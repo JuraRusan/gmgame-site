@@ -62,7 +62,7 @@ const Cab = () => {
   }
 
   return (
-    <div className="main-cab" data-aos="fade-up">
+    <div className="main-cab">
       <div className="box">
         <button id="btDel" className="bt-ph bt-no" onClick={phCabFunctionRemove}>&#128473;</button>
         <button id="btAdd" className="bt-ph" onClick={phCabFunctionAdd}>&#9776;</button>
