@@ -4,7 +4,7 @@ import "./Item.scss";
 
 const Item = () => {
   return (
-    <div className="animation-bg-item"></div>
+      <div className="animation-bg-item"></div>
   );
 };
 

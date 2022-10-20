@@ -22,9 +22,9 @@ function App() {
   return (
     <Router>
       <div id="dynamic" className="main-wrapper-bg">
-        <div className="class-z-index-10000"><Header/></div>
+        <div className="class-z-index-10000-header"><Header/></div>
         <div className="class-z-index-1000"><Routes/></div>
-        <div className="class-z-index-10000"><Fotter/></div>
+        <div className="class-z-index-10000-fotter"><Fotter/></div>
       </div>
     </Router>
   );

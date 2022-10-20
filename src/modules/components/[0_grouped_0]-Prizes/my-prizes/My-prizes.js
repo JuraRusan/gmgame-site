@@ -12,7 +12,7 @@ const MyPrizes = () => {
       <div className="all-prizes">
         <div className="one-prizes">
           <div className="img-block">
-            <Item/>
+            <Item />
           </div>
           <div className="prizes-all">
             <h5 className="text-h5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet non omnis
@@ -23,7 +23,7 @@ const MyPrizes = () => {
         </div>
         <div className="one-prizes">
           <div className="img-block">
-            <Money/>
+            <Money />
           </div>
           <div className="prizes-all">
             <h5 className="text-h5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet non omnis

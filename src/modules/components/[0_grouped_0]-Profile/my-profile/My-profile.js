@@ -61,7 +61,6 @@ const MyProfile = () => {
           <div className="label-cout">
             <input className="label-cout font-custom-2" type="text" value={profileServerAdressOutput} id="myInput"
                    disabled/>
-            <button className="copy-button" onClick={activateAnimated}></button>
           </div>
         </div>
 
@@ -74,7 +73,8 @@ const MyProfile = () => {
 
         <div className="prof-cont">
           <h5 className="h5-cont">{profileServerVersion}</h5>
-          <label className="label-cout font-custom-2">{profileServerVersionOutput}</label>
+          {/*<label className="label-cout font-custom-2">{profileServerVersionOutput}</label>*/}
+          <label className="label-cout font-custom-2">Java Edition 1.19.2</label>
         </div>
 
       </div>

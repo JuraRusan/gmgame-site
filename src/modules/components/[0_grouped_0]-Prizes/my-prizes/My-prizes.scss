@@ -37,50 +37,172 @@
       .img-block {
         display: flex;
         width: 100px;
+        min-width: 100px;
+        max-width: 100px;
         height: 100px;
+        min-height: 100px;
+        max-height: 100px;
         margin: auto 15px auto 15px;
+
+        .animation-bg-money,
+        .animation-bg-item {
+          display: flex;
+          width: 100px;
+          height: 100px;
+        }
       }
 
       .prizes-all {
         display: flex;
-        width: 90%;
+        flex-direction: row;
+        width: 100%;
         height: auto;
         padding: 15px;
         border-width: 1px;
         border-left-style: solid;
         border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), $color-22, rgba(0, 0, 0, 0)) 1 100%;
-      }
 
-      .text-h5 {
-        font-weight: 400;
-        font-size: 16px;
-        color: $color-3;
-        text-align: center;
-        height: auto;
-        line-height: 30px;
-        width: auto;
-        margin-right: 15px;
-      }
 
-      .pick {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: auto;
-        max-width: 125px;
-        min-width: 125px;
-        height: 35px;
-        line-height: 35px;
-        margin: auto 0;
-        text-align: center;
-        font-size: 18px;
-        font-weight: 400;
-        color: $color-3;
-        background: $color-4;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
+        .text-h5 {
+          font-weight: 400;
+          font-size: 16px;
+          color: $color-3;
+          text-align: center;
+          height: auto;
+          line-height: 25px;
+          width: auto;
+          margin-right: 15px;
+        }
+
+        .pick {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          width: auto;
+          max-width: 125px;
+          min-width: 125px;
+          height: 35px;
+          line-height: 35px;
+          margin: auto 0;
+          text-align: center;
+          font-size: 18px;
+          font-weight: 400;
+          color: $color-3;
+          background: $color-4;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
       }
     }
   }
+}
+
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1280px) {
+  .box-prizes {
+    .all-prizes {
+      .one-prizes {
+        height: auto;
+        min-height: 130px;
+
+        .prizes-all {
+          flex-direction: column;
+
+          .pick {
+            margin: 10px auto 0 auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 960px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 640px) {
+  .box-prizes {
+    .prizes-h4 {
+      font-size: 22px;
+      margin: 15px auto;
+    }
+
+    .all-prizes {
+      .one-prizes {
+        flex-direction: column;
+        height: auto;
+
+        .img-block {
+          margin: 0 auto;
+        }
+
+        .prizes-all {
+          flex-direction: column;
+          border: none;
+
+          .text-h5 {
+            font-size: 14px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 5px;
+            border-width: 1px;
+            border-bottom-style: solid;
+            border-top-style: solid;
+            border-image: linear-gradient(to right, rgba(0, 0, 0, 0), $color-22, rgba(0, 0, 0, 0)) 1 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .box-prizes {
+    .prizes-h4 {
+      font-size: 20px;
+      margin: 15px auto 10px auto;
+    }
+
+    .all-prizes {
+      padding-right: 10px;
+
+      .one-prizes {
+        .img-block {
+          width: 75px;
+          min-width: 75px;
+          max-width: 75px;
+          height: 75px;
+          min-height: 75px;
+          max-height: 75px;
+
+          .animation-bg-money,
+          .animation-bg-item {
+            display: flex;
+            width: 75px;
+            height: 75px;
+          }
+        }
+
+        .prizes-all {
+          padding: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+
 }

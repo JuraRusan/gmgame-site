@@ -9,6 +9,15 @@
   }
 }
 
+@keyframes disappearanceHeader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0 !important;
+  }
+}
+
 .header {
   z-index: 1000;
   min-height: 75px;
@@ -332,8 +341,9 @@
       }
 
       .content-menu {
-        display: none;
+        // animation: disappearanceHeader 0.85s both ease;
         opacity: 0;
+        display: none;
         transition: all 0.25s ease;
 
         .links {
@@ -348,7 +358,6 @@
         height: 100vh;
         background: $color-15;
         display: flex;
-        position: fixed;
         animation: appearanceHeader 0.85s both ease;
         opacity: 1;
       }

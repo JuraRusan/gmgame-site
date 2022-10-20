@@ -55,9 +55,14 @@ div#root {
   background: $color-7 !important;
 }
 
-.class-z-index-10000 {
+.class-z-index-10000-header {
   position: relative;
   z-index: 10000;
+}
+
+.class-z-index-8000-fotter {
+  position: relative;
+  z-index: 8000;
 }
 
 .class-z-index-1000 {
@@ -65,4 +70,39 @@ div#root {
   min-height: 600px;
   width: auto;
   max-height: none;
+}
+
+
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 960px) {
+  .class-z-index-10000-header {
+    position: fixed;
+    width: 100%;
+  }
+  .class-z-index-1000 {
+    padding-top: 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 640px) {
+}
+
+@media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 360px) {
 }
