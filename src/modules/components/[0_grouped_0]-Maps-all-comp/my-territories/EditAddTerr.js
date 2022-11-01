@@ -25,9 +25,18 @@ const EditAddTerr = (params) => {
   let [formName, setFormName] = useState('');
   let [formServer, setFormServer] = useState('gmgame');
 
-  const saveMarker = () => {
-    const response = sendRequest(
-      '/api/save_edit_markers',
+  function showMessage(response) {
+    if (response.message) {
+      alert.success(response.message);
+      navigate(-1);
+    } else {
+      alert.error(response.error);
+    }
+  }
+
+  function terrRequest(url) {
+    sendRequest(
+      url,
       'POST',
       {
         server: formServer,
@@ -36,31 +45,23 @@ const EditAddTerr = (params) => {
         stopX: formXStop,
         startZ: formZStart,
         stopZ: formZStop,
-        terrID: id
+        terrID: id === 'new' ? -1 : id
       }
-    )
+    ).then(response => {
+      showMessage(response);
+    });
+  }
 
-    if (response.body.data) {
-      alert.success(response.body.data);
-      navigate(-1);
-    } else {
-      alert.error(response.body.error);
-    }
+  const saveMarker = () => {
+    terrRequest('/api/edit_markers');
+  }
+
+  const addMarker = () => {
+    terrRequest('/api/add_markers');
   }
 
   const deleteMarker = () => {
-    const response = sendRequest(
-      '/api/delete_markers',
-      'POST',
-      {markerID: id}
-    )
-
-    if (response.body.data) {
-      alert.success(response.body.data);
-      navigate(-1);
-    } else {
-      alert.error(response.body.error);
-    }
+    terrRequest('/api/delete_markers');
   }
 
   const resParams = useAxios(
@@ -127,7 +128,7 @@ const EditAddTerr = (params) => {
           <Warn inf={AttentionCoords}/>
         </div>
         <div className="box-bt">
-          <button className="bt-all bt-add font-custom-2" onClick={saveMarker}>Сохранить</button>
+          <button className="bt-all bt-add font-custom-2" onClick={id === 'new' ? addMarker : saveMarker}>Сохранить</button>
           {id === 'new'
             ? ''
             : <button className="bt-all bt-del font-custom-2" onClick={deleteMarker}>Удалить</button>
@@ -137,7 +138,7 @@ const EditAddTerr = (params) => {
       <div className="colums-add-2">
         {id === 'new'
           ? <iframe title="map" src="https://map.gmgame.ru/#/-7/64/-54/-4/GMGameWorld%20-%20overworld/over" width="100%" height="100%"/>
-          : <iframe title="map" src={`https://map.gmgame.ru/#/${data.terr.xStart}/64/${data.terr.zStart}/-4/${data.terr.world_name}/over`} width="100%" height="100%"/>
+          : <iframe title="map" src={`https://map.gmgame.ru/#/${data.terr.xStart}/64/${data.terr.zStart}/-4/${data.world_name}/over`} width="100%" height="100%"/>
         }
       </div>
     </div>

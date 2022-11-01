@@ -101,8 +101,7 @@ const AuthComponent = () => {
       '/api/registration_user',
       'POST',
       {login: d.username, password: d.password, type: d.type_account, age: d.age, from_about: d.about, you_about: d.interests, servers: d.back_servers, friend_name: d.friend_name}
-    ).then(response => { console.log(response)
-    
+    ).then(response => {
       if (!response.error) {
         alert.success(response.message);
         // setUserContext({user: {login: d.username, password: d.password, type: d.type_account, age: d.age, from_about: d.about, you_about: d.interests, servers: d.back_servers, friend_name: d.friend_name}, discordUser: userContext.discordUser});

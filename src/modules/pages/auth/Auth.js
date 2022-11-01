@@ -1,10 +1,9 @@
 import React from "react";
 
 import "./Auth.scss";
-
 import AuthComponent from "../../components/[0_grouped_0]-Auth/auth-comp/Auth-comp.js";
 
-const auth = () => {
+const Auth = () => {
   return (
     <div className="main-reg">
       <AuthComponent/>
@@ -12,4 +11,4 @@ const auth = () => {
   );
 };
 
-export default auth;
+export default Auth;

@@ -11,7 +11,7 @@ const NotFound = () => {
   }, []);
 
   if (window.location.pathname === '/api/login') {
-    window.location = 'http://193.124.206.25:3001/api/login';
+    window.location = 'http://127.0.0.1:3001/api/login';
     return;
   }
 
