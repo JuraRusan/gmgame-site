@@ -53,15 +53,15 @@ const EditAddTerr = (params) => {
   }
 
   const saveMarker = () => {
-    terrRequest('/api/edit_markers');
+    terrRequest('/api/edit_terr');
   }
 
   const addMarker = () => {
-    terrRequest('/api/add_markers');
+    terrRequest('/api/add_terr');
   }
 
   const deleteMarker = () => {
-    terrRequest('/api/delete_markers');
+    terrRequest('/api/delete_terr');
   }
 
   const resParams = useAxios(

@@ -66,7 +66,7 @@ const MyProfile = () => {
 
         <div className="prof-cont">
           <h5 className="h5-cont">{profileApplicationAkk}</h5>
-          <label className="label-cout profile-application-under-consideration">{data.user.status}</label>
+          <label className="label-cout profile-application-under-consideration">{data.status}</label>
         </div>
 
         <div className="prof-cont"></div>
