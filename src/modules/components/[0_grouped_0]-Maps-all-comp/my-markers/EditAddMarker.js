@@ -88,7 +88,7 @@ const EditAddMarker = (params) => {
     <div className="box-marker-add">
       <div className="colums-add-1">
         <div className="col-row">
-          <button onClick={() => navigate(-1)} className="go-back">{"<-- Вертать в зад"}</button>
+          <button onClick={() => navigate(-1)} className="go-back">{"<-- Показать весь список"}</button>
           <h5 className="input-name">Название</h5>
           <input className="input-str" defaultValue={formDescription} onChange={(e) => setFormDescription(e.target.value)}/>
           <h5 className="input-name">Имя</h5>

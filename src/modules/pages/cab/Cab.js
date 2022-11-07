@@ -72,7 +72,7 @@ const Cab = () => {
               <NavLink onClick={phCabFunctionRemove} to="change_password" className={({isActive}) => setActive(isActive)}>{profileMenuMyChangePassword}</NavLink>
             </div>
             <div className="m1">
-              <label className="tab">{profileMenuMyGoOut}</label>
+              <button className="tab">{profileMenuMyGoOut}</button>
             </div>
           </div>
         </div>
