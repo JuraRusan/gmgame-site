@@ -3,11 +3,8 @@ import {useForm} from "react-hook-form";
 import {ErrorMessage} from "@hookform/error-message";
 import AOS from "aos";
 import {sendRequest} from '../../../../DataProvider';
-import {Navigate, useNavigate} from "react-router-dom";
+// import {useNavigate} from "react-router-dom";
 import {useAlert} from "react-alert";
-import {useAxios} from '../../../../DataProvider';
-import axios from "axios";
-// import {UserContext} from '../../../../Context';
 
 import "./Auth-comp.scss";
 import "aos/dist/aos.css";
@@ -17,10 +14,8 @@ import Warn from "../../warn/Warn.js";
 import SvgMyProfile from "../../../../bases/icons/SvgMyProfile.js";
 
 const AuthComponent = () => {
-  // const {userContext} = useContext(UserContext);
-  const [responseData, setResponseData] = React.useState(null);
   const alert = useAlert();
-  let navigate = useNavigate();
+  // let navigate = useNavigate();
 
   useEffect(() => {
     AOS.init({duration: 1000});
@@ -106,7 +101,8 @@ const AuthComponent = () => {
         alert.success(response.message);
         // setUserContext({user: {login: d.username, password: d.password, type: d.type_account, age: d.age, from_about: d.about, you_about: d.interests, servers: d.back_servers, friend_name: d.friend_name}, discordUser: userContext.discordUser});
         // console.log(userContext);
-        navigate('/cab/profile');
+        // navigate('/cab/profile');
+        window.location.reload(true);
         // return <Navigate to="/cab/profile" replace={true} />
       } else {
         alert.error(response.body?.error || response.error);

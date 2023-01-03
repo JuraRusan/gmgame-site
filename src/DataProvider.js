@@ -1,7 +1,7 @@
 import {useEffect, useState, useRef} from 'react'
 import axios from "axios";
 
-const useAxios = (url, method, payload) => {
+const useAxios = (url, method, payload, refresh) => {
   let [data, setData] = useState(null);
   let [error, setError] = useState("");
   let [loaded, setLoaded] = useState(false);
@@ -51,13 +51,13 @@ const useAxios = (url, method, payload) => {
       // }
     // })();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [method, url]);
+  }, [method, url, refresh]);
   return {cancel: cancel, data: data, error: error, loaded: loaded, loading: loading};
 };
 
  
 async function sendRequest(url, method, payload) {
-  let {data, error} = undefined || {};
+  // let {data, error} = undefined || {};
 
   // const xhr = new XMLHttpRequest();
   // xhr.open(method, url, true);
