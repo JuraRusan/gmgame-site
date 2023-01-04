@@ -38,12 +38,12 @@ const MyProfile = () => {
   const profileServerAdressOutput = "mine.gmgame.ru";
   const profileServerVersionOutput = "Java Edition " + data.version;
 
-  function activateAnimated() {
-    var copyText = document.getElementById("myInput");
-    copyText.select();
-    copyText.setSelectionRange(0, 99999); /* For mobile devices */
-    navigator.clipboard.writeText(copyText.value);
-  }
+  // function activateAnimated() {
+  //   var copyText = document.getElementById("myInput");
+  //   copyText.select();
+  //   copyText.setSelectionRange(0, 99999); /* For mobile devices */
+  //   navigator.clipboard.writeText(copyText.value);
+  // }
 
   return (
     <div className="profile-block">
@@ -73,8 +73,7 @@ const MyProfile = () => {
 
         <div className="prof-cont">
           <h5 className="h5-cont">{profileServerVersion}</h5>
-          {/*<label className="label-cout font-custom-2">{profileServerVersionOutput}</label>*/}
-          <label className="label-cout font-custom-2">Java Edition 1.19.2</label>
+          <label className="label-cout font-custom-2">{profileServerVersionOutput}</label>
         </div>
 
       </div>

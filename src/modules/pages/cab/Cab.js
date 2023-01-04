@@ -1,5 +1,5 @@
 import React from "react";
-import {useAxios} from '../../../DataProvider';
+import {useAxios, sendRequest} from '../../../DataProvider';
 import {NavLink, Outlet} from "react-router-dom";
 import {Navigate} from "react-router-dom";
 
@@ -55,6 +55,17 @@ const Cab = () => {
     document.getElementById("btAdd").classList.remove("bt-no");
   }
 
+  const logout = () => {
+    sendRequest(
+      '/api/logout',
+      'POST',
+      {}
+    ).then(response => {
+      localStorage.clear();
+      window.location.href = '/';
+    });
+  }
+
   return (
     <div className="main-cab">
       <div className="box">
@@ -72,7 +83,7 @@ const Cab = () => {
               <NavLink onClick={phCabFunctionRemove} to="change_password" className={({isActive}) => setActive(isActive)}>{profileMenuMyChangePassword}</NavLink>
             </div>
             <div className="m1">
-              <button className="tab">{profileMenuMyGoOut}</button>
+              <button className="tab" onClick={logout}>{profileMenuMyGoOut}</button>
             </div>
           </div>
         </div>
