@@ -4,7 +4,7 @@ import {useAxios, sendRequest} from '../../../../DataProvider';
 import {useNavigate, useParams} from 'react-router-dom';
 import {useAlert} from "react-alert";
 
-import "./My-markers.scss";
+import "../Add-style-maps.scss";
 
 import Preload from "../../preloader/Preload.js";
 
