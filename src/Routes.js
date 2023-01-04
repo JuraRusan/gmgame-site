@@ -26,6 +26,8 @@ import AllApplications from "./modules/components/[0_grouped_0]-Admin/applicatio
 import AllPlayerTerritories from "./modules/components/[0_grouped_0]-Admin/all-player-territories/AllPlayerTerritories.js"
 import AllPlayerMarkers from "./modules/components/[0_grouped_0]-Admin/all-player-markers/AllPlayerMarkers.js"
 import AllPlayerArticles from "./modules/components/[0_grouped_0]-Admin/all-player-articles/AllPlayerArticles.js"
+import RedFaq from "./modules/components/[0_grouped_0]-Admin/red-faq/RedFaq.js";
+import RedRegulations from "./modules/components/[0_grouped_0]-Admin/red-regulations/RedRegulations.js";
 
 const options = {
   timeout: 7000,
@@ -54,6 +56,8 @@ const Router = () => {
           <Route path="allPlayerTerritories" element={<AllPlayerTerritories/>}/>
           <Route path="allPlayerMarkers" element={<AllPlayerMarkers/>}/>
           <Route path="allPlayerArticles" element={<AllPlayerArticles/>}/>
+          <Route path="redFaq" element={<RedFaq/>}/>
+          <Route path="redRegulations" element={<RedRegulations/>}/>
         </Route>
         <Route path="/faq" element={<Faq/>}/>
         <Route path="/regulations" element={<Regulations/>}/>

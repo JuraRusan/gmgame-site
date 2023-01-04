@@ -15,6 +15,8 @@ const AdminDashboard = () => {
   const allPlayerTerritories = "Территории";
   const allPlayerMarker = "Метки";
   const allPlayerArticles = "Статьи";
+  const redFaq = "faq";
+  const redRegulations = "Правила";
 
   function setActive(isActive) {
     return isActive ? "tab-admin checked" : "tab-admin";
@@ -28,6 +30,8 @@ const AdminDashboard = () => {
           <NavLink to="allPlayerTerritories" className={({isActive}) => setActive(isActive)}>{allPlayerTerritories}</NavLink>
           <NavLink to="allPlayerMarkers" className={({isActive}) => setActive(isActive)}>{allPlayerMarker}</NavLink>
           <NavLink to="allPlayerArticles" className={({isActive}) => setActive(isActive)}>{allPlayerArticles}</NavLink>
+          <NavLink to="redFaq" className={({isActive}) => setActive(isActive)}>{redFaq}</NavLink>
+          <NavLink to="redRegulations" className={({isActive}) => setActive(isActive)}>{redRegulations}</NavLink>
         </div>
         <div className="output-click-admin">
           <Outlet/>
