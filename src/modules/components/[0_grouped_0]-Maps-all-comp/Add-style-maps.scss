@@ -178,9 +178,44 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .box-marker-add {
+    flex-direction: column;
+    overflow: auto;
+
+    .colums-add-1 {
+      height: auto;
+      min-height: 430px;
+      max-height: 600px;
+      width: 96%;
+    }
+
+    .colums-add-2 {
+      height: auto;
+      min-height: 750px;
+      max-height: 950px;
+      padding: 8px;
+    }
+  }
 }
 
 @media screen and (max-width: 960px) {
+  .box-marker-add {
+    .colums-add-1 {
+      margin: 10px auto 5px auto;
+
+      .box-bt {
+        justify-content: center;
+
+        .bt-all {
+          margin: 0 15px;
+        }
+      }
+    }
+
+    .colums-add-2 {
+      max-width: none;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {

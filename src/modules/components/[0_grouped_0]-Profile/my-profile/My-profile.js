@@ -1,9 +1,9 @@
 import React from "react";
 import {useAxios} from '../../../../DataProvider';
+import Ping from 'ping.js';
 
 import "./My-profile.scss";
 import Preload from "../../preloader/Preload.js";
-
 
 const MyProfile = () => {
   const resParams = useAxios(
@@ -13,37 +13,42 @@ const MyProfile = () => {
   );
 
   if (resParams.loading) {
-    return <Preload />
+    return <Preload/>
   }
 
   const data = resParams.data;
-
-
-  // const user = params.user;
-  // const userDC = params.userDC;
-  // const version = params.version;
-
-
-  // const profileApplicationNotSubmitted = "Заявка не подана";
-  // const profileApplicationUnderConsideration = "Заявка на рассмотрении";
-  // const profileApplicationNotAccepted = "Заявка не принята";
-  // const profileApplicationOnWhitelist = "В вайт листе";
-  // const profileApplicationDroppedOffWhitelist = "Выпал из вайтлиста";
-  // const profileApplicationBannedCheck = "Забанен, чекай";
 
   const profileServerAdress = "Адрес сервера";
   const profileApplicationAkk = "Статус аккаунта";
   const profileServerVersion = "Версия игры";
 
-  const profileServerAdressOutput = "mine.gmgame.ru";
   const profileServerVersionOutput = "Java Edition " + data.version;
 
-  // function activateAnimated() {
-  //   var copyText = document.getElementById("myInput");
-  //   copyText.select();
-  //   copyText.setSelectionRange(0, 99999); /* For mobile devices */
-  //   navigator.clipboard.writeText(copyText.value);
-  // }
+  var compPing = new Ping();
+
+  compPing.ping("mine.gmgame.ru", function (err, data) {
+    if (err) {
+      console.log("Ошибка загрузки ресурса!")
+      data = data + " " + err;
+    }
+    document.getElementById("ping-ip1").innerHTML = data;
+  });
+
+  compPing.ping("lv.gmgame.ru", function (err, data) {
+    if (err) {
+      console.log("Ошибка загрузки ресурса!")
+      data = data + " " + err;
+    }
+    document.getElementById("ping-ip2").innerHTML = data;
+  });
+
+  compPing.ping("by.gmgame.ru", function (err, data) {
+    if (err) {
+      console.log("Ошибка загрузки ресурса!")
+      data = data + " " + err;
+    }
+    document.getElementById("ping-ip3").innerHTML = data;
+  });
 
   return (
     <div className="profile-block">
@@ -56,26 +61,26 @@ const MyProfile = () => {
       <div className="prof-block">
 
         <div className="prof-cont">
-          <h5 className="h5-cont">{profileServerAdress}</h5>
-
-          <div className="label-cout">
-            <input className="label-cout font-custom-2" type="text" value={profileServerAdressOutput} id="myInput"
-                   disabled/>
-          </div>
-        </div>
-
-        <div className="prof-cont">
           <h5 className="h5-cont">{profileApplicationAkk}</h5>
-          <label className="label-cout profile-application-under-consideration">{data.status}</label>
+          <label className="label-cout">{data.status}</label>
         </div>
-
-        <div className="prof-cont"></div>
 
         <div className="prof-cont">
           <h5 className="h5-cont">{profileServerVersion}</h5>
           <label className="label-cout font-custom-2">{profileServerVersionOutput}</label>
         </div>
 
+        <div className="prof-cont-custom">
+          <h5 className="h5-cont">{profileServerAdress}</h5>
+          <div className="ip-list">
+            <label className="label-cout-custom font-custom-2">mine.gmgame.ru <span className="span-ping"
+                                                                                    id="ping-ip1"></span></label>
+            <label className="label-cout-custom font-custom-2">lv.gmgame.ru <span className="span-ping"
+                                                                                  id="ping-ip2"></span></label>
+            <label className="label-cout-custom font-custom-2">by.gmgame.ru <span className="span-ping"
+                                                                                  id="ping-ip3"></span></label>
+          </div>
+        </div>
       </div>
     </div>
   );
