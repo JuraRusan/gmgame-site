@@ -45,7 +45,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        transition: all 0.15s ease;
+        transition: all 0.20s ease;
         width: 100%;
         height: auto;
 
@@ -59,11 +59,8 @@
           width: 100%;
           min-width: 225px;
           max-width: 225px;
-          margin-left: 17px;
-          margin-right: 17px;
-          margin-top: 25px;
-          margin-bottom: 25px;
-          transition: all 0.35s ease;
+          margin: 17px;
+          transition: all 0.20s ease;
 
           &:hover {
             border-radius: 10px;
@@ -140,7 +137,7 @@
             background: $color-21;
             top: 0;
             opacity: 0;
-            transition: all 0.2s ease-out;
+            transition: all 0.2s ease;
             visibility: hidden;
             border-radius: 10px;
             width: 100%;
@@ -152,7 +149,8 @@
               text-align: start;
               padding: 3px;
               margin: 3px;
-              transition: all 0.35s ease;
+              transition: all 0.20s ease;
+              cursor: pointer;
 
               &:hover {
                 border-radius: 10px;
@@ -179,7 +177,8 @@
           top: 50px;
           opacity: 1;
           visibility: visible;
-          transition: all 0.35s ease;
+          transition: all 0.20s ease;
+          transition-delay: 200ms;
         }
 
         .li-custom-right {
@@ -344,7 +343,7 @@
         // animation: disappearanceHeader 0.85s both ease;
         opacity: 0;
         display: none;
-        transition: all 0.25s ease;
+        transition: all 0.20s ease;
 
         .links {
           flex-direction: column;
@@ -364,7 +363,6 @@
     }
   }
 }
-
 
 @media screen and (max-width: 768px) {
 }
