@@ -22,6 +22,10 @@ import Mods from "./modules/pages/mods/Mods.js";
 import Statistic from "./modules/pages/statistic/Statistic.js";
 import Maps from "./modules/pages/maps/Maps.js";
 import Support from "./modules/pages/support/Support.js";
+import AllApplications from "./modules/components/[0_grouped_0]-Admin/applications/AllApplications.js"
+import AllPlayerTerritories from "./modules/components/[0_grouped_0]-Admin/all-player-territories/AllPlayerTerritories.js"
+import AllPlayerMarkers from "./modules/components/[0_grouped_0]-Admin/all-player-markers/AllPlayerMarkers.js"
+import AllPlayerArticles from "./modules/components/[0_grouped_0]-Admin/all-player-articles/AllPlayerArticles.js"
 
 const options = {
   timeout: 7000,
@@ -45,9 +49,14 @@ const Router = () => {
           <Route path="prize" element={<MyPrizes/>}/>
           <Route path="change_password" element={<ChangePassword/>}/>
         </Route>
+        <Route exact path="/adminDashboard" element={<AdminDashboard/>}>
+          <Route path="allApplications" element={<AllApplications/>}/>
+          <Route path="allPlayerTerritories" element={<AllPlayerTerritories/>}/>
+          <Route path="allPlayerMarkers" element={<AllPlayerMarkers/>}/>
+          <Route path="allPlayerArticles" element={<AllPlayerArticles/>}/>
+        </Route>
         <Route path="/faq" element={<Faq/>}/>
         <Route path="/regulations" element={<Regulations/>}/>
-        <Route path="/adminDashboard" element={<AdminDashboard/>}/>
         <Route path="/articlesWiki" element={<ArticlesWiki/>}/>
         <Route path="/mods" element={<Mods/>}/>
         <Route path="/statistic" element={<Statistic/>}/>

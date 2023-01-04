@@ -11,9 +11,57 @@
     height: auto;
     min-height: 800px;
     background: $color-11;
-    margin: 0 auto 75px auto;
-    padding: 50px;
+    margin: 15px auto 75px auto;
+    padding: 10px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+
+    .input-click-admin {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      height: 50px;
+      width: 100%;
+      border-width: 1px;
+      border-bottom-style: solid;
+      border-top-style: solid;
+      border-image: linear-gradient(to right, rgba(0, 0, 0, 0), $color-3, rgba(0, 0, 0, 0)) 1 0%;
+
+      .tab-admin {
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        width: auto;
+        height: 40px;
+        line-height: 40px;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 20px;
+        margin: auto 10px;
+        padding: 0 12px;
+        color: $color-3;
+        border: none;
+        text-align: start;
+        border-radius: 15px;
+        outline: none;
+
+        &:active,
+        &:hover {
+          outline: none;
+        }
+
+        &:hover {
+          background: $color-14;
+        }
+      }
+
+      .checked {
+        background-color: $color-21 !important;
+      }
+    }
+
+    .output-click-admin {
+
+    }
   }
 }
