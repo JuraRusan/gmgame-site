@@ -45,7 +45,7 @@ const MyMarkers = () => {
             <div key={el.id} className="str">
               <div className="colums-1">
                 <p className="str-p">{index + 1}</p>
-                <h3 className="str-h3">{el.description}</h3>
+                <h3 className="str-h3">{el.name}</h3>
               </div>
               <div className="colums-2">
                 <Link to={`edit_add_marker/${el.id}`} className="str-bt">Настроить</Link>
