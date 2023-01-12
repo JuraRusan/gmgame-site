@@ -8,12 +8,35 @@
 
   .prizes-h4 {
     width: auto;
-    height: 35px;
-    line-height: 35px;
+    height: 30px;
+    line-height: 30px;
     color: $color-3;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 400;
     margin: 30px auto;
+  }
+
+  .prizes-link {
+    font-weight: 400;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: $color-1;
+    margin: 0 auto;
+    text-align: center;
+    outline: none;
+    transition: all 0.55s ease;
+    text-decoration: none;
+
+    &:active,
+    &:visited,
+    &:hover {
+      outline: none;
+    }
+
+    &:hover {
+      color: $color-12;
+    }
   }
 
   .all-prizes {

@@ -5,19 +5,142 @@
   flex-direction: column;
   width: auto;
   height: auto;
+  min-height: 800px;
 
   .support {
     width: 100%;
-    height: 600px;
+    height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
+    padding-top: 50px;
 
-    h4 {
+    .title-support {
       font-size: 32px;
       font-weight: 400;
       color: $color-3;
+      margin: 25px auto;
+      text-align: center;
+    }
+
+    .sub-title-support {
+      font-size: 16px;
+      font-weight: 400;
+      color: $color-3;
       margin: 0 auto;
+      padding: 0 50px 0 50px;
+      text-align: center;
+    }
+
+    .footer-support {
+      font-size: 16px;
+      font-weight: 400;
+      color: $color-3;
+      margin: 10px auto;
+      padding: 0 50px 0 50px;
+      text-align: center;
+    }
+
+    .support-link {
+      font-weight: 400;
+      width: 350px;
+      height: 40px;
+      line-height: 40px;
+      color: $color-1;
+      margin: 0 auto;
+      text-align: center;
+      outline: none;
+      transition: all 0.55s ease;
+      text-decoration: none;
+
+      &:active,
+      &:visited,
+      &:hover {
+        outline: none;
+      }
+
+      &:hover {
+        color: $color-12;
+      }
+    }
+
+    .monitoring-block {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 80%;
+      margin: 100px auto 0 auto;
+
+      .monitoring-title {
+        width: 100%;
+        display: flex;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        color: $color-3;
+        font-weight: 400;
+        font-size: 24px;
+        justify-content: center;
+        margin: 10px auto;
+      }
+
+      .monitoring-card {
+        width: 240px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 8px auto;
+        background: $color-7;
+        border: 0.5px solid $color-22;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.35s ease;
+        outline: none;
+        color: $color-3;
+        text-decoration: none;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.25;
+
+        &:active, &:visited {
+          outline: none;
+          color: $color-3;
+        }
+
+        &:hover {
+          background: $color-21;
+        }
+      }
     }
   }
+}
+
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 960px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 640px) {
+}
+
+@media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 360px) {
 }

@@ -54,7 +54,6 @@ const MyPrizes = () => {
   return (
     <div className="box-prizes">
       <h4 className="prizes-h4">У Вас {data.count} выигрышей</h4>
-      {/*<h4 className="prizes-h4">У Вас нету выигрышей, примите участие в розыгрыше на мониторинге</h4>*/}
       <div className="all-prizes">
         {data.awards.map((el, index) => {
           return (
@@ -62,6 +61,7 @@ const MyPrizes = () => {
           );
         })}
       </div>
+      <a className="prizes-link" href="https://discord.gg/AesVsdPsFj">Если у Вас нету выигрышей, примите участие в розыгрыше на мониторинге &#129133;</a>
     </div>
   );
 };

@@ -41,7 +41,7 @@ const Header = () => {
               <ul className="drop">
                 <li className="drop-li"><a href="/articlesWiki">Вики</a></li>
                 <li className="drop-li"><a href="/mods">Моды</a></li>
-                <li className="drop-li"><a href="/onlineMaps">Онлайн карты</a></li>
+                <li className="drop-li"><a href="/onlineMaps">Онлайн карта</a></li>
                 <li className="drop-li"><a href="/statistic">Статистика</a></li>
                 <li className="drop-li"><a href="/support">Поддержать</a></li>
               </ul>

@@ -158,11 +158,12 @@
               }
 
               a {
-                width: auto;
+                display: flex;
+                width: 100%;
                 font-size: 20px;
-                line-height: 24px;
-                height: 24px;
-                margin: 10px;
+                line-height: 44px;
+                height: 44px;
+                padding: 0 0 0 10px;
               }
             }
           }
