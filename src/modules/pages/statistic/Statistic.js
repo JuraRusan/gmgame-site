@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import AOS from "aos";
 import {useAxios} from '../../../DataProvider';
 import ReactDataGrid from '@inovua/reactdatagrid-community'
@@ -9,6 +9,8 @@ import "./Statistic.scss";
 import "aos/dist/aos.css";
 
 const Statistic = () => {
+  const [limit, setLimit] = useState(15);
+
   const resParams = useAxios(
     "/api/get_statistics",
     'GET',
@@ -20,19 +22,51 @@ const Statistic = () => {
   }, []);
 
   if (resParams.loading) {
-    return <Preload/>
+    return <Preload/>;
+  }
+
+  function timeFormat(value) {
+    const cd = 24 * 60 * 60 * 1000;
+    const ch = 60 * 60 * 1000;
+
+    let d = Math.floor(value / cd);
+    let h = Math.floor((value - d * cd) / ch);
+    let m = Math.round((value - d * cd - h * ch) / 60000);
+    const pad = (n) => n < 10 ? '0' + n : n;
+
+    if( m === 60 ){
+      h++;
+      m = 0;
+    }
+    if( h === 24 ){
+      d++;
+      h = 0;
+    }
+
+    if (d == 0 && h > 0) {
+      return pad(h) + "ч " + pad(m) + "м";
+    } 
+
+    if (d == 0 && h == 0 && m > 0) {
+      return pad(m) + "м";
+    }
+
+    if (d == 0 && h == 0 && m == 0) {
+      return "< 00м";
+    }
+
+    return d + "д " + pad(h) + "ч " + pad(m) + "м";
   }
 
   const columns = [
-    { name: 'name', header: 'name', minWidth: 50, defaultFlex: 2 },
-    { name: 'active_playtime', header: 'active_playtime', maxWidth: 1000, defaultFlex: 1 },
-    { name: 'afk', header: 'afk', minWidth: 50, defaultFlex: 2 },
-    { name: 'deaths', header: 'deaths', maxWidth: 1000, defaultFlex: 1 },
-    { name: 'mobs', header: 'mobs', minWidth: 50, defaultFlex: 2 },
-    { name: 'broken', header: 'broken', maxWidth: 1000, defaultFlex: 1 },
-    { name: 'supplied', header: 'supplied', minWidth: 50, defaultFlex: 2 },
+    { name: 'name', header: 'name', minWidth: 50 },
+    { name: 'active_playtime', header: 'active_playtime', maxWidth: 1000, type: 'number', render: ({ value }) => timeFormat(value), defaultFlex: 1 },
+    { name: 'afk', header: 'afk', minWidth: 50, type: 'number', render: ({ value }) => timeFormat(value), defaultFlex: 1},
+    { name: 'deaths', header: 'deaths', maxWidth: 1000, type: 'number', defaultFlex: 1 },
+    { name: 'mobs', header: 'mobs', minWidth: 50, type: 'number', defaultFlex: 1 },
+    { name: 'broken', header: 'broken', maxWidth: 1000, type: 'number', render: ({value}) => !value ? 0 : value, defaultFlex: 1 },
+    { name: 'supplied', header: 'supplied', minWidth: 50, type: 'number', defaultFlex: 1 },
   ];
-
 
   const data = [
     {
@@ -1792,6 +1826,10 @@ const Statistic = () => {
     }
 ]
 
+const filterValue = [
+  { name: 'name', operator: 'contains', type: 'string', value: '' }
+];
+
   const gridStyle = { minHeight: 550 };
 
   return (
@@ -1804,7 +1842,9 @@ const Statistic = () => {
           dataSource={data} //resParams.data
           style={gridStyle}
           pagination="local"
-          limit='15'
+          limit={limit}
+          onLimitChange={setLimit}
+          defaultFilterValue={filterValue}
         />
       </div>
     </div>
