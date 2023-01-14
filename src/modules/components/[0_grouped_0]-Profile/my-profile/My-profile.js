@@ -1,6 +1,5 @@
 import React from "react";
 import {useAxios} from '../../../../DataProvider';
-import Ping from 'ping.js';
 
 import "./My-profile.scss";
 import Preload from "../../preloader/Preload.js";
@@ -18,37 +17,11 @@ const MyProfile = () => {
 
   const data = resParams.data;
 
-  const profileServerAdress = "Адрес сервера";
+  const profileServerAdress = "Адреса сервера";
   const profileApplicationAkk = "Статус аккаунта";
   const profileServerVersion = "Версия игры";
 
   const profileServerVersionOutput = "Java Edition " + data.version;
-
-  var compPing = new Ping();
-
-  compPing.ping("mine.gmgame.ru", function (err, data) {
-    if (err) {
-      console.log("Ошибка загрузки ресурса!")
-      data = data + " " + err;
-    }
-    document.getElementById("ping-ip1").innerHTML = data;
-  });
-
-  compPing.ping("lv.gmgame.ru", function (err, data) {
-    if (err) {
-      console.log("Ошибка загрузки ресурса!")
-      data = data + " " + err;
-    }
-    document.getElementById("ping-ip2").innerHTML = data;
-  });
-
-  compPing.ping("by.gmgame.ru", function (err, data) {
-    if (err) {
-      console.log("Ошибка загрузки ресурса!")
-      data = data + " " + err;
-    }
-    document.getElementById("ping-ip3").innerHTML = data;
-  });
 
   return (
     <div className="profile-block">
@@ -73,12 +46,9 @@ const MyProfile = () => {
         <div className="prof-cont-custom">
           <h5 className="h5-cont">{profileServerAdress}</h5>
           <div className="ip-list">
-            <label className="label-cout-custom font-custom-2">mine.gmgame.ru <span className="span-ping"
-                                                                                    id="ping-ip1"></span></label>
-            <label className="label-cout-custom font-custom-2">lv.gmgame.ru <span className="span-ping"
-                                                                                  id="ping-ip2"></span></label>
-            <label className="label-cout-custom font-custom-2">by.gmgame.ru <span className="span-ping"
-                                                                                  id="ping-ip3"></span></label>
+            <label className="label-cout-custom font-custom-2">mine.gmgame.ru</label>
+            <label className="label-cout-custom font-custom-2">lv.gmgame.ru</label>
+            <label className="label-cout-custom font-custom-2">by.gmgame.ru</label>
           </div>
         </div>
       </div>
