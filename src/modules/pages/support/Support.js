@@ -3,8 +3,6 @@ import AOS from "aos";
 
 import "./Support.scss";
 import "aos/dist/aos.css";
-import Image7 from "../../../bases/assets/7.png";
-import SuperHub from "../../../bases/assets/SuperHub.webp";
 
 const Support = () => {
 
@@ -29,7 +27,7 @@ const Support = () => {
             <h5 className="footer-support">Спасибо! Ваша поддержка очень важна. &#129392;</h5>
           </div>
           <div className="img-block-wight">
-            <img className='info-img-wight' src={Image7} alt=""/>
+            <img className='info-img-wight' src="./site_assets/pages/webp/7.webp"  alt="none"/>
           </div>
         </div>
         <div className="monitoring-block" data-aos="fade-up">
@@ -51,7 +49,7 @@ const Support = () => {
           <h4 className="block-title-sp font-custom-2">Наши партнеры</h4>
           <div className="superHub">
             <div className="logo-line-1">
-              <img className="superhub-logo" src={SuperHub} alt=""/>
+              <img className="superhub-logo" src="./site_assets/pages/webp/SuperHub.webp"  alt="none"/>
             </div>
             <div className="logo-line-2">
               <h4 className="name font-custom-2">Hosting Superhub</h4>

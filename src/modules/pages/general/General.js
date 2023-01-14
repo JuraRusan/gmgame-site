@@ -8,12 +8,6 @@ import Button from "../../components/button/Button.js";
 import Mode from "../../components/[0_grouped_0]-Generals/mode/Mode.js";
 import World from "../../components/[0_grouped_0]-Generals/world/World.js";
 import SvgHoverMe from "../../../bases/icons/SvgHoverMe.js";
-import Image1 from "../../../bases/assets/1.png";
-import Image2 from "../../../bases/assets/2.png";
-import Image3 from "../../../bases/assets/3.png";
-import Image4 from "../../../bases/assets/4.png";
-import Image5 from "../../../bases/assets/5.png";
-import Image6 from "../../../bases/assets/6.png";
 
 const General = () => {
 
@@ -74,12 +68,12 @@ const General = () => {
             <h4 className="h4-info h4-left">{serverConcept}</h4>
           </div>
           <div className="info-img">
-            <img className='info-img-wight' src={Image1} alt=""/>
+            <img className='info-img-wight' src="./site_assets/pages/webp/1.webp" alt="none"/>
           </div>
         </div>
         <div className="content-info rev" data-aos="fade-up">
           <div className="info-img">
-            <img className='info-img-wight' src={Image2} alt=""/>
+            <img className='info-img-wight' src="./site_assets/pages/webp/2.webp" alt="none"/>
           </div>
           <div className="info-style">
             <h2 className="h2-info font-custom-3 h2-right">{serverBlockTitleCommunity}</h2>
@@ -92,7 +86,7 @@ const General = () => {
             <h4 className="h4-info h4-left">{serverGameProcess}</h4>
           </div>
           <div className="info-img">
-            <img className='info-img-wight' src={Image3} alt=""/>
+            <img className='info-img-wight' src="./site_assets/pages/webp/3.webp" alt="none"/>
           </div>
         </div>
       </div>
@@ -104,9 +98,9 @@ const General = () => {
         </div>
         <div className="block-w" data-aos="fade-up">
           <div className="hover-me-block"><SvgHoverMe width="100%" height="100%" color="#292929"/></div>
-          <World name={worldNameRes} src={Image4} inf={serverInformationRes}/>
-          <World name={worldNameGmgame} src={Image5} inf={serverInformationGmgame}/>
-          <World name={worldNameFarm} src={Image6} inf={serverInformationFarm}/>
+          <World name={worldNameRes} src="./site_assets/pages/webp/4.webp" inf={serverInformationRes}/>
+          <World name={worldNameGmgame} src="./site_assets/pages/webp/5.webp" inf={serverInformationGmgame}/>
+          <World name={worldNameFarm} src="./site_assets/pages/webp/6.webp" inf={serverInformationFarm}/>
         </div>
         <div className="lin-bot"></div>
       </div>

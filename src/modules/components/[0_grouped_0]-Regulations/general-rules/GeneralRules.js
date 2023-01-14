@@ -1,5 +1,5 @@
 import React from "react";
-import {regulationsAllDB} from "../../../../bases/db/regulations/regulationsAllDB";
+import {regulationsAllDB} from "../../../pages/regulations/regulationsAllDB";
 
 const GeneralRules = () => {
   return (

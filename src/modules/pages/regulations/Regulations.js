@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import AOS from "aos";
-import {regulationsAllListAndComponents} from "../../../bases/db/regulations/regulationsAllList.js";
+import {regulationsAllListAndComponents} from "./regulationsAllList.js";
 
 import "aos/dist/aos.css";
 import "./Regulations.scss";

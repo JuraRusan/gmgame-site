@@ -8,7 +8,7 @@ import "./TexturePack.scss";
 import "aos/dist/aos.css";
 
 import Warn from "../../components/warn/Warn.js";
-import {DataBaseTexturePack} from "../../../bases/db/texture-pack/texturePackDB.js";
+import {DataBaseTexturePack} from "./texturePackDB.js";
 
 const TexturePack = () => {
 
@@ -39,7 +39,7 @@ const TexturePack = () => {
       {DataBaseTexturePack.map((tab, i) => (
         <div className="card-item" data-aos="zoom-in">
           <div className="colum-card-item1">
-            <LazyLoadImage className="item-img" alt="none" effect="blur" src={tab.img}/>
+            <LazyLoadImage className="item-img" alt="none" effect="blur" src={`./site_assets/texture-pack/webp/${tab.img}`}/>
           </div>
           <div className="colum-card-item2">
             <h3 className="item-title-name">Предмет: {tab.main}</h3>

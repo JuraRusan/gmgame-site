@@ -1946,7 +1946,7 @@ const Statistic = () => {
               columnDefs={columns}
               animateRows={true}
               pagination={true}
-              paginationPageSize={20}
+              paginationPageSize={20} // Если меняем это значение то, нужно еще менять значение в файле стилей на строке 62, а именно в тексте &:nth-child(20)
               localeText={localText}
             >
             </AgGridReact>
