@@ -15,7 +15,7 @@ const Support = () => {
   return (
     <div className="main-support" data-aos="fade-up">
       <div className="support">
-        <h4 className="title-support">Поддержать проект</h4>
+        <h4 className="title-support font-custom-2">Поддержать проект</h4>
         <div className="don-block">
           <div className="text">
             <p className="sub-title-support">Сервер GMGame работает уже больше двух лет. За это время на сервере были построены разнообразные и и масштабные проекты, проведены различные ивенты и праздники, сервер приобрел множество друзей, соратников и подарил множество эмоций разным людям.</p>
@@ -32,8 +32,8 @@ const Support = () => {
             <img className='info-img-wight' src={Image7} alt=""/>
           </div>
         </div>
-        <div className="monitoring-block">
-          <h4 className="block-title-sp">Мы на мониторингах</h4>
+        <div className="monitoring-block" data-aos="fade-up">
+          <h4 className="block-title-sp font-custom-2">Мы на мониторингах</h4>
           <a className="monitoring-card font-custom-2" target="_blank" href="https://hotmc.ru/minecraft-server-205185">HotMC</a>
           <a className="monitoring-card font-custom-2" target="_blank" href="https://mineserv.top/gmgame">MineServ</a>
           <a className="monitoring-card font-custom-2" target="_blank" href="https://monitoringminecraft.ru/server/694954">Monitoring minecraft</a>
@@ -47,8 +47,8 @@ const Support = () => {
           <a className="monitoring-card font-custom-2" target="_blank" href="https://serversminecraft.ru/server/944">Serversminecraft</a>
           <a className="monitoring-card font-custom-2" target="_blank" href="https://top.grmc.su/server/2508">Top.grmc</a>
         </div>
-        <div className="partner-block">
-          <h4 className="block-title-sp">Наши партнеры</h4>
+        <div className="partner-block" data-aos="fade-up">
+          <h4 className="block-title-sp font-custom-2">Наши партнеры</h4>
           <div className="superHub">
             <div className="logo-line-1">
               <img className="superhub-logo" src={SuperHub} alt=""/>

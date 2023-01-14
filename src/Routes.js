@@ -28,6 +28,7 @@ import AllPlayerMarkers from "./modules/components/[0_grouped_0]-Admin/all-playe
 import AllPlayerArticles from "./modules/components/[0_grouped_0]-Admin/all-player-articles/AllPlayerArticles.js"
 import RedFaq from "./modules/components/[0_grouped_0]-Admin/red-faq/RedFaq.js";
 import RedRegulations from "./modules/components/[0_grouped_0]-Admin/red-regulations/RedRegulations.js";
+import TexturePack from "./modules/pages/texture-pack/TexturePack.js";
 
 const options = {
   timeout: 7000,
@@ -66,6 +67,7 @@ const Router = () => {
         <Route path="/statistic" element={<Statistic/>}/>
         <Route path="/support" element={<Support/>}/>
         <Route path="/onlineMaps" element={<Maps/>}/>
+        <Route path="/texturePack" element={<TexturePack/>}/>
         <Route exac path="*" element={<NotFound/>}/>
       </Routes>
     </Provider>

@@ -44,6 +44,7 @@ const Header = () => {
                 <li className="drop-li"><a href="/onlineMaps">Онлайн карта</a></li>
                 <li className="drop-li"><a href="/statistic">Статистика</a></li>
                 <li className="drop-li"><a href="/support">Поддержать</a></li>
+                <li className="drop-li"><a href="/texturePack">Текстур пак</a></li>
               </ul>
             </li>
             <li className="links-li">
