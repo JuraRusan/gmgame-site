@@ -1938,15 +1938,15 @@ const Statistic = () => {
   return (
     <div className="main-statistic" data-aos="fade-up">
       <div className="statistic">
-        <h4>ух какая пиздатая статка</h4>
-        <div style={containerStyle}>
-          <div style={gridStyle} className="ag-theme-alpine">
+        <h4 className="statistic-title font-custom-2">Статистика игроков сервера</h4>
+        <div style={containerStyle} data-aos="fade-up">
+          <div style={gridStyle} className="ag-theme-alpine-dark">
             <AgGridReact
               rowData={data} // resParams.data
               columnDefs={columns}
               animateRows={true}
               pagination={true}
-              paginationPageSize={15}
+              paginationPageSize={20}
               localeText={localText}
             >
             </AgGridReact>
