@@ -4,6 +4,8 @@ import AOS from "aos";
 import "./NotFound.scss";
 import "aos/dist/aos.css";
 
+import {proxy} from '../../../../package.json';
+
 const NotFound = () => {
 
   useEffect(() => {
@@ -11,7 +13,7 @@ const NotFound = () => {
   }, []);
 
   if (window.location.pathname === '/api/login') {
-    window.location = 'http://127.0.0.1:3001/api/login';
+    window.location = `${proxy}api/login`;
     return;
   }
 
