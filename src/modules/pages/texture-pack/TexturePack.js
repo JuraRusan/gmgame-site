@@ -29,7 +29,7 @@ const TexturePack = () => {
             игрокам: <span>Каким игрокам???</span></h4>
         </div>
         <div className="download-box">
-          <a href="#" className="download-files" download="/static/download/Totem-Elytra-Body-1.19.zip"> Скачать текстур
+          <a href="./texturePack" className="download-files" download="/static/download/Totem-Elytra-Body-1.19.zip"> Скачать текстур
             пак &#129133;</a>
         </div>
         <div className="box-warn">
