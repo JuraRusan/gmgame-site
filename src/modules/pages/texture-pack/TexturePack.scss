@@ -11,7 +11,7 @@
 
   .block-title {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
 
     .texture-pack-title-h3 {
@@ -29,8 +29,8 @@
       display: flex;
       flex-direction: column;
       width: 100%;
-      max-width: 600px;
-      margin: 0 0 0 auto;
+      max-width: 1200px;
+      margin: 15px auto;
 
       .info-h4 {
         width: 100%;
@@ -71,7 +71,7 @@
       display: flex;
       width: 100%;
       max-width: 270px;
-      margin-right: auto;
+      margin: 15px auto;
 
       .download-files {
         font-weight: 400;
@@ -140,6 +140,7 @@
         max-width: 200px;
         max-height: 200px;
         margin: 0 auto;
+        padding: 10px;
         transition: all 0.25s ease-in-out;
       }
     }
@@ -156,10 +157,36 @@
         font-weight: 400;
         height: 28px;
         line-height: 28px;
+        margin-top: 5px;
         text-align: center;
         border-width: 1px;
         border-bottom-style: solid;
-        border-image: linear-gradient(to right, rgba(0, 0, 0, 0), $color-3, rgba(0, 0, 0, 0)) 1 0%;
+        border-image: linear-gradient(to right, $color-3, $color-3, rgba(0, 0, 0, 0)) 1 0%;
+        position: relative;
+
+        .hover-effect {
+          position: absolute;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          margin: 0 auto;
+          height: auto;
+          background: $color-7;
+          border: 0.5px solid $color-22;
+          border-radius: 5px;
+          color: $color-8;
+          font-weight: 400;
+          padding:  0 10px;
+          right: 0;
+          opacity: 0;
+          top: 32px;
+          transition: all 0.35s ease;
+        }
+
+        &:hover > .hover-effect {
+          opacity: 1;
+          right: 15px;
+        }
       }
 
       .list-name {
@@ -175,8 +202,8 @@
         }
 
         .list-name-one {
-          line-height: 22px;
-          height: 22px;
+          line-height: 24px;
+          height: 24px;
           font-weight: 400;
           font-size: 12px;
 

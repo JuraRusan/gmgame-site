@@ -202,15 +202,6 @@
       font-size: 64px;
       color: $color-3;
     }
-
-    .lin-bot-two {
-      height: 200px;
-      width: 100%;
-      background: $color-7;
-      background: linear-gradient(0deg, $color-7 0%, rgba(1, 22, 37, 0) 100%);
-      background: -webkit-linear-gradient(0deg, $color-7 0%, rgba(1, 22, 37, 0) 100%);
-      background: -moz-linear-gradient(0deg, $color-7 0%, rgba(1, 22, 37, 0) 100%);
-    }
   }
 
   .lin-top {
@@ -218,16 +209,6 @@
     width: 100%;
     background: $color-2;
     background: linear-gradient(180deg, $color-2 0%, rgba(228, 0, 127, 0) 100%);
-    background: -webkit-linear-gradient(
-                    180deg,
-                    $color-2 0%,
-                    rgba(228, 0, 127, 0) 100%
-    );
-    background: -moz-linear-gradient(
-                    180deg,
-                    $color-2 0%,
-                    rgba(228, 0, 127, 0) 100%
-    );
   }
 
   .lin-bot {
@@ -235,12 +216,12 @@
     width: 100%;
     background: $color-2;
     background: linear-gradient(0deg, $color-2 0%, rgba(1, 22, 37, 0) 100%);
-    background: -webkit-linear-gradient(
-                    0deg,
-                    $color-2 0%,
-                    rgba(1, 22, 37, 0) 100%
-    );
-    background: -moz-linear-gradient(0deg, $color-2 0%, rgba(1, 22, 37, 0) 100%);
+  }
+
+  .lin-top-two {
+    height: 200px;
+    width: 100%;
+    background: linear-gradient(180deg, $color-2 0%, rgba(255, 255, 255, 0) 100%);
   }
 }
 
@@ -399,18 +380,16 @@
       }
     }
 
-    .row-4 {
-      .lin-bot-two {
-        height: 150px;
-      }
-    }
-
     .lin-top {
       height: 160px;
     }
 
     .lin-bot {
       height: 160px;
+    }
+
+    .lin-top-two {
+      height: 150px;
     }
   }
 }
@@ -541,10 +520,6 @@
       .mode-title {
         font-size: 42px;
       }
-
-      .lin-bot-two {
-        height: 130px;
-      }
     }
 
     .lin-top {
@@ -552,6 +527,10 @@
     }
 
     .lin-bot {
+      height: 130px;
+    }
+
+    .lin-top-two {
       height: 130px;
     }
   }
