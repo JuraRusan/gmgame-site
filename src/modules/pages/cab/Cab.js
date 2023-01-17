@@ -84,7 +84,6 @@ const Cab = () => {
             </div>
             <div className="m1">
               <button className="tab" onClick={logout}>{profileMenuMyGoOut}</button>
-              <a className="tab" href="http://127.0.0.1:3000/adminDashboard">Админка</a>
             </div>
           </div>
         </div>

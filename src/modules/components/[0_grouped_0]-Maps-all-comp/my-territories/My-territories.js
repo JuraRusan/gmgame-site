@@ -5,6 +5,7 @@ import Preload from "../../preloader/Preload.js";
 import SvgAddMarker from "../../../../bases/icons/SvgAddMarker.js";
 
 import "../Style-maps.scss";
+import SvgDelete from "../../../../bases/icons/SvgDelete.js";
 
 const MyTerritories = () => {
   let [fileter, setFileter] = useState(null);
@@ -48,6 +49,9 @@ const MyTerritories = () => {
               </div>
               <div className="colums-2">
                 <Link to={`edit_add_terr/${el.id}`} className="str-bt">Настроить</Link>
+                <button className="delete">
+                  <SvgDelete width="100%" height="100%" color="#f4f4f4"/>
+                </button>
               </div>
             </div>
           );

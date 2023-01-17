@@ -43,6 +43,7 @@ div#root {
 .main-wrapper-bg {
   width: 100%;
   height: auto;
+  background: $color-7;
   background: url(./bases/assets/webp/Main-background.webp);
   background-repeat: no-repeat;
   background-position-x: center;
@@ -51,8 +52,7 @@ div#root {
 }
 
 .main-wrapper-bg-scrolling-color {
-  background: none !important;
-  background: $color-7 !important;
+  background: $color-7;
 }
 
 .class-z-index-10000-header {

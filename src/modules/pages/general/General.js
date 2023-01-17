@@ -111,8 +111,8 @@ const General = () => {
           <Mode name={skyBlock} info={skyBlockInfo}/>
           <Mode name={creative} info={creativeInfo}/>
         </div>
-        <div className="lin-bot-two"></div>
       </div>
+      <div className="lin-top-two"></div>
     </div>
   );
 };

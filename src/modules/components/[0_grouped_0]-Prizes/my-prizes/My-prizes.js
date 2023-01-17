@@ -61,7 +61,7 @@ const MyPrizes = () => {
           );
         })}
       </div>
-      <a className="prizes-link" href="https://discord.gg/AesVsdPsFj">Если у Вас нету выигрышей, примите участие в розыгрыше на мониторинге &#129133;</a>
+      <a target="_blank" className="prizes-link" rel="noreferrer" href="https://discord.gg/AesVsdPsFj">Если у Вас нету выигрышей, примите участие в розыгрыше на мониторинге &#129133;</a>
     </div>
   );
 };

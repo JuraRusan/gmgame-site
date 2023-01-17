@@ -29,7 +29,7 @@ const TexturePack = () => {
             игрокам: <span>Каким игрокам???</span></h4>
         </div>
         <div className="download-box">
-          <a href="#" className="download-files" download="/static/download/Totem-Elytra-Body-1.19.zip"> Скачать текстур
+          <a href="./texturePack" className="download-files" download="/static/download/Totem-Elytra-Body-1.19.zip"> Скачать текстур
             пак &#129133;</a>
         </div>
         <div className="box-warn">
@@ -42,10 +42,10 @@ const TexturePack = () => {
             <LazyLoadImage className="item-img" alt="none" effect="blur" src={`./site_assets/texture-pack/webp/${tab.img}`}/>
           </div>
           <div className="colum-card-item2">
-            <h3 className="item-title-name">Предмет: {tab.main}</h3>
+            <h3 className="item-title-name">Предмет: {tab.main} <span className="hover-effect">{tab.info_item}</span></h3>
             <ul className="list-name">
               {tab.variability_name.map((list, i) => (
-                <li className="list-name-one font-custom-2">{list}</li>
+                <li className="list-name-one">{list}</li>
               ))}
             </ul>
           </div>

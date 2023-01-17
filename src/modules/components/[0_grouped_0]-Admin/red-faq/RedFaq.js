@@ -1,11 +1,11 @@
 import React from "react";
-import Board from 'react-trello'
+/* import Board from 'react-trello' */
 
 import "./RedFaq.scss";
 
 const RedFaq = () => {
 
-  const data = {
+  /* const data = {
     lanes: [
       {
         id: 'lane1',
@@ -322,12 +322,12 @@ const RedFaq = () => {
         ]
       }
     ]
-
   }
+  */
 
   return (
     <div className="red-faq-block">
-      <Board
+      {/* <Board
         data={data}
         draggable={false}
         cardDraggable={true}
@@ -336,7 +336,7 @@ const RedFaq = () => {
         canAddLanes={true}
         editLaneTitle={true}
         editable={true}
-      />
+      /> */}
     </div>
   );
 };

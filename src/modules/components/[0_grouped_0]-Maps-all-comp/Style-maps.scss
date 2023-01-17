@@ -140,11 +140,43 @@
           outline: none;
           font-size: 16px;
           font-weight: 400;
+          transition: all 0.35s ease;
 
           &:hover,
           &:active,
           &:focus {
             outline: none;
+          }
+
+          &:hover {
+            background: $color-6;
+            color: $color-2;
+          }
+        }
+
+        .delete {
+          cursor: pointer;
+          height: 40px;
+          line-height: 40px;
+          width: 40px;
+          margin: 0 0 0 8px;
+          background: $color-7;
+          border: 0.5px solid $color-22;
+          border-radius: 5px;
+          color: $color-3;
+          outline: none;
+          text-decoration: none;
+          transition: all 0.35s ease;
+          padding: 7px;
+
+          &:hover,
+          &:active,
+          &:focus {
+            outline: none;
+          }
+
+          &:hover {
+            background: $color-21;
           }
         }
       }
@@ -211,6 +243,13 @@
             line-height: 30px;
             font-size: 14px;
           }
+
+          .delete {
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            padding: 3px;
+          }
         }
       }
     }
@@ -227,7 +266,7 @@
 
       .nomer-list {
         width: 100%;
-        margin: 5px 0 0 5px ;
+        margin: 5px 0 0 5px;
       }
 
       .search-input {
@@ -235,13 +274,13 @@
       }
     }
 
-    .box-list{
-      .str{
-        .colums-1{
-          .str-p{
-            width: 35px;
-            min-width: 35px;
-            max-width: 35px;
+    .box-list {
+      .str {
+        .colums-1 {
+          .str-p {
+            width: 30px;
+            min-width: 30px;
+            max-width: 30px;
           }
         }
       }
@@ -250,7 +289,22 @@
 }
 
 @media screen and (max-width: 480px) {
+  .box-marker {
+    .box-list {
+      .str {
+        .colums-1 {
+          max-width: 60%;
+        }
 
+        .colums-2 {
+          .str-bt {
+            width: 80px;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 360px) {
