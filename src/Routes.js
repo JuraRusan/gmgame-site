@@ -12,7 +12,7 @@ import General from "./modules/pages/general/General.js";
 // import AllPlayerArticles from "./modules/components/[0_grouped_0]-Admin/all-player-articles/AllPlayerArticles.js"
 // import RedFaq from "./modules/components/[0_grouped_0]-Admin/red-faq/RedFaq.js";
 // import RedRegulations from "./modules/components/[0_grouped_0]-Admin/red-regulations/RedRegulations.js";
-import Manager from "./modules/pages/manager/Manager.js";
+// import Manager from "./modules/pages/manager/Manager.js";
 
 const Faq = lazy(() => import(/* webpackChunkName: "faq" */ './modules/pages/faq/Faq.js'));
 const Statistic = lazy(() => import(/* webpackChunkName: "statistics" */ './modules/pages/statistic/Statistic.js'));
@@ -73,7 +73,7 @@ const Router = () => {
         <Route path="/support" element={<Support/>}/>
         <Route path="/onlineMaps" element={<Maps/>}/>
         <Route path="/texturePack" element={<TexturePack/>}/>
-        <Route path="/manager/*" element={<Manager/>}/>
+        {/* <Route path="/manager/*" element={<Manager/>}/> */}
         <Route exac path="*" element={<NotFound/>}/>
       </Routes>
     </Provider>
