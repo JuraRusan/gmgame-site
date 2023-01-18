@@ -5,6 +5,7 @@ import {positions, Provider} from "react-alert";
 import AlertTemplate from "react-alert-template-basic";
 
 import General from "./modules/pages/general/General.js";
+import Shopkeepers from "./modules/pages/shopkeepers/Shopkeepers.js";
 // import AdminDashboard from "./modules/pages/admin-dashboard/Admin-dashboard.js";
 // import AllApplications from "./modules/components/[0_grouped_0]-Admin/applications/AllApplications.js"
 // import AllPlayerTerritories from "./modules/components/[0_grouped_0]-Admin/all-player-territories/AllPlayerTerritories.js"
@@ -73,6 +74,7 @@ const Router = () => {
         <Route path="/support" element={<Support/>}/>
         <Route path="/onlineMaps" element={<Maps/>}/>
         <Route path="/texturePack" element={<TexturePack/>}/>
+        <Route path="/shopkeepers" element={<Shopkeepers/>}/>
         {/* <Route path="/manager/*" element={<Manager/>}/> */}
         <Route exac path="*" element={<NotFound/>}/>
       </Routes>

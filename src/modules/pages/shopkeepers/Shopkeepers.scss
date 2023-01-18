@@ -1,0 +1,43 @@
+@import "../../../Variables.scss";
+
+.main-shopkeepers-block {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  .title-shop-h4 {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    padding: 0 25px;
+    font-size: 32px;
+    font-weight: 400;
+    color: $color-3;
+    margin: 35px auto 20px auto;
+  }
+
+  .shop-block-center {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+
+    .shop-all-suggestions {
+      display: flex;
+      justify-content: flex-start;
+      width: 35%;
+      height: auto;
+    }
+
+    .shop-one-suggestions {
+      display: flex;
+      justify-content: flex-start;
+      width: 65%;
+      height: auto;
+    }
+  }
+}
