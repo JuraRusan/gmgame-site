@@ -20,7 +20,7 @@
     padding: 3px;
     margin: 3px;
     background: $color-7;
-    border-radius: 5px;
+    border-radius: 3px;
     border: 1px solid $color-22;
     transition: all 0.25s ease;
     position: relative;
@@ -30,26 +30,38 @@
       background: $color-21;
     }
 
-    .image {
-      width: 40px;
-      height: 40px;
+    span {
+      width: auto !important;
+      height: auto !important;
+      max-height: 55px;
     }
 
     .item-count {
       position: absolute;
       display: flex;
-      right: 0;
-      bottom: 0;
-      font-size: 12px;
+      right: 3px;
+      bottom: 3px;
+      font-size: 13px;
       font-weight: 400;
       color: $color-3;
+      z-index: 35;
+    }
+
+    .image {
+      width: 55px;
+      min-width: 55px;
+      max-width: 55px;
+      height: 55px;
+      min-height: 55px;
+      max-height: 55px;
+      z-index: 34;
     }
   }
 
   .photo-item-none {
     margin: 3px;
-    width: 48px;
-    height: 48px;
+    width: 63px;
+    height: 63px;
     display: flex;
     background: $color-7;
     border-radius: 5px;
