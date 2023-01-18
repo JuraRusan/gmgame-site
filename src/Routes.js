@@ -1,34 +1,38 @@
+import { Suspense, lazy } from 'react';
+import Preload from "./modules/components/preloader/Preload";
 import {Routes, Route} from "react-router-dom";
 import {positions, Provider} from "react-alert";
 import AlertTemplate from "react-alert-template-basic";
 
 import General from "./modules/pages/general/General.js";
-import Auth from "./modules/pages/auth/Auth.js";
-import Cab from "./modules/pages/cab/Cab.js";
-import Faq from "./modules/pages/faq/Faq.js";
-import AdminDashboard from "./modules/pages/admin-dashboard/Admin-dashboard.js";
-import Regulations from "./modules/pages/regulations/Regulations.js";
-import MyProfile from "./modules/components/[0_grouped_0]-Profile/my-profile/My-profile.js";
-import MyMarkers from "./modules/components/[0_grouped_0]-Maps-all-comp/my-markers/My-markers.js";
-import EditAddMarker from "./modules/components/[0_grouped_0]-Maps-all-comp/my-markers/EditAddMarker.js";
-import MyPrizes from "./modules/components/[0_grouped_0]-Prizes/my-prizes/My-prizes.js"
-import Articles from "./modules/components/[0_grouped_0]-Profile/articles/Articles.js"
-import ChangePassword from "./modules/components/[0_grouped_0]-Profile/change-password/Change-password.js"
-import MyTerritories from "./modules/components/[0_grouped_0]-Maps-all-comp/my-territories/My-territories.js"
-import EditAddTerr from "./modules/components/[0_grouped_0]-Maps-all-comp/my-territories/EditAddTerr.js";
-import ArticlesWiki from "./modules/pages/articles/Articles-wiki.js";
-import NotFound from "./modules/pages/not-found/NotFound.js"
-import Mods from "./modules/pages/mods/Mods.js";
-import Statistic from "./modules/pages/statistic/Statistic.js";
-import Maps from "./modules/pages/maps/Maps.js";
-import Support from "./modules/pages/support/Support.js";
-import AllApplications from "./modules/components/[0_grouped_0]-Admin/applications/AllApplications.js"
-import AllPlayerTerritories from "./modules/components/[0_grouped_0]-Admin/all-player-territories/AllPlayerTerritories.js"
-import AllPlayerMarkers from "./modules/components/[0_grouped_0]-Admin/all-player-markers/AllPlayerMarkers.js"
-import AllPlayerArticles from "./modules/components/[0_grouped_0]-Admin/all-player-articles/AllPlayerArticles.js"
-import RedFaq from "./modules/components/[0_grouped_0]-Admin/red-faq/RedFaq.js";
-import RedRegulations from "./modules/components/[0_grouped_0]-Admin/red-regulations/RedRegulations.js";
-import TexturePack from "./modules/pages/texture-pack/TexturePack.js";
+// import AdminDashboard from "./modules/pages/admin-dashboard/Admin-dashboard.js";
+// import AllApplications from "./modules/components/[0_grouped_0]-Admin/applications/AllApplications.js"
+// import AllPlayerTerritories from "./modules/components/[0_grouped_0]-Admin/all-player-territories/AllPlayerTerritories.js"
+// import AllPlayerMarkers from "./modules/components/[0_grouped_0]-Admin/all-player-markers/AllPlayerMarkers.js"
+// import AllPlayerArticles from "./modules/components/[0_grouped_0]-Admin/all-player-articles/AllPlayerArticles.js"
+// import RedFaq from "./modules/components/[0_grouped_0]-Admin/red-faq/RedFaq.js";
+// import RedRegulations from "./modules/components/[0_grouped_0]-Admin/red-regulations/RedRegulations.js";
+// import Manager from "./modules/pages/manager/Manager.js";
+
+const Faq = lazy(() => import(/* webpackChunkName: "faq" */ './modules/pages/faq/Faq.js'));
+const Statistic = lazy(() => import(/* webpackChunkName: "statistics" */ './modules/pages/statistic/Statistic.js'));
+const TexturePack = lazy(() => import(/* webpackChunkName: "texturepack" */ './modules/pages/texture-pack/TexturePack.js'));
+const Auth = lazy(() => import(/* webpackChunkName: "auth" */ /* webpackPreload: true */ /* webPackPrefetch: true */ './modules/pages/auth/Auth.js'));
+const Regulations = lazy(() => import(/* webpackChunkName: "regulations" */ './modules/pages/regulations/Regulations.js'));
+const ArticlesWiki = lazy(() => import(/* webpackChunkName: "wiki" */ './modules/pages/articles/Articles-wiki.js'));
+const NotFound = lazy(() => import(/* webpackChunkName: "404" */ './modules/pages/not-found/NotFound.js'));
+const Mods = lazy(() => import(/* webpackChunkName: "mods" */ './modules/pages/mods/Mods.js'));
+const Maps = lazy(() => import(/* webpackChunkName: "maps" */ './modules/pages/maps/Maps.js'));
+const Support = lazy(() => import(/* webpackChunkName: "support" */ './modules/pages/support/Support.js'));
+const Cab = lazy(() => import(/* webpackChunkName: "cab" */ './modules/pages/cab/Cab.js'));
+const Articles = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/articles/Articles.js'));
+const MyProfile = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/my-profile/My-profile.js'));
+const MyMarkers = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Maps-all-comp/my-markers/My-markers.js'));
+const EditAddMarker = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Maps-all-comp/my-markers/EditAddMarker.js'));
+const MyPrizes = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Prizes/my-prizes/My-prizes.js'));
+const ChangePassword = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/change-password/Change-password.js'));
+const MyTerritories = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Maps-all-comp/my-territories/My-territories.js'));
+const EditAddTerr = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Maps-all-comp/my-territories/EditAddTerr.js'));
 
 const options = {
   timeout: 7000,
@@ -38,6 +42,7 @@ const options = {
 
 const Router = () => {
   return (
+    <Suspense fallback={<Preload />}>
     <Provider template={AlertTemplate} {...options}>
       <Routes>
         <Route path="/" element={<General/>}/>
@@ -52,14 +57,14 @@ const Router = () => {
           <Route path="prize" element={<MyPrizes/>}/>
           <Route path="change_password" element={<ChangePassword/>}/>
         </Route>
-        <Route exact path="/adminDashboard" element={<AdminDashboard/>}>
+        {/* <Route exact path="/adminDashboard" element={<AdminDashboard/>}>
           <Route path="allApplications" element={<AllApplications/>}/>
           <Route path="allPlayerTerritories" element={<AllPlayerTerritories/>}/>
           <Route path="allPlayerMarkers" element={<AllPlayerMarkers/>}/>
           <Route path="allPlayerArticles" element={<AllPlayerArticles/>}/>
           <Route path="redFaq" element={<RedFaq/>}/>
           <Route path="redRegulations" element={<RedRegulations/>}/>
-        </Route>
+        </Route> */}
         <Route path="/faq" element={<Faq/>}/>
         <Route path="/regulations" element={<Regulations/>}/>
         <Route path="/articlesWiki" element={<ArticlesWiki/>}/>
@@ -68,9 +73,11 @@ const Router = () => {
         <Route path="/support" element={<Support/>}/>
         <Route path="/onlineMaps" element={<Maps/>}/>
         <Route path="/texturePack" element={<TexturePack/>}/>
+        {/* <Route path="/manager/*" element={<Manager/>}/> */}
         <Route exac path="*" element={<NotFound/>}/>
       </Routes>
     </Provider>
+    </Suspense>
   );
 };
 
