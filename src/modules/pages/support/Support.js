@@ -27,7 +27,7 @@ const Support = () => {
             <h5 className="footer-support">Спасибо! Ваша поддержка очень важна. &#129392;</h5>
           </div>
           <div className="img-block-wight">
-            <img className='info-img-wight' src="./site_assets/pages/webp/7.webp"  alt="none"/>
+            <img className='info-img-wight' src="./site_assets/pages/webp/7.webp"  width="100%" height="100%" alt="none"/>
           </div>
         </div>
         <div className="monitoring-block" data-aos="fade-up">
@@ -49,7 +49,7 @@ const Support = () => {
           <h4 className="block-title-sp font-custom-2">Наши партнеры</h4>
           <div className="superHub">
             <div className="logo-line-1">
-              <img className="superhub-logo" src="./site_assets/pages/webp/SuperHub.webp"  alt="none"/>
+              <img className="superhub-logo" src="./site_assets/pages/webp/SuperHub.webp"  width="100%" height="100%" alt="none"/>
             </div>
             <div className="logo-line-2">
               <h4 className="name font-custom-2">Hosting Superhub</h4>

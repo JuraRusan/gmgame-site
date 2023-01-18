@@ -15,6 +15,7 @@
     justify-content: flex-start;
     padding-top: 50px;
 
+
     .title-support {
       font-size: 32px;
       font-weight: 400;
@@ -55,12 +56,14 @@
       width: auto;
       margin: 25px auto 0 auto;
 
+
+
       .text {
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        max-width: 660px;
+        max-width: 750px;
         height: 100%;
         margin: auto 0;
 
@@ -95,7 +98,7 @@
       .img-block-wight {
         display: flex;
         width: 100%;
-        max-width: 660px;
+        max-width: 750px;
         height: 100%;
         margin: auto 0;
 
@@ -126,7 +129,7 @@
       justify-content: center;
       flex-wrap: wrap;
       width: 80%;
-      margin: 60px auto 0 auto;
+      margin: 100px auto 0 auto;
 
       .monitoring-card {
         width: 240px;

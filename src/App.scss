@@ -49,10 +49,7 @@ div#root {
   background-position-x: center;
   background-size: cover;
   background-attachment: fixed;
-}
-
-.main-wrapper-bg-scrolling-color {
-  background: $color-7;
+  box-shadow: inset 0px 0px 2000px 20000px rgba(0,0,0,0.35);
 }
 
 .class-z-index-10000-header {
