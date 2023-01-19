@@ -1,5 +1,16 @@
 @import "../../../Variables.scss";
 
+@keyframes box-height-opacity {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+  100% {
+    opacity: 1;
+    height: 245px;
+  }
+}
+
 .main-shopkeepers-block {
   width: 100%;
   height: auto;
@@ -33,6 +44,28 @@
       flex-direction: column;
       width: 35%;
       height: auto;
+
+      .search-input-items {
+        display: flex;
+        width: 100%;
+        height: 35px;
+        margin: 15px auto;
+        line-height: 35px;
+        outline: none;
+        background: $color-7;
+        border: 0.5px solid $color-22;
+        border-radius: 5px;
+        transition: all 0.25s ease-in-out;
+        color: $color-8;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        &:hover,
+        &:focus,
+        &:active {
+          outline: none;
+        }
+      }
     }
 
     .shop-one-suggestions {
@@ -47,7 +80,7 @@
       .prew-shulker {
         width: auto;
         margin: 0 auto;
-        height: auto;
+        animation: box-height-opacity 1s ease-in-out;
       }
 
       .villager-shop-info {
@@ -73,16 +106,18 @@
             height: 30px;
             line-height: 30px;
 
-            .span-custom-color{
+            .span-custom-color {
               font-weight: inherit;
               font-size: inherit;
               color: $color-8;
             }
           }
-          .h4-margin-left{
+
+          .h4-margin-left {
             text-indent: 2ch;
           }
-          .h4-margin-bottom{
+
+          .h4-margin-bottom {
             margin-top: auto;
           }
         }
@@ -96,7 +131,7 @@
           max-height: none;
           position: relative;
 
-          .villager-nameplate{
+          .villager-nameplate {
             position: absolute;
             width: 100%;
             font-weight: 400;
@@ -106,7 +141,8 @@
             line-height: 24px;
             height: 24px;
           }
-          .margin-top-img{
+
+          .margin-top-img {
             margin-top: 15px;
           }
         }
