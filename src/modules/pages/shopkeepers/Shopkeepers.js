@@ -32,6 +32,7 @@ function isItemInteractive(item) {
 const Shopkeepers = () => {
 
   const [selectedItem, setSelectedItem] = useState(null);
+  const [queryData, setQueryData] = useState("");
 
   const data = [
     {
@@ -18994,7 +18995,12 @@ const Shopkeepers = () => {
       ]
     },
     {
-      "name": "prestig9110",
+      "name": "Кузнечный магазин что то там",
+      "owner_name": "prestig9110",
+      "discord_tag": "prestig9110#1026",
+      "coordinates_x": "123456",
+      "coordinates_y": "123456",
+      "coordinates_z": "123456",
       "offers": [
         {
           "name": "BLUE_SHULKER_BOX",
@@ -20291,21 +20297,28 @@ const Shopkeepers = () => {
   return (
     <div className="main-shopkeepers-block">
       <h4 className="title-shop-h4 font-custom-2">Товары игроков сервера</h4>
-
       <div className="shop-block-center">
         <div className="shop-all-suggestions">
-          <input className="search-input-items"/>
-          {data.map((el, index) => {
+
+          <input
+            className="search-input-items"
+            id="search-input-items"
+            placeholder="Найти..."
+            onChange={(e) => setQueryData(e.target.value)}
+          />
+
+          {data.filter((fil) => fil.name.toLowerCase().includes(queryData)).map((el, index) => {
               return (
-                el.offers.map(offer => {
+                el.offers.map((offer, index) => {
                     return (
-                      <OneSuggestions {...offer} onClick={isItemInteractive(offer) ? () => {setSelectedItem(offer)} : undefined}/>
+                      <OneSuggestions key={index} {...offer} onClick={isItemInteractive(offer) ? () => {setSelectedItem(offer) } : undefined}/>
                     )
                   }
                 )
               )
             }
           )}
+
         </div>
 
         <div className="shop-one-suggestions">
@@ -20357,7 +20370,8 @@ export default Shopkeepers;
         )
       })
       }
-*/}
+*/
+}
 
 
 {/*   +- оригинал
