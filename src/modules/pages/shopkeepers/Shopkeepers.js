@@ -25554,9 +25554,9 @@ const Shopkeepers = () => {
             onChange={(e) => setQueryData(e.target.value)}
           />
 
-          {data.filter((fil) => fil.name.toLowerCase().includes(queryData)).map((el, index) => {
+          {data.map((el, index) => {
               return (
-                el.offers.map((offer, index) => {
+                el.offers.filter((fil) => fil.name.toLowerCase().includes(queryData) || fil.currency.toLowerCase().includes(queryData) || fil.content.toLowerCase().includes(queryData)).map((offer, index) => {
                     return (
                       <OneSuggestions key={index} {...offer} onClick={isItemInteractive(offer) ? () => {setSelectedItem(offer) } : undefined}/>
                     )
