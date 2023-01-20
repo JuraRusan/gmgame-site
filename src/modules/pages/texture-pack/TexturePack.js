@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useState, PureComponent} from "react";
 import AOS from "aos";
 import {Link} from 'react-router-dom';
 import {LazyLoadImage} from 'react-lazy-load-image-component';
@@ -26,12 +26,13 @@ const TexturePack = () => {
         <h3 className="texture-pack-title-h3 font-custom-2">Официальный GMGame текстур пак</h3>
         <div className="texture-info">
           <h4 className="info-h4"> Для использования набора ресурсов необходимо установить модификацию Optifine или
-            Sodium с дополнениями. Без модов он работать не будет. <Link to={'/mods'} className="mods-link-page">Моды &#129133;</Link></h4>
-          <h4 className="info-h4">По вопросам обращаться к
-            игрокам: <span>Каким игрокам???</span></h4>
+            Sodium с дополнениями. Без модов он работать не будет. <Link to={'/mods'} className="mods-link-page">Моды &#129133;</Link>
+          </h4>
+          <h4 className="info-h4">По вопросам обращаться к игрокам: <span>Каким игрокам???</span></h4>
         </div>
         <div className="download-box">
-          <a href="./texturePack" className="download-files" download="/static/download/Totem-Elytra-Body-1.19.zip"> Скачать текстур
+          <a href="./texturePack" className="download-files"
+             download="/static/download/Totem-Elytra-Body-1.19.zip"> Скачать текстур
             пак &#129133;</a>
         </div>
         <div className="box-warn">
@@ -52,7 +53,7 @@ const TexturePack = () => {
             <LazyLoadImage className="item-img" alt="none" effect="blur" src={`./site_assets/texture-pack/webp/${tab.img}`}/>
           </div>
           <div className="colum-card-item2">
-            <h3 className="item-title-name">Предмет: {tab.main} <span className="hover-effect">{tab.info_item}</span></h3>
+            <h3 className="item-title-name">Предмет: {tab.main} <span className="hover-effect">{tab.info_item}</span> </h3>
             <ul className="list-name">
               {tab.variability_name.map((list, i) => (
                 <li className="list-name-one">{list}</li>
@@ -61,6 +62,7 @@ const TexturePack = () => {
           </div>
         </div>
       ))}
+
     </div>
   );
 };

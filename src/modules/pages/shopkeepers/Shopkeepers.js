@@ -40,8 +40,8 @@ const Shopkeepers = () => {
   const [infoShopCoordinatesZ, setInfoShopCoordinatesZ] = useState(" ");
   const [infoShopDiscordTag, setInfoShopDiscordTag] = useState(" ");
   const [infoShopRemaining, setInfoShopRemaining] = useState("Неизвесно");
-  const [infoProfession, setInfoProfession] = useState("nitwit");
-  const [infoVillagerType, setInfoVillagerType] = useState("plains");
+  const [infoProfession, setInfoProfession] = useState("villager_base");
+  const [infoVillagerType, setInfoVillagerType] = useState("savanna");
 
   const [selectedItem, setSelectedItem] = useState(null);
   const [queryData, setQueryData] = useState("");
