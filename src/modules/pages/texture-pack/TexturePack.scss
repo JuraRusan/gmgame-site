@@ -111,6 +111,30 @@
     }
   }
 
+  .search-input-texture-pack {
+    display: flex;
+    width: 100%;
+    max-width: 1550px;
+    height: 45px;
+    margin: 15px auto;
+    line-height: 45px;
+    outline: none;
+    background: $color-7;
+    border: 0.5px solid $color-22;
+    border-radius: 5px;
+    transition: all 0.25s ease-in-out;
+    color: $color-8;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      outline: none;
+    }
+  }
+
   .card-item {
     display: flex;
     width: 500px;
@@ -220,6 +244,12 @@
 }
 
 @media screen and (max-width: 1600px) {
+  .main-texture-pack {
+    .search-input-texture-pack {
+      width: 95%;
+      max-width: none;
+    }
+  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -336,6 +366,13 @@
       .download-box {
         margin: 8px auto;
       }
+    }
+
+    .search-input-texture-pack {
+      width: 98%;
+      font-size: 14px;
+      height: 40px;
+      line-height: 40px;
     }
 
     .card-item {

@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import AOS from "aos";
 import {Link} from 'react-router-dom';
 import {LazyLoadImage} from 'react-lazy-load-image-component';
@@ -11,6 +11,8 @@ import Warn from "../../components/warn/Warn.js";
 import {DataBaseTexturePack} from "./texturePackDB.js";
 
 const TexturePack = () => {
+
+  const [queryDataTexturePack, setQueryDataTexturePack] = useState("");
 
   useEffect(() => {
     AOS.init({duration: 1000});
@@ -36,7 +38,15 @@ const TexturePack = () => {
           <Warn inf={InformationFromTheAdministration}/>
         </div>
       </div>
-      {DataBaseTexturePack.map((tab, i) => (
+
+      <input
+        type="text"
+        className="search-input-texture-pack"
+        placeholder="Найти..."
+        onChange={(e) => setQueryDataTexturePack(e.target.value.toLowerCase())}
+      />
+
+      {DataBaseTexturePack.filter((fil) => fil.main.toLowerCase().includes(queryDataTexturePack) || fil.info_item.toLowerCase().includes(queryDataTexturePack) || fil.variability_name.find(c => JSON.stringify(c).toLowerCase().includes(queryDataTexturePack))).map((tab, i) => (
         <div className="card-item" data-aos="zoom-in">
           <div className="colum-card-item1">
             <LazyLoadImage className="item-img" alt="none" effect="blur" src={`./site_assets/texture-pack/webp/${tab.img}`}/>

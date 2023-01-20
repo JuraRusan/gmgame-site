@@ -25548,15 +25548,15 @@ const Shopkeepers = () => {
         <div className="shop-all-suggestions">
 
           <input
+            type="text"
             className="search-input-items"
-            id="search-input-items"
             placeholder="Найти..."
-            onChange={(e) => setQueryData(e.target.value)}
+            onChange={(e) => setQueryData(e.target.value.toLowerCase())}
           />
 
           {data.map((el, index) => {
               return (
-                el.offers.filter((fil) => fil.name.toLowerCase().includes(queryData) || fil.currency.toLowerCase().includes(queryData) || fil.content.toLowerCase().includes(queryData)).map((offer, index) => {
+                el.offers.filter((fil) => fil.name.toLowerCase().includes(queryData) || fil.currency.toLowerCase().includes(queryData)).map((offer, index) => {
                     return (
                       <OneSuggestions key={index} {...offer} onClick={isItemInteractive(offer) ? () => {setSelectedItem(offer) } : undefined}/>
                     )
@@ -25617,6 +25617,8 @@ export default Shopkeepers;
         )
       })
       }
+
+      fil.content.every(c => queryData.includes(c.id))
 */
 }
 
