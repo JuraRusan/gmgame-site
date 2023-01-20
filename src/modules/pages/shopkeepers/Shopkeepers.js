@@ -5306,8 +5306,8 @@ const Shopkeepers = () => {
   const data = [
     {
       "id": "1",
-      "profession": "savanna",
-      "villager_type": "plains",
+      "profession": "cleric",
+      "villager_type": "savanna",
       "name": "Магазин Бакси",
       "owner_name": "Бакси",
       "discord_tag": "Баксиии#1026",
@@ -5747,7 +5747,7 @@ const Shopkeepers = () => {
       "id": "2",
       "profession": "nitwit",
       "villager_type": "plains",
-      "name": "Кузнечный магазин что то там",
+      "name": "Кузнечный магазин",
       "owner_name": "prestig9110",
       "discord_tag": "prestig9110#1026",
       "coordinates_x": "123456",
@@ -7063,7 +7063,7 @@ const Shopkeepers = () => {
               return (
                 el.offers.filter((fil) => fil.name.toLowerCase().includes(queryData) || fil.currency.toLowerCase().includes(queryData)).map((offer, index) => {
                     return (
-                      <div className="div-click" key={index} id={el.id} onClick={() => setInfoShopName(el.name)}>
+                      <div className="div-click" key={index} id={el.id} onClick={() => shopFunction(el)}>
                         <OneSuggestions {...offer} onClick={isItemInteractive(offer) ? () => {setSelectedItem(offer)} : undefined}/>
                       </div>
                     )

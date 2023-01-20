@@ -150,7 +150,9 @@
           }
 
           .margin-top-img {
-            margin-top: 15px;
+            margin: 15px auto 0 auto;
+            width: auto;
+            max-height: 400px;
           }
         }
       }
