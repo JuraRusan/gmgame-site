@@ -1,4 +1,4 @@
-import React, {useMemo, useState} from "react";
+import React, {useMemo, useState, useEffect} from "react";
 import {useAxios} from '../../../DataProvider';
 import Preload from "../../components/preloader/Preload";
 
@@ -28,7 +28,7 @@ function isItemInteractive(item) {
     "WHITE_SHULKER_BOX",
     "YELLOW_SHULKER_BOX",
   ];
-  return items_to_show.includes(item.name);
+  return items_to_show.includes(item.name.toUpperCase());
 }
 
 const Shopkeepers = () => {
@@ -43,15 +43,16 @@ const Shopkeepers = () => {
 
   const [selectedItem, setSelectedItem] = useState(null);
   const [queryData, setQueryData] = useState("");
+  const [active, setActive] = useState(false);
 
   function shopFunction (props) {
     setInfoShopName(props.name_shop);
-    setInfoShopOwnerName(props.owner_name);
-    setInfoShopCoordinatesX(props.coordinates_x);
-    setInfoShopCoordinatesY(props.coordinates_y);
-    setInfoShopCoordinatesZ(props.coordinates_z);
-    setInfoVillagerType(props.villager_type);
-    setInfoProfession(props.profession);
+    setInfoShopOwnerName(props.name);
+    setInfoShopCoordinatesX(props.coords.x);
+    setInfoShopCoordinatesY(props.coords.y);
+    setInfoShopCoordinatesZ(props.coords.z);
+    setInfoVillagerType(props.villager.villagerType.toLowerCase());
+    setInfoProfession(props.villager.profession.toLowerCase());
   }
 
   const item_name_data = {
@@ -5301,14 +5302,23 @@ const Shopkeepers = () => {
     }
   };
 
+  const resParams = useAxios(
+    "/api/get_shops",
+    'GET',
+    {}
+  );
+
   const filteredData = useMemo(() => {
-    return data.filter((item) => {
+    if (resParams.loading) {
+      return [];
+    }
+    return resParams.data.filter((item) => {
       const offerArray = item.offers;
 
       const parentNodeArray = offerArray.filter((i) => {
         return (
-          i?.name.toLowerCase().includes(queryData) ||
-          i?.currency.toLowerCase().includes(queryData)
+          i?.name.includes(queryData) ||
+          i?.currency.includes(queryData)
         );
       });
 
@@ -5316,7 +5326,7 @@ const Shopkeepers = () => {
         .map((i) => i.content)
         .filter((el) => {
           const innerArr = el
-            ?.map((e) => e?.id?.toLowerCase())
+            ?.map((e) => e?.id)
             ?.filter((dd) => dd?.includes(queryData));
 
           return innerArr.length > 0 ? innerArr : false;
@@ -5328,16 +5338,14 @@ const Shopkeepers = () => {
           ? nestedNodeArray
           : false;
     });
-  }, [queryData]);
-
-  const resParams = useAxios(
-    "/api/get_shops",
-    'GET',
-    {}
-  );
+  }, [queryData, active]);
 
   if (resParams.loading) {
     return <Preload/>;
+  } 
+
+  if (resParams.loaded && !active) {
+    setActive(true);
   }
 
   return (

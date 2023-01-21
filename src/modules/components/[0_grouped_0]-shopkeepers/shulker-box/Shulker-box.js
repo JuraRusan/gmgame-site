@@ -5,8 +5,6 @@ import OneItem from "../one-item/One-item.js";
 import OneItemNone from "../one-item/One-item-none.js";
 
 const ShulkerBox = (props) => {
-
-  console.log(props)
   return (
     <div className="one-shulker-box-block">
       {props.content.map((el, i) => {
@@ -16,9 +14,6 @@ const ShulkerBox = (props) => {
             item_minecraft_name_id={el.id}
             item_count={el.count}/>
         )
-        if (i < 26) {
-          <OneItemNone/>
-        }
       })}
     </div>
   );
