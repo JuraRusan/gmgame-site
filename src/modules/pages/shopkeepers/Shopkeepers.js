@@ -7,6 +7,7 @@ import ShulkerBox from "../../components/[0_grouped_0]-shopkeepers/shulker-box/S
 import OneSuggestions from "../../components/[0_grouped_0]-shopkeepers/one-suggestions/One-suggestions.js";
 import Warn from "../../components/warn/Warn";
 import {LazyLoadImage} from 'react-lazy-load-image-component';
+import lodash from 'lodash';
 
 function isItemInteractive(item) {
   const items_to_show = [
@@ -44,6 +45,7 @@ const Shopkeepers = () => {
   const [selectedItem, setSelectedItem] = useState(null);
   const [queryData, setQueryData] = useState("");
   const [active, setActive] = useState(false);
+  const [result, setResult] = useState([]);
 
   function shopFunction (props) {
     setInfoShopName(props.name_shop);
@@ -5308,37 +5310,40 @@ const Shopkeepers = () => {
     {}
   );
 
-  const filteredData = useMemo(() => {
+  useMemo(() => {
     if (resParams.loading) {
       return [];
     }
-    return resParams.data.filter((item) => {
-      const offerArray = item.offers;
-
-      const parentNodeArray = offerArray.filter((i) => {
-        return (
-          i?.name.includes(queryData) ||
-          i?.currency.includes(queryData)
-        );
-      });
-
-      const nestedNodeArray = offerArray
-        .map((i) => i.content)
-        .filter((el) => {
-          const innerArr = el
-            ?.map((e) => e?.id)
-            ?.filter((dd) => dd?.includes(queryData));
-
-          return innerArr.length > 0 ? innerArr : false;
-        });
-
-      return parentNodeArray.length > 0
-        ? parentNodeArray
-        : nestedNodeArray.length > 0
-          ? nestedNodeArray
-          : false;
+    let filteredData = [];
+    resParams.data.map(shop => {
+      const [goods, bads] = lodash.chain(shop.offers)
+        .partition((e) => {
+            return filterItem(e, queryData);
+        })
+        .value();
+      
+      if (goods[0]) {
+        filteredData.push({...shop, ...{offers: goods}})
+      }
+    })
+    // не очень корректно работает, но пока хз. так как сортируются магазины и не привязки офферы => магазины
+    const sortedFilteredData = lodash.sortBy(filteredData, function(shop) {
+      return lodash.max(shop.offers, 'amount').amount;
     });
-  }, [queryData, active]);
+    setResult(sortedFilteredData);
+  }, [queryData]);
+
+  function filterItem(item, query) {
+    if (item.name?.includes(query)) {
+      return true;
+    }
+
+    const filteredContent = item.content?.filter(itemSlot => itemSlot.id?.includes(query));
+
+    if (filteredContent[0]) {
+      return true;
+    }
+  }
 
   if (resParams.loading) {
     return <Preload/>;
@@ -5346,6 +5351,7 @@ const Shopkeepers = () => {
 
   if (resParams.loaded && !active) {
     setActive(true);
+    setResult(resParams.data);
   }
 
   return (
@@ -5361,7 +5367,7 @@ const Shopkeepers = () => {
             onChange={(e) => setQueryData(e.target.value.toLowerCase())}
           />
 
-          {filteredData.map((el, index) => {
+          {result.map((el, index) => {
               return (
                 el.offers.map((offer, index) => {
                     return (
