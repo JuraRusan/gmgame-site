@@ -39,7 +39,7 @@ const Shopkeepers = () => {
   const [infoShopCoordinatesX, setInfoShopCoordinatesX] = useState(" ");
   const [infoShopCoordinatesY, setInfoShopCoordinatesY] = useState(" ");
   const [infoShopCoordinatesZ, setInfoShopCoordinatesZ] = useState(" ");
-  const [infoProfession, setInfoProfession] = useState("villager_base");
+  const [infoProfession, setInfoProfession] = useState("none");
   const [infoVillagerType, setInfoVillagerType] = useState("savanna");
 
   const [selectedItem, setSelectedItem] = useState(null);
