@@ -28,7 +28,7 @@
 
     .ag-root-wrapper {
       border: 1px solid $color-22;
-      background: $color-7
+      background: $color-7;
     }
 
     .ag-header {
@@ -52,11 +52,11 @@
       border-bottom: 1px solid $color-22;
 
       &:nth-child(even) {
-        background-color: lighten($color-7, 2);
+        background-color: lighten($color-7, 1);
       }
 
       &:nth-child(odd) {
-        background-color: lighten($color-7, 3);
+        background-color: lighten($color-7, 2);
       }
 
       &:nth-child(20) {

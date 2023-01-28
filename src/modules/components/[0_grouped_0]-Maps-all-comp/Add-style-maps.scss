@@ -70,6 +70,7 @@
         &:active,
         &:focus {
           outline: none;
+          background: $color-21;
         }
 
         .option-list {
@@ -122,6 +123,7 @@
             &:active,
             &:focus {
               outline: none;
+              background: $color-21;
             }
           }
         }

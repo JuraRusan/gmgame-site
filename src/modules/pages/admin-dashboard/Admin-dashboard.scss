@@ -6,62 +6,115 @@
   width: auto;
   height: auto;
 
-  .box-dashboard {
-    width: 96%;
-    height: auto;
-    min-height: 800px;
-    background: $color-11;
-    margin: 15px auto 75px auto;
-    padding: 10px;
+  .search-players {
     display: flex;
-    flex-direction: column;
+    width: 90%;
+    height: 40px;
+    margin: 5px auto;
+    line-height: 40px;
+    outline: none;
+    background: $color-7;
+    border: 0.5px solid $color-22;
+    border-radius: 5px;
+    transition: all 0.25s ease-in-out;
+    color: $color-8;
+    padding-left: 10px;
+    padding-right: 10px;
 
-    .input-click-admin {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      height: 50px;
-      width: 100%;
-      border-width: 1px;
-      border-bottom-style: solid;
-      border-top-style: solid;
-      border-image: linear-gradient(to right, rgba(0, 0, 0, 0), $color-3, rgba(0, 0, 0, 0)) 1 0%;
+    &:hover,
+    &:focus,
+    &:active {
+      outline: none;
+      background: $color-21;
+    }
+  }
 
-      .tab-admin {
-        background: transparent;
-        cursor: pointer;
-        transition: all 0.5s ease;
-        width: auto;
-        height: 40px;
-        line-height: 40px;
-        text-decoration: none;
-        font-weight: 400;
-        font-size: 20px;
-        margin: auto 10px;
-        padding: 0 12px;
-        color: $color-3;
+  .button-search-players {
+    width: 100%;
+    max-width: 250px;
+    height: 30px;
+    margin: 8px auto;
+    line-height: 30px;
+    text-align: center;
+    outline: none;
+    background: $color-7;
+    border: 0.5px solid $color-22;
+    border-radius: 20px;
+    transition: all 0.25s ease-in-out;
+    color: $color-8;
+    cursor: pointer;
+    font-size: 14px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      outline: none;
+      background: $color-21;
+    }
+  }
+
+  .table-cl {
+    width: 100%;
+    max-width: 85%;
+    border: 1px solid $color-22;
+    background: $color-7;
+    margin: 5px auto;
+
+    .thead-cl {
+      height: 34px;
+      line-height: 34px;
+    }
+
+    .tbody-cl {
+      .tr-cl {
+        height: 34px;
+        line-height: 34px;
+        border-top: 1px solid $color-22;
+        transition: all 0.20s ease;
+
+        &:nth-child(even) {
+          background-color: lighten($color-7, 1);
+        }
+
+        &:nth-child(odd) {
+          background-color: lighten($color-7, 2);
+        }
+      }
+    }
+
+    .th-cl {
+      color: $color-3;
+      font-weight: 400;
+      font-size: 16px;
+      border-left: 1px solid $color-22;
+      transition: all 0.15s ease;
+
+      &:hover {
+        color: $color-8;
+        border: 1px solid $color-8;
+      }
+
+      &:nth-child(1) {
         border: none;
-        text-align: start;
-        border-radius: 15px;
-        outline: none;
-
-        &:active,
-        &:hover {
-          outline: none;
-        }
-
-        &:hover {
-          background: $color-14;
-        }
+        width: 250px;
       }
 
-      .checked {
-        background-color: $color-21 !important;
+      &:nth-child(2) {
+        width: 250px;
+      }
+
+      &:nth-child(3) {
+        width: 100px;
+      }
+
+      &:nth-child(4) {
+        width: 150px;
+      }
+
+      &:nth-child(5) {
+        width: 250px;
       }
     }
 
-    .output-click-admin {
-
-    }
   }
 }

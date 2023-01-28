@@ -7,7 +7,7 @@ import "./Admin-dashboard.scss";
 import "aos/dist/aos.css";
 
 const AdminDashboard = () => {
-  let [searchParam, setSearchParam] = useState('discord id/nickname/discord tag');
+  let [searchParam, setSearchParam] = useState('Поиск работает по discord_id/nickname/discord_tag');
   let [user, setUser] = useState({});
   let [tag, setTag] = useState({});
 
@@ -33,28 +33,36 @@ const AdminDashboard = () => {
 
   return (
     <div className="main-dashboard" data-aos="fade-up">
-      <input placeholder={searchParam} onChange={(e) => setSearchParam(e.target.value)} type="search"></input>
-      <button type="submit" onClick={getUser}>Поиск</button>
-      <table backgrount='white'>
-        <thead>
-          <tr>
-            <th>Имя</th>
-            <th>email</th>
-            <th>Возраст</th>
-            <th>Статус</th>
-            <th>Действия</th>
-            <th></th>
-          </tr>
+
+      <input
+        className="search-players"
+        placeholder={searchParam}
+        onChange={(e) => setSearchParam(e.target.value)}
+        type="search">
+      </input>
+
+      <button className="button-search-players" type="submit" onClick={getUser}>Сделать запрос</button>
+
+      <table className="table-cl">
+        <thead className="thead-cl">
+        <tr className="tr-cl">
+          <th className="th-cl">Имя</th>
+          <th className="th-cl">email</th>
+          <th className="th-cl">Возраст</th>
+          <th className="th-cl">Статус</th>
+          <th className="th-cl">Действия</th>
+          <th className="th-cl"></th>
+        </tr>
         </thead>
-        <tbody>
-          <tr>
-            <th>{user?.username}</th>
-            <th>{tag?.email}</th>
-            <th>{user?.age}</th>
-            <th>{user?.status}</th>
-            <th><Link to="allPlayerMarkers" state={{ id: user.id }}>UD</Link>, <a>M</a>, <a>T</a></th>
-            <th>X</th>
-          </tr>
+        <tbody className="tbody-cl">
+        <tr className="tr-cl">
+          <th className="th-cl">{user?.username}</th>
+          <th className="th-cl">{tag?.email}</th>
+          <th className="th-cl">{user?.age}</th>
+          <th className="th-cl">{user?.status}</th>
+          <th className="th-cl"><Link to="allPlayerMarkers" state={{id: user.id}}>UD</Link>, <a>M</a>, <a>T</a></th>
+          <th className="th-cl">X</th>
+        </tr>
         </tbody>
       </table>
     </div>
