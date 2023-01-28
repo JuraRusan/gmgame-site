@@ -6,13 +6,14 @@ import AlertTemplate from "react-alert-template-basic";
 
 import General from "./modules/pages/general/General.js";
 import Shopkeepers from "./modules/pages/shopkeepers/Shopkeepers.js";
-// import AdminDashboard from "./modules/pages/admin-dashboard/Admin-dashboard.js";
-// import AllApplications from "./modules/components/[0_grouped_0]-Admin/applications/AllApplications.js"
-// import AllPlayerTerritories from "./modules/components/[0_grouped_0]-Admin/all-player-territories/AllPlayerTerritories.js"
-// import AllPlayerMarkers from "./modules/components/[0_grouped_0]-Admin/all-player-markers/AllPlayerMarkers.js"
-// import AllPlayerArticles from "./modules/components/[0_grouped_0]-Admin/all-player-articles/AllPlayerArticles.js"
-// import RedFaq from "./modules/components/[0_grouped_0]-Admin/red-faq/RedFaq.js";
-// import RedRegulations from "./modules/components/[0_grouped_0]-Admin/red-regulations/RedRegulations.js";
+
+import AdminDashboard from "./modules/pages/admin-dashboard/Admin-dashboard.js";
+import AllApplications from "./modules/components/[0_grouped_0]-Admin/applications/AllApplications.js"
+import AllPlayerTerritories from "./modules/components/[0_grouped_0]-Admin/all-player-territories/AllPlayerTerritories.js"
+import AllPlayerMarkers from "./modules/components/[0_grouped_0]-Admin/all-player-markers/AllPlayerMarkers.js"
+import AllPlayerArticles from "./modules/components/[0_grouped_0]-Admin/all-player-articles/AllPlayerArticles.js"
+import RedFaq from "./modules/components/[0_grouped_0]-Admin/red-faq/RedFaq.js";
+import RedRegulations from "./modules/components/[0_grouped_0]-Admin/red-regulations/RedRegulations.js";
 // import Manager from "./modules/pages/manager/Manager.js";
 
 const Faq = lazy(() => import(/* webpackChunkName: "faq" */ './modules/pages/faq/Faq.js'));
@@ -58,14 +59,14 @@ const Router = () => {
           <Route path="prize" element={<MyPrizes/>}/>
           <Route path="change_password" element={<ChangePassword/>}/>
         </Route>
-        {/* <Route exact path="/adminDashboard" element={<AdminDashboard/>}>
+        <Route exact path="/manager" element={<AdminDashboard/>}>
           <Route path="allApplications" element={<AllApplications/>}/>
           <Route path="allPlayerTerritories" element={<AllPlayerTerritories/>}/>
           <Route path="allPlayerMarkers" element={<AllPlayerMarkers/>}/>
           <Route path="allPlayerArticles" element={<AllPlayerArticles/>}/>
           <Route path="redFaq" element={<RedFaq/>}/>
           <Route path="redRegulations" element={<RedRegulations/>}/>
-        </Route> */}
+        </Route>
         <Route path="/faq" element={<Faq/>}/>
         <Route path="/regulations" element={<Regulations/>}/>
         <Route path="/articlesWiki" element={<ArticlesWiki/>}/>
@@ -75,7 +76,6 @@ const Router = () => {
         <Route path="/onlineMaps" element={<Maps/>}/>
         <Route path="/texturePack" element={<TexturePack/>}/>
         <Route path="/shopkeepers" element={<Shopkeepers/>}/>
-        {/* <Route path="/manager/*" element={<Manager/>}/> */}
         <Route exac path="*" element={<NotFound/>}/>
       </Routes>
     </Provider>
