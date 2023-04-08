@@ -43,14 +43,16 @@ const MyProfile = () => {
           <label className="label-cout font-custom-2">{profileServerVersionOutput}</label>
         </div>
 
-        <div className="prof-cont-custom">
-          <h5 className="h5-cont">{profileServerAdress}</h5>
-          <div className="ip-list">
-            <label className="label-cout-custom font-custom-2">mine.gmgame.ru</label>
-            <label className="label-cout-custom font-custom-2">lv.gmgame.ru</label>
-            <label className="label-cout-custom font-custom-2">by.gmgame.ru</label>
+        {data.user.status === 2 &&
+          <div className="prof-cont-custom">
+            <h5 className="h5-cont">{profileServerAdress}</h5>
+            <div className="ip-list">
+              <label className="label-cout-custom font-custom-2">mine.gmgame.ru</label>
+              <label className="label-cout-custom font-custom-2">lv.gmgame.ru</label>
+              <label className="label-cout-custom font-custom-2">by.gmgame.ru</label>
+            </div>
           </div>
-        </div>
+        }
       </div>
     </div>
   );

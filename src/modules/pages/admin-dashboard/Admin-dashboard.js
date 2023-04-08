@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import AOS from "aos";
 import {NavLink, Outlet, Link} from "react-router-dom";
 import {useAxios, sendRequest} from '../../../DataProvider';
+import {useAlert} from "react-alert";
 
 import "./Admin-dashboard.scss";
 import "aos/dist/aos.css";
@@ -10,6 +11,11 @@ const AdminDashboard = () => {
   let [searchParam, setSearchParam] = useState('Поиск работает по discord_id/nickname/discord_tag');
   let [user, setUser] = useState({});
   let [tag, setTag] = useState({});
+  const [action, setAction] = useState('');
+  const [markers, setMarkers] = useState([]);
+  const [territories, setTerritories] = useState([]);
+
+  const alert = useAlert();
 
   useEffect(() => {
     AOS.init({duration: 1000});
@@ -23,13 +29,148 @@ const AdminDashboard = () => {
         searchParam: searchParam
       }
     ).then(response => {
-      if (!response) {
+      if (!response?.user_id) {
+        setUser({});
+        setTag({});
+        alert.error(response.message);
         return;
       }
       setUser(response);
       setTag(JSON.parse(response.tag));
+      setMarkers(response.markers);
+      setTerritories(response.territories);
     });
   }
+
+  const getMarkers = () => {
+    sendRequest(
+      '/api/admin/get_markers',
+      'POST',
+      {}
+    ).then(response => {
+      if (!response.length > 0) {
+        setUser({});
+        setTag({});
+        alert.error(response.message);
+        return;
+      }
+      setMarkers(response);
+      setUser({});
+      setTerritories([]);
+    });
+  }
+
+  const getTerritories = () => {
+    sendRequest(
+      '/api/admin/get_territories',
+      'POST',
+      {}
+    ).then(response => {
+      if (!response.length > 0) {
+        setUser({});
+        setTag({});
+        alert.error(response.message);
+        return;
+      }
+      setTerritories(response);
+      setUser({});
+      setMarkers([]);
+    });
+  }
+
+  const delMarker = (id) => {
+    const newMarkers = [...markers];
+    actionMarkers(id, '/api/admin/delete_marker');
+
+    const index = markers.findIndex((marker) => marker.id === id);
+    newMarkers.splice(index, 1);
+    setMarkers(newMarkers);
+  }
+
+  const updateMarker = (id) => {
+    actionMarkers(id, '/api/admin/update_marker');
+  }
+
+  const updateTerr = (id) => {
+    actionMarkers(id, '/api/admin/update_territory');
+  }
+
+  const delTerr = (id) => {
+    const newTerrs = [...territories];
+    actionMarkers(id, '/api/admin/delete_territory');
+
+    const index = newTerrs.findIndex((terr) => terr.id === id);
+    newTerrs.splice(index, 1);
+    setTerritories(newTerrs);
+  }
+
+  const actionMarkers = (id, url) => {
+    sendRequest(
+      url,
+      'POST',
+      {id: id}
+    ).then(response => {
+      if (response.message) {
+        alert.success(response.message);
+      } else {
+        alert.error(response.error);
+      }
+    });
+  }
+
+  const actionUser = () => {
+    sendRequest(
+      '/api/admin/action_user',
+      'POST',
+      {
+        action: action.action,
+        user: action.user
+      }
+    ).then(response => {
+      if (response.error) {
+        alert.error(response.message);
+      } else {
+        alert.success(response.message);
+      }
+    });
+  }
+
+  const actions = {
+    default: {action: null, text: ''},
+    accept: {action: 'accept', text: 'Принять'},
+    delete: {action: 'delete', text: 'Удалить'},
+    decline: {action: 'decline', text: 'Отклонить'},
+    ban: {action: 'ban', text: 'Забанить'},
+    unban: {action: 'unban', text: 'Разбанить'},
+    addWl: {action: 'resume', text: 'Вернуть в wl'},
+    delWL: {action: 'suspend', text: 'Убрать из wl'}
+  }
+
+  let values = [actions.default];
+
+  switch(user?.status) {
+    case 1:
+      values.push(actions.accept, actions.decline, actions.delete);
+      break;
+    case 2:
+      values.push(actions.ban, actions.delete, actions.delWL);
+      break;
+    case 3:
+      values.push(actions.accept, actions.delete);
+      break;
+    case 4:
+      values.push(actions.unban, actions.delete);
+      break;
+    case 5:
+      values.push(actions.addWl, actions.delete);
+      break;
+    default:
+      values = [];
+  }
+
+  const options = values.map((value, index) => {
+    return <option key={index} value={value.action}>{value.text}</option>;
+  });
 
   return (
     <div className="main-dashboard" data-aos="fade-up">
@@ -41,8 +182,12 @@ const AdminDashboard = () => {
         type="search">
       </input>
 
-      <button className="button-search-players" type="submit" onClick={getUser}>Сделать запрос</button>
+      <button className="button-search-players" type="submit" onClick={getUser}>Поиск</button>
+      <button className="button-search-players" type="submit" onClick={getMarkers}>Все метки</button>
+      <button className="button-search-players" type="submit" onClick={getTerritories}>Все территории</button>
 
+      {user.status && 
+      <>
       <table className="table-cl">
         <thead className="thead-cl">
         <tr className="tr-cl">
@@ -60,42 +205,94 @@ const AdminDashboard = () => {
           <th className="th-cl">{tag?.email}</th>
           <th className="th-cl">{user?.age}</th>
           <th className="th-cl">{user?.status}</th>
-          <th className="th-cl"><Link to="allPlayerMarkers" state={{id: user.id}}>UD</Link>, <a>M</a>, <a>T</a></th>
-          <th className="th-cl">X</th>
+          <th className="th-cl">
+            <Link to="allPlayerMarkers" state={{id: user.id}}>UD</Link>, 
+            <Link to="allPlayerMarkers" state={{id: user.id}}> M</Link>, 
+            <Link to="allPlayerTerrs" state={{id: user.id}}> T</Link>
+          </th>
+          <th className="th-cl">
+            <select value={action.action} onChange={event => setAction({action: event.target.value, user: user.user_id})}>
+              {options}
+            </select>
+          </th>
         </tr>
         </tbody>
       </table>
+      <button className="button-search-players" type="submit" onClick={actionUser}>Применить</button>
+      </>
+      }
+      {markers.length > 0 && 
+      <>
+      Метки
+      <table className="table-cl">
+        <thead className="thead-cl">
+        <tr className="tr-cl">
+          <th className="th-cl">Название</th>
+          <th className="th-cl">Описание</th>
+          <th className="th-cl">x</th>
+          <th className="th-cl">y</th>
+          <th className="th-cl">z</th>
+          <th className="th-cl"></th>
+        </tr>
+        </thead>
+        <tbody className="tbody-cl">
+          {markers?.map(el => {
+            return (
+                <tr className="tr-cl">
+                <th className="th-cl">{el.name}</th>
+                <th className="th-cl">{el.description}</th>
+                <th className="th-cl">{el.x}</th>
+                <th className="th-cl">{el.y}</th>
+                <th className="th-cl">{el.z}</th>
+                <th className="th-cl">
+                  <button className="button-search-players" type="submit" onClick={() => delMarker(el.id)}>Удалить</button>
+                  <button className="button-search-players" type="submit" onClick={() => updateMarker(el.id)}>Обновить</button>
+                </th>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+      </>
+      }
+      { territories.length > 0 &&
+      <>
+      Территории
+      <table className="table-cl">
+        <thead className="thead-cl">
+        <tr className="tr-cl">
+          <th className="th-cl">Название</th>
+          <th className="th-cl">Сервер</th>
+          <th className="th-cl">xStart</th>
+          <th className="th-cl">xStop</th>
+          <th className="th-cl">zStart</th>
+          <th className="th-cl">zStop</th>
+          <th className="th-cl"></th>
+        </tr>
+        </thead>
+        <tbody className="tbody-cl">
+          {territories?.map(el => {
+            return (
+                <tr className="tr-cl">
+                <th className="th-cl">{el.name}</th>
+                <th className="th-cl">{el.world}</th>
+                <th className="th-cl">{el.xStart}</th>
+                <th className="th-cl">{el.xStop}</th>
+                <th className="th-cl">{el.zStart}</th>
+                <th className="th-cl">{el.zStop}</th>
+                <th className="th-cl">
+                  <button className="button-search-players" type="submit" onClick={() => delTerr(el.id)}>Удалить</button>
+                  <button className="button-search-players" type="submit" onClick={() => updateTerr(el.id)}>Обновить</button>
+                </th>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+      </>
+      }
     </div>
   );
-
-  // const allAdminApplication = "Заявки";
-  // const allPlayerTerritories = "Территории";
-  // const allPlayerMarker = "Метки";
-  // const allPlayerArticles = "Статьи";
-  // const redFaq = "faq";
-  // const redRegulations = "Правила";
-
-  // function setActive(isActive) {
-  //   return isActive ? "tab-admin checked" : "tab-admin";
-  // }
-
-  // return (
-  //   <div className="main-dashboard" data-aos="fade-up">
-  //     <div className="box-dashboard">
-  //       <div className="input-click-admin">
-  //         <NavLink to="allApplications" className={({isActive}) => setActive(isActive)}>{allAdminApplication}</NavLink>
-  //         <NavLink to="allPlayerTerritories" className={({isActive}) => setActive(isActive)}>{allPlayerTerritories}</NavLink>
-  //         <NavLink to="allPlayerMarkers" className={({isActive}) => setActive(isActive)}>{allPlayerMarker}</NavLink>
-  //         <NavLink to="allPlayerArticles" className={({isActive}) => setActive(isActive)}>{allPlayerArticles}</NavLink>
-  //         <NavLink to="redFaq" className={({isActive}) => setActive(isActive)}>{redFaq}</NavLink>
-  //         <NavLink to="redRegulations" className={({isActive}) => setActive(isActive)}>{redRegulations}</NavLink>
-  //       </div>
-  //       <div className="output-click-admin">
-  //         <Outlet/>
-  //       </div>
-  //     </div>
-  //   </div>
-  // );
 };
 
 export default AdminDashboard;
