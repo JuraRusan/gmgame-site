@@ -5,7 +5,6 @@ import {positions, Provider} from "react-alert";
 import AlertTemplate from "react-alert-template-basic";
 
 import General from "./modules/pages/general/General.js";
-import Shopkeepers from "./modules/pages/shopkeepers/Shopkeepers.js";
 
 import AdminDashboard from "./modules/pages/admin-dashboard/Admin-dashboard.js";
 import AllApplications from "./modules/components/[0_grouped_0]-Admin/applications/AllApplications.js"
@@ -19,10 +18,12 @@ import RedRegulations from "./modules/components/[0_grouped_0]-Admin/red-regulat
 const Faq = lazy(() => import(/* webpackChunkName: "faq" */ './modules/pages/faq/Faq.js'));
 const Statistic = lazy(() => import(/* webpackChunkName: "statistics" */ './modules/pages/statistic/Statistic.js'));
 const TexturePack = lazy(() => import(/* webpackChunkName: "texturepack" */ './modules/pages/texture-pack/TexturePack.js'));
+const Shopkeepers = lazy(() => import(/* webpackChunkName: "shopkeepers" */ './modules/pages/shopkeepers/Shopkeepers.js'));
 const Auth = lazy(() => import(/* webpackChunkName: "auth" */ /* webpackPreload: true */ /* webPackPrefetch: true */ './modules/pages/auth/Auth.js'));
 const Regulations = lazy(() => import(/* webpackChunkName: "regulations" */ './modules/pages/regulations/Regulations.js'));
 const ArticlesWiki = lazy(() => import(/* webpackChunkName: "wiki" */ './modules/pages/articles/Articles-wiki.js'));
 const NotFound = lazy(() => import(/* webpackChunkName: "404" */ './modules/pages/not-found/NotFound.js'));
+const NoAccess = lazy(() => import(/* webpackChunkName: "404" */ './modules/pages/no-access/NoAccess.js'));
 const Mods = lazy(() => import(/* webpackChunkName: "mods" */ './modules/pages/mods/Mods.js'));
 const Maps = lazy(() => import(/* webpackChunkName: "maps" */ './modules/pages/maps/Maps.js'));
 const Support = lazy(() => import(/* webpackChunkName: "support" */ './modules/pages/support/Support.js'));
@@ -75,6 +76,7 @@ const Router = () => {
         <Route path="/support" element={<Support/>}/>
         <Route path="/onlineMaps" element={<Maps/>}/>
         <Route path="/texturePack" element={<TexturePack/>}/>
+        <Route path="/no-access" element={<NoAccess/>}/>
         <Route path="/shopkeepers" element={<Shopkeepers/>}/>
         <Route exac path="*" element={<NotFound/>}/>
       </Routes>

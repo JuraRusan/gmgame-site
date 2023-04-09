@@ -148,7 +148,7 @@ const AdminDashboard = () => {
 
   let values = [actions.default];
 
-  switch(user?.status) {
+  switch (user?.status) {
     case 1:
       values.push(actions.accept, actions.decline, actions.delete);
       break;
@@ -183,113 +183,117 @@ const AdminDashboard = () => {
       </input>
 
       <button className="button-search-players" type="submit" onClick={getUser}>Поиск</button>
-      <button className="button-search-players" type="submit" onClick={getMarkers}>Все метки</button>
-      <button className="button-search-players" type="submit" onClick={getTerritories}>Все территории</button>
 
-      {user.status && 
-      <>
-      <table className="table-cl">
-        <thead className="thead-cl">
-        <tr className="tr-cl">
-          <th className="th-cl">Имя</th>
-          <th className="th-cl">email</th>
-          <th className="th-cl">Возраст</th>
-          <th className="th-cl">Статус</th>
-          <th className="th-cl">Действия</th>
-          <th className="th-cl"></th>
-        </tr>
-        </thead>
-        <tbody className="tbody-cl">
-        <tr className="tr-cl">
-          <th className="th-cl">{user?.username}</th>
-          <th className="th-cl">{tag?.email}</th>
-          <th className="th-cl">{user?.age}</th>
-          <th className="th-cl">{user?.status}</th>
-          <th className="th-cl">
-            <Link to="allPlayerMarkers" state={{id: user.id}}>UD</Link>, 
-            <Link to="allPlayerMarkers" state={{id: user.id}}> M</Link>, 
-            <Link to="allPlayerTerrs" state={{id: user.id}}> T</Link>
-          </th>
-          <th className="th-cl">
-            <select value={action.action} onChange={event => setAction({action: event.target.value, user: user.user_id})}>
-              {options}
-            </select>
-          </th>
-        </tr>
-        </tbody>
-      </table>
-      <button className="button-search-players" type="submit" onClick={actionUser}>Применить</button>
-      </>
+      <div className="wrapper-btn-manager">
+        <button className="button-search" type="submit" onClick={getMarkers}>Отображение всех меток</button>
+        <button className="button-search" type="submit" onClick={getTerritories}>Отображение всех территорий</button>
+      </div>
+
+      {user.status &&
+        <>
+          <table className="table-cl">
+            <thead className="thead-cl">
+            <tr className="tr-cl">
+              <th className="th-cl">Имя</th>
+              <th className="th-cl">email</th>
+              <th className="th-cl">Возраст</th>
+              <th className="th-cl">Статус</th>
+              <th className="th-cl">Действия</th>
+              <th className="th-cl"></th>
+            </tr>
+            </thead>
+            <tbody className="tbody-cl">
+            <tr className="tr-cl">
+              <th className="th-cl">{user?.username}</th>
+              <th className="th-cl">{tag?.email}</th>
+              <th className="th-cl">{user?.age}</th>
+              <th className="th-cl">{user?.status}</th>
+              <th className="th-cl">
+                <Link to="allPlayerMarkers" state={{id: user.id}}>UD</Link>,
+                <Link to="allPlayerMarkers" state={{id: user.id}}> M</Link>,
+                <Link to="allPlayerTerrs" state={{id: user.id}}> T</Link>
+              </th>
+              <th className="th-cl">
+                <select className="in-manager-option" value={action.action} onChange={event => setAction({action: event.target.value, user: user.user_id})}>{options}</select>
+              </th>
+            </tr>
+            </tbody>
+          </table>
+          <button className="button-search-players" type="submit" onClick={actionUser}>Применить</button>
+        </>
       }
-      {markers.length > 0 && 
-      <>
-      Метки
-      <table className="table-cl">
-        <thead className="thead-cl">
-        <tr className="tr-cl">
-          <th className="th-cl">Название</th>
-          <th className="th-cl">Описание</th>
-          <th className="th-cl">x</th>
-          <th className="th-cl">y</th>
-          <th className="th-cl">z</th>
-          <th className="th-cl"></th>
-        </tr>
-        </thead>
-        <tbody className="tbody-cl">
-          {markers?.map(el => {
-            return (
+      {markers.length > 0 &&
+        <>
+          <h4 className="manager-h4">Метки</h4>
+          <table className="table-cl">
+            <thead className="thead-cl">
+            <tr className="tr-cl">
+              <th className="th-cl">Название</th>
+              <th className="th-cl">Описание</th>
+              <th className="th-cl table-coordinates">x</th>
+              <th className="th-cl table-coordinates">y</th>
+              <th className="th-cl table-coordinates">z</th>
+              <th className="th-cl"></th>
+            </tr>
+            </thead>
+            <tbody className="tbody-cl">
+            {markers?.map(el => {
+              return (
                 <tr className="tr-cl">
-                <th className="th-cl">{el.name}</th>
-                <th className="th-cl">{el.description}</th>
-                <th className="th-cl">{el.x}</th>
-                <th className="th-cl">{el.y}</th>
-                <th className="th-cl">{el.z}</th>
-                <th className="th-cl">
-                  <button className="button-search-players" type="submit" onClick={() => delMarker(el.id)}>Удалить</button>
-                  <button className="button-search-players" type="submit" onClick={() => updateMarker(el.id)}>Обновить</button>
-                </th>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
-      </>
+                  <th className="th-cl"><input className="in-manager" defaultValue={el.name}/></th>
+                  <th className="th-cl"><input className="in-manager" defaultValue={el.description}/></th>
+                  <th className="th-cl table-coordinates table-coordinates"><input className="in-manager" defaultValue={el.x}/></th>
+                  <th className="th-cl table-coordinates table-coordinates"><input className="in-manager" defaultValue={el.y}/></th>
+                  <th className="th-cl table-coordinates table-coordinates"><input className="in-manager" defaultValue={el.z}/></th>
+                  <th className="th-cl">
+                    <button className="manager-btn" type="submit" onClick={() => delMarker(el.id)}>Удалить
+                    </button>
+                    <button className="manager-btn" type="submit" onClick={() => updateMarker(el.id)}>Обновить</button>
+                  </th>
+                </tr>
+              );
+            })}
+            </tbody>
+          </table>
+        </>
       }
-      { territories.length > 0 &&
-      <>
-      Территории
-      <table className="table-cl">
-        <thead className="thead-cl">
-        <tr className="tr-cl">
-          <th className="th-cl">Название</th>
-          <th className="th-cl">Сервер</th>
-          <th className="th-cl">xStart</th>
-          <th className="th-cl">xStop</th>
-          <th className="th-cl">zStart</th>
-          <th className="th-cl">zStop</th>
-          <th className="th-cl"></th>
-        </tr>
-        </thead>
-        <tbody className="tbody-cl">
-          {territories?.map(el => {
-            return (
+      {territories.length > 0 &&
+        <>
+          <h4 className="manager-h4">Территории</h4>
+          <table className="table-cl">
+            <thead className="thead-cl">
+            <tr className="tr-cl">
+              <th className="th-cl">Название</th>
+              <th className="th-cl">Сервер</th>
+              <th className="th-cl table-coordinates">xStart</th>
+              <th className="th-cl table-coordinates">xStop</th>
+              <th className="th-cl table-coordinates">zStart</th>
+              <th className="th-cl table-coordinates">zStop</th>
+              <th className="th-cl"></th>
+            </tr>
+            </thead>
+            <tbody className="tbody-cl">
+            {territories?.map(el => {
+              return (
                 <tr className="tr-cl">
-                <th className="th-cl">{el.name}</th>
-                <th className="th-cl">{el.world}</th>
-                <th className="th-cl">{el.xStart}</th>
-                <th className="th-cl">{el.xStop}</th>
-                <th className="th-cl">{el.zStart}</th>
-                <th className="th-cl">{el.zStop}</th>
-                <th className="th-cl">
-                  <button className="button-search-players" type="submit" onClick={() => delTerr(el.id)}>Удалить</button>
-                  <button className="button-search-players" type="submit" onClick={() => updateTerr(el.id)}>Обновить</button>
-                </th>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
-      </>
+                  <th className="th-cl"> <input className="in-manager" defaultValue={el.name}/> </th>
+                  <th className="th-cl"> <input className="in-manager" defaultValue={el.world}/> </th>
+                  <th className="th-cl table-coordinates"> <input className="in-manager" defaultValue={el.xStart}/> </th>
+                  <th className="th-cl table-coordinates"> <input className="in-manager" defaultValue={el.xStop}/> </th>
+                  <th className="th-cl table-coordinates"> <input className="in-manager" defaultValue={el.zStart}/> </th>
+                  <th className="th-cl table-coordinates"> <input className="in-manager" defaultValue={el.zStop}/> </th>
+                  <th className="th-cl">
+                    <button className="manager-btn" type="submit" onClick={() => delTerr(el.id)}>Удалить
+                    </button>
+                    <button className="manager-btn" type="submit" onClick={() => updateTerr(el.id)}>Обновить
+                    </button>
+                  </th>
+                </tr>
+              );
+            })}
+            </tbody>
+          </table>
+        </>
       }
     </div>
   );
