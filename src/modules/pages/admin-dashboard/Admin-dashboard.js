@@ -371,28 +371,21 @@ const AdminDashboard = () => {
 
       <ReactModal isOpen={modalUd} onRequestClose={handleCloseModalUd} className="modal-main" overlayClassName="overlay-modal">
         <button className="close-modal" onClick={handleCloseModalUd}>X</button>
-        <table className="table-main-styling">
-          <thead className="table-thead-styling">
-          <tr className="table-tr-styling-rows">
-            <th className="table-th-styling-columns">Откуда</th>
-            <th className="table-th-styling-columns">Описание</th>
-            <th className="table-th-styling-columns">Партнер</th>
-            <th className="table-th-styling-columns">Иммунитет</th>
-            <th className="table-th-styling-columns">Дата окончания</th>
-            <th className="table-th-styling-columns">Заметка</th>
-          </tr>
-          </thead>
-          <tbody className="table-tbody-styling">
-          <tr className="table-tr-styling-rows">
-            <th className="table-th-styling-columns">{userDetails?.from_about}</th>
-            <th className="table-th-styling-columns">{userDetails?.you_about}</th>
-            <th className="table-th-styling-columns"><input className="in-manager" defaultValue={userDetails?.partner}/></th>
-            <th className="table-th-styling-columns"><input className="in-manager" defaultValue={userDetails?.immun}/></th>
-            <th className="table-th-styling-columns"><input className="in-manager"/></th>
-            <th className="table-th-styling-columns"><textarea rows="1" className="in-manager-textarea" defaultValue={userDetails?.note}/></th>
-          </tr>
-          </tbody>
-        </table>
+
+        <div className="card-wrapper-manager">
+          <div className="card-one">
+            <img className="player-image" src={`https://minotar.net/helm/${userDetails?.username}/150`} alt="none"></img>
+            <div className="text-container">
+              <p className="text-p">Откуда:<span>{userDetails?.from_about}</span></p>
+              <p className="text-p">Описание:<span>{userDetails?.you_about}</span></p>
+              <p className="text-p">Возраст:<span>{userDetails?.age}</span></p>
+              <p className="text-p">Партнер:<span>{userDetails?.partner}</span></p>
+              <p className="text-p">Иммунитет:<span>{userDetails?.immun}</span></p>
+              <p className="text-p">Дата окончания:<span></span></p>
+              <p className="text-p">Заметка:<span>{userDetails?.note}</span></p>
+            </div>
+          </div>
+        </div>
       </ReactModal>
 
       <ReactModal isOpen={modalLog} onRequestClose={handleCloseModal} className="modal-main" overlayClassName="overlay-modal">
