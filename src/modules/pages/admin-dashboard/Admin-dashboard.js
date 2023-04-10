@@ -249,10 +249,10 @@ const AdminDashboard = () => {
             <tr className="table-tr-styling-rows">
               <th className="table-th-styling-columns">Имя</th>
               <th className="table-th-styling-columns">email</th>
-              <th className="table-th-styling-columns">Возраст</th>
-              <th className="table-th-styling-columns">Статус</th>
-              <th className="table-th-styling-columns">Действия</th>
-              <th className="table-th-styling-columns"></th>
+              <th className="table-th-styling-columns age-stat-table">Возраст</th>
+              <th className="table-th-styling-columns age-stat-table">Статус</th>
+              <th className="table-th-styling-columns action-table">Доп. инфа</th>
+              <th className="table-th-styling-columns action-table">Действия</th>
             </tr>
             </thead>
             <tbody className="table-tbody-styling">
@@ -261,13 +261,13 @@ const AdminDashboard = () => {
                 <tr className="table-tr-styling-rows">
                   <th className="table-th-styling-columns">{el?.username}</th>
                   <th className="table-th-styling-columns">{tag[el?.username]?.email}</th>
-                  <th className="table-th-styling-columns">{el?.age}</th>
-                  <th className="table-th-styling-columns">{el?.status}</th>
-                  <th className="table-th-styling-columns modals-manager">
+                  <th className="table-th-styling-columns age-stat-table">{el?.age}</th>
+                  <th className="table-th-styling-columns age-stat-table">{el?.status}</th>
+                  <th className="table-th-styling-columns action-table modals-manager">
                     <button className="modal-open" onClick={() => handleOpenModal(el.user_id)}>Log</button>
                     <button className="modal-open" onClick={() => handleOpenModalUd(el)}>User Details</button>
                   </th>
-                  <th className="table-th-styling-columns">
+                  <th className="table-th-styling-columns action-table">
                     <select className="in-manager-option" value={action.action} onChange={event => setAction({
                       action: event.target.value,
                       user: el.user_id
@@ -296,7 +296,7 @@ const AdminDashboard = () => {
               <th className="table-th-styling-columns table-coordinates">x</th>
               <th className="table-th-styling-columns table-coordinates">y</th>
               <th className="table-th-styling-columns table-coordinates">z</th>
-              <th className="table-th-styling-columns submit-table">Действие</th>
+              <th className="table-th-styling-columns action-table">Действия</th>
             </tr>
             </thead>
               <tbody className="table-tbody-styling">
@@ -311,7 +311,7 @@ const AdminDashboard = () => {
                                                                                         defaultValue={el.y}/></th>
                       <th className="table-th-styling-columns table-coordinates"><input className="in-manager"
                                                                                         defaultValue={el.z}/></th>
-                      <th className="table-th-styling-columns submit-table">
+                      <th className="table-th-styling-columns action-table">
                         <button className="manager-btn" type="submit" onClick={() => delMarker(el.id)}>Удалить
                         </button>
                         <button className="manager-btn" type="submit" onClick={() => updateMarker(el.id)}>Обновить</button>
@@ -339,7 +339,7 @@ const AdminDashboard = () => {
               <th className="table-th-styling-columns table-coordinates">xStop</th>
               <th className="table-th-styling-columns table-coordinates">zStart</th>
               <th className="table-th-styling-columns table-coordinates">zStop</th>
-              <th className="table-th-styling-columns submit-table">Действие</th>
+              <th className="table-th-styling-columns action-table">Действия</th>
             </tr>
             </thead>
             <tbody className="table-tbody-styling">
@@ -355,7 +355,7 @@ const AdminDashboard = () => {
                                                                                     defaultValue={el.zStart}/></th>
                   <th className="table-th-styling-columns table-coordinates"><input className="in-manager"
                                                                                     defaultValue={el.zStop}/></th>
-                  <th className="table-th-styling-columns submit-table">
+                  <th className="table-th-styling-columns action-table">
                     <button className="manager-btn" type="submit" onClick={() => delTerr(el.id)}>Удалить
                     </button>
                     <button className="manager-btn" type="submit" onClick={() => updateTerr(el.id)}>Обновить
