@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useState, useRef} from "react";
 import AOS from "aos";
 import {NavLink, Outlet, Link} from "react-router-dom";
 import {useAxios, sendRequest} from '../../../DataProvider';
@@ -12,13 +12,15 @@ const AdminDashboard = () => {
   let [searchParam, setSearchParam] = useState('Поиск работает по discord_id/nickname/discord_tag');
   let [user, setUser] = useState([]);
   let [tag, setTag] = useState({});
-  const [action, setAction] = useState('');
+  const [action, setAction] = useState({});
   const [markers, setMarkers] = useState({});
   const [territories, setTerritories] = useState({});
   const [modalLog, setModalLog] = useState(false);
   const [modalUd, setModalUd] = useState(false);
   const [logs, setLogs] = useState([]);
-  const [userDetails, setUserDetails] = useState({})
+  const [userDetails, setUserDetails] = useState({});
+  const [inputMarker, setInputMarker] = useState({});
+  const [inputTerrs, setInputTerrs] = useState({});
 
   const handleOpenModal = (userId) => {
     setModalLog(true)
@@ -131,21 +133,39 @@ const AdminDashboard = () => {
     });
   }
 
-  const delMarker = (id) => {
-    const newMarkers = [...markers];
+  const delMarker = (id, username) => {
+    const newMarkers = {...markers};
     actionMarkers(id, '/api/admin/delete_marker');
 
-    const index = markers.findIndex((marker) => marker.id === id);
-    newMarkers.splice(index, 1);
+    const index = markers[username].findIndex((marker) => marker.id === id);
+    newMarkers[username].splice(index, 1);
     setMarkers(newMarkers);
   }
 
+  const markerChange = (event, id) => {
+    let input = {...inputMarker};
+
+    if (!input[id]) input[id] = {};
+
+    input[id] = {...input[id], ...{[event.target.id]: ['x','y','z'].includes(event.target.id) ? +event.target.value : event.target.value}};
+    setInputMarker(input);
+  }
+
+  const terrsChange = (event, id) => {
+    let input = {...inputTerrs};
+
+    if (!input[id]) input[id] = {};
+
+    input[id] = {...input[id], ...{[event.target.id]: ['xStart','xStop','zStart', 'zStop'].includes(event.target.id) ? +event.target.value : event.target.value}};
+    setInputTerrs(input);
+  }
+
   const updateMarker = (id) => {
-    actionMarkers(id, '/api/admin/update_marker');
+    actionMarkers(id, '/api/admin/update_marker', inputMarker);
   }
 
   const updateTerr = (id) => {
-    actionMarkers(id, '/api/admin/update_territory');
+    actionMarkers(id, '/api/admin/update_territory', inputTerrs);
   }
 
   const delTerr = (id) => {
@@ -157,11 +177,16 @@ const AdminDashboard = () => {
     setTerritories(newTerrs);
   }
 
-  const actionMarkers = (id, url) => {
+  const actionMarkers = (id, url, input) => {
+    let payload = {id: id};
+    if (input) {
+      payload = {...payload, ...input[id]};
+      
+    }
     sendRequest(
       url,
       'POST',
-      {id: id}
+      payload
     ).then(response => {
       if (response.message) {
         alert.success(response.message);
@@ -172,58 +197,66 @@ const AdminDashboard = () => {
   }
 
   const actionUser = () => {
-    sendRequest(
-      '/api/admin/action_user',
-      'POST',
-      {
-        action: action.action,
-        user: action.user
-      }
-    ).then(response => {
-      if (response.error) {
-        alert.error(response.message);
-      } else {
-        alert.success(response.message);
-      }
+    Object.keys(action).map(user => {
+      sendRequest(
+        '/api/admin/action_user',
+        'POST',
+        {
+          action: action[user].action,
+          user: action[user].user
+        }
+      ).then(response => {
+        if (response.error) {
+          alert.error(response.message);
+        } else {
+          alert.success(response.message);
+        }
+      });
     });
+
+    setAction({});
   }
 
-  const actions = {
-    default: {action: null, text: ''},
-    accept: {action: 'accept', text: 'Принять'},
-    delete: {action: 'delete', text: 'Удалить'},
-    decline: {action: 'decline', text: 'Отклонить'},
-    ban: {action: 'ban', text: 'Забанить'},
-    unban: {action: 'unban', text: 'Разбанить'},
-    addWl: {action: 'resume', text: 'Вернуть в wl'},
-    delWL: {action: 'suspend', text: 'Убрать из wl'}
+  const getActions = (user) => {
+    const actions = {
+      default: {action: null, text: ''},
+      accept: {action: 'accept', text: 'Принять'},
+      delete: {action: 'delete', text: 'Удалить'},
+      decline: {action: 'decline', text: 'Отклонить'},
+      ban: {action: 'ban', text: 'Забанить'},
+      unban: {action: 'unban', text: 'Разбанить'},
+      addWl: {action: 'resume', text: 'Вернуть в wl'},
+      delWL: {action: 'suspend', text: 'Убрать из wl'}
+    }
+
+    let values = [actions.default];
+
+    switch (user?.status) {
+      case 1:
+        values.push(actions.accept, actions.decline, actions.delete);
+        break;
+      case 2:
+        values.push(actions.ban, actions.delete, actions.delWL);
+        break;
+      case 3:
+        values.push(actions.accept, actions.delete);
+        break;
+      case 4:
+        values.push(actions.unban, actions.delete);
+        break;
+      case 5:
+        values.push(actions.addWl, actions.delete);
+        break;
+      default:
+        values = [];
+    }
+
+    return values.map((value, index) => {
+      return <option key={index} value={value.action}>{value.text}</option>;
+    });
+
+    // return options;
   }
-
-  let values = [actions.default];
-
-  switch (user?.status) {
-    case 1:
-      values.push(actions.accept, actions.decline, actions.delete);
-      break;
-    case 2:
-      values.push(actions.ban, actions.delete, actions.delWL);
-      break;
-    case 3:
-      values.push(actions.accept, actions.delete);
-      break;
-    case 4:
-      values.push(actions.unban, actions.delete);
-      break;
-    case 5:
-      values.push(actions.addWl, actions.delete);
-      break;
-    default:
-      values = [];
-  }
-
-  const options = values.map((value, index) => {
-    return <option key={index} value={value.action}>{value.text}</option>;
-  });
 
   return (
     <div className="main-dashboard" data-aos="fade-up">
@@ -268,10 +301,14 @@ const AdminDashboard = () => {
                     <button className="modal-open" onClick={() => handleOpenModalUd(el)}>User Details</button>
                   </th>
                   <th className="table-th-styling-columns action-table">
-                    <select className="in-manager-option" value={action.action} onChange={event => setAction({
-                      action: event.target.value,
-                      user: el.user_id
-                    })}>{options}</select>
+                    <select className="in-manager-option" value={action[el.user_id]?.action || ""} onChange={event => setAction(
+                      {...action, ...{
+                        [el.user_id]: {
+                          action: event.target.value,
+                          user: el.user_id
+                        }
+                      }}
+                    )}>{getActions(el)}</select>
                   </th>
                 </tr>
               )
@@ -302,14 +339,14 @@ const AdminDashboard = () => {
               <tbody className="table-tbody-styling">
                 {markers[username].map( el => (
                     <tr className="table-tr-styling-rows">
-                      <th className="table-th-styling-columns"><input className="in-manager" defaultValue={el.name}/></th>
-                      <th className="table-th-styling-columns"><textarea rows="1" className="in-manager-textarea"
+                      <th className="table-th-styling-columns"><input id="name" onChange={(e) => markerChange(e, el.id)} className="in-manager" defaultValue={el.name}/></th>
+                      <th className="table-th-styling-columns"><textarea id="description" onChange={(e) => markerChange(e, el.id)} rows="1" className="in-manager-textarea"
                                                                         defaultValue={el.description}/></th>
-                      <th className="table-th-styling-columns table-coordinates"><input className="in-manager"
+                      <th className="table-th-styling-columns table-coordinates"><input id="x" onChange={(e) => markerChange(e, el.id)} className="in-manager"
                                                                                         defaultValue={el.x}/></th>
-                      <th className="table-th-styling-columns table-coordinates"><input className="in-manager"
+                      <th className="table-th-styling-columns table-coordinates"><input id="y" onChange={(e) => markerChange(e, el.id)} className="in-manager"
                                                                                         defaultValue={el.y}/></th>
-                      <th className="table-th-styling-columns table-coordinates"><input className="in-manager"
+                      <th className="table-th-styling-columns table-coordinates"><input id="z" onChange={(e) => markerChange(e, el.id)} className="in-manager"
                                                                                         defaultValue={el.z}/></th>
                       <th className="table-th-styling-columns action-table">
                         <button className="manager-btn" type="submit" onClick={() => delMarker(el.id)}>Удалить
@@ -345,15 +382,15 @@ const AdminDashboard = () => {
             <tbody className="table-tbody-styling">
             {territories[username].map( el => (
                 <tr className="table-tr-styling-rows">
-                  <th className="table-th-styling-columns"><input className="in-manager" defaultValue={el.name}/></th>
-                  <th className="table-th-styling-columns"><input className="in-manager" defaultValue={el.world}/></th>
-                  <th className="table-th-styling-columns table-coordinates"><input className="in-manager"
+                  <th className="table-th-styling-columns"><input id="name" onChange={(e) => terrsChange(e, el.id)} className="in-manager" defaultValue={el.name}/></th>
+                  <th className="table-th-styling-columns"><input id="world" onChange={(e) => terrsChange(e, el.id)} className="in-manager" defaultValue={el.world}/></th>
+                  <th className="table-th-styling-columns table-coordinates"><input id="xStart" onChange={(e) => terrsChange(e, el.id)} className="in-manager"
                                                                                     defaultValue={el.xStart}/></th>
-                  <th className="table-th-styling-columns table-coordinates"><input className="in-manager"
+                  <th className="table-th-styling-columns table-coordinates"><input id="xStop" onChange={(e) => terrsChange(e, el.id)} className="in-manager"
                                                                                     defaultValue={el.xStop}/></th>
-                  <th className="table-th-styling-columns table-coordinates"><input className="in-manager"
+                  <th className="table-th-styling-columns table-coordinates"><input id="zStart" onChange={(e) => terrsChange(e, el.id)} className="in-manager"
                                                                                     defaultValue={el.zStart}/></th>
-                  <th className="table-th-styling-columns table-coordinates"><input className="in-manager"
+                  <th className="table-th-styling-columns table-coordinates"><input id="zStop" onChange={(e) => terrsChange(e, el.id)} className="in-manager"
                                                                                     defaultValue={el.zStop}/></th>
                   <th className="table-th-styling-columns action-table">
                     <button className="manager-btn" type="submit" onClick={() => delTerr(el.id)}>Удалить
