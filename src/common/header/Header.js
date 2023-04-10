@@ -68,9 +68,7 @@ const Header = () => {
                 </>
                 : <>
                   <div className="replace desktop-link custon-header">
-                    <img className="ico-player"
-                         src={`https://cdn.discordapp.com/avatars/${resParams.data.discordUser.id}/${resParams.data.discordUser.avatar}.png`}
-                         alt="none"></img>
+                    <img className="ico-player" src={`https://cdn.discordapp.com/avatars/${resParams.data.discordUser.id}/${resParams.data.discordUser.avatar}.png`} alt="none"></img>
                     <p className="ico-name-player font-custom-2">{resParams.data.discordUser.username}</p>
                     <input type="checkbox" id="five-menu"/>
                     <ul className="drop">
@@ -80,6 +78,7 @@ const Header = () => {
                       <li className="drop-li"><a href="/cab/articles">Статьи</a></li>
                       <li className="drop-li"><a href="/cab/prize">Призы</a></li>
                       <li className="drop-li"><a href="/cab/change_password">Изменить пароль</a></li>
+                      <li className="drop-li"><a href="/manager">Админка</a></li>
                     </ul>
                   </div>
                 </>

@@ -15,10 +15,10 @@ const AdminDashboard = () => {
   const [action, setAction] = useState('');
   const [markers, setMarkers] = useState([]);
   const [territories, setTerritories] = useState([]);
-  const [modalLog, setModalLog] = useState( false );
-  const [modalUd, setModalUd] = useState( false );
+  const [modalLog, setModalLog] = useState(false);
+  const [modalUd, setModalUd] = useState(false);
   const [logs, setLogs] = useState([]);
-  
+
   const handleOpenModal = () => {
     setModalLog(true)
 
@@ -35,7 +35,7 @@ const AdminDashboard = () => {
       setLogs(response);
     });
   }
-  
+
   const handleCloseModal = () => {
     setModalLog(false)
     setLogs([]);
@@ -44,7 +44,7 @@ const AdminDashboard = () => {
   const handleOpenModalUd = () => {
     setModalUd(true)
   }
-  
+
   const handleCloseModalUd = () => {
     setModalUd(false)
   }
@@ -206,6 +206,19 @@ const AdminDashboard = () => {
     return <option key={index} value={value.action}>{value.text}</option>;
   });
 
+  const inlineStyle = {
+    overlay: {
+      zIndex: 12001,
+      width: "100%",
+      backgroundColor: "rgba(1, 22, 37, 1)",
+    },
+    content: {
+      zIndex: 12002,
+      color: 'lightsteelblue',
+      inset: "30px",
+    }
+  }
+
   return (
     <div className="main-dashboard" data-aos="fade-up">
 
@@ -225,94 +238,32 @@ const AdminDashboard = () => {
 
       {user.status &&
         <>
-          <table className="table-cl">
-            <thead className="thead-cl">
-            <tr className="tr-cl">
-              <th className="th-cl">Имя</th>
-              <th className="th-cl">email</th>
-              <th className="th-cl">Возраст</th>
-              <th className="th-cl">Статус</th>
-              <th className="th-cl">Действия</th>
-              <th className="th-cl"></th>
+          <table className="table-main-styling">
+            <thead className="table-thead-styling">
+            <tr className="table-tr-styling-rows">
+              <th className="table-th-styling-columns">Имя</th>
+              <th className="table-th-styling-columns">email</th>
+              <th className="table-th-styling-columns">Возраст</th>
+              <th className="table-th-styling-columns">Статус</th>
+              <th className="table-th-styling-columns">Действия</th>
+              <th className="table-th-styling-columns"></th>
             </tr>
             </thead>
-            <tbody className="tbody-cl">
-            <tr className="tr-cl">
-              <th className="th-cl">{user?.username}</th>
-              <th className="th-cl">{tag?.email}</th>
-              <th className="th-cl">{user?.age}</th>
-              <th className="th-cl">{user?.status}</th>
-              <th className="th-cl">
-                <button onClick={handleOpenModal}>L</button>
-                <ReactModal 
-                  isOpen={modalLog}
-                  contentLabel="onRequestClose Example"
-                  onRequestClose={handleCloseModal}
-                >
-                  <button onClick={handleCloseModal}>Close Modal</button>
-                  <table className="table-cl">
-                    <thead className="thead-cl">
-                    <tr className="tr-cl">
-                      <th className="th-cl">Время</th>
-                      <th className="th-cl">Лог</th>
-                      <th className="th-cl table-coordinates">Менеджер</th>
-                    </tr>
-                    </thead>
-                    <tbody className="tbody-cl">
-                    {logs?.map(el => {
-                      return (
-                        <tr className="tr-cl">
-                          <th className="th-cl"><input className="in-manager" defaultValue={el.log_date}/></th>
-                          <th className="th-cl"><input className="in-manager" defaultValue={(() => {
-                            let log = el.log;
-                            try {
-                              log = JSON.parse(el.log);
-                            } catch {
-                              return log;
-                            }
-
-                            return `${log.action} ${JSON.stringify(log.data)}`;
-                          })()}/></th>
-                          <th className="th-cl table-coordinates table-coordinates"><input className="in-manager" defaultValue={el.manager}/></th>
-                        </tr>
-                      );
-                    })}
-                    </tbody>
-                  </table>
-                </ReactModal>
-                <button onClick={handleOpenModalUd}>UD</button>
-                <ReactModal 
-                  isOpen={modalUd}
-                  contentLabel="onRequestClose Example"
-                  onRequestClose={handleCloseModalUd}
-                >
-                  <button onClick={handleCloseModalUd}>Close Modal</button>
-                  <table className="table-cl">
-                    <thead className="thead-cl">
-                    <tr className="tr-cl">
-                      <th className="th-cl">Откуда</th>
-                      <th className="th-cl">Описание</th>
-                      <th className="th-cl">Партнер</th>
-                      <th className="th-cl">Иммунитет</th>
-                      <th className="th-cl">Дата окончания</th>
-                      <th className="th-cl">Заметка</th>
-                    </tr>
-                    </thead>
-                    <tbody className="tbody-cl">
-                      <tr className="tr-cl">
-                        <th className="th-cl">{user?.from_about}</th>
-                        <th className="th-cl">{user?.you_about}</th>
-                        <th className="th-cl"><input className="in-manager" defaultValue={user?.partner}/></th>
-                        <th className="th-cl"><input className="in-manager" defaultValue={user?.immun}/></th>
-                        <th className="th-cl"><input className="in-manager" /></th>
-                        <th className="th-cl"><textarea className="in-manager" defaultValue={user?.note}/></th>
-                      </tr>
-                    </tbody>
-                  </table>
-                </ReactModal>
+            <tbody className="table-tbody-styling">
+            <tr className="table-tr-styling-rows">
+              <th className="table-th-styling-columns">{user?.username}</th>
+              <th className="table-th-styling-columns">{tag?.email}</th>
+              <th className="table-th-styling-columns">{user?.age}</th>
+              <th className="table-th-styling-columns">{user?.status}</th>
+              <th className="table-th-styling-columns modals-manager">
+                <button className="modal-open" onClick={handleOpenModal}>Log</button>
+                <button className="modal-open" onClick={handleOpenModalUd}>User Details</button>
               </th>
-              <th className="th-cl">
-                <select className="in-manager-option" value={action.action} onChange={event => setAction({action: event.target.value, user: user.user_id})}>{options}</select>
+              <th className="table-th-styling-columns">
+                <select className="in-manager-option" value={action.action} onChange={event => setAction({
+                  action: event.target.value,
+                  user: user.user_id
+                })}>{options}</select>
               </th>
             </tr>
             </tbody>
@@ -323,27 +274,31 @@ const AdminDashboard = () => {
       {markers.length > 0 &&
         <>
           <h4 className="manager-h4">Метки</h4>
-          <table className="table-cl">
-            <thead className="thead-cl">
-            <tr className="tr-cl">
-              <th className="th-cl">Название</th>
-              <th className="th-cl">Описание</th>
-              <th className="th-cl table-coordinates">x</th>
-              <th className="th-cl table-coordinates">y</th>
-              <th className="th-cl table-coordinates">z</th>
-              <th className="th-cl"></th>
+          <table className="table-main-styling">
+            <thead className="table-thead-styling">
+            <tr className="table-tr-styling-rows">
+              <th className="table-th-styling-columns">Название</th>
+              <th className="table-th-styling-columns">Описание</th>
+              <th className="table-th-styling-columns table-coordinates">x</th>
+              <th className="table-th-styling-columns table-coordinates">y</th>
+              <th className="table-th-styling-columns table-coordinates">z</th>
+              <th className="table-th-styling-columns submit-table">Действие</th>
             </tr>
             </thead>
-            <tbody className="tbody-cl">
+            <tbody className="table-tbody-styling">
             {markers?.map(el => {
               return (
-                <tr className="tr-cl">
-                  <th className="th-cl"><input className="in-manager" defaultValue={el.name}/></th>
-                  <th className="th-cl"><textarea className="in-manager" defaultValue={el.description}/></th>
-                  <th className="th-cl table-coordinates table-coordinates"><input className="in-manager" defaultValue={el.x}/></th>
-                  <th className="th-cl table-coordinates table-coordinates"><input className="in-manager" defaultValue={el.y}/></th>
-                  <th className="th-cl table-coordinates table-coordinates"><input className="in-manager" defaultValue={el.z}/></th>
-                  <th className="th-cl">
+                <tr className="table-tr-styling-rows">
+                  <th className="table-th-styling-columns"><input className="in-manager" defaultValue={el.name}/></th>
+                  <th className="table-th-styling-columns"><textarea rows="1" className="in-manager-textarea"
+                                                                     defaultValue={el.description}/></th>
+                  <th className="table-th-styling-columns table-coordinates"><input className="in-manager"
+                                                                                    defaultValue={el.x}/></th>
+                  <th className="table-th-styling-columns table-coordinates"><input className="in-manager"
+                                                                                    defaultValue={el.y}/></th>
+                  <th className="table-th-styling-columns table-coordinates"><input className="in-manager"
+                                                                                    defaultValue={el.z}/></th>
+                  <th className="table-th-styling-columns submit-table">
                     <button className="manager-btn" type="submit" onClick={() => delMarker(el.id)}>Удалить
                     </button>
                     <button className="manager-btn" type="submit" onClick={() => updateMarker(el.id)}>Обновить</button>
@@ -358,29 +313,33 @@ const AdminDashboard = () => {
       {territories.length > 0 &&
         <>
           <h4 className="manager-h4">Территории</h4>
-          <table className="table-cl">
-            <thead className="thead-cl">
-            <tr className="tr-cl">
-              <th className="th-cl">Название</th>
-              <th className="th-cl">Сервер</th>
-              <th className="th-cl table-coordinates">xStart</th>
-              <th className="th-cl table-coordinates">xStop</th>
-              <th className="th-cl table-coordinates">zStart</th>
-              <th className="th-cl table-coordinates">zStop</th>
-              <th className="th-cl"></th>
+          <table className="table-main-styling">
+            <thead className="table-thead-styling">
+            <tr className="table-tr-styling-rows">
+              <th className="table-th-styling-columns">Название</th>
+              <th className="table-th-styling-columns">Сервер</th>
+              <th className="table-th-styling-columns table-coordinates">xStart</th>
+              <th className="table-th-styling-columns table-coordinates">xStop</th>
+              <th className="table-th-styling-columns table-coordinates">zStart</th>
+              <th className="table-th-styling-columns table-coordinates">zStop</th>
+              <th className="table-th-styling-columns submit-table">Действие</th>
             </tr>
             </thead>
-            <tbody className="tbody-cl">
+            <tbody className="table-tbody-styling">
             {territories?.map(el => {
               return (
-                <tr className="tr-cl">
-                  <th className="th-cl"> <input className="in-manager" defaultValue={el.name}/> </th>
-                  <th className="th-cl"> <input className="in-manager" defaultValue={el.world}/> </th>
-                  <th className="th-cl table-coordinates"> <input className="in-manager" defaultValue={el.xStart}/> </th>
-                  <th className="th-cl table-coordinates"> <input className="in-manager" defaultValue={el.xStop}/> </th>
-                  <th className="th-cl table-coordinates"> <input className="in-manager" defaultValue={el.zStart}/> </th>
-                  <th className="th-cl table-coordinates"> <input className="in-manager" defaultValue={el.zStop}/> </th>
-                  <th className="th-cl">
+                <tr className="table-tr-styling-rows">
+                  <th className="table-th-styling-columns"><input className="in-manager" defaultValue={el.name}/></th>
+                  <th className="table-th-styling-columns"><input className="in-manager" defaultValue={el.world}/></th>
+                  <th className="table-th-styling-columns table-coordinates"><input className="in-manager"
+                                                                                    defaultValue={el.xStart}/></th>
+                  <th className="table-th-styling-columns table-coordinates"><input className="in-manager"
+                                                                                    defaultValue={el.xStop}/></th>
+                  <th className="table-th-styling-columns table-coordinates"><input className="in-manager"
+                                                                                    defaultValue={el.zStart}/></th>
+                  <th className="table-th-styling-columns table-coordinates"><input className="in-manager"
+                                                                                    defaultValue={el.zStop}/></th>
+                  <th className="table-th-styling-columns submit-table">
                     <button className="manager-btn" type="submit" onClick={() => delTerr(el.id)}>Удалить
                     </button>
                     <button className="manager-btn" type="submit" onClick={() => updateTerr(el.id)}>Обновить
@@ -393,6 +352,65 @@ const AdminDashboard = () => {
           </table>
         </>
       }
+
+      <ReactModal isOpen={modalUd} onRequestClose={handleCloseModalUd} style={inlineStyle}>
+        <button className="close-modal" onClick={handleCloseModalUd}>Close Modal</button>
+        <table className="table-main-styling">
+          <thead className="table-thead-styling">
+          <tr className="table-tr-styling-rows">
+            <th className="table-th-styling-columns">Откуда</th>
+            <th className="table-th-styling-columns">Описание</th>
+            <th className="table-th-styling-columns">Партнер</th>
+            <th className="table-th-styling-columns">Иммунитет</th>
+            <th className="table-th-styling-columns">Дата окончания</th>
+            <th className="table-th-styling-columns">Заметка</th>
+          </tr>
+          </thead>
+          <tbody className="table-tbody-styling">
+          <tr className="table-tr-styling-rows">
+            <th className="table-th-styling-columns">{user?.from_about}</th>
+            <th className="table-th-styling-columns">{user?.you_about}</th>
+            <th className="table-th-styling-columns"><input className="in-manager" defaultValue={user?.partner}/></th>
+            <th className="table-th-styling-columns"><input className="in-manager" defaultValue={user?.immun}/></th>
+            <th className="table-th-styling-columns"><input className="in-manager"/></th>
+            <th className="table-th-styling-columns"><textarea rows="1" className="in-manager-textarea" defaultValue={user?.note}/></th>
+          </tr>
+          </tbody>
+        </table>
+      </ReactModal>
+
+      <ReactModal isOpen={modalLog} onRequestClose={handleCloseModal} style={inlineStyle}>
+        <button className="close-modal" onClick={handleCloseModal}>Close Modal</button>
+        <table className="table-main-styling">
+          <thead className="table-thead-styling">
+          <tr className="table-tr-styling-rows">
+            <th className="table-th-styling-columns">Время</th>
+            <th className="table-th-styling-columns">Лог</th>
+            <th className="table-th-styling-columns table-coordinates">Менеджер</th>
+          </tr>
+          </thead>
+          <tbody className="table-tbody-styling">
+          {logs?.map(el => {
+            return (
+              <tr className="table-tr-styling-rows">
+                <th className="table-th-styling-columns"><input className="in-manager" defaultValue={el.log_date}/></th>
+                <th className="table-th-styling-columns"><input className="in-manager" defaultValue={(() => {
+                  let log = el.log;
+                  try {
+                    log = JSON.parse(el.log);
+                  } catch {
+                    return log;
+                  }
+                  return `${log.action} ${JSON.stringify(log.data)}`;
+                })()}/></th>
+                <th className="table-th-styling-columns table-coordinates table-coordinates"><input className="in-manager" defaultValue={el.manager}/></th>
+              </tr>
+            );
+          })}
+          </tbody>
+        </table>
+      </ReactModal>
+
     </div>
   );
 };

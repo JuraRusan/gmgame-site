@@ -1,7 +1,6 @@
 import React from "react";
 import {useAxios, sendRequest} from '../../../DataProvider';
-import {NavLink, Outlet} from "react-router-dom";
-import {Navigate} from "react-router-dom";
+import {NavLink, Outlet, Link, Navigate} from "react-router-dom";
 
 import "./Cab.scss";
 
@@ -85,6 +84,7 @@ const Cab = () => {
                 <NavLink onClick={phCabFunctionRemove} to="change_password" className={({isActive}) => setActive(isActive)}>{profileMenuMyChangePassword}</NavLink>
               </>
               }
+              {resParams.data.discordUser.role === 'admin' && <Link to="/manager" className="tab">Админка</Link>}
             </div>
             <div className="m1">
               <button className="tab" onClick={logout}>{profileMenuMyGoOut}</button>
