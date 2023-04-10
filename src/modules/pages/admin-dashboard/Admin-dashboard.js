@@ -206,19 +206,6 @@ const AdminDashboard = () => {
     return <option key={index} value={value.action}>{value.text}</option>;
   });
 
-  const inlineStyle = {
-    overlay: {
-      zIndex: 12001,
-      width: "100%",
-      backgroundColor: "rgba(1, 22, 37, 1)",
-    },
-    content: {
-      zIndex: 12002,
-      color: 'lightsteelblue',
-      inset: "30px",
-    }
-  }
-
   return (
     <div className="main-dashboard" data-aos="fade-up">
 
@@ -353,8 +340,8 @@ const AdminDashboard = () => {
         </>
       }
 
-      <ReactModal isOpen={modalUd} onRequestClose={handleCloseModalUd} style={inlineStyle}>
-        <button className="close-modal" onClick={handleCloseModalUd}>Close Modal</button>
+      <ReactModal isOpen={modalUd} onRequestClose={handleCloseModalUd} className="modal-main" overlayClassName="overlay-modal">
+        <button className="close-modal" onClick={handleCloseModalUd}>X</button>
         <table className="table-main-styling">
           <thead className="table-thead-styling">
           <tr className="table-tr-styling-rows">
@@ -379,8 +366,8 @@ const AdminDashboard = () => {
         </table>
       </ReactModal>
 
-      <ReactModal isOpen={modalLog} onRequestClose={handleCloseModal} style={inlineStyle}>
-        <button className="close-modal" onClick={handleCloseModal}>Close Modal</button>
+      <ReactModal isOpen={modalLog} onRequestClose={handleCloseModal} className="modal-main" overlayClassName="overlay-modal">
+        <button className="close-modal" onClick={handleCloseModal}>X</button>
         <table className="table-main-styling">
           <thead className="table-thead-styling">
           <tr className="table-tr-styling-rows">
