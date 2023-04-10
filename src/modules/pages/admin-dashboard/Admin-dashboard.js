@@ -10,22 +10,23 @@ import "aos/dist/aos.css";
 
 const AdminDashboard = () => {
   let [searchParam, setSearchParam] = useState('Поиск работает по discord_id/nickname/discord_tag');
-  let [user, setUser] = useState({});
+  let [user, setUser] = useState([]);
   let [tag, setTag] = useState({});
   const [action, setAction] = useState('');
-  const [markers, setMarkers] = useState([]);
-  const [territories, setTerritories] = useState([]);
+  const [markers, setMarkers] = useState({});
+  const [territories, setTerritories] = useState({});
   const [modalLog, setModalLog] = useState(false);
   const [modalUd, setModalUd] = useState(false);
   const [logs, setLogs] = useState([]);
+  const [userDetails, setUserDetails] = useState({})
 
-  const handleOpenModal = () => {
+  const handleOpenModal = (userId) => {
     setModalLog(true)
 
     sendRequest(
       '/api/admin/get_logs',
       'POST',
-      {id: user.user_id}
+      {id: userId}
     ).then(response => {
       if (!response.length > 0) {
         setLogs([]);
@@ -37,16 +38,17 @@ const AdminDashboard = () => {
   }
 
   const handleCloseModal = () => {
-    setModalLog(false)
+    setModalLog(false);
     setLogs([]);
   }
 
-  const handleOpenModalUd = () => {
-    setModalUd(true)
+  const handleOpenModalUd = (user) => {
+    setUserDetails(user);
+    setModalUd(true);
   }
 
   const handleCloseModalUd = () => {
-    setModalUd(false)
+    setModalUd(false);
   }
 
   const alert = useAlert();
@@ -63,16 +65,33 @@ const AdminDashboard = () => {
         searchParam: searchParam
       }
     ).then(response => {
-      if (!response?.user_id) {
+      if (!response[0]?.user_id) {
         setUser({});
         setTag({});
+        setMarkers({});
+        setTerritories({});
         alert.error(response.message);
         return;
       }
       setUser(response);
-      setTag(JSON.parse(response.tag));
-      setMarkers(response.markers);
-      setTerritories(response.territories);
+
+      let makersUser = {};
+      let tagUser = {};
+      let terrUser = {};
+
+      response.map( user => {
+        try {
+          tagUser[user.username] = JSON.parse(user.tag);
+        } catch (err) {
+          console.log(err)
+          console.log(user.tag);
+        }
+        makersUser[user.username] = user.markers;
+        terrUser[user.username] = user.territories;
+      })
+      setTag(tagUser);
+      setMarkers(makersUser);
+      setTerritories(terrUser);
     });
   }
 
@@ -88,7 +107,7 @@ const AdminDashboard = () => {
         alert.error(response.message);
         return;
       }
-      setMarkers(response);
+      setMarkers({all: response});
       setUser({});
       setTerritories([]);
     });
@@ -106,7 +125,7 @@ const AdminDashboard = () => {
         alert.error(response.message);
         return;
       }
-      setTerritories(response);
+      setTerritories({all: response});
       setUser({});
       setMarkers([]);
     });
@@ -236,7 +255,7 @@ const AdminDashboard = () => {
         <button className="button-search" type="submit" onClick={getTerritories}>Отображение всех территорий</button>
       </div>
 
-      {user.status &&
+      {user[0]?.status &&
         <>
           <table className="table-main-styling">
             <thead className="table-thead-styling">
@@ -250,30 +269,38 @@ const AdminDashboard = () => {
             </tr>
             </thead>
             <tbody className="table-tbody-styling">
-            <tr className="table-tr-styling-rows">
-              <th className="table-th-styling-columns">{user?.username}</th>
-              <th className="table-th-styling-columns">{tag?.email}</th>
-              <th className="table-th-styling-columns">{user?.age}</th>
-              <th className="table-th-styling-columns">{user?.status}</th>
-              <th className="table-th-styling-columns modals-manager">
-                <button className="modal-open" onClick={handleOpenModal}>Log</button>
-                <button className="modal-open" onClick={handleOpenModalUd}>User Details</button>
-              </th>
-              <th className="table-th-styling-columns">
-                <select className="in-manager-option" value={action.action} onChange={event => setAction({
-                  action: event.target.value,
-                  user: user.user_id
-                })}>{options}</select>
-              </th>
-            </tr>
+            {user?.map(el => {
+              return(
+                <tr className="table-tr-styling-rows">
+                  <th className="table-th-styling-columns">{el?.username}</th>
+                  <th className="table-th-styling-columns">{tag[el?.username]?.email}</th>
+                  <th className="table-th-styling-columns">{el?.age}</th>
+                  <th className="table-th-styling-columns">{el?.status}</th>
+                  <th className="table-th-styling-columns modals-manager">
+                    <button className="modal-open" onClick={() => handleOpenModal(el.user_id)}>Log</button>
+                    <button className="modal-open" onClick={() => handleOpenModalUd(el)}>User Details</button>
+                  </th>
+                  <th className="table-th-styling-columns">
+                    <select className="in-manager-option" value={action.action} onChange={event => setAction({
+                      action: event.target.value,
+                      user: el.user_id
+                    })}>{options}</select>
+                  </th>
+                </tr>
+              )
+            })}
             </tbody>
           </table>
           <button className="button-search-players" type="submit" onClick={actionUser}>Применить</button>
         </>
       }
-      {markers.length > 0 &&
+      {Object.keys(markers).map(username => {
+        if (markers[username].length === 0) {
+          return;
+        }
+        return(
         <>
-          <h4 className="manager-h4">Метки</h4>
+          <h4 className="manager-h4">Метки {username}</h4>
           <table className="table-main-styling">
             <thead className="table-thead-styling">
             <tr className="table-tr-styling-rows">
@@ -285,34 +312,37 @@ const AdminDashboard = () => {
               <th className="table-th-styling-columns submit-table">Действие</th>
             </tr>
             </thead>
-            <tbody className="table-tbody-styling">
-            {markers?.map(el => {
-              return (
-                <tr className="table-tr-styling-rows">
-                  <th className="table-th-styling-columns"><input className="in-manager" defaultValue={el.name}/></th>
-                  <th className="table-th-styling-columns"><textarea rows="1" className="in-manager-textarea"
-                                                                     defaultValue={el.description}/></th>
-                  <th className="table-th-styling-columns table-coordinates"><input className="in-manager"
-                                                                                    defaultValue={el.x}/></th>
-                  <th className="table-th-styling-columns table-coordinates"><input className="in-manager"
-                                                                                    defaultValue={el.y}/></th>
-                  <th className="table-th-styling-columns table-coordinates"><input className="in-manager"
-                                                                                    defaultValue={el.z}/></th>
-                  <th className="table-th-styling-columns submit-table">
-                    <button className="manager-btn" type="submit" onClick={() => delMarker(el.id)}>Удалить
-                    </button>
-                    <button className="manager-btn" type="submit" onClick={() => updateMarker(el.id)}>Обновить</button>
-                  </th>
-                </tr>
-              );
-            })}
-            </tbody>
+              <tbody className="table-tbody-styling">
+                {markers[username].map( el => (
+                    <tr className="table-tr-styling-rows">
+                      <th className="table-th-styling-columns"><input className="in-manager" defaultValue={el.name}/></th>
+                      <th className="table-th-styling-columns"><textarea rows="1" className="in-manager-textarea"
+                                                                        defaultValue={el.description}/></th>
+                      <th className="table-th-styling-columns table-coordinates"><input className="in-manager"
+                                                                                        defaultValue={el.x}/></th>
+                      <th className="table-th-styling-columns table-coordinates"><input className="in-manager"
+                                                                                        defaultValue={el.y}/></th>
+                      <th className="table-th-styling-columns table-coordinates"><input className="in-manager"
+                                                                                        defaultValue={el.z}/></th>
+                      <th className="table-th-styling-columns submit-table">
+                        <button className="manager-btn" type="submit" onClick={() => delMarker(el.id)}>Удалить
+                        </button>
+                        <button className="manager-btn" type="submit" onClick={() => updateMarker(el.id)}>Обновить</button>
+                      </th>
+                    </tr>
+                ))}
+              </tbody>
           </table>
         </>
+      )})
       }
-      {territories.length > 0 &&
+      {Object.keys(territories).map(username => {
+        if (territories[username].length === 0) {
+          return;
+        }
+        return(
         <>
-          <h4 className="manager-h4">Территории</h4>
+          <h4 className="manager-h4">Территории {username}</h4>
           <table className="table-main-styling">
             <thead className="table-thead-styling">
             <tr className="table-tr-styling-rows">
@@ -326,8 +356,7 @@ const AdminDashboard = () => {
             </tr>
             </thead>
             <tbody className="table-tbody-styling">
-            {territories?.map(el => {
-              return (
+            {territories[username].map( el => (
                 <tr className="table-tr-styling-rows">
                   <th className="table-th-styling-columns"><input className="in-manager" defaultValue={el.name}/></th>
                   <th className="table-th-styling-columns"><input className="in-manager" defaultValue={el.world}/></th>
@@ -346,11 +375,11 @@ const AdminDashboard = () => {
                     </button>
                   </th>
                 </tr>
-              );
-            })}
+            ))}
             </tbody>
           </table>
         </>
+        )})
       }
 
       <ReactModal isOpen={modalUd} onRequestClose={handleCloseModalUd} style={inlineStyle}>
@@ -368,12 +397,12 @@ const AdminDashboard = () => {
           </thead>
           <tbody className="table-tbody-styling">
           <tr className="table-tr-styling-rows">
-            <th className="table-th-styling-columns">{user?.from_about}</th>
-            <th className="table-th-styling-columns">{user?.you_about}</th>
-            <th className="table-th-styling-columns"><input className="in-manager" defaultValue={user?.partner}/></th>
-            <th className="table-th-styling-columns"><input className="in-manager" defaultValue={user?.immun}/></th>
+            <th className="table-th-styling-columns">{userDetails?.from_about}</th>
+            <th className="table-th-styling-columns">{userDetails?.you_about}</th>
+            <th className="table-th-styling-columns"><input className="in-manager" defaultValue={userDetails?.partner}/></th>
+            <th className="table-th-styling-columns"><input className="in-manager" defaultValue={userDetails?.immun}/></th>
             <th className="table-th-styling-columns"><input className="in-manager"/></th>
-            <th className="table-th-styling-columns"><textarea rows="1" className="in-manager-textarea" defaultValue={user?.note}/></th>
+            <th className="table-th-styling-columns"><textarea rows="1" className="in-manager-textarea" defaultValue={userDetails?.note}/></th>
           </tr>
           </tbody>
         </table>
