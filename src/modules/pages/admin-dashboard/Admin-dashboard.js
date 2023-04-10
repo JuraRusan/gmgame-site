@@ -3,6 +3,7 @@ import AOS from "aos";
 import {NavLink, Outlet, Link} from "react-router-dom";
 import {useAxios, sendRequest} from '../../../DataProvider';
 import {useAlert} from "react-alert";
+import ReactModal from 'react-modal';
 
 import "./Admin-dashboard.scss";
 import "aos/dist/aos.css";
@@ -14,6 +15,39 @@ const AdminDashboard = () => {
   const [action, setAction] = useState('');
   const [markers, setMarkers] = useState([]);
   const [territories, setTerritories] = useState([]);
+  const [modalLog, setModalLog] = useState( false );
+  const [modalUd, setModalUd] = useState( false );
+  const [logs, setLogs] = useState([]);
+  
+  const handleOpenModal = () => {
+    setModalLog(true)
+
+    sendRequest(
+      '/api/admin/get_logs',
+      'POST',
+      {id: user.user_id}
+    ).then(response => {
+      if (!response.length > 0) {
+        setLogs([]);
+        alert.error(response.message);
+        return;
+      }
+      setLogs(response);
+    });
+  }
+  
+  const handleCloseModal = () => {
+    setModalLog(false)
+    setLogs([]);
+  }
+
+  const handleOpenModalUd = () => {
+    setModalUd(true)
+  }
+  
+  const handleCloseModalUd = () => {
+    setModalUd(false)
+  }
 
   const alert = useAlert();
 
@@ -209,9 +243,73 @@ const AdminDashboard = () => {
               <th className="th-cl">{user?.age}</th>
               <th className="th-cl">{user?.status}</th>
               <th className="th-cl">
-                <Link to="allPlayerMarkers" state={{id: user.id}}>UD</Link>,
-                <Link to="allPlayerMarkers" state={{id: user.id}}> M</Link>,
-                <Link to="allPlayerTerrs" state={{id: user.id}}> T</Link>
+                <button onClick={handleOpenModal}>L</button>
+                <ReactModal 
+                  isOpen={modalLog}
+                  contentLabel="onRequestClose Example"
+                  onRequestClose={handleCloseModal}
+                >
+                  <button onClick={handleCloseModal}>Close Modal</button>
+                  <table className="table-cl">
+                    <thead className="thead-cl">
+                    <tr className="tr-cl">
+                      <th className="th-cl">Время</th>
+                      <th className="th-cl">Лог</th>
+                      <th className="th-cl table-coordinates">Менеджер</th>
+                    </tr>
+                    </thead>
+                    <tbody className="tbody-cl">
+                    {logs?.map(el => {
+                      return (
+                        <tr className="tr-cl">
+                          <th className="th-cl"><input className="in-manager" defaultValue={el.log_date}/></th>
+                          <th className="th-cl"><input className="in-manager" defaultValue={(() => {
+                            let log = el.log;
+                            try {
+                              log = JSON.parse(el.log);
+                            } catch {
+                              return log;
+                            }
+
+                            return `${log.action} ${JSON.stringify(log.data)}`;
+                          })()}/></th>
+                          <th className="th-cl table-coordinates table-coordinates"><input className="in-manager" defaultValue={el.manager}/></th>
+                        </tr>
+                      );
+                    })}
+                    </tbody>
+                  </table>
+                </ReactModal>
+                <button onClick={handleOpenModalUd}>UD</button>
+                <ReactModal 
+                  isOpen={modalUd}
+                  contentLabel="onRequestClose Example"
+                  onRequestClose={handleCloseModalUd}
+                >
+                  <button onClick={handleCloseModalUd}>Close Modal</button>
+                  <table className="table-cl">
+                    <thead className="thead-cl">
+                    <tr className="tr-cl">
+                      <th className="th-cl">Откуда</th>
+                      <th className="th-cl">Описание</th>
+                      <th className="th-cl">Партнер</th>
+                      <th className="th-cl">Иммунитет</th>
+                      <th className="th-cl">Дата окончания</th>
+                      <th className="th-cl">Заметка</th>
+                    </tr>
+                    </thead>
+                    <tbody className="tbody-cl">
+                      <tr className="tr-cl">
+                        <th className="th-cl">{user?.from_about}</th>
+                        <th className="th-cl">{user?.you_about}</th>
+                        <th className="th-cl"><input className="in-manager" defaultValue={user?.partner}/></th>
+                        <th className="th-cl"><input className="in-manager" defaultValue={user?.immun}/></th>
+                        <th className="th-cl"><input className="in-manager" /></th>
+                        <th className="th-cl"><textarea className="in-manager" defaultValue={user?.note}/></th>
+                      </tr>
+                    </tbody>
+                  </table>
+                </ReactModal>
               </th>
               <th className="th-cl">
                 <select className="in-manager-option" value={action.action} onChange={event => setAction({action: event.target.value, user: user.user_id})}>{options}</select>
@@ -241,7 +339,7 @@ const AdminDashboard = () => {
               return (
                 <tr className="tr-cl">
                   <th className="th-cl"><input className="in-manager" defaultValue={el.name}/></th>
-                  <th className="th-cl"><input className="in-manager" defaultValue={el.description}/></th>
+                  <th className="th-cl"><textarea className="in-manager" defaultValue={el.description}/></th>
                   <th className="th-cl table-coordinates table-coordinates"><input className="in-manager" defaultValue={el.x}/></th>
                   <th className="th-cl table-coordinates table-coordinates"><input className="in-manager" defaultValue={el.y}/></th>
                   <th className="th-cl table-coordinates table-coordinates"><input className="in-manager" defaultValue={el.z}/></th>
