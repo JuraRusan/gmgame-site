@@ -25,7 +25,7 @@ const Regulations = () => {
         </div>
         <div className="content-reg" data-aos="fade-up">
           {regulationsAllListAndComponents.map((cont, i) =>
-            <div className="wrapper" key="1">{currentTab === `${cont.id}` &&
+            <div className="wrapper" key={i}>{currentTab === `${cont.id}` &&
               <div className="div-id-tab-content">
                 <h2 className="title-division font-custom-2">{cont.name}</h2>
                 {cont.content}
