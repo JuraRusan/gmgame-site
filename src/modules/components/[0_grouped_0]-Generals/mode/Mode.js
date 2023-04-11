@@ -11,7 +11,7 @@ const Mode = (props) => {
   }, []);
 
   return (
-    <div className="mode-block" data-aos="fade-up">
+    <div className="mode-block" data-aos="zoom-in">
       <div className="mode-name">
         <h3 className="font-custom-3">{props.name}</h3>
       </div>

@@ -259,7 +259,7 @@ const AdminDashboard = () => {
   }
 
   return (
-    <div className="main-dashboard" data-aos="fade-up">
+    <div className="main-dashboard" data-aos="zoom-in">
 
       <input
         className="search-players"

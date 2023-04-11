@@ -1,20 +1,20 @@
 import React, {useEffect} from "react";
 import AOS from "aos";
 
-import "./Fotter.scss";
+import "./Footer.scss";
 import "aos/dist/aos.css";
 
 import SvgDiscord from "../../bases/icons/SvgDiscord.js";
 import SvgInstagram from "../../bases/icons/SvgInstagram.js";
 import SvgVk from "../../bases/icons/SvgVk.js";
 
-const Fotter = () => {
+const Footer = () => {
   useEffect(() => {
     AOS.init({duration: 1000});
   }, []);
 
   return (
-    <div className="fotter">
+    <div className="footer">
       <div className="rows-bt" data-aos="zoom-in">
         <a className="bt-links" href="https://vk.com/gmgameru">
           <SvgVk width="100%" height="100%" color="black"/>
@@ -69,4 +69,4 @@ const Fotter = () => {
   );
 };
 
-export default Fotter;
+export default Footer;

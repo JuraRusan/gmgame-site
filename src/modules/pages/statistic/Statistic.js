@@ -178,10 +178,10 @@ const Statistic = () => {
 }
 
   return (
-    <div className="main-statistic" data-aos="fade-up">
+    <div className="main-statistic" data-aos="zoom-in">
       <div className="statistic">
         <h4 className="statistic-title font-custom-2">Статистика игроков сервера</h4>
-        <div style={containerStyle} data-aos="fade-up">
+        <div style={containerStyle} data-aos="zoom-in">
           <div style={gridStyle} className="ag-theme-alpine-dark">
             <AgGridReact
               rowData={resParams.data}

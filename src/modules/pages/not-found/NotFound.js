@@ -18,7 +18,7 @@ const NotFound = () => {
   }
 
   return (
-    <div className="main-not-found-404" data-aos="fade-up">
+    <div className="main-not-found-404" data-aos="zoom-in">
       <div className="all-404">
         <div className="fof">
           <h1 className="h1-404">Error 404</h1>

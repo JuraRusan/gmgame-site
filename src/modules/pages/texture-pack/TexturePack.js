@@ -2,13 +2,12 @@ import React, {useEffect, useState, PureComponent} from "react";
 import AOS from "aos";
 import {Link} from 'react-router-dom';
 import {LazyLoadImage} from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
-
-import "./TexturePack.scss";
-import "aos/dist/aos.css";
-
 import Warn from "../../components/warn/Warn.js";
 import {DataBaseTexturePack} from "./texturePackDB.js";
+
+import 'react-lazy-load-image-component/src/effects/blur.css';
+import "./TexturePack.scss";
+import "aos/dist/aos.css";
 
 const TexturePack = () => {
 
@@ -21,7 +20,7 @@ const TexturePack = () => {
   const InformationFromTheAdministration = "Текстур паком занимаются исключительно игроки сервера, администрация не несёт ответственность за то, где были взяты материалы, модели, текстуры! Текстур пак никто не распространяет как свой продукт, на сайте он представлен исключительно для удобства просмотра, понимания и красоты предметов. "
 
   return (
-    <div className="main-texture-pack" data-aos="fade-up">
+    <div className="main-texture-pack" data-aos="zoom-in">
       <div className="block-title">
         <h3 className="texture-pack-title-h3 font-custom-2">Официальный GMGame текстур пак</h3>
         <div className="texture-info">

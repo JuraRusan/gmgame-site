@@ -661,13 +661,13 @@ const Faq = () => {
 
   return (
     <div className="main-faq">
-      <div className="faq-box" data-aos="fade-up">
-        <div className="title-faq" data-aos="fade-up">
+      <div className="faq-box" data-aos="zoom-in">
+        <div className="title-faq" data-aos="zoom-in">
           <span><SvgFaq width="100%" height="100%" color="#f4f4f4"/></span>
           <h2 className="h2-faq font-custom-2">Часто задаваемые вопросы</h2>
         </div>
         <div className="wrapper-tabs-faq">
-          <div className="tabs" data-aos="fade-up">
+          <div className="tabs" data-aos="zoom-in">
             {tabsFaqList.map((tab, i) => (
               <button
                 className="btn-click"
@@ -680,7 +680,7 @@ const Faq = () => {
               </button>
             ))}
           </div>
-          <div className="content" data-aos="fade-up">
+          <div className="content" data-aos="zoom-in">
             <div className="div-id-tab">
               <div className="tab-one">
                 <h3 className="title">{selectedTab.tabTitle}</h3>

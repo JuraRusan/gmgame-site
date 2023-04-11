@@ -11,7 +11,7 @@ const Support = () => {
   }, []);
 
   return (
-    <div className="main-support" data-aos="fade-up">
+    <div className="main-support" data-aos="zoom-in">
       <div className="support">
         <h4 className="title-support font-custom-2">Поддержать проект</h4>
         <div className="don-block">
@@ -30,22 +30,22 @@ const Support = () => {
             <img className='info-img-wight' src="./site_assets/pages/webp/7.webp"  width="100%" height="100%" alt="none"/>
           </div>
         </div>
-        <div className="monitoring-block" data-aos="fade-up">
+        <div className="monitoring-block" data-aos="zoom-in">
           <h4 className="block-title-sp font-custom-2">Мы на мониторингах</h4>
-          <a data-aos="fade-up" className="monitoring-card font-custom-2" target="_blank" rel="noreferrer" href="https://hotmc.ru/minecraft-server-205185">HotMC</a>
-          <a data-aos="fade-up" className="monitoring-card font-custom-2" target="_blank" rel="noreferrer" href="https://mineserv.top/gmgame">MineServ</a>
-          <a data-aos="fade-up" className="monitoring-card font-custom-2" target="_blank" rel="noreferrer" href="https://monitoringminecraft.ru/server/694954">Monitoring minecraft</a>
-          <a data-aos="fade-up" className="monitoring-card font-custom-2" target="_blank" rel="noreferrer" href="https://minecraftrating.ru/server/gmgame/">Minecraftrating</a>
-          <a data-aos="fade-up" className="monitoring-card font-custom-2" target="_blank" rel="noreferrer" href="https://mnsgame.ru/server/86">MNSgame</a>
-          <a data-aos="fade-up" className="monitoring-card font-custom-2" target="_blank" rel="noreferrer" href="https://gamemonitoring.ru/minecraft/servers/662160">Gamemonitoring</a>
-          <a data-aos="fade-up" className="monitoring-card font-custom-2" target="_blank" rel="noreferrer" href="https://mc-servera.net/92122">MC-servera</a>
-          <a data-aos="fade-up" className="monitoring-card font-custom-2" target="_blank" rel="noreferrer" href="https://mc-monitoring.info/server/17637">MC-monitoring</a>
-          <a data-aos="fade-up" className="monitoring-card font-custom-2" target="_blank" rel="noreferrer" href="https://mc-monitor.org/server/gmgame">MC-monitor</a>
-          <a data-aos="fade-up" className="monitoring-card font-custom-2" target="_blank" rel="noreferrer" href="https://klauncher.ru/monitoring/server/2316">Klauncher</a>
-          <a data-aos="fade-up" className="monitoring-card font-custom-2" target="_blank" rel="noreferrer" href="https://serversminecraft.ru/server/944">Serversminecraft</a>
-          <a data-aos="fade-up" className="monitoring-card font-custom-2" target="_blank" rel="noreferrer" href="https://top.grmc.su/server/2508">Top.grmc</a>
+          <a data-aos="zoom-in" className="monitoring-card font-custom-2" target="_blank" rel="noreferrer" href="https://hotmc.ru/minecraft-server-205185">HotMC</a>
+          <a data-aos="zoom-in" className="monitoring-card font-custom-2" target="_blank" rel="noreferrer" href="https://mineserv.top/gmgame">MineServ</a>
+          <a data-aos="zoom-in" className="monitoring-card font-custom-2" target="_blank" rel="noreferrer" href="https://monitoringminecraft.ru/server/694954">Monitoring minecraft</a>
+          <a data-aos="zoom-in" className="monitoring-card font-custom-2" target="_blank" rel="noreferrer" href="https://minecraftrating.ru/server/gmgame/">Minecraftrating</a>
+          <a data-aos="zoom-in" className="monitoring-card font-custom-2" target="_blank" rel="noreferrer" href="https://mnsgame.ru/server/86">MNSgame</a>
+          <a data-aos="zoom-in" className="monitoring-card font-custom-2" target="_blank" rel="noreferrer" href="https://gamemonitoring.ru/minecraft/servers/662160">Gamemonitoring</a>
+          <a data-aos="zoom-in" className="monitoring-card font-custom-2" target="_blank" rel="noreferrer" href="https://mc-servera.net/92122">MC-servera</a>
+          <a data-aos="zoom-in" className="monitoring-card font-custom-2" target="_blank" rel="noreferrer" href="https://mc-monitoring.info/server/17637">MC-monitoring</a>
+          <a data-aos="zoom-in" className="monitoring-card font-custom-2" target="_blank" rel="noreferrer" href="https://mc-monitor.org/server/gmgame">MC-monitor</a>
+          <a data-aos="zoom-in" className="monitoring-card font-custom-2" target="_blank" rel="noreferrer" href="https://klauncher.ru/monitoring/server/2316">Klauncher</a>
+          <a data-aos="zoom-in" className="monitoring-card font-custom-2" target="_blank" rel="noreferrer" href="https://serversminecraft.ru/server/944">Serversminecraft</a>
+          <a data-aos="zoom-in" className="monitoring-card font-custom-2" target="_blank" rel="noreferrer" href="https://top.grmc.su/server/2508">Top.grmc</a>
         </div>
-        <div className="partner-block" data-aos="fade-up">
+        <div className="partner-block" data-aos="zoom-in">
           <h4 className="block-title-sp font-custom-2">Наши партнеры</h4>
           <div className="superHub">
             <div className="logo-line-1">
