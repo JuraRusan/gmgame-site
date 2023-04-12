@@ -11,8 +11,8 @@ const ArticlesWiki = () => {
   }, []);
 
   return (
-    <div className="main-wiki" data-aos="fade-up">
-      <div className="box-wiki" data-aos="fade-up">
+    <div className="main-wiki" data-aos="zoom-in">
+      <div className="box-wiki" data-aos="zoom-in">
         <h3 className="h3-wiki font-custom-2">Страница в разработке, ожидайте в ближайшем будущем. </h3>
       </div>
     </div>

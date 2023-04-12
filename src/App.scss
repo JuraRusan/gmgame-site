@@ -49,7 +49,7 @@ div#root {
   background-position-x: center;
   background-size: cover;
   background-attachment: fixed;
-  box-shadow: inset 0px 0px 2000px 20000px rgba(0,0,0,0.25);
+  box-shadow: inset 0 0 2000px 20000px rgba(0,0,0,0.25);
 }
 
 .class-z-index-10000-header {
@@ -57,7 +57,7 @@ div#root {
   z-index: 10000;
 }
 
-.class-z-index-8000-fotter {
+.class-z-index-8000-footer {
   position: relative;
   z-index: 8000;
 }

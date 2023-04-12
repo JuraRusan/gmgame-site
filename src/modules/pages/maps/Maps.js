@@ -11,7 +11,7 @@ const Maps = () => {
   }, []);
 
   return (
-    <div className="main-maps" data-aos="fade-up">
+    <div className="main-maps" data-aos="zoom-in">
       <div className="maps">
         <h4 className="maps-title font-custom-2">Уникальная web-онлайн карта</h4>
         <h5 className="maps-sub-title">Обновления карты плавающий, обновление запускается в

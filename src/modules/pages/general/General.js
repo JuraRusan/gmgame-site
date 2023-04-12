@@ -49,20 +49,20 @@ const General = () => {
     <div className="main">
       <div className="row-1">
         <div className="main-content">
-          <h1 className="main-h1 font-custom-1" data-aos="fade-up">
+          <h1 className="main-h1 font-custom-1" data-aos="zoom-in">
             <span className="colored-title-span-1">G</span>
             <span className="colored-title-span-2">M</span>GAME
           </h1>
-          <h3 className="main-h3" data-aos="fade-up">{serverInformation1}</h3>
-          <h3 className="main-h3" data-aos="fade-up">{serverInformation2}</h3>
-          <div className="button-container" data-aos="fade-up">
+          <h3 className="main-h3" data-aos="zoom-in">{serverInformation1}</h3>
+          <h3 className="main-h3" data-aos="zoom-in">{serverInformation2}</h3>
+          <div className="button-container" data-aos="zoom-in">
             <Button/>
           </div>
         </div>
         <div className="lin-bot"></div>
       </div>
       <div className="row-2">
-        <div className="content-info" data-aos="fade-up">
+        <div className="content-info" data-aos="zoom-in">
           <div className="info-style">
             <h2 className="h2-info font-custom-3 h2-left">{serverBlockTitleConcept}</h2>
             <h4 className="h4-info h4-left">{serverConcept}</h4>
@@ -71,7 +71,7 @@ const General = () => {
             <img className='info-img-wight' src="./site_assets/pages/webp/1.webp" alt="none"/>
           </div>
         </div>
-        <div className="content-info rev" data-aos="fade-up">
+        <div className="content-info rev" data-aos="zoom-in">
           <div className="info-img">
             <img className='info-img-wight' src="./site_assets/pages/webp/2.webp" alt="none"/>
           </div>
@@ -80,7 +80,7 @@ const General = () => {
             <h4 className="h4-info h4-right">{serverCommunity}</h4>
           </div>
         </div>
-        <div className="content-info" data-aos="fade-up">
+        <div className="content-info" data-aos="zoom-in">
           <div className="info-style">
             <h2 className="h2-info font-custom-3 h2-left">{serverBlockTitleGameProcess}</h2>
             <h4 className="h4-info h4-left">{serverGameProcess}</h4>
@@ -92,11 +92,11 @@ const General = () => {
       </div>
       <div className="row-3">
         <div className="lin-top"></div>
-        <div className="tit-block" data-aos="fade-up">
+        <div className="tit-block" data-aos="zoom-in">
           <h2 className="title-h3 font-custom-3">{DivisionIntoWorlds}</h2>
           <h4 className="title-h4">{serverInformationTps}</h4>
         </div>
-        <div className="block-w" data-aos="fade-up">
+        <div className="block-w" data-aos="zoom-in">
           <div className="hover-me-block"><SvgHoverMe width="100%" height="100%" color="#292929"/></div>
           <World name={worldNameRes} src="./site_assets/pages/webp/4.webp" inf={serverInformationRes}/>
           <World name={worldNameGmgame} src="./site_assets/pages/webp/5.webp" inf={serverInformationGmgame}/>
@@ -105,7 +105,7 @@ const General = () => {
         <div className="lin-bot"></div>
       </div>
       <div className="row-4">
-        <h3 className="mode-title font-custom-3" data-aos="fade-up">{serverModeServer}</h3>
+        <h3 className="mode-title font-custom-3" data-aos="zoom-in">{serverModeServer}</h3>
         <div className="mode">
           <Mode name={survival} info={survivalInfo}/>
           <Mode name={skyBlock} info={skyBlockInfo}/>

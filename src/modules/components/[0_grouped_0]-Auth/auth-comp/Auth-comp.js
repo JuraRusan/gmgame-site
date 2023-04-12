@@ -113,7 +113,7 @@ const AuthComponent = () => {
 
   return (
     <div className="auth-block">
-      <div className="container" data-aos="fade-up">
+      <div className="container" data-aos="zoom-in">
         <div className="reg-1">
           <h4 className="title-reg-1 font-custom-2">{titleCreateApplication}</h4>
           <form onSubmit={handleSubmit(onSubmit)}>

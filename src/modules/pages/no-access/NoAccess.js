@@ -11,7 +11,7 @@ const NoAccess = () => {
   }, []);
 
   return (
-    <div className="main-no-access-403" data-aos="fade-up">
+    <div className="main-no-access-403" data-aos="zoom-in">
       <div className="container-403">
         <div className="wrapper-lock">
           <div className="lock"></div>

@@ -24,4 +24,115 @@
       text-align: center;
     }
   }
+
+  .mods-wrapper {
+    width: 100%;
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .card-mods {
+      width: 100%;
+      height: 150px;
+      margin: 8px auto;
+      background: $color-7;
+      border: 1px solid $color-22;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: row;
+
+      .one-mod-info {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+
+        .img-mods-view {
+          width: 130px;
+          min-width: 130px;
+          max-width: 130px;
+          height: 130px;
+          min-height: 130px;
+          max-height: 130px;
+          margin: 10px;
+          position: relative;
+          display: flex;
+          border: none;
+          border-radius: 10px;
+          overflow: hidden;
+        }
+
+        .text-mod-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          width: auto;
+          height: 100%;
+
+          .name {
+            font-size: 16px;
+            font-weight: 400;
+            height: 38px;
+            line-height: 38px;
+            color: $color-8;
+            width: auto;
+            padding-left: 10px;
+          }
+
+          .info {
+            font-size: 13px;
+            font-weight: 400;
+            height: 110px;
+            max-height: 110px;
+            width: 100%;
+            max-width: 1250px;
+            line-height: 1.5;
+            color: $color-3;
+            position: relative;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+
+      .download-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 280px;
+        height: auto;
+        position: relative;
+
+        .link-download {
+          font-weight: 400;
+          width: auto;
+          max-width: 350px;
+          text-align: center;
+          border-radius: 8px;
+          height: 25px;
+          line-height: 25px;
+          color: $color-1;
+          border: 1px solid $color-21;
+          margin: 0 15px 0 15px;
+          outline: none;
+          transition: all 0.55s ease;
+          text-decoration: none;
+          z-index: 3;
+
+          &:active,
+          &:visited,
+          &:hover {
+            outline: none;
+          }
+
+          &:hover {
+            color: $color-12;
+          }
+        }
+      }
+    }
+  }
 }
