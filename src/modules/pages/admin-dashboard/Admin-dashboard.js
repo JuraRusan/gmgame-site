@@ -1,6 +1,6 @@
-import React, {useEffect, useState, useRef} from "react";
+import React, {useEffect, useState} from "react";
 import AOS from "aos";
-import {NavLink, Outlet, Link} from "react-router-dom";
+import {NavLink, Outlet, Link, useSearchParams} from "react-router-dom";
 import {useAxios, sendRequest} from '../../../DataProvider';
 import {useAlert} from "react-alert";
 import ReactModal from 'react-modal';
@@ -9,6 +9,7 @@ import "./Admin-dashboard.scss";
 import "aos/dist/aos.css";
 
 const AdminDashboard = () => {
+  const [searchParams, setSearchParams] = useSearchParams();
   let [searchParam, setSearchParam] = useState('Поиск работает по discord_id/nickname/discord_tag');
   let [user, setUser] = useState([]);
   let [tag, setTag] = useState({});
@@ -21,6 +22,7 @@ const AdminDashboard = () => {
   const [userDetails, setUserDetails] = useState({});
   const [inputMarker, setInputMarker] = useState({});
   const [inputTerrs, setInputTerrs] = useState({});
+  const [regens, setRegens] = useState([]);
 
   const handleOpenModal = (userId) => {
     setModalLog(true)
@@ -59,12 +61,12 @@ const AdminDashboard = () => {
     AOS.init({duration: 1000});
   }, []);
 
-  const getUser = () => {
+  const getUser = (user_id) => {
     sendRequest(
       '/api/admin/get_user',
       'POST',
       {
-        searchParam: searchParam
+        searchParam: user_id || searchParam
       }
     ).then(response => {
       if (!response[0]?.user_id) {
@@ -94,8 +96,15 @@ const AdminDashboard = () => {
       setTag(tagUser);
       setMarkers(makersUser);
       setTerritories(terrUser);
+      setRegens([])
     });
   }
+
+  useEffect(() => {
+    if (searchParams.get("user_id")) {
+      getUser(searchParams.get("user_id"));
+    }
+  }, []);
 
   const getMarkers = () => {
     sendRequest(
@@ -112,6 +121,7 @@ const AdminDashboard = () => {
       setMarkers({all: response});
       setUser({});
       setTerritories([]);
+      setRegens([])
     });
   }
 
@@ -130,6 +140,7 @@ const AdminDashboard = () => {
       setTerritories({all: response});
       setUser({});
       setMarkers([]);
+      setRegens([])
     });
   }
 
@@ -258,6 +269,23 @@ const AdminDashboard = () => {
     // return options;
   }
 
+  const getRegens = () => {
+    sendRequest(
+      '/api/admin/get_regens',
+      'POST',
+      {}
+    ).then(response => {
+      if (!response.length > 0) {
+        alert.error(response.message);
+        return;
+      }
+      setRegens(response)
+      setTerritories({});
+      setUser({});
+      setMarkers([]);
+    });
+  }
+
   return (
     <div className="main-dashboard" data-aos="fade-up">
 
@@ -268,11 +296,12 @@ const AdminDashboard = () => {
         type="search">
       </input>
 
-      <button className="button-search-players" type="submit" onClick={getUser}>Поиск</button>
+      <button className="button-search-players" type="submit" onClick={() => getUser(searchParam)}>Поиск</button>
 
       <div className="wrapper-btn-manager">
         <button className="button-search" type="submit" onClick={getMarkers}>Отображение всех меток</button>
         <button className="button-search" type="submit" onClick={getTerritories}>Отображение всех территорий</button>
+        <button className="button-search" type="submit" onClick={getRegens}>Regens</button>
       </div>
 
       {user[0]?.status &&
@@ -404,6 +433,34 @@ const AdminDashboard = () => {
           </table>
         </>
         )})
+      }
+      {regens.length > 0 &&
+        <>
+        <h4 className="manager-h4">Список на реген</h4>
+        <table className="table-main-styling">
+          <thead className="table-thead-styling">
+          <tr className="table-tr-styling-rows">
+            <th className="table-th-styling-columns">Имя</th>
+            <th className="table-th-styling-columns">Линк</th>
+            <th className="table-th-styling-columns action-table">Действия</th>
+          </tr>
+          </thead>
+          <tbody className="table-tbody-styling">
+          {regens.map( regen => (
+            <tr className="table-tr-styling-rows">
+              <th className="table-th-styling-columns">{regen.username}</th>
+              <th className="table-th-styling-columns"><a href={`/manager?user_id=${regen.user_id}`} target="_blank">Информация о пользователе</a></th>
+              <th className="table-th-styling-columns action-table">
+                <button className="manager-btn" type="submit" onClick={() => delTerr(regen.user_id)}>Реген
+                </button>
+                <button className="manager-btn" type="submit" onClick={() => updateTerr(regen.user_id)}>Оставить
+                </button>
+              </th>
+            </tr>
+          ))}
+         </tbody>
+          </table>
+        </>
       }
 
       <ReactModal isOpen={modalUd} onRequestClose={handleCloseModalUd} className="modal-main" overlayClassName="overlay-modal">
