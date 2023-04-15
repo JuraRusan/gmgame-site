@@ -23,6 +23,7 @@ const AdminDashboard = () => {
   const [inputMarker, setInputMarker] = useState({});
   const [inputTerrs, setInputTerrs] = useState({});
   const [regens, setRegens] = useState([]);
+  const [inputUserDetails, setInputUserDetails] = useState({});
 
   const handleOpenModal = (userId) => {
     setModalLog(true)
@@ -171,6 +172,20 @@ const AdminDashboard = () => {
     setInputTerrs(input);
   }
 
+  const userDetailsChange = (event, id) => {
+    let input = {...inputUserDetails};
+
+    if (!input[id]) input[id] = {};
+
+    input[id] = {...input[id], ...{[event.target.id]: event.target.value}};
+    
+    setInputUserDetails(input);
+  }
+
+  const updateUser = (id) => {
+    actionMarkers(id, '/api/admin/update_user', inputUserDetails);
+  }
+
   const updateMarker = (id) => {
     actionMarkers(id, '/api/admin/update_marker', inputMarker);
   }
@@ -283,6 +298,25 @@ const AdminDashboard = () => {
       setTerritories({});
       setUser({});
       setMarkers([]);
+    });
+  }
+
+  const regenAction = (user_id, action) => {
+    sendRequest(
+      '/api/admin/regen_action',
+      'POST',
+      {user_id: user_id, action: action}
+    ).then(response => {
+      if (response.error) {
+        alert.error(response.message);
+        return;
+      }
+      const newRegens = [...regens];
+
+      const index = newRegens.findIndex((regen) => regen.User_id === user_id);
+      newRegens.splice(index, 1);
+
+      setRegens(newRegens)
     });
   }
 
@@ -451,9 +485,9 @@ const AdminDashboard = () => {
               <th className="table-th-styling-columns">{regen.username}</th>
               <th className="table-th-styling-columns"><a href={`/manager?user_id=${regen.user_id}`} target="_blank">Информация о пользователе</a></th>
               <th className="table-th-styling-columns action-table">
-                <button className="manager-btn" type="submit" onClick={() => delTerr(regen.user_id)}>Реген
+                <button className="manager-btn" type="submit" onClick={() => regenAction(regen.user_id, 'regen')}>Реген
                 </button>
-                <button className="manager-btn" type="submit" onClick={() => updateTerr(regen.user_id)}>Оставить
+                <button className="manager-btn" type="submit" onClick={() => regenAction(regen.user_id, 'settle')}>Оставить
                 </button>
               </th>
             </tr>
@@ -473,10 +507,11 @@ const AdminDashboard = () => {
               <p className="text-p">Откуда:<span>{userDetails?.from_about}</span></p>
               <p className="text-p">Описание:<span>{userDetails?.you_about}</span></p>
               <p className="text-p">Возраст:<span>{userDetails?.age}</span></p>
-              <p className="text-p">Партнер:<span>{userDetails?.partner}</span></p>
-              <p className="text-p">Иммунитет:<span>{userDetails?.immun}</span></p>
-              <p className="text-p">Дата окончания:<span></span></p>
-              <p className="text-p">Заметка:<span>{userDetails?.note}</span></p>
+              <p className="text-p">Партнер:<span><input id="partner" onChange={(e) => userDetailsChange(e, userDetails.user_id)} className="in-manager" defaultValue={userDetails?.partner}/></span></p>
+              <p className="text-p">Иммунитет:<span><input id="immun" onChange={(e) => userDetailsChange(e, userDetails.user_id)} className="in-manager" defaultValue={userDetails?.immun}/></span></p>
+              <p className="text-p">Дата окончания:<span><input id="expiration_date" onChange={(e) => userDetailsChange(e, userDetails.user_id)} className="in-manager" defaultValue={userDetails?.expiration_date}/></span></p>
+              <p className="text-p">Заметка:<span><input id="note" className="in-manager" onChange={(e) => userDetailsChange(e, userDetails.user_id)} defaultValue={userDetails?.note}/></span></p>
+              <button className="manager-btn" type="submit" onClick={() => updateUser(userDetails.user_id)}>Сохранить</button>
             </div>
           </div>
         </div>

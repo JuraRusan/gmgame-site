@@ -32,7 +32,7 @@ const Cab = () => {
     return <Navigate to="/api/login" replace={true} />
   }
 
-  if (!resParams.data.user) {
+  if (!resParams.data.user || !resParams.data.user?.username) {
     return <Auth />
   }
 
