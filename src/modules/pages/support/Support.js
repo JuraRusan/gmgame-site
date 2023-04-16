@@ -45,7 +45,7 @@ const Support = () => {
           <a data-aos="zoom-in" className="monitoring-card font-custom-2" target="_blank" rel="noreferrer" href="https://serversminecraft.ru/server/944">Serversminecraft</a>
           <a data-aos="zoom-in" className="monitoring-card font-custom-2" target="_blank" rel="noreferrer" href="https://top.grmc.su/server/2508">Top.grmc</a>
         </div>
-        <div className="partner-block" data-aos="zoom-in">
+        {/* <div className="partner-block" data-aos="zoom-in">
           <h4 className="block-title-sp font-custom-2">Наши партнеры</h4>
           <div className="superHub">
             <div className="logo-line-1">
@@ -57,7 +57,7 @@ const Support = () => {
               <a className="support-link font-custom-2" target="_blank" rel="noreferrer" href="https://superhub.host/referral/c45b819b">Hosting Superhub &#129133;</a>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
