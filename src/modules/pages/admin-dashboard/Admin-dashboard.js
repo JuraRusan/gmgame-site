@@ -1,9 +1,10 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useState, useMemo} from "react";
 import AOS from "aos";
 import {NavLink, Outlet, Link, useSearchParams} from "react-router-dom";
 import {useAxios, sendRequest} from '../../../DataProvider';
 import {useAlert} from "react-alert";
 import ReactModal from 'react-modal';
+import debounce from 'lodash.debounce';
 
 import "./Admin-dashboard.scss";
 import "aos/dist/aos.css";
@@ -62,12 +63,12 @@ const AdminDashboard = () => {
     AOS.init({duration: 1000});
   }, []);
 
-  const getUser = (user_id) => {
+  const getUser = (event) => {
     sendRequest(
       '/api/admin/get_user',
       'POST',
       {
-        searchParam: user_id || searchParam
+        searchParam: event?.target?.value || event
       }
     ).then(response => {
       if (!response[0]?.user_id) {
@@ -100,6 +101,10 @@ const AdminDashboard = () => {
       setRegens([])
     });
   }
+
+  const debouncedGetUser = useMemo(
+    () => debounce(getUser, 300),
+  []);
 
   useEffect(() => {
     if (searchParams.get("user_id")) {
@@ -326,12 +331,11 @@ const AdminDashboard = () => {
       <input
         className="search-players"
         placeholder={searchParam}
-        onChange={(e) => setSearchParam(e.target.value)}
-        onKeyDown={() => getUser(searchParam)}
+        onChange={debouncedGetUser}
         type="search">
       </input>
 
-      <button className="button-search-players" type="submit" onClick={() => getUser(searchParam)}>Поиск</button>
+      {/* <button className="button-search-players" type="submit" onClick={() => getUser(searchParam)}>Поиск</button> */}
 
       <div className="wrapper-btn-manager">
         <button className="button-search" type="submit" onClick={getMarkers}>Отображение всех меток</button>
