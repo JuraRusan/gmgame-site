@@ -75,7 +75,7 @@ const AdminDashboard = () => {
         setTag({});
         setMarkers({});
         setTerritories({});
-        alert.error(response.message);
+        // alert.error(response.message);
         return;
       }
       setUser(response);
@@ -291,7 +291,7 @@ const AdminDashboard = () => {
       {}
     ).then(response => {
       if (!response.length > 0) {
-        alert.error(response.message);
+        alert.error('Нечего регенеть');
         return;
       }
       setRegens(response)
@@ -327,6 +327,7 @@ const AdminDashboard = () => {
         className="search-players"
         placeholder={searchParam}
         onChange={(e) => setSearchParam(e.target.value)}
+        onKeyDown={() => getUser(searchParam)}
         type="search">
       </input>
 

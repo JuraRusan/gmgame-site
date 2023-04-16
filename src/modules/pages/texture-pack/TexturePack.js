@@ -17,7 +17,7 @@ const TexturePack = () => {
     AOS.init({duration: 1000});
   }, []);
 
-  const InformationFromTheAdministration = "Текстур паком занимаются исключительно игроки сервера, администрация не несёт ответственность за то, где были взяты материалы, модели, текстуры! Текстур пак никто не распространяет как свой продукт, на сайте он представлен исключительно для удобства просмотра, понимания и красоты предметов. "
+  const InformationFromTheAdministration = "Информация, размещенная на сайте, представлена исключительно для удобства просмотра и созерцания прекрасного, и не несет в себе цель распространять интеллектуальную собственность под именем GMGame. "
 
   return (
     <div className="main-texture-pack" data-aos="zoom-in">
@@ -25,7 +25,10 @@ const TexturePack = () => {
         <h3 className="texture-pack-title-h3 font-custom-2">Официальный GMGame текстур пак</h3>
         <div className="texture-info">
           <h4 className="info-h4"> Для использования набора ресурсов необходимо установить модификацию Optifine или
-            Sodium с дополнениями. Без модов он работать не будет. <Link to={'/mods'} className="mods-link-page">Моды &#129133;</Link>
+            Sodium с дополнениями. 
+          </h4>
+          <h4 className="info-h4">
+            Без модов он работать не будет. <Link to={'/mods'} className="mods-link-page">Моды &#129133;</Link>
           </h4>
           <h4 className="info-h4">По вопросам обращаться к игрокам: <span>Каким игрокам???</span></h4>
         </div>
