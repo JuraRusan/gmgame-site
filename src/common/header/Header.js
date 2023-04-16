@@ -12,8 +12,6 @@ const Header = () => {
     {}
   );
 
-  console.log(resParams);
-
   useEffect(() => {
     AOS.init({duration: 1000});
   }, []);
@@ -73,12 +71,16 @@ const Header = () => {
                     <input type="checkbox" id="five-menu"/>
                     <ul className="drop">
                       <li className="drop-li"><a href="/cab/profile">Профиль</a></li>
+                      {resParams?.data?.discordUser?.localuser?.status === 2 &&
+                      <>
                       <li className="drop-li"><a href="/cab/territories">Мои территории</a></li>
                       <li className="drop-li"><a href="/cab/markers">Мои метки</a></li>
                       <li className="drop-li"><a href="/cab/articles">Статьи</a></li>
                       <li className="drop-li"><a href="/cab/prize">Призы</a></li>
                       <li className="drop-li"><a href="/cab/change_password">Изменить пароль</a></li>
                       <li className="drop-li"><a href="/manager">Админка</a></li>
+                      </>
+                      }
                     </ul>
                   </div>
                 </>

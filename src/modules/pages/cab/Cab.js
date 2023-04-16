@@ -27,7 +27,6 @@ const Cab = () => {
     return <Preload />
   }
 
-  console.log(resParams)
   if (!resParams.data?.discordUser) {
     return <Navigate to="/api/login" replace={true} />
   }

@@ -315,7 +315,7 @@ const AdminDashboard = () => {
 
       const index = newRegens.findIndex((regen) => regen.User_id === user_id);
       newRegens.splice(index, 1);
-
+ 
       setRegens(newRegens)
     });
   }
@@ -391,6 +391,9 @@ const AdminDashboard = () => {
           <table className="table-main-styling">
             <thead className="table-thead-styling">
             <tr className="table-tr-styling-rows">
+              {username === 'all' && 
+              <th className="table-th-styling-columns">Имя пользователя</th>
+              }
               <th className="table-th-styling-columns">Название</th>
               <th className="table-th-styling-columns">Описание</th>
               <th className="table-th-styling-columns table-coordinates">x</th>
@@ -402,6 +405,9 @@ const AdminDashboard = () => {
               <tbody className="table-tbody-styling">
                 {markers[username].map( el => (
                     <tr className="table-tr-styling-rows">
+                      {username === 'all' && 
+                      <th className="table-th-styling-columns"><input id="username" className="in-manager" defaultValue={el.username}/></th>
+                      }
                       <th className="table-th-styling-columns"><input id="name" onChange={(e) => markerChange(e, el.id)} className="in-manager" defaultValue={el.name}/></th>
                       <th className="table-th-styling-columns"><textarea id="description" onChange={(e) => markerChange(e, el.id)} rows="1" className="in-manager-textarea"
                                                                         defaultValue={el.description}/></th>
@@ -433,6 +439,9 @@ const AdminDashboard = () => {
           <table className="table-main-styling">
             <thead className="table-thead-styling">
             <tr className="table-tr-styling-rows">
+              {username === 'all' && 
+              <th className="table-th-styling-columns">Имя пользователя</th>
+              }
               <th className="table-th-styling-columns">Название</th>
               <th className="table-th-styling-columns">Сервер</th>
               <th className="table-th-styling-columns table-coordinates">xStart</th>
@@ -445,6 +454,9 @@ const AdminDashboard = () => {
             <tbody className="table-tbody-styling">
             {territories[username].map( el => (
                 <tr className="table-tr-styling-rows">
+                  {username === 'all' && 
+                  <th className="table-th-styling-columns"><input id="username" className="in-manager" defaultValue={el.username}/></th>
+                  }
                   <th className="table-th-styling-columns"><input id="name" onChange={(e) => terrsChange(e, el.id)} className="in-manager" defaultValue={el.name}/></th>
                   <th className="table-th-styling-columns"><input id="world" onChange={(e) => terrsChange(e, el.id)} className="in-manager" defaultValue={el.world}/></th>
                   <th className="table-th-styling-columns table-coordinates"><input id="xStart" onChange={(e) => terrsChange(e, el.id)} className="in-manager"
