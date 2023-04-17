@@ -78,8 +78,10 @@ const Header = () => {
                       <li className="drop-li"><a href="/cab/articles">Статьи</a></li>
                       <li className="drop-li"><a href="/cab/prize">Призы</a></li>
                       <li className="drop-li"><a href="/cab/change_password">Изменить пароль</a></li>
-                      <li className="drop-li"><a href="/manager">Админка</a></li>
                       </>
+                      }
+                      {resParams?.data?.discordUser?.role === 'admin' &&
+                        <li className="drop-li"><a href="/manager">Админка</a></li>
                       }
                     </ul>
                   </div>
