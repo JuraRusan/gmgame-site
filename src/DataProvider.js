@@ -30,7 +30,7 @@ const useAxios = (url, method, payload, refresh) => {
         window.location.replace("/auth")
       }
       if (error.response.status === 403) {
-        window.location.replace("/not_permitted")
+        window.location.replace("/no-access")
       }
       setError(error.message);
     })

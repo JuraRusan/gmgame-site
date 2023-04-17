@@ -16,8 +16,8 @@ const Support = () => {
         <h4 className="title-support font-custom-2">Поддержать проект</h4>
         <div className="don-block">
           <div className="text">
-            <p className="sub-title-support">Сервер GMGame работает уже больше двух лет. За это время на сервере были построены разнообразные и и масштабные проекты, проведены различные ивенты и праздники, сервер приобрел множество друзей, соратников и подарил множество эмоций разным людям.</p>
-            <p className="sub-title-support">Благодаря этим людям сервер живет и позволяет комфортно играть без лагов и читеров. Мы стараемся каждый день улучшить игровой опыт на сервере и будем признательны за любую помощь, если у вас есть возможность помогать серверу любым способом, пожалуйста, воспользуйтесь ей.</p>
+            <p className="sub-title-support">Сервер GMGame работает уже больше двух лет. За это время на сервере были построены разнообразные и масштабные проекты, проведены различные ивенты и праздники, сервер приобрел множество друзей, соратников и подарил огромное количество эмоций разным людям.</p>
+            <p className="sub-title-support">Благодаря этим людям сервер живет и позволяет комфортно играть без лагов и читеров. Мы стараемся каждый день улучшить игровой опыт на сервере и будем признательны за любую помощь. Если у вас есть возможность помочь серверу нижеперечисленными способами, то, пожалуйста, воспользуйтесь ими.</p>
             <p className="sub-title-support">На пожертвования уже куплено мощное железо для сервера, источник бесперебойного питания и множество плагинов для комфортной игры. Спасибо всем игрокам, без вашей поддержки не было бы сервера GMGame.</p>
             <div className="link">
               <a target="_blank" className="support-link" rel="noreferrer" href="https://new.donatepay.ru/@gmgame">- Донатом &#129133;</a>
@@ -45,7 +45,7 @@ const Support = () => {
           <a data-aos="zoom-in" className="monitoring-card font-custom-2" target="_blank" rel="noreferrer" href="https://serversminecraft.ru/server/944">Serversminecraft</a>
           <a data-aos="zoom-in" className="monitoring-card font-custom-2" target="_blank" rel="noreferrer" href="https://top.grmc.su/server/2508">Top.grmc</a>
         </div>
-        <div className="partner-block" data-aos="zoom-in">
+        {/* <div className="partner-block" data-aos="zoom-in">
           <h4 className="block-title-sp font-custom-2">Наши партнеры</h4>
           <div className="superHub">
             <div className="logo-line-1">
@@ -57,7 +57,7 @@ const Support = () => {
               <a className="support-link font-custom-2" target="_blank" rel="noreferrer" href="https://superhub.host/referral/c45b819b">Hosting Superhub &#129133;</a>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
