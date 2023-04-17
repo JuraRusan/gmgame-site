@@ -335,7 +335,7 @@ const AdminDashboard = () => {
         type="search">
       </input>
 
-      {/* <button className="button-search-players" type="submit" onClick={() => getUser(searchParam)}>Поиск</button> */}
+      <button className="button-search-players" type="submit" onClick={() => getUser(searchParam)}>Поиск</button>
 
       <div className="wrapper-btn-manager">
         <button className="button-search" type="submit" onClick={getMarkers}>Отображение всех меток</button>
