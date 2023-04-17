@@ -64,6 +64,7 @@ const AdminDashboard = () => {
   }, []);
 
   const getUser = (event) => {
+    setSearchParam(event?.target?.value || event);
     sendRequest(
       '/api/admin/get_user',
       'POST',
@@ -357,9 +358,9 @@ const AdminDashboard = () => {
             </tr>
             </thead>
             <tbody className="table-tbody-styling">
-            {user?.map(el => {
+            {user?.map((el, i) => {
               return(
-                <tr className="table-tr-styling-rows">
+                <tr className="table-tr-styling-rows" key={i}>
                   <th className="table-th-styling-columns">{el?.username}</th>
                   <th className="table-th-styling-columns">{tag[el?.username]?.email}</th>
                   <th className="table-th-styling-columns age-stat-table">{el?.age}</th>
@@ -386,12 +387,12 @@ const AdminDashboard = () => {
           <button className="button-search-players" type="submit" onClick={actionUser}>Применить</button>
         </>
       }
-      {Object.keys(markers).map(username => {
+      {Object.keys(markers).map((username, i) => {
         if (markers[username].length === 0) {
           return;
         }
         return(
-        <>
+        <React.Fragment key={i}>
           <h4 className="manager-h4">Метки {username}</h4>
           <table className="table-main-styling">
             <thead className="table-thead-styling">
@@ -408,8 +409,8 @@ const AdminDashboard = () => {
             </tr>
             </thead>
               <tbody className="table-tbody-styling">
-                {markers[username].map( el => (
-                    <tr className="table-tr-styling-rows">
+                {markers[username].map((el, i) => (
+                    <tr className="table-tr-styling-rows" key={i}>
                       {username === 'all' && 
                       <th className="table-th-styling-columns"><input id="username" className="in-manager" defaultValue={el.username}/></th>
                       }
@@ -431,15 +432,15 @@ const AdminDashboard = () => {
                 ))}
               </tbody>
           </table>
-        </>
+        </React.Fragment>
       )})
       }
-      {Object.keys(territories).map(username => {
+      {Object.keys(territories).map((username, i) => {
         if (territories[username].length === 0) {
           return;
         }
         return(
-        <>
+        <React.Fragment key={i}>
           <h4 className="manager-h4">Территории {username}</h4>
           <table className="table-main-styling">
             <thead className="table-thead-styling">
@@ -457,8 +458,8 @@ const AdminDashboard = () => {
             </tr>
             </thead>
             <tbody className="table-tbody-styling">
-            {territories[username].map( el => (
-                <tr className="table-tr-styling-rows">
+            {territories[username].map( (el, i) => (
+                <tr className="table-tr-styling-rows" key={i}>
                   {username === 'all' && 
                   <th className="table-th-styling-columns"><input id="username" className="in-manager" defaultValue={el.username}/></th>
                   }
@@ -482,7 +483,7 @@ const AdminDashboard = () => {
             ))}
             </tbody>
           </table>
-        </>
+        </React.Fragment>
         )})
       }
       {regens.length > 0 &&
@@ -497,8 +498,8 @@ const AdminDashboard = () => {
           </tr>
           </thead>
           <tbody className="table-tbody-styling">
-          {regens.map( regen => (
-            <tr className="table-tr-styling-rows">
+          {regens.map( (regen, i) => (
+            <tr className="table-tr-styling-rows" key={i}>
               <th className="table-th-styling-columns">{regen.username}</th>
               <th className="table-th-styling-columns"><a href={`/manager?user_id=${regen.user_id}`} target="_blank">Информация о пользователе</a></th>
               <th className="table-th-styling-columns action-table">
@@ -545,9 +546,9 @@ const AdminDashboard = () => {
           </tr>
           </thead>
           <tbody className="table-tbody-styling">
-          {logs?.map(el => {
+          {logs?.map((el, i) => {
             return (
-              <tr className="table-tr-styling-rows">
+              <tr className="table-tr-styling-rows" key={i}>
                 <th className="table-th-styling-columns"><input className="in-manager" defaultValue={el.log_date}/></th>
                 <th className="table-th-styling-columns"><input className="in-manager" defaultValue={(() => {
                   let log = el.log;
