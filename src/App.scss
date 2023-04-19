@@ -69,6 +69,12 @@ div#root {
   max-height: none;
 }
 
+.particlesDiv {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 
 @media screen and (max-width: 1600px) {
 }

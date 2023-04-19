@@ -1,4 +1,4 @@
-import React, {useEffect, useState, PureComponent} from "react";
+import React, {useEffect, useState} from "react";
 import AOS from "aos";
 import {Link} from 'react-router-dom';
 import {LazyLoadImage} from 'react-lazy-load-image-component';

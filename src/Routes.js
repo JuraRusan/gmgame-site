@@ -16,6 +16,7 @@ import RedRegulations from "./modules/components/[0_grouped_0]-Admin/red-regulat
 // import Manager from "./modules/pages/manager/Manager.js";
 
 const Faq = lazy(() => import(/* webpackChunkName: "faq" */ './modules/pages/faq/Faq.js'));
+const Gallery = lazy(() => import(/* webpackChunkName: "faq" */ './modules/pages/gallery/Gallery.js'));
 const Statistic = lazy(() => import(/* webpackChunkName: "statistics" */ './modules/pages/statistic/Statistic.js'));
 const TexturePack = lazy(() => import(/* webpackChunkName: "texturepack" */ './modules/pages/texture-pack/TexturePack.js'));
 const Shopkeepers = lazy(() => import(/* webpackChunkName: "shopkeepers" */ './modules/pages/shopkeepers/Shopkeepers.js'));
@@ -78,6 +79,7 @@ const Router = () => {
         <Route path="/texturePack" element={<TexturePack/>}/>
         <Route path="/no-access" element={<NoAccess/>}/>
         <Route path="/shopkeepers" element={<Shopkeepers/>}/>
+        {/*<Route path="/gallery" element={<Gallery/>}/>*/}
         <Route exac path="*" element={<NotFound/>}/>
       </Routes>
     </Provider>

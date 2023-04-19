@@ -14,6 +14,7 @@ function App() {
         <div className="class-z-index-1000"><Routes/></div>
         <div className="class-z-index-10000-footer"><Footer/></div>
       </div>
+      <div id="particlesDiv" className="particlesDiv"></div>
     </Router>
   );
 }
