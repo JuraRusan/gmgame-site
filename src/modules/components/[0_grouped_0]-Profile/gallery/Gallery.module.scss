@@ -43,6 +43,22 @@
     border: 1px solid $color-22;
     border-radius: 5px;
 
+    &:nth-child(1) {
+      justify-content: center;
+    }
+
+    &:hover > .addPost {
+      padding: 0;
+    }
+
+    .addPost {
+      margin: auto 0;
+      width: 64px;
+      height: 64px;
+      position: relative;
+      padding: 8px;
+      transition: all 0.35s ease;
+    }
 
     .wrapperImage {
       display: flex;
@@ -102,8 +118,8 @@
         margin: auto 0 0 0;
 
         .actions {
-          height: 24px;
-          line-height: 24px;
+          height: 28px;
+          line-height: 28px;
           border: none;
           border-radius: 8px;
           text-decoration: none;
@@ -114,6 +130,8 @@
           font-weight: 400;
           font-size: 14px;
           cursor: pointer;
+          transition: all 0.35s ease;
+          margin: 0 10px;
 
           &:active,
           &:hover,
@@ -122,6 +140,23 @@
             color: $color-3;
             outline: none;
             border: none;
+          }
+        }
+
+        .edit {
+          background: $color-4;
+
+          &:hover {
+            background: $color-6;
+            color: $color-2;
+          }
+        }
+
+        .delete {
+          background: $color-9;
+
+          &:hover {
+            color: $color-2;
           }
         }
       }

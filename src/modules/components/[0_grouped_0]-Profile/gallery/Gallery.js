@@ -1,10 +1,11 @@
 import React from "react";
 import {LazyLoadImage} from "react-lazy-load-image-component";
+import {Link} from "react-router-dom";
+import {array} from "../../../pages/gallery/GalleryArray";
+import SvgAddMarker from "../../../../bases/icons/SvgAddMarker";
 
 import styles from "./Gallery.module.scss";
 import 'react-image-picker-editor/dist/index.css'
-import {array} from "../../../pages/gallery/GalleryArray";
-import {Link} from "react-router-dom";
 
 const Gallery = () => {
 
@@ -13,6 +14,11 @@ const Gallery = () => {
   return (
     <div className={styles["articlesBlock"]}>
       {/*<h4 className={styles["h4Title"]}>Страница в разработке, ожидайте в ближайшем будущем.</h4>*/}
+      <Link to={`edit_add_post`} className={styles["onePostGallery"]}>
+        <span className={styles["addPost"]}>
+          <SvgAddMarker width="100%" height="100%" color="#f4f4f4"/>
+        </span>
+      </Link>
       {array.map((post, index) =>
         <div className={styles["onePostGallery"]} key={index}>
           <div className={styles["wrapperImage"]}>
