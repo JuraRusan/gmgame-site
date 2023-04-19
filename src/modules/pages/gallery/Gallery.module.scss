@@ -23,6 +23,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
     width: 100%;
     max-width: 90%;
     height: auto;
@@ -31,10 +32,14 @@
 
     .oneContainer {
       display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
       position: relative;
       overflow: hidden;
       width: 350px;
       height: auto;
+      max-height: 200px !important;
       border: none;
       border-radius: 8px;
       margin: 15px;
@@ -145,13 +150,10 @@ body {
     padding: 15px;
     display: flex;
     flex-direction: column;
+    overflow: auto;
 
-    .galleryWrapper {
-      width: 100%;
-      max-width: 1100px !important;
-      margin: 0 auto;
-      max-height: 700px;
-      height: auto;
+    &::-webkit-scrollbar {
+      width: 4px;
     }
 
     .close {
@@ -177,6 +179,111 @@ body {
       &:active {
         outline: none;
         background: $color-21;
+      }
+    }
+
+    .galleryWrapper {
+      width: 100%;
+      max-width: 1100px !important;
+      margin: 0 auto;
+      max-height: 700px;
+      height: auto;
+    }
+
+    .containerDescription {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      max-width: 90%;
+      margin: 15px auto 0 auto;
+      height: auto;
+      background: $color-7;
+      border: 1px solid $color-22;
+      border-radius: 5px;
+      padding: 15px;
+
+      .containerBuilders {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        min-width: 250px;
+        max-width: 250px;
+        height: auto;
+
+        .ulList {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          height: auto;
+
+          .liAuthorsTitle {
+            line-height: 24px;
+            height: 24px;
+            font-size: 14px;
+            font-weight: 400;
+            color: $color-3;
+            font-family: $fontCustom2;
+            margin-bottom: 5px;
+            padding-left: 10px;
+            border-width: 1px;
+            border-bottom-style: solid;
+            border-image: linear-gradient(to right, rgba(0, 0, 0, 0), $color-13, rgba(0, 0, 0, 0)) 1 0;
+          }
+
+          .liUser {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: auto;
+            margin: 3px auto;
+
+            .imgUser {
+              height: 24px;
+              margin: 0;
+              padding: 0;
+              border: none;
+              border-radius: 3px;
+              overflow: hidden;
+            }
+
+            .userName {
+              line-height: 24px;
+              height: 24px;
+              font-size: 14px;
+              font-weight: 400;
+              color: $color-3;
+              margin-left: 5px;
+              font-family: $fontCustom2;
+            }
+          }
+        }
+      }
+
+      .description {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        width: auto;
+        height: 100%;
+
+        .titleNameImageList {
+          font-weight: 400;
+          font-size: 18px;
+          height: 32px;
+          line-height: 32px;
+          width: 100%;
+          padding-left: 25px;
+          color: $color-3;
+          margin: 0 auto 0 auto;
+        }
+
+        .textParagraph {
+          text-indent: 15px;
+          font-weight: 400;
+          font-size: 14px;
+          color: $color-3;
+          line-height: 1.25;
+        }
       }
     }
   }

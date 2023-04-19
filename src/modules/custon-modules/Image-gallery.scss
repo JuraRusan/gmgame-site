@@ -1,4 +1,4 @@
-@import "../../../Variables.scss";
+@import "src/Variables";
 
 $ig-small-screen: 768px !default;
 $ig-xsmall-screen: 480px !default;
@@ -18,7 +18,7 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
 // SVG ICON STYLES
 .image-gallery-icon {
   color: $ig-white;
-  transition: all 0.5s ease-out;
+  transition: all 0.3s ease-out !important;
   appearance: none;
   background-color: transparent;
   border: 0;

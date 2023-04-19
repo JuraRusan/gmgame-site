@@ -3,15 +3,15 @@ import ImageGallery from 'react-image-gallery';
 import Modal from 'react-modal';
 import AOS from "aos";
 import {LazyLoadImage} from "react-lazy-load-image-component";
-import {array, picturesList} from "./GalleryArray";
+import {array} from "./GalleryArray";
 import SvgHeart from "../../../bases/icons/SvgHeart";
 import Particles from "../../components/particles/Particles";
 
 import styles from "./Gallery.module.scss";
-import "./Image-gallery.scss";
+import "../../custon-modules/Image-gallery.scss";
 import "aos/dist/aos.css";
 
-const Gallery = () => {
+const MainGallery = () => {
 
   useEffect(() => {
     AOS.init({duration: 1000});
@@ -27,6 +27,9 @@ const Gallery = () => {
     setIsOpen(false);
   }
 
+  const filteredOneItem = array.filter(ids => ids.id === 1) // тимчасова функція її треба потім видалити
+  // console.log(filteredOneItem)
+
   return (
     <div className={styles["mainGallery"]} data-aos="zoom-in">
 
@@ -41,21 +44,18 @@ const Gallery = () => {
               onClick={openModal}
             />
             <div className={styles["containerLike"]}>
-
               <div className={styles["likes"]}>
                 <button className={[styles["click"], styles["like"]].join(' ')}>
-                  <Particles text={<SvgHeart height="16px" width="16px"/>} type="emoji"/>
+                  <Particles text={<SvgHeart height="16px" width="16px"/>} type="like"/>
                 </button>
                 <label className={styles["text"]}>{items.likes}</label>
               </div>
-
               <div className={styles["likes"]}>
                 <button className={[styles["click"], styles["dislike"]].join(' ')}>
-                  <Particles text={<SvgHeart height="16px" width="16px"/>} type="negative"/>
+                  <Particles text={<SvgHeart height="16px" width="16px"/>} type="dislike"/>
                 </button>
                 <label className={styles["text"]}>{items.dislikes}</label>
               </div>
-
             </div>
           </div>
         )}
@@ -68,16 +68,38 @@ const Gallery = () => {
         onRequestClose={closeModal}
       >
         <button onClick={closeModal} className={styles["close"]}>&#10008;</button>
-        <div className={styles["galleryWrapper"]}>
-          <ImageGallery items={picturesList} lazyLoad="true" showIndex="true"/>
-        </div>
-        <div>
-
-        </div>
+        {filteredOneItem.map((one, i) =>
+          <>
+            <div className={styles["galleryWrapper"]}>
+              <ImageGallery items={one.picturesList} lazyLoad="true" showIndex="true"/>
+            </div>
+            <div className={styles["containerDescription"]}>
+              <div className={styles["containerBuilders"]}>
+                <ul className={styles["ulList"]}>
+                  <li className={styles["liAuthorsTitle"]}>Авторы:</li>
+                  {one.users.map((oneUser, index) =>
+                    <li className={styles["liUser"]}>
+                      <img
+                        className={styles["imgUser"]}
+                        src={`https://minotar.net/helm/${oneUser}/100`}
+                        alt={`https://minotar.net/helm/${oneUser}/100`}>
+                      </img>
+                      <label className={styles["userName"]}>{oneUser}</label>
+                    </li>
+                  )}
+                </ul>
+              </div>
+              <div className={styles["description"]}>
+                <h4 className={styles["titleNameImageList"]}>{one.name}</h4>
+                <p className={styles["textParagraph"]}>{one.description}</p>
+              </div>
+            </div>
+          </>
+        )}
       </Modal>
 
     </div>
   );
 };
 
-export default Gallery;
+export default MainGallery;

@@ -20,8 +20,13 @@ function createParticle(x, y, type) {
       particle.style.background = `hsl(${Math.random() * 90 + 270}, 70%, 60%)`;
       particle.style.border = '1px solid white';
       break;
-    case 'emoji':
+    case 'like':
       particle.innerHTML = ['❤', '🧡', '💛', '💚', '💙', '💜', '🤎'][Math.floor(Math.random() * 7)];
+      particle.style.fontSize = `${Math.random() * 24 + 10}px`;
+      width = height = 'auto';
+      break;
+    case 'dislike':
+      particle.innerHTML = ['😡', '😠', '😈', '💩'][Math.floor(Math.random() * 4)];
       particle.style.fontSize = `${Math.random() * 24 + 10}px`;
       width = height = 'auto';
       break;
