@@ -1,6 +1,6 @@
 @import "../../../../Variables";
 
-//.articlesBlock {
+//.galleryBlock {
 //  display: flex;
 //  flex-direction: row;
 //  width: 100%;
@@ -18,7 +18,7 @@
 //  }
 //}
 
-.articlesBlock {
+.galleryBlock {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -140,6 +140,15 @@
             color: $color-3;
             outline: none;
             border: none;
+          }
+        }
+
+        .analytics {
+          background: lighten($color-8, 8%);
+
+          &:hover {
+            background: lighten($color-8, 30%);
+            color: $color-2;
           }
         }
 

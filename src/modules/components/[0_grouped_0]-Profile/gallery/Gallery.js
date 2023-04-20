@@ -12,7 +12,7 @@ const Gallery = () => {
   const shortenText = (text, maxLength) => text.length > maxLength ? `${text.slice(0, maxLength)}...` : text;
 
   return (
-    <div className={styles["articlesBlock"]}>
+    <div className={styles["galleryBlock"]}>
       {/*<h4 className={styles["h4Title"]}>Страница в разработке, ожидайте в ближайшем будущем.</h4>*/}
       <Link to={`edit_add_post`} className={styles["onePostGallery"]}>
         <span className={styles["addPost"]}>
@@ -33,6 +33,7 @@ const Gallery = () => {
             <h4 className={styles["title"]}>{post.name}</h4>
             <p className={styles["paragraph"]}>{shortenText(post.description, 200)}</p>
             <div className={styles["containerActions"]}>
+              <Link to={`post_analytics`} className={[styles["actions"], styles["analytics"]].join(' ')}>Аналитика</Link>
               <Link to={`edit_add_post`} className={[styles["actions"], styles["edit"]].join(' ')}>Редактировать</Link>
               <button className={[styles["actions"], styles["delete"]].join(' ')}>Удалить</button>
             </div>

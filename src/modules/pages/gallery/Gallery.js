@@ -70,8 +70,10 @@ const MainGallery = () => {
         <button onClick={closeModal} className={styles["close"]}>&#10008;</button>
         {filteredOneItem.map((one, i) =>
           <>
-            <div className={styles["galleryWrapper"]}>
-              <ImageGallery items={one.picturesList} lazyLoad="true" showIndex="true"/>
+            <div className={styles["galleryBackground"]}>
+              <div className={styles["galleryWrapper"]}>
+                <ImageGallery items={one.picturesList} lazyLoad="true" showIndex="true"/>
+              </div>
             </div>
             <div className={styles["containerDescription"]}>
               <div className={styles["containerBuilders"]}>

@@ -19,6 +19,7 @@ const Regulations = lazy(() => import(/* webpackChunkName: "regulations" */ './m
 const MainGallery = lazy(() => import(/* webpackChunkName: "faq" */ './modules/pages/gallery/Gallery.js'));
 const Gallery = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/gallery/Gallery.js'));
 const EditAddPost = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/gallery/EditAddPost.js'));
+const AnalyticsPost = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/gallery/AnalyticsPost.js'));
 // --
 const MyMarkers = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Maps-all-comp/my-markers/My-markers.js'));
 const EditAddMarker = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Maps-all-comp/my-markers/EditAddMarker.js'));
@@ -70,8 +71,9 @@ const Router = () => {
             {/*----------*/}
             <Route path="articles" element={<Articles/>}/>
             {/*----------*/}
-            <Route path="gallery" element={<Gallery/>}/>
-            <Route path="gallery/edit_add_post" element={<EditAddPost/>}/>
+            {/*<Route path="gallery" element={<Gallery/>}/>*/}
+            {/*<Route path="gallery/edit_add_post" element={<EditAddPost/>}/>*/}
+            {/*<Route path="gallery/post_analytics" element={<AnalyticsPost/>}/>*/}
             {/*----------*/}
             <Route path="prize" element={<MyPrizes/>}/>
             <Route path="change_password" element={<ChangePassword/>}/>

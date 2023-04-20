@@ -80,7 +80,7 @@ const Cab = () => {
                 <NavLink onClick={phCabFunctionRemove} to="territories" className={({isActive}) => setActive(isActive)}>{profileMenuMyTerritories}</NavLink>
                 <NavLink onClick={phCabFunctionRemove} to="markers" className={({isActive}) => setActive(isActive)}>{profileMenuMyMarker}</NavLink>
                 <NavLink onClick={phCabFunctionRemove} to="articles" className={({isActive}) => setActive(isActive)}>{profileMenuMyArticles}</NavLink>
-                <NavLink onClick={phCabFunctionRemove} to="gallery" className={({isActive}) => setActive(isActive)}>{profileMenuMyGallery}</NavLink>
+                {/*<NavLink onClick={phCabFunctionRemove} to="gallery" className={({isActive}) => setActive(isActive)}>{profileMenuMyGallery}</NavLink>*/}
                 <NavLink onClick={phCabFunctionRemove} to="prize" className={({isActive}) => setActive(isActive)}>{profileMenuMyPrizes}</NavLink>
                 <NavLink onClick={phCabFunctionRemove} to="change_password" className={({isActive}) => setActive(isActive)}>{profileMenuMyChangePassword}</NavLink>
               </>
