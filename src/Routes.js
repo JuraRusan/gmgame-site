@@ -16,10 +16,10 @@ const AdminDashboard = lazy(() => import(/* webpackChunkName: "404" */ './module
 const Faq = lazy(() => import(/* webpackChunkName: "faq" */ './modules/pages/faq/Faq.js'));
 const Regulations = lazy(() => import(/* webpackChunkName: "regulations" */ './modules/pages/regulations/Regulations.js'));
 // --
-const MainGallery = lazy(() => import(/* webpackChunkName: "faq" */ './modules/pages/gallery/Gallery.js'));
-const Gallery = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/gallery/Gallery.js'));
-const EditAddPost = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/gallery/EditAddPost.js'));
-const AnalyticsPost = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/gallery/AnalyticsPost.js'));
+// const MainGallery = lazy(() => import(/* webpackChunkName: "faq" */ './modules/pages/gallery/Gallery.js'));
+// const Gallery = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/gallery/Gallery.js'));
+// const EditAddPost = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/gallery/EditAddPost.js'));
+// const AnalyticsPost = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/gallery/AnalyticsPost.js'));
 // --
 const MyMarkers = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Maps-all-comp/my-markers/My-markers.js'));
 const EditAddMarker = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Maps-all-comp/my-markers/EditAddMarker.js'));
@@ -81,7 +81,7 @@ const Router = () => {
           </Route>
 
           <Route path="/articlesWiki" element={<ArticlesWiki/>}/>
-          <Route path="/gallery" element={<MainGallery/>}/>
+          {/*<Route path="/gallery" element={<MainGallery/>}/>*/}
 
           <Route path="/faq" element={<Faq/>}/>
           <Route path="/regulations" element={<Regulations/>}/>
