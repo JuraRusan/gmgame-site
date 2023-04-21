@@ -421,9 +421,11 @@ const AdminDashboard = () => {
               <tbody className="table-tbody-styling">
               {markers[username].map((el, i) => (
                 <tr className="table-tr-styling-rows" key={i}>
-                  {username === 'all' && <th className="table-th-styling-columns">
-                    <input id="username" className="in-manager" defaultValue={el.username}/>
-                  </th>}
+                  {username === 'all' &&
+                    <th className="table-th-styling-columns">
+                      <p className="textP">{el.username}</p>
+                    </th>
+                  }
                   <th className="table-th-styling-columns">
                     <input
                       id="name"
@@ -499,12 +501,8 @@ const AdminDashboard = () => {
                 <tr className="table-tr-styling-rows" key={i}>
                   {username === 'all' &&
                     <th className="table-th-styling-columns">
-                      <input
-                        id="username"
-                        className="in-manager"
-                        defaultValue={el.username}/>
-                    </th>
-                  }
+                      <p className="textP">{el.username}</p>
+                    </th>}
                   <th className="table-th-styling-columns">
                     <input
                       id="name"
