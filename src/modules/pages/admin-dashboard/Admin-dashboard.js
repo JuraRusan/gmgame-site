@@ -1,7 +1,7 @@
-import React, {useEffect, useState, useMemo} from "react";
+import React, {useEffect, useMemo, useState} from "react";
 import AOS from "aos";
-import {NavLink, Outlet, Link, useSearchParams} from "react-router-dom";
-import {useAxios, sendRequest} from '../../../DataProvider';
+import {useSearchParams} from "react-router-dom";
+import {sendRequest} from '../../../DataProvider';
 import {useAlert} from "react-alert";
 import ReactModal from 'react-modal';
 import debounce from 'lodash.debounce';
@@ -10,6 +10,7 @@ import "./Admin-dashboard.scss";
 import "aos/dist/aos.css";
 
 const AdminDashboard = () => {
+
   const [searchParams, setSearchParams] = useSearchParams();
   let [searchParam, setSearchParam] = useState('Поиск работает по discord_id/nickname/discord_tag');
   let [user, setUser] = useState([]);
@@ -86,7 +87,7 @@ const AdminDashboard = () => {
       let tagUser = {};
       let terrUser = {};
 
-      response.map( user => {
+      response.map(user => {
         try {
           tagUser[user.username] = JSON.parse(user.tag);
         } catch (err) {
@@ -103,9 +104,7 @@ const AdminDashboard = () => {
     });
   }
 
-  const debouncedGetUser = useMemo(
-    () => debounce(getUser, 300),
-  []);
+  const debouncedGetUser = useMemo(() => debounce(getUser, 300), []);
 
   useEffect(() => {
     if (searchParams.get("user_id")) {
@@ -165,7 +164,7 @@ const AdminDashboard = () => {
 
     if (!input[id]) input[id] = {};
 
-    input[id] = {...input[id], ...{[event.target.id]: ['x','y','z'].includes(event.target.id) ? +event.target.value : event.target.value}};
+    input[id] = {...input[id], ...{[event.target.id]: ['x', 'y', 'z'].includes(event.target.id) ? +event.target.value : event.target.value}};
     setInputMarker(input);
   }
 
@@ -174,7 +173,7 @@ const AdminDashboard = () => {
 
     if (!input[id]) input[id] = {};
 
-    input[id] = {...input[id], ...{[event.target.id]: ['xStart','xStop','zStart', 'zStop'].includes(event.target.id) ? +event.target.value : event.target.value}};
+    input[id] = {...input[id], ...{[event.target.id]: ['xStart', 'xStop', 'zStart', 'zStop'].includes(event.target.id) ? +event.target.value : event.target.value}};
     setInputTerrs(input);
   }
 
@@ -184,7 +183,7 @@ const AdminDashboard = () => {
     if (!input[id]) input[id] = {};
 
     input[id] = {...input[id], ...{[event.target.id]: event.target.value}};
-    
+
     setInputUserDetails(input);
   }
 
@@ -213,7 +212,7 @@ const AdminDashboard = () => {
     let payload = {id: id};
     if (input) {
       payload = {...payload, ...input[id]};
-      
+
     }
     sendRequest(
       url,
@@ -321,7 +320,7 @@ const AdminDashboard = () => {
 
       const index = newRegens.findIndex((regen) => regen.User_id === user_id);
       newRegens.splice(index, 1);
- 
+
       setRegens(newRegens)
     });
   }
@@ -329,24 +328,24 @@ const AdminDashboard = () => {
   return (
     <div className="main-dashboard" data-aos="zoom-in">
 
-      <input
-        className="search-players"
-        placeholder={searchParam}
-        onChange={debouncedGetUser}
-        type="search">
-      </input>
+      <input className="search-players" placeholder={searchParam} onChange={debouncedGetUser} type="search" data-aos="zoom-in"></input>
+      <button className="button-search-players" type="submit" onClick={() => getUser(searchParam)} data-aos="zoom-in">Поиск</button>
 
-      <button className="button-search-players" type="submit" onClick={() => getUser(searchParam)}>Поиск</button>
-
-      <div className="wrapper-btn-manager">
+      <div className="wrapper-btn-manager" data-aos="zoom-in">
         <button className="button-search" type="submit" onClick={getMarkers}>Отображение всех меток</button>
         <button className="button-search" type="submit" onClick={getTerritories}>Отображение всех территорий</button>
-        <button className="button-search" type="submit" onClick={getRegens}>Regens</button>
+        <button className="button-search" type="submit" onClick={getRegens}>Пользователи для регена</button>
       </div>
 
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*--- Таблица для отображения пользователя или всех пользователей ---*/}
       {user[0]?.status &&
         <>
-          <table className="table-main-styling">
+          <table className="table-main-styling" data-aos="zoom-in">
             <thead className="table-thead-styling">
             <tr className="table-tr-styling-rows">
               <th className="table-th-styling-columns">Имя</th>
@@ -359,7 +358,7 @@ const AdminDashboard = () => {
             </thead>
             <tbody className="table-tbody-styling">
             {user?.map((el, i) => {
-              return(
+              return (
                 <tr className="table-tr-styling-rows" key={i}>
                   <th className="table-th-styling-columns">{el?.username}</th>
                   <th className="table-th-styling-columns">{tag[el?.username]?.email}</th>
@@ -370,14 +369,20 @@ const AdminDashboard = () => {
                     <button className="modal-open" onClick={() => handleOpenModalUd(el)}>User Details</button>
                   </th>
                   <th className="table-th-styling-columns action-table">
-                    <select className="in-manager-option" value={action[el.user_id]?.action || ""} onChange={event => setAction(
-                      {...action, ...{
-                        [el.user_id]: {
-                          action: event.target.value,
-                          user: el.user_id
+                    <select
+                      className="in-manager-option"
+                      value={action[el.user_id]?.action || ""}
+                      onChange={event => setAction(
+                        {
+                          ...action, ...{
+                            [el.user_id]: {
+                              action: event.target.value,
+                              user: el.user_id
+                            }
+                          }
                         }
-                      }}
-                    )}>{getActions(el)}</select>
+                      )}>{getActions(el)}
+                    </select>
                   </th>
                 </tr>
               )
@@ -387,185 +392,383 @@ const AdminDashboard = () => {
           <button className="button-search-players" type="submit" onClick={actionUser}>Применить</button>
         </>
       }
+
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*--- Таблица для меток пользователя или всех возможных меток ---*/}
       {Object.keys(markers).map((username, i) => {
         if (markers[username].length === 0) {
           return;
         }
-        return(
-        <React.Fragment key={i}>
-          <h4 className="manager-h4">Метки {username}</h4>
-          <table className="table-main-styling">
-            <thead className="table-thead-styling">
-            <tr className="table-tr-styling-rows">
-              {username === 'all' && 
-              <th className="table-th-styling-columns">Имя пользователя</th>
-              }
-              <th className="table-th-styling-columns">Название</th>
-              <th className="table-th-styling-columns">Описание</th>
-              <th className="table-th-styling-columns table-coordinates">x</th>
-              <th className="table-th-styling-columns table-coordinates">y</th>
-              <th className="table-th-styling-columns table-coordinates">z</th>
-              <th className="table-th-styling-columns action-table">Действия</th>
-            </tr>
-            </thead>
+        return (
+          <React.Fragment key={i}>
+            <h4 className="manager-h4" data-aos="zoom-in">Метки {username}</h4>
+            <table className="table-main-styling" data-aos="zoom-in">
+              <thead className="table-thead-styling">
+              <tr className="table-tr-styling-rows">
+                {username === 'all' && <th className="table-th-styling-columns">Имя пользователя</th>}
+                <th className="table-th-styling-columns">Название</th>
+                <th className="table-th-styling-columns">Описание</th>
+                <th className="table-th-styling-columns table-coordinates">x</th>
+                <th className="table-th-styling-columns table-coordinates">y</th>
+                <th className="table-th-styling-columns table-coordinates">z</th>
+                <th className="table-th-styling-columns action-table">Действия</th>
+              </tr>
+              </thead>
               <tbody className="table-tbody-styling">
-                {markers[username].map((el, i) => (
-                    <tr className="table-tr-styling-rows" key={i}>
-                      {username === 'all' && 
-                      <th className="table-th-styling-columns"><input id="username" className="in-manager" defaultValue={el.username}/></th>
-                      }
-                      <th className="table-th-styling-columns"><input id="name" onChange={(e) => markerChange(e, el.id)} className="in-manager" defaultValue={el.name}/></th>
-                      <th className="table-th-styling-columns"><textarea id="description" onChange={(e) => markerChange(e, el.id)} rows="1" className="in-manager-textarea"
-                                                                        defaultValue={el.description}/></th>
-                      <th className="table-th-styling-columns table-coordinates"><input id="x" onChange={(e) => markerChange(e, el.id)} className="in-manager"
-                                                                                        defaultValue={el.x}/></th>
-                      <th className="table-th-styling-columns table-coordinates"><input id="y" onChange={(e) => markerChange(e, el.id)} className="in-manager"
-                                                                                        defaultValue={el.y}/></th>
-                      <th className="table-th-styling-columns table-coordinates"><input id="z" onChange={(e) => markerChange(e, el.id)} className="in-manager"
-                                                                                        defaultValue={el.z}/></th>
-                      <th className="table-th-styling-columns action-table">
-                        <button className="manager-btn" type="submit" onClick={() => delMarker(el.id)}>Удалить
-                        </button>
-                        <button className="manager-btn" type="submit" onClick={() => updateMarker(el.id)}>Обновить</button>
-                      </th>
-                    </tr>
-                ))}
+              {markers[username].map((el, i) => (
+                <tr className="table-tr-styling-rows" key={i}>
+                  {username === 'all' && <th className="table-th-styling-columns">
+                    <input id="username" className="in-manager" defaultValue={el.username}/>
+                  </th>}
+                  <th className="table-th-styling-columns">
+                    <input
+                      id="name"
+                      onChange={(e) => markerChange(e, el.id)}
+                      className="in-manager"
+                      defaultValue={el.name}/></th>
+                  <th className="table-th-styling-columns">
+                    <textarea
+                      id="description"
+                      onChange={(e) => markerChange(e, el.id)}
+                      rows="1"
+                      className="in-manager-textarea"
+                      defaultValue={el.description}/></th>
+                  <th className="table-th-styling-columns table-coordinates">
+                    <input
+                      id="x"
+                      onChange={(e) => markerChange(e, el.id)}
+                      className="in-manager"
+                      defaultValue={el.x}/></th>
+                  <th className="table-th-styling-columns table-coordinates">
+                    <input
+                      id="y"
+                      onChange={(e) => markerChange(e, el.id)}
+                      className="in-manager"
+                      defaultValue={el.y}/></th>
+                  <th className="table-th-styling-columns table-coordinates">
+                    <input
+                      id="z"
+                      onChange={(e) => markerChange(e, el.id)}
+                      className="in-manager"
+                      defaultValue={el.z}/></th>
+                  <th className="table-th-styling-columns action-table">
+                    <button className="manager-btn" type="submit" onClick={() => delMarker(el.id)}>Удалить</button>
+                    <button className="manager-btn" type="submit" onClick={() => updateMarker(el.id)}>Обновить</button>
+                  </th>
+                </tr>
+              ))}
               </tbody>
-          </table>
-        </React.Fragment>
-      )})
+            </table>
+          </React.Fragment>
+        )
+      })
       }
+
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*--- Таблица для территорий пользователя или всех возможных территорий ---*/}
       {Object.keys(territories).map((username, i) => {
         if (territories[username].length === 0) {
           return;
         }
-        return(
-        <React.Fragment key={i}>
-          <h4 className="manager-h4">Территории {username}</h4>
-          <table className="table-main-styling">
+        return (
+          <React.Fragment key={i}>
+            <h4 className="manager-h4" data-aos="zoom-in">Территории {username}</h4>
+            <table className="table-main-styling" data-aos="zoom-in">
+              <thead className="table-thead-styling">
+              <tr className="table-tr-styling-rows">
+                {username === 'all' && <th className="table-th-styling-columns">Имя пользователя</th>}
+                <th className="table-th-styling-columns">Название</th>
+                <th className="table-th-styling-columns">Сервер</th>
+                <th className="table-th-styling-columns table-coordinates">xStart</th>
+                <th className="table-th-styling-columns table-coordinates">xStop</th>
+                <th className="table-th-styling-columns table-coordinates">zStart</th>
+                <th className="table-th-styling-columns table-coordinates">zStop</th>
+                <th className="table-th-styling-columns action-table">Действия</th>
+              </tr>
+              </thead>
+              <tbody className="table-tbody-styling">
+              {territories[username].map((el, i) => (
+                <tr className="table-tr-styling-rows" key={i}>
+                  {username === 'all' &&
+                    <th className="table-th-styling-columns">
+                      <input
+                        id="username"
+                        className="in-manager"
+                        defaultValue={el.username}/>
+                    </th>
+                  }
+                  <th className="table-th-styling-columns">
+                    <input
+                      id="name"
+                      onChange={(e) => terrsChange(e, el.id)}
+                      className="in-manager"
+                      defaultValue={el.name}/></th>
+                  <th className="table-th-styling-columns">
+                    <input
+                      id="world"
+                      onChange={(e) => terrsChange(e, el.id)}
+                      className="in-manager"
+                      defaultValue={el.world}/></th>
+                  <th className="table-th-styling-columns table-coordinates">
+                    <input
+                      id="xStart"
+                      onChange={(e) => terrsChange(e, el.id)}
+                      className="in-manager"
+                      defaultValue={el.xStart}/></th>
+                  <th className="table-th-styling-columns table-coordinates">
+                    <input
+                      id="xStop"
+                      onChange={(e) => terrsChange(e, el.id)}
+                      className="in-manager"
+                      defaultValue={el.xStop}/></th>
+                  <th className="table-th-styling-columns table-coordinates">
+                    <input
+                      id="zStart"
+                      onChange={(e) => terrsChange(e, el.id)}
+                      className="in-manager"
+                      defaultValue={el.zStart}/></th>
+                  <th className="table-th-styling-columns table-coordinates">
+                    <input
+                      id="zStop"
+                      onChange={(e) => terrsChange(e, el.id)}
+                      className="in-manager"
+                      defaultValue={el.zStop}/></th>
+                  <th className="table-th-styling-columns action-table">
+                    <button className="manager-btn" type="submit" onClick={() => delTerr(el.id)}>Удалить</button>
+                    <button className="manager-btn" type="submit" onClick={() => updateTerr(el.id)}>Обновить</button>
+                  </th>
+                </tr>
+              ))}
+              </tbody>
+            </table>
+          </React.Fragment>
+        )
+      })
+      }
+
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*--- Таблица для regen_user ---*/}
+      {regens.length > 0 &&
+        <>
+          <h4 className="manager-h4" data-aos="zoom-in">Список на реген</h4>
+          <table className="table-main-styling" data-aos="zoom-in">
             <thead className="table-thead-styling">
             <tr className="table-tr-styling-rows">
-              {username === 'all' && 
-              <th className="table-th-styling-columns">Имя пользователя</th>
-              }
-              <th className="table-th-styling-columns">Название</th>
-              <th className="table-th-styling-columns">Сервер</th>
-              <th className="table-th-styling-columns table-coordinates">xStart</th>
-              <th className="table-th-styling-columns table-coordinates">xStop</th>
-              <th className="table-th-styling-columns table-coordinates">zStart</th>
-              <th className="table-th-styling-columns table-coordinates">zStop</th>
+              <th className="table-th-styling-columns">Имя</th>
+              <th className="table-th-styling-columns">Линк</th>
               <th className="table-th-styling-columns action-table">Действия</th>
             </tr>
             </thead>
             <tbody className="table-tbody-styling">
-            {territories[username].map( (el, i) => (
-                <tr className="table-tr-styling-rows" key={i}>
-                  {username === 'all' && 
-                  <th className="table-th-styling-columns"><input id="username" className="in-manager" defaultValue={el.username}/></th>
-                  }
-                  <th className="table-th-styling-columns"><input id="name" onChange={(e) => terrsChange(e, el.id)} className="in-manager" defaultValue={el.name}/></th>
-                  <th className="table-th-styling-columns"><input id="world" onChange={(e) => terrsChange(e, el.id)} className="in-manager" defaultValue={el.world}/></th>
-                  <th className="table-th-styling-columns table-coordinates"><input id="xStart" onChange={(e) => terrsChange(e, el.id)} className="in-manager"
-                                                                                    defaultValue={el.xStart}/></th>
-                  <th className="table-th-styling-columns table-coordinates"><input id="xStop" onChange={(e) => terrsChange(e, el.id)} className="in-manager"
-                                                                                    defaultValue={el.xStop}/></th>
-                  <th className="table-th-styling-columns table-coordinates"><input id="zStart" onChange={(e) => terrsChange(e, el.id)} className="in-manager"
-                                                                                    defaultValue={el.zStart}/></th>
-                  <th className="table-th-styling-columns table-coordinates"><input id="zStop" onChange={(e) => terrsChange(e, el.id)} className="in-manager"
-                                                                                    defaultValue={el.zStop}/></th>
-                  <th className="table-th-styling-columns action-table">
-                    <button className="manager-btn" type="submit" onClick={() => delTerr(el.id)}>Удалить
-                    </button>
-                    <button className="manager-btn" type="submit" onClick={() => updateTerr(el.id)}>Обновить
-                    </button>
-                  </th>
-                </tr>
+            {regens.map((regen, i) => (
+              <tr className="table-tr-styling-rows" key={i}>
+                <th className="table-th-styling-columns">{regen.username}</th>
+                <th className="table-th-styling-columns">
+                  <a href={`/manager?user_id=${regen.user_id}`} target="_blank" rel="noreferrer">Информация о пользователе</a>
+                </th>
+                <th className="table-th-styling-columns action-table">
+                  <button
+                    className="manager-btn"
+                    type="submit"
+                    onClick={() => regenAction(regen.user_id, 'regen')}>Отправить в реген
+                  </button>
+                  <button
+                    className="manager-btn"
+                    type="submit"
+                    onClick={() => regenAction(regen.user_id, 'settle')}>Оставить
+                  </button>
+                </th>
+              </tr>
             ))}
             </tbody>
-          </table>
-        </React.Fragment>
-        )})
-      }
-      {regens.length > 0 &&
-        <>
-        <h4 className="manager-h4">Список на реген</h4>
-        <table className="table-main-styling">
-          <thead className="table-thead-styling">
-          <tr className="table-tr-styling-rows">
-            <th className="table-th-styling-columns">Имя</th>
-            <th className="table-th-styling-columns">Линк</th>
-            <th className="table-th-styling-columns action-table">Действия</th>
-          </tr>
-          </thead>
-          <tbody className="table-tbody-styling">
-          {regens.map( (regen, i) => (
-            <tr className="table-tr-styling-rows" key={i}>
-              <th className="table-th-styling-columns">{regen.username}</th>
-              <th className="table-th-styling-columns"><a href={`/manager?user_id=${regen.user_id}`} target="_blank">Информация о пользователе</a></th>
-              <th className="table-th-styling-columns action-table">
-                <button className="manager-btn" type="submit" onClick={() => regenAction(regen.user_id, 'regen')}>Реген
-                </button>
-                <button className="manager-btn" type="submit" onClick={() => regenAction(regen.user_id, 'settle')}>Оставить
-                </button>
-              </th>
-            </tr>
-          ))}
-         </tbody>
           </table>
         </>
       }
 
-      <ReactModal isOpen={modalUd} onRequestClose={handleCloseModalUd} className="modal-main" overlayClassName="overlay-modal">
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*--- Модальное окно для user_details ---*/}
+      <ReactModal
+        isOpen={modalUd}
+        onRequestClose={handleCloseModalUd}
+        className="modal-main"
+        overlayClassName="overlay-modal"
+      >
         <button className="close-modal" onClick={handleCloseModalUd}>X</button>
-
-        <div className="card-wrapper-manager">
+        <div className="card-wrapper-manager" data-aos="zoom-in">
           <div className="card-one">
-            <img className="player-image" src={`https://minotar.net/helm/${userDetails?.username}/150`} alt="none"></img>
+            <div className="wrapperActionsAndIcon">
+              <img className="player-image" src={`https://minotar.net/helm/${userDetails?.username}/150`} alt="none"/>
+              <button className="buttonSubmit" type="submit" onClick={() => updateUser(userDetails.user_id)}>Сохранить</button>
+            </div>
             <div className="text-container">
-              <p className="text-p">Откуда:<span>{userDetails?.from_about}</span></p>
-              <p className="text-p">Описание:<span>{userDetails?.you_about}</span></p>
-              <p className="text-p">Возраст:<span>{userDetails?.age}</span></p>
-              <p className="text-p">Партнер:<span><input id="partner" onChange={(e) => userDetailsChange(e, userDetails.user_id)} className="in-manager" defaultValue={userDetails?.partner}/></span></p>
-              <p className="text-p">Иммунитет:<span><input id="immun" onChange={(e) => userDetailsChange(e, userDetails.user_id)} className="in-manager" defaultValue={userDetails?.immun}/></span></p>
-              <p className="text-p">Дата окончания:<span><input id="expiration_date" onChange={(e) => userDetailsChange(e, userDetails.user_id)} className="in-manager" defaultValue={userDetails?.expiration_date}/></span></p>
-              <p className="text-p">Заметка:<span><input id="note" className="in-manager" onChange={(e) => userDetailsChange(e, userDetails.user_id)} defaultValue={userDetails?.note}/></span></p>
-              <button className="manager-btn" type="submit" onClick={() => updateUser(userDetails.user_id)}>Сохранить</button>
+              {/*----- username -----*/}
+              <div className="oneBlock">
+                <p className="text-p">Ник игрока:</p>
+                <span className="lime">{userDetails?.username}</span>
+              </div>
+              {/*----- user_id -----*/}
+              <div className="oneBlock">
+                <p className="text-p">Discord id игрока:</p>
+                <span className="lime">{userDetails?.user_id}</span>
+              </div>
+              {/*----- age -----*/}
+              <div className="oneBlock">
+                <p className="text-p">Возраст:</p>
+                <span className="lime">{userDetails?.age}</span>
+              </div>
+              {/*----- status -----*/}
+              <div className="oneBlock">
+                <p className="text-p">Статус игрока:</p>
+                {userDetails?.status === 1 && <span className="lime">Заявка на рассмотрении [base_status_number - {userDetails?.status}]</span>}
+                {userDetails?.status === 2 && <span className="lime">Игрок сервера [base_status_number - {userDetails?.status}]</span>}
+                {userDetails?.status === 3 && <span className="lime">Отказ по заявке [base_status_number - {userDetails?.status}]</span>}
+                {userDetails?.status === 4 && <span className="lime">Бан на сервере [base_status_number - {userDetails?.status}]</span>}
+                {userDetails?.status === 5 && <span className="lime">Не активный игрок [base_status_number - {userDetails?.status}]</span>}
+                {userDetails?.status === "default" && <span className="lime">Новая заявка [base_status_number - {userDetails?.status}]</span>}
+              </div>
+              {/*----- user_id -----*/}
+              <div className="oneBlock">
+                <p className="text-p">Партнер:</p>
+                <input
+                  id="partner"
+                  onChange={(e) => userDetailsChange(e, userDetails.user_id)}
+                  className="input-redactor"
+                  defaultValue={userDetails?.partner}/>
+                <span className="viewRedactor">&#10043;</span>
+              </div>
+              {/*----- from_about -----*/}
+              <div className="oneBlock">
+                <p className="text-p">Откуда узнал о проекте:</p>
+                <span className="lime">{userDetails?.from_about}</span>
+              </div>
+              {/*----- you_about -----*/}
+              <div className="oneBlock">
+                <p className="text-p">Описание:</p>
+                <span className="lime">{userDetails?.you_about}</span>
+              </div>
+              {/*----- immun -----*/}
+              <div className="oneBlock">
+                <p className="text-p">Иммунитет:</p>
+                <input
+                  id="immun"
+                  onChange={(e) => userDetailsChange(e, userDetails.user_id)}
+                  className="input-redactor"
+                  defaultValue={userDetails?.immun}/>
+                <span className="viewRedactor">&#10043;</span>
+              </div>
+              {/*----- expiration_date -----*/}
+              <div className="oneBlock">
+                <p className="text-p">Дата окончания:</p>
+                <input
+                  id="expiration_date"
+                  onChange={(e) => userDetailsChange(e, userDetails.user_id)}
+                  className="input-redactor"
+                  type="date"
+                  defaultValue={userDetails?.expiration_date}/>
+                <span className="viewRedactor">&#10043;</span>
+              </div>
+              {/*----- note -----*/}
+              <div className="oneBlock">
+                <p className="text-p">Заметка:</p>
+                <textarea
+                  id="note"
+                  className="input-redactor"
+                  onChange={(e) => userDetailsChange(e, userDetails.user_id)}
+                  defaultValue={userDetails?.note}/>
+                <span className="viewRedactor">&#10043;</span>
+              </div>
+              {/*-----  -----*/}
             </div>
           </div>
         </div>
       </ReactModal>
 
-      <ReactModal isOpen={modalLog} onRequestClose={handleCloseModal} className="modal-main" overlayClassName="overlay-modal">
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*--- Модальное окно для user_log ---*/}
+      <ReactModal
+        isOpen={modalLog}
+        onRequestClose={handleCloseModal}
+        className="modal-main"
+        overlayClassName="overlay-modal"
+      >
         <button className="close-modal" onClick={handleCloseModal}>X</button>
-        <table className="table-main-styling">
-          <thead className="table-thead-styling">
-          <tr className="table-tr-styling-rows">
-            <th className="table-th-styling-columns">Время</th>
-            <th className="table-th-styling-columns">Лог</th>
-            <th className="table-th-styling-columns table-coordinates">Менеджер</th>
-          </tr>
-          </thead>
-          <tbody className="table-tbody-styling">
-          {logs?.map((el, i) => {
-            return (
-              <tr className="table-tr-styling-rows" key={i}>
-                <th className="table-th-styling-columns"><input className="in-manager" defaultValue={el.log_date}/></th>
-                <th className="table-th-styling-columns"><input className="in-manager" defaultValue={(() => {
-                  let log = el.log;
-                  try {
-                    log = JSON.parse(el.log);
-                  } catch {
-                    return log;
-                  }
-                  return `${log.action} ${JSON.stringify(log.data)}`;
-                })()}/></th>
-                <th className="table-th-styling-columns table-coordinates table-coordinates"><input className="in-manager" defaultValue={el.manager}/></th>
-              </tr>
-            );
-          })}
-          </tbody>
-        </table>
+        <div className="card-log" data-aos="zoom-in">
+          <table className="table-log">
+            {/*------*/}
+            <thead className="log-thead">
+            <tr className="log-rows">
+              <th className="log-columns time">Время</th>
+              <th className="log-columns log">Лог</th>
+              <th className="log-columns manager">Менеджер</th>
+            </tr>
+            </thead>
+            {/*------*/}
+            <tbody className="log-tbody">
+            {logs?.map((el, i) => {
+              return (
+                <tr className="log-rows" key={i}>
+                  <th className="log-columns time">
+                    <input className="log-input" defaultValue={el.log_date}/>
+                  </th>
+                  <th className="log-columns log">
+                    <input className="log-input" defaultValue={(() => {
+                      let log = el.log;
+                      try {
+                        log = JSON.parse(el.log);
+                      } catch {
+                        return log;
+                      }
+                      return `${log.action} ${JSON.stringify(log.data)}`;
+                    })()}/>
+                  </th>
+                  <th className="log-columns manager">
+                    <input className="log-input" defaultValue={el.manager}/>
+                  </th>
+                </tr>
+              );
+            })}
+            <tr className="log-rows">
+              <th className="log-columns time">
+                <input className="log-input" defaultValue=" "/>
+              </th>
+              <th className="log-columns log">
+                <input className="log-input" defaultValue=" "/>
+              </th>
+              <th className="log-columns manager">
+                <input className="log-input" defaultValue=" "/>
+              </th>
+            </tr>
+            </tbody>
+            {/*------*/}
+          </table>
+        </div>
       </ReactModal>
+
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*-----------------------------------------------------------------------------------------------*/}
 
     </div>
   );

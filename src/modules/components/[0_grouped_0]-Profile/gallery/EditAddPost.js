@@ -16,7 +16,7 @@ const EditAddPost = () => {
   const [countImage, setCountImage] = useState("1");
   const [names, setNames] = useState([]);
 
-  const loadAndEditWarn = "При загрузке/обработке и сохранению больших изображений, могут возникнут пару-секундные задержки. бла бла бла, я хер знает что тут писать я же блин \"гуманитарий\" ..."
+  const loadAndEditWarn = "Внимание! При работе с файлами в большом разрешении могут наблюдаться задержки отрисовки изображения. Рекомендуется использовать изображения в умеренном качестве, в ином случае сохранять спокойствие."
   const ErrorValueOne = "Имя должно содержать от 3 до 16 символов."
   const ErrorValueTwo = "Имя может содержать только буквы, цифры и символы подчеркивания."
   const optionsList = [
@@ -185,7 +185,7 @@ const EditAddPost = () => {
           />
         </div>
         <div className={styles["wrapperBtn"]}>
-          <button>Сохранить</button>
+          <button className={styles["save"]}>Сохранить</button>
         </div>
       </div>
     </div>

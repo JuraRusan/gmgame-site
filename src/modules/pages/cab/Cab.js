@@ -19,7 +19,7 @@ const Cab = () => {
   const profileMenuMyTerritories = "Мои территории";
   const profileMenuMyMarker = "Мои метки";
   const profileMenuMyArticles = "Статьи";
-  const profileMenuMyGallery = "My gallery";
+  // const profileMenuMyGallery = "Моя галерея";
   const profileMenuMyPrizes = "Призы";
   const profileMenuMyChangePassword = "Изменить пароль";
   const profileMenuMyGoOut = "Выйти";
