@@ -10,7 +10,7 @@ import "./Admin-dashboard.scss";
 import "aos/dist/aos.css";
 
 const AdminDashboard = () => {
-  const searchParams = useSearchParams();
+  const [searchParams] = useSearchParams();
   let [searchParam, setSearchParam] = useState('Поиск работает по discord_id/nickname/discord_tag');
   let [user, setUser] = useState([]);
   let [tag, setTag] = useState({});
@@ -736,7 +736,7 @@ const AdminDashboard = () => {
                       } catch {
                         return log;
                       }
-                      return `${log.action} ${JSON.stringify(log.data)}`;
+                      return `${log.action} ${log.data ? JSON.stringify(log.data) : ''}`;
                     })()}/>
                   </th>
                   <th className="log-columns manager">
