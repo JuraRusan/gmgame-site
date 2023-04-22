@@ -104,9 +104,7 @@ const AdminDashboard = () => {
       setRegens([])
     });
   }
-
-  console.log('markers', markers)
-
+  
   const debouncedGetUser = useMemo(() => debounce(getUser, 300), []);
 
   useEffect(() => {
