@@ -49,7 +49,9 @@ const AdminDashboard = () => {
   }
 
   const handleOpenModalUd = (user) => {
-    setUserDetails(user);
+    const expirationDate = new Date(user.expiration_date);
+    const ud = {...user, ...{expirationDate: expirationDate}};
+    setUserDetails(ud);
     setModalUd(true);
   }
 
@@ -102,6 +104,8 @@ const AdminDashboard = () => {
       setRegens([])
     });
   }
+
+  console.log('markers', markers)
 
   const debouncedGetUser = useMemo(() => debounce(getUser, 300), []);
 
@@ -182,7 +186,13 @@ const AdminDashboard = () => {
 
     if (!input[id]) input[id] = {};
 
-    input[id] = {...input[id], ...{[event.target.id]: event.target.value}};
+    let valueDate = '';
+    if (event.target.id === 'expiration_date') {
+      valueDate = new Date(event.target.value).toISOString();
+      console.log(valueDate)
+    }
+
+    input[id] = {...input[id], ...{[event.target.id]: valueDate || event.target.value}};
 
     setInputUserDetails(input);
   }
@@ -399,9 +409,9 @@ const AdminDashboard = () => {
       {/*-----------------------------------------------------------------------------------------------*/}
       {/*-----------------------------------------------------------------------------------------------*/}
       {/*--- Таблица для меток пользователя или всех возможных меток ---*/}
-      {Object.keys(markers).forEach((username, i) => {
+      {Object.keys(markers).map((username, i) => {
         if (markers[username].length === 0) {
-          return;
+          return null;
         }
         return (
           <React.Fragment key={i}>
@@ -458,7 +468,7 @@ const AdminDashboard = () => {
                       className="in-manager"
                       defaultValue={el.z}/></th>
                   <th className="table-th-styling-columns action-table">
-                    <button className="manager-btn" type="submit" onClick={() => delMarker(el.id)}>Удалить</button>
+                    <button className="manager-btn" type="submit" onClick={() => delMarker(el.id, username)}>Удалить</button>
                     <button className="manager-btn" type="submit" onClick={() => updateMarker(el.id)}>Обновить</button>
                   </th>
                 </tr>
@@ -476,9 +486,9 @@ const AdminDashboard = () => {
       {/*-----------------------------------------------------------------------------------------------*/}
       {/*-----------------------------------------------------------------------------------------------*/}
       {/*--- Таблица для территорий пользователя или всех возможных территорий ---*/}
-      {Object.keys(territories).forEach((username, i) => {
+      {Object.keys(territories).map((username, i) => {
         if (territories[username].length === 0) {
-          return;
+          return null;
         }
         return (
           <React.Fragment key={i}>
@@ -540,7 +550,7 @@ const AdminDashboard = () => {
                       className="in-manager"
                       defaultValue={el.zStop}/></th>
                   <th className="table-th-styling-columns action-table">
-                    <button className="manager-btn" type="submit" onClick={() => delTerr(el.id)}>Удалить</button>
+                    <button className="manager-btn" type="submit" onClick={() => delTerr(el.id, username)}>Удалить</button>
                     <button className="manager-btn" type="submit" onClick={() => updateTerr(el.id)}>Обновить</button>
                   </th>
                 </tr>
@@ -678,7 +688,7 @@ const AdminDashboard = () => {
                   onChange={(e) => userDetailsChange(e, userDetails.user_id)}
                   className="input-redactor"
                   type="date"
-                  defaultValue={userDetails?.expiration_date}/>
+                  defaultValue={userDetails.expirationDate ? userDetails.expirationDate.toISOString().substring(0, 10) : ''}/>
                 <span className="viewRedactor">&#10043;</span>
               </div>
               {/*----- note -----*/}
