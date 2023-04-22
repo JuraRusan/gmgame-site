@@ -104,7 +104,7 @@ const AdminDashboard = () => {
       setRegens([])
     });
   }
-  
+
   const debouncedGetUser = useMemo(() => debounce(getUser, 300), []);
 
   useEffect(() => {
@@ -734,7 +734,7 @@ const AdminDashboard = () => {
               return (
                 <tr className="log-rows" key={i}>
                   <th className="log-columns time">
-                    <input className="log-input" defaultValue={el.log_date}/>
+                    <input className="log-input" defaultValue={new Date(el.log_date).toLocaleString()}/>
                   </th>
                   <th className="log-columns log">
                     <input className="log-input" defaultValue={(() => {
