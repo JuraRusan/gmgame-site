@@ -649,6 +649,7 @@ const Faq = () => {
 
   const [currentTab, setCurrentTab] = useState(0);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const selectedTab = useMemo(() => tabsFaqList[currentTab], [currentTab]);
 
   const handleTabClick = (id) => {

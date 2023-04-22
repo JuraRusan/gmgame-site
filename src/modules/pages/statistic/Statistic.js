@@ -24,7 +24,7 @@ const Statistic = () => {
     return num1 - num2;
   };
 
-  const [columns, setColumnDefs] = useState([
+  const [columns] = useState([
     { headerName: 'Ник', field: 'name', filter: true, sortable: true },
     { headerName: 'Активное время игры', field: 'active_playtime', sortable: true, valueFormatter: params => timeFormat(params), comparator: numberSort},
     { headerName: 'АФК', field: 'afk', sortable: true,  valueFormatter: params => timeFormat(params), comparator: numberSort},
@@ -61,15 +61,15 @@ const Statistic = () => {
       h = 0;
     }
 
-    if (d == 0 && h > 0) {
+    if (d === 0 && h > 0) {
       return pad(h) + "ч " + pad(m) + "м";
     } 
 
-    if (d == 0 && h == 0 && m > 0) {
+    if (d === 0 && h === 0 && m > 0) {
       return pad(m) + "м";
     }
 
-    if (d == 0 && h == 0 && m == 0) {
+    if (d === 0 && h === 0 && m === 0) {
       return "< 00м";
     }
 

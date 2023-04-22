@@ -1,6 +1,6 @@
 import React, {useEffect} from "react";
 import AOS from "aos";
-import {modsArray} from "./MapsArray";
+// import {modsArray} from "./MapsArray";
 
 import "./Mods.scss";
 import "aos/dist/aos.css";
