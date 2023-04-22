@@ -10,8 +10,7 @@ import "./Admin-dashboard.scss";
 import "aos/dist/aos.css";
 
 const AdminDashboard = () => {
-
-  const [searchParams, setSearchParams] = useSearchParams();
+  const searchParams = useSearchParams();
   let [searchParam, setSearchParam] = useState('Поиск работает по discord_id/nickname/discord_tag');
   let [user, setUser] = useState([]);
   let [tag, setTag] = useState({});
@@ -87,11 +86,11 @@ const AdminDashboard = () => {
       let tagUser = {};
       let terrUser = {};
 
-      response.map(user => {
+      response.forEach( user => {
         try {
           tagUser[user.username] = JSON.parse(user.tag);
         } catch (err) {
-          console.log(err)
+          console.log(err);
           console.log(user.tag);
         }
         makersUser[user.username] = user.markers;
@@ -110,6 +109,7 @@ const AdminDashboard = () => {
     if (searchParams.get("user_id")) {
       getUser(searchParams.get("user_id"));
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const getMarkers = () => {
@@ -228,7 +228,7 @@ const AdminDashboard = () => {
   }
 
   const actionUser = () => {
-    Object.keys(action).map(user => {
+    Object.keys(action).forEach(user => {
       sendRequest(
         '/api/admin/action_user',
         'POST',

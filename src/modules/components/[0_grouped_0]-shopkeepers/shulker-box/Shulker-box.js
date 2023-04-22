@@ -1,8 +1,5 @@
-import React from "react";
-
 import "./Shulker-box.scss";
 import OneItem from "../one-item/One-item.js";
-import OneItemNone from "../one-item/One-item-none.js";
 
 const ShulkerBox = (props) => {
   return (
