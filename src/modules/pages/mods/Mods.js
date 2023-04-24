@@ -28,18 +28,8 @@ const Mods = () => {
         {/*        </div>*/}
         {/*      </div>*/}
         {/*      <div className="download-box">*/}
-        {/*        {items.curseForgeBoolean.valueOf()*/}
-        {/*          ?*/}
-        {/*          <a className="link-download" href={items.hrefCurseForge} target="_blank" rel="noreferrer">Download CurseForge &#129133;</a>*/}
-        {/*          :*/}
-        {/*          <></>*/}
-        {/*        }*/}
-        {/*        {items.modrinthBoolean.valueOf()*/}
-        {/*          ?*/}
-        {/*          <a className="link-download" href={items.hrefModrinth} target="_blank" rel="noreferrer">Download Modrinth &#129133;</a>*/}
-        {/*          :*/}
-        {/*          <></>*/}
-        {/*        }*/}
+        {/*        {items.hrefModrinth.length > 1 && <a className="link-download" href={items.hrefModrinth} target="_blank" rel="noreferrer">Download Modrinth &#129133;</a>}*/}
+        {/*        {items.hrefCurseForge.length > 1 && <a className="link-download" href={items.hrefCurseForge} target="_blank" rel="noreferrer">Download CurseForge &#129133;</a>}*/}
         {/*      </div>*/}
         {/*    </div>*/}
         {/*  )}*/}

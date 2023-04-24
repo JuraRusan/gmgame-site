@@ -16,7 +16,7 @@
     margin: 0 auto;
   }
 
-  .world-name {
+  .worldsName {
     width: 100%;
     height: 30px;
     margin-top: 10px;
@@ -25,19 +25,17 @@
     font-weight: 400;
     color: $color-3;
     text-align: center;
+    font-family: $fontCustom2;
   }
 
-  .hr-90 {
-    margin-left: auto;
-    margin-top: 15px;
-    margin-right: auto;
-    margin-bottom: 15px;
+  .hr90deg {
+    margin: 15px auto;
     width: auto;
     height: 90px;
     border-left: 2px solid $color-3;
   }
 
-  .world-img-text {
+  .worldsImagesText {
     display: flex;
     flex-direction: column;
     min-width: 325px;
@@ -53,7 +51,7 @@
     }
   }
 
-  .inf-text {
+  .information {
     width: auto;
     max-width: 300px;
     min-width: 250px;
@@ -74,7 +72,7 @@
   }
 }
 
-.world-img-text:hover .inf-text {
+.worldsImagesText:hover .information {
   opacity: 1;
   top: 0;
 }
@@ -97,15 +95,15 @@
       border: 4px solid $color-3;
     }
 
-    .world-name {
+    .worldsName {
       font-size: 26px;
     }
 
-    .hr-90 {
+    .hr90deg {
       height: 78px;
     }
 
-    .world-img-text {
+    .worldsImagesText {
       min-width: 300px;
       max-width: 350px;
 
@@ -115,7 +113,7 @@
       }
     }
 
-    .inf-text {
+    .information {
       font-size: 15px;
     }
   }
@@ -135,15 +133,15 @@
       height: 22px;
     }
 
-    .world-name {
+    .worldsName {
       font-size: 24px;
     }
 
-    .hr-90 {
+    .hr90deg {
       height: 70px;
     }
 
-    .world-img-text {
+    .worldsImagesText {
       min-width: 300px;
 
       img {
@@ -162,15 +160,15 @@
       border: 3px solid $color-3;
     }
 
-    .world-name {
+    .worldsName {
       font-size: 22px;
     }
 
-    .hr-90 {
+    .hr90deg {
       height: 65px;
     }
 
-    .world-img-text {
+    .worldsImagesText {
       width: 100%;
       max-width: 300px;
       margin-bottom: 15px;
@@ -181,7 +179,7 @@
         margin: 0 auto;
       }
 
-      .inf-text {
+      .information {
         font-size: 14px;
         opacity: 1;
         top: 0;
@@ -196,21 +194,21 @@
     min-width: auto;
     max-width: none;
 
-    .hr-90 {
+    .hr90deg {
       height: 45px;
     }
 
-    .world-name {
+    .worldsName {
       font-size: 20px;
     }
 
-    .world-img-text {
+    .worldsImagesText {
       margin: 5px;
       margin-bottom: 15px;
       max-width: none;
       width: auto;
 
-      .inf-text {
+      .information {
         margin-top: 16px;
         max-width: none;
         min-width: auto;

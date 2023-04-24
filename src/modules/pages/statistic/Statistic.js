@@ -1,18 +1,20 @@
-import React, {useEffect, useState, useMemo} from "react";
+import classNames from "classnames";
+import React, {useEffect, useMemo, useState} from "react";
 import AOS from "aos";
 import {useAxios} from '../../../DataProvider';
 import Preload from "../../components/preloader/Preload";
-import { AgGridReact } from 'ag-grid-react';
+import {AgGridReact} from 'ag-grid-react';
 
 import 'ag-grid-community/styles/ag-grid.css';
 import 'ag-grid-community/styles/ag-theme-alpine.css';
 
-import "./Statistic.scss";
+import styles from "./Statistic.module.scss";
+import "../../custon-modules/ag-grid.scss";
 import "aos/dist/aos.css";
 
 const Statistic = () => {
-  const containerStyle = useMemo(() => ({ width: '100%', height: '100%' }), []);
-  const gridStyle = useMemo(() => ({ height: '100%', width: '100%' }), []);
+  const containerStyle = useMemo(() => ({width: '100%', height: '100%'}), []);
+  const gridStyle = useMemo(() => ({height: '100%', width: '100%'}), []);
 
   const resParams = useAxios(
     "/api/get_statistics",
@@ -25,13 +27,52 @@ const Statistic = () => {
   };
 
   const [columns] = useState([
-    { headerName: 'Ник', field: 'name', filter: true, sortable: true },
-    { headerName: 'Активное время игры', field: 'active_playtime', sortable: true, valueFormatter: params => timeFormat(params), comparator: numberSort},
-    { headerName: 'АФК', field: 'afk', sortable: true,  valueFormatter: params => timeFormat(params), comparator: numberSort},
-    { headerName: 'Смерти', field: 'deaths', sortable: true, comparator: numberSort },
-    { headerName: 'Убито мобов', field: 'mobs', sortable: true, comparator: numberSort },
-    { headerName: 'Сломано блоков', field: 'broken', sortable: true, comparator: numberSort, valueFormatter: ({value}) => !value ? 0 : value },
-    { headerName: 'Установлено блоков', field: 'supplied', sortable: true, comparator: numberSort, valueFormatter: ({value}) => !value ? 0 : value },
+    {
+      headerName: 'Ник',
+      field: 'name',
+      filter: true,
+      sortable: true
+    },
+    {
+      headerName: 'Активное время игры',
+      field: 'active_playtime',
+      sortable: true,
+      valueFormatter: params => timeFormat(params),
+      comparator: numberSort
+    },
+    {
+      headerName: 'АФК',
+      field: 'afk',
+      sortable: true,
+      valueFormatter: params => timeFormat(params),
+      comparator: numberSort
+    },
+    {
+      headerName: 'Смерти',
+      field: 'deaths',
+      sortable: true,
+      comparator: numberSort
+    },
+    {
+      headerName: 'Убито мобов',
+      field: 'mobs',
+      sortable: true,
+      comparator: numberSort
+    },
+    {
+      headerName: 'Сломано блоков',
+      field: 'broken',
+      sortable: true,
+      comparator: numberSort,
+      valueFormatter: ({value}) => !value ? 0 : value
+    },
+    {
+      headerName: 'Установлено блоков',
+      field: 'supplied',
+      sortable: true,
+      comparator: numberSort,
+      valueFormatter: ({value}) => !value ? 0 : value
+    },
   ]);
 
   useEffect(() => {
@@ -52,18 +93,18 @@ const Statistic = () => {
     let m = Math.round((value - d * cd - h * ch) / 60000);
     const pad = (n) => n < 10 ? '0' + n : n;
 
-    if( m === 60 ){
+    if (m === 60) {
       h++;
       m = 0;
     }
-    if( h === 24 ){
+    if (h === 24) {
       d++;
       h = 0;
     }
 
     if (d === 0 && h > 0) {
       return pad(h) + "ч " + pad(m) + "м";
-    } 
+    }
 
     if (d === 0 && h === 0 && m > 0) {
       return pad(m) + "м";
@@ -175,12 +216,12 @@ const Statistic = () => {
     ctrlC: 'Ctrl+C',
     paste: 'Вставить',
     ctrlV: 'Ctrl+V'
-}
+  }
 
   return (
-    <div className="main-statistic" data-aos="zoom-in">
-      <div className="statistic">
-        <h4 className="statistic-title font-custom-2">Статистика игроков сервера</h4>
+    <div className={classNames(styles["mainStatistic"])} data-aos="zoom-in">
+      <div className={classNames(styles["statistic"])}>
+        <h4 className={classNames(styles["title"])}>Статистика игроков сервера</h4>
         <div style={containerStyle} data-aos="zoom-in">
           <div style={gridStyle} className="ag-theme-alpine-dark">
             <AgGridReact
@@ -190,8 +231,7 @@ const Statistic = () => {
               pagination={true}
               paginationPageSize={20} // Если меняем это значение то, нужно еще менять значение в файле стилей на строке 62, а именно в тексте &:nth-child(20)
               localeText={localText}
-            >
-            </AgGridReact>
+            />
           </div>
         </div>
       </div>

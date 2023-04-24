@@ -1,13 +1,13 @@
+import classNames from "classnames";
 import React, {useEffect} from "react";
 import AOS from "aos";
-
-import "./General.scss";
-import "aos/dist/aos.css";
-
 import Button from "../../components/button/Button.js";
 import Mode from "../../components/[0_grouped_0]-Generals/mode/Mode.js";
 import World from "../../components/[0_grouped_0]-Generals/world/World.js";
 import SvgHoverMe from "../../../bases/icons/SvgHoverMe.js";
+
+import styles from "./General.module.scss";
+import "aos/dist/aos.css";
 
 const General = () => {
 
@@ -29,7 +29,7 @@ const General = () => {
 
   const DivisionIntoWorlds = "Разделение на миры";
   const worldNameRes = "Ресурсный";
-  const worldNameGmgame = "Основной";
+  const worldNameGMGame = "Основной";
   const worldNameFarm = "Фермерский";
 
   const survival = "Выживание";
@@ -37,7 +37,7 @@ const General = () => {
   const creative = "Креатив";
 
   const serverInformationRes = "Здесь добываются все необходимые ресурсы. Мир можно копать где и как угодно. Вайпается каждое обновление майнкрафта.";
-  const serverInformationGmgame = "Мир со всеми постройками и проектами. Игроки выбирают территорию и занимаются строительством. Вайпов нет, но при обновлении генерации мир расширяют.";
+  const serverInformationGMGame = "Мир со всеми постройками и проектами. Игроки выбирают территорию и занимаются строительством. Вайпов нет, но при обновлении генерации мир расширяют.";
   const serverInformationFarm = "Все механизмы и фермы с редстоуном строятся здесь, чтобы не нагружать основной сервер. Не вайпается и расширяется по необходимости.";
 
   const serverModeServer = "режимы";
@@ -46,73 +46,81 @@ const General = () => {
   const creativeInfo = "Креатив с WorldEdit и другими упрощающими жизнь инструментами. Без вайтлиста.";
 
   return (
-    <div className="main">
-      <div className="row-1">
-        <div className="main-content">
-          <h1 className="main-h1 font-custom-1" data-aos="zoom-in">
-            <span className="colored-title-span-1">G</span>
-            <span className="colored-title-span-2">M</span>GAME
+    <div className={classNames(styles["main"])}>
+
+      <div className={classNames(styles["rowContainerNumberOne"])}>
+        <div className={classNames(styles["mainContent"])}>
+          <h1 className={classNames(styles["mainTitleH1"])} data-aos="zoom-in">
+            <span className={classNames(styles["coloredTitleSpanOne"])}>G</span>
+            <span className={classNames(styles["coloredTitleSpanTwo"])}>M</span>GAME
           </h1>
-          <h3 className="main-h3" data-aos="zoom-in">{serverInformation1}</h3>
-          <h3 className="main-h3" data-aos="zoom-in">{serverInformation2}</h3>
-          <div className="button-container" data-aos="zoom-in">
+          <h3 className={classNames(styles["mainTextH3"])} data-aos="zoom-in">{serverInformation1}</h3>
+          <h3 className={classNames(styles["mainTextH3"])} data-aos="zoom-in">{serverInformation2}</h3>
+          <div className={classNames(styles["buttonContainerWrapper"])} data-aos="zoom-in">
             <Button/>
           </div>
         </div>
-        <div className="lin-bot"></div>
+        <div className={classNames(styles["lineNoContentBottom"])}></div>
       </div>
-      <div className="row-2">
-        <div className="content-info" data-aos="zoom-in">
-          <div className="info-style">
-            <h2 className="h2-info font-custom-3 h2-left">{serverBlockTitleConcept}</h2>
-            <h4 className="h4-info h4-left">{serverConcept}</h4>
+
+      <div className={classNames(styles["rowContainerNumberTwo"])}>
+        <div className={classNames(styles["contentInformation"])} data-aos="zoom-in">
+          <div className={classNames(styles["informationTextDivStyle"])}>
+            <h2 className={classNames(styles["h2Information"], styles["leftH2"])}>{serverBlockTitleConcept}</h2>
+            <h4 className={classNames(styles["h4Information"], styles["leftH4"])}>{serverConcept}</h4>
           </div>
-          <div className="info-img">
-            <img className='info-img-wight' src="./site_assets/pages/webp/1.webp" alt="none"/>
-          </div>
-        </div>
-        <div className="content-info rev" data-aos="zoom-in">
-          <div className="info-img">
-            <img className='info-img-wight' src="./site_assets/pages/webp/2.webp" alt="none"/>
-          </div>
-          <div className="info-style">
-            <h2 className="h2-info font-custom-3 h2-right">{serverBlockTitleCommunity}</h2>
-            <h4 className="h4-info h4-right">{serverCommunity}</h4>
+          <div className={classNames(styles["informationWrapperImage"])}>
+            <img className={classNames(styles["informationImageStyle"])} src="./site_assets/pages/webp/1.webp" alt=""/>
           </div>
         </div>
-        <div className="content-info" data-aos="zoom-in">
-          <div className="info-style">
-            <h2 className="h2-info font-custom-3 h2-left">{serverBlockTitleGameProcess}</h2>
-            <h4 className="h4-info h4-left">{serverGameProcess}</h4>
+        <div className={classNames(styles["contentInformation"], styles["reverse"])} data-aos="zoom-in">
+          <div className={classNames(styles["informationWrapperImage"])}>
+            <img className={classNames(styles["informationImageStyle"])} src="./site_assets/pages/webp/2.webp" alt=""/>
           </div>
-          <div className="info-img">
-            <img className='info-img-wight' src="./site_assets/pages/webp/3.webp" alt="none"/>
+          <div className={classNames(styles["informationTextDivStyle"])}>
+            <h2 className={classNames(styles["h2Information"], styles["rightH2"])}>{serverBlockTitleCommunity}</h2>
+            <h4 className={classNames(styles["h4Information"], styles["rightH4"])}>{serverCommunity}</h4>
+          </div>
+        </div>
+        <div className={classNames(styles["contentInformation"])} data-aos="zoom-in">
+          <div className={classNames(styles["informationTextDivStyle"])}>
+            <h2 className={classNames(styles["h2Information"], styles["leftH2"])}>{serverBlockTitleGameProcess}</h2>
+            <h4 className={classNames(styles["h4Information"], styles["leftH4"])}>{serverGameProcess}</h4>
+          </div>
+          <div className={classNames(styles["informationWrapperImage"])}>
+            <img className={classNames(styles["informationImageStyle"])} src="./site_assets/pages/webp/3.webp" alt=""/>
           </div>
         </div>
       </div>
-      <div className="row-3">
-        <div className="lin-top"></div>
-        <div className="tit-block" data-aos="zoom-in">
-          <h2 className="title-h3 font-custom-3">{DivisionIntoWorlds}</h2>
-          <h4 className="title-h4">{serverInformationTps}</h4>
+
+      <div className={classNames(styles["rowContainerNumberThree"])}>
+        <div className={classNames(styles["lineNoContentTop"])}></div>
+        <div className={classNames(styles["titleBlock"])} data-aos="zoom-in">
+          <h2 className={classNames(styles["titleH3"])}>{DivisionIntoWorlds}</h2>
+          <h4 className={classNames(styles["titleH4"])}>{serverInformationTps}</h4>
         </div>
-        <div className="block-w" data-aos="zoom-in">
-          <div className="hover-me-block"><SvgHoverMe width="100%" height="100%" color="#292929"/></div>
+        <div className={classNames(styles["blockWorlds"])} data-aos="zoom-in">
+          <div className={classNames(styles["hoverMeBlock"])}>
+            <SvgHoverMe width="100%" height="100%" color="#292929"/>
+          </div>
           <World name={worldNameRes} src="./site_assets/pages/webp/4.webp" inf={serverInformationRes}/>
-          <World name={worldNameGmgame} src="./site_assets/pages/webp/5.webp" inf={serverInformationGmgame}/>
+          <World name={worldNameGMGame} src="./site_assets/pages/webp/5.webp" inf={serverInformationGMGame}/>
           <World name={worldNameFarm} src="./site_assets/pages/webp/6.webp" inf={serverInformationFarm}/>
         </div>
-        <div className="lin-bot"></div>
+        <div className={classNames(styles["lineNoContentBottom"])}></div>
       </div>
-      <div className="row-4">
-        <h3 className="mode-title font-custom-3" data-aos="zoom-in">{serverModeServer}</h3>
-        <div className="mode">
+
+      <div className={classNames(styles["rowContainerNumberFour"])}>
+        <h3 className={classNames(styles["modeTitle"])} data-aos="zoom-in">{serverModeServer}</h3>
+        <div className={classNames(styles["mode"])}>
           <Mode name={survival} info={survivalInfo}/>
           <Mode name={skyBlock} info={skyBlockInfo}/>
           <Mode name={creative} info={creativeInfo}/>
         </div>
       </div>
-      <div className="lin-top-two"></div>
+
+      <div className={classNames(styles["lineNoContentTopTwo"])}></div>
+
     </div>
   );
 };

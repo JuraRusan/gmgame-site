@@ -1,7 +1,8 @@
+import classNames from "classnames";
 import React, {useEffect} from "react";
 import AOS from "aos";
 
-import "./Mode.scss";
+import styles from "./Mode.module.scss";
 import "aos/dist/aos.css";
 
 const Mode = (props) => {
@@ -11,12 +12,12 @@ const Mode = (props) => {
   }, []);
 
   return (
-    <div className="mode-block" data-aos="zoom-in">
-      <div className="mode-name">
-        <h3 className="font-custom-3">{props.name}</h3>
+    <div className={classNames(styles["modeBlock"])} data-aos="zoom-in">
+      <div className={classNames(styles["modeNameWrapper"])}>
+        <h3 className={classNames(styles["nameH3"])}>{props.name}</h3>
       </div>
-      <div className="circle"></div>
-      <h4 className="h4-mode">{props.info}</h4>
+      <div className={classNames(styles["circle"])}></div>
+      <h4 className={classNames(styles["modeInformationH4"])}>{props.info}</h4>
     </div>
   );
 };

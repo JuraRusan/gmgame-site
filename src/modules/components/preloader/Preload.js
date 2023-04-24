@@ -1,12 +1,12 @@
+import classNames from "classnames";
 import React from "react";
 import {Triangle} from 'react-loader-spinner';
 
-import "./Preload.scss";
-
+import styles from "./Preload.module.scss";
 
 function Preload() {
   return (
-    <div className="preloader-box">
+    <div className={classNames(styles["preloaderWrapper"])}>
       <Triangle wrapperClass="preloader"/>
     </div>
   );

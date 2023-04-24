@@ -5,6 +5,7 @@ import {array} from "../../../pages/gallery/GalleryArray";
 import SvgAddMarker from "../../../../bases/icons/SvgAddMarker";
 
 import styles from "./Gallery.module.scss";
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import 'react-image-picker-editor/dist/index.css'
 
 const Gallery = () => {

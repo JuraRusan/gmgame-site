@@ -1,0 +1,72 @@
+@import "src/Variables.scss";
+
+*::-webkit-scrollbar {
+  width: 8px !important;
+  background-color: rgb(32, 42, 48) !important;
+}
+
+.ag-root-wrapper {
+  border: 1px solid $color-22;
+  background: $color-7;
+}
+
+.ag-header {
+  background-color: $color-7;
+  border-bottom-color: $color-22;
+}
+
+.ag-paging-panel {
+  border-top-color: $color-22;
+}
+
+.ag-header-cell {
+  transition: all 0.35s ease;
+
+  &:hover {
+    color: $color-8 !important;
+  }
+}
+
+.ag-row {
+  border-bottom: 1px solid $color-22;
+
+  &:nth-child(even) {
+    background-color: lighten($color-7, 1);
+  }
+
+  &:nth-child(odd) {
+    background-color: lighten($color-7, 2);
+  }
+
+  &:nth-child(20) {
+    border-bottom: none;
+  }
+}
+
+.ag-paging-button {
+  transition: all 0.35s ease;
+
+  &:hover {
+    color: $color-8;
+  }
+}
+
+.ag-disabled {
+  transition: all 0.35s ease;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.ag-center-cols-viewport {
+  overflow-x: hidden;
+}
+
+.ag-icon-menu:hover {
+  transition: all 0.35s ease;
+
+  &:hover {
+    color: $color-8;
+  }
+}

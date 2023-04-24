@@ -8,6 +8,7 @@ import SvgHeart from "../../../bases/icons/SvgHeart";
 import Particles from "../../components/particles/Particles";
 
 import styles from "./Gallery.module.scss";
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import "../../custon-modules/Image-gallery.scss";
 import "aos/dist/aos.css";
 
