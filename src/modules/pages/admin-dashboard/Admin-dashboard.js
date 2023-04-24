@@ -695,6 +695,8 @@ const AdminDashboard = () => {
                 <textarea
                   id="note"
                   className="input-redactor"
+                  rows="4"
+                  cols="1000"
                   onChange={(e) => userDetailsChange(e, userDetails.user_id)}
                   defaultValue={userDetails?.note}/>
                 <span className="viewRedactor">&#10043;</span>

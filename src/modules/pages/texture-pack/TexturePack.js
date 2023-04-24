@@ -30,7 +30,7 @@ const TexturePack = () => {
           <h4 className="info-h4">
             Без модов он работать не будет. <Link to={'/mods'} className="mods-link-page">Моды &#129133;</Link>
           </h4>
-          <h4 className="info-h4">По вопросам обращаться к игрокам: <span>Каким игрокам???</span></h4>
+          <h4 className="info-h4">По вопросам обращаться к игрокам: <span>_Kerubifi_, SoftPanda3</span></h4>
         </div>
         <div className="download-box">
           <a href="./texturePack" className="download-files"
