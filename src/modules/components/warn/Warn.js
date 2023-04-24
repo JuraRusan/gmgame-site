@@ -1,14 +1,16 @@
+import classNames from "classnames";
 import React from "react";
-
-import "./Warn.scss";
-
 import SvgWarn from "../../../bases/icons/SvgWarn.js";
+
+import styles from "./Warn.module.scss";
 
 const Warn = (props) => {
   return (
-    <div className="warn-block">
-      <span className="span-war"><SvgWarn width="24px" height="24px" color="#ffb400"/></span>
-      <h4 className="war-h4-auth">{props.inf}</h4>
+    <div className={classNames(styles["warnBlock"])}>
+      <span className={classNames(styles["spanIcon"])}>
+        <SvgWarn width="24px" height="24px" color="#ffb400"/>
+      </span>
+      <h4 className={classNames(styles["warnInformation"])}>{props.inf}</h4>
     </div>
   );
 };

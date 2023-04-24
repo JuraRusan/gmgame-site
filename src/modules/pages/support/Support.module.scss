@@ -1,6 +1,6 @@
 @import "../../../Variables.scss";
 
-.main-support {
+.mainSupport {
   display: flex;
   flex-direction: column;
   width: auto;
@@ -16,15 +16,16 @@
     padding-top: 50px;
 
 
-    .title-support {
+    .titleSupport {
       font-size: 32px;
       font-weight: 400;
       color: $color-3;
       margin: 0 auto;
       text-align: center;
+      font-family: $fontCustom2;
     }
 
-    .support-link {
+    .supportLink {
       font-weight: 400;
       width: auto;
       max-width: 350px;
@@ -47,7 +48,7 @@
       }
     }
 
-    .don-block {
+    .donatBlock {
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -55,7 +56,6 @@
       min-height: 480px;
       width: auto;
       margin: 25px auto 0 auto;
-
 
 
       .text {
@@ -67,7 +67,7 @@
         height: 100%;
         margin: auto 0;
 
-        .sub-title-support {
+        .subTitleSupport {
           display: flex;
           font-size: 16px;
           font-weight: 400;
@@ -79,14 +79,14 @@
           width: 100%;
         }
 
-        .link {
+        .linkWrapper {
           display: flex;
           flex-direction: column;
           margin: 0;
 
         }
 
-        .footer-support {
+        .footerSupport {
           font-size: 16px;
           font-weight: 400;
           color: $color-3;
@@ -95,14 +95,14 @@
         }
       }
 
-      .img-block-wight {
+      .imgBlockWrapper {
         display: flex;
         width: 100%;
         max-width: 750px;
         height: 100%;
         margin: auto 0;
 
-        .info-img-wight {
+        .image {
           max-width: 550px;
           max-height: 550px;
           margin: 0 auto;
@@ -110,7 +110,7 @@
       }
     }
 
-    .block-title-sp {
+    .titleAll {
       width: 100%;
       display: flex;
       height: 35px;
@@ -121,9 +121,10 @@
       font-size: 24px;
       justify-content: center;
       margin: 10px auto;
+      font-family: $fontCustom2;
     }
 
-    .monitoring-block {
+    .monitoringBlock {
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -131,7 +132,7 @@
       width: 80%;
       margin: 100px auto 0 auto;
 
-      .monitoring-card {
+      .monitoringCard {
         width: 240px;
         height: 100px;
         display: flex;
@@ -150,6 +151,7 @@
         font-size: 18px;
         font-weight: 400;
         line-height: 1.25;
+        font-family: $fontCustom2;
 
         &:active, &:visited {
           outline: none;
@@ -162,15 +164,16 @@
       }
     }
 
-    .partner-block {
+    .partnerBlock {
       display: flex;
       flex-direction: column;
       margin-top: 50px;
 
-      .support-link {
+      .supportLink {
         text-align: center;
         width: auto;
         margin: 0 auto 7px auto;
+        font-family: $fontCustom2;
       }
 
       .superHub {
@@ -188,18 +191,18 @@
           background: $color-21;
         }
 
-        .logo-line-1 {
+        .partnerLineOne {
           display: flex;
           width: 130px;
 
-          .superhub-logo {
+          .superHubLogo {
             width: 100px;
             height: 100px;
             margin: 15px;
           }
         }
 
-        .logo-line-2 {
+        .partnerLineTwo {
           display: flex;
           flex-direction: column;
           width: 100%;
@@ -213,9 +216,10 @@
             margin: 7px 0 0 0;
             text-align: center;
             font-size: 18px;
+            font-family: $fontCustom2;
           }
 
-          .sub-name {
+          .subText {
             color: $color-3;
             font-weight: 400;
             width: 100%;
@@ -235,9 +239,9 @@
 }
 
 @media screen and (max-width: 1400px) {
-  .main-support {
+  .mainSupport {
     .support {
-      .don-block {
+      .donatBlock {
         .text {
           margin: 0 15px;
         }
@@ -250,21 +254,21 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .main-support {
+  .mainSupport {
     .support {
       padding-top: 40px;
 
-      .don-block {
+      .donatBlock {
         .text {
           margin: 0 10px;
 
-          .sub-title-support {
+          .subTitleSupport {
             line-height: 1.35;
           }
         }
 
-        .img-block-wight {
-          .info-img-wight {
+        .imgBlockWrapper {
+          .image {
             max-width: 450px;
             max-height: 450px;
           }
@@ -275,23 +279,23 @@
 }
 
 @media screen and (max-width: 960px) {
-  .main-support {
+  .mainSupport {
     .support {
-      .don-block {
+      .donatBlock {
         flex-wrap: wrap;
 
         .text {
           max-width: 80%;
 
-          .sub-title-support {
+          .subTitleSupport {
             line-height: 1.5;
           }
         }
 
-        .img-block-wight {
+        .imgBlockWrapper {
           max-width: 80%;
 
-          .info-img-wight {
+          .image {
             width: auto;
             max-width: none;
             min-width: 0;
@@ -304,28 +308,28 @@
 }
 
 @media screen and (max-width: 768px) {
-  .main-support {
+  .mainSupport {
     .support {
-      .don-block {
+      .donatBlock {
         .text {
           max-width: 94%;
         }
 
-        .img-block-wight {
+        .imgBlockWrapper {
           max-width: 94%;
 
-          .info-img-wight {
+          .image {
             max-height: 480px;
           }
         }
       }
 
-      .monitoring-block {
+      .monitoringBlock {
         width: 94%;
         margin: 65px auto 0 auto;
       }
 
-      .partner-block {
+      .partnerBlock {
         .superHub {
           width: 94%;
           margin: 15px auto 0 auto;
@@ -336,19 +340,19 @@
 }
 
 @media screen and (max-width: 640px) {
-  .main-support {
+  .mainSupport {
     .support {
-      .title-support {
+      .titleSupport {
         font-size: 28px;
       }
 
-      .don-block {
-        .img-block-wight {
+      .donatBlock {
+        .imgBlockWrapper {
           width: 100%;
           min-width: auto;
           max-width: none;
 
-          .info-img-wight {
+          .image {
             height: auto;
             width: auto;
             max-height: 465px;
@@ -364,63 +368,63 @@
 }
 
 @media screen and (max-width: 480px) {
-  .main-support {
+  .mainSupport {
     .support {
-      .title-support {
+      .titleSupport {
         font-size: 24px;
       }
 
-      .don-block {
+      .donatBlock {
         .text {
           font-size: 14px;
 
-          .sub-title-support {
+          .subTitleSupport {
             font-size: 14px;
           }
         }
 
-        .img-block-wight {
-          .info-img-wight {
+        .imgBlockWrapper {
+          .image {
             max-width: 350px;
           }
         }
       }
 
-      .monitoring-block {
-        .block-title-sp {
+      .monitoringBlock {
+        .titleAll {
           font-size: 20px;
         }
 
-        .monitoring-card {
+        .monitoringCard {
           width: 80%;
           font-size: 16px;
           height: 75px;
         }
       }
 
-      .partner-block {
-        .block-title-sp {
+      .partnerBlock {
+        .titleAll {
           font-size: 20px;
         }
 
         .superHub {
-          .logo-line-1 {
+          .partnerLineOne {
             width: 90px;
 
-            .superhub-logo {
+            .superHubLogo {
               width: 60px;
               height: 60px;
             }
           }
 
-          .logo-line-2 {
+          .partnerLineTwo {
             font-size: 14px;
 
             .name {
               font-size: 16px;
             }
 
-            .sub-name {
+            .subText {
               font-size: 14px;
             }
           }
@@ -431,11 +435,11 @@
 }
 
 @media screen and (max-width: 360px) {
-  .main-support {
+  .mainSupport {
     .support {
-      .don-block {
-        .img-block-wight {
-          .info-img-wight {
+      .donatBlock {
+        .imgBlockWrapper {
+          .image {
             max-width: 250px;
           }
         }

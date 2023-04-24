@@ -8,6 +8,7 @@ import OneSuggestions from "../../components/[0_grouped_0]-shopkeepers/one-sugge
 import Warn from "../../components/warn/Warn";
 import {LazyLoadImage} from 'react-lazy-load-image-component';
 import lodash from 'lodash';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function isItemInteractive(item) {
   const items_to_show = [

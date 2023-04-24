@@ -1,0 +1,112 @@
+@import "../../../Variables.scss";
+
+.mainStatistic {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+
+  .statistic {
+    width: 100%;
+    max-width: 1410px;
+    height: 1020px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    .title {
+      font-size: 32px;
+      font-weight: 400;
+      color: $color-3;
+      margin: 25px auto;
+      font-family: $fontCustom2;
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1400px) {
+  .mainStatistic {
+    .statistic {
+      width: auto;
+      margin: 0 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .mainStatistic {
+    .statistic {
+      margin: 0 45px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .mainStatistic {
+    .statistic {
+      margin: 0 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .mainStatistic {
+    .statistic {
+      .title {
+        font-size: 28px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainStatistic {
+    .statistic {
+      margin: 0 20px;
+
+      .title {
+        font-size: 26px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .mainStatistic {
+    .statistic {
+      margin: 0 15px;
+
+      .title {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mainStatistic {
+    .statistic {
+      margin: 0 10px;
+
+      .title {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .mainStatistic {
+    .statistic {
+      margin: 0 8px;
+
+      .title {
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+  }
+}
