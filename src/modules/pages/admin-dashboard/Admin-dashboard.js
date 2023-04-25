@@ -304,7 +304,7 @@ const AdminDashboard = () => {
       {}
     ).then(response => {
       if (!response.length > 0) {
-        alert.error('Нечего регенеть');
+        alert.error('Список пуст');
         return;
       }
       setRegens(response)
