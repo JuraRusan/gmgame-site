@@ -7,7 +7,9 @@ import styles from "./Preload.module.scss";
 function Preload() {
   return (
     <div className={classNames(styles["preloaderWrapper"])}>
-      <Triangle wrapperClass="preloader"/>
+      <div className={classNames(styles["preloader"])}>
+        <Triangle/>
+      </div>
     </div>
   );
 }
