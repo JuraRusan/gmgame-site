@@ -87,6 +87,9 @@ const AdminDashboard = () => {
       let makersUser = {};
       let tagUser = {};
       let terrUser = {};
+      setTag({});
+      setMarkers({});
+      setTerritories({});
 
       response.forEach( user => {
         try {
