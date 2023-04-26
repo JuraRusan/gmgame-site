@@ -150,6 +150,10 @@
       width: 200px !important;
     }
 
+    .action-table-regen {
+      width: 300px !important;
+    }
+
     .age-stat-table {
       width: 100px !important;
     }
@@ -161,6 +165,21 @@
       font-size: 14px;
       text-align: start;
       padding: 0 10px;
+    }
+
+    .link-user {
+      width: auto;
+      height: 35px;
+      line-height: 35px;
+      color: $color-1;
+      font-weight: 400;
+      text-decoration: none;
+      font-size: 14px;
+      transition: all 0.35s ease;
+
+      &:hover {
+        color: $color-12;
+      }
     }
 
     .in-manager {

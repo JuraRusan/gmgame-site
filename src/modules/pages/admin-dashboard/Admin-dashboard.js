@@ -585,9 +585,9 @@ const AdminDashboard = () => {
               <tr className="table-tr-styling-rows" key={i}>
                 <th className="table-th-styling-columns">{regen.username}</th>
                 <th className="table-th-styling-columns">
-                  <a href={`/manager?user_id=${regen.user_id}`} target="_blank" rel="noreferrer">Информация о пользователе</a>
+                  <a href={`/manager?user_id=${regen.user_id}`} target="_blank" rel="noreferrer" className="link-user">Информация о пользователе &#129133;</a>
                 </th>
-                <th className="table-th-styling-columns action-table">
+                <th className="table-th-styling-columns action-table-regen">
                   <button
                     className="manager-btn"
                     type="submit"
