@@ -1,0 +1,28 @@
+@import "../../../Variables.scss";
+
+.mainMods {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+
+  .boxWrapperMods {
+    width: 100%;
+    height: auto;
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .titleH3Mods {
+      width: auto;
+      height: auto;
+      margin: 0 auto;
+      font-weight: 400;
+      font-size: 32px;
+      color: $color-3;
+      text-align: center;
+      font-family: $fontCustom2;
+    }
+  }
+}

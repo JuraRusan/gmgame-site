@@ -46,19 +46,19 @@ $animationTime: 2s;
   }
 }
 
-.main-no-access-403 {
+.mainNoAccess403 {
   display: flex;
   flex-direction: column;
   width: auto;
   height: auto;
 
-  .container-403 {
+  .NoAccessContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    .wrapper-lock {
+    .wrapperLock {
       display: flex;
       width: 55px;
       height: 45px;
@@ -103,11 +103,11 @@ $animationTime: 2s;
       }
     }
 
-    .lock-message {
+    .lockMessage {
       display: flex;
       flex-direction: column;
 
-      .h1-403 {
+      .TitleH1 {
         font-size: 72px;
         display: flex;
         margin: 0 auto;
@@ -117,7 +117,7 @@ $animationTime: 2s;
         animation: type 0.5s alternate infinite;
       }
 
-      .lock-h2 {
+      .TitleLockH2 {
         text-align: center;
         color: $color-3;
         font-weight: 400;
@@ -127,16 +127,17 @@ $animationTime: 2s;
         margin-bottom: 15px;
       }
 
-      .lock-p {
+      .subTitleLock {
         text-align: center;
         color: $color-3;
         font-weight: 400;
         font-size: 20px;
         height: auto;
         margin-bottom: 55px;
+        padding: 0 15px;
       }
 
-      .back-403 {
+      .back403 {
         width: 350px;
         height: auto;
         font-weight: 400;
@@ -157,6 +158,77 @@ $animationTime: 2s;
 
         &:hover {
           color: $color-8;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 960px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 640px) {
+}
+
+@media screen and (max-width: 480px) {
+  .mainNoAccess403 {
+    .NoAccessContainer {
+      .lockMessage {
+        .TitleH1 {
+          font-size: 64px;
+        }
+
+        .TitleLockH2 {
+          font-size: 20px;
+          padding: 0 10px;
+          margin-bottom: 30px;
+        }
+
+        .subTitleLock {
+          font-size: 18px;
+        }
+
+        .back403 {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .mainNoAccess403 {
+    .NoAccessContainer {
+      .lockMessage {
+        .TitleH1 {
+          font-size: 54px;
+        }
+
+        .TitleLockH2 {
+          font-size: 16px;
+        }
+
+        .subTitleLock {
+          font-size: 16px;
+        }
+
+        .back403 {
+          font-size: 13px;
         }
       }
     }
