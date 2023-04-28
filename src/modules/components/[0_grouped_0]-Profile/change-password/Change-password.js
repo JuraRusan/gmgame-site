@@ -56,8 +56,7 @@ const ChangePassword = () => {
           <span className={classNames(styles["checkmark"])}></span>
           <span className={classNames(styles["checkboxMessage"])}>Показать пароль</span>
         </label>
-        <button className={classNames(styles["buttonPasswordSubmit"])} onClick={handleSubmit((d) => changePassword(d))}>Изменить
-        </button>
+        <button className={classNames(styles["buttonPasswordSubmit"])} onClick={handleSubmit((d) => changePassword(d))}>Изменить</button>
       </form>
     </div>
   );
