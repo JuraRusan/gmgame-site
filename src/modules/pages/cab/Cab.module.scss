@@ -18,56 +18,60 @@
   }
 }
 
-.main-cab {
+.mainCab {
   display: flex;
   flex-direction: column;
   width: auto;
   height: auto;
   position: relative;
 
-  .box {
+  .boxWrapper {
     max-width: 1500px;
     width: 100%;
     height: 800px;
     background: $color-11;
-    margin: 25px auto 50px auto;
-    padding: 35px;
+    margin: 25px auto 0 auto;
+    padding: 5px;
     display: flex;
     flex-direction: row;
+    border: 1px solid $color-2;
+    border-radius: 5px;
 
-    .bt-ph {
+    .buttonWrapper {
       display: none;
-      //z-index: 8500;
-      z-index: 1;
     }
   }
 }
 
-.col-1 {
-  //z-index: 8000;
+.columnOne {
   width: 275px;
   min-width: 275px;
   max-width: 275px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   height: 100%;
   border-width: 1px;
   border-right-style: solid;
-  border-left-style: solid;
-  border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), $color-3, rgba(0, 0, 0, 0)) 1 100%;
+  border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), $color-2, $color-2, $color-2, rgba(0, 0, 0, 0)) 1 100%;
 
-  .menu-cabinet {
+  .menuCab {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 100%;
     height: 100%;
-    padding: 15px;
+    margin-top: 10px;
 
-    .m1 {
+    .blockLink {
       display: flex;
       flex-direction: column;
       width: auto;
+      margin-top: auto;
+
+      &:nth-child(1) {
+        margin: 0;
+      }
 
       .tab {
         background: transparent;
@@ -105,48 +109,30 @@
   }
 }
 
-.col-2 {
-  //z-index: 7000;
+.columnTwo {
   width: 100%;
   height: 100%;
-  padding: 15px;
+  padding: 8px;
   display: flex;
   color: $color-3;
 }
 
 @media screen and (max-width: 1600px) {
-  .main-cab {
-    .box {
+  .mainCab {
+    .boxWrapper {
       max-width: none;
       width: auto;
-      height: 800px;
-      margin: 25px 50px 50px 50px;
-    }
-
-    .col-1 {
-      .menu-cabinet {
-        padding: 10px;
-      }
+      margin: 20px 15px 0 15px;
     }
   }
 }
 
 @media screen and (max-width: 1400px) {
-  .main-cab {
-    .box {
-      margin: 25px 27px 50px 27px;
-    }
-  }
 }
 
 @media screen and (max-width: 1280px) {
-  .main-cab {
-    .box {
-      margin: 20px 20px 50px 20px;
-      padding: 20px;
-    }
-
-    .col-1 {
+  .mainCab {
+    .columnOne {
       width: 250px;
       min-width: 250px;
       max-width: 250px;
@@ -155,19 +141,18 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .main-cab {
-    .box {
-      margin: 20px 20px 50px 20px;
-      padding: 15px;
+  .mainCab {
+    .boxWrapper {
+      margin: 0 15px 0 15px;
     }
 
-    .col-1 {
+    .columnOne {
       width: 225px;
       min-width: 225px;
       max-width: 225px;
 
-      .menu-cabinet {
-        .m1 {
+      .menuCab {
+        .blockLink {
           .tab {
             font-size: 18px;
           }
@@ -179,63 +164,76 @@
 
 
 @media screen and (max-width: 960px) {
-  .main-cab {
-    .box {
-      position: relative;
+  .mainCab {
+    .boxWrapper {
+      flex-direction: column;
 
-      .bt-ph {
+      .buttonWrapper {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        position: absolute;
-        background: transparent;
-        color: $color-3;
-        text-align: center;
-        border: none;
-        font-weight: 400;
-        font-size: 20px;
-        width: 32px;
-        right: 15px;
-        cursor: pointer;
-        animation: appearance 0.85s both ease;
-        transition: all 0.25s ease;
+        justify-content: flex-end;
+        width: 100%;
+        height: 32px;
+        min-height: 32px;
+        max-height: 32px;
 
-        &:hover {
-          color: $color-8;
+        .buttonPhone {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          background: transparent;
+          color: $color-3;
+          text-align: center;
+          border: none;
+          font-weight: 400;
+          font-size: 20px;
+          width: 32px;
+          height: 32px;
+          line-height: 32px;
+          cursor: pointer;
+          animation: appearance 0.85s both ease;
+          transition: all 0.35s ease;
+
+          &:hover {
+            color: $color-8;
+            background: $color-21;
+            border-radius: 4px;
+          }
+        }
+
+        .buttonPhoneNoVisible {
+          display: none !important;
+          opacity: 0 !important;
         }
       }
 
-      .bt-no {
-        display: none !important;
-        opacity: 0 !important;
-      }
-
-      .col-1 {
+      .columnOne {
+        padding: 0 8px;
         width: 300px;
         min-width: 300px;
         max-width: 300px;
         display: none;
         opacity: 0;
-        transition: all 0.25s ease;
+        transition: all 0.35s ease;
       }
 
-      .col-1-render {
+      .columnOneRender {
         display: flex !important;
         opacity: 1;
         animation: appearance 0.85s both ease;
       }
 
-      .col-2 {
-        transition: all 0.25s ease;
+      .columnTwo {
+        padding: 0 8px;
+        transition: all 0.35s ease;
         animation: appearance 0.85s both ease;
       }
 
-      .col-2-render {
+      .columnTwoRender {
         display: none !important;
         opacity: 0;
       }
     }
-
   }
 }
 
@@ -246,19 +244,20 @@
 }
 
 @media screen and (max-width: 480px) {
-  .main-cab {
-    .box {
+  .mainCab {
+    .boxWrapper {
       margin: 5px;
       padding: 5px;
 
-      .col-1 {
+      .columnOne {
+        padding: 0 5px;
         width: 100%;
         min-width: auto;
         max-width: none;
       }
 
-      .col-2 {
-        padding: 5px;
+      .columnTwo {
+        padding: 0 5px;
       }
     }
   }

@@ -1,17 +1,16 @@
 @import "../../../../Variables";
 
-.player-box {
+.playerWrapper {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: auto;
-  padding-bottom: 15px;
-  padding-top: 15px;
+  padding: 10px 0;
   border-width: 1px;
   border-bottom-style: solid;
-  border-image: linear-gradient(to right, rgba(0, 0, 0, 0), $color-3, rgba(0, 0, 0, 0)) 1 0%;
+  border-image: linear-gradient(to right, rgba(0, 0, 0, 0), $color-13, rgba(0, 0, 0, 0)) 1 0%;
 
-  .img-player {
+  .playerImage {
     width: 100px;
     height: 100px;
     margin: 0 auto;
@@ -19,7 +18,7 @@
     border-radius: 5px;
   }
 
-  .h5-name-player {
+  .namePlayerH5 {
     font-weight: 400;
     font-size: 22px;
     color: $color-3;
@@ -27,7 +26,8 @@
     height: 22px;
     line-height: 22px;
     text-align: center;
-    margin-top: 10px
+    margin-top: 10px;
+    font-family: $fontCustom2;
   }
 }
 
@@ -41,19 +41,27 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .player-box {
-    .img-player {
+  .playerWrapper {
+    .playerImage {
       height: 75px;
       width: 75px;
     }
 
-    .h5-name-player {
+    .namePlayerH5 {
       font-size: 18px;
     }
   }
 }
 
 @media screen and (max-width: 960px) {
+  .playerWrapper {
+    padding: 0 0 8px 0;
+
+    .playerImage {
+      height: 100px;
+      width: 100px;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {

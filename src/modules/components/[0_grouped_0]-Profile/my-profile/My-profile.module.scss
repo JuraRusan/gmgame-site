@@ -1,0 +1,157 @@
+@import "../../../../Variables";
+
+.profileBlock {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .discordLinkWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 75px;
+    margin-top: 8px;
+
+    .discordImageUser {
+      display: flex;
+      width: 75px;
+      height: 75px;
+    }
+
+    .discordNameUser {
+      display: flex;
+      color: $color-3;
+      height: 75px;
+      line-height: 75px;
+      font-weight: 400;
+      font-size: 20px;
+      margin-left: 8px;
+    }
+  }
+
+  .profileBlockWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    .profileOneCube {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-radius: 16px;
+      width: 480px;
+      height: auto;
+      background: $color-14;
+      margin: 10px auto 10px auto;
+      padding-bottom: 12px;
+    }
+
+    .profileOneCubeCustomIp {
+      display: flex;
+      flex-direction: column;
+      width: 650px;
+      height: auto;
+      max-height: 280px;
+      background: $color-14;
+      margin: 0 auto;
+      border-radius: 16px;
+      padding-bottom: 12px;
+
+      .ipList {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+    }
+
+    .titleH5 {
+      width: 100%;
+      height: 64px;
+      line-height: 64px;
+      font-weight: 400;
+      font-size: 22px;
+      text-align: center;
+      color: $color-3;
+      margin: 0 auto;
+    }
+
+    .labelText {
+      width: 100%;
+      max-width: 90%;
+      height: 48px;
+      line-height: 48px;
+      font-weight: 400;
+      font-size: 20px;
+      padding: 0 25px;
+      text-align: center;
+      color: $color-3;
+      background: $color-15;
+      border-radius: 12px;
+      margin: 0 auto 8px auto;
+      font-family: $fontCustom2;
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .profileBlock {
+    .profileBlockWrapper {
+      .profileOneCube {
+        width: 48%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 960px) {
+}
+
+@media screen and (max-width: 768px) {
+  .profileBlock {
+    .profileBlockWrapper {
+      .profileOneCube {
+        width: 96%;
+      }
+
+      .profileOneCubeCustomIp {
+        width: 96%;
+      }
+
+      .titleH5 {
+        height: 48px;
+        line-height: 48px;
+        font-size: 20px;
+      }
+
+      .labelText {
+        font-size: 16px;
+        height: 42px;
+        line-height: 42px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+}
+
+@media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 360px) {
+}

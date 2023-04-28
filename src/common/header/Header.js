@@ -82,7 +82,7 @@ const Header = () => {
                       </>
                       }
                       {resParams?.data?.discordUser?.role === 'admin' &&
-                        <li className="drop-li"><a href="/manager">Админка</a></li>
+                        <li className="drop-li"><a href="/manager">Менеджер</a></li>
                       }
                     </ul>
                   </div>
