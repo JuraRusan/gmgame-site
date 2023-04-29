@@ -1,10 +1,16 @@
-import React from "react";
+import classNames from "classnames";
+import React, {useState} from 'react';
 import {useAxios} from '../../../../DataProvider';
-
-import "./My-profile.scss";
 import Preload from "../../preloader/Preload.js";
+import CopySvgComponent from "../../../../bases/icons/copySVG/copySvg";
+import CheckSvgComponent from "../../../../bases/icons/checkSVG/checkSvg";
+
+import styles from "./My-profile.module.scss";
 
 const MyProfile = () => {
+
+  const [copiedIndex, setCopiedIndex] = useState(null);
+
   const resParams = useAxios(
     "/api/profile",
     'GET',
@@ -17,39 +23,55 @@ const MyProfile = () => {
 
   const data = resParams.data;
 
-  const profileServerAdress = "Адреса сервера";
-  const profileApplicationAkk = "Статус аккаунта";
-  const profileServerVersion = "Версия игры";
+  const ipArray = ["msk.gmgame.ru", "lv.gmgame.ru", "by.gmgame.ru"];
 
-  const profileServerVersionOutput = "Java Edition " + data.version;
+  const handleCopyClick = (index) => {
+    navigator.clipboard.writeText(ipArray[index]);
+    setCopiedIndex(index);
+    setTimeout(() => {
+      setCopiedIndex(null);
+    }, 3000);
+  };
 
   return (
-    <div className="profile-block">
-      <div className="ds-link">
-        <img className="ds-img"
-             src={`https://cdn.discordapp.com/avatars/${data.discordUser.id}/${data.discordUser.avatar}.png`}
-             alt="none"></img>
-        <h5 className="h5-ds">{data.discordUser.username}@{data.discordUser.discriminator}</h5>
-      </div>
-      <div className="prof-block">
+    <div className={classNames(styles["profileBlock"])}>
+      {/*<div className={classNames(styles["discordLinkWrapper"])}>*/}
+      {/*  <img className={classNames(styles["discordImageUser"])} src={`https://cdn.discordapp.com/avatars/${data.discordUser.id}/${data.discordUser.avatar}.png`} alt=""/>*/}
+      {/*  <h5 className={classNames(styles["discordNameUser"])}>{data.discordUser.username}@{data.discordUser.discriminator}</h5>*/}
+      {/*</div>*/}
+      <div className={classNames(styles["profileBlockWrapper"])}>
 
-        <div className="prof-cont">
-          <h5 className="h5-cont">{profileApplicationAkk}</h5>
-          <label className="label-cout">{data.status}</label>
+        <div className={classNames(styles["profileOneCube"])}>
+          <h5 className={classNames(styles["titleH5"])}>Статус аккаунта</h5>
+          <label className={classNames(styles["labelText"])}>{data.status}</label>
         </div>
 
-        <div className="prof-cont">
-          <h5 className="h5-cont">{profileServerVersion}</h5>
-          <label className="label-cout font-custom-2">{profileServerVersionOutput}</label>
+        <div className={classNames(styles["profileOneCube"])}>
+          <h5 className={classNames(styles["titleH5"])}>Версия игры</h5>
+          <label className={classNames(styles["labelText"])}>Java Edition {data.version}</label>
         </div>
 
         {data.user.status === 2 &&
-          <div className="prof-cont-custom">
-            <h5 className="h5-cont">{profileServerAdress}</h5>
-            <div className="ip-list">
-              <label className="label-cout-custom font-custom-2">msk.gmgame.ru</label>
-              <label className="label-cout-custom font-custom-2">lv.gmgame.ru</label>
-              <label className="label-cout-custom font-custom-2">by.gmgame.ru</label>
+          <div className={classNames(styles["profileOneCubeCustomIp"])}>
+            <h5 className={classNames(styles["titleH5"])}>Адреса сервера</h5>
+            <div className={classNames(styles["ipList"])}>
+              {ipArray.map((el, index) => (
+                <div className={classNames(styles["wrapperIp"])} key={index}>
+                  <label className={classNames(styles["text"])}>{el}</label>
+                  <button className={classNames(styles["copy"])} onClick={() => handleCopyClick(index)}>
+                    {copiedIndex === index
+                      ?
+                      <span className={classNames(styles["ico"])}>
+                        <CheckSvgComponent width="100%" height="100%" color="#f4f4f4"/>
+                      </span>
+                      :
+                      <span className={classNames(styles["ico"])}>
+                        <CopySvgComponent width="100%" height="100%" color="#f4f4f4"/>
+                      </span>
+                    }
+                  </button>
+                </div>
+              ))}
             </div>
           </div>
         }

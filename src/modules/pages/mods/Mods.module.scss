@@ -1,12 +1,12 @@
 @import "../../../Variables.scss";
 
-.main-wiki {
+.mainMods {
   display: flex;
   flex-direction: column;
   width: auto;
   height: auto;
 
-  .box-wiki {
+  .boxWrapperMods {
     width: 100%;
     height: auto;
     min-height: 800px;
@@ -14,7 +14,7 @@
     flex-direction: column;
     justify-content: center;
 
-    .h3-wiki {
+    .titleH3Mods {
       width: auto;
       height: auto;
       margin: 0 auto;
@@ -22,6 +22,7 @@
       font-size: 32px;
       color: $color-3;
       text-align: center;
+      font-family: $fontCustom2;
     }
   }
 }

@@ -58,6 +58,11 @@
     margin-top: 20px;
     padding-right: 10px;
 
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+
     .str {
       display: flex;
       flex-direction: row;

@@ -1,12 +1,17 @@
-import {React} from "react";
+import classNames from "classnames";
+import {React, useState} from "react";
 import {useForm} from "react-hook-form";
 import {sendRequest} from '../../../../DataProvider';
 import {useAlert} from "react-alert";
 import {ErrorMessage} from "@hookform/error-message";
 
-import "./Change-password.scss";
+import styles from "./Change-password.module.scss";
 
 const ChangePassword = () => {
+
+  const [type, setType] = useState("password")
+  const [checked, setChecked] = useState(false);
+
   const alert = useAlert();
 
   const {register, handleSubmit, formState: {errors},} = useForm({mode: "onChange"});
@@ -29,24 +34,29 @@ const ChangePassword = () => {
 
   function ErrorRender(name) {
     return (
-      <ErrorMessage errors={errors} name={name.name} render={({message}) => <span className="error">{message}</span>}/>
+      <ErrorMessage errors={errors} name={name.name} render={({message}) => <span className={classNames(styles["error"])}>{message}</span>}/>
     );
   }
 
   return (
-    <div className="block-pass">
-      <h3 className="pass-h3">Введите новый пароль</h3>
+    <div className={classNames(styles["blockPassword"])}>
+      <h3 className={classNames(styles["passwordTitle"])}>Введите новый пароль</h3>
       <form onSubmit={handleSubmit()}>
-        <input 
-          className="input-pass" 
-          type="password" 
+        <input
+          className={classNames(styles["passwordInput"])}
+          type={type}
           {...register("password", {
             required: {value: true, message: "Обязательное поле"},
             minLength: {value: 8, message: "Пароль должен быть от 8 символов"},
           })}
         />
         <ErrorRender name="password"/>
-        <button className="bt-pass font-custom-2" onClick={handleSubmit((d) => changePassword(d))}>Изменить</button>
+        <label className={classNames(styles["labelWrapperCheckbox"])}>
+          <input type="checkbox" checked={checked} onChange={() => setChecked(!checked)} onClick={() => (checked) ? setType("password") : setType("text")}/>
+          <span className={classNames(styles["checkmark"])}></span>
+          <span className={classNames(styles["checkboxMessage"])}>Показать пароль</span>
+        </label>
+        <button className={classNames(styles["buttonPasswordSubmit"])} onClick={handleSubmit((d) => changePassword(d))}>Изменить</button>
       </form>
     </div>
   );

@@ -1,12 +1,12 @@
+import classNames from "classnames";
 import React from "react";
-import {useAxios, sendRequest} from '../../../DataProvider';
-import {NavLink, Outlet, Link, Navigate} from "react-router-dom";
-
-import "./Cab.scss";
-
+import {sendRequest, useAxios} from '../../../DataProvider';
+import {Link, Navigate, NavLink, Outlet} from "react-router-dom";
 import PlayerCabinet from "../../components/[0_grouped_0]-Profile/player-cabinet/Player-cabinet.js";
 import Auth from "../../../modules/pages/auth/Auth.js";
 import Preload from "../../components/preloader/Preload.js";
+
+import styles from "./Cab.module.scss";
 
 const Cab = () => {
   const resParams = useAxios(
@@ -15,43 +15,34 @@ const Cab = () => {
     {}
   );
 
-  const profileMenuMyProfile = "Профиль";
-  const profileMenuMyTerritories = "Мои территории";
-  const profileMenuMyMarker = "Мои метки";
-  const profileMenuMyArticles = "Статьи";
-  // const profileMenuMyGallery = "Моя галерея";
-  const profileMenuMyPrizes = "Призы";
-  const profileMenuMyChangePassword = "Изменить пароль";
-  const profileMenuMyGoOut = "Выйти";
-
   if (resParams.loading) {
-    return <Preload />
+    return <Preload/>
   }
 
   if (!resParams.data?.discordUser) {
-    return <Navigate to="/api/login" replace={true} />
+    return <Navigate to="/api/login" replace={true}/>
   }
 
   if (!resParams.data.user || !resParams.data.user?.username) {
-    return <Auth />
+    return <Auth/>
   }
 
   function setActive(isActive) {
-    return isActive ? "tab checked" : "tab";
+    return isActive ? classNames(styles["tab"], styles["checked"]) : styles["tab"];
   }
 
-  function phCabFunctionAdd() {
-    document.getElementById("phOpacity1").classList.add("col-1-render");
-    document.getElementById("phOpacity2").classList.add("col-2-render");
-    document.getElementById("btAdd").classList.add("bt-no");
-    document.getElementById("btDel").classList.remove("bt-no");
+  function phoneCabFunctionAdd() {
+    document.getElementById("phoneOpacityOne").classList.add(classNames(styles["columnOneRender"]));
+    document.getElementById("phoneOpacityTwo").classList.add(classNames(styles["columnTwoRender"]));
+    document.getElementById("buttonAdd").classList.add(classNames(styles["buttonPhoneNoVisible"]));
+    document.getElementById("buttonDelete").classList.remove(classNames(styles["buttonPhoneNoVisible"]));
   }
 
-  function phCabFunctionRemove() {
-    document.getElementById("phOpacity1").classList.remove("col-1-render");
-    document.getElementById("phOpacity2").classList.remove("col-2-render");
-    document.getElementById("btDel").classList.add("bt-no");
-    document.getElementById("btAdd").classList.remove("bt-no");
+  function phoneCabFunctionRemove() {
+    document.getElementById("phoneOpacityOne").classList.remove(classNames(styles["columnOneRender"]));
+    document.getElementById("phoneOpacityTwo").classList.remove(classNames(styles["columnTwoRender"]));
+    document.getElementById("buttonDelete").classList.add(classNames(styles["buttonPhoneNoVisible"]));
+    document.getElementById("buttonAdd").classList.remove(classNames(styles["buttonPhoneNoVisible"]));
   }
 
   const logout = () => {
@@ -66,33 +57,37 @@ const Cab = () => {
   }
 
   return (
-    <div className="main-cab">
-      <div className="box">
-        <button id="btDel" className="bt-ph bt-no" onClick={phCabFunctionRemove}>&#128473;</button>
-        <button id="btAdd" className="bt-ph" onClick={phCabFunctionAdd}>&#9776;</button>
-        <div className="col-1" id="phOpacity1">
+    <div className={classNames(styles["mainCab"])}>
+      <div className={classNames(styles["boxWrapper"])}>
+
+        <div className={classNames(styles["buttonWrapper"])}>
+          <button id="buttonDelete" className={classNames(styles["buttonPhone"], styles["buttonPhoneNoVisible"])} onClick={phoneCabFunctionRemove}>&#128473;</button>
+          <button id="buttonAdd" className={classNames(styles["buttonPhone"])} onClick={phoneCabFunctionAdd}>&#9776;</button>
+        </div>
+
+        <div className={classNames(styles["columnOne"])} id="phoneOpacityOne">
           <PlayerCabinet {...resParams.data.user} />
-          <div className="menu-cabinet">
-            <div className="m1">
-              <NavLink onClick={phCabFunctionRemove} to="profile" className={({isActive}) => setActive(isActive)}>{profileMenuMyProfile}</NavLink>
+          <div className={classNames(styles["menuCab"])}>
+            <div className={classNames(styles["blockLink"])}>
+              <NavLink onClick={phoneCabFunctionRemove} className={({isActive}) => setActive(isActive)} to="profile">Профиль</NavLink>
               {resParams.data.user.status === 2 &&
-              <>
-                <NavLink onClick={phCabFunctionRemove} to="territories" className={({isActive}) => setActive(isActive)}>{profileMenuMyTerritories}</NavLink>
-                <NavLink onClick={phCabFunctionRemove} to="markers" className={({isActive}) => setActive(isActive)}>{profileMenuMyMarker}</NavLink>
-                <NavLink onClick={phCabFunctionRemove} to="articles" className={({isActive}) => setActive(isActive)}>{profileMenuMyArticles}</NavLink>
-                {/*<NavLink onClick={phCabFunctionRemove} to="gallery" className={({isActive}) => setActive(isActive)}>{profileMenuMyGallery}</NavLink>*/}
-                <NavLink onClick={phCabFunctionRemove} to="prize" className={({isActive}) => setActive(isActive)}>{profileMenuMyPrizes}</NavLink>
-                <NavLink onClick={phCabFunctionRemove} to="change_password" className={({isActive}) => setActive(isActive)}>{profileMenuMyChangePassword}</NavLink>
-              </>
+                <>
+                  <NavLink onClick={phoneCabFunctionRemove} className={({isActive}) => setActive(isActive)} to="territories">Мои территории</NavLink>
+                  <NavLink onClick={phoneCabFunctionRemove} className={({isActive}) => setActive(isActive)} to="markers">Мои метки</NavLink>
+                  <NavLink onClick={phoneCabFunctionRemove} className={({isActive}) => setActive(isActive)} to="articles">Статьи</NavLink>
+                  {/*<NavLink onClick={phoneCabFunctionRemove} className={({isActive}) => setActive(isActive)} to="gallery">Моя галерея</NavLink>*/}
+                  <NavLink onClick={phoneCabFunctionRemove} className={({isActive}) => setActive(isActive)} to="prize">Призы</NavLink>
+                  <NavLink onClick={phoneCabFunctionRemove} className={({isActive}) => setActive(isActive)} to="change_password">Изменить пароль</NavLink>
+                </>
               }
-              {resParams.data.discordUser.role === 'admin' && <Link to="/manager" className="tab">Админка</Link>}
+              {resParams.data.discordUser.role === 'admin' && <Link to="/manager" className={classNames(styles["tab"])}>Менеджер</Link>}
             </div>
-            <div className="m1">
-              <button className="tab" onClick={logout}>{profileMenuMyGoOut}</button>
+            <div className={classNames(styles["blockLink"])}>
+              <button className={classNames(styles["tab"])} onClick={logout}>Выйти</button>
             </div>
           </div>
         </div>
-        <div className="col-2" id="phOpacity2">
+        <div className={classNames(styles["columnTwo"])} id="phoneOpacityTwo">
           <Outlet/>
         </div>
       </div>
