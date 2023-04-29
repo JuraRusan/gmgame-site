@@ -100,6 +100,8 @@ const EditAddTerr = (params) => {
           <select className="input-str" onChange={(e) => setFormServer(e.target.value)} defaultValue={formServer}>
             <option className="option-list" value="gmgame">Основной мир</option>
             <option className="option-list" value="farm">Фермерский мир</option>
+            <option className="option-list" value="nether-farm">Фермерский ад</option>
+            <option className="option-list" value="end-farm">Фермерский край</option>
           </select>
         </div>
         <div className="coord">
