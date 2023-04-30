@@ -139,7 +139,7 @@ const EditAddTerr = (params) => {
       <div className="colums-add-2">
         {id === 'new'
           ? <iframe title="map" src="https://map.gmgame.ru/#/-7/64/-54/-4/GMGameWorld%20-%20overworld/over" width="100%" height="100%"/>
-          : <iframe title="map" src={`https://map.gmgame.ru/#/${data.terr.xStart}/64/${data.terr.zStart}/-4/${data.world_name}/over`} width="100%" height="100%"/>
+          : <iframe title="map" src={`https://map.gmgame.ru/#/${data.terr.xStart}/64/${data.terr.zStart}/-4/${data.world.worldName}/${data.world.layer}`} width="100%" height="100%"/>
         }
       </div>
     </div>
