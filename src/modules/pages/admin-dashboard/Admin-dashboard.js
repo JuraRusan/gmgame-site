@@ -577,6 +577,7 @@ const AdminDashboard = () => {
             <tr className="table-tr-styling-rows">
               <th className="table-th-styling-columns">Имя</th>
               <th className="table-th-styling-columns">Линк</th>
+              <th className="table-th-styling-columns">Дискорд id</th>
               <th className="table-th-styling-columns action-table">Действия</th>
             </tr>
             </thead>
@@ -587,6 +588,7 @@ const AdminDashboard = () => {
                 <th className="table-th-styling-columns">
                   <a href={`/manager?user_id=${regen.user_id}`} target="_blank" rel="noreferrer" className="link-user">Информация о пользователе &#129133;</a>
                 </th>
+                <th className="table-th-styling-columns">{regen.user_id}</th>
                 <th className="table-th-styling-columns action-table-regen">
                   <button
                     className="manager-btn"
