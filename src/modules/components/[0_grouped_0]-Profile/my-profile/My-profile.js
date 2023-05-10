@@ -1,13 +1,19 @@
 import classNames from "classnames";
-import React, {useState} from 'react';
+import {React, useState, useEffect} from "react";
 import {useAxios} from '../../../../DataProvider';
 import Preload from "../../preloader/Preload.js";
 import CopySvgComponent from "../../../../bases/icons/copySVG/copySvg";
 import CheckSvgComponent from "../../../../bases/icons/checkSVG/checkSvg";
+import AOS from "aos";
 
 import styles from "./My-profile.module.scss";
+import "aos/dist/aos.css";
 
 const MyProfile = () => {
+
+  useEffect(() => {
+    AOS.init({duration: 1000});
+  }, []);
 
   const [copiedIndex, setCopiedIndex] = useState(null);
 
@@ -34,7 +40,7 @@ const MyProfile = () => {
   };
 
   return (
-    <div className={classNames(styles["profileBlock"])}>
+    <div className={classNames(styles["profileBlock"])} data-aos="zoom-in">
       {/*<div className={classNames(styles["discordLinkWrapper"])}>*/}
       {/*  <img className={classNames(styles["discordImageUser"])} src={`https://cdn.discordapp.com/avatars/${data.discordUser.id}/${data.discordUser.avatar}.png`} alt=""/>*/}
       {/*  <h5 className={classNames(styles["discordNameUser"])}>{data.discordUser.username}@{data.discordUser.discriminator}</h5>*/}

@@ -1,14 +1,21 @@
 import classNames from "classnames";
-import React from "react";
+import React, {useEffect} from "react";
 import {sendRequest, useAxios} from '../../../DataProvider';
 import {Link, Navigate, NavLink, Outlet} from "react-router-dom";
 import PlayerCabinet from "../../components/[0_grouped_0]-Profile/player-cabinet/Player-cabinet.js";
 import Auth from "../../../modules/pages/auth/Auth.js";
 import Preload from "../../components/preloader/Preload.js";
+import AOS from "aos";
 
 import styles from "./Cab.module.scss";
+import "aos/dist/aos.css";
 
 const Cab = () => {
+
+  useEffect(() => {
+    AOS.init({duration: 1000});
+  }, []);
+
   const resParams = useAxios(
     "/api/profile",
     'GET',
@@ -67,7 +74,7 @@ const Cab = () => {
 
         <div className={classNames(styles["columnOne"])} id="phoneOpacityOne">
           <PlayerCabinet {...resParams.data.user} />
-          <div className={classNames(styles["menuCab"])}>
+          <div className={classNames(styles["menuCab"])} data-aos="zoom-in">
             <div className={classNames(styles["blockLink"])}>
               <NavLink onClick={phoneCabFunctionRemove} className={({isActive}) => setActive(isActive)} to="profile">Профиль</NavLink>
               {resParams.data.user.status === 2 &&
@@ -75,7 +82,7 @@ const Cab = () => {
                   <NavLink onClick={phoneCabFunctionRemove} className={({isActive}) => setActive(isActive)} to="territories">Мои территории</NavLink>
                   <NavLink onClick={phoneCabFunctionRemove} className={({isActive}) => setActive(isActive)} to="markers">Мои метки</NavLink>
                   <NavLink onClick={phoneCabFunctionRemove} className={({isActive}) => setActive(isActive)} to="articles">Статьи</NavLink>
-                  {/*<NavLink onClick={phoneCabFunctionRemove} className={({isActive}) => setActive(isActive)} to="gallery">Моя галерея</NavLink>*/}
+                  <NavLink onClick={phoneCabFunctionRemove} className={({isActive}) => setActive(isActive)} to="gallery">Моя галерея</NavLink>
                   <NavLink onClick={phoneCabFunctionRemove} className={({isActive}) => setActive(isActive)} to="prize">Призы</NavLink>
                   <NavLink onClick={phoneCabFunctionRemove} className={({isActive}) => setActive(isActive)} to="change_password">Изменить пароль</NavLink>
                 </>

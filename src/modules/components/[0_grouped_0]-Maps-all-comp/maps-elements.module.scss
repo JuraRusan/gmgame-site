@@ -1,20 +1,19 @@
 @import "../../../Variables";
 
-.box-marker {
+.boxMapWrapper {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
 
-  .box-searth {
+  .boxSearchWrapper {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     width: 100%;
     height: 35px;
-    padding: 2.5px;
 
-    .nomer-list {
+    .numberListCount {
       display: flex;
       width: 350px;
       height: 35px;
@@ -22,11 +21,11 @@
       margin: 0 0 0 15px;
       padding: 0;
       font-weight: 400;
-      font-size: 18px;
+      font-size: 16px;
       color: $color-3;
     }
 
-    .search-input {
+    .searchInput {
       display: flex;
       width: 225px;
       height: 35px;
@@ -49,13 +48,13 @@
     }
   }
 
-  .box-list {
+  .boxListWrapper {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     overflow: auto;
-    margin-top: 20px;
+    margin-top: 5px;
     padding-right: 10px;
 
     &::-webkit-scrollbar {
@@ -63,57 +62,69 @@
     }
 
 
-    .str {
+    .oneMapsElement {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       width: 100%;
-      height: 65px;
+      min-height: 65px;
+      height: auto;
+      max-height: none;
       margin-top: 5px;
       margin-bottom: 5px;
-      border: 0.5px solid $color-22;
+      border: 1px solid $color-21;
       border-radius: 5px;
       padding: 7.5px;
       transition: all 0.25s ease;
+      background: $color-20;
 
       &:hover {
         background: $color-7;
       }
 
-      &:hover > .margin-add {
+      &:hover > .marginAddBox {
         padding: 0;
       }
 
-      .margin-add {
+      .marginAddBox {
         width: 100%;
-        height: 100%;
+        height: 65px;
         margin: 0 auto;
         padding: 5px;
         transition: all 0.25s ease;
       }
 
-      .colums-1 {
+      .columnsOne {
         display: flex;
-        max-width: 69%;
+        width: 100%;
+        max-width: none;
+        min-width: 0;
+        height: auto;
+        min-height: 0;
+        max-height: none;
         flex-direction: row;
         justify-content: flex-start;
         margin: auto 0;
 
-        .str-p {
+        .elementIndex {
           height: 40px;
           line-height: 40px;
           color: $color-3;
-          width: 50px;
-          min-width: 50px;
+          width: 32px;
+          min-width: 32px;
+          max-width: 32px;
           text-align: center;
+          margin: auto 0;
         }
 
-        .str-h3 {
-          text-overflow: ellipsis;
-          overflow: hidden;
-          white-space: nowrap;
-          max-width: 100%;
-          height: 40px;
+        .elementH3Name {
+          //white-space: nowrap;
+          //overflow: hidden;
+          //text-overflow: ellipsis;
+          width: auto;
+          min-height: 40px;
+          max-height: none;
+          height: auto;
           line-height: 40px;
           font-size: 18px;
           font-weight: 400;
@@ -126,12 +137,15 @@
         }
       }
 
-      .colums-2 {
+      .columnsTwo {
         display: flex;
         flex-direction: row;
         margin: auto 0;
+        min-width: 173px;
+        max-width: 173px;
+        width: 100%;
 
-        .str-bt {
+        .elementActions {
           cursor: pointer;
           height: 40px;
           line-height: 40px;
@@ -160,7 +174,7 @@
           }
         }
 
-        .delete {
+        .deleteButton {
           cursor: pointer;
           height: 40px;
           line-height: 40px;
@@ -203,54 +217,62 @@
 }
 
 @media screen and (max-width: 960px) {
+  .boxMapWrapper {
+    .boxListWrapper {
+      padding-right: 0;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
-  .box-marker {
-    .box-searth {
-      .nomer-list {
+  .boxMapWrapper {
+    .boxSearchWrapper {
+      .numberListCount {
         height: 30px;
         line-height: 30px;
         font-size: 16px;
       }
 
-      .search-input {
+      .searchInput {
         line-height: 30px;
         height: 30px;
         width: 200px;
       }
     }
 
-    .box-list {
-      margin-top: 15px;
+    .boxListWrapper {
+      .oneMapsElement {
+        min-height: 48px;
 
-      .str {
-        height: 55px;
-
-        .colums-1 {
-          max-width: 60%;
-
-          .str-p {
-            width: 40px;
-            min-width: 40px;
-            max-width: 40px;
+        .columnsOne {
+          .elementIndex {
             font-size: 14px;
+            height: 28px;
+            line-height: 28px;
+            margin: auto 0;
           }
 
-          .str-h3 {
-            font-size: 16px;
+          .elementH3Name {
+            font-size: 15px;
+            min-height: 28px;
+            line-height: 28px;
+            margin: auto 0;
           }
         }
 
-        .colums-2 {
-          .str-bt {
+        .columnsTwo {
+          width: auto;
+          min-width: 138px;
+          max-width: 138px;
+
+          .elementActions {
             width: 100px;
             height: 30px;
             line-height: 30px;
             font-size: 14px;
           }
 
-          .delete {
+          .deleteButton {
             width: 30px;
             height: 30px;
             line-height: 30px;
@@ -263,49 +285,80 @@
 }
 
 @media screen and (max-width: 640px) {
-  .box-marker {
-    padding-top: 15px;
-
-    .box-searth {
-      flex-direction: column;
+  .boxMapWrapper {
+    .boxSearchWrapper {
+      flex-direction: column-reverse;
       height: auto;
 
-      .nomer-list {
+      .numberListCount {
+        margin: 0 0 8px 0;
         width: 100%;
-        margin: 5px 0 0 5px;
-      }
-
-      .search-input {
-        width: 80%;
-      }
-    }
-
-    .box-list {
-      .str {
-        .colums-1 {
-          .str-p {
-            width: 30px;
-            min-width: 30px;
-            max-width: 30px;
-          }
-        }
       }
     }
   }
 }
 
 @media screen and (max-width: 480px) {
-  .box-marker {
-    .box-list {
-      .str {
-        .colums-1 {
-          max-width: 60%;
+  .boxMapWrapper {
+    .boxSearchWrapper {
+      flex-direction: column-reverse;
+      height: auto;
+
+      .numberListCount {
+        margin: 0;
+      }
+    }
+
+    .boxListWrapper {
+      .oneMapsElement {
+        flex-direction: column;
+
+        .columnsOne {
+          flex-direction: column;
+
+          .elementIndex {
+            text-align: center;
+            width: 100%;
+            min-width: 0;
+            max-width: none;
+            font-size: 13px;
+            height: 24px;
+            line-height: 24px;
+          }
+
+          .elementH3Name {
+            width: 100%;
+            min-width: 0;
+            max-width: none;
+            font-size: 14px;
+            min-height: 24px;
+            line-height: 24px;
+            text-align: center;
+            padding-top: 5px;
+            border-width: 1px;
+            border-top-style: solid;
+            border-image: linear-gradient(to right, rgba(0, 0, 0, 0), $color-22, rgba(0, 0, 0, 0)) 1 0;
+          }
         }
 
-        .colums-2 {
-          .str-bt {
+        .columnsTwo {
+          width: auto;
+          min-width: 118px;
+          max-width: 118px;
+          margin: 8px auto 0 auto;
+
+          .elementActions {
             width: 80px;
+            height: 30px;
+            line-height: 30px;
             font-size: 13px;
+          }
+
+          .deleteButton {
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            padding: 3px;
           }
         }
       }

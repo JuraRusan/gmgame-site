@@ -19,6 +19,31 @@
   width: auto;
   height: auto;
 
+  .searchInput {
+    display: flex;
+    width: 100%;
+    max-width: 1110px;
+    height: 36px;
+    margin: 10px auto;
+    line-height: 36px;
+    background: $color-7;
+    outline: none;
+    border: 1px solid $color-22;
+    border-radius: 5px;
+    transition: all 0.25s ease-in-out;
+    color: $color-8;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      outline: none;
+      background: $color-21;
+    }
+  }
+
   .galleryList {
     display: flex;
     flex-wrap: wrap;
@@ -77,7 +102,7 @@
           }
 
           .dislike {
-            color: $color-1;
+            color: $color-2;
           }
 
           .click {
@@ -279,7 +304,9 @@ body {
         .titleNameImageList {
           font-weight: 400;
           font-size: 18px;
-          height: 32px;
+          min-height: 32px;
+          height: auto;
+          text-align: center;
           line-height: 32px;
           width: 100%;
           padding-left: 25px;
@@ -293,6 +320,25 @@ body {
           font-size: 14px;
           color: $color-3;
           line-height: 1.25;
+        }
+
+        .blockTag {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          flex-wrap: wrap;
+          margin-top: 8px;
+
+          .oneTag {
+            margin: 2px 4px;
+            font-size: 12px;
+            height: 20px;
+            line-height: 20px;
+            border-radius: 4px;
+            color: darken($color-3, 50%);
+            background: $color-22;
+            padding: 0 8px;
+          }
         }
       }
     }

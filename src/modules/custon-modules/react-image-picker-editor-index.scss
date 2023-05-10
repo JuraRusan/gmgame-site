@@ -12,6 +12,10 @@
 }
 
 .ReactImagePickerEditor {
+  *::-webkit-scrollbar {
+    width: 4px !important;
+  }
+
   p {
     margin: 0 !important;
     padding: 0 !important;
@@ -311,6 +315,7 @@
       object-position: center;
       border-radius: 15px;
       border: 1px solid $color-22;
+      margin-bottom: 8px;
     }
 
     .control-panel {
@@ -682,7 +687,6 @@
 @media (max-width: 1024px) {
   .EditImage {
     .popup {
-      background-color: rgba(0, 0, 0, .85);
       padding: 8px;
 
       img {

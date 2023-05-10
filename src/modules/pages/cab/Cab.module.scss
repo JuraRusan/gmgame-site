@@ -167,6 +167,8 @@
   .mainCab {
     .boxWrapper {
       flex-direction: column;
+      height: auto;
+      min-height: 100vh;
 
       .buttonWrapper {
         display: flex;
@@ -215,6 +217,14 @@
         display: none;
         opacity: 0;
         transition: all 0.35s ease;
+
+        .menuCab {
+          .blockLink {
+            &:nth-child(2) {
+              margin-top: 15%;
+            }
+          }
+        }
       }
 
       .columnOneRender {

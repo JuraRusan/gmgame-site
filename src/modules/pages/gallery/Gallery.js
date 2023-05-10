@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import React, {useEffect, useState} from "react";
 import ImageGallery from 'react-image-gallery';
 import Modal from 'react-modal';
@@ -18,6 +19,7 @@ const MainGallery = () => {
     AOS.init({duration: 1000});
   }, []);
 
+  const [filterTag, setFilterTag] = useState("");
   const [modalIsOpen, setIsOpen] = useState(false);
 
   function openModal() {
@@ -32,30 +34,35 @@ const MainGallery = () => {
   // console.log(filteredOneItem)
 
   return (
-    <div className={styles["mainGallery"]} data-aos="zoom-in">
-
-      <div className={styles["galleryList"]}>
-        {array.map((items, i) =>
-          <div className={styles["oneContainer"]} data-aos="zoom-in" key={i}>
+    <div className={classNames(styles["mainGallery"])} data-aos="zoom-in">
+      <input
+        className={classNames(styles["searchInput"])}
+        type="search"
+        placeholder="Найти по #tag ..."
+        onChange={(e) => setFilterTag(e.target.value.toLowerCase())}
+      />
+      <div className={classNames(styles["galleryList"])}>
+        {array.filter((fil) => fil.tagNavigation.find(c => JSON.stringify(c).toLowerCase().includes(filterTag))).map((items, i) =>
+          <div className={classNames(styles["oneContainer"])} data-aos="zoom-in" key={i}>
             <LazyLoadImage
-              className={styles["imgClass"]}
+              className={classNames(styles["imgClass"])}
               alt={items.picturesView}
               effect="blur"
               src={items.picturesView}
               onClick={openModal}
             />
-            <div className={styles["containerLike"]}>
-              <div className={styles["likes"]}>
-                <button className={[styles["click"], styles["like"]].join(' ')}>
+            <div className={classNames(styles["containerLike"])}>
+              <div className={classNames(styles["likes"])}>
+                <button className={classNames(styles["click"], styles["like"])}>
                   <Particles text={<SvgHeart height="16px" width="16px"/>} type="like"/>
                 </button>
-                <label className={styles["text"]}>{items.likes}</label>
+                <label className={classNames(styles["text"])}>{items.likes}</label>
               </div>
-              <div className={styles["likes"]}>
-                <button className={[styles["click"], styles["dislike"]].join(' ')}>
+              <div className={classNames(styles["likes"])}>
+                <button className={classNames(styles["click"], styles["dislike"])}>
                   <Particles text={<SvgHeart height="16px" width="16px"/>} type="dislike"/>
                 </button>
-                <label className={styles["text"]}>{items.dislikes}</label>
+                <label className={classNames(styles["text"])}>{items.dislikes}</label>
               </div>
             </div>
           </div>
@@ -63,38 +70,43 @@ const MainGallery = () => {
       </div>
 
       <Modal
-        className={styles["modalGallery"]}
-        overlayClassName={styles["overlayModal"]}
+        className={classNames(styles["modalGallery"])}
+        overlayClassName={classNames(styles["overlayModal"])}
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
       >
-        <button onClick={closeModal} className={styles["close"]}>&#10008;</button>
+        <button onClick={closeModal} className={classNames(styles["close"])}>&#10008;</button>
         {filteredOneItem.map((one, i) =>
           <>
-            <div className={styles["galleryBackground"]}>
-              <div className={styles["galleryWrapper"]}>
+            <div className={classNames(styles["galleryBackground"])}>
+              <div className={classNames(styles["galleryWrapper"])}>
                 <ImageGallery items={one.picturesList} lazyLoad="true" showIndex="true"/>
               </div>
             </div>
-            <div className={styles["containerDescription"]}>
-              <div className={styles["containerBuilders"]}>
-                <ul className={styles["ulList"]}>
-                  <li className={styles["liAuthorsTitle"]}>Авторы:</li>
+            <div className={classNames(styles["containerDescription"])}>
+              <div className={classNames(styles["containerBuilders"])}>
+                <ul className={classNames(styles["ulList"])}>
+                  <li className={classNames(styles["liAuthorsTitle"])}>Авторы:</li>
                   {one.users.map((oneUser, index) =>
-                    <li className={styles["liUser"]}>
+                    <li className={classNames(styles["liUser"])}>
                       <img
-                        className={styles["imgUser"]}
+                        className={classNames(styles["imgUser"])}
                         src={`https://minotar.net/helm/${oneUser}/100`}
                         alt={`https://minotar.net/helm/${oneUser}/100`}>
                       </img>
-                      <label className={styles["userName"]}>{oneUser}</label>
+                      <label className={classNames(styles["userName"])}>{oneUser}</label>
                     </li>
                   )}
                 </ul>
               </div>
-              <div className={styles["description"]}>
-                <h4 className={styles["titleNameImageList"]}>{one.name}</h4>
-                <p className={styles["textParagraph"]}>{one.description}</p>
+              <div className={classNames(styles["description"])}>
+                <h4 className={classNames(styles["titleNameImageList"])}>{one.name}</h4>
+                <p className={classNames(styles["textParagraph"])}>{one.description}</p>
+                <div className={classNames(styles["blockTag"])}>
+                  {one.tagNavigation.map((tag, index) => (
+                    <span className={classNames(styles["oneTag"])} key={index}>{"#" + tag.trim()}</span>
+                  ))}
+                </div>
               </div>
             </div>
           </>

@@ -115,7 +115,8 @@
       margin-bottom: 10px;
     }
 
-    .interfaceUserAdd {
+    .interfaceUserAdd,
+    .interfaceTagAdd {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
@@ -143,78 +144,89 @@
         flex-direction: row;
         justify-content: flex-start;
 
-        .usersName {
-          margin: 0 3px;
-          width: auto;
-          height: 27px;
-          min-width: 50px;
-          max-width: 160px;
-          padding: 5px;
-          outline: none;
-          font-size: 14px;
-          border: none;
-          border-radius: 3px;
-          color: $color-8;
-          background: $color-21;
-          transition: all 0.35s ease;
+        .add {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
 
-          &:hover,
-          &:active,
-          &:focus {
+          .usersName {
+            margin: 0 3px;
+            width: auto;
+            height: 27px;
+            min-width: 50px;
+            max-width: 160px;
+            padding: 5px;
             outline: none;
-          }
-        }
-
-        .submit {
-          width: 27px;
-          height: 27px;
-          border-radius: 3px;
-          font-size: 16px;
-          border: none;
-          outline: none;
-          background: $color-21;
-          color: $color-3;
-          transition: all 0.35s ease;
-          cursor: pointer;
-          margin: 0;
-          padding: 0;
-
-          &:hover,
-          &:active,
-          &:focus {
-            outline: none;
+            font-size: 14px;
+            border: none;
+            border-radius: 3px;
             color: $color-8;
+            background: $color-21;
+            transition: all 0.35s ease;
+
+            &:hover,
+            &:active,
+            &:focus {
+              outline: none;
+            }
+          }
+
+          .submit {
+            width: 27px;
+            min-width: 27px;
+            height: 27px;
+            border-radius: 3px;
+            font-size: 16px;
+            border: none;
+            outline: none;
+            background: $color-21;
+            color: $color-3;
+            transition: all 0.35s ease;
+            cursor: pointer;
+            margin: 0;
+            padding: 0;
+
+            &:hover,
+            &:active,
+            &:focus {
+              outline: none;
+              color: $color-8;
+            }
           }
         }
 
-        .error {
-          width: 0;
-          height: 0;
-          opacity: 0;
-          line-height: 27px;
-          margin-left: 5px;
-          font-size: 14px;
-          font-weight: 400;
-          color: $color-9;
-          transition: all 0.35s ease;
-          animation: Errors 0.85s both ease;
+        .errorWrapper {
+          width: auto;
+          height: auto;
+
+          span {
+            font-size: 14px;
+            font-weight: 400;
+            color: $color-9;
+            opacity: 0;
+            line-height: 27px;
+            margin-left: 5px;
+            transition: all 0.35s ease;
+            animation: Errors 0.85s both ease;
+          }
         }
       }
 
-      .usersBlock {
+      .usersBlock,
+      .tagsBlock {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         margin-top: 8px;
         height: auto;
-        max-height: 168px;
+        max-height: 115px;
         overflow: auto;
 
         &::-webkit-scrollbar {
           width: 4px;
         }
 
-        .one {
+        .oneName {
           display: flex;
           flex-direction: row;
           justify-content: flex-start;
@@ -269,19 +281,60 @@
             }
           }
         }
+
+        .oneTag {
+          border-radius: 4px;
+          color: darken($color-3, 50%);
+          background: $color-22;
+          padding: 0 8px;
+          margin: 2px 4px;
+
+          .tagViewName {
+            margin-right: 8px;
+            font-size: 13px;
+          }
+
+          .tagViewDel {
+            font-size: 13px;
+            outline: none;
+            background: transparent;
+            color: darken($color-3, 40%);
+            transition: all 0.35s ease;
+            cursor: pointer;
+            margin: 3px 0;
+            padding: 0;
+            border: none;
+            text-align: center;
+
+            &:hover,
+            &:active,
+            &:focus {
+              outline: none;
+              color: $color-8;
+            }
+          }
+        }
       }
+
+      .tagsBlock {
+        max-height: 68px;
+      }
+    }
+
+    .interfaceTagAdd {
+      margin-top: 8px;
     }
 
     .fillTextBlock {
       display: flex;
       flex-direction: column;
-      width: auto;
+      width: 100%;
       height: auto;
       background: $color-7;
       border: 1px solid $color-22;
       border-radius: 5px;
       padding: 8px;
-      margin-top: 15px;
+      margin-top: 8px;
 
       .titleCheck {
         display: flex;
@@ -322,11 +375,11 @@
       .in {
         width: 100%;
         min-width: 100%;
-        max-width: 806px;
+        max-width: 100%;
         line-height: 24px;
         height: auto;
         min-height: 34px;
-        max-height: 180px;
+        max-height: 140px;
         vertical-align: bottom;
         padding: 5px;
         outline: none;
@@ -336,6 +389,8 @@
         color: $color-8;
         background: $color-21;
         transition: all 0.35s ease;
+        overflow: auto;
+        resize: none;
 
         &:hover,
         &:active,
@@ -349,7 +404,7 @@
       display: flex;
       margin: auto auto 0 auto;
 
-      .save {
+      .actions {
         height: 32px;
         line-height: 32px;
         border: none;
@@ -358,11 +413,11 @@
         padding: 0 24px;
         outline: none;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 14px;
         cursor: pointer;
         transition: all 0.35s ease;
         margin: 0 10px;
-        background: $color-4;
+        font-family: $fontCustom2;
 
         &:active,
         &:hover,
@@ -371,14 +426,110 @@
           outline: none;
           border: none;
         }
+      }
+
+      .save {
+        background: $color-4;
 
         &:hover {
           background: $color-6;
           color: $color-2;
         }
       }
+
+      .delete {
+        background: $color-9;
+
+        &:hover {
+          color: $color-2;
+        }
+      }
     }
   }
+}
 
+@media screen and (max-width: 1600px) {
+}
 
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1280px) {
+  .containerAddEdit {
+    .right {
+      .interfaceUserAdd,
+      .interfaceTagAdd {
+        form {
+          flex-direction: column;
+
+          .errorWrapper {
+            height: auto;
+          }
+        }
+
+        .usersBlock,
+        .tagsBlock {
+          margin-top: 3px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 960px) {
+  .containerAddEdit {
+    flex-direction: column;
+
+    .left {
+      .postParameters {
+        .listParameter {
+          width: 100%;
+        }
+      }
+
+      .containerPhotos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        max-width: none;
+
+        .margin {
+          margin: 5px;
+        }
+      }
+    }
+
+    .right {
+      margin: 0;
+
+      .interfaceUserAdd,
+      .interfaceTagAdd {
+        .usersBlock,
+        .tagsBlock {
+          max-height: none;
+          height: auto;
+          margin-top: 5px;
+        }
+      }
+
+      .wrapperBtn {
+        margin: 15px auto 5px auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 640px) {
+}
+
+@media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 360px) {
 }
