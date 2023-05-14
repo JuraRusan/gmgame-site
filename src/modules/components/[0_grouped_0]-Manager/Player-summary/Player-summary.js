@@ -1,15 +1,15 @@
 import React, {useEffect, useMemo, useState} from "react";
 import AOS from "aos";
 import {useSearchParams} from "react-router-dom";
-import {sendRequest} from '../../../DataProvider';
+import {sendRequest} from '../../../../DataProvider';
 import {useAlert} from "react-alert";
 import ReactModal from 'react-modal';
 import debounce from 'lodash.debounce';
 
-import "./Admin-dashboard.scss";
+import "./Player-summary.scss";
 import "aos/dist/aos.css";
 
-const AdminDashboard = () => {
+const PlayerSummary = () => {
   const [searchParams] = useSearchParams();
   let [searchParam, setSearchParam] = useState('Поиск работает по discord_id/nickname/discord_tag');
   let [user, setUser] = useState([]);
@@ -114,7 +114,7 @@ const AdminDashboard = () => {
     if (searchParams.get("user_id")) {
       getUser(searchParams.get("user_id"));
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const getMarkers = () => {
@@ -785,4 +785,4 @@ const AdminDashboard = () => {
   );
 };
 
-export default AdminDashboard;
+export default PlayerSummary;

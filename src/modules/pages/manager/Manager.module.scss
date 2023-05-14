@@ -1,0 +1,65 @@
+@import "../../../Variables.scss";
+
+.wrapperManagerTo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  .navigationTitle {
+    font-family: $fontCustom2;
+    font-size: 22px;
+    font-weight: 400;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: $color-3;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    margin: 8px 0;
+    width: auto;
+    height: 42px;
+    padding: 5px 0 5px 18px;
+    background: $color-20;
+    border-radius: 8px;
+    border: 1px solid $color-22;
+
+    .name {
+      width: auto;
+      height: 32px;
+      line-height: 32px;
+      font-weight: 400;
+      font-size: 16px;
+      color: $color-3;
+    }
+
+    .link {
+      width: 120px;
+      text-align: center;
+      height: 32px;
+      line-height: 32px;
+      font-weight: 400;
+      font-size: 16px;
+      font-family: $fontCustom2;
+      color: $color-3;
+      transition: all 0.35s ease;
+      text-decoration: none;
+      margin: auto 0 auto auto;
+
+      &:active,
+      &:hover,
+      &:focus,
+      &:visited {
+        color: $color-3;
+      }
+
+      &:hover {
+        color: $color-8;
+      }
+    }
+  }
+}

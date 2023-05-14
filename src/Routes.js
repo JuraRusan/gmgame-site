@@ -11,7 +11,14 @@ const Auth = lazy(() => import(/* webpackChunkName: "auth" */ /* webpackPreload:
 const NotFound = lazy(() => import(/* webpackChunkName: "404" */ './modules/pages/not-found/NotFound.js'));
 const NoAccess = lazy(() => import(/* webpackChunkName: "404" */ './modules/pages/no-access/NoAccess.js'));
 // --
-const AdminDashboard = lazy(() => import(/* webpackChunkName: "404" */ './modules/pages/admin-dashboard/Admin-dashboard.js'));
+const Manager = lazy(() => import(/* webpackChunkName: "404" */ './modules/pages/manager/Manager'));
+const PlayerSummary = lazy(() => import(/* webpackChunkName: "404" */ './modules/components/[0_grouped_0]-Manager/Player-summary/Player-summary'));
+const FaqEditor = lazy(() => import(/* webpackChunkName: "404" */ './modules/components/[0_grouped_0]-Manager/Faq-editor/Faq-editor'));
+const ModEditor = lazy(() => import(/* webpackChunkName: "404" */ './modules/components/[0_grouped_0]-Manager/Mod-editor/Mod-editor'));
+const TexturePackEditor = lazy(() => import(/* webpackChunkName: "404" */ './modules/components/[0_grouped_0]-Manager/Texture-pack-editor/Texture-pack-editor'));
+const RegulationsEditor = lazy(() => import(/* webpackChunkName: "404" */ './modules/components/[0_grouped_0]-Manager/Regulations-editor/Regulations-editor'));
+const MonitoringSummary = lazy(() => import(/* webpackChunkName: "404" */ './modules/components/[0_grouped_0]-Manager/Monitoring-summary/Monitoring-summary'));
+const GalleryStatusView = lazy(() => import(/* webpackChunkName: "404" */ './modules/components/[0_grouped_0]-Manager/Gallery-status-view/Gallery-status-view'));
 // --
 const Faq = lazy(() => import(/* webpackChunkName: "faq" */ './modules/pages/faq/Faq.js'));
 const Regulations = lazy(() => import(/* webpackChunkName: "regulations" */ './modules/pages/regulations/Regulations.js'));
@@ -93,7 +100,15 @@ const Router = () => {
           <Route path="/texturePack" element={<TexturePack/>}/>
           <Route path="/shopkeepers" element={<Shopkeepers/>}/>
 
-          <Route path="/manager" element={<AdminDashboard/>}/>
+          <Route exact path="/manager" element={<Manager/>}>
+            <Route path="player_summary" element={<PlayerSummary/>}/>
+            <Route path="faq_editor" element={<FaqEditor/>}/>
+            <Route path="mod_editor" element={<ModEditor/>}/>
+            <Route path="texture_pack_editor" element={<TexturePackEditor/>}/>
+            <Route path="regulations_editor" element={<RegulationsEditor/>}/>
+            <Route path="monitoring_summary" element={<MonitoringSummary/>}/>
+            <Route path="gallery_status_view" element={<GalleryStatusView/>}/>
+          </Route>
 
         </Routes>
       </Provider>
