@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import React, {useEffect, useMemo, useState} from "react";
 import AOS from "aos";
 import {useSearchParams} from "react-router-dom";
@@ -6,10 +7,11 @@ import {useAlert} from "react-alert";
 import ReactModal from 'react-modal';
 import debounce from 'lodash.debounce';
 
-import "./Player-summary.scss";
+import styles from "./Player-summary.module.scss";
 import "aos/dist/aos.css";
 
 const PlayerSummary = () => {
+
   const [searchParams] = useSearchParams();
   let [searchParam, setSearchParam] = useState('Поиск работает по discord_id/nickname/discord_tag');
   let [user, setUser] = useState([]);
@@ -91,7 +93,7 @@ const PlayerSummary = () => {
       setMarkers({});
       setTerritories({});
 
-      response.forEach( user => {
+      response.forEach(user => {
         try {
           tagUser[user.username] = JSON.parse(user.tag);
         } catch (err) {
@@ -337,15 +339,15 @@ const PlayerSummary = () => {
   }
 
   return (
-    <div className="main-dashboard" data-aos="zoom-in">
+    <div className={classNames(styles["mainUserSummary"])} data-aos="zoom-in">
 
-      <input className="search-players" placeholder={searchParam} onChange={debouncedGetUser} type="search" data-aos="zoom-in"></input>
-      <button className="button-search-players" type="submit" onClick={() => getUser(searchParam)} data-aos="zoom-in">Поиск</button>
+      <input className={classNames(styles["searchPlayers"])} placeholder={searchParam} onChange={debouncedGetUser} type="search" data-aos="zoom-in"/>
+      <button className={classNames(styles["buttonSearchPlayers"])} type="submit" onClick={() => getUser(searchParam)} data-aos="zoom-in">Поиск</button>
 
-      <div className="wrapper-btn-manager" data-aos="zoom-in">
-        <button className="button-search" type="submit" onClick={getMarkers}>Отображение всех меток</button>
-        <button className="button-search" type="submit" onClick={getTerritories}>Отображение всех территорий</button>
-        <button className="button-search" type="submit" onClick={getRegens}>Пользователи для регена</button>
+      <div className={classNames(styles["wrapperButtonManager"])} data-aos="zoom-in">
+        <button className={classNames(styles["buttonSearchAll"])} type="submit" onClick={getMarkers}>Отображение всех меток</button>
+        <button className={classNames(styles["buttonSearchAll"])} type="submit" onClick={getTerritories}>Отображение всех территорий</button>
+        <button className={classNames(styles["buttonSearchAll"])} type="submit" onClick={getRegens}>Пользователи для регена</button>
       </div>
 
       {/*-----------------------------------------------------------------------------------------------*/}
@@ -356,32 +358,45 @@ const PlayerSummary = () => {
       {/*--- Таблица для отображения пользователя или всех пользователей ---*/}
       {user[0]?.status &&
         <>
-          <table className="table-main-styling" data-aos="zoom-in">
-            <thead className="table-thead-styling">
-            <tr className="table-tr-styling-rows">
-              <th className="table-th-styling-columns">Имя</th>
-              <th className="table-th-styling-columns">email</th>
-              <th className="table-th-styling-columns age-stat-table">Возраст</th>
-              <th className="table-th-styling-columns age-stat-table">Статус</th>
-              <th className="table-th-styling-columns action-table">Доп. инфа</th>
-              <th className="table-th-styling-columns action-table">Действия</th>
+          <table className={classNames(styles["tableMainStyling"])} data-aos="zoom-in">
+            <thead className={classNames(styles["tableTheadStyling"])}>
+            <tr className={classNames(styles["tableStylingRows"])}>
+              <th className={classNames(styles["tableStylingColumns"], styles["userNameColumn"])}>Имя</th>
+              <th className={classNames(styles["tableStylingColumns"])}>email</th>
+              <th className={classNames(styles["tableStylingColumns"], styles["userAgeColumn"])}>Возраст</th>
+              <th className={classNames(styles["tableStylingColumns"], styles["userStatusColumn"])}>Статус</th>
+              <th className={classNames(styles["tableStylingColumns"], styles["userModalOpen"])}>Доп. инфа</th>
+              <th className={classNames(styles["tableStylingColumns"], styles["userActionColumn"])}>Действия</th>
             </tr>
             </thead>
-            <tbody className="table-tbody-styling">
+            <tbody className={classNames(styles["tableTbodyStyling"])}>
             {user?.map((el, i) => {
               return (
-                <tr className="table-tr-styling-rows" key={i}>
-                  <th className="table-th-styling-columns">{el?.username}</th>
-                  <th className="table-th-styling-columns">{tag[el?.username]?.email}</th>
-                  <th className="table-th-styling-columns age-stat-table">{el?.age}</th>
-                  <th className="table-th-styling-columns age-stat-table">{el?.status}</th>
-                  <th className="table-th-styling-columns action-table modals-manager">
-                    <button className="modal-open" onClick={() => handleOpenModal(el.user_id)}>Log</button>
-                    <button className="modal-open" onClick={() => handleOpenModalUd(el)}>User Details</button>
+                <tr className={classNames(styles["tableStylingRows"])} key={i}>
+                  <th className={classNames(styles["tableStylingColumns"], styles["userNameColumn"])}>
+                    <p className={classNames(styles["textP"])}>{el?.username}</p>
                   </th>
-                  <th className="table-th-styling-columns action-table">
+                  <th className={classNames(styles["tableStylingColumns"])}>
+                    {tag[el?.username]?.email === null || tag[el?.username]?.email === undefined
+                      ?
+                      <p className={classNames(styles["textP"])}>-</p>
+                      :
+                      <p className={classNames(styles["textP"])}>{tag[el?.username]?.email}</p>
+                    }
+                  </th>
+                  <th className={classNames(styles["tableStylingColumns"], styles["userAgeColumn"])}>
+                    <p className={classNames(styles["textP"])}>{el?.age}</p>
+                  </th>
+                  <th className={classNames(styles["tableStylingColumns"], styles["userStatusColumn"])}>
+                    <p className={classNames(styles["textP"])}>{el?.status}</p>
+                  </th>
+                  <th className={classNames(styles["tableStylingColumns"], styles["userModalOpen"])}>
+                    <button className={classNames(styles["modalOpen"])} onClick={() => handleOpenModal(el.user_id)}>Log</button>
+                    <button className={classNames(styles["modalOpen"])} onClick={() => handleOpenModalUd(el)}>User Details</button>
+                  </th>
+                  <th className={classNames(styles["tableStylingColumns"], styles["userActionColumn"])}>
                     <select
-                      className="in-manager-option"
+                      className={classNames(styles["inputManagerSelect"])}
                       value={action[el.user_id]?.action || ""}
                       onChange={event => setAction(
                         {
@@ -400,7 +415,7 @@ const PlayerSummary = () => {
             })}
             </tbody>
           </table>
-          <button className="button-search-players" type="submit" onClick={actionUser}>Применить</button>
+          <button className={classNames(styles["buttonPlayersSubmit"])} type="submit" onClick={actionUser}>Применить</button>
         </>
       }
 
@@ -416,61 +431,81 @@ const PlayerSummary = () => {
         }
         return (
           <React.Fragment key={i}>
-            <h4 className="manager-h4" data-aos="zoom-in">Метки {username}</h4>
-            <table className="table-main-styling" data-aos="zoom-in">
-              <thead className="table-thead-styling">
-              <tr className="table-tr-styling-rows">
-                {username === 'all' && <th className="table-th-styling-columns">Имя пользователя</th>}
-                <th className="table-th-styling-columns">Название</th>
-                <th className="table-th-styling-columns">Описание</th>
-                <th className="table-th-styling-columns table-coordinates">x</th>
-                <th className="table-th-styling-columns table-coordinates">y</th>
-                <th className="table-th-styling-columns table-coordinates">z</th>
-                <th className="table-th-styling-columns action-table">Действия</th>
+            <h4 className={classNames(styles["managerTitleH4"])} data-aos="zoom-in">Метки {username}</h4>
+            <table className={classNames(styles["tableMainStyling"])} data-aos="zoom-in">
+              <thead className={classNames(styles["tableTheadStyling"])}>
+              <tr className={classNames(styles["tableStylingRows"])}>
+                {username === 'all' && <th className={classNames(styles["tableStylingColumns"], styles["userNameColumn"])}>Имя пользователя</th>}
+                <th className={classNames(styles["tableStylingColumns"], styles["mapsNameColumn"])}>Название</th>
+                <th className={classNames(styles["tableStylingColumns"], styles["mapsDescriptionColumn"])}>Описание</th>
+                <th className={classNames(styles["tableStylingColumns"], styles["coordinatesColumn"])}>x</th>
+                <th className={classNames(styles["tableStylingColumns"], styles["coordinatesColumn"])}>y</th>
+                <th className={classNames(styles["tableStylingColumns"], styles["coordinatesColumn"])}>z</th>
+                <th className={classNames(styles["tableStylingColumns"], styles["mapsLinkColumn"])}>&#129133;</th>
+                <th className={classNames(styles["tableStylingColumns"], styles["mapsActionColumn"])}>Действия</th>
               </tr>
               </thead>
-              <tbody className="table-tbody-styling">
+              <tbody className={classNames(styles["tableTbodyStyling"])}>
               {markers[username].map((el, i) => (
-                <tr className="table-tr-styling-rows" key={i}>
+                <tr className={classNames(styles["tableStylingRows"])} key={i}>
                   {username === 'all' &&
-                    <th className="table-th-styling-columns">
-                      <p className="textP">{el.username}</p>
+                    <th className={classNames(styles["tableStylingColumns"], styles["userNameColumn"])}>
+                      <p className={classNames(styles["textP"])}>{el.username}</p>
                     </th>
                   }
-                  <th className="table-th-styling-columns">
+                  <th className={classNames(styles["tableStylingColumns"], styles["mapsNameColumn"])}>
                     <input
                       id="name"
                       onChange={(e) => markerChange(e, el.id)}
-                      className="in-manager"
-                      defaultValue={el.name}/></th>
-                  <th className="table-th-styling-columns">
+                      className={classNames(styles["inputManager"])}
+                      defaultValue={el.name}
+                    />
+                  </th>
+                  <th className={classNames(styles["tableStylingColumns"], styles["mapsDescriptionColumn"])}>
                     <textarea
                       id="description"
                       onChange={(e) => markerChange(e, el.id)}
                       rows="1"
-                      className="in-manager-textarea"
-                      defaultValue={el.description}/></th>
-                  <th className="table-th-styling-columns table-coordinates">
+                      className={classNames(styles["inputManagerTextarea"])}
+                      defaultValue={el.description}
+                    />
+                  </th>
+                  <th className={classNames(styles["tableStylingColumns"], styles["coordinatesColumn"])}>
                     <input
                       id="x"
                       onChange={(e) => markerChange(e, el.id)}
-                      className="in-manager"
-                      defaultValue={el.x}/></th>
-                  <th className="table-th-styling-columns table-coordinates">
+                      className={classNames(styles["inputManager"])}
+                      defaultValue={el.x}
+                    />
+                  </th>
+                  <th className={classNames(styles["tableStylingColumns"], styles["coordinatesColumn"])}>
                     <input
                       id="y"
                       onChange={(e) => markerChange(e, el.id)}
-                      className="in-manager"
-                      defaultValue={el.y}/></th>
-                  <th className="table-th-styling-columns table-coordinates">
+                      className={classNames(styles["inputManager"])}
+                      defaultValue={el.y}
+                    />
+                  </th>
+                  <th className={classNames(styles["tableStylingColumns"], styles["coordinatesColumn"])}>
                     <input
                       id="z"
                       onChange={(e) => markerChange(e, el.id)}
-                      className="in-manager"
-                      defaultValue={el.z}/></th>
-                  <th className="table-th-styling-columns action-table">
-                    <button className="manager-btn" type="submit" onClick={() => delMarker(el.id, username)}>Удалить</button>
-                    <button className="manager-btn" type="submit" onClick={() => updateMarker(el.id)}>Обновить</button>
+                      className={classNames(styles["inputManager"])}
+                      defaultValue={el.z}
+                    />
+                  </th>
+                  <th className={classNames(styles["tableStylingColumns"], styles["mapsLinkColumn"])}>
+                    <a
+                      href={`https://map.gmgame.ru/#/${el.x}/64/${el.z}/-4/GMGameWorld-overworld/over`} // Нужен фикс, с миром траблы
+                      className={classNames(styles["linkMap"])}
+                      target="_blank"
+                      rel="noreferrer"
+                    >&#129133;
+                    </a>
+                  </th>
+                  <th className={classNames(styles["tableStylingColumns"], styles["mapsActionColumn"])}>
+                    <button className={classNames(styles["managerActionsButton"])} type="submit" onClick={() => delMarker(el.id, username)}>Удалить</button>
+                    <button className={classNames(styles["managerActionsButton"])} type="submit" onClick={() => updateMarker(el.id)}>Обновить</button>
                   </th>
                 </tr>
               ))}
@@ -493,66 +528,89 @@ const PlayerSummary = () => {
         }
         return (
           <React.Fragment key={i}>
-            <h4 className="manager-h4" data-aos="zoom-in">Территории {username}</h4>
-            <table className="table-main-styling" data-aos="zoom-in">
-              <thead className="table-thead-styling">
-              <tr className="table-tr-styling-rows">
-                {username === 'all' && <th className="table-th-styling-columns">Имя пользователя</th>}
-                <th className="table-th-styling-columns">Название</th>
-                <th className="table-th-styling-columns">Сервер</th>
-                <th className="table-th-styling-columns table-coordinates">xStart</th>
-                <th className="table-th-styling-columns table-coordinates">xStop</th>
-                <th className="table-th-styling-columns table-coordinates">zStart</th>
-                <th className="table-th-styling-columns table-coordinates">zStop</th>
-                <th className="table-th-styling-columns action-table">Действия</th>
+            <h4 className={classNames(styles["managerTitleH4"])} data-aos="zoom-in">Территории {username}</h4>
+            <table className={classNames(styles["tableMainStyling"])} data-aos="zoom-in">
+              <thead className={classNames(styles["tableTheadStyling"])}>
+              <tr className={classNames(styles["tableStylingRows"])}>
+                {username === 'all' && <th className={classNames(styles["tableStylingColumns"], styles["userNameColumn"])}>Имя пользователя</th>}
+                <th className={classNames(styles["tableStylingColumns"], styles["mapsNameColumn"])}>Название</th>
+                <th className={classNames(styles["tableStylingColumns"], styles["mapsWorldColumn"])}>Сервер</th>
+                <th className={classNames(styles["tableStylingColumns"], styles["coordinatesColumn"])}>xStart</th>
+                <th className={classNames(styles["tableStylingColumns"], styles["coordinatesColumn"])}>xStop</th>
+                <th className={classNames(styles["tableStylingColumns"], styles["coordinatesColumn"])}>zStart</th>
+                <th className={classNames(styles["tableStylingColumns"], styles["coordinatesColumn"])}>zStop</th>
+                <th className={classNames(styles["tableStylingColumns"], styles["mapsLinkColumn"])}>&#129133;</th>
+                <th className={classNames(styles["tableStylingColumns"], styles["mapsActionColumn"])}>Действия</th>
               </tr>
               </thead>
-              <tbody className="table-tbody-styling">
+              <tbody className={classNames(styles["tableTbodyStyling"])}>
               {territories[username].map((el, i) => (
-                <tr className="table-tr-styling-rows" key={i}>
+                <tr className={classNames(styles["tableStylingRows"])} key={i}>
                   {username === 'all' &&
-                    <th className="table-th-styling-columns">
-                      <p className="textP">{el.username}</p>
-                    </th>}
-                  <th className="table-th-styling-columns">
+                    <th className={classNames(styles["tableStylingColumns"], styles["userNameColumn"])}>
+                      <p className={classNames(styles["textP"])}>{el.username}</p>
+                    </th>
+                  }
+                  <th className={classNames(styles["tableStylingColumns"], styles["mapsNameColumn"])}>
                     <input
                       id="name"
                       onChange={(e) => terrsChange(e, el.id)}
-                      className="in-manager"
-                      defaultValue={el.name}/></th>
-                  <th className="table-th-styling-columns">
+                      className={classNames(styles["inputManager"])}
+                      defaultValue={el.name}
+                    />
+                  </th>
+                  <th className={classNames(styles["tableStylingColumns"], styles["mapsWorldColumn"])}>
                     <input
                       id="world"
                       onChange={(e) => terrsChange(e, el.id)}
-                      className="in-manager"
-                      defaultValue={el.world}/></th>
-                  <th className="table-th-styling-columns table-coordinates">
+                      className={classNames(styles["inputManager"])}
+                      defaultValue={el.world}
+                    />
+                  </th>
+                  <th className={classNames(styles["tableStylingColumns"], styles["coordinatesColumn"])}>
                     <input
                       id="xStart"
                       onChange={(e) => terrsChange(e, el.id)}
-                      className="in-manager"
-                      defaultValue={el.xStart}/></th>
-                  <th className="table-th-styling-columns table-coordinates">
+                      className={classNames(styles["inputManager"])}
+                      defaultValue={el.xStart}
+                    />
+                  </th>
+                  <th className={classNames(styles["tableStylingColumns"], styles["coordinatesColumn"])}>
                     <input
                       id="xStop"
                       onChange={(e) => terrsChange(e, el.id)}
-                      className="in-manager"
-                      defaultValue={el.xStop}/></th>
-                  <th className="table-th-styling-columns table-coordinates">
+                      className={classNames(styles["inputManager"])}
+                      defaultValue={el.xStop}
+                    />
+                  </th>
+                  <th className={classNames(styles["tableStylingColumns"], styles["coordinatesColumn"])}>
                     <input
                       id="zStart"
                       onChange={(e) => terrsChange(e, el.id)}
-                      className="in-manager"
-                      defaultValue={el.zStart}/></th>
-                  <th className="table-th-styling-columns table-coordinates">
+                      className={classNames(styles["inputManager"])}
+                      defaultValue={el.zStart}
+                    />
+                  </th>
+                  <th className={classNames(styles["tableStylingColumns"], styles["coordinatesColumn"])}>
                     <input
                       id="zStop"
                       onChange={(e) => terrsChange(e, el.id)}
-                      className="in-manager"
-                      defaultValue={el.zStop}/></th>
-                  <th className="table-th-styling-columns action-table">
-                    <button className="manager-btn" type="submit" onClick={() => delTerr(el.id, username)}>Удалить</button>
-                    <button className="manager-btn" type="submit" onClick={() => updateTerr(el.id)}>Обновить</button>
+                      className={classNames(styles["inputManager"])}
+                      defaultValue={el.zStop}
+                    />
+                  </th>
+                  <th className={classNames(styles["tableStylingColumns"], styles["mapsLinkColumn"])}>
+                    <a
+                      href={`https://map.gmgame.ru/#/${(el.xStart + el.xStop)/2}/64/${(el.zStart + el.zStop)/2}/-4/GMGameWorld%20-%20overworld/over`} // Нужен фикс, с миром траблы (кроме координат, они тут чотко по центру терры)
+                      className={classNames(styles["linkMap"])}
+                      target="_blank"
+                      rel="noreferrer"
+                    >&#129133;
+                    </a>
+                  </th>
+                  <th className={classNames(styles["tableStylingColumns"], styles["mapsActionColumn"])}>
+                    <button className={classNames(styles["managerActionsButton"])} type="submit" onClick={() => delTerr(el.id, username)}>Удалить</button>
+                    <button className={classNames(styles["managerActionsButton"])} type="submit" onClick={() => updateTerr(el.id)}>Обновить</button>
                   </th>
                 </tr>
               ))}
@@ -571,33 +629,37 @@ const PlayerSummary = () => {
       {/*--- Таблица для regen_user ---*/}
       {regens.length > 0 &&
         <>
-          <h4 className="manager-h4" data-aos="zoom-in">Список на реген</h4>
-          <table className="table-main-styling" data-aos="zoom-in">
-            <thead className="table-thead-styling">
-            <tr className="table-tr-styling-rows">
-              <th className="table-th-styling-columns">Имя</th>
-              <th className="table-th-styling-columns">Линк</th>
-              <th className="table-th-styling-columns action-table">Действия</th>
+          <h4 className={classNames(styles["managerTitleH4"])} data-aos="zoom-in">Список на реген</h4>
+          <table className={classNames(styles["tableMainStyling"])} data-aos="zoom-in">
+            <thead className={classNames(styles["tableTheadStyling"])}>
+            <tr className={classNames(styles["tableStylingRows"])}>
+              <th className={classNames(styles["tableStylingColumns"], styles["userNameColumn"])}>Имя</th>
+              <th className={classNames(styles["tableStylingColumns"], styles["userIdColumn"])}>id</th>
+              <th className={classNames(styles["tableStylingColumns"], styles["regenLinkColumn"])}>&#129133;</th>
+              <th className={classNames(styles["tableStylingColumns"], styles["regenActionColumn"])}>Действия</th>
             </tr>
             </thead>
-            <tbody className="table-tbody-styling">
+            <tbody className={classNames(styles["tableTbodyStyling"])}>
             {regens.map((regen, i) => (
-              <tr className="table-tr-styling-rows" key={i}>
-                <th className="table-th-styling-columns">{regen.username}</th>
-                <th className="table-th-styling-columns">
-                  <a href={`/manager?user_id=${regen.user_id}`} target="_blank" rel="noreferrer" className="link-user">Информация о пользователе &#129133;</a>
+              <tr className={classNames(styles["tableStylingRows"])} key={i}>
+                <th className={classNames(styles["tableStylingColumns"], styles["userNameColumn"])}>
+                  <p className={classNames(styles["textP"])}>{regen.username}</p>
                 </th>
-                <th className="table-th-styling-columns action-table-regen">
-                  <button
-                    className="manager-btn"
-                    type="submit"
-                    onClick={() => regenAction(regen.user_id, 'regen')}>Отправить в реген
-                  </button>
-                  <button
-                    className="manager-btn"
-                    type="submit"
-                    onClick={() => regenAction(regen.user_id, 'settle')}>Оставить
-                  </button>
+                <th className={classNames(styles["tableStylingColumns"], styles["userIdColumn"])}>
+                  <p className={classNames(styles["textP"])}>{regen.user_id}</p>
+                </th>
+                <th className={classNames(styles["tableStylingColumns"], styles["regenLinkColumn"])}>
+                  <a
+                    href={`/manager?user_id=${regen.user_id}`} // надо фикс
+                    target="_blank"
+                    rel="noreferrer"
+                    className={classNames(styles["linkUser"])}
+                  >&#129133;
+                  </a>
+                </th>
+                <th className={classNames(styles["tableStylingColumns"], styles["regenActionColumn"])}>
+                  <button className={classNames(styles["managerActionsButton"])} type="submit" onClick={() => regenAction(regen.user_id, 'regen')}>Отправить в реген</button>
+                  <button className={classNames(styles["managerActionsButton"])} type="submit" onClick={() => regenAction(regen.user_id, 'settle')}>Оставить</button>
                 </th>
               </tr>
             ))}
@@ -615,94 +677,99 @@ const PlayerSummary = () => {
       <ReactModal
         isOpen={modalUd}
         onRequestClose={handleCloseModalUd}
-        className="modal-main"
-        overlayClassName="overlay-modal"
+        className={classNames(styles["modalMain"])}
+        overlayClassName={classNames(styles["overlayModal"])}
       >
-        <button className="close-modal" onClick={handleCloseModalUd}>X</button>
-        <div className="card-wrapper-manager" data-aos="zoom-in">
-          <div className="card-one">
-            <div className="wrapperActionsAndIcon">
-              <img className="player-image" src={`https://minotar.net/helm/${userDetails?.username}/150`} alt="none"/>
-              <button className="buttonSubmit" type="submit" onClick={() => updateUser(userDetails.user_id)}>Сохранить</button>
+        <button className={classNames(styles["closeModal"])} onClick={handleCloseModalUd}>X</button>
+        <div className={classNames(styles["cardWrapperManagerUser"])} data-aos="zoom-in">
+          <div className={classNames(styles["cardOne"])}>
+            <div className={classNames(styles["wrapperActionsAndIcon"])}>
+              <img className={classNames(styles["playerImage"])} src={`https://minotar.net/helm/${userDetails?.username}/150`} alt="none"/>
+              <button className={classNames(styles["buttonSubmit"])} type="submit" onClick={() => updateUser(userDetails.user_id)}>Сохранить
+              </button>
             </div>
-            <div className="text-container">
+            <div className={classNames(styles["textContainer"])}>
               {/*----- username -----*/}
-              <div className="oneBlock">
-                <p className="text-p">Ник игрока:</p>
-                <span className="lime">{userDetails?.username}</span>
+              <div className={classNames(styles["oneBlock"])}>
+                <p className={classNames(styles["textDescriptionParagraph"])}>Ник игрока:</p>
+                <span className={classNames(styles["lime"])}>{userDetails?.username}</span>
               </div>
               {/*----- user_id -----*/}
-              <div className="oneBlock">
-                <p className="text-p">Discord id игрока:</p>
-                <span className="lime">{userDetails?.user_id}</span>
+              <div className={classNames(styles["oneBlock"])}>
+                <p className={classNames(styles["textDescriptionParagraph"])}>Discord id игрока:</p>
+                <span className={classNames(styles["lime"])}>{userDetails?.user_id}</span>
               </div>
               {/*----- age -----*/}
-              <div className="oneBlock">
-                <p className="text-p">Возраст:</p>
-                <span className="lime">{userDetails?.age}</span>
+              <div className={classNames(styles["oneBlock"])}>
+                <p className={classNames(styles["textDescriptionParagraph"])}>Возраст:</p>
+                <span className={classNames(styles["lime"])}>{userDetails?.age}</span>
               </div>
               {/*----- status -----*/}
-              <div className="oneBlock">
-                <p className="text-p">Статус игрока:</p>
-                {userDetails?.status === 1 && <span className="lime">Заявка на рассмотрении [base_status_number - {userDetails?.status}]</span>}
-                {userDetails?.status === 2 && <span className="lime">Игрок сервера [base_status_number - {userDetails?.status}]</span>}
-                {userDetails?.status === 3 && <span className="lime">Отказ по заявке [base_status_number - {userDetails?.status}]</span>}
-                {userDetails?.status === 4 && <span className="lime">Бан на сервере [base_status_number - {userDetails?.status}]</span>}
-                {userDetails?.status === 5 && <span className="lime">Не активный игрок [base_status_number - {userDetails?.status}]</span>}
-                {userDetails?.status === "default" && <span className="lime">Новая заявка [base_status_number - {userDetails?.status}]</span>}
+              <div className={classNames(styles["oneBlock"])}>
+                <p className={classNames(styles["textDescriptionParagraph"])}>Статус игрока:</p>
+                {userDetails?.status === 1 && <span className={classNames(styles["lime"])}>Заявка на рассмотрении [base_status_number - {userDetails?.status}]</span>}
+                {userDetails?.status === 2 && <span className={classNames(styles["lime"])}>Игрок сервера [base_status_number - {userDetails?.status}]</span>}
+                {userDetails?.status === 3 && <span className={classNames(styles["lime"])}>Отказ по заявке [base_status_number - {userDetails?.status}]</span>}
+                {userDetails?.status === 4 && <span className={classNames(styles["lime"])}>Бан на сервере [base_status_number - {userDetails?.status}]</span>}
+                {userDetails?.status === 5 && <span className={classNames(styles["lime"])}>Не активный игрок [base_status_number - {userDetails?.status}]</span>}
+                {userDetails?.status === "default" && <span className={classNames(styles["lime"])}>Новая заявка [base_status_number - {userDetails?.status}]</span>}
               </div>
               {/*----- user_id -----*/}
-              <div className="oneBlock">
-                <p className="text-p">Партнер:</p>
+              <div className={classNames(styles["oneBlock"])}>
+                <p className={classNames(styles["textDescriptionParagraph"])}>Партнер:</p>
                 <input
                   id="partner"
                   onChange={(e) => userDetailsChange(e, userDetails.user_id)}
-                  className="input-redactor"
-                  defaultValue={userDetails?.partner}/>
-                <span className="viewRedactor">&#10043;</span>
+                  className={classNames(styles["inputUserRedactor"])}
+                  defaultValue={userDetails?.partner}
+                />
+                <span className={classNames(styles["viewRedactor"])}>&#10043;</span>
               </div>
               {/*----- from_about -----*/}
-              <div className="oneBlock">
-                <p className="text-p">Откуда узнал о проекте:</p>
-                <span className="lime">{userDetails?.from_about}</span>
+              <div className={classNames(styles["oneBlock"])}>
+                <p className={classNames(styles["textDescriptionParagraph"])}>Откуда узнал о проекте:</p>
+                <span className={classNames(styles["lime"])}>{userDetails?.from_about}</span>
               </div>
               {/*----- you_about -----*/}
-              <div className="oneBlock">
-                <p className="text-p">Описание:</p>
-                <span className="lime">{userDetails?.you_about}</span>
+              <div className={classNames(styles["oneBlock"])}>
+                <p className={classNames(styles["textDescriptionParagraph"])}>Описание:</p>
+                <span className={classNames(styles["lime"])}>{userDetails?.you_about}</span>
               </div>
               {/*----- immun -----*/}
-              <div className="oneBlock">
-                <p className="text-p">Иммунитет:</p>
+              <div className={classNames(styles["oneBlock"])}>
+                <p className={classNames(styles["textDescriptionParagraph"])}>Иммунитет:</p>
                 <input
                   id="immun"
                   onChange={(e) => userDetailsChange(e, userDetails.user_id)}
-                  className="input-redactor"
-                  defaultValue={userDetails?.immun}/>
-                <span className="viewRedactor">&#10043;</span>
+                  className={classNames(styles["inputUserRedactor"])}
+                  defaultValue={userDetails?.immun}
+                />
+                <span className={classNames(styles["viewRedactor"])}>&#10043;</span>
               </div>
               {/*----- expiration_date -----*/}
-              <div className="oneBlock">
-                <p className="text-p">Дата окончания:</p>
+              <div className={classNames(styles["oneBlock"])}>
+                <p className={classNames(styles["textDescriptionParagraph"])}>Дата окончания:</p>
                 <input
                   id="expiration_date"
                   onChange={(e) => userDetailsChange(e, userDetails.user_id)}
-                  className="input-redactor"
+                  className={classNames(styles["inputUserRedactor"])}
                   type="date"
-                  defaultValue={userDetails.expirationDate ? userDetails.expirationDate.toISOString().substring(0, 10) : ''}/>
-                <span className="viewRedactor">&#10043;</span>
+                  defaultValue={userDetails.expirationDate ? userDetails.expirationDate.toISOString().substring(0, 10) : ''}
+                />
+                <span className={classNames(styles["viewRedactor"])}>&#10043;</span>
               </div>
               {/*----- note -----*/}
-              <div className="oneBlock">
-                <p className="text-p">Заметка:</p>
+              <div className={classNames(styles["oneBlock"])}>
+                <p className={classNames(styles["textDescriptionParagraph"])}>Заметка:</p>
                 <textarea
                   id="note"
-                  className="input-redactor"
+                  className={classNames(styles["inputUserRedactor"])}
                   rows="4"
                   cols="1000"
                   onChange={(e) => userDetailsChange(e, userDetails.user_id)}
-                  defaultValue={userDetails?.note}/>
-                <span className="viewRedactor">&#10043;</span>
+                  defaultValue={userDetails?.note}
+                />
+                <span className={classNames(styles["viewRedactor"])}>&#10043;</span>
               </div>
               {/*-----  -----*/}
             </div>
@@ -719,30 +786,30 @@ const PlayerSummary = () => {
       <ReactModal
         isOpen={modalLog}
         onRequestClose={handleCloseModal}
-        className="modal-main"
-        overlayClassName="overlay-modal"
+        className={classNames(styles["modalMain"])}
+        overlayClassName={classNames(styles["overlayModal"])}
       >
-        <button className="close-modal" onClick={handleCloseModal}>X</button>
-        <div className="card-log" data-aos="zoom-in">
-          <table className="table-log">
+        <button className={classNames(styles["closeModal"])} onClick={handleCloseModal}>X</button>
+        <div className={classNames(styles["cardLog"])} data-aos="zoom-in">
+          <table className={classNames(styles["tableLogStyling"])}>
             {/*------*/}
-            <thead className="log-thead">
-            <tr className="log-rows">
-              <th className="log-columns time">Время</th>
-              <th className="log-columns log">Лог</th>
-              <th className="log-columns manager">Менеджер</th>
+            <thead className={classNames(styles["tableLogTheadStyling"])}>
+            <tr className={classNames(styles["tableLogRowsStyling"])}>
+              <th className={classNames(styles["tableLogColumnsStyling"], styles["logTimeColumn"])}>Время</th>
+              <th className={classNames(styles["tableLogColumnsStyling"], styles["logValueColumn"])}>Лог</th>
+              <th className={classNames(styles["tableLogColumnsStyling"], styles["logManagerColumn"])}>Менеджер</th>
             </tr>
             </thead>
             {/*------*/}
-            <tbody className="log-tbody">
+            <tbody className={classNames(styles["tableLogTbodyStyling"])}>
             {logs?.map((el, i) => {
               return (
-                <tr className="log-rows" key={i}>
-                  <th className="log-columns time">
-                    <input className="log-input" defaultValue={new Date(el.log_date).toLocaleString()}/>
+                <tr className={classNames(styles["tableLogRowsStyling"])} key={i}>
+                  <th className={classNames(styles["tableLogColumnsStyling"], styles["logTimeColumn"])}>
+                    <input className={classNames(styles["logInput"])} defaultValue={new Date(el.log_date).toLocaleString()}/>
                   </th>
-                  <th className="log-columns log">
-                    <input className="log-input" defaultValue={(() => {
+                  <th className={classNames(styles["tableLogColumnsStyling"], styles["logValueColumn"])}>
+                    <input className={classNames(styles["logInput"])} defaultValue={(() => {
                       let log = el.log;
                       try {
                         log = JSON.parse(el.log);
@@ -750,23 +817,24 @@ const PlayerSummary = () => {
                         return log;
                       }
                       return `${log.action} ${log.data ? JSON.stringify(log.data) : ''}`;
-                    })()}/>
+                    })()}
+                    />
                   </th>
-                  <th className="log-columns manager">
-                    <input className="log-input" defaultValue={el.manager}/>
+                  <th className={classNames(styles["tableLogColumnsStyling"], styles["logManagerColumn"])}>
+                    <input className={classNames(styles["logInput"])} defaultValue={el.manager}/>
                   </th>
                 </tr>
               );
             })}
-            <tr className="log-rows">
-              <th className="log-columns time">
-                <input className="log-input" defaultValue=" "/>
+            <tr className={classNames(styles["tableLogRowsStyling"])}>
+              <th className={classNames(styles["tableLogColumnsStyling"])}>
+                <input className={classNames(styles["logInput"], styles["logTimeColumn"])} defaultValue=" "/>
               </th>
-              <th className="log-columns log">
-                <input className="log-input" defaultValue=" "/>
+              <th className={classNames(styles["tableLogColumnsStyling"])}>
+                <input className={classNames(styles["logInput"], styles["logValueColumn"])} defaultValue=" "/>
               </th>
-              <th className="log-columns manager">
-                <input className="log-input" defaultValue=" "/>
+              <th className={classNames(styles["tableLogColumnsStyling"])}>
+                <input className={classNames(styles["logInput"], styles["logManagerColumn"])} defaultValue=" "/>
               </th>
             </tr>
             </tbody>
