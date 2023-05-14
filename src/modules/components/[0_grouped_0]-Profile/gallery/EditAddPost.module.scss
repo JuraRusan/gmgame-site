@@ -58,29 +58,40 @@
       display: flex;
       width: auto;
       height: 35px;
-      margin-bottom: 10px;
 
-      .listParameter {
-        display: flex;
-        width: 97%;
-        height: auto;
-        border: 1px solid $color-22;
-        border-radius: 5px;
-        color: $color-8;
-        text-align: start;
-        font-size: 14px;
-        font-weight: 400;
-        outline: none;
+
+      .buttonCount {
+        margin: auto 5px auto 0;
+        width: auto;
+        height: 29px;
+        min-width: 29px;
+        max-width: 29px;
         padding: 5px;
-        background: $color-7;
+        outline: none;
+        font-size: 16px;
+        border: none;
+        border-radius: 3px;
+        color: $color-3;
+        background: $color-21;
         transition: all 0.35s ease;
+        cursor: pointer;
 
         &:hover,
         &:active,
         &:focus {
           outline: none;
-          background: $color-21;
+          color: $color-8;
         }
+      }
+
+      .countNumber {
+        height: 35px;
+        line-height: 35px;
+        font-size: 14px;
+        font-family: $fontCustom2;
+        font-weight: 400;
+        margin: 0 0 0 auto;
+        padding: 0 5px;
       }
     }
 
@@ -99,7 +110,6 @@
       .margin {
         margin: 5px 6px 5px 0;
       }
-
     }
   }
 
@@ -484,12 +494,6 @@
     flex-direction: column;
 
     .left {
-      .postParameters {
-        .listParameter {
-          width: 100%;
-        }
-      }
-
       .containerPhotos {
         flex-direction: row;
         flex-wrap: wrap;

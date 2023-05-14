@@ -105,7 +105,382 @@ export const array = [
   {
     id: 5,
     users: ["prestig9110", "Dalandis"],
-    tagNavigation: [],
+    tagNavigation: ["base", "tunnel", "туннель"],
+    name: "Base",
+    likes: "3",
+    likesList: [],
+    dislikes: "1",
+    dislikesList: [],
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picturesView: "https://images.wallpaperscraft.ru/image/single/ulitsa_luzha_otrazhenie_139688_3840x2160.jpg",
+    picturesList: [
+      {
+        id: "1",
+        original: 'https://images.wallpaperscraft.ru/image/single/more_holmy_gorizont_904491_3840x2160.jpg',
+        thumbnail: 'https://images.wallpaperscraft.ru/image/single/more_holmy_gorizont_904491_3840x2160.jpg',
+        loading: "lazy"
+      },
+      {
+        id: "2",
+        original: 'https://images.wallpaperscraft.ru/image/single/okean_kamni_gorizont_894421_3840x2160.jpg',
+        thumbnail: 'https://images.wallpaperscraft.ru/image/single/okean_kamni_gorizont_894421_3840x2160.jpg',
+        loading: "lazy"
+      }]
+  },
+  {
+    id: 6,
+    users: ["prestig9110", "Dalandis"],
+    tagNavigation: ["base", "tunnel", "туннель"],
+    name: "Base",
+    likes: "3",
+    likesList: [],
+    dislikes: "1",
+    dislikesList: [],
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picturesView: "https://images.wallpaperscraft.ru/image/single/ulitsa_luzha_otrazhenie_139688_3840x2160.jpg",
+    picturesList: [
+      {
+        id: "1",
+        original: 'https://images.wallpaperscraft.ru/image/single/more_holmy_gorizont_904491_3840x2160.jpg',
+        thumbnail: 'https://images.wallpaperscraft.ru/image/single/more_holmy_gorizont_904491_3840x2160.jpg',
+        loading: "lazy"
+      },
+      {
+        id: "2",
+        original: 'https://images.wallpaperscraft.ru/image/single/okean_kamni_gorizont_894421_3840x2160.jpg',
+        thumbnail: 'https://images.wallpaperscraft.ru/image/single/okean_kamni_gorizont_894421_3840x2160.jpg',
+        loading: "lazy"
+      }]
+  },
+  {
+    id: 7,
+    users: ["prestig9110", "Dalandis"],
+    tagNavigation: ["base", "tunnel", "туннель"],
+    name: "Base",
+    likes: "3",
+    likesList: [],
+    dislikes: "1",
+    dislikesList: [],
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picturesView: "https://images.wallpaperscraft.ru/image/single/ulitsa_luzha_otrazhenie_139688_3840x2160.jpg",
+    picturesList: [
+      {
+        id: "1",
+        original: 'https://images.wallpaperscraft.ru/image/single/more_holmy_gorizont_904491_3840x2160.jpg',
+        thumbnail: 'https://images.wallpaperscraft.ru/image/single/more_holmy_gorizont_904491_3840x2160.jpg',
+        loading: "lazy"
+      },
+      {
+        id: "2",
+        original: 'https://images.wallpaperscraft.ru/image/single/okean_kamni_gorizont_894421_3840x2160.jpg',
+        thumbnail: 'https://images.wallpaperscraft.ru/image/single/okean_kamni_gorizont_894421_3840x2160.jpg',
+        loading: "lazy"
+      }]
+  },
+  {
+    id: 8,
+    users: ["prestig9110", "Dalandis"],
+    tagNavigation: ["base", "tunnel", "туннель"],
+    name: "Base",
+    likes: "3",
+    likesList: [],
+    dislikes: "1",
+    dislikesList: [],
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picturesView: "https://images.wallpaperscraft.ru/image/single/ulitsa_luzha_otrazhenie_139688_3840x2160.jpg",
+    picturesList: [
+      {
+        id: "1",
+        original: 'https://images.wallpaperscraft.ru/image/single/more_holmy_gorizont_904491_3840x2160.jpg',
+        thumbnail: 'https://images.wallpaperscraft.ru/image/single/more_holmy_gorizont_904491_3840x2160.jpg',
+        loading: "lazy"
+      },
+      {
+        id: "2",
+        original: 'https://images.wallpaperscraft.ru/image/single/okean_kamni_gorizont_894421_3840x2160.jpg',
+        thumbnail: 'https://images.wallpaperscraft.ru/image/single/okean_kamni_gorizont_894421_3840x2160.jpg',
+        loading: "lazy"
+      }]
+  },
+  {
+    id: 9,
+    users: ["prestig9110", "Dalandis"],
+    tagNavigation: ["base", "tunnel", "туннель"],
+    name: "Base",
+    likes: "3",
+    likesList: [],
+    dislikes: "1",
+    dislikesList: [],
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picturesView: "https://images.wallpaperscraft.ru/image/single/ulitsa_luzha_otrazhenie_139688_3840x2160.jpg",
+    picturesList: [
+      {
+        id: "1",
+        original: 'https://images.wallpaperscraft.ru/image/single/more_holmy_gorizont_904491_3840x2160.jpg',
+        thumbnail: 'https://images.wallpaperscraft.ru/image/single/more_holmy_gorizont_904491_3840x2160.jpg',
+        loading: "lazy"
+      },
+      {
+        id: "2",
+        original: 'https://images.wallpaperscraft.ru/image/single/okean_kamni_gorizont_894421_3840x2160.jpg',
+        thumbnail: 'https://images.wallpaperscraft.ru/image/single/okean_kamni_gorizont_894421_3840x2160.jpg',
+        loading: "lazy"
+      }]
+  },
+  {
+    id: 10,
+    users: ["prestig9110", "Dalandis"],
+    tagNavigation: ["base", "tunnel", "туннель"],
+    name: "Base",
+    likes: "3",
+    likesList: [],
+    dislikes: "1",
+    dislikesList: [],
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picturesView: "https://images.wallpaperscraft.ru/image/single/ulitsa_luzha_otrazhenie_139688_3840x2160.jpg",
+    picturesList: [
+      {
+        id: "1",
+        original: 'https://images.wallpaperscraft.ru/image/single/more_holmy_gorizont_904491_3840x2160.jpg',
+        thumbnail: 'https://images.wallpaperscraft.ru/image/single/more_holmy_gorizont_904491_3840x2160.jpg',
+        loading: "lazy"
+      },
+      {
+        id: "2",
+        original: 'https://images.wallpaperscraft.ru/image/single/okean_kamni_gorizont_894421_3840x2160.jpg',
+        thumbnail: 'https://images.wallpaperscraft.ru/image/single/okean_kamni_gorizont_894421_3840x2160.jpg',
+        loading: "lazy"
+      }]
+  },
+  {
+    id: 11,
+    users: ["prestig9110", "Dalandis"],
+    tagNavigation: ["base", "tunnel", "туннель"],
+    name: "Base",
+    likes: "3",
+    likesList: [],
+    dislikes: "1",
+    dislikesList: [],
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picturesView: "https://images.wallpaperscraft.ru/image/single/ulitsa_luzha_otrazhenie_139688_3840x2160.jpg",
+    picturesList: [
+      {
+        id: "1",
+        original: 'https://images.wallpaperscraft.ru/image/single/more_holmy_gorizont_904491_3840x2160.jpg',
+        thumbnail: 'https://images.wallpaperscraft.ru/image/single/more_holmy_gorizont_904491_3840x2160.jpg',
+        loading: "lazy"
+      },
+      {
+        id: "2",
+        original: 'https://images.wallpaperscraft.ru/image/single/okean_kamni_gorizont_894421_3840x2160.jpg',
+        thumbnail: 'https://images.wallpaperscraft.ru/image/single/okean_kamni_gorizont_894421_3840x2160.jpg',
+        loading: "lazy"
+      }]
+  },
+  {
+    id: 12,
+    users: ["prestig9110", "Dalandis"],
+    tagNavigation: ["base", "tunnel", "туннель"],
+    name: "Base",
+    likes: "3",
+    likesList: [],
+    dislikes: "1",
+    dislikesList: [],
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picturesView: "https://images.wallpaperscraft.ru/image/single/ulitsa_luzha_otrazhenie_139688_3840x2160.jpg",
+    picturesList: [
+      {
+        id: "1",
+        original: 'https://images.wallpaperscraft.ru/image/single/more_holmy_gorizont_904491_3840x2160.jpg',
+        thumbnail: 'https://images.wallpaperscraft.ru/image/single/more_holmy_gorizont_904491_3840x2160.jpg',
+        loading: "lazy"
+      },
+      {
+        id: "2",
+        original: 'https://images.wallpaperscraft.ru/image/single/okean_kamni_gorizont_894421_3840x2160.jpg',
+        thumbnail: 'https://images.wallpaperscraft.ru/image/single/okean_kamni_gorizont_894421_3840x2160.jpg',
+        loading: "lazy"
+      }]
+  },
+  {
+    id: 13,
+    users: ["prestig9110", "Dalandis"],
+    tagNavigation: ["base", "tunnel", "туннель"],
+    name: "Base",
+    likes: "3",
+    likesList: [],
+    dislikes: "1",
+    dislikesList: [],
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picturesView: "https://images.wallpaperscraft.ru/image/single/ulitsa_luzha_otrazhenie_139688_3840x2160.jpg",
+    picturesList: [
+      {
+        id: "1",
+        original: 'https://images.wallpaperscraft.ru/image/single/more_holmy_gorizont_904491_3840x2160.jpg',
+        thumbnail: 'https://images.wallpaperscraft.ru/image/single/more_holmy_gorizont_904491_3840x2160.jpg',
+        loading: "lazy"
+      },
+      {
+        id: "2",
+        original: 'https://images.wallpaperscraft.ru/image/single/okean_kamni_gorizont_894421_3840x2160.jpg',
+        thumbnail: 'https://images.wallpaperscraft.ru/image/single/okean_kamni_gorizont_894421_3840x2160.jpg',
+        loading: "lazy"
+      }]
+  },
+  {
+    id: 14,
+    users: ["prestig9110", "Dalandis"],
+    tagNavigation: ["base", "tunnel", "туннель"],
+    name: "Base",
+    likes: "3",
+    likesList: [],
+    dislikes: "1",
+    dislikesList: [],
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picturesView: "https://images.wallpaperscraft.ru/image/single/ulitsa_luzha_otrazhenie_139688_3840x2160.jpg",
+    picturesList: [
+      {
+        id: "1",
+        original: 'https://images.wallpaperscraft.ru/image/single/more_holmy_gorizont_904491_3840x2160.jpg',
+        thumbnail: 'https://images.wallpaperscraft.ru/image/single/more_holmy_gorizont_904491_3840x2160.jpg',
+        loading: "lazy"
+      },
+      {
+        id: "2",
+        original: 'https://images.wallpaperscraft.ru/image/single/okean_kamni_gorizont_894421_3840x2160.jpg',
+        thumbnail: 'https://images.wallpaperscraft.ru/image/single/okean_kamni_gorizont_894421_3840x2160.jpg',
+        loading: "lazy"
+      }]
+  },
+  {
+    id: 15,
+    users: ["prestig9110", "Dalandis"],
+    tagNavigation: ["base", "tunnel", "туннель"],
+    name: "Base",
+    likes: "3",
+    likesList: [],
+    dislikes: "1",
+    dislikesList: [],
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picturesView: "https://images.wallpaperscraft.ru/image/single/ulitsa_luzha_otrazhenie_139688_3840x2160.jpg",
+    picturesList: [
+      {
+        id: "1",
+        original: 'https://images.wallpaperscraft.ru/image/single/more_holmy_gorizont_904491_3840x2160.jpg',
+        thumbnail: 'https://images.wallpaperscraft.ru/image/single/more_holmy_gorizont_904491_3840x2160.jpg',
+        loading: "lazy"
+      },
+      {
+        id: "2",
+        original: 'https://images.wallpaperscraft.ru/image/single/okean_kamni_gorizont_894421_3840x2160.jpg',
+        thumbnail: 'https://images.wallpaperscraft.ru/image/single/okean_kamni_gorizont_894421_3840x2160.jpg',
+        loading: "lazy"
+      }]
+  },
+  {
+    id: 16,
+    users: ["prestig9110", "Dalandis"],
+    tagNavigation: ["base", "tunnel", "туннель"],
+    name: "Base",
+    likes: "3",
+    likesList: [],
+    dislikes: "1",
+    dislikesList: [],
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picturesView: "https://images.wallpaperscraft.ru/image/single/ulitsa_luzha_otrazhenie_139688_3840x2160.jpg",
+    picturesList: [
+      {
+        id: "1",
+        original: 'https://images.wallpaperscraft.ru/image/single/more_holmy_gorizont_904491_3840x2160.jpg',
+        thumbnail: 'https://images.wallpaperscraft.ru/image/single/more_holmy_gorizont_904491_3840x2160.jpg',
+        loading: "lazy"
+      },
+      {
+        id: "2",
+        original: 'https://images.wallpaperscraft.ru/image/single/okean_kamni_gorizont_894421_3840x2160.jpg',
+        thumbnail: 'https://images.wallpaperscraft.ru/image/single/okean_kamni_gorizont_894421_3840x2160.jpg',
+        loading: "lazy"
+      }]
+  },
+  {
+    id: 17,
+    users: ["prestig9110", "Dalandis"],
+    tagNavigation: ["base", "tunnel", "туннель"],
+    name: "Base",
+    likes: "3",
+    likesList: [],
+    dislikes: "1",
+    dislikesList: [],
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picturesView: "https://images.wallpaperscraft.ru/image/single/ulitsa_luzha_otrazhenie_139688_3840x2160.jpg",
+    picturesList: [
+      {
+        id: "1",
+        original: 'https://images.wallpaperscraft.ru/image/single/more_holmy_gorizont_904491_3840x2160.jpg',
+        thumbnail: 'https://images.wallpaperscraft.ru/image/single/more_holmy_gorizont_904491_3840x2160.jpg',
+        loading: "lazy"
+      },
+      {
+        id: "2",
+        original: 'https://images.wallpaperscraft.ru/image/single/okean_kamni_gorizont_894421_3840x2160.jpg',
+        thumbnail: 'https://images.wallpaperscraft.ru/image/single/okean_kamni_gorizont_894421_3840x2160.jpg',
+        loading: "lazy"
+      }]
+  },
+  {
+    id: 18,
+    users: ["prestig9110", "Dalandis"],
+    tagNavigation: ["base", "tunnel", "туннель"],
+    name: "Base",
+    likes: "3",
+    likesList: [],
+    dislikes: "1",
+    dislikesList: [],
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picturesView: "https://images.wallpaperscraft.ru/image/single/ulitsa_luzha_otrazhenie_139688_3840x2160.jpg",
+    picturesList: [
+      {
+        id: "1",
+        original: 'https://images.wallpaperscraft.ru/image/single/more_holmy_gorizont_904491_3840x2160.jpg',
+        thumbnail: 'https://images.wallpaperscraft.ru/image/single/more_holmy_gorizont_904491_3840x2160.jpg',
+        loading: "lazy"
+      },
+      {
+        id: "2",
+        original: 'https://images.wallpaperscraft.ru/image/single/okean_kamni_gorizont_894421_3840x2160.jpg',
+        thumbnail: 'https://images.wallpaperscraft.ru/image/single/okean_kamni_gorizont_894421_3840x2160.jpg',
+        loading: "lazy"
+      }]
+  },
+  {
+    id: 19,
+    users: ["prestig9110", "Dalandis"],
+    tagNavigation: ["base", "tunnel", "туннель"],
+    name: "Base",
+    likes: "3",
+    likesList: [],
+    dislikes: "1",
+    dislikesList: [],
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picturesView: "https://images.wallpaperscraft.ru/image/single/ulitsa_luzha_otrazhenie_139688_3840x2160.jpg",
+    picturesList: [
+      {
+        id: "1",
+        original: 'https://images.wallpaperscraft.ru/image/single/more_holmy_gorizont_904491_3840x2160.jpg',
+        thumbnail: 'https://images.wallpaperscraft.ru/image/single/more_holmy_gorizont_904491_3840x2160.jpg',
+        loading: "lazy"
+      },
+      {
+        id: "2",
+        original: 'https://images.wallpaperscraft.ru/image/single/okean_kamni_gorizont_894421_3840x2160.jpg',
+        thumbnail: 'https://images.wallpaperscraft.ru/image/single/okean_kamni_gorizont_894421_3840x2160.jpg',
+        loading: "lazy"
+      }]
+  },
+  {
+    id: 20,
+    users: ["prestig9110", "Dalandis"],
+    tagNavigation: ["base", "tunnel", "туннель"],
     name: "Base",
     likes: "3",
     likesList: [],

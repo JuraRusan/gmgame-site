@@ -3,11 +3,17 @@ import React, {useEffect, useState} from "react";
 import ReactImagePickerEditor from 'react-image-picker-editor';
 import {testArrayTags, testArrayUsers} from "../../../pages/gallery/GalleryArray";
 import Warn from "../../warn/Warn";
+import AOS from "aos";
 
 import styles from "./EditAddPost.module.scss";
 import '../../../custon-modules/react-image-picker-editor-index.scss'
+import "aos/dist/aos.css";
 
 const EditAddPost = () => {
+
+  useEffect(() => {
+    AOS.init({duration: 1000});
+  }, []);
 
   const [errorMessage, setErrorMessage] = useState(null);
   const [errorMessageTags, setErrorMessageTags] = useState(null);
@@ -15,7 +21,7 @@ const EditAddPost = () => {
   const [errorMessagePostNameLength, setErrorMessagePostNameLength] = useState(null);
   const [errorMessagePostDescription, setErrorMessagePostDescription] = useState(null);
   const [errorMessagePostDescriptionLength, setErrorMessagePostDescriptionLength] = useState(null);
-  const [countImage, setCountImage] = useState("1");
+  const [countImage, setCountImage] = useState(1);
   const [names, setNames] = useState([]);
   const [selectedTags, setSelectedTags] = useState([]);
   const [numberTextareaRow, setNumberTextareaRow] = useState(0);
@@ -26,35 +32,28 @@ const EditAddPost = () => {
   const ErrorValueTree = "Тег может содержать от 3 до 24 символов. "
   const ErrorValueFour = "Тег может содержать только буквы, цифры и символы подчеркивания."
 
-  const optionsList = [
-    {value: "1", label: "1 фото"},
-    {value: "2", label: "2 фото"},
-    {value: "3", label: "3 фото"},
-    {value: "4", label: "4 фото"},
-    {value: "5", label: "5 фото"},
-    {value: "6", label: "6 фото"},
-    {value: "7", label: "7 фото"},
-    {value: "8", label: "8 фото"},
-    {value: "9", label: "9 фото"},
-    {value: "10", label: "10 фото"},
-    {value: "11", label: "11 фото"},
-    {value: "12", label: "12 фото"},
-    {value: "13", label: "13 фото"},
-    {value: "14", label: "14 фото"},
-    {value: "15", label: "15 фото"},
-    {value: "16", label: "16 фото"},
-  ];
-
   function createDivs() {
     const divs = [];
     for (let i = 0; i < countImage; i++) {
       divs.push(
-        <div className={classNames(styles["margin"])} key={i}>
+        <div className={classNames(styles["margin"])} key={i} data-aos="zoom-in" data-aos-offset="-3000">
           <ReactImagePickerEditor config={config2} imageSrcProp={initialImage}/>
         </div>);
     }
     return divs;
   }
+
+  const handleAdd = () => {
+    if (countImage < 16) {
+      setCountImage(countImage + 1);
+    }
+  };
+
+  const handleRemove = () => {
+    if (countImage > 1) {
+      setCountImage(countImage - 1);
+    }
+  };
 
   function handleAddName(e) {
     e.preventDefault();
@@ -113,19 +112,13 @@ const EditAddPost = () => {
   }, []);
 
   return (
-    <div className={classNames(styles["containerAddEdit"])}>
+    <div className={classNames(styles["containerAddEdit"])} data-aos="zoom-in">
 
       <div className={classNames(styles["left"])}>
         <div className={classNames(styles["postParameters"])}>
-          <select
-            className={classNames(styles["listParameter"])}
-            value={countImage}
-            onChange={(event) => setCountImage(event.target.value)}
-          >
-            {optionsList.map((el, i) => (
-              <option key={i} value={el.value}>{el.label}</option>
-            ))}
-          </select>
+          <button className={classNames(styles["buttonCount"], styles["addCount"])} onClick={handleAdd}>+</button>
+          <button className={classNames(styles["buttonCount"], styles["delCount"])} onClick={handleRemove}>-</button>
+          <p className={classNames(styles["countNumber"])}>{countImage}/16</p>
         </div>
         <div className={classNames(styles["containerPhotos"])}>{createDivs()}</div>
       </div>
@@ -148,6 +141,7 @@ const EditAddPost = () => {
               <input
                 name="name"
                 list="usersAdd"
+                type="search"
                 className={classNames(styles["usersName"])}
                 placeholder="Name"
                 onChange={e => {
@@ -188,6 +182,7 @@ const EditAddPost = () => {
               <input
                 name="tags"
                 list="tagsAdd"
+                type="search"
                 className={classNames(styles["usersName"])}
                 placeholder="#tags"
                 onChange={e => {
@@ -209,7 +204,7 @@ const EditAddPost = () => {
             {selectedTags.map((el, index) => (
               <div className={classNames(styles["oneTag"])} key={index}>
                 <label className={classNames(styles["tagViewName"])}>{"#" + el.trim()}</label>
-                <button className={classNames(styles["tagViewDel"])} onClick={() => setNames(prevNames => prevNames.filter((_, i) => i !== index))}>&#10008;</button>
+                <button className={classNames(styles["tagViewDel"])} onClick={() => setSelectedTags(prevTags => prevTags.filter((_, i) => i !== index))}>&#10008;</button>
               </div>
             ))}
           </div>
