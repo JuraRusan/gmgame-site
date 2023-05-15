@@ -1,13 +1,19 @@
 import classNames from "classnames";
-import {React, useState} from "react";
+import {React, useState, useEffect} from "react";
 import {useForm} from "react-hook-form";
 import {sendRequest} from '../../../../DataProvider';
 import {useAlert} from "react-alert";
 import {ErrorMessage} from "@hookform/error-message";
+import AOS from "aos";
 
 import styles from "./Change-password.module.scss";
+import "aos/dist/aos.css";
 
 const ChangePassword = () => {
+
+  useEffect(() => {
+    AOS.init({duration: 1000});
+  }, []);
 
   const [type, setType] = useState("password")
   const [checked, setChecked] = useState(false);
@@ -39,7 +45,7 @@ const ChangePassword = () => {
   }
 
   return (
-    <div className={classNames(styles["blockPassword"])}>
+    <div className={classNames(styles["blockPassword"])} data-aos="zoom-in">
       <h3 className={classNames(styles["passwordTitle"])}>Введите новый пароль</h3>
       <form onSubmit={handleSubmit()}>
         <input

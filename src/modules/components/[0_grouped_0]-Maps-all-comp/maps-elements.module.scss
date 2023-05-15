@@ -1,0 +1,370 @@
+@import "../../../Variables";
+
+.boxMapWrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+
+  .boxSearchWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    height: 35px;
+
+    .numberListCount {
+      display: flex;
+      width: 350px;
+      height: 35px;
+      line-height: 35px;
+      margin: 0 0 0 15px;
+      padding: 0;
+      font-weight: 400;
+      font-size: 16px;
+      color: $color-3;
+    }
+
+    .searchInput {
+      display: flex;
+      width: 225px;
+      height: 35px;
+      line-height: 35px;
+      outline: none;
+      background: $color-7;
+      border: 0.5px solid $color-22;
+      border-radius: 5px;
+      transition: all 0.25s ease-in-out;
+      color: $color-8;
+      padding-left: 10px;
+      padding-right: 10px;
+
+      &:hover,
+      &:focus,
+      &:active {
+        outline: none;
+        background: $color-21;
+      }
+    }
+  }
+
+  .boxListWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    margin-top: 5px;
+    padding-right: 10px;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+
+    .oneMapsElement {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      min-height: 65px;
+      height: auto;
+      max-height: none;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      border: 1px solid $color-21;
+      border-radius: 5px;
+      padding: 7.5px;
+      transition: all 0.25s ease;
+      background: $color-20;
+
+      &:hover {
+        background: $color-7;
+      }
+
+      &:hover > .marginAddBox {
+        padding: 0;
+      }
+
+      .marginAddBox {
+        width: 100%;
+        height: 65px;
+        margin: 0 auto;
+        padding: 5px;
+        transition: all 0.25s ease;
+      }
+
+      .columnsOne {
+        display: flex;
+        width: 100%;
+        max-width: none;
+        min-width: 0;
+        height: auto;
+        min-height: 0;
+        max-height: none;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: auto 0;
+
+        .elementIndex {
+          height: 40px;
+          line-height: 40px;
+          color: $color-3;
+          width: 32px;
+          min-width: 32px;
+          max-width: 32px;
+          text-align: center;
+          margin: auto 0;
+        }
+
+        .elementH3Name {
+          //white-space: nowrap;
+          //overflow: hidden;
+          //text-overflow: ellipsis;
+          width: auto;
+          min-height: 40px;
+          max-height: none;
+          height: auto;
+          line-height: 40px;
+          font-size: 18px;
+          font-weight: 400;
+          color: $color-3;
+          padding-left: 15px;
+          padding-right: 15px;
+          border-width: 1px;
+          border-left-style: solid;
+          border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), $color-22, rgba(0, 0, 0, 0)) 1 100%;
+        }
+      }
+
+      .columnsTwo {
+        display: flex;
+        flex-direction: row;
+        margin: auto 0;
+        min-width: 173px;
+        max-width: 173px;
+        width: 100%;
+
+        .elementActions {
+          cursor: pointer;
+          height: 40px;
+          line-height: 40px;
+          margin: 0;
+          width: 125px;
+          color: $color-3;
+          background: $color-4;
+          text-decoration: none;
+          text-align: center;
+          border: none;
+          border-radius: 5px;
+          outline: none;
+          font-size: 16px;
+          font-weight: 400;
+          transition: all 0.35s ease;
+
+          &:hover,
+          &:active,
+          &:focus {
+            outline: none;
+          }
+
+          &:hover {
+            background: $color-6;
+            color: $color-2;
+          }
+        }
+
+        .deleteButton {
+          cursor: pointer;
+          height: 40px;
+          line-height: 40px;
+          width: 40px;
+          margin: 0 0 0 8px;
+          background: $color-7;
+          border: 0.5px solid $color-22;
+          border-radius: 5px;
+          color: $color-3;
+          outline: none;
+          text-decoration: none;
+          transition: all 0.35s ease;
+          padding: 7px;
+
+          &:hover,
+          &:active,
+          &:focus {
+            outline: none;
+          }
+
+          &:hover {
+            background: $color-21;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 960px) {
+  .boxMapWrapper {
+    .boxListWrapper {
+      padding-right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .boxMapWrapper {
+    .boxSearchWrapper {
+      .numberListCount {
+        height: 30px;
+        line-height: 30px;
+        font-size: 16px;
+      }
+
+      .searchInput {
+        line-height: 30px;
+        height: 30px;
+        width: 200px;
+      }
+    }
+
+    .boxListWrapper {
+      .oneMapsElement {
+        min-height: 48px;
+
+        .columnsOne {
+          .elementIndex {
+            font-size: 14px;
+            height: 28px;
+            line-height: 28px;
+            margin: auto 0;
+          }
+
+          .elementH3Name {
+            font-size: 15px;
+            min-height: 28px;
+            line-height: 28px;
+            margin: auto 0;
+          }
+        }
+
+        .columnsTwo {
+          width: auto;
+          min-width: 138px;
+          max-width: 138px;
+
+          .elementActions {
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 14px;
+          }
+
+          .deleteButton {
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            padding: 3px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .boxMapWrapper {
+    .boxSearchWrapper {
+      flex-direction: column-reverse;
+      height: auto;
+
+      .numberListCount {
+        margin: 0 0 8px 0;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .boxMapWrapper {
+    .boxSearchWrapper {
+      flex-direction: column-reverse;
+      height: auto;
+
+      .numberListCount {
+        margin: 0;
+      }
+    }
+
+    .boxListWrapper {
+      .oneMapsElement {
+        flex-direction: column;
+
+        .columnsOne {
+          flex-direction: column;
+
+          .elementIndex {
+            text-align: center;
+            width: 100%;
+            min-width: 0;
+            max-width: none;
+            font-size: 13px;
+            height: 24px;
+            line-height: 24px;
+          }
+
+          .elementH3Name {
+            width: 100%;
+            min-width: 0;
+            max-width: none;
+            font-size: 14px;
+            min-height: 24px;
+            line-height: 24px;
+            text-align: center;
+            padding-top: 5px;
+            border-width: 1px;
+            border-top-style: solid;
+            border-image: linear-gradient(to right, rgba(0, 0, 0, 0), $color-22, rgba(0, 0, 0, 0)) 1 0;
+          }
+        }
+
+        .columnsTwo {
+          width: auto;
+          min-width: 118px;
+          max-width: 118px;
+          margin: 8px auto 0 auto;
+
+          .elementActions {
+            width: 80px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 13px;
+          }
+
+          .deleteButton {
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            padding: 3px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+}

@@ -25,9 +25,9 @@ const TexturePack = () => {
       <div className={classNames(styles["blockText"])}>
         <h3 className={classNames(styles["texturePackTitleH3"])}>Официальный GMGame текстур пак</h3>
         <div className={classNames(styles["texturePackInformation"])}>
-          <h4 className={classNames(styles["informationH4"])}> Для использования набора ресурсов необходимо установить модификацию Optifine или Sodium с дополнениями.</h4>
+          <h4 className={classNames(styles["informationH4"])}>Для использования набора ресурсов необходимо установить модификацию Optifine или Sodium с дополнениями.</h4>
           <h4 className={classNames(styles["informationH4"])}>Без модов он работать не будет.
-            <Link to={'/mods'} className={classNames(styles["linkModsPage"])}>Моды &#129133;</Link>
+            <Link to={'/mods'} className={classNames(styles["linkModsPage"])}> Моды &#129133;</Link>
           </h4>
           <h4 className={classNames(styles["informationH4"])}>По вопросам обращаться к игрокам:
             <span>_Kerubifi_, SoftPanda3</span>

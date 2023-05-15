@@ -1,14 +1,22 @@
-import {React, useState} from "react";
+import classNames from "classnames";
+import {React, useState, useEffect} from "react";
 import {useAxios} from '../../../../DataProvider';
 import {Link} from 'react-router-dom';
-
-import "../Style-maps.scss";
-
 import SvgAddMarker from "../../../../bases/icons/SvgAddMarker.js";
 import Preload from "../../preloader/Preload.js";
-import SvgDelete from "../../../../bases/icons/SvgDelete.js";
+import BinSvgComponent from "../../../../bases/icons/binSVG/binSvg";
+import AOS from "aos";
+
+import styles from "../maps-elements.module.scss";
+import "aos/dist/aos.css";
 
 const MyMarkers = () => {
+
+  useEffect(() => {
+    AOS.init({duration: 1000});
+  }, []);
+  
+  const [isLoading, setIsLoading] = useState(true);
   let [fileter, setFileter] = useState(null);
 
   const resParams = useAxios(
@@ -17,23 +25,31 @@ const MyMarkers = () => {
     {}
   );
 
-  if (resParams.loading) {
-    return <Preload/>
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (resParams.loading || isLoading) {
+    return <Preload />;
   }
 
   const data = resParams.data;
 
   return (
-    <div className="box-marker">
-      <div className="box-searth">
-        <input className="search-input" onChange={(e) => setFileter(e.target.value)}/>
-        <h4 className="nomer-list">Количество меток - {data.count}</h4>
+    <div className={classNames(styles["boxMapWrapper"])} data-aos="zoom-in">
+      <div className={classNames(styles["boxSearchWrapper"])}>
+        <input className={classNames(styles["searchInput"])} onChange={(e) => setFileter(e.target.value)} type="search" placeholder="Поиск"/>
+        <h4 className={classNames(styles["numberListCount"])}>Количество меток - {data.count}</h4>
       </div>
-      <div className="box-list">
+      <div className={classNames(styles["boxListWrapper"])}>
         <Link to={'edit_add_marker/new'}>
           {/* eslint-disable-next-line */}
-          <div className="str">
-            <div className="margin-add">
+          <div className={classNames(styles["oneMapsElement"])}>
+            <div className={classNames(styles["marginAddBox"])}>
               <SvgAddMarker width="100%" height="100%" color="#f4f4f4"/>
             </div>
           </div>
@@ -43,15 +59,15 @@ const MyMarkers = () => {
             return false;
           }
           return (
-            <div key={el.id} className="str">
-              <div className="colums-1">
-                <p className="str-p">{index + 1}</p>
-                <h3 className="str-h3">{el.name}</h3>
+            <div key={el.id} className={classNames(styles["oneMapsElement"])}>
+              <div className={classNames(styles["columnsOne"])}>
+                <p className={classNames(styles["elementIndex"])}>{index + 1}</p>
+                <h3 className={classNames(styles["elementH3Name"])}>{el.name}</h3>
               </div>
-              <div className="colums-2">
-                <Link to={`edit_add_marker/${el.id}`} className="str-bt">Настроить</Link>
-                <button className="delete">
-                  <SvgDelete width="100%" height="100%" color="#f4f4f4"/>
+              <div className={classNames(styles["columnsTwo"])}>
+                <Link to={`edit_add_marker/${el.id}`} className={classNames(styles["elementActions"])}>Настроить</Link>
+                <button className={classNames(styles["deleteButton"])}>
+                  <BinSvgComponent width="100%" height="100%" color="#f4f4f4"/>
                 </button>
               </div>
             </div>

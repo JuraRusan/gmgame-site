@@ -1,21 +1,29 @@
-import {React, useState} from "react";
+import classNames from "classnames";
+import {React, useState, useEffect} from "react";
 import Warn from "../../warn/Warn.js";
-import {useAxios, sendRequest} from '../../../../DataProvider';
+import {sendRequest, useAxios} from '../../../../DataProvider';
 import {useNavigate, useParams} from 'react-router-dom';
 import {useAlert} from "react-alert";
-import Preload from "../../preloader/Preload.js";
+import Preload from "../../preloader/Preload";
+import Error from "../../error/Error";
+import AOS from "aos";
 
-import "../Add-style-maps.scss";
-
+import styles from "../maps-elements-add.module.scss";
+import "aos/dist/aos.css";
 
 const EditAddTerr = (params) => {
+
+  useEffect(() => {
+    AOS.init({duration: 1000});
+  }, []);
+
   const navigate = useNavigate();
   const alert = useAlert();
 
   const {id} = useParams();
 
-  // let [selectedOption, setSelectedOption] = useState('basePlayers');
-  // let [formDescription, setFormDescription] = useState('');
+  const [isLoading, setIsLoading] = useState(true);
+  const [errorMessage, setErrorMessage] = useState(null);
   let [formXStart, setFormXStart] = useState('');
   let [formXStop, setFormXStop] = useState('');
   let [formZStart, setFormZStart] = useState('');
@@ -69,8 +77,16 @@ const EditAddTerr = (params) => {
     {}
   );
 
-  if (resParams.loading) {
-    return <Preload />
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (resParams.loading || isLoading) {
+    return <Preload />;
   }
 
   const data = resParams.data;
@@ -87,56 +103,130 @@ const EditAddTerr = (params) => {
 
   const AttentionCoords = "Учтите, что визуально точки смещаются примерно на 30-50 блоков вниз!"
 
+  const valueOption = [
+    {
+      value: "gmgame",
+      name: "Основной мир"
+    },
+    {
+      value: "farm",
+      name: "Фермерский мир"
+    },
+    {
+      value: "nether-farm",
+      name: "Фермерский ад"
+    },
+    {
+      value: "end-farm",
+      name: "Фермерский край"
+    },
+  ]
+
   return (
-    <div className="box-marker-add">
-      <div className="colums-add-1">
-        <div className="col-row">
-          <button onClick={() => navigate(-1)} className="go-back">{"<-- Показать весь список"}</button>
-          <h5 className="input-name">Название</h5>
-          <input className="input-str" defaultValue={formName} onChange={(e) => setFormName(e.target.value)}/>
+    <div className={classNames(styles["boxMarkerAddWrapper"])} data-aos="zoom-in">
+      <div className={classNames(styles["columnsAddOne"])}>
+        <div className={classNames(styles["rowWrapperContent"])}>
+          <button onClick={() => navigate(-1)} className={classNames(styles["back"])}>{"<-- Показать весь список"}</button>
+          <h5 className={classNames(styles["nameInput"])}>Название</h5>
+          <input
+            className={classNames(styles["inputStyle"])}
+            defaultValue={formName}
+            onChange={e => {
+              setFormName(e.target.value)
+              const name = e.target.value.trim();
+              if (name.length < 5 || name.length > 300) {
+                setErrorMessage(<Error inf="Имя должно содержать от 5 до 300 символов."/>); /* --- Возможно нужна корректировка --- */
+              } else {
+                setErrorMessage(null);
+              }
+            }}/>
         </div>
-        <div className="col-row">
-          <h5 className="input-name">Сервер</h5>
-          <select className="input-str" onChange={(e) => setFormServer(e.target.value)} defaultValue={formServer}>
-            <option className="option-list" value="gmgame">Основной мир</option>
-            <option className="option-list" value="farm">Фермерский мир</option>
-            <option className="option-list" value="nether-farm">Фермерский ад</option>
-            <option className="option-list" value="end-farm">Фермерский край</option>
+        <div className={classNames(styles["rowWrapperContent"])}>
+          <h5 className={classNames(styles["nameInput"])}>Сервер</h5>
+          <select className={classNames(styles["inputStyle"])} onChange={(e) => setFormServer(e.target.value)} defaultValue={formServer}>
+            {valueOption.map((el) =>
+              <option className={classNames(styles["optionList"])} value={el.value}>{el.name}</option>
+            )}
           </select>
         </div>
-        <div className="coord">
-          <h5 className="input-name">Координаты</h5>
-          <div className="block-row">
-            <div className="col-row-custom">
-              <h5 className="input-name">StartX</h5>
-              <input className="input-str-custom" defaultValue={formXStart} onChange={(e) => setFormXStart(e.target.value)}/>
+        <div className={classNames(styles["coordinatesWrapper"])}>
+          <h5 className={classNames(styles["nameInput"])}>Координаты</h5>
+          <div className={classNames(styles["blockRow"])}>
+            <div className={classNames(styles["rowWrapperContentCustom"])}>
+              <h5 className={classNames(styles["nameInput"])}>StartX</h5>
+              <input
+                className={classNames(styles["inputStyle"], styles["custom"])}
+                defaultValue={formXStart}
+                onChange={e => {
+                  setFormXStart(e.target.value)
+                  const name = e.target.value.trim();
+                  if (!/^[0-9+-]+$/.test(name)) {
+                    setErrorMessage(<Error inf="Только числа"/>) /* --- Возможно нужна корректировка --- */
+                  } else {
+                    setErrorMessage(null);
+                  }
+                }}/>
             </div>
-            <div className="col-row-custom">
-              <h5 className="input-name">StopX</h5>
-              <input className="input-str-custom" defaultValue={formXStop} onChange={(e) => setFormXStop(e.target.value)}/>
+            <div className={classNames(styles["rowWrapperContentCustom"])}>
+              <h5 className={classNames(styles["nameInput"])}>StopX</h5>
+              <input
+                className={classNames(styles["inputStyle"], styles["custom"])}
+                defaultValue={formXStop}
+                onChange={e => {
+                  setFormXStop(e.target.value)
+                  const name = e.target.value.trim();
+                  if (!/^[0-9+-]+$/.test(name)) {
+                    setErrorMessage(<Error inf="Только числа"/>) /* --- Возможно нужна корректировка --- */
+                  } else {
+                    setErrorMessage(null);
+                  }
+                }}/>
             </div>
           </div>
-          <div className="block-row">
-            <div className="col-row-custom">
-              <h5 className="input-name">StartZ</h5>
-              <input className="input-str-custom" defaultValue={formZStart} onChange={(e) => setFormZStart(e.target.value)}/>
+          <div className={classNames(styles["blockRow"])}>
+            <div className={classNames(styles["rowWrapperContentCustom"])}>
+              <h5 className={classNames(styles["nameInput"])}>StartZ</h5>
+              <input
+                className={classNames(styles["inputStyle"], styles["custom"])}
+                defaultValue={formZStart}
+                onChange={e => {
+                  setFormZStart(e.target.value)
+                  const name = e.target.value.trim();
+                  if (!/^[0-9+-]+$/.test(name)) {
+                    setErrorMessage(<Error inf="Только числа"/>) /* --- Возможно нужна корректировка --- */
+                  } else {
+                    setErrorMessage(null);
+                  }
+                }}/>
             </div>
-            <div className="col-row-custom">
-              <h5 className="input-name">StopZ</h5>
-              <input className="input-str-custom" defaultValue={formZStop} onChange={(e) => setFormZStop(e.target.value)}/>
+            <div className={classNames(styles["rowWrapperContentCustom"])}>
+              <h5 className={classNames(styles["nameInput"])}>StopZ</h5>
+              <input
+                className={classNames(styles["inputStyle"], styles["custom"])}
+                defaultValue={formZStop}
+                onChange={e => {
+                  setFormZStop(e.target.value)
+                  const name = e.target.value.trim();
+                  if (!/^[0-9+-]+$/.test(name)) {
+                    setErrorMessage(<Error inf="Только числа"/>) /* --- Возможно нужна корректировка --- */
+                  } else {
+                    setErrorMessage(null);
+                  }
+                }}/>
             </div>
           </div>
           <Warn inf={AttentionCoords}/>
         </div>
-        <div className="box-bt">
-          <button className="bt-all bt-add font-custom-2" onClick={id === 'new' ? addMarker : saveMarker}>Сохранить</button>
+        {errorMessage && <div className={classNames(styles["error"])}>{errorMessage}</div>}
+        <div className={classNames(styles["boxActionsWrapper"])}>
+          <button className={classNames(styles["buttonAllStyles"], styles["buttonAdd"])} onClick={id === 'new' ? addMarker : saveMarker}>Сохранить</button>
           {id === 'new'
             ? ''
-            : <button className="bt-all bt-del font-custom-2" onClick={deleteMarker}>Удалить</button>
+            : <button className={classNames(styles["buttonAllStyles"], styles["buttonDelete"])} onClick={deleteMarker}>Удалить</button>
           }
         </div>
       </div>
-      <div className="colums-add-2">
+      <div className={classNames(styles["columnsAddTwo"])}>
         {id === 'new'
           ? <iframe title="map" src="https://map.gmgame.ru/#/-7/64/-54/-4/GMGameWorld%20-%20overworld/over" width="100%" height="100%"/>
           : <iframe title="map" src={`https://map.gmgame.ru/#/${data.terr.xStart}/64/${data.terr.zStart}/-4/${data.world.worldName}/${data.world.layer}`} width="100%" height="100%"/>
