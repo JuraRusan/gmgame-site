@@ -12,7 +12,6 @@ const Manager = () => {
     AOS.init({duration: 1000});
   }, []);
 
-
   const arrayLink = [
     {
       label: "Сводка по игрокам",
