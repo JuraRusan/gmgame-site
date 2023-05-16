@@ -2,29 +2,40 @@ import classNames from "classnames";
 import React, {useEffect} from "react";
 import AOS from "aos";
 import {NavLink, Outlet, Navigate} from "react-router-dom";
-import {Context} from "../../../common/header/Header";
+import Preload from "../../components/preloader/Preload.js";
+import {useAxios} from '../../../DataProvider.js';
 
 import styles from "./Manager.module.scss";
 import "aos/dist/aos.css";
 
 const Manager = () => {
 
+  const resParams = useAxios(
+    "/api/profile",
+    'GET',
+    {}
+  );
+
   useEffect(() => {
     AOS.init({duration: 1000});
   }, []);
 
-  if (!Context.user) {
+  if (resParams.loading) {
+    return <Preload/>
+  }
+  
+  if (!resParams.data?.user) {
     return <Navigate to="/api/login" replace={true}/>
   }
 
-  if (Context.user.role !== 'admin') {
+  if (resParams.data?.discordUser?.role !== 'admin') {
     return <Navigate to="/no-access" replace={true}/>
   }
 
   function setActive(isActive) {
     return isActive ? classNames(styles["tab"], styles["checked"]) : styles["tab"];
   }
-
+  
   return (
     <div className={classNames(styles["wrapperManager"])}>
       <div className={classNames(styles["actions"])}>

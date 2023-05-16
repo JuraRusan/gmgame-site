@@ -5,18 +5,12 @@ import AOS from "aos";
 import "./Header.scss";
 import "aos/dist/aos.css";
 
-export const Context = React.createContext({});
-
-
 const Header = () => {
   const resParams = useAxios(
     "/api/",
     'GET',
     {}
   );
-
-  const userContext = resParams?.data?.discordUser;
-  Context.user = userContext;
 
   useEffect(() => {
     AOS.init({duration: 1000});
