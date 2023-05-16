@@ -12,32 +12,42 @@
     flex-direction: row;
     justify-content: center;
 
-    .buttonActions {
-      height: 24px;
-      line-height: 24px;
-      width: auto;
-      min-width: 280px;
-      padding: 0;
-      background: $color-4;
-      outline: none;
-      border-radius: 8px;
+    .tab {
+      background-color: $color-21;
       cursor: pointer;
-      transition: all 0.35s ease;
-      color: $color-2;
-      border: 1px solid $color-21;
-      margin: 0 20px;
+      transition: all 0.5s ease;
+      width: auto;
+      text-decoration: none;
       font-weight: 400;
-      font-size: 14px;
-      font-family: $fontCustom2;
+      font-size: 13px;
+      height: 24px;
+      line-height: 22px;
+      margin: 0 3px;
+      padding: 0 8px;
+      color: $color-3;
+      border: 1px solid $color-22;
+      text-align: start;
+      border-radius: 2px;
+      outline: none;
+
+      &:active,
+      &:hover,
+      &:visited,
+      &:focus {
+        outline: none;
+      }
 
       &:hover {
-        background: $color-6;
-        border: 1px solid $color-22;
+        color: $color-8;
       }
+    }
+
+    .checked {
+      color: $color-8 !important;
     }
   }
 
-  .slider {
+  .contentContainer {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -45,32 +55,6 @@
     height: auto;
     margin: 8px auto 0 auto;
     padding: 0;
-
-    .wrapperManagerTo {
-      display: flex;
-      flex-direction: column;
-      margin: 48px auto 0 auto;
-
-      .navigationTitle {
-        font-family: $fontCustom2;
-        font-size: 22px;
-        font-weight: 400;
-        height: 40px;
-        line-height: 40px;
-        text-align: center;
-        color: $color-3;
-      }
-
-      .link {
-        text-decoration: none;
-        height: 32px;
-        line-height: 32px;
-        font-family: $fontCustom2;
-        font-size: 16px;
-        font-weight: 400;
-        color: $color-1;
-      }
-    }
   }
 }
 

@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import React, {useEffect, useState} from "react";
+import React, {useEffect} from "react";
 import AOS from "aos";
 import {NavLink, Outlet} from "react-router-dom";
 
@@ -43,32 +43,19 @@ const Manager = () => {
     }
   ]
 
-  const [containerIndex, setContainerIndex] = useState(true);
-
-  const handleNext = () => {
-    setContainerIndex(false);
-  };
-
-  const handlePrev = () => {
-    setContainerIndex(true);
-  };
+  function setActive(isActive) {
+    return isActive ? classNames(styles["tab"], styles["checked"]) : styles["tab"];
+  }
 
   return (
     <div className={classNames(styles["wrapperManager"])}>
       <div className={classNames(styles["actions"])}>
-        <button onClick={handlePrev} className={classNames(styles["buttonActions"], styles["prev"])}>Показать навигацию</button>
-        <button onClick={handleNext} className={classNames(styles["buttonActions"], styles["next"])}>Показать контент</button>
+        {arrayLink.map((el, index) =>
+          <NavLink key={index} className={({isActive}) => setActive(isActive)} to={el.to}>{el.label}</NavLink>
+        )}
       </div>
-      <div className={classNames(styles["slider"])}>
-        {containerIndex === true ? (
-          <div className={classNames(styles["wrapperManagerTo"])} data-aos="zoom-in">
-            <h3 className={classNames(styles["navigationTitle"])}>Навигация по менеджеру</h3>
-            {arrayLink.map((el, index) =>
-              <NavLink key={index} onClick={handleNext} className={classNames(styles["link"])} to={el.to}>- {el.label}</NavLink>
-            )}
-          </div>
-        ) : null}
-        {containerIndex === false ? <Outlet/> : null}
+      <div className={classNames(styles["contentContainer"])}>
+        <Outlet/>
       </div>
     </div>
   );
