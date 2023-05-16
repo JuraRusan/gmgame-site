@@ -12,37 +12,6 @@ const Manager = () => {
     AOS.init({duration: 1000});
   }, []);
 
-  const arrayLink = [
-    {
-      label: "Сводка по игрокам",
-      to: "player_summary",
-    },
-    {
-      label: "Редактор Faq",
-      to: "faq_editor",
-    },
-    {
-      label: "Редактор модов",
-      to: "mod_editor",
-    },
-    {
-      label: "Редактор текстур пака",
-      to: "texture_pack_editor",
-    },
-    {
-      label: "Редактор правил",
-      to: "regulations_editor",
-    },
-    {
-      label: "Сводка по мониторингам",
-      to: "monitoring_summary",
-    },
-    {
-      label: "Статус по постам галереи",
-      to: "gallery_status_view",
-    }
-  ]
-
   function setActive(isActive) {
     return isActive ? classNames(styles["tab"], styles["checked"]) : styles["tab"];
   }
@@ -50,9 +19,12 @@ const Manager = () => {
   return (
     <div className={classNames(styles["wrapperManager"])}>
       <div className={classNames(styles["actions"])}>
-        {arrayLink.map((el, index) =>
-          <NavLink key={index} className={({isActive}) => setActive(isActive)} to={el.to}>{el.label}</NavLink>
-        )}
+        <NavLink className={({isActive}) => setActive(isActive)} to="player_summary">Сводка по игрокам</NavLink>
+        <NavLink className={({isActive}) => setActive(isActive)} to="faq_editor">Редактор Faq</NavLink>
+        <NavLink className={({isActive}) => setActive(isActive)} to="mod_editor">Редактор модов</NavLink>
+        <NavLink className={({isActive}) => setActive(isActive)} to="texture_pack_editor">Редактор текстур пака</NavLink>
+        <NavLink className={({isActive}) => setActive(isActive)} to="regulations_editor">Редактор правил</NavLink>
+        <NavLink className={({isActive}) => setActive(isActive)} to="monitoring_summary">Сводка по мониторингам</NavLink>
       </div>
       <div className={classNames(styles["contentContainer"])}>
         <Outlet/>
