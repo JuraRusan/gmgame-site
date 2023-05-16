@@ -1,7 +1,8 @@
 import classNames from "classnames";
 import React, {useEffect} from "react";
 import AOS from "aos";
-import {NavLink, Outlet} from "react-router-dom";
+import {NavLink, Outlet, Navigate} from "react-router-dom";
+import {Context} from "../../../common/header/Header";
 
 import styles from "./Manager.module.scss";
 import "aos/dist/aos.css";
@@ -11,6 +12,14 @@ const Manager = () => {
   useEffect(() => {
     AOS.init({duration: 1000});
   }, []);
+
+  if (!Context.user) {
+    return <Navigate to="/api/login" replace={true}/>
+  }
+
+  if (Context.user.role !== 'admin') {
+    return <Navigate to="/no-access" replace={true}/>
+  }
 
   function setActive(isActive) {
     return isActive ? classNames(styles["tab"], styles["checked"]) : styles["tab"];
