@@ -14,7 +14,7 @@ const Money = (props) => {
     }, 3000);
 
     return () => clearInterval(intervalId);
-  }, []);
+  }, [picturesMoney.length]);
 
   return (
     <div className={classNames(styles["onePrizesWrapperBox"])}>
