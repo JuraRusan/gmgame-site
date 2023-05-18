@@ -92,13 +92,13 @@ const PlayerSummary = () => {
       setTag({});
       setMarkers({});
       setTerritories({});
-
       response.forEach(user => {
         try {
-          tagUser[user.username] = JSON.parse(user.tag);
+          let tag = JSON.parse(user.tag);
+          tagUser[user.username] = tag.id ? tag : JSON.parse(tag);
         } catch (err) {
-          console.log(err);
-          console.log(user.tag);
+          const email = user.tag.match(/email": "(.+?)"/);
+          tagUser[user.username] = email[1] ? {email: email[1]} : '';
         }
         makersUser[user.username] = user.markers;
         terrUser[user.username] = user.territories;
