@@ -3,3 +3,22 @@
 .faqEditorWrapper {
   color: $color-3;
 }
+
+.editor {
+  background: $color-2;
+  border: 1px solid $color-22;
+  min-height: 500px;
+  padding: 8px;
+  margin-top: 8px;
+}
+
+.btn{
+  margin: 3px;
+  width: 36px;
+  height: 36px;
+  line-height: 32px;
+  background: $color-2;
+  border: 1px solid $color-22;
+  color: $color-3;
+  cursor: pointer;
+}

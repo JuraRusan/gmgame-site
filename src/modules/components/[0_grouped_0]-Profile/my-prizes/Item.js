@@ -14,7 +14,7 @@ const Item = (props) => {
     }, 3000);
 
     return () => clearInterval(intervalId);
-  }, []);
+  }, [picturesItem.length]);
 
   return (
     <div className={classNames(styles["onePrizesWrapperBox"])}>

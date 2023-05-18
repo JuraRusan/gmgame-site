@@ -377,12 +377,7 @@ const PlayerSummary = () => {
                     <p className={classNames(styles["textP"])}>{el?.username}</p>
                   </th>
                   <th className={classNames(styles["tableStylingColumns"])}>
-                    {tag[el?.username]?.email === null || tag[el?.username]?.email === undefined
-                      ?
-                      <p className={classNames(styles["textP"])}>-</p>
-                      :
-                      <p className={classNames(styles["textP"])}>{tag[el?.username]?.email}</p>
-                    }
+                    <p className={classNames(styles["textP"])}>{tag[el?.username]?.email || "-"}</p>
                   </th>
                   <th className={classNames(styles["tableStylingColumns"], styles["userAgeColumn"])}>
                     <p className={classNames(styles["textP"])}>{el?.age}</p>
@@ -548,7 +543,7 @@ const PlayerSummary = () => {
                 <tr className={classNames(styles["tableStylingRows"])} key={i}>
                   {username === 'all' &&
                     <th className={classNames(styles["tableStylingColumns"], styles["userNameColumn"])}>
-                      <p className={classNames(styles["textP"])}>{el.username}</p>
+                      <p className={classNames(styles["textP"])}>{el.username || "-"}</p>
                     </th>
                   }
                   <th className={classNames(styles["tableStylingColumns"], styles["mapsNameColumn"])}>
