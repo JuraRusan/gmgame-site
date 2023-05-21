@@ -1,0 +1,182 @@
+@import "../../../../Variables";
+
+$param: 90px;
+
+.achievementsBlock {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  .achievementsTitle {
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: $fontCustom2;
+    color: $color-3;
+    text-align: center;
+  }
+
+  .allWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .oneAchievementWrapper {
+      display: flex;
+      flex-direction: column;
+      background: $color-20;
+      border: 1px solid $color-2;
+      padding: 8px;
+      border-radius: 8px;
+      width: 450px;
+      height: 108px;
+      margin: 4px;
+      cursor: pointer;
+      transition: all 0.5s ease;
+      position: relative;
+
+      &:hover > .iconWrapper {
+        scale: 1.05;
+      }
+
+      .achievementView {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        max-height: $param;
+
+        .iconWrapper {
+          display: flex;
+          flex-direction: row;
+          position: relative;
+          width: $param;
+          min-width: $param;
+          max-width: $param;
+          height: $param;
+          min-height: $param;
+          max-height: $param;
+          transition: all 0.35s ease;
+
+          .iconBackground {
+            display: flex;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+
+            .achievementBackground {
+              width: auto;
+              height: auto;
+            }
+          }
+
+          .achievementIcon {
+            margin: auto;
+            z-index: 2;
+            width: calc(#{$param} - 15px);
+            height: calc(#{$param} - 15px);
+          }
+        }
+
+        .achievementName {
+          width: 100%;
+          min-width: 300px;
+          max-width: 300px;
+          padding: 0 8px;
+          font-size: 16px;
+          font-family: $fontCustom2;
+          font-weight: 400;
+          min-height: 24px;
+          max-height: $param;
+          height: auto;
+          line-height: 24px;
+          margin: auto 0;
+          transition: all 0.35s ease;
+        }
+      }
+
+
+      .achievementDescription {
+        display: flex;
+        width: auto;
+
+        .description {
+          display: none;
+          opacity: 0;
+          width: 0;
+          height: 0;
+          transition: all 0.35s ease;
+        }
+      }
+
+      .actionsClose {
+        display: none;
+        opacity: 0;
+        transition: all 0.35s ease;
+        height: 34px;
+        line-height: 32px;
+        width: 34px;
+        top: 8px;
+        right: 8px;
+        background: $color-20;
+        font-size: 14px;
+        font-family: $fontCustom2;
+        font-weight: 400;
+        outline: none;
+        color: $color-3;
+        border: 1px solid $color-20;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:hover,
+        &:focus,
+        &:active {
+          outline: none;
+        }
+
+        &:hover {
+          color: $color-8;
+        }
+      }
+    }
+
+    .activeAchievement {
+      color: #66ff66 !important;
+      width: 900px;
+      height: 200px;
+
+      .achievementView {
+        .achievementName {
+          font-size: 22px;
+          margin: 0;
+        }
+      }
+
+      .achievementDescription {
+        .description {
+          display: flex;
+          opacity: 1;
+          width: auto;
+          height: auto;
+          transition: all 0.35s ease;
+        }
+      }
+
+      .actionsClose {
+        display: flex;
+        justify-content: center;
+        opacity: 1;
+        position: absolute;
+      }
+    }
+  }
+}
+

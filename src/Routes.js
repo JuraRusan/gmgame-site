@@ -40,6 +40,7 @@ const Articles = lazy(() => import(/* webpackChunkName: "cab" */ './modules/comp
 const MyProfile = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/my-profile/My-profile.js'));
 const MyPrizes = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/my-prizes/My-prizes.js'));
 const ChangePassword = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/change-password/Change-password.js'));
+const Achievement = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/achievement/Achievement'));
 // --
 const Statistic = lazy(() => import(/* webpackChunkName: "statistics" */ './modules/pages/statistic/Statistic.js'));
 const TexturePack = lazy(() => import(/* webpackChunkName: "texturepack" */ './modules/pages/texture-pack/TexturePack.js'));
@@ -84,6 +85,7 @@ const Router = () => {
             {/*----------*/}
             <Route path="prize" element={<MyPrizes/>}/>
             <Route path="change_password" element={<ChangePassword/>}/>
+            <Route path="achievements" element={<Achievement/>}/>
             {/*----------*/}
           </Route>
 

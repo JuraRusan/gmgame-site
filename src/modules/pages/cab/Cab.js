@@ -84,6 +84,7 @@ const Cab = () => {
                   <NavLink onClick={phoneCabFunctionRemove} className={({isActive}) => setActive(isActive)} to="articles">Статьи</NavLink>
                   {/*<NavLink onClick={phoneCabFunctionRemove} className={({isActive}) => setActive(isActive)} to="gallery">Моя галерея</NavLink>*/}
                   <NavLink onClick={phoneCabFunctionRemove} className={({isActive}) => setActive(isActive)} to="prize">Призы</NavLink>
+                  <NavLink onClick={phoneCabFunctionRemove} className={({isActive}) => setActive(isActive)} to="achievements">Достижения</NavLink>
                   <NavLink onClick={phoneCabFunctionRemove} className={({isActive}) => setActive(isActive)} to="change_password">Изменить пароль</NavLink>
                 </>
               }
