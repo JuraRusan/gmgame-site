@@ -205,48 +205,48 @@ const FaqEditor = () => {
         <MarkButton format="bold" icon="&#119809;"/>
         <MarkButton format="italic" icon="&#66310;"/>
         <MarkButton format="underline" icon="&#9089;"/>
-        <Editable 
-          className={classNames(styles["editor"])}
-          renderLeaf={renderLeaf}
-          onKeyDown={onKeyDown}
-        />
-        {target && chars.length > 0 && (
-          ReactDOM.createPortal(
-            <div
-              ref={ref}
-              style={{
-                top: '-9999px',
-                left: '-9999px',
-                position: 'absolute',
-                zIndex: 'auto',
-                padding: '3px',
-                background: 'white',
-                borderRadius: '4px',
-                boxShadow: '0 1px 5px rgba(0,0,0,.2)',
-              }}
-              data-cy="mentions-portal"
-            >
-              {chars.map((char, i) => (
-                <div
-                  key={char}
-                  onClick={() => {
-                    Transforms.select(editor, target)
-                    insertMention(editor, char)
-                    setTarget(null)
-                  }}
-                  style={{
-                    padding: '1px 3px',
-                    borderRadius: '3px',
-                    background: i === index ? '#B4D5FF' : 'transparent',
-                  }}
-                >
-                  {char}
-                </div>
-              ))}
-            </div>,
-            document.body
-          )
-        )}
+        <div className={classNames(styles["wrapperBox"])}>
+          <Editable className={classNames(styles["editor"])} renderLeaf={renderLeaf} onKeyDown={onKeyDown}/>
+          {target && chars.length > 0 && (
+            ReactDOM.createPortal(
+              <div
+                ref={ref}
+                className={classNames(styles["portal"])}
+                // style={{
+                //   top: '-9999px',
+                //   left: '-9999px',
+                //   position: 'absolute',
+                //   zIndex: 'auto',
+                //   padding: '3px',
+                //   background: 'white',
+                //   borderRadius: '4px',
+                //   boxShadow: '0 1px 5px rgba(0,0,0,.2)',
+                // }}
+                data-cy="mentions-portal"
+              >
+                {chars.map((char, i) => (
+                  <div
+                    key={char}
+                    onClick={() => {
+                      Transforms.select(editor, target)
+                      insertMention(editor, char)
+                      setTarget(null)
+                    }}
+                    style={{
+                      padding: '1px 3px',
+                      borderRadius: '3px',
+                      background: i === index ? '#B4D5FF' : 'transparent',
+                    }}
+                  >
+                    {char}
+                  </div>
+                ))}
+              </div>,
+              document.body
+            )
+          )}
+        </div>
+
       </Slate>
 
     </div>
