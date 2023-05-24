@@ -2,15 +2,72 @@ import classNames from "classnames";
 import React, {useEffect, useState, useCallback, useRef, useMemo} from "react";
 import AOS from "aos";
 import {Editor, createEditor, Range, Transforms} from 'slate'
-import {Slate, Editable, withReact, useSlate} from 'slate-react'
+import {Slate, Editable, withReact, useSlate, useSelected, useFocused} from 'slate-react'
 import { withHistory } from 'slate-history'
+import {sendRequest, useAxios} from '../../../../DataProvider';
+import {useAlert} from "react-alert";
+import Preload from "../../../components/preloader/Preload.js";
 
 import styles from "./Faq-editor.module.scss";
 import "aos/dist/aos.css";
 import ReactDOM from 'react-dom'
 
-const FaqEditor = () => {
+const insertMention = (editor, character) => {
+  const mention = {
+    type: 'mention',
+    character,
+    children: [{ text: '' }],
+  }
+  Transforms.insertNodes(editor, mention)
+  Transforms.move(editor)
+}
 
+const Element = (props) => {
+  const { attributes, children, element } = props
+
+  switch (element.type) {
+    case 'mention':
+      return <Mention {...props} />
+    default:
+      return <p {...attributes}>{children}</p>
+  }
+}
+
+const Mention = ({ attributes, children, element }) => {
+  const selected = useSelected()
+  const focused = useFocused()
+  const style = {
+    padding: '3px 3px 2px',
+    margin: '0 1px',
+    verticalAlign: 'baseline',
+    display: 'inline-block',
+    borderRadius: '4px',
+    backgroundColor: '#ffeeba',
+    color: '#212529',
+    fontSize: '0.9em',
+    boxShadow: selected && focused ? '0 0 0 2px #B4D5FF' : 'none',
+  }
+  // See if our empty text child has any styling marks applied and apply those
+  if (element.children[0].bold) {
+    style.fontWeight = 'bold'
+  }
+  if (element.children[0].italic) {
+    style.fontStyle = 'italic'
+  }
+  return (
+    <span
+      // {...attributes}
+      contentEditable={false}
+      data-cy={`mention-${element.character.name.replace(' ', '-')}`}
+      style={style}
+    >
+      {element.character.type === 'user' ? '@' : '#'}{element.character.name}
+      {children}
+    </span>
+  )
+}
+
+const FaqEditor = () => {
   useEffect(() => {
     AOS.init({duration: 1000});
   }, []);
@@ -38,41 +95,35 @@ const FaqEditor = () => {
     () => withMentions(withReact(withHistory(createEditor()))),
     []
   )
+
   const [target, setTarget] = useState()
   const [index, setIndex] = useState(0)
   const [search, setSearch] = useState('')
+  const renderElement = useCallback(props => <Element {...props} />, [])
+  const [value, setValue] = useState()
+  const [mentions, setMentions] = useState([])
+  const [question, setQuestion] = useState('')
+  const [category, setCategory] = useState('')
+  const [show, setShow] = useState(false)
+  const [contentValue, setContent] = useState()
+  const [faqId, setFaqId] = useState()
 
-  const initialValue = [
-    {
-      type: 'paragraph',
-      children: [{text: 'A line of text in a paragraph.'}],
-    },
-  ]
+  const initialValue = useMemo(
+    () => {
+    if (contentValue) {
+      return JSON.parse(contentValue)
+     } else {
+      return [
+        {
+          type: 'paragraph',
+          children: [{ text: 'A line of text in a paragraph.' }],
+        },
+      ]
+    }
+  }, [contentValue])
 
-  const CHARACTERS = [
-    'Aayla Secura',
-    'Adi Gallia',
-    'Admiral Dodd Rancit',
-    'Admiral Firmus Piett',
-    'Admiral Gial Ackbar',
-    'Admiral Ozzel',
-    'Admiral Raddus',
-    'Admiral Terrinald Screed',
-    'Admiral Trench',
-    'Admiral U.O. Statura',
-    'Agen Kolar',
-    'Agent Kallus',
-    'Aiolin and Morit Astarte',
-    'Aks Moe',
-    'Almec',
-    'Alton Kastle',
-    'Amee',
-    'AP-5',
-    'Armitage Hux',
-  ]
-
-  const chars = CHARACTERS.filter(c =>
-    c.toLowerCase().startsWith(search.toLowerCase())
+  const chars = mentions.filter(c => 
+    c.name ? c.name.toLowerCase().startsWith(search.toLowerCase()) : false
   ).slice(0, 10)
 
   const onKeyDown = useCallback(
@@ -105,16 +156,6 @@ const FaqEditor = () => {
     },
     [chars, editor, index, target]
   )
-
-  const insertMention = (editor, character) => {
-    const mention = {
-      type: 'mention',
-      character,
-      children: [{ text: '' }],
-    }
-    Transforms.insertNodes(editor, mention)
-    Transforms.move(editor)
-  }
 
   const isMarkActive = (editor, format) => {
     const marks = Editor.marks(editor)
@@ -168,15 +209,130 @@ const FaqEditor = () => {
 
   const renderLeaf = useCallback(props => <Leaf {...props} />, []);
 
+  const resParams = useAxios(
+    "/api/get_mentions",
+    'GET',
+    {}
+  );
+
+  const resFaq = useAxios(
+    "/api/get_faq",
+    'GET',
+    {}
+  );
+
+  const alert = useAlert();
+
+  if (resParams.loading || resFaq.loading) {
+    return <Preload/>
+  }
+
+  if (resParams.loaded && mentions.length === 0) {
+    setMentions(resParams.data.data);
+  }
+
+  const saveFaq = () => {
+    let payload = {
+      id: faqId || -1,
+      quest: question,
+      answer: value,
+      category: category,
+      show: +show
+    };
+    sendRequest(
+      '/api/save_faq',
+      'POST',
+      payload
+    ).then(response => {
+      if (response.message) {
+        alert.success(response.message);
+        setFaqId(response.id);
+      } else {
+        alert.error(response.error);
+      }
+    });
+  }
+
+  const publishFaq = () => {
+    sendRequest(
+      '/api/publish_faq',
+      'POST',
+      {}
+    ).then(response => {
+      if (response.message) {
+        alert.success(response.message);
+        setFaqId(response.id);
+      } else {
+        alert.error(response.error);
+      }
+    });
+  }
+
+  function searchQuestion (value) {
+    if (value === '') {
+      setQuestion('');
+      setCategory('');
+      setShow(false);
+      setFaqId('');
+      return;
+    }
+
+    const quest = resFaq.data.filter(c => 
+      c.quest ? c.quest.toLowerCase().startsWith(value.toLowerCase()) : false
+    )
+
+    if (quest.length > 0) {
+      setQuestion(quest[0].quest);
+      setCategory(quest[0].category);
+      setShow(quest[0].show);
+      setFaqId(quest[0].id);
+
+      let totalNodes = editor.children.length;
+
+      for (let i = 0; i < totalNodes - 1; i++) {
+        Transforms.removeNodes(editor, {
+            at: [totalNodes-i-1],
+        });
+      }
+    
+      // Add content to SlateJS
+      for (const value of JSON.parse(quest[0].answer) ) {
+          Transforms.insertNodes(editor, value, {
+              at: [editor.children.length],
+          });
+      }
+    
+      // Remove the last node that was leftover from before
+      Transforms.removeNodes(editor, {
+          at: [0],
+      });
+    }
+  }
+
   return (
     <div className={classNames(styles["faqEditorWrapper"])} data-aos="zoom-in">
 
       <h3>faq editor</h3>
 
+      <button onClick={() => saveFaq()}>Save</button>
+      <input type="text" onChange={(e) => setQuestion(e.target.value)} value={question}/>
+      <input type="text" onChange={(e) => setCategory(e.target.value)} value={category}/>
+      <input type="checkbox" onChange={(e) => setShow(e.target.checked)} checked={show ? true : false}/>
+      <input type="text" onChange={(e) => searchQuestion(e.target.value)}/>
+      <button onClick={() => publishFaq()}>Опубликовать в DC</button>
+
       <Slate 
         editor={editor} 
         value={initialValue}
-        onChange={() => {
+        onChange={(value) => {
+          const isAstChange = editor.operations.some(
+            op => 'set_selection' !== op.type
+          )
+          if (isAstChange) {
+            const content = JSON.stringify(value)
+            setValue(content);
+          }
+
           const { selection } = editor
   
           if (selection && Range.isCollapsed(selection)) {
@@ -185,7 +341,7 @@ const FaqEditor = () => {
             const before = wordBefore && Editor.before(editor, wordBefore)
             const beforeRange = before && Editor.range(editor, before, start)
             const beforeText = beforeRange && Editor.string(editor, beforeRange)
-            const beforeMatch = beforeText && beforeText.match(/^@(\w+)$/)
+            const beforeMatch = beforeText && (beforeText.match(/^@(\w|\W+?)$/) || beforeText.match(/^#(\w|\W+?)$/))
             const after = Editor.after(editor, start)
             const afterRange = Editor.range(editor, start, after)
             const afterText = Editor.string(editor, afterRange)
@@ -206,7 +362,12 @@ const FaqEditor = () => {
         <MarkButton format="italic" icon="&#66310;"/>
         <MarkButton format="underline" icon="&#9089;"/>
         <div className={classNames(styles["wrapperBox"])}>
-          <Editable className={classNames(styles["editor"])} renderLeaf={renderLeaf} onKeyDown={onKeyDown}/>
+          <Editable 
+            className={classNames(styles["editor"])} 
+            renderLeaf={renderLeaf} 
+            onKeyDown={onKeyDown}
+            renderElement={renderElement}
+          />
           {target && chars.length > 0 && (
             ReactDOM.createPortal(
               <div
@@ -226,7 +387,7 @@ const FaqEditor = () => {
               >
                 {chars.map((char, i) => (
                   <div
-                    key={char}
+                    key={char.name}
                     onClick={() => {
                       Transforms.select(editor, target)
                       insertMention(editor, char)
@@ -238,11 +399,11 @@ const FaqEditor = () => {
                       background: i === index ? '#B4D5FF' : 'transparent',
                     }}
                   >
-                    {char}
+                    {char.name}
                   </div>
                 ))}
               </div>,
-              document.body
+              document.getElementById('root')
             )
           )}
         </div>
