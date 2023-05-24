@@ -57,33 +57,42 @@ const Gallery = () => {
           <SvgAddMarker width="100%" height="100%" color="#f4f4f4"/>
         </span>
       </Link>
-      {array.map((post, index) =>
-        <div className={classNames(styles["onePostGallery"])} key={index}>
-          <div className={classNames(styles["wrapperImage"])}>
-            <LazyLoadImage
-              className={classNames(styles["image"])}
-              alt={post.picturesView}
-              effect="blur"
-              src={post.picturesView}
-            />
-          </div>
-          <div className={classNames(styles["desc"])}>
-            <h4 className={classNames(styles["title"])}>{shortenText(post.name, numberLengthTitle)}</h4>
-            <p className={classNames(styles["paragraph"])}>{shortenText(post.description, numberLengthDescription)}</p>
-            <div className={classNames(styles["tags"])}>
-              {post.tagNavigation.slice(0, 9).map((tag, index) => (
-                <span className={classNames(styles["oneTag"])} key={index}>{"#" + tag.trim()}</span>
-              ))}
-              {post.tagNavigation.length > 9 && <span className={classNames(styles["oneTag"])}>and more...</span>}
+      {array.length === 0 ?
+        <>
+          <h4 className={classNames(styles["noPosts"])}>Здесь пока нет изображений ;(</h4>
+          <h4 className={classNames(styles["noPosts"])}>Добавьте красивых скриншотов, чтобы Ваша галерея не грустила.</h4>
+        </>
+        :
+        <>
+          {array.map((post, index) =>
+            <div className={classNames(styles["onePostGallery"])} key={index}>
+              <div className={classNames(styles["wrapperImage"])}>
+                <LazyLoadImage
+                  className={classNames(styles["image"])}
+                  alt={post.picturesView}
+                  effect="blur"
+                  src={post.picturesView}
+                />
+              </div>
+              <div className={classNames(styles["desc"])}>
+                <h4 className={classNames(styles["title"])}>{shortenText(post.name, numberLengthTitle)}</h4>
+                <p className={classNames(styles["paragraph"])}>{shortenText(post.description, numberLengthDescription)}</p>
+                <div className={classNames(styles["tags"])}>
+                  {post.tagNavigation.slice(0, 9).map((tag, index) => (
+                    <span className={classNames(styles["oneTag"])} key={index}>{"#" + tag.trim()}</span>
+                  ))}
+                  {post.tagNavigation.length > 9 && <span className={classNames(styles["oneTag"])}>and more...</span>}
+                </div>
+                <div className={classNames(styles["containerActions"])}>
+                  <Link to={`post_analytics`} className={classNames(styles["actions"], styles["analytics"])}>Аналитика</Link>
+                  <Link to={`edit_add_post`} className={classNames(styles["actions"], styles["edit"])}>Редактировать</Link>
+                  <button className={classNames(styles["actions"], styles["delete"])}>Удалить</button>
+                </div>
+              </div>
             </div>
-            <div className={classNames(styles["containerActions"])}>
-              <Link to={`post_analytics`} className={classNames(styles["actions"], styles["analytics"])}>Аналитика</Link>
-              <Link to={`edit_add_post`} className={classNames(styles["actions"], styles["edit"])}>Редактировать</Link>
-              <button className={classNames(styles["actions"], styles["delete"])}>Удалить</button>
-            </div>
-          </div>
-        </div>
-      )}
+          )}
+        </>
+      }
     </div>
   );
 };

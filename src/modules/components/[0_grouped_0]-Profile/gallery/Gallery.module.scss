@@ -34,6 +34,19 @@
     }
   }
 
+  .noPosts {
+    font-family: $fontCustom2;
+    font-weight: 400;
+    font-size: 14px;
+    width: 100%;
+    height: auto;
+    min-height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: $color-3;
+    margin-top: 15px;
+  }
+
   .onePostGallery {
     width: auto;
     //height: 100%;
