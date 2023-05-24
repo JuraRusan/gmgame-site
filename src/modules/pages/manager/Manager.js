@@ -37,7 +37,7 @@ const Manager = () => {
   }
   
   return (
-    <div className={classNames(styles["wrapperManager"])}>
+    <div className={classNames(styles["wrapperManager"])} data-aos="zoom-in">
       <div className={classNames(styles["actions"])}>
         <NavLink className={({isActive}) => setActive(isActive)} to="player_summary">Сводка по игрокам</NavLink>
         <NavLink className={({isActive}) => setActive(isActive)} to="faq_editor">Редактор Faq</NavLink>

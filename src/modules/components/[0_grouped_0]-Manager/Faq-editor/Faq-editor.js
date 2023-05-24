@@ -7,10 +7,10 @@ import { withHistory } from 'slate-history'
 import {sendRequest, useAxios} from '../../../../DataProvider';
 import {useAlert} from "react-alert";
 import Preload from "../../../components/preloader/Preload.js";
+import ReactDOM from 'react-dom'
 
 import styles from "./Faq-editor.module.scss";
 import "aos/dist/aos.css";
-import ReactDOM from 'react-dom'
 
 const insertMention = (editor, character) => {
   const mention = {
