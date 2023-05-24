@@ -1,8 +1,7 @@
-import React, {useEffect, useMemo, useState, useAlert} from "react";
+import React, {useEffect, useMemo, useState} from "react";
 import AOS from "aos";
 import {useAxios} from '../../../DataProvider';
 import Preload from "../../components/preloader/Preload";
-
 import SvgFaq from "../../../bases/icons/SvgFaq.js";
 
 import "aos/dist/aos.css";

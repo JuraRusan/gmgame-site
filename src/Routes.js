@@ -23,10 +23,10 @@ const GalleryStatusView = lazy(() => import(/* webpackChunkName: "404" */ './mod
 const Faq = lazy(() => import(/* webpackChunkName: "faq" */ './modules/pages/faq/Faq.js'));
 const Regulations = lazy(() => import(/* webpackChunkName: "regulations" */ './modules/pages/regulations/Regulations.js'));
 // --
-const MainGallery = lazy(() => import(/* webpackChunkName: "faq" */ './modules/pages/gallery/Gallery.js'));
-const Gallery = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/gallery/Gallery.js'));
-const EditAddPost = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/gallery/EditAddPost.js'));
-const AnalyticsPost = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/gallery/AnalyticsPost.js'));
+// const MainGallery = lazy(() => import(/* webpackChunkName: "faq" */ './modules/pages/gallery/Gallery.js'));
+// const Gallery = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/gallery/Gallery.js'));
+// const EditAddPost = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/gallery/EditAddPost.js'));
+// const AnalyticsPost = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/gallery/AnalyticsPost.js'));
 // --
 const MyMarkers = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Maps-all-comp/my-markers/My-markers.js'));
 const EditAddMarker = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Maps-all-comp/my-markers/EditAddMarker.js'));
@@ -40,7 +40,7 @@ const Articles = lazy(() => import(/* webpackChunkName: "cab" */ './modules/comp
 const MyProfile = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/my-profile/My-profile.js'));
 const MyPrizes = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/my-prizes/My-prizes.js'));
 const ChangePassword = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/change-password/Change-password.js'));
-const Achievement = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/achievement/Achievement'));
+// const Achievement = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/achievement/Achievement'));
 // --
 const Statistic = lazy(() => import(/* webpackChunkName: "statistics" */ './modules/pages/statistic/Statistic.js'));
 const TexturePack = lazy(() => import(/* webpackChunkName: "texturepack" */ './modules/pages/texture-pack/TexturePack.js'));
@@ -79,18 +79,18 @@ const Router = () => {
             {/*----------*/}
             <Route path="articles" element={<Articles/>}/>
             {/*----------*/}
-            <Route path="gallery" element={<Gallery/>}/>
-            <Route path="gallery/edit_add_post" element={<EditAddPost/>}/>
-            <Route path="gallery/post_analytics" element={<AnalyticsPost/>}/>
+            {/*<Route path="gallery" element={<Gallery/>}/>*/}
+            {/*<Route path="gallery/edit_add_post" element={<EditAddPost/>}/>*/}
+            {/*<Route path="gallery/post_analytics" element={<AnalyticsPost/>}/>*/}
             {/*----------*/}
             <Route path="prize" element={<MyPrizes/>}/>
             <Route path="change_password" element={<ChangePassword/>}/>
-            <Route path="achievements" element={<Achievement/>}/>
+            {/*<Route path="achievements" element={<Achievement/>}/>*/}
             {/*----------*/}
           </Route>
 
           <Route path="/articlesWiki" element={<ArticlesWiki/>}/>
-          <Route path="/gallery" element={<MainGallery/>}/>
+          {/*<Route path="/gallery" element={<MainGallery/>}/>*/}
 
           <Route path="/faq" element={<Faq/>}/>
           <Route path="/regulations" element={<Regulations/>}/>

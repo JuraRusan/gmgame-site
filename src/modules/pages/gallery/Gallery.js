@@ -4,7 +4,7 @@ import ImageGallery from 'react-image-gallery';
 import Modal from 'react-modal';
 import AOS from "aos";
 import {LazyLoadImage} from "react-lazy-load-image-component";
-import {array, testArrayTags, testArrayUsers} from "./GalleryArray";
+import {array} from "./GalleryArray";
 import SvgHeart from "../../../bases/icons/SvgHeart";
 import Particles from "../../components/particles/Particles";
 
