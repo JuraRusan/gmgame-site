@@ -3,8 +3,7 @@ import React, {useEffect, useState, useRef} from "react";
 import AOS from "aos";
 import AchievementOneSVG from "../../../../bases/icons/achievementOneSVG/achievementOneSVG";
 import AchievementTwoSVG from "../../../../bases/icons/achievementTwo/achievementTwoSVG";
-import all_chained_up from './json/all_chained_up.json';
-import allayance from './json/allayance.json'
+import {dataAc} from "./output";
 
 import styles from "./Achievement.module.scss";
 import "aos/dist/aos.css";
@@ -51,34 +50,76 @@ const Achievement = () => {
       <h3 className={classNames(styles["achievementsTitle"])}>Игровые достижения</h3>
       <div className={classNames(styles["allWrapper"])}>
 
-        <div ref={divRef} id="one" className={clickedDiv === 'one' && !buttonClicked ? classNames(styles["oneAchievementWrapper"], styles["activeAchievement"]) : classNames(styles["oneAchievementWrapper"])} onClick={() => handleClick('one')}>
-          <div className={classNames(styles["achievementView"])}>
-            <div className={classNames(styles["iconWrapper"])}>
-              <div className={classNames(styles["iconBackground"])}>
-                <AchievementOneSVG
-                  className={classNames(styles["achievementBackground"])}
-                  wight="100%"
+        {dataAc.map((el, i) =>
+          <div key={i} ref={divRef} id={`uniqueName${el.id}`} className={clickedDiv === `uniqueName${el.id}` && !buttonClicked ? classNames(styles["notDone"], styles["oneAchievementWrapper"], styles["activeAchievement"]) : classNames(styles["notDone"], styles["oneAchievementWrapper"])} onClick={() => handleClick(`uniqueName${el.id}`)}>
+            <div className={classNames(styles["achievementView"])}>
+              <div className={classNames(styles["iconWrapper"])}>
+                <div className={classNames(styles["iconBackground"])}>
+                  {el.display_frame === "challenge" ?
+                    <AchievementOneSVG
+                      className={classNames(styles["achievementBackground"])}
+                      wight="100%"
+                      height="100%"
+                      colorOne={colorParameterOne}
+                      colorTwo={colorParameterTwo}
+                      colorThree={colorParameterThree}
+                    />
+                    :
+                    null
+                  }
+                  {el.display_frame === "task" ?
+                    <AchievementTwoSVG
+                      className={classNames(styles["achievementBackground"])}
+                      wight="100%"
+                      height="100%"
+                      colorOne={colorParameterOne}
+                      colorTwo={colorParameterTwo}
+                      colorThree={colorParameterThree}
+                    />
+                    :
+                    null
+                  }
+                  {el.display_frame === "goal" ?
+                    <AchievementTwoSVG
+                      className={classNames(styles["achievementBackground"])}
+                      wight="100%"
+                      height="100%"
+                      colorOne={colorParameterOne}
+                      colorTwo={colorParameterTwo}
+                      colorThree={colorParameterThree}
+                    />
+                    :
+                    null
+                  }
+                  {el.display_frame === null ?
+                    <AchievementTwoSVG
+                      className={classNames(styles["achievementBackground"])}
+                      wight="100%"
+                      height="100%"
+                      colorOne={colorParameterOne}
+                      colorTwo={colorParameterTwo}
+                      colorThree={colorParameterThree}
+                    />
+                    :
+                    null
+                  }
+                </div>
+                <img
+                  className={classNames(styles["achievementIcon"])}
+                  src={`../site_assets/minecraft-item/png/${el.display_icon_item}.png`}
+                  alt=" "
+                  width="100%"
                   height="100%"
-                  colorOne={colorParameterOne}
-                  colorTwo={colorParameterTwo}
-                  colorThree={colorParameterThree}
                 />
               </div>
-              <img
-                className={classNames(styles["achievementIcon"])}
-                src={`../site_assets/minecraft-item/png/${allayance.display.icon.item.split(":")[1]}.png`}
-                alt=" "
-                width="100%"
-                height="100%"
-              />
+              <h1 className={classNames(styles["achievementName"])}>{el.display_title_translate}</h1>
             </div>
-            <h1 className={classNames(styles["achievementName"])}>{allayance.display.title.translate}</h1>
+            <div className={classNames(styles["achievementDescription"])}>
+              <p className={clickedDiv === `uniqueName${el.id}` && !buttonClicked ? classNames(styles["description"], styles["activeDescription"]) : classNames(styles["description"])}>{el.display_description_translate}</p>
+            </div>
+            <button className={classNames(styles["actionsClose"])} onClick={handleButtonClick} data-aos="zoom-in">X</button>
           </div>
-          <div className={classNames(styles["achievementDescription"])}>
-            <p className={clickedDiv === 'one' && !buttonClicked ? classNames(styles["description"], styles["activeDescription"]) : classNames(styles["description"])}>{allayance.display.description.translate}</p>
-          </div>
-          <button className={classNames(styles["actionsClose"])} onClick={handleButtonClick} data-aos="zoom-in">X</button>
-        </div>
+        )}
 
       </div>
     </div>
