@@ -1,41 +1,47 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico"/>
 
-    <script>
-      const imagesRandom = [
-        "%PUBLIC_URL%/site_assets/open-graph/link_1.webp",
-        "%PUBLIC_URL%/site_assets/open-graph/link_2.webp",
-        "%PUBLIC_URL%/site_assets/open-graph/link_3.webp",
-        "%PUBLIC_URL%/site_assets/open-graph/link_4.webp",
-        "%PUBLIC_URL%/site_assets/open-graph/link_5.webp",
-        "%PUBLIC_URL%/site_assets/open-graph/link_6.webp",
-      ]
-      function getRandomInt(min, max) {
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-      }
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="theme-color" content="#4d8bff"/>
+  <meta name="description" content="Бесплатный строительно-выживательный сервер. Без приватов и донат магазина."/>
+  <meta name="og:image" content="%PUBLIC_URL%/site_assets/link.webp"/>
+  <meta name="twitter:card" content="summary_large_image">
+  <link type="application/json+oembed" href="oembed.json"/>
+
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png"/>
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>
+
+  <script>
+    const imagesRandom = [
+      "%PUBLIC_URL%/site_assets/open-graph/link_1.webp",
+      "%PUBLIC_URL%/site_assets/open-graph/link_2.webp",
+      "%PUBLIC_URL%/site_assets/open-graph/link_3.webp",
+      "%PUBLIC_URL%/site_assets/open-graph/link_4.webp",
+      "%PUBLIC_URL%/site_assets/open-graph/link_5.webp",
+      "%PUBLIC_URL%/site_assets/open-graph/link_6.webp",
+    ];
+
+    function getRandomInt(min, max) {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    const ogImageElement = document.querySelector('meta[property="og:image"]');
+
+    setInterval(function() {
       const randomImage = imagesRandom[getRandomInt(0, imagesRandom.length - 1)];
-      const ogImageElement = document.querySelector('meta[property="og:image"]');
       ogImageElement.setAttribute('content', randomImage);
-    </script>
+    }, 5000);
+  </script>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#4d8bff" />
-    <meta name="description" content="Бесплатный строительно-выживательный сервер. Без приватов и донат магазина."/>
-    <meta name="og:image" content="%PUBLIC_URL%/site_assets/link.webp"/>
-    <meta name="twitter:card" content="summary_large_image">
-    <link type="application/json+oembed" href="oembed.json" />
-
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title>GMGame</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-  </body>
+  <title>GMGame</title>
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root"></div>
+</body>
 </html>
