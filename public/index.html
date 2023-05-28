@@ -7,38 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="theme-color" content="#4d8bff"/>
   <meta name="description" content="Бесплатный строительно-выживательный сервер. Без приватов и донат магазина."/>
-  <meta property="og:image" content="%PUBLIC_URL%/site_assets/link.webp"/>
   <meta name="twitter:card" content="summary_large_image">
   <link type="application/json+oembed" href="oembed.json"/>
-
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png"/>
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>
 
-  <script>
-    const imagesRandom = [
-      "%PUBLIC_URL%/site_assets/open-graph/link_1.webp",
-      "%PUBLIC_URL%/site_assets/open-graph/link_2.webp",
-      "%PUBLIC_URL%/site_assets/open-graph/link_3.webp",
-      "%PUBLIC_URL%/site_assets/open-graph/link_4.webp",
-      "%PUBLIC_URL%/site_assets/open-graph/link_5.webp",
-      "%PUBLIC_URL%/site_assets/open-graph/link_6.webp"
-    ];
-
-    function getRandomInt(min, max) {
-      min = Math.ceil(min);
-      max = Math.floor(max);
-      return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
-
-    document.addEventListener('DOMContentLoaded', function() {
-      const ogImageElement = document.querySelector('meta[property="og:image"]');
-
-      setInterval(function() {
-        const randomImage = imagesRandom[getRandomInt(0, imagesRandom.length - 1)];
-        ogImageElement.setAttribute('content', randomImage);
-      }, 5000);
-    });
-  </script>
+  <!--  <meta name="og:image" content="%PUBLIC_URL%/site_assets/link_1.webp"/>-->
+  <!--  <meta name="og:image" content="%PUBLIC_URL%/site_assets/link_2.webp"/>-->
+  <meta name="og:image" content="%PUBLIC_URL%/site_assets/link_3.webp"/>
+  <!--  <meta name="og:image" content="%PUBLIC_URL%/site_assets/link_4.webp"/>-->
+  <!--  <meta name="og:image" content="%PUBLIC_URL%/site_assets/link_5.webp"/>-->
+  <!--  <meta name="og:image" content="%PUBLIC_URL%/site_assets/link_6.webp"/>-->
 
   <title>GMGame</title>
 </head>
