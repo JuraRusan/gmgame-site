@@ -21,7 +21,7 @@
       "%PUBLIC_URL%/site_assets/open-graph/link_3.webp",
       "%PUBLIC_URL%/site_assets/open-graph/link_4.webp",
       "%PUBLIC_URL%/site_assets/open-graph/link_5.webp",
-      "%PUBLIC_URL%/site_assets/open-graph/link_6.webp",
+      "%PUBLIC_URL%/site_assets/open-graph/link_6.webp"
     ];
 
     function getRandomInt(min, max) {
@@ -30,12 +30,14 @@
       return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
-    const ogImageElement = document.querySelector('meta[property="og:image"]');
+    document.addEventListener('DOMContentLoaded', function() {
+      const ogImageElement = document.querySelector('meta[property="og:image"]');
 
-    setInterval(function() {
-      const randomImage = imagesRandom[getRandomInt(0, imagesRandom.length - 1)];
-      ogImageElement.setAttribute('content', randomImage);
-    }, 5000);
+      setInterval(function() {
+        const randomImage = imagesRandom[getRandomInt(0, imagesRandom.length - 1)];
+        ogImageElement.setAttribute('content', randomImage);
+      }, 5000);
+    });
   </script>
 
   <title>GMGame</title>
