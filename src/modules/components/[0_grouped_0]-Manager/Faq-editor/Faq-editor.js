@@ -140,7 +140,7 @@ const FaqEditor = () => {
       return JSON.parse(contentValue)
     } else {
       return [{
-        type: 'paragraph', children: [{text: 'A line of text in a paragraph.'}],
+        type: 'paragraph', children: [{text: 'Стартовый текст'}],
       },]
     }
   }, [contentValue])
@@ -322,7 +322,7 @@ const FaqEditor = () => {
           <option value="сервер"/>
           <option value="фарм"/>
           <option value="дс"/>
-          {/* сюды должно приходить те что уже есть терры ну и так как импут можно сразу же новую добавить удобнее чем селект обычный */}
+          {/* сюды должно приходить те что уже есть категории ну и так как импут можно сразу же новую добавить удобнее чем селект обычный */}
         </datalist>
         <input
           type="search"
@@ -399,7 +399,7 @@ const FaqEditor = () => {
       >
         <div className={classNames(styles["wrapperBox"])}>
           <div className={classNames(styles["editingPanel"])}>
-            <MarkButton format="format_bold" icon={<BoldSvgComponent wight="100%" height="100%" color="#fff"/>}/>
+            <MarkButton format="bold" icon={<BoldSvgComponent wight="100%" height="100%" color="#fff"/>}/>
             <MarkButton format="italic" icon={<ItalicSvgComponent wight="100%" height="100%" color="#fff"/>}/>
             <MarkButton format="underline" icon={<UnderlineSvgComponent wight="100%" height="100%" color="#fff"/>}/>
           </div>
