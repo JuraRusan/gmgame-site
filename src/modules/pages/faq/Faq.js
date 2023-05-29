@@ -670,25 +670,24 @@ const Faq = () => {
     return <Preload/>
   }
 
-  // {
-    //     id: 1,
-    //     tabTitle: "Jill Hurst",
-    //     titleInf: "Hello, Jill Hurst! You have 27 unread messages.",
-    //     itfContent: [
-    //       {
-    //         id: 1,
-    //         forIndex: "62f54cd0de8ed1e9f84fd7b6",
-    //         question: "Mckenzie Pacheco",
-    //         answer: "Adipisicing dolore do minim velit qui. Elit esse minim ex occaecat ullamco commodo. Fugiat aute cillum do voluptate fugiat non laboris nostrud nulla quis. Adipisicing aute fugiat ad eiusmod et do. "
-    //       },
-
   if (resFaq.loaded && tabsFaqList.length === 0) {
     let tabs = {};
     resFaq.data.forEach((el, i) => {
+      function generateUniqueHash(length) {
+        const characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+        let hash = '';
+
+        for (let i = 0; i < length; i++) {
+          const randomIndex = Math.floor(Math.random() * characters.length);
+          hash += characters[randomIndex];
+        }
+
+        return hash;
+      }
       if (tabs[el.category]) {
         tabs[el.category].push({
           id: el.id,
-          forIndex: el.id,
+          forIndex: generateUniqueHash(24),
           question: el.quest,
           answer: prepareAnswer(el.answer)
         })
@@ -696,7 +695,7 @@ const Faq = () => {
         // console.log(prepareAnswer(el.answer));
         tabs[el.category] = [{
           id: el.id,
-          forIndex: el.id,
+          forIndex: generateUniqueHash(24),
           question: el.quest,
           answer: prepareAnswer(el.answer)
         }]
@@ -767,14 +766,8 @@ const Faq = () => {
                   {selectedTab?.itfContent.map((el) => {
                     return (
                       <div className="list-one" key={el.id}>
-                        <input
-                          className="one-input"
-                          id={el.forIndex}
-                          type="checkbox"
-                        />
-                        <label className="one-label" for={el.forIndex}>
-                          {el.question}
-                        </label>
+                        <input className="one-input" id={el.forIndex} type="checkbox"/>
+                        <label className="one-label" htmlFor={el.forIndex}>{el.question}</label>
                         <h3 className="one-content-h3" dangerouslySetInnerHTML={{__html: el.answer}}></h3>
                       </div>
                     );
