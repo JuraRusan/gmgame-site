@@ -14,6 +14,7 @@ import UnderlineSvgComponent from "../../../../bases/icons/formatUnderlineSVG/Un
 
 import styles from "./Faq-editor.module.scss";
 import "aos/dist/aos.css";
+import { set } from "lodash";
 
 const insertMention = (editor, character) => {
   const mention = {
@@ -97,6 +98,9 @@ const FaqEditor = () => {
   const [show, setShow] = useState(false)
   const [contentValue, setContent] = useState()
   const [faqId, setFaqId] = useState()
+  const [categoryList, setCategoryList] = useState([])
+  const [questionsList, setQuestionsList] = useState([])
+  const [faqList, setFaqList] = useState([])
 
   // if (!mentions.length) {
   //   setMentions([
@@ -140,7 +144,7 @@ const FaqEditor = () => {
       return JSON.parse(contentValue)
     } else {
       return [{
-        type: 'paragraph', children: [{text: 'Стартовый текст'}],
+        type: 'paragraph', children: [{text: ''}],
       },]
     }
   }, [contentValue])
@@ -250,6 +254,27 @@ const FaqEditor = () => {
     setMentions(resParams.data.data);
   }
 
+  if (resFaq.loaded && categoryList.length === 0) {
+    let uniqCategory = [];
+    resFaq.data.forEach((item) => {
+      if (!uniqCategory.includes(item.category)) {
+        uniqCategory.push(item.category);
+      }
+    });
+
+    setCategoryList(uniqCategory);
+
+    let uniqQuestions = [];
+    resFaq.data.forEach((item) => {
+      if (!uniqQuestions.includes(item.quest)) {
+        uniqQuestions.push(item.quest);
+      }
+    });
+
+    setQuestionsList(uniqQuestions);
+    setFaqList(resFaq.data);
+  }
+
   const saveFaq = () => {
     let payload = {
       id: faqId || -1, quest: question, answer: value, category: category, show: +show
@@ -257,7 +282,17 @@ const FaqEditor = () => {
     sendRequest('/api/save_faq', 'POST', payload).then(response => {
       if (response.message) {
         alert.success(response.message);
-        setFaqId(response.id);
+        setFaqId(response.quest.id);
+
+        const newQuestionsList = [...questionsList];
+        if (!newQuestionsList.includes(response.quest.quest)) {
+          newQuestionsList.push(response.quest.quest);
+        }
+        setQuestionsList(newQuestionsList);
+
+        const newFaqList = [...faqList];
+        newFaqList.push(response.quest);
+        setFaqList(newFaqList);
       } else {
         alert.error(response.error);
       }
@@ -277,17 +312,16 @@ const FaqEditor = () => {
 
   function searchQuestion(value) {
     if (value === '') {
-      setQuestion('');
+      // setQuestion('');
       setCategory('');
       setShow(false);
       setFaqId('');
-      return;
     }
 
-    const quest = resFaq.data.filter(c => c.quest ? c.quest.toLowerCase().startsWith(value.toLowerCase()) : false)
+    const quest = faqList.filter(c => c.quest ? c.quest.toLowerCase().startsWith(value.toLowerCase()) : false)
 
     if (quest.length > 0) {
-      setQuestion(quest[0].quest);
+      // setQuestion(quest[0].quest);
       setCategory(quest[0].category);
       setShow(quest[0].show);
       setFaqId(quest[0].id);
@@ -311,7 +345,31 @@ const FaqEditor = () => {
       Transforms.removeNodes(editor, {
         at: [0],
       });
+    } 
+    if (quest.length === 0 && faqId) {
+      setCategory('');
+      setShow(false);
+      setFaqId('');
+
+      let totalNodes = editor.children.length;
+
+      for (let i = 0; i < totalNodes - 1; i++) {
+        Transforms.removeNodes(editor, {
+          at: [totalNodes - i - 1],
+        });
+      }
+
+      Transforms.insertNodes(editor, initialValue, {
+        at: [editor.children.length],
+      });
+
+      // Remove the last node that was leftover from before
+      Transforms.removeNodes(editor, {
+        at: [0],
+      });
     }
+
+    setQuestion(value);
   }
 
   return (<div className={classNames(styles["faqEditorWrapper"])} data-aos="zoom-in">
@@ -319,21 +377,26 @@ const FaqEditor = () => {
     <div className={classNames(styles["topLine"])}>
       <div className={classNames(styles["textInput"])}>
         <datalist id="categoryList">
-          <option value="сервер"/>
-          <option value="фарм"/>
-          <option value="дс"/>
-          {/* сюды должно приходить те что уже есть категории ну и так как импут можно сразу же новую добавить удобнее чем селект обычный */}
+          {categoryList.map((item, index) => {
+            return <option key={index} value={item}/>
+          })}
         </datalist>
-        <input
+        <datalist id="questionsList">
+          {questionsList.map((item, index) => {
+            return <option key={index} value={item}/>
+          })}
+        </datalist>
+        {/* <input
           type="search"
           className={classNames(styles["inputStyle"])}
           onChange={(e) => searchQuestion(e.target.value)}
           placeholder="Поиск по вопросу"
-        />
+        /> */}
         <input
+          list="questionsList"
           type="text"
           className={classNames(styles["inputStyle"])}
-          onChange={(e) => setQuestion(e.target.value)}
+          onChange={(e) => searchQuestion(e.target.value)}
           value={question}
           placeholder="Вопрос?"
         />
