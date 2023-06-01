@@ -1,0 +1,259 @@
+@import "../../../Variables.scss";
+
+@keyframes box-height-opacity {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+  100% {
+    opacity: 1;
+    height: 212px;
+  }
+}
+
+.mainShopkeepersBlock {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  .titleShopH4 {
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    padding: 0 25px;
+    font-size: 24px;
+    font-weight: 400;
+    color: $color-3;
+    margin: 10px auto;
+    font-family: $fontCustom2;
+  }
+
+  .shopBlockCenter {
+    width: 100%;
+    max-width: 1600px;
+    height: auto;
+    min-height: 700px;
+    max-height: none;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    background: $color-11;
+    border: 1px solid $color-2;
+    border-radius: 5px;
+    padding: 8px;
+
+    .shopsListWrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 300px;
+      height: auto;
+      max-height: 750px;
+      min-height: max-content;
+      border: 1px solid $color-21;
+      border-radius: 5px;
+      background: $color-20;
+      position: sticky;
+      top: 40px;
+
+      .searchShop {
+        width: 100%;
+        height: 32px;
+        outline: none;
+        background: $color-7;
+        border: none;
+        border-radius: 0;
+        transition: all 0.25s ease-in-out;
+        color: $color-8;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        &:hover,
+        &:focus,
+        &:active {
+          outline: none;
+          background: $color-21;
+        }
+      }
+
+      .ulBlock {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        max-height: 718px;
+        min-height: max-content;
+        padding: 8px 4px;
+        overflow: auto;
+        border-top: 1px solid $color-21;
+
+        &::-webkit-scrollbar {
+          width: 4px !important;
+        }
+
+        .oneShop {
+          color: $color-3;
+          font-family: $fontCustom2;
+          font-size: 14px;
+          height: 28px;
+          line-height: 28px;
+          padding: 0 8px;
+          transition: all 0.35s ease;
+          border-radius: 4px;
+
+          &:hover {
+            background: $color-14;
+          }
+        }
+
+        .activeShop {
+          background-color: $color-4 !important;
+          color: $color-2 !important;
+        }
+      }
+    }
+
+    .shopAllSuggestions {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 35%;
+      height: auto;
+      margin: 0 auto;
+      border: 1px solid $color-21;
+      border-radius: 5px;
+      background: $color-20;
+      padding: 8px 16px;
+
+      .oneOffersShop {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .blockShop {
+          font-family: $fontCustom2;
+          font-weight: 400;
+          font-size: 16px;
+          color: $color-3;
+          width: 100%;
+          height: 36px;
+          line-height: 36px;
+        }
+
+        .onClick {
+          width: auto;
+          height: auto;
+          cursor: pointer;
+          margin: 5px auto;
+        }
+      }
+    }
+
+    .shopOneSuggestions {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      width: 100%;
+      min-height: 100%;
+      max-width: 632px;
+      height: 100%;
+      max-height: 718px;
+      padding: 5px;
+      border: 1px solid $color-21;
+      border-radius: 5px;
+      background: $color-20;
+      position: sticky;
+      top: 50px;
+
+      .searchInputItems {
+        display: flex;
+        width: 100%;
+        height: 36px;
+        line-height: 36px;
+        outline: none;
+        background: $color-7;
+        border: 1px solid $color-22;
+        border-radius: 5px;
+        transition: all 0.35s ease;
+        color: $color-8;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        &:hover,
+        &:focus,
+        &:active {
+          outline: none;
+          background: $color-21;
+        }
+      }
+
+      .viewShulker {
+        width: auto;
+        margin: 10px auto 0 auto;
+        animation: box-height-opacity 1s ease-in-out;
+      }
+
+      .villagerShopInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 10px auto 0 auto;
+        background: $color-7;
+        border-radius: 4px;
+        border: 1px solid $color-22;
+        padding: 12px;
+        width: 100%;
+
+        .villager {
+          display: flex;
+          flex-direction: row;
+
+          .villagerInfo {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            .styleH4 {
+              color: $color-3;
+              font-size: 14px;
+              font-weight: 400;
+              height: 24px;
+              line-height: 24px;
+
+              .color {
+                font-weight: inherit;
+                font-size: 13px;
+                color: $color-8;
+                font-family: $fontCustom2;
+                margin-left: 8px;
+              }
+            }
+
+            .left {
+              text-indent: 2ch;
+            }
+          }
+
+          .villagerImage {
+            display: flex;
+            width: 100%;
+            max-width: 125px;
+            height: auto;
+            margin: 0 auto;
+
+            .wrapper {
+              margin: 0 auto;
+              width: auto;
+              height: 250px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

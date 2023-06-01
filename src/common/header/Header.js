@@ -44,7 +44,7 @@ const Header = () => {
                 <li className="drop-li"><a href="/statistic">Статистика</a></li>
                 <li className="drop-li"><a href="/support">Поддержать</a></li>
                 <li className="drop-li"><a href="/texturePack">Текстур пак</a></li>
-                <li className="drop-li"><a href="/shopkeepers">Торговая зона</a></li>
+                <li className="drop-li"><a href="/no-access">Торговая зона</a></li>
               </ul>
             </li>
             <li className="links-li">

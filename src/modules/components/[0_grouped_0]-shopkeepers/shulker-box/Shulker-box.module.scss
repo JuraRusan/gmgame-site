@@ -1,6 +1,6 @@
 @import "../../../../Variables";
 
-.one-shulker-box-block {
+.oneShulkerBox {
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
@@ -8,14 +8,13 @@
   padding: 3px;
   background: $color-7;
   width: max-content;
-  max-width: 629px;
+  max-width: 620px;
   height: auto;
   border-radius: 5px;
   border: 1px solid $color-22;
   transition: all 0.25s ease;
-  margin: 15px;
 
   &:hover {
-    background: $color-21;
+    background: $color-20;
   }
 }
