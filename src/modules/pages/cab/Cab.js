@@ -67,6 +67,16 @@ const Cab = () => {
     <div className={classNames(styles["mainCab"])}>
       <div className={classNames(styles["boxWrapper"])}>
 
+        {resParams.data.user.status === 4 &&
+          <img
+            className={classNames(styles["banned"])}
+            src="../site_assets/pages/webp/banned.webp"
+            alt=""
+            width="100%"
+            height="auto"
+          />
+        }
+
         <div className={classNames(styles["buttonWrapper"])}>
           <button id="buttonDelete" className={classNames(styles["buttonPhone"], styles["buttonPhoneNoVisible"])} onClick={phoneCabFunctionRemove}>&#128473;</button>
           <button id="buttonAdd" className={classNames(styles["buttonPhone"])} onClick={phoneCabFunctionAdd}>&#9776;</button>
@@ -76,7 +86,12 @@ const Cab = () => {
           <PlayerCabinet {...resParams.data.user} />
           <div className={classNames(styles["menuCab"])} data-aos="zoom-in">
             <div className={classNames(styles["blockLink"])}>
-              <NavLink onClick={phoneCabFunctionRemove} className={({isActive}) => setActive(isActive)} to="profile">Профиль</NavLink>
+              {resParams.data.user.status === 4
+                ?
+                <></>
+                :
+                <NavLink onClick={phoneCabFunctionRemove} className={({isActive}) => setActive(isActive)} to="profile">Профиль</NavLink>
+              }
               {resParams.data.user.status === 2 &&
                 <>
                   <NavLink onClick={phoneCabFunctionRemove} className={({isActive}) => setActive(isActive)} to="territories">Мои территории</NavLink>

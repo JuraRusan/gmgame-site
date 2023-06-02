@@ -47,15 +47,21 @@ const MyProfile = () => {
       {/*</div>*/}
       <div className={classNames(styles["profileBlockWrapper"])}>
 
-        <div className={classNames(styles["profileOneCube"])}>
-          <h5 className={classNames(styles["titleH5"])}>Статус аккаунта</h5>
-          <label className={classNames(styles["labelText"])}>{data.status}</label>
-        </div>
-
-        <div className={classNames(styles["profileOneCube"])}>
-          <h5 className={classNames(styles["titleH5"])}>Версия игры</h5>
-          <label className={classNames(styles["labelText"])}>Java Edition {data.version}</label>
-        </div>
+        {data.user.status === 4
+          ?
+          <></>
+          :
+          <>
+            <div className={classNames(styles["profileOneCube"])}>
+              <h5 className={classNames(styles["titleH5"])}>Статус аккаунта</h5>
+              <label className={classNames(styles["labelText"])}>{data.status}</label>
+            </div>
+            <div className={classNames(styles["profileOneCube"])}>
+              <h5 className={classNames(styles["titleH5"])}>Версия игры</h5>
+              <label className={classNames(styles["labelText"])}>Java Edition {data.version}</label>
+            </div>
+          </>
+        }
 
         {data.user.status === 2 &&
           <div className={classNames(styles["profileOneCubeCustomIp"])}>
@@ -81,9 +87,11 @@ const MyProfile = () => {
             </div>
           </div>
         }
+
       </div>
     </div>
-  );
+  )
+    ;
 }
 
 export default MyProfile;
