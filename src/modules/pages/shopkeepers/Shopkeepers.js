@@ -1,17 +1,16 @@
 import classNames from "classnames";
-import {useMemo, useState} from "react";
+import {useEffect, useState} from "react";
 import OneSuggestions from "../../components/[0_grouped_0]-shopkeepers/one-suggestions/One-suggestions.js";
 import Warn from "../../components/warn/Warn";
 import {LazyLoadImage} from 'react-lazy-load-image-component';
-import lodash from 'lodash';
-import {useAxios} from '../../../DataProvider';
-import Preload from "../../components/preloader/Preload";
 import ShulkerBox from "../../components/[0_grouped_0]-shopkeepers/shulker-box/Shulker-box";
 import {shopData} from "./testParse/test_data";
 import {shulkers_type} from "./ShulkersType";
+import AOS from "aos";
 
 import styles from "./Shopkeepers.module.scss"
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import "aos/dist/aos.css";
 
 function isItemInteractiveResult(item) {
   return shulkers_type.includes(item.resultItem.type);
@@ -27,8 +26,13 @@ function isItemInteractiveItem2(item) {
 
 const Shopkeepers = () => {
 
+  useEffect(() => {
+    AOS.init({duration: 1000});
+  }, []);
+
   const infoSearch = "Поиск работает по всем предметам, даже по тем что лежат в шалкерах."
 
+  const [showButton, setShowButton] = useState(false);
   const [infoShopName, setInfoShopName] = useState(" ");
   const [infoShopOwnerName, setInfoShopOwnerName] = useState(" ");
   const [infoShopCoordinatesX, setInfoShopCoordinatesX] = useState(" ");
@@ -53,10 +57,30 @@ const Shopkeepers = () => {
     setInfoProfession(props.object_profession.toLowerCase());
   }
 
+  const scrollActive = () => {
+    const top = document.getElementById("topScroll");
+    const offset = 80;
+    const elementTop = top.offsetTop - offset;
+    window.scrollTo({
+      top: elementTop,
+      behavior: 'smooth'
+    });
+  }
+
+  const handleScroll = () => {
+    const scrollY = window.scrollY || document.documentElement.scrollTop;
+    setShowButton(scrollY > 200);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const handleItemClick = (itemId, offers) => {
     setActiveItem(itemId);
     const element = document.getElementById(itemId);
-    element.scrollIntoView({ behavior: 'smooth' });
+    element.scrollIntoView({behavior: 'smooth'});
 
     setActiveScroll(itemId);
     const top = document.getElementById("topScroll");
@@ -127,8 +151,9 @@ const Shopkeepers = () => {
             className={classNames(styles["searchShop"])}
             placeholder="Поиск по названию"
             onChange={(e) => setValueSearchShop(e.target.value.toLowerCase())}
+            data-aos="zoom-in"
           />
-          <ul className={classNames(styles["ulBlock"])}>
+          <ul className={classNames(styles["ulBlock"])} data-aos="zoom-in">
             {filterShopData.map((id, i) => (
               <li
                 key={i}
@@ -139,6 +164,11 @@ const Shopkeepers = () => {
               </li>
             ))}
           </ul>
+          {showButton &&
+            <div className={classNames(styles["wrapperButton"])}>
+              <button className={classNames(styles["scrollTop"])} data-aos="zoom-in" onClick={scrollActive}>&#129085;</button>
+            </div>
+          }
         </div>
         <div className={classNames(styles["shopAllSuggestions"])}>
           {filteredData.map((el, i) => (
@@ -188,7 +218,7 @@ const Shopkeepers = () => {
             )
           )}
         </div>
-        <div className={classNames(styles["shopOneSuggestions"])}>
+        <div className={classNames(styles["shopOneSuggestions"])} data-aos="zoom-in">
           <Warn inf={infoSearch}/>
           <input
             type="search"
