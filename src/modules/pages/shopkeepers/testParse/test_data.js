@@ -1344,7 +1344,172 @@ export const shopData = [
         "amount": 64,
         "content": []
       },
-      "item1": {"type": "shulker_box", "type_ru": "Шалкеровый ящик", "amount": 1, "content": []},
+      "item1": {
+        "type": "shulker_box", "type_ru": "Шалкеровый ящик", "amount": 1, "content": [
+          {
+            "slot": "0",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "1",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "2",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "3",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "4",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "5",
+            "id": "elytra",
+            "id_ru": "Элитры",
+            "count": "64"
+          },
+          {
+            "slot": "6",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "7",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "8",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "9",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "10",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "11",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "12",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "13",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "14",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "15",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "16",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "17",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "18",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "19",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "20",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "21",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "22",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "23",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "24",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "25",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "26",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          }
+        ]
+      },
       "item2": {}
     }]
   }, {
@@ -1358,7 +1523,172 @@ export const shopData = [
     "object_villager_type": "JUNGLE",
     "offers": [{
       "id": "1",
-      "resultItem": {"type": "white_shulker_box", "type_ru": "Белый шалкеровый ящик", "amount": 1, "content": []},
+      "resultItem": {
+        "type": "white_shulker_box", "type_ru": "Белый шалкеровый ящик", "amount": 1, "content": [
+          {
+            "slot": "0",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "1",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "2",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "3",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "4",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "5",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "6",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "7",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "8",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "9",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "10",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "11",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "12",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "13",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "14",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "15",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "16",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "17",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "18",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "19",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "20",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "21",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "22",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "23",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "24",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "25",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "26",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          }
+        ]
+      },
       "item1": {
         "type": "deepslate_diamond_ore",
         "type_ru": "Алмазоносный глубинный сланец",
@@ -1368,7 +1698,172 @@ export const shopData = [
       "item2": {}
     }, {
       "id": "2",
-      "resultItem": {"type": "orange_shulker_box", "type_ru": "Оранжевый шалкеровый ящик", "amount": 1, "content": []},
+      "resultItem": {
+        "type": "orange_shulker_box", "type_ru": "Оранжевый шалкеровый ящик", "amount": 1, "content": [
+          {
+            "slot": "0",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "1",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "2",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "3",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "4",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "5",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "6",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "7",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "8",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "9",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "10",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "11",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "12",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "13",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "14",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "15",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "16",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "17",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "18",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "19",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "20",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "21",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "22",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "23",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "24",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "25",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "26",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          }
+        ]
+      },
       "item1": {
         "type": "deepslate_diamond_ore",
         "type_ru": "Алмазоносный глубинный сланец",
@@ -1378,7 +1873,172 @@ export const shopData = [
       "item2": {}
     }, {
       "id": "3",
-      "resultItem": {"type": "cyan_shulker_box", "type_ru": "Бирюзовый шалкеровый ящик", "amount": 1, "content": []},
+      "resultItem": {
+        "type": "cyan_shulker_box", "type_ru": "Бирюзовый шалкеровый ящик", "amount": 1, "content": [
+          {
+            "slot": "0",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "1",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "2",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "3",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "4",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "5",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "6",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "7",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "8",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "9",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "10",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "11",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "12",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "13",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "14",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "15",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "16",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "17",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "18",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "19",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "20",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "21",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "22",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "23",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "24",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "25",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "26",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          }
+        ]
+      },
       "item1": {
         "type": "deepslate_diamond_ore",
         "type_ru": "Алмазоносный глубинный сланец",
@@ -1473,7 +2133,112 @@ export const shopData = [
       "item2": {}
     }, {
       "id": "12",
-      "resultItem": {"type": "black_shulker_box", "type_ru": "Чёрный шалкеровый ящик", "amount": 1, "content": []},
+      "resultItem": {
+        "type": "black_shulker_box", "type_ru": "Чёрный шалкеровый ящик", "amount": 1, "content": [
+          {
+            "slot": "1",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "2",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "8",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "9",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "10",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "11",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "12",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "13",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "14",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "15",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "16",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "21",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "22",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "23",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "24",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "25",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "26",
+            "id": "oak_log",
+            "id_ru": "Дубовая древисина",
+            "count": "64"
+          }
+        ]
+      },
       "item1": {
         "type": "deepslate_diamond_ore",
         "type_ru": "Алмазоносный глубинный сланец",
@@ -1483,7 +2248,118 @@ export const shopData = [
       "item2": {}
     }, {
       "id": "13",
-      "resultItem": {"type": "brown_shulker_box", "type_ru": "Коричневый шалкеровый ящик", "amount": 1, "content": []},
+      "resultItem": {
+        "type": "brown_shulker_box", "type_ru": "Коричневый шалкеровый ящик", "amount": 1, "content": [
+          {
+            "slot": "0",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "1",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "2",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "4",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "5",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "6",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "7",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "8",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "9",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "15",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "16",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "17",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "18",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "19",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "20",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "21",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "22",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          },
+          {
+            "slot": "26",
+            "id": "stone",
+            "id_ru": "Камень",
+            "count": "64"
+          }
+        ]
+      },
       "item1": {
         "type": "deepslate_diamond_ore",
         "type_ru": "Алмазоносный глубинный сланец",
@@ -1493,7 +2369,118 @@ export const shopData = [
       "item2": {}
     }, {
       "id": "14",
-      "resultItem": {"type": "pink_shulker_box", "type_ru": "Розовый шалкеровый ящик", "amount": 1, "content": []},
+      "resultItem": {
+        "type": "pink_shulker_box", "type_ru": "Розовый шалкеровый ящик", "amount": 1, "content": [
+          {
+            "slot": "0",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "5",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "6",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "7",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "8",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "9",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "10",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "14",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "15",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "16",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "17",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "18",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "21",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "22",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "23",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "24",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "25",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          },
+          {
+            "slot": "26",
+            "id": "dark_oak_log",
+            "id_ru": "Древесина тёмного дуба",
+            "count": "64"
+          }
+        ]
+      },
       "item1": {
         "type": "deepslate_diamond_ore",
         "type_ru": "Алмазоносный глубинный сланец",
@@ -1583,7 +2570,130 @@ export const shopData = [
       "item2": {}
     }, {
       "id": "23",
-      "resultItem": {"type": "magenta_shulker_box", "type_ru": "Пурпурный шалкеровый ящик", "amount": 1, "content": []},
+      "resultItem": {
+        "type": "magenta_shulker_box", "type_ru": "Пурпурный шалкеровый ящик", "amount": 1, "content": [
+          {
+            "slot": "0",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "1",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "2",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "3",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "6",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "7",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "8",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "9",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "10",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "11",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "14",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "15",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "16",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "17",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "18",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "19",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "20",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "21",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "25",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          },
+          {
+            "slot": "26",
+            "id": "birch_log",
+            "id_ru": "Берёзовая древисина",
+            "count": "64"
+          }
+        ]
+      },
       "item1": {
         "type": "deepslate_diamond_ore",
         "type_ru": "Алмазоносный глубинный сланец",

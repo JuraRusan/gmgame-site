@@ -39,6 +39,7 @@ const Shopkeepers = () => {
   const [valueSearchShop, setValueSearchShop] = useState('');
   const [valueSearchItem, setValueSearchItem] = useState('');
   const [selectedItem, setSelectedItem] = useState(null);
+  const [activeScroll, setActiveScroll] = useState(0);
 
   function shopFunction(props) {
     setInfoShopName(props.name);
@@ -50,10 +51,24 @@ const Shopkeepers = () => {
     setInfoProfession(props.object_profession.toLowerCase());
   }
 
-  const handleItemClick = (itemId) => {
+  const handleItemClick = (itemId, offers) => {
     setActiveItem(itemId);
     const element = document.getElementById(itemId);
-    element.scrollIntoView({behavior: 'smooth'});
+    element.scrollIntoView({ behavior: 'smooth' });
+
+    setActiveScroll(itemId);
+    const top = document.getElementById("topScroll");
+    const offset = 80;
+    const elementTop = top.offsetTop - offset;
+    if (activeScroll === itemId) {
+      window.scrollTo({
+        top: elementTop,
+        behavior: 'smooth'
+      });
+    }
+    // if (activeScroll === itemId) {
+    //   top.scrollIntoView({ behavior: 'smooth' });
+    // }
   };
 
   const filterShopData = valueSearchShop.trim() === ''
@@ -101,7 +116,7 @@ const Shopkeepers = () => {
     : filterShopData;
 
   return (
-    <div className={classNames(styles["mainShopkeepersBlock"])}>
+    <div className={classNames(styles["mainShopkeepersBlock"])} id="topScroll">
       <h4 className={classNames(styles["titleShopH4"])}>Товары игроков сервера</h4>
       <div className={classNames(styles["shopBlockCenter"])}>
         <div className={classNames(styles["shopsListWrapper"])}>
@@ -128,7 +143,7 @@ const Shopkeepers = () => {
               <>
                 {el.offers.length === 0
                   ?
-                  <></>
+                  <div id={`scroll${el.shop_id}`} key={i}></div>
                   :
                   <div id={`scroll${el.shop_id}`} key={i} className={classNames(styles["oneOffersShop"])}>
                     <h4 className={classNames(styles["blockShop"])}>{el.name === "" ? el.owner : el.name}</h4>
