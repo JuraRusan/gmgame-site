@@ -27,6 +27,8 @@ function isItemInteractiveItem2(item) {
 
 const Shopkeepers = () => {
 
+  const infoSearch = "Поиск работает по всем предметам, даже по тем что лежат в шалкерах."
+
   const [infoShopName, setInfoShopName] = useState(" ");
   const [infoShopOwnerName, setInfoShopOwnerName] = useState(" ");
   const [infoShopCoordinatesX, setInfoShopCoordinatesX] = useState(" ");
@@ -187,6 +189,7 @@ const Shopkeepers = () => {
           )}
         </div>
         <div className={classNames(styles["shopOneSuggestions"])}>
+          <Warn inf={infoSearch}/>
           <input
             type="search"
             className={classNames(styles["searchInputItems"])}
