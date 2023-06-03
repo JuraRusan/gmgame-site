@@ -170,7 +170,7 @@ const Shopkeepers = () => {
           </ul>
           {showButton &&
             <div className={classNames(styles["wrapperButton"])}>
-              <button className={classNames(styles["scrollTop"])} data-aos="zoom-in" onClick={scrollActive}>&#129085;</button>
+              <button className={classNames(styles["scrollTop"])} data-aos="zoom-in" onClick={scrollActive}>&#129177;</button>
             </div>
           }
         </div>
