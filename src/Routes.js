@@ -40,6 +40,7 @@ const Articles = lazy(() => import(/* webpackChunkName: "cab" */ './modules/comp
 const MyProfile = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/my-profile/My-profile.js'));
 const MyPrizes = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/my-prizes/My-prizes.js'));
 const ChangePassword = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/change-password/Change-password.js'));
+const ShopUser = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/shops-user/ShopUser'));
 // const Achievement = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/achievement/Achievement'));
 // --
 const Statistic = lazy(() => import(/* webpackChunkName: "statistics" */ './modules/pages/statistic/Statistic.js'));
@@ -84,7 +85,11 @@ const Router = () => {
             {/*<Route path="gallery/post_analytics" element={<AnalyticsPost/>}/>*/}
             {/*----------*/}
             <Route path="prize" element={<MyPrizes/>}/>
+            {/*----------*/}
+            <Route path="shop_user" element={<ShopUser/>}/>
+            {/*----------*/}
             <Route path="change_password" element={<ChangePassword/>}/>
+            {/*----------*/}
             {/*<Route path="achievements" element={<Achievement/>}/>*/}
             {/*----------*/}
           </Route>

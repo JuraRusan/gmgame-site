@@ -362,7 +362,7 @@ const PlayerSummary = () => {
             <thead className={classNames(styles["tableTheadStyling"])}>
             <tr className={classNames(styles["tableStylingRows"])}>
               <th className={classNames(styles["tableStylingColumns"], styles["userNameColumn"])}>Имя</th>
-              <th className={classNames(styles["tableStylingColumns"])}>email</th>
+              <th className={classNames(styles["tableStylingColumns"], styles["userMailColumn"])}>email</th>
               <th className={classNames(styles["tableStylingColumns"], styles["userAgeColumn"])}>Возраст</th>
               <th className={classNames(styles["tableStylingColumns"], styles["userStatusColumn"])}>Статус</th>
               <th className={classNames(styles["tableStylingColumns"], styles["userModalOpen"])}>Доп. инфа</th>
@@ -374,13 +374,13 @@ const PlayerSummary = () => {
               return (
                 <tr className={classNames(styles["tableStylingRows"])} key={i}>
                   <th className={classNames(styles["tableStylingColumns"], styles["userNameColumn"])}>
-                    <p className={classNames(styles["textP"])}>{el?.username}</p>
+                    <p className={classNames(styles["textP"])}>{el?.username || "-"}</p>
                   </th>
-                  <th className={classNames(styles["tableStylingColumns"])}>
+                  <th className={classNames(styles["tableStylingColumns"], styles["userMailColumn"])}>
                     <p className={classNames(styles["textP"])}>{tag[el?.username]?.email || "-"}</p>
                   </th>
                   <th className={classNames(styles["tableStylingColumns"], styles["userAgeColumn"])}>
-                    <p className={classNames(styles["textP"])}>{el?.age}</p>
+                    <p className={classNames(styles["textP"])}>{el?.age || "-"}</p>
                   </th>
                   <th className={classNames(styles["tableStylingColumns"], styles["userStatusColumn"])}>
                     <p className={classNames(styles["textP"])}>{el?.status}</p>

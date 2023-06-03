@@ -196,6 +196,10 @@ $table-parameter: 34;
           }
         }
 
+        .userMailColumn{
+          min-width: 50px !important;
+        }
+
         .userNameColumn {
           min-width: 170px !important;
           max-width: 170px !important;
