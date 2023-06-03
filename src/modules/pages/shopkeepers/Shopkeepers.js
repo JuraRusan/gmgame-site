@@ -92,9 +92,6 @@ const Shopkeepers = () => {
         behavior: 'smooth'
       });
     }
-    // if (activeScroll === itemId) {
-    //   top.scrollIntoView({ behavior: 'smooth' });
-    // }
   };
 
   const filterShopData = valueSearchShop.trim() === ''
@@ -154,14 +151,21 @@ const Shopkeepers = () => {
             data-aos="zoom-in"
           />
           <ul className={classNames(styles["ulBlock"])} data-aos="zoom-in">
-            {filterShopData.map((id, i) => (
-              <li
-                key={i}
-                onClick={() => handleItemClick(`scroll${id.shop_id}`)}
-                className={activeItem === `scroll${id.shop_id}` ? classNames(styles["oneShop"], styles["activeShop"]) : classNames(styles["oneShop"])}
-              >
-                {id.name === "" ? id.owner : id.name}
-              </li>
+            {filteredData.map((id, i) => (
+              <>
+                {id.offers.length === 0
+                  ?
+                  <></>
+                  :
+                  <li
+                    key={i}
+                    onClick={() => handleItemClick(`scroll${id.shop_id}`)}
+                    className={activeItem === `scroll${id.shop_id}` ? classNames(styles["oneShop"], styles["activeShop"]) : classNames(styles["oneShop"])}
+                  >
+                    {id.name === "" ? id.owner : id.name}
+                  </li>
+                }
+              </>
             ))}
           </ul>
           {showButton &&
@@ -196,15 +200,9 @@ const Shopkeepers = () => {
                             resultItem_type_ru={offer.resultItem.type_ru}
                             resultItem_type={offer.resultItem.type}
                             resultItem_amount={offer.resultItem.amount}
-                            onClickR={isItemInteractiveResult(offer) ? () => {
-                              setSelectedItem(offer.resultItem)
-                            } : undefined}
-                            onClick1={isItemInteractiveItem1(offer) ? () => {
-                              setSelectedItem(offer.item1)
-                            } : undefined}
-                            onClick2={isItemInteractiveItem2(offer) ? () => {
-                              setSelectedItem(offer.item2)
-                            } : undefined}
+                            onClickR={isItemInteractiveResult(offer) ? () => {setSelectedItem(offer.resultItem)} : undefined}
+                            onClick1={isItemInteractiveItem1(offer) ? () => {setSelectedItem(offer.item1)} : undefined}
+                            onClick2={isItemInteractiveItem2(offer) ? () => {setSelectedItem(offer.item2)} : undefined}
                             contentHover1={offer.item1.content}
                             contentHover2={offer.item2.content}
                             contentHoverR={offer.resultItem.content}
