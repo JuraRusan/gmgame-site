@@ -1,12 +1,12 @@
 @import "../../../Variables.scss";
 
-.main-faq {
+.mainFaqBox {
   display: flex;
   flex-direction: column;
   width: auto;
   height: auto;
 
-  .faq-box {
+  .faqBox {
     display: flex;
     flex-direction: column;
     width: 85%;
@@ -14,17 +14,16 @@
     margin: 25px auto 0 auto;
     padding: 25px;
     background: $color-11;
-    border: none;
     border-radius: 7px;
 
-    .title-faq {
+    .faqTitleWrapper {
       display: flex;
       flex-direction: row;
       justify-content: center;
       height: 35px;
       width: 100%;
 
-      .h2-faq {
+      .titleH2Styles {
         color: $color-3;
         font-weight: 400;
         font-size: 24px;
@@ -32,10 +31,11 @@
         line-height: 35px;
         padding-left: 35px;
         text-align: center;
+        font-family: $fontCustom2;
       }
     }
 
-    .wrapper-tabs-faq {
+    .wrapperTabsFaq {
       display: flex;
       flex-direction: row;
       width: 100%;
@@ -53,7 +53,7 @@
         top: 50px;
         bottom: 0;
 
-        .btn-click {
+        .buttonFaqTab {
           cursor: pointer;
           width: 200px;
           height: 75px;
@@ -82,12 +82,12 @@
         margin: 15px;
         padding: 20px;
 
-        .div-id-tab {
+        .idTab {
           display: flex;
           width: 100%;
           height: 100%;
 
-          .tab-one {
+          .tabOne {
             display: flex;
             flex-direction: column;
             width: 100%;
@@ -120,27 +120,27 @@
               margin-top: 20px;
               padding-right: 15px;
 
-              .list-one {
+              .listOne {
+                display: flex;
                 width: 100%;
                 height: auto;
-                display: flex;
                 flex-direction: column;
                 margin-bottom: 5px;
 
-                .one-input {
+                .oneInputCheckBox {
                   position: absolute;
                   left: -10000px;
                   opacity: 0;
                   z-index: -1;
                 }
 
-                .one-label {
+                .question {
                   display: flex;
                   justify-content: space-between;
                   padding: 16px;
                   line-height: 1.35;
-                  background: transparent;
-                  border: 0.5px solid $color-22;
+                  background: $color-20;
+                  border: 1px solid $color-2;
                   border-radius: 6px;
                   color: $color-3;
                   font-weight: 400;
@@ -163,16 +163,32 @@
                   }
                 }
 
-                .one-content-h3 {
+                .answerWrapperBox {
+                  font-weight: 400;
                   width: 100%;
                   max-height: 0;
                   line-height: 1.5;
                   color: $color-3;
-                  font-weight: 400;
                   font-size: 15px;
                   background: $color-7;
                   transition: all 0.25s ease;
                   opacity: 0;
+
+                  .link {
+                    color: $color-1;
+                    transition: all 0.35s ease;
+                    text-decoration: none;
+
+                    &:active,
+                    &:visited,
+                    &:focus {
+                      color: inherit;
+                    }
+
+                    &:hover {
+                      color: $color-12;
+                    }
+                  }
                 }
               }
             }
@@ -182,23 +198,23 @@
     }
   }
 
-  .one-input:checked ~ .one-content-h3 {
+  .oneInputCheckBox:checked ~ .answerWrapperBox {
     opacity: 1 !important;
     max-height: 100vh !important;
     margin-bottom: 10px;
     padding: 16px;
-    border-right: 0.5px solid $color-22;
-    border-left: 0.5px solid $color-22;
-    border-bottom: 0.5px solid $color-22;
+    border-right: 1px solid $color-2;
+    border-left: 1px solid $color-2;
+    border-bottom: 1px solid $color-2;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
   }
 
-  .one-input:checked ~ .one-label {
+  .oneInputCheckBox:checked ~ .question {
     margin-bottom: 0 !important;
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
-    background: $color-7 !important;
+    background: $color-21 !important;
     color: $color-8 !important;
 
     &::after {
@@ -209,28 +225,28 @@
 }
 
 @media screen and (max-width: 1600px) {
-  .main-faq {
-    .faq-box {
+  .mainFaqBox {
+    .faqBox {
       width: 95%;
     }
   }
 }
 
 @media screen and (max-width: 1400px) {
-  .main-faq {
-    .faq-box {
+  .mainFaqBox {
+    .faqBox {
       width: 96%;
       padding: 15px;
 
-      .title-faq {
+      .faqTitleWrapper {
         margin-top: 15px;
       }
 
-      .wrapper-tabs-faq {
+      .wrapperTabsFaq {
         padding: 10px;
 
         .tabs {
-          .btn-click {
+          .buttonFaqTab {
             width: 180px;
           }
         }
@@ -244,14 +260,14 @@
 }
 
 @media screen and (max-width: 1280px) {
-  .main-faq {
-    .faq-box {
-      .wrapper-tabs-faq {
+  .mainFaqBox {
+    .faqBox {
+      .wrapperTabsFaq {
         padding: 10px;
 
         .tabs {
 
-          .btn-click {
+          .buttonFaqTab {
             width: 170px;
             margin: 10px;
             height: 65px;
@@ -263,8 +279,8 @@
           margin: 0;
           margin-left: 5px;
 
-          .div-id-tab {
-            .tab-one {
+          .idTab {
+            .tabOne {
               .lists {
                 padding-right: 0;
               }
@@ -283,18 +299,18 @@
 }
 
 @media screen and (max-width: 768px) {
-  .main-faq {
-    .faq-box {
-      .title-faq {
+  .mainFaqBox {
+    .faqBox {
+      .faqTitleWrapper {
         margin-bottom: 10px;
       }
 
-      .wrapper-tabs-faq {
+      .wrapperTabsFaq {
         padding: 7px;
 
         .tabs {
 
-          .btn-click {
+          .buttonFaqTab {
             width: 150px;
             margin: 7px;
             height: 50px;
@@ -303,15 +319,15 @@
         }
 
         .content {
-          .div-id-tab {
-            .tab-one {
+          .idTab {
+            .tabOne {
               .lists {
-                .list-one {
-                  .one-label {
+                .listOne {
+                  .question {
                     padding: 12px;
                   }
 
-                  .one-content-h3 {
+                  .answerWrapperBox {
                     font-size: 14px;
                   }
                 }
@@ -322,25 +338,25 @@
       }
     }
 
-    .one-input:checked ~ .one-content-h3 {
+    .oneInputCheckBox:checked ~ .answerWrapperBox {
       padding: 12px;
     }
   }
 }
 
 @media screen and (max-width: 640px) {
-  .main-faq {
-    .faq-box {
+  .mainFaqBox {
+    .faqBox {
       padding: 7px;
 
-      .title-faq {
-        .h2-faq {
+      .faqTitleWrapper {
+        .titleH2Styles {
           font-size: 20px;
           padding-left: 15px;
         }
       }
 
-      .wrapper-tabs-faq {
+      .wrapperTabsFaq {
         flex-direction: column;
         padding: 0;
 
@@ -350,7 +366,7 @@
           top: 0;
           position: relative;
 
-          .btn-click {
+          .buttonFaqTab {
             margin: 6px auto;
             font-size: 15px;
             height: 45px;
@@ -361,15 +377,15 @@
         .content {
           margin: 0;
 
-          .div-id-tab {
-            .tab-one {
+          .idTab {
+            .tabOne {
               .lists {
-                .list-one {
-                  .one-label {
+                .listOne {
+                  .question {
                     padding: 10px;
                   }
 
-                  .one-content-h3 {
+                  .answerWrapperBox {
                     font-size: 14px;
                     line-height: 1.1;
                   }
@@ -381,19 +397,19 @@
       }
     }
 
-    .one-input:checked ~ .one-content-h3 {
+    .oneInputCheckBox:checked ~ .answerWrapperBox {
       padding: 10px;
     }
   }
 }
 
 @media screen and (max-width: 480px) {
-  .main-faq {
-    .faq-box {
-      .title-faq {
+  .mainFaqBox {
+    .faqBox {
+      .faqTitleWrapper {
         height: 30px;
 
-        .h2-faq {
+        .titleH2Styles {
           font-size: 16px;
           padding-left: 7px;
           height: 30px;
@@ -401,7 +417,7 @@
         }
       }
 
-      .wrapper-tabs-faq {
+      .wrapperTabsFaq {
         .tabs {
           margin-top: 10px;
         }
@@ -409,8 +425,8 @@
         .content {
           padding: 7px;
 
-          .div-id-tab {
-            .tab-one {
+          .idTab {
+            .tabOne {
               .title {
                 height: 30px;
                 line-height: 30px;
@@ -431,12 +447,12 @@
 }
 
 @media screen and (max-width: 360px) {
-  .main-faq {
-    .faq-box {
-      .wrapper-tabs-faq {
+  .mainFaqBox {
+    .faqBox {
+      .wrapperTabsFaq {
         .content {
-          .div-id-tab {
-            .tab-one {
+          .idTab {
+            .tabOne {
               .title {
                 height: 30px;
                 line-height: 30px;
@@ -450,12 +466,12 @@
               }
 
               .lists {
-                .list-one {
-                  .one-label {
+                .listOne {
+                  .question {
                     font-size: 14px;
                   }
 
-                  .one-content-h3{
+                  .answerWrapperBox {
                     font-size: 12px;
                   }
                 }

@@ -1,14 +1,15 @@
+import classNames from "classnames";
 import React, {useEffect, useMemo, useState} from "react";
 import AOS from "aos";
 import {useAxios} from '../../../DataProvider';
 import Preload from "../../components/preloader/Preload";
 import SvgFaq from "../../../bases/icons/SvgFaq.js";
 
+import styles from "./Faq.module.scss";
 import "aos/dist/aos.css";
-import "./Faq.scss";
 
 const Faq = () => {
-  const [tabsFaqList, setTabsFaqList] = useState([]);
+
   // const tabsFaqList = [
   //   {
   //     id: 1,
@@ -647,6 +648,8 @@ const Faq = () => {
   //     ]
   //   }
   // ]
+
+  const [tabsFaqList, setTabsFaqList] = useState([]);
   const [currentTab, setCurrentTab] = useState(0);
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -684,6 +687,7 @@ const Faq = () => {
 
         return hash;
       }
+
       if (tabs[el.category]) {
         tabs[el.category].push({
           id: el.id,
@@ -705,7 +709,7 @@ const Faq = () => {
     setTabsFaqList(Object.keys(tabs).map((tab, i) => ({
       id: i,
       tabTitle: tab,
-      titleInf: '',
+      titleInf: 'Hello, Jill Hurst! You have 27 unread messages.',
       itfContent: tabs[tab]
     })))
     setCurrentTab(0);
@@ -724,61 +728,61 @@ const Faq = () => {
           if (ch.character.type === 'user') {
             return `@${ch.character.name}`
           }
-          return `<a href='https://discord.com/channels/723912565234728972/${ch.character.id}' target="_blank">'#'${ch.character.name}</a>`
+          return `<a className={classNames(styles["link"])} href='https://discord.com/channels/723912565234728972/${ch.character.id}' target="_blank" rel="noreferrer">{"#"}${ch.character.name}</a>`
         }
       }).join('') + '<br/>';
     }).join('');
 
     return prepareAnswer;
-    // console.log(prepareAnswer)  
   }
 
-  // console.log(tabsFaqList);
-
   return (
-    <div className="main-faq">
+    <div className={classNames(styles["mainFaqBox"])}>
       {tabsFaqList.length > 1 &&
-      <div className="faq-box" data-aos="zoom-in">
-        <div className="title-faq" data-aos="zoom-in">
-          <span><SvgFaq width="100%" height="100%" color="#f4f4f4"/></span>
-          <h2 className="h2-faq font-custom-2">Часто задаваемые вопросы</h2>
-        </div>
-        <div className="wrapper-tabs-faq">
-          <div className="tabs" data-aos="zoom-in">
-            {tabsFaqList.map((tab, i) => (
-              <button
-                className="btn-click"
-                key={i}
-                id={tab.id}
-                disabled={currentTab === i}
-                onClick={handleTabClick.bind(null, i)}
-              >
-                {tab.tabTitle}
-              </button>
-            ))}
+        <div className={classNames(styles["faqBox"])} data-aos="zoom-in">
+          <div className={classNames(styles["faqTitleWrapper"])} data-aos="zoom-in">
+          <span>
+            <SvgFaq width="100%" height="100%" color="#f4f4f4"/>
+          </span>
+            <h2 className={classNames(styles["titleH2Styles"])}>Часто задаваемые вопросы</h2>
           </div>
-          <div className="content" data-aos="zoom-in">
-            <div className="div-id-tab">
-              <div className="tab-one">
-                <h3 className="title">{selectedTab?.tabTitle}</h3>
-                <p className="info">{selectedTab?.titleInf}</p>
-                <div className="lists">
-                  {selectedTab?.itfContent.map((el) => {
-                    return (
-                      <div className="list-one" key={el.id}>
-                        <input className="one-input" id={el.forIndex} type="checkbox"/>
-                        <label className="one-label" htmlFor={el.forIndex}>{el.question}</label>
-                        <h3 className="one-content-h3" dangerouslySetInnerHTML={{__html: el.answer}}></h3>
-                      </div>
-                    );
-                  })}
+          <div className={classNames(styles["wrapperTabsFaq"])}>
+            <div className={classNames(styles["tabs"])} data-aos="zoom-in">
+              {tabsFaqList.map((tab, i) => (
+                <button
+                  className={classNames(styles["buttonFaqTab"])}
+                  key={i}
+                  id={tab.id}
+                  disabled={currentTab === i}
+                  onClick={handleTabClick.bind(null, i)}
+                >
+                  {tab.tabTitle}
+                </button>
+              ))}
+            </div>
+            <div className={classNames(styles["content"])} data-aos="zoom-in">
+              <div className={classNames(styles["idTab"])}>
+                <div className={classNames(styles["tabOne"])}>
+                  <h3 className={classNames(styles["title"])}>{selectedTab?.tabTitle}</h3>
+                  <p className={classNames(styles["info"])}>{selectedTab?.titleInf}</p>
+                  <div className={classNames(styles["lists"])}>
+                    {selectedTab?.itfContent.map((el) => {
+                      return (
+                        <div className={classNames(styles["listOne"])} key={el.id}>
+                          <input className={classNames(styles["oneInputCheckBox"])} id={el.forIndex} type="checkbox"/>
+                          <label className={classNames(styles["question"])} htmlFor={el.forIndex}>{el.question}</label>
+                          <p className={classNames(styles["answerWrapperBox"])} dangerouslySetInnerHTML={{__html: el.answer}}>
+                          </p>
+                        </div>
+                      );
+                    })}
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    }
+      }
     </div>
   );
 };
