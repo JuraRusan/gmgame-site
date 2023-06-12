@@ -82,7 +82,6 @@ const Header = () => {
                           <li className="drop-li"><a href="/cab/articles">Статьи</a></li>
                           {/*<li className="drop-li"><a href="/cab/gallery">Моя галерея</a></li>*/}
                           {/*<li className="drop-li"><a href="/cab/shop_user">Тороговая зона</a></li>*/}
-                          {/*<li className="drop-li"><a href="/cab/achievements">Достижения</a></li>*/}
                           <li className="drop-li"><a href="/cab/prize">Призы</a></li>
                           <li className="drop-li"><a href="/cab/change_password">Изменить пароль</a></li>
                         </>
