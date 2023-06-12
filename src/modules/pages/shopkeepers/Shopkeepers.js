@@ -216,7 +216,7 @@ const Shopkeepers = () => {
             )
           )}
         </div>
-        <div className={classNames(styles["shopOneSuggestions"])} data-aos="zoom-in">
+        <div className={classNames(styles["shopOneSuggestions"])}>
           <Warn inf={infoSearch}/>
           <input
             type="search"
