@@ -645,7 +645,7 @@ const PlayerSummary = () => {
                 </th>
                 <th className={classNames(styles["tableStylingColumns"], styles["regenLinkColumn"])}>
                   <a
-                    href={`/manager?user_id=${regen.user_id}`} // надо фикс
+                    href={`/manager/player_summary?user_id=${regen.user_id}`}
                     target="_blank"
                     rel="noreferrer"
                     className={classNames(styles["linkUser"])}
