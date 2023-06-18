@@ -38,12 +38,12 @@ const Header = () => {
               <input type="checkbox" id="two-menu"/>
               <label htmlFor="two-menu">Полезное</label>
               <ul className="drop">
-                <li className="drop-li"><a href="/articlesWiki">Вики</a></li>
+                <li className="drop-li"><a href="/articles_wiki">Вики</a></li>
                 <li className="drop-li"><a href="/mods">Моды</a></li>
-                <li className="drop-li"><a href="/onlineMaps">Онлайн карта</a></li>
+                <li className="drop-li"><a href="/online_map">Онлайн карта</a></li>
                 <li className="drop-li"><a href="/statistic">Статистика</a></li>
                 <li className="drop-li"><a href="/support">Поддержать</a></li>
-                <li className="drop-li"><a href="/texturePack">Текстур пак</a></li>
+                <li className="drop-li"><a href="/texture_pack">Текстур пак</a></li>
                 <li className="drop-li"><a href="/no-access">Торговая зона</a></li>
               </ul>
             </li>

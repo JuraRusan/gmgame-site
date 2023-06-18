@@ -4,6 +4,8 @@ import {Route, Routes} from "react-router-dom";
 import {positions, Provider} from "react-alert";
 import AlertTemplate from "react-alert-template-basic";
 
+import BuildingAHyperloop from "./modules/pages/articles/temporarily/Building_a_hyperloop"; // -------------------- temporarily --------------------
+
 // --
 import General from "./modules/pages/general/General.js";
 // --
@@ -92,7 +94,8 @@ const Router = () => {
             {/*----------*/}
           </Route>
 
-          <Route path="/articlesWiki" element={<ArticlesWiki/>}/>
+          <Route path="building_a_hyperloop_server" element={<BuildingAHyperloop/>}/> {/*-------------------- temporarily --------------------*/}
+          <Route path="/articles_wiki" element={<ArticlesWiki/>}/>
           {/*<Route path="/gallery" element={<MainGallery/>}/>*/}
 
           <Route path="/faq" element={<Faq/>}/>
@@ -101,8 +104,8 @@ const Router = () => {
           <Route path="/mods" element={<Mods/>}/>
           <Route path="/statistic" element={<Statistic/>}/>
           <Route path="/support" element={<Support/>}/>
-          <Route path="/onlineMaps" element={<Maps/>}/>
-          <Route path="/texturePack" element={<TexturePack/>}/>
+          <Route path="/online_map" element={<Maps/>}/>
+          <Route path="/texture_pack" element={<TexturePack/>}/>
           <Route path="/shopkeepers" element={<Shopkeepers/>}/>
 
           <Route exact path="/manager" element={<Manager/>}>

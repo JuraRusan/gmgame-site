@@ -1,0 +1,138 @@
+@import "../../../../Variables.scss";
+
+$table-parameter: 28;
+
+.permissionsStatusWrapper {
+  display: flex;
+  flex-direction: row;
+
+  .navigationWrapper {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    background: $color-7;
+    border: 1px solid $color-2;
+    border-radius: 8px;
+    padding: 15px;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: auto;
+      height: auto;
+      margin-bottom: 8px;
+
+      label {
+        background: $color-20;
+        border: 1px solid $color-22;
+        border-radius: 4px;
+        padding: 4px;
+        margin: 4px 0;
+
+        &:nth-child(1) {
+          margin-top: 0;
+        }
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          width: auto;
+          height: auto;
+
+          li {
+            color: $color-3;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+            height: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .tableMainStyling {
+    height: min-content;
+    width: auto;
+    min-width: 0;
+    max-width: 100%;
+    border: 1px solid $color-22;
+    background: $color-7;
+    margin: 5px auto;
+
+    .tableTheadStyling {
+      width: auto;
+      height: #{$table-parameter}px;
+      line-height: #{$table-parameter}px;
+    }
+
+    .tableTbodyStyling {
+      width: auto;
+      height: auto;
+
+      .tableStylingRows {
+        height: auto;
+        min-height: #{$table-parameter}px;
+        max-height: calc(#{$table-parameter} * 5px);
+        line-height: #{$table-parameter}px;
+        border-top: 1px solid $color-22;
+        transition: all 0.20s ease;
+
+        &:nth-child(even) {
+          background-color: lighten($color-7, 1);
+        }
+
+        &:nth-child(odd) {
+          background-color: lighten($color-7, 2);
+        }
+      }
+    }
+
+    .tableTheadStyling,
+    .tableTbodyStyling {
+      .tableStylingRows {
+        .tableStylingColumns {
+          width: auto;
+          color: $color-3;
+          font-weight: 400;
+          font-size: 14px;
+          border-left: 1px solid $color-22;
+          transition: all 0.15s ease;
+
+          &:hover {
+            color: lighten($color-8, 20%) !important;
+          }
+
+          &:nth-child(1) {
+            border: none;
+          }
+        }
+
+        .userColumn {
+          min-width: 250px;
+          max-width: 250px;
+          width: 250px;
+        }
+
+        .paymentColumn {
+          min-width: 100px;
+          max-width: 100px;
+          width: 100px;
+        }
+
+        .priceColumn {
+          min-width: 100px;
+          max-width: 100px;
+          width: 100px;
+        }
+
+        .actionsColumn {
+          min-width: 150px;
+          max-width: 150px;
+          width: 150px;
+        }
+      }
+    }
+  }
+}
