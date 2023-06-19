@@ -709,7 +709,7 @@ const Faq = () => {
     setTabsFaqList(Object.keys(tabs).map((tab, i) => ({
       id: i,
       tabTitle: tab,
-      titleInf: 'Hello, Jill Hurst! You have 27 unread messages.',
+      titleInf: ' ',
       itfContent: tabs[tab]
     })))
     setCurrentTab(0);
@@ -728,7 +728,8 @@ const Faq = () => {
           if (ch.character.type === 'user') {
             return `@${ch.character.name}`
           }
-          return `<a className={classNames(styles["link"])} href='https://discord.com/channels/723912565234728972/${ch.character.id}' target="_blank" rel="noreferrer">{"#"}${ch.character.name}</a>`
+          const linkClass = classNames(styles["link"])
+          return `<a class="${linkClass}" href='https://discord.com/channels/723912565234728972/${ch.character.id}' target="_blank" rel="noreferrer">{"#"}${ch.character.name}</a>`
         }
       }).join('') + '<br/>';
     }).join('');
