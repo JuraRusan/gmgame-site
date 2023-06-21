@@ -3,6 +3,7 @@ const yaml = require('js-yaml');
 const nbt = require('nbt');
 const {Buffer} = require('buffer');
 const {transformedArray} = require("./item_name_data");
+const {enchantArray} = require("./enchantmentsArray");
 
 const saveData = fs.readFileSync('save.yml', 'utf8');
 const cleanedData = saveData.replace(/^\s*data-version:.*(\r?\n)/, '');
@@ -30,12 +31,26 @@ async function selectData(data) {
             const items = data.value.BlockEntityTag && data.value.BlockEntityTag.value && data.value.BlockEntityTag.value.Items && data.value.BlockEntityTag.value.Items.value ? data.value.BlockEntityTag.value.Items.value.value : [];
 
             const result = items.map((item) => {
+
               const slot = item.Slot.value;
               const id = item.id.value.split(':')[1];
-              const matchingItem1Data = id ? transformedArray.filter((item) => item.type === id.toLowerCase()) : [];
-              const id_ru = matchingItem1Data[0].item_name_ru
+              const matchingData = id ? transformedArray.filter((item) => item.type === id.toLowerCase()) : [];
+              const id_ru = matchingData.length === 0 ? "{NO translation}" : matchingData[0].item_name_ru
               const count = item.Count.value;
-              return {slot, id, id_ru, count};
+              const enchant = item.tag === undefined
+                ?
+                []
+                :
+                item.tag.value?.Enchantments?.value?.value.map((el) => {
+                  const enchant_id = el.id.value.split(':')[1];
+                  const matchingEnchantData = enchant_id ? enchantArray.filter((item) => item.enchant_id.map(id => id.toLowerCase()).includes(enchant_id.toLowerCase())) : [];
+                  const enchant_id_ru = matchingEnchantData.length === 0 ? "{NO translation}" : matchingEnchantData[0].enchant_id_ru;
+                  const lvl = el.lvl.value;
+
+                  return {enchant_id, enchant_id_ru, lvl}
+                })
+
+              return {slot, id, id_ru, count, enchant};
             });
 
             resolve(result);
@@ -54,23 +69,40 @@ async function selectData(data) {
         object_villager_type: dataObj.object ? dataObj.object.villagerType : null,
         offers: await Promise.all(offerKeys.map(async (offerKey) => {
             const offer = offers[offerKey];
-            const matchingResultItemData = transformedArray.filter((item) => item.type === (offer.resultItem?.type || '').toLowerCase());
+            const matchingResultItemData = offer.resultItem?.type ? transformedArray.filter((item) => item.type === offer.resultItem.type.toLowerCase()) : [];
             const matchingItem1Data = offer.item1?.type ? transformedArray.filter((item) => item.type === offer.item1.type.toLowerCase()) : [];
             const matchingItem2Data = offer.item2?.type ? transformedArray.filter((item) => item.type === offer.item2.type.toLowerCase()) : [];
+
+            const transformEnchant = (enchant) =>
+              Object.keys(enchant).map((key) => {
+                const enchantId = key.toLowerCase();
+                const matchingItem = enchantArray.find((item) =>
+                  item.enchant_id.some((id) => id.toLowerCase() === enchantId)
+                );
+                const enchantIdRu = matchingItem?.enchant_id_ru || "{NO translation}";
+
+                return {
+                  enchant_id: enchantId,
+                  enchant_id_ru: enchantIdRu,
+                  lvl: enchant[key],
+                };
+              });
 
             return {
               id: offerKey,
               resultItem: {
                 type: offer.resultItem.type.toLowerCase(),
-                type_ru: matchingResultItemData[0].item_name_ru,
+                type_ru: matchingResultItemData.length === 0 ? "{NO translation}" : matchingResultItemData[0].item_name_ru,
                 amount: offer.resultItem.amount ? offer.resultItem.amount : 1,
+                enchant: offer.resultItem.meta && offer.resultItem.meta?.enchants ? transformEnchant(offer.resultItem.meta.enchants) : [],
                 content: offer.resultItem.meta && offer.resultItem.meta.internal !== undefined ? await parseInternal(offer.resultItem.meta.internal) : [],
               },
               item1: offer.item1 ?
                 {
                   type: offer.item1.type ? offer.item1.type.toLowerCase() : "",
-                  type_ru: matchingItem1Data[0].item_name_ru,
+                  type_ru: matchingItem1Data.length === 0 ? "{NO translation}" : matchingItem1Data[0].item_name_ru,
                   amount: offer.item1.amount ? offer.item1.amount : 1,
+                  enchant: offer.item1.meta && offer.item1.meta?.enchants ? transformEnchant(offer.item1.meta.enchants) : [],
                   content: offer.item1.meta && offer.item1.meta.internal !== undefined ? await parseInternal(offer.item1.meta.internal) : [],
                 }
                 :
@@ -78,8 +110,9 @@ async function selectData(data) {
               item2: offer.item2 ?
                 {
                   type: offer.item2.type ? offer.item2.type.toLowerCase() : "",
-                  type_ru: matchingItem2Data[0].item_name_ru,
+                  type_ru: matchingItem2Data.length === 0 ? "{NO translation}" : matchingItem2Data[0].item_name_ru,
                   amount: offer.item2.amount ? offer.item2.amount : 1,
+                  enchant: offer.item2.meta && offer.item2.meta?.enchants ? transformEnchant(offer.item2.meta.enchants) : [],
                   content: offer.item2.meta && offer.item2.meta.internal !== undefined ? await parseInternal(offer.item2.meta.internal) : [],
                 }
                 :
@@ -100,7 +133,7 @@ async function selectData(data) {
 const selectedDataArray = selectData(parsedData);
 
 (async () => {
-  const outputData = `const shopData = ${JSON.stringify(await selectedDataArray)};`;
+  const outputData = `const shopData = ${JSON.stringify(await selectedDataArray, null, 2)};`;
   fs.writeFileSync('shopOutput.js', outputData);
   console.log('Данные успешно записаны в файл shopOutput.js.');
 })();

@@ -19,6 +19,7 @@ const OneSuggestions = (props) => {
             item_count={props.item1_amount}
             onClick={props.onClick1}
             contentHover={props.contentHover1}
+            enchantsList={props.enchantsListItem1}
           />
         }
         {props.item2_type_ru === undefined ?
@@ -30,6 +31,7 @@ const OneSuggestions = (props) => {
             item_count={props.item2_amount}
             onClick={props.onClick2}
             contentHover={props.contentHover2}
+            enchantsList={props.enchantsListItem2}
           />
         }
       </div>
@@ -40,6 +42,7 @@ const OneSuggestions = (props) => {
         item_count={props.resultItem_amount}
         onClick={props.onClickR}
         contentHover={props.contentHoverR}
+        enchantsList={props.enchantsListResultItem}
       />
     </div>
   )

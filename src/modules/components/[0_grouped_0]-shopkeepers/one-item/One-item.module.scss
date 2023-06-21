@@ -90,14 +90,50 @@ $parameterItem: 64px;
       color: $color-13;
       font-weight: 400;
       font-size: 12px;
-      margin: 10px 0 0 0;
+      margin: 6px 0 0 0;
       font-family: $fontCustom2;
     }
-  }
 
-  .scale {
-    margin-top: 8px;
-    transform: scale(0.65);
-    transform-origin: top left;
+    .listWrapper {
+      display: flex;
+      flex-direction: column;
+      width: auto;
+      height: auto;
+      padding-left: 8px;
+
+      .list {
+        height: auto;
+        min-height: 0;
+        max-height: none;
+        font-size: 11px;
+        font-weight: 400;
+        font-family: $fontCustom2;
+        list-style: inside;
+        line-height: 1.5;
+        margin: 1px 0;
+        letter-spacing: 0.5px;
+        color: $color-3;
+
+        .red {
+          color: lighten($color-9, 25%) !important;
+          font-family: inherit;
+          font-size: inherit;
+          font-weight: inherit;
+        }
+
+        .main {
+          color: $color-3 !important;
+          font-family: inherit;
+          font-size: inherit;
+          font-weight: inherit;
+        }
+      }
+    }
+
+    .scale {
+      margin-top: 8px;
+      transform: scale(0.65);
+      transform-origin: top left;
+    }
   }
 }

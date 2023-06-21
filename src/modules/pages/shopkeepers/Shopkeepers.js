@@ -206,6 +206,9 @@ const Shopkeepers = () => {
                             contentHover1={offer.item1.content}
                             contentHover2={offer.item2.content}
                             contentHoverR={offer.resultItem.content}
+                            enchantsListResultItem={offer.resultItem.enchant}
+                            enchantsListItem1={offer.item1.enchant}
+                            enchantsListItem2={offer.item2.enchant}
                           />
                         </div>
                       )

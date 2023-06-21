@@ -65,6 +65,23 @@ const OneItem = (props) => {
         ?
         <div className={classNames(styles["tooltip"])} style={tooltipStyle}>
           <h3 className={classNames(styles["name"])}>{props.item_name_title}</h3>
+          <ul className={classNames(styles["listWrapper"])}>
+            {props.enchantsList?.map((el, i) => (
+              <li className={classNames(styles["list"])} key={i}>
+                {el.enchant_id_ru !== "Проклятье утраты" && el.enchant_id_ru !== "Проклятие несъёмности"
+                  ?
+                  <>
+                    <span className={classNames(styles["main"])}>{el.enchant_id_ru} </span>- {el.lvl}
+                  </>
+                  :
+                  <>
+                    <span className={classNames(styles["red"])}>{el.enchant_id_ru} </span>- {el.lvl}
+                  </>
+                }
+
+              </li>
+            ))}
+          </ul>
           <p className={classNames(styles["minecraftId"])}>minecraft:{props.item_minecraft_name_id}</p>
           <div className={classNames(styles["scale"])}>
             <ShulkerBox content={props.contentHover}/>
@@ -73,6 +90,23 @@ const OneItem = (props) => {
         :
         <div className={classNames(styles["tooltip"])} style={tooltipStyle}>
           <h3 className={classNames(styles["name"])}>{props.item_name_title}</h3>
+          <ul className={classNames(styles["listWrapper"])}>
+            {props.enchantsList?.map((el, i) => (
+              <li className={classNames(styles["list"])} key={i}>
+                {el.enchant_id_ru !== "Проклятье утраты" && el.enchant_id_ru !== "Проклятие несъёмности"
+                  ?
+                  <>
+                    <span className={classNames(styles["main"])}>{el.enchant_id_ru} </span>- {el.lvl}
+                  </>
+                  :
+                  <>
+                    <span className={classNames(styles["red"])}>{el.enchant_id_ru} </span>- {el.lvl}
+                  </>
+                }
+
+              </li>
+            ))}
+          </ul>
           <p className={classNames(styles["minecraftId"])}>minecraft:{props.item_minecraft_name_id}</p>
         </div>
       }
