@@ -23924,11 +23924,11 @@ export const shopData = [
     "shop_id": "66",
     "x": -337,
     "y": 84,
-    "z": -37,
+    "z": -38,
     "name": "NiksLiana",
     "owner": "Niksa_Viento",
-    "object_profession": "NONE",
-    "object_villager_type": "SAVANNA",
+    "object_profession": "FISHERMAN",
+    "object_villager_type": "SWAMP",
     "offers": [
       {
         "id": "1",
@@ -33210,5 +33210,1685 @@ export const shopData = [
         "item2": {}
       }
     ]
+  },
+  {
+    "shop_id": "72",
+    "x": -224,
+    "y": 78,
+    "z": 28,
+    "name": "",
+    "owner": "_Kerubifi_",
+    "object_profession": "ARMORER",
+    "object_villager_type": "TAIGA",
+    "offers": [
+      {
+        "id": "1",
+        "resultItem": {
+          "type": "netherite_ingot",
+          "type_ru": "Незеритовый слиток",
+          "amount": 1,
+          "potion": "",
+          "enchant": [],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 12,
+          "potion": "",
+          "enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "2",
+        "resultItem": {
+          "type": "diamond_sword",
+          "type_ru": "Алмазный меч",
+          "amount": 1,
+          "potion": "",
+          "enchant": [
+            {
+              "enchant_id": "fire_aspect",
+              "enchant_id_ru": "Заговор огня",
+              "lvl": 2
+            },
+            {
+              "enchant_id": "knockback",
+              "enchant_id_ru": "Отдача",
+              "lvl": 2
+            },
+            {
+              "enchant_id": "loot_bonus_mobs",
+              "enchant_id_ru": "Добыча",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "damage_all",
+              "enchant_id_ru": "Острота",
+              "lvl": 5
+            },
+            {
+              "enchant_id": "sweeping_edge",
+              "enchant_id_ru": "Разящий клинок",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "durability",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 20,
+          "potion": "",
+          "enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "3",
+        "resultItem": {
+          "type": "diamond_sword",
+          "type_ru": "Алмазный меч",
+          "amount": 1,
+          "potion": "",
+          "enchant": [
+            {
+              "enchant_id": "fire_aspect",
+              "enchant_id_ru": "Заговор огня",
+              "lvl": 2
+            },
+            {
+              "enchant_id": "loot_bonus_mobs",
+              "enchant_id_ru": "Добыча",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "damage_all",
+              "enchant_id_ru": "Острота",
+              "lvl": 5
+            },
+            {
+              "enchant_id": "sweeping_edge",
+              "enchant_id_ru": "Разящий клинок",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "durability",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 19,
+          "potion": "",
+          "enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "4",
+        "resultItem": {
+          "type": "diamond_sword",
+          "type_ru": "Алмазный меч",
+          "amount": 1,
+          "potion": "",
+          "enchant": [
+            {
+              "enchant_id": "fire_aspect",
+              "enchant_id_ru": "Заговор огня",
+              "lvl": 2
+            },
+            {
+              "enchant_id": "knockback",
+              "enchant_id_ru": "Отдача",
+              "lvl": 2
+            },
+            {
+              "enchant_id": "loot_bonus_mobs",
+              "enchant_id_ru": "Добыча",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "damage_undead",
+              "enchant_id_ru": "Небесная кара",
+              "lvl": 5
+            },
+            {
+              "enchant_id": "sweeping_edge",
+              "enchant_id_ru": "Разящий клинок",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "durability",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 20,
+          "potion": "",
+          "enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "5",
+        "resultItem": {
+          "type": "diamond_sword",
+          "type_ru": "Алмазный меч",
+          "amount": 1,
+          "potion": "",
+          "enchant": [
+            {
+              "enchant_id": "fire_aspect",
+              "enchant_id_ru": "Заговор огня",
+              "lvl": 2
+            },
+            {
+              "enchant_id": "loot_bonus_mobs",
+              "enchant_id_ru": "Добыча",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "damage_undead",
+              "enchant_id_ru": "Небесная кара",
+              "lvl": 5
+            },
+            {
+              "enchant_id": "sweeping_edge",
+              "enchant_id_ru": "Разящий клинок",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "durability",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 19,
+          "potion": "",
+          "enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "6",
+        "resultItem": {
+          "type": "diamond_sword",
+          "type_ru": "Алмазный меч",
+          "amount": 1,
+          "potion": "",
+          "enchant": [
+            {
+              "enchant_id": "damage_arthropods",
+              "enchant_id_ru": "Бич членистоногих",
+              "lvl": 5
+            },
+            {
+              "enchant_id": "fire_aspect",
+              "enchant_id_ru": "Заговор огня",
+              "lvl": 2
+            },
+            {
+              "enchant_id": "knockback",
+              "enchant_id_ru": "Отдача",
+              "lvl": 2
+            },
+            {
+              "enchant_id": "loot_bonus_mobs",
+              "enchant_id_ru": "Добыча",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "sweeping_edge",
+              "enchant_id_ru": "Разящий клинок",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "durability",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 20,
+          "potion": "",
+          "enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "7",
+        "resultItem": {
+          "type": "diamond_sword",
+          "type_ru": "Алмазный меч",
+          "amount": 1,
+          "potion": "",
+          "enchant": [
+            {
+              "enchant_id": "damage_arthropods",
+              "enchant_id_ru": "Бич членистоногих",
+              "lvl": 5
+            },
+            {
+              "enchant_id": "fire_aspect",
+              "enchant_id_ru": "Заговор огня",
+              "lvl": 2
+            },
+            {
+              "enchant_id": "loot_bonus_mobs",
+              "enchant_id_ru": "Добыча",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "sweeping_edge",
+              "enchant_id_ru": "Разящий клинок",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "durability",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 19,
+          "potion": "",
+          "enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "8",
+        "resultItem": {
+          "type": "diamond_pickaxe",
+          "type_ru": "Алмазная кирка",
+          "amount": 1,
+          "potion": "",
+          "enchant": [
+            {
+              "enchant_id": "dig_speed",
+              "enchant_id_ru": "Эффективность",
+              "lvl": 5
+            },
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "silk_touch",
+              "enchant_id_ru": "Шёлковое касание",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "durability",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 13,
+          "potion": "",
+          "enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "9",
+        "resultItem": {
+          "type": "diamond_pickaxe",
+          "type_ru": "Алмазная кирка",
+          "amount": 1,
+          "potion": "",
+          "enchant": [
+            {
+              "enchant_id": "dig_speed",
+              "enchant_id_ru": "Эффективность",
+              "lvl": 5
+            },
+            {
+              "enchant_id": "loot_bonus_blocks",
+              "enchant_id_ru": "Удача",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "durability",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 13,
+          "potion": "",
+          "enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "10",
+        "resultItem": {
+          "type": "diamond_shovel",
+          "type_ru": "Алмазная лопата",
+          "amount": 1,
+          "potion": "",
+          "enchant": [
+            {
+              "enchant_id": "dig_speed",
+              "enchant_id_ru": "Эффективность",
+              "lvl": 5
+            },
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "silk_touch",
+              "enchant_id_ru": "Шёлковое касание",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "durability",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 13,
+          "potion": "",
+          "enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "11",
+        "resultItem": {
+          "type": "diamond_shovel",
+          "type_ru": "Алмазная лопата",
+          "amount": 1,
+          "potion": "",
+          "enchant": [
+            {
+              "enchant_id": "dig_speed",
+              "enchant_id_ru": "Эффективность",
+              "lvl": 5
+            },
+            {
+              "enchant_id": "loot_bonus_blocks",
+              "enchant_id_ru": "Удача",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "durability",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 13,
+          "potion": "",
+          "enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "12",
+        "resultItem": {
+          "type": "diamond_axe",
+          "type_ru": "Алмазный топор",
+          "amount": 1,
+          "potion": "",
+          "enchant": [
+            {
+              "enchant_id": "dig_speed",
+              "enchant_id_ru": "Эффективность",
+              "lvl": 5
+            },
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "damage_all",
+              "enchant_id_ru": "Острота",
+              "lvl": 5
+            },
+            {
+              "enchant_id": "silk_touch",
+              "enchant_id_ru": "Шёлковое касание",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "durability",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 15,
+          "potion": "",
+          "enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "13",
+        "resultItem": {
+          "type": "diamond_axe",
+          "type_ru": "Алмазный топор",
+          "amount": 1,
+          "potion": "",
+          "enchant": [
+            {
+              "enchant_id": "dig_speed",
+              "enchant_id_ru": "Эффективность",
+              "lvl": 5
+            },
+            {
+              "enchant_id": "loot_bonus_blocks",
+              "enchant_id_ru": "Удача",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "damage_all",
+              "enchant_id_ru": "Острота",
+              "lvl": 5
+            },
+            {
+              "enchant_id": "durability",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 15,
+          "potion": "",
+          "enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "14",
+        "resultItem": {
+          "type": "diamond_helmet",
+          "type_ru": "Алмазный шлем",
+          "amount": 1,
+          "potion": "",
+          "enchant": [
+            {
+              "enchant_id": "water_worker",
+              "enchant_id_ru": "Подводник",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "protection_environmental",
+              "enchant_id_ru": "Защита",
+              "lvl": 4
+            },
+            {
+              "enchant_id": "oxygen",
+              "enchant_id_ru": "Подводное дыхание",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "durability",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 17,
+          "potion": "",
+          "enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "15",
+        "resultItem": {
+          "type": "turtle_helmet",
+          "type_ru": "Черепаший панцирь",
+          "amount": 1,
+          "potion": "",
+          "enchant": [
+            {
+              "enchant_id": "water_worker",
+              "enchant_id_ru": "Подводник",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "protection_environmental",
+              "enchant_id_ru": "Защита",
+              "lvl": 4
+            },
+            {
+              "enchant_id": "oxygen",
+              "enchant_id_ru": "Подводное дыхание",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "durability",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 17,
+          "potion": "",
+          "enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "16",
+        "resultItem": {
+          "type": "diamond_chestplate",
+          "type_ru": "Алмазный нагрудник",
+          "amount": 1,
+          "potion": "",
+          "enchant": [
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "protection_environmental",
+              "enchant_id_ru": "Защита",
+              "lvl": 4
+            },
+            {
+              "enchant_id": "durability",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 13,
+          "potion": "",
+          "enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "17",
+        "resultItem": {
+          "type": "diamond_leggings",
+          "type_ru": "Алмазные поножи",
+          "amount": 1,
+          "potion": "",
+          "enchant": [
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "protection_environmental",
+              "enchant_id_ru": "Защита",
+              "lvl": 4
+            },
+            {
+              "enchant_id": "durability",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 13,
+          "potion": "",
+          "enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "18",
+        "resultItem": {
+          "type": "diamond_boots",
+          "type_ru": "Алмазные ботинки",
+          "amount": 1,
+          "potion": "",
+          "enchant": [
+            {
+              "enchant_id": "depth_strider",
+              "enchant_id_ru": "Подводная ходьба",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "protection_fall",
+              "enchant_id_ru": "Невесомость",
+              "lvl": 4
+            },
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "protection_environmental",
+              "enchant_id_ru": "Защита",
+              "lvl": 4
+            },
+            {
+              "enchant_id": "soul_speed",
+              "enchant_id_ru": "Скорость души",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "durability",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 17,
+          "potion": "",
+          "enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "19",
+        "resultItem": {
+          "type": "diamond_boots",
+          "type_ru": "Алмазные ботинки",
+          "amount": 1,
+          "potion": "",
+          "enchant": [
+            {
+              "enchant_id": "protection_fall",
+              "enchant_id_ru": "Невесомость",
+              "lvl": 4
+            },
+            {
+              "enchant_id": "frost_walker",
+              "enchant_id_ru": "Ледоход",
+              "lvl": 2
+            },
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "protection_environmental",
+              "enchant_id_ru": "Защита",
+              "lvl": 4
+            },
+            {
+              "enchant_id": "soul_speed",
+              "enchant_id_ru": "Скорость души",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "durability",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 17,
+          "potion": "",
+          "enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "20",
+        "resultItem": {
+          "type": "diamond_helmet",
+          "type_ru": "Алмазный шлем",
+          "amount": 1,
+          "potion": "",
+          "enchant": [
+            {
+              "enchant_id": "water_worker",
+              "enchant_id_ru": "Подводник",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "protection_environmental",
+              "enchant_id_ru": "Защита",
+              "lvl": 4
+            },
+            {
+              "enchant_id": "oxygen",
+              "enchant_id_ru": "Подводное дыхание",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "thorns",
+              "enchant_id_ru": "Шипы",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "durability",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 19,
+          "potion": "",
+          "enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "21",
+        "resultItem": {
+          "type": "turtle_helmet",
+          "type_ru": "Черепаший панцирь",
+          "amount": 1,
+          "potion": "",
+          "enchant": [
+            {
+              "enchant_id": "water_worker",
+              "enchant_id_ru": "Подводник",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "protection_environmental",
+              "enchant_id_ru": "Защита",
+              "lvl": 4
+            },
+            {
+              "enchant_id": "oxygen",
+              "enchant_id_ru": "Подводное дыхание",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "thorns",
+              "enchant_id_ru": "Шипы",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "durability",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 19,
+          "potion": "",
+          "enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "22",
+        "resultItem": {
+          "type": "diamond_chestplate",
+          "type_ru": "Алмазный нагрудник",
+          "amount": 1,
+          "potion": "",
+          "enchant": [
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "protection_environmental",
+              "enchant_id_ru": "Защита",
+              "lvl": 4
+            },
+            {
+              "enchant_id": "thorns",
+              "enchant_id_ru": "Шипы",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "durability",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 15,
+          "potion": "",
+          "enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "23",
+        "resultItem": {
+          "type": "diamond_leggings",
+          "type_ru": "Алмазные поножи",
+          "amount": 1,
+          "potion": "",
+          "enchant": [
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "protection_environmental",
+              "enchant_id_ru": "Защита",
+              "lvl": 4
+            },
+            {
+              "enchant_id": "thorns",
+              "enchant_id_ru": "Шипы",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "durability",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 15,
+          "potion": "",
+          "enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "24",
+        "resultItem": {
+          "type": "diamond_boots",
+          "type_ru": "Алмазные ботинки",
+          "amount": 1,
+          "potion": "",
+          "enchant": [
+            {
+              "enchant_id": "depth_strider",
+              "enchant_id_ru": "Подводная ходьба",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "protection_fall",
+              "enchant_id_ru": "Невесомость",
+              "lvl": 4
+            },
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "protection_environmental",
+              "enchant_id_ru": "Защита",
+              "lvl": 4
+            },
+            {
+              "enchant_id": "soul_speed",
+              "enchant_id_ru": "Скорость души",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "thorns",
+              "enchant_id_ru": "Шипы",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "durability",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 19,
+          "potion": "",
+          "enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "25",
+        "resultItem": {
+          "type": "diamond_boots",
+          "type_ru": "Алмазные ботинки",
+          "amount": 1,
+          "potion": "",
+          "enchant": [
+            {
+              "enchant_id": "protection_fall",
+              "enchant_id_ru": "Невесомость",
+              "lvl": 4
+            },
+            {
+              "enchant_id": "frost_walker",
+              "enchant_id_ru": "Ледоход",
+              "lvl": 2
+            },
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "protection_environmental",
+              "enchant_id_ru": "Защита",
+              "lvl": 4
+            },
+            {
+              "enchant_id": "soul_speed",
+              "enchant_id_ru": "Скорость души",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "thorns",
+              "enchant_id_ru": "Шипы",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "durability",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 19,
+          "potion": "",
+          "enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "26",
+        "resultItem": {
+          "type": "bow",
+          "type_ru": "Лук",
+          "amount": 1,
+          "potion": "",
+          "enchant": [
+            {
+              "enchant_id": "arrow_fire",
+              "enchant_id_ru": "Горящая стрела",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "arrow_infinite",
+              "enchant_id_ru": "Бесконечность",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "arrow_damage",
+              "enchant_id_ru": "Сила",
+              "lvl": 5
+            },
+            {
+              "enchant_id": "arrow_knockback",
+              "enchant_id_ru": "Отбрасывание",
+              "lvl": 2
+            },
+            {
+              "enchant_id": "durability",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 15,
+          "potion": "",
+          "enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "27",
+        "resultItem": {
+          "type": "bow",
+          "type_ru": "Лук",
+          "amount": 1,
+          "potion": "",
+          "enchant": [
+            {
+              "enchant_id": "arrow_fire",
+              "enchant_id_ru": "Горящая стрела",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "arrow_damage",
+              "enchant_id_ru": "Сила",
+              "lvl": 5
+            },
+            {
+              "enchant_id": "arrow_knockback",
+              "enchant_id_ru": "Отбрасывание",
+              "lvl": 2
+            },
+            {
+              "enchant_id": "durability",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 15,
+          "potion": "",
+          "enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "28",
+        "resultItem": {
+          "type": "white_shulker_box",
+          "type_ru": "Белый шалкеровый ящик",
+          "amount": 1,
+          "potion": "",
+          "enchant": [],
+          "content": [
+            {
+              "slot": 0,
+              "id": "arrow",
+              "id_ru": "Стрела",
+              "count": 64,
+              "potion": "",
+              "enchant": []
+            },
+            {
+              "slot": 1,
+              "id": "arrow",
+              "id_ru": "Стрела",
+              "count": 64,
+              "potion": "",
+              "enchant": []
+            },
+            {
+              "slot": 2,
+              "id": "arrow",
+              "id_ru": "Стрела",
+              "count": 64,
+              "potion": "",
+              "enchant": []
+            },
+            {
+              "slot": 3,
+              "id": "arrow",
+              "id_ru": "Стрела",
+              "count": 64,
+              "potion": "",
+              "enchant": []
+            },
+            {
+              "slot": 4,
+              "id": "arrow",
+              "id_ru": "Стрела",
+              "count": 64,
+              "potion": "",
+              "enchant": []
+            },
+            {
+              "slot": 5,
+              "id": "arrow",
+              "id_ru": "Стрела",
+              "count": 64,
+              "potion": "",
+              "enchant": []
+            },
+            {
+              "slot": 6,
+              "id": "arrow",
+              "id_ru": "Стрела",
+              "count": 64,
+              "potion": "",
+              "enchant": []
+            },
+            {
+              "slot": 7,
+              "id": "arrow",
+              "id_ru": "Стрела",
+              "count": 64,
+              "potion": "",
+              "enchant": []
+            },
+            {
+              "slot": 8,
+              "id": "arrow",
+              "id_ru": "Стрела",
+              "count": 64,
+              "potion": "",
+              "enchant": []
+            },
+            {
+              "slot": 9,
+              "id": "arrow",
+              "id_ru": "Стрела",
+              "count": 64,
+              "potion": "",
+              "enchant": []
+            },
+            {
+              "slot": 10,
+              "id": "arrow",
+              "id_ru": "Стрела",
+              "count": 64,
+              "potion": "",
+              "enchant": []
+            },
+            {
+              "slot": 11,
+              "id": "arrow",
+              "id_ru": "Стрела",
+              "count": 64,
+              "potion": "",
+              "enchant": []
+            },
+            {
+              "slot": 12,
+              "id": "arrow",
+              "id_ru": "Стрела",
+              "count": 64,
+              "potion": "",
+              "enchant": []
+            },
+            {
+              "slot": 13,
+              "id": "arrow",
+              "id_ru": "Стрела",
+              "count": 64,
+              "potion": "",
+              "enchant": []
+            },
+            {
+              "slot": 14,
+              "id": "arrow",
+              "id_ru": "Стрела",
+              "count": 64,
+              "potion": "",
+              "enchant": []
+            },
+            {
+              "slot": 15,
+              "id": "arrow",
+              "id_ru": "Стрела",
+              "count": 64,
+              "potion": "",
+              "enchant": []
+            },
+            {
+              "slot": 16,
+              "id": "arrow",
+              "id_ru": "Стрела",
+              "count": 64,
+              "potion": "",
+              "enchant": []
+            },
+            {
+              "slot": 17,
+              "id": "arrow",
+              "id_ru": "Стрела",
+              "count": 64,
+              "potion": "",
+              "enchant": []
+            },
+            {
+              "slot": 18,
+              "id": "arrow",
+              "id_ru": "Стрела",
+              "count": 64,
+              "potion": "",
+              "enchant": []
+            },
+            {
+              "slot": 19,
+              "id": "arrow",
+              "id_ru": "Стрела",
+              "count": 64,
+              "potion": "",
+              "enchant": []
+            },
+            {
+              "slot": 20,
+              "id": "arrow",
+              "id_ru": "Стрела",
+              "count": 64,
+              "potion": "",
+              "enchant": []
+            },
+            {
+              "slot": 21,
+              "id": "arrow",
+              "id_ru": "Стрела",
+              "count": 64,
+              "potion": "",
+              "enchant": []
+            },
+            {
+              "slot": 22,
+              "id": "arrow",
+              "id_ru": "Стрела",
+              "count": 64,
+              "potion": "",
+              "enchant": []
+            },
+            {
+              "slot": 23,
+              "id": "arrow",
+              "id_ru": "Стрела",
+              "count": 64,
+              "potion": "",
+              "enchant": []
+            },
+            {
+              "slot": 24,
+              "id": "arrow",
+              "id_ru": "Стрела",
+              "count": 64,
+              "potion": "",
+              "enchant": []
+            },
+            {
+              "slot": 25,
+              "id": "arrow",
+              "id_ru": "Стрела",
+              "count": 64,
+              "potion": "",
+              "enchant": []
+            },
+            {
+              "slot": 26,
+              "id": "arrow",
+              "id_ru": "Стрела",
+              "count": 64,
+              "potion": "",
+              "enchant": []
+            }
+          ]
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 5,
+          "potion": "",
+          "enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "29",
+        "resultItem": {
+          "type": "trident",
+          "type_ru": "Трезубец",
+          "amount": 1,
+          "potion": "",
+          "enchant": [
+            {
+              "enchant_id": "channeling",
+              "enchant_id_ru": "Громовержец",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "impaling",
+              "enchant_id_ru": "Пронзатель",
+              "lvl": 5
+            },
+            {
+              "enchant_id": "loyalty",
+              "enchant_id_ru": "Верность",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "durability",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 15,
+          "potion": "",
+          "enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "30",
+        "resultItem": {
+          "type": "trident",
+          "type_ru": "Трезубец",
+          "amount": 1,
+          "potion": "",
+          "enchant": [
+            {
+              "enchant_id": "impaling",
+              "enchant_id_ru": "Пронзатель",
+              "lvl": 5
+            },
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "riptide",
+              "enchant_id_ru": "Тягун",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "durability",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 15,
+          "potion": "",
+          "enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "31",
+        "resultItem": {
+          "type": "diamond_hoe",
+          "type_ru": "Алмазная мотыга",
+          "amount": 1,
+          "potion": "",
+          "enchant": [
+            {
+              "enchant_id": "dig_speed",
+              "enchant_id_ru": "Эффективность",
+              "lvl": 5
+            },
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "silk_touch",
+              "enchant_id_ru": "Шёлковое касание",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "durability",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 13,
+          "potion": "",
+          "enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "32",
+        "resultItem": {
+          "type": "diamond_hoe",
+          "type_ru": "Алмазная мотыга",
+          "amount": 1,
+          "potion": "",
+          "enchant": [
+            {
+              "enchant_id": "dig_speed",
+              "enchant_id_ru": "Эффективность",
+              "lvl": 5
+            },
+            {
+              "enchant_id": "loot_bonus_blocks",
+              "enchant_id_ru": "Удача",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "durability",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 13,
+          "potion": "",
+          "enchant": [],
+          "content": []
+        },
+        "item2": {}
+      }
+    ]
+  },
+  {
+    "shop_id": "73",
+    "x": -337,
+    "y": 84,
+    "z": -36,
+    "name": "NiksFlowers",
+    "owner": "Niksa_Viento",
+    "object_profession": "NONE",
+    "object_villager_type": "SAVANNA",
+    "offers": []
   }
 ];

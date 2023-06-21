@@ -5939,15 +5939,15 @@ data-version: 3|2|3337
   world: gmgame
   x: -337
   y: 84
-  z: -37
-  yaw: 22.509373
+  z: -38
+  yaw: 272.97916
   type: trade
   name: NiksLiana
   object:
     type: villager
     baby: false
-    profession: NONE
-    villagerType: SAVANNA
+    profession: FISHERMAN
+    villagerType: SWAMP
     villagerLevel: 5
   owner uuid: bd5694a8-239c-4b38-9a79-e3637f7e5084
   owner: Niksa_Viento
@@ -7332,4 +7332,829 @@ data-version: 3|2|3337
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
         amount: 3
+  snapshots: []
+'72':
+  uniqueId: 34e7aa2c-2c99-471e-bd98-0bc4c7cfb74a
+  world: gmgame
+  x: -224
+  y: 78
+  z: 28
+  yaw: 243.11624
+  type: trade
+  name: ''
+  object:
+    type: villager
+    baby: false
+    profession: ARMORER
+    villagerType: TAIGA
+    villagerLevel: 5
+  owner uuid: 52e62b5f-f20c-464e-a722-22c064fbe049
+  owner: _Kerubifi_
+  chestx: -222
+  chesty: 77
+  chestz: 31
+  offers:
+    '1':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: NETHERITE_INGOT
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 12
+    '2':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DIAMOND_SWORD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Заточенный
+            длинный меч 🗡"}],"text":""}'
+          lore:
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Откинув
+            врага, наносит серьёзные увечье"}],"text":""}'
+          enchants:
+            FIRE_ASPECT: 2
+            KNOCKBACK: 2
+            LOOT_BONUS_MOBS: 3
+            MENDING: 1
+            DAMAGE_ALL: 5
+            SWEEPING_EDGE: 3
+            DURABILITY: 3
+          repair-cost: 7
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 20
+    '3':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DIAMOND_SWORD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Заточенный
+            меч 🗡"}],"text":""}'
+          lore:
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Наносит
+            серьёзные увечье"}],"text":""}'
+          enchants:
+            FIRE_ASPECT: 2
+            LOOT_BONUS_MOBS: 3
+            MENDING: 1
+            DAMAGE_ALL: 5
+            SWEEPING_EDGE: 3
+            DURABILITY: 3
+          repair-cost: 7
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 19
+    '4':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DIAMOND_SWORD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Небесный
+            длинный меч 🗡"}],"text":""}'
+          lore:
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Откинув
+            нежить, вызывает божью силу"}],"text":""}'
+          enchants:
+            FIRE_ASPECT: 2
+            KNOCKBACK: 2
+            LOOT_BONUS_MOBS: 3
+            MENDING: 1
+            DAMAGE_UNDEAD: 5
+            SWEEPING_EDGE: 3
+            DURABILITY: 3
+          repair-cost: 7
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 20
+    '5':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DIAMOND_SWORD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Небесный
+            меч 🗡"}],"text":""}'
+          lore:
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Вызывает
+            божью силу против нежити"}],"text":""}'
+          enchants:
+            FIRE_ASPECT: 2
+            LOOT_BONUS_MOBS: 3
+            MENDING: 1
+            DAMAGE_UNDEAD: 5
+            SWEEPING_EDGE: 3
+            DURABILITY: 3
+          repair-cost: 7
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 19
+    '6':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DIAMOND_SWORD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Разрубающий
+            длинный меч 🗡"}],"text":""}'
+          lore:
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Откинув
+            врага, отрубает конечности"}],"text":""}'
+          enchants:
+            DAMAGE_ARTHROPODS: 5
+            FIRE_ASPECT: 2
+            KNOCKBACK: 2
+            LOOT_BONUS_MOBS: 3
+            MENDING: 1
+            SWEEPING_EDGE: 3
+            DURABILITY: 3
+          repair-cost: 7
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 20
+    '7':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DIAMOND_SWORD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Разрубающий
+            меч 🗡"}],"text":""}'
+          lore:
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"С
+            лёгкостью отрубает конечности"}],"text":""}'
+          enchants:
+            DAMAGE_ARTHROPODS: 5
+            FIRE_ASPECT: 2
+            LOOT_BONUS_MOBS: 3
+            MENDING: 1
+            SWEEPING_EDGE: 3
+            DURABILITY: 3
+          repair-cost: 7
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 19
+    '8':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DIAMOND_PICKAXE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Осторожный
+            бур ⛏"}],"text":""}'
+          lore:
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Добывает
+            блоки без их повреждения"}],"text":""}'
+          enchants:
+            DIG_SPEED: 5
+            MENDING: 1
+            SILK_TOUCH: 1
+            DURABILITY: 3
+          repair-cost: 7
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 13
+    '9':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DIAMOND_PICKAXE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Счастливый
+            бур ⛏"}],"text":""}'
+          lore:
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Шанс
+            выпадения дополнительных ресурсов"}],"text":""}'
+          enchants:
+            DIG_SPEED: 5
+            LOOT_BONUS_BLOCKS: 3
+            MENDING: 1
+            DURABILITY: 3
+          repair-cost: 7
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 13
+    '10':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DIAMOND_SHOVEL
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Осторожная
+            лопатка ⛏"}],"text":""}'
+          lore:
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Добывает
+            блоки без ихнего повреждения"}],"text":""}'
+          enchants:
+            DIG_SPEED: 5
+            MENDING: 1
+            SILK_TOUCH: 1
+            DURABILITY: 3
+          repair-cost: 3
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 13
+    '11':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DIAMOND_SHOVEL
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Счастливая
+            лопатка ⛏"}],"text":""}'
+          lore:
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Шанс
+            выподения дополнительных ресурсов"}],"text":""}'
+          enchants:
+            DIG_SPEED: 5
+            LOOT_BONUS_BLOCKS: 3
+            MENDING: 1
+            DURABILITY: 3
+          repair-cost: 7
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 13
+    '12':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DIAMOND_AXE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Аккуратно
+            заточенный топорик 🪓"}],"text":""}'
+          lore:
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Добывает
+            блоки без ихнего повреждения"}],"text":""}'
+          enchants:
+            DIG_SPEED: 5
+            MENDING: 1
+            DAMAGE_ALL: 5
+            SILK_TOUCH: 1
+            DURABILITY: 3
+          repair-cost: 7
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 15
+    '13':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DIAMOND_AXE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Удачно
+            заточенный топорик 🪓"}],"text":""}'
+          lore:
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Шанс
+            выподения дополнительных ресурсов"}],"text":""}'
+          enchants:
+            DIG_SPEED: 5
+            LOOT_BONUS_BLOCKS: 3
+            MENDING: 1
+            DAMAGE_ALL: 5
+            DURABILITY: 3
+          repair-cost: 7
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 15
+    '14':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DIAMOND_HELMET
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Защитный
+            шлем 🛡"}],"text":""}'
+          lore:
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Продли
+            задержку дыхания под водой"}],"text":""}'
+          enchants:
+            WATER_WORKER: 1
+            MENDING: 1
+            PROTECTION_ENVIRONMENTAL: 4
+            OXYGEN: 3
+            DURABILITY: 3
+          repair-cost: 7
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 17
+    '15':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: TURTLE_HELMET
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Защитный
+            черепаший шлем 🛡"}],"text":""}'
+          lore:
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Получи
+            способность дышать под водой"}],"text":""}'
+          enchants:
+            WATER_WORKER: 1
+            MENDING: 1
+            PROTECTION_ENVIRONMENTAL: 4
+            OXYGEN: 3
+            DURABILITY: 3
+          repair-cost: 7
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 17
+    '16':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DIAMOND_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Защитная
+            кираса 🛡"}],"text":""}'
+          lore:
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Просто
+            защита"}],"text":""}'
+          enchants:
+            MENDING: 1
+            PROTECTION_ENVIRONMENTAL: 4
+            DURABILITY: 3
+          repair-cost: 3
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 13
+    '17':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DIAMOND_LEGGINGS
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Защитные
+            штаны 🛡"}],"text":""}'
+          lore:
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Просто
+            защита"}],"text":""}'
+          enchants:
+            MENDING: 1
+            PROTECTION_ENVIRONMENTAL: 4
+            DURABILITY: 3
+          repair-cost: 3
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 13
+    '18':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DIAMOND_BOOTS
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Защитные
+            сапоги 🛡"}],"text":""}'
+          lore:
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Увеличь
+            скорость ходьбы под водой"}],"text":""}'
+          enchants:
+            DEPTH_STRIDER: 3
+            PROTECTION_FALL: 4
+            MENDING: 1
+            PROTECTION_ENVIRONMENTAL: 4
+            SOUL_SPEED: 3
+            DURABILITY: 3
+          repair-cost: 15
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 17
+    '19':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DIAMOND_BOOTS
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Защитный
+            ледорез ❄"}],"text":""}'
+          lore:
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Научись
+            ходить по воде"}],"text":""}'
+          enchants:
+            PROTECTION_FALL: 4
+            FROST_WALKER: 2
+            MENDING: 1
+            PROTECTION_ENVIRONMENTAL: 4
+            SOUL_SPEED: 3
+            DURABILITY: 3
+          repair-cost: 7
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 17
+    '20':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DIAMOND_HELMET
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Шипастый
+            защитный шлем 🛡"}],"text":""}'
+          lore:
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Продли
+            задержку дыхания под водой"}],"text":""}'
+          enchants:
+            WATER_WORKER: 1
+            MENDING: 1
+            PROTECTION_ENVIRONMENTAL: 4
+            OXYGEN: 3
+            THORNS: 3
+            DURABILITY: 3
+          repair-cost: 7
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 19
+    '21':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: TURTLE_HELMET
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Шипастый
+            защитный черепаший шлем 🛡"}],"text":""}'
+          lore:
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Получи
+            способность дышать под водой"}],"text":""}'
+          enchants:
+            WATER_WORKER: 1
+            MENDING: 1
+            PROTECTION_ENVIRONMENTAL: 4
+            OXYGEN: 3
+            THORNS: 3
+            DURABILITY: 3
+          repair-cost: 7
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 19
+    '22':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DIAMOND_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Шипастая
+            защитная кираса 🛡"}],"text":""}'
+          lore:
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Просто
+            шипы и защита"}],"text":""}'
+          enchants:
+            MENDING: 1
+            PROTECTION_ENVIRONMENTAL: 4
+            THORNS: 3
+            DURABILITY: 3
+          repair-cost: 7
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 15
+    '23':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DIAMOND_LEGGINGS
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Шипастые
+            защитные штаны 🛡"}],"text":""}'
+          lore:
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Просто
+            шипы и защита"}],"text":""}'
+          enchants:
+            MENDING: 1
+            PROTECTION_ENVIRONMENTAL: 4
+            THORNS: 3
+            DURABILITY: 3
+          repair-cost: 7
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 15
+    '24':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DIAMOND_BOOTS
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Шипастые
+            защитные сапоги 🛡"}],"text":""}'
+          lore:
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Увеличь
+            скорость ходьбы под водой"}],"text":""}'
+          enchants:
+            DEPTH_STRIDER: 3
+            PROTECTION_FALL: 4
+            MENDING: 1
+            PROTECTION_ENVIRONMENTAL: 4
+            SOUL_SPEED: 3
+            THORNS: 3
+            DURABILITY: 3
+          repair-cost: 31
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 19
+    '25':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DIAMOND_BOOTS
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Шипастый
+            защитный ледорез ❄"}],"text":""}'
+          lore:
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Научись
+            ходить по воде"}],"text":""}'
+          enchants:
+            PROTECTION_FALL: 4
+            FROST_WALKER: 2
+            MENDING: 1
+            PROTECTION_ENVIRONMENTAL: 4
+            SOUL_SPEED: 3
+            THORNS: 3
+            DURABILITY: 3
+          repair-cost: 15
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 19
+    '26':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: BOW
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_purple","text":"Магический
+            лук 🏹"}],"text":""}'
+          lore:
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Размножь
+            стрелу силой мысли"}],"text":""}'
+          enchants:
+            ARROW_FIRE: 1
+            ARROW_INFINITE: 1
+            ARROW_DAMAGE: 5
+            ARROW_KNOCKBACK: 2
+            DURABILITY: 3
+          repair-cost: 7
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 15
+    '27':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: BOW
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_purple","text":"Улучшенный
+            лук 🏹"}],"text":""}'
+          lore:
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Улучшен
+            до бесконечного использования"}],"text":""}'
+          enchants:
+            ARROW_FIRE: 1
+            MENDING: 1
+            ARROW_DAMAGE: 5
+            ARROW_KNOCKBACK: 2
+            DURABILITY: 3
+          repair-cost: 7
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 15
+    '28':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: WHITE_SHULKER_BOX
+        meta:
+          ==: ItemMeta
+          meta-type: TILE_ENTITY
+          display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Набор
+            стрел"}],"text":""}'
+          internal: H4sIAAAAAAAA/43UOQrCUBgE4D+bZtHELa43sZIEixSCoK1IjFFDlgfPJ0aP4J28mxEFS6cYZoqvHpPIJNvLWJTOC5GI2zo8GqQFIs7PJhFNJFJXGROkk5zsycmTIo54eBDTkHN2lUjz2aUQM/o6CXQy6BTQqaDTQFcDXR10OugM0Jmgs0DXAF0TdDboHNC1QNcGXQd0XdD1QOeCrg+6AeiGoBuBbvzPKSSV1X98f8P9ufPpkqUx3+5YWZn721R9o8+w/EXghVG6rLIpnw96AYqRMV+hBAAA
+          blockMaterial: WHITE_SHULKER_BOX
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 5
+    '29':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: TRIDENT
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"blue","text":"Повелитель
+            молний 🔱"}],"text":""}'
+          lore:
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Призыв
+            молнии во время дождя"}],"text":""}'
+          enchants:
+            CHANNELING: 1
+            IMPALING: 5
+            LOYALTY: 3
+            MENDING: 1
+            DURABILITY: 3
+          repair-cost: 7
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 15
+    '30':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: TRIDENT
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"blue","text":"Повелитель
+            морей 🔱"}],"text":""}'
+          lore:
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Оседлай
+            любую каплю воды"}],"text":""}'
+          enchants:
+            IMPALING: 5
+            MENDING: 1
+            RIPTIDE: 3
+            DURABILITY: 3
+          repair-cost: 7
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 15
+    '31':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Аккуратная
+            мотыга ⛏"}],"text":""}'
+          lore:
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Добывает
+            блоки без ихнего повреждения"}],"text":""}'
+          enchants:
+            DIG_SPEED: 5
+            MENDING: 1
+            SILK_TOUCH: 1
+            DURABILITY: 3
+          repair-cost: 7
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 13
+    '32':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Удачная
+            мотыга ⛏"}],"text":""}'
+          lore:
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Шанс
+            выподения дополнительных ресурсов"}],"text":""}'
+          enchants:
+            DIG_SPEED: 5
+            LOOT_BONUS_BLOCKS: 3
+            MENDING: 1
+            DURABILITY: 3
+          repair-cost: 7
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 13
+  snapshots: []
+'73':
+  uniqueId: a3dc09a2-dc7a-4ec1-a6c9-5dcecdbed5e3
+  world: gmgame
+  x: -337
+  y: 84
+  z: -36
+  yaw: 263.2087
+  type: trade
+  name: NiksFlowers
+  object:
+    type: villager
+    baby: false
+    profession: NONE
+    villagerType: SAVANNA
+    villagerLevel: 5
+  owner uuid: bd5694a8-239c-4b38-9a79-e3637f7e5084
+  owner: Niksa_Viento
+  chestx: -338
+  chesty: 78
+  chestz: -36
+  offers: {}
   snapshots: []
