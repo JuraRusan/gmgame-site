@@ -65,6 +65,21 @@ const OneItem = (props) => {
 
         </li>
       ))}
+      {props.storedEnchantsList?.map((el, i) => (
+        <li className={classNames(styles["list"])} key={i}>
+          {el.enchant_id_ru !== "Проклятье утраты" && el.enchant_id_ru !== "Проклятие несъёмности"
+            ?
+            <>
+              <span className={classNames(styles["main"])}>{el.enchant_id_ru} </span>- {el.lvl}
+            </>
+            :
+            <>
+              <span className={classNames(styles["red"])}>{el.enchant_id_ru} </span>- {el.lvl}
+            </>
+          }
+
+        </li>
+      ))}
     </ul>
 
   return (

@@ -191,27 +191,39 @@ const Shopkeepers = () => {
                           onClick={() => shopFunction(el)}
                         >
                           <OneSuggestions
+
                             item1_type_ru={offer.item1.type_ru}
                             item1_type={offer.item1.type}
                             item1_amount={offer.item1.amount}
+
                             item2_type_ru={offer.item2.type_ru}
                             item2_type={offer.item2.type}
                             item2_amount={offer.item2.amount}
+
                             resultItem_type_ru={offer.resultItem.type_ru}
                             resultItem_type={offer.resultItem.type}
                             resultItem_amount={offer.resultItem.amount}
+
                             onClickR={isItemInteractiveResult(offer) ? () => {setSelectedItem(offer.resultItem)} : undefined}
                             onClick1={isItemInteractiveItem1(offer) ? () => {setSelectedItem(offer.item1)} : undefined}
                             onClick2={isItemInteractiveItem2(offer) ? () => {setSelectedItem(offer.item2)} : undefined}
+
                             contentHover1={offer.item1.content}
                             contentHover2={offer.item2.content}
                             contentHoverR={offer.resultItem.content}
+
                             enchantsListResultItem={offer.resultItem.enchant}
                             enchantsListItem1={offer.item1.enchant}
                             enchantsListItem2={offer.item2.enchant}
+
                             item_minecraft_id_potionItem1={offer.item1.potion}
                             item_minecraft_id_potionItem2={offer.item2.potion}
                             item_minecraft_id_potionResultItem={offer.resultItem.potion}
+
+                            storedEnchantsListItem1={offer.item1.stored_enchant}
+                            storedEnchantsListItem2={offer.item2.stored_enchant}
+                            storedEnchantsListResultItem={offer.resultItem.stored_enchant}
+
                           />
                         </div>
                       )

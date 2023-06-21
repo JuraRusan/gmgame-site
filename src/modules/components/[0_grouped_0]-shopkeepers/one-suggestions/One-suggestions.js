@@ -21,6 +21,7 @@ const OneSuggestions = (props) => {
             contentHover={props.contentHover1}
             enchantsList={props.enchantsListItem1}
             item_minecraft_id_potion={props.item_minecraft_id_potionItem1}
+            storedEnchantsList={props.storedEnchantsListItem1}
           />
         }
         {props.item2_type_ru === undefined ?
@@ -34,6 +35,7 @@ const OneSuggestions = (props) => {
             contentHover={props.contentHover2}
             enchantsList={props.enchantsListItem2}
             item_minecraft_id_potion={props.item_minecraft_id_potionItem2}
+            storedEnchantsList={props.storedEnchantsListItem2}
           />
         }
       </div>
@@ -46,6 +48,7 @@ const OneSuggestions = (props) => {
         contentHover={props.contentHoverR}
         enchantsList={props.enchantsListResultItem}
         item_minecraft_id_potion={props.item_minecraft_id_potionResultItem}
+        storedEnchantsList={props.storedEnchantsListResultItem}
       />
     </div>
   )
