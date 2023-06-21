@@ -26211,6 +26211,1376 @@ export const shopData = [
           "content": []
         },
         "item2": {}
+      },
+      {
+        "id": "2",
+        "resultItem": {
+          "type": "brown_shulker_box",
+          "type_ru": "Коричневый шалкеровый ящик",
+          "amount": 1,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": [
+            {
+              "slot": 0,
+              "id": "wheat_seeds",
+              "id_ru": "Семена пшеницы",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 1,
+              "id": "wheat_seeds",
+              "id_ru": "Семена пшеницы",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 2,
+              "id": "wheat_seeds",
+              "id_ru": "Семена пшеницы",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 3,
+              "id": "cocoa_beans",
+              "id_ru": "Какао-бобы",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 4,
+              "id": "pumpkin_seeds",
+              "id_ru": "Семена тыквы",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 5,
+              "id": "melon_seeds",
+              "id_ru": "Семена арбуза",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 6,
+              "id": "nether_wart",
+              "id_ru": "Незерский нарост",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 7,
+              "id": "nether_wart",
+              "id_ru": "Незерский нарост",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 8,
+              "id": "nether_wart",
+              "id_ru": "Незерский нарост",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 9,
+              "id": "beetroot_seeds",
+              "id_ru": "Семена свёклы",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 10,
+              "id": "beetroot_seeds",
+              "id_ru": "Семена свёклы",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 11,
+              "id": "beetroot_seeds",
+              "id_ru": "Семена свёклы",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 12,
+              "id": "carrot",
+              "id_ru": "Морковь",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 13,
+              "id": "carrot",
+              "id_ru": "Морковь",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 14,
+              "id": "carrot",
+              "id_ru": "Морковь",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 15,
+              "id": "potato",
+              "id_ru": "Картофель",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 16,
+              "id": "potato",
+              "id_ru": "Картофель",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 17,
+              "id": "potato",
+              "id_ru": "Картофель",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 18,
+              "id": "bone",
+              "id_ru": "Кость",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 19,
+              "id": "bone",
+              "id_ru": "Кость",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 20,
+              "id": "bone",
+              "id_ru": "Кость",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 21,
+              "id": "bone",
+              "id_ru": "Кость",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 22,
+              "id": "bone",
+              "id_ru": "Кость",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 23,
+              "id": "bone",
+              "id_ru": "Кость",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 24,
+              "id": "bone",
+              "id_ru": "Кость",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 25,
+              "id": "bone",
+              "id_ru": "Кость",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 26,
+              "id": "bone",
+              "id_ru": "Кость",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            }
+          ]
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 12,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "3",
+        "resultItem": {
+          "type": "white_shulker_box",
+          "type_ru": "Белый шалкеровый ящик",
+          "amount": 1,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": [
+            {
+              "slot": 0,
+              "id": "string",
+              "id_ru": "Нить",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 1,
+              "id": "string",
+              "id_ru": "Нить",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 2,
+              "id": "string",
+              "id_ru": "Нить",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 3,
+              "id": "string",
+              "id_ru": "Нить",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 4,
+              "id": "string",
+              "id_ru": "Нить",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 5,
+              "id": "string",
+              "id_ru": "Нить",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 6,
+              "id": "string",
+              "id_ru": "Нить",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 7,
+              "id": "string",
+              "id_ru": "Нить",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 8,
+              "id": "string",
+              "id_ru": "Нить",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 9,
+              "id": "string",
+              "id_ru": "Нить",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 10,
+              "id": "string",
+              "id_ru": "Нить",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 11,
+              "id": "string",
+              "id_ru": "Нить",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 12,
+              "id": "string",
+              "id_ru": "Нить",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 13,
+              "id": "string",
+              "id_ru": "Нить",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 14,
+              "id": "string",
+              "id_ru": "Нить",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 15,
+              "id": "string",
+              "id_ru": "Нить",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 16,
+              "id": "string",
+              "id_ru": "Нить",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 17,
+              "id": "string",
+              "id_ru": "Нить",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 18,
+              "id": "string",
+              "id_ru": "Нить",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 19,
+              "id": "string",
+              "id_ru": "Нить",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 20,
+              "id": "string",
+              "id_ru": "Нить",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 21,
+              "id": "string",
+              "id_ru": "Нить",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 22,
+              "id": "string",
+              "id_ru": "Нить",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 23,
+              "id": "string",
+              "id_ru": "Нить",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 24,
+              "id": "string",
+              "id_ru": "Нить",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 25,
+              "id": "string",
+              "id_ru": "Нить",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 26,
+              "id": "string",
+              "id_ru": "Нить",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            }
+          ]
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 8,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "4",
+        "resultItem": {
+          "type": "white_shulker_box",
+          "type_ru": "Белый шалкеровый ящик",
+          "amount": 1,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": [
+            {
+              "slot": 0,
+              "id": "bone_block",
+              "id_ru": "Костный блок",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 1,
+              "id": "bone_block",
+              "id_ru": "Костный блок",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 2,
+              "id": "bone_block",
+              "id_ru": "Костный блок",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 3,
+              "id": "bone_block",
+              "id_ru": "Костный блок",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 4,
+              "id": "bone_block",
+              "id_ru": "Костный блок",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 5,
+              "id": "bone_block",
+              "id_ru": "Костный блок",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 6,
+              "id": "bone_block",
+              "id_ru": "Костный блок",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 7,
+              "id": "bone_block",
+              "id_ru": "Костный блок",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 8,
+              "id": "bone_block",
+              "id_ru": "Костный блок",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 9,
+              "id": "bone_block",
+              "id_ru": "Костный блок",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 10,
+              "id": "bone_block",
+              "id_ru": "Костный блок",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 11,
+              "id": "bone_block",
+              "id_ru": "Костный блок",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 12,
+              "id": "bone_block",
+              "id_ru": "Костный блок",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 13,
+              "id": "bone_block",
+              "id_ru": "Костный блок",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 14,
+              "id": "bone_block",
+              "id_ru": "Костный блок",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 15,
+              "id": "bone_block",
+              "id_ru": "Костный блок",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 16,
+              "id": "bone_block",
+              "id_ru": "Костный блок",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 17,
+              "id": "bone_block",
+              "id_ru": "Костный блок",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 18,
+              "id": "bone_block",
+              "id_ru": "Костный блок",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 19,
+              "id": "bone_block",
+              "id_ru": "Костный блок",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 20,
+              "id": "bone_block",
+              "id_ru": "Костный блок",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 21,
+              "id": "bone_block",
+              "id_ru": "Костный блок",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 22,
+              "id": "bone_block",
+              "id_ru": "Костный блок",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 23,
+              "id": "bone_block",
+              "id_ru": "Костный блок",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 24,
+              "id": "bone_block",
+              "id_ru": "Костный блок",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 25,
+              "id": "bone_block",
+              "id_ru": "Костный блок",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 26,
+              "id": "bone_block",
+              "id_ru": "Костный блок",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            }
+          ]
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 18,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "5",
+        "resultItem": {
+          "type": "moss_block",
+          "type_ru": "Блок мха",
+          "amount": 64,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 4,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "6",
+        "resultItem": {
+          "type": "cactus",
+          "type_ru": "Кактус",
+          "amount": 32,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 2,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "7",
+        "resultItem": {
+          "type": "fern",
+          "type_ru": "Папоротник",
+          "amount": 32,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 2,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "8",
+        "resultItem": {
+          "type": "grass",
+          "type_ru": "Трава",
+          "amount": 32,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 2,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "9",
+        "resultItem": {
+          "type": "glow_berries",
+          "type_ru": "Светящиеся ягоды",
+          "amount": 64,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 2,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "10",
+        "resultItem": {
+          "type": "sweet_berries",
+          "type_ru": "Сладкие ягоды",
+          "amount": 32,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 2,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "11",
+        "resultItem": {
+          "type": "glow_lichen",
+          "type_ru": "Светящийся лишайник",
+          "amount": 32,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 2,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "12",
+        "resultItem": {
+          "type": "vine",
+          "type_ru": "Лианы",
+          "amount": 32,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 2,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "13",
+        "resultItem": {
+          "type": "sculk_vein",
+          "type_ru": "Скалковая жила",
+          "amount": 32,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 2,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "14",
+        "resultItem": {
+          "type": "hanging_roots",
+          "type_ru": "Свисающие корни",
+          "amount": 32,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 2,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "15",
+        "resultItem": {
+          "type": "lily_pad",
+          "type_ru": "Кувшинка",
+          "amount": 16,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 2,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "16",
+        "resultItem": {
+          "type": "big_dripleaf",
+          "type_ru": "Большая бросянка",
+          "amount": 64,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 2,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "17",
+        "resultItem": {
+          "type": "dead_bush",
+          "type_ru": "Мёртвый куст",
+          "amount": 16,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 2,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "18",
+        "resultItem": {
+          "type": "red_mushroom",
+          "type_ru": "Красный гриб",
+          "amount": 16,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 2,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "19",
+        "resultItem": {
+          "type": "brown_mushroom",
+          "type_ru": "Коричневый гриб",
+          "amount": 16,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 2,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "20",
+        "resultItem": {
+          "type": "crimson_fungus",
+          "type_ru": "Багровый гриб",
+          "amount": 32,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 1,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "21",
+        "resultItem": {
+          "type": "warped_fungus",
+          "type_ru": "Искажённый гриб",
+          "amount": 32,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 1,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "22",
+        "resultItem": {
+          "type": "warped_roots",
+          "type_ru": "Искажённые корни",
+          "amount": 32,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 2,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "23",
+        "resultItem": {
+          "type": "crimson_roots",
+          "type_ru": "Багровые корни",
+          "amount": 32,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 2,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "24",
+        "resultItem": {
+          "type": "twisting_vines",
+          "type_ru": "Вьющаяся лоза",
+          "amount": 32,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 2,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "25",
+        "resultItem": {
+          "type": "weeping_vines",
+          "type_ru": "Плакучая лоза",
+          "amount": 32,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 2,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "26",
+        "resultItem": {
+          "type": "chorus_flower",
+          "type_ru": "Цветок хоруса",
+          "amount": 16,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 4,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "27",
+        "resultItem": {
+          "type": "bamboo",
+          "type_ru": "Бамбук",
+          "amount": 64,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 2,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "28",
+        "resultItem": {
+          "type": "kelp",
+          "type_ru": "Ламинария",
+          "amount": 64,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 2,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "29",
+        "resultItem": {
+          "type": "string",
+          "type_ru": "Нить",
+          "amount": 64,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 1,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "30",
+        "resultItem": {
+          "type": "mangrove_roots",
+          "type_ru": "Мангровые корни",
+          "amount": 32,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 2,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item2": {}
       }
     ]
   },
@@ -28633,272 +30003,6 @@ export const shopData = [
       {
         "id": "1",
         "resultItem": {
-          "type": "yellow_shulker_box",
-          "type_ru": "Жёлтый шалкеровый ящик",
-          "amount": 1,
-          "potion": "",
-          "enchant": [],
-          "stored_enchant": [],
-          "content": [
-            {
-              "slot": 0,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64,
-              "potion": "",
-              "enchant": [],
-              "stored_enchant": []
-            },
-            {
-              "slot": 1,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64,
-              "potion": "",
-              "enchant": [],
-              "stored_enchant": []
-            },
-            {
-              "slot": 2,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64,
-              "potion": "",
-              "enchant": [],
-              "stored_enchant": []
-            },
-            {
-              "slot": 3,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64,
-              "potion": "",
-              "enchant": [],
-              "stored_enchant": []
-            },
-            {
-              "slot": 4,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64,
-              "potion": "",
-              "enchant": [],
-              "stored_enchant": []
-            },
-            {
-              "slot": 5,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64,
-              "potion": "",
-              "enchant": [],
-              "stored_enchant": []
-            },
-            {
-              "slot": 6,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64,
-              "potion": "",
-              "enchant": [],
-              "stored_enchant": []
-            },
-            {
-              "slot": 7,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64,
-              "potion": "",
-              "enchant": [],
-              "stored_enchant": []
-            },
-            {
-              "slot": 8,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64,
-              "potion": "",
-              "enchant": [],
-              "stored_enchant": []
-            },
-            {
-              "slot": 9,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64,
-              "potion": "",
-              "enchant": [],
-              "stored_enchant": []
-            },
-            {
-              "slot": 10,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64,
-              "potion": "",
-              "enchant": [],
-              "stored_enchant": []
-            },
-            {
-              "slot": 11,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64,
-              "potion": "",
-              "enchant": [],
-              "stored_enchant": []
-            },
-            {
-              "slot": 12,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64,
-              "potion": "",
-              "enchant": [],
-              "stored_enchant": []
-            },
-            {
-              "slot": 13,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64,
-              "potion": "",
-              "enchant": [],
-              "stored_enchant": []
-            },
-            {
-              "slot": 14,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64,
-              "potion": "",
-              "enchant": [],
-              "stored_enchant": []
-            },
-            {
-              "slot": 15,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64,
-              "potion": "",
-              "enchant": [],
-              "stored_enchant": []
-            },
-            {
-              "slot": 16,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64,
-              "potion": "",
-              "enchant": [],
-              "stored_enchant": []
-            },
-            {
-              "slot": 17,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64,
-              "potion": "",
-              "enchant": [],
-              "stored_enchant": []
-            },
-            {
-              "slot": 18,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64,
-              "potion": "",
-              "enchant": [],
-              "stored_enchant": []
-            },
-            {
-              "slot": 19,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64,
-              "potion": "",
-              "enchant": [],
-              "stored_enchant": []
-            },
-            {
-              "slot": 20,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64,
-              "potion": "",
-              "enchant": [],
-              "stored_enchant": []
-            },
-            {
-              "slot": 21,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64,
-              "potion": "",
-              "enchant": [],
-              "stored_enchant": []
-            },
-            {
-              "slot": 22,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64,
-              "potion": "",
-              "enchant": [],
-              "stored_enchant": []
-            },
-            {
-              "slot": 23,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64,
-              "potion": "",
-              "enchant": [],
-              "stored_enchant": []
-            },
-            {
-              "slot": 24,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64,
-              "potion": "",
-              "enchant": [],
-              "stored_enchant": []
-            },
-            {
-              "slot": 25,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64,
-              "potion": "",
-              "enchant": [],
-              "stored_enchant": []
-            },
-            {
-              "slot": 26,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64,
-              "potion": "",
-              "enchant": [],
-              "stored_enchant": []
-            }
-          ]
-        },
-        "item1": {
-          "type": "deepslate_diamond_ore",
-          "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 64,
-          "potion": "",
-          "enchant": [],
-          "stored_enchant": [],
-          "content": []
-        },
-        "item2": {}
-      },
-      {
-        "id": "2",
-        "resultItem": {
           "type": "red_shulker_box",
           "type_ru": "Красный шалкеровый ящик",
           "amount": 1,
@@ -29163,7 +30267,7 @@ export const shopData = [
         "item2": {}
       },
       {
-        "id": "3",
+        "id": "2",
         "resultItem": {
           "type": "orange_shulker_box",
           "type_ru": "Оранжевый шалкеровый ящик",
@@ -29429,7 +30533,7 @@ export const shopData = [
         "item2": {}
       },
       {
-        "id": "4",
+        "id": "3",
         "resultItem": {
           "type": "turtle_egg",
           "type_ru": "Черепашье яйцо",
@@ -29451,7 +30555,7 @@ export const shopData = [
         "item2": {}
       },
       {
-        "id": "5",
+        "id": "4",
         "resultItem": {
           "type": "glow_ink_sac",
           "type_ru": "Светящийся чернильный мешок",
@@ -29473,7 +30577,7 @@ export const shopData = [
         "item2": {}
       },
       {
-        "id": "6",
+        "id": "5",
         "resultItem": {
           "type": "cobweb",
           "type_ru": "Паутина",
@@ -29495,7 +30599,7 @@ export const shopData = [
         "item2": {}
       },
       {
-        "id": "7",
+        "id": "6",
         "resultItem": {
           "type": "red_shulker_box",
           "type_ru": "Красный шалкеровый ящик",
@@ -29680,7 +30784,7 @@ export const shopData = [
         "item2": {}
       },
       {
-        "id": "8",
+        "id": "7",
         "resultItem": {
           "type": "light_gray_shulker_box",
           "type_ru": "Светло-серый шалкеровый ящик",
@@ -29865,7 +30969,7 @@ export const shopData = [
         "item2": {}
       },
       {
-        "id": "9",
+        "id": "8",
         "resultItem": {
           "type": "white_shulker_box",
           "type_ru": "Белый шалкеровый ящик",
@@ -30050,7 +31154,7 @@ export const shopData = [
         "item2": {}
       },
       {
-        "id": "10",
+        "id": "9",
         "resultItem": {
           "type": "yellow_shulker_box",
           "type_ru": "Жёлтый шалкеровый ящик",
@@ -30316,7 +31420,7 @@ export const shopData = [
         "item2": {}
       },
       {
-        "id": "11",
+        "id": "10",
         "resultItem": {
           "type": "blue_shulker_box",
           "type_ru": "Синий шалкеровый ящик",
@@ -30582,7 +31686,7 @@ export const shopData = [
         "item2": {}
       },
       {
-        "id": "12",
+        "id": "11",
         "resultItem": {
           "type": "purple_shulker_box",
           "type_ru": "Фиолетовый шалкеровый ящик",
@@ -30848,7 +31952,7 @@ export const shopData = [
         "item2": {}
       },
       {
-        "id": "13",
+        "id": "12",
         "resultItem": {
           "type": "pearlescent_froglight",
           "type_ru": "Перламутровая квампа",
@@ -30870,7 +31974,7 @@ export const shopData = [
         "item2": {}
       },
       {
-        "id": "14",
+        "id": "13",
         "resultItem": {
           "type": "green_shulker_box",
           "type_ru": "Зелёный шалкеровый ящик",
@@ -31136,7 +32240,7 @@ export const shopData = [
         "item2": {}
       },
       {
-        "id": "15",
+        "id": "14",
         "resultItem": {
           "type": "verdant_froglight",
           "type_ru": "Малахитовая квампа",
@@ -31158,7 +32262,7 @@ export const shopData = [
         "item2": {}
       },
       {
-        "id": "16",
+        "id": "15",
         "resultItem": {
           "type": "yellow_shulker_box",
           "type_ru": "Жёлтый шалкеровый ящик",
@@ -31424,7 +32528,7 @@ export const shopData = [
         "item2": {}
       },
       {
-        "id": "17",
+        "id": "16",
         "resultItem": {
           "type": "ochre_froglight",
           "type_ru": "Охристая квампа",
@@ -31446,7 +32550,7 @@ export const shopData = [
         "item2": {}
       },
       {
-        "id": "18",
+        "id": "17",
         "resultItem": {
           "type": "shroomlight",
           "type_ru": "Грибосвет",
@@ -31468,7 +32572,7 @@ export const shopData = [
         "item2": {}
       },
       {
-        "id": "19",
+        "id": "18",
         "resultItem": {
           "type": "golden_apple",
           "type_ru": "Золотое яблоко",
@@ -31490,7 +32594,7 @@ export const shopData = [
         "item2": {}
       },
       {
-        "id": "20",
+        "id": "19",
         "resultItem": {
           "type": "pointed_dripstone",
           "type_ru": "Капельник",
@@ -31512,7 +32616,7 @@ export const shopData = [
         "item2": {}
       },
       {
-        "id": "21",
+        "id": "20",
         "resultItem": {
           "type": "amethyst_cluster",
           "type_ru": "Аметистовая друза",
@@ -31534,7 +32638,7 @@ export const shopData = [
         "item2": {}
       },
       {
-        "id": "22",
+        "id": "21",
         "resultItem": {
           "type": "mud_bricks",
           "type_ru": "Саманные кирпичи",
@@ -31547,7 +32651,7 @@ export const shopData = [
         "item1": {
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 2,
+          "amount": 3,
           "potion": "",
           "enchant": [],
           "stored_enchant": [],
@@ -31556,7 +32660,7 @@ export const shopData = [
         "item2": {}
       },
       {
-        "id": "23",
+        "id": "22",
         "resultItem": {
           "type": "purple_shulker_box",
           "type_ru": "Фиолетовый шалкеровый ящик",
@@ -31830,7 +32934,7 @@ export const shopData = [
         }
       },
       {
-        "id": "24",
+        "id": "23",
         "resultItem": {
           "type": "magenta_shulker_box",
           "type_ru": "Пурпурный шалкеровый ящик",
@@ -32096,7 +33200,7 @@ export const shopData = [
         "item2": {}
       },
       {
-        "id": "25",
+        "id": "24",
         "resultItem": {
           "type": "sculk_shrieker",
           "type_ru": "Скалковый крикун",
@@ -32118,7 +33222,7 @@ export const shopData = [
         "item2": {}
       },
       {
-        "id": "26",
+        "id": "25",
         "resultItem": {
           "type": "sculk_sensor",
           "type_ru": "Скалк-сенсор",
@@ -32140,7 +33244,7 @@ export const shopData = [
         "item2": {}
       },
       {
-        "id": "27",
+        "id": "26",
         "resultItem": {
           "type": "gray_shulker_box",
           "type_ru": "Серый шалкеровый ящик",
@@ -32398,6 +33502,272 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 10,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "27",
+        "resultItem": {
+          "type": "yellow_shulker_box",
+          "type_ru": "Жёлтый шалкеровый ящик",
+          "amount": 1,
+          "potion": "",
+          "enchant": [],
+          "stored_enchant": [],
+          "content": [
+            {
+              "slot": 0,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 1,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 2,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 3,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 4,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 5,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 6,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 7,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 8,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 9,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 10,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 11,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 12,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 13,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 14,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 15,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 16,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 17,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 18,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 19,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 20,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 21,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 22,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 23,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 24,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 25,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            },
+            {
+              "slot": 26,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64,
+              "potion": "",
+              "enchant": [],
+              "stored_enchant": []
+            }
+          ]
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 64,
           "potion": "",
           "enchant": [],
           "stored_enchant": [],
@@ -37238,625 +38608,6 @@ export const shopData = [
           "enchant": [],
           "stored_enchant": [],
           "content": []
-        },
-        "item2": {}
-      }
-    ]
-  },
-  {
-    "shop_id": "74",
-    "x": -3826,
-    "y": -31,
-    "z": 7036,
-    "name": "",
-    "owner": "prestig9110",
-    "object_profession": "NONE",
-    "object_villager_type": "PLAINS",
-    "offers": [
-      {
-        "id": "1",
-        "resultItem": {
-          "type": "enchanted_book",
-          "type_ru": "Чародейская книга",
-          "amount": 1,
-          "potion": "",
-          "enchant": [],
-          "stored_enchant": [
-            {
-              "enchant_id": "sweeping_edge",
-              "enchant_id_ru": "Разящий клинок",
-              "lvl": 3
-            }
-          ],
-          "content": []
-        },
-        "item1": {
-          "type": "enchanted_book",
-          "type_ru": "Чародейская книга",
-          "amount": 1,
-          "potion": "",
-          "enchant": [],
-          "stored_enchant": [
-            {
-              "enchant_id": "loot_bonus_blocks",
-              "enchant_id_ru": "Удача",
-              "lvl": 3
-            }
-          ],
-          "content": []
-        },
-        "item2": {
-          "type": "enchanted_book",
-          "type_ru": "Чародейская книга",
-          "amount": 1,
-          "potion": "",
-          "enchant": [],
-          "stored_enchant": [
-            {
-              "enchant_id": "vanishing_curse",
-              "enchant_id_ru": "Проклятье утраты",
-              "lvl": 1
-            }
-          ],
-          "content": []
-        }
-      },
-      {
-        "id": "2",
-        "resultItem": {
-          "type": "enchanted_book",
-          "type_ru": "Чародейская книга",
-          "amount": 1,
-          "potion": "",
-          "enchant": [],
-          "stored_enchant": [
-            {
-              "enchant_id": "oxygen",
-              "enchant_id_ru": "Подводное дыхание",
-              "lvl": 3
-            }
-          ],
-          "content": []
-        },
-        "item1": {
-          "type": "enchanted_book",
-          "type_ru": "Чародейская книга",
-          "amount": 1,
-          "potion": "",
-          "enchant": [],
-          "stored_enchant": [
-            {
-              "enchant_id": "knockback",
-              "enchant_id_ru": "Отдача",
-              "lvl": 2
-            }
-          ],
-          "content": []
-        },
-        "item2": {
-          "type": "enchanted_book",
-          "type_ru": "Чародейская книга",
-          "amount": 1,
-          "potion": "",
-          "enchant": [],
-          "stored_enchant": [
-            {
-              "enchant_id": "loot_bonus_blocks",
-              "enchant_id_ru": "Удача",
-              "lvl": 3
-            }
-          ],
-          "content": []
-        }
-      },
-      {
-        "id": "3",
-        "resultItem": {
-          "type": "enchanted_book",
-          "type_ru": "Чародейская книга",
-          "amount": 1,
-          "potion": "",
-          "enchant": [],
-          "stored_enchant": [
-            {
-              "enchant_id": "protection_explosions",
-              "enchant_id_ru": "Взрывоустойчивость",
-              "lvl": 4
-            }
-          ],
-          "content": []
-        },
-        "item1": {
-          "type": "enchanted_book",
-          "type_ru": "Чародейская книга",
-          "amount": 1,
-          "potion": "",
-          "enchant": [],
-          "stored_enchant": [
-            {
-              "enchant_id": "sweeping_edge",
-              "enchant_id_ru": "Разящий клинок",
-              "lvl": 3
-            }
-          ],
-          "content": []
-        },
-        "item2": {
-          "type": "enchanted_book",
-          "type_ru": "Чародейская книга",
-          "amount": 1,
-          "potion": "",
-          "enchant": [],
-          "stored_enchant": [
-            {
-              "enchant_id": "oxygen",
-              "enchant_id_ru": "Подводное дыхание",
-              "lvl": 3
-            }
-          ],
-          "content": []
-        }
-      },
-      {
-        "id": "4",
-        "resultItem": {
-          "type": "enchanted_book",
-          "type_ru": "Чародейская книга",
-          "amount": 1,
-          "potion": "",
-          "enchant": [],
-          "stored_enchant": [
-            {
-              "enchant_id": "sweeping_edge",
-              "enchant_id_ru": "Разящий клинок",
-              "lvl": 3
-            }
-          ],
-          "content": []
-        },
-        "item1": {
-          "type": "enchanted_book",
-          "type_ru": "Чародейская книга",
-          "amount": 1,
-          "potion": "",
-          "enchant": [],
-          "stored_enchant": [
-            {
-              "enchant_id": "protection_explosions",
-              "enchant_id_ru": "Взрывоустойчивость",
-              "lvl": 4
-            }
-          ],
-          "content": []
-        },
-        "item2": {
-          "type": "enchanted_book",
-          "type_ru": "Чародейская книга",
-          "amount": 1,
-          "potion": "",
-          "enchant": [],
-          "stored_enchant": [
-            {
-              "enchant_id": "vanishing_curse",
-              "enchant_id_ru": "Проклятье утраты",
-              "lvl": 1
-            }
-          ],
-          "content": []
-        }
-      },
-      {
-        "id": "5",
-        "resultItem": {
-          "type": "enchanted_book",
-          "type_ru": "Чародейская книга",
-          "amount": 1,
-          "potion": "",
-          "enchant": [],
-          "stored_enchant": [
-            {
-              "enchant_id": "knockback",
-              "enchant_id_ru": "Отдача",
-              "lvl": 2
-            }
-          ],
-          "content": []
-        },
-        "item1": {
-          "type": "enchanted_book",
-          "type_ru": "Чародейская книга",
-          "amount": 1,
-          "potion": "",
-          "enchant": [],
-          "stored_enchant": [
-            {
-              "enchant_id": "vanishing_curse",
-              "enchant_id_ru": "Проклятье утраты",
-              "lvl": 1
-            }
-          ],
-          "content": []
-        },
-        "item2": {
-          "type": "enchanted_book",
-          "type_ru": "Чародейская книга",
-          "amount": 1,
-          "potion": "",
-          "enchant": [],
-          "stored_enchant": [
-            {
-              "enchant_id": "vanishing_curse",
-              "enchant_id_ru": "Проклятье утраты",
-              "lvl": 1
-            }
-          ],
-          "content": []
-        }
-      },
-      {
-        "id": "6",
-        "resultItem": {
-          "type": "enchanted_book",
-          "type_ru": "Чародейская книга",
-          "amount": 1,
-          "potion": "",
-          "enchant": [],
-          "stored_enchant": [
-            {
-              "enchant_id": "loot_bonus_blocks",
-              "enchant_id_ru": "Удача",
-              "lvl": 3
-            }
-          ],
-          "content": []
-        },
-        "item1": {
-          "type": "purple_shulker_box",
-          "type_ru": "Фиолетовый шалкеровый ящик",
-          "amount": 1,
-          "potion": "",
-          "enchant": [],
-          "stored_enchant": [],
-          "content": [
-            {
-              "slot": 0,
-              "id": "enchanted_book",
-              "id_ru": "Чародейская книга",
-              "count": 1,
-              "stored_enchant": [
-                {
-                  "enchant_id": "binding_curse",
-                  "enchant_id_ru": "Проклятие несъёмности",
-                  "lvl": 1
-                }
-              ]
-            },
-            {
-              "slot": 1,
-              "id": "enchanted_book",
-              "id_ru": "Чародейская книга",
-              "count": 1,
-              "stored_enchant": [
-                {
-                  "enchant_id": "respiration",
-                  "enchant_id_ru": "Подводное дыхание",
-                  "lvl": 2
-                }
-              ]
-            },
-            {
-              "slot": 2,
-              "id": "enchanted_book",
-              "id_ru": "Чародейская книга",
-              "count": 1,
-              "stored_enchant": [
-                {
-                  "enchant_id": "aqua_affinity",
-                  "enchant_id_ru": "Подводник",
-                  "lvl": 1
-                }
-              ]
-            },
-            {
-              "slot": 3,
-              "id": "enchanted_book",
-              "id_ru": "Чародейская книга",
-              "count": 1,
-              "stored_enchant": [
-                {
-                  "enchant_id": "frost_walker",
-                  "enchant_id_ru": "Ледоход",
-                  "lvl": 1
-                }
-              ]
-            },
-            {
-              "slot": 5,
-              "id": "enchanted_book",
-              "id_ru": "Чародейская книга",
-              "count": 1,
-              "stored_enchant": [
-                {
-                  "enchant_id": "blast_protection",
-                  "enchant_id_ru": "Взрывоустойчивость",
-                  "lvl": 1
-                }
-              ]
-            },
-            {
-              "slot": 6,
-              "id": "enchanted_book",
-              "id_ru": "Чародейская книга",
-              "count": 1,
-              "stored_enchant": [
-                {
-                  "enchant_id": "feather_falling",
-                  "enchant_id_ru": "Невесомость",
-                  "lvl": 4
-                }
-              ]
-            },
-            {
-              "slot": 7,
-              "id": "enchanted_book",
-              "id_ru": "Чародейская книга",
-              "count": 1,
-              "stored_enchant": [
-                {
-                  "enchant_id": "depth_strider",
-                  "enchant_id_ru": "Подводная ходьба",
-                  "lvl": 2
-                }
-              ]
-            },
-            {
-              "slot": 8,
-              "id": "enchanted_book",
-              "id_ru": "Чародейская книга",
-              "count": 1,
-              "stored_enchant": [
-                {
-                  "enchant_id": "depth_strider",
-                  "enchant_id_ru": "Подводная ходьба",
-                  "lvl": 2
-                }
-              ]
-            },
-            {
-              "slot": 9,
-              "id": "enchanted_book",
-              "id_ru": "Чародейская книга",
-              "count": 1,
-              "stored_enchant": [
-                {
-                  "enchant_id": "aqua_affinity",
-                  "enchant_id_ru": "Подводник",
-                  "lvl": 1
-                }
-              ]
-            },
-            {
-              "slot": 10,
-              "id": "enchanted_book",
-              "id_ru": "Чародейская книга",
-              "count": 1,
-              "stored_enchant": [
-                {
-                  "enchant_id": "aqua_affinity",
-                  "enchant_id_ru": "Подводник",
-                  "lvl": 1
-                }
-              ]
-            },
-            {
-              "slot": 11,
-              "id": "enchanted_book",
-              "id_ru": "Чародейская книга",
-              "count": 1,
-              "stored_enchant": [
-                {
-                  "enchant_id": "aqua_affinity",
-                  "enchant_id_ru": "Подводник",
-                  "lvl": 1
-                }
-              ]
-            },
-            {
-              "slot": 12,
-              "id": "enchanted_book",
-              "id_ru": "Чародейская книга",
-              "count": 1,
-              "stored_enchant": [
-                {
-                  "enchant_id": "aqua_affinity",
-                  "enchant_id_ru": "Подводник",
-                  "lvl": 1
-                }
-              ]
-            },
-            {
-              "slot": 13,
-              "id": "enchanted_book",
-              "id_ru": "Чародейская книга",
-              "count": 1,
-              "stored_enchant": [
-                {
-                  "enchant_id": "aqua_affinity",
-                  "enchant_id_ru": "Подводник",
-                  "lvl": 1
-                }
-              ]
-            },
-            {
-              "slot": 14,
-              "id": "enchanted_book",
-              "id_ru": "Чародейская книга",
-              "count": 1,
-              "stored_enchant": [
-                {
-                  "enchant_id": "aqua_affinity",
-                  "enchant_id_ru": "Подводник",
-                  "lvl": 1
-                }
-              ]
-            },
-            {
-              "slot": 15,
-              "id": "enchanted_book",
-              "id_ru": "Чародейская книга",
-              "count": 1,
-              "stored_enchant": [
-                {
-                  "enchant_id": "aqua_affinity",
-                  "enchant_id_ru": "Подводник",
-                  "lvl": 1
-                }
-              ]
-            },
-            {
-              "slot": 16,
-              "id": "enchanted_book",
-              "id_ru": "Чародейская книга",
-              "count": 1,
-              "stored_enchant": [
-                {
-                  "enchant_id": "aqua_affinity",
-                  "enchant_id_ru": "Подводник",
-                  "lvl": 1
-                }
-              ]
-            },
-            {
-              "slot": 17,
-              "id": "enchanted_book",
-              "id_ru": "Чародейская книга",
-              "count": 1,
-              "stored_enchant": [
-                {
-                  "enchant_id": "depth_strider",
-                  "enchant_id_ru": "Подводная ходьба",
-                  "lvl": 2
-                }
-              ]
-            },
-            {
-              "slot": 18,
-              "id": "enchanted_book",
-              "id_ru": "Чародейская книга",
-              "count": 1,
-              "stored_enchant": [
-                {
-                  "enchant_id": "aqua_affinity",
-                  "enchant_id_ru": "Подводник",
-                  "lvl": 1
-                }
-              ]
-            },
-            {
-              "slot": 19,
-              "id": "enchanted_book",
-              "id_ru": "Чародейская книга",
-              "count": 1,
-              "stored_enchant": [
-                {
-                  "enchant_id": "aqua_affinity",
-                  "enchant_id_ru": "Подводник",
-                  "lvl": 1
-                }
-              ]
-            },
-            {
-              "slot": 20,
-              "id": "enchanted_book",
-              "id_ru": "Чародейская книга",
-              "count": 1,
-              "stored_enchant": [
-                {
-                  "enchant_id": "aqua_affinity",
-                  "enchant_id_ru": "Подводник",
-                  "lvl": 1
-                }
-              ]
-            },
-            {
-              "slot": 21,
-              "id": "enchanted_book",
-              "id_ru": "Чародейская книга",
-              "count": 1,
-              "stored_enchant": [
-                {
-                  "enchant_id": "aqua_affinity",
-                  "enchant_id_ru": "Подводник",
-                  "lvl": 1
-                }
-              ]
-            },
-            {
-              "slot": 22,
-              "id": "enchanted_book",
-              "id_ru": "Чародейская книга",
-              "count": 1,
-              "stored_enchant": [
-                {
-                  "enchant_id": "aqua_affinity",
-                  "enchant_id_ru": "Подводник",
-                  "lvl": 1
-                }
-              ]
-            },
-            {
-              "slot": 23,
-              "id": "enchanted_book",
-              "id_ru": "Чародейская книга",
-              "count": 1,
-              "stored_enchant": [
-                {
-                  "enchant_id": "aqua_affinity",
-                  "enchant_id_ru": "Подводник",
-                  "lvl": 1
-                }
-              ]
-            },
-            {
-              "slot": 24,
-              "id": "enchanted_book",
-              "id_ru": "Чародейская книга",
-              "count": 1,
-              "stored_enchant": [
-                {
-                  "enchant_id": "aqua_affinity",
-                  "enchant_id_ru": "Подводник",
-                  "lvl": 1
-                }
-              ]
-            },
-            {
-              "slot": 25,
-              "id": "enchanted_book",
-              "id_ru": "Чародейская книга",
-              "count": 1,
-              "stored_enchant": [
-                {
-                  "enchant_id": "aqua_affinity",
-                  "enchant_id_ru": "Подводник",
-                  "lvl": 1
-                }
-              ]
-            },
-            {
-              "slot": 26,
-              "id": "enchanted_book",
-              "id_ru": "Чародейская книга",
-              "count": 1,
-              "stored_enchant": [
-                {
-                  "enchant_id": "depth_strider",
-                  "enchant_id_ru": "Подводная ходьба",
-                  "lvl": 2
-                }
-              ]
-            }
-          ]
         },
         "item2": {}
       }

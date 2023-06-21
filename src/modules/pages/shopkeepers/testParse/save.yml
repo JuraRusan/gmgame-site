@@ -5982,7 +5982,7 @@ data-version: 3|2|3337
           meta-type: TILE_ENTITY
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#4C3024","text":"
             Набор «Сельхоз». N.Viento™"}],"text":""}'
-          internal: H4sIAAAAAAAA/5XRQU+DQBAF4KEt2lLFaq1t9Z94MjYePOudLHQUAuyQZUj132uCSZtMiLP3771M3kQAEcTPFWXli+WCv9/N5xRGxR5WdWExc+aDH9u8q0p0SUpfMwhfGes2AoCHACZvFTGIwCFHw0mLuG8DCHfUWX6CPx146ZGXHgudUUYmSdFYqSe9Xh9109VNWdiB9lC011jRkD4T2iLnvysejGOhz7301EvPer056hSRHdHQjJFvYO4buOgDi5NHGedI3n6phbEWXgnYEBsmARdaeK2FNz2MT2Yii4ItdexWx1Y6dqdjax3b6NhWx+7/YQA/Lam24McEAAA=
+          internal: H4sIAAAAAAAA/5XRS0+DUBAF4KEWbbHF+qh9/ZOujI0L17onFzoKAe6Qy5DWf68L6eMa4tz9d04mZwKAAMLngpL8RXPGX+/qcwC9bAvTMtOYGPXB6zptihxNFNN+CP4rY1kHALDyoP9WEIMH/oYazU9/krsUFUc14raGX+056Z6TvujWCSWkohiVPui+pWdHXTVllWf6vN3vbi+xIEtfdmuNnP7MuVOGW33lpAdOemjp+VHHiGyIrBkD18C1a2BkBSYnj1LG0OH2sRSGUnjTDStixdTCiRTeSuGdBcOTmUhjy+5l7EHGpjL2KGMzGZvL2ELGlv8wgG8PgCqqxwQAAA==
           blockMaterial: BROWN_SHULKER_BOX
       item1:
         ==: org.bukkit.inventory.ItemStack
@@ -5999,7 +5999,7 @@ data-version: 3|2|3337
           meta-type: TILE_ENTITY
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#717486","text":"
             Нитки. Viento™"}],"text":""}'
-          internal: H4sIAAAAAAAA/43Luw6CMAAF0AuCQlXEBz7/xMlIHJx1N4iIDdAmUBL9ewcd3Lz7OQIQCPalTouDMtK8zknuwZY3RJVUWVond7NtHm1ZZPXlqp8+3KPJqkYA2FhwTqU2+ITwJ5haqtyCG+tWmR2+0GKhzcIOCx0WuizssrDHQo+FPgsFC/ssHLBwyMKAhSMWhiwcs3DCwikLZyyMWDhn4YKFSxauWLj+C4E3z+kjrpIEAAA=
+          internal: H4sIAAAAAAAA/43Luw6CMAAF0AuCQlXEBz7/xMlIHJx1N4iIDdAmUBL9ewcd3Lz7OQIQCPalTouDMtK8zknuwZY3RJVUWVond7NtHm1ZZPXlqp8+3KPJqkYA2FhwTqU2sODGulVm95nhzzS1VDm+0GKhzcIOCx0WuizssrDHQo+FPgsFC/ssHLBwyMKAhSMWhiwcs3DCwikLZyyMWDhn4YKFSxauWLj+C4E3T4wPmZIEAAA=
           blockMaterial: WHITE_SHULKER_BOX
       item1:
         ==: org.bukkit.inventory.ItemStack
@@ -6010,28 +6010,35 @@ data-version: 3|2|3337
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
-        type: FLOWER_POT
-        amount: 16
+        type: WHITE_SHULKER_BOX
+        meta:
+          ==: ItemMeta
+          meta-type: TILE_ENTITY
+          display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#C1BECD","text":"Удобрение.
+            N.Viento™"}],"text":""}'
+          internal: H4sIAAAAAAAA/5XLyw7BQBgG0G+qQzuoW93fxEo0Ftbspa0hjXYm4bfw9iLxAL79OQYwSHa1L+97J5W8T/kthj6IbZ4GwFohPNZeECGoLkibytnykV9lU3hnz8U3KujMv5xs8cOKwQGDWwwOGawZ3GZwh8ERg2MGGwZ3GdxjcJ/BCYMHDB4yeMTgMYMnDE4ZPGXwjMFzBi8YvGTw6i8MfAA+I9Xl4gQAAA==
+          blockMaterial: WHITE_SHULKER_BOX
       item1:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
+        amount: 18
     '5':
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
-        type: LILY_OF_THE_VALLEY
-        amount: 32
+        type: MOSS_BLOCK
+        amount: 64
       item1:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
-        amount: 2
+        amount: 4
     '6':
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
-        type: RED_TULIP
+        type: CACTUS
         amount: 32
       item1:
         ==: org.bukkit.inventory.ItemStack
@@ -6042,7 +6049,7 @@ data-version: 3|2|3337
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
-        type: ORANGE_TULIP
+        type: FERN
         amount: 32
       item1:
         ==: org.bukkit.inventory.ItemStack
@@ -6053,7 +6060,7 @@ data-version: 3|2|3337
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
-        type: WHITE_TULIP
+        type: GRASS
         amount: 32
       item1:
         ==: org.bukkit.inventory.ItemStack
@@ -6064,8 +6071,8 @@ data-version: 3|2|3337
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
-        type: PINK_TULIP
-        amount: 32
+        type: GLOW_BERRIES
+        amount: 64
       item1:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
@@ -6075,7 +6082,7 @@ data-version: 3|2|3337
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
-        type: CORNFLOWER
+        type: SWEET_BERRIES
         amount: 32
       item1:
         ==: org.bukkit.inventory.ItemStack
@@ -6086,7 +6093,7 @@ data-version: 3|2|3337
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
-        type: ALLIUM
+        type: GLOW_LICHEN
         amount: 32
       item1:
         ==: org.bukkit.inventory.ItemStack
@@ -6097,8 +6104,8 @@ data-version: 3|2|3337
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
-        type: ROSE_BUSH
-        amount: 64
+        type: VINE
+        amount: 32
       item1:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
@@ -6108,8 +6115,8 @@ data-version: 3|2|3337
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
-        type: LILAC
-        amount: 64
+        type: SCULK_VEIN
+        amount: 32
       item1:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
@@ -6119,8 +6126,8 @@ data-version: 3|2|3337
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
-        type: PEONY
-        amount: 64
+        type: HANGING_ROOTS
+        amount: 32
       item1:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
@@ -6130,8 +6137,8 @@ data-version: 3|2|3337
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
-        type: SUNFLOWER
-        amount: 64
+        type: LILY_PAD
+        amount: 16
       item1:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
@@ -6141,18 +6148,19 @@ data-version: 3|2|3337
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
-        type: WITHER_ROSE
-        amount: 16
+        type: BIG_DRIPLEAF
+        amount: 64
       item1:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
+        amount: 2
     '17':
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
-        type: FERN
-        amount: 32
+        type: DEAD_BUSH
+        amount: 16
       item1:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
@@ -6162,8 +6170,8 @@ data-version: 3|2|3337
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
-        type: GRASS
-        amount: 32
+        type: RED_MUSHROOM
+        amount: 16
       item1:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
@@ -6173,12 +6181,13 @@ data-version: 3|2|3337
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
-        type: WARPED_FUNGUS
-        amount: 32
+        type: BROWN_MUSHROOM
+        amount: 16
       item1:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
+        amount: 2
     '20':
       resultItem:
         ==: org.bukkit.inventory.ItemStack
@@ -6193,25 +6202,13 @@ data-version: 3|2|3337
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
-        type: BROWN_MUSHROOM
-        amount: 16
-      item1:
-        ==: org.bukkit.inventory.ItemStack
-        v: 3337
-        type: DEEPSLATE_DIAMOND_ORE
-        amount: 2
-    '22':
-      resultItem:
-        ==: org.bukkit.inventory.ItemStack
-        v: 3337
-        type: CRIMSON_ROOTS
+        type: WARPED_FUNGUS
         amount: 32
       item1:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
-        amount: 2
-    '23':
+    '22':
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
@@ -6222,18 +6219,18 @@ data-version: 3|2|3337
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
         amount: 2
-    '24':
+    '23':
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
-        type: WEEPING_VINES
+        type: CRIMSON_ROOTS
         amount: 32
       item1:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
         amount: 2
-    '25':
+    '24':
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
@@ -6244,117 +6241,18 @@ data-version: 3|2|3337
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
         amount: 2
+    '25':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: WEEPING_VINES
+        amount: 32
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 2
     '26':
-      resultItem:
-        ==: org.bukkit.inventory.ItemStack
-        v: 3337
-        type: SCULK_VEIN
-        amount: 32
-      item1:
-        ==: org.bukkit.inventory.ItemStack
-        v: 3337
-        type: DEEPSLATE_DIAMOND_ORE
-        amount: 2
-    '27':
-      resultItem:
-        ==: org.bukkit.inventory.ItemStack
-        v: 3337
-        type: VINE
-        amount: 32
-      item1:
-        ==: org.bukkit.inventory.ItemStack
-        v: 3337
-        type: DEEPSLATE_DIAMOND_ORE
-        amount: 2
-    '28':
-      resultItem:
-        ==: org.bukkit.inventory.ItemStack
-        v: 3337
-        type: HANGING_ROOTS
-        amount: 32
-      item1:
-        ==: org.bukkit.inventory.ItemStack
-        v: 3337
-        type: DEEPSLATE_DIAMOND_ORE
-        amount: 2
-    '29':
-      resultItem:
-        ==: org.bukkit.inventory.ItemStack
-        v: 3337
-        type: GLOW_LICHEN
-        amount: 32
-      item1:
-        ==: org.bukkit.inventory.ItemStack
-        v: 3337
-        type: DEEPSLATE_DIAMOND_ORE
-        amount: 2
-    '30':
-      resultItem:
-        ==: org.bukkit.inventory.ItemStack
-        v: 3337
-        type: BAMBOO
-        amount: 64
-      item1:
-        ==: org.bukkit.inventory.ItemStack
-        v: 3337
-        type: DEEPSLATE_DIAMOND_ORE
-        amount: 2
-    '31':
-      resultItem:
-        ==: org.bukkit.inventory.ItemStack
-        v: 3337
-        type: KELP
-        amount: 64
-      item1:
-        ==: org.bukkit.inventory.ItemStack
-        v: 3337
-        type: DEEPSLATE_DIAMOND_ORE
-        amount: 2
-    '32':
-      resultItem:
-        ==: org.bukkit.inventory.ItemStack
-        v: 3337
-        type: BIG_DRIPLEAF
-        amount: 64
-      item1:
-        ==: org.bukkit.inventory.ItemStack
-        v: 3337
-        type: DEEPSLATE_DIAMOND_ORE
-        amount: 2
-    '33':
-      resultItem:
-        ==: org.bukkit.inventory.ItemStack
-        v: 3337
-        type: CACTUS
-        amount: 32
-      item1:
-        ==: org.bukkit.inventory.ItemStack
-        v: 3337
-        type: DEEPSLATE_DIAMOND_ORE
-        amount: 2
-    '34':
-      resultItem:
-        ==: org.bukkit.inventory.ItemStack
-        v: 3337
-        type: MANGROVE_ROOTS
-        amount: 32
-      item1:
-        ==: org.bukkit.inventory.ItemStack
-        v: 3337
-        type: DEEPSLATE_DIAMOND_ORE
-        amount: 2
-    '35':
-      resultItem:
-        ==: org.bukkit.inventory.ItemStack
-        v: 3337
-        type: MOSS_BLOCK
-        amount: 64
-      item1:
-        ==: org.bukkit.inventory.ItemStack
-        v: 3337
-        type: DEEPSLATE_DIAMOND_ORE
-        amount: 4
-    '36':
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
@@ -6365,51 +6263,29 @@ data-version: 3|2|3337
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
         amount: 4
-    '37':
+    '27':
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
-        type: SWEET_BERRIES
-        amount: 32
-      item1:
-        ==: org.bukkit.inventory.ItemStack
-        v: 3337
-        type: DEEPSLATE_DIAMOND_ORE
-        amount: 2
-    '38':
-      resultItem:
-        ==: org.bukkit.inventory.ItemStack
-        v: 3337
-        type: GLOW_BERRIES
+        type: BAMBOO
         amount: 64
       item1:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
         amount: 2
-    '39':
+    '28':
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
-        type: LILY_PAD
-        amount: 16
+        type: KELP
+        amount: 64
       item1:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
         amount: 2
-    '40':
-      resultItem:
-        ==: org.bukkit.inventory.ItemStack
-        v: 3337
-        type: DEAD_BUSH
-        amount: 16
-      item1:
-        ==: org.bukkit.inventory.ItemStack
-        v: 3337
-        type: DEEPSLATE_DIAMOND_ORE
-        amount: 2
-    '41':
+    '29':
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
@@ -6419,6 +6295,17 @@ data-version: 3|2|3337
         ==: org.bukkit.inventory.ItemStack
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
+    '30':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: MANGROVE_ROOTS
+        amount: 32
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 2
   snapshots: []
 '67':
   uniqueId: 2f27433a-11cf-4339-83f2-81fd217fdea5
@@ -6620,22 +6507,6 @@ data-version: 3|2|3337
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
-        type: YELLOW_SHULKER_BOX
-        meta:
-          ==: ItemMeta
-          meta-type: TILE_ENTITY
-          display-name: '{"extra":[{"text":"Элики опыта. NMB™"}],"text":""}'
-          internal: H4sIAAAAAAAA/53UuQrCUBQE0JtNs7hr3PInVmKwsBAE7SUmTw3ZJHmBaO3P+hc+MWDtFJe5xZx2TCKTOqs486N1ykN+P3gXg7QNZ0lhEpEjkbqPM046yWFAThKmzM+9M1+w6sbykKU+O54yzmMmkeZmZcqXVBsJMDJgFMCogNEA0wBMEzA6YAzAmICxANMCTBswHcB0AdMDTB8wA8AMATMCjA2YMWAmgJkCZgaY+T9GIakSG1xvr/0zxbWMI5YLUInO49MReafvY7nbzcrzo5047Rm86A3bgMQS5QUAAA==
-          blockMaterial: YELLOW_SHULKER_BOX
-      item1:
-        ==: org.bukkit.inventory.ItemStack
-        v: 3337
-        type: DEEPSLATE_DIAMOND_ORE
-        amount: 64
-    '2':
-      resultItem:
-        ==: org.bukkit.inventory.ItemStack
-        v: 3337
         type: RED_SHULKER_BOX
         meta:
           ==: ItemMeta
@@ -6648,7 +6519,7 @@ data-version: 3|2|3337
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
         amount: 64
-    '3':
+    '2':
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
@@ -6664,7 +6535,7 @@ data-version: 3|2|3337
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
         amount: 16
-    '4':
+    '3':
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
@@ -6675,7 +6546,7 @@ data-version: 3|2|3337
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
         amount: 4
-    '5':
+    '4':
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
@@ -6685,7 +6556,7 @@ data-version: 3|2|3337
         ==: org.bukkit.inventory.ItemStack
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
-    '6':
+    '5':
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
@@ -6696,7 +6567,7 @@ data-version: 3|2|3337
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
         amount: 2
-    '7':
+    '6':
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
@@ -6713,7 +6584,7 @@ data-version: 3|2|3337
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
         amount: 12
-    '8':
+    '7':
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
@@ -6730,7 +6601,7 @@ data-version: 3|2|3337
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
         amount: 8
-    '9':
+    '8':
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
@@ -6747,7 +6618,7 @@ data-version: 3|2|3337
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
         amount: 4
-    '10':
+    '9':
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
@@ -6764,7 +6635,7 @@ data-version: 3|2|3337
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
         amount: 8
-    '11':
+    '10':
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
@@ -6781,7 +6652,7 @@ data-version: 3|2|3337
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
         amount: 12
-    '12':
+    '11':
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
@@ -6798,7 +6669,7 @@ data-version: 3|2|3337
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
         amount: 12
-    '13':
+    '12':
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
@@ -6809,7 +6680,7 @@ data-version: 3|2|3337
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
         amount: 2
-    '14':
+    '13':
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
@@ -6826,7 +6697,7 @@ data-version: 3|2|3337
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
         amount: 12
-    '15':
+    '14':
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
@@ -6837,7 +6708,7 @@ data-version: 3|2|3337
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
         amount: 2
-    '16':
+    '15':
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
@@ -6854,7 +6725,7 @@ data-version: 3|2|3337
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
         amount: 12
-    '17':
+    '16':
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
@@ -6865,7 +6736,7 @@ data-version: 3|2|3337
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
         amount: 2
-    '18':
+    '17':
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
@@ -6876,7 +6747,7 @@ data-version: 3|2|3337
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
         amount: 16
-    '19':
+    '18':
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
@@ -6887,7 +6758,7 @@ data-version: 3|2|3337
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
         amount: 3
-    '20':
+    '19':
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
@@ -6898,7 +6769,7 @@ data-version: 3|2|3337
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
         amount: 2
-    '21':
+    '20':
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
@@ -6909,7 +6780,7 @@ data-version: 3|2|3337
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
         amount: 2
-    '22':
+    '21':
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
@@ -6919,8 +6790,8 @@ data-version: 3|2|3337
         ==: org.bukkit.inventory.ItemStack
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
-        amount: 2
-    '23':
+        amount: 3
+    '22':
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
@@ -6942,7 +6813,7 @@ data-version: 3|2|3337
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
         amount: 64
-    '24':
+    '23':
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
@@ -6959,7 +6830,7 @@ data-version: 3|2|3337
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
         amount: 48
-    '25':
+    '24':
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
@@ -6970,7 +6841,7 @@ data-version: 3|2|3337
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
         amount: 2
-    '26':
+    '25':
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
@@ -6981,7 +6852,7 @@ data-version: 3|2|3337
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
         amount: 4
-    '27':
+    '26':
       resultItem:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
@@ -6998,6 +6869,23 @@ data-version: 3|2|3337
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
         amount: 10
+    '27':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: YELLOW_SHULKER_BOX
+        meta:
+          ==: ItemMeta
+          meta-type: TILE_ENTITY
+          display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#CCB800","text":"Элики
+            опыта. NMB™"}],"text":""}'
+          internal: H4sIAAAAAAAA/53LuQ6CQBQF0AeCwrgvuPEnVkZjYa29QXzqhGHGwJDg32uiibX39EcQCeptlEmznbbSPo/JLSBXXijKpea0SK52Vd4rlXFxOps6JH9vOS8FEcUOeQdlLH1C/AtcP7iQrFN+H2sVO+RvTaXtmr7HAY4LnAZwPOD4wGkCpwWcADghcARw2sDpAKcLnB5w+sAZAGcInBFwxsCZACcCzhQ4M+DMgbMAzvKfQ/QCYOy3V7sFAAA=
+          blockMaterial: YELLOW_SHULKER_BOX
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 64
   snapshots: []
 '69':
   uniqueId: f1a2c894-446c-4d9c-a7c1-7946d9f42964
@@ -8156,5 +8044,289 @@ data-version: 3|2|3337
   chestx: -338
   chesty: 78
   chestz: -36
-  offers: {}
+  offers:
+    '1':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: CORNFLOWER
+        amount: 32
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 2
+    '2':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: BLUE_ORCHID
+        amount: 32
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 2
+    '3':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: LILY_OF_THE_VALLEY
+        amount: 32
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 2
+    '4':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: RED_TULIP
+        amount: 32
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 2
+    '5':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: ORANGE_TULIP
+        amount: 32
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 2
+    '6':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: WHITE_TULIP
+        amount: 32
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 2
+    '7':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: PINK_TULIP
+        amount: 32
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 2
+    '8':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: ALLIUM
+        amount: 32
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 2
+    '9':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: AZURE_BLUET
+        amount: 64
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 2
+    '10':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: OXEYE_DAISY
+        amount: 64
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 2
+    '11':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DANDELION
+        amount: 64
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 2
+    '12':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: POPPY
+        amount: 64
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 2
+    '13':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: ROSE_BUSH
+        amount: 64
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 2
+    '14':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: PEONY
+        amount: 64
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 2
+    '15':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: SUNFLOWER
+        amount: 64
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 2
+    '16':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: LILAC
+        amount: 64
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 2
+    '17':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: WITHER_ROSE
+        amount: 16
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+    '18':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: FLOWER_POT
+        amount: 16
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+    '19':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: AZALEA
+        amount: 64
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 3
+    '20':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: FLOWERING_AZALEA
+        amount: 64
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 3
+    '21':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: MANGROVE_PROPAGULE
+        amount: 64
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 3
+    '22':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: ACACIA_SAPLING
+        amount: 64
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 3
+    '23':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: SPRUCE_SAPLING
+        amount: 64
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 3
+    '24':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: BIRCH_SAPLING
+        amount: 64
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 3
+    '25':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: OAK_SAPLING
+        amount: 64
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 3
+    '26':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: JUNGLE_SAPLING
+        amount: 32
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 3
   snapshots: []

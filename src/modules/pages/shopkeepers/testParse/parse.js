@@ -43,6 +43,7 @@ async function selectData(data) {
               }
               const id_ru = matchingData.length === 0 ? "{NO translation}" : matchingData[0].item_name_ru;
               const count = item.Count.value;
+
               const enchant = item.tag === undefined
                 ?
                 []
@@ -54,9 +55,22 @@ async function selectData(data) {
                   const lvl = el.lvl.value;
 
                   return {enchant_id, enchant_id_ru, lvl}
+                });
+
+              const stored_enchant = item.tag === undefined
+                ?
+                []
+                :
+                item.tag.value?.StoredEnchantments?.value.value.map((el) => {
+                  const enchant_id = el.id.value.split(':')[1];
+                  const matchingEnchantData = enchant_id ? enchantArray.filter((item) => item.enchant_id.map(id => id.toLowerCase()).includes(enchant_id.toLowerCase())) : [];
+                  const enchant_id_ru = matchingEnchantData.length === 0 ? "{NO translation}" : matchingEnchantData[0].enchant_id_ru;
+                  const lvl = el.lvl.value;
+
+                  return {enchant_id, enchant_id_ru, lvl}
                 })
 
-              return {slot, id, id_ru, count, potion, enchant};
+              return {slot, id, id_ru, count, potion, enchant, stored_enchant};
             });
 
             resolve(result);
@@ -76,7 +90,7 @@ async function selectData(data) {
         offers: await Promise.all(offerKeys.map(async (offerKey) => {
             const offer = offers[offerKey];
 
-
+            //---- ру название для resultItem
             let matchingResultItemData = [];
             if (offer.resultItem?.type) {
               const transformedArrayFiltered = transformedArray.filter((item) => item.type === offer.resultItem.type.toLowerCase());
@@ -86,7 +100,7 @@ async function selectData(data) {
                 matchingResultItemData = transformedArrayFiltered;
               }
             }
-
+            //---- ру название для item1
             let matchingItem1Data = [];
             if (offer.item1?.type) {
               const transformedArrayFiltered = transformedArray.filter((item) => item.type === offer.item1.type.toLowerCase());
@@ -97,6 +111,7 @@ async function selectData(data) {
               }
             }
 
+            //---- ру название для item2
             let matchingItem2Data = [];
             if (offer.item2?.type) {
               const transformedArrayFiltered = transformedArray.filter((item) => item.type === offer.item2.type.toLowerCase());
@@ -110,11 +125,8 @@ async function selectData(data) {
             const transformEnchant = (enchant) =>
               Object.keys(enchant).map((key) => {
                 const enchantId = key.toLowerCase();
-                const matchingItem = enchantArray.find((item) =>
-                  item.enchant_id.some((id) => id.toLowerCase() === enchantId)
-                );
+                const matchingItem = enchantArray.find((item) => item.enchant_id.some((id) => id.toLowerCase() === enchantId));
                 const enchantIdRu = matchingItem?.enchant_id_ru || "{NO translation}";
-
                 return {
                   enchant_id: enchantId,
                   enchant_id_ru: enchantIdRu,
@@ -130,6 +142,7 @@ async function selectData(data) {
                 amount: offer.resultItem.amount ? offer.resultItem.amount : 1,
                 potion: offer.resultItem.meta && offer.resultItem.meta?.["meta-type"] === "POTION" ? offer.resultItem.meta?.["potion-type"].split(':')[1] : "",
                 enchant: offer.resultItem.meta && offer.resultItem.meta?.enchants ? transformEnchant(offer.resultItem.meta.enchants) : [],
+                stored_enchant: offer.resultItem.meta && offer.resultItem.meta?.["stored-enchants"] ? transformEnchant(offer.resultItem.meta?.["stored-enchants"]) : [],
                 content: offer.resultItem.meta && offer.resultItem.meta.internal !== undefined ? await parseInternal(offer.resultItem.meta.internal) : [],
               },
               item1: offer.item1 ?
@@ -139,6 +152,7 @@ async function selectData(data) {
                   amount: offer.item1.amount ? offer.item1.amount : 1,
                   potion: offer.item1.meta && offer.item1.meta?.["meta-type"] === "POTION" ? offer.item1.meta?.["potion-type"].split(':')[1] : "",
                   enchant: offer.item1.meta && offer.item1.meta?.enchants ? transformEnchant(offer.item1.meta.enchants) : [],
+                  stored_enchant: offer.item1.meta && offer.item1.meta?.["stored-enchants"] ? transformEnchant(offer.item1.meta?.["stored-enchants"]) : [],
                   content: offer.item1.meta && offer.item1.meta.internal !== undefined ? await parseInternal(offer.item1.meta.internal) : [],
                 }
                 :
@@ -150,6 +164,7 @@ async function selectData(data) {
                   amount: offer.item2.amount ? offer.item2.amount : 1,
                   potion: offer.item2.meta && offer.item2.meta?.["meta-type"] === "POTION" ? offer.item2.meta?.["potion-type"].split(':')[1] : "",
                   enchant: offer.item2.meta && offer.item2.meta?.enchants ? transformEnchant(offer.item2.meta.enchants) : [],
+                  stored_enchant: offer.item2.meta && offer.item2.meta?.["stored-enchants"] ? transformEnchant(offer.item2.meta?.["stored-enchants"]) : [],
                   content: offer.item2.meta && offer.item2.meta.internal !== undefined ? await parseInternal(offer.item2.meta.internal) : [],
                 }
                 :
@@ -174,4 +189,3 @@ const selectedDataArray = selectData(parsedData);
   fs.writeFileSync('shopOutput.js', outputData);
   console.log('Данные успешно записаны в файл shopOutput.js.');
 })();
-
