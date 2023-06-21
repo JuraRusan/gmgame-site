@@ -5768,7 +5768,7 @@ export const shopData = [
             {
               "slot": 0,
               "id": "tipped_arrow",
-              "id_ru": "Стрела ночного зрения",
+              "id_ru": "Взрывная стрела",
               "count": 64
             },
             {
@@ -5809,25 +5809,25 @@ export const shopData = [
             {
               "slot": 6,
               "id": "tipped_arrow",
-              "id_ru": "Стрела ночного зрения",
+              "id_ru": "Взрывная стрела",
               "count": 64
             },
             {
               "slot": 7,
               "id": "tipped_arrow",
-              "id_ru": "Стрела ночного зрения",
+              "id_ru": "Взрывная стрела",
               "count": 64
             },
             {
               "slot": 8,
               "id": "tipped_arrow",
-              "id_ru": "Стрела ночного зрения",
+              "id_ru": "Взрывная стрела",
               "count": 64
             },
             {
               "slot": 9,
               "id": "tipped_arrow",
-              "id_ru": "Стрела ночного зрения",
+              "id_ru": "Взрывная стрела",
               "count": 64
             },
             {
@@ -5868,31 +5868,31 @@ export const shopData = [
             {
               "slot": 15,
               "id": "tipped_arrow",
-              "id_ru": "Стрела ночного зрения",
+              "id_ru": "Взрывная стрела",
               "count": 64
             },
             {
               "slot": 16,
               "id": "tipped_arrow",
-              "id_ru": "Стрела ночного зрения",
+              "id_ru": "Взрывная стрела",
               "count": 64
             },
             {
               "slot": 17,
               "id": "tipped_arrow",
-              "id_ru": "Стрела ночного зрения",
+              "id_ru": "Взрывная стрела",
               "count": 64
             },
             {
               "slot": 18,
               "id": "tipped_arrow",
-              "id_ru": "Стрела ночного зрения",
+              "id_ru": "Взрывная стрела",
               "count": 64
             },
             {
               "slot": 19,
               "id": "tipped_arrow",
-              "id_ru": "Стрела ночного зрения",
+              "id_ru": "Взрывная стрела",
               "count": 64
             },
             {
@@ -5919,25 +5919,25 @@ export const shopData = [
             {
               "slot": 23,
               "id": "tipped_arrow",
-              "id_ru": "Стрела ночного зрения",
+              "id_ru": "Взрывная стрела",
               "count": 64
             },
             {
               "slot": 24,
               "id": "tipped_arrow",
-              "id_ru": "Стрела ночного зрения",
+              "id_ru": "Взрывная стрела",
               "count": 64
             },
             {
               "slot": 25,
               "id": "tipped_arrow",
-              "id_ru": "Стрела ночного зрения",
+              "id_ru": "Взрывная стрела",
               "count": 64
             },
             {
               "slot": 26,
               "id": "tipped_arrow",
-              "id_ru": "Стрела ночного зрения",
+              "id_ru": "Взрывная стрела",
               "count": 64
             }
           ]
