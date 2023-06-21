@@ -28,7 +28,7 @@ const ShulkerBox = (props) => {
         <>
           {el.id === null
           ? <OneItemNone key={i}/>
-          : <OneItem key={i} item_name_title={el.id_ru} item_minecraft_name_id={el.id} item_count={el.count} enchantsList={el.enchant}/>
+          : <OneItem key={i} item_name_title={el.id_ru} item_minecraft_name_id={el.id} item_count={el.count} enchantsList={el.enchant} item_minecraft_id_potion={el.potion}/>
           }
         </>
       ))}

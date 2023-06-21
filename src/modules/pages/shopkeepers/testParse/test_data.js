@@ -15,6 +15,7 @@ export const shopData = [
           "type": "elytra",
           "type_ru": "Элитры",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "mending",
@@ -33,6 +34,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 32,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -44,6 +46,7 @@ export const shopData = [
           "type": "nether_star",
           "type_ru": "Звезда Незера",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -51,6 +54,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 3,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -62,6 +66,7 @@ export const shopData = [
           "type": "wither_skeleton_skull",
           "type_ru": "Череп визер-скелета",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -69,6 +74,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -80,6 +86,7 @@ export const shopData = [
           "type": "dragon_head",
           "type_ru": "Голова дракона",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -87,6 +94,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -98,6 +106,7 @@ export const shopData = [
           "type": "enchanted_book",
           "type_ru": "Чародейская книга",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -105,6 +114,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -116,6 +126,7 @@ export const shopData = [
           "type": "sponge",
           "type_ru": "Губка",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -123,6 +134,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -134,6 +146,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -141,6 +154,7 @@ export const shopData = [
           "type": "shulker_box",
           "type_ru": "Шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -148,6 +162,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -155,6 +170,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -162,6 +178,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -169,6 +186,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -176,6 +194,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -183,6 +202,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -190,6 +210,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -197,6 +218,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -204,6 +226,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -211,6 +234,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -218,6 +242,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -225,6 +250,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -232,6 +258,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -239,6 +266,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -246,6 +274,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -253,6 +282,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -260,6 +290,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -267,6 +298,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -274,6 +306,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -281,6 +314,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -288,6 +322,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -295,6 +330,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -302,6 +338,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -309,6 +346,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -316,6 +354,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -323,6 +362,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -330,6 +370,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -354,6 +395,7 @@ export const shopData = [
           "type": "white_shulker_box",
           "type_ru": "Белый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -361,6 +403,7 @@ export const shopData = [
               "id": "white_stained_glass_pane",
               "id_ru": "Белая стеклянная панель",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -368,6 +411,7 @@ export const shopData = [
               "id": "music_disc_wait",
               "id_ru": "Пластинка",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -375,6 +419,7 @@ export const shopData = [
               "id": "white_stained_glass_pane",
               "id_ru": "Белая стеклянная панель",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -382,6 +427,7 @@ export const shopData = [
               "id": "music_disc_mall",
               "id_ru": "Пластинка",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -389,6 +435,7 @@ export const shopData = [
               "id": "white_stained_glass_pane",
               "id_ru": "Белая стеклянная панель",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -396,6 +443,7 @@ export const shopData = [
               "id": "music_disc_far",
               "id_ru": "Пластинка",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -403,6 +451,7 @@ export const shopData = [
               "id": "white_stained_glass_pane",
               "id_ru": "Белая стеклянная панель",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -410,6 +459,7 @@ export const shopData = [
               "id": "music_disc_mellohi",
               "id_ru": "Пластинка",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -417,6 +467,7 @@ export const shopData = [
               "id": "white_stained_glass_pane",
               "id_ru": "Белая стеклянная панель",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -424,6 +475,7 @@ export const shopData = [
               "id": "music_disc_stal",
               "id_ru": "Пластинка",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -431,6 +483,7 @@ export const shopData = [
               "id": "white_stained_glass_pane",
               "id_ru": "Белая стеклянная панель",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -438,6 +491,7 @@ export const shopData = [
               "id": "music_disc_strad",
               "id_ru": "Пластинка",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -445,6 +499,7 @@ export const shopData = [
               "id": "white_stained_glass_pane",
               "id_ru": "Белая стеклянная панель",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -452,6 +507,7 @@ export const shopData = [
               "id": "jukebox",
               "id_ru": "Проигрыватель",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -459,6 +515,7 @@ export const shopData = [
               "id": "white_stained_glass_pane",
               "id_ru": "Белая стеклянная панель",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -466,6 +523,7 @@ export const shopData = [
               "id": "music_disc_13",
               "id_ru": "Пластинка",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -473,6 +531,7 @@ export const shopData = [
               "id": "white_stained_glass_pane",
               "id_ru": "Белая стеклянная панель",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -480,6 +539,7 @@ export const shopData = [
               "id": "music_disc_cat",
               "id_ru": "Пластинка",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -487,6 +547,7 @@ export const shopData = [
               "id": "white_stained_glass_pane",
               "id_ru": "Белая стеклянная панель",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -494,6 +555,7 @@ export const shopData = [
               "id": "music_disc_blocks",
               "id_ru": "Пластинка",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -501,6 +563,7 @@ export const shopData = [
               "id": "white_stained_glass_pane",
               "id_ru": "Белая стеклянная панель",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -508,6 +571,7 @@ export const shopData = [
               "id": "music_disc_ward",
               "id_ru": "Пластинка",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -515,6 +579,7 @@ export const shopData = [
               "id": "white_stained_glass_pane",
               "id_ru": "Белая стеклянная панель",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -522,6 +587,7 @@ export const shopData = [
               "id": "music_disc_11",
               "id_ru": "Пластинка",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -529,6 +595,7 @@ export const shopData = [
               "id": "white_stained_glass_pane",
               "id_ru": "Белая стеклянная панель",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -536,6 +603,7 @@ export const shopData = [
               "id": "music_disc_chirp",
               "id_ru": "Пластинка",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -543,6 +611,7 @@ export const shopData = [
               "id": "white_stained_glass_pane",
               "id_ru": "Белая стеклянная панель",
               "count": 1,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -551,6 +620,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 16,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -562,6 +632,7 @@ export const shopData = [
           "type": "music_disc_pigstep",
           "type_ru": "Пластинка",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -569,6 +640,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -576,6 +648,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         }
@@ -586,6 +659,7 @@ export const shopData = [
           "type": "music_disc_5",
           "type_ru": "Пластинка",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -593,6 +667,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 14,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -604,6 +679,7 @@ export const shopData = [
           "type": "music_disc_otherside",
           "type_ru": "Пластинка",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -611,6 +687,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -634,6 +711,7 @@ export const shopData = [
           "type": "nether_wart",
           "type_ru": "Незерский нарост",
           "amount": 32,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -641,6 +719,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -652,6 +731,7 @@ export const shopData = [
           "type": "written_book",
           "type_ru": "Завершённая книга",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -659,6 +739,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 10,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -670,169 +751,197 @@ export const shopData = [
           "type": "gray_shulker_box",
           "type_ru": "Серый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
               "slot": 0,
               "id": "splash_potion",
-              "id_ru": "Взрывная бутылочка воды",
-              "count": 1
+              "id_ru": "Взрывное зелье слабости",
+              "count": 1,
+              "potion": "weakness"
             },
             {
               "slot": 1,
               "id": "splash_potion",
-              "id_ru": "Взрывная бутылочка воды",
-              "count": 1
+              "id_ru": "Взрывное зелье слабости",
+              "count": 1,
+              "potion": "weakness"
             },
             {
               "slot": 2,
               "id": "splash_potion",
-              "id_ru": "Взрывная бутылочка воды",
-              "count": 1
+              "id_ru": "Взрывное зелье слабости",
+              "count": 1,
+              "potion": "weakness"
             },
             {
               "slot": 3,
               "id": "splash_potion",
-              "id_ru": "Взрывная бутылочка воды",
-              "count": 1
+              "id_ru": "Взрывное зелье слабости",
+              "count": 1,
+              "potion": "weakness"
             },
             {
               "slot": 4,
               "id": "splash_potion",
-              "id_ru": "Взрывная бутылочка воды",
-              "count": 1
+              "id_ru": "Взрывное зелье слабости",
+              "count": 1,
+              "potion": "weakness"
             },
             {
               "slot": 5,
               "id": "splash_potion",
-              "id_ru": "Взрывная бутылочка воды",
-              "count": 1
+              "id_ru": "Взрывное зелье слабости",
+              "count": 1,
+              "potion": "weakness"
             },
             {
               "slot": 6,
               "id": "splash_potion",
-              "id_ru": "Взрывная бутылочка воды",
-              "count": 1
+              "id_ru": "Взрывное зелье слабости",
+              "count": 1,
+              "potion": "weakness"
             },
             {
               "slot": 7,
               "id": "splash_potion",
-              "id_ru": "Взрывная бутылочка воды",
-              "count": 1
+              "id_ru": "Взрывное зелье слабости",
+              "count": 1,
+              "potion": "weakness"
             },
             {
               "slot": 8,
               "id": "splash_potion",
-              "id_ru": "Взрывная бутылочка воды",
-              "count": 1
+              "id_ru": "Взрывное зелье слабости",
+              "count": 1,
+              "potion": "weakness"
             },
             {
               "slot": 9,
               "id": "splash_potion",
-              "id_ru": "Взрывная бутылочка воды",
-              "count": 1
+              "id_ru": "Взрывное зелье слабости",
+              "count": 1,
+              "potion": "weakness"
             },
             {
               "slot": 10,
               "id": "splash_potion",
-              "id_ru": "Взрывная бутылочка воды",
-              "count": 1
+              "id_ru": "Взрывное зелье слабости",
+              "count": 1,
+              "potion": "weakness"
             },
             {
               "slot": 11,
               "id": "splash_potion",
-              "id_ru": "Взрывная бутылочка воды",
-              "count": 1
+              "id_ru": "Взрывное зелье слабости",
+              "count": 1,
+              "potion": "weakness"
             },
             {
               "slot": 12,
               "id": "splash_potion",
-              "id_ru": "Взрывная бутылочка воды",
-              "count": 1
+              "id_ru": "Взрывное зелье слабости",
+              "count": 1,
+              "potion": "weakness"
             },
             {
               "slot": 13,
               "id": "splash_potion",
-              "id_ru": "Взрывная бутылочка воды",
-              "count": 1
+              "id_ru": "Взрывное зелье слабости",
+              "count": 1,
+              "potion": "weakness"
             },
             {
               "slot": 14,
               "id": "splash_potion",
-              "id_ru": "Взрывная бутылочка воды",
-              "count": 1
+              "id_ru": "Взрывное зелье слабости",
+              "count": 1,
+              "potion": "weakness"
             },
             {
               "slot": 15,
               "id": "splash_potion",
-              "id_ru": "Взрывная бутылочка воды",
-              "count": 1
+              "id_ru": "Взрывное зелье слабости",
+              "count": 1,
+              "potion": "weakness"
             },
             {
               "slot": 16,
               "id": "splash_potion",
-              "id_ru": "Взрывная бутылочка воды",
-              "count": 1
+              "id_ru": "Взрывное зелье слабости",
+              "count": 1,
+              "potion": "weakness"
             },
             {
               "slot": 17,
               "id": "splash_potion",
-              "id_ru": "Взрывная бутылочка воды",
-              "count": 1
+              "id_ru": "Взрывное зелье слабости",
+              "count": 1,
+              "potion": "weakness"
             },
             {
               "slot": 18,
               "id": "splash_potion",
-              "id_ru": "Взрывная бутылочка воды",
-              "count": 1
+              "id_ru": "Взрывное зелье слабости",
+              "count": 1,
+              "potion": "weakness"
             },
             {
               "slot": 19,
               "id": "splash_potion",
-              "id_ru": "Взрывная бутылочка воды",
-              "count": 1
+              "id_ru": "Взрывное зелье слабости",
+              "count": 1,
+              "potion": "weakness"
             },
             {
               "slot": 20,
               "id": "splash_potion",
-              "id_ru": "Взрывная бутылочка воды",
-              "count": 1
+              "id_ru": "Взрывное зелье слабости",
+              "count": 1,
+              "potion": "weakness"
             },
             {
               "slot": 21,
               "id": "splash_potion",
-              "id_ru": "Взрывная бутылочка воды",
-              "count": 1
+              "id_ru": "Взрывное зелье слабости",
+              "count": 1,
+              "potion": "weakness"
             },
             {
               "slot": 22,
               "id": "splash_potion",
-              "id_ru": "Взрывная бутылочка воды",
-              "count": 1
+              "id_ru": "Взрывное зелье слабости",
+              "count": 1,
+              "potion": "weakness"
             },
             {
               "slot": 23,
               "id": "splash_potion",
-              "id_ru": "Взрывная бутылочка воды",
-              "count": 1
+              "id_ru": "Взрывное зелье слабости",
+              "count": 1,
+              "potion": "weakness"
             },
             {
               "slot": 24,
               "id": "splash_potion",
-              "id_ru": "Взрывная бутылочка воды",
-              "count": 1
+              "id_ru": "Взрывное зелье слабости",
+              "count": 1,
+              "potion": "weakness"
             },
             {
               "slot": 25,
               "id": "splash_potion",
-              "id_ru": "Взрывная бутылочка воды",
-              "count": 1
+              "id_ru": "Взрывное зелье слабости",
+              "count": 1,
+              "potion": "weakness"
             },
             {
               "slot": 26,
               "id": "splash_potion",
-              "id_ru": "Взрывная бутылочка воды",
-              "count": 1
+              "id_ru": "Взрывное зелье слабости",
+              "count": 1,
+              "potion": "weakness"
             }
           ]
         },
@@ -840,6 +949,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -851,6 +961,7 @@ export const shopData = [
           "type": "purple_shulker_box",
           "type_ru": "Фиолетовый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -858,56 +969,65 @@ export const shopData = [
               "id": "pufferfish",
               "id_ru": "Иглобрюх",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
               "slot": 1,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье стремительности",
+              "count": 1,
+              "potion": "long_swiftness"
             },
             {
               "slot": 2,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье стремительности",
+              "count": 1,
+              "potion": "long_swiftness"
             },
             {
               "slot": 3,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье стремительности",
+              "count": 1,
+              "potion": "long_swiftness"
             },
             {
               "slot": 4,
               "id": "ghast_tear",
               "id_ru": "Слеза гаста",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
               "slot": 5,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 6,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 7,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 8,
               "id": "pufferfish",
               "id_ru": "Иглобрюх",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -915,6 +1035,7 @@ export const shopData = [
               "id": "pufferfish",
               "id_ru": "Иглобрюх",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -922,19 +1043,22 @@ export const shopData = [
               "id": "rabbit_foot",
               "id_ru": "Кроличья лапка",
               "count": 2,
+              "potion": "",
               "enchant": []
             },
             {
               "slot": 11,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье силы",
+              "count": 1,
+              "potion": "long_strength"
             },
             {
               "slot": 12,
               "id": "ghast_tear",
               "id_ru": "Слеза гаста",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -942,6 +1066,7 @@ export const shopData = [
               "id": "brewing_stand",
               "id_ru": "Зельеварка",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -949,19 +1074,22 @@ export const shopData = [
               "id": "ghast_tear",
               "id_ru": "Слеза гаста",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
               "slot": 15,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье силы",
+              "count": 1,
+              "potion": "long_strength"
             },
             {
               "slot": 16,
               "id": "rabbit_foot",
               "id_ru": "Кроличья лапка",
               "count": 2,
+              "potion": "",
               "enchant": []
             },
             {
@@ -969,6 +1097,7 @@ export const shopData = [
               "id": "pufferfish",
               "id_ru": "Иглобрюх",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -976,56 +1105,65 @@ export const shopData = [
               "id": "pufferfish",
               "id_ru": "Иглобрюх",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
               "slot": 19,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье ночного зрения",
+              "count": 1,
+              "potion": "long_night_vision"
             },
             {
               "slot": 20,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье ночного зрения",
+              "count": 1,
+              "potion": "long_night_vision"
             },
             {
               "slot": 21,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье ночного зрения",
+              "count": 1,
+              "potion": "long_night_vision"
             },
             {
               "slot": 22,
               "id": "ghast_tear",
               "id_ru": "Слеза гаста",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
               "slot": 23,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье невидимости",
+              "count": 1,
+              "potion": "long_invisibility"
             },
             {
               "slot": 24,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье невидимости",
+              "count": 1,
+              "potion": "long_invisibility"
             },
             {
               "slot": 25,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье невидимости",
+              "count": 1,
+              "potion": "long_invisibility"
             },
             {
               "slot": 26,
               "id": "pufferfish",
               "id_ru": "Иглобрюх",
               "count": 1,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -1034,6 +1172,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 16,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -1045,169 +1184,197 @@ export const shopData = [
           "type": "orange_shulker_box",
           "type_ru": "Оранжевый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
               "slot": 0,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 1,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 2,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 3,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 4,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 5,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 6,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 7,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 8,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 9,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 10,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 11,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 12,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 13,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 14,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 15,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 16,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 17,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 18,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 19,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 20,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 21,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 22,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 23,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 24,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 25,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 26,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
             }
           ]
         },
@@ -1215,6 +1382,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -1226,169 +1394,197 @@ export const shopData = [
           "type": "blue_shulker_box",
           "type_ru": "Синий шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
               "slot": 0,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье ночного зрения",
+              "count": 1,
+              "potion": "long_night_vision"
             },
             {
               "slot": 1,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье ночного зрения",
+              "count": 1,
+              "potion": "long_night_vision"
             },
             {
               "slot": 2,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье ночного зрения",
+              "count": 1,
+              "potion": "long_night_vision"
             },
             {
               "slot": 3,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье ночного зрения",
+              "count": 1,
+              "potion": "long_night_vision"
             },
             {
               "slot": 4,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье ночного зрения",
+              "count": 1,
+              "potion": "long_night_vision"
             },
             {
               "slot": 5,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье ночного зрения",
+              "count": 1,
+              "potion": "long_night_vision"
             },
             {
               "slot": 6,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье ночного зрения",
+              "count": 1,
+              "potion": "long_night_vision"
             },
             {
               "slot": 7,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье ночного зрения",
+              "count": 1,
+              "potion": "long_night_vision"
             },
             {
               "slot": 8,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье ночного зрения",
+              "count": 1,
+              "potion": "long_night_vision"
             },
             {
               "slot": 9,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье ночного зрения",
+              "count": 1,
+              "potion": "long_night_vision"
             },
             {
               "slot": 10,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье ночного зрения",
+              "count": 1,
+              "potion": "long_night_vision"
             },
             {
               "slot": 11,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье ночного зрения",
+              "count": 1,
+              "potion": "long_night_vision"
             },
             {
               "slot": 12,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье ночного зрения",
+              "count": 1,
+              "potion": "long_night_vision"
             },
             {
               "slot": 13,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье ночного зрения",
+              "count": 1,
+              "potion": "long_night_vision"
             },
             {
               "slot": 14,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье ночного зрения",
+              "count": 1,
+              "potion": "long_night_vision"
             },
             {
               "slot": 15,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье ночного зрения",
+              "count": 1,
+              "potion": "long_night_vision"
             },
             {
               "slot": 16,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье ночного зрения",
+              "count": 1,
+              "potion": "long_night_vision"
             },
             {
               "slot": 17,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье ночного зрения",
+              "count": 1,
+              "potion": "long_night_vision"
             },
             {
               "slot": 18,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье ночного зрения",
+              "count": 1,
+              "potion": "long_night_vision"
             },
             {
               "slot": 19,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье ночного зрения",
+              "count": 1,
+              "potion": "long_night_vision"
             },
             {
               "slot": 20,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье ночного зрения",
+              "count": 1,
+              "potion": "long_night_vision"
             },
             {
               "slot": 21,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье ночного зрения",
+              "count": 1,
+              "potion": "long_night_vision"
             },
             {
               "slot": 22,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье ночного зрения",
+              "count": 1,
+              "potion": "long_night_vision"
             },
             {
               "slot": 23,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье ночного зрения",
+              "count": 1,
+              "potion": "long_night_vision"
             },
             {
               "slot": 24,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье ночного зрения",
+              "count": 1,
+              "potion": "long_night_vision"
             },
             {
               "slot": 25,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье ночного зрения",
+              "count": 1,
+              "potion": "long_night_vision"
             },
             {
               "slot": 26,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье ночного зрения",
+              "count": 1,
+              "potion": "long_night_vision"
             }
           ]
         },
@@ -1396,6 +1592,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -1407,25 +1604,29 @@ export const shopData = [
           "type": "orange_shulker_box",
           "type_ru": "Оранжевый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
               "slot": 12,
               "id": "splash_potion",
-              "id_ru": "Взрывная бутылочка воды",
-              "count": 1
+              "id_ru": "Взрывное зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 13,
               "id": "splash_potion",
-              "id_ru": "Взрывная бутылочка воды",
-              "count": 1
+              "id_ru": "Взрывное зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 14,
               "id": "splash_potion",
-              "id_ru": "Взрывная бутылочка воды",
-              "count": 1
+              "id_ru": "Взрывное зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
             }
           ]
         },
@@ -1433,6 +1634,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -1444,25 +1646,29 @@ export const shopData = [
           "type": "orange_shulker_box",
           "type_ru": "Оранжевый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
               "slot": 12,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 13,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 14,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
             }
           ]
         },
@@ -1470,6 +1676,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -1481,25 +1688,29 @@ export const shopData = [
           "type": "blue_shulker_box",
           "type_ru": "Синий шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
               "slot": 12,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье ночного зрения",
+              "count": 1,
+              "potion": "long_night_vision"
             },
             {
               "slot": 13,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье ночного зрения",
+              "count": 1,
+              "potion": "long_night_vision"
             },
             {
               "slot": 14,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье ночного зрения",
+              "count": 1,
+              "potion": "long_night_vision"
             }
           ]
         },
@@ -1507,6 +1718,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -1518,25 +1730,29 @@ export const shopData = [
           "type": "cyan_shulker_box",
           "type_ru": "Бирюзовый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
               "slot": 12,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье невидимости",
+              "count": 1,
+              "potion": "long_invisibility"
             },
             {
               "slot": 13,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье невидимости",
+              "count": 1,
+              "potion": "long_invisibility"
             },
             {
               "slot": 14,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье невидимости",
+              "count": 1,
+              "potion": "long_invisibility"
             }
           ]
         },
@@ -1544,6 +1760,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -1555,25 +1772,29 @@ export const shopData = [
           "type": "light_blue_shulker_box",
           "type_ru": "Голубой шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
               "slot": 12,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье стремительности",
+              "count": 1,
+              "potion": "long_swiftness"
             },
             {
               "slot": 13,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье стремительности",
+              "count": 1,
+              "potion": "long_swiftness"
             },
             {
               "slot": 14,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье стремительности",
+              "count": 1,
+              "potion": "long_swiftness"
             }
           ]
         },
@@ -1581,6 +1802,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -1592,25 +1814,29 @@ export const shopData = [
           "type": "magenta_shulker_box",
           "type_ru": "Пурпурный шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
               "slot": 12,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье регенерации",
+              "count": 1,
+              "potion": "long_regeneration"
             },
             {
               "slot": 13,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье регенерации",
+              "count": 1,
+              "potion": "long_regeneration"
             },
             {
               "slot": 14,
               "id": "potion",
-              "id_ru": "Бутылочка воды",
-              "count": 1
+              "id_ru": "Зелье регенерации",
+              "count": 1,
+              "potion": "long_regeneration"
             }
           ]
         },
@@ -1618,6 +1844,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -1641,6 +1868,7 @@ export const shopData = [
           "type": "netherite_ingot",
           "type_ru": "Незеритовый слиток",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -1648,6 +1876,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -1659,6 +1888,7 @@ export const shopData = [
           "type": "shield",
           "type_ru": "Щит",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "mending",
@@ -1677,6 +1907,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 10,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -1688,6 +1919,7 @@ export const shopData = [
           "type": "diamond_helmet",
           "type_ru": "Алмазный шлем",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -1721,6 +1953,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 17,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -1732,6 +1965,7 @@ export const shopData = [
           "type": "turtle_helmet",
           "type_ru": "Черепаший панцирь",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -1765,6 +1999,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 17,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -1776,6 +2011,7 @@ export const shopData = [
           "type": "diamond_chestplate",
           "type_ru": "Алмазный нагрудник",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "mending",
@@ -1799,6 +2035,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 13,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -1810,6 +2047,7 @@ export const shopData = [
           "type": "diamond_leggings",
           "type_ru": "Алмазные поножи",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "mending",
@@ -1833,6 +2071,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 13,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -1844,6 +2083,7 @@ export const shopData = [
           "type": "diamond_boots",
           "type_ru": "Алмазные ботинки",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "depth_strider",
@@ -1882,6 +2122,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 17,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -1893,6 +2134,7 @@ export const shopData = [
           "type": "diamond_helmet",
           "type_ru": "Алмазный шлем",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -1931,6 +2173,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 19,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -1942,6 +2185,7 @@ export const shopData = [
           "type": "turtle_helmet",
           "type_ru": "Черепаший панцирь",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -1980,6 +2224,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 19,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -1991,6 +2236,7 @@ export const shopData = [
           "type": "diamond_chestplate",
           "type_ru": "Алмазный нагрудник",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "mending",
@@ -2019,6 +2265,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -2030,6 +2277,7 @@ export const shopData = [
           "type": "diamond_leggings",
           "type_ru": "Алмазные поножи",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "mending",
@@ -2058,6 +2306,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -2069,6 +2318,7 @@ export const shopData = [
           "type": "diamond_boots",
           "type_ru": "Алмазные ботинки",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "depth_strider",
@@ -2112,6 +2362,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 19,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -2123,6 +2374,7 @@ export const shopData = [
           "type": "diamond_helmet",
           "type_ru": "Алмазный шлем",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -2156,6 +2408,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 17,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -2167,6 +2420,7 @@ export const shopData = [
           "type": "turtle_helmet",
           "type_ru": "Черепаший панцирь",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -2200,6 +2454,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 17,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -2211,6 +2466,7 @@ export const shopData = [
           "type": "diamond_chestplate",
           "type_ru": "Алмазный нагрудник",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "mending",
@@ -2234,6 +2490,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 13,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -2245,6 +2502,7 @@ export const shopData = [
           "type": "diamond_leggings",
           "type_ru": "Алмазные поножи",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "mending",
@@ -2268,6 +2526,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 13,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -2279,6 +2538,7 @@ export const shopData = [
           "type": "diamond_boots",
           "type_ru": "Алмазные ботинки",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "depth_strider",
@@ -2317,6 +2577,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 17,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -2328,6 +2589,7 @@ export const shopData = [
           "type": "diamond_helmet",
           "type_ru": "Алмазный шлем",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -2366,6 +2628,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 19,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -2377,6 +2640,7 @@ export const shopData = [
           "type": "turtle_helmet",
           "type_ru": "Черепаший панцирь",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -2415,6 +2679,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 19,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -2426,6 +2691,7 @@ export const shopData = [
           "type": "diamond_chestplate",
           "type_ru": "Алмазный нагрудник",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "mending",
@@ -2454,6 +2720,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -2465,6 +2732,7 @@ export const shopData = [
           "type": "diamond_leggings",
           "type_ru": "Алмазные поножи",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "mending",
@@ -2493,6 +2761,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -2504,6 +2773,7 @@ export const shopData = [
           "type": "diamond_boots",
           "type_ru": "Алмазные ботинки",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "depth_strider",
@@ -2547,6 +2817,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 19,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -2558,6 +2829,7 @@ export const shopData = [
           "type": "diamond_helmet",
           "type_ru": "Алмазный шлем",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -2591,6 +2863,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 17,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -2602,6 +2875,7 @@ export const shopData = [
           "type": "turtle_helmet",
           "type_ru": "Черепаший панцирь",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -2635,6 +2909,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 17,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -2646,6 +2921,7 @@ export const shopData = [
           "type": "diamond_chestplate",
           "type_ru": "Алмазный нагрудник",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "protection_fire",
@@ -2669,6 +2945,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 13,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -2680,6 +2957,7 @@ export const shopData = [
           "type": "diamond_leggings",
           "type_ru": "Алмазные поножи",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "protection_fire",
@@ -2703,6 +2981,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 13,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -2714,6 +2993,7 @@ export const shopData = [
           "type": "diamond_boots",
           "type_ru": "Алмазные ботинки",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "depth_strider",
@@ -2752,6 +3032,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 17,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -2763,6 +3044,7 @@ export const shopData = [
           "type": "diamond_helmet",
           "type_ru": "Алмазный шлем",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -2801,6 +3083,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 19,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -2812,6 +3095,7 @@ export const shopData = [
           "type": "turtle_helmet",
           "type_ru": "Черепаший панцирь",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -2850,6 +3134,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 19,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -2861,6 +3146,7 @@ export const shopData = [
           "type": "diamond_chestplate",
           "type_ru": "Алмазный нагрудник",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "protection_fire",
@@ -2889,6 +3175,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -2900,6 +3187,7 @@ export const shopData = [
           "type": "diamond_leggings",
           "type_ru": "Алмазные поножи",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "protection_fire",
@@ -2928,6 +3216,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -2939,6 +3228,7 @@ export const shopData = [
           "type": "diamond_boots",
           "type_ru": "Алмазные ботинки",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "depth_strider",
@@ -2982,6 +3272,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 19,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -2993,6 +3284,7 @@ export const shopData = [
           "type": "diamond_helmet",
           "type_ru": "Алмазный шлем",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -3026,6 +3318,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 17,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -3037,6 +3330,7 @@ export const shopData = [
           "type": "turtle_helmet",
           "type_ru": "Черепаший панцирь",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -3070,6 +3364,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 17,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -3081,6 +3376,7 @@ export const shopData = [
           "type": "diamond_chestplate",
           "type_ru": "Алмазный нагрудник",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "protection_explosions",
@@ -3104,6 +3400,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 13,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -3115,6 +3412,7 @@ export const shopData = [
           "type": "diamond_leggings",
           "type_ru": "Алмазные поножи",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "protection_explosions",
@@ -3138,6 +3436,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 13,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -3149,6 +3448,7 @@ export const shopData = [
           "type": "diamond_boots",
           "type_ru": "Алмазные ботинки",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "protection_explosions",
@@ -3187,6 +3487,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 17,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -3198,6 +3499,7 @@ export const shopData = [
           "type": "diamond_helmet",
           "type_ru": "Алмазный шлем",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -3236,6 +3538,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 19,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -3247,6 +3550,7 @@ export const shopData = [
           "type": "turtle_helmet",
           "type_ru": "Черепаший панцирь",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -3285,6 +3589,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 19,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -3296,6 +3601,7 @@ export const shopData = [
           "type": "diamond_chestplate",
           "type_ru": "Алмазный нагрудник",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "protection_explosions",
@@ -3324,6 +3630,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -3335,6 +3642,7 @@ export const shopData = [
           "type": "diamond_leggings",
           "type_ru": "Алмазные поножи",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "protection_explosions",
@@ -3363,6 +3671,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -3374,6 +3683,7 @@ export const shopData = [
           "type": "diamond_boots",
           "type_ru": "Алмазные ботинки",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "protection_explosions",
@@ -3417,6 +3727,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 19,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -3428,6 +3739,7 @@ export const shopData = [
           "type": "enchanted_book",
           "type_ru": "Чародейская книга",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -3435,6 +3747,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -3458,6 +3771,7 @@ export const shopData = [
           "type": "totem_of_undying",
           "type_ru": "Тотем бессмертия",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -3465,6 +3779,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -3476,6 +3791,7 @@ export const shopData = [
           "type": "yellow_shulker_box",
           "type_ru": "Жёлтый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -3483,6 +3799,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3490,6 +3807,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3497,6 +3815,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3504,6 +3823,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3511,6 +3831,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3518,6 +3839,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3525,6 +3847,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3532,6 +3855,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3539,6 +3863,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3546,6 +3871,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3553,6 +3879,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3560,6 +3887,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3567,6 +3895,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3574,6 +3903,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3581,6 +3911,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3588,6 +3919,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3595,6 +3927,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3602,6 +3935,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3609,6 +3943,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3616,6 +3951,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3623,6 +3959,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3630,6 +3967,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3637,6 +3975,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3644,6 +3983,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3651,6 +3991,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3658,6 +3999,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3665,6 +4007,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -3673,6 +4016,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -3684,6 +4028,7 @@ export const shopData = [
           "type": "ender_chest",
           "type_ru": "Эндер-сундук",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -3691,6 +4036,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -3702,6 +4048,7 @@ export const shopData = [
           "type": "iron_block",
           "type_ru": "Железный блок",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -3709,6 +4056,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 6,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -3720,6 +4068,7 @@ export const shopData = [
           "type": "light_gray_shulker_box",
           "type_ru": "Светло-серый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -3727,6 +4076,7 @@ export const shopData = [
               "id": "stone",
               "id_ru": "Камень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3734,6 +4084,7 @@ export const shopData = [
               "id": "stone",
               "id_ru": "Камень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3741,6 +4092,7 @@ export const shopData = [
               "id": "stone",
               "id_ru": "Камень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3748,6 +4100,7 @@ export const shopData = [
               "id": "stone",
               "id_ru": "Камень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3755,6 +4108,7 @@ export const shopData = [
               "id": "stone",
               "id_ru": "Камень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3762,6 +4116,7 @@ export const shopData = [
               "id": "stone",
               "id_ru": "Камень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3769,6 +4124,7 @@ export const shopData = [
               "id": "stone",
               "id_ru": "Камень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3776,6 +4132,7 @@ export const shopData = [
               "id": "stone",
               "id_ru": "Камень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3783,6 +4140,7 @@ export const shopData = [
               "id": "stone",
               "id_ru": "Камень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3790,6 +4148,7 @@ export const shopData = [
               "id": "stone",
               "id_ru": "Камень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3797,6 +4156,7 @@ export const shopData = [
               "id": "stone",
               "id_ru": "Камень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3804,6 +4164,7 @@ export const shopData = [
               "id": "stone",
               "id_ru": "Камень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3811,6 +4172,7 @@ export const shopData = [
               "id": "stone",
               "id_ru": "Камень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3818,6 +4180,7 @@ export const shopData = [
               "id": "stone",
               "id_ru": "Камень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3825,6 +4188,7 @@ export const shopData = [
               "id": "stone",
               "id_ru": "Камень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3832,6 +4196,7 @@ export const shopData = [
               "id": "stone",
               "id_ru": "Камень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3839,6 +4204,7 @@ export const shopData = [
               "id": "stone",
               "id_ru": "Камень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3846,6 +4212,7 @@ export const shopData = [
               "id": "stone",
               "id_ru": "Камень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3853,6 +4220,7 @@ export const shopData = [
               "id": "stone",
               "id_ru": "Камень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3860,6 +4228,7 @@ export const shopData = [
               "id": "stone",
               "id_ru": "Камень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3867,6 +4236,7 @@ export const shopData = [
               "id": "stone",
               "id_ru": "Камень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3874,6 +4244,7 @@ export const shopData = [
               "id": "stone",
               "id_ru": "Камень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3881,6 +4252,7 @@ export const shopData = [
               "id": "stone",
               "id_ru": "Камень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3888,6 +4260,7 @@ export const shopData = [
               "id": "stone",
               "id_ru": "Камень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3895,6 +4268,7 @@ export const shopData = [
               "id": "stone",
               "id_ru": "Камень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3902,6 +4276,7 @@ export const shopData = [
               "id": "stone",
               "id_ru": "Камень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -3909,6 +4284,7 @@ export const shopData = [
               "id": "stone",
               "id_ru": "Камень",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -3917,6 +4293,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 5,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -3928,6 +4305,7 @@ export const shopData = [
           "type": "elytra",
           "type_ru": "Элитры",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "mending",
@@ -3946,6 +4324,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 55,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -3957,6 +4336,7 @@ export const shopData = [
           "type": "elytra",
           "type_ru": "Элитры",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "mending",
@@ -3975,6 +4355,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 55,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -3986,6 +4367,7 @@ export const shopData = [
           "type": "elytra",
           "type_ru": "Элитры",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "mending",
@@ -4004,6 +4386,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 55,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -4015,6 +4398,7 @@ export const shopData = [
           "type": "goat_horn",
           "type_ru": "Козий рог",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -4022,6 +4406,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 8,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -4033,6 +4418,7 @@ export const shopData = [
           "type": "goat_horn",
           "type_ru": "Козий рог",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -4040,6 +4426,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 6,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -4051,6 +4438,7 @@ export const shopData = [
           "type": "goat_horn",
           "type_ru": "Козий рог",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -4058,6 +4446,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 8,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -4069,6 +4458,7 @@ export const shopData = [
           "type": "goat_horn",
           "type_ru": "Козий рог",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -4076,6 +4466,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 8,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -4087,6 +4478,7 @@ export const shopData = [
           "type": "goat_horn",
           "type_ru": "Козий рог",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -4094,6 +4486,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 20,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -4105,6 +4498,7 @@ export const shopData = [
           "type": "goat_horn",
           "type_ru": "Козий рог",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -4112,6 +4506,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 20,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -4123,6 +4518,7 @@ export const shopData = [
           "type": "goat_horn",
           "type_ru": "Козий рог",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -4130,6 +4526,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 20,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -4141,6 +4538,7 @@ export const shopData = [
           "type": "goat_horn",
           "type_ru": "Козий рог",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -4148,6 +4546,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 20,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -4171,6 +4570,7 @@ export const shopData = [
           "type": "netherite_ingot",
           "type_ru": "Незеритовый слиток",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -4178,6 +4578,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -4189,6 +4590,7 @@ export const shopData = [
           "type": "diamond_sword",
           "type_ru": "Алмазный меч",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "fire_aspect",
@@ -4232,6 +4634,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 20,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -4243,6 +4646,7 @@ export const shopData = [
           "type": "diamond_sword",
           "type_ru": "Алмазный меч",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "fire_aspect",
@@ -4281,6 +4685,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 19,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -4292,6 +4697,7 @@ export const shopData = [
           "type": "diamond_sword",
           "type_ru": "Алмазный меч",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "fire_aspect",
@@ -4335,6 +4741,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 20,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -4346,6 +4753,7 @@ export const shopData = [
           "type": "diamond_sword",
           "type_ru": "Алмазный меч",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "fire_aspect",
@@ -4384,6 +4792,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 19,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -4395,6 +4804,7 @@ export const shopData = [
           "type": "diamond_sword",
           "type_ru": "Алмазный меч",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "damage_arthropods",
@@ -4438,6 +4848,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 20,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -4449,6 +4860,7 @@ export const shopData = [
           "type": "diamond_sword",
           "type_ru": "Алмазный меч",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "damage_arthropods",
@@ -4487,6 +4899,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 19,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -4498,6 +4911,7 @@ export const shopData = [
           "type": "diamond_pickaxe",
           "type_ru": "Алмазная кирка",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -4526,6 +4940,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 13,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -4537,6 +4952,7 @@ export const shopData = [
           "type": "diamond_pickaxe",
           "type_ru": "Алмазная кирка",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -4565,6 +4981,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 13,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -4576,6 +4993,7 @@ export const shopData = [
           "type": "diamond_shovel",
           "type_ru": "Алмазная лопата",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -4604,6 +5022,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 13,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -4615,6 +5034,7 @@ export const shopData = [
           "type": "diamond_shovel",
           "type_ru": "Алмазная лопата",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -4643,6 +5063,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 13,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -4654,6 +5075,7 @@ export const shopData = [
           "type": "diamond_axe",
           "type_ru": "Алмазный топор",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -4687,6 +5109,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -4698,6 +5121,7 @@ export const shopData = [
           "type": "diamond_axe",
           "type_ru": "Алмазный топор",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -4731,6 +5155,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -4742,6 +5167,7 @@ export const shopData = [
           "type": "diamond_axe",
           "type_ru": "Алмазный топор",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -4775,6 +5201,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -4786,6 +5213,7 @@ export const shopData = [
           "type": "diamond_axe",
           "type_ru": "Алмазный топор",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -4819,6 +5247,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -4830,6 +5259,7 @@ export const shopData = [
           "type": "diamond_axe",
           "type_ru": "Алмазный топор",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "damage_arthropods",
@@ -4863,6 +5293,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -4874,6 +5305,7 @@ export const shopData = [
           "type": "diamond_axe",
           "type_ru": "Алмазный топор",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "damage_arthropods",
@@ -4907,6 +5339,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -4918,6 +5351,7 @@ export const shopData = [
           "type": "diamond_hoe",
           "type_ru": "Алмазная мотыга",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -4946,6 +5380,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 13,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -4957,6 +5392,7 @@ export const shopData = [
           "type": "diamond_hoe",
           "type_ru": "Алмазная мотыга",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -4985,6 +5421,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 13,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -4996,6 +5433,7 @@ export const shopData = [
           "type": "bow",
           "type_ru": "Лук",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "arrow_fire",
@@ -5029,6 +5467,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -5040,6 +5479,7 @@ export const shopData = [
           "type": "bow",
           "type_ru": "Лук",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "arrow_fire",
@@ -5073,6 +5513,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -5084,6 +5525,7 @@ export const shopData = [
           "type": "crossbow",
           "type_ru": "Арбалет",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "mending",
@@ -5112,6 +5554,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -5123,6 +5566,7 @@ export const shopData = [
           "type": "crossbow",
           "type_ru": "Арбалет",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "mending",
@@ -5151,6 +5595,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -5162,6 +5607,7 @@ export const shopData = [
           "type": "trident",
           "type_ru": "Трезубец",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "channeling",
@@ -5195,6 +5641,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -5206,6 +5653,7 @@ export const shopData = [
           "type": "trident",
           "type_ru": "Трезубец",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "impaling",
@@ -5234,6 +5682,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -5245,6 +5694,7 @@ export const shopData = [
           "type": "flint_and_steel",
           "type_ru": "Огниво",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "mending",
@@ -5263,6 +5713,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 6,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -5274,6 +5725,7 @@ export const shopData = [
           "type": "shears",
           "type_ru": "Ножницы",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -5297,6 +5749,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 8,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -5308,6 +5761,7 @@ export const shopData = [
           "type": "fishing_rod",
           "type_ru": "Удочка",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "luck",
@@ -5336,6 +5790,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 13,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -5347,6 +5802,7 @@ export const shopData = [
           "type": "white_shulker_box",
           "type_ru": "Белый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -5354,6 +5810,7 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5361,6 +5818,7 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5368,6 +5826,7 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5375,6 +5834,7 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5382,6 +5842,7 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5389,6 +5850,7 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5396,6 +5858,7 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5403,6 +5866,7 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5410,6 +5874,7 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5417,6 +5882,7 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5424,6 +5890,7 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5431,6 +5898,7 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5438,6 +5906,7 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5445,6 +5914,7 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5452,6 +5922,7 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5459,6 +5930,7 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5466,6 +5938,7 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5473,6 +5946,7 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5480,6 +5954,7 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5487,6 +5962,7 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5494,6 +5970,7 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5501,6 +5978,7 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5508,6 +5986,7 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5515,6 +5994,7 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5522,6 +6002,7 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5529,6 +6010,7 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5536,6 +6018,7 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -5544,6 +6027,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 5,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -5555,6 +6039,7 @@ export const shopData = [
           "type": "orange_shulker_box",
           "type_ru": "Оранжевый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -5562,6 +6047,7 @@ export const shopData = [
               "id": "spectral_arrow",
               "id_ru": "Спектральная стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5569,6 +6055,7 @@ export const shopData = [
               "id": "spectral_arrow",
               "id_ru": "Спектральная стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5576,6 +6063,7 @@ export const shopData = [
               "id": "spectral_arrow",
               "id_ru": "Спектральная стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5583,6 +6071,7 @@ export const shopData = [
               "id": "spectral_arrow",
               "id_ru": "Спектральная стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5590,6 +6079,7 @@ export const shopData = [
               "id": "spectral_arrow",
               "id_ru": "Спектральная стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5597,6 +6087,7 @@ export const shopData = [
               "id": "spectral_arrow",
               "id_ru": "Спектральная стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5604,6 +6095,7 @@ export const shopData = [
               "id": "spectral_arrow",
               "id_ru": "Спектральная стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5611,6 +6103,7 @@ export const shopData = [
               "id": "spectral_arrow",
               "id_ru": "Спектральная стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5618,6 +6111,7 @@ export const shopData = [
               "id": "spectral_arrow",
               "id_ru": "Спектральная стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5625,6 +6119,7 @@ export const shopData = [
               "id": "spectral_arrow",
               "id_ru": "Спектральная стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5632,6 +6127,7 @@ export const shopData = [
               "id": "spectral_arrow",
               "id_ru": "Спектральная стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5639,6 +6135,7 @@ export const shopData = [
               "id": "spectral_arrow",
               "id_ru": "Спектральная стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5646,6 +6143,7 @@ export const shopData = [
               "id": "spectral_arrow",
               "id_ru": "Спектральная стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5653,6 +6151,7 @@ export const shopData = [
               "id": "spectral_arrow",
               "id_ru": "Спектральная стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5660,6 +6159,7 @@ export const shopData = [
               "id": "spectral_arrow",
               "id_ru": "Спектральная стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5667,6 +6167,7 @@ export const shopData = [
               "id": "spectral_arrow",
               "id_ru": "Спектральная стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5674,6 +6175,7 @@ export const shopData = [
               "id": "spectral_arrow",
               "id_ru": "Спектральная стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5681,6 +6183,7 @@ export const shopData = [
               "id": "spectral_arrow",
               "id_ru": "Спектральная стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5688,6 +6191,7 @@ export const shopData = [
               "id": "spectral_arrow",
               "id_ru": "Спектральная стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5695,6 +6199,7 @@ export const shopData = [
               "id": "spectral_arrow",
               "id_ru": "Спектральная стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5702,6 +6207,7 @@ export const shopData = [
               "id": "spectral_arrow",
               "id_ru": "Спектральная стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5709,6 +6215,7 @@ export const shopData = [
               "id": "spectral_arrow",
               "id_ru": "Спектральная стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5716,6 +6223,7 @@ export const shopData = [
               "id": "spectral_arrow",
               "id_ru": "Спектральная стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5723,6 +6231,7 @@ export const shopData = [
               "id": "spectral_arrow",
               "id_ru": "Спектральная стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5730,6 +6239,7 @@ export const shopData = [
               "id": "spectral_arrow",
               "id_ru": "Спектральная стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5737,6 +6247,7 @@ export const shopData = [
               "id": "spectral_arrow",
               "id_ru": "Спектральная стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5744,6 +6255,7 @@ export const shopData = [
               "id": "spectral_arrow",
               "id_ru": "Спектральная стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -5752,6 +6264,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 5,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -5763,19 +6276,22 @@ export const shopData = [
           "type": "purple_shulker_box",
           "type_ru": "Фиолетовый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
               "slot": 0,
               "id": "tipped_arrow",
-              "id_ru": "Взрывная стрела",
-              "count": 64
+              "id_ru": "Стрела вреда",
+              "count": 64,
+              "potion": "strong_harming"
             },
             {
               "slot": 1,
               "id": "spectral_arrow",
               "id_ru": "Спектральная стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5783,6 +6299,7 @@ export const shopData = [
               "id": "spectral_arrow",
               "id_ru": "Спектральная стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5790,6 +6307,7 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5797,6 +6315,7 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5804,37 +6323,43 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
               "slot": 6,
               "id": "tipped_arrow",
-              "id_ru": "Взрывная стрела",
-              "count": 64
+              "id_ru": "Стрела силы",
+              "count": 64,
+              "potion": "long_strength"
             },
             {
               "slot": 7,
               "id": "tipped_arrow",
-              "id_ru": "Взрывная стрела",
-              "count": 64
+              "id_ru": "Стрела водного дыхания",
+              "count": 64,
+              "potion": "long_water_breathing"
             },
             {
               "slot": 8,
               "id": "tipped_arrow",
-              "id_ru": "Взрывная стрела",
-              "count": 64
+              "id_ru": "Стрела ночного зрения",
+              "count": 64,
+              "potion": "long_night_vision"
             },
             {
               "slot": 9,
               "id": "tipped_arrow",
-              "id_ru": "Взрывная стрела",
-              "count": 64
+              "id_ru": "Стрела отравления",
+              "count": 64,
+              "potion": "long_poison"
             },
             {
               "slot": 10,
               "id": "spectral_arrow",
               "id_ru": "Спектральная стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5842,6 +6367,7 @@ export const shopData = [
               "id": "spectral_arrow",
               "id_ru": "Спектральная стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5849,6 +6375,7 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5856,6 +6383,7 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5863,43 +6391,50 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
               "slot": 15,
               "id": "tipped_arrow",
-              "id_ru": "Взрывная стрела",
-              "count": 64
+              "id_ru": "Стрела регенерации",
+              "count": 64,
+              "potion": "long_regeneration"
             },
             {
               "slot": 16,
               "id": "tipped_arrow",
-              "id_ru": "Взрывная стрела",
-              "count": 64
+              "id_ru": "Стрела исцеления",
+              "count": 64,
+              "potion": "strong_healing"
             },
             {
               "slot": 17,
               "id": "tipped_arrow",
-              "id_ru": "Взрывная стрела",
-              "count": 64
+              "id_ru": "Стрела невидимости",
+              "count": 64,
+              "potion": "long_invisibility"
             },
             {
               "slot": 18,
               "id": "tipped_arrow",
-              "id_ru": "Взрывная стрела",
-              "count": 64
+              "id_ru": "Стрела замедления",
+              "count": 64,
+              "potion": "long_slowness"
             },
             {
               "slot": 19,
               "id": "tipped_arrow",
-              "id_ru": "Взрывная стрела",
-              "count": 64
+              "id_ru": "Стрела слабости",
+              "count": 64,
+              "potion": "long_weakness"
             },
             {
               "slot": 20,
               "id": "spectral_arrow",
               "id_ru": "Спектральная стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5907,6 +6442,7 @@ export const shopData = [
               "id": "spectral_arrow",
               "id_ru": "Спектральная стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5914,31 +6450,36 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
               "slot": 23,
               "id": "tipped_arrow",
-              "id_ru": "Взрывная стрела",
-              "count": 64
+              "id_ru": "Стрела плавного падения",
+              "count": 64,
+              "potion": "long_slow_falling"
             },
             {
               "slot": 24,
               "id": "tipped_arrow",
-              "id_ru": "Взрывная стрела",
-              "count": 64
+              "id_ru": "Стрела стремительности",
+              "count": 64,
+              "potion": "long_swiftness"
             },
             {
               "slot": 25,
               "id": "tipped_arrow",
-              "id_ru": "Взрывная стрела",
-              "count": 64
+              "id_ru": "Стрела прыгучести",
+              "count": 64,
+              "potion": "long_leaping"
             },
             {
               "slot": 26,
               "id": "tipped_arrow",
-              "id_ru": "Взрывная стрела",
-              "count": 64
+              "id_ru": "Стрела огнестойкости",
+              "count": 64,
+              "potion": "long_fire_resistance"
             }
           ]
         },
@@ -5946,6 +6487,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 35,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -5969,6 +6511,7 @@ export const shopData = [
           "type": "lime_shulker_box",
           "type_ru": "Лаймовый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -5976,6 +6519,7 @@ export const shopData = [
               "id": "coal",
               "id_ru": "Уголь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5983,6 +6527,7 @@ export const shopData = [
               "id": "andesite",
               "id_ru": "Андезит",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -5990,6 +6535,7 @@ export const shopData = [
               "id": "iron_ingot",
               "id_ru": "Железный слиток",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -6025,6 +6571,7 @@ export const shopData = [
               "id": "cobblestone",
               "id_ru": "Булыжник",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -6060,6 +6607,7 @@ export const shopData = [
               "id": "iron_ingot",
               "id_ru": "Железный слиток",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -6067,6 +6615,7 @@ export const shopData = [
               "id": "andesite",
               "id_ru": "Андезит",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -6074,6 +6623,7 @@ export const shopData = [
               "id": "coal",
               "id_ru": "Уголь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -6081,6 +6631,7 @@ export const shopData = [
               "id": "emerald",
               "id_ru": "Изумруд",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -6088,6 +6639,7 @@ export const shopData = [
               "id": "stone_bricks",
               "id_ru": "Каменные кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -6133,6 +6685,7 @@ export const shopData = [
               "id": "cooked_porkchop",
               "id_ru": "Жареная свинина",
               "count": 49,
+              "potion": "",
               "enchant": []
             },
             {
@@ -6140,6 +6693,7 @@ export const shopData = [
               "id": "diamond",
               "id_ru": "Алмаз",
               "count": 10,
+              "potion": "",
               "enchant": []
             },
             {
@@ -6147,6 +6701,7 @@ export const shopData = [
               "id": "cooked_porkchop",
               "id_ru": "Жареная свинина",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -6197,6 +6752,7 @@ export const shopData = [
               "id": "stone_bricks",
               "id_ru": "Каменные кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -6204,6 +6760,7 @@ export const shopData = [
               "id": "emerald",
               "id_ru": "Изумруд",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -6211,6 +6768,7 @@ export const shopData = [
               "id": "coal",
               "id_ru": "Уголь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -6218,6 +6776,7 @@ export const shopData = [
               "id": "cobblestone",
               "id_ru": "Булыжник",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -6225,6 +6784,7 @@ export const shopData = [
               "id": "stone",
               "id_ru": "Камень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -6232,6 +6792,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -6267,6 +6828,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -6274,6 +6836,7 @@ export const shopData = [
               "id": "stone",
               "id_ru": "Камень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -6281,6 +6844,7 @@ export const shopData = [
               "id": "cobblestone",
               "id_ru": "Булыжник",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -6288,6 +6852,7 @@ export const shopData = [
               "id": "coal",
               "id_ru": "Уголь",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -6296,6 +6861,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 60,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -6303,6 +6869,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         }
@@ -6313,6 +6880,7 @@ export const shopData = [
           "type": "light_blue_shulker_box",
           "type_ru": "Голубой шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -6410,6 +6978,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 38,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -6421,6 +6990,7 @@ export const shopData = [
           "type": "cyan_shulker_box",
           "type_ru": "Бирюзовый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -6518,6 +7088,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 38,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -6529,6 +7100,7 @@ export const shopData = [
           "type": "diamond_pickaxe",
           "type_ru": "Алмазная кирка",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -6557,6 +7129,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 13,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -6568,6 +7141,7 @@ export const shopData = [
           "type": "diamond_pickaxe",
           "type_ru": "Алмазная кирка",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -6596,6 +7170,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 13,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -6607,6 +7182,7 @@ export const shopData = [
           "type": "diamond_shovel",
           "type_ru": "Алмазная лопата",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -6635,6 +7211,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 13,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -6646,6 +7223,7 @@ export const shopData = [
           "type": "diamond_shovel",
           "type_ru": "Алмазная лопата",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -6674,6 +7252,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 13,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -6685,6 +7264,7 @@ export const shopData = [
           "type": "diamond_axe",
           "type_ru": "Алмазный топор",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -6718,6 +7298,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -6729,6 +7310,7 @@ export const shopData = [
           "type": "diamond_axe",
           "type_ru": "Алмазный топор",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -6762,6 +7344,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -6773,6 +7356,7 @@ export const shopData = [
           "type": "diamond_hoe",
           "type_ru": "Алмазная мотыга",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -6801,6 +7385,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 13,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -6812,6 +7397,7 @@ export const shopData = [
           "type": "diamond_hoe",
           "type_ru": "Алмазная мотыга",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -6840,6 +7426,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 13,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -6851,6 +7438,7 @@ export const shopData = [
           "type": "netherite_ingot",
           "type_ru": "Незеритовый слиток",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -6858,6 +7446,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -6869,6 +7458,7 @@ export const shopData = [
           "type": "diamond_sword",
           "type_ru": "Алмазный меч",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "fire_aspect",
@@ -6912,6 +7502,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 20,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -6923,6 +7514,7 @@ export const shopData = [
           "type": "bow",
           "type_ru": "Лук",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "arrow_fire",
@@ -6956,6 +7548,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -6967,6 +7560,7 @@ export const shopData = [
           "type": "bow",
           "type_ru": "Лук",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "arrow_fire",
@@ -7000,6 +7594,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -7011,6 +7606,7 @@ export const shopData = [
           "type": "green_shulker_box",
           "type_ru": "Зелёный шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -7207,6 +7803,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 60,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -7214,6 +7811,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 18,
+          "potion": "",
           "enchant": [],
           "content": []
         }
@@ -7224,6 +7822,7 @@ export const shopData = [
           "type": "gray_shulker_box",
           "type_ru": "Серый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -7325,6 +7924,7 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -7452,6 +8052,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 60,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -7459,6 +8060,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 40,
+          "potion": "",
           "enchant": [],
           "content": []
         }
@@ -7469,6 +8071,7 @@ export const shopData = [
           "type": "magenta_shulker_box",
           "type_ru": "Пурпурный шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -7651,6 +8254,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 41,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -7662,6 +8266,7 @@ export const shopData = [
           "type": "purple_shulker_box",
           "type_ru": "Фиолетовый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -7832,6 +8437,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -7843,6 +8449,7 @@ export const shopData = [
           "type": "elytra",
           "type_ru": "Элитры",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "mending",
@@ -7861,6 +8468,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 32,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -7872,6 +8480,7 @@ export const shopData = [
           "type": "orange_shulker_box",
           "type_ru": "Оранжевый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -8017,6 +8626,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 60,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -8028,6 +8638,7 @@ export const shopData = [
           "type": "diamond_helmet",
           "type_ru": "Алмазный шлем",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -8066,6 +8677,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 19,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -8077,6 +8689,7 @@ export const shopData = [
           "type": "diamond_chestplate",
           "type_ru": "Алмазный нагрудник",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "mending",
@@ -8105,6 +8718,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -8116,6 +8730,7 @@ export const shopData = [
           "type": "diamond_leggings",
           "type_ru": "Алмазные поножи",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "mending",
@@ -8144,6 +8759,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -8155,6 +8771,7 @@ export const shopData = [
           "type": "diamond_boots",
           "type_ru": "Алмазные ботинки",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "depth_strider",
@@ -8198,6 +8815,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 19,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -8209,6 +8827,7 @@ export const shopData = [
           "type": "yellow_shulker_box",
           "type_ru": "Жёлтый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -8379,6 +8998,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 4,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -8390,6 +9010,7 @@ export const shopData = [
           "type": "totem_of_undying",
           "type_ru": "Тотем бессмертия",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -8397,6 +9018,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -8408,6 +9030,7 @@ export const shopData = [
           "type": "emerald_block",
           "type_ru": "Изумрудный блок",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -8415,6 +9038,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -8438,6 +9062,7 @@ export const shopData = [
           "type": "shulker_box",
           "type_ru": "Шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -8445,6 +9070,7 @@ export const shopData = [
               "id": "deepslate_diamond_ore",
               "id_ru": "Алмазоносный глубинный сланец",
               "count": 10,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -8453,6 +9079,7 @@ export const shopData = [
           "type": "shulker_box",
           "type_ru": "Шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -8460,6 +9087,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8467,6 +9095,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8474,6 +9103,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8481,6 +9111,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8488,6 +9119,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8495,6 +9127,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8502,6 +9135,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8509,6 +9143,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8516,6 +9151,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8523,6 +9159,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8530,6 +9167,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8537,6 +9175,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8544,6 +9183,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8551,6 +9191,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8558,6 +9199,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8565,6 +9207,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8572,6 +9215,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8579,6 +9223,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8586,6 +9231,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8593,6 +9239,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8600,6 +9247,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8607,6 +9255,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8614,6 +9263,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8621,6 +9271,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8628,6 +9279,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8635,6 +9287,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8642,6 +9295,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -8654,6 +9308,7 @@ export const shopData = [
           "type": "white_shulker_box",
           "type_ru": "Белый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -8661,6 +9316,7 @@ export const shopData = [
               "id": "glass",
               "id_ru": "Стекло",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8668,6 +9324,7 @@ export const shopData = [
               "id": "glass",
               "id_ru": "Стекло",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8675,6 +9332,7 @@ export const shopData = [
               "id": "glass",
               "id_ru": "Стекло",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8682,6 +9340,7 @@ export const shopData = [
               "id": "glass",
               "id_ru": "Стекло",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8689,6 +9348,7 @@ export const shopData = [
               "id": "glass",
               "id_ru": "Стекло",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8696,6 +9356,7 @@ export const shopData = [
               "id": "glass",
               "id_ru": "Стекло",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8703,6 +9364,7 @@ export const shopData = [
               "id": "glass",
               "id_ru": "Стекло",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8710,6 +9372,7 @@ export const shopData = [
               "id": "glass",
               "id_ru": "Стекло",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8717,6 +9380,7 @@ export const shopData = [
               "id": "glass",
               "id_ru": "Стекло",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8724,6 +9388,7 @@ export const shopData = [
               "id": "glass",
               "id_ru": "Стекло",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8731,6 +9396,7 @@ export const shopData = [
               "id": "glass",
               "id_ru": "Стекло",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8738,6 +9404,7 @@ export const shopData = [
               "id": "glass",
               "id_ru": "Стекло",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8745,6 +9412,7 @@ export const shopData = [
               "id": "glass",
               "id_ru": "Стекло",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8752,6 +9420,7 @@ export const shopData = [
               "id": "glass",
               "id_ru": "Стекло",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8759,6 +9428,7 @@ export const shopData = [
               "id": "glass",
               "id_ru": "Стекло",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8766,6 +9436,7 @@ export const shopData = [
               "id": "glass",
               "id_ru": "Стекло",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8773,6 +9444,7 @@ export const shopData = [
               "id": "glass",
               "id_ru": "Стекло",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8780,6 +9452,7 @@ export const shopData = [
               "id": "glass",
               "id_ru": "Стекло",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8787,6 +9460,7 @@ export const shopData = [
               "id": "glass",
               "id_ru": "Стекло",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8794,6 +9468,7 @@ export const shopData = [
               "id": "glass",
               "id_ru": "Стекло",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8801,6 +9476,7 @@ export const shopData = [
               "id": "glass",
               "id_ru": "Стекло",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8808,6 +9484,7 @@ export const shopData = [
               "id": "glass",
               "id_ru": "Стекло",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8815,6 +9492,7 @@ export const shopData = [
               "id": "glass",
               "id_ru": "Стекло",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8822,6 +9500,7 @@ export const shopData = [
               "id": "glass",
               "id_ru": "Стекло",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8829,6 +9508,7 @@ export const shopData = [
               "id": "glass",
               "id_ru": "Стекло",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8836,6 +9516,7 @@ export const shopData = [
               "id": "glass",
               "id_ru": "Стекло",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8843,6 +9524,7 @@ export const shopData = [
               "id": "glass",
               "id_ru": "Стекло",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -8851,6 +9533,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 14,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -8862,6 +9545,7 @@ export const shopData = [
           "type": "glow_ink_sac",
           "type_ru": "Светящийся чернильный мешок",
           "amount": 16,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -8869,6 +9553,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -8880,6 +9565,7 @@ export const shopData = [
           "type": "red_shulker_box",
           "type_ru": "Красный шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -8887,6 +9573,7 @@ export const shopData = [
               "id": "red_dye",
               "id_ru": "Красный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8894,6 +9581,7 @@ export const shopData = [
               "id": "red_dye",
               "id_ru": "Красный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8901,6 +9589,7 @@ export const shopData = [
               "id": "red_dye",
               "id_ru": "Красный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8908,6 +9597,7 @@ export const shopData = [
               "id": "red_dye",
               "id_ru": "Красный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8915,6 +9605,7 @@ export const shopData = [
               "id": "red_dye",
               "id_ru": "Красный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8922,6 +9613,7 @@ export const shopData = [
               "id": "red_dye",
               "id_ru": "Красный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8929,6 +9621,7 @@ export const shopData = [
               "id": "red_dye",
               "id_ru": "Красный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8936,6 +9629,7 @@ export const shopData = [
               "id": "red_dye",
               "id_ru": "Красный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8943,6 +9637,7 @@ export const shopData = [
               "id": "red_dye",
               "id_ru": "Красный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8950,6 +9645,7 @@ export const shopData = [
               "id": "red_dye",
               "id_ru": "Красный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8957,6 +9653,7 @@ export const shopData = [
               "id": "red_dye",
               "id_ru": "Красный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8964,6 +9661,7 @@ export const shopData = [
               "id": "red_dye",
               "id_ru": "Красный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8971,6 +9669,7 @@ export const shopData = [
               "id": "red_dye",
               "id_ru": "Красный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8978,6 +9677,7 @@ export const shopData = [
               "id": "red_dye",
               "id_ru": "Красный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8985,6 +9685,7 @@ export const shopData = [
               "id": "red_dye",
               "id_ru": "Красный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8992,6 +9693,7 @@ export const shopData = [
               "id": "red_dye",
               "id_ru": "Красный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -8999,6 +9701,7 @@ export const shopData = [
               "id": "red_dye",
               "id_ru": "Красный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9006,6 +9709,7 @@ export const shopData = [
               "id": "red_dye",
               "id_ru": "Красный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9013,6 +9717,7 @@ export const shopData = [
               "id": "red_dye",
               "id_ru": "Красный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9020,6 +9725,7 @@ export const shopData = [
               "id": "red_dye",
               "id_ru": "Красный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9027,6 +9733,7 @@ export const shopData = [
               "id": "red_dye",
               "id_ru": "Красный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9034,6 +9741,7 @@ export const shopData = [
               "id": "red_dye",
               "id_ru": "Красный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9041,6 +9749,7 @@ export const shopData = [
               "id": "red_dye",
               "id_ru": "Красный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9048,6 +9757,7 @@ export const shopData = [
               "id": "red_dye",
               "id_ru": "Красный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9055,6 +9765,7 @@ export const shopData = [
               "id": "red_dye",
               "id_ru": "Красный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9062,6 +9773,7 @@ export const shopData = [
               "id": "red_dye",
               "id_ru": "Красный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9069,6 +9781,7 @@ export const shopData = [
               "id": "red_dye",
               "id_ru": "Красный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -9077,6 +9790,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -9088,6 +9802,7 @@ export const shopData = [
           "type": "orange_shulker_box",
           "type_ru": "Оранжевый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -9095,6 +9810,7 @@ export const shopData = [
               "id": "orange_dye",
               "id_ru": "Оранжевый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9102,6 +9818,7 @@ export const shopData = [
               "id": "orange_dye",
               "id_ru": "Оранжевый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9109,6 +9826,7 @@ export const shopData = [
               "id": "orange_dye",
               "id_ru": "Оранжевый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9116,6 +9834,7 @@ export const shopData = [
               "id": "orange_dye",
               "id_ru": "Оранжевый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9123,6 +9842,7 @@ export const shopData = [
               "id": "orange_dye",
               "id_ru": "Оранжевый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9130,6 +9850,7 @@ export const shopData = [
               "id": "orange_dye",
               "id_ru": "Оранжевый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9137,6 +9858,7 @@ export const shopData = [
               "id": "orange_dye",
               "id_ru": "Оранжевый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9144,6 +9866,7 @@ export const shopData = [
               "id": "orange_dye",
               "id_ru": "Оранжевый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9151,6 +9874,7 @@ export const shopData = [
               "id": "orange_dye",
               "id_ru": "Оранжевый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9158,6 +9882,7 @@ export const shopData = [
               "id": "orange_dye",
               "id_ru": "Оранжевый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9165,6 +9890,7 @@ export const shopData = [
               "id": "orange_dye",
               "id_ru": "Оранжевый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9172,6 +9898,7 @@ export const shopData = [
               "id": "orange_dye",
               "id_ru": "Оранжевый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9179,6 +9906,7 @@ export const shopData = [
               "id": "orange_dye",
               "id_ru": "Оранжевый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9186,6 +9914,7 @@ export const shopData = [
               "id": "orange_dye",
               "id_ru": "Оранжевый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9193,6 +9922,7 @@ export const shopData = [
               "id": "orange_dye",
               "id_ru": "Оранжевый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9200,6 +9930,7 @@ export const shopData = [
               "id": "orange_dye",
               "id_ru": "Оранжевый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9207,6 +9938,7 @@ export const shopData = [
               "id": "orange_dye",
               "id_ru": "Оранжевый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9214,6 +9946,7 @@ export const shopData = [
               "id": "orange_dye",
               "id_ru": "Оранжевый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9221,6 +9954,7 @@ export const shopData = [
               "id": "orange_dye",
               "id_ru": "Оранжевый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9228,6 +9962,7 @@ export const shopData = [
               "id": "orange_dye",
               "id_ru": "Оранжевый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9235,6 +9970,7 @@ export const shopData = [
               "id": "orange_dye",
               "id_ru": "Оранжевый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9242,6 +9978,7 @@ export const shopData = [
               "id": "orange_dye",
               "id_ru": "Оранжевый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9249,6 +9986,7 @@ export const shopData = [
               "id": "orange_dye",
               "id_ru": "Оранжевый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9256,6 +9994,7 @@ export const shopData = [
               "id": "orange_dye",
               "id_ru": "Оранжевый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9263,6 +10002,7 @@ export const shopData = [
               "id": "orange_dye",
               "id_ru": "Оранжевый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9270,6 +10010,7 @@ export const shopData = [
               "id": "orange_dye",
               "id_ru": "Оранжевый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9277,6 +10018,7 @@ export const shopData = [
               "id": "orange_dye",
               "id_ru": "Оранжевый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -9285,6 +10027,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -9296,6 +10039,7 @@ export const shopData = [
           "type": "yellow_shulker_box",
           "type_ru": "Жёлтый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -9303,6 +10047,7 @@ export const shopData = [
               "id": "yellow_dye",
               "id_ru": "Жёлтый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9310,6 +10055,7 @@ export const shopData = [
               "id": "yellow_dye",
               "id_ru": "Жёлтый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9317,6 +10063,7 @@ export const shopData = [
               "id": "yellow_dye",
               "id_ru": "Жёлтый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9324,6 +10071,7 @@ export const shopData = [
               "id": "yellow_dye",
               "id_ru": "Жёлтый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9331,6 +10079,7 @@ export const shopData = [
               "id": "yellow_dye",
               "id_ru": "Жёлтый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9338,6 +10087,7 @@ export const shopData = [
               "id": "yellow_dye",
               "id_ru": "Жёлтый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9345,6 +10095,7 @@ export const shopData = [
               "id": "yellow_dye",
               "id_ru": "Жёлтый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9352,6 +10103,7 @@ export const shopData = [
               "id": "yellow_dye",
               "id_ru": "Жёлтый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9359,6 +10111,7 @@ export const shopData = [
               "id": "yellow_dye",
               "id_ru": "Жёлтый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9366,6 +10119,7 @@ export const shopData = [
               "id": "yellow_dye",
               "id_ru": "Жёлтый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9373,6 +10127,7 @@ export const shopData = [
               "id": "yellow_dye",
               "id_ru": "Жёлтый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9380,6 +10135,7 @@ export const shopData = [
               "id": "yellow_dye",
               "id_ru": "Жёлтый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9387,6 +10143,7 @@ export const shopData = [
               "id": "yellow_dye",
               "id_ru": "Жёлтый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9394,6 +10151,7 @@ export const shopData = [
               "id": "yellow_dye",
               "id_ru": "Жёлтый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9401,6 +10159,7 @@ export const shopData = [
               "id": "yellow_dye",
               "id_ru": "Жёлтый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9408,6 +10167,7 @@ export const shopData = [
               "id": "yellow_dye",
               "id_ru": "Жёлтый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9415,6 +10175,7 @@ export const shopData = [
               "id": "yellow_dye",
               "id_ru": "Жёлтый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9422,6 +10183,7 @@ export const shopData = [
               "id": "yellow_dye",
               "id_ru": "Жёлтый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9429,6 +10191,7 @@ export const shopData = [
               "id": "yellow_dye",
               "id_ru": "Жёлтый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9436,6 +10199,7 @@ export const shopData = [
               "id": "yellow_dye",
               "id_ru": "Жёлтый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9443,6 +10207,7 @@ export const shopData = [
               "id": "yellow_dye",
               "id_ru": "Жёлтый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9450,6 +10215,7 @@ export const shopData = [
               "id": "yellow_dye",
               "id_ru": "Жёлтый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9457,6 +10223,7 @@ export const shopData = [
               "id": "yellow_dye",
               "id_ru": "Жёлтый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9464,6 +10231,7 @@ export const shopData = [
               "id": "yellow_dye",
               "id_ru": "Жёлтый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9471,6 +10239,7 @@ export const shopData = [
               "id": "yellow_dye",
               "id_ru": "Жёлтый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9478,6 +10247,7 @@ export const shopData = [
               "id": "yellow_dye",
               "id_ru": "Жёлтый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9485,6 +10255,7 @@ export const shopData = [
               "id": "yellow_dye",
               "id_ru": "Жёлтый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -9493,6 +10264,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -9504,6 +10276,7 @@ export const shopData = [
           "type": "lime_shulker_box",
           "type_ru": "Лаймовый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -9511,6 +10284,7 @@ export const shopData = [
               "id": "lime_dye",
               "id_ru": "Лаймовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9518,6 +10292,7 @@ export const shopData = [
               "id": "lime_dye",
               "id_ru": "Лаймовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9525,6 +10300,7 @@ export const shopData = [
               "id": "lime_dye",
               "id_ru": "Лаймовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9532,6 +10308,7 @@ export const shopData = [
               "id": "lime_dye",
               "id_ru": "Лаймовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9539,6 +10316,7 @@ export const shopData = [
               "id": "lime_dye",
               "id_ru": "Лаймовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9546,6 +10324,7 @@ export const shopData = [
               "id": "lime_dye",
               "id_ru": "Лаймовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9553,6 +10332,7 @@ export const shopData = [
               "id": "lime_dye",
               "id_ru": "Лаймовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9560,6 +10340,7 @@ export const shopData = [
               "id": "lime_dye",
               "id_ru": "Лаймовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9567,6 +10348,7 @@ export const shopData = [
               "id": "lime_dye",
               "id_ru": "Лаймовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9574,6 +10356,7 @@ export const shopData = [
               "id": "lime_dye",
               "id_ru": "Лаймовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9581,6 +10364,7 @@ export const shopData = [
               "id": "lime_dye",
               "id_ru": "Лаймовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9588,6 +10372,7 @@ export const shopData = [
               "id": "lime_dye",
               "id_ru": "Лаймовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9595,6 +10380,7 @@ export const shopData = [
               "id": "lime_dye",
               "id_ru": "Лаймовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9602,6 +10388,7 @@ export const shopData = [
               "id": "lime_dye",
               "id_ru": "Лаймовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9609,6 +10396,7 @@ export const shopData = [
               "id": "lime_dye",
               "id_ru": "Лаймовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9616,6 +10404,7 @@ export const shopData = [
               "id": "lime_dye",
               "id_ru": "Лаймовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9623,6 +10412,7 @@ export const shopData = [
               "id": "lime_dye",
               "id_ru": "Лаймовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9630,6 +10420,7 @@ export const shopData = [
               "id": "lime_dye",
               "id_ru": "Лаймовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9637,6 +10428,7 @@ export const shopData = [
               "id": "lime_dye",
               "id_ru": "Лаймовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9644,6 +10436,7 @@ export const shopData = [
               "id": "lime_dye",
               "id_ru": "Лаймовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9651,6 +10444,7 @@ export const shopData = [
               "id": "lime_dye",
               "id_ru": "Лаймовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9658,6 +10452,7 @@ export const shopData = [
               "id": "lime_dye",
               "id_ru": "Лаймовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9665,6 +10460,7 @@ export const shopData = [
               "id": "lime_dye",
               "id_ru": "Лаймовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9672,6 +10468,7 @@ export const shopData = [
               "id": "lime_dye",
               "id_ru": "Лаймовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9679,6 +10476,7 @@ export const shopData = [
               "id": "lime_dye",
               "id_ru": "Лаймовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9686,6 +10484,7 @@ export const shopData = [
               "id": "lime_dye",
               "id_ru": "Лаймовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9693,6 +10492,7 @@ export const shopData = [
               "id": "lime_dye",
               "id_ru": "Лаймовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -9701,6 +10501,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -9712,6 +10513,7 @@ export const shopData = [
           "type": "green_shulker_box",
           "type_ru": "Зелёный шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -9719,6 +10521,7 @@ export const shopData = [
               "id": "green_dye",
               "id_ru": "Зелёный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9726,6 +10529,7 @@ export const shopData = [
               "id": "green_dye",
               "id_ru": "Зелёный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9733,6 +10537,7 @@ export const shopData = [
               "id": "green_dye",
               "id_ru": "Зелёный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9740,6 +10545,7 @@ export const shopData = [
               "id": "green_dye",
               "id_ru": "Зелёный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9747,6 +10553,7 @@ export const shopData = [
               "id": "green_dye",
               "id_ru": "Зелёный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9754,6 +10561,7 @@ export const shopData = [
               "id": "green_dye",
               "id_ru": "Зелёный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9761,6 +10569,7 @@ export const shopData = [
               "id": "green_dye",
               "id_ru": "Зелёный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9768,6 +10577,7 @@ export const shopData = [
               "id": "green_dye",
               "id_ru": "Зелёный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9775,6 +10585,7 @@ export const shopData = [
               "id": "green_dye",
               "id_ru": "Зелёный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9782,6 +10593,7 @@ export const shopData = [
               "id": "green_dye",
               "id_ru": "Зелёный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9789,6 +10601,7 @@ export const shopData = [
               "id": "green_dye",
               "id_ru": "Зелёный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9796,6 +10609,7 @@ export const shopData = [
               "id": "green_dye",
               "id_ru": "Зелёный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9803,6 +10617,7 @@ export const shopData = [
               "id": "green_dye",
               "id_ru": "Зелёный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9810,6 +10625,7 @@ export const shopData = [
               "id": "green_dye",
               "id_ru": "Зелёный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9817,6 +10633,7 @@ export const shopData = [
               "id": "green_dye",
               "id_ru": "Зелёный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9824,6 +10641,7 @@ export const shopData = [
               "id": "green_dye",
               "id_ru": "Зелёный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9831,6 +10649,7 @@ export const shopData = [
               "id": "green_dye",
               "id_ru": "Зелёный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9838,6 +10657,7 @@ export const shopData = [
               "id": "green_dye",
               "id_ru": "Зелёный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9845,6 +10665,7 @@ export const shopData = [
               "id": "green_dye",
               "id_ru": "Зелёный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9852,6 +10673,7 @@ export const shopData = [
               "id": "green_dye",
               "id_ru": "Зелёный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9859,6 +10681,7 @@ export const shopData = [
               "id": "green_dye",
               "id_ru": "Зелёный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9866,6 +10689,7 @@ export const shopData = [
               "id": "green_dye",
               "id_ru": "Зелёный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9873,6 +10697,7 @@ export const shopData = [
               "id": "green_dye",
               "id_ru": "Зелёный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9880,6 +10705,7 @@ export const shopData = [
               "id": "green_dye",
               "id_ru": "Зелёный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9887,6 +10713,7 @@ export const shopData = [
               "id": "green_dye",
               "id_ru": "Зелёный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9894,6 +10721,7 @@ export const shopData = [
               "id": "green_dye",
               "id_ru": "Зелёный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9901,6 +10729,7 @@ export const shopData = [
               "id": "green_dye",
               "id_ru": "Зелёный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -9909,6 +10738,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -9920,6 +10750,7 @@ export const shopData = [
           "type": "cyan_shulker_box",
           "type_ru": "Бирюзовый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -9927,6 +10758,7 @@ export const shopData = [
               "id": "cyan_dye",
               "id_ru": "Бирюзовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9934,6 +10766,7 @@ export const shopData = [
               "id": "cyan_dye",
               "id_ru": "Бирюзовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9941,6 +10774,7 @@ export const shopData = [
               "id": "cyan_dye",
               "id_ru": "Бирюзовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9948,6 +10782,7 @@ export const shopData = [
               "id": "cyan_dye",
               "id_ru": "Бирюзовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9955,6 +10790,7 @@ export const shopData = [
               "id": "cyan_dye",
               "id_ru": "Бирюзовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9962,6 +10798,7 @@ export const shopData = [
               "id": "cyan_dye",
               "id_ru": "Бирюзовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9969,6 +10806,7 @@ export const shopData = [
               "id": "cyan_dye",
               "id_ru": "Бирюзовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9976,6 +10814,7 @@ export const shopData = [
               "id": "cyan_dye",
               "id_ru": "Бирюзовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9983,6 +10822,7 @@ export const shopData = [
               "id": "cyan_dye",
               "id_ru": "Бирюзовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9990,6 +10830,7 @@ export const shopData = [
               "id": "cyan_dye",
               "id_ru": "Бирюзовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -9997,6 +10838,7 @@ export const shopData = [
               "id": "cyan_dye",
               "id_ru": "Бирюзовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10004,6 +10846,7 @@ export const shopData = [
               "id": "cyan_dye",
               "id_ru": "Бирюзовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10011,6 +10854,7 @@ export const shopData = [
               "id": "cyan_dye",
               "id_ru": "Бирюзовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10018,6 +10862,7 @@ export const shopData = [
               "id": "cyan_dye",
               "id_ru": "Бирюзовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10025,6 +10870,7 @@ export const shopData = [
               "id": "cyan_dye",
               "id_ru": "Бирюзовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10032,6 +10878,7 @@ export const shopData = [
               "id": "cyan_dye",
               "id_ru": "Бирюзовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10039,6 +10886,7 @@ export const shopData = [
               "id": "cyan_dye",
               "id_ru": "Бирюзовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10046,6 +10894,7 @@ export const shopData = [
               "id": "cyan_dye",
               "id_ru": "Бирюзовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10053,6 +10902,7 @@ export const shopData = [
               "id": "cyan_dye",
               "id_ru": "Бирюзовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10060,6 +10910,7 @@ export const shopData = [
               "id": "cyan_dye",
               "id_ru": "Бирюзовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10067,6 +10918,7 @@ export const shopData = [
               "id": "cyan_dye",
               "id_ru": "Бирюзовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10074,6 +10926,7 @@ export const shopData = [
               "id": "cyan_dye",
               "id_ru": "Бирюзовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10081,6 +10934,7 @@ export const shopData = [
               "id": "cyan_dye",
               "id_ru": "Бирюзовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10088,6 +10942,7 @@ export const shopData = [
               "id": "cyan_dye",
               "id_ru": "Бирюзовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10095,6 +10950,7 @@ export const shopData = [
               "id": "cyan_dye",
               "id_ru": "Бирюзовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10102,6 +10958,7 @@ export const shopData = [
               "id": "cyan_dye",
               "id_ru": "Бирюзовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10109,6 +10966,7 @@ export const shopData = [
               "id": "cyan_dye",
               "id_ru": "Бирюзовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -10117,6 +10975,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -10128,6 +10987,7 @@ export const shopData = [
           "type": "light_blue_shulker_box",
           "type_ru": "Голубой шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -10135,6 +10995,7 @@ export const shopData = [
               "id": "light_blue_dye",
               "id_ru": "Голубой краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10142,6 +11003,7 @@ export const shopData = [
               "id": "light_blue_dye",
               "id_ru": "Голубой краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10149,6 +11011,7 @@ export const shopData = [
               "id": "light_blue_dye",
               "id_ru": "Голубой краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10156,6 +11019,7 @@ export const shopData = [
               "id": "light_blue_dye",
               "id_ru": "Голубой краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10163,6 +11027,7 @@ export const shopData = [
               "id": "light_blue_dye",
               "id_ru": "Голубой краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10170,6 +11035,7 @@ export const shopData = [
               "id": "light_blue_dye",
               "id_ru": "Голубой краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10177,6 +11043,7 @@ export const shopData = [
               "id": "light_blue_dye",
               "id_ru": "Голубой краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10184,6 +11051,7 @@ export const shopData = [
               "id": "light_blue_dye",
               "id_ru": "Голубой краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10191,6 +11059,7 @@ export const shopData = [
               "id": "light_blue_dye",
               "id_ru": "Голубой краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10198,6 +11067,7 @@ export const shopData = [
               "id": "light_blue_dye",
               "id_ru": "Голубой краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10205,6 +11075,7 @@ export const shopData = [
               "id": "light_blue_dye",
               "id_ru": "Голубой краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10212,6 +11083,7 @@ export const shopData = [
               "id": "light_blue_dye",
               "id_ru": "Голубой краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10219,6 +11091,7 @@ export const shopData = [
               "id": "light_blue_dye",
               "id_ru": "Голубой краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10226,6 +11099,7 @@ export const shopData = [
               "id": "light_blue_dye",
               "id_ru": "Голубой краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10233,6 +11107,7 @@ export const shopData = [
               "id": "light_blue_dye",
               "id_ru": "Голубой краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10240,6 +11115,7 @@ export const shopData = [
               "id": "light_blue_dye",
               "id_ru": "Голубой краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10247,6 +11123,7 @@ export const shopData = [
               "id": "light_blue_dye",
               "id_ru": "Голубой краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10254,6 +11131,7 @@ export const shopData = [
               "id": "light_blue_dye",
               "id_ru": "Голубой краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10261,6 +11139,7 @@ export const shopData = [
               "id": "light_blue_dye",
               "id_ru": "Голубой краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10268,6 +11147,7 @@ export const shopData = [
               "id": "light_blue_dye",
               "id_ru": "Голубой краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10275,6 +11155,7 @@ export const shopData = [
               "id": "light_blue_dye",
               "id_ru": "Голубой краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10282,6 +11163,7 @@ export const shopData = [
               "id": "light_blue_dye",
               "id_ru": "Голубой краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10289,6 +11171,7 @@ export const shopData = [
               "id": "light_blue_dye",
               "id_ru": "Голубой краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10296,6 +11179,7 @@ export const shopData = [
               "id": "light_blue_dye",
               "id_ru": "Голубой краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10303,6 +11187,7 @@ export const shopData = [
               "id": "light_blue_dye",
               "id_ru": "Голубой краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10310,6 +11195,7 @@ export const shopData = [
               "id": "light_blue_dye",
               "id_ru": "Голубой краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10317,6 +11203,7 @@ export const shopData = [
               "id": "light_blue_dye",
               "id_ru": "Голубой краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -10325,6 +11212,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -10336,6 +11224,7 @@ export const shopData = [
           "type": "blue_shulker_box",
           "type_ru": "Синий шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -10343,6 +11232,7 @@ export const shopData = [
               "id": "blue_dye",
               "id_ru": "Синий краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10350,6 +11240,7 @@ export const shopData = [
               "id": "blue_dye",
               "id_ru": "Синий краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10357,6 +11248,7 @@ export const shopData = [
               "id": "blue_dye",
               "id_ru": "Синий краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10364,6 +11256,7 @@ export const shopData = [
               "id": "blue_dye",
               "id_ru": "Синий краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10371,6 +11264,7 @@ export const shopData = [
               "id": "blue_dye",
               "id_ru": "Синий краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10378,6 +11272,7 @@ export const shopData = [
               "id": "blue_dye",
               "id_ru": "Синий краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10385,6 +11280,7 @@ export const shopData = [
               "id": "blue_dye",
               "id_ru": "Синий краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10392,6 +11288,7 @@ export const shopData = [
               "id": "blue_dye",
               "id_ru": "Синий краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10399,6 +11296,7 @@ export const shopData = [
               "id": "blue_dye",
               "id_ru": "Синий краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10406,6 +11304,7 @@ export const shopData = [
               "id": "blue_dye",
               "id_ru": "Синий краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10413,6 +11312,7 @@ export const shopData = [
               "id": "blue_dye",
               "id_ru": "Синий краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10420,6 +11320,7 @@ export const shopData = [
               "id": "blue_dye",
               "id_ru": "Синий краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10427,6 +11328,7 @@ export const shopData = [
               "id": "blue_dye",
               "id_ru": "Синий краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10434,6 +11336,7 @@ export const shopData = [
               "id": "blue_dye",
               "id_ru": "Синий краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10441,6 +11344,7 @@ export const shopData = [
               "id": "blue_dye",
               "id_ru": "Синий краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10448,6 +11352,7 @@ export const shopData = [
               "id": "blue_dye",
               "id_ru": "Синий краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10455,6 +11360,7 @@ export const shopData = [
               "id": "blue_dye",
               "id_ru": "Синий краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10462,6 +11368,7 @@ export const shopData = [
               "id": "blue_dye",
               "id_ru": "Синий краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10469,6 +11376,7 @@ export const shopData = [
               "id": "blue_dye",
               "id_ru": "Синий краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10476,6 +11384,7 @@ export const shopData = [
               "id": "blue_dye",
               "id_ru": "Синий краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10483,6 +11392,7 @@ export const shopData = [
               "id": "blue_dye",
               "id_ru": "Синий краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10490,6 +11400,7 @@ export const shopData = [
               "id": "blue_dye",
               "id_ru": "Синий краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10497,6 +11408,7 @@ export const shopData = [
               "id": "blue_dye",
               "id_ru": "Синий краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10504,6 +11416,7 @@ export const shopData = [
               "id": "blue_dye",
               "id_ru": "Синий краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10511,6 +11424,7 @@ export const shopData = [
               "id": "blue_dye",
               "id_ru": "Синий краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10518,6 +11432,7 @@ export const shopData = [
               "id": "blue_dye",
               "id_ru": "Синий краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10525,6 +11440,7 @@ export const shopData = [
               "id": "blue_dye",
               "id_ru": "Синий краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -10533,6 +11449,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -10544,6 +11461,7 @@ export const shopData = [
           "type": "purple_shulker_box",
           "type_ru": "Фиолетовый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -10551,6 +11469,7 @@ export const shopData = [
               "id": "purple_dye",
               "id_ru": "Фиолетовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10558,6 +11477,7 @@ export const shopData = [
               "id": "purple_dye",
               "id_ru": "Фиолетовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10565,6 +11485,7 @@ export const shopData = [
               "id": "purple_dye",
               "id_ru": "Фиолетовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10572,6 +11493,7 @@ export const shopData = [
               "id": "purple_dye",
               "id_ru": "Фиолетовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10579,6 +11501,7 @@ export const shopData = [
               "id": "purple_dye",
               "id_ru": "Фиолетовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10586,6 +11509,7 @@ export const shopData = [
               "id": "purple_dye",
               "id_ru": "Фиолетовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10593,6 +11517,7 @@ export const shopData = [
               "id": "purple_dye",
               "id_ru": "Фиолетовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10600,6 +11525,7 @@ export const shopData = [
               "id": "purple_dye",
               "id_ru": "Фиолетовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10607,6 +11533,7 @@ export const shopData = [
               "id": "purple_dye",
               "id_ru": "Фиолетовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10614,6 +11541,7 @@ export const shopData = [
               "id": "purple_dye",
               "id_ru": "Фиолетовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10621,6 +11549,7 @@ export const shopData = [
               "id": "purple_dye",
               "id_ru": "Фиолетовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10628,6 +11557,7 @@ export const shopData = [
               "id": "purple_dye",
               "id_ru": "Фиолетовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10635,6 +11565,7 @@ export const shopData = [
               "id": "purple_dye",
               "id_ru": "Фиолетовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10642,6 +11573,7 @@ export const shopData = [
               "id": "purple_dye",
               "id_ru": "Фиолетовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10649,6 +11581,7 @@ export const shopData = [
               "id": "purple_dye",
               "id_ru": "Фиолетовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10656,6 +11589,7 @@ export const shopData = [
               "id": "purple_dye",
               "id_ru": "Фиолетовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10663,6 +11597,7 @@ export const shopData = [
               "id": "purple_dye",
               "id_ru": "Фиолетовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10670,6 +11605,7 @@ export const shopData = [
               "id": "purple_dye",
               "id_ru": "Фиолетовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10677,6 +11613,7 @@ export const shopData = [
               "id": "purple_dye",
               "id_ru": "Фиолетовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10684,6 +11621,7 @@ export const shopData = [
               "id": "purple_dye",
               "id_ru": "Фиолетовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10691,6 +11629,7 @@ export const shopData = [
               "id": "purple_dye",
               "id_ru": "Фиолетовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10698,6 +11637,7 @@ export const shopData = [
               "id": "purple_dye",
               "id_ru": "Фиолетовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10705,6 +11645,7 @@ export const shopData = [
               "id": "purple_dye",
               "id_ru": "Фиолетовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10712,6 +11653,7 @@ export const shopData = [
               "id": "purple_dye",
               "id_ru": "Фиолетовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10719,6 +11661,7 @@ export const shopData = [
               "id": "purple_dye",
               "id_ru": "Фиолетовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10726,6 +11669,7 @@ export const shopData = [
               "id": "purple_dye",
               "id_ru": "Фиолетовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10733,6 +11677,7 @@ export const shopData = [
               "id": "purple_dye",
               "id_ru": "Фиолетовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -10741,6 +11686,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -10752,6 +11698,7 @@ export const shopData = [
           "type": "magenta_shulker_box",
           "type_ru": "Пурпурный шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -10759,6 +11706,7 @@ export const shopData = [
               "id": "magenta_dye",
               "id_ru": "Пурпурный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10766,6 +11714,7 @@ export const shopData = [
               "id": "magenta_dye",
               "id_ru": "Пурпурный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10773,6 +11722,7 @@ export const shopData = [
               "id": "magenta_dye",
               "id_ru": "Пурпурный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10780,6 +11730,7 @@ export const shopData = [
               "id": "magenta_dye",
               "id_ru": "Пурпурный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10787,6 +11738,7 @@ export const shopData = [
               "id": "magenta_dye",
               "id_ru": "Пурпурный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10794,6 +11746,7 @@ export const shopData = [
               "id": "magenta_dye",
               "id_ru": "Пурпурный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10801,6 +11754,7 @@ export const shopData = [
               "id": "magenta_dye",
               "id_ru": "Пурпурный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10808,6 +11762,7 @@ export const shopData = [
               "id": "magenta_dye",
               "id_ru": "Пурпурный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10815,6 +11770,7 @@ export const shopData = [
               "id": "magenta_dye",
               "id_ru": "Пурпурный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10822,6 +11778,7 @@ export const shopData = [
               "id": "magenta_dye",
               "id_ru": "Пурпурный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10829,6 +11786,7 @@ export const shopData = [
               "id": "magenta_dye",
               "id_ru": "Пурпурный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10836,6 +11794,7 @@ export const shopData = [
               "id": "magenta_dye",
               "id_ru": "Пурпурный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10843,6 +11802,7 @@ export const shopData = [
               "id": "magenta_dye",
               "id_ru": "Пурпурный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10850,6 +11810,7 @@ export const shopData = [
               "id": "magenta_dye",
               "id_ru": "Пурпурный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10857,6 +11818,7 @@ export const shopData = [
               "id": "magenta_dye",
               "id_ru": "Пурпурный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10864,6 +11826,7 @@ export const shopData = [
               "id": "magenta_dye",
               "id_ru": "Пурпурный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10871,6 +11834,7 @@ export const shopData = [
               "id": "magenta_dye",
               "id_ru": "Пурпурный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10878,6 +11842,7 @@ export const shopData = [
               "id": "magenta_dye",
               "id_ru": "Пурпурный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10885,6 +11850,7 @@ export const shopData = [
               "id": "magenta_dye",
               "id_ru": "Пурпурный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10892,6 +11858,7 @@ export const shopData = [
               "id": "magenta_dye",
               "id_ru": "Пурпурный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10899,6 +11866,7 @@ export const shopData = [
               "id": "magenta_dye",
               "id_ru": "Пурпурный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10906,6 +11874,7 @@ export const shopData = [
               "id": "magenta_dye",
               "id_ru": "Пурпурный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10913,6 +11882,7 @@ export const shopData = [
               "id": "magenta_dye",
               "id_ru": "Пурпурный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10920,6 +11890,7 @@ export const shopData = [
               "id": "magenta_dye",
               "id_ru": "Пурпурный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10927,6 +11898,7 @@ export const shopData = [
               "id": "magenta_dye",
               "id_ru": "Пурпурный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10934,6 +11906,7 @@ export const shopData = [
               "id": "magenta_dye",
               "id_ru": "Пурпурный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10941,6 +11914,7 @@ export const shopData = [
               "id": "magenta_dye",
               "id_ru": "Пурпурный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -10949,6 +11923,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -10960,6 +11935,7 @@ export const shopData = [
           "type": "pink_shulker_box",
           "type_ru": "Розовый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -10967,6 +11943,7 @@ export const shopData = [
               "id": "pink_dye",
               "id_ru": "Розовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10974,6 +11951,7 @@ export const shopData = [
               "id": "pink_dye",
               "id_ru": "Розовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10981,6 +11959,7 @@ export const shopData = [
               "id": "pink_dye",
               "id_ru": "Розовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10988,6 +11967,7 @@ export const shopData = [
               "id": "pink_dye",
               "id_ru": "Розовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -10995,6 +11975,7 @@ export const shopData = [
               "id": "pink_dye",
               "id_ru": "Розовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11002,6 +11983,7 @@ export const shopData = [
               "id": "pink_dye",
               "id_ru": "Розовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11009,6 +11991,7 @@ export const shopData = [
               "id": "pink_dye",
               "id_ru": "Розовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11016,6 +11999,7 @@ export const shopData = [
               "id": "pink_dye",
               "id_ru": "Розовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11023,6 +12007,7 @@ export const shopData = [
               "id": "pink_dye",
               "id_ru": "Розовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11030,6 +12015,7 @@ export const shopData = [
               "id": "pink_dye",
               "id_ru": "Розовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11037,6 +12023,7 @@ export const shopData = [
               "id": "pink_dye",
               "id_ru": "Розовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11044,6 +12031,7 @@ export const shopData = [
               "id": "pink_dye",
               "id_ru": "Розовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11051,6 +12039,7 @@ export const shopData = [
               "id": "pink_dye",
               "id_ru": "Розовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11058,6 +12047,7 @@ export const shopData = [
               "id": "pink_dye",
               "id_ru": "Розовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11065,6 +12055,7 @@ export const shopData = [
               "id": "pink_dye",
               "id_ru": "Розовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11072,6 +12063,7 @@ export const shopData = [
               "id": "pink_dye",
               "id_ru": "Розовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11079,6 +12071,7 @@ export const shopData = [
               "id": "pink_dye",
               "id_ru": "Розовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11086,6 +12079,7 @@ export const shopData = [
               "id": "pink_dye",
               "id_ru": "Розовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11093,6 +12087,7 @@ export const shopData = [
               "id": "pink_dye",
               "id_ru": "Розовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11100,6 +12095,7 @@ export const shopData = [
               "id": "pink_dye",
               "id_ru": "Розовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11107,6 +12103,7 @@ export const shopData = [
               "id": "pink_dye",
               "id_ru": "Розовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11114,6 +12111,7 @@ export const shopData = [
               "id": "pink_dye",
               "id_ru": "Розовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11121,6 +12119,7 @@ export const shopData = [
               "id": "pink_dye",
               "id_ru": "Розовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11128,6 +12127,7 @@ export const shopData = [
               "id": "pink_dye",
               "id_ru": "Розовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11135,6 +12135,7 @@ export const shopData = [
               "id": "pink_dye",
               "id_ru": "Розовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11142,6 +12143,7 @@ export const shopData = [
               "id": "pink_dye",
               "id_ru": "Розовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11149,6 +12151,7 @@ export const shopData = [
               "id": "pink_dye",
               "id_ru": "Розовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -11157,6 +12160,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -11168,6 +12172,7 @@ export const shopData = [
           "type": "white_shulker_box",
           "type_ru": "Белый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -11175,6 +12180,7 @@ export const shopData = [
               "id": "white_dye",
               "id_ru": "Белый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11182,6 +12188,7 @@ export const shopData = [
               "id": "white_dye",
               "id_ru": "Белый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11189,6 +12196,7 @@ export const shopData = [
               "id": "white_dye",
               "id_ru": "Белый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11196,6 +12204,7 @@ export const shopData = [
               "id": "white_dye",
               "id_ru": "Белый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11203,6 +12212,7 @@ export const shopData = [
               "id": "white_dye",
               "id_ru": "Белый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11210,6 +12220,7 @@ export const shopData = [
               "id": "white_dye",
               "id_ru": "Белый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11217,6 +12228,7 @@ export const shopData = [
               "id": "white_dye",
               "id_ru": "Белый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11224,6 +12236,7 @@ export const shopData = [
               "id": "white_dye",
               "id_ru": "Белый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11231,6 +12244,7 @@ export const shopData = [
               "id": "white_dye",
               "id_ru": "Белый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11238,6 +12252,7 @@ export const shopData = [
               "id": "white_dye",
               "id_ru": "Белый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11245,6 +12260,7 @@ export const shopData = [
               "id": "white_dye",
               "id_ru": "Белый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11252,6 +12268,7 @@ export const shopData = [
               "id": "white_dye",
               "id_ru": "Белый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11259,6 +12276,7 @@ export const shopData = [
               "id": "white_dye",
               "id_ru": "Белый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11266,6 +12284,7 @@ export const shopData = [
               "id": "white_dye",
               "id_ru": "Белый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11273,6 +12292,7 @@ export const shopData = [
               "id": "white_dye",
               "id_ru": "Белый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11280,6 +12300,7 @@ export const shopData = [
               "id": "white_dye",
               "id_ru": "Белый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11287,6 +12308,7 @@ export const shopData = [
               "id": "white_dye",
               "id_ru": "Белый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11294,6 +12316,7 @@ export const shopData = [
               "id": "white_dye",
               "id_ru": "Белый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11301,6 +12324,7 @@ export const shopData = [
               "id": "white_dye",
               "id_ru": "Белый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11308,6 +12332,7 @@ export const shopData = [
               "id": "white_dye",
               "id_ru": "Белый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11315,6 +12340,7 @@ export const shopData = [
               "id": "white_dye",
               "id_ru": "Белый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11322,6 +12348,7 @@ export const shopData = [
               "id": "white_dye",
               "id_ru": "Белый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11329,6 +12356,7 @@ export const shopData = [
               "id": "white_dye",
               "id_ru": "Белый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11336,6 +12364,7 @@ export const shopData = [
               "id": "white_dye",
               "id_ru": "Белый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11343,6 +12372,7 @@ export const shopData = [
               "id": "white_dye",
               "id_ru": "Белый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11350,6 +12380,7 @@ export const shopData = [
               "id": "white_dye",
               "id_ru": "Белый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11357,6 +12388,7 @@ export const shopData = [
               "id": "white_dye",
               "id_ru": "Белый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -11365,6 +12397,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -11376,6 +12409,7 @@ export const shopData = [
           "type": "light_gray_shulker_box",
           "type_ru": "Светло-серый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -11383,6 +12417,7 @@ export const shopData = [
               "id": "light_gray_dye",
               "id_ru": "Светло-серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11390,6 +12425,7 @@ export const shopData = [
               "id": "light_gray_dye",
               "id_ru": "Светло-серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11397,6 +12433,7 @@ export const shopData = [
               "id": "light_gray_dye",
               "id_ru": "Светло-серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11404,6 +12441,7 @@ export const shopData = [
               "id": "light_gray_dye",
               "id_ru": "Светло-серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11411,6 +12449,7 @@ export const shopData = [
               "id": "light_gray_dye",
               "id_ru": "Светло-серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11418,6 +12457,7 @@ export const shopData = [
               "id": "light_gray_dye",
               "id_ru": "Светло-серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11425,6 +12465,7 @@ export const shopData = [
               "id": "light_gray_dye",
               "id_ru": "Светло-серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11432,6 +12473,7 @@ export const shopData = [
               "id": "light_gray_dye",
               "id_ru": "Светло-серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11439,6 +12481,7 @@ export const shopData = [
               "id": "light_gray_dye",
               "id_ru": "Светло-серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11446,6 +12489,7 @@ export const shopData = [
               "id": "light_gray_dye",
               "id_ru": "Светло-серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11453,6 +12497,7 @@ export const shopData = [
               "id": "light_gray_dye",
               "id_ru": "Светло-серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11460,6 +12505,7 @@ export const shopData = [
               "id": "light_gray_dye",
               "id_ru": "Светло-серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11467,6 +12513,7 @@ export const shopData = [
               "id": "light_gray_dye",
               "id_ru": "Светло-серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11474,6 +12521,7 @@ export const shopData = [
               "id": "light_gray_dye",
               "id_ru": "Светло-серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11481,6 +12529,7 @@ export const shopData = [
               "id": "light_gray_dye",
               "id_ru": "Светло-серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11488,6 +12537,7 @@ export const shopData = [
               "id": "light_gray_dye",
               "id_ru": "Светло-серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11495,6 +12545,7 @@ export const shopData = [
               "id": "light_gray_dye",
               "id_ru": "Светло-серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11502,6 +12553,7 @@ export const shopData = [
               "id": "light_gray_dye",
               "id_ru": "Светло-серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11509,6 +12561,7 @@ export const shopData = [
               "id": "light_gray_dye",
               "id_ru": "Светло-серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11516,6 +12569,7 @@ export const shopData = [
               "id": "light_gray_dye",
               "id_ru": "Светло-серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11523,6 +12577,7 @@ export const shopData = [
               "id": "light_gray_dye",
               "id_ru": "Светло-серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11530,6 +12585,7 @@ export const shopData = [
               "id": "light_gray_dye",
               "id_ru": "Светло-серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11537,6 +12593,7 @@ export const shopData = [
               "id": "light_gray_dye",
               "id_ru": "Светло-серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11544,6 +12601,7 @@ export const shopData = [
               "id": "light_gray_dye",
               "id_ru": "Светло-серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11551,6 +12609,7 @@ export const shopData = [
               "id": "light_gray_dye",
               "id_ru": "Светло-серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11558,6 +12617,7 @@ export const shopData = [
               "id": "light_gray_dye",
               "id_ru": "Светло-серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11565,6 +12625,7 @@ export const shopData = [
               "id": "light_gray_dye",
               "id_ru": "Светло-серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -11573,6 +12634,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -11584,6 +12646,7 @@ export const shopData = [
           "type": "gray_shulker_box",
           "type_ru": "Серый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -11591,6 +12654,7 @@ export const shopData = [
               "id": "gray_dye",
               "id_ru": "Серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11598,6 +12662,7 @@ export const shopData = [
               "id": "gray_dye",
               "id_ru": "Серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11605,6 +12670,7 @@ export const shopData = [
               "id": "gray_dye",
               "id_ru": "Серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11612,6 +12678,7 @@ export const shopData = [
               "id": "gray_dye",
               "id_ru": "Серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11619,6 +12686,7 @@ export const shopData = [
               "id": "gray_dye",
               "id_ru": "Серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11626,6 +12694,7 @@ export const shopData = [
               "id": "gray_dye",
               "id_ru": "Серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11633,6 +12702,7 @@ export const shopData = [
               "id": "gray_dye",
               "id_ru": "Серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11640,6 +12710,7 @@ export const shopData = [
               "id": "gray_dye",
               "id_ru": "Серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11647,6 +12718,7 @@ export const shopData = [
               "id": "gray_dye",
               "id_ru": "Серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11654,6 +12726,7 @@ export const shopData = [
               "id": "gray_dye",
               "id_ru": "Серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11661,6 +12734,7 @@ export const shopData = [
               "id": "gray_dye",
               "id_ru": "Серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11668,6 +12742,7 @@ export const shopData = [
               "id": "gray_dye",
               "id_ru": "Серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11675,6 +12750,7 @@ export const shopData = [
               "id": "gray_dye",
               "id_ru": "Серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11682,6 +12758,7 @@ export const shopData = [
               "id": "gray_dye",
               "id_ru": "Серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11689,6 +12766,7 @@ export const shopData = [
               "id": "gray_dye",
               "id_ru": "Серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11696,6 +12774,7 @@ export const shopData = [
               "id": "gray_dye",
               "id_ru": "Серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11703,6 +12782,7 @@ export const shopData = [
               "id": "gray_dye",
               "id_ru": "Серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11710,6 +12790,7 @@ export const shopData = [
               "id": "gray_dye",
               "id_ru": "Серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11717,6 +12798,7 @@ export const shopData = [
               "id": "gray_dye",
               "id_ru": "Серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11724,6 +12806,7 @@ export const shopData = [
               "id": "gray_dye",
               "id_ru": "Серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11731,6 +12814,7 @@ export const shopData = [
               "id": "gray_dye",
               "id_ru": "Серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11738,6 +12822,7 @@ export const shopData = [
               "id": "gray_dye",
               "id_ru": "Серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11745,6 +12830,7 @@ export const shopData = [
               "id": "gray_dye",
               "id_ru": "Серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11752,6 +12838,7 @@ export const shopData = [
               "id": "gray_dye",
               "id_ru": "Серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11759,6 +12846,7 @@ export const shopData = [
               "id": "gray_dye",
               "id_ru": "Серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11766,6 +12854,7 @@ export const shopData = [
               "id": "gray_dye",
               "id_ru": "Серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11773,6 +12862,7 @@ export const shopData = [
               "id": "gray_dye",
               "id_ru": "Серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -11781,6 +12871,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -11792,6 +12883,7 @@ export const shopData = [
           "type": "black_shulker_box",
           "type_ru": "Чёрный шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -11799,6 +12891,7 @@ export const shopData = [
               "id": "black_dye",
               "id_ru": "Чёрный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11806,6 +12899,7 @@ export const shopData = [
               "id": "black_dye",
               "id_ru": "Чёрный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11813,6 +12907,7 @@ export const shopData = [
               "id": "black_dye",
               "id_ru": "Чёрный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11820,6 +12915,7 @@ export const shopData = [
               "id": "black_dye",
               "id_ru": "Чёрный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11827,6 +12923,7 @@ export const shopData = [
               "id": "black_dye",
               "id_ru": "Чёрный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11834,6 +12931,7 @@ export const shopData = [
               "id": "black_dye",
               "id_ru": "Чёрный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11841,6 +12939,7 @@ export const shopData = [
               "id": "black_dye",
               "id_ru": "Чёрный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11848,6 +12947,7 @@ export const shopData = [
               "id": "black_dye",
               "id_ru": "Чёрный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11855,6 +12955,7 @@ export const shopData = [
               "id": "black_dye",
               "id_ru": "Чёрный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11862,6 +12963,7 @@ export const shopData = [
               "id": "black_dye",
               "id_ru": "Чёрный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11869,6 +12971,7 @@ export const shopData = [
               "id": "black_dye",
               "id_ru": "Чёрный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11876,6 +12979,7 @@ export const shopData = [
               "id": "black_dye",
               "id_ru": "Чёрный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11883,6 +12987,7 @@ export const shopData = [
               "id": "black_dye",
               "id_ru": "Чёрный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11890,6 +12995,7 @@ export const shopData = [
               "id": "black_dye",
               "id_ru": "Чёрный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11897,6 +13003,7 @@ export const shopData = [
               "id": "black_dye",
               "id_ru": "Чёрный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11904,6 +13011,7 @@ export const shopData = [
               "id": "black_dye",
               "id_ru": "Чёрный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11911,6 +13019,7 @@ export const shopData = [
               "id": "black_dye",
               "id_ru": "Чёрный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11918,6 +13027,7 @@ export const shopData = [
               "id": "black_dye",
               "id_ru": "Чёрный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11925,6 +13035,7 @@ export const shopData = [
               "id": "black_dye",
               "id_ru": "Чёрный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11932,6 +13043,7 @@ export const shopData = [
               "id": "black_dye",
               "id_ru": "Чёрный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11939,6 +13051,7 @@ export const shopData = [
               "id": "black_dye",
               "id_ru": "Чёрный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11946,6 +13059,7 @@ export const shopData = [
               "id": "black_dye",
               "id_ru": "Чёрный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11953,6 +13067,7 @@ export const shopData = [
               "id": "black_dye",
               "id_ru": "Чёрный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11960,6 +13075,7 @@ export const shopData = [
               "id": "black_dye",
               "id_ru": "Чёрный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11967,6 +13083,7 @@ export const shopData = [
               "id": "black_dye",
               "id_ru": "Чёрный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11974,6 +13091,7 @@ export const shopData = [
               "id": "black_dye",
               "id_ru": "Чёрный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -11981,6 +13099,7 @@ export const shopData = [
               "id": "black_dye",
               "id_ru": "Чёрный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -11989,6 +13108,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -12000,6 +13120,7 @@ export const shopData = [
           "type": "brown_shulker_box",
           "type_ru": "Коричневый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -12007,6 +13128,7 @@ export const shopData = [
               "id": "brown_dye",
               "id_ru": "Коричневый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12014,6 +13136,7 @@ export const shopData = [
               "id": "brown_dye",
               "id_ru": "Коричневый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12021,6 +13144,7 @@ export const shopData = [
               "id": "brown_dye",
               "id_ru": "Коричневый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12028,6 +13152,7 @@ export const shopData = [
               "id": "brown_dye",
               "id_ru": "Коричневый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12035,6 +13160,7 @@ export const shopData = [
               "id": "brown_dye",
               "id_ru": "Коричневый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12042,6 +13168,7 @@ export const shopData = [
               "id": "brown_dye",
               "id_ru": "Коричневый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12049,6 +13176,7 @@ export const shopData = [
               "id": "brown_dye",
               "id_ru": "Коричневый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12056,6 +13184,7 @@ export const shopData = [
               "id": "brown_dye",
               "id_ru": "Коричневый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12063,6 +13192,7 @@ export const shopData = [
               "id": "brown_dye",
               "id_ru": "Коричневый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12070,6 +13200,7 @@ export const shopData = [
               "id": "brown_dye",
               "id_ru": "Коричневый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12077,6 +13208,7 @@ export const shopData = [
               "id": "brown_dye",
               "id_ru": "Коричневый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12084,6 +13216,7 @@ export const shopData = [
               "id": "brown_dye",
               "id_ru": "Коричневый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12091,6 +13224,7 @@ export const shopData = [
               "id": "brown_dye",
               "id_ru": "Коричневый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12098,6 +13232,7 @@ export const shopData = [
               "id": "brown_dye",
               "id_ru": "Коричневый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12105,6 +13240,7 @@ export const shopData = [
               "id": "brown_dye",
               "id_ru": "Коричневый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12112,6 +13248,7 @@ export const shopData = [
               "id": "brown_dye",
               "id_ru": "Коричневый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12119,6 +13256,7 @@ export const shopData = [
               "id": "brown_dye",
               "id_ru": "Коричневый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12126,6 +13264,7 @@ export const shopData = [
               "id": "brown_dye",
               "id_ru": "Коричневый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12133,6 +13272,7 @@ export const shopData = [
               "id": "brown_dye",
               "id_ru": "Коричневый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12140,6 +13280,7 @@ export const shopData = [
               "id": "brown_dye",
               "id_ru": "Коричневый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12147,6 +13288,7 @@ export const shopData = [
               "id": "brown_dye",
               "id_ru": "Коричневый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12154,6 +13296,7 @@ export const shopData = [
               "id": "brown_dye",
               "id_ru": "Коричневый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12161,6 +13304,7 @@ export const shopData = [
               "id": "brown_dye",
               "id_ru": "Коричневый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12168,6 +13312,7 @@ export const shopData = [
               "id": "brown_dye",
               "id_ru": "Коричневый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12175,6 +13320,7 @@ export const shopData = [
               "id": "brown_dye",
               "id_ru": "Коричневый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12182,6 +13328,7 @@ export const shopData = [
               "id": "brown_dye",
               "id_ru": "Коричневый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12189,6 +13336,7 @@ export const shopData = [
               "id": "brown_dye",
               "id_ru": "Коричневый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -12197,6 +13345,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -12220,6 +13369,7 @@ export const shopData = [
           "type": "shulker_box",
           "type_ru": "Шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -12227,6 +13377,7 @@ export const shopData = [
               "id": "deepslate_diamond_ore",
               "id_ru": "Алмазоносный глубинный сланец",
               "count": 10,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -12235,6 +13386,7 @@ export const shopData = [
           "type": "shulker_box",
           "type_ru": "Шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -12242,6 +13394,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12249,6 +13402,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12256,6 +13410,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12263,6 +13418,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12270,6 +13426,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12277,6 +13434,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12284,6 +13442,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12291,6 +13450,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12298,6 +13458,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12305,6 +13466,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12312,6 +13474,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12319,6 +13482,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12326,6 +13490,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12333,6 +13498,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12340,6 +13506,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12347,6 +13514,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12354,6 +13522,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12361,6 +13530,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12368,6 +13538,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12375,6 +13546,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12382,6 +13554,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12389,6 +13562,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12396,6 +13570,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12403,6 +13578,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12410,6 +13586,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12417,6 +13594,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12424,6 +13602,7 @@ export const shopData = [
               "id": "sand",
               "id_ru": "Песок",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -12448,6 +13627,7 @@ export const shopData = [
           "type": "paper",
           "type_ru": "Бумага",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "durability",
@@ -12461,6 +13641,7 @@ export const shopData = [
           "type": "paper",
           "type_ru": "Бумага",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "durability",
@@ -12490,6 +13671,7 @@ export const shopData = [
           "type": "turtle_egg",
           "type_ru": "Черепашье яйцо",
           "amount": 8,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -12497,6 +13679,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -12508,6 +13691,7 @@ export const shopData = [
           "type": "sunflower",
           "type_ru": "Подсолнух",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -12515,6 +13699,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 3,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -12526,6 +13711,7 @@ export const shopData = [
           "type": "orange_shulker_box",
           "type_ru": "Оранжевый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -12533,6 +13719,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12540,6 +13727,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12547,6 +13735,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12554,6 +13743,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12561,6 +13751,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12568,6 +13759,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12575,6 +13767,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12582,6 +13775,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12589,6 +13783,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12596,6 +13791,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12603,6 +13799,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12610,6 +13807,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12617,6 +13815,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12624,6 +13823,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12631,6 +13831,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12638,6 +13839,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12645,6 +13847,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12652,6 +13855,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12659,6 +13863,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12666,6 +13871,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12673,6 +13879,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12680,6 +13887,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12687,6 +13895,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12694,6 +13903,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12701,6 +13911,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12708,6 +13919,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12715,6 +13927,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -12723,6 +13936,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 6,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -12734,6 +13948,7 @@ export const shopData = [
           "type": "yellow_shulker_box",
           "type_ru": "Жёлтый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -12741,6 +13956,7 @@ export const shopData = [
               "id": "potato",
               "id_ru": "Картофель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12748,6 +13964,7 @@ export const shopData = [
               "id": "potato",
               "id_ru": "Картофель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12755,6 +13972,7 @@ export const shopData = [
               "id": "potato",
               "id_ru": "Картофель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12762,6 +13980,7 @@ export const shopData = [
               "id": "potato",
               "id_ru": "Картофель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12769,6 +13988,7 @@ export const shopData = [
               "id": "potato",
               "id_ru": "Картофель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12776,6 +13996,7 @@ export const shopData = [
               "id": "potato",
               "id_ru": "Картофель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12783,6 +14004,7 @@ export const shopData = [
               "id": "potato",
               "id_ru": "Картофель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12790,6 +14012,7 @@ export const shopData = [
               "id": "potato",
               "id_ru": "Картофель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12797,6 +14020,7 @@ export const shopData = [
               "id": "potato",
               "id_ru": "Картофель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12804,6 +14028,7 @@ export const shopData = [
               "id": "potato",
               "id_ru": "Картофель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12811,6 +14036,7 @@ export const shopData = [
               "id": "potato",
               "id_ru": "Картофель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12818,6 +14044,7 @@ export const shopData = [
               "id": "potato",
               "id_ru": "Картофель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12825,6 +14052,7 @@ export const shopData = [
               "id": "potato",
               "id_ru": "Картофель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12832,6 +14060,7 @@ export const shopData = [
               "id": "potato",
               "id_ru": "Картофель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12839,6 +14068,7 @@ export const shopData = [
               "id": "potato",
               "id_ru": "Картофель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12846,6 +14076,7 @@ export const shopData = [
               "id": "potato",
               "id_ru": "Картофель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12853,6 +14084,7 @@ export const shopData = [
               "id": "potato",
               "id_ru": "Картофель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12860,6 +14092,7 @@ export const shopData = [
               "id": "potato",
               "id_ru": "Картофель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12867,6 +14100,7 @@ export const shopData = [
               "id": "potato",
               "id_ru": "Картофель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12874,6 +14108,7 @@ export const shopData = [
               "id": "potato",
               "id_ru": "Картофель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12881,6 +14116,7 @@ export const shopData = [
               "id": "potato",
               "id_ru": "Картофель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12888,6 +14124,7 @@ export const shopData = [
               "id": "potato",
               "id_ru": "Картофель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12895,6 +14132,7 @@ export const shopData = [
               "id": "potato",
               "id_ru": "Картофель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12902,6 +14140,7 @@ export const shopData = [
               "id": "potato",
               "id_ru": "Картофель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12909,6 +14148,7 @@ export const shopData = [
               "id": "potato",
               "id_ru": "Картофель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12916,6 +14156,7 @@ export const shopData = [
               "id": "potato",
               "id_ru": "Картофель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12923,6 +14164,7 @@ export const shopData = [
               "id": "potato",
               "id_ru": "Картофель",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -12931,6 +14173,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 6,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -12942,6 +14185,7 @@ export const shopData = [
           "type": "shulker_box",
           "type_ru": "Шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -12949,6 +14193,7 @@ export const shopData = [
               "id": "wheat_seeds",
               "id_ru": "Семена пшеницы",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12956,6 +14201,7 @@ export const shopData = [
               "id": "wheat_seeds",
               "id_ru": "Семена пшеницы",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12963,6 +14209,7 @@ export const shopData = [
               "id": "wheat_seeds",
               "id_ru": "Семена пшеницы",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12970,6 +14217,7 @@ export const shopData = [
               "id": "wheat_seeds",
               "id_ru": "Семена пшеницы",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12977,6 +14225,7 @@ export const shopData = [
               "id": "wheat_seeds",
               "id_ru": "Семена пшеницы",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12984,6 +14233,7 @@ export const shopData = [
               "id": "wheat_seeds",
               "id_ru": "Семена пшеницы",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12991,6 +14241,7 @@ export const shopData = [
               "id": "wheat_seeds",
               "id_ru": "Семена пшеницы",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -12998,6 +14249,7 @@ export const shopData = [
               "id": "wheat_seeds",
               "id_ru": "Семена пшеницы",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13005,6 +14257,7 @@ export const shopData = [
               "id": "wheat_seeds",
               "id_ru": "Семена пшеницы",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13012,6 +14265,7 @@ export const shopData = [
               "id": "wheat_seeds",
               "id_ru": "Семена пшеницы",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13019,6 +14273,7 @@ export const shopData = [
               "id": "wheat_seeds",
               "id_ru": "Семена пшеницы",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13026,6 +14281,7 @@ export const shopData = [
               "id": "wheat_seeds",
               "id_ru": "Семена пшеницы",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13033,6 +14289,7 @@ export const shopData = [
               "id": "wheat_seeds",
               "id_ru": "Семена пшеницы",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13040,6 +14297,7 @@ export const shopData = [
               "id": "wheat_seeds",
               "id_ru": "Семена пшеницы",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13047,6 +14305,7 @@ export const shopData = [
               "id": "wheat_seeds",
               "id_ru": "Семена пшеницы",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13054,6 +14313,7 @@ export const shopData = [
               "id": "wheat_seeds",
               "id_ru": "Семена пшеницы",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13061,6 +14321,7 @@ export const shopData = [
               "id": "wheat_seeds",
               "id_ru": "Семена пшеницы",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13068,6 +14329,7 @@ export const shopData = [
               "id": "wheat_seeds",
               "id_ru": "Семена пшеницы",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13075,6 +14337,7 @@ export const shopData = [
               "id": "wheat_seeds",
               "id_ru": "Семена пшеницы",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13082,6 +14345,7 @@ export const shopData = [
               "id": "wheat_seeds",
               "id_ru": "Семена пшеницы",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13089,6 +14353,7 @@ export const shopData = [
               "id": "wheat_seeds",
               "id_ru": "Семена пшеницы",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13096,6 +14361,7 @@ export const shopData = [
               "id": "wheat_seeds",
               "id_ru": "Семена пшеницы",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13103,6 +14369,7 @@ export const shopData = [
               "id": "wheat_seeds",
               "id_ru": "Семена пшеницы",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13110,6 +14377,7 @@ export const shopData = [
               "id": "wheat_seeds",
               "id_ru": "Семена пшеницы",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13117,6 +14385,7 @@ export const shopData = [
               "id": "wheat_seeds",
               "id_ru": "Семена пшеницы",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13124,6 +14393,7 @@ export const shopData = [
               "id": "wheat_seeds",
               "id_ru": "Семена пшеницы",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13131,6 +14401,7 @@ export const shopData = [
               "id": "wheat_seeds",
               "id_ru": "Семена пшеницы",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -13139,6 +14410,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 6,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -13150,6 +14422,7 @@ export const shopData = [
           "type": "melon",
           "type_ru": "Арбуз",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -13157,6 +14430,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 3,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -13168,6 +14442,7 @@ export const shopData = [
           "type": "twisting_vines",
           "type_ru": "Вьющаяся лоза",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -13175,6 +14450,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -13186,6 +14462,7 @@ export const shopData = [
           "type": "weeping_vines",
           "type_ru": "Плакучая лоза",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -13193,6 +14470,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 3,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -13204,6 +14482,7 @@ export const shopData = [
           "type": "glow_berries",
           "type_ru": "Светящиеся ягоды",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -13211,6 +14490,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -13222,6 +14502,7 @@ export const shopData = [
           "type": "vine",
           "type_ru": "Лианы",
           "amount": 16,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -13229,6 +14510,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -13240,6 +14522,7 @@ export const shopData = [
           "type": "pumpkin",
           "type_ru": "Тыква",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -13247,6 +14530,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 3,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -13258,6 +14542,7 @@ export const shopData = [
           "type": "white_shulker_box",
           "type_ru": "Белый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -13265,6 +14550,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13272,6 +14558,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13279,6 +14566,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13286,6 +14574,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13293,6 +14582,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13300,6 +14590,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13307,6 +14598,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13314,6 +14606,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13321,6 +14614,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13328,6 +14622,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13335,6 +14630,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13342,6 +14638,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13349,6 +14646,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13356,6 +14654,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13363,6 +14662,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13370,6 +14670,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13377,6 +14678,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13384,6 +14686,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13391,6 +14694,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13398,6 +14702,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13405,6 +14710,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13412,6 +14718,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13419,6 +14726,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13426,6 +14734,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13433,6 +14742,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13440,6 +14750,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13447,6 +14758,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -13455,6 +14767,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 25,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -13466,6 +14779,7 @@ export const shopData = [
           "type": "fern",
           "type_ru": "Папоротник",
           "amount": 32,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -13473,6 +14787,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -13484,6 +14799,7 @@ export const shopData = [
           "type": "magenta_shulker_box",
           "type_ru": "Пурпурный шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -13491,6 +14807,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13498,6 +14815,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13505,6 +14823,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13512,6 +14831,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13519,6 +14839,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13526,6 +14847,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13533,6 +14855,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13540,6 +14863,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13547,6 +14871,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13554,6 +14879,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13561,6 +14887,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13568,6 +14895,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13575,6 +14903,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13582,6 +14911,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13589,6 +14919,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13596,6 +14927,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13603,6 +14935,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13610,6 +14943,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13617,6 +14951,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13624,6 +14959,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13631,6 +14967,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13638,6 +14975,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13645,6 +14983,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13652,6 +14991,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13659,6 +14999,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13666,6 +15007,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13673,6 +15015,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -13681,6 +15024,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 19,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -13692,6 +15036,7 @@ export const shopData = [
           "type": "small_dripleaf",
           "type_ru": "Маленькая бросянка",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -13699,6 +15044,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 4,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -13710,6 +15056,7 @@ export const shopData = [
           "type": "spore_blossom",
           "type_ru": "Спороцвет",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -13717,6 +15064,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 4,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -13728,6 +15076,7 @@ export const shopData = [
           "type": "sea_pickle",
           "type_ru": "Морской огурец",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -13735,6 +15084,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 5,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -13758,6 +15108,7 @@ export const shopData = [
           "type": "shulker_box",
           "type_ru": "Шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -13765,6 +15116,7 @@ export const shopData = [
               "id": "powder_snow_bucket",
               "id_ru": "Ведро с рыхлым снегом",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13772,6 +15124,7 @@ export const shopData = [
               "id": "powder_snow_bucket",
               "id_ru": "Ведро с рыхлым снегом",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13779,6 +15132,7 @@ export const shopData = [
               "id": "powder_snow_bucket",
               "id_ru": "Ведро с рыхлым снегом",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13786,6 +15140,7 @@ export const shopData = [
               "id": "powder_snow_bucket",
               "id_ru": "Ведро с рыхлым снегом",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13793,6 +15148,7 @@ export const shopData = [
               "id": "powder_snow_bucket",
               "id_ru": "Ведро с рыхлым снегом",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13800,6 +15156,7 @@ export const shopData = [
               "id": "powder_snow_bucket",
               "id_ru": "Ведро с рыхлым снегом",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13807,6 +15164,7 @@ export const shopData = [
               "id": "powder_snow_bucket",
               "id_ru": "Ведро с рыхлым снегом",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13814,6 +15172,7 @@ export const shopData = [
               "id": "powder_snow_bucket",
               "id_ru": "Ведро с рыхлым снегом",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13821,6 +15180,7 @@ export const shopData = [
               "id": "powder_snow_bucket",
               "id_ru": "Ведро с рыхлым снегом",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13828,6 +15188,7 @@ export const shopData = [
               "id": "powder_snow_bucket",
               "id_ru": "Ведро с рыхлым снегом",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13835,6 +15196,7 @@ export const shopData = [
               "id": "powder_snow_bucket",
               "id_ru": "Ведро с рыхлым снегом",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13842,6 +15204,7 @@ export const shopData = [
               "id": "powder_snow_bucket",
               "id_ru": "Ведро с рыхлым снегом",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13849,6 +15212,7 @@ export const shopData = [
               "id": "powder_snow_bucket",
               "id_ru": "Ведро с рыхлым снегом",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13856,6 +15220,7 @@ export const shopData = [
               "id": "powder_snow_bucket",
               "id_ru": "Ведро с рыхлым снегом",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13863,6 +15228,7 @@ export const shopData = [
               "id": "powder_snow_bucket",
               "id_ru": "Ведро с рыхлым снегом",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13870,6 +15236,7 @@ export const shopData = [
               "id": "powder_snow_bucket",
               "id_ru": "Ведро с рыхлым снегом",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13877,6 +15244,7 @@ export const shopData = [
               "id": "powder_snow_bucket",
               "id_ru": "Ведро с рыхлым снегом",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13884,6 +15252,7 @@ export const shopData = [
               "id": "powder_snow_bucket",
               "id_ru": "Ведро с рыхлым снегом",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13891,6 +15260,7 @@ export const shopData = [
               "id": "powder_snow_bucket",
               "id_ru": "Ведро с рыхлым снегом",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13898,6 +15268,7 @@ export const shopData = [
               "id": "powder_snow_bucket",
               "id_ru": "Ведро с рыхлым снегом",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13905,6 +15276,7 @@ export const shopData = [
               "id": "powder_snow_bucket",
               "id_ru": "Ведро с рыхлым снегом",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13912,6 +15284,7 @@ export const shopData = [
               "id": "powder_snow_bucket",
               "id_ru": "Ведро с рыхлым снегом",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13919,6 +15292,7 @@ export const shopData = [
               "id": "powder_snow_bucket",
               "id_ru": "Ведро с рыхлым снегом",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13926,6 +15300,7 @@ export const shopData = [
               "id": "powder_snow_bucket",
               "id_ru": "Ведро с рыхлым снегом",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13933,6 +15308,7 @@ export const shopData = [
               "id": "powder_snow_bucket",
               "id_ru": "Ведро с рыхлым снегом",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13940,6 +15316,7 @@ export const shopData = [
               "id": "powder_snow_bucket",
               "id_ru": "Ведро с рыхлым снегом",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -13947,6 +15324,7 @@ export const shopData = [
               "id": "powder_snow_bucket",
               "id_ru": "Ведро с рыхлым снегом",
               "count": 1,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -13955,6 +15333,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 20,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -13966,6 +15345,7 @@ export const shopData = [
           "type": "creeper_head",
           "type_ru": "Голова крипера",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -13973,6 +15353,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 4,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -13984,6 +15365,7 @@ export const shopData = [
           "type": "skeleton_skull",
           "type_ru": "Череп",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -13991,6 +15373,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 4,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14002,6 +15385,7 @@ export const shopData = [
           "type": "zombie_head",
           "type_ru": "Голова зомби",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14009,6 +15393,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 4,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14020,6 +15405,7 @@ export const shopData = [
           "type": "ender_eye",
           "type_ru": "Око Эндера",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14027,6 +15413,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14038,6 +15425,7 @@ export const shopData = [
           "type": "ender_chest",
           "type_ru": "Эндер-сундук",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14045,6 +15433,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14056,6 +15445,7 @@ export const shopData = [
           "type": "diamond_leggings",
           "type_ru": "Алмазные поножи",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "mending",
@@ -14084,6 +15474,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 25,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14095,6 +15486,7 @@ export const shopData = [
           "type": "diamond_leggings",
           "type_ru": "Алмазные поножи",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "mending",
@@ -14123,6 +15515,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 25,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14134,6 +15527,7 @@ export const shopData = [
           "type": "amethyst_cluster",
           "type_ru": "Аметистовая друза",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14141,6 +15535,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14152,6 +15547,7 @@ export const shopData = [
           "type": "large_amethyst_bud",
           "type_ru": "Большой аметистовый бутон",
           "amount": 18,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14159,6 +15555,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14170,6 +15567,7 @@ export const shopData = [
           "type": "medium_amethyst_bud",
           "type_ru": "Средний аметистовый бутон",
           "amount": 21,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14177,6 +15575,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14188,6 +15587,7 @@ export const shopData = [
           "type": "small_amethyst_bud",
           "type_ru": "Малый аметистовый бутон",
           "amount": 24,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14195,6 +15595,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14206,6 +15607,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 32,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14213,6 +15615,7 @@ export const shopData = [
           "type": "elytra",
           "type_ru": "Элитры",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14224,6 +15627,7 @@ export const shopData = [
           "type": "sculk_sensor",
           "type_ru": "Скалк-сенсор",
           "amount": 32,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14231,6 +15635,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 4,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14242,6 +15647,7 @@ export const shopData = [
           "type": "sculk_shrieker",
           "type_ru": "Скалковый крикун",
           "amount": 8,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14249,6 +15655,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 4,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14260,6 +15667,7 @@ export const shopData = [
           "type": "sculk_catalyst",
           "type_ru": "Скалковый катализатор",
           "amount": 16,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14267,6 +15675,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 4,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14278,6 +15687,7 @@ export const shopData = [
           "type": "disc_fragment_5",
           "type_ru": "Осколок пластинки",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14285,6 +15695,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 8,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14296,6 +15707,7 @@ export const shopData = [
           "type": "music_disc_otherside",
           "type_ru": "Пластинка",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14303,6 +15715,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 32,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14314,6 +15727,7 @@ export const shopData = [
           "type": "echo_shard",
           "type_ru": "Осколок эха",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14321,6 +15735,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 8,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14332,6 +15747,7 @@ export const shopData = [
           "type": "small_dripleaf",
           "type_ru": "Маленькая бросянка",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14339,6 +15755,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 4,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14362,6 +15779,7 @@ export const shopData = [
           "type": "shulker_box",
           "type_ru": "Шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -14369,6 +15787,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14376,6 +15795,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14383,6 +15803,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14390,6 +15811,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14397,6 +15819,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14404,6 +15827,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14411,6 +15835,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14418,6 +15843,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14425,6 +15851,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14432,6 +15859,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14439,6 +15867,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14446,6 +15875,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14453,6 +15883,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14460,6 +15891,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14467,6 +15899,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14474,6 +15907,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14481,6 +15915,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14488,6 +15923,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14495,6 +15931,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14502,6 +15939,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14509,6 +15947,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14516,6 +15955,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14523,6 +15963,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14530,6 +15971,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14537,6 +15979,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14544,6 +15987,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14551,6 +15995,7 @@ export const shopData = [
               "id": "wheat",
               "id_ru": "Пшеница",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -14559,6 +16004,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 24,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14570,6 +16016,7 @@ export const shopData = [
           "type": "honeycomb",
           "type_ru": "Пчелиные соты",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14577,6 +16024,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14588,6 +16036,7 @@ export const shopData = [
           "type": "packed_mud",
           "type_ru": "Плотная грязь",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14595,6 +16044,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 3,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14606,6 +16056,7 @@ export const shopData = [
           "type": "mud_bricks",
           "type_ru": "Саманные кирпичи",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14613,6 +16064,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 3,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14624,6 +16076,7 @@ export const shopData = [
           "type": "honey_block",
           "type_ru": "Блок мёда",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14631,6 +16084,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14642,6 +16096,7 @@ export const shopData = [
           "type": "shulker_box",
           "type_ru": "Шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -14649,6 +16104,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14656,6 +16112,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14663,6 +16120,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14670,6 +16128,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14677,6 +16136,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14684,6 +16144,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14691,6 +16152,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14698,6 +16160,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14705,6 +16168,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14712,6 +16176,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14719,6 +16184,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14726,6 +16192,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14733,6 +16200,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14740,6 +16208,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14747,6 +16216,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14754,6 +16224,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14761,6 +16232,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14768,6 +16240,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14775,6 +16248,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14782,6 +16256,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14789,6 +16264,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14796,6 +16272,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14803,6 +16280,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14810,6 +16288,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14817,6 +16296,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14824,6 +16304,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14831,6 +16312,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -14839,6 +16321,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 16,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -14850,6 +16333,7 @@ export const shopData = [
           "type": "shulker_box",
           "type_ru": "Шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -14857,6 +16341,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14864,6 +16349,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14871,6 +16357,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14878,6 +16365,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14885,6 +16373,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14892,6 +16381,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14899,6 +16389,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14906,6 +16397,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14913,6 +16405,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14920,6 +16413,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14927,6 +16421,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14934,6 +16429,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14941,6 +16437,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14948,6 +16445,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14955,6 +16453,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14962,6 +16461,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14969,6 +16469,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14976,6 +16477,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14983,6 +16485,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14990,6 +16493,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -14997,6 +16501,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15004,6 +16509,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15011,6 +16517,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15018,6 +16525,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15025,6 +16533,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15032,6 +16541,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15039,6 +16549,7 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "count": 1,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -15047,6 +16558,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 4,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -15058,6 +16570,7 @@ export const shopData = [
           "type": "shulker_box",
           "type_ru": "Шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -15065,6 +16578,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15072,6 +16586,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15079,6 +16594,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15086,6 +16602,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15093,6 +16610,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15100,6 +16618,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15107,6 +16626,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15114,6 +16634,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15121,6 +16642,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15128,6 +16650,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15135,6 +16658,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15142,6 +16666,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15149,6 +16674,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15156,6 +16682,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15163,6 +16690,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15170,6 +16698,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15177,6 +16706,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15184,6 +16714,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15191,6 +16722,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15198,6 +16730,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15205,6 +16738,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15212,6 +16746,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15219,6 +16754,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15226,6 +16762,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15233,6 +16770,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15240,6 +16778,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15247,6 +16786,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -15255,6 +16795,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 5,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -15278,6 +16819,7 @@ export const shopData = [
           "type": "raw_copper_block",
           "type_ru": "Блок рудной меди",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -15285,6 +16827,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 8,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -15296,6 +16839,7 @@ export const shopData = [
           "type": "emerald_block",
           "type_ru": "Изумрудный блок",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -15303,6 +16847,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 8,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -15314,6 +16859,7 @@ export const shopData = [
           "type": "trident",
           "type_ru": "Трезубец",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -15321,6 +16867,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 4,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -15332,6 +16879,7 @@ export const shopData = [
           "type": "waxed_copper_block",
           "type_ru": "Вощёный медный блок",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -15339,6 +16887,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 8,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -15350,6 +16899,7 @@ export const shopData = [
           "type": "waxed_exposed_copper",
           "type_ru": "Вощёный потемневший медный блок",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -15357,6 +16907,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 8,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -15368,6 +16919,7 @@ export const shopData = [
           "type": "waxed_weathered_copper",
           "type_ru": "Вощёный состаренный медный блок",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -15375,6 +16927,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 8,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -15386,6 +16939,7 @@ export const shopData = [
           "type": "waxed_oxidized_copper",
           "type_ru": "Вощёный окисленный медный блок",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -15393,6 +16947,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 8,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -15404,6 +16959,7 @@ export const shopData = [
           "type": "honeycomb",
           "type_ru": "Пчелиные соты",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -15411,6 +16967,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 4,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -15422,6 +16979,7 @@ export const shopData = [
           "type": "honey_bottle",
           "type_ru": "Бутылочка мёда",
           "amount": 16,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -15429,6 +16987,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -15452,6 +17011,7 @@ export const shopData = [
           "type": "trident",
           "type_ru": "Трезубец",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "channeling",
@@ -15485,6 +17045,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 13,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -15496,6 +17057,7 @@ export const shopData = [
           "type": "trident",
           "type_ru": "Трезубец",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "mending",
@@ -15519,6 +17081,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 13,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -15530,6 +17093,7 @@ export const shopData = [
           "type": "shulker_box",
           "type_ru": "Шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -15537,6 +17101,7 @@ export const shopData = [
               "id": "sea_lantern",
               "id_ru": "Морской фонарь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15544,6 +17109,7 @@ export const shopData = [
               "id": "sea_lantern",
               "id_ru": "Морской фонарь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15551,6 +17117,7 @@ export const shopData = [
               "id": "sea_lantern",
               "id_ru": "Морской фонарь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15558,6 +17125,7 @@ export const shopData = [
               "id": "sea_lantern",
               "id_ru": "Морской фонарь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15565,6 +17133,7 @@ export const shopData = [
               "id": "sea_lantern",
               "id_ru": "Морской фонарь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15572,6 +17141,7 @@ export const shopData = [
               "id": "sea_lantern",
               "id_ru": "Морской фонарь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15579,6 +17149,7 @@ export const shopData = [
               "id": "sea_lantern",
               "id_ru": "Морской фонарь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15586,6 +17157,7 @@ export const shopData = [
               "id": "sea_lantern",
               "id_ru": "Морской фонарь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15593,6 +17165,7 @@ export const shopData = [
               "id": "sea_lantern",
               "id_ru": "Морской фонарь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15600,6 +17173,7 @@ export const shopData = [
               "id": "sea_lantern",
               "id_ru": "Морской фонарь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15607,6 +17181,7 @@ export const shopData = [
               "id": "sea_lantern",
               "id_ru": "Морской фонарь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15614,6 +17189,7 @@ export const shopData = [
               "id": "sea_lantern",
               "id_ru": "Морской фонарь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15621,6 +17197,7 @@ export const shopData = [
               "id": "sea_lantern",
               "id_ru": "Морской фонарь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15628,6 +17205,7 @@ export const shopData = [
               "id": "sea_lantern",
               "id_ru": "Морской фонарь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15635,6 +17213,7 @@ export const shopData = [
               "id": "sea_lantern",
               "id_ru": "Морской фонарь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15642,6 +17221,7 @@ export const shopData = [
               "id": "sea_lantern",
               "id_ru": "Морской фонарь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15649,6 +17229,7 @@ export const shopData = [
               "id": "sea_lantern",
               "id_ru": "Морской фонарь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15656,6 +17237,7 @@ export const shopData = [
               "id": "sea_lantern",
               "id_ru": "Морской фонарь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15663,6 +17245,7 @@ export const shopData = [
               "id": "sea_lantern",
               "id_ru": "Морской фонарь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15670,6 +17253,7 @@ export const shopData = [
               "id": "sea_lantern",
               "id_ru": "Морской фонарь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15677,6 +17261,7 @@ export const shopData = [
               "id": "sea_lantern",
               "id_ru": "Морской фонарь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15684,6 +17269,7 @@ export const shopData = [
               "id": "sea_lantern",
               "id_ru": "Морской фонарь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15691,6 +17277,7 @@ export const shopData = [
               "id": "sea_lantern",
               "id_ru": "Морской фонарь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15698,6 +17285,7 @@ export const shopData = [
               "id": "sea_lantern",
               "id_ru": "Морской фонарь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15705,6 +17293,7 @@ export const shopData = [
               "id": "sea_lantern",
               "id_ru": "Морской фонарь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15712,6 +17301,7 @@ export const shopData = [
               "id": "sea_lantern",
               "id_ru": "Морской фонарь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15719,6 +17309,7 @@ export const shopData = [
               "id": "sea_lantern",
               "id_ru": "Морской фонарь",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -15727,6 +17318,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 7,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -15738,6 +17330,7 @@ export const shopData = [
           "type": "shulker_box",
           "type_ru": "Шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -15745,6 +17338,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15752,6 +17346,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15759,6 +17354,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15766,6 +17362,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15773,6 +17370,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15780,6 +17378,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15787,6 +17386,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15794,6 +17394,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15801,6 +17402,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15808,6 +17410,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15815,6 +17418,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15822,6 +17426,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15829,6 +17434,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15836,6 +17442,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15843,6 +17450,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15850,6 +17458,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15857,6 +17466,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15864,6 +17474,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15871,6 +17482,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15878,6 +17490,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15885,6 +17498,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15892,6 +17506,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15899,6 +17514,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15906,6 +17522,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15913,6 +17530,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15920,6 +17538,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15927,6 +17546,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -15935,6 +17555,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 7,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -15946,6 +17567,7 @@ export const shopData = [
           "type": "shulker_box",
           "type_ru": "Шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -15953,6 +17575,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15960,6 +17583,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15967,6 +17591,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15974,6 +17599,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15981,6 +17607,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15988,6 +17615,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -15995,6 +17623,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -16002,6 +17631,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -16009,6 +17639,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -16016,6 +17647,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -16023,6 +17655,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -16030,6 +17663,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -16037,6 +17671,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -16044,6 +17679,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -16051,6 +17687,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -16058,6 +17695,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -16065,6 +17703,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -16072,6 +17711,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -16079,6 +17719,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -16086,6 +17727,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -16093,6 +17735,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -16100,6 +17743,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -16107,6 +17751,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -16114,6 +17759,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -16121,6 +17767,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -16128,6 +17775,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -16135,6 +17783,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -16143,6 +17792,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 7,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -16154,6 +17804,7 @@ export const shopData = [
           "type": "netherite_ingot",
           "type_ru": "Незеритовый слиток",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -16161,6 +17812,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 11,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -16184,6 +17836,7 @@ export const shopData = [
           "type": "red_shulker_box",
           "type_ru": "Красный шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -16274,6 +17927,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 31,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -16285,6 +17939,7 @@ export const shopData = [
           "type": "orange_shulker_box",
           "type_ru": "Оранжевый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -16370,6 +18025,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 30,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -16381,6 +18037,7 @@ export const shopData = [
           "type": "diamond_sword",
           "type_ru": "Алмазный меч",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "fire_aspect",
@@ -16424,6 +18081,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 20,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -16435,6 +18093,7 @@ export const shopData = [
           "type": "diamond_sword",
           "type_ru": "Алмазный меч",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "fire_aspect",
@@ -16473,6 +18132,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 19,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -16484,6 +18144,7 @@ export const shopData = [
           "type": "light_blue_shulker_box",
           "type_ru": "Голубой шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -16574,6 +18235,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 31,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -16585,6 +18247,7 @@ export const shopData = [
           "type": "cyan_shulker_box",
           "type_ru": "Бирюзовый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -16670,6 +18333,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 30,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -16681,6 +18345,7 @@ export const shopData = [
           "type": "diamond_sword",
           "type_ru": "Алмазный меч",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "fire_aspect",
@@ -16724,6 +18389,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 20,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -16735,6 +18401,7 @@ export const shopData = [
           "type": "diamond_sword",
           "type_ru": "Алмазный меч",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "fire_aspect",
@@ -16773,6 +18440,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 19,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -16784,6 +18452,7 @@ export const shopData = [
           "type": "gray_shulker_box",
           "type_ru": "Серый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -16874,6 +18543,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 31,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -16885,6 +18555,7 @@ export const shopData = [
           "type": "light_gray_shulker_box",
           "type_ru": "Светло-серый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -16970,6 +18641,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 30,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -16981,6 +18653,7 @@ export const shopData = [
           "type": "diamond_sword",
           "type_ru": "Алмазный меч",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "damage_arthropods",
@@ -17024,6 +18697,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 20,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -17035,6 +18709,7 @@ export const shopData = [
           "type": "diamond_sword",
           "type_ru": "Алмазный меч",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "damage_arthropods",
@@ -17073,6 +18748,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 19,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -17084,6 +18760,7 @@ export const shopData = [
           "type": "bow",
           "type_ru": "Лук",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "arrow_fire",
@@ -17117,6 +18794,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -17128,6 +18806,7 @@ export const shopData = [
           "type": "bow",
           "type_ru": "Лук",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "arrow_fire",
@@ -17161,6 +18840,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -17172,6 +18852,7 @@ export const shopData = [
           "type": "crossbow",
           "type_ru": "Арбалет",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "mending",
@@ -17200,6 +18881,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -17211,6 +18893,7 @@ export const shopData = [
           "type": "crossbow",
           "type_ru": "Арбалет",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "mending",
@@ -17239,6 +18922,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -17250,6 +18934,7 @@ export const shopData = [
           "type": "diamond_axe",
           "type_ru": "Алмазный топор",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -17283,6 +18968,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -17294,6 +18980,7 @@ export const shopData = [
           "type": "diamond_axe",
           "type_ru": "Алмазный топор",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -17327,6 +19014,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -17338,6 +19026,7 @@ export const shopData = [
           "type": "diamond_axe",
           "type_ru": "Алмазный топор",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "damage_arthropods",
@@ -17371,6 +19060,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -17382,6 +19072,7 @@ export const shopData = [
           "type": "diamond_axe",
           "type_ru": "Алмазный топор",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "damage_arthropods",
@@ -17415,6 +19106,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -17426,6 +19118,7 @@ export const shopData = [
           "type": "netherite_ingot",
           "type_ru": "Незеритовый слиток",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -17433,6 +19126,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -17444,6 +19138,7 @@ export const shopData = [
           "type": "trident",
           "type_ru": "Трезубец",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "channeling",
@@ -17477,6 +19172,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 13,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -17488,6 +19184,7 @@ export const shopData = [
           "type": "trident",
           "type_ru": "Трезубец",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "impaling",
@@ -17516,6 +19213,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 13,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -17539,6 +19237,7 @@ export const shopData = [
           "type": "red_shulker_box",
           "type_ru": "Красный шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -17684,6 +19383,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 60,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -17695,6 +19395,7 @@ export const shopData = [
           "type": "diamond_helmet",
           "type_ru": "Алмазный шлем",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -17733,6 +19434,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 19,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -17744,6 +19446,7 @@ export const shopData = [
           "type": "diamond_chestplate",
           "type_ru": "Алмазный нагрудник",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "protection_fire",
@@ -17772,6 +19475,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -17783,6 +19487,7 @@ export const shopData = [
           "type": "diamond_leggings",
           "type_ru": "Алмазные поножи",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "protection_fire",
@@ -17811,6 +19516,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -17822,6 +19528,7 @@ export const shopData = [
           "type": "diamond_boots",
           "type_ru": "Алмазные ботинки",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "depth_strider",
@@ -17865,6 +19572,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 19,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -17876,6 +19584,7 @@ export const shopData = [
           "type": "lime_shulker_box",
           "type_ru": "Лаймовый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -18021,6 +19730,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 60,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -18032,6 +19742,7 @@ export const shopData = [
           "type": "diamond_helmet",
           "type_ru": "Алмазный шлем",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -18070,6 +19781,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 19,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -18081,6 +19793,7 @@ export const shopData = [
           "type": "diamond_chestplate",
           "type_ru": "Алмазный нагрудник",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "protection_explosions",
@@ -18109,6 +19822,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -18120,6 +19834,7 @@ export const shopData = [
           "type": "diamond_leggings",
           "type_ru": "Алмазные поножи",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "protection_explosions",
@@ -18148,6 +19863,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -18159,6 +19875,7 @@ export const shopData = [
           "type": "diamond_boots",
           "type_ru": "Алмазные ботинки",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "protection_explosions",
@@ -18202,6 +19919,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 19,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -18213,6 +19931,7 @@ export const shopData = [
           "type": "light_blue_shulker_box",
           "type_ru": "Голубой шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -18358,6 +20077,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 60,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -18369,6 +20089,7 @@ export const shopData = [
           "type": "diamond_helmet",
           "type_ru": "Алмазный шлем",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -18407,6 +20128,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 19,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -18418,6 +20140,7 @@ export const shopData = [
           "type": "diamond_chestplate",
           "type_ru": "Алмазный нагрудник",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "mending",
@@ -18446,6 +20169,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -18457,6 +20181,7 @@ export const shopData = [
           "type": "diamond_leggings",
           "type_ru": "Алмазные поножи",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "mending",
@@ -18485,6 +20210,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -18496,6 +20222,7 @@ export const shopData = [
           "type": "diamond_boots",
           "type_ru": "Алмазные ботинки",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "depth_strider",
@@ -18539,6 +20266,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 19,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -18550,6 +20278,7 @@ export const shopData = [
           "type": "netherite_ingot",
           "type_ru": "Незеритовый слиток",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -18557,6 +20286,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -18568,6 +20298,7 @@ export const shopData = [
           "type": "yellow_shulker_box",
           "type_ru": "Жёлтый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -18713,6 +20444,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 60,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -18724,6 +20456,7 @@ export const shopData = [
           "type": "diamond_helmet",
           "type_ru": "Алмазный шлем",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -18762,6 +20495,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 19,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -18773,6 +20507,7 @@ export const shopData = [
           "type": "diamond_chestplate",
           "type_ru": "Алмазный нагрудник",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "mending",
@@ -18801,6 +20536,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -18812,6 +20548,7 @@ export const shopData = [
           "type": "diamond_leggings",
           "type_ru": "Алмазные поножи",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "mending",
@@ -18840,6 +20577,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 15,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -18851,6 +20589,7 @@ export const shopData = [
           "type": "diamond_boots",
           "type_ru": "Алмазные ботинки",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "depth_strider",
@@ -18894,6 +20633,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 19,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -18905,6 +20645,7 @@ export const shopData = [
           "type": "diamond_horse_armor",
           "type_ru": "Алмазная конская броня",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -18912,6 +20653,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 4,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -18923,6 +20665,7 @@ export const shopData = [
           "type": "golden_horse_armor",
           "type_ru": "Золотая конская броня",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -18930,6 +20673,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 3,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -18941,6 +20685,7 @@ export const shopData = [
           "type": "iron_horse_armor",
           "type_ru": "Железная конская броня",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -18948,6 +20693,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -18959,6 +20705,7 @@ export const shopData = [
           "type": "leather_horse_armor",
           "type_ru": "Кожаная конская броня",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -18966,6 +20713,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -18977,6 +20725,7 @@ export const shopData = [
           "type": "saddle",
           "type_ru": "Седло",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -18984,6 +20733,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -18995,6 +20745,7 @@ export const shopData = [
           "type": "shield",
           "type_ru": "Щит",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "mending",
@@ -19013,6 +20764,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 5,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -19024,6 +20776,7 @@ export const shopData = [
           "type": "shield",
           "type_ru": "Щит",
           "amount": 1,
+          "potion": "",
           "enchant": [
             {
               "enchant_id": "mending",
@@ -19042,6 +20795,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 5,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -19065,6 +20819,7 @@ export const shopData = [
           "type": "blue_shulker_box",
           "type_ru": "Синий шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -19072,6 +20827,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19079,6 +20835,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19086,6 +20843,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19093,6 +20851,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19100,6 +20859,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19107,6 +20867,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19114,6 +20875,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19121,6 +20883,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19128,6 +20891,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19135,6 +20899,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19142,6 +20907,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19149,6 +20915,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19156,6 +20923,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19163,6 +20931,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19170,6 +20939,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19177,6 +20947,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19184,6 +20955,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19191,6 +20963,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19198,6 +20971,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19205,6 +20979,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19212,6 +20987,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19219,6 +20995,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19226,6 +21003,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19233,6 +21011,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19240,6 +21019,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19247,6 +21027,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19254,6 +21035,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -19262,6 +21044,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 18,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -19273,6 +21056,7 @@ export const shopData = [
           "type": "blue_shulker_box",
           "type_ru": "Синий шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -19280,6 +21064,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19287,6 +21072,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19294,6 +21080,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19301,6 +21088,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19308,6 +21096,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19315,6 +21104,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19322,6 +21112,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19329,6 +21120,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19336,6 +21128,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19343,6 +21136,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19350,6 +21144,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19357,6 +21152,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19364,6 +21160,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19371,6 +21168,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19378,6 +21176,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19385,6 +21184,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19392,6 +21192,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19399,6 +21200,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19406,6 +21208,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19413,6 +21216,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19420,6 +21224,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19427,6 +21232,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19434,6 +21240,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19441,6 +21248,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19448,6 +21256,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19455,6 +21264,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19462,6 +21272,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -19470,6 +21281,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 18,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -19481,6 +21293,7 @@ export const shopData = [
           "type": "blue_shulker_box",
           "type_ru": "Синий шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -19488,6 +21301,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19495,6 +21309,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19502,6 +21317,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19509,6 +21325,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19516,6 +21333,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19523,6 +21341,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19530,6 +21349,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19537,6 +21357,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19544,6 +21365,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19551,6 +21373,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19558,6 +21381,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19565,6 +21389,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19572,6 +21397,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19579,6 +21405,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19586,6 +21413,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19593,6 +21421,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19600,6 +21429,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19607,6 +21437,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19614,6 +21445,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19621,6 +21453,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19628,6 +21461,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19635,6 +21469,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19642,6 +21477,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19649,6 +21485,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19656,6 +21493,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19663,6 +21501,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19670,6 +21509,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -19678,6 +21518,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 18,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -19689,6 +21530,7 @@ export const shopData = [
           "type": "blue_shulker_box",
           "type_ru": "Синий шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -19696,6 +21538,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19703,6 +21546,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19710,6 +21554,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19717,6 +21562,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19724,6 +21570,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19731,6 +21578,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19738,6 +21586,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19745,6 +21594,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19752,6 +21602,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19759,6 +21610,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19766,6 +21618,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19773,6 +21626,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19780,6 +21634,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19787,6 +21642,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19794,6 +21650,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19801,6 +21658,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19808,6 +21666,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19815,6 +21674,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19822,6 +21682,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19829,6 +21690,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19836,6 +21698,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19843,6 +21706,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19850,6 +21714,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19857,6 +21722,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19864,6 +21730,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19871,6 +21738,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19878,6 +21746,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -19886,6 +21755,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 18,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -19897,6 +21767,7 @@ export const shopData = [
           "type": "blue_shulker_box",
           "type_ru": "Синий шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -19904,6 +21775,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19911,6 +21783,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19918,6 +21791,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19925,6 +21799,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19932,6 +21807,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19939,6 +21815,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19946,6 +21823,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19953,6 +21831,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19960,6 +21839,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19967,6 +21847,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19974,6 +21855,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19981,6 +21863,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19988,6 +21871,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -19995,6 +21879,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20002,6 +21887,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20009,6 +21895,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20016,6 +21903,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20023,6 +21911,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20030,6 +21919,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20037,6 +21927,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20044,6 +21935,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20051,6 +21943,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20058,6 +21951,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20065,6 +21959,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20072,6 +21967,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20079,6 +21975,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20086,6 +21983,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -20094,6 +21992,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 18,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -20105,6 +22004,7 @@ export const shopData = [
           "type": "blue_shulker_box",
           "type_ru": "Синий шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -20112,6 +22012,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20119,6 +22020,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20126,6 +22028,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20133,6 +22036,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20140,6 +22044,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20147,6 +22052,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20154,6 +22060,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20161,6 +22068,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20168,6 +22076,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20175,6 +22084,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20182,6 +22092,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20189,6 +22100,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20196,6 +22108,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20203,6 +22116,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20210,6 +22124,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20217,6 +22132,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20224,6 +22140,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20231,6 +22148,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20238,6 +22156,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20245,6 +22164,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20252,6 +22172,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20259,6 +22180,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20266,6 +22188,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20273,6 +22196,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20280,6 +22204,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20287,6 +22212,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20294,6 +22220,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -20302,6 +22229,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 18,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -20313,6 +22241,7 @@ export const shopData = [
           "type": "blue_shulker_box",
           "type_ru": "Синий шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -20320,6 +22249,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20327,6 +22257,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20334,6 +22265,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20341,6 +22273,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20348,6 +22281,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20355,6 +22289,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20362,6 +22297,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20369,6 +22305,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20376,6 +22313,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20383,6 +22321,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20390,6 +22329,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20397,6 +22337,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20404,6 +22345,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20411,6 +22353,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20418,6 +22361,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20425,6 +22369,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20432,6 +22377,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20439,6 +22385,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20446,6 +22393,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20453,6 +22401,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20460,6 +22409,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20467,6 +22417,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20474,6 +22425,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20481,6 +22433,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20488,6 +22441,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20495,6 +22449,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20502,6 +22457,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -20510,6 +22466,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 18,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -20521,6 +22478,7 @@ export const shopData = [
           "type": "blue_shulker_box",
           "type_ru": "Синий шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -20528,6 +22486,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20535,6 +22494,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20542,6 +22502,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20549,6 +22510,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20556,6 +22518,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20563,6 +22526,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20570,6 +22534,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20577,6 +22542,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20584,6 +22550,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20591,6 +22558,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20598,6 +22566,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20605,6 +22574,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20612,6 +22582,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20619,6 +22590,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20626,6 +22598,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20633,6 +22606,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20640,6 +22614,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20647,6 +22622,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20654,6 +22630,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20661,6 +22638,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20668,6 +22646,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20675,6 +22654,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20682,6 +22662,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20689,6 +22670,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20696,6 +22678,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20703,6 +22686,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20710,6 +22694,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -20718,6 +22703,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 18,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -20729,6 +22715,7 @@ export const shopData = [
           "type": "blue_shulker_box",
           "type_ru": "Синий шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -20736,6 +22723,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20743,6 +22731,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20750,6 +22739,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20757,6 +22747,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20764,6 +22755,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20771,6 +22763,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20778,6 +22771,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20785,6 +22779,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20792,6 +22787,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20799,6 +22795,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20806,6 +22803,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20813,6 +22811,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20820,6 +22819,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20827,6 +22827,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20834,6 +22835,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20841,6 +22843,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20848,6 +22851,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20855,6 +22859,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20862,6 +22867,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20869,6 +22875,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20876,6 +22883,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20883,6 +22891,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20890,6 +22899,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20897,6 +22907,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20904,6 +22915,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20911,6 +22923,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20918,6 +22931,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -20926,6 +22940,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 18,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -20949,6 +22964,7 @@ export const shopData = [
           "type": "shulker_box",
           "type_ru": "Шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -20956,6 +22972,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20963,6 +22980,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20970,6 +22988,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20977,6 +22996,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20984,6 +23004,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20991,6 +23012,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -20998,6 +23020,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21005,6 +23028,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21012,6 +23036,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21019,6 +23044,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21026,6 +23052,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21033,6 +23060,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21040,6 +23068,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21047,6 +23076,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21054,6 +23084,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21061,6 +23092,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21068,6 +23100,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21075,6 +23108,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21082,6 +23116,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21089,6 +23124,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21096,6 +23132,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21103,6 +23140,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21110,6 +23148,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21117,6 +23156,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21124,6 +23164,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21131,6 +23172,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21138,6 +23180,7 @@ export const shopData = [
               "id": "prismarine",
               "id_ru": "Призмарин",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -21146,6 +23189,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 6,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -21157,6 +23201,7 @@ export const shopData = [
           "type": "shulker_box",
           "type_ru": "Шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -21164,6 +23209,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21171,6 +23217,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21178,6 +23225,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21185,6 +23233,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21192,6 +23241,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21199,6 +23249,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21206,6 +23257,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21213,6 +23265,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21220,6 +23273,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21227,6 +23281,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21234,6 +23289,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21241,6 +23297,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21248,6 +23305,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21255,6 +23313,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21262,6 +23321,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21269,6 +23329,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21276,6 +23337,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21283,6 +23345,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21290,6 +23353,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21297,6 +23361,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21304,6 +23369,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21311,6 +23377,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21318,6 +23385,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21325,6 +23393,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21332,6 +23401,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21339,6 +23409,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21346,6 +23417,7 @@ export const shopData = [
               "id": "prismarine_bricks",
               "id_ru": "Призмариновые кирпичи",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -21354,6 +23426,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -21377,6 +23450,7 @@ export const shopData = [
           "type": "lime_shulker_box",
           "type_ru": "Лаймовый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -21384,6 +23458,7 @@ export const shopData = [
               "id": "emerald_block",
               "id_ru": "Изумрудный блок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21391,6 +23466,7 @@ export const shopData = [
               "id": "emerald_block",
               "id_ru": "Изумрудный блок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21398,6 +23474,7 @@ export const shopData = [
               "id": "emerald_block",
               "id_ru": "Изумрудный блок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21405,6 +23482,7 @@ export const shopData = [
               "id": "emerald_block",
               "id_ru": "Изумрудный блок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21412,6 +23490,7 @@ export const shopData = [
               "id": "emerald_block",
               "id_ru": "Изумрудный блок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21419,6 +23498,7 @@ export const shopData = [
               "id": "emerald_block",
               "id_ru": "Изумрудный блок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21426,6 +23506,7 @@ export const shopData = [
               "id": "emerald_block",
               "id_ru": "Изумрудный блок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21433,6 +23514,7 @@ export const shopData = [
               "id": "emerald_block",
               "id_ru": "Изумрудный блок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21440,6 +23522,7 @@ export const shopData = [
               "id": "emerald_block",
               "id_ru": "Изумрудный блок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21447,6 +23530,7 @@ export const shopData = [
               "id": "emerald_block",
               "id_ru": "Изумрудный блок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21454,6 +23538,7 @@ export const shopData = [
               "id": "emerald_block",
               "id_ru": "Изумрудный блок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21461,6 +23546,7 @@ export const shopData = [
               "id": "emerald_block",
               "id_ru": "Изумрудный блок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21468,6 +23554,7 @@ export const shopData = [
               "id": "emerald_block",
               "id_ru": "Изумрудный блок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21475,6 +23562,7 @@ export const shopData = [
               "id": "emerald_block",
               "id_ru": "Изумрудный блок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21482,6 +23570,7 @@ export const shopData = [
               "id": "emerald_block",
               "id_ru": "Изумрудный блок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21489,6 +23578,7 @@ export const shopData = [
               "id": "emerald_block",
               "id_ru": "Изумрудный блок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21496,6 +23586,7 @@ export const shopData = [
               "id": "emerald_block",
               "id_ru": "Изумрудный блок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21503,6 +23594,7 @@ export const shopData = [
               "id": "emerald_block",
               "id_ru": "Изумрудный блок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21510,6 +23602,7 @@ export const shopData = [
               "id": "emerald_block",
               "id_ru": "Изумрудный блок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21517,6 +23610,7 @@ export const shopData = [
               "id": "emerald_block",
               "id_ru": "Изумрудный блок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21524,6 +23618,7 @@ export const shopData = [
               "id": "emerald_block",
               "id_ru": "Изумрудный блок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21531,6 +23626,7 @@ export const shopData = [
               "id": "emerald_block",
               "id_ru": "Изумрудный блок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21538,6 +23634,7 @@ export const shopData = [
               "id": "emerald_block",
               "id_ru": "Изумрудный блок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21545,6 +23642,7 @@ export const shopData = [
               "id": "emerald_block",
               "id_ru": "Изумрудный блок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21552,6 +23650,7 @@ export const shopData = [
               "id": "emerald_block",
               "id_ru": "Изумрудный блок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21559,6 +23658,7 @@ export const shopData = [
               "id": "emerald_block",
               "id_ru": "Изумрудный блок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21566,6 +23666,7 @@ export const shopData = [
               "id": "emerald_block",
               "id_ru": "Изумрудный блок",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -21574,6 +23675,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 20,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -21585,6 +23687,7 @@ export const shopData = [
           "type": "yellow_shulker_box",
           "type_ru": "Жёлтый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -21592,6 +23695,7 @@ export const shopData = [
               "id": "glowstone",
               "id_ru": "Светокамень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21599,6 +23703,7 @@ export const shopData = [
               "id": "glowstone",
               "id_ru": "Светокамень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21606,6 +23711,7 @@ export const shopData = [
               "id": "glowstone",
               "id_ru": "Светокамень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21613,6 +23719,7 @@ export const shopData = [
               "id": "glowstone",
               "id_ru": "Светокамень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21620,6 +23727,7 @@ export const shopData = [
               "id": "glowstone",
               "id_ru": "Светокамень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21627,6 +23735,7 @@ export const shopData = [
               "id": "glowstone",
               "id_ru": "Светокамень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21634,6 +23743,7 @@ export const shopData = [
               "id": "glowstone",
               "id_ru": "Светокамень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21641,6 +23751,7 @@ export const shopData = [
               "id": "glowstone",
               "id_ru": "Светокамень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21648,6 +23759,7 @@ export const shopData = [
               "id": "glowstone",
               "id_ru": "Светокамень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21655,6 +23767,7 @@ export const shopData = [
               "id": "glowstone",
               "id_ru": "Светокамень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21662,6 +23775,7 @@ export const shopData = [
               "id": "glowstone",
               "id_ru": "Светокамень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21669,6 +23783,7 @@ export const shopData = [
               "id": "glowstone",
               "id_ru": "Светокамень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21676,6 +23791,7 @@ export const shopData = [
               "id": "glowstone",
               "id_ru": "Светокамень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21683,6 +23799,7 @@ export const shopData = [
               "id": "glowstone",
               "id_ru": "Светокамень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21690,6 +23807,7 @@ export const shopData = [
               "id": "glowstone",
               "id_ru": "Светокамень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21697,6 +23815,7 @@ export const shopData = [
               "id": "glowstone",
               "id_ru": "Светокамень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21704,6 +23823,7 @@ export const shopData = [
               "id": "glowstone",
               "id_ru": "Светокамень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21711,6 +23831,7 @@ export const shopData = [
               "id": "glowstone",
               "id_ru": "Светокамень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21718,6 +23839,7 @@ export const shopData = [
               "id": "glowstone",
               "id_ru": "Светокамень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21725,6 +23847,7 @@ export const shopData = [
               "id": "glowstone",
               "id_ru": "Светокамень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21732,6 +23855,7 @@ export const shopData = [
               "id": "glowstone",
               "id_ru": "Светокамень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21739,6 +23863,7 @@ export const shopData = [
               "id": "glowstone",
               "id_ru": "Светокамень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21746,6 +23871,7 @@ export const shopData = [
               "id": "glowstone",
               "id_ru": "Светокамень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21753,6 +23879,7 @@ export const shopData = [
               "id": "glowstone",
               "id_ru": "Светокамень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21760,6 +23887,7 @@ export const shopData = [
               "id": "glowstone",
               "id_ru": "Светокамень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21767,6 +23895,7 @@ export const shopData = [
               "id": "glowstone",
               "id_ru": "Светокамень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21774,6 +23903,7 @@ export const shopData = [
               "id": "glowstone",
               "id_ru": "Светокамень",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -21782,6 +23912,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 18,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -21805,6 +23936,7 @@ export const shopData = [
           "type": "light_blue_shulker_box",
           "type_ru": "Голубой шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -21812,6 +23944,7 @@ export const shopData = [
               "id": "tube_coral_block",
               "id_ru": "Блок трубчатого коралла",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21819,6 +23952,7 @@ export const shopData = [
               "id": "brain_coral_block",
               "id_ru": "Блок коралла-мозговика",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21826,6 +23960,7 @@ export const shopData = [
               "id": "bubble_coral_block",
               "id_ru": "Блок пузырчатого коралла",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21833,6 +23968,7 @@ export const shopData = [
               "id": "fire_coral_block",
               "id_ru": "Блок огненного коралла",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21840,6 +23976,7 @@ export const shopData = [
               "id": "horn_coral_block",
               "id_ru": "Блок рогового коралла",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21847,6 +23984,7 @@ export const shopData = [
               "id": "sea_pickle",
               "id_ru": "Морской огурец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21854,6 +23992,7 @@ export const shopData = [
               "id": "sea_pickle",
               "id_ru": "Морской огурец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21861,6 +24000,7 @@ export const shopData = [
               "id": "tube_coral",
               "id_ru": "Трубчатый коралл",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21868,6 +24008,7 @@ export const shopData = [
               "id": "tube_coral",
               "id_ru": "Трубчатый коралл",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21875,6 +24016,7 @@ export const shopData = [
               "id": "brain_coral",
               "id_ru": "Коралл-мозговик",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21882,6 +24024,7 @@ export const shopData = [
               "id": "brain_coral",
               "id_ru": "Коралл-мозговик",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21889,6 +24032,7 @@ export const shopData = [
               "id": "bubble_coral",
               "id_ru": "Пузырчатый коралл",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21896,6 +24040,7 @@ export const shopData = [
               "id": "bubble_coral",
               "id_ru": "Пузырчатый коралл",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21903,6 +24048,7 @@ export const shopData = [
               "id": "fire_coral",
               "id_ru": "Огненный коралл",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21910,6 +24056,7 @@ export const shopData = [
               "id": "fire_coral",
               "id_ru": "Огненный коралл",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21917,6 +24064,7 @@ export const shopData = [
               "id": "horn_coral",
               "id_ru": "Роговой коралл",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21924,6 +24072,7 @@ export const shopData = [
               "id": "horn_coral",
               "id_ru": "Роговой коралл",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21931,6 +24080,7 @@ export const shopData = [
               "id": "tube_coral_fan",
               "id_ru": "Веерный трубчатый коралл",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21938,6 +24088,7 @@ export const shopData = [
               "id": "tube_coral_fan",
               "id_ru": "Веерный трубчатый коралл",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21945,6 +24096,7 @@ export const shopData = [
               "id": "brain_coral_fan",
               "id_ru": "Веерный коралл-мозговик",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21952,6 +24104,7 @@ export const shopData = [
               "id": "brain_coral_fan",
               "id_ru": "Веерный коралл-мозговик",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21959,6 +24112,7 @@ export const shopData = [
               "id": "bubble_coral_fan",
               "id_ru": "Веерный пузырчатый коралл",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21966,6 +24120,7 @@ export const shopData = [
               "id": "bubble_coral_fan",
               "id_ru": "Веерный пузырчатый коралл",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21973,6 +24128,7 @@ export const shopData = [
               "id": "fire_coral_fan",
               "id_ru": "Веерный огненный коралл",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21980,6 +24136,7 @@ export const shopData = [
               "id": "fire_coral_fan",
               "id_ru": "Веерный огненный коралл",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21987,6 +24144,7 @@ export const shopData = [
               "id": "horn_coral_fan",
               "id_ru": "Веерный роговый коралл",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -21994,6 +24152,7 @@ export const shopData = [
               "id": "horn_coral_fan",
               "id_ru": "Веерный роговый коралл",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -22002,6 +24161,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22013,6 +24173,7 @@ export const shopData = [
           "type": "brown_shulker_box",
           "type_ru": "Коричневый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -22020,6 +24181,7 @@ export const shopData = [
               "id": "wheat_seeds",
               "id_ru": "Семена пшеницы",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22027,6 +24189,7 @@ export const shopData = [
               "id": "wheat_seeds",
               "id_ru": "Семена пшеницы",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22034,6 +24197,7 @@ export const shopData = [
               "id": "wheat_seeds",
               "id_ru": "Семена пшеницы",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22041,6 +24205,7 @@ export const shopData = [
               "id": "cocoa_beans",
               "id_ru": "Какао-бобы",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22048,6 +24213,7 @@ export const shopData = [
               "id": "pumpkin_seeds",
               "id_ru": "Семена тыквы",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22055,6 +24221,7 @@ export const shopData = [
               "id": "melon_seeds",
               "id_ru": "Семена арбуза",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22062,6 +24229,7 @@ export const shopData = [
               "id": "nether_wart",
               "id_ru": "Незерский нарост",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22069,6 +24237,7 @@ export const shopData = [
               "id": "nether_wart",
               "id_ru": "Незерский нарост",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22076,6 +24245,7 @@ export const shopData = [
               "id": "nether_wart",
               "id_ru": "Незерский нарост",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22083,6 +24253,7 @@ export const shopData = [
               "id": "beetroot_seeds",
               "id_ru": "Семена свёклы",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22090,6 +24261,7 @@ export const shopData = [
               "id": "beetroot_seeds",
               "id_ru": "Семена свёклы",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22097,6 +24269,7 @@ export const shopData = [
               "id": "beetroot_seeds",
               "id_ru": "Семена свёклы",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22104,6 +24277,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22111,6 +24285,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22118,6 +24293,7 @@ export const shopData = [
               "id": "carrot",
               "id_ru": "Морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22125,6 +24301,7 @@ export const shopData = [
               "id": "potato",
               "id_ru": "Картофель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22132,6 +24309,7 @@ export const shopData = [
               "id": "potato",
               "id_ru": "Картофель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22139,6 +24317,7 @@ export const shopData = [
               "id": "potato",
               "id_ru": "Картофель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22146,6 +24325,7 @@ export const shopData = [
               "id": "bone",
               "id_ru": "Кость",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22153,6 +24333,7 @@ export const shopData = [
               "id": "bone",
               "id_ru": "Кость",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22160,6 +24341,7 @@ export const shopData = [
               "id": "bone",
               "id_ru": "Кость",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22167,6 +24349,7 @@ export const shopData = [
               "id": "bone",
               "id_ru": "Кость",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22174,6 +24357,7 @@ export const shopData = [
               "id": "bone",
               "id_ru": "Кость",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22181,6 +24365,7 @@ export const shopData = [
               "id": "bone",
               "id_ru": "Кость",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22188,6 +24373,7 @@ export const shopData = [
               "id": "bone",
               "id_ru": "Кость",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22195,6 +24381,7 @@ export const shopData = [
               "id": "bone",
               "id_ru": "Кость",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22202,6 +24389,7 @@ export const shopData = [
               "id": "bone",
               "id_ru": "Кость",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -22210,6 +24398,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22221,6 +24410,7 @@ export const shopData = [
           "type": "white_shulker_box",
           "type_ru": "Белый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -22228,6 +24418,7 @@ export const shopData = [
               "id": "string",
               "id_ru": "Нить",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22235,6 +24426,7 @@ export const shopData = [
               "id": "string",
               "id_ru": "Нить",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22242,6 +24434,7 @@ export const shopData = [
               "id": "string",
               "id_ru": "Нить",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22249,6 +24442,7 @@ export const shopData = [
               "id": "string",
               "id_ru": "Нить",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22256,6 +24450,7 @@ export const shopData = [
               "id": "string",
               "id_ru": "Нить",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22263,6 +24458,7 @@ export const shopData = [
               "id": "string",
               "id_ru": "Нить",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22270,6 +24466,7 @@ export const shopData = [
               "id": "string",
               "id_ru": "Нить",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22277,6 +24474,7 @@ export const shopData = [
               "id": "string",
               "id_ru": "Нить",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22284,6 +24482,7 @@ export const shopData = [
               "id": "string",
               "id_ru": "Нить",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22291,6 +24490,7 @@ export const shopData = [
               "id": "string",
               "id_ru": "Нить",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22298,6 +24498,7 @@ export const shopData = [
               "id": "string",
               "id_ru": "Нить",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22305,6 +24506,7 @@ export const shopData = [
               "id": "string",
               "id_ru": "Нить",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22312,6 +24514,7 @@ export const shopData = [
               "id": "string",
               "id_ru": "Нить",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22319,6 +24522,7 @@ export const shopData = [
               "id": "string",
               "id_ru": "Нить",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22326,6 +24530,7 @@ export const shopData = [
               "id": "string",
               "id_ru": "Нить",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22333,6 +24538,7 @@ export const shopData = [
               "id": "string",
               "id_ru": "Нить",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22340,6 +24546,7 @@ export const shopData = [
               "id": "string",
               "id_ru": "Нить",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22347,6 +24554,7 @@ export const shopData = [
               "id": "string",
               "id_ru": "Нить",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22354,6 +24562,7 @@ export const shopData = [
               "id": "string",
               "id_ru": "Нить",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22361,6 +24570,7 @@ export const shopData = [
               "id": "string",
               "id_ru": "Нить",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22368,6 +24578,7 @@ export const shopData = [
               "id": "string",
               "id_ru": "Нить",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22375,6 +24586,7 @@ export const shopData = [
               "id": "string",
               "id_ru": "Нить",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22382,6 +24594,7 @@ export const shopData = [
               "id": "string",
               "id_ru": "Нить",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22389,6 +24602,7 @@ export const shopData = [
               "id": "string",
               "id_ru": "Нить",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22396,6 +24610,7 @@ export const shopData = [
               "id": "string",
               "id_ru": "Нить",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22403,6 +24618,7 @@ export const shopData = [
               "id": "string",
               "id_ru": "Нить",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -22410,6 +24626,7 @@ export const shopData = [
               "id": "string",
               "id_ru": "Нить",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -22418,6 +24635,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 8,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22429,6 +24647,7 @@ export const shopData = [
           "type": "flower_pot",
           "type_ru": "Цветочный горшок",
           "amount": 16,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22436,6 +24655,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22447,6 +24667,7 @@ export const shopData = [
           "type": "lily_of_the_valley",
           "type_ru": "Ландыш",
           "amount": 32,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22454,6 +24675,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22465,6 +24687,7 @@ export const shopData = [
           "type": "red_tulip",
           "type_ru": "Красный тюльпан",
           "amount": 32,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22472,6 +24695,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22483,6 +24707,7 @@ export const shopData = [
           "type": "orange_tulip",
           "type_ru": "Оранжевый тюльпан",
           "amount": 32,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22490,6 +24715,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22501,6 +24727,7 @@ export const shopData = [
           "type": "white_tulip",
           "type_ru": "Белый тюльпан",
           "amount": 32,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22508,6 +24735,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22519,6 +24747,7 @@ export const shopData = [
           "type": "pink_tulip",
           "type_ru": "Розовый тюльпан",
           "amount": 32,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22526,6 +24755,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22537,6 +24767,7 @@ export const shopData = [
           "type": "cornflower",
           "type_ru": "Синий василёк",
           "amount": 32,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22544,6 +24775,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22555,6 +24787,7 @@ export const shopData = [
           "type": "allium",
           "type_ru": "Лук-батун",
           "amount": 32,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22562,6 +24795,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22573,6 +24807,7 @@ export const shopData = [
           "type": "rose_bush",
           "type_ru": "Розовый куст",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22580,6 +24815,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22591,6 +24827,7 @@ export const shopData = [
           "type": "lilac",
           "type_ru": "Сирень",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22598,6 +24835,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22609,6 +24847,7 @@ export const shopData = [
           "type": "peony",
           "type_ru": "Пион",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22616,6 +24855,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22627,6 +24867,7 @@ export const shopData = [
           "type": "sunflower",
           "type_ru": "Подсолнух",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22634,6 +24875,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22645,6 +24887,7 @@ export const shopData = [
           "type": "wither_rose",
           "type_ru": "Роза визера",
           "amount": 16,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22652,6 +24895,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22663,6 +24907,7 @@ export const shopData = [
           "type": "fern",
           "type_ru": "Папоротник",
           "amount": 32,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22670,6 +24915,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22681,6 +24927,7 @@ export const shopData = [
           "type": "grass",
           "type_ru": "Трава",
           "amount": 32,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22688,6 +24935,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22699,6 +24947,7 @@ export const shopData = [
           "type": "warped_fungus",
           "type_ru": "Искажённый гриб",
           "amount": 32,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22706,6 +24955,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22717,6 +24967,7 @@ export const shopData = [
           "type": "crimson_fungus",
           "type_ru": "Багровый гриб",
           "amount": 32,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22724,6 +24975,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22735,6 +24987,7 @@ export const shopData = [
           "type": "brown_mushroom",
           "type_ru": "Коричневый гриб",
           "amount": 16,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22742,6 +24995,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22753,6 +25007,7 @@ export const shopData = [
           "type": "crimson_roots",
           "type_ru": "Багровые корни",
           "amount": 32,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22760,6 +25015,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22771,6 +25027,7 @@ export const shopData = [
           "type": "warped_roots",
           "type_ru": "Искажённые корни",
           "amount": 32,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22778,6 +25035,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22789,6 +25047,7 @@ export const shopData = [
           "type": "weeping_vines",
           "type_ru": "Плакучая лоза",
           "amount": 32,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22796,6 +25055,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22807,6 +25067,7 @@ export const shopData = [
           "type": "twisting_vines",
           "type_ru": "Вьющаяся лоза",
           "amount": 32,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22814,6 +25075,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22825,6 +25087,7 @@ export const shopData = [
           "type": "sculk_vein",
           "type_ru": "Скалковая жила",
           "amount": 32,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22832,6 +25095,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22843,6 +25107,7 @@ export const shopData = [
           "type": "vine",
           "type_ru": "Лианы",
           "amount": 32,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22850,6 +25115,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22861,6 +25127,7 @@ export const shopData = [
           "type": "hanging_roots",
           "type_ru": "Свисающие корни",
           "amount": 32,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22868,6 +25135,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22879,6 +25147,7 @@ export const shopData = [
           "type": "glow_lichen",
           "type_ru": "Светящийся лишайник",
           "amount": 32,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22886,6 +25155,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22897,6 +25167,7 @@ export const shopData = [
           "type": "bamboo",
           "type_ru": "Бамбук",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22904,6 +25175,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22915,6 +25187,7 @@ export const shopData = [
           "type": "kelp",
           "type_ru": "Ламинария",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22922,6 +25195,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22933,6 +25207,7 @@ export const shopData = [
           "type": "big_dripleaf",
           "type_ru": "Большая бросянка",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22940,6 +25215,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22951,6 +25227,7 @@ export const shopData = [
           "type": "cactus",
           "type_ru": "Кактус",
           "amount": 32,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22958,6 +25235,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22969,6 +25247,7 @@ export const shopData = [
           "type": "mangrove_roots",
           "type_ru": "Мангровые корни",
           "amount": 32,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22976,6 +25255,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22987,6 +25267,7 @@ export const shopData = [
           "type": "moss_block",
           "type_ru": "Блок мха",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -22994,6 +25275,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 4,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -23005,6 +25287,7 @@ export const shopData = [
           "type": "chorus_flower",
           "type_ru": "Цветок хоруса",
           "amount": 16,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -23012,6 +25295,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 4,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -23023,6 +25307,7 @@ export const shopData = [
           "type": "sweet_berries",
           "type_ru": "Сладкие ягоды",
           "amount": 32,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -23030,6 +25315,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -23041,6 +25327,7 @@ export const shopData = [
           "type": "glow_berries",
           "type_ru": "Светящиеся ягоды",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -23048,6 +25335,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -23059,6 +25347,7 @@ export const shopData = [
           "type": "lily_pad",
           "type_ru": "Кувшинка",
           "amount": 16,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -23066,6 +25355,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -23077,6 +25367,7 @@ export const shopData = [
           "type": "dead_bush",
           "type_ru": "Мёртвый куст",
           "amount": 16,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -23084,6 +25375,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -23095,6 +25387,7 @@ export const shopData = [
           "type": "string",
           "type_ru": "Нить",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -23102,6 +25395,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -23125,6 +25419,7 @@ export const shopData = [
           "type": "light_gray_shulker_box",
           "type_ru": "Светло-серый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -23132,6 +25427,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23139,6 +25435,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23146,6 +25443,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23153,6 +25451,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23160,6 +25459,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23167,6 +25467,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23174,6 +25475,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23181,6 +25483,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23188,6 +25491,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23195,6 +25499,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23202,6 +25507,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23209,6 +25515,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23216,6 +25523,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23223,6 +25531,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23230,6 +25539,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23237,6 +25547,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23244,6 +25555,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23251,6 +25563,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23258,6 +25571,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23265,6 +25579,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23272,6 +25587,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23279,6 +25595,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23286,6 +25603,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23293,6 +25611,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23300,6 +25619,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23307,6 +25627,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23314,6 +25635,7 @@ export const shopData = [
               "id": "oak_log",
               "id_ru": "Дубовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -23322,6 +25644,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 18,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -23333,6 +25656,7 @@ export const shopData = [
           "type": "brown_shulker_box",
           "type_ru": "Коричневый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -23340,6 +25664,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23347,6 +25672,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23354,6 +25680,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23361,6 +25688,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23368,6 +25696,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23375,6 +25704,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23382,6 +25712,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23389,6 +25720,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23396,6 +25728,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23403,6 +25736,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23410,6 +25744,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23417,6 +25752,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23424,6 +25760,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23431,6 +25768,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23438,6 +25776,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23445,6 +25784,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23452,6 +25792,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23459,6 +25800,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23466,6 +25808,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23473,6 +25816,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23480,6 +25824,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23487,6 +25832,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23494,6 +25840,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23501,6 +25848,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23508,6 +25856,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23515,6 +25864,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23522,6 +25872,7 @@ export const shopData = [
               "id": "spruce_log",
               "id_ru": "Еловое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -23530,6 +25881,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 18,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -23541,6 +25893,7 @@ export const shopData = [
           "type": "black_shulker_box",
           "type_ru": "Чёрный шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -23548,6 +25901,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23555,6 +25909,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23562,6 +25917,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23569,6 +25925,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23576,6 +25933,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23583,6 +25941,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23590,6 +25949,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23597,6 +25957,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23604,6 +25965,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23611,6 +25973,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23618,6 +25981,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23625,6 +25989,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23632,6 +25997,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23639,6 +26005,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23646,6 +26013,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23653,6 +26021,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23660,6 +26029,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23667,6 +26037,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23674,6 +26045,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23681,6 +26053,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23688,6 +26061,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23695,6 +26069,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23702,6 +26077,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23709,6 +26085,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23716,6 +26093,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23723,6 +26101,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23730,6 +26109,7 @@ export const shopData = [
               "id": "dark_oak_log",
               "id_ru": "Бревно тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -23738,6 +26118,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 18,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -23749,6 +26130,7 @@ export const shopData = [
           "type": "white_shulker_box",
           "type_ru": "Белый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -23756,6 +26138,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23763,6 +26146,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23770,6 +26154,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23777,6 +26162,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23784,6 +26170,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23791,6 +26178,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23798,6 +26186,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23805,6 +26194,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23812,6 +26202,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23819,6 +26210,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23826,6 +26218,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23833,6 +26226,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23840,6 +26234,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23847,6 +26242,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23854,6 +26250,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23861,6 +26258,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23868,6 +26266,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23875,6 +26274,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23882,6 +26282,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23889,6 +26290,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23896,6 +26298,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23903,6 +26306,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23910,6 +26314,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23917,6 +26322,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23924,6 +26330,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23931,6 +26338,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23938,6 +26346,7 @@ export const shopData = [
               "id": "birch_log",
               "id_ru": "Берёзовое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -23946,6 +26355,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 18,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -23957,6 +26367,7 @@ export const shopData = [
           "type": "pink_shulker_box",
           "type_ru": "Розовый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -23964,6 +26375,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23971,6 +26383,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23978,6 +26391,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23985,6 +26399,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23992,6 +26407,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -23999,6 +26415,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24006,6 +26423,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24013,6 +26431,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24020,6 +26439,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24027,6 +26447,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24034,6 +26455,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24041,6 +26463,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24048,6 +26471,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24055,6 +26479,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24062,6 +26487,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24069,6 +26495,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24076,6 +26503,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24083,6 +26511,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24090,6 +26519,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24097,6 +26527,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24104,6 +26535,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24111,6 +26543,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24118,6 +26551,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24125,6 +26559,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24132,6 +26567,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24139,6 +26575,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24146,6 +26583,7 @@ export const shopData = [
               "id": "jungle_log",
               "id_ru": "Бревно тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -24154,6 +26592,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 18,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -24165,6 +26604,7 @@ export const shopData = [
           "type": "orange_shulker_box",
           "type_ru": "Оранжевый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -24172,6 +26612,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24179,6 +26620,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24186,6 +26628,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24193,6 +26636,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24200,6 +26644,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24207,6 +26652,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24214,6 +26660,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24221,6 +26668,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24228,6 +26676,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24235,6 +26684,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24242,6 +26692,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24249,6 +26700,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24256,6 +26708,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24263,6 +26716,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24270,6 +26724,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24277,6 +26732,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24284,6 +26740,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24291,6 +26748,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24298,6 +26756,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24305,6 +26764,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24312,6 +26772,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24319,6 +26780,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24326,6 +26788,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24333,6 +26796,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24340,6 +26804,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24347,6 +26812,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24354,6 +26820,7 @@ export const shopData = [
               "id": "acacia_log",
               "id_ru": "Акациевое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -24362,6 +26829,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 18,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -24373,6 +26841,7 @@ export const shopData = [
           "type": "red_shulker_box",
           "type_ru": "Красный шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -24380,6 +26849,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24387,6 +26857,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24394,6 +26865,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24401,6 +26873,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24408,6 +26881,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24415,6 +26889,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24422,6 +26897,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24429,6 +26905,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24436,6 +26913,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24443,6 +26921,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24450,6 +26929,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24457,6 +26937,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24464,6 +26945,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24471,6 +26953,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24478,6 +26961,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24485,6 +26969,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24492,6 +26977,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24499,6 +26985,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24506,6 +26993,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24513,6 +27001,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24520,6 +27009,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24527,6 +27017,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24534,6 +27025,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24541,6 +27033,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24548,6 +27041,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24555,6 +27049,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24562,6 +27057,7 @@ export const shopData = [
               "id": "mangrove_log",
               "id_ru": "Мангровое бревно",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -24570,6 +27066,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 18,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -24581,6 +27078,7 @@ export const shopData = [
           "type": "magenta_shulker_box",
           "type_ru": "Пурпурный шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -24588,6 +27086,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24595,6 +27094,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24602,6 +27102,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24609,6 +27110,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24616,6 +27118,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24623,6 +27126,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24630,6 +27134,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24637,6 +27142,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24644,6 +27150,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24651,6 +27158,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24658,6 +27166,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24665,6 +27174,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24672,6 +27182,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24679,6 +27190,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24686,6 +27198,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24693,6 +27206,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24700,6 +27214,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24707,6 +27222,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24714,6 +27230,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24721,6 +27238,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24728,6 +27246,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24735,6 +27254,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24742,6 +27262,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24749,6 +27270,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24756,6 +27278,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24763,6 +27286,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24770,6 +27294,7 @@ export const shopData = [
               "id": "crimson_stem",
               "id_ru": "Багровый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -24778,6 +27303,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 18,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -24789,6 +27315,7 @@ export const shopData = [
           "type": "cyan_shulker_box",
           "type_ru": "Бирюзовый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -24796,6 +27323,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24803,6 +27331,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24810,6 +27339,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24817,6 +27347,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24824,6 +27355,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24831,6 +27363,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24838,6 +27371,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24845,6 +27379,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24852,6 +27387,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24859,6 +27395,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24866,6 +27403,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24873,6 +27411,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24880,6 +27419,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24887,6 +27427,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24894,6 +27435,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24901,6 +27443,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24908,6 +27451,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24915,6 +27459,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24922,6 +27467,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24929,6 +27475,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24936,6 +27483,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24943,6 +27491,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24950,6 +27499,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24957,6 +27507,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24964,6 +27515,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24971,6 +27523,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -24978,6 +27531,7 @@ export const shopData = [
               "id": "warped_stem",
               "id_ru": "Искажённый стебель",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -24986,6 +27540,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 18,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -25009,6 +27564,7 @@ export const shopData = [
           "type": "yellow_shulker_box",
           "type_ru": "Жёлтый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -25016,6 +27572,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25023,6 +27580,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25030,6 +27588,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25037,6 +27596,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25044,6 +27604,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25051,6 +27612,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25058,6 +27620,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25065,6 +27628,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25072,6 +27636,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25079,6 +27644,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25086,6 +27652,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25093,6 +27660,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25100,6 +27668,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25107,6 +27676,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25114,6 +27684,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25121,6 +27692,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25128,6 +27700,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25135,6 +27708,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25142,6 +27716,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25149,6 +27724,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25156,6 +27732,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25163,6 +27740,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25170,6 +27748,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25177,6 +27756,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25184,6 +27764,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25191,6 +27772,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25198,6 +27780,7 @@ export const shopData = [
               "id": "experience_bottle",
               "id_ru": "Пузырёк опыта",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -25206,6 +27789,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -25217,6 +27801,7 @@ export const shopData = [
           "type": "red_shulker_box",
           "type_ru": "Красный шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -25224,6 +27809,7 @@ export const shopData = [
               "id": "golden_apple",
               "id_ru": "Золотое яблоко",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25231,6 +27817,7 @@ export const shopData = [
               "id": "golden_apple",
               "id_ru": "Золотое яблоко",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25238,6 +27825,7 @@ export const shopData = [
               "id": "golden_apple",
               "id_ru": "Золотое яблоко",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25245,6 +27833,7 @@ export const shopData = [
               "id": "golden_apple",
               "id_ru": "Золотое яблоко",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25252,6 +27841,7 @@ export const shopData = [
               "id": "golden_apple",
               "id_ru": "Золотое яблоко",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25259,6 +27849,7 @@ export const shopData = [
               "id": "golden_apple",
               "id_ru": "Золотое яблоко",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25266,6 +27857,7 @@ export const shopData = [
               "id": "golden_apple",
               "id_ru": "Золотое яблоко",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25273,6 +27865,7 @@ export const shopData = [
               "id": "golden_apple",
               "id_ru": "Золотое яблоко",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25280,6 +27873,7 @@ export const shopData = [
               "id": "golden_apple",
               "id_ru": "Золотое яблоко",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25287,6 +27881,7 @@ export const shopData = [
               "id": "golden_apple",
               "id_ru": "Золотое яблоко",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25294,6 +27889,7 @@ export const shopData = [
               "id": "golden_apple",
               "id_ru": "Золотое яблоко",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25301,6 +27897,7 @@ export const shopData = [
               "id": "golden_apple",
               "id_ru": "Золотое яблоко",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25308,6 +27905,7 @@ export const shopData = [
               "id": "golden_apple",
               "id_ru": "Золотое яблоко",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25315,6 +27913,7 @@ export const shopData = [
               "id": "golden_apple",
               "id_ru": "Золотое яблоко",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25322,6 +27921,7 @@ export const shopData = [
               "id": "golden_apple",
               "id_ru": "Золотое яблоко",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25329,6 +27929,7 @@ export const shopData = [
               "id": "golden_apple",
               "id_ru": "Золотое яблоко",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25336,6 +27937,7 @@ export const shopData = [
               "id": "golden_apple",
               "id_ru": "Золотое яблоко",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25343,6 +27945,7 @@ export const shopData = [
               "id": "golden_apple",
               "id_ru": "Золотое яблоко",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25350,6 +27953,7 @@ export const shopData = [
               "id": "golden_apple",
               "id_ru": "Золотое яблоко",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25357,6 +27961,7 @@ export const shopData = [
               "id": "golden_apple",
               "id_ru": "Золотое яблоко",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25364,6 +27969,7 @@ export const shopData = [
               "id": "golden_apple",
               "id_ru": "Золотое яблоко",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25371,6 +27977,7 @@ export const shopData = [
               "id": "golden_apple",
               "id_ru": "Золотое яблоко",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25378,6 +27985,7 @@ export const shopData = [
               "id": "golden_apple",
               "id_ru": "Золотое яблоко",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25385,6 +27993,7 @@ export const shopData = [
               "id": "golden_apple",
               "id_ru": "Золотое яблоко",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25392,6 +28001,7 @@ export const shopData = [
               "id": "golden_apple",
               "id_ru": "Золотое яблоко",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25399,6 +28009,7 @@ export const shopData = [
               "id": "golden_apple",
               "id_ru": "Золотое яблоко",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25406,6 +28017,7 @@ export const shopData = [
               "id": "golden_apple",
               "id_ru": "Золотое яблоко",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -25414,6 +28026,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -25425,6 +28038,7 @@ export const shopData = [
           "type": "orange_shulker_box",
           "type_ru": "Оранжевый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -25432,6 +28046,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25439,6 +28054,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25446,6 +28062,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25453,6 +28070,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25460,6 +28078,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25467,6 +28086,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25474,6 +28094,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25481,6 +28102,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25488,6 +28110,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25495,6 +28118,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25502,6 +28126,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25509,6 +28134,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25516,6 +28142,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25523,6 +28150,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25530,6 +28158,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25537,6 +28166,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25544,6 +28174,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25551,6 +28182,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25558,6 +28190,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25565,6 +28198,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25572,6 +28206,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25579,6 +28214,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25586,6 +28222,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25593,6 +28230,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25600,6 +28238,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25607,6 +28246,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -25614,6 +28254,7 @@ export const shopData = [
               "id": "golden_carrot",
               "id_ru": "Золотая морковь",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -25622,6 +28263,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 16,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -25633,6 +28275,7 @@ export const shopData = [
           "type": "turtle_egg",
           "type_ru": "Черепашье яйцо",
           "amount": 32,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -25640,6 +28283,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 4,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -25651,6 +28295,7 @@ export const shopData = [
           "type": "glow_ink_sac",
           "type_ru": "Светящийся чернильный мешок",
           "amount": 16,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -25658,6 +28303,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -25669,6 +28315,7 @@ export const shopData = [
           "type": "cobweb",
           "type_ru": "Паутина",
           "amount": 16,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -25676,6 +28323,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -25687,6 +28335,7 @@ export const shopData = [
           "type": "red_shulker_box",
           "type_ru": "Красный шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -25857,6 +28506,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -25868,6 +28518,7 @@ export const shopData = [
           "type": "light_gray_shulker_box",
           "type_ru": "Светло-серый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -26038,6 +28689,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 8,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -26049,6 +28701,7 @@ export const shopData = [
           "type": "white_shulker_box",
           "type_ru": "Белый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -26219,6 +28872,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 4,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -26230,6 +28884,7 @@ export const shopData = [
           "type": "yellow_shulker_box",
           "type_ru": "Жёлтый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -26237,6 +28892,7 @@ export const shopData = [
               "id": "blaze_rod",
               "id_ru": "Огненный стержень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26244,6 +28900,7 @@ export const shopData = [
               "id": "blaze_rod",
               "id_ru": "Огненный стержень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26251,6 +28908,7 @@ export const shopData = [
               "id": "blaze_rod",
               "id_ru": "Огненный стержень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26258,6 +28916,7 @@ export const shopData = [
               "id": "blaze_rod",
               "id_ru": "Огненный стержень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26265,6 +28924,7 @@ export const shopData = [
               "id": "blaze_rod",
               "id_ru": "Огненный стержень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26272,6 +28932,7 @@ export const shopData = [
               "id": "blaze_rod",
               "id_ru": "Огненный стержень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26279,6 +28940,7 @@ export const shopData = [
               "id": "blaze_rod",
               "id_ru": "Огненный стержень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26286,6 +28948,7 @@ export const shopData = [
               "id": "blaze_rod",
               "id_ru": "Огненный стержень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26293,6 +28956,7 @@ export const shopData = [
               "id": "blaze_rod",
               "id_ru": "Огненный стержень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26300,6 +28964,7 @@ export const shopData = [
               "id": "blaze_rod",
               "id_ru": "Огненный стержень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26307,6 +28972,7 @@ export const shopData = [
               "id": "blaze_rod",
               "id_ru": "Огненный стержень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26314,6 +28980,7 @@ export const shopData = [
               "id": "blaze_rod",
               "id_ru": "Огненный стержень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26321,6 +28988,7 @@ export const shopData = [
               "id": "blaze_rod",
               "id_ru": "Огненный стержень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26328,6 +28996,7 @@ export const shopData = [
               "id": "blaze_rod",
               "id_ru": "Огненный стержень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26335,6 +29004,7 @@ export const shopData = [
               "id": "blaze_rod",
               "id_ru": "Огненный стержень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26342,6 +29012,7 @@ export const shopData = [
               "id": "blaze_rod",
               "id_ru": "Огненный стержень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26349,6 +29020,7 @@ export const shopData = [
               "id": "blaze_rod",
               "id_ru": "Огненный стержень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26356,6 +29028,7 @@ export const shopData = [
               "id": "blaze_rod",
               "id_ru": "Огненный стержень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26363,6 +29036,7 @@ export const shopData = [
               "id": "blaze_rod",
               "id_ru": "Огненный стержень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26370,6 +29044,7 @@ export const shopData = [
               "id": "blaze_rod",
               "id_ru": "Огненный стержень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26377,6 +29052,7 @@ export const shopData = [
               "id": "blaze_rod",
               "id_ru": "Огненный стержень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26384,6 +29060,7 @@ export const shopData = [
               "id": "blaze_rod",
               "id_ru": "Огненный стержень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26391,6 +29068,7 @@ export const shopData = [
               "id": "blaze_rod",
               "id_ru": "Огненный стержень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26398,6 +29076,7 @@ export const shopData = [
               "id": "blaze_rod",
               "id_ru": "Огненный стержень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26405,6 +29084,7 @@ export const shopData = [
               "id": "blaze_rod",
               "id_ru": "Огненный стержень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26412,6 +29092,7 @@ export const shopData = [
               "id": "blaze_rod",
               "id_ru": "Огненный стержень",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26419,6 +29100,7 @@ export const shopData = [
               "id": "blaze_rod",
               "id_ru": "Огненный стержень",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -26427,6 +29109,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 8,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -26438,6 +29121,7 @@ export const shopData = [
           "type": "blue_shulker_box",
           "type_ru": "Синий шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -26445,6 +29129,7 @@ export const shopData = [
               "id": "ochre_froglight",
               "id_ru": "Охристая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26452,6 +29137,7 @@ export const shopData = [
               "id": "ochre_froglight",
               "id_ru": "Охристая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26459,6 +29145,7 @@ export const shopData = [
               "id": "ochre_froglight",
               "id_ru": "Охристая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26466,6 +29153,7 @@ export const shopData = [
               "id": "ochre_froglight",
               "id_ru": "Охристая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26473,6 +29161,7 @@ export const shopData = [
               "id": "ochre_froglight",
               "id_ru": "Охристая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26480,6 +29169,7 @@ export const shopData = [
               "id": "ochre_froglight",
               "id_ru": "Охристая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26487,6 +29177,7 @@ export const shopData = [
               "id": "ochre_froglight",
               "id_ru": "Охристая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26494,6 +29185,7 @@ export const shopData = [
               "id": "ochre_froglight",
               "id_ru": "Охристая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26501,6 +29193,7 @@ export const shopData = [
               "id": "ochre_froglight",
               "id_ru": "Охристая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26508,6 +29201,7 @@ export const shopData = [
               "id": "verdant_froglight",
               "id_ru": "Малахитовая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26515,6 +29209,7 @@ export const shopData = [
               "id": "verdant_froglight",
               "id_ru": "Малахитовая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26522,6 +29217,7 @@ export const shopData = [
               "id": "verdant_froglight",
               "id_ru": "Малахитовая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26529,6 +29225,7 @@ export const shopData = [
               "id": "verdant_froglight",
               "id_ru": "Малахитовая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26536,6 +29233,7 @@ export const shopData = [
               "id": "verdant_froglight",
               "id_ru": "Малахитовая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26543,6 +29241,7 @@ export const shopData = [
               "id": "verdant_froglight",
               "id_ru": "Малахитовая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26550,6 +29249,7 @@ export const shopData = [
               "id": "verdant_froglight",
               "id_ru": "Малахитовая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26557,6 +29257,7 @@ export const shopData = [
               "id": "verdant_froglight",
               "id_ru": "Малахитовая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26564,6 +29265,7 @@ export const shopData = [
               "id": "verdant_froglight",
               "id_ru": "Малахитовая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26571,6 +29273,7 @@ export const shopData = [
               "id": "pearlescent_froglight",
               "id_ru": "Перламутровая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26578,6 +29281,7 @@ export const shopData = [
               "id": "pearlescent_froglight",
               "id_ru": "Перламутровая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26585,6 +29289,7 @@ export const shopData = [
               "id": "pearlescent_froglight",
               "id_ru": "Перламутровая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26592,6 +29297,7 @@ export const shopData = [
               "id": "pearlescent_froglight",
               "id_ru": "Перламутровая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26599,6 +29305,7 @@ export const shopData = [
               "id": "pearlescent_froglight",
               "id_ru": "Перламутровая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26606,6 +29313,7 @@ export const shopData = [
               "id": "pearlescent_froglight",
               "id_ru": "Перламутровая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26613,6 +29321,7 @@ export const shopData = [
               "id": "pearlescent_froglight",
               "id_ru": "Перламутровая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26620,6 +29329,7 @@ export const shopData = [
               "id": "pearlescent_froglight",
               "id_ru": "Перламутровая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26627,6 +29337,7 @@ export const shopData = [
               "id": "pearlescent_froglight",
               "id_ru": "Перламутровая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -26635,6 +29346,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -26646,6 +29358,7 @@ export const shopData = [
           "type": "purple_shulker_box",
           "type_ru": "Фиолетовый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -26653,6 +29366,7 @@ export const shopData = [
               "id": "pearlescent_froglight",
               "id_ru": "Перламутровая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26660,6 +29374,7 @@ export const shopData = [
               "id": "pearlescent_froglight",
               "id_ru": "Перламутровая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26667,6 +29382,7 @@ export const shopData = [
               "id": "pearlescent_froglight",
               "id_ru": "Перламутровая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26674,6 +29390,7 @@ export const shopData = [
               "id": "pearlescent_froglight",
               "id_ru": "Перламутровая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26681,6 +29398,7 @@ export const shopData = [
               "id": "pearlescent_froglight",
               "id_ru": "Перламутровая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26688,6 +29406,7 @@ export const shopData = [
               "id": "pearlescent_froglight",
               "id_ru": "Перламутровая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26695,6 +29414,7 @@ export const shopData = [
               "id": "pearlescent_froglight",
               "id_ru": "Перламутровая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26702,6 +29422,7 @@ export const shopData = [
               "id": "pearlescent_froglight",
               "id_ru": "Перламутровая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26709,6 +29430,7 @@ export const shopData = [
               "id": "pearlescent_froglight",
               "id_ru": "Перламутровая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26716,6 +29438,7 @@ export const shopData = [
               "id": "pearlescent_froglight",
               "id_ru": "Перламутровая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26723,6 +29446,7 @@ export const shopData = [
               "id": "pearlescent_froglight",
               "id_ru": "Перламутровая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26730,6 +29454,7 @@ export const shopData = [
               "id": "pearlescent_froglight",
               "id_ru": "Перламутровая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26737,6 +29462,7 @@ export const shopData = [
               "id": "pearlescent_froglight",
               "id_ru": "Перламутровая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26744,6 +29470,7 @@ export const shopData = [
               "id": "pearlescent_froglight",
               "id_ru": "Перламутровая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26751,6 +29478,7 @@ export const shopData = [
               "id": "pearlescent_froglight",
               "id_ru": "Перламутровая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26758,6 +29486,7 @@ export const shopData = [
               "id": "pearlescent_froglight",
               "id_ru": "Перламутровая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26765,6 +29494,7 @@ export const shopData = [
               "id": "pearlescent_froglight",
               "id_ru": "Перламутровая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26772,6 +29502,7 @@ export const shopData = [
               "id": "pearlescent_froglight",
               "id_ru": "Перламутровая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26779,6 +29510,7 @@ export const shopData = [
               "id": "pearlescent_froglight",
               "id_ru": "Перламутровая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26786,6 +29518,7 @@ export const shopData = [
               "id": "pearlescent_froglight",
               "id_ru": "Перламутровая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26793,6 +29526,7 @@ export const shopData = [
               "id": "pearlescent_froglight",
               "id_ru": "Перламутровая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26800,6 +29534,7 @@ export const shopData = [
               "id": "pearlescent_froglight",
               "id_ru": "Перламутровая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26807,6 +29542,7 @@ export const shopData = [
               "id": "pearlescent_froglight",
               "id_ru": "Перламутровая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26814,6 +29550,7 @@ export const shopData = [
               "id": "pearlescent_froglight",
               "id_ru": "Перламутровая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26821,6 +29558,7 @@ export const shopData = [
               "id": "pearlescent_froglight",
               "id_ru": "Перламутровая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26828,6 +29566,7 @@ export const shopData = [
               "id": "pearlescent_froglight",
               "id_ru": "Перламутровая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26835,6 +29574,7 @@ export const shopData = [
               "id": "pearlescent_froglight",
               "id_ru": "Перламутровая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -26843,6 +29583,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -26854,6 +29595,7 @@ export const shopData = [
           "type": "pearlescent_froglight",
           "type_ru": "Перламутровая квампа",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -26861,6 +29603,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -26872,6 +29615,7 @@ export const shopData = [
           "type": "green_shulker_box",
           "type_ru": "Зелёный шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -26879,6 +29623,7 @@ export const shopData = [
               "id": "verdant_froglight",
               "id_ru": "Малахитовая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26886,6 +29631,7 @@ export const shopData = [
               "id": "verdant_froglight",
               "id_ru": "Малахитовая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26893,6 +29639,7 @@ export const shopData = [
               "id": "verdant_froglight",
               "id_ru": "Малахитовая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26900,6 +29647,7 @@ export const shopData = [
               "id": "verdant_froglight",
               "id_ru": "Малахитовая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26907,6 +29655,7 @@ export const shopData = [
               "id": "verdant_froglight",
               "id_ru": "Малахитовая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26914,6 +29663,7 @@ export const shopData = [
               "id": "verdant_froglight",
               "id_ru": "Малахитовая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26921,6 +29671,7 @@ export const shopData = [
               "id": "verdant_froglight",
               "id_ru": "Малахитовая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26928,6 +29679,7 @@ export const shopData = [
               "id": "verdant_froglight",
               "id_ru": "Малахитовая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26935,6 +29687,7 @@ export const shopData = [
               "id": "verdant_froglight",
               "id_ru": "Малахитовая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26942,6 +29695,7 @@ export const shopData = [
               "id": "verdant_froglight",
               "id_ru": "Малахитовая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26949,6 +29703,7 @@ export const shopData = [
               "id": "verdant_froglight",
               "id_ru": "Малахитовая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26956,6 +29711,7 @@ export const shopData = [
               "id": "verdant_froglight",
               "id_ru": "Малахитовая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26963,6 +29719,7 @@ export const shopData = [
               "id": "verdant_froglight",
               "id_ru": "Малахитовая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26970,6 +29727,7 @@ export const shopData = [
               "id": "verdant_froglight",
               "id_ru": "Малахитовая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26977,6 +29735,7 @@ export const shopData = [
               "id": "verdant_froglight",
               "id_ru": "Малахитовая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26984,6 +29743,7 @@ export const shopData = [
               "id": "verdant_froglight",
               "id_ru": "Малахитовая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26991,6 +29751,7 @@ export const shopData = [
               "id": "verdant_froglight",
               "id_ru": "Малахитовая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -26998,6 +29759,7 @@ export const shopData = [
               "id": "verdant_froglight",
               "id_ru": "Малахитовая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27005,6 +29767,7 @@ export const shopData = [
               "id": "verdant_froglight",
               "id_ru": "Малахитовая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27012,6 +29775,7 @@ export const shopData = [
               "id": "verdant_froglight",
               "id_ru": "Малахитовая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27019,6 +29783,7 @@ export const shopData = [
               "id": "verdant_froglight",
               "id_ru": "Малахитовая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27026,6 +29791,7 @@ export const shopData = [
               "id": "verdant_froglight",
               "id_ru": "Малахитовая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27033,6 +29799,7 @@ export const shopData = [
               "id": "verdant_froglight",
               "id_ru": "Малахитовая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27040,6 +29807,7 @@ export const shopData = [
               "id": "verdant_froglight",
               "id_ru": "Малахитовая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27047,6 +29815,7 @@ export const shopData = [
               "id": "verdant_froglight",
               "id_ru": "Малахитовая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27054,6 +29823,7 @@ export const shopData = [
               "id": "verdant_froglight",
               "id_ru": "Малахитовая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27061,6 +29831,7 @@ export const shopData = [
               "id": "verdant_froglight",
               "id_ru": "Малахитовая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -27069,6 +29840,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -27080,6 +29852,7 @@ export const shopData = [
           "type": "verdant_froglight",
           "type_ru": "Малахитовая квампа",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -27087,6 +29860,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -27098,6 +29872,7 @@ export const shopData = [
           "type": "yellow_shulker_box",
           "type_ru": "Жёлтый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -27105,6 +29880,7 @@ export const shopData = [
               "id": "ochre_froglight",
               "id_ru": "Охристая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27112,6 +29888,7 @@ export const shopData = [
               "id": "ochre_froglight",
               "id_ru": "Охристая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27119,6 +29896,7 @@ export const shopData = [
               "id": "ochre_froglight",
               "id_ru": "Охристая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27126,6 +29904,7 @@ export const shopData = [
               "id": "ochre_froglight",
               "id_ru": "Охристая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27133,6 +29912,7 @@ export const shopData = [
               "id": "ochre_froglight",
               "id_ru": "Охристая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27140,6 +29920,7 @@ export const shopData = [
               "id": "ochre_froglight",
               "id_ru": "Охристая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27147,6 +29928,7 @@ export const shopData = [
               "id": "ochre_froglight",
               "id_ru": "Охристая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27154,6 +29936,7 @@ export const shopData = [
               "id": "ochre_froglight",
               "id_ru": "Охристая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27161,6 +29944,7 @@ export const shopData = [
               "id": "ochre_froglight",
               "id_ru": "Охристая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27168,6 +29952,7 @@ export const shopData = [
               "id": "ochre_froglight",
               "id_ru": "Охристая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27175,6 +29960,7 @@ export const shopData = [
               "id": "ochre_froglight",
               "id_ru": "Охристая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27182,6 +29968,7 @@ export const shopData = [
               "id": "ochre_froglight",
               "id_ru": "Охристая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27189,6 +29976,7 @@ export const shopData = [
               "id": "ochre_froglight",
               "id_ru": "Охристая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27196,6 +29984,7 @@ export const shopData = [
               "id": "ochre_froglight",
               "id_ru": "Охристая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27203,6 +29992,7 @@ export const shopData = [
               "id": "ochre_froglight",
               "id_ru": "Охристая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27210,6 +30000,7 @@ export const shopData = [
               "id": "ochre_froglight",
               "id_ru": "Охристая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27217,6 +30008,7 @@ export const shopData = [
               "id": "ochre_froglight",
               "id_ru": "Охристая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27224,6 +30016,7 @@ export const shopData = [
               "id": "ochre_froglight",
               "id_ru": "Охристая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27231,6 +30024,7 @@ export const shopData = [
               "id": "ochre_froglight",
               "id_ru": "Охристая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27238,6 +30032,7 @@ export const shopData = [
               "id": "ochre_froglight",
               "id_ru": "Охристая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27245,6 +30040,7 @@ export const shopData = [
               "id": "ochre_froglight",
               "id_ru": "Охристая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27252,6 +30048,7 @@ export const shopData = [
               "id": "ochre_froglight",
               "id_ru": "Охристая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27259,6 +30056,7 @@ export const shopData = [
               "id": "ochre_froglight",
               "id_ru": "Охристая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27266,6 +30064,7 @@ export const shopData = [
               "id": "ochre_froglight",
               "id_ru": "Охристая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27273,6 +30072,7 @@ export const shopData = [
               "id": "ochre_froglight",
               "id_ru": "Охристая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27280,6 +30080,7 @@ export const shopData = [
               "id": "ochre_froglight",
               "id_ru": "Охристая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27287,6 +30088,7 @@ export const shopData = [
               "id": "ochre_froglight",
               "id_ru": "Охристая квампа",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -27295,6 +30097,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 12,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -27306,6 +30109,7 @@ export const shopData = [
           "type": "ochre_froglight",
           "type_ru": "Охристая квампа",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -27313,6 +30117,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -27324,6 +30129,7 @@ export const shopData = [
           "type": "shroomlight",
           "type_ru": "Грибосвет",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -27331,6 +30137,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 16,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -27342,6 +30149,7 @@ export const shopData = [
           "type": "golden_apple",
           "type_ru": "Золотое яблоко",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -27349,6 +30157,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 3,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -27360,6 +30169,7 @@ export const shopData = [
           "type": "pointed_dripstone",
           "type_ru": "Капельник",
           "amount": 32,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -27367,6 +30177,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -27378,6 +30189,7 @@ export const shopData = [
           "type": "amethyst_cluster",
           "type_ru": "Аметистовая друза",
           "amount": 16,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -27385,6 +30197,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -27396,6 +30209,7 @@ export const shopData = [
           "type": "mud_bricks",
           "type_ru": "Саманные кирпичи",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -27403,6 +30217,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -27414,6 +30229,7 @@ export const shopData = [
           "type": "purple_shulker_box",
           "type_ru": "Фиолетовый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -27421,6 +30237,7 @@ export const shopData = [
               "id": "amethyst_cluster",
               "id_ru": "Аметистовая друза",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27428,6 +30245,7 @@ export const shopData = [
               "id": "amethyst_cluster",
               "id_ru": "Аметистовая друза",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27435,6 +30253,7 @@ export const shopData = [
               "id": "amethyst_cluster",
               "id_ru": "Аметистовая друза",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27442,6 +30261,7 @@ export const shopData = [
               "id": "amethyst_cluster",
               "id_ru": "Аметистовая друза",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27449,6 +30269,7 @@ export const shopData = [
               "id": "amethyst_cluster",
               "id_ru": "Аметистовая друза",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27456,6 +30277,7 @@ export const shopData = [
               "id": "amethyst_cluster",
               "id_ru": "Аметистовая друза",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27463,6 +30285,7 @@ export const shopData = [
               "id": "amethyst_cluster",
               "id_ru": "Аметистовая друза",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27470,6 +30293,7 @@ export const shopData = [
               "id": "amethyst_cluster",
               "id_ru": "Аметистовая друза",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27477,6 +30301,7 @@ export const shopData = [
               "id": "amethyst_cluster",
               "id_ru": "Аметистовая друза",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27484,6 +30309,7 @@ export const shopData = [
               "id": "amethyst_cluster",
               "id_ru": "Аметистовая друза",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27491,6 +30317,7 @@ export const shopData = [
               "id": "amethyst_cluster",
               "id_ru": "Аметистовая друза",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27498,6 +30325,7 @@ export const shopData = [
               "id": "amethyst_cluster",
               "id_ru": "Аметистовая друза",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27505,6 +30333,7 @@ export const shopData = [
               "id": "amethyst_cluster",
               "id_ru": "Аметистовая друза",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27512,6 +30341,7 @@ export const shopData = [
               "id": "amethyst_cluster",
               "id_ru": "Аметистовая друза",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27519,6 +30349,7 @@ export const shopData = [
               "id": "amethyst_cluster",
               "id_ru": "Аметистовая друза",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27526,6 +30357,7 @@ export const shopData = [
               "id": "amethyst_cluster",
               "id_ru": "Аметистовая друза",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27533,6 +30365,7 @@ export const shopData = [
               "id": "amethyst_cluster",
               "id_ru": "Аметистовая друза",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27540,6 +30373,7 @@ export const shopData = [
               "id": "amethyst_cluster",
               "id_ru": "Аметистовая друза",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27547,6 +30381,7 @@ export const shopData = [
               "id": "amethyst_cluster",
               "id_ru": "Аметистовая друза",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27554,6 +30389,7 @@ export const shopData = [
               "id": "amethyst_cluster",
               "id_ru": "Аметистовая друза",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27561,6 +30397,7 @@ export const shopData = [
               "id": "amethyst_cluster",
               "id_ru": "Аметистовая друза",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27568,6 +30405,7 @@ export const shopData = [
               "id": "amethyst_cluster",
               "id_ru": "Аметистовая друза",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27575,6 +30413,7 @@ export const shopData = [
               "id": "amethyst_cluster",
               "id_ru": "Аметистовая друза",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27582,6 +30421,7 @@ export const shopData = [
               "id": "amethyst_cluster",
               "id_ru": "Аметистовая друза",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27589,6 +30429,7 @@ export const shopData = [
               "id": "amethyst_cluster",
               "id_ru": "Аметистовая друза",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27596,6 +30437,7 @@ export const shopData = [
               "id": "amethyst_cluster",
               "id_ru": "Аметистовая друза",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27603,6 +30445,7 @@ export const shopData = [
               "id": "amethyst_cluster",
               "id_ru": "Аметистовая друза",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -27611,6 +30454,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -27618,6 +30462,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         }
@@ -27628,6 +30473,7 @@ export const shopData = [
           "type": "magenta_shulker_box",
           "type_ru": "Пурпурный шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -27635,6 +30481,7 @@ export const shopData = [
               "id": "red_dye",
               "id_ru": "Красный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27642,6 +30489,7 @@ export const shopData = [
               "id": "orange_dye",
               "id_ru": "Оранжевый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27649,6 +30497,7 @@ export const shopData = [
               "id": "yellow_dye",
               "id_ru": "Жёлтый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27656,6 +30505,7 @@ export const shopData = [
               "id": "lime_dye",
               "id_ru": "Лаймовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27663,6 +30513,7 @@ export const shopData = [
               "id": "green_dye",
               "id_ru": "Зелёный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27670,6 +30521,7 @@ export const shopData = [
               "id": "cyan_dye",
               "id_ru": "Бирюзовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27677,6 +30529,7 @@ export const shopData = [
               "id": "light_blue_dye",
               "id_ru": "Голубой краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27684,6 +30537,7 @@ export const shopData = [
               "id": "blue_dye",
               "id_ru": "Синий краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27691,6 +30545,7 @@ export const shopData = [
               "id": "purple_dye",
               "id_ru": "Фиолетовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27698,6 +30553,7 @@ export const shopData = [
               "id": "magenta_dye",
               "id_ru": "Пурпурный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27705,6 +30561,7 @@ export const shopData = [
               "id": "pink_dye",
               "id_ru": "Розовый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27712,6 +30569,7 @@ export const shopData = [
               "id": "white_dye",
               "id_ru": "Белый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27719,6 +30577,7 @@ export const shopData = [
               "id": "light_gray_dye",
               "id_ru": "Светло-серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27726,6 +30585,7 @@ export const shopData = [
               "id": "gray_dye",
               "id_ru": "Серый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27733,6 +30593,7 @@ export const shopData = [
               "id": "black_dye",
               "id_ru": "Чёрный краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27740,6 +30601,7 @@ export const shopData = [
               "id": "brown_dye",
               "id_ru": "Коричневый краситель",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27747,6 +30609,7 @@ export const shopData = [
               "id": "feather",
               "id_ru": "Перо",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27754,6 +30617,7 @@ export const shopData = [
               "id": "book",
               "id_ru": "Книга",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27761,6 +30625,7 @@ export const shopData = [
               "id": "dark_oak_sign",
               "id_ru": "Табличка из тёмного дуба",
               "count": 16,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27768,6 +30633,7 @@ export const shopData = [
               "id": "spruce_sign",
               "id_ru": "Еловая табличка",
               "count": 16,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27775,6 +30641,7 @@ export const shopData = [
               "id": "oak_sign",
               "id_ru": "Дубовая табличка",
               "count": 16,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27782,6 +30649,7 @@ export const shopData = [
               "id": "birch_sign",
               "id_ru": "Берёзовая табличка",
               "count": 16,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27789,6 +30657,7 @@ export const shopData = [
               "id": "jungle_sign",
               "id_ru": "Табличка из тропического дерева",
               "count": 16,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27796,6 +30665,7 @@ export const shopData = [
               "id": "acacia_sign",
               "id_ru": "Акациевая табличка",
               "count": 16,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27803,6 +30673,7 @@ export const shopData = [
               "id": "warped_sign",
               "id_ru": "Искажённая табличка",
               "count": 16,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27810,6 +30681,7 @@ export const shopData = [
               "id": "glow_ink_sac",
               "id_ru": "Светящийся чернильный мешок",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27817,6 +30689,7 @@ export const shopData = [
               "id": "ink_sac",
               "id_ru": "Чернильный мешок",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -27825,6 +30698,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 48,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -27836,6 +30710,7 @@ export const shopData = [
           "type": "sculk_shrieker",
           "type_ru": "Скалковый крикун",
           "amount": 16,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -27843,6 +30718,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -27854,6 +30730,7 @@ export const shopData = [
           "type": "sculk_sensor",
           "type_ru": "Скалк-сенсор",
           "amount": 32,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -27861,6 +30738,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 4,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -27872,6 +30750,7 @@ export const shopData = [
           "type": "gray_shulker_box",
           "type_ru": "Серый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -27879,6 +30758,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27886,6 +30766,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27893,6 +30774,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27900,6 +30782,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27907,6 +30790,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27914,6 +30798,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27921,6 +30806,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27928,6 +30814,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27935,6 +30822,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27942,6 +30830,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27949,6 +30838,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27956,6 +30846,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27963,6 +30854,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27970,6 +30862,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27977,6 +30870,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27984,6 +30878,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27991,6 +30886,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -27998,6 +30894,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28005,6 +30902,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28012,6 +30910,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28019,6 +30918,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28026,6 +30926,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28033,6 +30934,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28040,6 +30942,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28047,6 +30950,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28054,6 +30958,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28061,6 +30966,7 @@ export const shopData = [
               "id": "cobbled_deepslate",
               "id_ru": "Колотый глубинный сланец",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -28069,6 +30975,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 10,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -28092,6 +30999,7 @@ export const shopData = [
           "type": "green_shulker_box",
           "type_ru": "Зелёный шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -28099,6 +31007,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28106,6 +31015,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28113,6 +31023,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28120,6 +31031,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28127,6 +31039,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28134,6 +31047,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28141,6 +31055,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28148,6 +31063,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28155,6 +31071,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28162,6 +31079,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28169,6 +31087,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28176,6 +31095,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28183,6 +31103,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28190,6 +31111,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28197,6 +31119,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28204,6 +31127,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28211,6 +31135,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28218,6 +31143,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28225,6 +31151,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28232,6 +31159,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28239,6 +31167,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28246,6 +31175,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28253,6 +31183,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28260,6 +31191,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28267,6 +31199,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28274,6 +31207,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28281,6 +31215,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -28289,6 +31224,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 18,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -28300,6 +31236,7 @@ export const shopData = [
           "type": "green_shulker_box",
           "type_ru": "Зелёный шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -28307,6 +31244,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28314,6 +31252,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28321,6 +31260,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28328,6 +31268,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28335,6 +31276,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28342,6 +31284,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28349,6 +31292,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28356,6 +31300,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28363,6 +31308,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28370,6 +31316,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28377,6 +31324,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28384,6 +31332,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28391,6 +31340,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28398,6 +31348,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28405,6 +31356,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28412,6 +31364,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28419,6 +31372,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28426,6 +31380,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28433,6 +31388,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28440,6 +31396,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28447,6 +31404,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28454,6 +31412,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28461,6 +31420,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28468,6 +31428,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28475,6 +31436,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28482,6 +31444,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28489,6 +31452,7 @@ export const shopData = [
               "id": "oak_leaves",
               "id_ru": "Дубовые листья",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -28497,6 +31461,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 18,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -28508,6 +31473,7 @@ export const shopData = [
           "type": "green_shulker_box",
           "type_ru": "Зелёный шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -28515,6 +31481,7 @@ export const shopData = [
               "id": "spruce_leaves",
               "id_ru": "Хвоя",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28522,6 +31489,7 @@ export const shopData = [
               "id": "spruce_leaves",
               "id_ru": "Хвоя",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28529,6 +31497,7 @@ export const shopData = [
               "id": "spruce_leaves",
               "id_ru": "Хвоя",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28536,6 +31505,7 @@ export const shopData = [
               "id": "spruce_leaves",
               "id_ru": "Хвоя",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28543,6 +31513,7 @@ export const shopData = [
               "id": "spruce_leaves",
               "id_ru": "Хвоя",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28550,6 +31521,7 @@ export const shopData = [
               "id": "spruce_leaves",
               "id_ru": "Хвоя",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28557,6 +31529,7 @@ export const shopData = [
               "id": "spruce_leaves",
               "id_ru": "Хвоя",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28564,6 +31537,7 @@ export const shopData = [
               "id": "spruce_leaves",
               "id_ru": "Хвоя",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28571,6 +31545,7 @@ export const shopData = [
               "id": "spruce_leaves",
               "id_ru": "Хвоя",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28578,6 +31553,7 @@ export const shopData = [
               "id": "spruce_leaves",
               "id_ru": "Хвоя",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28585,6 +31561,7 @@ export const shopData = [
               "id": "spruce_leaves",
               "id_ru": "Хвоя",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28592,6 +31569,7 @@ export const shopData = [
               "id": "spruce_leaves",
               "id_ru": "Хвоя",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28599,6 +31577,7 @@ export const shopData = [
               "id": "spruce_leaves",
               "id_ru": "Хвоя",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28606,6 +31585,7 @@ export const shopData = [
               "id": "spruce_leaves",
               "id_ru": "Хвоя",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28613,6 +31593,7 @@ export const shopData = [
               "id": "spruce_leaves",
               "id_ru": "Хвоя",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28620,6 +31601,7 @@ export const shopData = [
               "id": "spruce_leaves",
               "id_ru": "Хвоя",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28627,6 +31609,7 @@ export const shopData = [
               "id": "spruce_leaves",
               "id_ru": "Хвоя",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28634,6 +31617,7 @@ export const shopData = [
               "id": "spruce_leaves",
               "id_ru": "Хвоя",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28641,6 +31625,7 @@ export const shopData = [
               "id": "spruce_leaves",
               "id_ru": "Хвоя",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28648,6 +31633,7 @@ export const shopData = [
               "id": "spruce_leaves",
               "id_ru": "Хвоя",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28655,6 +31641,7 @@ export const shopData = [
               "id": "spruce_leaves",
               "id_ru": "Хвоя",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28662,6 +31649,7 @@ export const shopData = [
               "id": "spruce_leaves",
               "id_ru": "Хвоя",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28669,6 +31657,7 @@ export const shopData = [
               "id": "spruce_leaves",
               "id_ru": "Хвоя",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28676,6 +31665,7 @@ export const shopData = [
               "id": "spruce_leaves",
               "id_ru": "Хвоя",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28683,6 +31673,7 @@ export const shopData = [
               "id": "spruce_leaves",
               "id_ru": "Хвоя",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28690,6 +31681,7 @@ export const shopData = [
               "id": "spruce_leaves",
               "id_ru": "Хвоя",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28697,6 +31689,7 @@ export const shopData = [
               "id": "spruce_leaves",
               "id_ru": "Хвоя",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -28705,6 +31698,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 18,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -28716,6 +31710,7 @@ export const shopData = [
           "type": "green_shulker_box",
           "type_ru": "Зелёный шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -28723,6 +31718,7 @@ export const shopData = [
               "id": "dark_oak_leaves",
               "id_ru": "Листья тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28730,6 +31726,7 @@ export const shopData = [
               "id": "dark_oak_leaves",
               "id_ru": "Листья тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28737,6 +31734,7 @@ export const shopData = [
               "id": "dark_oak_leaves",
               "id_ru": "Листья тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28744,6 +31742,7 @@ export const shopData = [
               "id": "dark_oak_leaves",
               "id_ru": "Листья тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28751,6 +31750,7 @@ export const shopData = [
               "id": "dark_oak_leaves",
               "id_ru": "Листья тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28758,6 +31758,7 @@ export const shopData = [
               "id": "dark_oak_leaves",
               "id_ru": "Листья тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28765,6 +31766,7 @@ export const shopData = [
               "id": "dark_oak_leaves",
               "id_ru": "Листья тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28772,6 +31774,7 @@ export const shopData = [
               "id": "dark_oak_leaves",
               "id_ru": "Листья тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28779,6 +31782,7 @@ export const shopData = [
               "id": "dark_oak_leaves",
               "id_ru": "Листья тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28786,6 +31790,7 @@ export const shopData = [
               "id": "dark_oak_leaves",
               "id_ru": "Листья тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28793,6 +31798,7 @@ export const shopData = [
               "id": "dark_oak_leaves",
               "id_ru": "Листья тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28800,6 +31806,7 @@ export const shopData = [
               "id": "dark_oak_leaves",
               "id_ru": "Листья тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28807,6 +31814,7 @@ export const shopData = [
               "id": "dark_oak_leaves",
               "id_ru": "Листья тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28814,6 +31822,7 @@ export const shopData = [
               "id": "dark_oak_leaves",
               "id_ru": "Листья тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28821,6 +31830,7 @@ export const shopData = [
               "id": "dark_oak_leaves",
               "id_ru": "Листья тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28828,6 +31838,7 @@ export const shopData = [
               "id": "dark_oak_leaves",
               "id_ru": "Листья тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28835,6 +31846,7 @@ export const shopData = [
               "id": "dark_oak_leaves",
               "id_ru": "Листья тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28842,6 +31854,7 @@ export const shopData = [
               "id": "dark_oak_leaves",
               "id_ru": "Листья тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28849,6 +31862,7 @@ export const shopData = [
               "id": "dark_oak_leaves",
               "id_ru": "Листья тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28856,6 +31870,7 @@ export const shopData = [
               "id": "dark_oak_leaves",
               "id_ru": "Листья тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28863,6 +31878,7 @@ export const shopData = [
               "id": "dark_oak_leaves",
               "id_ru": "Листья тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28870,6 +31886,7 @@ export const shopData = [
               "id": "dark_oak_leaves",
               "id_ru": "Листья тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28877,6 +31894,7 @@ export const shopData = [
               "id": "dark_oak_leaves",
               "id_ru": "Листья тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28884,6 +31902,7 @@ export const shopData = [
               "id": "dark_oak_leaves",
               "id_ru": "Листья тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28891,6 +31910,7 @@ export const shopData = [
               "id": "dark_oak_leaves",
               "id_ru": "Листья тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28898,6 +31918,7 @@ export const shopData = [
               "id": "dark_oak_leaves",
               "id_ru": "Листья тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28905,6 +31926,7 @@ export const shopData = [
               "id": "dark_oak_leaves",
               "id_ru": "Листья тёмного дуба",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -28913,6 +31935,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 18,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -28924,6 +31947,7 @@ export const shopData = [
           "type": "green_shulker_box",
           "type_ru": "Зелёный шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -28931,6 +31955,7 @@ export const shopData = [
               "id": "acacia_leaves",
               "id_ru": "Листья акации",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28938,6 +31963,7 @@ export const shopData = [
               "id": "acacia_leaves",
               "id_ru": "Листья акации",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28945,6 +31971,7 @@ export const shopData = [
               "id": "acacia_leaves",
               "id_ru": "Листья акации",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28952,6 +31979,7 @@ export const shopData = [
               "id": "acacia_leaves",
               "id_ru": "Листья акации",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28959,6 +31987,7 @@ export const shopData = [
               "id": "acacia_leaves",
               "id_ru": "Листья акации",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28966,6 +31995,7 @@ export const shopData = [
               "id": "acacia_leaves",
               "id_ru": "Листья акации",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28973,6 +32003,7 @@ export const shopData = [
               "id": "acacia_leaves",
               "id_ru": "Листья акации",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28980,6 +32011,7 @@ export const shopData = [
               "id": "acacia_leaves",
               "id_ru": "Листья акации",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28987,6 +32019,7 @@ export const shopData = [
               "id": "acacia_leaves",
               "id_ru": "Листья акации",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -28994,6 +32027,7 @@ export const shopData = [
               "id": "acacia_leaves",
               "id_ru": "Листья акации",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29001,6 +32035,7 @@ export const shopData = [
               "id": "acacia_leaves",
               "id_ru": "Листья акации",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29008,6 +32043,7 @@ export const shopData = [
               "id": "acacia_leaves",
               "id_ru": "Листья акации",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29015,6 +32051,7 @@ export const shopData = [
               "id": "acacia_leaves",
               "id_ru": "Листья акации",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29022,6 +32059,7 @@ export const shopData = [
               "id": "acacia_leaves",
               "id_ru": "Листья акации",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29029,6 +32067,7 @@ export const shopData = [
               "id": "acacia_leaves",
               "id_ru": "Листья акации",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29036,6 +32075,7 @@ export const shopData = [
               "id": "acacia_leaves",
               "id_ru": "Листья акации",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29043,6 +32083,7 @@ export const shopData = [
               "id": "acacia_leaves",
               "id_ru": "Листья акации",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29050,6 +32091,7 @@ export const shopData = [
               "id": "acacia_leaves",
               "id_ru": "Листья акации",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29057,6 +32099,7 @@ export const shopData = [
               "id": "acacia_leaves",
               "id_ru": "Листья акации",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29064,6 +32107,7 @@ export const shopData = [
               "id": "acacia_leaves",
               "id_ru": "Листья акации",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29071,6 +32115,7 @@ export const shopData = [
               "id": "acacia_leaves",
               "id_ru": "Листья акации",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29078,6 +32123,7 @@ export const shopData = [
               "id": "acacia_leaves",
               "id_ru": "Листья акации",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29085,6 +32131,7 @@ export const shopData = [
               "id": "acacia_leaves",
               "id_ru": "Листья акации",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29092,6 +32139,7 @@ export const shopData = [
               "id": "acacia_leaves",
               "id_ru": "Листья акации",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29099,6 +32147,7 @@ export const shopData = [
               "id": "acacia_leaves",
               "id_ru": "Листья акации",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29106,6 +32155,7 @@ export const shopData = [
               "id": "acacia_leaves",
               "id_ru": "Листья акации",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29113,6 +32163,7 @@ export const shopData = [
               "id": "acacia_leaves",
               "id_ru": "Листья акации",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -29121,6 +32172,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 18,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -29132,6 +32184,7 @@ export const shopData = [
           "type": "green_shulker_box",
           "type_ru": "Зелёный шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -29139,6 +32192,7 @@ export const shopData = [
               "id": "jungle_leaves",
               "id_ru": "Листья тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29146,6 +32200,7 @@ export const shopData = [
               "id": "jungle_leaves",
               "id_ru": "Листья тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29153,6 +32208,7 @@ export const shopData = [
               "id": "jungle_leaves",
               "id_ru": "Листья тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29160,6 +32216,7 @@ export const shopData = [
               "id": "jungle_leaves",
               "id_ru": "Листья тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29167,6 +32224,7 @@ export const shopData = [
               "id": "jungle_leaves",
               "id_ru": "Листья тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29174,6 +32232,7 @@ export const shopData = [
               "id": "jungle_leaves",
               "id_ru": "Листья тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29181,6 +32240,7 @@ export const shopData = [
               "id": "jungle_leaves",
               "id_ru": "Листья тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29188,6 +32248,7 @@ export const shopData = [
               "id": "jungle_leaves",
               "id_ru": "Листья тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29195,6 +32256,7 @@ export const shopData = [
               "id": "jungle_leaves",
               "id_ru": "Листья тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29202,6 +32264,7 @@ export const shopData = [
               "id": "jungle_leaves",
               "id_ru": "Листья тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29209,6 +32272,7 @@ export const shopData = [
               "id": "jungle_leaves",
               "id_ru": "Листья тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29216,6 +32280,7 @@ export const shopData = [
               "id": "jungle_leaves",
               "id_ru": "Листья тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29223,6 +32288,7 @@ export const shopData = [
               "id": "jungle_leaves",
               "id_ru": "Листья тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29230,6 +32296,7 @@ export const shopData = [
               "id": "jungle_leaves",
               "id_ru": "Листья тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29237,6 +32304,7 @@ export const shopData = [
               "id": "jungle_leaves",
               "id_ru": "Листья тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29244,6 +32312,7 @@ export const shopData = [
               "id": "jungle_leaves",
               "id_ru": "Листья тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29251,6 +32320,7 @@ export const shopData = [
               "id": "jungle_leaves",
               "id_ru": "Листья тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29258,6 +32328,7 @@ export const shopData = [
               "id": "jungle_leaves",
               "id_ru": "Листья тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29265,6 +32336,7 @@ export const shopData = [
               "id": "jungle_leaves",
               "id_ru": "Листья тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29272,6 +32344,7 @@ export const shopData = [
               "id": "jungle_leaves",
               "id_ru": "Листья тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29279,6 +32352,7 @@ export const shopData = [
               "id": "jungle_leaves",
               "id_ru": "Листья тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29286,6 +32360,7 @@ export const shopData = [
               "id": "jungle_leaves",
               "id_ru": "Листья тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29293,6 +32368,7 @@ export const shopData = [
               "id": "jungle_leaves",
               "id_ru": "Листья тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29300,6 +32376,7 @@ export const shopData = [
               "id": "jungle_leaves",
               "id_ru": "Листья тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29307,6 +32384,7 @@ export const shopData = [
               "id": "jungle_leaves",
               "id_ru": "Листья тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29314,6 +32392,7 @@ export const shopData = [
               "id": "jungle_leaves",
               "id_ru": "Листья тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29321,6 +32400,7 @@ export const shopData = [
               "id": "jungle_leaves",
               "id_ru": "Листья тропического дерева",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -29329,6 +32409,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 24,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -29340,6 +32421,7 @@ export const shopData = [
           "type": "lime_shulker_box",
           "type_ru": "Лаймовый шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -29347,6 +32429,7 @@ export const shopData = [
               "id": "azalea_leaves",
               "id_ru": "Листья азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29354,6 +32437,7 @@ export const shopData = [
               "id": "azalea_leaves",
               "id_ru": "Листья азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29361,6 +32445,7 @@ export const shopData = [
               "id": "azalea_leaves",
               "id_ru": "Листья азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29368,6 +32453,7 @@ export const shopData = [
               "id": "azalea_leaves",
               "id_ru": "Листья азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29375,6 +32461,7 @@ export const shopData = [
               "id": "azalea_leaves",
               "id_ru": "Листья азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29382,6 +32469,7 @@ export const shopData = [
               "id": "azalea_leaves",
               "id_ru": "Листья азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29389,6 +32477,7 @@ export const shopData = [
               "id": "azalea_leaves",
               "id_ru": "Листья азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29396,6 +32485,7 @@ export const shopData = [
               "id": "azalea_leaves",
               "id_ru": "Листья азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29403,6 +32493,7 @@ export const shopData = [
               "id": "azalea_leaves",
               "id_ru": "Листья азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29410,6 +32501,7 @@ export const shopData = [
               "id": "azalea_leaves",
               "id_ru": "Листья азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29417,6 +32509,7 @@ export const shopData = [
               "id": "azalea_leaves",
               "id_ru": "Листья азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29424,6 +32517,7 @@ export const shopData = [
               "id": "azalea_leaves",
               "id_ru": "Листья азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29431,6 +32525,7 @@ export const shopData = [
               "id": "azalea_leaves",
               "id_ru": "Листья азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29438,6 +32533,7 @@ export const shopData = [
               "id": "azalea_leaves",
               "id_ru": "Листья азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29445,6 +32541,7 @@ export const shopData = [
               "id": "azalea_leaves",
               "id_ru": "Листья азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29452,6 +32549,7 @@ export const shopData = [
               "id": "azalea_leaves",
               "id_ru": "Листья азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29459,6 +32557,7 @@ export const shopData = [
               "id": "azalea_leaves",
               "id_ru": "Листья азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29466,6 +32565,7 @@ export const shopData = [
               "id": "azalea_leaves",
               "id_ru": "Листья азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29473,6 +32573,7 @@ export const shopData = [
               "id": "azalea_leaves",
               "id_ru": "Листья азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29480,6 +32581,7 @@ export const shopData = [
               "id": "azalea_leaves",
               "id_ru": "Листья азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29487,6 +32589,7 @@ export const shopData = [
               "id": "azalea_leaves",
               "id_ru": "Листья азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29494,6 +32597,7 @@ export const shopData = [
               "id": "azalea_leaves",
               "id_ru": "Листья азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29501,6 +32605,7 @@ export const shopData = [
               "id": "azalea_leaves",
               "id_ru": "Листья азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29508,6 +32613,7 @@ export const shopData = [
               "id": "azalea_leaves",
               "id_ru": "Листья азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29515,6 +32621,7 @@ export const shopData = [
               "id": "azalea_leaves",
               "id_ru": "Листья азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29522,6 +32629,7 @@ export const shopData = [
               "id": "azalea_leaves",
               "id_ru": "Листья азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29529,6 +32637,7 @@ export const shopData = [
               "id": "azalea_leaves",
               "id_ru": "Листья азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -29537,6 +32646,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 18,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -29548,6 +32658,7 @@ export const shopData = [
           "type": "magenta_shulker_box",
           "type_ru": "Пурпурный шалкеровый ящик",
           "amount": 1,
+          "potion": "",
           "enchant": [],
           "content": [
             {
@@ -29555,6 +32666,7 @@ export const shopData = [
               "id": "flowering_azalea_leaves",
               "id_ru": "Листья цветущей азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29562,6 +32674,7 @@ export const shopData = [
               "id": "flowering_azalea_leaves",
               "id_ru": "Листья цветущей азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29569,6 +32682,7 @@ export const shopData = [
               "id": "flowering_azalea_leaves",
               "id_ru": "Листья цветущей азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29576,6 +32690,7 @@ export const shopData = [
               "id": "flowering_azalea_leaves",
               "id_ru": "Листья цветущей азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29583,6 +32698,7 @@ export const shopData = [
               "id": "flowering_azalea_leaves",
               "id_ru": "Листья цветущей азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29590,6 +32706,7 @@ export const shopData = [
               "id": "flowering_azalea_leaves",
               "id_ru": "Листья цветущей азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29597,6 +32714,7 @@ export const shopData = [
               "id": "flowering_azalea_leaves",
               "id_ru": "Листья цветущей азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29604,6 +32722,7 @@ export const shopData = [
               "id": "flowering_azalea_leaves",
               "id_ru": "Листья цветущей азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29611,6 +32730,7 @@ export const shopData = [
               "id": "flowering_azalea_leaves",
               "id_ru": "Листья цветущей азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29618,6 +32738,7 @@ export const shopData = [
               "id": "flowering_azalea_leaves",
               "id_ru": "Листья цветущей азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29625,6 +32746,7 @@ export const shopData = [
               "id": "flowering_azalea_leaves",
               "id_ru": "Листья цветущей азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29632,6 +32754,7 @@ export const shopData = [
               "id": "flowering_azalea_leaves",
               "id_ru": "Листья цветущей азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29639,6 +32762,7 @@ export const shopData = [
               "id": "flowering_azalea_leaves",
               "id_ru": "Листья цветущей азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29646,6 +32770,7 @@ export const shopData = [
               "id": "flowering_azalea_leaves",
               "id_ru": "Листья цветущей азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29653,6 +32778,7 @@ export const shopData = [
               "id": "flowering_azalea_leaves",
               "id_ru": "Листья цветущей азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29660,6 +32786,7 @@ export const shopData = [
               "id": "flowering_azalea_leaves",
               "id_ru": "Листья цветущей азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29667,6 +32794,7 @@ export const shopData = [
               "id": "flowering_azalea_leaves",
               "id_ru": "Листья цветущей азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29674,6 +32802,7 @@ export const shopData = [
               "id": "flowering_azalea_leaves",
               "id_ru": "Листья цветущей азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29681,6 +32810,7 @@ export const shopData = [
               "id": "flowering_azalea_leaves",
               "id_ru": "Листья цветущей азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29688,6 +32818,7 @@ export const shopData = [
               "id": "flowering_azalea_leaves",
               "id_ru": "Листья цветущей азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29695,6 +32826,7 @@ export const shopData = [
               "id": "flowering_azalea_leaves",
               "id_ru": "Листья цветущей азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29702,6 +32834,7 @@ export const shopData = [
               "id": "flowering_azalea_leaves",
               "id_ru": "Листья цветущей азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29709,6 +32842,7 @@ export const shopData = [
               "id": "flowering_azalea_leaves",
               "id_ru": "Листья цветущей азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29716,6 +32850,7 @@ export const shopData = [
               "id": "flowering_azalea_leaves",
               "id_ru": "Листья цветущей азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29723,6 +32858,7 @@ export const shopData = [
               "id": "flowering_azalea_leaves",
               "id_ru": "Листья цветущей азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29730,6 +32866,7 @@ export const shopData = [
               "id": "flowering_azalea_leaves",
               "id_ru": "Листья цветущей азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             },
             {
@@ -29737,6 +32874,7 @@ export const shopData = [
               "id": "flowering_azalea_leaves",
               "id_ru": "Листья цветущей азалии",
               "count": 64,
+              "potion": "",
               "enchant": []
             }
           ]
@@ -29745,6 +32883,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 48,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -29756,6 +32895,7 @@ export const shopData = [
           "type": "oak_sapling",
           "type_ru": "Саженец дуба",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -29763,6 +32903,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -29774,6 +32915,7 @@ export const shopData = [
           "type": "spruce_sapling",
           "type_ru": "Саженец ели",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -29781,6 +32923,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -29792,6 +32935,7 @@ export const shopData = [
           "type": "dark_oak_sapling",
           "type_ru": "Саженец тёмного дуба",
           "amount": 32,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -29799,6 +32943,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 3,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -29810,6 +32955,7 @@ export const shopData = [
           "type": "birch_sapling",
           "type_ru": "Саженец берёзы",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -29817,6 +32963,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -29828,6 +32975,7 @@ export const shopData = [
           "type": "acacia_sapling",
           "type_ru": "Саженец акации",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -29835,6 +32983,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 2,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -29846,6 +32995,7 @@ export const shopData = [
           "type": "jungle_sapling",
           "type_ru": "Саженец тропического дерева",
           "amount": 32,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -29853,6 +33003,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 3,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -29864,6 +33015,7 @@ export const shopData = [
           "type": "azalea",
           "type_ru": "Азалия",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -29871,6 +33023,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 3,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -29882,6 +33035,7 @@ export const shopData = [
           "type": "flowering_azalea",
           "type_ru": "Цветущая азалия",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -29889,6 +33043,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 3,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -29900,6 +33055,7 @@ export const shopData = [
           "type": "mangrove_propagule",
           "type_ru": "Мангровый отросток",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -29907,6 +33063,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 3,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -29918,6 +33075,7 @@ export const shopData = [
           "type": "oak_leaves",
           "type_ru": "Дубовые листья",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -29925,6 +33083,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 3,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -29936,6 +33095,7 @@ export const shopData = [
           "type": "dark_oak_leaves",
           "type_ru": "Листья тёмного дуба",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -29943,6 +33103,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 3,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -29954,6 +33115,7 @@ export const shopData = [
           "type": "jungle_leaves",
           "type_ru": "Листья тропического дерева",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -29961,6 +33123,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 3,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -29972,6 +33135,7 @@ export const shopData = [
           "type": "azalea_leaves",
           "type_ru": "Листья азалии",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -29979,6 +33143,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 3,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -29990,6 +33155,7 @@ export const shopData = [
           "type": "flowering_azalea_leaves",
           "type_ru": "Листья цветущей азалии",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -29997,6 +33163,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 5,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -30008,6 +33175,7 @@ export const shopData = [
           "type": "mangrove_leaves",
           "type_ru": "Мангровые листья",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -30015,6 +33183,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 3,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -30026,6 +33195,7 @@ export const shopData = [
           "type": "mangrove_roots",
           "type_ru": "Мангровые корни",
           "amount": 64,
+          "potion": "",
           "enchant": [],
           "content": []
         },
@@ -30033,6 +33203,7 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 3,
+          "potion": "",
           "enchant": [],
           "content": []
         },

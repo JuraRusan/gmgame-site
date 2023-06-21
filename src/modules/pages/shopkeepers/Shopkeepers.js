@@ -209,6 +209,9 @@ const Shopkeepers = () => {
                             enchantsListResultItem={offer.resultItem.enchant}
                             enchantsListItem1={offer.item1.enchant}
                             enchantsListItem2={offer.item2.enchant}
+                            item_minecraft_id_potionItem1={offer.item1.potion}
+                            item_minecraft_id_potionItem2={offer.item2.potion}
+                            item_minecraft_id_potionResultItem={offer.resultItem.potion}
                           />
                         </div>
                       )

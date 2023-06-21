@@ -1,7258 +1,7090 @@
 const transformedArray = [
   {
-    "id": "1",
     "type": "stone",
-    "item_name_ru": "Камень"
+    "item_name_ru": "Камень",
+    "potion": ""
   },
   {
-    "id": "2",
     "type": "granite",
-    "item_name_ru": "Гранит"
+    "item_name_ru": "Гранит",
+    "potion": ""
   },
   {
-    "id": "3",
     "type": "polished_granite",
-    "item_name_ru": "Полированный гранит"
+    "item_name_ru": "Полированный гранит",
+    "potion": ""
   },
   {
-    "id": "4",
     "type": "diorite",
-    "item_name_ru": "Диорит"
+    "item_name_ru": "Диорит",
+    "potion": ""
   },
   {
-    "id": "5",
     "type": "polished_diorite",
-    "item_name_ru": "Полированный диорит"
+    "item_name_ru": "Полированный диорит",
+    "potion": ""
   },
   {
-    "id": "6",
     "type": "andesite",
-    "item_name_ru": "Андезит"
+    "item_name_ru": "Андезит",
+    "potion": ""
   },
   {
-    "id": "7",
     "type": "polished_andesite",
-    "item_name_ru": "Полированный андезит"
+    "item_name_ru": "Полированный андезит",
+    "potion": ""
   },
   {
-    "id": "8",
     "type": "deepslate",
-    "item_name_ru": "Глубинный сланец"
+    "item_name_ru": "Глубинный сланец",
+    "potion": ""
   },
   {
-    "id": "9",
     "type": "cobbled_deepslate",
-    "item_name_ru": "Колотый глубинный сланец"
+    "item_name_ru": "Колотый глубинный сланец",
+    "potion": ""
   },
   {
-    "id": "10",
     "type": "polished_deepslate",
-    "item_name_ru": "Полированный глубинный сланец"
+    "item_name_ru": "Полированный глубинный сланец",
+    "potion": ""
   },
   {
-    "id": "11",
     "type": "calcite",
-    "item_name_ru": "Кальцит"
+    "item_name_ru": "Кальцит",
+    "potion": ""
   },
   {
-    "id": "12",
     "type": "tuff",
-    "item_name_ru": "Туф"
+    "item_name_ru": "Туф",
+    "potion": ""
   },
   {
-    "id": "13",
     "type": "dripstone_block",
-    "item_name_ru": "Натёчный камень"
+    "item_name_ru": "Натёчный камень",
+    "potion": ""
   },
   {
-    "id": "14",
     "type": "grass_block",
-    "item_name_ru": "Дёрн"
+    "item_name_ru": "Дёрн",
+    "potion": ""
   },
   {
-    "id": "15",
     "type": "dirt",
-    "item_name_ru": "Земля"
+    "item_name_ru": "Земля",
+    "potion": ""
   },
   {
-    "id": "16",
     "type": "coarse_dirt",
-    "item_name_ru": "Каменистая земля"
+    "item_name_ru": "Каменистая земля",
+    "potion": ""
   },
   {
-    "id": "17",
     "type": "podzol",
-    "item_name_ru": "Подзол"
+    "item_name_ru": "Подзол",
+    "potion": ""
   },
   {
-    "id": "18",
     "type": "rooted_dirt",
-    "item_name_ru": "Корнистая земля"
+    "item_name_ru": "Корнистая земля",
+    "potion": ""
   },
   {
-    "id": "19",
     "type": "mud",
-    "item_name_ru": "Грязь"
+    "item_name_ru": "Грязь",
+    "potion": ""
   },
   {
-    "id": "20",
     "type": "crimson_nylium",
-    "item_name_ru": "Багровый нилий"
+    "item_name_ru": "Багровый нилий",
+    "potion": ""
   },
   {
-    "id": "21",
     "type": "warped_nylium",
-    "item_name_ru": "Искажённый нилий"
+    "item_name_ru": "Искажённый нилий",
+    "potion": ""
   },
   {
-    "id": "22",
     "type": "cobblestone",
-    "item_name_ru": "Булыжник"
+    "item_name_ru": "Булыжник",
+    "potion": ""
   },
   {
-    "id": "23",
     "type": "oak_planks",
-    "item_name_ru": "Дубовые доски"
+    "item_name_ru": "Дубовые доски",
+    "potion": ""
   },
   {
-    "id": "24",
     "type": "spruce_planks",
-    "item_name_ru": "Еловые доски"
+    "item_name_ru": "Еловые доски",
+    "potion": ""
   },
   {
-    "id": "25",
     "type": "birch_planks",
-    "item_name_ru": "Берёзовые доски"
+    "item_name_ru": "Берёзовые доски",
+    "potion": ""
   },
   {
-    "id": "26",
     "type": "jungle_planks",
-    "item_name_ru": "Доски из тропического дерева"
+    "item_name_ru": "Доски из тропического дерева",
+    "potion": ""
   },
   {
-    "id": "27",
     "type": "acacia_planks",
-    "item_name_ru": "Акациевые доски"
+    "item_name_ru": "Акациевые доски",
+    "potion": ""
   },
   {
-    "id": "28",
     "type": "cherry_planks",
-    "item_name_ru": "Вишнёвые доски"
+    "item_name_ru": "Вишнёвые доски",
+    "potion": ""
   },
   {
-    "id": "29",
     "type": "dark_oak_planks",
-    "item_name_ru": "Доски из тёмного дуба"
+    "item_name_ru": "Доски из тёмного дуба",
+    "potion": ""
   },
   {
-    "id": "30",
     "type": "mangrove_planks",
-    "item_name_ru": "Мангровые доски"
+    "item_name_ru": "Мангровые доски",
+    "potion": ""
   },
   {
-    "id": "31",
     "type": "bamboo_planks",
-    "item_name_ru": "Бамбуковые доски"
+    "item_name_ru": "Бамбуковые доски",
+    "potion": ""
   },
   {
-    "id": "32",
     "type": "crimson_planks",
-    "item_name_ru": "Багровые доски"
+    "item_name_ru": "Багровые доски",
+    "potion": ""
   },
   {
-    "id": "33",
     "type": "warped_planks",
-    "item_name_ru": "Искажённые доски"
+    "item_name_ru": "Искажённые доски",
+    "potion": ""
   },
   {
-    "id": "34",
     "type": "bamboo_mosaic",
-    "item_name_ru": "Бамбуковая мозаика"
+    "item_name_ru": "Бамбуковая мозаика",
+    "potion": ""
   },
   {
-    "id": "35",
     "type": "oak_sapling",
-    "item_name_ru": "Саженец дуба"
+    "item_name_ru": "Саженец дуба",
+    "potion": ""
   },
   {
-    "id": "36",
     "type": "spruce_sapling",
-    "item_name_ru": "Саженец ели"
+    "item_name_ru": "Саженец ели",
+    "potion": ""
   },
   {
-    "id": "37",
     "type": "birch_sapling",
-    "item_name_ru": "Саженец берёзы"
+    "item_name_ru": "Саженец берёзы",
+    "potion": ""
   },
   {
-    "id": "38",
     "type": "jungle_sapling",
-    "item_name_ru": "Саженец тропического дерева"
+    "item_name_ru": "Саженец тропического дерева",
+    "potion": ""
   },
   {
-    "id": "39",
     "type": "acacia_sapling",
-    "item_name_ru": "Саженец акации"
+    "item_name_ru": "Саженец акации",
+    "potion": ""
   },
   {
-    "id": "40",
     "type": "cherry_sapling",
-    "item_name_ru": "Саженец вишни"
+    "item_name_ru": "Саженец вишни",
+    "potion": ""
   },
   {
-    "id": "41",
     "type": "dark_oak_sapling",
-    "item_name_ru": "Саженец тёмного дуба"
+    "item_name_ru": "Саженец тёмного дуба",
+    "potion": ""
   },
   {
-    "id": "42",
     "type": "mangrove_propagule",
-    "item_name_ru": "Мангровый отросток"
+    "item_name_ru": "Мангровый отросток",
+    "potion": ""
   },
   {
-    "id": "43",
     "type": "bedrock",
-    "item_name_ru": "Бедрок"
+    "item_name_ru": "Бедрок",
+    "potion": ""
   },
   {
-    "id": "44",
     "type": "sand",
-    "item_name_ru": "Песок"
+    "item_name_ru": "Песок",
+    "potion": ""
   },
   {
-    "id": "45",
     "type": "suspicious_sand",
-    "item_name_ru": "Подозрительный песок"
+    "item_name_ru": "Подозрительный песок",
+    "potion": ""
   },
   {
-    "id": "46",
     "type": "suspicious_gravel",
-    "item_name_ru": "Подозрительный гравий"
+    "item_name_ru": "Подозрительный гравий",
+    "potion": ""
   },
   {
-    "id": "47",
     "type": "red_sand",
-    "item_name_ru": "Красный песок"
+    "item_name_ru": "Красный песок",
+    "potion": ""
   },
   {
-    "id": "48",
     "type": "gravel",
-    "item_name_ru": "Гравий"
+    "item_name_ru": "Гравий",
+    "potion": ""
   },
   {
-    "id": "49",
     "type": "coal_ore",
-    "item_name_ru": "Угольная руда"
+    "item_name_ru": "Угольная руда",
+    "potion": ""
   },
   {
-    "id": "50",
     "type": "deepslate_coal_ore",
-    "item_name_ru": "Угленосный глубинный сланец"
+    "item_name_ru": "Угленосный глубинный сланец",
+    "potion": ""
   },
   {
-    "id": "51",
     "type": "iron_ore",
-    "item_name_ru": "Железная руда"
+    "item_name_ru": "Железная руда",
+    "potion": ""
   },
   {
-    "id": "52",
     "type": "deepslate_iron_ore",
-    "item_name_ru": "Железоносный глубинный сланец"
+    "item_name_ru": "Железоносный глубинный сланец",
+    "potion": ""
   },
   {
-    "id": "53",
     "type": "copper_ore",
-    "item_name_ru": "Медная руда"
+    "item_name_ru": "Медная руда",
+    "potion": ""
   },
   {
-    "id": "54",
     "type": "deepslate_copper_ore",
-    "item_name_ru": "Меденосный глубинный сланец"
+    "item_name_ru": "Меденосный глубинный сланец",
+    "potion": ""
   },
   {
-    "id": "55",
     "type": "gold_ore",
-    "item_name_ru": "Золотая руда"
+    "item_name_ru": "Золотая руда",
+    "potion": ""
   },
   {
-    "id": "56",
     "type": "deepslate_gold_ore",
-    "item_name_ru": "Золотоносный глубинный сланец"
+    "item_name_ru": "Золотоносный глубинный сланец",
+    "potion": ""
   },
   {
-    "id": "57",
     "type": "redstone_ore",
-    "item_name_ru": "Редстоуновая руда"
+    "item_name_ru": "Редстоуновая руда",
+    "potion": ""
   },
   {
-    "id": "58",
     "type": "deepslate_redstone_ore",
-    "item_name_ru": "Редстоуноносный глубинный сланец"
+    "item_name_ru": "Редстоуноносный глубинный сланец",
+    "potion": ""
   },
   {
-    "id": "59",
     "type": "emerald_ore",
-    "item_name_ru": "Изумрудная руда"
+    "item_name_ru": "Изумрудная руда",
+    "potion": ""
   },
   {
-    "id": "60",
     "type": "deepslate_emerald_ore",
-    "item_name_ru": "Изумрудоносный глубинный сланец"
+    "item_name_ru": "Изумрудоносный глубинный сланец",
+    "potion": ""
   },
   {
-    "id": "61",
     "type": "lapis_ore",
-    "item_name_ru": "Лазуритовая руда"
+    "item_name_ru": "Лазуритовая руда",
+    "potion": ""
   },
   {
-    "id": "62",
     "type": "deepslate_lapis_ore",
-    "item_name_ru": "Лазуритоносный глубинный сланец"
+    "item_name_ru": "Лазуритоносный глубинный сланец",
+    "potion": ""
   },
   {
-    "id": "63",
     "type": "diamond_ore",
-    "item_name_ru": "Алмазная руда"
+    "item_name_ru": "Алмазная руда",
+    "potion": ""
   },
   {
-    "id": "64",
     "type": "deepslate_diamond_ore",
-    "item_name_ru": "Алмазоносный глубинный сланец"
+    "item_name_ru": "Алмазоносный глубинный сланец",
+    "potion": ""
   },
   {
-    "id": "65",
     "type": "nether_gold_ore",
-    "item_name_ru": "Незерская золотая руда"
+    "item_name_ru": "Незерская золотая руда",
+    "potion": ""
   },
   {
-    "id": "66",
     "type": "nether_quartz_ore",
-    "item_name_ru": "Незер-кварцевая руда"
+    "item_name_ru": "Незер-кварцевая руда",
+    "potion": ""
   },
   {
-    "id": "67",
     "type": "ancient_debris",
-    "item_name_ru": "Древние обломки"
+    "item_name_ru": "Древние обломки",
+    "potion": ""
   },
   {
-    "id": "68",
     "type": "coal_block",
-    "item_name_ru": "Угольный блок"
+    "item_name_ru": "Угольный блок",
+    "potion": ""
   },
   {
-    "id": "69",
     "type": "raw_iron_block",
-    "item_name_ru": "Блок рудного железа"
+    "item_name_ru": "Блок рудного железа",
+    "potion": ""
   },
   {
-    "id": "70",
     "type": "raw_copper_block",
-    "item_name_ru": "Блок рудной меди"
+    "item_name_ru": "Блок рудной меди",
+    "potion": ""
   },
   {
-    "id": "71",
     "type": "raw_gold_block",
-    "item_name_ru": "Блок рудного золота"
+    "item_name_ru": "Блок рудного золота",
+    "potion": ""
   },
   {
-    "id": "72",
     "type": "amethyst_block",
-    "item_name_ru": "Аметистовый блок"
+    "item_name_ru": "Аметистовый блок",
+    "potion": ""
   },
   {
-    "id": "73",
     "type": "budding_amethyst",
-    "item_name_ru": "Цветущий аметист"
+    "item_name_ru": "Цветущий аметист",
+    "potion": ""
   },
   {
-    "id": "74",
     "type": "iron_block",
-    "item_name_ru": "Железный блок"
+    "item_name_ru": "Железный блок",
+    "potion": ""
   },
   {
-    "id": "75",
     "type": "copper_block",
-    "item_name_ru": "Медный блок"
+    "item_name_ru": "Медный блок",
+    "potion": ""
   },
   {
-    "id": "76",
     "type": "gold_block",
-    "item_name_ru": "Золотой блок"
+    "item_name_ru": "Золотой блок",
+    "potion": ""
   },
   {
-    "id": "77",
     "type": "diamond_block",
-    "item_name_ru": "Алмазный блок"
+    "item_name_ru": "Алмазный блок",
+    "potion": ""
   },
   {
-    "id": "78",
     "type": "netherite_block",
-    "item_name_ru": "Незеритовый блок"
+    "item_name_ru": "Незеритовый блок",
+    "potion": ""
   },
   {
-    "id": "79",
     "type": "exposed_copper",
-    "item_name_ru": "Потемневший медный блок"
+    "item_name_ru": "Потемневший медный блок",
+    "potion": ""
   },
   {
-    "id": "80",
     "type": "weathered_copper",
-    "item_name_ru": "Состаренный медный блок"
+    "item_name_ru": "Состаренный медный блок",
+    "potion": ""
   },
   {
-    "id": "81",
     "type": "oxidized_copper",
-    "item_name_ru": "Окисленный медный блок"
+    "item_name_ru": "Окисленный медный блок",
+    "potion": ""
   },
   {
-    "id": "82",
     "type": "cut_copper",
-    "item_name_ru": "Резной медный блок"
+    "item_name_ru": "Резной медный блок",
+    "potion": ""
   },
   {
-    "id": "83",
     "type": "exposed_cut_copper",
-    "item_name_ru": "Потемневший резной медный блок"
+    "item_name_ru": "Потемневший резной медный блок",
+    "potion": ""
   },
   {
-    "id": "84",
     "type": "weathered_cut_copper",
-    "item_name_ru": "Состаренный резной медный блок"
+    "item_name_ru": "Состаренный резной медный блок",
+    "potion": ""
   },
   {
-    "id": "85",
     "type": "oxidized_cut_copper",
-    "item_name_ru": "Окисленный резной медный блок"
+    "item_name_ru": "Окисленный резной медный блок",
+    "potion": ""
   },
   {
-    "id": "86",
     "type": "cut_copper_stairs",
-    "item_name_ru": "Резные медные ступеньки"
+    "item_name_ru": "Резные медные ступеньки",
+    "potion": ""
   },
   {
-    "id": "87",
     "type": "exposed_cut_copper_stairs",
-    "item_name_ru": "Потемневшие резные медные ступеньки"
+    "item_name_ru": "Потемневшие резные медные ступеньки",
+    "potion": ""
   },
   {
-    "id": "88",
     "type": "weathered_cut_copper_stairs",
-    "item_name_ru": "Состаренные резные медные ступеньки"
+    "item_name_ru": "Состаренные резные медные ступеньки",
+    "potion": ""
   },
   {
-    "id": "89",
     "type": "oxidized_cut_copper_stairs",
-    "item_name_ru": "Окисленные резные медные ступеньки"
+    "item_name_ru": "Окисленные резные медные ступеньки",
+    "potion": ""
   },
   {
-    "id": "90",
     "type": "cut_copper_slab",
-    "item_name_ru": "Резная медная плита"
+    "item_name_ru": "Резная медная плита",
+    "potion": ""
   },
   {
-    "id": "91",
     "type": "exposed_cut_copper_slab",
-    "item_name_ru": "Потемневшая резная медная плита"
+    "item_name_ru": "Потемневшая резная медная плита",
+    "potion": ""
   },
   {
-    "id": "92",
     "type": "weathered_cut_copper_slab",
-    "item_name_ru": "Состаренная резная медная плита"
+    "item_name_ru": "Состаренная резная медная плита",
+    "potion": ""
   },
   {
-    "id": "93",
     "type": "oxidized_cut_copper_slab",
-    "item_name_ru": "Окисленная резная медная плита"
+    "item_name_ru": "Окисленная резная медная плита",
+    "potion": ""
   },
   {
-    "id": "94",
     "type": "waxed_copper_block",
-    "item_name_ru": "Вощёный медный блок"
+    "item_name_ru": "Вощёный медный блок",
+    "potion": ""
   },
   {
-    "id": "95",
     "type": "waxed_exposed_copper",
-    "item_name_ru": "Вощёный потемневший медный блок"
+    "item_name_ru": "Вощёный потемневший медный блок",
+    "potion": ""
   },
   {
-    "id": "96",
     "type": "waxed_weathered_copper",
-    "item_name_ru": "Вощёный состаренный медный блок"
+    "item_name_ru": "Вощёный состаренный медный блок",
+    "potion": ""
   },
   {
-    "id": "97",
     "type": "waxed_oxidized_copper",
-    "item_name_ru": "Вощёный окисленный медный блок"
+    "item_name_ru": "Вощёный окисленный медный блок",
+    "potion": ""
   },
   {
-    "id": "98",
     "type": "waxed_cut_copper",
-    "item_name_ru": "Вощёный резной медный блок"
+    "item_name_ru": "Вощёный резной медный блок",
+    "potion": ""
   },
   {
-    "id": "99",
     "type": "waxed_exposed_cut_copper",
-    "item_name_ru": "Вощёный потемневший резной медный блок"
+    "item_name_ru": "Вощёный потемневший резной медный блок",
+    "potion": ""
   },
   {
-    "id": "100",
     "type": "waxed_weathered_cut_copper",
-    "item_name_ru": "Вощёный состаренный резной медный блок"
+    "item_name_ru": "Вощёный состаренный резной медный блок",
+    "potion": ""
   },
   {
-    "id": "101",
     "type": "waxed_oxidized_cut_copper",
-    "item_name_ru": "Вощёный окисленный резной медный блок"
+    "item_name_ru": "Вощёный окисленный резной медный блок",
+    "potion": ""
   },
   {
-    "id": "102",
     "type": "waxed_cut_copper_stairs",
-    "item_name_ru": "Вощёные резные медные ступеньки"
+    "item_name_ru": "Вощёные резные медные ступеньки",
+    "potion": ""
   },
   {
-    "id": "103",
     "type": "waxed_exposed_cut_copper_stairs",
-    "item_name_ru": "Вощёные потемневшие резные медные ступеньки"
+    "item_name_ru": "Вощёные потемневшие резные медные ступеньки",
+    "potion": ""
   },
   {
-    "id": "104",
     "type": "waxed_weathered_cut_copper_stairs",
-    "item_name_ru": "Вощёные состаренные резные медные ступеньки"
+    "item_name_ru": "Вощёные состаренные резные медные ступеньки",
+    "potion": ""
   },
   {
-    "id": "105",
     "type": "waxed_oxidized_cut_copper_stairs",
-    "item_name_ru": "Вощёные окисленные резные медные ступеньки"
+    "item_name_ru": "Вощёные окисленные резные медные ступеньки",
+    "potion": ""
   },
   {
-    "id": "106",
     "type": "waxed_cut_copper_slab",
-    "item_name_ru": "Вощёная резная медная плита"
+    "item_name_ru": "Вощёная резная медная плита",
+    "potion": ""
   },
   {
-    "id": "107",
     "type": "waxed_exposed_cut_copper_slab",
-    "item_name_ru": "Вощёная потемневшая резная медная плита"
+    "item_name_ru": "Вощёная потемневшая резная медная плита",
+    "potion": ""
   },
   {
-    "id": "108",
     "type": "waxed_weathered_cut_copper_slab",
-    "item_name_ru": "Вощёная состаренная резная медная плита"
+    "item_name_ru": "Вощёная состаренная резная медная плита",
+    "potion": ""
   },
   {
-    "id": "109",
     "type": "waxed_oxidized_cut_copper_slab",
-    "item_name_ru": "Вощёная окисленная резная медная плита"
+    "item_name_ru": "Вощёная окисленная резная медная плита",
+    "potion": ""
   },
   {
-    "id": "110",
     "type": "oak_log",
-    "item_name_ru": "Дубовое бревно"
+    "item_name_ru": "Дубовое бревно",
+    "potion": ""
   },
   {
-    "id": "111",
     "type": "spruce_log",
-    "item_name_ru": "Еловое бревно"
+    "item_name_ru": "Еловое бревно",
+    "potion": ""
   },
   {
-    "id": "112",
     "type": "birch_log",
-    "item_name_ru": "Берёзовое бревно"
+    "item_name_ru": "Берёзовое бревно",
+    "potion": ""
   },
   {
-    "id": "113",
     "type": "jungle_log",
-    "item_name_ru": "Бревно тропического дерева"
+    "item_name_ru": "Бревно тропического дерева",
+    "potion": ""
   },
   {
-    "id": "114",
     "type": "acacia_log",
-    "item_name_ru": "Акациевое бревно"
+    "item_name_ru": "Акациевое бревно",
+    "potion": ""
   },
   {
-    "id": "115",
     "type": "cherry_log",
-    "item_name_ru": "Вишнёвое бревно"
+    "item_name_ru": "Вишнёвое бревно",
+    "potion": ""
   },
   {
-    "id": "116",
     "type": "dark_oak_log",
-    "item_name_ru": "Бревно тёмного дуба"
+    "item_name_ru": "Бревно тёмного дуба",
+    "potion": ""
   },
   {
-    "id": "117",
     "type": "mangrove_log",
-    "item_name_ru": "Мангровое бревно"
+    "item_name_ru": "Мангровое бревно",
+    "potion": ""
   },
   {
-    "id": "118",
     "type": "mangrove_roots",
-    "item_name_ru": "Мангровые корни"
+    "item_name_ru": "Мангровые корни",
+    "potion": ""
   },
   {
-    "id": "119",
     "type": "muddy_mangrove_roots",
-    "item_name_ru": "Грязные мангровые корни"
+    "item_name_ru": "Грязные мангровые корни",
+    "potion": ""
   },
   {
-    "id": "120",
     "type": "crimson_stem",
-    "item_name_ru": "Багровый стебель"
+    "item_name_ru": "Багровый стебель",
+    "potion": ""
   },
   {
-    "id": "121",
     "type": "warped_stem",
-    "item_name_ru": "Искажённый стебель"
+    "item_name_ru": "Искажённый стебель",
+    "potion": ""
   },
   {
-    "id": "122",
     "type": "bamboo_block",
-    "item_name_ru": "Блок бамбука"
+    "item_name_ru": "Блок бамбука",
+    "potion": ""
   },
   {
-    "id": "123",
     "type": "stripped_oak_log",
-    "item_name_ru": "Обтёсанное дубовое бревно"
+    "item_name_ru": "Обтёсанное дубовое бревно",
+    "potion": ""
   },
   {
-    "id": "124",
     "type": "stripped_spruce_log",
-    "item_name_ru": "Обтёсанное еловое бревно"
+    "item_name_ru": "Обтёсанное еловое бревно",
+    "potion": ""
   },
   {
-    "id": "125",
     "type": "stripped_birch_log",
-    "item_name_ru": "Обтёсанное берёзовое бревно"
+    "item_name_ru": "Обтёсанное берёзовое бревно",
+    "potion": ""
   },
   {
-    "id": "126",
     "type": "stripped_jungle_log",
-    "item_name_ru": "Обтёсанное бревно тропического дерева"
+    "item_name_ru": "Обтёсанное бревно тропического дерева",
+    "potion": ""
   },
   {
-    "id": "127",
     "type": "stripped_acacia_log",
-    "item_name_ru": "Обтёсанное акациевое бревно"
+    "item_name_ru": "Обтёсанное акациевое бревно",
+    "potion": ""
   },
   {
-    "id": "128",
     "type": "stripped_cherry_log",
-    "item_name_ru": "Обтёсанное вишнёвое бревно"
+    "item_name_ru": "Обтёсанное вишнёвое бревно",
+    "potion": ""
   },
   {
-    "id": "129",
     "type": "stripped_dark_oak_log",
-    "item_name_ru": "Обтёсанное бревно тёмного дуба"
+    "item_name_ru": "Обтёсанное бревно тёмного дуба",
+    "potion": ""
   },
   {
-    "id": "130",
     "type": "stripped_mangrove_log",
-    "item_name_ru": "Обтёсанное мангровое бревно"
+    "item_name_ru": "Обтёсанное мангровое бревно",
+    "potion": ""
   },
   {
-    "id": "131",
     "type": "stripped_crimson_stem",
-    "item_name_ru": "Очищенный багровый стебель"
+    "item_name_ru": "Очищенный багровый стебель",
+    "potion": ""
   },
   {
-    "id": "132",
     "type": "stripped_warped_stem",
-    "item_name_ru": "Очищенный искажённый стебель"
+    "item_name_ru": "Очищенный искажённый стебель",
+    "potion": ""
   },
   {
-    "id": "133",
     "type": "stripped_oak_wood",
-    "item_name_ru": "Обтёсанная дубовая древесина"
+    "item_name_ru": "Обтёсанная дубовая древесина",
+    "potion": ""
   },
   {
-    "id": "134",
     "type": "stripped_spruce_wood",
-    "item_name_ru": "Обтёсанная еловая древесина"
+    "item_name_ru": "Обтёсанная еловая древесина",
+    "potion": ""
   },
   {
-    "id": "135",
     "type": "stripped_birch_wood",
-    "item_name_ru": "Обтёсанная берёзовая древесина"
+    "item_name_ru": "Обтёсанная берёзовая древесина",
+    "potion": ""
   },
   {
-    "id": "136",
     "type": "stripped_jungle_wood",
-    "item_name_ru": "Обтёсанная тропическая древесина"
+    "item_name_ru": "Обтёсанная тропическая древесина",
+    "potion": ""
   },
   {
-    "id": "137",
     "type": "stripped_acacia_wood",
-    "item_name_ru": "Обтёсанная акациевая древесина"
+    "item_name_ru": "Обтёсанная акациевая древесина",
+    "potion": ""
   },
   {
-    "id": "138",
     "type": "stripped_cherry_wood",
-    "item_name_ru": "Обтёсанная вишнёвая древесина"
+    "item_name_ru": "Обтёсанная вишнёвая древесина",
+    "potion": ""
   },
   {
-    "id": "139",
     "type": "stripped_dark_oak_wood",
-    "item_name_ru": "Обтёсанная древесина тёмного дуба"
+    "item_name_ru": "Обтёсанная древесина тёмного дуба",
+    "potion": ""
   },
   {
-    "id": "140",
     "type": "stripped_mangrove_wood",
-    "item_name_ru": "Обтёсанная мангровая древесина"
+    "item_name_ru": "Обтёсанная мангровая древесина",
+    "potion": ""
   },
   {
-    "id": "141",
     "type": "stripped_crimson_hyphae",
-    "item_name_ru": "Очищенные багровые гифы"
+    "item_name_ru": "Очищенные багровые гифы",
+    "potion": ""
   },
   {
-    "id": "142",
     "type": "stripped_warped_hyphae",
-    "item_name_ru": "Очищенные искажённые гифы"
+    "item_name_ru": "Очищенные искажённые гифы",
+    "potion": ""
   },
   {
-    "id": "143",
     "type": "stripped_bamboo_block",
-    "item_name_ru": "Блок обтёсанного бамбука"
+    "item_name_ru": "Блок обтёсанного бамбука",
+    "potion": ""
   },
   {
-    "id": "144",
     "type": "oak_wood",
-    "item_name_ru": "Дуб"
+    "item_name_ru": "Дуб",
+    "potion": ""
   },
   {
-    "id": "145",
     "type": "spruce_wood",
-    "item_name_ru": "Ель"
+    "item_name_ru": "Ель",
+    "potion": ""
   },
   {
-    "id": "146",
     "type": "birch_wood",
-    "item_name_ru": "Берёза"
+    "item_name_ru": "Берёза",
+    "potion": ""
   },
   {
-    "id": "147",
     "type": "jungle_wood",
-    "item_name_ru": "Тропическое дерево"
+    "item_name_ru": "Тропическое дерево",
+    "potion": ""
   },
   {
-    "id": "148",
     "type": "acacia_wood",
-    "item_name_ru": "Акация"
+    "item_name_ru": "Акация",
+    "potion": ""
   },
   {
-    "id": "149",
     "type": "cherry_wood",
-    "item_name_ru": "Вишня"
+    "item_name_ru": "Вишня",
+    "potion": ""
   },
   {
-    "id": "150",
     "type": "dark_oak_wood",
-    "item_name_ru": "Тёмный дуб"
+    "item_name_ru": "Тёмный дуб",
+    "potion": ""
   },
   {
-    "id": "151",
     "type": "mangrove_wood",
-    "item_name_ru": "Мангровое дерево"
+    "item_name_ru": "Мангровое дерево",
+    "potion": ""
   },
   {
-    "id": "152",
     "type": "crimson_hyphae",
-    "item_name_ru": "Багровые гифы"
+    "item_name_ru": "Багровые гифы",
+    "potion": ""
   },
   {
-    "id": "153",
     "type": "warped_hyphae",
-    "item_name_ru": "Искажённые гифы"
+    "item_name_ru": "Искажённые гифы",
+    "potion": ""
   },
   {
-    "id": "154",
     "type": "oak_leaves",
-    "item_name_ru": "Дубовые листья"
+    "item_name_ru": "Дубовые листья",
+    "potion": ""
   },
   {
-    "id": "155",
     "type": "spruce_leaves",
-    "item_name_ru": "Хвоя"
+    "item_name_ru": "Хвоя",
+    "potion": ""
   },
   {
-    "id": "156",
     "type": "birch_leaves",
-    "item_name_ru": "Берёзовые листья"
+    "item_name_ru": "Берёзовые листья",
+    "potion": ""
   },
   {
-    "id": "157",
     "type": "jungle_leaves",
-    "item_name_ru": "Листья тропического дерева"
+    "item_name_ru": "Листья тропического дерева",
+    "potion": ""
   },
   {
-    "id": "158",
     "type": "acacia_leaves",
-    "item_name_ru": "Листья акации"
+    "item_name_ru": "Листья акации",
+    "potion": ""
   },
   {
-    "id": "159",
     "type": "cherry_leaves",
-    "item_name_ru": "Вишнёвые листья"
+    "item_name_ru": "Вишнёвые листья",
+    "potion": ""
   },
   {
-    "id": "160",
     "type": "dark_oak_leaves",
-    "item_name_ru": "Листья тёмного дуба"
+    "item_name_ru": "Листья тёмного дуба",
+    "potion": ""
   },
   {
-    "id": "161",
     "type": "mangrove_leaves",
-    "item_name_ru": "Мангровые листья"
+    "item_name_ru": "Мангровые листья",
+    "potion": ""
   },
   {
-    "id": "162",
     "type": "azalea_leaves",
-    "item_name_ru": "Листья азалии"
+    "item_name_ru": "Листья азалии",
+    "potion": ""
   },
   {
-    "id": "163",
     "type": "flowering_azalea_leaves",
-    "item_name_ru": "Листья цветущей азалии"
+    "item_name_ru": "Листья цветущей азалии",
+    "potion": ""
   },
   {
-    "id": "164",
     "type": "sponge",
-    "item_name_ru": "Губка"
+    "item_name_ru": "Губка",
+    "potion": ""
   },
   {
-    "id": "165",
     "type": "wet_sponge",
-    "item_name_ru": "Мокрая губка"
+    "item_name_ru": "Мокрая губка",
+    "potion": ""
   },
   {
-    "id": "166",
     "type": "glass",
-    "item_name_ru": "Стекло"
+    "item_name_ru": "Стекло",
+    "potion": ""
   },
   {
-    "id": "167",
     "type": "tinted_glass",
-    "item_name_ru": "Тонированное стекло"
+    "item_name_ru": "Тонированное стекло",
+    "potion": ""
   },
   {
-    "id": "168",
     "type": "lapis_block",
-    "item_name_ru": "Лазуритовый блок"
+    "item_name_ru": "Лазуритовый блок",
+    "potion": ""
   },
   {
-    "id": "169",
     "type": "sandstone",
-    "item_name_ru": "Песчаник"
+    "item_name_ru": "Песчаник",
+    "potion": ""
   },
   {
-    "id": "170",
     "type": "chiseled_sandstone",
-    "item_name_ru": "Резной песчаник"
+    "item_name_ru": "Резной песчаник",
+    "potion": ""
   },
   {
-    "id": "171",
     "type": "cut_sandstone",
-    "item_name_ru": "Пиленый песчаник"
+    "item_name_ru": "Пиленый песчаник",
+    "potion": ""
   },
   {
-    "id": "172",
     "type": "cobweb",
-    "item_name_ru": "Паутина"
+    "item_name_ru": "Паутина",
+    "potion": ""
   },
   {
-    "id": "173",
     "type": "grass",
-    "item_name_ru": "Трава"
+    "item_name_ru": "Трава",
+    "potion": ""
   },
   {
-    "id": "174",
     "type": "fern",
-    "item_name_ru": "Папоротник"
+    "item_name_ru": "Папоротник",
+    "potion": ""
   },
   {
-    "id": "175",
     "type": "azalea",
-    "item_name_ru": "Азалия"
+    "item_name_ru": "Азалия",
+    "potion": ""
   },
   {
-    "id": "176",
     "type": "flowering_azalea",
-    "item_name_ru": "Цветущая азалия"
+    "item_name_ru": "Цветущая азалия",
+    "potion": ""
   },
   {
-    "id": "177",
     "type": "dead_bush",
-    "item_name_ru": "Мёртвый куст"
+    "item_name_ru": "Мёртвый куст",
+    "potion": ""
   },
   {
-    "id": "178",
     "type": "seagrass",
-    "item_name_ru": "Морская трава"
+    "item_name_ru": "Морская трава",
+    "potion": ""
   },
   {
-    "id": "179",
     "type": "sea_pickle",
-    "item_name_ru": "Морской огурец"
+    "item_name_ru": "Морской огурец",
+    "potion": ""
   },
   {
-    "id": "180",
     "type": "white_wool",
-    "item_name_ru": "Белая шерсть"
+    "item_name_ru": "Белая шерсть",
+    "potion": ""
   },
   {
-    "id": "181",
     "type": "orange_wool",
-    "item_name_ru": "Оранжевая шерсть"
+    "item_name_ru": "Оранжевая шерсть",
+    "potion": ""
   },
   {
-    "id": "182",
     "type": "magenta_wool",
-    "item_name_ru": "Пурпурная шерсть"
+    "item_name_ru": "Пурпурная шерсть",
+    "potion": ""
   },
   {
-    "id": "183",
     "type": "light_blue_wool",
-    "item_name_ru": "Голубая шерсть"
+    "item_name_ru": "Голубая шерсть",
+    "potion": ""
   },
   {
-    "id": "184",
     "type": "yellow_wool",
-    "item_name_ru": "Жёлтая шерсть"
+    "item_name_ru": "Жёлтая шерсть",
+    "potion": ""
   },
   {
-    "id": "185",
     "type": "lime_wool",
-    "item_name_ru": "Лаймовая шерсть"
+    "item_name_ru": "Лаймовая шерсть",
+    "potion": ""
   },
   {
-    "id": "186",
     "type": "pink_wool",
-    "item_name_ru": "Розовая шерсть"
+    "item_name_ru": "Розовая шерсть",
+    "potion": ""
   },
   {
-    "id": "187",
     "type": "gray_wool",
-    "item_name_ru": "Серая шерсть"
+    "item_name_ru": "Серая шерсть",
+    "potion": ""
   },
   {
-    "id": "188",
     "type": "light_gray_wool",
-    "item_name_ru": "Светло-серая шерсть"
+    "item_name_ru": "Светло-серая шерсть",
+    "potion": ""
   },
   {
-    "id": "189",
     "type": "cyan_wool",
-    "item_name_ru": "Бирюзовая шерсть"
+    "item_name_ru": "Бирюзовая шерсть",
+    "potion": ""
   },
   {
-    "id": "190",
     "type": "purple_wool",
-    "item_name_ru": "Фиолетовая шерсть"
+    "item_name_ru": "Фиолетовая шерсть",
+    "potion": ""
   },
   {
-    "id": "191",
     "type": "blue_wool",
-    "item_name_ru": "Синяя шерсть"
+    "item_name_ru": "Синяя шерсть",
+    "potion": ""
   },
   {
-    "id": "192",
     "type": "brown_wool",
-    "item_name_ru": "Коричневая шерсть"
+    "item_name_ru": "Коричневая шерсть",
+    "potion": ""
   },
   {
-    "id": "193",
     "type": "green_wool",
-    "item_name_ru": "Зелёная шерсть"
+    "item_name_ru": "Зелёная шерсть",
+    "potion": ""
   },
   {
-    "id": "194",
     "type": "red_wool",
-    "item_name_ru": "Красная шерсть"
+    "item_name_ru": "Красная шерсть",
+    "potion": ""
   },
   {
-    "id": "195",
     "type": "black_wool",
-    "item_name_ru": "Чёрная шерсть"
+    "item_name_ru": "Чёрная шерсть",
+    "potion": ""
   },
   {
-    "id": "196",
     "type": "dandelion",
-    "item_name_ru": "Одуванчик"
+    "item_name_ru": "Одуванчик",
+    "potion": ""
   },
   {
-    "id": "197",
     "type": "poppy",
-    "item_name_ru": "Мак"
+    "item_name_ru": "Мак",
+    "potion": ""
   },
   {
-    "id": "198",
     "type": "blue_orchid",
-    "item_name_ru": "Синяя орхидея"
+    "item_name_ru": "Синяя орхидея",
+    "potion": ""
   },
   {
-    "id": "199",
     "type": "allium",
-    "item_name_ru": "Лук-батун"
+    "item_name_ru": "Лук-батун",
+    "potion": ""
   },
   {
-    "id": "200",
     "type": "azure_bluet",
-    "item_name_ru": "Хаустония серая"
+    "item_name_ru": "Хаустония серая",
+    "potion": ""
   },
   {
-    "id": "201",
     "type": "red_tulip",
-    "item_name_ru": "Красный тюльпан"
+    "item_name_ru": "Красный тюльпан",
+    "potion": ""
   },
   {
-    "id": "202",
     "type": "orange_tulip",
-    "item_name_ru": "Оранжевый тюльпан"
+    "item_name_ru": "Оранжевый тюльпан",
+    "potion": ""
   },
   {
-    "id": "203",
     "type": "white_tulip",
-    "item_name_ru": "Белый тюльпан"
+    "item_name_ru": "Белый тюльпан",
+    "potion": ""
   },
   {
-    "id": "204",
     "type": "pink_tulip",
-    "item_name_ru": "Розовый тюльпан"
+    "item_name_ru": "Розовый тюльпан",
+    "potion": ""
   },
   {
-    "id": "205",
     "type": "oxeye_daisy",
-    "item_name_ru": "Ромашка"
+    "item_name_ru": "Ромашка",
+    "potion": ""
   },
   {
-    "id": "206",
     "type": "cornflower",
-    "item_name_ru": "Синий василёк"
+    "item_name_ru": "Синий василёк",
+    "potion": ""
   },
   {
-    "id": "207",
     "type": "lily_of_the_valley",
-    "item_name_ru": "Ландыш"
+    "item_name_ru": "Ландыш",
+    "potion": ""
   },
   {
-    "id": "208",
     "type": "wither_rose",
-    "item_name_ru": "Роза визера"
+    "item_name_ru": "Роза визера",
+    "potion": ""
   },
   {
-    "id": "209",
     "type": "torchflower",
-    "item_name_ru": "Факельник"
+    "item_name_ru": "Факельник",
+    "potion": ""
   },
   {
-    "id": "210",
     "type": "pitcher_plant",
-    "item_name_ru": "Кувшинница"
+    "item_name_ru": "Кувшинница",
+    "potion": ""
   },
   {
-    "id": "211",
     "type": "spore_blossom",
-    "item_name_ru": "Спороцвет"
+    "item_name_ru": "Спороцвет",
+    "potion": ""
   },
   {
-    "id": "212",
     "type": "brown_mushroom",
-    "item_name_ru": "Коричневый гриб"
+    "item_name_ru": "Коричневый гриб",
+    "potion": ""
   },
   {
-    "id": "213",
     "type": "red_mushroom",
-    "item_name_ru": "Красный гриб"
+    "item_name_ru": "Красный гриб",
+    "potion": ""
   },
   {
-    "id": "214",
     "type": "crimson_fungus",
-    "item_name_ru": "Багровый гриб"
+    "item_name_ru": "Багровый гриб",
+    "potion": ""
   },
   {
-    "id": "215",
     "type": "warped_fungus",
-    "item_name_ru": "Искажённый гриб"
+    "item_name_ru": "Искажённый гриб",
+    "potion": ""
   },
   {
-    "id": "216",
     "type": "crimson_roots",
-    "item_name_ru": "Багровые корни"
+    "item_name_ru": "Багровые корни",
+    "potion": ""
   },
   {
-    "id": "217",
     "type": "warped_roots",
-    "item_name_ru": "Искажённые корни"
+    "item_name_ru": "Искажённые корни",
+    "potion": ""
   },
   {
-    "id": "218",
     "type": "nether_sprouts",
-    "item_name_ru": "Незерские ростки"
+    "item_name_ru": "Незерские ростки",
+    "potion": ""
   },
   {
-    "id": "219",
     "type": "weeping_vines",
-    "item_name_ru": "Плакучая лоза"
+    "item_name_ru": "Плакучая лоза",
+    "potion": ""
   },
   {
-    "id": "220",
     "type": "twisting_vines",
-    "item_name_ru": "Вьющаяся лоза"
+    "item_name_ru": "Вьющаяся лоза",
+    "potion": ""
   },
   {
-    "id": "221",
     "type": "sugar_cane",
-    "item_name_ru": "Сахарный тростник"
+    "item_name_ru": "Сахарный тростник",
+    "potion": ""
   },
   {
-    "id": "222",
     "type": "kelp",
-    "item_name_ru": "Ламинария"
+    "item_name_ru": "Ламинария",
+    "potion": ""
   },
   {
-    "id": "223",
     "type": "moss_carpet",
-    "item_name_ru": "Моховой ковёр"
+    "item_name_ru": "Моховой ковёр",
+    "potion": ""
   },
   {
-    "id": "224",
     "type": "pink_petals",
-    "item_name_ru": "Розовые лепестки"
+    "item_name_ru": "Розовые лепестки",
+    "potion": ""
   },
   {
-    "id": "225",
     "type": "moss_block",
-    "item_name_ru": "Блок мха"
+    "item_name_ru": "Блок мха",
+    "potion": ""
   },
   {
-    "id": "226",
     "type": "hanging_roots",
-    "item_name_ru": "Свисающие корни"
+    "item_name_ru": "Свисающие корни",
+    "potion": ""
   },
   {
-    "id": "227",
     "type": "big_dripleaf",
-    "item_name_ru": "Большая бросянка"
+    "item_name_ru": "Большая бросянка",
+    "potion": ""
   },
   {
-    "id": "228",
     "type": "small_dripleaf",
-    "item_name_ru": "Маленькая бросянка"
+    "item_name_ru": "Маленькая бросянка",
+    "potion": ""
   },
   {
-    "id": "229",
     "type": "bamboo",
-    "item_name_ru": "Бамбук"
+    "item_name_ru": "Бамбук",
+    "potion": ""
   },
   {
-    "id": "230",
     "type": "oak_slab",
-    "item_name_ru": "Дубовая плита"
+    "item_name_ru": "Дубовая плита",
+    "potion": ""
   },
   {
-    "id": "231",
     "type": "spruce_slab",
-    "item_name_ru": "Еловая плита"
+    "item_name_ru": "Еловая плита",
+    "potion": ""
   },
   {
-    "id": "232",
     "type": "birch_slab",
-    "item_name_ru": "Берёзовая плита"
+    "item_name_ru": "Берёзовая плита",
+    "potion": ""
   },
   {
-    "id": "233",
     "type": "jungle_slab",
-    "item_name_ru": "Плита из тропического дерева"
+    "item_name_ru": "Плита из тропического дерева",
+    "potion": ""
   },
   {
-    "id": "234",
     "type": "acacia_slab",
-    "item_name_ru": "Акациевая плита"
+    "item_name_ru": "Акациевая плита",
+    "potion": ""
   },
   {
-    "id": "235",
     "type": "cherry_slab",
-    "item_name_ru": "Вишнёвая плита"
+    "item_name_ru": "Вишнёвая плита",
+    "potion": ""
   },
   {
-    "id": "236",
     "type": "dark_oak_slab",
-    "item_name_ru": "Плита из тёмного дуба"
+    "item_name_ru": "Плита из тёмного дуба",
+    "potion": ""
   },
   {
-    "id": "237",
     "type": "mangrove_slab",
-    "item_name_ru": "Мангровая плита"
+    "item_name_ru": "Мангровая плита",
+    "potion": ""
   },
   {
-    "id": "238",
     "type": "bamboo_slab",
-    "item_name_ru": "Бамбуковая плита"
+    "item_name_ru": "Бамбуковая плита",
+    "potion": ""
   },
   {
-    "id": "239",
     "type": "bamboo_mosaic_slab",
-    "item_name_ru": "Плита из бамбуковой мозаики"
+    "item_name_ru": "Плита из бамбуковой мозаики",
+    "potion": ""
   },
   {
-    "id": "240",
     "type": "crimson_slab",
-    "item_name_ru": "Багровая плита"
+    "item_name_ru": "Багровая плита",
+    "potion": ""
   },
   {
-    "id": "241",
     "type": "warped_slab",
-    "item_name_ru": "Искажённая плита"
+    "item_name_ru": "Искажённая плита",
+    "potion": ""
   },
   {
-    "id": "242",
     "type": "stone_slab",
-    "item_name_ru": "Каменная плита"
+    "item_name_ru": "Каменная плита",
+    "potion": ""
   },
   {
-    "id": "243",
     "type": "smooth_stone_slab",
-    "item_name_ru": "Плита из гладкого камня"
+    "item_name_ru": "Плита из гладкого камня",
+    "potion": ""
   },
   {
-    "id": "244",
     "type": "sandstone_slab",
-    "item_name_ru": "Песчаниковая плита"
+    "item_name_ru": "Песчаниковая плита",
+    "potion": ""
   },
   {
-    "id": "245",
     "type": "cut_sandstone_slab",
-    "item_name_ru": "Плита из пиленого песчаника"
+    "item_name_ru": "Плита из пиленого песчаника",
+    "potion": ""
   },
   {
-    "id": "246",
     "type": "petrified_oak_slab",
-    "item_name_ru": "Окаменевшая дубовая плита"
+    "item_name_ru": "Окаменевшая дубовая плита",
+    "potion": ""
   },
   {
-    "id": "247",
     "type": "cobblestone_slab",
-    "item_name_ru": "Булыжная плита"
+    "item_name_ru": "Булыжная плита",
+    "potion": ""
   },
   {
-    "id": "248",
     "type": "brick_slab",
-    "item_name_ru": "Кирпичная плита"
+    "item_name_ru": "Кирпичная плита",
+    "potion": ""
   },
   {
-    "id": "249",
     "type": "stone_brick_slab",
-    "item_name_ru": "Плита из каменного кирпича"
+    "item_name_ru": "Плита из каменного кирпича",
+    "potion": ""
   },
   {
-    "id": "250",
     "type": "mud_brick_slab",
-    "item_name_ru": "Саманная плита"
+    "item_name_ru": "Саманная плита",
+    "potion": ""
   },
   {
-    "id": "251",
     "type": "nether_brick_slab",
-    "item_name_ru": "Плита из незерского кирпича"
+    "item_name_ru": "Плита из незерского кирпича",
+    "potion": ""
   },
   {
-    "id": "252",
     "type": "quartz_slab",
-    "item_name_ru": "Кварцевая плита"
+    "item_name_ru": "Кварцевая плита",
+    "potion": ""
   },
   {
-    "id": "253",
     "type": "red_sandstone_slab",
-    "item_name_ru": "Плита из красного песчаника"
+    "item_name_ru": "Плита из красного песчаника",
+    "potion": ""
   },
   {
-    "id": "254",
     "type": "cut_red_sandstone_slab",
-    "item_name_ru": "Плита из пиленого красного песчаника"
+    "item_name_ru": "Плита из пиленого красного песчаника",
+    "potion": ""
   },
   {
-    "id": "255",
     "type": "purpur_slab",
-    "item_name_ru": "Пурпуровая плита"
+    "item_name_ru": "Пурпуровая плита",
+    "potion": ""
   },
   {
-    "id": "256",
     "type": "prismarine_slab",
-    "item_name_ru": "Призмариновая плита"
+    "item_name_ru": "Призмариновая плита",
+    "potion": ""
   },
   {
-    "id": "257",
     "type": "prismarine_brick_slab",
-    "item_name_ru": "Плита из призмаринового кирпича"
+    "item_name_ru": "Плита из призмаринового кирпича",
+    "potion": ""
   },
   {
-    "id": "258",
     "type": "dark_prismarine_slab",
-    "item_name_ru": "Плита из тёмного призмарина"
+    "item_name_ru": "Плита из тёмного призмарина",
+    "potion": ""
   },
   {
-    "id": "259",
     "type": "smooth_quartz",
-    "item_name_ru": "Гладкий кварц"
+    "item_name_ru": "Гладкий кварц",
+    "potion": ""
   },
   {
-    "id": "260",
     "type": "smooth_red_sandstone",
-    "item_name_ru": "Гладкий красный песчаник"
+    "item_name_ru": "Гладкий красный песчаник",
+    "potion": ""
   },
   {
-    "id": "261",
     "type": "smooth_sandstone",
-    "item_name_ru": "Гладкий песчаник"
+    "item_name_ru": "Гладкий песчаник",
+    "potion": ""
   },
   {
-    "id": "262",
     "type": "smooth_stone",
-    "item_name_ru": "Гладкий камень"
+    "item_name_ru": "Гладкий камень",
+    "potion": ""
   },
   {
-    "id": "263",
     "type": "bricks",
-    "item_name_ru": "Кирпичи"
+    "item_name_ru": "Кирпичи",
+    "potion": ""
   },
   {
-    "id": "264",
     "type": "bookshelf",
-    "item_name_ru": "Книжная полка"
+    "item_name_ru": "Книжная полка",
+    "potion": ""
   },
   {
-    "id": "265",
     "type": "chiseled_bookshelf",
-    "item_name_ru": "Резная книжная полка"
+    "item_name_ru": "Резная книжная полка",
+    "potion": ""
   },
   {
-    "id": "266",
     "type": "decorated_pot",
-    "item_name_ru": "Узорчатая ваза"
+    "item_name_ru": "Узорчатая ваза",
+    "potion": ""
   },
   {
-    "id": "267",
     "type": "mossy_cobblestone",
-    "item_name_ru": "Замшелый булыжник"
+    "item_name_ru": "Замшелый булыжник",
+    "potion": ""
   },
   {
-    "id": "268",
     "type": "obsidian",
-    "item_name_ru": "Обсидиан"
+    "item_name_ru": "Обсидиан",
+    "potion": ""
   },
   {
-    "id": "269",
     "type": "torch",
-    "item_name_ru": "Факел"
+    "item_name_ru": "Факел",
+    "potion": ""
   },
   {
-    "id": "270",
     "type": "end_rod",
-    "item_name_ru": "Стержень Энда"
+    "item_name_ru": "Стержень Энда",
+    "potion": ""
   },
   {
-    "id": "271",
     "type": "chorus_plant",
-    "item_name_ru": "Хорус"
+    "item_name_ru": "Хорус",
+    "potion": ""
   },
   {
-    "id": "272",
     "type": "chorus_flower",
-    "item_name_ru": "Цветок хоруса"
+    "item_name_ru": "Цветок хоруса",
+    "potion": ""
   },
   {
-    "id": "273",
     "type": "purpur_block",
-    "item_name_ru": "Пурпур"
+    "item_name_ru": "Пурпур",
+    "potion": ""
   },
   {
-    "id": "274",
     "type": "purpur_pillar",
-    "item_name_ru": "Пурпуровый пилон"
+    "item_name_ru": "Пурпуровый пилон",
+    "potion": ""
   },
   {
-    "id": "275",
     "type": "purpur_stairs",
-    "item_name_ru": "Пурпуровые ступеньки"
+    "item_name_ru": "Пурпуровые ступеньки",
+    "potion": ""
   },
   {
-    "id": "276",
     "type": "spawner",
-    "item_name_ru": "Рассадник монстров"
+    "item_name_ru": "Рассадник монстров",
+    "potion": ""
   },
   {
-    "id": "277",
     "type": "chest",
-    "item_name_ru": "Сундук"
+    "item_name_ru": "Сундук",
+    "potion": ""
   },
   {
-    "id": "278",
     "type": "crafting_table",
-    "item_name_ru": "Верстак"
+    "item_name_ru": "Верстак",
+    "potion": ""
   },
   {
-    "id": "279",
     "type": "farmland",
-    "item_name_ru": "Пашня"
+    "item_name_ru": "Пашня",
+    "potion": ""
   },
   {
-    "id": "280",
     "type": "furnace",
-    "item_name_ru": "Печь"
+    "item_name_ru": "Печь",
+    "potion": ""
   },
   {
-    "id": "281",
     "type": "ladder",
-    "item_name_ru": "Лестница"
+    "item_name_ru": "Лестница",
+    "potion": ""
   },
   {
-    "id": "282",
     "type": "cobblestone_stairs",
-    "item_name_ru": "Булыжные ступеньки"
+    "item_name_ru": "Булыжные ступеньки",
+    "potion": ""
   },
   {
-    "id": "283",
     "type": "snow",
-    "item_name_ru": "Снег"
+    "item_name_ru": "Снег",
+    "potion": ""
   },
   {
-    "id": "284",
     "type": "ice",
-    "item_name_ru": "Лёд"
+    "item_name_ru": "Лёд",
+    "potion": ""
   },
   {
-    "id": "285",
     "type": "snow_block",
-    "item_name_ru": "Блок снега"
+    "item_name_ru": "Блок снега",
+    "potion": ""
   },
   {
-    "id": "286",
     "type": "cactus",
-    "item_name_ru": "Кактус"
+    "item_name_ru": "Кактус",
+    "potion": ""
   },
   {
-    "id": "287",
     "type": "clay",
-    "item_name_ru": "Глина"
+    "item_name_ru": "Глина",
+    "potion": ""
   },
   {
-    "id": "288",
     "type": "jukebox",
-    "item_name_ru": "Проигрыватель"
+    "item_name_ru": "Проигрыватель",
+    "potion": ""
   },
   {
-    "id": "289",
     "type": "oak_fence",
-    "item_name_ru": "Дубовый забор"
+    "item_name_ru": "Дубовый забор",
+    "potion": ""
   },
   {
-    "id": "290",
     "type": "spruce_fence",
-    "item_name_ru": "Еловый забор"
+    "item_name_ru": "Еловый забор",
+    "potion": ""
   },
   {
-    "id": "291",
     "type": "birch_fence",
-    "item_name_ru": "Берёзовый забор"
+    "item_name_ru": "Берёзовый забор",
+    "potion": ""
   },
   {
-    "id": "292",
     "type": "jungle_fence",
-    "item_name_ru": "Забор из тропического дерева"
+    "item_name_ru": "Забор из тропического дерева",
+    "potion": ""
   },
   {
-    "id": "293",
     "type": "acacia_fence",
-    "item_name_ru": "Акациевый забор"
+    "item_name_ru": "Акациевый забор",
+    "potion": ""
   },
   {
-    "id": "294",
     "type": "cherry_fence",
-    "item_name_ru": "Вишнёвый забор"
+    "item_name_ru": "Вишнёвый забор",
+    "potion": ""
   },
   {
-    "id": "295",
     "type": "dark_oak_fence",
-    "item_name_ru": "Забор из тёмного дуба"
+    "item_name_ru": "Забор из тёмного дуба",
+    "potion": ""
   },
   {
-    "id": "296",
     "type": "mangrove_fence",
-    "item_name_ru": "Мангровый забор"
+    "item_name_ru": "Мангровый забор",
+    "potion": ""
   },
   {
-    "id": "297",
     "type": "bamboo_fence",
-    "item_name_ru": "Бамбуковый забор"
+    "item_name_ru": "Бамбуковый забор",
+    "potion": ""
   },
   {
-    "id": "298",
     "type": "crimson_fence",
-    "item_name_ru": "Багровый забор"
+    "item_name_ru": "Багровый забор",
+    "potion": ""
   },
   {
-    "id": "299",
     "type": "warped_fence",
-    "item_name_ru": "Искажённый забор"
+    "item_name_ru": "Искажённый забор",
+    "potion": ""
   },
   {
-    "id": "300",
     "type": "pumpkin",
-    "item_name_ru": "Тыква"
+    "item_name_ru": "Тыква",
+    "potion": ""
   },
   {
-    "id": "301",
     "type": "carved_pumpkin",
-    "item_name_ru": "Вырезанная тыква"
+    "item_name_ru": "Вырезанная тыква",
+    "potion": ""
   },
   {
-    "id": "302",
     "type": "jack_o_lantern",
-    "item_name_ru": "Светильник Джека"
+    "item_name_ru": "Светильник Джека",
+    "potion": ""
   },
   {
-    "id": "303",
     "type": "netherrack",
-    "item_name_ru": "Незерак"
+    "item_name_ru": "Незерак",
+    "potion": ""
   },
   {
-    "id": "304",
     "type": "soul_sand",
-    "item_name_ru": "Песок душ"
+    "item_name_ru": "Песок душ",
+    "potion": ""
   },
   {
-    "id": "305",
     "type": "soul_soil",
-    "item_name_ru": "Почва душ"
+    "item_name_ru": "Почва душ",
+    "potion": ""
   },
   {
-    "id": "306",
     "type": "basalt",
-    "item_name_ru": "Базальт"
+    "item_name_ru": "Базальт",
+    "potion": ""
   },
   {
-    "id": "307",
     "type": "polished_basalt",
-    "item_name_ru": "Полированный базальт"
+    "item_name_ru": "Полированный базальт",
+    "potion": ""
   },
   {
-    "id": "308",
     "type": "smooth_basalt",
-    "item_name_ru": "Гладкий базальт"
+    "item_name_ru": "Гладкий базальт",
+    "potion": ""
   },
   {
-    "id": "309",
     "type": "soul_torch",
-    "item_name_ru": "Факел душ"
+    "item_name_ru": "Факел душ",
+    "potion": ""
   },
   {
-    "id": "310",
     "type": "glowstone",
-    "item_name_ru": "Светокамень"
+    "item_name_ru": "Светокамень",
+    "potion": ""
   },
   {
-    "id": "311",
     "type": "infested_stone",
-    "item_name_ru": "Заражённый камень"
+    "item_name_ru": "Заражённый камень",
+    "potion": ""
   },
   {
-    "id": "312",
     "type": "infested_cobblestone",
-    "item_name_ru": "Заражённый булыжник"
+    "item_name_ru": "Заражённый булыжник",
+    "potion": ""
   },
   {
-    "id": "313",
     "type": "infested_stone_bricks",
-    "item_name_ru": "Заражённые каменные кирпичи"
+    "item_name_ru": "Заражённые каменные кирпичи",
+    "potion": ""
   },
   {
-    "id": "314",
     "type": "infested_mossy_stone_bricks",
-    "item_name_ru": "Заражённые замшелые каменные кирпичи"
+    "item_name_ru": "Заражённые замшелые каменные кирпичи",
+    "potion": ""
   },
   {
-    "id": "315",
     "type": "infested_cracked_stone_bricks",
-    "item_name_ru": "Заражённые потрескавшиеся каменные кирпичи"
+    "item_name_ru": "Заражённые потрескавшиеся каменные кирпичи",
+    "potion": ""
   },
   {
-    "id": "316",
     "type": "infested_chiseled_stone_bricks",
-    "item_name_ru": "Заражённые резные каменные кирпичи"
+    "item_name_ru": "Заражённые резные каменные кирпичи",
+    "potion": ""
   },
   {
-    "id": "317",
     "type": "infested_deepslate",
-    "item_name_ru": "Заражённый глубинный сланец"
+    "item_name_ru": "Заражённый глубинный сланец",
+    "potion": ""
   },
   {
-    "id": "318",
     "type": "stone_bricks",
-    "item_name_ru": "Каменные кирпичи"
+    "item_name_ru": "Каменные кирпичи",
+    "potion": ""
   },
   {
-    "id": "319",
     "type": "mossy_stone_bricks",
-    "item_name_ru": "Замшелые каменные кирпичи"
+    "item_name_ru": "Замшелые каменные кирпичи",
+    "potion": ""
   },
   {
-    "id": "320",
     "type": "cracked_stone_bricks",
-    "item_name_ru": "Потрескавшиеся каменные кирпичи"
+    "item_name_ru": "Потрескавшиеся каменные кирпичи",
+    "potion": ""
   },
   {
-    "id": "321",
     "type": "chiseled_stone_bricks",
-    "item_name_ru": "Резные каменные кирпичи"
+    "item_name_ru": "Резные каменные кирпичи",
+    "potion": ""
   },
   {
-    "id": "322",
     "type": "packed_mud",
-    "item_name_ru": "Плотная грязь"
+    "item_name_ru": "Плотная грязь",
+    "potion": ""
   },
   {
-    "id": "323",
     "type": "mud_bricks",
-    "item_name_ru": "Саманные кирпичи"
+    "item_name_ru": "Саманные кирпичи",
+    "potion": ""
   },
   {
-    "id": "324",
     "type": "deepslate_bricks",
-    "item_name_ru": "Глубинносланцевые кирпичи"
+    "item_name_ru": "Глубинносланцевые кирпичи",
+    "potion": ""
   },
   {
-    "id": "325",
     "type": "cracked_deepslate_bricks",
-    "item_name_ru": "Потрескавшиеся глубинносланцевые кирпичи"
+    "item_name_ru": "Потрескавшиеся глубинносланцевые кирпичи",
+    "potion": ""
   },
   {
-    "id": "326",
     "type": "deepslate_tiles",
-    "item_name_ru": "Глубинносланцевый плитняк"
+    "item_name_ru": "Глубинносланцевый плитняк",
+    "potion": ""
   },
   {
-    "id": "327",
     "type": "cracked_deepslate_tiles",
-    "item_name_ru": "Потрескавшийся глубинносланцевый плитняк"
+    "item_name_ru": "Потрескавшийся глубинносланцевый плитняк",
+    "potion": ""
   },
   {
-    "id": "328",
     "type": "chiseled_deepslate",
-    "item_name_ru": "Резной глубинный сланец"
+    "item_name_ru": "Резной глубинный сланец",
+    "potion": ""
   },
   {
-    "id": "329",
     "type": "reinforced_deepslate",
-    "item_name_ru": "Укреплённый глубинный сланец"
+    "item_name_ru": "Укреплённый глубинный сланец",
+    "potion": ""
   },
   {
-    "id": "330",
     "type": "brown_mushroom_block",
-    "item_name_ru": "Блок коричневого гриба"
+    "item_name_ru": "Блок коричневого гриба",
+    "potion": ""
   },
   {
-    "id": "331",
     "type": "red_mushroom_block",
-    "item_name_ru": "Блок красного гриба"
+    "item_name_ru": "Блок красного гриба",
+    "potion": ""
   },
   {
-    "id": "332",
     "type": "mushroom_stem",
-    "item_name_ru": "Ножка гриба"
+    "item_name_ru": "Ножка гриба",
+    "potion": ""
   },
   {
-    "id": "333",
     "type": "iron_bars",
-    "item_name_ru": "Железные прутья"
+    "item_name_ru": "Железные прутья",
+    "potion": ""
   },
   {
-    "id": "334",
     "type": "chain",
-    "item_name_ru": "Цепь"
+    "item_name_ru": "Цепь",
+    "potion": ""
   },
   {
-    "id": "335",
     "type": "glass_pane",
-    "item_name_ru": "Стеклянная панель"
+    "item_name_ru": "Стеклянная панель",
+    "potion": ""
   },
   {
-    "id": "336",
     "type": "melon",
-    "item_name_ru": "Арбуз"
+    "item_name_ru": "Арбуз",
+    "potion": ""
   },
   {
-    "id": "337",
     "type": "vine",
-    "item_name_ru": "Лианы"
+    "item_name_ru": "Лианы",
+    "potion": ""
   },
   {
-    "id": "338",
     "type": "glow_lichen",
-    "item_name_ru": "Светящийся лишайник"
+    "item_name_ru": "Светящийся лишайник",
+    "potion": ""
   },
   {
-    "id": "339",
     "type": "brick_stairs",
-    "item_name_ru": "Кирпичные ступеньки"
+    "item_name_ru": "Кирпичные ступеньки",
+    "potion": ""
   },
   {
-    "id": "340",
     "type": "stone_brick_stairs",
-    "item_name_ru": "Ступеньки из каменного кирпича"
+    "item_name_ru": "Ступеньки из каменного кирпича",
+    "potion": ""
   },
   {
-    "id": "341",
     "type": "mud_brick_stairs",
-    "item_name_ru": "Саманные ступеньки"
+    "item_name_ru": "Саманные ступеньки",
+    "potion": ""
   },
   {
-    "id": "342",
     "type": "mycelium",
-    "item_name_ru": "Мицелий"
+    "item_name_ru": "Мицелий",
+    "potion": ""
   },
   {
-    "id": "343",
     "type": "lily_pad",
-    "item_name_ru": "Кувшинка"
+    "item_name_ru": "Кувшинка",
+    "potion": ""
   },
   {
-    "id": "344",
     "type": "nether_bricks",
-    "item_name_ru": "Незерские кирпичи"
+    "item_name_ru": "Незерские кирпичи",
+    "potion": ""
   },
   {
-    "id": "345",
     "type": "cracked_nether_bricks",
-    "item_name_ru": "Потрескавшиеся незерские кирпичи"
+    "item_name_ru": "Потрескавшиеся незерские кирпичи",
+    "potion": ""
   },
   {
-    "id": "346",
     "type": "chiseled_nether_bricks",
-    "item_name_ru": "Резные незерские кирпичи"
+    "item_name_ru": "Резные незерские кирпичи",
+    "potion": ""
   },
   {
-    "id": "347",
     "type": "nether_brick_fence",
-    "item_name_ru": "Забор из незерского кирпича"
+    "item_name_ru": "Забор из незерского кирпича",
+    "potion": ""
   },
   {
-    "id": "348",
     "type": "nether_brick_stairs",
-    "item_name_ru": "Ступеньки из незерского кирпича"
+    "item_name_ru": "Ступеньки из незерского кирпича",
+    "potion": ""
   },
   {
-    "id": "349",
     "type": "sculk",
-    "item_name_ru": "Скалк"
+    "item_name_ru": "Скалк",
+    "potion": ""
   },
   {
-    "id": "350",
     "type": "sculk_vein",
-    "item_name_ru": "Скалковая жила"
+    "item_name_ru": "Скалковая жила",
+    "potion": ""
   },
   {
-    "id": "351",
     "type": "sculk_catalyst",
-    "item_name_ru": "Скалковый катализатор"
+    "item_name_ru": "Скалковый катализатор",
+    "potion": ""
   },
   {
-    "id": "352",
     "type": "sculk_shrieker",
-    "item_name_ru": "Скалковый крикун"
+    "item_name_ru": "Скалковый крикун",
+    "potion": ""
   },
   {
-    "id": "353",
     "type": "enchanting_table",
-    "item_name_ru": "Чародейский стол"
+    "item_name_ru": "Чародейский стол",
+    "potion": ""
   },
   {
-    "id": "354",
     "type": "end_portal_frame",
-    "item_name_ru": "Рамка портала в Энд"
+    "item_name_ru": "Рамка портала в Энд",
+    "potion": ""
   },
   {
-    "id": "355",
     "type": "end_stone",
-    "item_name_ru": "Эндерняк"
+    "item_name_ru": "Эндерняк",
+    "potion": ""
   },
   {
-    "id": "356",
     "type": "end_stone_bricks",
-    "item_name_ru": "Эндерняковые кирпичи"
+    "item_name_ru": "Эндерняковые кирпичи",
+    "potion": ""
   },
   {
-    "id": "357",
     "type": "dragon_egg",
-    "item_name_ru": "Яйцо дракона"
+    "item_name_ru": "Яйцо дракона",
+    "potion": ""
   },
   {
-    "id": "358",
     "type": "sandstone_stairs",
-    "item_name_ru": "Песчаниковые ступеньки"
+    "item_name_ru": "Песчаниковые ступеньки",
+    "potion": ""
   },
   {
-    "id": "359",
     "type": "ender_chest",
-    "item_name_ru": "Эндер-сундук"
+    "item_name_ru": "Эндер-сундук",
+    "potion": ""
   },
   {
-    "id": "360",
     "type": "emerald_block",
-    "item_name_ru": "Изумрудный блок"
+    "item_name_ru": "Изумрудный блок",
+    "potion": ""
   },
   {
-    "id": "361",
     "type": "oak_stairs",
-    "item_name_ru": "Дубовые ступеньки"
+    "item_name_ru": "Дубовые ступеньки",
+    "potion": ""
   },
   {
-    "id": "362",
     "type": "spruce_stairs",
-    "item_name_ru": "Еловые ступеньки"
+    "item_name_ru": "Еловые ступеньки",
+    "potion": ""
   },
   {
-    "id": "363",
     "type": "birch_stairs",
-    "item_name_ru": "Берёзовые ступеньки"
+    "item_name_ru": "Берёзовые ступеньки",
+    "potion": ""
   },
   {
-    "id": "364",
     "type": "jungle_stairs",
-    "item_name_ru": "Ступеньки из тропического дерева"
+    "item_name_ru": "Ступеньки из тропического дерева",
+    "potion": ""
   },
   {
-    "id": "365",
     "type": "acacia_stairs",
-    "item_name_ru": "Акациевые ступеньки"
+    "item_name_ru": "Акациевые ступеньки",
+    "potion": ""
   },
   {
-    "id": "366",
     "type": "cherry_stairs",
-    "item_name_ru": "Вишнёвые ступеньки"
+    "item_name_ru": "Вишнёвые ступеньки",
+    "potion": ""
   },
   {
-    "id": "367",
     "type": "dark_oak_stairs",
-    "item_name_ru": "Ступеньки из тёмного дуба"
+    "item_name_ru": "Ступеньки из тёмного дуба",
+    "potion": ""
   },
   {
-    "id": "368",
     "type": "mangrove_stairs",
-    "item_name_ru": "Мангровые ступеньки"
+    "item_name_ru": "Мангровые ступеньки",
+    "potion": ""
   },
   {
-    "id": "369",
     "type": "bamboo_stairs",
-    "item_name_ru": "Бамбуковые ступеньки"
+    "item_name_ru": "Бамбуковые ступеньки",
+    "potion": ""
   },
   {
-    "id": "370",
     "type": "bamboo_mosaic_stairs",
-    "item_name_ru": "Ступеньки из бамбуковой мозаики"
+    "item_name_ru": "Ступеньки из бамбуковой мозаики",
+    "potion": ""
   },
   {
-    "id": "371",
     "type": "crimson_stairs",
-    "item_name_ru": "Багровые ступеньки"
+    "item_name_ru": "Багровые ступеньки",
+    "potion": ""
   },
   {
-    "id": "372",
     "type": "warped_stairs",
-    "item_name_ru": "Искажённые ступеньки"
+    "item_name_ru": "Искажённые ступеньки",
+    "potion": ""
   },
   {
-    "id": "373",
     "type": "command_block",
-    "item_name_ru": "Командный блок"
+    "item_name_ru": "Командный блок",
+    "potion": ""
   },
   {
-    "id": "374",
     "type": "beacon",
-    "item_name_ru": "Маяк"
+    "item_name_ru": "Маяк",
+    "potion": ""
   },
   {
-    "id": "375",
     "type": "cobblestone_wall",
-    "item_name_ru": "Булыжная ограда"
+    "item_name_ru": "Булыжная ограда",
+    "potion": ""
   },
   {
-    "id": "376",
     "type": "mossy_cobblestone_wall",
-    "item_name_ru": "Замшелая булыжная ограда"
+    "item_name_ru": "Замшелая булыжная ограда",
+    "potion": ""
   },
   {
-    "id": "377",
     "type": "brick_wall",
-    "item_name_ru": "Кирпичная ограда"
+    "item_name_ru": "Кирпичная ограда",
+    "potion": ""
   },
   {
-    "id": "378",
     "type": "prismarine_wall",
-    "item_name_ru": "Призмариновая ограда"
+    "item_name_ru": "Призмариновая ограда",
+    "potion": ""
   },
   {
-    "id": "379",
     "type": "red_sandstone_wall",
-    "item_name_ru": "Ограда из красного песчаника"
+    "item_name_ru": "Ограда из красного песчаника",
+    "potion": ""
   },
   {
-    "id": "380",
     "type": "mossy_stone_brick_wall",
-    "item_name_ru": "Ограда из замшелого каменного кирпича"
+    "item_name_ru": "Ограда из замшелого каменного кирпича",
+    "potion": ""
   },
   {
-    "id": "381",
     "type": "granite_wall",
-    "item_name_ru": "Гранитная ограда"
+    "item_name_ru": "Гранитная ограда",
+    "potion": ""
   },
   {
-    "id": "382",
     "type": "stone_brick_wall",
-    "item_name_ru": "Ограда из каменного кирпича"
+    "item_name_ru": "Ограда из каменного кирпича",
+    "potion": ""
   },
   {
-    "id": "383",
     "type": "mud_brick_wall",
-    "item_name_ru": "Саманная ограда"
+    "item_name_ru": "Саманная ограда",
+    "potion": ""
   },
   {
-    "id": "384",
     "type": "nether_brick_wall",
-    "item_name_ru": "Ограда из незерского кирпича"
+    "item_name_ru": "Ограда из незерского кирпича",
+    "potion": ""
   },
   {
-    "id": "385",
     "type": "andesite_wall",
-    "item_name_ru": "Андезитовая ограда"
+    "item_name_ru": "Андезитовая ограда",
+    "potion": ""
   },
   {
-    "id": "386",
     "type": "red_nether_brick_wall",
-    "item_name_ru": "Ограда из красного незерского кирпича"
+    "item_name_ru": "Ограда из красного незерского кирпича",
+    "potion": ""
   },
   {
-    "id": "387",
     "type": "sandstone_wall",
-    "item_name_ru": "Песчаниковая ограда"
+    "item_name_ru": "Песчаниковая ограда",
+    "potion": ""
   },
   {
-    "id": "388",
     "type": "end_stone_brick_wall",
-    "item_name_ru": "Ограда из эндернякового кирпича"
+    "item_name_ru": "Ограда из эндернякового кирпича",
+    "potion": ""
   },
   {
-    "id": "389",
     "type": "diorite_wall",
-    "item_name_ru": "Диоритовая ограда"
+    "item_name_ru": "Диоритовая ограда",
+    "potion": ""
   },
   {
-    "id": "390",
     "type": "blackstone_wall",
-    "item_name_ru": "Чернитная ограда"
+    "item_name_ru": "Чернитная ограда",
+    "potion": ""
   },
   {
-    "id": "391",
     "type": "polished_blackstone_wall",
-    "item_name_ru": "Ограда из полированного чернита"
+    "item_name_ru": "Ограда из полированного чернита",
+    "potion": ""
   },
   {
-    "id": "392",
     "type": "polished_blackstone_brick_wall",
-    "item_name_ru": "Ограда из полированно-чернитного кирпича"
+    "item_name_ru": "Ограда из полированно-чернитного кирпича",
+    "potion": ""
   },
   {
-    "id": "393",
     "type": "cobbled_deepslate_wall",
-    "item_name_ru": "Ограда из колотого глубинного сланца"
+    "item_name_ru": "Ограда из колотого глубинного сланца",
+    "potion": ""
   },
   {
-    "id": "394",
     "type": "polished_deepslate_wall",
-    "item_name_ru": "Ограда из полированного глубинного сланца"
+    "item_name_ru": "Ограда из полированного глубинного сланца",
+    "potion": ""
   },
   {
-    "id": "395",
     "type": "deepslate_brick_wall",
-    "item_name_ru": "Ограда из глубинносланцевого кирпича"
+    "item_name_ru": "Ограда из глубинносланцевого кирпича",
+    "potion": ""
   },
   {
-    "id": "396",
     "type": "deepslate_tile_wall",
-    "item_name_ru": "Ограда из глубинносланцевого плитняка"
+    "item_name_ru": "Ограда из глубинносланцевого плитняка",
+    "potion": ""
   },
   {
-    "id": "397",
     "type": "anvil",
-    "item_name_ru": "Наковальня"
+    "item_name_ru": "Наковальня",
+    "potion": ""
   },
   {
-    "id": "398",
     "type": "chipped_anvil",
-    "item_name_ru": "Повреждённая наковальня"
+    "item_name_ru": "Повреждённая наковальня",
+    "potion": ""
   },
   {
-    "id": "399",
     "type": "damaged_anvil",
-    "item_name_ru": "Разбитая наковальня"
+    "item_name_ru": "Разбитая наковальня",
+    "potion": ""
   },
   {
-    "id": "400",
     "type": "chiseled_quartz_block",
-    "item_name_ru": "Резной кварцевый блок"
+    "item_name_ru": "Резной кварцевый блок",
+    "potion": ""
   },
   {
-    "id": "401",
     "type": "quartz_block",
-    "item_name_ru": "Кварцевый блок"
+    "item_name_ru": "Кварцевый блок",
+    "potion": ""
   },
   {
-    "id": "402",
     "type": "quartz_bricks",
-    "item_name_ru": "Кварцевые кирпичи"
+    "item_name_ru": "Кварцевые кирпичи",
+    "potion": ""
   },
   {
-    "id": "403",
     "type": "quartz_pillar",
-    "item_name_ru": "Кварцевая колонна"
+    "item_name_ru": "Кварцевая колонна",
+    "potion": ""
   },
   {
-    "id": "404",
     "type": "quartz_stairs",
-    "item_name_ru": "Кварцевые ступеньки"
+    "item_name_ru": "Кварцевые ступеньки",
+    "potion": ""
   },
   {
-    "id": "405",
     "type": "white_terracotta",
-    "item_name_ru": "Белая керамика"
+    "item_name_ru": "Белая керамика",
+    "potion": ""
   },
   {
-    "id": "406",
     "type": "orange_terracotta",
-    "item_name_ru": "Оранжевая керамика"
+    "item_name_ru": "Оранжевая керамика",
+    "potion": ""
   },
   {
-    "id": "407",
     "type": "magenta_terracotta",
-    "item_name_ru": "Пурпурная керамика"
+    "item_name_ru": "Пурпурная керамика",
+    "potion": ""
   },
   {
-    "id": "408",
     "type": "light_blue_terracotta",
-    "item_name_ru": "Голубая керамика"
+    "item_name_ru": "Голубая керамика",
+    "potion": ""
   },
   {
-    "id": "409",
     "type": "yellow_terracotta",
-    "item_name_ru": "Жёлтая керамика"
+    "item_name_ru": "Жёлтая керамика",
+    "potion": ""
   },
   {
-    "id": "410",
     "type": "lime_terracotta",
-    "item_name_ru": "Лаймовая керамика"
+    "item_name_ru": "Лаймовая керамика",
+    "potion": ""
   },
   {
-    "id": "411",
     "type": "pink_terracotta",
-    "item_name_ru": "Розовая керамика"
+    "item_name_ru": "Розовая керамика",
+    "potion": ""
   },
   {
-    "id": "412",
     "type": "gray_terracotta",
-    "item_name_ru": "Серая керамика"
+    "item_name_ru": "Серая керамика",
+    "potion": ""
   },
   {
-    "id": "413",
     "type": "light_gray_terracotta",
-    "item_name_ru": "Светло-серая керамика"
+    "item_name_ru": "Светло-серая керамика",
+    "potion": ""
   },
   {
-    "id": "414",
     "type": "cyan_terracotta",
-    "item_name_ru": "Бирюзовая керамика"
+    "item_name_ru": "Бирюзовая керамика",
+    "potion": ""
   },
   {
-    "id": "415",
     "type": "purple_terracotta",
-    "item_name_ru": "Фиолетовая керамика"
+    "item_name_ru": "Фиолетовая керамика",
+    "potion": ""
   },
   {
-    "id": "416",
     "type": "blue_terracotta",
-    "item_name_ru": "Синяя керамика"
+    "item_name_ru": "Синяя керамика",
+    "potion": ""
   },
   {
-    "id": "417",
     "type": "brown_terracotta",
-    "item_name_ru": "Коричневая керамика"
+    "item_name_ru": "Коричневая керамика",
+    "potion": ""
   },
   {
-    "id": "418",
     "type": "green_terracotta",
-    "item_name_ru": "Зелёная керамика"
+    "item_name_ru": "Зелёная керамика",
+    "potion": ""
   },
   {
-    "id": "419",
     "type": "red_terracotta",
-    "item_name_ru": "Красная керамика"
+    "item_name_ru": "Красная керамика",
+    "potion": ""
   },
   {
-    "id": "420",
     "type": "black_terracotta",
-    "item_name_ru": "Чёрная керамика"
+    "item_name_ru": "Чёрная керамика",
+    "potion": ""
   },
   {
-    "id": "421",
     "type": "barrier",
-    "item_name_ru": "Барьер"
+    "item_name_ru": "Барьер",
+    "potion": ""
   },
   {
-    "id": "422",
     "type": "light",
-    "item_name_ru": "Свет"
+    "item_name_ru": "Свет",
+    "potion": ""
   },
   {
-    "id": "423",
     "type": "hay_block",
-    "item_name_ru": "Сноп сена"
+    "item_name_ru": "Сноп сена",
+    "potion": ""
   },
   {
-    "id": "424",
     "type": "white_carpet",
-    "item_name_ru": "Белый ковёр"
+    "item_name_ru": "Белый ковёр",
+    "potion": ""
   },
   {
-    "id": "425",
     "type": "orange_carpet",
-    "item_name_ru": "Оранжевый ковёр"
+    "item_name_ru": "Оранжевый ковёр",
+    "potion": ""
   },
   {
-    "id": "426",
     "type": "magenta_carpet",
-    "item_name_ru": "Пурпурный ковёр"
+    "item_name_ru": "Пурпурный ковёр",
+    "potion": ""
   },
   {
-    "id": "427",
     "type": "light_blue_carpet",
-    "item_name_ru": "Голубой ковёр"
+    "item_name_ru": "Голубой ковёр",
+    "potion": ""
   },
   {
-    "id": "428",
     "type": "yellow_carpet",
-    "item_name_ru": "Жёлтый ковёр"
+    "item_name_ru": "Жёлтый ковёр",
+    "potion": ""
   },
   {
-    "id": "429",
     "type": "lime_carpet",
-    "item_name_ru": "Лаймовый ковёр"
+    "item_name_ru": "Лаймовый ковёр",
+    "potion": ""
   },
   {
-    "id": "430",
     "type": "pink_carpet",
-    "item_name_ru": "Розовый ковёр"
+    "item_name_ru": "Розовый ковёр",
+    "potion": ""
   },
   {
-    "id": "431",
     "type": "gray_carpet",
-    "item_name_ru": "Серый ковёр"
+    "item_name_ru": "Серый ковёр",
+    "potion": ""
   },
   {
-    "id": "432",
     "type": "light_gray_carpet",
-    "item_name_ru": "Светло-серый ковёр"
+    "item_name_ru": "Светло-серый ковёр",
+    "potion": ""
   },
   {
-    "id": "433",
     "type": "cyan_carpet",
-    "item_name_ru": "Бирюзовый ковёр"
+    "item_name_ru": "Бирюзовый ковёр",
+    "potion": ""
   },
   {
-    "id": "434",
     "type": "purple_carpet",
-    "item_name_ru": "Фиолетовый ковёр"
+    "item_name_ru": "Фиолетовый ковёр",
+    "potion": ""
   },
   {
-    "id": "435",
     "type": "blue_carpet",
-    "item_name_ru": "Синий ковёр"
+    "item_name_ru": "Синий ковёр",
+    "potion": ""
   },
   {
-    "id": "436",
     "type": "brown_carpet",
-    "item_name_ru": "Коричневый ковёр"
+    "item_name_ru": "Коричневый ковёр",
+    "potion": ""
   },
   {
-    "id": "437",
     "type": "green_carpet",
-    "item_name_ru": "Зелёный ковёр"
+    "item_name_ru": "Зелёный ковёр",
+    "potion": ""
   },
   {
-    "id": "438",
     "type": "red_carpet",
-    "item_name_ru": "Красный ковёр"
+    "item_name_ru": "Красный ковёр",
+    "potion": ""
   },
   {
-    "id": "439",
     "type": "black_carpet",
-    "item_name_ru": "Чёрный ковёр"
+    "item_name_ru": "Чёрный ковёр",
+    "potion": ""
   },
   {
-    "id": "440",
     "type": "terracotta",
-    "item_name_ru": "Терракота"
+    "item_name_ru": "Терракота",
+    "potion": ""
   },
   {
-    "id": "441",
     "type": "packed_ice",
-    "item_name_ru": "Плотный лёд"
+    "item_name_ru": "Плотный лёд",
+    "potion": ""
   },
   {
-    "id": "442",
     "type": "dirt_path",
-    "item_name_ru": "Тропинка"
+    "item_name_ru": "Тропинка",
+    "potion": ""
   },
   {
-    "id": "443",
     "type": "sunflower",
-    "item_name_ru": "Подсолнух"
+    "item_name_ru": "Подсолнух",
+    "potion": ""
   },
   {
-    "id": "444",
     "type": "lilac",
-    "item_name_ru": "Сирень"
+    "item_name_ru": "Сирень",
+    "potion": ""
   },
   {
-    "id": "445",
     "type": "rose_bush",
-    "item_name_ru": "Розовый куст"
+    "item_name_ru": "Розовый куст",
+    "potion": ""
   },
   {
-    "id": "446",
     "type": "peony",
-    "item_name_ru": "Пион"
+    "item_name_ru": "Пион",
+    "potion": ""
   },
   {
-    "id": "447",
     "type": "tall_grass",
-    "item_name_ru": "Высокая трава"
+    "item_name_ru": "Высокая трава",
+    "potion": ""
   },
   {
-    "id": "448",
     "type": "large_fern",
-    "item_name_ru": "Раскидистый папоротник"
+    "item_name_ru": "Раскидистый папоротник",
+    "potion": ""
   },
   {
-    "id": "449",
     "type": "white_stained_glass",
-    "item_name_ru": "Белое стекло"
+    "item_name_ru": "Белое стекло",
+    "potion": ""
   },
   {
-    "id": "450",
     "type": "orange_stained_glass",
-    "item_name_ru": "Оранжевое стекло"
+    "item_name_ru": "Оранжевое стекло",
+    "potion": ""
   },
   {
-    "id": "451",
     "type": "magenta_stained_glass",
-    "item_name_ru": "Пурпурное стекло"
+    "item_name_ru": "Пурпурное стекло",
+    "potion": ""
   },
   {
-    "id": "452",
     "type": "light_blue_stained_glass",
-    "item_name_ru": "Голубое стекло"
+    "item_name_ru": "Голубое стекло",
+    "potion": ""
   },
   {
-    "id": "453",
     "type": "yellow_stained_glass",
-    "item_name_ru": "Жёлтое стекло"
+    "item_name_ru": "Жёлтое стекло",
+    "potion": ""
   },
   {
-    "id": "454",
     "type": "lime_stained_glass",
-    "item_name_ru": "Лаймовое стекло"
+    "item_name_ru": "Лаймовое стекло",
+    "potion": ""
   },
   {
-    "id": "455",
     "type": "pink_stained_glass",
-    "item_name_ru": "Розовое стекло"
+    "item_name_ru": "Розовое стекло",
+    "potion": ""
   },
   {
-    "id": "456",
     "type": "gray_stained_glass",
-    "item_name_ru": "Серое стекло"
+    "item_name_ru": "Серое стекло",
+    "potion": ""
   },
   {
-    "id": "457",
     "type": "light_gray_stained_glass",
-    "item_name_ru": "Светло-серое стекло"
+    "item_name_ru": "Светло-серое стекло",
+    "potion": ""
   },
   {
-    "id": "458",
     "type": "cyan_stained_glass",
-    "item_name_ru": "Бирюзовое стекло"
+    "item_name_ru": "Бирюзовое стекло",
+    "potion": ""
   },
   {
-    "id": "459",
     "type": "purple_stained_glass",
-    "item_name_ru": "Фиолетовое стекло"
+    "item_name_ru": "Фиолетовое стекло",
+    "potion": ""
   },
   {
-    "id": "460",
     "type": "blue_stained_glass",
-    "item_name_ru": "Синее стекло"
+    "item_name_ru": "Синее стекло",
+    "potion": ""
   },
   {
-    "id": "461",
     "type": "brown_stained_glass",
-    "item_name_ru": "Коричневое стекло"
+    "item_name_ru": "Коричневое стекло",
+    "potion": ""
   },
   {
-    "id": "462",
     "type": "green_stained_glass",
-    "item_name_ru": "Зелёное стекло"
+    "item_name_ru": "Зелёное стекло",
+    "potion": ""
   },
   {
-    "id": "463",
     "type": "red_stained_glass",
-    "item_name_ru": "Красное стекло"
+    "item_name_ru": "Красное стекло",
+    "potion": ""
   },
   {
-    "id": "464",
     "type": "black_stained_glass",
-    "item_name_ru": "Чёрное стекло"
+    "item_name_ru": "Чёрное стекло",
+    "potion": ""
   },
   {
-    "id": "465",
     "type": "white_stained_glass_pane",
-    "item_name_ru": "Белая стеклянная панель"
+    "item_name_ru": "Белая стеклянная панель",
+    "potion": ""
   },
   {
-    "id": "466",
     "type": "orange_stained_glass_pane",
-    "item_name_ru": "Оранжевая стеклянная панель"
+    "item_name_ru": "Оранжевая стеклянная панель",
+    "potion": ""
   },
   {
-    "id": "467",
     "type": "magenta_stained_glass_pane",
-    "item_name_ru": "Пурпурная стеклянная панель"
+    "item_name_ru": "Пурпурная стеклянная панель",
+    "potion": ""
   },
   {
-    "id": "468",
     "type": "light_blue_stained_glass_pane",
-    "item_name_ru": "Голубая стеклянная панель"
+    "item_name_ru": "Голубая стеклянная панель",
+    "potion": ""
   },
   {
-    "id": "469",
     "type": "yellow_stained_glass_pane",
-    "item_name_ru": "Жёлтая стеклянная панель"
+    "item_name_ru": "Жёлтая стеклянная панель",
+    "potion": ""
   },
   {
-    "id": "470",
     "type": "lime_stained_glass_pane",
-    "item_name_ru": "Лаймовая стеклянная панель"
+    "item_name_ru": "Лаймовая стеклянная панель",
+    "potion": ""
   },
   {
-    "id": "471",
     "type": "pink_stained_glass_pane",
-    "item_name_ru": "Розовая стеклянная панель"
+    "item_name_ru": "Розовая стеклянная панель",
+    "potion": ""
   },
   {
-    "id": "472",
     "type": "gray_stained_glass_pane",
-    "item_name_ru": "Серая стеклянная панель"
+    "item_name_ru": "Серая стеклянная панель",
+    "potion": ""
   },
   {
-    "id": "473",
     "type": "light_gray_stained_glass_pane",
-    "item_name_ru": "Светло-серая стеклянная панель"
+    "item_name_ru": "Светло-серая стеклянная панель",
+    "potion": ""
   },
   {
-    "id": "474",
     "type": "cyan_stained_glass_pane",
-    "item_name_ru": "Бирюзовая стеклянная панель"
+    "item_name_ru": "Бирюзовая стеклянная панель",
+    "potion": ""
   },
   {
-    "id": "475",
     "type": "purple_stained_glass_pane",
-    "item_name_ru": "Фиолетовая стеклянная панель"
+    "item_name_ru": "Фиолетовая стеклянная панель",
+    "potion": ""
   },
   {
-    "id": "476",
     "type": "blue_stained_glass_pane",
-    "item_name_ru": "Синяя стеклянная панель"
+    "item_name_ru": "Синяя стеклянная панель",
+    "potion": ""
   },
   {
-    "id": "477",
     "type": "brown_stained_glass_pane",
-    "item_name_ru": "Коричневая стеклянная панель"
+    "item_name_ru": "Коричневая стеклянная панель",
+    "potion": ""
   },
   {
-    "id": "478",
     "type": "green_stained_glass_pane",
-    "item_name_ru": "Зелёная стеклянная панель"
+    "item_name_ru": "Зелёная стеклянная панель",
+    "potion": ""
   },
   {
-    "id": "479",
     "type": "red_stained_glass_pane",
-    "item_name_ru": "Красная стеклянная панель"
+    "item_name_ru": "Красная стеклянная панель",
+    "potion": ""
   },
   {
-    "id": "480",
     "type": "black_stained_glass_pane",
-    "item_name_ru": "Чёрная стеклянная панель"
+    "item_name_ru": "Чёрная стеклянная панель",
+    "potion": ""
   },
   {
-    "id": "481",
     "type": "prismarine",
-    "item_name_ru": "Призмарин"
+    "item_name_ru": "Призмарин",
+    "potion": ""
   },
   {
-    "id": "482",
     "type": "prismarine_bricks",
-    "item_name_ru": "Призмариновые кирпичи"
+    "item_name_ru": "Призмариновые кирпичи",
+    "potion": ""
   },
   {
-    "id": "483",
     "type": "dark_prismarine",
-    "item_name_ru": "Тёмный призмарин"
+    "item_name_ru": "Тёмный призмарин",
+    "potion": ""
   },
   {
-    "id": "484",
     "type": "prismarine_stairs",
-    "item_name_ru": "Призмариновые ступеньки"
+    "item_name_ru": "Призмариновые ступеньки",
+    "potion": ""
   },
   {
-    "id": "485",
     "type": "prismarine_brick_stairs",
-    "item_name_ru": "Ступеньки из призмаринового кирпича"
+    "item_name_ru": "Ступеньки из призмаринового кирпича",
+    "potion": ""
   },
   {
-    "id": "486",
     "type": "dark_prismarine_stairs",
-    "item_name_ru": "Ступеньки из тёмного призмарина"
+    "item_name_ru": "Ступеньки из тёмного призмарина",
+    "potion": ""
   },
   {
-    "id": "487",
     "type": "sea_lantern",
-    "item_name_ru": "Морской фонарь"
+    "item_name_ru": "Морской фонарь",
+    "potion": ""
   },
   {
-    "id": "488",
     "type": "red_sandstone",
-    "item_name_ru": "Красный песчаник"
+    "item_name_ru": "Красный песчаник",
+    "potion": ""
   },
   {
-    "id": "489",
     "type": "chiseled_red_sandstone",
-    "item_name_ru": "Резной красный песчаник"
+    "item_name_ru": "Резной красный песчаник",
+    "potion": ""
   },
   {
-    "id": "490",
     "type": "cut_red_sandstone",
-    "item_name_ru": "Пиленый красный песчаник"
+    "item_name_ru": "Пиленый красный песчаник",
+    "potion": ""
   },
   {
-    "id": "491",
     "type": "red_sandstone_stairs",
-    "item_name_ru": "Ступеньки из красного песчаника"
+    "item_name_ru": "Ступеньки из красного песчаника",
+    "potion": ""
   },
   {
-    "id": "492",
     "type": "repeating_command_block",
-    "item_name_ru": "Повторяющий командный блок"
+    "item_name_ru": "Повторяющий командный блок",
+    "potion": ""
   },
   {
-    "id": "493",
     "type": "chain_command_block",
-    "item_name_ru": "Последовательный командный блок"
+    "item_name_ru": "Последовательный командный блок",
+    "potion": ""
   },
   {
-    "id": "494",
     "type": "magma_block",
-    "item_name_ru": "Магма"
+    "item_name_ru": "Магма",
+    "potion": ""
   },
   {
-    "id": "495",
     "type": "nether_wart_block",
-    "item_name_ru": "Блок незерского нароста"
+    "item_name_ru": "Блок незерского нароста",
+    "potion": ""
   },
   {
-    "id": "496",
     "type": "warped_wart_block",
-    "item_name_ru": "Блок искажённого нароста"
+    "item_name_ru": "Блок искажённого нароста",
+    "potion": ""
   },
   {
-    "id": "497",
     "type": "red_nether_bricks",
-    "item_name_ru": "Красные незерские кирпичи"
+    "item_name_ru": "Красные незерские кирпичи",
+    "potion": ""
   },
   {
-    "id": "498",
     "type": "bone_block",
-    "item_name_ru": "Костный блок"
+    "item_name_ru": "Костный блок",
+    "potion": ""
   },
   {
-    "id": "499",
     "type": "structure_void",
-    "item_name_ru": "Пустой блок"
+    "item_name_ru": "Пустой блок",
+    "potion": ""
   },
   {
-    "id": "500",
     "type": "shulker_box",
-    "item_name_ru": "Шалкеровый ящик"
+    "item_name_ru": "Шалкеровый ящик",
+    "potion": ""
   },
   {
-    "id": "501",
     "type": "white_shulker_box",
-    "item_name_ru": "Белый шалкеровый ящик"
+    "item_name_ru": "Белый шалкеровый ящик",
+    "potion": ""
   },
   {
-    "id": "502",
     "type": "orange_shulker_box",
-    "item_name_ru": "Оранжевый шалкеровый ящик"
+    "item_name_ru": "Оранжевый шалкеровый ящик",
+    "potion": ""
   },
   {
-    "id": "503",
     "type": "magenta_shulker_box",
-    "item_name_ru": "Пурпурный шалкеровый ящик"
+    "item_name_ru": "Пурпурный шалкеровый ящик",
+    "potion": ""
   },
   {
-    "id": "504",
     "type": "light_blue_shulker_box",
-    "item_name_ru": "Голубой шалкеровый ящик"
+    "item_name_ru": "Голубой шалкеровый ящик",
+    "potion": ""
   },
   {
-    "id": "505",
     "type": "yellow_shulker_box",
-    "item_name_ru": "Жёлтый шалкеровый ящик"
+    "item_name_ru": "Жёлтый шалкеровый ящик",
+    "potion": ""
   },
   {
-    "id": "506",
     "type": "lime_shulker_box",
-    "item_name_ru": "Лаймовый шалкеровый ящик"
+    "item_name_ru": "Лаймовый шалкеровый ящик",
+    "potion": ""
   },
   {
-    "id": "507",
     "type": "pink_shulker_box",
-    "item_name_ru": "Розовый шалкеровый ящик"
+    "item_name_ru": "Розовый шалкеровый ящик",
+    "potion": ""
   },
   {
-    "id": "508",
     "type": "gray_shulker_box",
-    "item_name_ru": "Серый шалкеровый ящик"
+    "item_name_ru": "Серый шалкеровый ящик",
+    "potion": ""
   },
   {
-    "id": "509",
     "type": "light_gray_shulker_box",
-    "item_name_ru": "Светло-серый шалкеровый ящик"
+    "item_name_ru": "Светло-серый шалкеровый ящик",
+    "potion": ""
   },
   {
-    "id": "510",
     "type": "cyan_shulker_box",
-    "item_name_ru": "Бирюзовый шалкеровый ящик"
+    "item_name_ru": "Бирюзовый шалкеровый ящик",
+    "potion": ""
   },
   {
-    "id": "511",
     "type": "purple_shulker_box",
-    "item_name_ru": "Фиолетовый шалкеровый ящик"
+    "item_name_ru": "Фиолетовый шалкеровый ящик",
+    "potion": ""
   },
   {
-    "id": "512",
     "type": "blue_shulker_box",
-    "item_name_ru": "Синий шалкеровый ящик"
+    "item_name_ru": "Синий шалкеровый ящик",
+    "potion": ""
   },
   {
-    "id": "513",
     "type": "brown_shulker_box",
-    "item_name_ru": "Коричневый шалкеровый ящик"
+    "item_name_ru": "Коричневый шалкеровый ящик",
+    "potion": ""
   },
   {
-    "id": "514",
     "type": "green_shulker_box",
-    "item_name_ru": "Зелёный шалкеровый ящик"
+    "item_name_ru": "Зелёный шалкеровый ящик",
+    "potion": ""
   },
   {
-    "id": "515",
     "type": "red_shulker_box",
-    "item_name_ru": "Красный шалкеровый ящик"
+    "item_name_ru": "Красный шалкеровый ящик",
+    "potion": ""
   },
   {
-    "id": "516",
     "type": "black_shulker_box",
-    "item_name_ru": "Чёрный шалкеровый ящик"
+    "item_name_ru": "Чёрный шалкеровый ящик",
+    "potion": ""
   },
   {
-    "id": "517",
     "type": "white_glazed_terracotta",
-    "item_name_ru": "Белая глазурованная керамика"
+    "item_name_ru": "Белая глазурованная керамика",
+    "potion": ""
   },
   {
-    "id": "518",
     "type": "orange_glazed_terracotta",
-    "item_name_ru": "Оранжевая глазурованная керамика"
+    "item_name_ru": "Оранжевая глазурованная керамика",
+    "potion": ""
   },
   {
-    "id": "519",
     "type": "magenta_glazed_terracotta",
-    "item_name_ru": "Пурпурная глазурованная керамика"
+    "item_name_ru": "Пурпурная глазурованная керамика",
+    "potion": ""
   },
   {
-    "id": "520",
     "type": "light_blue_glazed_terracotta",
-    "item_name_ru": "Голубая глазурованная керамика"
+    "item_name_ru": "Голубая глазурованная керамика",
+    "potion": ""
   },
   {
-    "id": "521",
     "type": "yellow_glazed_terracotta",
-    "item_name_ru": "Жёлтая глазурованная керамика"
+    "item_name_ru": "Жёлтая глазурованная керамика",
+    "potion": ""
   },
   {
-    "id": "522",
     "type": "lime_glazed_terracotta",
-    "item_name_ru": "Лаймовая глазурованная керамика"
+    "item_name_ru": "Лаймовая глазурованная керамика",
+    "potion": ""
   },
   {
-    "id": "523",
     "type": "pink_glazed_terracotta",
-    "item_name_ru": "Розовая глазурованная керамика"
+    "item_name_ru": "Розовая глазурованная керамика",
+    "potion": ""
   },
   {
-    "id": "524",
     "type": "gray_glazed_terracotta",
-    "item_name_ru": "Серая глазурованная керамика"
+    "item_name_ru": "Серая глазурованная керамика",
+    "potion": ""
   },
   {
-    "id": "525",
     "type": "light_gray_glazed_terracotta",
-    "item_name_ru": "Светло-серая глазурованная керамика"
+    "item_name_ru": "Светло-серая глазурованная керамика",
+    "potion": ""
   },
   {
-    "id": "526",
     "type": "cyan_glazed_terracotta",
-    "item_name_ru": "Бирюзовая глазурованная керамика"
+    "item_name_ru": "Бирюзовая глазурованная керамика",
+    "potion": ""
   },
   {
-    "id": "527",
     "type": "purple_glazed_terracotta",
-    "item_name_ru": "Фиолетовая глазурованная керамика"
+    "item_name_ru": "Фиолетовая глазурованная керамика",
+    "potion": ""
   },
   {
-    "id": "528",
     "type": "blue_glazed_terracotta",
-    "item_name_ru": "Синяя глазурованная керамика"
+    "item_name_ru": "Синяя глазурованная керамика",
+    "potion": ""
   },
   {
-    "id": "529",
     "type": "brown_glazed_terracotta",
-    "item_name_ru": "Коричневая глазурованная керамика"
+    "item_name_ru": "Коричневая глазурованная керамика",
+    "potion": ""
   },
   {
-    "id": "530",
     "type": "green_glazed_terracotta",
-    "item_name_ru": "Зелёная глазурованная керамика"
+    "item_name_ru": "Зелёная глазурованная керамика",
+    "potion": ""
   },
   {
-    "id": "531",
     "type": "red_glazed_terracotta",
-    "item_name_ru": "Красная глазурованная керамика"
+    "item_name_ru": "Красная глазурованная керамика",
+    "potion": ""
   },
   {
-    "id": "532",
     "type": "black_glazed_terracotta",
-    "item_name_ru": "Чёрная глазурованная керамика"
+    "item_name_ru": "Чёрная глазурованная керамика",
+    "potion": ""
   },
   {
-    "id": "533",
     "type": "white_concrete",
-    "item_name_ru": "Белый бетон"
+    "item_name_ru": "Белый бетон",
+    "potion": ""
   },
   {
-    "id": "534",
     "type": "orange_concrete",
-    "item_name_ru": "Оранжевый бетон"
+    "item_name_ru": "Оранжевый бетон",
+    "potion": ""
   },
   {
-    "id": "535",
     "type": "magenta_concrete",
-    "item_name_ru": "Пурпурный бетон"
+    "item_name_ru": "Пурпурный бетон",
+    "potion": ""
   },
   {
-    "id": "536",
     "type": "light_blue_concrete",
-    "item_name_ru": "Голубой бетон"
+    "item_name_ru": "Голубой бетон",
+    "potion": ""
   },
   {
-    "id": "537",
     "type": "yellow_concrete",
-    "item_name_ru": "Жёлтый бетон"
+    "item_name_ru": "Жёлтый бетон",
+    "potion": ""
   },
   {
-    "id": "538",
     "type": "lime_concrete",
-    "item_name_ru": "Лаймовый бетон"
+    "item_name_ru": "Лаймовый бетон",
+    "potion": ""
   },
   {
-    "id": "539",
     "type": "pink_concrete",
-    "item_name_ru": "Розовый бетон"
+    "item_name_ru": "Розовый бетон",
+    "potion": ""
   },
   {
-    "id": "540",
     "type": "gray_concrete",
-    "item_name_ru": "Серый бетон"
+    "item_name_ru": "Серый бетон",
+    "potion": ""
   },
   {
-    "id": "541",
     "type": "light_gray_concrete",
-    "item_name_ru": "Светло-серый бетон"
+    "item_name_ru": "Светло-серый бетон",
+    "potion": ""
   },
   {
-    "id": "542",
     "type": "cyan_concrete",
-    "item_name_ru": "Бирюзовый бетон"
+    "item_name_ru": "Бирюзовый бетон",
+    "potion": ""
   },
   {
-    "id": "543",
     "type": "purple_concrete",
-    "item_name_ru": "Фиолетовый бетон"
+    "item_name_ru": "Фиолетовый бетон",
+    "potion": ""
   },
   {
-    "id": "544",
     "type": "blue_concrete",
-    "item_name_ru": "Синий бетон"
+    "item_name_ru": "Синий бетон",
+    "potion": ""
   },
   {
-    "id": "545",
     "type": "brown_concrete",
-    "item_name_ru": "Коричневый бетон"
+    "item_name_ru": "Коричневый бетон",
+    "potion": ""
   },
   {
-    "id": "546",
     "type": "green_concrete",
-    "item_name_ru": "Зелёный бетон"
+    "item_name_ru": "Зелёный бетон",
+    "potion": ""
   },
   {
-    "id": "547",
     "type": "red_concrete",
-    "item_name_ru": "Красный бетон"
+    "item_name_ru": "Красный бетон",
+    "potion": ""
   },
   {
-    "id": "548",
     "type": "black_concrete",
-    "item_name_ru": "Чёрный бетон"
+    "item_name_ru": "Чёрный бетон",
+    "potion": ""
   },
   {
-    "id": "549",
     "type": "white_concrete_powder",
-    "item_name_ru": "Белый сухой бетон"
+    "item_name_ru": "Белый сухой бетон",
+    "potion": ""
   },
   {
-    "id": "550",
     "type": "orange_concrete_powder",
-    "item_name_ru": "Оранжевый сухой бетон"
+    "item_name_ru": "Оранжевый сухой бетон",
+    "potion": ""
   },
   {
-    "id": "551",
     "type": "magenta_concrete_powder",
-    "item_name_ru": "Пурпурный сухой бетон"
+    "item_name_ru": "Пурпурный сухой бетон",
+    "potion": ""
   },
   {
-    "id": "552",
     "type": "light_blue_concrete_powder",
-    "item_name_ru": "Голубой сухой бетон"
+    "item_name_ru": "Голубой сухой бетон",
+    "potion": ""
   },
   {
-    "id": "553",
     "type": "yellow_concrete_powder",
-    "item_name_ru": "Жёлтый сухой бетон"
+    "item_name_ru": "Жёлтый сухой бетон",
+    "potion": ""
   },
   {
-    "id": "554",
     "type": "lime_concrete_powder",
-    "item_name_ru": "Лаймовый сухой бетон"
+    "item_name_ru": "Лаймовый сухой бетон",
+    "potion": ""
   },
   {
-    "id": "555",
     "type": "pink_concrete_powder",
-    "item_name_ru": "Розовый сухой бетон"
+    "item_name_ru": "Розовый сухой бетон",
+    "potion": ""
   },
   {
-    "id": "556",
     "type": "gray_concrete_powder",
-    "item_name_ru": "Серый сухой бетон"
+    "item_name_ru": "Серый сухой бетон",
+    "potion": ""
   },
   {
-    "id": "557",
     "type": "light_gray_concrete_powder",
-    "item_name_ru": "Светло-серый сухой бетон"
+    "item_name_ru": "Светло-серый сухой бетон",
+    "potion": ""
   },
   {
-    "id": "558",
     "type": "cyan_concrete_powder",
-    "item_name_ru": "Бирюзовый сухой бетон"
+    "item_name_ru": "Бирюзовый сухой бетон",
+    "potion": ""
   },
   {
-    "id": "559",
     "type": "purple_concrete_powder",
-    "item_name_ru": "Фиолетовый сухой бетон"
+    "item_name_ru": "Фиолетовый сухой бетон",
+    "potion": ""
   },
   {
-    "id": "560",
     "type": "blue_concrete_powder",
-    "item_name_ru": "Синий сухой бетон"
+    "item_name_ru": "Синий сухой бетон",
+    "potion": ""
   },
   {
-    "id": "561",
     "type": "brown_concrete_powder",
-    "item_name_ru": "Коричневый сухой бетон"
+    "item_name_ru": "Коричневый сухой бетон",
+    "potion": ""
   },
   {
-    "id": "562",
     "type": "green_concrete_powder",
-    "item_name_ru": "Зелёный сухой бетон"
+    "item_name_ru": "Зелёный сухой бетон",
+    "potion": ""
   },
   {
-    "id": "563",
     "type": "red_concrete_powder",
-    "item_name_ru": "Красный сухой бетон"
+    "item_name_ru": "Красный сухой бетон",
+    "potion": ""
   },
   {
-    "id": "564",
     "type": "black_concrete_powder",
-    "item_name_ru": "Чёрный сухой бетон"
+    "item_name_ru": "Чёрный сухой бетон",
+    "potion": ""
   },
   {
-    "id": "565",
     "type": "turtle_egg",
-    "item_name_ru": "Черепашье яйцо"
+    "item_name_ru": "Черепашье яйцо",
+    "potion": ""
   },
   {
-    "id": "566",
     "type": "sniffer_egg",
-    "item_name_ru": "Яйцо нюхача"
+    "item_name_ru": "Яйцо нюхача",
+    "potion": ""
   },
   {
-    "id": "567",
     "type": "dead_tube_coral_block",
-    "item_name_ru": "Блок мёртвого трубчатого коралла"
+    "item_name_ru": "Блок мёртвого трубчатого коралла",
+    "potion": ""
   },
   {
-    "id": "568",
     "type": "dead_brain_coral_block",
-    "item_name_ru": "Блок мёртвого коралла-мозговика"
+    "item_name_ru": "Блок мёртвого коралла-мозговика",
+    "potion": ""
   },
   {
-    "id": "569",
     "type": "dead_bubble_coral_block",
-    "item_name_ru": "Блок мёртвого пузырчатого коралла"
+    "item_name_ru": "Блок мёртвого пузырчатого коралла",
+    "potion": ""
   },
   {
-    "id": "570",
     "type": "dead_fire_coral_block",
-    "item_name_ru": "Блок мёртвого огненного коралла"
+    "item_name_ru": "Блок мёртвого огненного коралла",
+    "potion": ""
   },
   {
-    "id": "571",
     "type": "dead_horn_coral_block",
-    "item_name_ru": "Блок мёртвого рогового коралла"
+    "item_name_ru": "Блок мёртвого рогового коралла",
+    "potion": ""
   },
   {
-    "id": "572",
     "type": "tube_coral_block",
-    "item_name_ru": "Блок трубчатого коралла"
+    "item_name_ru": "Блок трубчатого коралла",
+    "potion": ""
   },
   {
-    "id": "573",
     "type": "brain_coral_block",
-    "item_name_ru": "Блок коралла-мозговика"
+    "item_name_ru": "Блок коралла-мозговика",
+    "potion": ""
   },
   {
-    "id": "574",
     "type": "bubble_coral_block",
-    "item_name_ru": "Блок пузырчатого коралла"
+    "item_name_ru": "Блок пузырчатого коралла",
+    "potion": ""
   },
   {
-    "id": "575",
     "type": "fire_coral_block",
-    "item_name_ru": "Блок огненного коралла"
+    "item_name_ru": "Блок огненного коралла",
+    "potion": ""
   },
   {
-    "id": "576",
     "type": "horn_coral_block",
-    "item_name_ru": "Блок рогового коралла"
+    "item_name_ru": "Блок рогового коралла",
+    "potion": ""
   },
   {
-    "id": "577",
     "type": "tube_coral",
-    "item_name_ru": "Трубчатый коралл"
+    "item_name_ru": "Трубчатый коралл",
+    "potion": ""
   },
   {
-    "id": "578",
     "type": "brain_coral",
-    "item_name_ru": "Коралл-мозговик"
+    "item_name_ru": "Коралл-мозговик",
+    "potion": ""
   },
   {
-    "id": "579",
     "type": "bubble_coral",
-    "item_name_ru": "Пузырчатый коралл"
+    "item_name_ru": "Пузырчатый коралл",
+    "potion": ""
   },
   {
-    "id": "580",
     "type": "fire_coral",
-    "item_name_ru": "Огненный коралл"
+    "item_name_ru": "Огненный коралл",
+    "potion": ""
   },
   {
-    "id": "581",
     "type": "horn_coral",
-    "item_name_ru": "Роговой коралл"
+    "item_name_ru": "Роговой коралл",
+    "potion": ""
   },
   {
-    "id": "582",
     "type": "dead_brain_coral",
-    "item_name_ru": "Мёртвый коралл-мозговик"
+    "item_name_ru": "Мёртвый коралл-мозговик",
+    "potion": ""
   },
   {
-    "id": "583",
     "type": "dead_bubble_coral",
-    "item_name_ru": "Мёртвый пузырчатый коралл"
+    "item_name_ru": "Мёртвый пузырчатый коралл",
+    "potion": ""
   },
   {
-    "id": "584",
     "type": "dead_fire_coral",
-    "item_name_ru": "Мёртвый огненный коралл"
+    "item_name_ru": "Мёртвый огненный коралл",
+    "potion": ""
   },
   {
-    "id": "585",
     "type": "dead_horn_coral",
-    "item_name_ru": "Мёртвый роговый коралл"
+    "item_name_ru": "Мёртвый роговый коралл",
+    "potion": ""
   },
   {
-    "id": "586",
     "type": "dead_tube_coral",
-    "item_name_ru": "Мёртвый трубчатый коралл"
+    "item_name_ru": "Мёртвый трубчатый коралл",
+    "potion": ""
   },
   {
-    "id": "587",
     "type": "tube_coral_fan",
-    "item_name_ru": "Веерный трубчатый коралл"
+    "item_name_ru": "Веерный трубчатый коралл",
+    "potion": ""
   },
   {
-    "id": "588",
     "type": "brain_coral_fan",
-    "item_name_ru": "Веерный коралл-мозговик"
+    "item_name_ru": "Веерный коралл-мозговик",
+    "potion": ""
   },
   {
-    "id": "589",
     "type": "bubble_coral_fan",
-    "item_name_ru": "Веерный пузырчатый коралл"
+    "item_name_ru": "Веерный пузырчатый коралл",
+    "potion": ""
   },
   {
-    "id": "590",
     "type": "fire_coral_fan",
-    "item_name_ru": "Веерный огненный коралл"
+    "item_name_ru": "Веерный огненный коралл",
+    "potion": ""
   },
   {
-    "id": "591",
     "type": "horn_coral_fan",
-    "item_name_ru": "Веерный роговый коралл"
+    "item_name_ru": "Веерный роговый коралл",
+    "potion": ""
   },
   {
-    "id": "592",
     "type": "dead_tube_coral_fan",
-    "item_name_ru": "Мёртвый веерный трубчатый коралл"
+    "item_name_ru": "Мёртвый веерный трубчатый коралл",
+    "potion": ""
   },
   {
-    "id": "593",
     "type": "dead_brain_coral_fan",
-    "item_name_ru": "Мёртвый веерный коралл-мозговик"
+    "item_name_ru": "Мёртвый веерный коралл-мозговик",
+    "potion": ""
   },
   {
-    "id": "594",
     "type": "dead_bubble_coral_fan",
-    "item_name_ru": "Мёртвый веерный пузырчатый коралл"
+    "item_name_ru": "Мёртвый веерный пузырчатый коралл",
+    "potion": ""
   },
   {
-    "id": "595",
     "type": "dead_fire_coral_fan",
-    "item_name_ru": "Мёртвый веерный огненный коралл"
+    "item_name_ru": "Мёртвый веерный огненный коралл",
+    "potion": ""
   },
   {
-    "id": "596",
     "type": "dead_horn_coral_fan",
-    "item_name_ru": "Мёртвый веерный роговый коралл"
+    "item_name_ru": "Мёртвый веерный роговый коралл",
+    "potion": ""
   },
   {
-    "id": "597",
     "type": "blue_ice",
-    "item_name_ru": "Синий лёд"
+    "item_name_ru": "Синий лёд",
+    "potion": ""
   },
   {
-    "id": "598",
     "type": "conduit",
-    "item_name_ru": "Морской источник"
+    "item_name_ru": "Морской источник",
+    "potion": ""
   },
   {
-    "id": "599",
     "type": "polished_granite_stairs",
-    "item_name_ru": "Ступеньки из полированного гранита"
+    "item_name_ru": "Ступеньки из полированного гранита",
+    "potion": ""
   },
   {
-    "id": "600",
     "type": "smooth_red_sandstone_stairs",
-    "item_name_ru": "Ступеньки из гладкого красного песчаника"
+    "item_name_ru": "Ступеньки из гладкого красного песчаника",
+    "potion": ""
   },
   {
-    "id": "601",
     "type": "mossy_stone_brick_stairs",
-    "item_name_ru": "Ступеньки из замшелого каменного кирпича"
+    "item_name_ru": "Ступеньки из замшелого каменного кирпича",
+    "potion": ""
   },
   {
-    "id": "602",
     "type": "polished_diorite_stairs",
-    "item_name_ru": "Ступеньки из полированного диорита"
+    "item_name_ru": "Ступеньки из полированного диорита",
+    "potion": ""
   },
   {
-    "id": "603",
     "type": "mossy_cobblestone_stairs",
-    "item_name_ru": "Замшелые булыжные ступеньки"
+    "item_name_ru": "Замшелые булыжные ступеньки",
+    "potion": ""
   },
   {
-    "id": "604",
     "type": "end_stone_brick_stairs",
-    "item_name_ru": "Ступеньки из эндернякового кирпича"
+    "item_name_ru": "Ступеньки из эндернякового кирпича",
+    "potion": ""
   },
   {
-    "id": "605",
     "type": "stone_stairs",
-    "item_name_ru": "Каменные ступеньки"
+    "item_name_ru": "Каменные ступеньки",
+    "potion": ""
   },
   {
-    "id": "606",
     "type": "smooth_sandstone_stairs",
-    "item_name_ru": "Ступеньки из гладкого песчаника"
+    "item_name_ru": "Ступеньки из гладкого песчаника",
+    "potion": ""
   },
   {
-    "id": "607",
     "type": "smooth_quartz_stairs",
-    "item_name_ru": "Ступеньки из гладкого кварца"
+    "item_name_ru": "Ступеньки из гладкого кварца",
+    "potion": ""
   },
   {
-    "id": "608",
     "type": "granite_stairs",
-    "item_name_ru": "Гранитные ступеньки"
+    "item_name_ru": "Гранитные ступеньки",
+    "potion": ""
   },
   {
-    "id": "609",
     "type": "andesite_stairs",
-    "item_name_ru": "Андезитовые ступеньки"
+    "item_name_ru": "Андезитовые ступеньки",
+    "potion": ""
   },
   {
-    "id": "610",
     "type": "red_nether_brick_stairs",
-    "item_name_ru": "Ступеньки из красного незерского кирпича"
+    "item_name_ru": "Ступеньки из красного незерского кирпича",
+    "potion": ""
   },
   {
-    "id": "611",
     "type": "polished_andesite_stairs",
-    "item_name_ru": "Ступеньки из полированного андезита"
+    "item_name_ru": "Ступеньки из полированного андезита",
+    "potion": ""
   },
   {
-    "id": "612",
     "type": "diorite_stairs",
-    "item_name_ru": "Диоритовые ступеньки"
+    "item_name_ru": "Диоритовые ступеньки",
+    "potion": ""
   },
   {
-    "id": "613",
     "type": "cobbled_deepslate_stairs",
-    "item_name_ru": "Ступеньки из колотого глубинного сланца"
+    "item_name_ru": "Ступеньки из колотого глубинного сланца",
+    "potion": ""
   },
   {
-    "id": "614",
     "type": "polished_deepslate_stairs",
-    "item_name_ru": "Ступеньки из полированного глубинного сланца"
+    "item_name_ru": "Ступеньки из полированного глубинного сланца",
+    "potion": ""
   },
   {
-    "id": "615",
     "type": "deepslate_brick_stairs",
-    "item_name_ru": "Ступеньки из глубинносланцевого кирпича"
+    "item_name_ru": "Ступеньки из глубинносланцевого кирпича",
+    "potion": ""
   },
   {
-    "id": "616",
     "type": "deepslate_tile_stairs",
-    "item_name_ru": "Ступеньки из глубинносланцевого плитняка"
+    "item_name_ru": "Ступеньки из глубинносланцевого плитняка",
+    "potion": ""
   },
   {
-    "id": "617",
     "type": "polished_granite_slab",
-    "item_name_ru": "Плита из полированного гранита"
+    "item_name_ru": "Плита из полированного гранита",
+    "potion": ""
   },
   {
-    "id": "618",
     "type": "smooth_red_sandstone_slab",
-    "item_name_ru": "Плита из гладкого красного песчаника"
+    "item_name_ru": "Плита из гладкого красного песчаника",
+    "potion": ""
   },
   {
-    "id": "619",
     "type": "mossy_stone_brick_slab",
-    "item_name_ru": "Плита из замшелого каменного кирпича"
+    "item_name_ru": "Плита из замшелого каменного кирпича",
+    "potion": ""
   },
   {
-    "id": "620",
     "type": "polished_diorite_slab",
-    "item_name_ru": "Плита из полированного диорита"
+    "item_name_ru": "Плита из полированного диорита",
+    "potion": ""
   },
   {
-    "id": "621",
     "type": "mossy_cobblestone_slab",
-    "item_name_ru": "Замшелая булыжная плита"
+    "item_name_ru": "Замшелая булыжная плита",
+    "potion": ""
   },
   {
-    "id": "622",
     "type": "end_stone_brick_slab",
-    "item_name_ru": "Плита из эндернякового кирпича"
+    "item_name_ru": "Плита из эндернякового кирпича",
+    "potion": ""
   },
   {
-    "id": "623",
     "type": "smooth_sandstone_slab",
-    "item_name_ru": "Плита из гладкого песчаника"
+    "item_name_ru": "Плита из гладкого песчаника",
+    "potion": ""
   },
   {
-    "id": "624",
     "type": "smooth_quartz_slab",
-    "item_name_ru": "Плита из гладкого кварца"
+    "item_name_ru": "Плита из гладкого кварца",
+    "potion": ""
   },
   {
-    "id": "625",
     "type": "granite_slab",
-    "item_name_ru": "Гранитная плита"
+    "item_name_ru": "Гранитная плита",
+    "potion": ""
   },
   {
-    "id": "626",
     "type": "andesite_slab",
-    "item_name_ru": "Андезитовая плита"
+    "item_name_ru": "Андезитовая плита",
+    "potion": ""
   },
   {
-    "id": "627",
     "type": "red_nether_brick_slab",
-    "item_name_ru": "Плита из красного незерского кирпича"
+    "item_name_ru": "Плита из красного незерского кирпича",
+    "potion": ""
   },
   {
-    "id": "628",
     "type": "polished_andesite_slab",
-    "item_name_ru": "Плита из полированного андезита"
+    "item_name_ru": "Плита из полированного андезита",
+    "potion": ""
   },
   {
-    "id": "629",
     "type": "diorite_slab",
-    "item_name_ru": "Диоритовая плита"
+    "item_name_ru": "Диоритовая плита",
+    "potion": ""
   },
   {
-    "id": "630",
     "type": "cobbled_deepslate_slab",
-    "item_name_ru": "Плита из колотого глубинного сланца"
+    "item_name_ru": "Плита из колотого глубинного сланца",
+    "potion": ""
   },
   {
-    "id": "631",
     "type": "polished_deepslate_slab",
-    "item_name_ru": "Плита из полированного глубинного сланца"
+    "item_name_ru": "Плита из полированного глубинного сланца",
+    "potion": ""
   },
   {
-    "id": "632",
     "type": "deepslate_brick_slab",
-    "item_name_ru": "Плита из глубинносланцевого кирпича"
+    "item_name_ru": "Плита из глубинносланцевого кирпича",
+    "potion": ""
   },
   {
-    "id": "633",
     "type": "deepslate_tile_slab",
-    "item_name_ru": "Плита из глубинносланцевого плитняка"
+    "item_name_ru": "Плита из глубинносланцевого плитняка",
+    "potion": ""
   },
   {
-    "id": "634",
     "type": "scaffolding",
-    "item_name_ru": "Подмостки"
+    "item_name_ru": "Подмостки",
+    "potion": ""
   },
   {
-    "id": "635",
     "type": "redstone",
-    "item_name_ru": "Редстоуновая пыль"
+    "item_name_ru": "Редстоуновая пыль",
+    "potion": ""
   },
   {
-    "id": "636",
     "type": "redstone_torch",
-    "item_name_ru": "Редстоуновый факел"
+    "item_name_ru": "Редстоуновый факел",
+    "potion": ""
   },
   {
-    "id": "637",
     "type": "redstone_block",
-    "item_name_ru": "Редстоуновый блок"
+    "item_name_ru": "Редстоуновый блок",
+    "potion": ""
   },
   {
-    "id": "638",
     "type": "repeater",
-    "item_name_ru": "Редстоуновый повторитель"
+    "item_name_ru": "Редстоуновый повторитель",
+    "potion": ""
   },
   {
-    "id": "639",
     "type": "comparator",
-    "item_name_ru": "Редстоуновый компаратор"
+    "item_name_ru": "Редстоуновый компаратор",
+    "potion": ""
   },
   {
-    "id": "640",
     "type": "piston",
-    "item_name_ru": "Поршень"
+    "item_name_ru": "Поршень",
+    "potion": ""
   },
   {
-    "id": "641",
     "type": "sticky_piston",
-    "item_name_ru": "Липкий поршень"
+    "item_name_ru": "Липкий поршень",
+    "potion": ""
   },
   {
-    "id": "642",
     "type": "slime_block",
-    "item_name_ru": "Блок слизи"
+    "item_name_ru": "Блок слизи",
+    "potion": ""
   },
   {
-    "id": "643",
     "type": "honey_block",
-    "item_name_ru": "Блок мёда"
+    "item_name_ru": "Блок мёда",
+    "potion": ""
   },
   {
-    "id": "644",
     "type": "observer",
-    "item_name_ru": "Наблюдатель"
+    "item_name_ru": "Наблюдатель",
+    "potion": ""
   },
   {
-    "id": "645",
     "type": "hopper",
-    "item_name_ru": "Воронка"
+    "item_name_ru": "Воронка",
+    "potion": ""
   },
   {
-    "id": "646",
     "type": "dispenser",
-    "item_name_ru": "Раздатчик"
+    "item_name_ru": "Раздатчик",
+    "potion": ""
   },
   {
-    "id": "647",
     "type": "dropper",
-    "item_name_ru": "Выбрасыватель"
+    "item_name_ru": "Выбрасыватель",
+    "potion": ""
   },
   {
-    "id": "648",
     "type": "lectern",
-    "item_name_ru": "Кафедра"
+    "item_name_ru": "Кафедра",
+    "potion": ""
   },
   {
-    "id": "649",
     "type": "target",
-    "item_name_ru": "Мишень"
+    "item_name_ru": "Мишень",
+    "potion": ""
   },
   {
-    "id": "650",
     "type": "lever",
-    "item_name_ru": "Рычаг"
+    "item_name_ru": "Рычаг",
+    "potion": ""
   },
   {
-    "id": "651",
     "type": "lightning_rod",
-    "item_name_ru": "Громоотвод"
+    "item_name_ru": "Громоотвод",
+    "potion": ""
   },
   {
-    "id": "652",
     "type": "daylight_detector",
-    "item_name_ru": "Датчик дневного света"
+    "item_name_ru": "Датчик дневного света",
+    "potion": ""
   },
   {
-    "id": "653",
     "type": "sculk_sensor",
-    "item_name_ru": "Скалк-сенсор"
+    "item_name_ru": "Скалк-сенсор",
+    "potion": ""
   },
   {
-    "id": "654",
     "type": "calibrated_sculk_sensor",
-    "item_name_ru": "Откалиброванный скалк-сенсор"
+    "item_name_ru": "Откалиброванный скалк-сенсор",
+    "potion": ""
   },
   {
-    "id": "655",
     "type": "tripwire_hook",
-    "item_name_ru": "Крюк"
+    "item_name_ru": "Крюк",
+    "potion": ""
   },
   {
-    "id": "656",
     "type": "trapped_chest",
-    "item_name_ru": "Сундук-ловушка"
+    "item_name_ru": "Сундук-ловушка",
+    "potion": ""
   },
   {
-    "id": "657",
     "type": "tnt",
-    "item_name_ru": "Динамит"
+    "item_name_ru": "Динамит",
+    "potion": ""
   },
   {
-    "id": "658",
     "type": "redstone_lamp",
-    "item_name_ru": "Редстоуновый фонарь"
+    "item_name_ru": "Редстоуновый фонарь",
+    "potion": ""
   },
   {
-    "id": "659",
     "type": "note_block",
-    "item_name_ru": "Нотный блок"
+    "item_name_ru": "Нотный блок",
+    "potion": ""
   },
   {
-    "id": "660",
     "type": "stone_button",
-    "item_name_ru": "Каменная кнопка"
+    "item_name_ru": "Каменная кнопка",
+    "potion": ""
   },
   {
-    "id": "661",
     "type": "polished_blackstone_button",
-    "item_name_ru": "Кнопка из полированного чернита"
+    "item_name_ru": "Кнопка из полированного чернита",
+    "potion": ""
   },
   {
-    "id": "662",
     "type": "oak_button",
-    "item_name_ru": "Дубовая кнопка"
+    "item_name_ru": "Дубовая кнопка",
+    "potion": ""
   },
   {
-    "id": "663",
     "type": "spruce_button",
-    "item_name_ru": "Еловая кнопка"
+    "item_name_ru": "Еловая кнопка",
+    "potion": ""
   },
   {
-    "id": "664",
     "type": "birch_button",
-    "item_name_ru": "Берёзовая кнопка"
+    "item_name_ru": "Берёзовая кнопка",
+    "potion": ""
   },
   {
-    "id": "665",
     "type": "jungle_button",
-    "item_name_ru": "Кнопка из тропического дерева"
+    "item_name_ru": "Кнопка из тропического дерева",
+    "potion": ""
   },
   {
-    "id": "666",
     "type": "acacia_button",
-    "item_name_ru": "Акациевая кнопка"
+    "item_name_ru": "Акациевая кнопка",
+    "potion": ""
   },
   {
-    "id": "667",
     "type": "cherry_button",
-    "item_name_ru": "Вишнёвая кнопка"
+    "item_name_ru": "Вишнёвая кнопка",
+    "potion": ""
   },
   {
-    "id": "668",
     "type": "dark_oak_button",
-    "item_name_ru": "Кнопка из тёмного дуба"
+    "item_name_ru": "Кнопка из тёмного дуба",
+    "potion": ""
   },
   {
-    "id": "669",
     "type": "mangrove_button",
-    "item_name_ru": "Мангровая кнопка"
+    "item_name_ru": "Мангровая кнопка",
+    "potion": ""
   },
   {
-    "id": "670",
     "type": "bamboo_button",
-    "item_name_ru": "Бамбуковая кнопка"
+    "item_name_ru": "Бамбуковая кнопка",
+    "potion": ""
   },
   {
-    "id": "671",
     "type": "crimson_button",
-    "item_name_ru": "Багровая кнопка"
+    "item_name_ru": "Багровая кнопка",
+    "potion": ""
   },
   {
-    "id": "672",
     "type": "warped_button",
-    "item_name_ru": "Искажённая кнопка"
+    "item_name_ru": "Искажённая кнопка",
+    "potion": ""
   },
   {
-    "id": "673",
     "type": "stone_pressure_plate",
-    "item_name_ru": "Каменная нажимная плита"
+    "item_name_ru": "Каменная нажимная плита",
+    "potion": ""
   },
   {
-    "id": "674",
     "type": "polished_blackstone_pressure_plate",
-    "item_name_ru": "Нажимная плита из полированного чернита"
+    "item_name_ru": "Нажимная плита из полированного чернита",
+    "potion": ""
   },
   {
-    "id": "675",
     "type": "light_weighted_pressure_plate",
-    "item_name_ru": "Весовая пластина"
+    "item_name_ru": "Весовая пластина",
+    "potion": ""
   },
   {
-    "id": "676",
     "type": "heavy_weighted_pressure_plate",
-    "item_name_ru": "Большегрузная весовая пластина"
+    "item_name_ru": "Большегрузная весовая пластина",
+    "potion": ""
   },
   {
-    "id": "677",
     "type": "oak_pressure_plate",
-    "item_name_ru": "Дубовая нажимная плита"
+    "item_name_ru": "Дубовая нажимная плита",
+    "potion": ""
   },
   {
-    "id": "678",
     "type": "spruce_pressure_plate",
-    "item_name_ru": "Еловая нажимная плита"
+    "item_name_ru": "Еловая нажимная плита",
+    "potion": ""
   },
   {
-    "id": "679",
     "type": "birch_pressure_plate",
-    "item_name_ru": "Берёзовая нажимная плита"
+    "item_name_ru": "Берёзовая нажимная плита",
+    "potion": ""
   },
   {
-    "id": "680",
     "type": "jungle_pressure_plate",
-    "item_name_ru": "Нажимная плита из тропического дерева"
+    "item_name_ru": "Нажимная плита из тропического дерева",
+    "potion": ""
   },
   {
-    "id": "681",
     "type": "acacia_pressure_plate",
-    "item_name_ru": "Акациевая нажимная плита"
+    "item_name_ru": "Акациевая нажимная плита",
+    "potion": ""
   },
   {
-    "id": "682",
     "type": "cherry_pressure_plate",
-    "item_name_ru": "Вишнёвая нажимная плита"
+    "item_name_ru": "Вишнёвая нажимная плита",
+    "potion": ""
   },
   {
-    "id": "683",
     "type": "dark_oak_pressure_plate",
-    "item_name_ru": "Нажимная плита из тёмного дуба"
+    "item_name_ru": "Нажимная плита из тёмного дуба",
+    "potion": ""
   },
   {
-    "id": "684",
     "type": "mangrove_pressure_plate",
-    "item_name_ru": "Мангровая нажимная плита"
+    "item_name_ru": "Мангровая нажимная плита",
+    "potion": ""
   },
   {
-    "id": "685",
     "type": "bamboo_pressure_plate",
-    "item_name_ru": "Бамбуковая нажимная плита"
+    "item_name_ru": "Бамбуковая нажимная плита",
+    "potion": ""
   },
   {
-    "id": "686",
     "type": "crimson_pressure_plate",
-    "item_name_ru": "Багровая нажимная плита"
+    "item_name_ru": "Багровая нажимная плита",
+    "potion": ""
   },
   {
-    "id": "687",
     "type": "warped_pressure_plate",
-    "item_name_ru": "Искажённая нажимная плита"
+    "item_name_ru": "Искажённая нажимная плита",
+    "potion": ""
   },
   {
-    "id": "688",
     "type": "iron_door",
-    "item_name_ru": "Железная дверь"
+    "item_name_ru": "Железная дверь",
+    "potion": ""
   },
   {
-    "id": "689",
     "type": "oak_door",
-    "item_name_ru": "Дубовая дверь"
+    "item_name_ru": "Дубовая дверь",
+    "potion": ""
   },
   {
-    "id": "690",
     "type": "spruce_door",
-    "item_name_ru": "Еловая дверь"
+    "item_name_ru": "Еловая дверь",
+    "potion": ""
   },
   {
-    "id": "691",
     "type": "birch_door",
-    "item_name_ru": "Берёзовая дверь"
+    "item_name_ru": "Берёзовая дверь",
+    "potion": ""
   },
   {
-    "id": "692",
     "type": "jungle_door",
-    "item_name_ru": "Дверь из тропического дерева"
+    "item_name_ru": "Дверь из тропического дерева",
+    "potion": ""
   },
   {
-    "id": "693",
     "type": "acacia_door",
-    "item_name_ru": "Акациевая дверь"
+    "item_name_ru": "Акациевая дверь",
+    "potion": ""
   },
   {
-    "id": "694",
     "type": "cherry_door",
-    "item_name_ru": "Вишнёвая дверь"
+    "item_name_ru": "Вишнёвая дверь",
+    "potion": ""
   },
   {
-    "id": "695",
     "type": "dark_oak_door",
-    "item_name_ru": "Дверь из тёмного дуба"
+    "item_name_ru": "Дверь из тёмного дуба",
+    "potion": ""
   },
   {
-    "id": "696",
     "type": "mangrove_door",
-    "item_name_ru": "Мангровая дверь"
+    "item_name_ru": "Мангровая дверь",
+    "potion": ""
   },
   {
-    "id": "697",
     "type": "bamboo_door",
-    "item_name_ru": "Бамбуковая дверь"
+    "item_name_ru": "Бамбуковая дверь",
+    "potion": ""
   },
   {
-    "id": "698",
     "type": "crimson_door",
-    "item_name_ru": "Багровая дверь"
+    "item_name_ru": "Багровая дверь",
+    "potion": ""
   },
   {
-    "id": "699",
     "type": "warped_door",
-    "item_name_ru": "Искажённая дверь"
+    "item_name_ru": "Искажённая дверь",
+    "potion": ""
   },
   {
-    "id": "700",
     "type": "iron_trapdoor",
-    "item_name_ru": "Железный люк"
+    "item_name_ru": "Железный люк",
+    "potion": ""
   },
   {
-    "id": "701",
     "type": "oak_trapdoor",
-    "item_name_ru": "Дубовый люк"
+    "item_name_ru": "Дубовый люк",
+    "potion": ""
   },
   {
-    "id": "702",
     "type": "spruce_trapdoor",
-    "item_name_ru": "Еловый люк"
+    "item_name_ru": "Еловый люк",
+    "potion": ""
   },
   {
-    "id": "703",
     "type": "birch_trapdoor",
-    "item_name_ru": "Берёзовый люк"
+    "item_name_ru": "Берёзовый люк",
+    "potion": ""
   },
   {
-    "id": "704",
     "type": "jungle_trapdoor",
-    "item_name_ru": "Люк из тропического дерева"
+    "item_name_ru": "Люк из тропического дерева",
+    "potion": ""
   },
   {
-    "id": "705",
     "type": "acacia_trapdoor",
-    "item_name_ru": "Акациевый люк"
+    "item_name_ru": "Акациевый люк",
+    "potion": ""
   },
   {
-    "id": "706",
     "type": "cherry_trapdoor",
-    "item_name_ru": "Вишнёвый люк"
+    "item_name_ru": "Вишнёвый люк",
+    "potion": ""
   },
   {
-    "id": "707",
     "type": "dark_oak_trapdoor",
-    "item_name_ru": "Люк из тёмного дуба"
+    "item_name_ru": "Люк из тёмного дуба",
+    "potion": ""
   },
   {
-    "id": "708",
     "type": "mangrove_trapdoor",
-    "item_name_ru": "Мангровый люк"
+    "item_name_ru": "Мангровый люк",
+    "potion": ""
   },
   {
-    "id": "709",
     "type": "bamboo_trapdoor",
-    "item_name_ru": "Бамбуковый люк"
+    "item_name_ru": "Бамбуковый люк",
+    "potion": ""
   },
   {
-    "id": "710",
     "type": "crimson_trapdoor",
-    "item_name_ru": "Багровый люк"
+    "item_name_ru": "Багровый люк",
+    "potion": ""
   },
   {
-    "id": "711",
     "type": "warped_trapdoor",
-    "item_name_ru": "Искажённый люк"
+    "item_name_ru": "Искажённый люк",
+    "potion": ""
   },
   {
-    "id": "712",
     "type": "oak_fence_gate",
-    "item_name_ru": "Дубовая калитка"
+    "item_name_ru": "Дубовая калитка",
+    "potion": ""
   },
   {
-    "id": "713",
     "type": "spruce_fence_gate",
-    "item_name_ru": "Еловая калитка"
+    "item_name_ru": "Еловая калитка",
+    "potion": ""
   },
   {
-    "id": "714",
     "type": "birch_fence_gate",
-    "item_name_ru": "Берёзовая калитка"
+    "item_name_ru": "Берёзовая калитка",
+    "potion": ""
   },
   {
-    "id": "715",
     "type": "jungle_fence_gate",
-    "item_name_ru": "Калитка из тропического дерева"
+    "item_name_ru": "Калитка из тропического дерева",
+    "potion": ""
   },
   {
-    "id": "716",
     "type": "acacia_fence_gate",
-    "item_name_ru": "Акациевая калитка"
+    "item_name_ru": "Акациевая калитка",
+    "potion": ""
   },
   {
-    "id": "717",
     "type": "cherry_fence_gate",
-    "item_name_ru": "Вишнёвая калитка"
+    "item_name_ru": "Вишнёвая калитка",
+    "potion": ""
   },
   {
-    "id": "718",
     "type": "dark_oak_fence_gate",
-    "item_name_ru": "Калитка из тёмного дуба"
+    "item_name_ru": "Калитка из тёмного дуба",
+    "potion": ""
   },
   {
-    "id": "719",
     "type": "mangrove_fence_gate",
-    "item_name_ru": "Мангровая калитка"
+    "item_name_ru": "Мангровая калитка",
+    "potion": ""
   },
   {
-    "id": "720",
     "type": "bamboo_fence_gate",
-    "item_name_ru": "Бамбуковая калитка"
+    "item_name_ru": "Бамбуковая калитка",
+    "potion": ""
   },
   {
-    "id": "721",
     "type": "crimson_fence_gate",
-    "item_name_ru": "Багровая калитка"
+    "item_name_ru": "Багровая калитка",
+    "potion": ""
   },
   {
-    "id": "722",
     "type": "warped_fence_gate",
-    "item_name_ru": "Искажённая калитка"
+    "item_name_ru": "Искажённая калитка",
+    "potion": ""
   },
   {
-    "id": "723",
     "type": "powered_rail",
-    "item_name_ru": "Энергорельсы"
+    "item_name_ru": "Энергорельсы",
+    "potion": ""
   },
   {
-    "id": "724",
     "type": "detector_rail",
-    "item_name_ru": "Рельсы с датчиком"
+    "item_name_ru": "Рельсы с датчиком",
+    "potion": ""
   },
   {
-    "id": "725",
     "type": "rail",
-    "item_name_ru": "Рельсы"
+    "item_name_ru": "Рельсы",
+    "potion": ""
   },
   {
-    "id": "726",
     "type": "activator_rail",
-    "item_name_ru": "Активирующие рельсы"
+    "item_name_ru": "Активирующие рельсы",
+    "potion": ""
   },
   {
-    "id": "727",
     "type": "saddle",
-    "item_name_ru": "Седло"
+    "item_name_ru": "Седло",
+    "potion": ""
   },
   {
-    "id": "728",
     "type": "minecart",
-    "item_name_ru": "Вагонетка"
+    "item_name_ru": "Вагонетка",
+    "potion": ""
   },
   {
-    "id": "729",
     "type": "chest_minecart",
-    "item_name_ru": "Грузовая вагонетка"
+    "item_name_ru": "Грузовая вагонетка",
+    "potion": ""
   },
   {
-    "id": "730",
     "type": "furnace_minecart",
-    "item_name_ru": "Самоходная вагонетка"
+    "item_name_ru": "Самоходная вагонетка",
+    "potion": ""
   },
   {
-    "id": "731",
     "type": "tnt_minecart",
-    "item_name_ru": "Вагонетка с динамитом"
+    "item_name_ru": "Вагонетка с динамитом",
+    "potion": ""
   },
   {
-    "id": "732",
     "type": "hopper_minecart",
-    "item_name_ru": "Загрузочная вагонетка"
+    "item_name_ru": "Загрузочная вагонетка",
+    "potion": ""
   },
   {
-    "id": "733",
     "type": "carrot_on_a_stick",
-    "item_name_ru": "Удочка с морковкой"
+    "item_name_ru": "Удочка с морковкой",
+    "potion": ""
   },
   {
-    "id": "734",
     "type": "warped_fungus_on_a_stick",
-    "item_name_ru": "Удочка с искажённым грибом"
+    "item_name_ru": "Удочка с искажённым грибом",
+    "potion": ""
   },
   {
-    "id": "735",
     "type": "elytra",
-    "item_name_ru": "Элитры"
+    "item_name_ru": "Элитры",
+    "potion": ""
   },
   {
-    "id": "736",
     "type": "oak_boat",
-    "item_name_ru": "Дубовая лодка"
+    "item_name_ru": "Дубовая лодка",
+    "potion": ""
   },
   {
-    "id": "737",
     "type": "oak_chest_boat",
-    "item_name_ru": "Дубовая грузовая лодка"
+    "item_name_ru": "Дубовая грузовая лодка",
+    "potion": ""
   },
   {
-    "id": "738",
     "type": "spruce_boat",
-    "item_name_ru": "Еловая лодка"
+    "item_name_ru": "Еловая лодка",
+    "potion": ""
   },
   {
-    "id": "739",
     "type": "spruce_chest_boat",
-    "item_name_ru": "Еловая грузовая лодка"
+    "item_name_ru": "Еловая грузовая лодка",
+    "potion": ""
   },
   {
-    "id": "740",
     "type": "birch_boat",
-    "item_name_ru": "Берёзовая лодка"
+    "item_name_ru": "Берёзовая лодка",
+    "potion": ""
   },
   {
-    "id": "741",
     "type": "birch_chest_boat",
-    "item_name_ru": "Берёзовая грузовая лодка"
+    "item_name_ru": "Берёзовая грузовая лодка",
+    "potion": ""
   },
   {
-    "id": "742",
     "type": "jungle_boat",
-    "item_name_ru": "Лодка из тропического дерева"
+    "item_name_ru": "Лодка из тропического дерева",
+    "potion": ""
   },
   {
-    "id": "743",
     "type": "jungle_chest_boat",
-    "item_name_ru": "Грузовая лодка из тропического дерева"
+    "item_name_ru": "Грузовая лодка из тропического дерева",
+    "potion": ""
   },
   {
-    "id": "744",
     "type": "acacia_boat",
-    "item_name_ru": "Акациевая лодка"
+    "item_name_ru": "Акациевая лодка",
+    "potion": ""
   },
   {
-    "id": "745",
     "type": "acacia_chest_boat",
-    "item_name_ru": "Акациевая грузовая лодка"
+    "item_name_ru": "Акациевая грузовая лодка",
+    "potion": ""
   },
   {
-    "id": "746",
     "type": "cherry_boat",
-    "item_name_ru": "Вишнёвая лодка"
+    "item_name_ru": "Вишнёвая лодка",
+    "potion": ""
   },
   {
-    "id": "747",
     "type": "cherry_chest_boat",
-    "item_name_ru": "Вишнёвая грузовая лодка"
+    "item_name_ru": "Вишнёвая грузовая лодка",
+    "potion": ""
   },
   {
-    "id": "748",
     "type": "dark_oak_boat",
-    "item_name_ru": "Лодка из тёмного дуба"
+    "item_name_ru": "Лодка из тёмного дуба",
+    "potion": ""
   },
   {
-    "id": "749",
     "type": "dark_oak_chest_boat",
-    "item_name_ru": "Грузовая лодка из тёмного дуба"
+    "item_name_ru": "Грузовая лодка из тёмного дуба",
+    "potion": ""
   },
   {
-    "id": "750",
     "type": "mangrove_boat",
-    "item_name_ru": "Мангровая лодка"
+    "item_name_ru": "Мангровая лодка",
+    "potion": ""
   },
   {
-    "id": "751",
     "type": "mangrove_chest_boat",
-    "item_name_ru": "Мангровая грузовая лодка"
+    "item_name_ru": "Мангровая грузовая лодка",
+    "potion": ""
   },
   {
-    "id": "752",
     "type": "bamboo_raft",
-    "item_name_ru": "Бамбуковый плот"
+    "item_name_ru": "Бамбуковый плот",
+    "potion": ""
   },
   {
-    "id": "753",
     "type": "bamboo_chest_raft",
-    "item_name_ru": "Грузовой бамбуковый плот"
+    "item_name_ru": "Грузовой бамбуковый плот",
+    "potion": ""
   },
   {
-    "id": "754",
     "type": "structure_block",
-    "item_name_ru": "Блок-конструктор"
+    "item_name_ru": "Блок-конструктор",
+    "potion": ""
   },
   {
-    "id": "755",
     "type": "jigsaw",
-    "item_name_ru": "Пазл"
+    "item_name_ru": "Пазл",
+    "potion": ""
   },
   {
-    "id": "756",
     "type": "turtle_helmet",
-    "item_name_ru": "Черепаший панцирь"
+    "item_name_ru": "Черепаший панцирь",
+    "potion": ""
   },
   {
-    "id": "757",
     "type": "scute",
-    "item_name_ru": "Щиток"
+    "item_name_ru": "Щиток",
+    "potion": ""
   },
   {
-    "id": "758",
     "type": "flint_and_steel",
-    "item_name_ru": "Огниво"
+    "item_name_ru": "Огниво",
+    "potion": ""
   },
   {
-    "id": "759",
     "type": "apple",
-    "item_name_ru": "Яблоко"
+    "item_name_ru": "Яблоко",
+    "potion": ""
   },
   {
-    "id": "760",
     "type": "bow",
-    "item_name_ru": "Лук"
+    "item_name_ru": "Лук",
+    "potion": ""
   },
   {
-    "id": "761",
     "type": "arrow",
-    "item_name_ru": "Стрела"
+    "item_name_ru": "Стрела",
+    "potion": ""
   },
   {
-    "id": "762",
     "type": "coal",
-    "item_name_ru": "Уголь"
+    "item_name_ru": "Уголь",
+    "potion": ""
   },
   {
-    "id": "763",
     "type": "charcoal",
-    "item_name_ru": "Древесный уголь"
+    "item_name_ru": "Древесный уголь",
+    "potion": ""
   },
   {
-    "id": "764",
     "type": "diamond",
-    "item_name_ru": "Алмаз"
+    "item_name_ru": "Алмаз",
+    "potion": ""
   },
   {
-    "id": "765",
     "type": "emerald",
-    "item_name_ru": "Изумруд"
+    "item_name_ru": "Изумруд",
+    "potion": ""
   },
   {
-    "id": "766",
     "type": "lapis_lazuli",
-    "item_name_ru": "Лазурит"
+    "item_name_ru": "Лазурит",
+    "potion": ""
   },
   {
-    "id": "767",
     "type": "quartz",
-    "item_name_ru": "Незер-кварц"
+    "item_name_ru": "Незер-кварц",
+    "potion": ""
   },
   {
-    "id": "768",
     "type": "amethyst_shard",
-    "item_name_ru": "Осколок аметиста"
+    "item_name_ru": "Осколок аметиста",
+    "potion": ""
   },
   {
-    "id": "769",
     "type": "raw_iron",
-    "item_name_ru": "Рудное железо"
+    "item_name_ru": "Рудное железо",
+    "potion": ""
   },
   {
-    "id": "770",
     "type": "iron_ingot",
-    "item_name_ru": "Железный слиток"
+    "item_name_ru": "Железный слиток",
+    "potion": ""
   },
   {
-    "id": "771",
     "type": "raw_copper",
-    "item_name_ru": "Рудная медь"
+    "item_name_ru": "Рудная медь",
+    "potion": ""
   },
   {
-    "id": "772",
     "type": "copper_ingot",
-    "item_name_ru": "Медный слиток"
+    "item_name_ru": "Медный слиток",
+    "potion": ""
   },
   {
-    "id": "773",
     "type": "raw_gold",
-    "item_name_ru": "Рудное золото"
+    "item_name_ru": "Рудное золото",
+    "potion": ""
   },
   {
-    "id": "774",
     "type": "gold_ingot",
-    "item_name_ru": "Золотой слиток"
+    "item_name_ru": "Золотой слиток",
+    "potion": ""
   },
   {
-    "id": "775",
     "type": "netherite_ingot",
-    "item_name_ru": "Незеритовый слиток"
+    "item_name_ru": "Незеритовый слиток",
+    "potion": ""
   },
   {
-    "id": "776",
     "type": "netherite_scrap",
-    "item_name_ru": "Незеритовый лом"
+    "item_name_ru": "Незеритовый лом",
+    "potion": ""
   },
   {
-    "id": "777",
     "type": "wooden_sword",
-    "item_name_ru": "Деревянный меч"
+    "item_name_ru": "Деревянный меч",
+    "potion": ""
   },
   {
-    "id": "778",
     "type": "wooden_shovel",
-    "item_name_ru": "Деревянная лопата"
+    "item_name_ru": "Деревянная лопата",
+    "potion": ""
   },
   {
-    "id": "779",
     "type": "wooden_pickaxe",
-    "item_name_ru": "Деревянная кирка"
+    "item_name_ru": "Деревянная кирка",
+    "potion": ""
   },
   {
-    "id": "780",
     "type": "wooden_axe",
-    "item_name_ru": "Деревянный топор"
+    "item_name_ru": "Деревянный топор",
+    "potion": ""
   },
   {
-    "id": "781",
     "type": "wooden_hoe",
-    "item_name_ru": "Деревянная мотыга"
+    "item_name_ru": "Деревянная мотыга",
+    "potion": ""
   },
   {
-    "id": "782",
     "type": "stone_sword",
-    "item_name_ru": "Каменный меч"
+    "item_name_ru": "Каменный меч",
+    "potion": ""
   },
   {
-    "id": "783",
     "type": "stone_shovel",
-    "item_name_ru": "Каменная лопата"
+    "item_name_ru": "Каменная лопата",
+    "potion": ""
   },
   {
-    "id": "784",
     "type": "stone_pickaxe",
-    "item_name_ru": "Каменная кирка"
+    "item_name_ru": "Каменная кирка",
+    "potion": ""
   },
   {
-    "id": "785",
     "type": "stone_axe",
-    "item_name_ru": "Каменный топор"
+    "item_name_ru": "Каменный топор",
+    "potion": ""
   },
   {
-    "id": "786",
     "type": "stone_hoe",
-    "item_name_ru": "Каменная мотыга"
+    "item_name_ru": "Каменная мотыга",
+    "potion": ""
   },
   {
-    "id": "787",
     "type": "golden_sword",
-    "item_name_ru": "Золотой меч"
+    "item_name_ru": "Золотой меч",
+    "potion": ""
   },
   {
-    "id": "788",
     "type": "golden_shovel",
-    "item_name_ru": "Золотая лопата"
+    "item_name_ru": "Золотая лопата",
+    "potion": ""
   },
   {
-    "id": "789",
     "type": "golden_pickaxe",
-    "item_name_ru": "Золотая кирка"
+    "item_name_ru": "Золотая кирка",
+    "potion": ""
   },
   {
-    "id": "790",
     "type": "golden_axe",
-    "item_name_ru": "Золотой топор"
+    "item_name_ru": "Золотой топор",
+    "potion": ""
   },
   {
-    "id": "791",
     "type": "golden_hoe",
-    "item_name_ru": "Золотая мотыга"
+    "item_name_ru": "Золотая мотыга",
+    "potion": ""
   },
   {
-    "id": "792",
     "type": "iron_sword",
-    "item_name_ru": "Железный меч"
+    "item_name_ru": "Железный меч",
+    "potion": ""
   },
   {
-    "id": "793",
     "type": "iron_shovel",
-    "item_name_ru": "Железная лопата"
+    "item_name_ru": "Железная лопата",
+    "potion": ""
   },
   {
-    "id": "794",
     "type": "iron_pickaxe",
-    "item_name_ru": "Железная кирка"
+    "item_name_ru": "Железная кирка",
+    "potion": ""
   },
   {
-    "id": "795",
     "type": "iron_axe",
-    "item_name_ru": "Железный топор"
+    "item_name_ru": "Железный топор",
+    "potion": ""
   },
   {
-    "id": "796",
     "type": "iron_hoe",
-    "item_name_ru": "Железная мотыга"
+    "item_name_ru": "Железная мотыга",
+    "potion": ""
   },
   {
-    "id": "797",
     "type": "diamond_sword",
-    "item_name_ru": "Алмазный меч"
+    "item_name_ru": "Алмазный меч",
+    "potion": ""
   },
   {
-    "id": "798",
     "type": "diamond_shovel",
-    "item_name_ru": "Алмазная лопата"
+    "item_name_ru": "Алмазная лопата",
+    "potion": ""
   },
   {
-    "id": "799",
     "type": "diamond_pickaxe",
-    "item_name_ru": "Алмазная кирка"
+    "item_name_ru": "Алмазная кирка",
+    "potion": ""
   },
   {
-    "id": "800",
     "type": "diamond_axe",
-    "item_name_ru": "Алмазный топор"
+    "item_name_ru": "Алмазный топор",
+    "potion": ""
   },
   {
-    "id": "801",
     "type": "diamond_hoe",
-    "item_name_ru": "Алмазная мотыга"
+    "item_name_ru": "Алмазная мотыга",
+    "potion": ""
   },
   {
-    "id": "802",
     "type": "netherite_sword",
-    "item_name_ru": "Незеритовый меч"
+    "item_name_ru": "Незеритовый меч",
+    "potion": ""
   },
   {
-    "id": "803",
     "type": "netherite_shovel",
-    "item_name_ru": "Незеритовая лопата"
+    "item_name_ru": "Незеритовая лопата",
+    "potion": ""
   },
   {
-    "id": "804",
     "type": "netherite_pickaxe",
-    "item_name_ru": "Незеритовая кирка"
+    "item_name_ru": "Незеритовая кирка",
+    "potion": ""
   },
   {
-    "id": "805",
     "type": "netherite_axe",
-    "item_name_ru": "Незеритовый топор"
+    "item_name_ru": "Незеритовый топор",
+    "potion": ""
   },
   {
-    "id": "806",
     "type": "netherite_hoe",
-    "item_name_ru": "Незеритовая мотыга"
+    "item_name_ru": "Незеритовая мотыга",
+    "potion": ""
   },
   {
-    "id": "807",
     "type": "stick",
-    "item_name_ru": "Палка"
+    "item_name_ru": "Палка",
+    "potion": ""
   },
   {
-    "id": "808",
     "type": "bowl",
-    "item_name_ru": "Миска"
+    "item_name_ru": "Миска",
+    "potion": ""
   },
   {
-    "id": "809",
     "type": "mushroom_stew",
-    "item_name_ru": "Тушёные грибы"
+    "item_name_ru": "Тушёные грибы",
+    "potion": ""
   },
   {
-    "id": "810",
     "type": "string",
-    "item_name_ru": "Нить"
+    "item_name_ru": "Нить",
+    "potion": ""
   },
   {
-    "id": "811",
     "type": "feather",
-    "item_name_ru": "Перо"
+    "item_name_ru": "Перо",
+    "potion": ""
   },
   {
-    "id": "812",
     "type": "gunpowder",
-    "item_name_ru": "Порох"
+    "item_name_ru": "Порох",
+    "potion": ""
   },
   {
-    "id": "813",
     "type": "wheat_seeds",
-    "item_name_ru": "Семена пшеницы"
+    "item_name_ru": "Семена пшеницы",
+    "potion": ""
   },
   {
-    "id": "814",
     "type": "wheat",
-    "item_name_ru": "Пшеница"
+    "item_name_ru": "Пшеница",
+    "potion": ""
   },
   {
-    "id": "815",
     "type": "bread",
-    "item_name_ru": "Хлеб"
+    "item_name_ru": "Хлеб",
+    "potion": ""
   },
   {
-    "id": "816",
     "type": "leather_helmet",
-    "item_name_ru": "Кожаный шлем"
+    "item_name_ru": "Кожаный шлем",
+    "potion": ""
   },
   {
-    "id": "817",
     "type": "leather_chestplate",
-    "item_name_ru": "Кожаная куртка"
+    "item_name_ru": "Кожаная куртка",
+    "potion": ""
   },
   {
-    "id": "818",
     "type": "leather_leggings",
-    "item_name_ru": "Кожаные штаны"
+    "item_name_ru": "Кожаные штаны",
+    "potion": ""
   },
   {
-    "id": "819",
     "type": "leather_boots",
-    "item_name_ru": "Кожаные ботинки"
+    "item_name_ru": "Кожаные ботинки",
+    "potion": ""
   },
   {
-    "id": "820",
     "type": "chainmail_helmet",
-    "item_name_ru": "Койф"
+    "item_name_ru": "Койф",
+    "potion": ""
   },
   {
-    "id": "821",
     "type": "chainmail_chestplate",
-    "item_name_ru": "Кольчуга"
+    "item_name_ru": "Кольчуга",
+    "potion": ""
   },
   {
-    "id": "822",
     "type": "chainmail_leggings",
-    "item_name_ru": "Кольчужные поножи"
+    "item_name_ru": "Кольчужные поножи",
+    "potion": ""
   },
   {
-    "id": "823",
     "type": "chainmail_boots",
-    "item_name_ru": "Кольчужные ботинки"
+    "item_name_ru": "Кольчужные ботинки",
+    "potion": ""
   },
   {
-    "id": "824",
     "type": "iron_helmet",
-    "item_name_ru": "Железный шлем"
+    "item_name_ru": "Железный шлем",
+    "potion": ""
   },
   {
-    "id": "825",
     "type": "iron_chestplate",
-    "item_name_ru": "Железный нагрудник"
+    "item_name_ru": "Железный нагрудник",
+    "potion": ""
   },
   {
-    "id": "826",
     "type": "iron_leggings",
-    "item_name_ru": "Железные поножи"
+    "item_name_ru": "Железные поножи",
+    "potion": ""
   },
   {
-    "id": "827",
     "type": "iron_boots",
-    "item_name_ru": "Железные ботинки"
+    "item_name_ru": "Железные ботинки",
+    "potion": ""
   },
   {
-    "id": "828",
     "type": "diamond_helmet",
-    "item_name_ru": "Алмазный шлем"
+    "item_name_ru": "Алмазный шлем",
+    "potion": ""
   },
   {
-    "id": "829",
     "type": "diamond_chestplate",
-    "item_name_ru": "Алмазный нагрудник"
+    "item_name_ru": "Алмазный нагрудник",
+    "potion": ""
   },
   {
-    "id": "830",
     "type": "diamond_leggings",
-    "item_name_ru": "Алмазные поножи"
+    "item_name_ru": "Алмазные поножи",
+    "potion": ""
   },
   {
-    "id": "831",
     "type": "diamond_boots",
-    "item_name_ru": "Алмазные ботинки"
+    "item_name_ru": "Алмазные ботинки",
+    "potion": ""
   },
   {
-    "id": "832",
     "type": "golden_helmet",
-    "item_name_ru": "Золотой шлем"
+    "item_name_ru": "Золотой шлем",
+    "potion": ""
   },
   {
-    "id": "833",
     "type": "golden_chestplate",
-    "item_name_ru": "Золотой нагрудник"
+    "item_name_ru": "Золотой нагрудник",
+    "potion": ""
   },
   {
-    "id": "834",
     "type": "golden_leggings",
-    "item_name_ru": "Золотые поножи"
+    "item_name_ru": "Золотые поножи",
+    "potion": ""
   },
   {
-    "id": "835",
     "type": "golden_boots",
-    "item_name_ru": "Золотые ботинки"
+    "item_name_ru": "Золотые ботинки",
+    "potion": ""
   },
   {
-    "id": "836",
     "type": "netherite_helmet",
-    "item_name_ru": "Незеритовый шлем"
+    "item_name_ru": "Незеритовый шлем",
+    "potion": ""
   },
   {
-    "id": "837",
     "type": "netherite_chestplate",
-    "item_name_ru": "Незеритовый нагрудник"
+    "item_name_ru": "Незеритовый нагрудник",
+    "potion": ""
   },
   {
-    "id": "838",
     "type": "netherite_leggings",
-    "item_name_ru": "Незеритовые поножи"
+    "item_name_ru": "Незеритовые поножи",
+    "potion": ""
   },
   {
-    "id": "839",
     "type": "netherite_boots",
-    "item_name_ru": "Незеритовые ботинки"
+    "item_name_ru": "Незеритовые ботинки",
+    "potion": ""
   },
   {
-    "id": "840",
     "type": "flint",
-    "item_name_ru": "Кремень"
+    "item_name_ru": "Кремень",
+    "potion": ""
   },
   {
-    "id": "841",
     "type": "porkchop",
-    "item_name_ru": "Сырая свинина"
+    "item_name_ru": "Сырая свинина",
+    "potion": ""
   },
   {
-    "id": "842",
     "type": "cooked_porkchop",
-    "item_name_ru": "Жареная свинина"
+    "item_name_ru": "Жареная свинина",
+    "potion": ""
   },
   {
-    "id": "843",
     "type": "painting",
-    "item_name_ru": "Картина"
+    "item_name_ru": "Картина",
+    "potion": ""
   },
   {
-    "id": "844",
     "type": "golden_apple",
-    "item_name_ru": "Золотое яблоко"
+    "item_name_ru": "Золотое яблоко",
+    "potion": ""
   },
   {
-    "id": "845",
     "type": "enchanted_golden_apple",
-    "item_name_ru": "Зачарованное золотое яблоко"
+    "item_name_ru": "Зачарованное золотое яблоко",
+    "potion": ""
   },
   {
-    "id": "846",
     "type": "oak_sign",
-    "item_name_ru": "Дубовая табличка"
+    "item_name_ru": "Дубовая табличка",
+    "potion": ""
   },
   {
-    "id": "847",
     "type": "spruce_sign",
-    "item_name_ru": "Еловая табличка"
+    "item_name_ru": "Еловая табличка",
+    "potion": ""
   },
   {
-    "id": "848",
     "type": "birch_sign",
-    "item_name_ru": "Берёзовая табличка"
+    "item_name_ru": "Берёзовая табличка",
+    "potion": ""
   },
   {
-    "id": "849",
     "type": "jungle_sign",
-    "item_name_ru": "Табличка из тропического дерева"
+    "item_name_ru": "Табличка из тропического дерева",
+    "potion": ""
   },
   {
-    "id": "850",
     "type": "acacia_sign",
-    "item_name_ru": "Акациевая табличка"
+    "item_name_ru": "Акациевая табличка",
+    "potion": ""
   },
   {
-    "id": "851",
     "type": "cherry_sign",
-    "item_name_ru": "Вишнёвая табличка"
+    "item_name_ru": "Вишнёвая табличка",
+    "potion": ""
   },
   {
-    "id": "852",
     "type": "dark_oak_sign",
-    "item_name_ru": "Табличка из тёмного дуба"
+    "item_name_ru": "Табличка из тёмного дуба",
+    "potion": ""
   },
   {
-    "id": "853",
     "type": "mangrove_sign",
-    "item_name_ru": "Мангровая табличка"
+    "item_name_ru": "Мангровая табличка",
+    "potion": ""
   },
   {
-    "id": "854",
     "type": "bamboo_sign",
-    "item_name_ru": "Бамбуковая табличка"
+    "item_name_ru": "Бамбуковая табличка",
+    "potion": ""
   },
   {
-    "id": "855",
     "type": "crimson_sign",
-    "item_name_ru": "Багровая табличка"
+    "item_name_ru": "Багровая табличка",
+    "potion": ""
   },
   {
-    "id": "856",
     "type": "warped_sign",
-    "item_name_ru": "Искажённая табличка"
+    "item_name_ru": "Искажённая табличка",
+    "potion": ""
   },
   {
-    "id": "857",
     "type": "oak_hanging_sign",
-    "item_name_ru": "Дубовая подвесная табличка"
+    "item_name_ru": "Дубовая подвесная табличка",
+    "potion": ""
   },
   {
-    "id": "858",
     "type": "spruce_hanging_sign",
-    "item_name_ru": "Еловая подвесная табличка"
+    "item_name_ru": "Еловая подвесная табличка",
+    "potion": ""
   },
   {
-    "id": "859",
     "type": "birch_hanging_sign",
-    "item_name_ru": "Берёзовая подвесная табличка"
+    "item_name_ru": "Берёзовая подвесная табличка",
+    "potion": ""
   },
   {
-    "id": "860",
     "type": "jungle_hanging_sign",
-    "item_name_ru": "Подвесная табличка из тропического дерева"
+    "item_name_ru": "Подвесная табличка из тропического дерева",
+    "potion": ""
   },
   {
-    "id": "861",
     "type": "acacia_hanging_sign",
-    "item_name_ru": "Акациевая подвесная табличка"
+    "item_name_ru": "Акациевая подвесная табличка",
+    "potion": ""
   },
   {
-    "id": "862",
     "type": "cherry_hanging_sign",
-    "item_name_ru": "Вишнёвая подвесная табличка"
+    "item_name_ru": "Вишнёвая подвесная табличка",
+    "potion": ""
   },
   {
-    "id": "863",
     "type": "dark_oak_hanging_sign",
-    "item_name_ru": "Подвесная табличка из тёмного дуба"
+    "item_name_ru": "Подвесная табличка из тёмного дуба",
+    "potion": ""
   },
   {
-    "id": "864",
     "type": "mangrove_hanging_sign",
-    "item_name_ru": "Мангровая подвесная табличка"
+    "item_name_ru": "Мангровая подвесная табличка",
+    "potion": ""
   },
   {
-    "id": "865",
     "type": "bamboo_hanging_sign",
-    "item_name_ru": "Бамбуковая подвесная табличка"
+    "item_name_ru": "Бамбуковая подвесная табличка",
+    "potion": ""
   },
   {
-    "id": "866",
     "type": "crimson_hanging_sign",
-    "item_name_ru": "Багровая подвесная табличка"
+    "item_name_ru": "Багровая подвесная табличка",
+    "potion": ""
   },
   {
-    "id": "867",
     "type": "warped_hanging_sign",
-    "item_name_ru": "Искажённая подвесная табличка"
+    "item_name_ru": "Искажённая подвесная табличка",
+    "potion": ""
   },
   {
-    "id": "868",
     "type": "bucket",
-    "item_name_ru": "Ведро"
+    "item_name_ru": "Ведро",
+    "potion": ""
   },
   {
-    "id": "869",
     "type": "water_bucket",
-    "item_name_ru": "Ведро воды"
+    "item_name_ru": "Ведро воды",
+    "potion": ""
   },
   {
-    "id": "870",
     "type": "lava_bucket",
-    "item_name_ru": "Ведро лавы"
+    "item_name_ru": "Ведро лавы",
+    "potion": ""
   },
   {
-    "id": "871",
     "type": "powder_snow_bucket",
-    "item_name_ru": "Ведро с рыхлым снегом"
+    "item_name_ru": "Ведро с рыхлым снегом",
+    "potion": ""
   },
   {
-    "id": "872",
     "type": "snowball",
-    "item_name_ru": "Снежок"
+    "item_name_ru": "Снежок",
+    "potion": ""
   },
   {
-    "id": "873",
     "type": "leather",
-    "item_name_ru": "Кожа"
+    "item_name_ru": "Кожа",
+    "potion": ""
   },
   {
-    "id": "874",
     "type": "milk_bucket",
-    "item_name_ru": "Ведро молока"
+    "item_name_ru": "Ведро молока",
+    "potion": ""
   },
   {
-    "id": "875",
     "type": "pufferfish_bucket",
-    "item_name_ru": "Иглобрюх в ведре"
+    "item_name_ru": "Иглобрюх в ведре",
+    "potion": ""
   },
   {
-    "id": "876",
     "type": "salmon_bucket",
-    "item_name_ru": "Лосось в ведре"
+    "item_name_ru": "Лосось в ведре",
+    "potion": ""
   },
   {
-    "id": "877",
     "type": "cod_bucket",
-    "item_name_ru": "Треска в ведре"
+    "item_name_ru": "Треска в ведре",
+    "potion": ""
   },
   {
-    "id": "878",
     "type": "tropical_fish_bucket",
-    "item_name_ru": "Тропическая рыба в ведре"
+    "item_name_ru": "Тропическая рыба в ведре",
+    "potion": ""
   },
   {
-    "id": "879",
     "type": "axolotl_bucket",
-    "item_name_ru": "Аксолотль в ведре"
+    "item_name_ru": "Аксолотль в ведре",
+    "potion": ""
   },
   {
-    "id": "880",
     "type": "tadpole_bucket",
-    "item_name_ru": "Головастик в ведре"
+    "item_name_ru": "Головастик в ведре",
+    "potion": ""
   },
   {
-    "id": "881",
     "type": "brick",
-    "item_name_ru": "Кирпич"
+    "item_name_ru": "Кирпич",
+    "potion": ""
   },
   {
-    "id": "882",
     "type": "clay_ball",
-    "item_name_ru": "Комок глины"
+    "item_name_ru": "Комок глины",
+    "potion": ""
   },
   {
-    "id": "883",
     "type": "dried_kelp_block",
-    "item_name_ru": "Блок сушёной ламинарии"
+    "item_name_ru": "Блок сушёной ламинарии",
+    "potion": ""
   },
   {
-    "id": "884",
     "type": "paper",
-    "item_name_ru": "Бумага"
+    "item_name_ru": "Бумага",
+    "potion": ""
   },
   {
-    "id": "885",
     "type": "book",
-    "item_name_ru": "Книга"
+    "item_name_ru": "Книга",
+    "potion": ""
   },
   {
-    "id": "886",
     "type": "slime_ball",
-    "item_name_ru": "Сгусток слизи"
+    "item_name_ru": "Сгусток слизи",
+    "potion": ""
   },
   {
-    "id": "887",
     "type": "egg",
-    "item_name_ru": "Яйцо"
+    "item_name_ru": "Яйцо",
+    "potion": ""
   },
   {
-    "id": "888",
     "type": "compass",
-    "item_name_ru": "Компас"
+    "item_name_ru": "Компас",
+    "potion": ""
   },
   {
-    "id": "889",
     "type": "recovery_compass",
-    "item_name_ru": "Возвратный компас"
+    "item_name_ru": "Возвратный компас",
+    "potion": ""
   },
   {
-    "id": "890",
     "type": "bundle",
-    "item_name_ru": "Мешок"
+    "item_name_ru": "Мешок",
+    "potion": ""
   },
   {
-    "id": "891",
     "type": "fishing_rod",
-    "item_name_ru": "Удочка"
+    "item_name_ru": "Удочка",
+    "potion": ""
   },
   {
-    "id": "892",
     "type": "clock",
-    "item_name_ru": "Часы"
+    "item_name_ru": "Часы",
+    "potion": ""
   },
   {
-    "id": "893",
     "type": "spyglass",
-    "item_name_ru": "Подзорная труба"
+    "item_name_ru": "Подзорная труба",
+    "potion": ""
   },
   {
-    "id": "894",
     "type": "glowstone_dust",
-    "item_name_ru": "Светокаменная пыль"
+    "item_name_ru": "Светокаменная пыль",
+    "potion": ""
   },
   {
-    "id": "895",
     "type": "cod",
-    "item_name_ru": "Сырая треска"
+    "item_name_ru": "Сырая треска",
+    "potion": ""
   },
   {
-    "id": "896",
     "type": "salmon",
-    "item_name_ru": "Сырой лосось"
+    "item_name_ru": "Сырой лосось",
+    "potion": ""
   },
   {
-    "id": "897",
     "type": "tropical_fish",
-    "item_name_ru": "Тропическая рыба"
+    "item_name_ru": "Тропическая рыба",
+    "potion": ""
   },
   {
-    "id": "898",
     "type": "pufferfish",
-    "item_name_ru": "Иглобрюх"
+    "item_name_ru": "Иглобрюх",
+    "potion": ""
   },
   {
-    "id": "899",
     "type": "cooked_cod",
-    "item_name_ru": "Жареная треска"
+    "item_name_ru": "Жареная треска",
+    "potion": ""
   },
   {
-    "id": "900",
     "type": "cooked_salmon",
-    "item_name_ru": "Жареный лосось"
+    "item_name_ru": "Жареный лосось",
+    "potion": ""
   },
   {
-    "id": "901",
     "type": "ink_sac",
-    "item_name_ru": "Чернильный мешок"
+    "item_name_ru": "Чернильный мешок",
+    "potion": ""
   },
   {
-    "id": "902",
     "type": "glow_ink_sac",
-    "item_name_ru": "Светящийся чернильный мешок"
+    "item_name_ru": "Светящийся чернильный мешок",
+    "potion": ""
   },
   {
-    "id": "903",
     "type": "cocoa_beans",
-    "item_name_ru": "Какао-бобы"
+    "item_name_ru": "Какао-бобы",
+    "potion": ""
   },
   {
-    "id": "904",
     "type": "white_dye",
-    "item_name_ru": "Белый краситель"
+    "item_name_ru": "Белый краситель",
+    "potion": ""
   },
   {
-    "id": "905",
     "type": "orange_dye",
-    "item_name_ru": "Оранжевый краситель"
+    "item_name_ru": "Оранжевый краситель",
+    "potion": ""
   },
   {
-    "id": "906",
     "type": "magenta_dye",
-    "item_name_ru": "Пурпурный краситель"
+    "item_name_ru": "Пурпурный краситель",
+    "potion": ""
   },
   {
-    "id": "907",
     "type": "light_blue_dye",
-    "item_name_ru": "Голубой краситель"
+    "item_name_ru": "Голубой краситель",
+    "potion": ""
   },
   {
-    "id": "908",
     "type": "yellow_dye",
-    "item_name_ru": "Жёлтый краситель"
+    "item_name_ru": "Жёлтый краситель",
+    "potion": ""
   },
   {
-    "id": "909",
     "type": "lime_dye",
-    "item_name_ru": "Лаймовый краситель"
+    "item_name_ru": "Лаймовый краситель",
+    "potion": ""
   },
   {
-    "id": "910",
     "type": "pink_dye",
-    "item_name_ru": "Розовый краситель"
+    "item_name_ru": "Розовый краситель",
+    "potion": ""
   },
   {
-    "id": "911",
     "type": "gray_dye",
-    "item_name_ru": "Серый краситель"
+    "item_name_ru": "Серый краситель",
+    "potion": ""
   },
   {
-    "id": "912",
     "type": "light_gray_dye",
-    "item_name_ru": "Светло-серый краситель"
+    "item_name_ru": "Светло-серый краситель",
+    "potion": ""
   },
   {
-    "id": "913",
     "type": "cyan_dye",
-    "item_name_ru": "Бирюзовый краситель"
+    "item_name_ru": "Бирюзовый краситель",
+    "potion": ""
   },
   {
-    "id": "914",
     "type": "purple_dye",
-    "item_name_ru": "Фиолетовый краситель"
+    "item_name_ru": "Фиолетовый краситель",
+    "potion": ""
   },
   {
-    "id": "915",
     "type": "blue_dye",
-    "item_name_ru": "Синий краситель"
+    "item_name_ru": "Синий краситель",
+    "potion": ""
   },
   {
-    "id": "916",
     "type": "brown_dye",
-    "item_name_ru": "Коричневый краситель"
+    "item_name_ru": "Коричневый краситель",
+    "potion": ""
   },
   {
-    "id": "917",
     "type": "green_dye",
-    "item_name_ru": "Зелёный краситель"
+    "item_name_ru": "Зелёный краситель",
+    "potion": ""
   },
   {
-    "id": "918",
     "type": "red_dye",
-    "item_name_ru": "Красный краситель"
+    "item_name_ru": "Красный краситель",
+    "potion": ""
   },
   {
-    "id": "919",
     "type": "black_dye",
-    "item_name_ru": "Чёрный краситель"
+    "item_name_ru": "Чёрный краситель",
+    "potion": ""
   },
   {
-    "id": "920",
     "type": "bone_meal",
-    "item_name_ru": "Костная мука"
+    "item_name_ru": "Костная мука",
+    "potion": ""
   },
   {
-    "id": "921",
     "type": "bone",
-    "item_name_ru": "Кость"
+    "item_name_ru": "Кость",
+    "potion": ""
   },
   {
-    "id": "922",
     "type": "sugar",
-    "item_name_ru": "Сахар"
+    "item_name_ru": "Сахар",
+    "potion": ""
   },
   {
-    "id": "923",
     "type": "cake",
-    "item_name_ru": "Торт"
+    "item_name_ru": "Торт",
+    "potion": ""
   },
   {
-    "id": "924",
     "type": "white_bed",
-    "item_name_ru": "Белая кровать"
+    "item_name_ru": "Белая кровать",
+    "potion": ""
   },
   {
-    "id": "925",
     "type": "orange_bed",
-    "item_name_ru": "Оранжевая кровать"
+    "item_name_ru": "Оранжевая кровать",
+    "potion": ""
   },
   {
-    "id": "926",
     "type": "magenta_bed",
-    "item_name_ru": "Пурпурная кровать"
+    "item_name_ru": "Пурпурная кровать",
+    "potion": ""
   },
   {
-    "id": "927",
     "type": "light_blue_bed",
-    "item_name_ru": "Голубая кровать"
+    "item_name_ru": "Голубая кровать",
+    "potion": ""
   },
   {
-    "id": "928",
     "type": "yellow_bed",
-    "item_name_ru": "Жёлтая кровать"
+    "item_name_ru": "Жёлтая кровать",
+    "potion": ""
   },
   {
-    "id": "929",
     "type": "lime_bed",
-    "item_name_ru": "Лаймовая кровать"
+    "item_name_ru": "Лаймовая кровать",
+    "potion": ""
   },
   {
-    "id": "930",
     "type": "pink_bed",
-    "item_name_ru": "Розовая кровать"
+    "item_name_ru": "Розовая кровать",
+    "potion": ""
   },
   {
-    "id": "931",
     "type": "gray_bed",
-    "item_name_ru": "Серая кровать"
+    "item_name_ru": "Серая кровать",
+    "potion": ""
   },
   {
-    "id": "932",
     "type": "light_gray_bed",
-    "item_name_ru": "Светло-серая кровать"
+    "item_name_ru": "Светло-серая кровать",
+    "potion": ""
   },
   {
-    "id": "933",
     "type": "cyan_bed",
-    "item_name_ru": "Бирюзовая кровать"
+    "item_name_ru": "Бирюзовая кровать",
+    "potion": ""
   },
   {
-    "id": "934",
     "type": "purple_bed",
-    "item_name_ru": "Фиолетовая кровать"
+    "item_name_ru": "Фиолетовая кровать",
+    "potion": ""
   },
   {
-    "id": "935",
     "type": "blue_bed",
-    "item_name_ru": "Синяя кровать"
+    "item_name_ru": "Синяя кровать",
+    "potion": ""
   },
   {
-    "id": "936",
     "type": "brown_bed",
-    "item_name_ru": "Коричневая кровать"
+    "item_name_ru": "Коричневая кровать",
+    "potion": ""
   },
   {
-    "id": "937",
     "type": "green_bed",
-    "item_name_ru": "Зелёная кровать"
+    "item_name_ru": "Зелёная кровать",
+    "potion": ""
   },
   {
-    "id": "938",
     "type": "red_bed",
-    "item_name_ru": "Красная кровать"
+    "item_name_ru": "Красная кровать",
+    "potion": ""
   },
   {
-    "id": "939",
     "type": "black_bed",
-    "item_name_ru": "Чёрная кровать"
+    "item_name_ru": "Чёрная кровать",
+    "potion": ""
   },
   {
-    "id": "940",
     "type": "cookie",
-    "item_name_ru": "Печенье"
+    "item_name_ru": "Печенье",
+    "potion": ""
   },
   {
-    "id": "941",
     "type": "filled_map",
-    "item_name_ru": "Карта"
+    "item_name_ru": "Карта",
+    "potion": ""
   },
   {
-    "id": "942",
     "type": "shears",
-    "item_name_ru": "Ножницы"
+    "item_name_ru": "Ножницы",
+    "potion": ""
   },
   {
-    "id": "943",
     "type": "melon_slice",
-    "item_name_ru": "Ломтик арбуза"
+    "item_name_ru": "Ломтик арбуза",
+    "potion": ""
   },
   {
-    "id": "944",
     "type": "dried_kelp",
-    "item_name_ru": "Сушёная ламинария"
+    "item_name_ru": "Сушёная ламинария",
+    "potion": ""
   },
   {
-    "id": "945",
     "type": "pumpkin_seeds",
-    "item_name_ru": "Семена тыквы"
+    "item_name_ru": "Семена тыквы",
+    "potion": ""
   },
   {
-    "id": "946",
     "type": "melon_seeds",
-    "item_name_ru": "Семена арбуза"
+    "item_name_ru": "Семена арбуза",
+    "potion": ""
   },
   {
-    "id": "947",
     "type": "beef",
-    "item_name_ru": "Сырая говядина"
+    "item_name_ru": "Сырая говядина",
+    "potion": ""
   },
   {
-    "id": "948",
     "type": "cooked_beef",
-    "item_name_ru": "Стейк"
+    "item_name_ru": "Стейк",
+    "potion": ""
   },
   {
-    "id": "949",
     "type": "chicken",
-    "item_name_ru": "Курятина"
+    "item_name_ru": "Курятина",
+    "potion": ""
   },
   {
-    "id": "950",
     "type": "cooked_chicken",
-    "item_name_ru": "Жареная курица"
+    "item_name_ru": "Жареная курица",
+    "potion": ""
   },
   {
-    "id": "951",
     "type": "rotten_flesh",
-    "item_name_ru": "Гнилая плоть"
+    "item_name_ru": "Гнилая плоть",
+    "potion": ""
   },
   {
-    "id": "952",
     "type": "ender_pearl",
-    "item_name_ru": "Эндер-жемчуг"
+    "item_name_ru": "Эндер-жемчуг",
+    "potion": ""
   },
   {
-    "id": "953",
     "type": "blaze_rod",
-    "item_name_ru": "Огненный стержень"
+    "item_name_ru": "Огненный стержень",
+    "potion": ""
   },
   {
-    "id": "954",
     "type": "ghast_tear",
-    "item_name_ru": "Слеза гаста"
+    "item_name_ru": "Слеза гаста",
+    "potion": ""
   },
   {
-    "id": "955",
     "type": "gold_nugget",
-    "item_name_ru": "Кусочек золота"
+    "item_name_ru": "Кусочек золота",
+    "potion": ""
   },
   {
-    "id": "956",
     "type": "nether_wart",
-    "item_name_ru": "Незерский нарост"
+    "item_name_ru": "Незерский нарост",
+    "potion": ""
   },
   {
-    "id": "958",
     "type": "glass_bottle",
-    "item_name_ru": "Бутылочка"
+    "item_name_ru": "Бутылочка",
+    "potion": ""
   },
   {
-    "id": "959",
     "type": "spider_eye",
-    "item_name_ru": "Паучий глаз"
+    "item_name_ru": "Паучий глаз",
+    "potion": ""
   },
   {
-    "id": "960",
     "type": "fermented_spider_eye",
-    "item_name_ru": "Маринованный паучий глаз"
+    "item_name_ru": "Маринованный паучий глаз",
+    "potion": ""
   },
   {
-    "id": "961",
     "type": "blaze_powder",
-    "item_name_ru": "Огненный порошок"
+    "item_name_ru": "Огненный порошок",
+    "potion": ""
   },
   {
-    "id": "962",
     "type": "magma_cream",
-    "item_name_ru": "Сгусток магмы"
+    "item_name_ru": "Сгусток магмы",
+    "potion": ""
   },
   {
-    "id": "963",
     "type": "brewing_stand",
-    "item_name_ru": "Зельеварка"
+    "item_name_ru": "Зельеварка",
+    "potion": ""
   },
   {
-    "id": "964",
     "type": "cauldron",
-    "item_name_ru": "Котёл"
+    "item_name_ru": "Котёл",
+    "potion": ""
   },
   {
-    "id": "965",
     "type": "ender_eye",
-    "item_name_ru": "Око Эндера"
+    "item_name_ru": "Око Эндера",
+    "potion": ""
   },
   {
-    "id": "966",
     "type": "glistering_melon_slice",
-    "item_name_ru": "Сверкающий ломтик арбуза"
+    "item_name_ru": "Сверкающий ломтик арбуза",
+    "potion": ""
   },
   {
-    "id": "967",
     "type": "allay_spawn_egg",
-    "item_name_ru": "Яйцо призыва тихони"
+    "item_name_ru": "Яйцо призыва тихони",
+    "potion": ""
   },
   {
-    "id": "968",
     "type": "axolotl_spawn_egg",
-    "item_name_ru": "Яйцо призыва аксолотля"
+    "item_name_ru": "Яйцо призыва аксолотля",
+    "potion": ""
   },
   {
-    "id": "969",
     "type": "bat_spawn_egg",
-    "item_name_ru": "Яйцо призыва летучей мыши"
+    "item_name_ru": "Яйцо призыва летучей мыши",
+    "potion": ""
   },
   {
-    "id": "970",
     "type": "bee_spawn_egg",
-    "item_name_ru": "Яйцо призыва пчелы"
+    "item_name_ru": "Яйцо призыва пчелы",
+    "potion": ""
   },
   {
-    "id": "971",
     "type": "blaze_spawn_egg",
-    "item_name_ru": "Яйцо призыва всполоха"
+    "item_name_ru": "Яйцо призыва всполоха",
+    "potion": ""
   },
   {
-    "id": "972",
     "type": "cat_spawn_egg",
-    "item_name_ru": "Яйцо призыва кошки"
+    "item_name_ru": "Яйцо призыва кошки",
+    "potion": ""
   },
   {
-    "id": "973",
     "type": "camel_spawn_egg",
-    "item_name_ru": "Яйцо призыва верблюда"
+    "item_name_ru": "Яйцо призыва верблюда",
+    "potion": ""
   },
   {
-    "id": "974",
     "type": "cave_spider_spawn_egg",
-    "item_name_ru": "Яйцо призыва пещерного паука"
+    "item_name_ru": "Яйцо призыва пещерного паука",
+    "potion": ""
   },
   {
-    "id": "975",
     "type": "chicken_spawn_egg",
-    "item_name_ru": "Яйцо призыва курицы"
+    "item_name_ru": "Яйцо призыва курицы",
+    "potion": ""
   },
   {
-    "id": "976",
     "type": "cod_spawn_egg",
-    "item_name_ru": "Яйцо призыва трески"
+    "item_name_ru": "Яйцо призыва трески",
+    "potion": ""
   },
   {
-    "id": "977",
     "type": "cow_spawn_egg",
-    "item_name_ru": "Яйцо призыва коровы"
+    "item_name_ru": "Яйцо призыва коровы",
+    "potion": ""
   },
   {
-    "id": "978",
     "type": "creeper_spawn_egg",
-    "item_name_ru": "Яйцо призыва крипера"
+    "item_name_ru": "Яйцо призыва крипера",
+    "potion": ""
   },
   {
-    "id": "979",
     "type": "dolphin_spawn_egg",
-    "item_name_ru": "Яйцо призыва дельфина"
+    "item_name_ru": "Яйцо призыва дельфина",
+    "potion": ""
   },
   {
-    "id": "980",
     "type": "donkey_spawn_egg",
-    "item_name_ru": "Яйцо призыва осла"
+    "item_name_ru": "Яйцо призыва осла",
+    "potion": ""
   },
   {
-    "id": "981",
     "type": "drowned_spawn_egg",
-    "item_name_ru": "Яйцо призыва утопленника"
+    "item_name_ru": "Яйцо призыва утопленника",
+    "potion": ""
   },
   {
-    "id": "982",
     "type": "elder_guardian_spawn_egg",
-    "item_name_ru": "Яйцо призыва древнего стража"
+    "item_name_ru": "Яйцо призыва древнего стража",
+    "potion": ""
   },
   {
-    "id": "983",
     "type": "ender_dragon_spawn_egg",
-    "item_name_ru": "Яйцо призыва Эндер-дракона"
+    "item_name_ru": "Яйцо призыва Эндер-дракона",
+    "potion": ""
   },
   {
-    "id": "984",
     "type": "enderman_spawn_egg",
-    "item_name_ru": "Яйцо призыва эндермена"
+    "item_name_ru": "Яйцо призыва эндермена",
+    "potion": ""
   },
   {
-    "id": "985",
     "type": "endermite_spawn_egg",
-    "item_name_ru": "Яйцо призыва эндермита"
+    "item_name_ru": "Яйцо призыва эндермита",
+    "potion": ""
   },
   {
-    "id": "986",
     "type": "evoker_spawn_egg",
-    "item_name_ru": "Яйцо призыва заклинателя"
+    "item_name_ru": "Яйцо призыва заклинателя",
+    "potion": ""
   },
   {
-    "id": "987",
     "type": "fox_spawn_egg",
-    "item_name_ru": "Яйцо призыва лисицы"
+    "item_name_ru": "Яйцо призыва лисицы",
+    "potion": ""
   },
   {
-    "id": "988",
     "type": "frog_spawn_egg",
-    "item_name_ru": "Яйцо призыва лягушки"
+    "item_name_ru": "Яйцо призыва лягушки",
+    "potion": ""
   },
   {
-    "id": "989",
     "type": "ghast_spawn_egg",
-    "item_name_ru": "Яйцо призыва гаста"
+    "item_name_ru": "Яйцо призыва гаста",
+    "potion": ""
   },
   {
-    "id": "990",
     "type": "glow_squid_spawn_egg",
-    "item_name_ru": "Яйцо призыва светящегося спрута"
+    "item_name_ru": "Яйцо призыва светящегося спрута",
+    "potion": ""
   },
   {
-    "id": "991",
     "type": "goat_spawn_egg",
-    "item_name_ru": "Яйцо призыва козы"
+    "item_name_ru": "Яйцо призыва козы",
+    "potion": ""
   },
   {
-    "id": "992",
     "type": "guardian_spawn_egg",
-    "item_name_ru": "Яйцо призыва стража"
+    "item_name_ru": "Яйцо призыва стража",
+    "potion": ""
   },
   {
-    "id": "993",
     "type": "hoglin_spawn_egg",
-    "item_name_ru": "Яйцо призыва хоглина"
+    "item_name_ru": "Яйцо призыва хоглина",
+    "potion": ""
   },
   {
-    "id": "994",
     "type": "horse_spawn_egg",
-    "item_name_ru": "Яйцо призыва лошади"
+    "item_name_ru": "Яйцо призыва лошади",
+    "potion": ""
   },
   {
-    "id": "995",
     "type": "husk_spawn_egg",
-    "item_name_ru": "Яйцо призыва кадавра"
+    "item_name_ru": "Яйцо призыва кадавра",
+    "potion": ""
   },
   {
-    "id": "996",
     "type": "iron_golem_spawn_egg",
-    "item_name_ru": "Яйцо призыва железного голема"
+    "item_name_ru": "Яйцо призыва железного голема",
+    "potion": ""
   },
   {
-    "id": "997",
     "type": "llama_spawn_egg",
-    "item_name_ru": "Яйцо призыва ламы"
+    "item_name_ru": "Яйцо призыва ламы",
+    "potion": ""
   },
   {
-    "id": "998",
     "type": "magma_cube_spawn_egg",
-    "item_name_ru": "Яйцо призыва магмового куба"
+    "item_name_ru": "Яйцо призыва магмового куба",
+    "potion": ""
   },
   {
-    "id": "999",
     "type": "mooshroom_spawn_egg",
-    "item_name_ru": "Яйцо призыва муухомора"
+    "item_name_ru": "Яйцо призыва муухомора",
+    "potion": ""
   },
   {
-    "id": "1000",
     "type": "mule_spawn_egg",
-    "item_name_ru": "Яйцо призыва мула"
+    "item_name_ru": "Яйцо призыва мула",
+    "potion": ""
   },
   {
-    "id": "1001",
     "type": "ocelot_spawn_egg",
-    "item_name_ru": "Яйцо призыва оцелота"
+    "item_name_ru": "Яйцо призыва оцелота",
+    "potion": ""
   },
   {
-    "id": "1002",
     "type": "panda_spawn_egg",
-    "item_name_ru": "Яйцо призыва панды"
+    "item_name_ru": "Яйцо призыва панды",
+    "potion": ""
   },
   {
-    "id": "1003",
     "type": "parrot_spawn_egg",
-    "item_name_ru": "Яйцо призыва попугая"
+    "item_name_ru": "Яйцо призыва попугая",
+    "potion": ""
   },
   {
-    "id": "1004",
     "type": "phantom_spawn_egg",
-    "item_name_ru": "Яйцо призыва фантома"
+    "item_name_ru": "Яйцо призыва фантома",
+    "potion": ""
   },
   {
-    "id": "1005",
     "type": "pig_spawn_egg",
-    "item_name_ru": "Яйцо призыва свиньи"
+    "item_name_ru": "Яйцо призыва свиньи",
+    "potion": ""
   },
   {
-    "id": "1006",
     "type": "piglin_spawn_egg",
-    "item_name_ru": "Яйцо призыва пиглина"
+    "item_name_ru": "Яйцо призыва пиглина",
+    "potion": ""
   },
   {
-    "id": "1007",
     "type": "piglin_brute_spawn_egg",
-    "item_name_ru": "Яйцо призыва брутального пиглина"
+    "item_name_ru": "Яйцо призыва брутального пиглина",
+    "potion": ""
   },
   {
-    "id": "1008",
     "type": "pillager_spawn_egg",
-    "item_name_ru": "Яйцо призыва разбойника"
+    "item_name_ru": "Яйцо призыва разбойника",
+    "potion": ""
   },
   {
-    "id": "1009",
     "type": "polar_bear_spawn_egg",
-    "item_name_ru": "Яйцо призыва белого медведя"
+    "item_name_ru": "Яйцо призыва белого медведя",
+    "potion": ""
   },
   {
-    "id": "1010",
     "type": "pufferfish_spawn_egg",
-    "item_name_ru": "Яйцо призыва иглобрюха"
+    "item_name_ru": "Яйцо призыва иглобрюха",
+    "potion": ""
   },
   {
-    "id": "1011",
     "type": "rabbit_spawn_egg",
-    "item_name_ru": "Яйцо призыва кролика"
+    "item_name_ru": "Яйцо призыва кролика",
+    "potion": ""
   },
   {
-    "id": "1012",
     "type": "ravager_spawn_egg",
-    "item_name_ru": "Яйцо призыва разорителя"
+    "item_name_ru": "Яйцо призыва разорителя",
+    "potion": ""
   },
   {
-    "id": "1013",
     "type": "salmon_spawn_egg",
-    "item_name_ru": "Яйцо призыва лосося"
+    "item_name_ru": "Яйцо призыва лосося",
+    "potion": ""
   },
   {
-    "id": "1014",
     "type": "sheep_spawn_egg",
-    "item_name_ru": "Яйцо призыва овцы"
+    "item_name_ru": "Яйцо призыва овцы",
+    "potion": ""
   },
   {
-    "id": "1015",
     "type": "shulker_spawn_egg",
-    "item_name_ru": "Яйцо призыва шалкера"
+    "item_name_ru": "Яйцо призыва шалкера",
+    "potion": ""
   },
   {
-    "id": "1016",
     "type": "silverfish_spawn_egg",
-    "item_name_ru": "Яйцо призыва чешуйницы"
+    "item_name_ru": "Яйцо призыва чешуйницы",
+    "potion": ""
   },
   {
-    "id": "1017",
     "type": "skeleton_spawn_egg",
-    "item_name_ru": "Яйцо призыва скелета"
+    "item_name_ru": "Яйцо призыва скелета",
+    "potion": ""
   },
   {
-    "id": "1018",
     "type": "skeleton_horse_spawn_egg",
-    "item_name_ru": "Яйцо призыва лошади-скелета"
+    "item_name_ru": "Яйцо призыва лошади-скелета",
+    "potion": ""
   },
   {
-    "id": "1019",
     "type": "slime_spawn_egg",
-    "item_name_ru": "Яйцо призыва слизня"
+    "item_name_ru": "Яйцо призыва слизня",
+    "potion": ""
   },
   {
-    "id": "1020",
     "type": "sniffer_spawn_egg",
-    "item_name_ru": "Яйцо призыва нюхача"
+    "item_name_ru": "Яйцо призыва нюхача",
+    "potion": ""
   },
   {
-    "id": "1021",
     "type": "snow_golem_spawn_egg",
-    "item_name_ru": "Яйцо призыва снежного голема"
+    "item_name_ru": "Яйцо призыва снежного голема",
+    "potion": ""
   },
   {
-    "id": "1022",
     "type": "spider_spawn_egg",
-    "item_name_ru": "Яйцо призыва паука"
+    "item_name_ru": "Яйцо призыва паука",
+    "potion": ""
   },
   {
-    "id": "1023",
     "type": "squid_spawn_egg",
-    "item_name_ru": "Яйцо призыва спрута"
+    "item_name_ru": "Яйцо призыва спрута",
+    "potion": ""
   },
   {
-    "id": "1024",
     "type": "stray_spawn_egg",
-    "item_name_ru": "Яйцо призыва зимогора"
+    "item_name_ru": "Яйцо призыва зимогора",
+    "potion": ""
   },
   {
-    "id": "1025",
     "type": "strider_spawn_egg",
-    "item_name_ru": "Яйцо призыва лавомерки"
+    "item_name_ru": "Яйцо призыва лавомерки",
+    "potion": ""
   },
   {
-    "id": "1026",
     "type": "tadpole_spawn_egg",
-    "item_name_ru": "Яйцо призыва головастика"
+    "item_name_ru": "Яйцо призыва головастика",
+    "potion": ""
   },
   {
-    "id": "1027",
     "type": "trader_llama_spawn_egg",
-    "item_name_ru": "Яйцо призыва ламы торговца"
+    "item_name_ru": "Яйцо призыва ламы торговца",
+    "potion": ""
   },
   {
-    "id": "1028",
     "type": "tropical_fish_spawn_egg",
-    "item_name_ru": "Яйцо призыва тропической рыбы"
+    "item_name_ru": "Яйцо призыва тропической рыбы",
+    "potion": ""
   },
   {
-    "id": "1029",
     "type": "turtle_spawn_egg",
-    "item_name_ru": "Яйцо призыва черепахи"
+    "item_name_ru": "Яйцо призыва черепахи",
+    "potion": ""
   },
   {
-    "id": "1030",
     "type": "vex_spawn_egg",
-    "item_name_ru": "Яйцо призыва вредины"
+    "item_name_ru": "Яйцо призыва вредины",
+    "potion": ""
   },
   {
-    "id": "1031",
     "type": "villager_spawn_egg",
-    "item_name_ru": "Яйцо призыва крестьянина"
+    "item_name_ru": "Яйцо призыва крестьянина",
+    "potion": ""
   },
   {
-    "id": "1032",
     "type": "vindicator_spawn_egg",
-    "item_name_ru": "Яйцо призыва поборника"
+    "item_name_ru": "Яйцо призыва поборника",
+    "potion": ""
   },
   {
-    "id": "1033",
     "type": "wandering_trader_spawn_egg",
-    "item_name_ru": "Яйцо призыва странствующего торговца"
+    "item_name_ru": "Яйцо призыва странствующего торговца",
+    "potion": ""
   },
   {
-    "id": "1034",
     "type": "warden_spawn_egg",
-    "item_name_ru": "Яйцо призыва хранителя"
+    "item_name_ru": "Яйцо призыва хранителя",
+    "potion": ""
   },
   {
-    "id": "1035",
     "type": "witch_spawn_egg",
-    "item_name_ru": "Яйцо призыва ведьмы"
+    "item_name_ru": "Яйцо призыва ведьмы",
+    "potion": ""
   },
   {
-    "id": "1036",
     "type": "wither_spawn_egg",
-    "item_name_ru": "Яйцо призыва визера"
+    "item_name_ru": "Яйцо призыва визера",
+    "potion": ""
   },
   {
-    "id": "1037",
     "type": "wither_skeleton_spawn_egg",
-    "item_name_ru": "Яйцо призыва визер-скелета"
+    "item_name_ru": "Яйцо призыва визер-скелета",
+    "potion": ""
   },
   {
-    "id": "1038",
     "type": "wolf_spawn_egg",
-    "item_name_ru": "Яйцо призыва волка"
+    "item_name_ru": "Яйцо призыва волка",
+    "potion": ""
   },
   {
-    "id": "1039",
     "type": "zoglin_spawn_egg",
-    "item_name_ru": "Яйцо призыва зоглина"
+    "item_name_ru": "Яйцо призыва зоглина",
+    "potion": ""
   },
   {
-    "id": "1040",
     "type": "zombie_spawn_egg",
-    "item_name_ru": "Яйцо призыва зомби"
+    "item_name_ru": "Яйцо призыва зомби",
+    "potion": ""
   },
   {
-    "id": "1041",
     "type": "zombie_horse_spawn_egg",
-    "item_name_ru": "Яйцо призыва лошади-зомби"
+    "item_name_ru": "Яйцо призыва лошади-зомби",
+    "potion": ""
   },
   {
-    "id": "1042",
     "type": "zombie_villager_spawn_egg",
-    "item_name_ru": "Яйцо призыва крестьянина-зомби"
+    "item_name_ru": "Яйцо призыва крестьянина-зомби",
+    "potion": ""
   },
   {
-    "id": "1043",
     "type": "zombified_piglin_spawn_egg",
-    "item_name_ru": "Яйцо призыва зомбифицированного пиглина"
+    "item_name_ru": "Яйцо призыва зомбифицированного пиглина",
+    "potion": ""
   },
   {
-    "id": "1044",
     "type": "experience_bottle",
-    "item_name_ru": "Пузырёк опыта"
+    "item_name_ru": "Пузырёк опыта",
+    "potion": ""
   },
   {
-    "id": "1045",
     "type": "fire_charge",
-    "item_name_ru": "Огненный заряд"
+    "item_name_ru": "Огненный заряд",
+    "potion": ""
   },
   {
-    "id": "1046",
     "type": "writable_book",
-    "item_name_ru": "Книга и перо"
+    "item_name_ru": "Книга и перо",
+    "potion": ""
   },
   {
-    "id": "1047",
     "type": "written_book",
-    "item_name_ru": "Завершённая книга"
+    "item_name_ru": "Завершённая книга",
+    "potion": ""
   },
   {
-    "id": "1048",
     "type": "item_frame",
-    "item_name_ru": "Рамка"
+    "item_name_ru": "Рамка",
+    "potion": ""
   },
   {
-    "id": "1049",
     "type": "glow_item_frame",
-    "item_name_ru": "Светящаяся рамка"
+    "item_name_ru": "Светящаяся рамка",
+    "potion": ""
   },
   {
-    "id": "1050",
     "type": "flower_pot",
-    "item_name_ru": "Цветочный горшок"
+    "item_name_ru": "Цветочный горшок",
+    "potion": ""
   },
   {
-    "id": "1051",
     "type": "carrot",
-    "item_name_ru": "Морковь"
+    "item_name_ru": "Морковь",
+    "potion": ""
   },
   {
-    "id": "1052",
     "type": "potato",
-    "item_name_ru": "Картофель"
+    "item_name_ru": "Картофель",
+    "potion": ""
   },
   {
-    "id": "1053",
     "type": "baked_potato",
-    "item_name_ru": "Печёный картофель"
+    "item_name_ru": "Печёный картофель",
+    "potion": ""
   },
   {
-    "id": "1054",
     "type": "poisonous_potato",
-    "item_name_ru": "Ядовитый картофель"
+    "item_name_ru": "Ядовитый картофель",
+    "potion": ""
   },
   {
-    "id": "1055",
     "type": "map",
-    "item_name_ru": "Чистая карта"
+    "item_name_ru": "Чистая карта",
+    "potion": ""
   },
   {
-    "id": "1056",
     "type": "golden_carrot",
-    "item_name_ru": "Золотая морковь"
+    "item_name_ru": "Золотая морковь",
+    "potion": ""
   },
   {
-    "id": "1057",
     "type": "skeleton_skull",
-    "item_name_ru": "Череп"
+    "item_name_ru": "Череп",
+    "potion": ""
   },
   {
-    "id": "1058",
     "type": "wither_skeleton_skull",
-    "item_name_ru": "Череп визер-скелета"
+    "item_name_ru": "Череп визер-скелета",
+    "potion": ""
   },
   {
-    "id": "1059",
     "type": "player_head",
-    "item_name_ru": "Голова игрока"
+    "item_name_ru": "Голова игрока",
+    "potion": ""
   },
   {
-    "id": "1060",
     "type": "zombie_head",
-    "item_name_ru": "Голова зомби"
+    "item_name_ru": "Голова зомби",
+    "potion": ""
   },
   {
-    "id": "1061",
     "type": "creeper_head",
-    "item_name_ru": "Голова крипера"
+    "item_name_ru": "Голова крипера",
+    "potion": ""
   },
   {
-    "id": "1062",
     "type": "dragon_head",
-    "item_name_ru": "Голова дракона"
+    "item_name_ru": "Голова дракона",
+    "potion": ""
   },
   {
-    "id": "1063",
     "type": "piglin_head",
-    "item_name_ru": "Голова пиглина"
+    "item_name_ru": "Голова пиглина",
+    "potion": ""
   },
   {
-    "id": "1064",
     "type": "nether_star",
-    "item_name_ru": "Звезда Незера"
+    "item_name_ru": "Звезда Незера",
+    "potion": ""
   },
   {
-    "id": "1065",
     "type": "pumpkin_pie",
-    "item_name_ru": "Тыквенный пирог"
+    "item_name_ru": "Тыквенный пирог",
+    "potion": ""
   },
   {
-    "id": "1066",
     "type": "firework_rocket",
-    "item_name_ru": "Фейерверк"
+    "item_name_ru": "Фейерверк",
+    "potion": ""
   },
   {
-    "id": "1067",
     "type": "firework_star",
-    "item_name_ru": "Пиротехническая звезда"
+    "item_name_ru": "Пиротехническая звезда",
+    "potion": ""
   },
   {
-    "id": "1068",
     "type": "enchanted_book",
-    "item_name_ru": "Чародейская книга"
+    "item_name_ru": "Чародейская книга",
+    "potion": ""
   },
   {
-    "id": "1069",
     "type": "nether_brick",
-    "item_name_ru": "Незерский кирпич"
+    "item_name_ru": "Незерский кирпич",
+    "potion": ""
   },
   {
-    "id": "1070",
     "type": "prismarine_shard",
-    "item_name_ru": "Осколок призмарина"
+    "item_name_ru": "Осколок призмарина",
+    "potion": ""
   },
   {
-    "id": "1071",
     "type": "prismarine_crystals",
-    "item_name_ru": "Кристалл призмарина"
+    "item_name_ru": "Кристалл призмарина",
+    "potion": ""
   },
   {
-    "id": "1072",
     "type": "rabbit",
-    "item_name_ru": "Сырая крольчатина"
+    "item_name_ru": "Сырая крольчатина",
+    "potion": ""
   },
   {
-    "id": "1073",
     "type": "cooked_rabbit",
-    "item_name_ru": "Жареная крольчатина"
+    "item_name_ru": "Жареная крольчатина",
+    "potion": ""
   },
   {
-    "id": "1074",
     "type": "rabbit_stew",
-    "item_name_ru": "Тушёный кролик"
+    "item_name_ru": "Тушёный кролик",
+    "potion": ""
   },
   {
-    "id": "1075",
     "type": "rabbit_foot",
-    "item_name_ru": "Кроличья лапка"
+    "item_name_ru": "Кроличья лапка",
+    "potion": ""
   },
   {
-    "id": "1076",
     "type": "rabbit_hide",
-    "item_name_ru": "Кроличья шкурка"
+    "item_name_ru": "Кроличья шкурка",
+    "potion": ""
   },
   {
-    "id": "1077",
     "type": "armor_stand",
-    "item_name_ru": "Стойка для брони"
+    "item_name_ru": "Стойка для брони",
+    "potion": ""
   },
   {
-    "id": "1078",
     "type": "iron_horse_armor",
-    "item_name_ru": "Железная конская броня"
+    "item_name_ru": "Железная конская броня",
+    "potion": ""
   },
   {
-    "id": "1079",
     "type": "golden_horse_armor",
-    "item_name_ru": "Золотая конская броня"
+    "item_name_ru": "Золотая конская броня",
+    "potion": ""
   },
   {
-    "id": "1080",
     "type": "diamond_horse_armor",
-    "item_name_ru": "Алмазная конская броня"
+    "item_name_ru": "Алмазная конская броня",
+    "potion": ""
   },
   {
-    "id": "1081",
     "type": "leather_horse_armor",
-    "item_name_ru": "Кожаная конская броня"
+    "item_name_ru": "Кожаная конская броня",
+    "potion": ""
   },
   {
-    "id": "1082",
     "type": "lead",
-    "item_name_ru": "Поводок"
+    "item_name_ru": "Поводок",
+    "potion": ""
   },
   {
-    "id": "1083",
     "type": "name_tag",
-    "item_name_ru": "Бирка"
+    "item_name_ru": "Бирка",
+    "potion": ""
   },
   {
-    "id": "1084",
     "type": "command_block_minecart",
-    "item_name_ru": "Вагонетка с командным блоком"
+    "item_name_ru": "Вагонетка с командным блоком",
+    "potion": ""
   },
   {
-    "id": "1085",
     "type": "mutton",
-    "item_name_ru": "Сырая баранина"
+    "item_name_ru": "Сырая баранина",
+    "potion": ""
   },
   {
-    "id": "1086",
     "type": "cooked_mutton",
-    "item_name_ru": "Жареная баранина"
+    "item_name_ru": "Жареная баранина",
+    "potion": ""
   },
   {
-    "id": "1087",
     "type": "white_banner",
-    "item_name_ru": "Белый флаг"
+    "item_name_ru": "Белый флаг",
+    "potion": ""
   },
   {
-    "id": "1088",
     "type": "orange_banner",
-    "item_name_ru": "Оранжевый флаг"
+    "item_name_ru": "Оранжевый флаг",
+    "potion": ""
   },
   {
-    "id": "1089",
     "type": "magenta_banner",
-    "item_name_ru": "Пурпурный флаг"
+    "item_name_ru": "Пурпурный флаг",
+    "potion": ""
   },
   {
-    "id": "1090",
     "type": "light_blue_banner",
-    "item_name_ru": "Голубой флаг"
+    "item_name_ru": "Голубой флаг",
+    "potion": ""
   },
   {
-    "id": "1091",
     "type": "yellow_banner",
-    "item_name_ru": "Жёлтый флаг"
+    "item_name_ru": "Жёлтый флаг",
+    "potion": ""
   },
   {
-    "id": "1092",
     "type": "lime_banner",
-    "item_name_ru": "Лаймовый флаг"
+    "item_name_ru": "Лаймовый флаг",
+    "potion": ""
   },
   {
-    "id": "1093",
     "type": "pink_banner",
-    "item_name_ru": "Розовый флаг"
+    "item_name_ru": "Розовый флаг",
+    "potion": ""
   },
   {
-    "id": "1094",
     "type": "gray_banner",
-    "item_name_ru": "Серый флаг"
+    "item_name_ru": "Серый флаг",
+    "potion": ""
   },
   {
-    "id": "1095",
     "type": "light_gray_banner",
-    "item_name_ru": "Светло-серый флаг"
+    "item_name_ru": "Светло-серый флаг",
+    "potion": ""
   },
   {
-    "id": "1096",
     "type": "cyan_banner",
-    "item_name_ru": "Бирюзовый флаг"
+    "item_name_ru": "Бирюзовый флаг",
+    "potion": ""
   },
   {
-    "id": "1097",
     "type": "purple_banner",
-    "item_name_ru": "Фиолетовый флаг"
+    "item_name_ru": "Фиолетовый флаг",
+    "potion": ""
   },
   {
-    "id": "1098",
     "type": "blue_banner",
-    "item_name_ru": "Синий флаг"
+    "item_name_ru": "Синий флаг",
+    "potion": ""
   },
   {
-    "id": "1099",
     "type": "brown_banner",
-    "item_name_ru": "Коричневый флаг"
+    "item_name_ru": "Коричневый флаг",
+    "potion": ""
   },
   {
-    "id": "1100",
     "type": "green_banner",
-    "item_name_ru": "Зелёный флаг"
+    "item_name_ru": "Зелёный флаг",
+    "potion": ""
   },
   {
-    "id": "1101",
     "type": "red_banner",
-    "item_name_ru": "Красный флаг"
+    "item_name_ru": "Красный флаг",
+    "potion": ""
   },
   {
-    "id": "1102",
     "type": "black_banner",
-    "item_name_ru": "Чёрный флаг"
+    "item_name_ru": "Чёрный флаг",
+    "potion": ""
   },
   {
-    "id": "1103",
     "type": "end_crystal",
-    "item_name_ru": "Кристалл Энда"
+    "item_name_ru": "Кристалл Энда",
+    "potion": ""
   },
   {
-    "id": "1104",
     "type": "chorus_fruit",
-    "item_name_ru": "Плод хоруса"
+    "item_name_ru": "Плод хоруса",
+    "potion": ""
   },
   {
-    "id": "1105",
     "type": "popped_chorus_fruit",
-    "item_name_ru": "Прожаренный плод хоруса"
+    "item_name_ru": "Прожаренный плод хоруса",
+    "potion": ""
   },
   {
-    "id": "1106",
     "type": "torchflower_seeds",
-    "item_name_ru": "Семена факельника"
+    "item_name_ru": "Семена факельника",
+    "potion": ""
   },
   {
-    "id": "1107",
     "type": "pitcher_pod",
-    "item_name_ru": "Стручок кувшинницы"
+    "item_name_ru": "Стручок кувшинницы",
+    "potion": ""
   },
   {
-    "id": "1108",
     "type": "beetroot",
-    "item_name_ru": "Свёкла"
+    "item_name_ru": "Свёкла",
+    "potion": ""
   },
   {
-    "id": "1109",
     "type": "beetroot_seeds",
-    "item_name_ru": "Семена свёклы"
+    "item_name_ru": "Семена свёклы",
+    "potion": ""
   },
   {
-    "id": "1110",
     "type": "beetroot_soup",
-    "item_name_ru": "Свекольный суп"
+    "item_name_ru": "Свекольный суп",
+    "potion": ""
   },
   {
-    "id": "1111",
     "type": "dragon_breath",
-    "item_name_ru": "Драконье дыхание"
+    "item_name_ru": "Драконье дыхание",
+    "potion": ""
   },
   {
-    "id": "1113",
     "type": "spectral_arrow",
-    "item_name_ru": "Спектральная стрела"
+    "item_name_ru": "Спектральная стрела",
+    "potion": ""
   },
   {
-    "id": "1116",
     "type": "shield",
-    "item_name_ru": "Щит"
+    "item_name_ru": "Щит",
+    "potion": ""
   },
   {
-    "id": "1117",
     "type": "totem_of_undying",
-    "item_name_ru": "Тотем бессмертия"
+    "item_name_ru": "Тотем бессмертия",
+    "potion": ""
   },
   {
-    "id": "1118",
     "type": "shulker_shell",
-    "item_name_ru": "Панцирь шалкера"
+    "item_name_ru": "Панцирь шалкера",
+    "potion": ""
   },
   {
-    "id": "1119",
     "type": "iron_nugget",
-    "item_name_ru": "Кусочек железа"
+    "item_name_ru": "Кусочек железа",
+    "potion": ""
   },
   {
-    "id": "1120",
     "type": "knowledge_book",
-    "item_name_ru": "Книга знаний"
+    "item_name_ru": "Книга знаний",
+    "potion": ""
   },
   {
-    "id": "1121",
     "type": "debug_stick",
-    "item_name_ru": "Палочка отладки"
+    "item_name_ru": "Палочка отладки",
+    "potion": ""
   },
   {
-    "id": "1122",
     "type": "music_disc_13",
-    "item_name_ru": "Пластинка"
+    "item_name_ru": "Пластинка",
+    "potion": ""
   },
   {
-    "id": "1123",
     "type": "music_disc_cat",
-    "item_name_ru": "Пластинка"
+    "item_name_ru": "Пластинка",
+    "potion": ""
   },
   {
-    "id": "1124",
     "type": "music_disc_blocks",
-    "item_name_ru": "Пластинка"
+    "item_name_ru": "Пластинка",
+    "potion": ""
   },
   {
-    "id": "1125",
     "type": "music_disc_chirp",
-    "item_name_ru": "Пластинка"
+    "item_name_ru": "Пластинка",
+    "potion": ""
   },
   {
-    "id": "1126",
     "type": "music_disc_far",
-    "item_name_ru": "Пластинка"
+    "item_name_ru": "Пластинка",
+    "potion": ""
   },
   {
-    "id": "1127",
     "type": "music_disc_mall",
-    "item_name_ru": "Пластинка"
+    "item_name_ru": "Пластинка",
+    "potion": ""
   },
   {
-    "id": "1128",
     "type": "music_disc_mellohi",
-    "item_name_ru": "Пластинка"
+    "item_name_ru": "Пластинка",
+    "potion": ""
   },
   {
-    "id": "1129",
     "type": "music_disc_stal",
-    "item_name_ru": "Пластинка"
+    "item_name_ru": "Пластинка",
+    "potion": ""
   },
   {
-    "id": "1130",
     "type": "music_disc_strad",
-    "item_name_ru": "Пластинка"
+    "item_name_ru": "Пластинка",
+    "potion": ""
   },
   {
-    "id": "1131",
     "type": "music_disc_ward",
-    "item_name_ru": "Пластинка"
+    "item_name_ru": "Пластинка",
+    "potion": ""
   },
   {
-    "id": "1132",
     "type": "music_disc_11",
-    "item_name_ru": "Пластинка"
+    "item_name_ru": "Пластинка",
+    "potion": ""
   },
   {
-    "id": "1133",
     "type": "music_disc_wait",
-    "item_name_ru": "Пластинка"
+    "item_name_ru": "Пластинка",
+    "potion": ""
   },
   {
-    "id": "1134",
     "type": "music_disc_otherside",
-    "item_name_ru": "Пластинка"
+    "item_name_ru": "Пластинка",
+    "potion": ""
   },
   {
-    "id": "1135",
     "type": "music_disc_relic",
-    "item_name_ru": "Пластинка"
+    "item_name_ru": "Пластинка",
+    "potion": ""
   },
   {
-    "id": "1136",
     "type": "music_disc_5",
-    "item_name_ru": "Пластинка"
+    "item_name_ru": "Пластинка",
+    "potion": ""
   },
   {
-    "id": "1137",
     "type": "music_disc_pigstep",
-    "item_name_ru": "Пластинка"
+    "item_name_ru": "Пластинка",
+    "potion": ""
   },
   {
-    "id": "1138",
     "type": "disc_fragment_5",
-    "item_name_ru": "Осколок пластинки"
+    "item_name_ru": "Осколок пластинки",
+    "potion": ""
   },
   {
-    "id": "1139",
     "type": "trident",
-    "item_name_ru": "Трезубец"
+    "item_name_ru": "Трезубец",
+    "potion": ""
   },
   {
-    "id": "1140",
     "type": "phantom_membrane",
-    "item_name_ru": "Мембрана фантома"
+    "item_name_ru": "Мембрана фантома",
+    "potion": ""
   },
   {
-    "id": "1141",
     "type": "nautilus_shell",
-    "item_name_ru": "Раковина наутилуса"
+    "item_name_ru": "Раковина наутилуса",
+    "potion": ""
   },
   {
-    "id": "1142",
     "type": "heart_of_the_sea",
-    "item_name_ru": "Сердце моря"
+    "item_name_ru": "Сердце моря",
+    "potion": ""
   },
   {
-    "id": "1143",
     "type": "crossbow",
-    "item_name_ru": "Арбалет"
+    "item_name_ru": "Арбалет",
+    "potion": ""
   },
   {
-    "id": "1144",
     "type": "suspicious_stew",
-    "item_name_ru": "Загадочное рагу"
+    "item_name_ru": "Загадочное рагу",
+    "potion": ""
   },
   {
-    "id": "1145",
     "type": "loom",
-    "item_name_ru": "Ткацкий станок"
+    "item_name_ru": "Ткацкий станок",
+    "potion": ""
   },
   {
-    "id": "1146",
     "type": "flower_banner_pattern",
-    "item_name_ru": "Узор флага"
+    "item_name_ru": "Узор флага",
+    "potion": ""
   },
   {
-    "id": "1147",
     "type": "creeper_banner_pattern",
-    "item_name_ru": "Узор флага"
+    "item_name_ru": "Узор флага",
+    "potion": ""
   },
   {
-    "id": "1148",
     "type": "skull_banner_pattern",
-    "item_name_ru": "Узор флага"
+    "item_name_ru": "Узор флага",
+    "potion": ""
   },
   {
-    "id": "1149",
     "type": "mojang_banner_pattern",
-    "item_name_ru": "Узор флага"
+    "item_name_ru": "Узор флага",
+    "potion": ""
   },
   {
-    "id": "1150",
     "type": "globe_banner_pattern",
-    "item_name_ru": "Узор флага"
+    "item_name_ru": "Узор флага",
+    "potion": ""
   },
   {
-    "id": "1151",
     "type": "piglin_banner_pattern",
-    "item_name_ru": "Узор флага"
+    "item_name_ru": "Узор флага",
+    "potion": ""
   },
   {
-    "id": "1152",
     "type": "goat_horn",
-    "item_name_ru": "Козий рог"
+    "item_name_ru": "Козий рог",
+    "potion": ""
   },
   {
-    "id": "1153",
     "type": "composter",
-    "item_name_ru": "Компостница"
+    "item_name_ru": "Компостница",
+    "potion": ""
   },
   {
-    "id": "1154",
     "type": "barrel",
-    "item_name_ru": "Бочка"
+    "item_name_ru": "Бочка",
+    "potion": ""
   },
   {
-    "id": "1155",
     "type": "smoker",
-    "item_name_ru": "Коптильня"
+    "item_name_ru": "Коптильня",
+    "potion": ""
   },
   {
-    "id": "1156",
     "type": "blast_furnace",
-    "item_name_ru": "Плавильная печь"
+    "item_name_ru": "Плавильная печь",
+    "potion": ""
   },
   {
-    "id": "1157",
     "type": "cartography_table",
-    "item_name_ru": "Стол картографа"
+    "item_name_ru": "Стол картографа",
+    "potion": ""
   },
   {
-    "id": "1158",
     "type": "fletching_table",
-    "item_name_ru": "Стол лучника"
+    "item_name_ru": "Стол лучника",
+    "potion": ""
   },
   {
-    "id": "1159",
     "type": "grindstone",
-    "item_name_ru": "Точило"
+    "item_name_ru": "Точило",
+    "potion": ""
   },
   {
-    "id": "1160",
     "type": "smithing_table",
-    "item_name_ru": "Стол кузнеца"
+    "item_name_ru": "Стол кузнеца",
+    "potion": ""
   },
   {
-    "id": "1161",
     "type": "stonecutter",
-    "item_name_ru": "Камнерез"
+    "item_name_ru": "Камнерез",
+    "potion": ""
   },
   {
-    "id": "1162",
     "type": "bell",
-    "item_name_ru": "Колокол"
+    "item_name_ru": "Колокол",
+    "potion": ""
   },
   {
-    "id": "1163",
     "type": "lantern",
-    "item_name_ru": "Фонарь"
+    "item_name_ru": "Фонарь",
+    "potion": ""
   },
   {
-    "id": "1164",
     "type": "soul_lantern",
-    "item_name_ru": "Фонарь душ"
+    "item_name_ru": "Фонарь душ",
+    "potion": ""
   },
   {
-    "id": "1165",
     "type": "sweet_berries",
-    "item_name_ru": "Сладкие ягоды"
+    "item_name_ru": "Сладкие ягоды",
+    "potion": ""
   },
   {
-    "id": "1166",
     "type": "glow_berries",
-    "item_name_ru": "Светящиеся ягоды"
+    "item_name_ru": "Светящиеся ягоды",
+    "potion": ""
   },
   {
-    "id": "1167",
     "type": "campfire",
-    "item_name_ru": "Костёр"
+    "item_name_ru": "Костёр",
+    "potion": ""
   },
   {
-    "id": "1168",
     "type": "soul_campfire",
-    "item_name_ru": "Костёр душ"
+    "item_name_ru": "Костёр душ",
+    "potion": ""
   },
   {
-    "id": "1169",
     "type": "shroomlight",
-    "item_name_ru": "Грибосвет"
+    "item_name_ru": "Грибосвет",
+    "potion": ""
   },
   {
-    "id": "1170",
     "type": "honeycomb",
-    "item_name_ru": "Пчелиные соты"
+    "item_name_ru": "Пчелиные соты",
+    "potion": ""
   },
   {
-    "id": "1171",
     "type": "bee_nest",
-    "item_name_ru": "Пчелиное гнездо"
+    "item_name_ru": "Пчелиное гнездо",
+    "potion": ""
   },
   {
-    "id": "1172",
     "type": "beehive",
-    "item_name_ru": "Улей"
+    "item_name_ru": "Улей",
+    "potion": ""
   },
   {
-    "id": "1173",
     "type": "honey_bottle",
-    "item_name_ru": "Бутылочка мёда"
+    "item_name_ru": "Бутылочка мёда",
+    "potion": ""
   },
   {
-    "id": "1174",
     "type": "honeycomb_block",
-    "item_name_ru": "Блок пчелиных сот"
+    "item_name_ru": "Блок пчелиных сот",
+    "potion": ""
   },
   {
-    "id": "1175",
     "type": "lodestone",
-    "item_name_ru": "Магнетит"
+    "item_name_ru": "Магнетит",
+    "potion": ""
   },
   {
-    "id": "1176",
     "type": "crying_obsidian",
-    "item_name_ru": "Плачущий обсидиан"
+    "item_name_ru": "Плачущий обсидиан",
+    "potion": ""
   },
   {
-    "id": "1177",
     "type": "blackstone",
-    "item_name_ru": "Чернит"
+    "item_name_ru": "Чернит",
+    "potion": ""
   },
   {
-    "id": "1178",
     "type": "blackstone_slab",
-    "item_name_ru": "Чернитная плита"
+    "item_name_ru": "Чернитная плита",
+    "potion": ""
   },
   {
-    "id": "1179",
     "type": "blackstone_stairs",
-    "item_name_ru": "Чернитные ступеньки"
+    "item_name_ru": "Чернитные ступеньки",
+    "potion": ""
   },
   {
-    "id": "1180",
     "type": "gilded_blackstone",
-    "item_name_ru": "Золочёный чернит"
+    "item_name_ru": "Золочёный чернит",
+    "potion": ""
   },
   {
-    "id": "1181",
     "type": "polished_blackstone",
-    "item_name_ru": "Полированный чернит"
+    "item_name_ru": "Полированный чернит",
+    "potion": ""
   },
   {
-    "id": "1182",
     "type": "polished_blackstone_slab",
-    "item_name_ru": "Плита из полированного чернита"
+    "item_name_ru": "Плита из полированного чернита",
+    "potion": ""
   },
   {
-    "id": "1183",
     "type": "polished_blackstone_stairs",
-    "item_name_ru": "Ступеньки из полированного чернита"
+    "item_name_ru": "Ступеньки из полированного чернита",
+    "potion": ""
   },
   {
-    "id": "1184",
     "type": "chiseled_polished_blackstone",
-    "item_name_ru": "Резной полированный чернит"
+    "item_name_ru": "Резной полированный чернит",
+    "potion": ""
   },
   {
-    "id": "1185",
     "type": "polished_blackstone_bricks",
-    "item_name_ru": "Полированно-чернитные кирпичи"
+    "item_name_ru": "Полированно-чернитные кирпичи",
+    "potion": ""
   },
   {
-    "id": "1186",
     "type": "polished_blackstone_brick_slab",
-    "item_name_ru": "Плита из полированно-чернитного кирпича"
+    "item_name_ru": "Плита из полированно-чернитного кирпича",
+    "potion": ""
   },
   {
-    "id": "1187",
     "type": "polished_blackstone_brick_stairs",
-    "item_name_ru": "Ступеньки из полированно-чернитного кирпича"
+    "item_name_ru": "Ступеньки из полированно-чернитного кирпича",
+    "potion": ""
   },
   {
-    "id": "1188",
     "type": "cracked_polished_blackstone_bricks",
-    "item_name_ru": "Потрескавшиеся полированно-чернитные кирпичи"
+    "item_name_ru": "Потрескавшиеся полированно-чернитные кирпичи",
+    "potion": ""
   },
   {
-    "id": "1189",
     "type": "respawn_anchor",
-    "item_name_ru": "Якорь возрождения"
+    "item_name_ru": "Якорь возрождения",
+    "potion": ""
   },
   {
-    "id": "1190",
     "type": "candle",
-    "item_name_ru": "Свеча"
+    "item_name_ru": "Свеча",
+    "potion": ""
   },
   {
-    "id": "1191",
     "type": "white_candle",
-    "item_name_ru": "Белая свеча"
+    "item_name_ru": "Белая свеча",
+    "potion": ""
   },
   {
-    "id": "1192",
     "type": "orange_candle",
-    "item_name_ru": "Оранжевая свеча"
+    "item_name_ru": "Оранжевая свеча",
+    "potion": ""
   },
   {
-    "id": "1193",
     "type": "magenta_candle",
-    "item_name_ru": "Пурпурная свеча"
+    "item_name_ru": "Пурпурная свеча",
+    "potion": ""
   },
   {
-    "id": "1194",
     "type": "light_blue_candle",
-    "item_name_ru": "Голубая свеча"
+    "item_name_ru": "Голубая свеча",
+    "potion": ""
   },
   {
-    "id": "1195",
     "type": "yellow_candle",
-    "item_name_ru": "Жёлтая свеча"
+    "item_name_ru": "Жёлтая свеча",
+    "potion": ""
   },
   {
-    "id": "1196",
     "type": "lime_candle",
-    "item_name_ru": "Лаймовая свеча"
+    "item_name_ru": "Лаймовая свеча",
+    "potion": ""
   },
   {
-    "id": "1197",
     "type": "pink_candle",
-    "item_name_ru": "Розовая свеча"
+    "item_name_ru": "Розовая свеча",
+    "potion": ""
   },
   {
-    "id": "1198",
     "type": "gray_candle",
-    "item_name_ru": "Серая свеча"
+    "item_name_ru": "Серая свеча",
+    "potion": ""
   },
   {
-    "id": "1199",
     "type": "light_gray_candle",
-    "item_name_ru": "Светло-серая свеча"
+    "item_name_ru": "Светло-серая свеча",
+    "potion": ""
   },
   {
-    "id": "1200",
     "type": "cyan_candle",
-    "item_name_ru": "Бирюзовая свеча"
+    "item_name_ru": "Бирюзовая свеча",
+    "potion": ""
   },
   {
-    "id": "1201",
     "type": "purple_candle",
-    "item_name_ru": "Фиолетовая свеча"
+    "item_name_ru": "Фиолетовая свеча",
+    "potion": ""
   },
   {
-    "id": "1202",
     "type": "blue_candle",
-    "item_name_ru": "Синяя свеча"
+    "item_name_ru": "Синяя свеча",
+    "potion": ""
   },
   {
-    "id": "1203",
     "type": "brown_candle",
-    "item_name_ru": "Коричневая свеча"
+    "item_name_ru": "Коричневая свеча",
+    "potion": ""
   },
   {
-    "id": "1204",
     "type": "green_candle",
-    "item_name_ru": "Зелёная свеча"
+    "item_name_ru": "Зелёная свеча",
+    "potion": ""
   },
   {
-    "id": "1205",
     "type": "red_candle",
-    "item_name_ru": "Красная свеча"
+    "item_name_ru": "Красная свеча",
+    "potion": ""
   },
   {
-    "id": "1206",
     "type": "black_candle",
-    "item_name_ru": "Чёрная свеча"
+    "item_name_ru": "Чёрная свеча",
+    "potion": ""
   },
   {
-    "id": "1207",
     "type": "small_amethyst_bud",
-    "item_name_ru": "Малый аметистовый бутон"
+    "item_name_ru": "Малый аметистовый бутон",
+    "potion": ""
   },
   {
-    "id": "1208",
     "type": "medium_amethyst_bud",
-    "item_name_ru": "Средний аметистовый бутон"
+    "item_name_ru": "Средний аметистовый бутон",
+    "potion": ""
   },
   {
-    "id": "1209",
     "type": "large_amethyst_bud",
-    "item_name_ru": "Большой аметистовый бутон"
+    "item_name_ru": "Большой аметистовый бутон",
+    "potion": ""
   },
   {
-    "id": "1210",
     "type": "amethyst_cluster",
-    "item_name_ru": "Аметистовая друза"
+    "item_name_ru": "Аметистовая друза",
+    "potion": ""
   },
   {
-    "id": "1211",
     "type": "pointed_dripstone",
-    "item_name_ru": "Капельник"
+    "item_name_ru": "Капельник",
+    "potion": ""
   },
   {
-    "id": "1212",
     "type": "ochre_froglight",
-    "item_name_ru": "Охристая квампа"
+    "item_name_ru": "Охристая квампа",
+    "potion": ""
   },
   {
-    "id": "1213",
     "type": "verdant_froglight",
-    "item_name_ru": "Малахитовая квампа"
+    "item_name_ru": "Малахитовая квампа",
+    "potion": ""
   },
   {
-    "id": "1214",
     "type": "pearlescent_froglight",
-    "item_name_ru": "Перламутровая квампа"
+    "item_name_ru": "Перламутровая квампа",
+    "potion": ""
   },
   {
-    "id": "1215",
     "type": "frogspawn",
-    "item_name_ru": "Лягушачья икра"
+    "item_name_ru": "Лягушачья икра",
+    "potion": ""
   },
   {
-    "id": "1216",
     "type": "echo_shard",
-    "item_name_ru": "Осколок эха"
+    "item_name_ru": "Осколок эха",
+    "potion": ""
   },
   {
-    "id": "1217",
     "type": "brush",
-    "item_name_ru": "Кисть"
+    "item_name_ru": "Кисть",
+    "potion": ""
   },
   {
-    "id": "1218",
     "type": "netherite_upgrade_smithing_template",
-    "item_name_ru": "Кузнечный шаблон"
+    "item_name_ru": "Кузнечный шаблон",
+    "potion": ""
   },
   {
-    "id": "1219",
     "type": "sentry_armor_trim_smithing_template",
-    "item_name_ru": "Кузнечный шаблон"
+    "item_name_ru": "Кузнечный шаблон",
+    "potion": ""
   },
   {
-    "id": "1220",
     "type": "dune_armor_trim_smithing_template",
-    "item_name_ru": "Кузнечный шаблон"
+    "item_name_ru": "Кузнечный шаблон",
+    "potion": ""
   },
   {
-    "id": "1221",
     "type": "coast_armor_trim_smithing_template",
-    "item_name_ru": "Кузнечный шаблон"
+    "item_name_ru": "Кузнечный шаблон",
+    "potion": ""
   },
   {
-    "id": "1222",
     "type": "wild_armor_trim_smithing_template",
-    "item_name_ru": "Кузнечный шаблон"
+    "item_name_ru": "Кузнечный шаблон",
+    "potion": ""
   },
   {
-    "id": "1223",
     "type": "ward_armor_trim_smithing_template",
-    "item_name_ru": "Кузнечный шаблон"
+    "item_name_ru": "Кузнечный шаблон",
+    "potion": ""
   },
   {
-    "id": "1224",
     "type": "eye_armor_trim_smithing_template",
-    "item_name_ru": "Кузнечный шаблон"
+    "item_name_ru": "Кузнечный шаблон",
+    "potion": ""
   },
   {
-    "id": "1225",
     "type": "vex_armor_trim_smithing_template",
-    "item_name_ru": "Кузнечный шаблон"
+    "item_name_ru": "Кузнечный шаблон",
+    "potion": ""
   },
   {
-    "id": "1226",
     "type": "tide_armor_trim_smithing_template",
-    "item_name_ru": "Кузнечный шаблон"
+    "item_name_ru": "Кузнечный шаблон",
+    "potion": ""
   },
   {
-    "id": "1227",
     "type": "snout_armor_trim_smithing_template",
-    "item_name_ru": "Кузнечный шаблон"
+    "item_name_ru": "Кузнечный шаблон",
+    "potion": ""
   },
   {
-    "id": "1228",
     "type": "rib_armor_trim_smithing_template",
-    "item_name_ru": "Кузнечный шаблон"
+    "item_name_ru": "Кузнечный шаблон",
+    "potion": ""
   },
   {
-    "id": "1229",
     "type": "spire_armor_trim_smithing_template",
-    "item_name_ru": "Кузнечный шаблон"
+    "item_name_ru": "Кузнечный шаблон",
+    "potion": ""
   },
   {
-    "id": "1230",
     "type": "wayfinder_armor_trim_smithing_template",
-    "item_name_ru": "Кузнечный шаблон"
+    "item_name_ru": "Кузнечный шаблон",
+    "potion": ""
   },
   {
-    "id": "1231",
     "type": "shaper_armor_trim_smithing_template",
-    "item_name_ru": "Кузнечный шаблон"
+    "item_name_ru": "Кузнечный шаблон",
+    "potion": ""
   },
   {
-    "id": "1232",
     "type": "silence_armor_trim_smithing_template",
-    "item_name_ru": "Кузнечный шаблон"
+    "item_name_ru": "Кузнечный шаблон",
+    "potion": ""
   },
   {
-    "id": "1233",
     "type": "raiser_armor_trim_smithing_template",
-    "item_name_ru": "Кузнечный шаблон"
+    "item_name_ru": "Кузнечный шаблон",
+    "potion": ""
   },
   {
-    "id": "1234",
     "type": "host_armor_trim_smithing_template",
-    "item_name_ru": "Кузнечный шаблон"
+    "item_name_ru": "Кузнечный шаблон",
+    "potion": ""
   },
   {
-    "id": "1235",
     "type": "angler_pottery_sherd",
-    "item_name_ru": "Глиняный черепок «Рыбак»"
+    "item_name_ru": "Глиняный черепок «Рыбак»",
+    "potion": ""
   },
   {
-    "id": "1236",
     "type": "archer_pottery_sherd",
-    "item_name_ru": "Глиняный черепок «Лучник»"
+    "item_name_ru": "Глиняный черепок «Лучник»",
+    "potion": ""
   },
   {
-    "id": "1237",
     "type": "arms_up_pottery_sherd",
-    "item_name_ru": "Глиняный черепок «Руки вверх»"
+    "item_name_ru": "Глиняный черепок «Руки вверх»",
+    "potion": ""
   },
   {
-    "id": "1238",
     "type": "blade_pottery_sherd",
-    "item_name_ru": "Глиняный черепок «Клинок»"
+    "item_name_ru": "Глиняный черепок «Клинок»",
+    "potion": ""
   },
   {
-    "id": "1239",
     "type": "brewer_pottery_sherd",
-    "item_name_ru": "Глиняный черепок «Зельевар»"
+    "item_name_ru": "Глиняный черепок «Зельевар»",
+    "potion": ""
   },
   {
-    "id": "1240",
     "type": "burn_pottery_sherd",
-    "item_name_ru": "Глиняный черепок «Пламя»"
+    "item_name_ru": "Глиняный черепок «Пламя»",
+    "potion": ""
   },
   {
-    "id": "1241",
     "type": "danger_pottery_sherd",
-    "item_name_ru": "Глиняный черепок «Опасность»"
+    "item_name_ru": "Глиняный черепок «Опасность»",
+    "potion": ""
   },
   {
-    "id": "1242",
     "type": "explorer_pottery_sherd",
-    "item_name_ru": "Глиняный черепок «Исследователь»"
+    "item_name_ru": "Глиняный черепок «Исследователь»",
+    "potion": ""
   },
   {
-    "id": "1243",
     "type": "friend_pottery_sherd",
-    "item_name_ru": "Глиняный черепок «Друг»"
+    "item_name_ru": "Глиняный черепок «Друг»",
+    "potion": ""
   },
   {
-    "id": "1244",
     "type": "heart_pottery_sherd",
-    "item_name_ru": "Глиняный черепок «Сердце»"
+    "item_name_ru": "Глиняный черепок «Сердце»",
+    "potion": ""
   },
   {
-    "id": "1245",
     "type": "heartbreak_pottery_sherd",
-    "item_name_ru": "Глиняный черепок «Разбитое сердце»"
+    "item_name_ru": "Глиняный черепок «Разбитое сердце»",
+    "potion": ""
   },
   {
-    "id": "1246",
     "type": "howl_pottery_sherd",
-    "item_name_ru": "Глиняный черепок «Вой»"
+    "item_name_ru": "Глиняный черепок «Вой»",
+    "potion": ""
   },
   {
-    "id": "1247",
     "type": "miner_pottery_sherd",
-    "item_name_ru": "Глиняный черепок «Шахтёр»"
+    "item_name_ru": "Глиняный черепок «Шахтёр»",
+    "potion": ""
   },
   {
-    "id": "1248",
     "type": "mourner_pottery_sherd",
-    "item_name_ru": "Глиняный черепок «Скорбь»"
+    "item_name_ru": "Глиняный черепок «Скорбь»",
+    "potion": ""
   },
   {
-    "id": "1249",
     "type": "plenty_pottery_sherd",
-    "item_name_ru": "Глиняный черепок «Изобилие»"
+    "item_name_ru": "Глиняный черепок «Изобилие»",
+    "potion": ""
   },
   {
-    "id": "1250",
     "type": "prize_pottery_sherd",
-    "item_name_ru": "Глиняный черепок «Награда»"
+    "item_name_ru": "Глиняный черепок «Награда»",
+    "potion": ""
   },
   {
-    "id": "1251",
     "type": "sheaf_pottery_sherd",
-    "item_name_ru": "Глиняный черепок «Пучок»"
+    "item_name_ru": "Глиняный черепок «Пучок»",
+    "potion": ""
   },
   {
-    "id": "1252",
     "type": "shelter_pottery_sherd",
-    "item_name_ru": "Глиняный черепок «Убежище»"
+    "item_name_ru": "Глиняный черепок «Убежище»",
+    "potion": ""
   },
   {
-    "id": "1253",
     "type": "skull_pottery_sherd",
-    "item_name_ru": "Глиняный черепок «Череп»"
+    "item_name_ru": "Глиняный черепок «Череп»",
+    "potion": ""
   },
   {
-    "id": "1254",
     "type": "snort_pottery_sherd",
-    "item_name_ru": "Глиняный черепок «Нюхач»"
+    "item_name_ru": "Глиняный черепок «Нюхач»",
+    "potion": ""
   },
   {
-    "id": "957-water",
     "type": "potion",
     "item_name_ru": "Бутылочка воды",
     "potion": "water"
   },
   {
-    "id": "957-mundane",
     "type": "potion",
     "item_name_ru": "Заурядное зелье",
     "potion": "mundane"
   },
   {
-    "id": "957-thick",
     "type": "potion",
     "item_name_ru": "Густое зелье",
     "potion": "thick"
   },
   {
-    "id": "957-awkward",
     "type": "potion",
     "item_name_ru": "Мутное зелье",
     "potion": "awkward"
   },
   {
-    "id": "957-night_vision",
     "type": "potion",
     "item_name_ru": "Зелье ночного зрения",
     "potion": "night_vision"
   },
   {
-    "id": "957-long_night_vision",
     "type": "potion",
     "item_name_ru": "Зелье ночного зрения",
     "potion": "long_night_vision"
   },
   {
-    "id": "957-invisibility",
     "type": "potion",
     "item_name_ru": "Зелье невидимости",
     "potion": "invisibility"
   },
   {
-    "id": "957-long_invisibility",
     "type": "potion",
     "item_name_ru": "Зелье невидимости",
     "potion": "long_invisibility"
   },
   {
-    "id": "957-leaping",
     "type": "potion",
     "item_name_ru": "Зелье прыгучести",
     "potion": "leaping"
   },
   {
-    "id": "957-long_leaping",
     "type": "potion",
     "item_name_ru": "Зелье прыгучести",
     "potion": "long_leaping"
   },
   {
-    "id": "957-strong_leaping",
     "type": "potion",
     "item_name_ru": "Зелье прыгучести",
     "potion": "strong_leaping"
   },
   {
-    "id": "957-fire_resistance",
     "type": "potion",
     "item_name_ru": "Зелье огнестойкости",
     "potion": "fire_resistance"
   },
   {
-    "id": "957-long_fire_resistance",
     "type": "potion",
     "item_name_ru": "Зелье огнестойкости",
     "potion": "long_fire_resistance"
   },
   {
-    "id": "957-swiftness",
     "type": "potion",
     "item_name_ru": "Зелье стремительности",
     "potion": "swiftness"
   },
   {
-    "id": "957-long_swiftness",
     "type": "potion",
     "item_name_ru": "Зелье стремительности",
     "potion": "long_swiftness"
   },
   {
-    "id": "957-strong_swiftness",
     "type": "potion",
     "item_name_ru": "Зелье стремительности",
     "potion": "strong_swiftness"
   },
   {
-    "id": "957-slowness",
     "type": "potion",
     "item_name_ru": "Зелье замедления",
     "potion": "slowness"
   },
   {
-    "id": "957-long_slowness",
     "type": "potion",
     "item_name_ru": "Зелье замедления",
     "potion": "long_slowness"
   },
   {
-    "id": "957-strong_slowness",
     "type": "potion",
     "item_name_ru": "Зелье замедления",
     "potion": "strong_slowness"
   },
   {
-    "id": "957-turtle_master",
     "type": "potion",
     "item_name_ru": "Зелье черепашьей мощи",
     "potion": "turtle_master"
   },
   {
-    "id": "957-long_turtle_master",
     "type": "potion",
     "item_name_ru": "Зелье черепашьей мощи",
     "potion": "long_turtle_master"
   },
   {
-    "id": "957-strong_turtle_master",
     "type": "potion",
     "item_name_ru": "Зелье черепашьей мощи",
     "potion": "strong_turtle_master"
   },
   {
-    "id": "957-water_breathing",
     "type": "potion",
     "item_name_ru": "Зелье водного дыхания",
     "potion": "water_breathing"
   },
   {
-    "id": "957-long_water_breathing",
     "type": "potion",
     "item_name_ru": "Зелье водного дыхания",
     "potion": "long_water_breathing"
   },
   {
-    "id": "957-healing",
     "type": "potion",
     "item_name_ru": "Зелье исцеления",
     "potion": "healing"
   },
   {
-    "id": "957-strong_healing",
     "type": "potion",
     "item_name_ru": "Зелье исцеления",
     "potion": "strong_healing"
   },
   {
-    "id": "957-harming",
     "type": "potion",
     "item_name_ru": "Зелье вреда",
     "potion": "harming"
   },
   {
-    "id": "957-strong_harming",
     "type": "potion",
     "item_name_ru": "Зелье вреда",
     "potion": "strong_harming"
   },
   {
-    "id": "957-poison",
     "type": "potion",
     "item_name_ru": "Зелье отравления",
     "potion": "poison"
   },
   {
-    "id": "957-long_poison",
     "type": "potion",
     "item_name_ru": "Зелье отравления",
     "potion": "long_poison"
   },
   {
-    "id": "957-strong_poison",
     "type": "potion",
     "item_name_ru": "Зелье отравления",
     "potion": "strong_poison"
   },
   {
-    "id": "957-regeneration",
     "type": "potion",
     "item_name_ru": "Зелье регенерации",
     "potion": "regeneration"
   },
   {
-    "id": "957-long_regeneration",
     "type": "potion",
     "item_name_ru": "Зелье регенерации",
     "potion": "long_regeneration"
   },
   {
-    "id": "957-strong_regeneration",
     "type": "potion",
     "item_name_ru": "Зелье регенерации",
     "potion": "strong_regeneration"
   },
   {
-    "id": "957-strength",
     "type": "potion",
     "item_name_ru": "Зелье силы",
     "potion": "strength"
   },
   {
-    "id": "957-long_strength",
     "type": "potion",
     "item_name_ru": "Зелье силы",
     "potion": "long_strength"
   },
   {
-    "id": "957-strong_strength",
     "type": "potion",
     "item_name_ru": "Зелье силы",
     "potion": "strong_strength"
   },
   {
-    "id": "957-weakness",
     "type": "potion",
     "item_name_ru": "Зелье слабости",
     "potion": "weakness"
   },
   {
-    "id": "957-long_weakness",
     "type": "potion",
     "item_name_ru": "Зелье слабости",
     "potion": "long_weakness"
   },
   {
-    "id": "957-luck",
     "type": "potion",
     "item_name_ru": "Зелье везения",
     "potion": "luck"
   },
   {
-    "id": "957-slow_falling",
     "type": "potion",
     "item_name_ru": "Зелье плавного падения",
     "potion": "slow_falling"
   },
   {
-    "id": "957-long_slow_falling",
     "type": "potion",
     "item_name_ru": "Зелье плавного падения",
     "potion": "long_slow_falling"
   },
   {
-    "id": "1112-water",
     "type": "splash_potion",
     "item_name_ru": "Взрывная бутылочка воды",
     "potion": "water"
   },
   {
-    "id": "1112-mundane",
     "type": "splash_potion",
     "item_name_ru": "Заурядное взрывное зелье",
     "potion": "mundane"
   },
   {
-    "id": "1112-thick",
     "type": "splash_potion",
     "item_name_ru": "Густое взрывное зелье",
     "potion": "thick"
   },
   {
-    "id": "1112-awkward",
     "type": "splash_potion",
     "item_name_ru": "Мутное взрывное зелье",
     "potion": "awkward"
   },
   {
-    "id": "1112-night_vision",
     "type": "splash_potion",
     "item_name_ru": "Взрывное зелье ночного зрения",
     "potion": "night_vision"
   },
   {
-    "id": "1112-long_night_vision",
     "type": "splash_potion",
     "item_name_ru": "Взрывное зелье ночного зрения",
     "potion": "long_night_vision"
   },
   {
-    "id": "1112-invisibility",
     "type": "splash_potion",
     "item_name_ru": "Взрывное зелье невидимости",
     "potion": "invisibility"
   },
   {
-    "id": "1112-long_invisibility",
     "type": "splash_potion",
     "item_name_ru": "Взрывное зелье невидимости",
     "potion": "long_invisibility"
   },
   {
-    "id": "1112-leaping",
     "type": "splash_potion",
     "item_name_ru": "Взрывное зелье прыгучести",
     "potion": "leaping"
   },
   {
-    "id": "1112-long_leaping",
     "type": "splash_potion",
     "item_name_ru": "Взрывное зелье прыгучести",
     "potion": "long_leaping"
   },
   {
-    "id": "1112-strong_leaping",
     "type": "splash_potion",
     "item_name_ru": "Взрывное зелье прыгучести",
     "potion": "strong_leaping"
   },
   {
-    "id": "1112-fire_resistance",
     "type": "splash_potion",
     "item_name_ru": "Взрывное зелье огнестойкости",
     "potion": "fire_resistance"
   },
   {
-    "id": "1112-long_fire_resistance",
     "type": "splash_potion",
     "item_name_ru": "Взрывное зелье огнестойкости",
     "potion": "long_fire_resistance"
   },
   {
-    "id": "1112-swiftness",
     "type": "splash_potion",
     "item_name_ru": "Взрывное зелье стремительности",
     "potion": "swiftness"
   },
   {
-    "id": "1112-long_swiftness",
     "type": "splash_potion",
     "item_name_ru": "Взрывное зелье стремительности",
     "potion": "long_swiftness"
   },
   {
-    "id": "1112-strong_swiftness",
     "type": "splash_potion",
     "item_name_ru": "Взрывное зелье стремительности",
     "potion": "strong_swiftness"
   },
   {
-    "id": "1112-slowness",
     "type": "splash_potion",
     "item_name_ru": "Взрывное зелье замедления",
     "potion": "slowness"
   },
   {
-    "id": "1112-long_slowness",
     "type": "splash_potion",
     "item_name_ru": "Взрывное зелье замедления",
     "potion": "long_slowness"
   },
   {
-    "id": "1112-strong_slowness",
     "type": "splash_potion",
     "item_name_ru": "Взрывное зелье замедления",
     "potion": "strong_slowness"
   },
   {
-    "id": "1112-turtle_master",
     "type": "splash_potion",
     "item_name_ru": "Взрывное зелье черепашьей мощи",
     "potion": "turtle_master"
   },
   {
-    "id": "1112-long_turtle_master",
     "type": "splash_potion",
     "item_name_ru": "Взрывное зелье черепашьей мощи",
     "potion": "long_turtle_master"
   },
   {
-    "id": "1112-strong_turtle_master",
     "type": "splash_potion",
     "item_name_ru": "Взрывное зелье черепашьей мощи",
     "potion": "strong_turtle_master"
   },
   {
-    "id": "1112-water_breathing",
     "type": "splash_potion",
     "item_name_ru": "Взрывное зелье водного дыхания",
     "potion": "water_breathing"
   },
   {
-    "id": "1112-long_water_breathing",
     "type": "splash_potion",
     "item_name_ru": "Взрывное зелье водного дыхания",
     "potion": "long_water_breathing"
   },
   {
-    "id": "1112-healing",
     "type": "splash_potion",
     "item_name_ru": "Взрывное зелье исцеления",
     "potion": "healing"
   },
   {
-    "id": "1112-strong_healing",
     "type": "splash_potion",
     "item_name_ru": "Взрывное зелье исцеления",
     "potion": "strong_healing"
   },
   {
-    "id": "1112-harming",
     "type": "splash_potion",
     "item_name_ru": "Взрывное зелье вреда",
     "potion": "harming"
   },
   {
-    "id": "1112-strong_harming",
     "type": "splash_potion",
     "item_name_ru": "Взрывное зелье вреда",
     "potion": "strong_harming"
   },
   {
-    "id": "1112-poison",
     "type": "splash_potion",
     "item_name_ru": "Взрывное зелье отравления",
     "potion": "poison"
   },
   {
-    "id": "1112-long_poison",
     "type": "splash_potion",
     "item_name_ru": "Взрывное зелье отравления",
     "potion": "long_poison"
   },
   {
-    "id": "1112-strong_poison",
     "type": "splash_potion",
     "item_name_ru": "Взрывное зелье отравления",
     "potion": "strong_poison"
   },
   {
-    "id": "1112-regeneration",
     "type": "splash_potion",
     "item_name_ru": "Взрывное зелье регенерации",
     "potion": "regeneration"
   },
   {
-    "id": "1112-long_regeneration",
     "type": "splash_potion",
     "item_name_ru": "Взрывное зелье регенерации",
     "potion": "long_regeneration"
   },
   {
-    "id": "1112-strong_regeneration",
     "type": "splash_potion",
     "item_name_ru": "Взрывное зелье регенерации",
     "potion": "strong_regeneration"
   },
   {
-    "id": "1112-strength",
     "type": "splash_potion",
     "item_name_ru": "Взрывное зелье силы",
     "potion": "strength"
   },
   {
-    "id": "1112-long_strength",
     "type": "splash_potion",
     "item_name_ru": "Взрывное зелье силы",
     "potion": "long_strength"
   },
   {
-    "id": "1112-strong_strength",
     "type": "splash_potion",
     "item_name_ru": "Взрывное зелье силы",
     "potion": "strong_strength"
   },
   {
-    "id": "1112-weakness",
     "type": "splash_potion",
     "item_name_ru": "Взрывное зелье слабости",
     "potion": "weakness"
   },
   {
-    "id": "1112-long_weakness",
     "type": "splash_potion",
     "item_name_ru": "Взрывное зелье слабости",
     "potion": "long_weakness"
   },
   {
-    "id": "1112-luck",
     "type": "splash_potion",
     "item_name_ru": "Взрывное зелье везения",
     "potion": "luck"
   },
   {
-    "id": "1112-slow_falling",
     "type": "splash_potion",
     "item_name_ru": "Взрывное зелье плавного падения",
     "potion": "slow_falling"
   },
   {
-    "id": "1112-long_slow_falling",
     "type": "splash_potion",
     "item_name_ru": "Взрывное зелье плавного падения",
     "potion": "long_slow_falling"
   },
   {
-    "id": "1114-water",
     "type": "tipped_arrow",
     "item_name_ru": "Взрывная стрела",
     "potion": "water"
   },
   {
-    "id": "1114-mundane",
     "type": "tipped_arrow",
     "item_name_ru": "Обработанная стрела",
     "potion": "mundane"
   },
   {
-    "id": "1114-thick",
     "type": "tipped_arrow",
     "item_name_ru": "Обработанная стрела",
     "potion": "thick"
   },
   {
-    "id": "1114-awkward",
     "type": "tipped_arrow",
     "item_name_ru": "Обработанная стрела",
     "potion": "awkward"
   },
   {
-    "id": "1114-night_vision",
     "type": "tipped_arrow",
     "item_name_ru": "Стрела ночного зрения",
     "potion": "night_vision"
   },
   {
-    "id": "1114-long_night_vision",
     "type": "tipped_arrow",
     "item_name_ru": "Стрела ночного зрения",
     "potion": "long_night_vision"
   },
   {
-    "id": "1114-invisibility",
     "type": "tipped_arrow",
     "item_name_ru": "Стрела невидимости",
     "potion": "invisibility"
   },
   {
-    "id": "1114-long_invisibility",
     "type": "tipped_arrow",
     "item_name_ru": "Стрела невидимости",
     "potion": "long_invisibility"
   },
   {
-    "id": "1114-leaping",
     "type": "tipped_arrow",
     "item_name_ru": "Стрела прыгучести",
     "potion": "leaping"
   },
   {
-    "id": "1114-long_leaping",
     "type": "tipped_arrow",
     "item_name_ru": "Стрела прыгучести",
     "potion": "long_leaping"
   },
   {
-    "id": "1114-strong_leaping",
     "type": "tipped_arrow",
     "item_name_ru": "Стрела прыгучести",
     "potion": "strong_leaping"
   },
   {
-    "id": "1114-fire_resistance",
     "type": "tipped_arrow",
     "item_name_ru": "Стрела огнестойкости",
     "potion": "fire_resistance"
   },
   {
-    "id": "1114-long_fire_resistance",
     "type": "tipped_arrow",
     "item_name_ru": "Стрела огнестойкости",
     "potion": "long_fire_resistance"
   },
   {
-    "id": "1114-swiftness",
     "type": "tipped_arrow",
     "item_name_ru": "Стрела стремительности",
     "potion": "swiftness"
   },
   {
-    "id": "1114-long_swiftness",
     "type": "tipped_arrow",
     "item_name_ru": "Стрела стремительности",
     "potion": "long_swiftness"
   },
   {
-    "id": "1114-strong_swiftness",
     "type": "tipped_arrow",
     "item_name_ru": "Стрела стремительности",
     "potion": "strong_swiftness"
   },
   {
-    "id": "1114-slowness",
     "type": "tipped_arrow",
     "item_name_ru": "Стрела замедления",
     "potion": "slowness"
   },
   {
-    "id": "1114-long_slowness",
     "type": "tipped_arrow",
     "item_name_ru": "Стрела замедления",
     "potion": "long_slowness"
   },
   {
-    "id": "1114-strong_slowness",
     "type": "tipped_arrow",
     "item_name_ru": "Стрела замедления",
     "potion": "strong_slowness"
   },
   {
-    "id": "1114-turtle_master",
     "type": "tipped_arrow",
     "item_name_ru": "Стрела черепашьей мощи",
     "potion": "turtle_master"
   },
   {
-    "id": "1114-long_turtle_master",
     "type": "tipped_arrow",
     "item_name_ru": "Стрела черепашьей мощи",
     "potion": "long_turtle_master"
   },
   {
-    "id": "1114-strong_turtle_master",
     "type": "tipped_arrow",
     "item_name_ru": "Стрела черепашьей мощи",
     "potion": "strong_turtle_master"
   },
   {
-    "id": "1114-water_breathing",
     "type": "tipped_arrow",
     "item_name_ru": "Стрела водного дыхания",
     "potion": "water_breathing"
   },
   {
-    "id": "1114-long_water_breathing",
     "type": "tipped_arrow",
     "item_name_ru": "Стрела водного дыхания",
     "potion": "long_water_breathing"
   },
   {
-    "id": "1114-healing",
     "type": "tipped_arrow",
     "item_name_ru": "Стрела исцеления",
     "potion": "healing"
   },
   {
-    "id": "1114-strong_healing",
     "type": "tipped_arrow",
     "item_name_ru": "Стрела исцеления",
     "potion": "strong_healing"
   },
   {
-    "id": "1114-harming",
     "type": "tipped_arrow",
     "item_name_ru": "Стрела вреда",
     "potion": "harming"
   },
   {
-    "id": "1114-strong_harming",
     "type": "tipped_arrow",
     "item_name_ru": "Стрела вреда",
     "potion": "strong_harming"
   },
   {
-    "id": "1114-poison",
     "type": "tipped_arrow",
     "item_name_ru": "Стрела отравления",
     "potion": "poison"
   },
   {
-    "id": "1114-long_poison",
     "type": "tipped_arrow",
     "item_name_ru": "Стрела отравления",
     "potion": "long_poison"
   },
   {
-    "id": "1114-strong_poison",
     "type": "tipped_arrow",
     "item_name_ru": "Стрела отравления",
     "potion": "strong_poison"
   },
   {
-    "id": "1114-regeneration",
     "type": "tipped_arrow",
     "item_name_ru": "Стрела регенерации",
     "potion": "regeneration"
   },
   {
-    "id": "1114-long_regeneration",
     "type": "tipped_arrow",
     "item_name_ru": "Стрела регенерации",
     "potion": "long_regeneration"
   },
   {
-    "id": "1114-strong_regeneration",
     "type": "tipped_arrow",
     "item_name_ru": "Стрела регенерации",
     "potion": "strong_regeneration"
   },
   {
-    "id": "1114-strength",
     "type": "tipped_arrow",
     "item_name_ru": "Стрела силы",
     "potion": "strength"
   },
   {
-    "id": "1114-long_strength",
     "type": "tipped_arrow",
     "item_name_ru": "Стрела силы",
     "potion": "long_strength"
   },
   {
-    "id": "1114-strong_strength",
     "type": "tipped_arrow",
     "item_name_ru": "Стрела силы",
     "potion": "strong_strength"
   },
   {
-    "id": "1114-weakness",
     "type": "tipped_arrow",
     "item_name_ru": "Стрела слабости",
     "potion": "weakness"
   },
   {
-    "id": "1114-long_weakness",
     "type": "tipped_arrow",
     "item_name_ru": "Стрела слабости",
     "potion": "long_weakness"
   },
   {
-    "id": "1114-luck",
     "type": "tipped_arrow",
     "item_name_ru": "Стрела везения",
     "potion": "luck"
   },
   {
-    "id": "1114-slow_falling",
     "type": "tipped_arrow",
     "item_name_ru": "Стрела плавного падения",
     "potion": "slow_falling"
   },
   {
-    "id": "1114-long_slow_falling",
     "type": "tipped_arrow",
     "item_name_ru": "Стрела плавного падения",
     "potion": "long_slow_falling"
   },
   {
-    "id": "1115-water",
     "type": "lingering_potion",
     "item_name_ru": "Бутылочка с водяной взвесью",
     "potion": "water"
   },
   {
-    "id": "1115-mundane",
     "type": "lingering_potion",
     "item_name_ru": "Заурядное туманное зелье",
     "potion": "mundane"
   },
   {
-    "id": "1115-thick",
     "type": "lingering_potion",
     "item_name_ru": "Густое туманное зелье",
     "potion": "thick"
   },
   {
-    "id": "1115-awkward",
     "type": "lingering_potion",
     "item_name_ru": "Мутное туманное зелье",
     "potion": "awkward"
   },
   {
-    "id": "1115-night_vision",
     "type": "lingering_potion",
     "item_name_ru": "Туманное зелье ночного зрения",
     "potion": "night_vision"
   },
   {
-    "id": "1115-long_night_vision",
     "type": "lingering_potion",
     "item_name_ru": "Туманное зелье ночного зрения",
     "potion": "long_night_vision"
   },
   {
-    "id": "1115-invisibility",
     "type": "lingering_potion",
     "item_name_ru": "Туманное зелье невидимости",
     "potion": "invisibility"
   },
   {
-    "id": "1115-long_invisibility",
     "type": "lingering_potion",
     "item_name_ru": "Туманное зелье невидимости",
     "potion": "long_invisibility"
   },
   {
-    "id": "1115-leaping",
     "type": "lingering_potion",
     "item_name_ru": "Туманное зелье прыгучести",
     "potion": "leaping"
   },
   {
-    "id": "1115-long_leaping",
     "type": "lingering_potion",
     "item_name_ru": "Туманное зелье прыгучести",
     "potion": "long_leaping"
   },
   {
-    "id": "1115-strong_leaping",
     "type": "lingering_potion",
     "item_name_ru": "Туманное зелье прыгучести",
     "potion": "strong_leaping"
   },
   {
-    "id": "1115-fire_resistance",
     "type": "lingering_potion",
     "item_name_ru": "Туманное зелье огнестойкости",
     "potion": "fire_resistance"
   },
   {
-    "id": "1115-long_fire_resistance",
     "type": "lingering_potion",
     "item_name_ru": "Туманное зелье огнестойкости",
     "potion": "long_fire_resistance"
   },
   {
-    "id": "1115-swiftness",
     "type": "lingering_potion",
     "item_name_ru": "Туманное зелье стремительности",
     "potion": "swiftness"
   },
   {
-    "id": "1115-long_swiftness",
     "type": "lingering_potion",
     "item_name_ru": "Туманное зелье стремительности",
     "potion": "long_swiftness"
   },
   {
-    "id": "1115-strong_swiftness",
     "type": "lingering_potion",
     "item_name_ru": "Туманное зелье стремительности",
     "potion": "strong_swiftness"
   },
   {
-    "id": "1115-slowness",
     "type": "lingering_potion",
     "item_name_ru": "Туманное зелье замедления",
     "potion": "slowness"
   },
   {
-    "id": "1115-long_slowness",
     "type": "lingering_potion",
     "item_name_ru": "Туманное зелье замедления",
     "potion": "long_slowness"
   },
   {
-    "id": "1115-strong_slowness",
     "type": "lingering_potion",
     "item_name_ru": "Туманное зелье замедления",
     "potion": "strong_slowness"
   },
   {
-    "id": "1115-turtle_master",
     "type": "lingering_potion",
     "item_name_ru": "Туманное зелье черепашьей мощи",
     "potion": "turtle_master"
   },
   {
-    "id": "1115-long_turtle_master",
     "type": "lingering_potion",
     "item_name_ru": "Туманное зелье черепашьей мощи",
     "potion": "long_turtle_master"
   },
   {
-    "id": "1115-strong_turtle_master",
     "type": "lingering_potion",
     "item_name_ru": "Туманное зелье черепашьей мощи",
     "potion": "strong_turtle_master"
   },
   {
-    "id": "1115-water_breathing",
     "type": "lingering_potion",
     "item_name_ru": "Туманное зелье водного дыхания",
     "potion": "water_breathing"
   },
   {
-    "id": "1115-long_water_breathing",
     "type": "lingering_potion",
     "item_name_ru": "Туманное зелье водного дыхания",
     "potion": "long_water_breathing"
   },
   {
-    "id": "1115-healing",
     "type": "lingering_potion",
     "item_name_ru": "Туманное зелье исцеления",
     "potion": "healing"
   },
   {
-    "id": "1115-strong_healing",
     "type": "lingering_potion",
     "item_name_ru": "Туманное зелье исцеления",
     "potion": "strong_healing"
   },
   {
-    "id": "1115-harming",
     "type": "lingering_potion",
     "item_name_ru": "Туманное зелье вреда",
     "potion": "harming"
   },
   {
-    "id": "1115-strong_harming",
     "type": "lingering_potion",
     "item_name_ru": "Туманное зелье вреда",
     "potion": "strong_harming"
   },
   {
-    "id": "1115-poison",
     "type": "lingering_potion",
     "item_name_ru": "Туманное зелье отравления",
     "potion": "poison"
   },
   {
-    "id": "1115-long_poison",
     "type": "lingering_potion",
     "item_name_ru": "Туманное зелье отравления",
     "potion": "long_poison"
   },
   {
-    "id": "1115-strong_poison",
     "type": "lingering_potion",
     "item_name_ru": "Туманное зелье отравления",
     "potion": "strong_poison"
   },
   {
-    "id": "1115-regeneration",
     "type": "lingering_potion",
     "item_name_ru": "Туманное зелье регенерации",
     "potion": "regeneration"
   },
   {
-    "id": "1115-long_regeneration",
     "type": "lingering_potion",
     "item_name_ru": "Туманное зелье регенерации",
     "potion": "long_regeneration"
   },
   {
-    "id": "1115-strong_regeneration",
     "type": "lingering_potion",
     "item_name_ru": "Туманное зелье регенерации",
     "potion": "strong_regeneration"
   },
   {
-    "id": "1115-strength",
     "type": "lingering_potion",
     "item_name_ru": "Туманное зелье силы",
     "potion": "strength"
   },
   {
-    "id": "1115-long_strength",
     "type": "lingering_potion",
     "item_name_ru": "Туманное зелье силы",
     "potion": "long_strength"
   },
   {
-    "id": "1115-strong_strength",
     "type": "lingering_potion",
     "item_name_ru": "Туманное зелье силы",
     "potion": "strong_strength"
   },
   {
-    "id": "1115-weakness",
     "type": "lingering_potion",
     "item_name_ru": "Туманное зелье слабости",
     "potion": "weakness"
   },
   {
-    "id": "1115-long_weakness",
     "type": "lingering_potion",
     "item_name_ru": "Туманное зелье слабости",
     "potion": "long_weakness"
   },
   {
-    "id": "1115-luck",
     "type": "lingering_potion",
     "item_name_ru": "Туманное зелье везения",
     "potion": "luck"
   },
   {
-    "id": "1115-slow_falling",
     "type": "lingering_potion",
     "item_name_ru": "Туманное зелье плавного падения",
     "potion": "slow_falling"
   },
   {
-    "id": "1115-long_slow_falling",
     "type": "lingering_potion",
     "item_name_ru": "Туманное зелье плавного падения",
     "potion": "long_slow_falling"

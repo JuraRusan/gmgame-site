@@ -48,40 +48,55 @@ const OneItem = (props) => {
     visibility: tooltipVisible ? 'visible' : 'hidden'
   };
 
+  const listEnchant =
+    <ul className={classNames(styles["listWrapper"])}>
+      {props.enchantsList?.map((el, i) => (
+        <li className={classNames(styles["list"])} key={i}>
+          {el.enchant_id_ru !== "Проклятье утраты" && el.enchant_id_ru !== "Проклятие несъёмности"
+            ?
+            <>
+              <span className={classNames(styles["main"])}>{el.enchant_id_ru} </span>- {el.lvl}
+            </>
+            :
+            <>
+              <span className={classNames(styles["red"])}>{el.enchant_id_ru} </span>- {el.lvl}
+            </>
+          }
+
+        </li>
+      ))}
+    </ul>
+
   return (
     <div className={classNames(styles["oneItemBlock"])} onClick={props.onClick}>
       <div className={classNames(styles["photoItem"])} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <span className={classNames(styles["itemCount"])}>{props.item_count}</span>
-        <LazyLoadImage
-          className={classNames(styles["image"])}
-          src={`./site_assets/minecraft-item/png/${props.item_minecraft_name_id}.png`}
-          width="100%"
-          height="100%"
-          effect="blur"
-          alt="none"
-        />
+        {props.item_minecraft_name_id === "tipped_arrow" || props.item_minecraft_name_id === "splash_potion" || props.item_minecraft_name_id === "potion" || props.item_minecraft_name_id === "lingering_potion"
+          ?
+          <LazyLoadImage
+            className={classNames(styles["image"])}
+            src={`./site_assets/minecraft-item/png/${props.item_minecraft_name_id}_${props.item_minecraft_id_potion}.png`}
+            width="100%"
+            height="100%"
+            effect="blur"
+            alt="none"
+          />
+          :
+          <LazyLoadImage
+            className={classNames(styles["image"])}
+            src={`./site_assets/minecraft-item/png/${props.item_minecraft_name_id}.png`}
+            width="100%"
+            height="100%"
+            effect="blur"
+            alt="none"
+          />
+        }
       </div>
       {shulkers_type.includes(props.item_minecraft_name_id)
         ?
         <div className={classNames(styles["tooltip"])} style={tooltipStyle}>
           <h3 className={classNames(styles["name"])}>{props.item_name_title}</h3>
-          <ul className={classNames(styles["listWrapper"])}>
-            {props.enchantsList?.map((el, i) => (
-              <li className={classNames(styles["list"])} key={i}>
-                {el.enchant_id_ru !== "Проклятье утраты" && el.enchant_id_ru !== "Проклятие несъёмности"
-                  ?
-                  <>
-                    <span className={classNames(styles["main"])}>{el.enchant_id_ru} </span>- {el.lvl}
-                  </>
-                  :
-                  <>
-                    <span className={classNames(styles["red"])}>{el.enchant_id_ru} </span>- {el.lvl}
-                  </>
-                }
-
-              </li>
-            ))}
-          </ul>
+          {listEnchant}
           <p className={classNames(styles["minecraftId"])}>minecraft:{props.item_minecraft_name_id}</p>
           <div className={classNames(styles["scale"])}>
             <ShulkerBox content={props.contentHover}/>
@@ -90,24 +105,8 @@ const OneItem = (props) => {
         :
         <div className={classNames(styles["tooltip"])} style={tooltipStyle}>
           <h3 className={classNames(styles["name"])}>{props.item_name_title}</h3>
-          <ul className={classNames(styles["listWrapper"])}>
-            {props.enchantsList?.map((el, i) => (
-              <li className={classNames(styles["list"])} key={i}>
-                {el.enchant_id_ru !== "Проклятье утраты" && el.enchant_id_ru !== "Проклятие несъёмности"
-                  ?
-                  <>
-                    <span className={classNames(styles["main"])}>{el.enchant_id_ru} </span>- {el.lvl}
-                  </>
-                  :
-                  <>
-                    <span className={classNames(styles["red"])}>{el.enchant_id_ru} </span>- {el.lvl}
-                  </>
-                }
-
-              </li>
-            ))}
-          </ul>
-          <p className={classNames(styles["minecraftId"])}>minecraft:{props.item_minecraft_name_id}</p>
+          {listEnchant}
+          <p className={classNames(styles["minecraftId"])}>minecraft:{props.item_minecraft_name_id} {props.item_minecraft_id_potion === "" || props.item_minecraft_id_potion === undefined || props.item_minecraft_id_potion === null ? "" : `. [${props.item_minecraft_id_potion}]`}</p>
         </div>
       }
     </div>

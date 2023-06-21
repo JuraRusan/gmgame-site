@@ -232,19 +232,19 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":true,"color":"white","text":"1"},{"bold":true,"italic":true,"obfuscated":false,"color":"dark_red","text":"В"},{"bold":false,"italic":false,"strikethrough":true,"color":"red","text":"о"},{"bold":true,"italic":false,"strikethrough":false,"color":"gold","text":"л"},{"bold":false,"italic":false,"underlined":true,"color":"yellow","text":"ш"},{"bold":true,"italic":false,"underlined":false,"color":"green","text":"е"},{"bold":false,"italic":true,"color":"dark_green","text":"б"},{"bold":true,"italic":false,"color":"dark_aqua","text":"н"},{"bold":false,"italic":false,"strikethrough":true,"color":"aqua","text":"о"},{"bold":true,"italic":false,"strikethrough":false,"color":"dark_blue","text":"е
             "},{"bold":false,"italic":false,"color":"blue","text":"п"},{"bold":true,"italic":false,"color":"dark_purple","text":"е"},{"bold":false,"italic":false,"color":"light_purple","text":"р"},{"bold":true,"italic":false,"color":"dark_red","text":"е"},{"bold":false,"italic":false,"color":"red","text":"и"},{"bold":true,"italic":false,"color":"gold","text":"м"},{"bold":false,"italic":false,"underlined":true,"color":"yellow","text":"е"},{"bold":true,"italic":false,"underlined":false,"color":"green","text":"н"},{"bold":false,"italic":true,"strikethrough":true,"color":"dark_green","text":"о"},{"bold":true,"italic":false,"strikethrough":false,"color":"dark_aqua","text":"в"},{"bold":false,"italic":false,"color":"aqua","text":"а"},{"bold":true,"italic":false,"color":"dark_blue","text":"н"},{"bold":false,"italic":false,"underlined":true,"color":"blue","text":"и"},{"bold":true,"italic":false,"underlined":false,"color":"dark_purple","text":"е"},{"bold":false,"italic":false,"obfuscated":true,"color":"white","text":"1"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"С
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"С
             помощью этой книги"}],"text":""}'
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Вы
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Вы
             можете получить услугу"}],"text":""}'
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"цветного
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"цветного
             переименования предмета"}],"text":""}'
           title: .
           author: Blackirita
           pages:
-          - '{"extra":[{"text":"===================\n        Талон на\n    переименование\n===================\n\nС
+            - '{"extra":[{"text":"===================\n        Талон на\n    переименование\n===================\n\nС
             помощью этой книги вы можете обратиться к @Блэки, чтобы запросить цветное
             переименование вашего предмета. "}],"text":""}'
-          - '{"extra":[{"text":"Цвета вы можете посмотреть в канале #нужное. Текст
+            - '{"extra":[{"text":"Цвета вы можете посмотреть в канале #нужное. Текст
             также можно сделать жирным, курсивным подчеркнутым, зачеркнытым, а также
             бегающими символами и добавить туда смайлы.\nЭтим талоном можно назвать
             от 1-го до 3-х предметов одним и тем же названием."}],"text":""}'
@@ -462,7 +462,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Щит
             🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Защитит
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Защитит
             всё"}],"text":""}'
           enchants:
             MENDING: 1
@@ -485,7 +485,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Защитный
             шлем 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Продли
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Продли
             задержку дыхания под водой"}],"text":""}'
           enchants:
             WATER_WORKER: 1
@@ -510,7 +510,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Защитный
             черепаший шлем 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Получи
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Получи
             способность дышать под водой"}],"text":""}'
           enchants:
             WATER_WORKER: 1
@@ -535,7 +535,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Защитная
             кираса 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Просто
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Просто
             защита"}],"text":""}'
           enchants:
             MENDING: 1
@@ -558,7 +558,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Защитные
             штаны 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Просто
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Просто
             защита"}],"text":""}'
           enchants:
             MENDING: 1
@@ -581,7 +581,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Защитные
             сапоги 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Увеличь
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Увеличь
             скорость ходьбы под водой"}],"text":""}'
           enchants:
             DEPTH_STRIDER: 3
@@ -607,7 +607,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Шипастый
             защитный шлем 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Продли
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Продли
             задержку дыхания под водой"}],"text":""}'
           enchants:
             WATER_WORKER: 1
@@ -633,7 +633,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Шипастый
             защитный черепаший шлем 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Получи
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Получи
             способность дышать под водой"}],"text":""}'
           enchants:
             WATER_WORKER: 1
@@ -659,7 +659,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Шипастая
             защитная кираса 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Просто
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Просто
             шипы и защита"}],"text":""}'
           enchants:
             MENDING: 1
@@ -683,7 +683,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Шипастые
             защитные штаны 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Просто
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Просто
             шипы и защита"}],"text":""}'
           enchants:
             MENDING: 1
@@ -707,7 +707,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Шипастые
             защитные сапоги 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Увеличь
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Увеличь
             скорость ходьбы под водой"}],"text":""}'
           enchants:
             DEPTH_STRIDER: 3
@@ -734,7 +734,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Непробиваемый
             шлем 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Продли
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Продли
             задержку дыхания под водой"}],"text":""}'
           enchants:
             WATER_WORKER: 1
@@ -759,7 +759,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Непробиваемый
             черепаший шлем 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Получи
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Получи
             способность дышать под водой"}],"text":""}'
           enchants:
             WATER_WORKER: 1
@@ -784,7 +784,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Непробиваемая
             кираса 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Просто
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Просто
             защита от снарядов"}],"text":""}'
           enchants:
             MENDING: 1
@@ -807,7 +807,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Непробиваемые
             штаны 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Просто
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Просто
             защита от снарядов"}],"text":""}'
           enchants:
             MENDING: 1
@@ -830,7 +830,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Непробиваемые
             сапоги 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Увеличь
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Увеличь
             скорость ходьбы под водой"}],"text":""}'
           enchants:
             DEPTH_STRIDER: 3
@@ -856,7 +856,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Шипастый
             непробиваемый шлем 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Продли
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Продли
             задержку дыхания под водой"}],"text":""}'
           enchants:
             WATER_WORKER: 1
@@ -882,7 +882,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Шипастый
             непробиваемый черепаший шлем 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Получи
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Получи
             способность дышать под водой"}],"text":""}'
           enchants:
             WATER_WORKER: 1
@@ -908,7 +908,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Шипастая
             непробиваемая кираса 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Просто
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Просто
             шипы и защита от снарядов"}],"text":""}'
           enchants:
             MENDING: 1
@@ -932,7 +932,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Шипастые
             непробиваемые штаны 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Просто
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Просто
             шипы и защита от снарядов"}],"text":""}'
           enchants:
             MENDING: 1
@@ -956,7 +956,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Шипастые
             непробиваемые сапоги 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Увеличь
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Увеличь
             скорость ходьбы под водой"}],"text":""}'
           enchants:
             DEPTH_STRIDER: 3
@@ -983,7 +983,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Огнеупорный
             шлем 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Продли
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Продли
             задержку дыхания под водой"}],"text":""}'
           enchants:
             WATER_WORKER: 1
@@ -1008,7 +1008,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Огнеупорный
             черепаший шлем 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Получи
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Получи
             способность дышать под водой"}],"text":""}'
           enchants:
             WATER_WORKER: 1
@@ -1033,7 +1033,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Огнеупорная
             кираса 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Просто
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Просто
             огнеупорность"}],"text":""}'
           enchants:
             PROTECTION_FIRE: 4
@@ -1056,7 +1056,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Огнеупорные
             штаны 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Просто
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Просто
             огнеупорность"}],"text":""}'
           enchants:
             PROTECTION_FIRE: 4
@@ -1079,7 +1079,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Огнеупорные
             сапоги 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Увеличь
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Увеличь
             скорость ходьбы под водой"}],"text":""}'
           enchants:
             DEPTH_STRIDER: 3
@@ -1105,7 +1105,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Шипастый
             огнеупорный шлем 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Продли
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Продли
             задержку дыхания под водой"}],"text":""}'
           enchants:
             WATER_WORKER: 1
@@ -1131,7 +1131,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Шипастый
             огнеупорный черепаший шлем 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Получи
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Получи
             способность дышать под водой"}],"text":""}'
           enchants:
             WATER_WORKER: 1
@@ -1157,7 +1157,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Шипастая
             огнеупорная кираса 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Просто
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Просто
             шипы и огнеупорность"}],"text":""}'
           enchants:
             PROTECTION_FIRE: 4
@@ -1181,7 +1181,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Шипастые
             огнеупорные штаны 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Просто
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Просто
             шипы и огнеупорность"}],"text":""}'
           enchants:
             PROTECTION_FIRE: 4
@@ -1205,7 +1205,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Шипастые
             огнеупорные сапоги 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Увеличь
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Увеличь
             скорость ходьбы под водой"}],"text":""}'
           enchants:
             DEPTH_STRIDER: 3
@@ -1232,7 +1232,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Взрывоустойчивый
             шлем 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Продли
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Продли
             задержку дыхания под водой"}],"text":""}'
           enchants:
             WATER_WORKER: 1
@@ -1257,7 +1257,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Взрывоустойчивый
             черепаший шлем 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Получи
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Получи
             способность дышать под водой"}],"text":""}'
           enchants:
             WATER_WORKER: 1
@@ -1282,7 +1282,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Взрывоустойчивая
             кираса 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Просто
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Просто
             взрывоустойчивость"}],"text":""}'
           enchants:
             PROTECTION_EXPLOSIONS: 4
@@ -1305,7 +1305,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Взрывоустойчивые
             штаны 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Просто
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Просто
             взрывоустойчивость"}],"text":""}'
           enchants:
             PROTECTION_EXPLOSIONS: 4
@@ -1328,7 +1328,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Взрывоустойчивые
             сапоги 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Увеличь
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Увеличь
             скорость ходьбы под водой"}],"text":""}'
           enchants:
             PROTECTION_EXPLOSIONS: 4
@@ -1354,7 +1354,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Шипастый
             взрывоустойчивый шлем 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Продли
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Продли
             задержку дыхания под водой"}],"text":""}'
           enchants:
             WATER_WORKER: 1
@@ -1380,7 +1380,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Шипастый
             взрывоустойчивый черепаший шлем 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Получи
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Получи
             способность дышать под водой"}],"text":""}'
           enchants:
             WATER_WORKER: 1
@@ -1406,7 +1406,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Шипастая
             взрывоустойчивая кираса 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Просто
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Просто
             шипы и взрывоустойчивость"}],"text":""}'
           enchants:
             PROTECTION_EXPLOSIONS: 4
@@ -1430,7 +1430,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Шипастые
             взрывоустойчивые штаны 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Просто
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Просто
             шипы и взрывоустойчивость"}],"text":""}'
           enchants:
             PROTECTION_EXPLOSIONS: 4
@@ -1454,7 +1454,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Шипастые
             взрывоустойчивые сапоги 🛡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Увеличь
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Увеличь
             скорость ходьбы под водой"}],"text":""}'
           enchants:
             PROTECTION_EXPLOSIONS: 4
@@ -1750,7 +1750,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Заточенный
             длинный меч 🗡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Откинув
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Откинув
             врага, наносит серьёзные увечье"}],"text":""}'
           enchants:
             FIRE_ASPECT: 2
@@ -1777,7 +1777,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Заточенный
             меч 🗡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Наносит
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Наносит
             серьёзные увечье"}],"text":""}'
           enchants:
             FIRE_ASPECT: 2
@@ -1803,7 +1803,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Небесный
             длинный меч 🗡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Откинув
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Откинув
             нежить, вызывает божью силу"}],"text":""}'
           enchants:
             FIRE_ASPECT: 2
@@ -1830,7 +1830,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Небесный
             меч 🗡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Вызывает
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Вызывает
             божью силу против нежити"}],"text":""}'
           enchants:
             FIRE_ASPECT: 2
@@ -1856,7 +1856,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Разрубающий
             длинный меч 🗡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Откинув
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Откинув
             врага, отрубает конечности"}],"text":""}'
           enchants:
             DAMAGE_ARTHROPODS: 5
@@ -1883,7 +1883,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Разрубающий
             меч 🗡"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"С
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"С
             лёгкостью отрубает конечности"}],"text":""}'
           enchants:
             DAMAGE_ARTHROPODS: 5
@@ -1909,7 +1909,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Осторожный
             бур ⛏"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Добывает
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Добывает
             блоки без их повреждения"}],"text":""}'
           enchants:
             DIG_SPEED: 5
@@ -1933,7 +1933,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Счастливый
             бур ⛏"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Шанс
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Шанс
             выпадения дополнительных ресурсов"}],"text":""}'
           enchants:
             DIG_SPEED: 5
@@ -1957,7 +1957,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Осторожная
             лопатка ⛏"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Добывает
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Добывает
             блоки без ихнего повреждения"}],"text":""}'
           enchants:
             DIG_SPEED: 5
@@ -1981,7 +1981,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Счастливая
             лопатка ⛏"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Шанс
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Шанс
             выподения дополнительных ресурсов"}],"text":""}'
           enchants:
             DIG_SPEED: 5
@@ -2005,7 +2005,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Аккуратно
             заточенный топорик 🪓"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Добывает
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Добывает
             блоки без ихнего повреждения"}],"text":""}'
           enchants:
             DIG_SPEED: 5
@@ -2030,7 +2030,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Удачно
             заточенный топорик 🪓"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Шанс
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Шанс
             выподения дополнительных ресурсов"}],"text":""}'
           enchants:
             DIG_SPEED: 5
@@ -2055,7 +2055,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Аккуратное
             наказание 🪓"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Добывает
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Добывает
             блоки без ихнего повреждения"}],"text":""}'
           enchants:
             DIG_SPEED: 5
@@ -2080,7 +2080,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Удачное
             наказание 🪓"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Шанс
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Шанс
             выподения дополнительных ресурсов"}],"text":""}'
           enchants:
             DIG_SPEED: 5
@@ -2105,7 +2105,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Аккуратно
             разрубающий топорик 🪓"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Добывает
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Добывает
             блоки без ихнего повреждения"}],"text":""}'
           enchants:
             DAMAGE_ARTHROPODS: 5
@@ -2130,7 +2130,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Удачно
             разрубающий топорик 🪓"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Шанс
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Шанс
             выподения дополнительных ресурсов"}],"text":""}'
           enchants:
             DAMAGE_ARTHROPODS: 5
@@ -2155,7 +2155,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Аккуратная
             мотыга ⛏"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Добывает
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Добывает
             блоки без ихнего повреждения"}],"text":""}'
           enchants:
             DIG_SPEED: 5
@@ -2179,7 +2179,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Удачная
             мотыга ⛏"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Шанс
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Шанс
             выподения дополнительных ресурсов"}],"text":""}'
           enchants:
             DIG_SPEED: 5
@@ -2203,7 +2203,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_purple","text":"Магический
             лук 🏹"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Размножь
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Размножь
             стрелу силой мысли"}],"text":""}'
           enchants:
             ARROW_FIRE: 1
@@ -2228,7 +2228,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_purple","text":"Улучшенный
             лук 🏹"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Улучшен
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Улучшен
             до бесконечного использования"}],"text":""}'
           enchants:
             ARROW_FIRE: 1
@@ -2253,7 +2253,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_purple","text":"Пронзающий
             арбалет 🏹"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Пробьёт
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Пробьёт
             любой щит"}],"text":""}'
           enchants:
             MENDING: 1
@@ -2278,7 +2278,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_purple","text":"Тройной
             арбалет 🏹"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Есссс
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Есссс
             минус три"}],"text":""}'
           enchants:
             MENDING: 1
@@ -2303,7 +2303,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"blue","text":"Повелитель
             молний 🔱"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Призыв
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Призыв
             молнии во время дождя"}],"text":""}'
           enchants:
             CHANNELING: 1
@@ -2328,7 +2328,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"blue","text":"Повелитель
             морей 🔱"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Оседлай
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Оседлай
             любую каплю воды"}],"text":""}'
           enchants:
             IMPALING: 5
@@ -2352,7 +2352,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Зажигалка
             🔥"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Сожги
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Сожги
             всё!"}],"text":""}'
           enchants:
             MENDING: 1
@@ -2374,7 +2374,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Ножницы
             ✂"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Сострижет
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Сострижет
             всё что нужно"}],"text":""}'
           enchants:
             DIG_SPEED: 5
@@ -2397,7 +2397,7 @@ data-version: 3|2|3337
           display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"blue","text":"Спиннинг
             🎣"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Поймает
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"Поймает
             любую рыбку и не только"}],"text":""}'
           enchants:
             LUCK: 3
@@ -2553,7 +2553,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"aqua","text":"Шёлковая
             кирочка"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"gold","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Кузнечный магазин"}],"text":""}'
           enchants:
             DIG_SPEED: 5
@@ -2578,7 +2578,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"aqua","text":"Везучая
             кирочка"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"gold","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Кузнечный магазин"}],"text":""}'
           enchants:
             DIG_SPEED: 5
@@ -2603,7 +2603,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"green","text":"Шёлковая
             копалка"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"gold","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Кузнечный магазин"}],"text":""}'
           enchants:
             DIG_SPEED: 5
@@ -2628,7 +2628,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"green","text":"Везучая
             копалка"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"gold","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Кузнечный магазин"}],"text":""}'
           enchants:
             DIG_SPEED: 5
@@ -2653,7 +2653,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"red","text":"Шёлковый
             колун"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"gold","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Кузнечный магазин"}],"text":""}'
           enchants:
             DIG_SPEED: 5
@@ -2679,7 +2679,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"red","text":"Везучий
             колун"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"gold","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Кузнечный магазин"}],"text":""}'
           enchants:
             DIG_SPEED: 5
@@ -2705,7 +2705,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"dark_purple","text":"Шёлковая
             тяпка"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"aqua","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Кузнечный магазин"}],"text":""}'
           enchants:
             DIG_SPEED: 5
@@ -2730,7 +2730,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"dark_purple","text":"Везучая
             тяпка"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"aqua","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Кузнечный магазин"}],"text":""}'
           enchants:
             DIG_SPEED: 5
@@ -2765,7 +2765,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"gold","text":"Отталкивающе
             заточенная зубочистка"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"red","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Кузнечный магазин"}],"text":""}'
           enchants:
             FIRE_ASPECT: 2
@@ -2793,7 +2793,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"gold","text":"Лучок
             пустоты"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"red","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Кузнечный магазин"}],"text":""}'
           enchants:
             ARROW_FIRE: 1
@@ -2819,7 +2819,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"gold","text":"Лучок
             постоянства"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"red","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Кузнечный магазин"}],"text":""}'
           enchants:
             ARROW_FIRE: 1
@@ -2928,7 +2928,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"light_purple","text":"Шустрые
             полетайки"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"dark_purple","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Кузнечный магазин"}],"text":""}'
           enchants:
             MENDING: 1
@@ -2970,7 +2970,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"gold","text":"Бронепанамка"},{"italic":false,"underlined":false,"text":"
             "},{"italic":false,"obfuscated":true,"color":"aqua","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Кузнечный магазин"}],"text":""}'
           enchants:
             WATER_WORKER: 1
@@ -2997,7 +2997,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"gold","text":"Бронелифчик"},{"italic":false,"underlined":false,"text":"
             "},{"italic":false,"obfuscated":true,"color":"aqua","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Бронный магазин"}],"text":""}'
           enchants:
             MENDING: 1
@@ -3022,7 +3022,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"gold","text":"Бронетрусики"},{"italic":false,"underlined":false,"text":"
             "},{"italic":false,"obfuscated":true,"color":"aqua","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Бронный магазин"}],"text":""}'
           enchants:
             MENDING: 1
@@ -3047,7 +3047,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"gold","text":"Бронетапочки"},{"italic":false,"underlined":false,"text":"
             "},{"italic":false,"obfuscated":true,"color":"aqua","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Бронный магазин"}],"text":""}'
           enchants:
             DEPTH_STRIDER: 3
@@ -3093,7 +3093,7 @@ data-version: 3|2|3337
             "},{"italic":false,"obfuscated":false,"color":"yellow","text":"Румяный
             ребёнок"},{"italic":false,"text":" "},{"italic":false,"obfuscated":true,"color":"aqua","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Кузнечный магазин"}],"text":""}'
       item1:
         ==: org.bukkit.inventory.ItemStack
@@ -3522,25 +3522,25 @@ data-version: 3|2|3337
           meta-type: UNSPECIFIC
           display-name: '[{"text":"Переименование предметов","italic":true,"color":"#3366cc"}]'
           lore:
-          - '[{"text":"","italic":false}]'
-          - '[{"text":" * ","italic":true,"color":"aqua"},{"text":"Получение прав
+            - '[{"text":"","italic":false}]'
+            - '[{"text":" * ","italic":true,"color":"aqua"},{"text":"Получение прав
             на переименование предметов","color":"gray"},{"text":"","color":"dark_purple"}]'
-          - '[{"text":"","italic":true,"color":"dark_purple"}]'
-          - '[{"text":" * ","italic":true,"color":"aqua"},{"text":"command:","color":"gray"},{"text":"","color":"dark_purple"}]'
-          - '[{"text":" * ","italic":true,"color":"aqua"},{"text":"/cmi itemname","color":"gray"},{"text":"","color":"dark_purple"}]'
-          - '[{"text":" * ","italic":true,"color":"aqua"},{"text":"/cmi itemlore","color":"gray"},{"text":"","color":"dark_purple"}]'
-          - '[{"text":"","italic":true,"color":"dark_purple"}]'
-          - '[{"text":" * ","italic":true,"color":"aqua"},{"text":"Получение прав
+            - '[{"text":"","italic":true,"color":"dark_purple"}]'
+            - '[{"text":" * ","italic":true,"color":"aqua"},{"text":"command:","color":"gray"},{"text":"","color":"dark_purple"}]'
+            - '[{"text":" * ","italic":true,"color":"aqua"},{"text":"/cmi itemname","color":"gray"},{"text":"","color":"dark_purple"}]'
+            - '[{"text":" * ","italic":true,"color":"aqua"},{"text":"/cmi itemlore","color":"gray"},{"text":"","color":"dark_purple"}]'
+            - '[{"text":"","italic":true,"color":"dark_purple"}]'
+            - '[{"text":" * ","italic":true,"color":"aqua"},{"text":"Получение прав
             - навсегда!","color":"gray"},{"text":"","color":"dark_purple"}]'
-          - '[{"text":"","italic":true,"color":"dark_purple"}]'
-          - '[{"text":" * ","italic":true,"color":"aqua"},{"text":"Стоимость покупки:","italic":true,"color":"gray"}]'
-          - '[{"text":" ","italic":true,"color":"gray"},{"text":"*","color":"aqua"},{"text":"
+            - '[{"text":"","italic":true,"color":"dark_purple"}]'
+            - '[{"text":" * ","italic":true,"color":"aqua"},{"text":"Стоимость покупки:","italic":true,"color":"gray"}]'
+            - '[{"text":" ","italic":true,"color":"gray"},{"text":"*","color":"aqua"},{"text":"
             1024 алмазоносного глубинного сланца "},{"text":"","color":"dark_purple","italic":false}]'
-          - '[{"text":"","italic":false,"color":"dark_purple"}]'
+            - '[{"text":"","italic":false,"color":"dark_purple"}]'
           enchants:
             DURABILITY: 10
           ItemFlags:
-          - HIDE_ENCHANTS
+            - HIDE_ENCHANTS
       item1:
         ==: org.bukkit.inventory.ItemStack
         v: 3337
@@ -3550,27 +3550,27 @@ data-version: 3|2|3337
           meta-type: UNSPECIFIC
           display-name: '[{"text":"Переименование предметов","italic":true,"color":"#3366cc"}]'
           lore:
-          - '[{"text":"","italic":false}]'
-          - '[{"text":" * ","italic":true,"color":"aqua"},{"text":"Получение прав
+            - '[{"text":"","italic":false}]'
+            - '[{"text":" * ","italic":true,"color":"aqua"},{"text":"Получение прав
             на переименование предметов","color":"gray"},{"text":"","color":"dark_purple"}]'
-          - '[{"text":"","italic":true,"color":"dark_purple"}]'
-          - '[{"text":" * ","italic":true,"color":"aqua"},{"text":"Для получения этой
+            - '[{"text":"","italic":true,"color":"dark_purple"}]'
+            - '[{"text":" * ","italic":true,"color":"aqua"},{"text":"Для получения этой
             возможности вам нужно","color":"gray"},{"text":"","color":"dark_purple"}]'
-          - '[{"text":" * ","italic":true,"color":"aqua"},{"text":"переименовать одну
+            - '[{"text":" * ","italic":true,"color":"aqua"},{"text":"переименовать одну
             единицу карты на наковальне","color":"gray"},{"text":"","color":"dark_purple"}]'
-          - '[{"text":" * ","italic":true,"color":"aqua"},{"text":"и положить в бочку
+            - '[{"text":" * ","italic":true,"color":"aqua"},{"text":"и положить в бочку
             возле пустых карт и","color":"gray"},{"text":"","color":"dark_purple"}]'
-          - '[{"text":" * ","italic":true,"color":"aqua"},{"text":"в течении 24ч игрок
+            - '[{"text":" * ","italic":true,"color":"aqua"},{"text":"в течении 24ч игрок
             prestig9110 с вами свяжется","color":"gray"},{"text":"","color":"dark_purple"}]'
-          - '[{"text":"","italic":true,"color":"dark_purple"}]'
-          - '[{"text":" * ","italic":true,"color":"aqua"},{"text":"Стоимость покупки:","italic":true,"color":"gray"}]'
-          - '[{"text":" ","italic":true,"color":"gray"},{"text":"*","color":"aqua"},{"text":"
+            - '[{"text":"","italic":true,"color":"dark_purple"}]'
+            - '[{"text":" * ","italic":true,"color":"aqua"},{"text":"Стоимость покупки:","italic":true,"color":"gray"}]'
+            - '[{"text":" ","italic":true,"color":"gray"},{"text":"*","color":"aqua"},{"text":"
             1024 алмазоносного глубинного сланца "},{"text":"","color":"dark_purple","italic":false}]'
-          - '[{"text":"","italic":false,"color":"dark_purple"}]'
+            - '[{"text":"","italic":false,"color":"dark_purple"}]'
           enchants:
             DURABILITY: 10
           ItemFlags:
-          - HIDE_ENCHANTS
+            - HIDE_ENCHANTS
   snapshots: []
 '44':
   uniqueId: 82cc6d74-59dc-4cf5-9379-156ee10bdc86
@@ -4485,7 +4485,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"gold","text":"Отталкивающе
             заточенная зубочистка"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"red","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Оружейный магазин"}],"text":""}'
           enchants:
             FIRE_ASPECT: 2
@@ -4513,7 +4513,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"gold","text":"Заточенная
             зубочистка"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"red","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Оружейный магазин"}],"text":""}'
           enchants:
             FIRE_ASPECT: 2
@@ -4576,7 +4576,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"white","text":"Отталкивающе
             религиозная зубочистка"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"aqua","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Оружейный магазин"}],"text":""}'
           enchants:
             FIRE_ASPECT: 2
@@ -4604,7 +4604,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"white","text":"Религиозная
             зубочистка"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"aqua","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Оружейный магазин"}],"text":""}'
           enchants:
             FIRE_ASPECT: 2
@@ -4667,7 +4667,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"gray","text":"Отталкивающе
             дихлофосная зубочистка"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"dark_red","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Оружейный магазин"}],"text":""}'
           enchants:
             DAMAGE_ARTHROPODS: 5
@@ -4695,7 +4695,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"gray","text":"Дихлофосная
             зубочистка"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"dark_red","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Оружейный магазин"}],"text":""}'
           enchants:
             DAMAGE_ARTHROPODS: 5
@@ -4722,7 +4722,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"gold","text":"Лучок
             пустоты"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"red","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Оружейный магазин"}],"text":""}'
           enchants:
             ARROW_FIRE: 1
@@ -4748,7 +4748,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"gold","text":"Лучок
             постоянства"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"red","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Оружейный магазин"}],"text":""}'
           enchants:
             ARROW_FIRE: 1
@@ -4774,7 +4774,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"dark_purple","text":"Тройной
             харчок"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"aqua","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Оружейный магазин"}],"text":""}'
           enchants:
             MENDING: 1
@@ -4800,7 +4800,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"dark_purple","text":"Сквозной
             харчок"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"aqua","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Оружейный магазин"}],"text":""}'
           enchants:
             MENDING: 1
@@ -4826,7 +4826,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"aqua","text":"Религиозный
             шёлковый колун"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"white","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Оружейный магазин"}],"text":""}'
           enchants:
             DIG_SPEED: 5
@@ -4852,7 +4852,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"aqua","text":"Религиозный
             везучий колун"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"white","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Оружейный магазин"}],"text":""}'
           enchants:
             DIG_SPEED: 5
@@ -4878,7 +4878,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"dark_red","text":"Дихлофосный
             шёлковый колун"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"gray","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Оружейный магазин"}],"text":""}'
           enchants:
             DAMAGE_ARTHROPODS: 5
@@ -4904,7 +4904,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"dark_red","text":"Дихлофосный
             везучий колун"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"gray","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Оружейный магазин"}],"text":""}'
           enchants:
             DAMAGE_ARTHROPODS: 5
@@ -4940,7 +4940,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"dark_aqua","text":"Ложка
             на верёвочке"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"aqua","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Кузнечный магазин"}],"text":""}'
           enchants:
             CHANNELING: 1
@@ -4966,7 +4966,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"dark_aqua","text":"Ложка
             со стартером"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"aqua","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Кузнечный магазин"}],"text":""}'
           enchants:
             IMPALING: 5
@@ -5032,7 +5032,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"red","text":"Жаропанамка"},{"italic":false,"underlined":false,"text":"
             "},{"italic":false,"obfuscated":true,"color":"aqua","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Бронный магазин"}],"text":""}'
           enchants:
             WATER_WORKER: 1
@@ -5059,7 +5059,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"red","text":"Жаролифчик"},{"italic":false,"underlined":false,"text":"
             "},{"italic":false,"obfuscated":true,"color":"aqua","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Бронный магазин"}],"text":""}'
           enchants:
             PROTECTION_FIRE: 4
@@ -5084,7 +5084,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"red","text":"Жаротрусики"},{"italic":false,"underlined":false,"text":"
             "},{"italic":false,"obfuscated":true,"color":"aqua","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Бронный магазин"}],"text":""}'
           enchants:
             PROTECTION_FIRE: 4
@@ -5109,7 +5109,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"red","text":"Жаротапочки"},{"italic":false,"underlined":false,"text":"
             "},{"italic":false,"obfuscated":true,"color":"aqua","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Бронный магазин"}],"text":""}'
           enchants:
             DEPTH_STRIDER: 3
@@ -5156,7 +5156,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"green","text":"Антигрибковая
             панамка"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"aqua","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Бронный магазин"}],"text":""}'
           enchants:
             WATER_WORKER: 1
@@ -5183,7 +5183,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"green","text":"Антигрибковый
             лифчик"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"aqua","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Бронный магазин"}],"text":""}'
           enchants:
             PROTECTION_EXPLOSIONS: 4
@@ -5208,7 +5208,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"green","text":"Антигрибковые
             трусики"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"aqua","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Бронный магазин"}],"text":""}'
           enchants:
             PROTECTION_EXPLOSIONS: 4
@@ -5233,7 +5233,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"green","text":"Антигрибковые
             тапочки"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"aqua","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Бронный магазин"}],"text":""}'
           enchants:
             PROTECTION_EXPLOSIONS: 4
@@ -5279,7 +5279,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"aqua","text":"Антишишковая
             панамка"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"white","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Бронный магазин"}],"text":""}'
           enchants:
             WATER_WORKER: 1
@@ -5306,7 +5306,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"aqua","text":"Антишишковый
             лифчик"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"white","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Бронный магазин"}],"text":""}'
           enchants:
             MENDING: 1
@@ -5331,7 +5331,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"aqua","text":"Антишишковые
             трусики"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"white","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Бронный магазин"}],"text":""}'
           enchants:
             MENDING: 1
@@ -5356,7 +5356,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"aqua","text":"Антишишковые
             тапочки"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"white","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Бронный магазин"}],"text":""}'
           enchants:
             DEPTH_STRIDER: 3
@@ -5413,7 +5413,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"gold","text":"Бронекепка"},{"italic":false,"underlined":false,"text":"
             "},{"italic":false,"obfuscated":true,"color":"aqua","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Бронный магазин"}],"text":""}'
           enchants:
             WATER_WORKER: 1
@@ -5440,7 +5440,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"gold","text":"Бронехудос"},{"italic":false,"underlined":false,"text":"
             "},{"italic":false,"obfuscated":true,"color":"aqua","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Бронный магазин"}],"text":""}'
           enchants:
             MENDING: 1
@@ -5465,7 +5465,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"gold","text":"Бронесемейники"},{"italic":false,"underlined":false,"text":"
             "},{"italic":false,"obfuscated":true,"color":"aqua","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Бронный магазин"}],"text":""}'
           enchants:
             MENDING: 1
@@ -5490,7 +5490,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"gold","text":"Бронесандалики"},{"italic":false,"underlined":false,"text":"
             "},{"italic":false,"obfuscated":true,"color":"aqua","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Бронный магазин"}],"text":""}'
           enchants:
             DEPTH_STRIDER: 3
@@ -5518,7 +5518,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"aqua","text":"Голубенький
             конский фрак"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"green","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Бронный магазин"}],"text":""}'
       item1:
         ==: org.bukkit.inventory.ItemStack
@@ -5537,7 +5537,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"gold","text":"Жёлтенький
             конский фрак"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"red","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Бронный магазин"}],"text":""}'
       item1:
         ==: org.bukkit.inventory.ItemStack
@@ -5556,7 +5556,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"gray","text":"Серенький
             конский фрак"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"aqua","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Бронный магазин"}],"text":""}'
       item1:
         ==: org.bukkit.inventory.ItemStack
@@ -5575,7 +5575,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"dark_red","text":"Грязный
             конский фрак"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"red","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Бронный магазин"}],"text":""}'
       item1:
         ==: org.bukkit.inventory.ItemStack
@@ -5593,7 +5593,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"green","text":"Тыгыдыдыльное
             кресло"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"light_purple","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Бронный магазин"}],"text":""}'
       item1:
         ==: org.bukkit.inventory.ItemStack
@@ -5611,7 +5611,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"gold","text":"Бронедверь"},{"italic":false,"underlined":false,"text":"
             "},{"italic":false,"obfuscated":true,"color":"aqua","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Кузнечный магазин"}],"text":""}'
           enchants:
             MENDING: 1
@@ -5636,7 +5636,7 @@ data-version: 3|2|3337
             "},{"italic":false,"underlined":true,"obfuscated":false,"color":"gold","text":"Дверь
             в клуб"},{"italic":false,"underlined":false,"text":" "},{"italic":false,"obfuscated":true,"color":"aqua","text":"iii"}],"text":""}'
           lore:
-          - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
+            - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"VonderanShop,
             Бронный магазин"}],"text":""}'
           enchants:
             MENDING: 1
