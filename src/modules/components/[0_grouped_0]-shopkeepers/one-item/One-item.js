@@ -3,6 +3,7 @@ import React, {useState, useEffect} from 'react';
 import {LazyLoadImage} from 'react-lazy-load-image-component';
 import ShulkerBox from "../shulker-box/Shulker-box";
 import {shulkers_type} from "../../../pages/shopkeepers/ShulkersType";
+import {animation_type} from "../../../pages/shopkeepers/AnimationType";
 
 import styles from "./One-item.module.scss"
 import 'react-lazy-load-image-component/src/effects/blur.css';
@@ -105,50 +106,80 @@ const OneItem = (props) => {
       {goatHorn === "" || goatHorn === undefined || goatHorn === null ? "" : `. [${goatHorn}]`}
     </p>
 
+  const titleName = (
+    props.minecraft_custom_name === undefined || props.minecraft_custom_name === "" || props.minecraft_custom_name === null
+      ?
+      <h3 className={classNames(styles["name"])}>
+        {props.item_name_title}
+        {goatHornRu === "" || goatHornRu === undefined || goatHornRu === null
+          ?
+          undefined
+          :
+          <span className={classNames(styles["goatHorn"])}> "{goatHornRu}"</span>
+        }
+      </h3>
+      :
+      <>
+        <h3 className={classNames(styles["name"])} dangerouslySetInnerHTML={{__html: props.minecraft_custom_name}}></h3>
+        {goatHornRu === "" || goatHornRu === undefined || goatHornRu === null
+          ?
+          <></>
+          :
+          <h3 className={classNames(styles["name"])}>Звучание - <span className={classNames(styles["goatHorn"])}> "{goatHornRu}"</span></h3>
+        }
+      </>
+  )
+
+  const getImageSource = () => {
+    if (itemNameId === "enchanted_golden_apple") {
+      return "./site_assets/minecraft-item/animation_full/enchanted_golden_apple.gif";
+    } else if (itemNameId === "written_book") {
+      return "./site_assets/minecraft-item/animation_full/written_book.gif";
+    } else if (itemNameId === "enchanted_book") {
+      return "./site_assets/minecraft-item/animation_full/enchanted_book.gif";
+    } else if (itemNameId === "end_crystal") {
+      return "./site_assets/minecraft-item/animation_full/end_crystal.gif";
+    } else if (itemNameId === "sculk_sensor") {
+      return "./site_assets/minecraft-item/animation_full/sculk_sensor.gif";
+    } else if (itemNameId === "calibrated_sculk_sensor") {
+      return "./site_assets/minecraft-item/animation_full/calibrated_sculk_sensor.gif";
+    } else if (
+      itemNameId === "tipped_arrow" ||
+      itemNameId === "splash_potion" ||
+      itemNameId === "potion" ||
+      itemNameId === "lingering_potion"
+    ) {
+      return `./site_assets/minecraft-item/png/${itemNameId}_${idPotion}.png`;
+    } else if (animation_type.includes(itemNameId)) {
+      if (props.enchantsList?.length > 0) {
+        return `./site_assets/minecraft-item/animation_full/${itemNameId}.gif`;
+      } else {
+        return `./site_assets/minecraft-item/png/${itemNameId}.png`;
+      }
+    } else {
+      return `./site_assets/minecraft-item/png/${itemNameId}.png`;
+    }
+  };
+  const imageSource = getImageSource();
+
   return (
     <div className={classNames(styles["oneItemBlock"])} onClick={props.onClick}>
       <div className={classNames(styles["photoItem"])} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <span className={classNames(styles["itemCount"])}>{props.item_count}</span>
-        {itemNameId === "tipped_arrow" || itemNameId === "splash_potion" || itemNameId === "potion" || itemNameId === "lingering_potion" || itemNameId === "enchanted_golden_apple"
-          ?
-          itemNameId === "enchanted_golden_apple"
-            ?
-            <LazyLoadImage
-              className={classNames(styles["image"])}
-              src="./site_assets/minecraft-item/png/enchanted_golden_apple.png"
-              width="100%"
-              height="100%"
-              effect="blur"
-              alt="none"
-            />
-            :
-            <LazyLoadImage
-              className={classNames(styles["image"])}
-              src={`./site_assets/minecraft-item/png/${itemNameId}_${idPotion}.png`}
-              width="100%"
-              height="100%"
-              effect="blur"
-              alt="none"
-            />
-          :
-          <LazyLoadImage
-            className={classNames(styles["image"])}
-            src={`./site_assets/minecraft-item/png/${itemNameId}.png`}
-            width="100%"
-            height="100%"
-            effect="blur"
-            alt="none"
-          />
-        }
+        <LazyLoadImage
+          className={classNames(styles["image"])}
+          src={imageSource}
+          width="100%"
+          height="100%"
+          effect="blur"
+          alt="none"
+        />
       </div>
       {
         shulkers_type.includes(itemNameId)
           ?
           <div className={classNames(styles["tooltip"])} style={tooltipStyle}>
-            <h3 className={classNames(styles["name"])}>
-              {props.item_name_title}
-              {goatHornRu === "" || goatHornRu === undefined || goatHornRu === null ? "" : <span> "{goatHornRu}"</span>}
-            </h3>
+            {titleName}
             {listEnchant}
             {minecraftIdRegister}
             <div className={classNames(styles["scale"])}>
@@ -157,10 +188,7 @@ const OneItem = (props) => {
           </div>
           :
           <div className={classNames(styles["tooltip"])} style={tooltipStyle}>
-            <h3 className={classNames(styles["name"])}>
-              {props.item_name_title}
-              {goatHornRu === "" || goatHornRu === undefined || goatHornRu === null ? "" : <span> "{goatHornRu}"</span>}
-            </h3>
+            {titleName}
             {listEnchant}
             {minecraftIdRegister}
           </div>

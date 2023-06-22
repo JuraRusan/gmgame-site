@@ -25,6 +25,7 @@ const OneSuggestions = (props) => {
             storedEnchantsList={props.storedEnchantsListItem1}
             goat_horn_instrument_type_ru={props.goat_horn_instrument_type_ruItem1}
             goat_horn_instrument_type={props.goat_horn_instrument_typeItem1}
+            minecraft_custom_name={props.minecraft_custom_nameItem1}
           />
         }
         {props.item2_type_ru === undefined
@@ -42,6 +43,7 @@ const OneSuggestions = (props) => {
             storedEnchantsList={props.storedEnchantsListItem2}
             goat_horn_instrument_type_ru={props.goat_horn_instrument_type_ruItem2}
             goat_horn_instrument_type={props.goat_horn_instrument_typeItem2}
+            minecraft_custom_name={props.minecraft_custom_nameItem2}
           />
         }
       </div>
@@ -61,6 +63,7 @@ const OneSuggestions = (props) => {
           storedEnchantsList={props.storedEnchantsListResultItem}
           goat_horn_instrument_type_ru={props.goat_horn_instrument_type_ruResultItem}
           goat_horn_instrument_type={props.goat_horn_instrument_typeResultItem}
+          minecraft_custom_name={props.minecraft_custom_nameResultItem}
         />
       }
     </div>

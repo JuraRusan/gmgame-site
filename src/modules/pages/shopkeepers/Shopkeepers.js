@@ -232,6 +232,10 @@ const Shopkeepers = () => {
                             goat_horn_instrument_typeItem2={offer.item2.instrument?.instrument_type}
                             goat_horn_instrument_typeResultItem={offer.resultItem.instrument?.instrument_type}
 
+                            minecraft_custom_nameItem1={offer.item1.minecraft_custom}
+                            minecraft_custom_nameItem2={offer.item2.minecraft_custom}
+                            minecraft_custom_nameResultItem={offer.resultItem.minecraft_custom}
+
                           />
                         </div>
                       )

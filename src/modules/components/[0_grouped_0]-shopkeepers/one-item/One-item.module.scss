@@ -77,20 +77,35 @@ $parameterItem: 64px;
     margin-left: 28px;
 
     .name {
-      height: 24px;
+      height: auto;
       line-height: 24px;
       width: auto;
       color: $color-3;
       font-weight: 400;
       font-size: 14px;
-      font-family: $fontCustom2;
+      font-family: $fontCustom2 !important;
 
-      span{
-        font-family: inherit;
-        font-weight: inherit;
+      .goatHorn {
+        font-family: inherit !important;
+        font-weight: inherit !important;
         font-size: 13px;
         color: lighten($color-8, 25%);
       }
+
+      span {
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        font-size: inherit !important;
+
+        b,
+        i,
+        u,
+        s {
+          font-family: inherit !important;
+          font-size: inherit !important;
+        }
+      }
+
     }
 
     .minecraftId {

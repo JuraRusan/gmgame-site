@@ -38,8 +38,9 @@ const ShulkerBox = (props) => {
               enchantsList={el.enchant}
               item_minecraft_id_potion={el.potion}
               storedEnchantsList={el.stored_enchant}
-              goat_horn_instrument_type={el.instrument.instrument_type}
-              goat_horn_instrument_type_ru={el.instrument.instrument_type_ru}
+              goat_horn_instrument_type={el.instrument?.instrument_type}
+              goat_horn_instrument_type_ru={el.instrument?.instrument_type_ru}
+              minecraft_custom_name={el.minecraft_custom}
             />
           }
         </>
