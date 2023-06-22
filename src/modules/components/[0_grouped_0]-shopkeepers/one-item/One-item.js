@@ -48,6 +48,11 @@ const OneItem = (props) => {
     visibility: tooltipVisible ? 'visible' : 'hidden'
   };
 
+  const itemNameId = props.item_minecraft_name_id;
+  const goatHorn = props.goat_horn_instrument_type;
+  const goatHornRu = props.goat_horn_instrument_type_ru;
+  const idPotion = props.item_minecraft_id_potion
+
   const listEnchant =
     <ul className={classNames(styles["listWrapper"])}>
       {props.enchantsList?.map((el, i) => (
@@ -62,7 +67,6 @@ const OneItem = (props) => {
               <span className={classNames(styles["red"])}>{el.enchant_id_ru} </span>- {el.lvl}
             </>
           }
-
         </li>
       ))}
       {props.storedEnchantsList?.map((el, i) => (
@@ -77,29 +81,46 @@ const OneItem = (props) => {
               <span className={classNames(styles["red"])}>{el.enchant_id_ru} </span>- {el.lvl}
             </>
           }
-
         </li>
       ))}
     </ul>
+
+  const minecraftIdRegister =
+    <p className={classNames(styles["minecraftId"])}>minecraft:
+      {itemNameId}
+      {idPotion === "" || idPotion === undefined || idPotion === null ? "" : `. [${idPotion}]`}
+      {goatHorn === "" || goatHorn === undefined || goatHorn === null ? "" : `. [${goatHorn}]`}
+    </p>
 
   return (
     <div className={classNames(styles["oneItemBlock"])} onClick={props.onClick}>
       <div className={classNames(styles["photoItem"])} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <span className={classNames(styles["itemCount"])}>{props.item_count}</span>
-        {props.item_minecraft_name_id === "tipped_arrow" || props.item_minecraft_name_id === "splash_potion" || props.item_minecraft_name_id === "potion" || props.item_minecraft_name_id === "lingering_potion"
+        {itemNameId === "tipped_arrow" || itemNameId === "splash_potion" || itemNameId === "potion" || itemNameId === "lingering_potion" || itemNameId === "enchanted_golden_apple"
           ?
-          <LazyLoadImage
-            className={classNames(styles["image"])}
-            src={`./site_assets/minecraft-item/png/${props.item_minecraft_name_id}_${props.item_minecraft_id_potion}.png`}
-            width="100%"
-            height="100%"
-            effect="blur"
-            alt="none"
-          />
+          itemNameId === "enchanted_golden_apple"
+            ?
+            <LazyLoadImage
+              className={classNames(styles["image"])}
+              src="./site_assets/minecraft-item/png/enchanted_golden_apple.png"
+              width="100%"
+              height="100%"
+              effect="blur"
+              alt="none"
+            />
+            :
+            <LazyLoadImage
+              className={classNames(styles["image"])}
+              src={`./site_assets/minecraft-item/png/${itemNameId}_${idPotion}.png`}
+              width="100%"
+              height="100%"
+              effect="blur"
+              alt="none"
+            />
           :
           <LazyLoadImage
             className={classNames(styles["image"])}
-            src={`./site_assets/minecraft-item/png/${props.item_minecraft_name_id}.png`}
+            src={`./site_assets/minecraft-item/png/${itemNameId}.png`}
             width="100%"
             height="100%"
             effect="blur"
@@ -107,25 +128,33 @@ const OneItem = (props) => {
           />
         }
       </div>
-      {shulkers_type.includes(props.item_minecraft_name_id)
-        ?
-        <div className={classNames(styles["tooltip"])} style={tooltipStyle}>
-          <h3 className={classNames(styles["name"])}>{props.item_name_title}</h3>
-          {listEnchant}
-          <p className={classNames(styles["minecraftId"])}>minecraft:{props.item_minecraft_name_id}</p>
-          <div className={classNames(styles["scale"])}>
-            <ShulkerBox content={props.contentHover}/>
+      {
+        shulkers_type.includes(itemNameId)
+          ?
+          <div className={classNames(styles["tooltip"])} style={tooltipStyle}>
+            <h3 className={classNames(styles["name"])}>
+              {props.item_name_title}
+              {goatHornRu === "" || goatHornRu === undefined || goatHornRu === null ? "" : <span> "{goatHornRu}"</span>}
+            </h3>
+            {listEnchant}
+            {minecraftIdRegister}
+            <div className={classNames(styles["scale"])}>
+              <ShulkerBox content={props.contentHover}/>
+            </div>
           </div>
-        </div>
-        :
-        <div className={classNames(styles["tooltip"])} style={tooltipStyle}>
-          <h3 className={classNames(styles["name"])}>{props.item_name_title}</h3>
-          {listEnchant}
-          <p className={classNames(styles["minecraftId"])}>minecraft:{props.item_minecraft_name_id} {props.item_minecraft_id_potion === "" || props.item_minecraft_id_potion === undefined || props.item_minecraft_id_potion === null ? "" : `. [${props.item_minecraft_id_potion}]`}</p>
-        </div>
+          :
+          <div className={classNames(styles["tooltip"])} style={tooltipStyle}>
+            <h3 className={classNames(styles["name"])}>
+              {props.item_name_title}
+              {goatHornRu === "" || goatHornRu === undefined || goatHornRu === null ? "" : <span> "{goatHornRu}"</span>}
+            </h3>
+            {listEnchant}
+            {minecraftIdRegister}
+          </div>
       }
     </div>
-  );
+  )
+    ;
 };
 
 export default OneItem;

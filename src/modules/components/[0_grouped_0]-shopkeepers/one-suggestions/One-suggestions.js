@@ -10,7 +10,8 @@ const OneSuggestions = (props) => {
   return (
     <div className={classNames(styles["oneSuggestionsBlock"])}>
       <div className={classNames(styles["twoSuggestions"])}>
-        {props.item1_type_ru === undefined ?
+        {props.item1_type_ru === undefined
+          ?
           <OneItemNone/>
           :
           <OneItem
@@ -22,9 +23,12 @@ const OneSuggestions = (props) => {
             enchantsList={props.enchantsListItem1}
             item_minecraft_id_potion={props.item_minecraft_id_potionItem1}
             storedEnchantsList={props.storedEnchantsListItem1}
+            goat_horn_instrument_type_ru={props.goat_horn_instrument_type_ruItem1}
+            goat_horn_instrument_type={props.goat_horn_instrument_typeItem1}
           />
         }
-        {props.item2_type_ru === undefined ?
+        {props.item2_type_ru === undefined
+          ?
           <OneItemNone/>
           :
           <OneItem
@@ -36,20 +40,29 @@ const OneSuggestions = (props) => {
             enchantsList={props.enchantsListItem2}
             item_minecraft_id_potion={props.item_minecraft_id_potionItem2}
             storedEnchantsList={props.storedEnchantsListItem2}
+            goat_horn_instrument_type_ru={props.goat_horn_instrument_type_ruItem2}
+            goat_horn_instrument_type={props.goat_horn_instrument_typeItem2}
           />
         }
       </div>
       <span className={classNames(styles["arrowSuggestions"])}>&#10132;</span>
-      <OneItem
-        item_name_title={props.resultItem_type_ru}
-        item_minecraft_name_id={props.resultItem_type}
-        item_count={props.resultItem_amount}
-        onClick={props.onClickR}
-        contentHover={props.contentHoverR}
-        enchantsList={props.enchantsListResultItem}
-        item_minecraft_id_potion={props.item_minecraft_id_potionResultItem}
-        storedEnchantsList={props.storedEnchantsListResultItem}
-      />
+      {props.resultItem_type_ru === undefined
+        ?
+        <OneItemNone/>
+        :
+        <OneItem
+          item_name_title={props.resultItem_type_ru}
+          item_minecraft_name_id={props.resultItem_type}
+          item_count={props.resultItem_amount}
+          onClick={props.onClickR}
+          contentHover={props.contentHoverR}
+          enchantsList={props.enchantsListResultItem}
+          item_minecraft_id_potion={props.item_minecraft_id_potionResultItem}
+          storedEnchantsList={props.storedEnchantsListResultItem}
+          goat_horn_instrument_type_ru={props.goat_horn_instrument_type_ruResultItem}
+          goat_horn_instrument_type={props.goat_horn_instrument_typeResultItem}
+        />
+      }
     </div>
   )
 }

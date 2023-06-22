@@ -82,6 +82,13 @@ $parameterItem: 64px;
       font-weight: 400;
       font-size: 14px;
       font-family: $fontCustom2;
+
+      span{
+        font-family: inherit;
+        font-weight: inherit;
+        font-size: 13px;
+        color: lighten($color-8, 25%);
+      }
     }
 
     .minecraftId {

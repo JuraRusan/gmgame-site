@@ -224,6 +224,14 @@ const Shopkeepers = () => {
                             storedEnchantsListItem2={offer.item2.stored_enchant}
                             storedEnchantsListResultItem={offer.resultItem.stored_enchant}
 
+                            goat_horn_instrument_type_ruItem1={offer.item1.instrument?.instrument_type_ru}
+                            goat_horn_instrument_type_ruItem2={offer.item2.instrument?.instrument_type_ru}
+                            goat_horn_instrument_type_ruResultItem={offer.resultItem.instrument?.instrument_type_ru}
+
+                            goat_horn_instrument_typeItem1={offer.item1.instrument?.instrument_type}
+                            goat_horn_instrument_typeItem2={offer.item2.instrument?.instrument_type}
+                            goat_horn_instrument_typeResultItem={offer.resultItem.instrument?.instrument_type}
+
                           />
                         </div>
                       )
