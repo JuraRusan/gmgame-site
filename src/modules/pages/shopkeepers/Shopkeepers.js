@@ -236,6 +236,10 @@ const Shopkeepers = () => {
                             minecraft_custom_nameItem2={offer.item2.minecraft_custom}
                             minecraft_custom_nameResultItem={offer.resultItem.minecraft_custom}
 
+                            firework_power_lvl_Item1={offer.item1.firework_power}
+                            firework_power_lvl_Item2={offer.item2.firework_power}
+                            firework_power_lvl_ResultItem={offer.resultItem.firework_power}
+
                           />
                         </div>
                       )

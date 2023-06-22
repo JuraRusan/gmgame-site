@@ -607,270 +607,189 @@ export const shopData = [
               "id": "splash_potion",
               "id_ru": "Взрывное зелье слабости",
               "count": 1,
-              "potion": "weakness",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "weakness"
             },
             {
               "slot": 1,
               "id": "splash_potion",
               "id_ru": "Взрывное зелье слабости",
               "count": 1,
-              "potion": "weakness",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "weakness"
             },
             {
               "slot": 2,
               "id": "splash_potion",
               "id_ru": "Взрывное зелье слабости",
               "count": 1,
-              "potion": "weakness",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "weakness"
             },
             {
               "slot": 3,
               "id": "splash_potion",
               "id_ru": "Взрывное зелье слабости",
               "count": 1,
-              "potion": "weakness",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "weakness"
             },
             {
               "slot": 4,
               "id": "splash_potion",
               "id_ru": "Взрывное зелье слабости",
               "count": 1,
-              "potion": "weakness",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "weakness"
             },
             {
               "slot": 5,
               "id": "splash_potion",
               "id_ru": "Взрывное зелье слабости",
               "count": 1,
-              "potion": "weakness",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "weakness"
             },
             {
               "slot": 6,
               "id": "splash_potion",
               "id_ru": "Взрывное зелье слабости",
               "count": 1,
-              "potion": "weakness",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "weakness"
             },
             {
               "slot": 7,
               "id": "splash_potion",
               "id_ru": "Взрывное зелье слабости",
               "count": 1,
-              "potion": "weakness",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "weakness"
             },
             {
               "slot": 8,
               "id": "splash_potion",
               "id_ru": "Взрывное зелье слабости",
               "count": 1,
-              "potion": "weakness",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "weakness"
             },
             {
               "slot": 9,
               "id": "splash_potion",
               "id_ru": "Взрывное зелье слабости",
               "count": 1,
-              "potion": "weakness",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "weakness"
             },
             {
               "slot": 10,
               "id": "splash_potion",
               "id_ru": "Взрывное зелье слабости",
               "count": 1,
-              "potion": "weakness",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "weakness"
             },
             {
               "slot": 11,
               "id": "splash_potion",
               "id_ru": "Взрывное зелье слабости",
               "count": 1,
-              "potion": "weakness",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "weakness"
             },
             {
               "slot": 12,
               "id": "splash_potion",
               "id_ru": "Взрывное зелье слабости",
               "count": 1,
-              "potion": "weakness",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "weakness"
             },
             {
               "slot": 13,
               "id": "splash_potion",
               "id_ru": "Взрывное зелье слабости",
               "count": 1,
-              "potion": "weakness",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "weakness"
             },
             {
               "slot": 14,
               "id": "splash_potion",
               "id_ru": "Взрывное зелье слабости",
               "count": 1,
-              "potion": "weakness",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "weakness"
             },
             {
               "slot": 15,
               "id": "splash_potion",
               "id_ru": "Взрывное зелье слабости",
               "count": 1,
-              "potion": "weakness",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "weakness"
             },
             {
               "slot": 16,
               "id": "splash_potion",
               "id_ru": "Взрывное зелье слабости",
               "count": 1,
-              "potion": "weakness",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "weakness"
             },
             {
               "slot": 17,
               "id": "splash_potion",
               "id_ru": "Взрывное зелье слабости",
               "count": 1,
-              "potion": "weakness",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "weakness"
             },
             {
               "slot": 18,
               "id": "splash_potion",
               "id_ru": "Взрывное зелье слабости",
               "count": 1,
-              "potion": "weakness",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "weakness"
             },
             {
               "slot": 19,
               "id": "splash_potion",
               "id_ru": "Взрывное зелье слабости",
               "count": 1,
-              "potion": "weakness",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "weakness"
             },
             {
               "slot": 20,
               "id": "splash_potion",
               "id_ru": "Взрывное зелье слабости",
               "count": 1,
-              "potion": "weakness",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "weakness"
             },
             {
               "slot": 21,
               "id": "splash_potion",
               "id_ru": "Взрывное зелье слабости",
               "count": 1,
-              "potion": "weakness",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "weakness"
             },
             {
               "slot": 22,
               "id": "splash_potion",
               "id_ru": "Взрывное зелье слабости",
               "count": 1,
-              "potion": "weakness",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "weakness"
             },
             {
               "slot": 23,
               "id": "splash_potion",
               "id_ru": "Взрывное зелье слабости",
               "count": 1,
-              "potion": "weakness",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "weakness"
             },
             {
               "slot": 24,
               "id": "splash_potion",
               "id_ru": "Взрывное зелье слабости",
               "count": 1,
-              "potion": "weakness",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "weakness"
             },
             {
               "slot": 25,
               "id": "splash_potion",
               "id_ru": "Взрывное зелье слабости",
               "count": 1,
-              "potion": "weakness",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "weakness"
             },
             {
               "slot": 26,
               "id": "splash_potion",
               "id_ru": "Взрывное зелье слабости",
               "count": 1,
-              "potion": "weakness",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "weakness"
             }
           ]
         },
@@ -902,10 +821,7 @@ export const shopData = [
               "id_ru": "Зелье стремительности",
               "minecraft_custom": "<span style=\"color: aqua\"> Эликсир ветра </span>",
               "count": 1,
-              "potion": "long_swiftness",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_swiftness"
             },
             {
               "slot": 2,
@@ -913,10 +829,7 @@ export const shopData = [
               "id_ru": "Зелье стремительности",
               "minecraft_custom": "<span style=\"color: aqua\"> Эликсир ветра </span>",
               "count": 1,
-              "potion": "long_swiftness",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_swiftness"
             },
             {
               "slot": 3,
@@ -924,10 +837,7 @@ export const shopData = [
               "id_ru": "Зелье стремительности",
               "minecraft_custom": "<span style=\"color: aqua\"> Эликсир ветра </span>",
               "count": 1,
-              "potion": "long_swiftness",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_swiftness"
             },
             {
               "slot": 4,
@@ -941,10 +851,7 @@ export const shopData = [
               "id_ru": "Зелье огнестойкости",
               "minecraft_custom": "<span style=\"color: gold\"> Эликсир огнестойкости </span>",
               "count": 1,
-              "potion": "long_fire_resistance",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 6,
@@ -952,10 +859,7 @@ export const shopData = [
               "id_ru": "Зелье огнестойкости",
               "minecraft_custom": "<span style=\"color: gold\"> Эликсир огнестойкости </span>",
               "count": 1,
-              "potion": "long_fire_resistance",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 7,
@@ -963,10 +867,7 @@ export const shopData = [
               "id_ru": "Зелье огнестойкости",
               "minecraft_custom": "<span style=\"color: gold\"> Эликсир огнестойкости </span>",
               "count": 1,
-              "potion": "long_fire_resistance",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 8,
@@ -992,10 +893,7 @@ export const shopData = [
               "id_ru": "Зелье силы",
               "minecraft_custom": "<span style=\"color: white\"> Отвар ромашки </span>",
               "count": 1,
-              "potion": "long_strength",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_strength"
             },
             {
               "slot": 12,
@@ -1021,10 +919,7 @@ export const shopData = [
               "id_ru": "Зелье силы",
               "minecraft_custom": "<span style=\"color: white\"> Отвар ромашки </span>",
               "count": 1,
-              "potion": "long_strength",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_strength"
             },
             {
               "slot": 16,
@@ -1050,10 +945,7 @@ export const shopData = [
               "id_ru": "Зелье ночного зрения",
               "minecraft_custom": "<span style=\"color: blue\"> <b>Энергетик</b> </span>",
               "count": 1,
-              "potion": "long_night_vision",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_night_vision"
             },
             {
               "slot": 20,
@@ -1061,10 +953,7 @@ export const shopData = [
               "id_ru": "Зелье ночного зрения",
               "minecraft_custom": "<span style=\"color: blue\"> <b>Энергетик</b> </span>",
               "count": 1,
-              "potion": "long_night_vision",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_night_vision"
             },
             {
               "slot": 21,
@@ -1072,10 +961,7 @@ export const shopData = [
               "id_ru": "Зелье ночного зрения",
               "minecraft_custom": "<span style=\"color: blue\"> <b>Энергетик</b> </span>",
               "count": 1,
-              "potion": "long_night_vision",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_night_vision"
             },
             {
               "slot": 22,
@@ -1089,10 +975,7 @@ export const shopData = [
               "id_ru": "Зелье невидимости",
               "minecraft_custom": "<span style=\"color: #00AAAA\"> Эликсир неуловимости </span>",
               "count": 1,
-              "potion": "long_invisibility",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_invisibility"
             },
             {
               "slot": 24,
@@ -1100,10 +983,7 @@ export const shopData = [
               "id_ru": "Зелье невидимости",
               "minecraft_custom": "<span style=\"color: #00AAAA\"> Эликсир неуловимости </span>",
               "count": 1,
-              "potion": "long_invisibility",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_invisibility"
             },
             {
               "slot": 25,
@@ -1111,10 +991,7 @@ export const shopData = [
               "id_ru": "Зелье невидимости",
               "minecraft_custom": "<span style=\"color: #00AAAA\"> Эликсир неуловимости </span>",
               "count": 1,
-              "potion": "long_invisibility",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_invisibility"
             },
             {
               "slot": 26,
@@ -1145,270 +1022,189 @@ export const shopData = [
               "id": "potion",
               "id_ru": "Зелье огнестойкости",
               "count": 1,
-              "potion": "long_fire_resistance",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 1,
               "id": "potion",
               "id_ru": "Зелье огнестойкости",
               "count": 1,
-              "potion": "long_fire_resistance",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 2,
               "id": "potion",
               "id_ru": "Зелье огнестойкости",
               "count": 1,
-              "potion": "long_fire_resistance",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 3,
               "id": "potion",
               "id_ru": "Зелье огнестойкости",
               "count": 1,
-              "potion": "long_fire_resistance",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 4,
               "id": "potion",
               "id_ru": "Зелье огнестойкости",
               "count": 1,
-              "potion": "long_fire_resistance",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 5,
               "id": "potion",
               "id_ru": "Зелье огнестойкости",
               "count": 1,
-              "potion": "long_fire_resistance",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 6,
               "id": "potion",
               "id_ru": "Зелье огнестойкости",
               "count": 1,
-              "potion": "long_fire_resistance",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 7,
               "id": "potion",
               "id_ru": "Зелье огнестойкости",
               "count": 1,
-              "potion": "long_fire_resistance",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 8,
               "id": "potion",
               "id_ru": "Зелье огнестойкости",
               "count": 1,
-              "potion": "long_fire_resistance",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 9,
               "id": "potion",
               "id_ru": "Зелье огнестойкости",
               "count": 1,
-              "potion": "long_fire_resistance",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 10,
               "id": "potion",
               "id_ru": "Зелье огнестойкости",
               "count": 1,
-              "potion": "long_fire_resistance",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 11,
               "id": "potion",
               "id_ru": "Зелье огнестойкости",
               "count": 1,
-              "potion": "long_fire_resistance",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 12,
               "id": "potion",
               "id_ru": "Зелье огнестойкости",
               "count": 1,
-              "potion": "long_fire_resistance",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 13,
               "id": "potion",
               "id_ru": "Зелье огнестойкости",
               "count": 1,
-              "potion": "long_fire_resistance",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 14,
               "id": "potion",
               "id_ru": "Зелье огнестойкости",
               "count": 1,
-              "potion": "long_fire_resistance",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 15,
               "id": "potion",
               "id_ru": "Зелье огнестойкости",
               "count": 1,
-              "potion": "long_fire_resistance",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 16,
               "id": "potion",
               "id_ru": "Зелье огнестойкости",
               "count": 1,
-              "potion": "long_fire_resistance",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 17,
               "id": "potion",
               "id_ru": "Зелье огнестойкости",
               "count": 1,
-              "potion": "long_fire_resistance",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 18,
               "id": "potion",
               "id_ru": "Зелье огнестойкости",
               "count": 1,
-              "potion": "long_fire_resistance",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 19,
               "id": "potion",
               "id_ru": "Зелье огнестойкости",
               "count": 1,
-              "potion": "long_fire_resistance",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 20,
               "id": "potion",
               "id_ru": "Зелье огнестойкости",
               "count": 1,
-              "potion": "long_fire_resistance",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 21,
               "id": "potion",
               "id_ru": "Зелье огнестойкости",
               "count": 1,
-              "potion": "long_fire_resistance",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 22,
               "id": "potion",
               "id_ru": "Зелье огнестойкости",
               "count": 1,
-              "potion": "long_fire_resistance",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 23,
               "id": "potion",
               "id_ru": "Зелье огнестойкости",
               "count": 1,
-              "potion": "long_fire_resistance",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 24,
               "id": "potion",
               "id_ru": "Зелье огнестойкости",
               "count": 1,
-              "potion": "long_fire_resistance",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 25,
               "id": "potion",
               "id_ru": "Зелье огнестойкости",
               "count": 1,
-              "potion": "long_fire_resistance",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 26,
               "id": "potion",
               "id_ru": "Зелье огнестойкости",
               "count": 1,
-              "potion": "long_fire_resistance",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_fire_resistance"
             }
           ]
         },
@@ -1433,270 +1229,189 @@ export const shopData = [
               "id": "potion",
               "id_ru": "Зелье ночного зрения",
               "count": 1,
-              "potion": "long_night_vision",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_night_vision"
             },
             {
               "slot": 1,
               "id": "potion",
               "id_ru": "Зелье ночного зрения",
               "count": 1,
-              "potion": "long_night_vision",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_night_vision"
             },
             {
               "slot": 2,
               "id": "potion",
               "id_ru": "Зелье ночного зрения",
               "count": 1,
-              "potion": "long_night_vision",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_night_vision"
             },
             {
               "slot": 3,
               "id": "potion",
               "id_ru": "Зелье ночного зрения",
               "count": 1,
-              "potion": "long_night_vision",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_night_vision"
             },
             {
               "slot": 4,
               "id": "potion",
               "id_ru": "Зелье ночного зрения",
               "count": 1,
-              "potion": "long_night_vision",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_night_vision"
             },
             {
               "slot": 5,
               "id": "potion",
               "id_ru": "Зелье ночного зрения",
               "count": 1,
-              "potion": "long_night_vision",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_night_vision"
             },
             {
               "slot": 6,
               "id": "potion",
               "id_ru": "Зелье ночного зрения",
               "count": 1,
-              "potion": "long_night_vision",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_night_vision"
             },
             {
               "slot": 7,
               "id": "potion",
               "id_ru": "Зелье ночного зрения",
               "count": 1,
-              "potion": "long_night_vision",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_night_vision"
             },
             {
               "slot": 8,
               "id": "potion",
               "id_ru": "Зелье ночного зрения",
               "count": 1,
-              "potion": "long_night_vision",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_night_vision"
             },
             {
               "slot": 9,
               "id": "potion",
               "id_ru": "Зелье ночного зрения",
               "count": 1,
-              "potion": "long_night_vision",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_night_vision"
             },
             {
               "slot": 10,
               "id": "potion",
               "id_ru": "Зелье ночного зрения",
               "count": 1,
-              "potion": "long_night_vision",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_night_vision"
             },
             {
               "slot": 11,
               "id": "potion",
               "id_ru": "Зелье ночного зрения",
               "count": 1,
-              "potion": "long_night_vision",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_night_vision"
             },
             {
               "slot": 12,
               "id": "potion",
               "id_ru": "Зелье ночного зрения",
               "count": 1,
-              "potion": "long_night_vision",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_night_vision"
             },
             {
               "slot": 13,
               "id": "potion",
               "id_ru": "Зелье ночного зрения",
               "count": 1,
-              "potion": "long_night_vision",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_night_vision"
             },
             {
               "slot": 14,
               "id": "potion",
               "id_ru": "Зелье ночного зрения",
               "count": 1,
-              "potion": "long_night_vision",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_night_vision"
             },
             {
               "slot": 15,
               "id": "potion",
               "id_ru": "Зелье ночного зрения",
               "count": 1,
-              "potion": "long_night_vision",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_night_vision"
             },
             {
               "slot": 16,
               "id": "potion",
               "id_ru": "Зелье ночного зрения",
               "count": 1,
-              "potion": "long_night_vision",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_night_vision"
             },
             {
               "slot": 17,
               "id": "potion",
               "id_ru": "Зелье ночного зрения",
               "count": 1,
-              "potion": "long_night_vision",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_night_vision"
             },
             {
               "slot": 18,
               "id": "potion",
               "id_ru": "Зелье ночного зрения",
               "count": 1,
-              "potion": "long_night_vision",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_night_vision"
             },
             {
               "slot": 19,
               "id": "potion",
               "id_ru": "Зелье ночного зрения",
               "count": 1,
-              "potion": "long_night_vision",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_night_vision"
             },
             {
               "slot": 20,
               "id": "potion",
               "id_ru": "Зелье ночного зрения",
               "count": 1,
-              "potion": "long_night_vision",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_night_vision"
             },
             {
               "slot": 21,
               "id": "potion",
               "id_ru": "Зелье ночного зрения",
               "count": 1,
-              "potion": "long_night_vision",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_night_vision"
             },
             {
               "slot": 22,
               "id": "potion",
               "id_ru": "Зелье ночного зрения",
               "count": 1,
-              "potion": "long_night_vision",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_night_vision"
             },
             {
               "slot": 23,
               "id": "potion",
               "id_ru": "Зелье ночного зрения",
               "count": 1,
-              "potion": "long_night_vision",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_night_vision"
             },
             {
               "slot": 24,
               "id": "potion",
               "id_ru": "Зелье ночного зрения",
               "count": 1,
-              "potion": "long_night_vision",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_night_vision"
             },
             {
               "slot": 25,
               "id": "potion",
               "id_ru": "Зелье ночного зрения",
               "count": 1,
-              "potion": "long_night_vision",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_night_vision"
             },
             {
               "slot": 26,
               "id": "potion",
               "id_ru": "Зелье ночного зрения",
               "count": 1,
-              "potion": "long_night_vision",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_night_vision"
             }
           ]
         },
@@ -1721,30 +1436,21 @@ export const shopData = [
               "id": "splash_potion",
               "id_ru": "Взрывное зелье огнестойкости",
               "count": 1,
-              "potion": "long_fire_resistance",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 13,
               "id": "splash_potion",
               "id_ru": "Взрывное зелье огнестойкости",
               "count": 1,
-              "potion": "long_fire_resistance",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 14,
               "id": "splash_potion",
               "id_ru": "Взрывное зелье огнестойкости",
               "count": 1,
-              "potion": "long_fire_resistance",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_fire_resistance"
             }
           ]
         },
@@ -1770,10 +1476,7 @@ export const shopData = [
               "id_ru": "Зелье огнестойкости",
               "minecraft_custom": "<span style=\"color: gold\"> Эликсир огнестойкости </span>",
               "count": 1,
-              "potion": "long_fire_resistance",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 13,
@@ -1781,10 +1484,7 @@ export const shopData = [
               "id_ru": "Зелье огнестойкости",
               "minecraft_custom": "<span style=\"color: gold\"> Эликсир огнестойкости </span>",
               "count": 1,
-              "potion": "long_fire_resistance",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_fire_resistance"
             },
             {
               "slot": 14,
@@ -1792,10 +1492,7 @@ export const shopData = [
               "id_ru": "Зелье огнестойкости",
               "minecraft_custom": "<span style=\"color: gold\"> Эликсир огнестойкости </span>",
               "count": 1,
-              "potion": "long_fire_resistance",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_fire_resistance"
             }
           ]
         },
@@ -1820,30 +1517,21 @@ export const shopData = [
               "id": "potion",
               "id_ru": "Зелье ночного зрения",
               "count": 1,
-              "potion": "long_night_vision",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_night_vision"
             },
             {
               "slot": 13,
               "id": "potion",
               "id_ru": "Зелье ночного зрения",
               "count": 1,
-              "potion": "long_night_vision",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_night_vision"
             },
             {
               "slot": 14,
               "id": "potion",
               "id_ru": "Зелье ночного зрения",
               "count": 1,
-              "potion": "long_night_vision",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_night_vision"
             }
           ]
         },
@@ -1868,30 +1556,21 @@ export const shopData = [
               "id": "potion",
               "id_ru": "Зелье невидимости",
               "count": 1,
-              "potion": "long_invisibility",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_invisibility"
             },
             {
               "slot": 13,
               "id": "potion",
               "id_ru": "Зелье невидимости",
               "count": 1,
-              "potion": "long_invisibility",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_invisibility"
             },
             {
               "slot": 14,
               "id": "potion",
               "id_ru": "Зелье невидимости",
               "count": 1,
-              "potion": "long_invisibility",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_invisibility"
             }
           ]
         },
@@ -1916,30 +1595,21 @@ export const shopData = [
               "id": "potion",
               "id_ru": "Зелье стремительности",
               "count": 1,
-              "potion": "long_swiftness",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_swiftness"
             },
             {
               "slot": 13,
               "id": "potion",
               "id_ru": "Зелье стремительности",
               "count": 1,
-              "potion": "long_swiftness",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_swiftness"
             },
             {
               "slot": 14,
               "id": "potion",
               "id_ru": "Зелье стремительности",
               "count": 1,
-              "potion": "long_swiftness",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_swiftness"
             }
           ]
         },
@@ -1964,30 +1634,21 @@ export const shopData = [
               "id": "potion",
               "id_ru": "Зелье регенерации",
               "count": 1,
-              "potion": "long_regeneration",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_regeneration"
             },
             {
               "slot": 13,
               "id": "potion",
               "id_ru": "Зелье регенерации",
               "count": 1,
-              "potion": "long_regeneration",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_regeneration"
             },
             {
               "slot": 14,
               "id": "potion",
               "id_ru": "Зелье регенерации",
               "count": 1,
-              "potion": "long_regeneration",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_regeneration"
             }
           ]
         },
@@ -3178,201 +2839,21 @@ export const shopData = [
       {
         "id": "1",
         "resultItem": {
-          "type": "totem_of_undying",
-          "type_ru": "Тотем бессмертия",
-          "amount": 1,
+          "type": "iron_block",
+          "type_ru": "Железный блок",
+          "amount": 64,
           "content": []
         },
         "item1": {
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 1,
+          "amount": 6,
           "content": []
         },
         "item2": {}
       },
       {
         "id": "2",
-        "resultItem": {
-          "type": "yellow_shulker_box",
-          "type_ru": "Жёлтый шалкеровый ящик",
-          "minecraft_custom": "<span style=\"color: gold\"> Тотемы </span>",
-          "amount": 1,
-          "content": [
-            {
-              "slot": 0,
-              "id": "totem_of_undying",
-              "id_ru": "Тотем бессмертия",
-              "count": 1
-            },
-            {
-              "slot": 1,
-              "id": "totem_of_undying",
-              "id_ru": "Тотем бессмертия",
-              "count": 1
-            },
-            {
-              "slot": 2,
-              "id": "totem_of_undying",
-              "id_ru": "Тотем бессмертия",
-              "count": 1
-            },
-            {
-              "slot": 3,
-              "id": "totem_of_undying",
-              "id_ru": "Тотем бессмертия",
-              "count": 1
-            },
-            {
-              "slot": 4,
-              "id": "totem_of_undying",
-              "id_ru": "Тотем бессмертия",
-              "count": 1
-            },
-            {
-              "slot": 5,
-              "id": "totem_of_undying",
-              "id_ru": "Тотем бессмертия",
-              "count": 1
-            },
-            {
-              "slot": 6,
-              "id": "totem_of_undying",
-              "id_ru": "Тотем бессмертия",
-              "count": 1
-            },
-            {
-              "slot": 7,
-              "id": "totem_of_undying",
-              "id_ru": "Тотем бессмертия",
-              "count": 1
-            },
-            {
-              "slot": 8,
-              "id": "totem_of_undying",
-              "id_ru": "Тотем бессмертия",
-              "count": 1
-            },
-            {
-              "slot": 9,
-              "id": "totem_of_undying",
-              "id_ru": "Тотем бессмертия",
-              "count": 1
-            },
-            {
-              "slot": 10,
-              "id": "totem_of_undying",
-              "id_ru": "Тотем бессмертия",
-              "count": 1
-            },
-            {
-              "slot": 11,
-              "id": "totem_of_undying",
-              "id_ru": "Тотем бессмертия",
-              "count": 1
-            },
-            {
-              "slot": 12,
-              "id": "totem_of_undying",
-              "id_ru": "Тотем бессмертия",
-              "count": 1
-            },
-            {
-              "slot": 13,
-              "id": "totem_of_undying",
-              "id_ru": "Тотем бессмертия",
-              "count": 1
-            },
-            {
-              "slot": 14,
-              "id": "totem_of_undying",
-              "id_ru": "Тотем бессмертия",
-              "count": 1
-            },
-            {
-              "slot": 15,
-              "id": "totem_of_undying",
-              "id_ru": "Тотем бессмертия",
-              "count": 1
-            },
-            {
-              "slot": 16,
-              "id": "totem_of_undying",
-              "id_ru": "Тотем бессмертия",
-              "count": 1
-            },
-            {
-              "slot": 17,
-              "id": "totem_of_undying",
-              "id_ru": "Тотем бессмертия",
-              "count": 1
-            },
-            {
-              "slot": 18,
-              "id": "totem_of_undying",
-              "id_ru": "Тотем бессмертия",
-              "count": 1
-            },
-            {
-              "slot": 19,
-              "id": "totem_of_undying",
-              "id_ru": "Тотем бессмертия",
-              "count": 1
-            },
-            {
-              "slot": 20,
-              "id": "totem_of_undying",
-              "id_ru": "Тотем бессмертия",
-              "count": 1
-            },
-            {
-              "slot": 21,
-              "id": "totem_of_undying",
-              "id_ru": "Тотем бессмертия",
-              "count": 1
-            },
-            {
-              "slot": 22,
-              "id": "totem_of_undying",
-              "id_ru": "Тотем бессмертия",
-              "count": 1
-            },
-            {
-              "slot": 23,
-              "id": "totem_of_undying",
-              "id_ru": "Тотем бессмертия",
-              "count": 1
-            },
-            {
-              "slot": 24,
-              "id": "totem_of_undying",
-              "id_ru": "Тотем бессмертия",
-              "count": 1
-            },
-            {
-              "slot": 25,
-              "id": "totem_of_undying",
-              "id_ru": "Тотем бессмертия",
-              "count": 1
-            },
-            {
-              "slot": 26,
-              "id": "totem_of_undying",
-              "id_ru": "Тотем бессмертия",
-              "count": 1
-            }
-          ]
-        },
-        "item1": {
-          "type": "deepslate_diamond_ore",
-          "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 12,
-          "content": []
-        },
-        "item2": {}
-      },
-      {
-        "id": "3",
         "resultItem": {
           "type": "ender_chest",
           "type_ru": "Эндер-сундук",
@@ -3388,17 +2869,41 @@ export const shopData = [
         "item2": {}
       },
       {
-        "id": "4",
+        "id": "3",
         "resultItem": {
-          "type": "iron_block",
-          "type_ru": "Железный блок",
-          "amount": 64,
+          "type": "goat_horn",
+          "type_ru": "Козий рог",
+          "amount": 1,
+          "instrument": {
+            "instrument_type": "feel_goat_horn",
+            "instrument_type_ru": "Чувство"
+          },
           "content": []
         },
         "item1": {
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 6,
+          "amount": 8,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "4",
+        "resultItem": {
+          "type": "goat_horn",
+          "type_ru": "Козий рог",
+          "amount": 1,
+          "instrument": {
+            "instrument_type": "ponder_goat_horn",
+            "instrument_type_ru": "Размышление"
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 8,
           "content": []
         },
         "item2": {}
@@ -3406,179 +2911,19 @@ export const shopData = [
       {
         "id": "5",
         "resultItem": {
-          "type": "light_gray_shulker_box",
-          "type_ru": "Светло-серый шалкеровый ящик",
-          "minecraft_custom": "<span style=\"color: gray\"> Камень </span>",
+          "type": "goat_horn",
+          "type_ru": "Козий рог",
           "amount": 1,
-          "content": [
-            {
-              "slot": 0,
-              "id": "stone",
-              "id_ru": "Камень",
-              "count": 64
-            },
-            {
-              "slot": 1,
-              "id": "stone",
-              "id_ru": "Камень",
-              "count": 64
-            },
-            {
-              "slot": 2,
-              "id": "stone",
-              "id_ru": "Камень",
-              "count": 64
-            },
-            {
-              "slot": 3,
-              "id": "stone",
-              "id_ru": "Камень",
-              "count": 64
-            },
-            {
-              "slot": 4,
-              "id": "stone",
-              "id_ru": "Камень",
-              "count": 64
-            },
-            {
-              "slot": 5,
-              "id": "stone",
-              "id_ru": "Камень",
-              "count": 64
-            },
-            {
-              "slot": 6,
-              "id": "stone",
-              "id_ru": "Камень",
-              "count": 64
-            },
-            {
-              "slot": 7,
-              "id": "stone",
-              "id_ru": "Камень",
-              "count": 64
-            },
-            {
-              "slot": 8,
-              "id": "stone",
-              "id_ru": "Камень",
-              "count": 64
-            },
-            {
-              "slot": 9,
-              "id": "stone",
-              "id_ru": "Камень",
-              "count": 64
-            },
-            {
-              "slot": 10,
-              "id": "stone",
-              "id_ru": "Камень",
-              "count": 64
-            },
-            {
-              "slot": 11,
-              "id": "stone",
-              "id_ru": "Камень",
-              "count": 64
-            },
-            {
-              "slot": 12,
-              "id": "stone",
-              "id_ru": "Камень",
-              "count": 64
-            },
-            {
-              "slot": 13,
-              "id": "stone",
-              "id_ru": "Камень",
-              "count": 64
-            },
-            {
-              "slot": 14,
-              "id": "stone",
-              "id_ru": "Камень",
-              "count": 64
-            },
-            {
-              "slot": 15,
-              "id": "stone",
-              "id_ru": "Камень",
-              "count": 64
-            },
-            {
-              "slot": 16,
-              "id": "stone",
-              "id_ru": "Камень",
-              "count": 64
-            },
-            {
-              "slot": 17,
-              "id": "stone",
-              "id_ru": "Камень",
-              "count": 64
-            },
-            {
-              "slot": 18,
-              "id": "stone",
-              "id_ru": "Камень",
-              "count": 64
-            },
-            {
-              "slot": 19,
-              "id": "stone",
-              "id_ru": "Камень",
-              "count": 64
-            },
-            {
-              "slot": 20,
-              "id": "stone",
-              "id_ru": "Камень",
-              "count": 64
-            },
-            {
-              "slot": 21,
-              "id": "stone",
-              "id_ru": "Камень",
-              "count": 64
-            },
-            {
-              "slot": 22,
-              "id": "stone",
-              "id_ru": "Камень",
-              "count": 64
-            },
-            {
-              "slot": 23,
-              "id": "stone",
-              "id_ru": "Камень",
-              "count": 64
-            },
-            {
-              "slot": 24,
-              "id": "stone",
-              "id_ru": "Камень",
-              "count": 64
-            },
-            {
-              "slot": 25,
-              "id": "stone",
-              "id_ru": "Камень",
-              "count": 64
-            },
-            {
-              "slot": 26,
-              "id": "stone",
-              "id_ru": "Камень",
-              "count": 64
-            }
-          ]
+          "instrument": {
+            "instrument_type": "seek_goat_horn",
+            "instrument_type_ru": "Стремление"
+          },
+          "content": []
         },
         "item1": {
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 5,
+          "amount": 8,
           "content": []
         },
         "item2": {}
@@ -3586,28 +2931,19 @@ export const shopData = [
       {
         "id": "6",
         "resultItem": {
-          "type": "elytra",
-          "type_ru": "Элитры",
-          "minecraft_custom": "<span style=\"color: #8B0000\"> ❤ </span><span style=\"color: red\"> <b>Вол</b> </span><span style=\"color: red\"> ш </span><span style=\"color: red\"> <b>ебные крылья любви</b> </span><span style=\"color: #8B0000\"> ❤ </span>",
+          "type": "goat_horn",
+          "type_ru": "Козий рог",
           "amount": 1,
-          "enchant": [
-            {
-              "enchant_id": "mending",
-              "enchant_id_ru": "Починка",
-              "lvl": 1
-            },
-            {
-              "enchant_id": "durability",
-              "enchant_id_ru": "Прочность",
-              "lvl": 3
-            }
-          ],
+          "instrument": {
+            "instrument_type": "sing_goat_horn",
+            "instrument_type_ru": "Воспевание"
+          },
           "content": []
         },
         "item1": {
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 55,
+          "amount": 8,
           "content": []
         },
         "item2": {}
@@ -3615,28 +2951,19 @@ export const shopData = [
       {
         "id": "7",
         "resultItem": {
-          "type": "elytra",
-          "type_ru": "Элитры",
-          "minecraft_custom": "<span style=\"color: gold\"> ⭐ </span><span style=\"color: blue\"> <b>Крылья ночи</b> </span><span style=\"color: gold\"> ⭐ </span>",
+          "type": "goat_horn",
+          "type_ru": "Козий рог",
           "amount": 1,
-          "enchant": [
-            {
-              "enchant_id": "mending",
-              "enchant_id_ru": "Починка",
-              "lvl": 1
-            },
-            {
-              "enchant_id": "durability",
-              "enchant_id_ru": "Прочность",
-              "lvl": 3
-            }
-          ],
+          "instrument": {
+            "instrument_type": "admire_goat_horn",
+            "instrument_type_ru": "Восторг"
+          },
           "content": []
         },
         "item1": {
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 55,
+          "amount": 20,
           "content": []
         },
         "item2": {}
@@ -3644,28 +2971,19 @@ export const shopData = [
       {
         "id": "8",
         "resultItem": {
-          "type": "elytra",
-          "type_ru": "Элитры",
-          "minecraft_custom": "<span style=\"color: red\"> 🍖 </span><span style=\"color: gold\"> <b>Острые крылы</b> </span><span style=\"color: gold\"> ш </span><span style=\"color: gold\"> <b>ки </b> </span><span style=\"color: yellow\"> <b>KFC</b> </span><span style=\"color: red\"> 🍖 </span>",
+          "type": "goat_horn",
+          "type_ru": "Козий рог",
           "amount": 1,
-          "enchant": [
-            {
-              "enchant_id": "mending",
-              "enchant_id_ru": "Починка",
-              "lvl": 1
-            },
-            {
-              "enchant_id": "durability",
-              "enchant_id_ru": "Прочность",
-              "lvl": 3
-            }
-          ],
+          "instrument": {
+            "instrument_type": "call_goat_horn",
+            "instrument_type_ru": "Зов"
+          },
           "content": []
         },
         "item1": {
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 55,
+          "amount": 20,
           "content": []
         },
         "item2": {}
@@ -3676,12 +2994,16 @@ export const shopData = [
           "type": "goat_horn",
           "type_ru": "Козий рог",
           "amount": 1,
+          "instrument": {
+            "instrument_type": "dream_goat_horn",
+            "instrument_type_ru": "Мечта"
+          },
           "content": []
         },
         "item1": {
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 8,
+          "amount": 20,
           "content": []
         },
         "item2": {}
@@ -3692,12 +3014,16 @@ export const shopData = [
           "type": "goat_horn",
           "type_ru": "Козий рог",
           "amount": 1,
+          "instrument": {
+            "instrument_type": "yearn_goat_horn",
+            "instrument_type_ru": "Тоска"
+          },
           "content": []
         },
         "item1": {
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 6,
+          "amount": 20,
           "content": []
         },
         "item2": {}
@@ -3705,8 +3031,8 @@ export const shopData = [
       {
         "id": "11",
         "resultItem": {
-          "type": "goat_horn",
-          "type_ru": "Козий рог",
+          "type": "redstone_block",
+          "type_ru": "Редстоуновый блок",
           "amount": 1,
           "content": []
         },
@@ -3714,86 +3040,6 @@ export const shopData = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 8,
-          "content": []
-        },
-        "item2": {}
-      },
-      {
-        "id": "12",
-        "resultItem": {
-          "type": "goat_horn",
-          "type_ru": "Козий рог",
-          "amount": 1,
-          "content": []
-        },
-        "item1": {
-          "type": "deepslate_diamond_ore",
-          "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 8,
-          "content": []
-        },
-        "item2": {}
-      },
-      {
-        "id": "13",
-        "resultItem": {
-          "type": "goat_horn",
-          "type_ru": "Козий рог",
-          "amount": 1,
-          "content": []
-        },
-        "item1": {
-          "type": "deepslate_diamond_ore",
-          "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 20,
-          "content": []
-        },
-        "item2": {}
-      },
-      {
-        "id": "14",
-        "resultItem": {
-          "type": "goat_horn",
-          "type_ru": "Козий рог",
-          "amount": 1,
-          "content": []
-        },
-        "item1": {
-          "type": "deepslate_diamond_ore",
-          "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 20,
-          "content": []
-        },
-        "item2": {}
-      },
-      {
-        "id": "15",
-        "resultItem": {
-          "type": "goat_horn",
-          "type_ru": "Козий рог",
-          "amount": 1,
-          "content": []
-        },
-        "item1": {
-          "type": "deepslate_diamond_ore",
-          "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 20,
-          "content": []
-        },
-        "item2": {}
-      },
-      {
-        "id": "16",
-        "resultItem": {
-          "type": "goat_horn",
-          "type_ru": "Козий рог",
-          "amount": 1,
-          "content": []
-        },
-        "item1": {
-          "type": "deepslate_diamond_ore",
-          "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 20,
           "content": []
         },
         "item2": {}
@@ -4521,9 +3767,6 @@ export const shopData = [
               "id_ru": "Алмазный нагрудник",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: gold\"> <u>Бронелифчик</u> </span> <span style=\"color: aqua\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "mending",
@@ -4559,9 +3802,6 @@ export const shopData = [
               "id_ru": "Алмазные поножи",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: gold\"> <u>Бронетрусики</u> </span> <span style=\"color: aqua\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "mending",
@@ -4621,9 +3861,6 @@ export const shopData = [
               "id_ru": "Алмазный шлем",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: gold\"> <u>Бронепанамка</u> </span> <span style=\"color: aqua\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "aqua_affinity",
@@ -4681,9 +3918,6 @@ export const shopData = [
               "id_ru": "Алмазные ботинки",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: gold\"> <u>Бронетапочки</u> </span> <span style=\"color: aqua\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "depth_strider",
@@ -4764,9 +3998,6 @@ export const shopData = [
               "id_ru": "Алмазная кирка",
               "minecraft_custom": "<span style=\"color: gold\"> # </span><span style=\"color: aqua\"> <u>Шёлковая кирочка</u> </span> <span style=\"color: gold\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "efficiency",
@@ -4843,9 +4074,6 @@ export const shopData = [
               "id_ru": "Алмазная кирка",
               "minecraft_custom": "<span style=\"color: gold\"> # </span><span style=\"color: aqua\"> <u>Шёлковая кирочка</u> </span> <span style=\"color: gold\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "efficiency",
@@ -4875,9 +4103,6 @@ export const shopData = [
               "id_ru": "Алмазная лопата",
               "minecraft_custom": "<span style=\"color: gold\"> # </span><span style=\"color: green\"> <u>Шёлковая копалка</u> </span> <span style=\"color: gold\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "efficiency",
@@ -4907,9 +4132,6 @@ export const shopData = [
               "id_ru": "Алмазный топор",
               "minecraft_custom": "<span style=\"color: gold\"> # </span><span style=\"color: red\"> <u>Шёлковый колун</u> </span> <span style=\"color: gold\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "efficiency",
@@ -4962,9 +4184,6 @@ export const shopData = [
               "id_ru": "Алмазная кирка",
               "minecraft_custom": "<span style=\"color: gold\"> # </span><span style=\"color: aqua\"> <u>Везучая кирочка</u> </span> <span style=\"color: gold\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "efficiency",
@@ -4994,9 +4213,6 @@ export const shopData = [
               "id_ru": "Алмазная лопата",
               "minecraft_custom": "<span style=\"color: gold\"> # </span><span style=\"color: green\"> <u>Везучая копалка</u> </span> <span style=\"color: gold\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "efficiency",
@@ -5026,9 +4242,6 @@ export const shopData = [
               "id_ru": "Алмазный топор",
               "minecraft_custom": "<span style=\"color: gold\"> # </span><span style=\"color: red\"> <u>Везучий колун</u> </span> <span style=\"color: gold\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "efficiency",
@@ -5561,9 +4774,6 @@ export const shopData = [
               "id_ru": "Алмазный шлем",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: gold\"> <u>Бронепанамка</u> </span> <span style=\"color: aqua\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "aqua_affinity",
@@ -5603,9 +4813,6 @@ export const shopData = [
               "id_ru": "Алмазный нагрудник",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: gold\"> <u>Бронелифчик</u> </span> <span style=\"color: aqua\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "mending",
@@ -5635,9 +4842,6 @@ export const shopData = [
               "id_ru": "Алмазные поножи",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: gold\"> <u>Бронетрусики</u> </span> <span style=\"color: aqua\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "mending",
@@ -5667,9 +4871,6 @@ export const shopData = [
               "id_ru": "Алмазные ботинки",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: gold\"> <u>Бронетапочки</u> </span> <span style=\"color: aqua\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "depth_strider",
@@ -5714,9 +4915,6 @@ export const shopData = [
               "id_ru": "Алмазный топор",
               "minecraft_custom": "<span style=\"color: gold\"> # </span><span style=\"color: red\"> <u>Везучий колун</u> </span> <span style=\"color: gold\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "efficiency",
@@ -5751,9 +4949,6 @@ export const shopData = [
               "id_ru": "Щит",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: gold\"> <u>Бронедверь</u> </span> <span style=\"color: aqua\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "mending",
@@ -5796,9 +4991,6 @@ export const shopData = [
               "id_ru": "Алмазный нагрудник",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: gold\"> <u>Бронелифчик</u> </span> <span style=\"color: aqua\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "mending",
@@ -5828,9 +5020,6 @@ export const shopData = [
               "id_ru": "Алмазные поножи",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: gold\"> <u>Бронетрусики</u> </span> <span style=\"color: aqua\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "mending",
@@ -5860,9 +5049,6 @@ export const shopData = [
               "id_ru": "Алмазный шлем",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: gold\"> <u>Бронепанамка</u> </span> <span style=\"color: aqua\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "aqua_affinity",
@@ -5908,9 +5094,6 @@ export const shopData = [
               "id_ru": "Алмазные ботинки",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: gold\"> <u>Бронетапочки</u> </span> <span style=\"color: aqua\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "depth_strider",
@@ -5955,9 +5138,6 @@ export const shopData = [
               "id_ru": "Алмазный меч",
               "minecraft_custom": "<span style=\"color: red\"> # </span><span style=\"color: gold\"> <u>Разящая зубочистка</u> </span> <span style=\"color: red\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "fire_aspect",
@@ -6002,9 +5182,6 @@ export const shopData = [
               "id_ru": "Лук",
               "minecraft_custom": "<span style=\"color: red\"> # </span><span style=\"color: gold\"> <u>Лучок пустоты</u> </span> <span style=\"color: red\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "flame",
@@ -6061,36 +5238,28 @@ export const shopData = [
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 1,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 2,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 3,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 4,
@@ -6098,9 +5267,6 @@ export const shopData = [
               "id_ru": "Элитры",
               "minecraft_custom": "<span style=\"color: #531A66\"> # </span><span style=\"color: #D8BFD8\"> <u>Шустрые полетайки</u> </span> <span style=\"color: #531A66\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "mending",
@@ -6119,198 +5285,154 @@ export const shopData = [
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 6,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 7,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 8,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 9,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 10,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 11,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 12,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 13,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 14,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 15,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 16,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 17,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 18,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 19,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 20,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 21,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 22,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 23,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 24,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 25,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 26,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             }
           ]
         },
@@ -6335,243 +5457,189 @@ export const shopData = [
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 1,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 2,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 3,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 4,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 5,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 6,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 7,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 8,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 9,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 10,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 11,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 12,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 13,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 14,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 15,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 16,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 17,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 18,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 19,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 20,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 21,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 22,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 23,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 24,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 25,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             },
             {
               "slot": 26,
               "id": "firework_rocket",
               "id_ru": "Фейерверк",
               "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "firework_power": 3
             }
           ]
         },
@@ -6626,9 +5694,6 @@ export const shopData = [
               "id_ru": "Алмазный шлем",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: gold\"> <u>Бронепанамка</u> </span> <span style=\"color: aqua\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "aqua_affinity",
@@ -6668,9 +5733,6 @@ export const shopData = [
               "id_ru": "Алмазный нагрудник",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: gold\"> <u>Бронелифчик</u> </span> <span style=\"color: aqua\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "mending",
@@ -6700,9 +5762,6 @@ export const shopData = [
               "id_ru": "Алмазные поножи",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: gold\"> <u>Бронетрусики</u> </span> <span style=\"color: aqua\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "mending",
@@ -6732,9 +5791,6 @@ export const shopData = [
               "id_ru": "Алмазные ботинки",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: gold\"> <u>Бронетапочки</u> </span> <span style=\"color: aqua\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "depth_strider",
@@ -6977,270 +6033,189 @@ export const shopData = [
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: yellow\"> Румяный ребёнок </span> <span style=\"color: aqua\"> # </span>",
-              "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "count": 1
             },
             {
               "slot": 1,
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: yellow\"> Румяный ребёнок </span> <span style=\"color: aqua\"> # </span>",
-              "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "count": 1
             },
             {
               "slot": 2,
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: yellow\"> Румяный ребёнок </span> <span style=\"color: aqua\"> # </span>",
-              "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "count": 1
             },
             {
               "slot": 3,
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: yellow\"> Румяный ребёнок </span> <span style=\"color: aqua\"> # </span>",
-              "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "count": 1
             },
             {
               "slot": 4,
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: yellow\"> Румяный ребёнок </span> <span style=\"color: aqua\"> # </span>",
-              "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "count": 1
             },
             {
               "slot": 5,
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: yellow\"> Румяный ребёнок </span> <span style=\"color: aqua\"> # </span>",
-              "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "count": 1
             },
             {
               "slot": 6,
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: yellow\"> Румяный ребёнок </span> <span style=\"color: aqua\"> # </span>",
-              "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "count": 1
             },
             {
               "slot": 7,
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: yellow\"> Румяный ребёнок </span> <span style=\"color: aqua\"> # </span>",
-              "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "count": 1
             },
             {
               "slot": 8,
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: yellow\"> Румяный ребёнок </span> <span style=\"color: aqua\"> # </span>",
-              "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "count": 1
             },
             {
               "slot": 9,
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: yellow\"> Румяный ребёнок </span> <span style=\"color: aqua\"> # </span>",
-              "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "count": 1
             },
             {
               "slot": 10,
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: yellow\"> Румяный ребёнок </span> <span style=\"color: aqua\"> # </span>",
-              "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "count": 1
             },
             {
               "slot": 11,
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: yellow\"> Румяный ребёнок </span> <span style=\"color: aqua\"> # </span>",
-              "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "count": 1
             },
             {
               "slot": 12,
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: yellow\"> Румяный ребёнок </span> <span style=\"color: aqua\"> # </span>",
-              "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "count": 1
             },
             {
               "slot": 13,
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: yellow\"> Румяный ребёнок </span> <span style=\"color: aqua\"> # </span>",
-              "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "count": 1
             },
             {
               "slot": 14,
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: yellow\"> Румяный ребёнок </span> <span style=\"color: aqua\"> # </span>",
-              "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "count": 1
             },
             {
               "slot": 15,
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: yellow\"> Румяный ребёнок </span> <span style=\"color: aqua\"> # </span>",
-              "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "count": 1
             },
             {
               "slot": 16,
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: yellow\"> Румяный ребёнок </span> <span style=\"color: aqua\"> # </span>",
-              "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "count": 1
             },
             {
               "slot": 17,
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: yellow\"> Румяный ребёнок </span> <span style=\"color: aqua\"> # </span>",
-              "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "count": 1
             },
             {
               "slot": 18,
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: yellow\"> Румяный ребёнок </span> <span style=\"color: aqua\"> # </span>",
-              "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "count": 1
             },
             {
               "slot": 19,
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: yellow\"> Румяный ребёнок </span> <span style=\"color: aqua\"> # </span>",
-              "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "count": 1
             },
             {
               "slot": 20,
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: yellow\"> Румяный ребёнок </span> <span style=\"color: aqua\"> # </span>",
-              "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "count": 1
             },
             {
               "slot": 21,
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: yellow\"> Румяный ребёнок </span> <span style=\"color: aqua\"> # </span>",
-              "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "count": 1
             },
             {
               "slot": 22,
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: yellow\"> Румяный ребёнок </span> <span style=\"color: aqua\"> # </span>",
-              "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "count": 1
             },
             {
               "slot": 23,
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: yellow\"> Румяный ребёнок </span> <span style=\"color: aqua\"> # </span>",
-              "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "count": 1
             },
             {
               "slot": 24,
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: yellow\"> Румяный ребёнок </span> <span style=\"color: aqua\"> # </span>",
-              "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "count": 1
             },
             {
               "slot": 25,
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: yellow\"> Румяный ребёнок </span> <span style=\"color: aqua\"> # </span>",
-              "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "count": 1
             },
             {
               "slot": 26,
               "id": "totem_of_undying",
               "id_ru": "Тотем бессмертия",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: yellow\"> Румяный ребёнок </span> <span style=\"color: aqua\"> # </span>",
-              "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "count": 1
             }
           ]
         },
@@ -14053,10 +13028,7 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "minecraft_custom": "<span style=\"color: gray\"> # </span><span style=\"color: white\"> <u>Стальные стрелы</u> </span> <span style=\"color: gray\"> # </span>",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "count": 64
             },
             {
               "slot": 11,
@@ -14064,9 +13036,6 @@ export const shopData = [
               "id_ru": "Алмазный меч",
               "minecraft_custom": "<span style=\"color: red\"> # </span><span style=\"color: gold\"> <u>Разящая зубочистка</u> </span> <span style=\"color: red\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "fire_aspect",
@@ -14111,9 +13080,6 @@ export const shopData = [
               "id_ru": "Лук",
               "minecraft_custom": "<span style=\"color: red\"> # </span><span style=\"color: gold\"> <u>Лучок пустоты</u> </span> <span style=\"color: red\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "flame",
@@ -14165,10 +13131,7 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "minecraft_custom": "<span style=\"color: gray\"> # </span><span style=\"color: white\"> <u>Стальные стрелы</u> </span> <span style=\"color: gray\"> # </span>",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "count": 64
             },
             {
               "slot": 11,
@@ -14176,9 +13139,6 @@ export const shopData = [
               "id_ru": "Алмазный меч",
               "minecraft_custom": "<span style=\"color: red\"> # </span><span style=\"color: gold\"> <u>Заточенная зубочистка</u> </span> <span style=\"color: red\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "fire_aspect",
@@ -14218,9 +13178,6 @@ export const shopData = [
               "id_ru": "Лук",
               "minecraft_custom": "<span style=\"color: red\"> # </span><span style=\"color: gold\"> <u>Лучок постоянства</u> </span> <span style=\"color: red\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "flame",
@@ -14375,10 +13332,7 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "minecraft_custom": "<span style=\"color: gray\"> # </span><span style=\"color: white\"> <u>Стальные стрелы</u> </span> <span style=\"color: gray\"> # </span>",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "count": 64
             },
             {
               "slot": 11,
@@ -14386,9 +13340,6 @@ export const shopData = [
               "id_ru": "Алмазный меч",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: white\"> <u>Отталкивающе религиозная зубочистка</u> </span> <span style=\"color: aqua\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "fire_aspect",
@@ -14433,9 +13384,6 @@ export const shopData = [
               "id_ru": "Лук",
               "minecraft_custom": "<span style=\"color: red\"> # </span><span style=\"color: gold\"> <u>Лучок пустоты</u> </span> <span style=\"color: red\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "flame",
@@ -14487,10 +13435,7 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "minecraft_custom": "<span style=\"color: gray\"> # </span><span style=\"color: white\"> <u>Стальные стрелы</u> </span> <span style=\"color: gray\"> # </span>",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "count": 64
             },
             {
               "slot": 11,
@@ -14498,9 +13443,6 @@ export const shopData = [
               "id_ru": "Алмазный меч",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: white\"> <u>Религиозная зубочистка</u> </span> <span style=\"color: aqua\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "fire_aspect",
@@ -14540,9 +13482,6 @@ export const shopData = [
               "id_ru": "Лук",
               "minecraft_custom": "<span style=\"color: red\"> # </span><span style=\"color: gold\"> <u>Лучок постоянства</u> </span> <span style=\"color: red\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "flame",
@@ -14697,10 +13636,7 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "minecraft_custom": "<span style=\"color: gray\"> # </span><span style=\"color: white\"> <u>Стальные стрелы</u> </span> <span style=\"color: gray\"> # </span>",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "count": 64
             },
             {
               "slot": 11,
@@ -14708,9 +13644,6 @@ export const shopData = [
               "id_ru": "Алмазный меч",
               "minecraft_custom": "<span style=\"color: #8B0000\"> # </span><span style=\"color: gray\"> <u>Отталкивающе дихлофосная зубочистка</u> </span> <span style=\"color: #8B0000\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "bane_of_arthropods",
@@ -14755,9 +13688,6 @@ export const shopData = [
               "id_ru": "Лук",
               "minecraft_custom": "<span style=\"color: red\"> # </span><span style=\"color: gold\"> <u>Лучок пустоты</u> </span> <span style=\"color: red\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "flame",
@@ -14809,10 +13739,7 @@ export const shopData = [
               "id": "arrow",
               "id_ru": "Стрела",
               "minecraft_custom": "<span style=\"color: gray\"> # </span><span style=\"color: white\"> <u>Стальные стрелы</u> </span> <span style=\"color: gray\"> # </span>",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "count": 64
             },
             {
               "slot": 11,
@@ -14820,9 +13747,6 @@ export const shopData = [
               "id_ru": "Алмазный меч",
               "minecraft_custom": "<span style=\"color: #8B0000\"> # </span><span style=\"color: gray\"> <u>Дихлофосная зубочистка</u> </span> <span style=\"color: #8B0000\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "bane_of_arthropods",
@@ -14862,9 +13786,6 @@ export const shopData = [
               "id_ru": "Лук",
               "minecraft_custom": "<span style=\"color: red\"> # </span><span style=\"color: gold\"> <u>Лучок постоянства</u> </span> <span style=\"color: red\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "flame",
@@ -15473,9 +14394,6 @@ export const shopData = [
               "id_ru": "Алмазный шлем",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: red\"> <u>Жаропанамка</u> </span> <span style=\"color: aqua\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "aqua_affinity",
@@ -15515,9 +14433,6 @@ export const shopData = [
               "id_ru": "Алмазный нагрудник",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: red\"> <u>Жаролифчик</u> </span> <span style=\"color: aqua\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "fire_protection",
@@ -15547,9 +14462,6 @@ export const shopData = [
               "id_ru": "Алмазные поножи",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: red\"> <u>Жаротрусики</u> </span> <span style=\"color: aqua\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "fire_protection",
@@ -15579,9 +14491,6 @@ export const shopData = [
               "id_ru": "Алмазные ботинки",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: red\"> <u>Жаротапочки</u> </span> <span style=\"color: aqua\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "depth_strider",
@@ -15825,9 +14734,6 @@ export const shopData = [
               "id_ru": "Алмазный шлем",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: green\"> <u>Антигрибковая панамка</u> </span> <span style=\"color: aqua\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "aqua_affinity",
@@ -15867,9 +14773,6 @@ export const shopData = [
               "id_ru": "Алмазный нагрудник",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: green\"> <u>Антигрибковый лифчик</u> </span> <span style=\"color: aqua\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "blast_protection",
@@ -15899,9 +14802,6 @@ export const shopData = [
               "id_ru": "Алмазные поножи",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: green\"> <u>Антигрибковые трусики</u> </span> <span style=\"color: aqua\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "blast_protection",
@@ -15931,9 +14831,6 @@ export const shopData = [
               "id_ru": "Алмазные ботинки",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: green\"> <u>Антигрибковые тапочки</u> </span> <span style=\"color: aqua\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "blast_protection",
@@ -16177,9 +15074,6 @@ export const shopData = [
               "id_ru": "Алмазный шлем",
               "minecraft_custom": "<span style=\"color: white\"> # </span><span style=\"color: aqua\"> <u>Антишишковая панамка</u> </span> <span style=\"color: white\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "aqua_affinity",
@@ -16219,9 +15113,6 @@ export const shopData = [
               "id_ru": "Алмазный нагрудник",
               "minecraft_custom": "<span style=\"color: white\"> # </span><span style=\"color: aqua\"> <u>Антишишковый лифчик</u> </span> <span style=\"color: white\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "mending",
@@ -16251,9 +15142,6 @@ export const shopData = [
               "id_ru": "Алмазные поножи",
               "minecraft_custom": "<span style=\"color: white\"> # </span><span style=\"color: aqua\"> <u>Антишишковые трусики</u> </span> <span style=\"color: white\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "mending",
@@ -16283,9 +15171,6 @@ export const shopData = [
               "id_ru": "Алмазные ботинки",
               "minecraft_custom": "<span style=\"color: white\"> # </span><span style=\"color: aqua\"> <u>Антишишковые тапочки</u> </span> <span style=\"color: white\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "depth_strider",
@@ -16545,9 +15430,6 @@ export const shopData = [
               "id_ru": "Алмазный шлем",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: gold\"> <u>Бронекепка</u> </span> <span style=\"color: aqua\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "aqua_affinity",
@@ -16587,9 +15469,6 @@ export const shopData = [
               "id_ru": "Алмазный нагрудник",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: gold\"> <u>Бронехудос</u> </span> <span style=\"color: aqua\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "mending",
@@ -16619,9 +15498,6 @@ export const shopData = [
               "id_ru": "Алмазные поножи",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: gold\"> <u>Бронесемейники</u> </span> <span style=\"color: aqua\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "mending",
@@ -16651,9 +15527,6 @@ export const shopData = [
               "id_ru": "Алмазные ботинки",
               "minecraft_custom": "<span style=\"color: aqua\"> # </span><span style=\"color: gold\"> <u>Бронесандалики</u> </span> <span style=\"color: aqua\"> # </span>",
               "count": 1,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              },
               "enchant": [
                 {
                   "enchant_id": "depth_strider",
@@ -22195,171 +21068,171 @@ export const shopData = [
       {
         "id": "1",
         "resultItem": {
-          "type": "red_shulker_box",
-          "type_ru": "Красный шалкеровый ящик",
-          "minecraft_custom": " Золотые яблочки. Viento™",
+          "type": "magenta_shulker_box",
+          "type_ru": "Пурпурный шалкеровый ящик",
+          "minecraft_custom": "<span style=\"color: #A2006D\"> Набор «Палитра». N.Viento™ </span>",
           "amount": 1,
           "content": [
             {
               "slot": 0,
-              "id": "golden_apple",
-              "id_ru": "Золотое яблоко",
+              "id": "red_dye",
+              "id_ru": "Красный краситель",
               "count": 64
             },
             {
               "slot": 1,
-              "id": "golden_apple",
-              "id_ru": "Золотое яблоко",
+              "id": "orange_dye",
+              "id_ru": "Оранжевый краситель",
               "count": 64
             },
             {
               "slot": 2,
-              "id": "golden_apple",
-              "id_ru": "Золотое яблоко",
+              "id": "yellow_dye",
+              "id_ru": "Жёлтый краситель",
               "count": 64
             },
             {
               "slot": 3,
-              "id": "golden_apple",
-              "id_ru": "Золотое яблоко",
+              "id": "lime_dye",
+              "id_ru": "Лаймовый краситель",
               "count": 64
             },
             {
               "slot": 4,
-              "id": "golden_apple",
-              "id_ru": "Золотое яблоко",
+              "id": "green_dye",
+              "id_ru": "Зелёный краситель",
               "count": 64
             },
             {
               "slot": 5,
-              "id": "golden_apple",
-              "id_ru": "Золотое яблоко",
+              "id": "cyan_dye",
+              "id_ru": "Бирюзовый краситель",
               "count": 64
             },
             {
               "slot": 6,
-              "id": "golden_apple",
-              "id_ru": "Золотое яблоко",
+              "id": "light_blue_dye",
+              "id_ru": "Голубой краситель",
               "count": 64
             },
             {
               "slot": 7,
-              "id": "golden_apple",
-              "id_ru": "Золотое яблоко",
+              "id": "blue_dye",
+              "id_ru": "Синий краситель",
               "count": 64
             },
             {
               "slot": 8,
-              "id": "golden_apple",
-              "id_ru": "Золотое яблоко",
+              "id": "purple_dye",
+              "id_ru": "Фиолетовый краситель",
               "count": 64
             },
             {
               "slot": 9,
-              "id": "golden_apple",
-              "id_ru": "Золотое яблоко",
+              "id": "magenta_dye",
+              "id_ru": "Пурпурный краситель",
               "count": 64
             },
             {
               "slot": 10,
-              "id": "golden_apple",
-              "id_ru": "Золотое яблоко",
+              "id": "pink_dye",
+              "id_ru": "Розовый краситель",
               "count": 64
             },
             {
               "slot": 11,
-              "id": "golden_apple",
-              "id_ru": "Золотое яблоко",
+              "id": "white_dye",
+              "id_ru": "Белый краситель",
               "count": 64
             },
             {
               "slot": 12,
-              "id": "golden_apple",
-              "id_ru": "Золотое яблоко",
+              "id": "light_gray_dye",
+              "id_ru": "Светло-серый краситель",
               "count": 64
             },
             {
               "slot": 13,
-              "id": "golden_apple",
-              "id_ru": "Золотое яблоко",
+              "id": "gray_dye",
+              "id_ru": "Серый краситель",
               "count": 64
             },
             {
               "slot": 14,
-              "id": "golden_apple",
-              "id_ru": "Золотое яблоко",
+              "id": "black_dye",
+              "id_ru": "Чёрный краситель",
               "count": 64
             },
             {
               "slot": 15,
-              "id": "golden_apple",
-              "id_ru": "Золотое яблоко",
+              "id": "brown_dye",
+              "id_ru": "Коричневый краситель",
               "count": 64
             },
             {
               "slot": 16,
-              "id": "golden_apple",
-              "id_ru": "Золотое яблоко",
+              "id": "feather",
+              "id_ru": "Перо",
               "count": 64
             },
             {
               "slot": 17,
-              "id": "golden_apple",
-              "id_ru": "Золотое яблоко",
+              "id": "book",
+              "id_ru": "Книга",
               "count": 64
             },
             {
               "slot": 18,
-              "id": "golden_apple",
-              "id_ru": "Золотое яблоко",
-              "count": 64
+              "id": "dark_oak_sign",
+              "id_ru": "Табличка из тёмного дуба",
+              "count": 16
             },
             {
               "slot": 19,
-              "id": "golden_apple",
-              "id_ru": "Золотое яблоко",
-              "count": 64
+              "id": "spruce_sign",
+              "id_ru": "Еловая табличка",
+              "count": 16
             },
             {
               "slot": 20,
-              "id": "golden_apple",
-              "id_ru": "Золотое яблоко",
-              "count": 64
+              "id": "oak_sign",
+              "id_ru": "Дубовая табличка",
+              "count": 16
             },
             {
               "slot": 21,
-              "id": "golden_apple",
-              "id_ru": "Золотое яблоко",
-              "count": 64
+              "id": "birch_sign",
+              "id_ru": "Берёзовая табличка",
+              "count": 16
             },
             {
               "slot": 22,
-              "id": "golden_apple",
-              "id_ru": "Золотое яблоко",
-              "count": 64
+              "id": "jungle_sign",
+              "id_ru": "Табличка из тропического дерева",
+              "count": 16
             },
             {
               "slot": 23,
-              "id": "golden_apple",
-              "id_ru": "Золотое яблоко",
-              "count": 64
+              "id": "acacia_sign",
+              "id_ru": "Акациевая табличка",
+              "count": 16
             },
             {
               "slot": 24,
-              "id": "golden_apple",
-              "id_ru": "Золотое яблоко",
-              "count": 64
+              "id": "warped_sign",
+              "id_ru": "Искажённая табличка",
+              "count": 16
             },
             {
               "slot": 25,
-              "id": "golden_apple",
-              "id_ru": "Золотое яблоко",
+              "id": "glow_ink_sac",
+              "id_ru": "Светящийся чернильный мешок",
               "count": 64
             },
             {
               "slot": 26,
-              "id": "golden_apple",
-              "id_ru": "Золотое яблоко",
+              "id": "ink_sac",
+              "id_ru": "Чернильный мешок",
               "count": 64
             }
           ]
@@ -22367,7 +21240,7 @@ export const shopData = [
         "item1": {
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 64,
+          "amount": 48,
           "content": []
         },
         "item2": {}
@@ -22375,171 +21248,171 @@ export const shopData = [
       {
         "id": "2",
         "resultItem": {
-          "type": "orange_shulker_box",
-          "type_ru": "Оранжевый шалкеровый ящик",
-          "minecraft_custom": "Золотая морковка. NMB™",
+          "type": "red_shulker_box",
+          "type_ru": "Красный шалкеровый ящик",
+          "minecraft_custom": "<span style=\"color: #B10000\"> Набор «Ремонт фермы». N.Viento™ </span>",
           "amount": 1,
           "content": [
             {
               "slot": 0,
-              "id": "golden_carrot",
-              "id_ru": "Золотая морковь",
+              "id": "comparator",
+              "id_ru": "Редстоуновый компаратор",
               "count": 64
             },
             {
               "slot": 1,
-              "id": "golden_carrot",
-              "id_ru": "Золотая морковь",
+              "id": "repeater",
+              "id_ru": "Редстоуновый повторитель",
               "count": 64
             },
             {
               "slot": 2,
-              "id": "golden_carrot",
-              "id_ru": "Золотая морковь",
+              "id": "redstone_torch",
+              "id_ru": "Редстоуновый факел",
               "count": 64
             },
             {
               "slot": 3,
-              "id": "golden_carrot",
-              "id_ru": "Золотая морковь",
+              "id": "redstone_block",
+              "id_ru": "Редстоуновый блок",
               "count": 64
             },
             {
               "slot": 4,
-              "id": "golden_carrot",
-              "id_ru": "Золотая морковь",
+              "id": "sticky_piston",
+              "id_ru": "Липкий поршень",
               "count": 64
             },
             {
               "slot": 5,
-              "id": "golden_carrot",
-              "id_ru": "Золотая морковь",
+              "id": "piston",
+              "id_ru": "Поршень",
               "count": 64
             },
             {
               "slot": 6,
-              "id": "golden_carrot",
-              "id_ru": "Золотая морковь",
+              "id": "slime_block",
+              "id_ru": "Блок слизи",
               "count": 64
             },
             {
               "slot": 7,
-              "id": "golden_carrot",
-              "id_ru": "Золотая морковь",
+              "id": "honey_block",
+              "id_ru": "Блок мёда",
               "count": 64
             },
             {
               "slot": 8,
-              "id": "golden_carrot",
-              "id_ru": "Золотая морковь",
+              "id": "target",
+              "id_ru": "Мишень",
               "count": 64
             },
             {
               "slot": 9,
-              "id": "golden_carrot",
-              "id_ru": "Золотая морковь",
+              "id": "blue_ice",
+              "id_ru": "Синий лёд",
               "count": 64
             },
             {
               "slot": 10,
-              "id": "golden_carrot",
-              "id_ru": "Золотая морковь",
+              "id": "composter",
+              "id_ru": "Компостница",
               "count": 64
             },
             {
               "slot": 11,
-              "id": "golden_carrot",
-              "id_ru": "Золотая морковь",
+              "id": "hopper",
+              "id_ru": "Воронка",
               "count": 64
             },
             {
               "slot": 12,
-              "id": "golden_carrot",
-              "id_ru": "Золотая морковь",
+              "id": "barrel",
+              "id_ru": "Бочка",
               "count": 64
             },
             {
               "slot": 13,
-              "id": "golden_carrot",
-              "id_ru": "Золотая морковь",
+              "id": "tinted_glass",
+              "id_ru": "Тонированное стекло",
               "count": 64
             },
             {
               "slot": 14,
-              "id": "golden_carrot",
-              "id_ru": "Золотая морковь",
+              "id": "rail",
+              "id_ru": "Рельсы",
               "count": 64
             },
             {
               "slot": 15,
-              "id": "golden_carrot",
-              "id_ru": "Золотая морковь",
+              "id": "powered_rail",
+              "id_ru": "Энергорельсы",
               "count": 64
             },
             {
               "slot": 16,
-              "id": "golden_carrot",
-              "id_ru": "Золотая морковь",
+              "id": "lever",
+              "id_ru": "Рычаг",
               "count": 64
             },
             {
               "slot": 17,
-              "id": "golden_carrot",
-              "id_ru": "Золотая морковь",
+              "id": "redstone_lamp",
+              "id_ru": "Редстоуновый фонарь",
               "count": 64
             },
             {
               "slot": 18,
-              "id": "golden_carrot",
-              "id_ru": "Золотая морковь",
+              "id": "iron_block",
+              "id_ru": "Железный блок",
               "count": 64
             },
             {
               "slot": 19,
-              "id": "golden_carrot",
-              "id_ru": "Золотая морковь",
+              "id": "kelp",
+              "id_ru": "Ламинария",
               "count": 64
             },
             {
               "slot": 20,
-              "id": "golden_carrot",
-              "id_ru": "Золотая морковь",
+              "id": "soul_sand",
+              "id_ru": "Песок душ",
               "count": 64
             },
             {
               "slot": 21,
-              "id": "golden_carrot",
-              "id_ru": "Золотая морковь",
+              "id": "magma_block",
+              "id_ru": "Магма",
               "count": 64
             },
             {
               "slot": 22,
-              "id": "golden_carrot",
-              "id_ru": "Золотая морковь",
+              "id": "wither_rose",
+              "id_ru": "Роза визера",
               "count": 64
             },
             {
               "slot": 23,
-              "id": "golden_carrot",
-              "id_ru": "Золотая морковь",
+              "id": "observer",
+              "id_ru": "Наблюдатель",
               "count": 64
             },
             {
               "slot": 24,
-              "id": "golden_carrot",
-              "id_ru": "Золотая морковь",
+              "id": "dropper",
+              "id_ru": "Выбрасыватель",
               "count": 64
             },
             {
               "slot": 25,
-              "id": "golden_carrot",
-              "id_ru": "Золотая морковь",
+              "id": "dispenser",
+              "id_ru": "Раздатчик",
               "count": 64
             },
             {
               "slot": 26,
-              "id": "golden_carrot",
-              "id_ru": "Золотая морковь",
+              "id": "note_block",
+              "id_ru": "Нотный блок",
               "count": 64
             }
           ]
@@ -22547,7 +21420,7 @@ export const shopData = [
         "item1": {
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 16,
+          "amount": 64,
           "content": []
         },
         "item2": {}
@@ -22555,15 +21428,179 @@ export const shopData = [
       {
         "id": "3",
         "resultItem": {
-          "type": "turtle_egg",
-          "type_ru": "Черепашье яйцо",
-          "amount": 32,
-          "content": []
+          "type": "blue_shulker_box",
+          "type_ru": "Синий шалкеровый ящик",
+          "minecraft_custom": "<span style=\"color: #013E62\"> Набор «Декоративные блоки-1». N.Viento™ </span>",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "mossy_cobblestone",
+              "id_ru": "Замшелый булыжник",
+              "count": 64
+            },
+            {
+              "slot": 1,
+              "id": "bricks",
+              "id_ru": "Кирпичи",
+              "count": 64
+            },
+            {
+              "slot": 2,
+              "id": "prismarine",
+              "id_ru": "Призмарин",
+              "count": 64
+            },
+            {
+              "slot": 3,
+              "id": "red_nether_bricks",
+              "id_ru": "Красные незерские кирпичи",
+              "count": 64
+            },
+            {
+              "slot": 4,
+              "id": "quartz_block",
+              "id_ru": "Кварцевый блок",
+              "count": 64
+            },
+            {
+              "slot": 5,
+              "id": "mud",
+              "id_ru": "Грязь",
+              "count": 64
+            },
+            {
+              "slot": 6,
+              "id": "calcite",
+              "id_ru": "Кальцит",
+              "count": 64
+            },
+            {
+              "slot": 7,
+              "id": "obsidian",
+              "id_ru": "Обсидиан",
+              "count": 64
+            },
+            {
+              "slot": 8,
+              "id": "mushroom_stem",
+              "id_ru": "Ножка гриба",
+              "count": 64
+            },
+            {
+              "slot": 9,
+              "id": "mossy_stone_bricks",
+              "id_ru": "Замшелые каменные кирпичи",
+              "count": 64
+            },
+            {
+              "slot": 10,
+              "id": "mud_bricks",
+              "id_ru": "Саманные кирпичи",
+              "count": 64
+            },
+            {
+              "slot": 11,
+              "id": "prismarine_bricks",
+              "id_ru": "Призмариновые кирпичи",
+              "count": 64
+            },
+            {
+              "slot": 12,
+              "id": "purpur_block",
+              "id_ru": "Пурпур",
+              "count": 64
+            },
+            {
+              "slot": 13,
+              "id": "amethyst_block",
+              "id_ru": "Аметистовый блок",
+              "count": 64
+            },
+            {
+              "slot": 14,
+              "id": "clay",
+              "id_ru": "Глина",
+              "count": 64
+            },
+            {
+              "slot": 15,
+              "id": "dripstone_block",
+              "id_ru": "Натёчный камень",
+              "count": 64
+            },
+            {
+              "slot": 16,
+              "id": "crying_obsidian",
+              "id_ru": "Плачущий обсидиан",
+              "count": 64
+            },
+            {
+              "slot": 17,
+              "id": "brown_mushroom_block",
+              "id_ru": "Блок коричневого гриба",
+              "count": 64
+            },
+            {
+              "slot": 18,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 19,
+              "id": "red_sandstone",
+              "id_ru": "Красный песчаник",
+              "count": 64
+            },
+            {
+              "slot": 20,
+              "id": "dark_prismarine",
+              "id_ru": "Тёмный призмарин",
+              "count": 64
+            },
+            {
+              "slot": 21,
+              "id": "lapis_block",
+              "id_ru": "Лазуритовый блок",
+              "count": 64
+            },
+            {
+              "slot": 22,
+              "id": "terracotta",
+              "id_ru": "Терракота",
+              "count": 64
+            },
+            {
+              "slot": 23,
+              "id": "blue_ice",
+              "id_ru": "Синий лёд",
+              "count": 64
+            },
+            {
+              "slot": 24,
+              "id": "magma_block",
+              "id_ru": "Магма",
+              "count": 64
+            },
+            {
+              "slot": 25,
+              "id": "soul_soil",
+              "id_ru": "Почва душ",
+              "count": 64
+            },
+            {
+              "slot": 26,
+              "id": "red_mushroom_block",
+              "id_ru": "Блок красного гриба",
+              "count": 64
+            }
+          ]
         },
         "item1": {
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 4,
+          "amount": 36,
           "content": []
         },
         "item2": {}
@@ -22571,15 +21608,179 @@ export const shopData = [
       {
         "id": "4",
         "resultItem": {
-          "type": "glow_ink_sac",
-          "type_ru": "Светящийся чернильный мешок",
-          "amount": 16,
-          "content": []
+          "type": "cyan_shulker_box",
+          "type_ru": "Бирюзовый шалкеровый ящик",
+          "minecraft_custom": "<span style=\"color: #0C8990\"> Набор «Цветные свечки». N.Viento™ </span>",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "red_candle",
+              "id_ru": "Красная свеча",
+              "count": 64
+            },
+            {
+              "slot": 1,
+              "id": "orange_candle",
+              "id_ru": "Оранжевая свеча",
+              "count": 64
+            },
+            {
+              "slot": 2,
+              "id": "yellow_candle",
+              "id_ru": "Жёлтая свеча",
+              "count": 64
+            },
+            {
+              "slot": 3,
+              "id": "lime_candle",
+              "id_ru": "Лаймовая свеча",
+              "count": 64
+            },
+            {
+              "slot": 4,
+              "id": "green_candle",
+              "id_ru": "Зелёная свеча",
+              "count": 64
+            },
+            {
+              "slot": 5,
+              "id": "cyan_candle",
+              "id_ru": "Бирюзовая свеча",
+              "count": 64
+            },
+            {
+              "slot": 6,
+              "id": "light_blue_candle",
+              "id_ru": "Голубая свеча",
+              "count": 64
+            },
+            {
+              "slot": 7,
+              "id": "blue_candle",
+              "id_ru": "Синяя свеча",
+              "count": 64
+            },
+            {
+              "slot": 8,
+              "id": "purple_candle",
+              "id_ru": "Фиолетовая свеча",
+              "count": 64
+            },
+            {
+              "slot": 9,
+              "id": "magenta_candle",
+              "id_ru": "Пурпурная свеча",
+              "count": 64
+            },
+            {
+              "slot": 10,
+              "id": "pink_candle",
+              "id_ru": "Розовая свеча",
+              "count": 64
+            },
+            {
+              "slot": 11,
+              "id": "white_candle",
+              "id_ru": "Белая свеча",
+              "count": 64
+            },
+            {
+              "slot": 12,
+              "id": "light_gray_candle",
+              "id_ru": "Светло-серая свеча",
+              "count": 64
+            },
+            {
+              "slot": 13,
+              "id": "gray_candle",
+              "id_ru": "Серая свеча",
+              "count": 64
+            },
+            {
+              "slot": 14,
+              "id": "black_candle",
+              "id_ru": "Чёрная свеча",
+              "count": 64
+            },
+            {
+              "slot": 15,
+              "id": "brown_candle",
+              "id_ru": "Коричневая свеча",
+              "count": 64
+            },
+            {
+              "slot": 16,
+              "id": "candle",
+              "id_ru": "Свеча",
+              "count": 64
+            },
+            {
+              "slot": 17,
+              "id": "candle",
+              "id_ru": "Свеча",
+              "count": 64
+            },
+            {
+              "slot": 18,
+              "id": "candle",
+              "id_ru": "Свеча",
+              "count": 64
+            },
+            {
+              "slot": 19,
+              "id": "candle",
+              "id_ru": "Свеча",
+              "count": 64
+            },
+            {
+              "slot": 20,
+              "id": "candle",
+              "id_ru": "Свеча",
+              "count": 64
+            },
+            {
+              "slot": 21,
+              "id": "candle",
+              "id_ru": "Свеча",
+              "count": 64
+            },
+            {
+              "slot": 22,
+              "id": "candle",
+              "id_ru": "Свеча",
+              "count": 64
+            },
+            {
+              "slot": 23,
+              "id": "candle",
+              "id_ru": "Свеча",
+              "count": 64
+            },
+            {
+              "slot": 24,
+              "id": "candle",
+              "id_ru": "Свеча",
+              "count": 64
+            },
+            {
+              "slot": 25,
+              "id": "candle",
+              "id_ru": "Свеча",
+              "count": 64
+            },
+            {
+              "slot": 26,
+              "id": "candle",
+              "id_ru": "Свеча",
+              "count": 64
+            }
+          ]
         },
         "item1": {
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 1,
+          "amount": 64,
           "content": []
         },
         "item2": {}
@@ -22587,1832 +21788,185 @@ export const shopData = [
       {
         "id": "5",
         "resultItem": {
-          "type": "cobweb",
-          "type_ru": "Паутина",
-          "amount": 16,
-          "content": []
+          "type": "orange_shulker_box",
+          "type_ru": "Оранжевый шалкеровый ящик",
+          "minecraft_custom": "<span style=\"color: #C99415\"> Набор «Обычные свечки». N.Viento™ </span>",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "candle",
+              "id_ru": "Свеча",
+              "count": 64
+            },
+            {
+              "slot": 1,
+              "id": "candle",
+              "id_ru": "Свеча",
+              "count": 64
+            },
+            {
+              "slot": 2,
+              "id": "candle",
+              "id_ru": "Свеча",
+              "count": 64
+            },
+            {
+              "slot": 3,
+              "id": "candle",
+              "id_ru": "Свеча",
+              "count": 64
+            },
+            {
+              "slot": 4,
+              "id": "candle",
+              "id_ru": "Свеча",
+              "count": 64
+            },
+            {
+              "slot": 5,
+              "id": "candle",
+              "id_ru": "Свеча",
+              "count": 64
+            },
+            {
+              "slot": 6,
+              "id": "candle",
+              "id_ru": "Свеча",
+              "count": 64
+            },
+            {
+              "slot": 7,
+              "id": "candle",
+              "id_ru": "Свеча",
+              "count": 64
+            },
+            {
+              "slot": 8,
+              "id": "candle",
+              "id_ru": "Свеча",
+              "count": 64
+            },
+            {
+              "slot": 9,
+              "id": "candle",
+              "id_ru": "Свеча",
+              "count": 64
+            },
+            {
+              "slot": 10,
+              "id": "candle",
+              "id_ru": "Свеча",
+              "count": 64
+            },
+            {
+              "slot": 11,
+              "id": "candle",
+              "id_ru": "Свеча",
+              "count": 64
+            },
+            {
+              "slot": 12,
+              "id": "candle",
+              "id_ru": "Свеча",
+              "count": 64
+            },
+            {
+              "slot": 13,
+              "id": "candle",
+              "id_ru": "Свеча",
+              "count": 64
+            },
+            {
+              "slot": 14,
+              "id": "candle",
+              "id_ru": "Свеча",
+              "count": 64
+            },
+            {
+              "slot": 15,
+              "id": "candle",
+              "id_ru": "Свеча",
+              "count": 64
+            },
+            {
+              "slot": 16,
+              "id": "candle",
+              "id_ru": "Свеча",
+              "count": 64
+            },
+            {
+              "slot": 17,
+              "id": "candle",
+              "id_ru": "Свеча",
+              "count": 64
+            },
+            {
+              "slot": 18,
+              "id": "candle",
+              "id_ru": "Свеча",
+              "count": 64
+            },
+            {
+              "slot": 19,
+              "id": "candle",
+              "id_ru": "Свеча",
+              "count": 64
+            },
+            {
+              "slot": 20,
+              "id": "candle",
+              "id_ru": "Свеча",
+              "count": 64
+            },
+            {
+              "slot": 21,
+              "id": "candle",
+              "id_ru": "Свеча",
+              "count": 64
+            },
+            {
+              "slot": 22,
+              "id": "candle",
+              "id_ru": "Свеча",
+              "count": 64
+            },
+            {
+              "slot": 23,
+              "id": "candle",
+              "id_ru": "Свеча",
+              "count": 64
+            },
+            {
+              "slot": 24,
+              "id": "candle",
+              "id_ru": "Свеча",
+              "count": 64
+            },
+            {
+              "slot": 25,
+              "id": "candle",
+              "id_ru": "Свеча",
+              "count": 64
+            },
+            {
+              "slot": 26,
+              "id": "candle",
+              "id_ru": "Свеча",
+              "count": 64
+            }
+          ]
         },
         "item1": {
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 2,
+          "amount": 48,
           "content": []
         },
         "item2": {}
       },
       {
         "id": "6",
-        "resultItem": {
-          "type": "red_shulker_box",
-          "type_ru": "Красный шалкеровый ящик",
-          "minecraft_custom": "<span style=\"color: #800008\"> Ракеты III. NMB™ </span>",
-          "amount": 1,
-          "content": [
-            {
-              "slot": 0,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 1,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 2,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 3,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 4,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 5,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 6,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 7,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 8,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 9,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 10,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 11,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 12,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 13,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 14,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 15,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 16,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 17,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 18,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 19,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 20,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 21,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 22,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 23,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 24,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 25,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 26,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            }
-          ]
-        },
-        "item1": {
-          "type": "deepslate_diamond_ore",
-          "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 12,
-          "content": []
-        },
-        "item2": {}
-      },
-      {
-        "id": "7",
-        "resultItem": {
-          "type": "light_gray_shulker_box",
-          "type_ru": "Светло-серый шалкеровый ящик",
-          "minecraft_custom": "<span style=\"color: #47454D\"> Ракеты II. NMB™ </span>",
-          "amount": 1,
-          "content": [
-            {
-              "slot": 0,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 1,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 2,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 3,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 4,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 5,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 6,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 7,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 8,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 9,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 10,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 11,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 12,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 13,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 14,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 15,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 16,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 17,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 18,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 19,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 20,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 21,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 22,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 23,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 24,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 25,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 26,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            }
-          ]
-        },
-        "item1": {
-          "type": "deepslate_diamond_ore",
-          "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 8,
-          "content": []
-        },
-        "item2": {}
-      },
-      {
-        "id": "8",
-        "resultItem": {
-          "type": "white_shulker_box",
-          "type_ru": "Белый шалкеровый ящик",
-          "minecraft_custom": "<span style=\"color: #B8C0CC\"> Ракеты I. NMB™ </span>",
-          "amount": 1,
-          "content": [
-            {
-              "slot": 0,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 1,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 2,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 3,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 4,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 5,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 6,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 7,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 8,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 9,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 10,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 11,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 12,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 13,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 14,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 15,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 16,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 17,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 18,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 19,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 20,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 21,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 22,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 23,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 24,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 25,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            },
-            {
-              "slot": 26,
-              "id": "firework_rocket",
-              "id_ru": "Фейерверк",
-              "count": 64,
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
-            }
-          ]
-        },
-        "item1": {
-          "type": "deepslate_diamond_ore",
-          "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 4,
-          "content": []
-        },
-        "item2": {}
-      },
-      {
-        "id": "9",
-        "resultItem": {
-          "type": "yellow_shulker_box",
-          "type_ru": "Жёлтый шалкеровый ящик",
-          "minecraft_custom": "<span style=\"color: #DCD747\"> Огненный стержень. NMB™ </span>",
-          "amount": 1,
-          "content": [
-            {
-              "slot": 0,
-              "id": "blaze_rod",
-              "id_ru": "Огненный стержень",
-              "count": 64
-            },
-            {
-              "slot": 1,
-              "id": "blaze_rod",
-              "id_ru": "Огненный стержень",
-              "count": 64
-            },
-            {
-              "slot": 2,
-              "id": "blaze_rod",
-              "id_ru": "Огненный стержень",
-              "count": 64
-            },
-            {
-              "slot": 3,
-              "id": "blaze_rod",
-              "id_ru": "Огненный стержень",
-              "count": 64
-            },
-            {
-              "slot": 4,
-              "id": "blaze_rod",
-              "id_ru": "Огненный стержень",
-              "count": 64
-            },
-            {
-              "slot": 5,
-              "id": "blaze_rod",
-              "id_ru": "Огненный стержень",
-              "count": 64
-            },
-            {
-              "slot": 6,
-              "id": "blaze_rod",
-              "id_ru": "Огненный стержень",
-              "count": 64
-            },
-            {
-              "slot": 7,
-              "id": "blaze_rod",
-              "id_ru": "Огненный стержень",
-              "count": 64
-            },
-            {
-              "slot": 8,
-              "id": "blaze_rod",
-              "id_ru": "Огненный стержень",
-              "count": 64
-            },
-            {
-              "slot": 9,
-              "id": "blaze_rod",
-              "id_ru": "Огненный стержень",
-              "count": 64
-            },
-            {
-              "slot": 10,
-              "id": "blaze_rod",
-              "id_ru": "Огненный стержень",
-              "count": 64
-            },
-            {
-              "slot": 11,
-              "id": "blaze_rod",
-              "id_ru": "Огненный стержень",
-              "count": 64
-            },
-            {
-              "slot": 12,
-              "id": "blaze_rod",
-              "id_ru": "Огненный стержень",
-              "count": 64
-            },
-            {
-              "slot": 13,
-              "id": "blaze_rod",
-              "id_ru": "Огненный стержень",
-              "count": 64
-            },
-            {
-              "slot": 14,
-              "id": "blaze_rod",
-              "id_ru": "Огненный стержень",
-              "count": 64
-            },
-            {
-              "slot": 15,
-              "id": "blaze_rod",
-              "id_ru": "Огненный стержень",
-              "count": 64
-            },
-            {
-              "slot": 16,
-              "id": "blaze_rod",
-              "id_ru": "Огненный стержень",
-              "count": 64
-            },
-            {
-              "slot": 17,
-              "id": "blaze_rod",
-              "id_ru": "Огненный стержень",
-              "count": 64
-            },
-            {
-              "slot": 18,
-              "id": "blaze_rod",
-              "id_ru": "Огненный стержень",
-              "count": 64
-            },
-            {
-              "slot": 19,
-              "id": "blaze_rod",
-              "id_ru": "Огненный стержень",
-              "count": 64
-            },
-            {
-              "slot": 20,
-              "id": "blaze_rod",
-              "id_ru": "Огненный стержень",
-              "count": 64
-            },
-            {
-              "slot": 21,
-              "id": "blaze_rod",
-              "id_ru": "Огненный стержень",
-              "count": 64
-            },
-            {
-              "slot": 22,
-              "id": "blaze_rod",
-              "id_ru": "Огненный стержень",
-              "count": 64
-            },
-            {
-              "slot": 23,
-              "id": "blaze_rod",
-              "id_ru": "Огненный стержень",
-              "count": 64
-            },
-            {
-              "slot": 24,
-              "id": "blaze_rod",
-              "id_ru": "Огненный стержень",
-              "count": 64
-            },
-            {
-              "slot": 25,
-              "id": "blaze_rod",
-              "id_ru": "Огненный стержень",
-              "count": 64
-            },
-            {
-              "slot": 26,
-              "id": "blaze_rod",
-              "id_ru": "Огненный стержень",
-              "count": 64
-            }
-          ]
-        },
-        "item1": {
-          "type": "deepslate_diamond_ore",
-          "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 8,
-          "content": []
-        },
-        "item2": {}
-      },
-      {
-        "id": "10",
-        "resultItem": {
-          "type": "blue_shulker_box",
-          "type_ru": "Синий шалкеровый ящик",
-          "minecraft_custom": "<span style=\"color: #00CC99\"> Набор квамп. NMB™ </span>",
-          "amount": 1,
-          "content": [
-            {
-              "slot": 0,
-              "id": "ochre_froglight",
-              "id_ru": "Охристая квампа",
-              "count": 64
-            },
-            {
-              "slot": 1,
-              "id": "ochre_froglight",
-              "id_ru": "Охристая квампа",
-              "count": 64
-            },
-            {
-              "slot": 2,
-              "id": "ochre_froglight",
-              "id_ru": "Охристая квампа",
-              "count": 64
-            },
-            {
-              "slot": 3,
-              "id": "ochre_froglight",
-              "id_ru": "Охристая квампа",
-              "count": 64
-            },
-            {
-              "slot": 4,
-              "id": "ochre_froglight",
-              "id_ru": "Охристая квампа",
-              "count": 64
-            },
-            {
-              "slot": 5,
-              "id": "ochre_froglight",
-              "id_ru": "Охристая квампа",
-              "count": 64
-            },
-            {
-              "slot": 6,
-              "id": "ochre_froglight",
-              "id_ru": "Охристая квампа",
-              "count": 64
-            },
-            {
-              "slot": 7,
-              "id": "ochre_froglight",
-              "id_ru": "Охристая квампа",
-              "count": 64
-            },
-            {
-              "slot": 8,
-              "id": "ochre_froglight",
-              "id_ru": "Охристая квампа",
-              "count": 64
-            },
-            {
-              "slot": 9,
-              "id": "verdant_froglight",
-              "id_ru": "Малахитовая квампа",
-              "count": 64
-            },
-            {
-              "slot": 10,
-              "id": "verdant_froglight",
-              "id_ru": "Малахитовая квампа",
-              "count": 64
-            },
-            {
-              "slot": 11,
-              "id": "verdant_froglight",
-              "id_ru": "Малахитовая квампа",
-              "count": 64
-            },
-            {
-              "slot": 12,
-              "id": "verdant_froglight",
-              "id_ru": "Малахитовая квампа",
-              "count": 64
-            },
-            {
-              "slot": 13,
-              "id": "verdant_froglight",
-              "id_ru": "Малахитовая квампа",
-              "count": 64
-            },
-            {
-              "slot": 14,
-              "id": "verdant_froglight",
-              "id_ru": "Малахитовая квампа",
-              "count": 64
-            },
-            {
-              "slot": 15,
-              "id": "verdant_froglight",
-              "id_ru": "Малахитовая квампа",
-              "count": 64
-            },
-            {
-              "slot": 16,
-              "id": "verdant_froglight",
-              "id_ru": "Малахитовая квампа",
-              "count": 64
-            },
-            {
-              "slot": 17,
-              "id": "verdant_froglight",
-              "id_ru": "Малахитовая квампа",
-              "count": 64
-            },
-            {
-              "slot": 18,
-              "id": "pearlescent_froglight",
-              "id_ru": "Перламутровая квампа",
-              "count": 64
-            },
-            {
-              "slot": 19,
-              "id": "pearlescent_froglight",
-              "id_ru": "Перламутровая квампа",
-              "count": 64
-            },
-            {
-              "slot": 20,
-              "id": "pearlescent_froglight",
-              "id_ru": "Перламутровая квампа",
-              "count": 64
-            },
-            {
-              "slot": 21,
-              "id": "pearlescent_froglight",
-              "id_ru": "Перламутровая квампа",
-              "count": 64
-            },
-            {
-              "slot": 22,
-              "id": "pearlescent_froglight",
-              "id_ru": "Перламутровая квампа",
-              "count": 64
-            },
-            {
-              "slot": 23,
-              "id": "pearlescent_froglight",
-              "id_ru": "Перламутровая квампа",
-              "count": 64
-            },
-            {
-              "slot": 24,
-              "id": "pearlescent_froglight",
-              "id_ru": "Перламутровая квампа",
-              "count": 64
-            },
-            {
-              "slot": 25,
-              "id": "pearlescent_froglight",
-              "id_ru": "Перламутровая квампа",
-              "count": 64
-            },
-            {
-              "slot": 26,
-              "id": "pearlescent_froglight",
-              "id_ru": "Перламутровая квампа",
-              "count": 64
-            }
-          ]
-        },
-        "item1": {
-          "type": "deepslate_diamond_ore",
-          "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 12,
-          "content": []
-        },
-        "item2": {}
-      },
-      {
-        "id": "11",
-        "resultItem": {
-          "type": "purple_shulker_box",
-          "type_ru": "Фиолетовый шалкеровый ящик",
-          "minecraft_custom": "<span style=\"color: #B57EDC\"> Перламутровые квампы. NMB™ </span>",
-          "amount": 1,
-          "content": [
-            {
-              "slot": 0,
-              "id": "pearlescent_froglight",
-              "id_ru": "Перламутровая квампа",
-              "count": 64
-            },
-            {
-              "slot": 1,
-              "id": "pearlescent_froglight",
-              "id_ru": "Перламутровая квампа",
-              "count": 64
-            },
-            {
-              "slot": 2,
-              "id": "pearlescent_froglight",
-              "id_ru": "Перламутровая квампа",
-              "count": 64
-            },
-            {
-              "slot": 3,
-              "id": "pearlescent_froglight",
-              "id_ru": "Перламутровая квампа",
-              "count": 64
-            },
-            {
-              "slot": 4,
-              "id": "pearlescent_froglight",
-              "id_ru": "Перламутровая квампа",
-              "count": 64
-            },
-            {
-              "slot": 5,
-              "id": "pearlescent_froglight",
-              "id_ru": "Перламутровая квампа",
-              "count": 64
-            },
-            {
-              "slot": 6,
-              "id": "pearlescent_froglight",
-              "id_ru": "Перламутровая квампа",
-              "count": 64
-            },
-            {
-              "slot": 7,
-              "id": "pearlescent_froglight",
-              "id_ru": "Перламутровая квампа",
-              "count": 64
-            },
-            {
-              "slot": 8,
-              "id": "pearlescent_froglight",
-              "id_ru": "Перламутровая квампа",
-              "count": 64
-            },
-            {
-              "slot": 9,
-              "id": "pearlescent_froglight",
-              "id_ru": "Перламутровая квампа",
-              "count": 64
-            },
-            {
-              "slot": 10,
-              "id": "pearlescent_froglight",
-              "id_ru": "Перламутровая квампа",
-              "count": 64
-            },
-            {
-              "slot": 11,
-              "id": "pearlescent_froglight",
-              "id_ru": "Перламутровая квампа",
-              "count": 64
-            },
-            {
-              "slot": 12,
-              "id": "pearlescent_froglight",
-              "id_ru": "Перламутровая квампа",
-              "count": 64
-            },
-            {
-              "slot": 13,
-              "id": "pearlescent_froglight",
-              "id_ru": "Перламутровая квампа",
-              "count": 64
-            },
-            {
-              "slot": 14,
-              "id": "pearlescent_froglight",
-              "id_ru": "Перламутровая квампа",
-              "count": 64
-            },
-            {
-              "slot": 15,
-              "id": "pearlescent_froglight",
-              "id_ru": "Перламутровая квампа",
-              "count": 64
-            },
-            {
-              "slot": 16,
-              "id": "pearlescent_froglight",
-              "id_ru": "Перламутровая квампа",
-              "count": 64
-            },
-            {
-              "slot": 17,
-              "id": "pearlescent_froglight",
-              "id_ru": "Перламутровая квампа",
-              "count": 64
-            },
-            {
-              "slot": 18,
-              "id": "pearlescent_froglight",
-              "id_ru": "Перламутровая квампа",
-              "count": 64
-            },
-            {
-              "slot": 19,
-              "id": "pearlescent_froglight",
-              "id_ru": "Перламутровая квампа",
-              "count": 64
-            },
-            {
-              "slot": 20,
-              "id": "pearlescent_froglight",
-              "id_ru": "Перламутровая квампа",
-              "count": 64
-            },
-            {
-              "slot": 21,
-              "id": "pearlescent_froglight",
-              "id_ru": "Перламутровая квампа",
-              "count": 64
-            },
-            {
-              "slot": 22,
-              "id": "pearlescent_froglight",
-              "id_ru": "Перламутровая квампа",
-              "count": 64
-            },
-            {
-              "slot": 23,
-              "id": "pearlescent_froglight",
-              "id_ru": "Перламутровая квампа",
-              "count": 64
-            },
-            {
-              "slot": 24,
-              "id": "pearlescent_froglight",
-              "id_ru": "Перламутровая квампа",
-              "count": 64
-            },
-            {
-              "slot": 25,
-              "id": "pearlescent_froglight",
-              "id_ru": "Перламутровая квампа",
-              "count": 64
-            },
-            {
-              "slot": 26,
-              "id": "pearlescent_froglight",
-              "id_ru": "Перламутровая квампа",
-              "count": 64
-            }
-          ]
-        },
-        "item1": {
-          "type": "deepslate_diamond_ore",
-          "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 12,
-          "content": []
-        },
-        "item2": {}
-      },
-      {
-        "id": "12",
-        "resultItem": {
-          "type": "pearlescent_froglight",
-          "type_ru": "Перламутровая квампа",
-          "amount": 64,
-          "content": []
-        },
-        "item1": {
-          "type": "deepslate_diamond_ore",
-          "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 2,
-          "content": []
-        },
-        "item2": {}
-      },
-      {
-        "id": "13",
-        "resultItem": {
-          "type": "green_shulker_box",
-          "type_ru": "Зелёный шалкеровый ящик",
-          "minecraft_custom": "<span style=\"color: #63B76C\"> Малахитовые квампы. NMB™ </span>",
-          "amount": 1,
-          "content": [
-            {
-              "slot": 0,
-              "id": "verdant_froglight",
-              "id_ru": "Малахитовая квампа",
-              "count": 64
-            },
-            {
-              "slot": 1,
-              "id": "verdant_froglight",
-              "id_ru": "Малахитовая квампа",
-              "count": 64
-            },
-            {
-              "slot": 2,
-              "id": "verdant_froglight",
-              "id_ru": "Малахитовая квампа",
-              "count": 64
-            },
-            {
-              "slot": 3,
-              "id": "verdant_froglight",
-              "id_ru": "Малахитовая квампа",
-              "count": 64
-            },
-            {
-              "slot": 4,
-              "id": "verdant_froglight",
-              "id_ru": "Малахитовая квампа",
-              "count": 64
-            },
-            {
-              "slot": 5,
-              "id": "verdant_froglight",
-              "id_ru": "Малахитовая квампа",
-              "count": 64
-            },
-            {
-              "slot": 6,
-              "id": "verdant_froglight",
-              "id_ru": "Малахитовая квампа",
-              "count": 64
-            },
-            {
-              "slot": 7,
-              "id": "verdant_froglight",
-              "id_ru": "Малахитовая квампа",
-              "count": 64
-            },
-            {
-              "slot": 8,
-              "id": "verdant_froglight",
-              "id_ru": "Малахитовая квампа",
-              "count": 64
-            },
-            {
-              "slot": 9,
-              "id": "verdant_froglight",
-              "id_ru": "Малахитовая квампа",
-              "count": 64
-            },
-            {
-              "slot": 10,
-              "id": "verdant_froglight",
-              "id_ru": "Малахитовая квампа",
-              "count": 64
-            },
-            {
-              "slot": 11,
-              "id": "verdant_froglight",
-              "id_ru": "Малахитовая квампа",
-              "count": 64
-            },
-            {
-              "slot": 12,
-              "id": "verdant_froglight",
-              "id_ru": "Малахитовая квампа",
-              "count": 64
-            },
-            {
-              "slot": 13,
-              "id": "verdant_froglight",
-              "id_ru": "Малахитовая квампа",
-              "count": 64
-            },
-            {
-              "slot": 14,
-              "id": "verdant_froglight",
-              "id_ru": "Малахитовая квампа",
-              "count": 64
-            },
-            {
-              "slot": 15,
-              "id": "verdant_froglight",
-              "id_ru": "Малахитовая квампа",
-              "count": 64
-            },
-            {
-              "slot": 16,
-              "id": "verdant_froglight",
-              "id_ru": "Малахитовая квампа",
-              "count": 64
-            },
-            {
-              "slot": 17,
-              "id": "verdant_froglight",
-              "id_ru": "Малахитовая квампа",
-              "count": 64
-            },
-            {
-              "slot": 18,
-              "id": "verdant_froglight",
-              "id_ru": "Малахитовая квампа",
-              "count": 64
-            },
-            {
-              "slot": 19,
-              "id": "verdant_froglight",
-              "id_ru": "Малахитовая квампа",
-              "count": 64
-            },
-            {
-              "slot": 20,
-              "id": "verdant_froglight",
-              "id_ru": "Малахитовая квампа",
-              "count": 64
-            },
-            {
-              "slot": 21,
-              "id": "verdant_froglight",
-              "id_ru": "Малахитовая квампа",
-              "count": 64
-            },
-            {
-              "slot": 22,
-              "id": "verdant_froglight",
-              "id_ru": "Малахитовая квампа",
-              "count": 64
-            },
-            {
-              "slot": 23,
-              "id": "verdant_froglight",
-              "id_ru": "Малахитовая квампа",
-              "count": 64
-            },
-            {
-              "slot": 24,
-              "id": "verdant_froglight",
-              "id_ru": "Малахитовая квампа",
-              "count": 64
-            },
-            {
-              "slot": 25,
-              "id": "verdant_froglight",
-              "id_ru": "Малахитовая квампа",
-              "count": 64
-            },
-            {
-              "slot": 26,
-              "id": "verdant_froglight",
-              "id_ru": "Малахитовая квампа",
-              "count": 64
-            }
-          ]
-        },
-        "item1": {
-          "type": "deepslate_diamond_ore",
-          "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 12,
-          "content": []
-        },
-        "item2": {}
-      },
-      {
-        "id": "14",
-        "resultItem": {
-          "type": "verdant_froglight",
-          "type_ru": "Малахитовая квампа",
-          "amount": 64,
-          "content": []
-        },
-        "item1": {
-          "type": "deepslate_diamond_ore",
-          "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 2,
-          "content": []
-        },
-        "item2": {}
-      },
-      {
-        "id": "15",
-        "resultItem": {
-          "type": "yellow_shulker_box",
-          "type_ru": "Жёлтый шалкеровый ящик",
-          "minecraft_custom": "<span style=\"color: #F0DB7D\"> Охристые квампы. NMB™ </span>",
-          "amount": 1,
-          "content": [
-            {
-              "slot": 0,
-              "id": "ochre_froglight",
-              "id_ru": "Охристая квампа",
-              "count": 64
-            },
-            {
-              "slot": 1,
-              "id": "ochre_froglight",
-              "id_ru": "Охристая квампа",
-              "count": 64
-            },
-            {
-              "slot": 2,
-              "id": "ochre_froglight",
-              "id_ru": "Охристая квампа",
-              "count": 64
-            },
-            {
-              "slot": 3,
-              "id": "ochre_froglight",
-              "id_ru": "Охристая квампа",
-              "count": 64
-            },
-            {
-              "slot": 4,
-              "id": "ochre_froglight",
-              "id_ru": "Охристая квампа",
-              "count": 64
-            },
-            {
-              "slot": 5,
-              "id": "ochre_froglight",
-              "id_ru": "Охристая квампа",
-              "count": 64
-            },
-            {
-              "slot": 6,
-              "id": "ochre_froglight",
-              "id_ru": "Охристая квампа",
-              "count": 64
-            },
-            {
-              "slot": 7,
-              "id": "ochre_froglight",
-              "id_ru": "Охристая квампа",
-              "count": 64
-            },
-            {
-              "slot": 8,
-              "id": "ochre_froglight",
-              "id_ru": "Охристая квампа",
-              "count": 64
-            },
-            {
-              "slot": 9,
-              "id": "ochre_froglight",
-              "id_ru": "Охристая квампа",
-              "count": 64
-            },
-            {
-              "slot": 10,
-              "id": "ochre_froglight",
-              "id_ru": "Охристая квампа",
-              "count": 64
-            },
-            {
-              "slot": 11,
-              "id": "ochre_froglight",
-              "id_ru": "Охристая квампа",
-              "count": 64
-            },
-            {
-              "slot": 12,
-              "id": "ochre_froglight",
-              "id_ru": "Охристая квампа",
-              "count": 64
-            },
-            {
-              "slot": 13,
-              "id": "ochre_froglight",
-              "id_ru": "Охристая квампа",
-              "count": 64
-            },
-            {
-              "slot": 14,
-              "id": "ochre_froglight",
-              "id_ru": "Охристая квампа",
-              "count": 64
-            },
-            {
-              "slot": 15,
-              "id": "ochre_froglight",
-              "id_ru": "Охристая квампа",
-              "count": 64
-            },
-            {
-              "slot": 16,
-              "id": "ochre_froglight",
-              "id_ru": "Охристая квампа",
-              "count": 64
-            },
-            {
-              "slot": 17,
-              "id": "ochre_froglight",
-              "id_ru": "Охристая квампа",
-              "count": 64
-            },
-            {
-              "slot": 18,
-              "id": "ochre_froglight",
-              "id_ru": "Охристая квампа",
-              "count": 64
-            },
-            {
-              "slot": 19,
-              "id": "ochre_froglight",
-              "id_ru": "Охристая квампа",
-              "count": 64
-            },
-            {
-              "slot": 20,
-              "id": "ochre_froglight",
-              "id_ru": "Охристая квампа",
-              "count": 64
-            },
-            {
-              "slot": 21,
-              "id": "ochre_froglight",
-              "id_ru": "Охристая квампа",
-              "count": 64
-            },
-            {
-              "slot": 22,
-              "id": "ochre_froglight",
-              "id_ru": "Охристая квампа",
-              "count": 64
-            },
-            {
-              "slot": 23,
-              "id": "ochre_froglight",
-              "id_ru": "Охристая квампа",
-              "count": 64
-            },
-            {
-              "slot": 24,
-              "id": "ochre_froglight",
-              "id_ru": "Охристая квампа",
-              "count": 64
-            },
-            {
-              "slot": 25,
-              "id": "ochre_froglight",
-              "id_ru": "Охристая квампа",
-              "count": 64
-            },
-            {
-              "slot": 26,
-              "id": "ochre_froglight",
-              "id_ru": "Охристая квампа",
-              "count": 64
-            }
-          ]
-        },
-        "item1": {
-          "type": "deepslate_diamond_ore",
-          "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 12,
-          "content": []
-        },
-        "item2": {}
-      },
-      {
-        "id": "16",
-        "resultItem": {
-          "type": "ochre_froglight",
-          "type_ru": "Охристая квампа",
-          "amount": 64,
-          "content": []
-        },
-        "item1": {
-          "type": "deepslate_diamond_ore",
-          "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 2,
-          "content": []
-        },
-        "item2": {}
-      },
-      {
-        "id": "17",
-        "resultItem": {
-          "type": "shroomlight",
-          "type_ru": "Грибосвет",
-          "amount": 64,
-          "content": []
-        },
-        "item1": {
-          "type": "deepslate_diamond_ore",
-          "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 16,
-          "content": []
-        },
-        "item2": {}
-      },
-      {
-        "id": "18",
-        "resultItem": {
-          "type": "golden_apple",
-          "type_ru": "Золотое яблоко",
-          "amount": 64,
-          "content": []
-        },
-        "item1": {
-          "type": "deepslate_diamond_ore",
-          "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 3,
-          "content": []
-        },
-        "item2": {}
-      },
-      {
-        "id": "19",
-        "resultItem": {
-          "type": "pointed_dripstone",
-          "type_ru": "Капельник",
-          "amount": 32,
-          "content": []
-        },
-        "item1": {
-          "type": "deepslate_diamond_ore",
-          "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 2,
-          "content": []
-        },
-        "item2": {}
-      },
-      {
-        "id": "20",
-        "resultItem": {
-          "type": "amethyst_cluster",
-          "type_ru": "Аметистовая друза",
-          "amount": 16,
-          "content": []
-        },
-        "item1": {
-          "type": "deepslate_diamond_ore",
-          "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 2,
-          "content": []
-        },
-        "item2": {}
-      },
-      {
-        "id": "21",
-        "resultItem": {
-          "type": "mud_bricks",
-          "type_ru": "Саманные кирпичи",
-          "amount": 64,
-          "content": []
-        },
-        "item1": {
-          "type": "deepslate_diamond_ore",
-          "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 3,
-          "content": []
-        },
-        "item2": {}
-      },
-      {
-        "id": "22",
         "resultItem": {
           "type": "purple_shulker_box",
           "type_ru": "Фиолетовый шалкеровый ящик",
@@ -24597,173 +22151,173 @@ export const shopData = [
         }
       },
       {
-        "id": "23",
+        "id": "7",
         "resultItem": {
-          "type": "magenta_shulker_box",
-          "type_ru": "Пурпурный шалкеровый ящик",
-          "minecraft_custom": "<span style=\"color: #B3006B\"> Набор «Палитра». NMB™ </span>",
+          "type": "blue_shulker_box",
+          "type_ru": "Синий шалкеровый ящик",
+          "minecraft_custom": "<span style=\"color: #00CC99\"> Набор «Квампы». N.Viento™ </span>",
           "amount": 1,
           "content": [
             {
               "slot": 0,
-              "id": "red_dye",
-              "id_ru": "Красный краситель",
+              "id": "ochre_froglight",
+              "id_ru": "Охристая квампа",
               "count": 64
             },
             {
               "slot": 1,
-              "id": "orange_dye",
-              "id_ru": "Оранжевый краситель",
+              "id": "ochre_froglight",
+              "id_ru": "Охристая квампа",
               "count": 64
             },
             {
               "slot": 2,
-              "id": "yellow_dye",
-              "id_ru": "Жёлтый краситель",
+              "id": "ochre_froglight",
+              "id_ru": "Охристая квампа",
               "count": 64
             },
             {
               "slot": 3,
-              "id": "lime_dye",
-              "id_ru": "Лаймовый краситель",
+              "id": "ochre_froglight",
+              "id_ru": "Охристая квампа",
               "count": 64
             },
             {
               "slot": 4,
-              "id": "green_dye",
-              "id_ru": "Зелёный краситель",
+              "id": "ochre_froglight",
+              "id_ru": "Охристая квампа",
               "count": 64
             },
             {
               "slot": 5,
-              "id": "cyan_dye",
-              "id_ru": "Бирюзовый краситель",
+              "id": "ochre_froglight",
+              "id_ru": "Охристая квампа",
               "count": 64
             },
             {
               "slot": 6,
-              "id": "light_blue_dye",
-              "id_ru": "Голубой краситель",
+              "id": "ochre_froglight",
+              "id_ru": "Охристая квампа",
               "count": 64
             },
             {
               "slot": 7,
-              "id": "blue_dye",
-              "id_ru": "Синий краситель",
+              "id": "ochre_froglight",
+              "id_ru": "Охристая квампа",
               "count": 64
             },
             {
               "slot": 8,
-              "id": "purple_dye",
-              "id_ru": "Фиолетовый краситель",
+              "id": "ochre_froglight",
+              "id_ru": "Охристая квампа",
               "count": 64
             },
             {
               "slot": 9,
-              "id": "magenta_dye",
-              "id_ru": "Пурпурный краситель",
+              "id": "verdant_froglight",
+              "id_ru": "Малахитовая квампа",
               "count": 64
             },
             {
               "slot": 10,
-              "id": "pink_dye",
-              "id_ru": "Розовый краситель",
+              "id": "verdant_froglight",
+              "id_ru": "Малахитовая квампа",
               "count": 64
             },
             {
               "slot": 11,
-              "id": "white_dye",
-              "id_ru": "Белый краситель",
+              "id": "verdant_froglight",
+              "id_ru": "Малахитовая квампа",
               "count": 64
             },
             {
               "slot": 12,
-              "id": "light_gray_dye",
-              "id_ru": "Светло-серый краситель",
+              "id": "verdant_froglight",
+              "id_ru": "Малахитовая квампа",
               "count": 64
             },
             {
               "slot": 13,
-              "id": "gray_dye",
-              "id_ru": "Серый краситель",
+              "id": "verdant_froglight",
+              "id_ru": "Малахитовая квампа",
               "count": 64
             },
             {
               "slot": 14,
-              "id": "black_dye",
-              "id_ru": "Чёрный краситель",
+              "id": "verdant_froglight",
+              "id_ru": "Малахитовая квампа",
               "count": 64
             },
             {
               "slot": 15,
-              "id": "brown_dye",
-              "id_ru": "Коричневый краситель",
+              "id": "verdant_froglight",
+              "id_ru": "Малахитовая квампа",
               "count": 64
             },
             {
               "slot": 16,
-              "id": "feather",
-              "id_ru": "Перо",
+              "id": "verdant_froglight",
+              "id_ru": "Малахитовая квампа",
               "count": 64
             },
             {
               "slot": 17,
-              "id": "book",
-              "id_ru": "Книга",
+              "id": "verdant_froglight",
+              "id_ru": "Малахитовая квампа",
               "count": 64
             },
             {
               "slot": 18,
-              "id": "dark_oak_sign",
-              "id_ru": "Табличка из тёмного дуба",
-              "count": 16
+              "id": "pearlescent_froglight",
+              "id_ru": "Перламутровая квампа",
+              "count": 64
             },
             {
               "slot": 19,
-              "id": "spruce_sign",
-              "id_ru": "Еловая табличка",
-              "count": 16
+              "id": "pearlescent_froglight",
+              "id_ru": "Перламутровая квампа",
+              "count": 64
             },
             {
               "slot": 20,
-              "id": "oak_sign",
-              "id_ru": "Дубовая табличка",
-              "count": 16
+              "id": "pearlescent_froglight",
+              "id_ru": "Перламутровая квампа",
+              "count": 64
             },
             {
               "slot": 21,
-              "id": "birch_sign",
-              "id_ru": "Берёзовая табличка",
-              "count": 16
+              "id": "pearlescent_froglight",
+              "id_ru": "Перламутровая квампа",
+              "count": 64
             },
             {
               "slot": 22,
-              "id": "jungle_sign",
-              "id_ru": "Табличка из тропического дерева",
-              "count": 16
+              "id": "pearlescent_froglight",
+              "id_ru": "Перламутровая квампа",
+              "count": 64
             },
             {
               "slot": 23,
-              "id": "acacia_sign",
-              "id_ru": "Акациевая табличка",
-              "count": 16
+              "id": "pearlescent_froglight",
+              "id_ru": "Перламутровая квампа",
+              "count": 64
             },
             {
               "slot": 24,
-              "id": "warped_sign",
-              "id_ru": "Искажённая табличка",
-              "count": 16
+              "id": "pearlescent_froglight",
+              "id_ru": "Перламутровая квампа",
+              "count": 64
             },
             {
               "slot": 25,
-              "id": "glow_ink_sac",
-              "id_ru": "Светящийся чернильный мешок",
+              "id": "pearlescent_froglight",
+              "id_ru": "Перламутровая квампа",
               "count": 64
             },
             {
               "slot": 26,
-              "id": "ink_sac",
-              "id_ru": "Чернильный мешок",
+              "id": "pearlescent_froglight",
+              "id_ru": "Перламутровая квампа",
               "count": 64
             }
           ]
@@ -24771,34 +22325,623 @@ export const shopData = [
         "item1": {
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 48,
+          "amount": 12,
           "content": []
         },
         "item2": {}
       },
       {
-        "id": "24",
+        "id": "8",
         "resultItem": {
-          "type": "sculk_shrieker",
-          "type_ru": "Скалковый крикун",
-          "amount": 16,
-          "content": []
+          "type": "red_shulker_box",
+          "type_ru": "Красный шалкеровый ящик",
+          "minecraft_custom": "<span style=\"color: #800008\"> Ракеты III. NMB™ </span>",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 3
+            },
+            {
+              "slot": 1,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 3
+            },
+            {
+              "slot": 2,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 3
+            },
+            {
+              "slot": 3,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 3
+            },
+            {
+              "slot": 4,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 3
+            },
+            {
+              "slot": 5,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 3
+            },
+            {
+              "slot": 6,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 3
+            },
+            {
+              "slot": 7,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 3
+            },
+            {
+              "slot": 8,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 3
+            },
+            {
+              "slot": 9,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 3
+            },
+            {
+              "slot": 10,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 3
+            },
+            {
+              "slot": 11,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 3
+            },
+            {
+              "slot": 12,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 3
+            },
+            {
+              "slot": 13,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 3
+            },
+            {
+              "slot": 14,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 3
+            },
+            {
+              "slot": 15,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 3
+            },
+            {
+              "slot": 16,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 3
+            },
+            {
+              "slot": 17,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 3
+            },
+            {
+              "slot": 18,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 3
+            },
+            {
+              "slot": 19,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 3
+            },
+            {
+              "slot": 20,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 3
+            },
+            {
+              "slot": 21,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 3
+            },
+            {
+              "slot": 22,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 3
+            },
+            {
+              "slot": 23,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 3
+            },
+            {
+              "slot": 24,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 3
+            },
+            {
+              "slot": 25,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 3
+            },
+            {
+              "slot": 26,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 3
+            }
+          ]
         },
         "item1": {
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 2,
+          "amount": 12,
           "content": []
         },
         "item2": {}
       },
       {
-        "id": "25",
+        "id": "9",
         "resultItem": {
-          "type": "sculk_sensor",
-          "type_ru": "Скалк-сенсор",
-          "amount": 32,
+          "type": "light_gray_shulker_box",
+          "type_ru": "Светло-серый шалкеровый ящик",
+          "minecraft_custom": "<span style=\"color: #47454D\"> Ракеты II. NMB™ </span>",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 2
+            },
+            {
+              "slot": 1,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 2
+            },
+            {
+              "slot": 2,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 2
+            },
+            {
+              "slot": 3,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 2
+            },
+            {
+              "slot": 4,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 2
+            },
+            {
+              "slot": 5,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 2
+            },
+            {
+              "slot": 6,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 2
+            },
+            {
+              "slot": 7,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 2
+            },
+            {
+              "slot": 8,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 2
+            },
+            {
+              "slot": 9,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 2
+            },
+            {
+              "slot": 10,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 2
+            },
+            {
+              "slot": 11,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 2
+            },
+            {
+              "slot": 12,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 2
+            },
+            {
+              "slot": 13,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 2
+            },
+            {
+              "slot": 14,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 2
+            },
+            {
+              "slot": 15,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 2
+            },
+            {
+              "slot": 16,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 2
+            },
+            {
+              "slot": 17,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 2
+            },
+            {
+              "slot": 18,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 2
+            },
+            {
+              "slot": 19,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 2
+            },
+            {
+              "slot": 20,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 2
+            },
+            {
+              "slot": 21,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 2
+            },
+            {
+              "slot": 22,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 2
+            },
+            {
+              "slot": 23,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 2
+            },
+            {
+              "slot": 24,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 2
+            },
+            {
+              "slot": 25,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 2
+            },
+            {
+              "slot": 26,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 2
+            }
+          ]
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 8,
           "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "10",
+        "resultItem": {
+          "type": "white_shulker_box",
+          "type_ru": "Белый шалкеровый ящик",
+          "minecraft_custom": "<span style=\"color: #B8C0CC\"> Ракеты I. NMB™ </span>",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 1
+            },
+            {
+              "slot": 1,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 1
+            },
+            {
+              "slot": 2,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 1
+            },
+            {
+              "slot": 3,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 1
+            },
+            {
+              "slot": 4,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 1
+            },
+            {
+              "slot": 5,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 1
+            },
+            {
+              "slot": 6,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 1
+            },
+            {
+              "slot": 7,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 1
+            },
+            {
+              "slot": 8,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 1
+            },
+            {
+              "slot": 9,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 1
+            },
+            {
+              "slot": 10,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 1
+            },
+            {
+              "slot": 11,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 1
+            },
+            {
+              "slot": 12,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 1
+            },
+            {
+              "slot": 13,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 1
+            },
+            {
+              "slot": 14,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 1
+            },
+            {
+              "slot": 15,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 1
+            },
+            {
+              "slot": 16,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 1
+            },
+            {
+              "slot": 17,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 1
+            },
+            {
+              "slot": 18,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 1
+            },
+            {
+              "slot": 19,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 1
+            },
+            {
+              "slot": 20,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 1
+            },
+            {
+              "slot": 21,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 1
+            },
+            {
+              "slot": 22,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 1
+            },
+            {
+              "slot": 23,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 1
+            },
+            {
+              "slot": 24,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 1
+            },
+            {
+              "slot": 25,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 1
+            },
+            {
+              "slot": 26,
+              "id": "firework_rocket",
+              "id_ru": "Фейерверк",
+              "count": 64,
+              "firework_power": 1
+            }
+          ]
         },
         "item1": {
           "type": "deepslate_diamond_ore",
@@ -24809,11 +22952,371 @@ export const shopData = [
         "item2": {}
       },
       {
-        "id": "26",
+        "id": "11",
+        "resultItem": {
+          "type": "lime_shulker_box",
+          "type_ru": "Лаймовый шалкеровый ящик",
+          "minecraft_custom": "<span style=\"color: #6F9D02\"> Замшелый булыжник. N.Viento™ </span>",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "mossy_cobblestone",
+              "id_ru": "Замшелый булыжник",
+              "count": 64
+            },
+            {
+              "slot": 1,
+              "id": "mossy_cobblestone",
+              "id_ru": "Замшелый булыжник",
+              "count": 64
+            },
+            {
+              "slot": 2,
+              "id": "mossy_cobblestone",
+              "id_ru": "Замшелый булыжник",
+              "count": 64
+            },
+            {
+              "slot": 3,
+              "id": "mossy_cobblestone",
+              "id_ru": "Замшелый булыжник",
+              "count": 64
+            },
+            {
+              "slot": 4,
+              "id": "mossy_cobblestone",
+              "id_ru": "Замшелый булыжник",
+              "count": 64
+            },
+            {
+              "slot": 5,
+              "id": "mossy_cobblestone",
+              "id_ru": "Замшелый булыжник",
+              "count": 64
+            },
+            {
+              "slot": 6,
+              "id": "mossy_cobblestone",
+              "id_ru": "Замшелый булыжник",
+              "count": 64
+            },
+            {
+              "slot": 7,
+              "id": "mossy_cobblestone",
+              "id_ru": "Замшелый булыжник",
+              "count": 64
+            },
+            {
+              "slot": 8,
+              "id": "mossy_cobblestone",
+              "id_ru": "Замшелый булыжник",
+              "count": 64
+            },
+            {
+              "slot": 9,
+              "id": "mossy_cobblestone",
+              "id_ru": "Замшелый булыжник",
+              "count": 64
+            },
+            {
+              "slot": 10,
+              "id": "mossy_cobblestone",
+              "id_ru": "Замшелый булыжник",
+              "count": 64
+            },
+            {
+              "slot": 11,
+              "id": "mossy_cobblestone",
+              "id_ru": "Замшелый булыжник",
+              "count": 64
+            },
+            {
+              "slot": 12,
+              "id": "mossy_cobblestone",
+              "id_ru": "Замшелый булыжник",
+              "count": 64
+            },
+            {
+              "slot": 13,
+              "id": "mossy_cobblestone",
+              "id_ru": "Замшелый булыжник",
+              "count": 64
+            },
+            {
+              "slot": 14,
+              "id": "mossy_cobblestone",
+              "id_ru": "Замшелый булыжник",
+              "count": 64
+            },
+            {
+              "slot": 15,
+              "id": "mossy_cobblestone",
+              "id_ru": "Замшелый булыжник",
+              "count": 64
+            },
+            {
+              "slot": 16,
+              "id": "mossy_cobblestone",
+              "id_ru": "Замшелый булыжник",
+              "count": 64
+            },
+            {
+              "slot": 17,
+              "id": "mossy_cobblestone",
+              "id_ru": "Замшелый булыжник",
+              "count": 64
+            },
+            {
+              "slot": 18,
+              "id": "mossy_cobblestone",
+              "id_ru": "Замшелый булыжник",
+              "count": 64
+            },
+            {
+              "slot": 19,
+              "id": "mossy_cobblestone",
+              "id_ru": "Замшелый булыжник",
+              "count": 64
+            },
+            {
+              "slot": 20,
+              "id": "mossy_cobblestone",
+              "id_ru": "Замшелый булыжник",
+              "count": 64
+            },
+            {
+              "slot": 21,
+              "id": "mossy_cobblestone",
+              "id_ru": "Замшелый булыжник",
+              "count": 64
+            },
+            {
+              "slot": 22,
+              "id": "mossy_cobblestone",
+              "id_ru": "Замшелый булыжник",
+              "count": 64
+            },
+            {
+              "slot": 23,
+              "id": "mossy_cobblestone",
+              "id_ru": "Замшелый булыжник",
+              "count": 64
+            },
+            {
+              "slot": 24,
+              "id": "mossy_cobblestone",
+              "id_ru": "Замшелый булыжник",
+              "count": 64
+            },
+            {
+              "slot": 25,
+              "id": "mossy_cobblestone",
+              "id_ru": "Замшелый булыжник",
+              "count": 64
+            },
+            {
+              "slot": 26,
+              "id": "mossy_cobblestone",
+              "id_ru": "Замшелый булыжник",
+              "count": 64
+            }
+          ]
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 10,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "12",
+        "resultItem": {
+          "type": "green_shulker_box",
+          "type_ru": "Зелёный шалкеровый ящик",
+          "minecraft_custom": "<span style=\"color: #396413\"> Замшелые каменные кирпичи. N.Viento™ </span>",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "mossy_stone_bricks",
+              "id_ru": "Замшелые каменные кирпичи",
+              "count": 64
+            },
+            {
+              "slot": 1,
+              "id": "mossy_stone_bricks",
+              "id_ru": "Замшелые каменные кирпичи",
+              "count": 64
+            },
+            {
+              "slot": 2,
+              "id": "mossy_stone_bricks",
+              "id_ru": "Замшелые каменные кирпичи",
+              "count": 64
+            },
+            {
+              "slot": 3,
+              "id": "mossy_stone_bricks",
+              "id_ru": "Замшелые каменные кирпичи",
+              "count": 64
+            },
+            {
+              "slot": 4,
+              "id": "mossy_stone_bricks",
+              "id_ru": "Замшелые каменные кирпичи",
+              "count": 64
+            },
+            {
+              "slot": 5,
+              "id": "mossy_stone_bricks",
+              "id_ru": "Замшелые каменные кирпичи",
+              "count": 64
+            },
+            {
+              "slot": 6,
+              "id": "mossy_stone_bricks",
+              "id_ru": "Замшелые каменные кирпичи",
+              "count": 64
+            },
+            {
+              "slot": 7,
+              "id": "mossy_stone_bricks",
+              "id_ru": "Замшелые каменные кирпичи",
+              "count": 64
+            },
+            {
+              "slot": 8,
+              "id": "mossy_stone_bricks",
+              "id_ru": "Замшелые каменные кирпичи",
+              "count": 64
+            },
+            {
+              "slot": 9,
+              "id": "mossy_stone_bricks",
+              "id_ru": "Замшелые каменные кирпичи",
+              "count": 64
+            },
+            {
+              "slot": 10,
+              "id": "mossy_stone_bricks",
+              "id_ru": "Замшелые каменные кирпичи",
+              "count": 64
+            },
+            {
+              "slot": 11,
+              "id": "mossy_stone_bricks",
+              "id_ru": "Замшелые каменные кирпичи",
+              "count": 64
+            },
+            {
+              "slot": 12,
+              "id": "mossy_stone_bricks",
+              "id_ru": "Замшелые каменные кирпичи",
+              "count": 64
+            },
+            {
+              "slot": 13,
+              "id": "mossy_stone_bricks",
+              "id_ru": "Замшелые каменные кирпичи",
+              "count": 64
+            },
+            {
+              "slot": 14,
+              "id": "mossy_stone_bricks",
+              "id_ru": "Замшелые каменные кирпичи",
+              "count": 64
+            },
+            {
+              "slot": 15,
+              "id": "mossy_stone_bricks",
+              "id_ru": "Замшелые каменные кирпичи",
+              "count": 64
+            },
+            {
+              "slot": 16,
+              "id": "mossy_stone_bricks",
+              "id_ru": "Замшелые каменные кирпичи",
+              "count": 64
+            },
+            {
+              "slot": 17,
+              "id": "mossy_stone_bricks",
+              "id_ru": "Замшелые каменные кирпичи",
+              "count": 64
+            },
+            {
+              "slot": 18,
+              "id": "mossy_stone_bricks",
+              "id_ru": "Замшелые каменные кирпичи",
+              "count": 64
+            },
+            {
+              "slot": 19,
+              "id": "mossy_stone_bricks",
+              "id_ru": "Замшелые каменные кирпичи",
+              "count": 64
+            },
+            {
+              "slot": 20,
+              "id": "mossy_stone_bricks",
+              "id_ru": "Замшелые каменные кирпичи",
+              "count": 64
+            },
+            {
+              "slot": 21,
+              "id": "mossy_stone_bricks",
+              "id_ru": "Замшелые каменные кирпичи",
+              "count": 64
+            },
+            {
+              "slot": 22,
+              "id": "mossy_stone_bricks",
+              "id_ru": "Замшелые каменные кирпичи",
+              "count": 64
+            },
+            {
+              "slot": 23,
+              "id": "mossy_stone_bricks",
+              "id_ru": "Замшелые каменные кирпичи",
+              "count": 64
+            },
+            {
+              "slot": 24,
+              "id": "mossy_stone_bricks",
+              "id_ru": "Замшелые каменные кирпичи",
+              "count": 64
+            },
+            {
+              "slot": 25,
+              "id": "mossy_stone_bricks",
+              "id_ru": "Замшелые каменные кирпичи",
+              "count": 64
+            },
+            {
+              "slot": 26,
+              "id": "mossy_stone_bricks",
+              "id_ru": "Замшелые каменные кирпичи",
+              "count": 64
+            }
+          ]
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 10,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "13",
         "resultItem": {
           "type": "gray_shulker_box",
           "type_ru": "Серый шалкеровый ящик",
-          "minecraft_custom": "<span style=\"color: #475466\"> Колотый глубинный сланец </span>",
+          "minecraft_custom": "<span style=\"color: #475466\"> Колотый глубинный сланец. N.Viento™ </span>",
           "amount": 1,
           "content": [
             {
@@ -24989,66 +23492,246 @@ export const shopData = [
         "item2": {}
       },
       {
-        "id": "27",
+        "id": "14",
         "resultItem": {
           "type": "yellow_shulker_box",
           "type_ru": "Жёлтый шалкеровый ящик",
-          "minecraft_custom": "<span style=\"color: #CCB800\"> Элики опыта. NMB™ </span>",
+          "minecraft_custom": "<span style=\"color: #DCD747\"> Огненный стержень. N.Viento™ </span>",
           "amount": 1,
           "content": [
             {
               "slot": 0,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
+              "id": "blaze_rod",
+              "id_ru": "Огненный стержень",
               "count": 64
             },
             {
               "slot": 1,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
+              "id": "blaze_rod",
+              "id_ru": "Огненный стержень",
               "count": 64
             },
             {
               "slot": 2,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
+              "id": "blaze_rod",
+              "id_ru": "Огненный стержень",
               "count": 64
             },
             {
               "slot": 3,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
+              "id": "blaze_rod",
+              "id_ru": "Огненный стержень",
               "count": 64
             },
             {
               "slot": 4,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
+              "id": "blaze_rod",
+              "id_ru": "Огненный стержень",
               "count": 64
             },
             {
               "slot": 5,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
+              "id": "blaze_rod",
+              "id_ru": "Огненный стержень",
               "count": 64
             },
             {
               "slot": 6,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
+              "id": "blaze_rod",
+              "id_ru": "Огненный стержень",
               "count": 64
             },
             {
               "slot": 7,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
+              "id": "blaze_rod",
+              "id_ru": "Огненный стержень",
               "count": 64
             },
             {
               "slot": 8,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
+              "id": "blaze_rod",
+              "id_ru": "Огненный стержень",
               "count": 64
+            },
+            {
+              "slot": 9,
+              "id": "blaze_rod",
+              "id_ru": "Огненный стержень",
+              "count": 64
+            },
+            {
+              "slot": 10,
+              "id": "blaze_rod",
+              "id_ru": "Огненный стержень",
+              "count": 64
+            },
+            {
+              "slot": 11,
+              "id": "blaze_rod",
+              "id_ru": "Огненный стержень",
+              "count": 64
+            },
+            {
+              "slot": 12,
+              "id": "blaze_rod",
+              "id_ru": "Огненный стержень",
+              "count": 64
+            },
+            {
+              "slot": 13,
+              "id": "blaze_rod",
+              "id_ru": "Огненный стержень",
+              "count": 64
+            },
+            {
+              "slot": 14,
+              "id": "blaze_rod",
+              "id_ru": "Огненный стержень",
+              "count": 64
+            },
+            {
+              "slot": 15,
+              "id": "blaze_rod",
+              "id_ru": "Огненный стержень",
+              "count": 64
+            },
+            {
+              "slot": 16,
+              "id": "blaze_rod",
+              "id_ru": "Огненный стержень",
+              "count": 64
+            },
+            {
+              "slot": 17,
+              "id": "blaze_rod",
+              "id_ru": "Огненный стержень",
+              "count": 64
+            },
+            {
+              "slot": 18,
+              "id": "blaze_rod",
+              "id_ru": "Огненный стержень",
+              "count": 64
+            },
+            {
+              "slot": 19,
+              "id": "blaze_rod",
+              "id_ru": "Огненный стержень",
+              "count": 64
+            },
+            {
+              "slot": 20,
+              "id": "blaze_rod",
+              "id_ru": "Огненный стержень",
+              "count": 64
+            },
+            {
+              "slot": 21,
+              "id": "blaze_rod",
+              "id_ru": "Огненный стержень",
+              "count": 64
+            },
+            {
+              "slot": 22,
+              "id": "blaze_rod",
+              "id_ru": "Огненный стержень",
+              "count": 64
+            },
+            {
+              "slot": 23,
+              "id": "blaze_rod",
+              "id_ru": "Огненный стержень",
+              "count": 64
+            },
+            {
+              "slot": 24,
+              "id": "blaze_rod",
+              "id_ru": "Огненный стержень",
+              "count": 64
+            },
+            {
+              "slot": 25,
+              "id": "blaze_rod",
+              "id_ru": "Огненный стержень",
+              "count": 64
+            },
+            {
+              "slot": 26,
+              "id": "blaze_rod",
+              "id_ru": "Огненный стержень",
+              "count": 64
+            }
+          ]
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 8,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "15",
+        "resultItem": {
+          "type": "yellow_shulker_box",
+          "type_ru": "Жёлтый шалкеровый ящик",
+          "minecraft_custom": "<span style=\"color: #E6A500\"> С Днем Рождения! </span>",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "horn_coral",
+              "id_ru": "Роговой коралл",
+              "count": 16
+            },
+            {
+              "slot": 1,
+              "id": "orange_tulip",
+              "id_ru": "Оранжевый тюльпан",
+              "count": 16
+            },
+            {
+              "slot": 2,
+              "id": "bell",
+              "id_ru": "Колокол",
+              "count": 16
+            },
+            {
+              "slot": 3,
+              "id": "honeycomb_block",
+              "id_ru": "Блок пчелиных сот",
+              "count": 16
+            },
+            {
+              "slot": 4,
+              "id": "honey_bottle",
+              "id_ru": "Бутылочка мёда",
+              "count": 16
+            },
+            {
+              "slot": 5,
+              "id": "honeycomb_block",
+              "id_ru": "Блок пчелиных сот",
+              "count": 16
+            },
+            {
+              "slot": 6,
+              "id": "bell",
+              "id_ru": "Колокол",
+              "count": 16
+            },
+            {
+              "slot": 7,
+              "id": "orange_tulip",
+              "id_ru": "Оранжевый тюльпан",
+              "count": 16
+            },
+            {
+              "slot": 8,
+              "id": "horn_coral",
+              "id_ru": "Роговой коралл",
+              "count": 16
             },
             {
               "slot": 9,
@@ -25058,45 +23741,45 @@ export const shopData = [
             },
             {
               "slot": 10,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64
+              "id": "flower_pot",
+              "id_ru": "Цветочный горшок",
+              "count": 16
             },
             {
               "slot": 11,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64
+              "id": "horn_coral_fan",
+              "id_ru": "Веерный роговый коралл",
+              "count": 32
             },
             {
               "slot": 12,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64
+              "id": "bee_nest",
+              "id_ru": "Пчелиное гнездо",
+              "count": 1
             },
             {
               "slot": 13,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64
+              "id": "writable_book",
+              "id_ru": "Книга и перо",
+              "count": 1
             },
             {
               "slot": 14,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64
+              "id": "bee_nest",
+              "id_ru": "Пчелиное гнездо",
+              "count": 1
             },
             {
               "slot": 15,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64
+              "id": "horn_coral_fan",
+              "id_ru": "Веерный роговый коралл",
+              "count": 32
             },
             {
               "slot": 16,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64
+              "id": "flower_pot",
+              "id_ru": "Цветочный горшок",
+              "count": 16
             },
             {
               "slot": 17,
@@ -25106,64 +23789,244 @@ export const shopData = [
             },
             {
               "slot": 18,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64
+              "id": "horn_coral",
+              "id_ru": "Роговой коралл",
+              "count": 16
             },
             {
               "slot": 19,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64
+              "id": "orange_tulip",
+              "id_ru": "Оранжевый тюльпан",
+              "count": 16
             },
             {
               "slot": 20,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64
+              "id": "bell",
+              "id_ru": "Колокол",
+              "count": 16
             },
             {
               "slot": 21,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64
+              "id": "honeycomb_block",
+              "id_ru": "Блок пчелиных сот",
+              "count": 16
             },
             {
               "slot": 22,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64
+              "id": "honey_bottle",
+              "id_ru": "Бутылочка мёда",
+              "count": 16
             },
             {
               "slot": 23,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64
+              "id": "honeycomb_block",
+              "id_ru": "Блок пчелиных сот",
+              "count": 16
             },
             {
               "slot": 24,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64
+              "id": "bell",
+              "id_ru": "Колокол",
+              "count": 16
             },
             {
               "slot": 25,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64
+              "id": "orange_tulip",
+              "id_ru": "Оранжевый тюльпан",
+              "count": 16
             },
             {
               "slot": 26,
-              "id": "experience_bottle",
-              "id_ru": "Пузырёк опыта",
-              "count": 64
+              "id": "horn_coral",
+              "id_ru": "Роговой коралл",
+              "count": 16
             }
           ]
         },
         "item1": {
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 64,
+          "amount": 32,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "16",
+        "resultItem": {
+          "type": "yellow_shulker_box",
+          "type_ru": "Жёлтый шалкеровый ящик",
+          "minecraft_custom": "<span style=\"color: #E6A500\"> С Днем Рождения! </span>",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "horn_coral_fan",
+              "id_ru": "Веерный роговый коралл",
+              "count": 32
+            },
+            {
+              "slot": 1,
+              "id": "orange_tulip",
+              "id_ru": "Оранжевый тюльпан",
+              "count": 16
+            },
+            {
+              "slot": 2,
+              "id": "bell",
+              "id_ru": "Колокол",
+              "count": 8
+            },
+            {
+              "slot": 3,
+              "id": "honeycomb_block",
+              "id_ru": "Блок пчелиных сот",
+              "count": 16
+            },
+            {
+              "slot": 4,
+              "id": "honey_bottle",
+              "id_ru": "Бутылочка мёда",
+              "count": 16
+            },
+            {
+              "slot": 5,
+              "id": "honeycomb_block",
+              "id_ru": "Блок пчелиных сот",
+              "count": 16
+            },
+            {
+              "slot": 6,
+              "id": "bell",
+              "id_ru": "Колокол",
+              "count": 8
+            },
+            {
+              "slot": 7,
+              "id": "orange_tulip",
+              "id_ru": "Оранжевый тюльпан",
+              "count": 16
+            },
+            {
+              "slot": 8,
+              "id": "horn_coral",
+              "id_ru": "Роговой коралл",
+              "count": 32
+            },
+            {
+              "slot": 9,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64
+            },
+            {
+              "slot": 10,
+              "id": "flower_pot",
+              "id_ru": "Цветочный горшок",
+              "count": 16
+            },
+            {
+              "slot": 11,
+              "id": "glow_berries",
+              "id_ru": "Светящиеся ягоды",
+              "count": 32
+            },
+            {
+              "slot": 12,
+              "id": "gold_block",
+              "id_ru": "Золотой блок",
+              "count": 32
+            },
+            {
+              "slot": 13,
+              "id": "writable_book",
+              "id_ru": "Книга и перо",
+              "count": 1
+            },
+            {
+              "slot": 14,
+              "id": "gold_block",
+              "id_ru": "Золотой блок",
+              "count": 32
+            },
+            {
+              "slot": 15,
+              "id": "glow_berries",
+              "id_ru": "Светящиеся ягоды",
+              "count": 32
+            },
+            {
+              "slot": 16,
+              "id": "flower_pot",
+              "id_ru": "Цветочный горшок",
+              "count": 16
+            },
+            {
+              "slot": 17,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64
+            },
+            {
+              "slot": 18,
+              "id": "horn_coral",
+              "id_ru": "Роговой коралл",
+              "count": 32
+            },
+            {
+              "slot": 19,
+              "id": "orange_tulip",
+              "id_ru": "Оранжевый тюльпан",
+              "count": 16
+            },
+            {
+              "slot": 20,
+              "id": "bell",
+              "id_ru": "Колокол",
+              "count": 8
+            },
+            {
+              "slot": 21,
+              "id": "honeycomb_block",
+              "id_ru": "Блок пчелиных сот",
+              "count": 16
+            },
+            {
+              "slot": 22,
+              "id": "honey_bottle",
+              "id_ru": "Бутылочка мёда",
+              "count": 16
+            },
+            {
+              "slot": 23,
+              "id": "honeycomb_block",
+              "id_ru": "Блок пчелиных сот",
+              "count": 16
+            },
+            {
+              "slot": 24,
+              "id": "bell",
+              "id_ru": "Колокол",
+              "count": 8
+            },
+            {
+              "slot": 25,
+              "id": "orange_tulip",
+              "id_ru": "Оранжевый тюльпан",
+              "count": 16
+            },
+            {
+              "slot": 26,
+              "id": "horn_coral_fan",
+              "id_ru": "Веерный роговый коралл",
+              "count": 32
+            }
+          ]
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 32,
           "content": []
         },
         "item2": {}
@@ -30273,10 +29136,7 @@ export const shopData = [
               "id": "tipped_arrow",
               "id_ru": "Стрела вреда",
               "count": 64,
-              "potion": "strong_harming",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "strong_harming"
             },
             {
               "slot": 1,
@@ -30313,40 +29173,28 @@ export const shopData = [
               "id": "tipped_arrow",
               "id_ru": "Стрела силы",
               "count": 64,
-              "potion": "long_strength",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_strength"
             },
             {
               "slot": 7,
               "id": "tipped_arrow",
               "id_ru": "Стрела водного дыхания",
               "count": 64,
-              "potion": "long_water_breathing",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_water_breathing"
             },
             {
               "slot": 8,
               "id": "tipped_arrow",
               "id_ru": "Стрела ночного зрения",
               "count": 64,
-              "potion": "long_night_vision",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_night_vision"
             },
             {
               "slot": 9,
               "id": "tipped_arrow",
               "id_ru": "Стрела отравления",
               "count": 64,
-              "potion": "long_poison",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_poison"
             },
             {
               "slot": 10,
@@ -30383,50 +29231,35 @@ export const shopData = [
               "id": "tipped_arrow",
               "id_ru": "Стрела регенерации",
               "count": 64,
-              "potion": "long_regeneration",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_regeneration"
             },
             {
               "slot": 16,
               "id": "tipped_arrow",
               "id_ru": "Стрела исцеления",
               "count": 64,
-              "potion": "strong_healing",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "strong_healing"
             },
             {
               "slot": 17,
               "id": "tipped_arrow",
               "id_ru": "Стрела невидимости",
               "count": 64,
-              "potion": "long_invisibility",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_invisibility"
             },
             {
               "slot": 18,
               "id": "tipped_arrow",
               "id_ru": "Стрела замедления",
               "count": 64,
-              "potion": "long_slowness",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_slowness"
             },
             {
               "slot": 19,
               "id": "tipped_arrow",
               "id_ru": "Стрела слабости",
               "count": 64,
-              "potion": "long_weakness",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_weakness"
             },
             {
               "slot": 20,
@@ -30451,40 +29284,28 @@ export const shopData = [
               "id": "tipped_arrow",
               "id_ru": "Стрела плавного падения",
               "count": 64,
-              "potion": "long_slow_falling",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_slow_falling"
             },
             {
               "slot": 24,
               "id": "tipped_arrow",
               "id_ru": "Стрела стремительности",
               "count": 64,
-              "potion": "long_swiftness",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_swiftness"
             },
             {
               "slot": 25,
               "id": "tipped_arrow",
               "id_ru": "Стрела прыгучести",
               "count": 64,
-              "potion": "long_leaping",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_leaping"
             },
             {
               "slot": 26,
               "id": "tipped_arrow",
               "id_ru": "Стрела огнестойкости",
               "count": 64,
-              "potion": "long_fire_resistance",
-              "instrument": {
-                "instrument_type_ru": "{NO translation}"
-              }
+              "potion": "long_fire_resistance"
             }
           ]
         },
@@ -31140,178 +29961,6 @@ export const shopData = [
     ]
   },
   {
-    "shop_id": "81",
-    "x": -3828,
-    "y": -31,
-    "z": 7045,
-    "name": "",
-    "owner": "prestig9110",
-    "object_profession": "NONE",
-    "object_villager_type": "PLAINS",
-    "offers": [
-      {
-        "id": "1",
-        "resultItem": {
-          "type": "magenta_shulker_box",
-          "type_ru": "Пурпурный шалкеровый ящик",
-          "amount": 1,
-          "content": [
-            {
-              "slot": 0,
-              "id": "goat_horn",
-              "id_ru": "Козий рог",
-              "count": 1,
-              "instrument": {
-                "instrument_type": "seek_goat_horn",
-                "instrument_type_ru": "Стремление"
-              }
-            },
-            {
-              "slot": 1,
-              "id": "goat_horn",
-              "id_ru": "Козий рог",
-              "count": 1,
-              "instrument": {
-                "instrument_type": "sing_goat_horn",
-                "instrument_type_ru": "Воспевание"
-              }
-            },
-            {
-              "slot": 2,
-              "id": "goat_horn",
-              "id_ru": "Козий рог",
-              "count": 1,
-              "instrument": {
-                "instrument_type": "ponder_goat_horn",
-                "instrument_type_ru": "Размышление"
-              }
-            }
-          ]
-        },
-        "item1": {
-          "type": "barrel",
-          "type_ru": "Бочка",
-          "amount": 1,
-          "content": []
-        },
-        "item2": {}
-      },
-      {
-        "id": "2",
-        "resultItem": {
-          "type": "goat_horn",
-          "type_ru": "Козий рог",
-          "minecraft_custom": "# <b>1</b> <s>1</s> <u>1</u> <i>1</i>",
-          "amount": 1,
-          "instrument": {
-            "instrument_type": "ponder_goat_horn",
-            "instrument_type_ru": "Размышление"
-          },
-          "content": []
-        },
-        "item1": {
-          "type": "goat_horn",
-          "type_ru": "Козий рог",
-          "minecraft_custom": "# <b>1</b> <s>1</s> <u>1</u> <i>1</i>",
-          "amount": 1,
-          "instrument": {
-            "instrument_type": "ponder_goat_horn",
-            "instrument_type_ru": "Размышление"
-          },
-          "content": []
-        },
-        "item2": {
-          "type": "goat_horn",
-          "type_ru": "Козий рог",
-          "minecraft_custom": "# <b>1</b> <s>1</s> <u>1</u> <i>1</i>",
-          "amount": 1,
-          "instrument": {
-            "instrument_type": "ponder_goat_horn",
-            "instrument_type_ru": "Размышление"
-          },
-          "content": []
-        }
-      },
-      {
-        "id": "3",
-        "resultItem": {
-          "type": "magenta_shulker_box",
-          "type_ru": "Пурпурный шалкеровый ящик",
-          "amount": 1,
-          "content": [
-            {
-              "slot": 0,
-              "id": "goat_horn",
-              "id_ru": "Козий рог",
-              "count": 1,
-              "instrument": {
-                "instrument_type": "seek_goat_horn",
-                "instrument_type_ru": "Стремление"
-              }
-            },
-            {
-              "slot": 1,
-              "id": "goat_horn",
-              "id_ru": "Козий рог",
-              "count": 1,
-              "instrument": {
-                "instrument_type": "sing_goat_horn",
-                "instrument_type_ru": "Воспевание"
-              }
-            },
-            {
-              "slot": 2,
-              "id": "goat_horn",
-              "id_ru": "Козий рог",
-              "count": 1,
-              "instrument": {
-                "instrument_type": "ponder_goat_horn",
-                "instrument_type_ru": "Размышление"
-              }
-            }
-          ]
-        },
-        "item1": {
-          "type": "brown_terracotta",
-          "type_ru": "Коричневая керамика",
-          "minecraft_custom": "# <b>1</b> <s>1</s> <u>1</u> <i>1</i>",
-          "amount": 1,
-          "content": []
-        },
-        "item2": {}
-      },
-      {
-        "id": "4",
-        "resultItem": {
-          "type": "magenta_shulker_box",
-          "type_ru": "Пурпурный шалкеровый ящик",
-          "amount": 1,
-          "content": [
-            {
-              "slot": 0,
-              "id": "goat_horn",
-              "id_ru": "Козий рог",
-              "minecraft_custom": "# <b>1</b> <s>1</s> <u>1</u> <i>1</i>",
-              "count": 1,
-              "instrument": {
-                "instrument_type": "ponder_goat_horn",
-                "instrument_type_ru": "Размышление"
-              }
-            }
-          ]
-        },
-        "item1": {
-          "type": "brown_terracotta",
-          "type_ru": "Коричневая керамика",
-          "minecraft_custom": "# <b>1</b> <s>1</s> <u>1</u> <i>1</i>",
-          "amount": 1,
-          "content": []
-        },
-        "item2": {}
-      }
-    ]
-  },
-  {
     "shop_id": "82",
     "x": -292,
     "y": 85,
@@ -31320,7 +29969,1296 @@ export const shopData = [
     "owner": "Niksa_Viento",
     "object_profession": "FLETCHER",
     "object_villager_type": "TAIGA",
-    "offers": []
+    "offers": [
+      {
+        "id": "1",
+        "resultItem": {
+          "type": "yellow_shulker_box",
+          "type_ru": "Жёлтый шалкеровый ящик",
+          "minecraft_custom": "<span style=\"color: #DCB20C\"> Элики опыта. N.Viento™ </span>",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64
+            },
+            {
+              "slot": 1,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64
+            },
+            {
+              "slot": 2,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64
+            },
+            {
+              "slot": 3,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64
+            },
+            {
+              "slot": 4,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64
+            },
+            {
+              "slot": 5,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64
+            },
+            {
+              "slot": 6,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64
+            },
+            {
+              "slot": 7,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64
+            },
+            {
+              "slot": 8,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64
+            },
+            {
+              "slot": 9,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64
+            },
+            {
+              "slot": 10,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64
+            },
+            {
+              "slot": 11,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64
+            },
+            {
+              "slot": 12,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64
+            },
+            {
+              "slot": 13,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64
+            },
+            {
+              "slot": 14,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64
+            },
+            {
+              "slot": 15,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64
+            },
+            {
+              "slot": 16,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64
+            },
+            {
+              "slot": 17,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64
+            },
+            {
+              "slot": 18,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64
+            },
+            {
+              "slot": 19,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64
+            },
+            {
+              "slot": 20,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64
+            },
+            {
+              "slot": 21,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64
+            },
+            {
+              "slot": 22,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64
+            },
+            {
+              "slot": 23,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64
+            },
+            {
+              "slot": 24,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64
+            },
+            {
+              "slot": 25,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64
+            },
+            {
+              "slot": 26,
+              "id": "experience_bottle",
+              "id_ru": "Пузырёк опыта",
+              "count": 64
+            }
+          ]
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 64,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "2",
+        "resultItem": {
+          "type": "red_shulker_box",
+          "type_ru": "Красный шалкеровый ящик",
+          "minecraft_custom": "<span style=\"color: #B10000\">  Золотые яблочки. N.Viento™ </span>",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "golden_apple",
+              "id_ru": "Золотое яблоко",
+              "count": 64
+            },
+            {
+              "slot": 1,
+              "id": "golden_apple",
+              "id_ru": "Золотое яблоко",
+              "count": 64
+            },
+            {
+              "slot": 2,
+              "id": "golden_apple",
+              "id_ru": "Золотое яблоко",
+              "count": 64
+            },
+            {
+              "slot": 3,
+              "id": "golden_apple",
+              "id_ru": "Золотое яблоко",
+              "count": 64
+            },
+            {
+              "slot": 4,
+              "id": "golden_apple",
+              "id_ru": "Золотое яблоко",
+              "count": 64
+            },
+            {
+              "slot": 5,
+              "id": "golden_apple",
+              "id_ru": "Золотое яблоко",
+              "count": 64
+            },
+            {
+              "slot": 6,
+              "id": "golden_apple",
+              "id_ru": "Золотое яблоко",
+              "count": 64
+            },
+            {
+              "slot": 7,
+              "id": "golden_apple",
+              "id_ru": "Золотое яблоко",
+              "count": 64
+            },
+            {
+              "slot": 8,
+              "id": "golden_apple",
+              "id_ru": "Золотое яблоко",
+              "count": 64
+            },
+            {
+              "slot": 9,
+              "id": "golden_apple",
+              "id_ru": "Золотое яблоко",
+              "count": 64
+            },
+            {
+              "slot": 10,
+              "id": "golden_apple",
+              "id_ru": "Золотое яблоко",
+              "count": 64
+            },
+            {
+              "slot": 11,
+              "id": "golden_apple",
+              "id_ru": "Золотое яблоко",
+              "count": 64
+            },
+            {
+              "slot": 12,
+              "id": "golden_apple",
+              "id_ru": "Золотое яблоко",
+              "count": 64
+            },
+            {
+              "slot": 13,
+              "id": "golden_apple",
+              "id_ru": "Золотое яблоко",
+              "count": 64
+            },
+            {
+              "slot": 14,
+              "id": "golden_apple",
+              "id_ru": "Золотое яблоко",
+              "count": 64
+            },
+            {
+              "slot": 15,
+              "id": "golden_apple",
+              "id_ru": "Золотое яблоко",
+              "count": 64
+            },
+            {
+              "slot": 16,
+              "id": "golden_apple",
+              "id_ru": "Золотое яблоко",
+              "count": 64
+            },
+            {
+              "slot": 17,
+              "id": "golden_apple",
+              "id_ru": "Золотое яблоко",
+              "count": 64
+            },
+            {
+              "slot": 18,
+              "id": "golden_apple",
+              "id_ru": "Золотое яблоко",
+              "count": 64
+            },
+            {
+              "slot": 19,
+              "id": "golden_apple",
+              "id_ru": "Золотое яблоко",
+              "count": 64
+            },
+            {
+              "slot": 20,
+              "id": "golden_apple",
+              "id_ru": "Золотое яблоко",
+              "count": 64
+            },
+            {
+              "slot": 21,
+              "id": "golden_apple",
+              "id_ru": "Золотое яблоко",
+              "count": 64
+            },
+            {
+              "slot": 22,
+              "id": "golden_apple",
+              "id_ru": "Золотое яблоко",
+              "count": 64
+            },
+            {
+              "slot": 23,
+              "id": "golden_apple",
+              "id_ru": "Золотое яблоко",
+              "count": 64
+            },
+            {
+              "slot": 24,
+              "id": "golden_apple",
+              "id_ru": "Золотое яблоко",
+              "count": 64
+            },
+            {
+              "slot": 25,
+              "id": "golden_apple",
+              "id_ru": "Золотое яблоко",
+              "count": 64
+            },
+            {
+              "slot": 26,
+              "id": "golden_apple",
+              "id_ru": "Золотое яблоко",
+              "count": 64
+            }
+          ]
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 64,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "3",
+        "resultItem": {
+          "type": "golden_apple",
+          "type_ru": "Золотое яблоко",
+          "amount": 64,
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 3,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "4",
+        "resultItem": {
+          "type": "orange_shulker_box",
+          "type_ru": "Оранжевый шалкеровый ящик",
+          "minecraft_custom": "<span style=\"color: #E5841B\"> Золотая морковка. N.Viento™ </span>",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "golden_carrot",
+              "id_ru": "Золотая морковь",
+              "count": 64
+            },
+            {
+              "slot": 1,
+              "id": "golden_carrot",
+              "id_ru": "Золотая морковь",
+              "count": 64
+            },
+            {
+              "slot": 2,
+              "id": "golden_carrot",
+              "id_ru": "Золотая морковь",
+              "count": 64
+            },
+            {
+              "slot": 3,
+              "id": "golden_carrot",
+              "id_ru": "Золотая морковь",
+              "count": 64
+            },
+            {
+              "slot": 4,
+              "id": "golden_carrot",
+              "id_ru": "Золотая морковь",
+              "count": 64
+            },
+            {
+              "slot": 5,
+              "id": "golden_carrot",
+              "id_ru": "Золотая морковь",
+              "count": 64
+            },
+            {
+              "slot": 6,
+              "id": "golden_carrot",
+              "id_ru": "Золотая морковь",
+              "count": 64
+            },
+            {
+              "slot": 7,
+              "id": "golden_carrot",
+              "id_ru": "Золотая морковь",
+              "count": 64
+            },
+            {
+              "slot": 8,
+              "id": "golden_carrot",
+              "id_ru": "Золотая морковь",
+              "count": 64
+            },
+            {
+              "slot": 9,
+              "id": "golden_carrot",
+              "id_ru": "Золотая морковь",
+              "count": 64
+            },
+            {
+              "slot": 10,
+              "id": "golden_carrot",
+              "id_ru": "Золотая морковь",
+              "count": 64
+            },
+            {
+              "slot": 11,
+              "id": "golden_carrot",
+              "id_ru": "Золотая морковь",
+              "count": 64
+            },
+            {
+              "slot": 12,
+              "id": "golden_carrot",
+              "id_ru": "Золотая морковь",
+              "count": 64
+            },
+            {
+              "slot": 13,
+              "id": "golden_carrot",
+              "id_ru": "Золотая морковь",
+              "count": 64
+            },
+            {
+              "slot": 14,
+              "id": "golden_carrot",
+              "id_ru": "Золотая морковь",
+              "count": 64
+            },
+            {
+              "slot": 15,
+              "id": "golden_carrot",
+              "id_ru": "Золотая морковь",
+              "count": 64
+            },
+            {
+              "slot": 16,
+              "id": "golden_carrot",
+              "id_ru": "Золотая морковь",
+              "count": 64
+            },
+            {
+              "slot": 17,
+              "id": "golden_carrot",
+              "id_ru": "Золотая морковь",
+              "count": 64
+            },
+            {
+              "slot": 18,
+              "id": "golden_carrot",
+              "id_ru": "Золотая морковь",
+              "count": 64
+            },
+            {
+              "slot": 19,
+              "id": "golden_carrot",
+              "id_ru": "Золотая морковь",
+              "count": 64
+            },
+            {
+              "slot": 20,
+              "id": "golden_carrot",
+              "id_ru": "Золотая морковь",
+              "count": 64
+            },
+            {
+              "slot": 21,
+              "id": "golden_carrot",
+              "id_ru": "Золотая морковь",
+              "count": 64
+            },
+            {
+              "slot": 22,
+              "id": "golden_carrot",
+              "id_ru": "Золотая морковь",
+              "count": 64
+            },
+            {
+              "slot": 23,
+              "id": "golden_carrot",
+              "id_ru": "Золотая морковь",
+              "count": 64
+            },
+            {
+              "slot": 24,
+              "id": "golden_carrot",
+              "id_ru": "Золотая морковь",
+              "count": 64
+            },
+            {
+              "slot": 25,
+              "id": "golden_carrot",
+              "id_ru": "Золотая морковь",
+              "count": 64
+            },
+            {
+              "slot": 26,
+              "id": "golden_carrot",
+              "id_ru": "Золотая морковь",
+              "count": 64
+            }
+          ]
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 16,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "5",
+        "resultItem": {
+          "type": "purple_shulker_box",
+          "type_ru": "Фиолетовый шалкеровый ящик",
+          "minecraft_custom": "<span style=\"color: #B57EDC\"> Перламутровые квампы. N.Viento™ </span>",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "pearlescent_froglight",
+              "id_ru": "Перламутровая квампа",
+              "count": 64
+            },
+            {
+              "slot": 1,
+              "id": "pearlescent_froglight",
+              "id_ru": "Перламутровая квампа",
+              "count": 64
+            },
+            {
+              "slot": 2,
+              "id": "pearlescent_froglight",
+              "id_ru": "Перламутровая квампа",
+              "count": 64
+            },
+            {
+              "slot": 3,
+              "id": "pearlescent_froglight",
+              "id_ru": "Перламутровая квампа",
+              "count": 64
+            },
+            {
+              "slot": 4,
+              "id": "pearlescent_froglight",
+              "id_ru": "Перламутровая квампа",
+              "count": 64
+            },
+            {
+              "slot": 5,
+              "id": "pearlescent_froglight",
+              "id_ru": "Перламутровая квампа",
+              "count": 64
+            },
+            {
+              "slot": 6,
+              "id": "pearlescent_froglight",
+              "id_ru": "Перламутровая квампа",
+              "count": 64
+            },
+            {
+              "slot": 7,
+              "id": "pearlescent_froglight",
+              "id_ru": "Перламутровая квампа",
+              "count": 64
+            },
+            {
+              "slot": 8,
+              "id": "pearlescent_froglight",
+              "id_ru": "Перламутровая квампа",
+              "count": 64
+            },
+            {
+              "slot": 9,
+              "id": "pearlescent_froglight",
+              "id_ru": "Перламутровая квампа",
+              "count": 64
+            },
+            {
+              "slot": 10,
+              "id": "pearlescent_froglight",
+              "id_ru": "Перламутровая квампа",
+              "count": 64
+            },
+            {
+              "slot": 11,
+              "id": "pearlescent_froglight",
+              "id_ru": "Перламутровая квампа",
+              "count": 64
+            },
+            {
+              "slot": 12,
+              "id": "pearlescent_froglight",
+              "id_ru": "Перламутровая квампа",
+              "count": 64
+            },
+            {
+              "slot": 13,
+              "id": "pearlescent_froglight",
+              "id_ru": "Перламутровая квампа",
+              "count": 64
+            },
+            {
+              "slot": 14,
+              "id": "pearlescent_froglight",
+              "id_ru": "Перламутровая квампа",
+              "count": 64
+            },
+            {
+              "slot": 15,
+              "id": "pearlescent_froglight",
+              "id_ru": "Перламутровая квампа",
+              "count": 64
+            },
+            {
+              "slot": 16,
+              "id": "pearlescent_froglight",
+              "id_ru": "Перламутровая квампа",
+              "count": 64
+            },
+            {
+              "slot": 17,
+              "id": "pearlescent_froglight",
+              "id_ru": "Перламутровая квампа",
+              "count": 64
+            },
+            {
+              "slot": 18,
+              "id": "pearlescent_froglight",
+              "id_ru": "Перламутровая квампа",
+              "count": 64
+            },
+            {
+              "slot": 19,
+              "id": "pearlescent_froglight",
+              "id_ru": "Перламутровая квампа",
+              "count": 64
+            },
+            {
+              "slot": 20,
+              "id": "pearlescent_froglight",
+              "id_ru": "Перламутровая квампа",
+              "count": 64
+            },
+            {
+              "slot": 21,
+              "id": "pearlescent_froglight",
+              "id_ru": "Перламутровая квампа",
+              "count": 64
+            },
+            {
+              "slot": 22,
+              "id": "pearlescent_froglight",
+              "id_ru": "Перламутровая квампа",
+              "count": 64
+            },
+            {
+              "slot": 23,
+              "id": "pearlescent_froglight",
+              "id_ru": "Перламутровая квампа",
+              "count": 64
+            },
+            {
+              "slot": 24,
+              "id": "pearlescent_froglight",
+              "id_ru": "Перламутровая квампа",
+              "count": 64
+            },
+            {
+              "slot": 25,
+              "id": "pearlescent_froglight",
+              "id_ru": "Перламутровая квампа",
+              "count": 64
+            },
+            {
+              "slot": 26,
+              "id": "pearlescent_froglight",
+              "id_ru": "Перламутровая квампа",
+              "count": 64
+            }
+          ]
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 12,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "6",
+        "resultItem": {
+          "type": "pearlescent_froglight",
+          "type_ru": "Перламутровая квампа",
+          "amount": 64,
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 2,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "7",
+        "resultItem": {
+          "type": "yellow_shulker_box",
+          "type_ru": "Жёлтый шалкеровый ящик",
+          "minecraft_custom": "<span style=\"color: #F0DB7D\"> Охристые квампы. N.Viento™ </span>",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "ochre_froglight",
+              "id_ru": "Охристая квампа",
+              "count": 64
+            },
+            {
+              "slot": 1,
+              "id": "ochre_froglight",
+              "id_ru": "Охристая квампа",
+              "count": 64
+            },
+            {
+              "slot": 2,
+              "id": "ochre_froglight",
+              "id_ru": "Охристая квампа",
+              "count": 64
+            },
+            {
+              "slot": 3,
+              "id": "ochre_froglight",
+              "id_ru": "Охристая квампа",
+              "count": 64
+            },
+            {
+              "slot": 4,
+              "id": "ochre_froglight",
+              "id_ru": "Охристая квампа",
+              "count": 64
+            },
+            {
+              "slot": 5,
+              "id": "ochre_froglight",
+              "id_ru": "Охристая квампа",
+              "count": 64
+            },
+            {
+              "slot": 6,
+              "id": "ochre_froglight",
+              "id_ru": "Охристая квампа",
+              "count": 64
+            },
+            {
+              "slot": 7,
+              "id": "ochre_froglight",
+              "id_ru": "Охристая квампа",
+              "count": 64
+            },
+            {
+              "slot": 8,
+              "id": "ochre_froglight",
+              "id_ru": "Охристая квампа",
+              "count": 64
+            },
+            {
+              "slot": 9,
+              "id": "ochre_froglight",
+              "id_ru": "Охристая квампа",
+              "count": 64
+            },
+            {
+              "slot": 10,
+              "id": "ochre_froglight",
+              "id_ru": "Охристая квампа",
+              "count": 64
+            },
+            {
+              "slot": 11,
+              "id": "ochre_froglight",
+              "id_ru": "Охристая квампа",
+              "count": 64
+            },
+            {
+              "slot": 12,
+              "id": "ochre_froglight",
+              "id_ru": "Охристая квампа",
+              "count": 64
+            },
+            {
+              "slot": 13,
+              "id": "ochre_froglight",
+              "id_ru": "Охристая квампа",
+              "count": 64
+            },
+            {
+              "slot": 14,
+              "id": "ochre_froglight",
+              "id_ru": "Охристая квампа",
+              "count": 64
+            },
+            {
+              "slot": 15,
+              "id": "ochre_froglight",
+              "id_ru": "Охристая квампа",
+              "count": 64
+            },
+            {
+              "slot": 16,
+              "id": "ochre_froglight",
+              "id_ru": "Охристая квампа",
+              "count": 64
+            },
+            {
+              "slot": 17,
+              "id": "ochre_froglight",
+              "id_ru": "Охристая квампа",
+              "count": 64
+            },
+            {
+              "slot": 18,
+              "id": "ochre_froglight",
+              "id_ru": "Охристая квампа",
+              "count": 64
+            },
+            {
+              "slot": 19,
+              "id": "ochre_froglight",
+              "id_ru": "Охристая квампа",
+              "count": 64
+            },
+            {
+              "slot": 20,
+              "id": "ochre_froglight",
+              "id_ru": "Охристая квампа",
+              "count": 64
+            },
+            {
+              "slot": 21,
+              "id": "ochre_froglight",
+              "id_ru": "Охристая квампа",
+              "count": 64
+            },
+            {
+              "slot": 22,
+              "id": "ochre_froglight",
+              "id_ru": "Охристая квампа",
+              "count": 64
+            },
+            {
+              "slot": 23,
+              "id": "ochre_froglight",
+              "id_ru": "Охристая квампа",
+              "count": 64
+            },
+            {
+              "slot": 24,
+              "id": "ochre_froglight",
+              "id_ru": "Охристая квампа",
+              "count": 64
+            },
+            {
+              "slot": 25,
+              "id": "ochre_froglight",
+              "id_ru": "Охристая квампа",
+              "count": 64
+            },
+            {
+              "slot": 26,
+              "id": "ochre_froglight",
+              "id_ru": "Охристая квампа",
+              "count": 64
+            }
+          ]
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 12,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "8",
+        "resultItem": {
+          "type": "ochre_froglight",
+          "type_ru": "Охристая квампа",
+          "amount": 64,
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 2,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "9",
+        "resultItem": {
+          "type": "green_shulker_box",
+          "type_ru": "Зелёный шалкеровый ящик",
+          "minecraft_custom": "<span style=\"color: #63B76C\"> Малахитовые квампы. N.Viento™ </span>",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "verdant_froglight",
+              "id_ru": "Малахитовая квампа",
+              "count": 64
+            },
+            {
+              "slot": 1,
+              "id": "verdant_froglight",
+              "id_ru": "Малахитовая квампа",
+              "count": 64
+            },
+            {
+              "slot": 2,
+              "id": "verdant_froglight",
+              "id_ru": "Малахитовая квампа",
+              "count": 64
+            },
+            {
+              "slot": 3,
+              "id": "verdant_froglight",
+              "id_ru": "Малахитовая квампа",
+              "count": 64
+            },
+            {
+              "slot": 4,
+              "id": "verdant_froglight",
+              "id_ru": "Малахитовая квампа",
+              "count": 64
+            },
+            {
+              "slot": 5,
+              "id": "verdant_froglight",
+              "id_ru": "Малахитовая квампа",
+              "count": 64
+            },
+            {
+              "slot": 6,
+              "id": "verdant_froglight",
+              "id_ru": "Малахитовая квампа",
+              "count": 64
+            },
+            {
+              "slot": 7,
+              "id": "verdant_froglight",
+              "id_ru": "Малахитовая квампа",
+              "count": 64
+            },
+            {
+              "slot": 8,
+              "id": "verdant_froglight",
+              "id_ru": "Малахитовая квампа",
+              "count": 64
+            },
+            {
+              "slot": 9,
+              "id": "verdant_froglight",
+              "id_ru": "Малахитовая квампа",
+              "count": 64
+            },
+            {
+              "slot": 10,
+              "id": "verdant_froglight",
+              "id_ru": "Малахитовая квампа",
+              "count": 64
+            },
+            {
+              "slot": 11,
+              "id": "verdant_froglight",
+              "id_ru": "Малахитовая квампа",
+              "count": 64
+            },
+            {
+              "slot": 12,
+              "id": "verdant_froglight",
+              "id_ru": "Малахитовая квампа",
+              "count": 64
+            },
+            {
+              "slot": 13,
+              "id": "verdant_froglight",
+              "id_ru": "Малахитовая квампа",
+              "count": 64
+            },
+            {
+              "slot": 14,
+              "id": "verdant_froglight",
+              "id_ru": "Малахитовая квампа",
+              "count": 64
+            },
+            {
+              "slot": 15,
+              "id": "verdant_froglight",
+              "id_ru": "Малахитовая квампа",
+              "count": 64
+            },
+            {
+              "slot": 16,
+              "id": "verdant_froglight",
+              "id_ru": "Малахитовая квампа",
+              "count": 64
+            },
+            {
+              "slot": 17,
+              "id": "verdant_froglight",
+              "id_ru": "Малахитовая квампа",
+              "count": 64
+            },
+            {
+              "slot": 18,
+              "id": "verdant_froglight",
+              "id_ru": "Малахитовая квампа",
+              "count": 64
+            },
+            {
+              "slot": 19,
+              "id": "verdant_froglight",
+              "id_ru": "Малахитовая квампа",
+              "count": 64
+            },
+            {
+              "slot": 20,
+              "id": "verdant_froglight",
+              "id_ru": "Малахитовая квампа",
+              "count": 64
+            },
+            {
+              "slot": 21,
+              "id": "verdant_froglight",
+              "id_ru": "Малахитовая квампа",
+              "count": 64
+            },
+            {
+              "slot": 22,
+              "id": "verdant_froglight",
+              "id_ru": "Малахитовая квампа",
+              "count": 64
+            },
+            {
+              "slot": 23,
+              "id": "verdant_froglight",
+              "id_ru": "Малахитовая квампа",
+              "count": 64
+            },
+            {
+              "slot": 24,
+              "id": "verdant_froglight",
+              "id_ru": "Малахитовая квампа",
+              "count": 64
+            },
+            {
+              "slot": 25,
+              "id": "verdant_froglight",
+              "id_ru": "Малахитовая квампа",
+              "count": 64
+            },
+            {
+              "slot": 26,
+              "id": "verdant_froglight",
+              "id_ru": "Малахитовая квампа",
+              "count": 64
+            }
+          ]
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 12,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "10",
+        "resultItem": {
+          "type": "verdant_froglight",
+          "type_ru": "Малахитовая квампа",
+          "amount": 64,
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 2,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "11",
+        "resultItem": {
+          "type": "shroomlight",
+          "type_ru": "Грибосвет",
+          "amount": 64,
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 16,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "12",
+        "resultItem": {
+          "type": "turtle_egg",
+          "type_ru": "Черепашье яйцо",
+          "amount": 32,
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 4,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "13",
+        "resultItem": {
+          "type": "cobweb",
+          "type_ru": "Паутина",
+          "amount": 16,
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 2,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "14",
+        "resultItem": {
+          "type": "amethyst_cluster",
+          "type_ru": "Аметистовая друза",
+          "amount": 16,
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 2,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "15",
+        "resultItem": {
+          "type": "pointed_dripstone",
+          "type_ru": "Капельник",
+          "amount": 32,
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 2,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "16",
+        "resultItem": {
+          "type": "glow_ink_sac",
+          "type_ru": "Светящийся чернильный мешок",
+          "amount": 16,
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "17",
+        "resultItem": {
+          "type": "sculk_shrieker",
+          "type_ru": "Скалковый крикун",
+          "amount": 16,
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 2,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "18",
+        "resultItem": {
+          "type": "sculk_sensor",
+          "type_ru": "Скалк-сенсор",
+          "amount": 32,
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 4,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "19",
+        "resultItem": {
+          "type": "mud_bricks",
+          "type_ru": "Саманные кирпичи",
+          "amount": 64,
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 4,
+          "content": []
+        },
+        "item2": {}
+      }
+    ]
   },
   {
     "shop_id": "data-version",

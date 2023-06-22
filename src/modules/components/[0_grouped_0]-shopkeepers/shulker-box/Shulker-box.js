@@ -41,6 +41,7 @@ const ShulkerBox = (props) => {
               goat_horn_instrument_type={el.instrument?.instrument_type}
               goat_horn_instrument_type_ru={el.instrument?.instrument_type_ru}
               minecraft_custom_name={el.minecraft_custom}
+              firework_power_lvl={el.firework_power}
             />
           }
         </>

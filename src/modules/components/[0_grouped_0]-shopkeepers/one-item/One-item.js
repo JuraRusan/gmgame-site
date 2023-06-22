@@ -65,36 +65,29 @@ const OneItem = (props) => {
   const itemNameId = props.item_minecraft_name_id;
   const goatHorn = props.goat_horn_instrument_type;
   const goatHornRu = props.goat_horn_instrument_type_ru;
-  const idPotion = props.item_minecraft_id_potion
+  const idPotion = props.item_minecraft_id_potion;
+  const fireworkPower = props.firework_power_lvl;
+
+  function renderEnchantItem(el) {
+    const isSpecialEnchant = el.enchant_id_ru === "Проклятье утраты" || el.enchant_id_ru === "Проклятие несъёмности";
+    const mainClass = isSpecialEnchant ? styles["red"] : styles["main"];
+    return (
+      <>
+        <span className={classNames(mainClass)}>{el.enchant_id_ru} </span>- {el.lvl}
+      </>
+    );
+  }
 
   const listEnchant =
     <ul className={classNames(styles["listWrapper"])}>
       {props.enchantsList?.map((el, i) => (
         <li className={classNames(styles["list"])} key={i}>
-          {el.enchant_id_ru !== "Проклятье утраты" && el.enchant_id_ru !== "Проклятие несъёмности"
-            ?
-            <>
-              <span className={classNames(styles["main"])}>{el.enchant_id_ru} </span>- {el.lvl}
-            </>
-            :
-            <>
-              <span className={classNames(styles["red"])}>{el.enchant_id_ru} </span>- {el.lvl}
-            </>
-          }
+          {renderEnchantItem(el)}
         </li>
       ))}
       {props.storedEnchantsList?.map((el, i) => (
         <li className={classNames(styles["list"])} key={i}>
-          {el.enchant_id_ru !== "Проклятье утраты" && el.enchant_id_ru !== "Проклятие несъёмности"
-            ?
-            <>
-              <span className={classNames(styles["main"])}>{el.enchant_id_ru} </span>- {el.lvl}
-            </>
-            :
-            <>
-              <span className={classNames(styles["red"])}>{el.enchant_id_ru} </span>- {el.lvl}
-            </>
-          }
+          {renderEnchantItem(el)}
         </li>
       ))}
     </ul>
@@ -111,22 +104,14 @@ const OneItem = (props) => {
       ?
       <h3 className={classNames(styles["name"])}>
         {props.item_name_title}
-        {goatHornRu === "" || goatHornRu === undefined || goatHornRu === null
-          ?
-          undefined
-          :
-          <span className={classNames(styles["goatHorn"])}> "{goatHornRu}"</span>
-        }
+        {goatHornRu && <span className={classNames(styles["goatHorn"])}> "{goatHornRu}"</span>}
+        {fireworkPower && <span className={classNames(styles["goatHorn"])}> lvl - {fireworkPower}</span>}
       </h3>
       :
       <>
         <h3 className={classNames(styles["name"])} dangerouslySetInnerHTML={{__html: props.minecraft_custom_name}}></h3>
-        {goatHornRu === "" || goatHornRu === undefined || goatHornRu === null
-          ?
-          <></>
-          :
-          <h3 className={classNames(styles["name"])}>Звучание - <span className={classNames(styles["goatHorn"])}> "{goatHornRu}"</span></h3>
-        }
+        {goatHornRu && <h3 className={classNames(styles["name"])}>Звучание - <span className={classNames(styles["goatHorn"])}> "{goatHornRu}"</span></h3>}
+        {fireworkPower && <h3 className={classNames(styles["name"])}>lvl - <span className={classNames(styles["goatHorn"])}> {fireworkPower}</span></h3>}
       </>
   )
 

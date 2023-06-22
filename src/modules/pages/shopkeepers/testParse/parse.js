@@ -2,6 +2,7 @@ const fs = require('fs');
 const yaml = require('js-yaml');
 const nbt = require('nbt');
 const {Buffer} = require('buffer');
+const convert = require('color-convert');
 
 const {transformedArray} = require("./item_name_data");
 const {enchantArray} = require("./enchantmentsArray");
@@ -35,10 +36,78 @@ async function selectData(data) {
 
             const result = items.map((item) => {
 
+              const colorNames = {
+                ...convert.keyword.rgb,
+                dark_purple: [83, 26, 102],
+                dark_blue: [0, 0, 170],
+                dark_aqua: [0, 170, 170],
+                dark_red: [139, 0, 0],
+                dark_green: [1, 50, 32],
+                light_purple: [216, 191, 216]
+              };
+
+              function convertColorToHex(colorName) {
+                if (colorNames[colorName]) {
+                  const [r, g, b] = colorNames[colorName];
+                  const hex = convert.rgb.hex([r, g, b]);
+                  return `#${hex}`;
+                }
+                return colorName;
+              }
+
+              function processDisplayName(displayName) {
+                if (displayName) {
+                  const data = JSON.parse(displayName);
+                  let result = '';
+
+                  if (data.extra && Array.isArray(data.extra)) {
+                    data.extra.forEach((element) => {
+                      if (element.text) {
+                        let text = element.text;
+
+                        // Применяем стили к тексту
+                        if (element.bold) {
+                          text = `<b>${text}</b>`;
+                        }
+                        if (element.italic) {
+                          text = `<i>${text}</i>`;
+                        }
+                        if (element.underlined) {
+                          text = `<u>${text}</u>`;
+                        }
+                        if (element.strikethrough) {
+                          text = `<s>${text}</s>`;
+                        }
+                        if (element.obfuscated) {
+                          text = "#";
+                        }
+
+                        // Применяем цвет к тексту
+                        if (element.color) {
+                          const hexColor = convertColorToHex(element.color);
+                          text = `<span style="color: ${hexColor}"> ${text} </span>`;
+                        }
+
+                        result += text;
+                      }
+                    });
+                  }
+
+                  return result;
+                } else {
+                  return "";
+                }
+              }
+
+              const minecraftCustomName = processDisplayName(item.tag?.value?.display?.value?.Name?.value);
+
               const slot = item.Slot.value;
               const id = item.id.value.split(':')[1];
               const count = item.Count.value;
-              const potion = item.tag === undefined ? "" : item.tag.value.Potion?.value.split(':')[1]
+              const potion = item.tag === undefined ? undefined : item.tag.value.Potion?.value.split(':')[1]
+              const firework_power = item.tag?.value?.Fireworks === undefined ? undefined : item.tag.value.Fireworks.value.Flight?.value
+
+              const minecraft_custom = minecraftCustomName === "" ? undefined : minecraftCustomName;
 
               // -------------------- id_ru
               let matchingData = [];
@@ -51,7 +120,7 @@ async function selectData(data) {
               const id_ru = matchingData.length === 0 ? "{NO translation}" : matchingData[0].item_name_ru;
 
               // -------------------- enchant
-              const enchant = item.tag === undefined ? [] :
+              const enchant = item.tag === undefined ? undefined :
                 item.tag.value?.Enchantments?.value?.value.map((el) => {
                   const enchant_id = el.id.value.split(':')[1];
                   const matchingEnchantData = enchant_id ? enchantArray.filter((item) => item.enchant_id.map(id => id.toLowerCase()).includes(enchant_id.toLowerCase())) : [];
@@ -62,7 +131,7 @@ async function selectData(data) {
                 });
 
               // -------------------- stored_enchant
-              const stored_enchant = item.tag === undefined ? [] :
+              const stored_enchant = item.tag === undefined ? undefined :
                 item.tag.value?.StoredEnchantments?.value.value.map((el) => {
                   const enchant_id = el.id.value.split(':')[1];
                   const matchingEnchantData = enchant_id ? enchantArray.filter((item) => item.enchant_id.map(id => id.toLowerCase()).includes(enchant_id.toLowerCase())) : [];
@@ -80,13 +149,12 @@ async function selectData(data) {
               } else {
                 instrumentDataRu = []
               }
-              const instrument = item.tag === undefined ? {} : {
+              const instrument = item.tag?.value?.instrument === undefined ? undefined : {
                 instrument_type: item.tag.value?.instrument?.value.split(':')[1].toLowerCase(),
-
                 instrument_type_ru: instrumentDataRu.length === 0 ? undefined : instrumentDataRu[0].instrument_ru
               }
 
-              return {slot, id, id_ru, count, potion, instrument, enchant, stored_enchant};
+              return {slot, id, id_ru, minecraft_custom, count, firework_power, potion, instrument, enchant, stored_enchant};
             });
 
             resolve(result);
@@ -155,20 +223,88 @@ async function selectData(data) {
             const instrumentDataItem1 = offer.item1?.meta?.instrument ? goat_horn_array.filter((item) => item.instrument === offer.item1?.meta?.instrument.split(':')[1].toLowerCase()) : [];
             const instrumentDataItem2 = offer.item2?.meta?.instrument ? goat_horn_array.filter((item) => item.instrument === offer.item2?.meta?.instrument.split(':')[1].toLowerCase()) : [];
 
+            const colorNames = {
+              ...convert.keyword.rgb,
+              dark_purple: [83, 26, 102],
+              dark_blue: [0, 0, 170],
+              dark_aqua: [0, 170, 170],
+              dark_red: [139, 0, 0],
+              dark_green: [1, 50, 32],
+              light_purple: [216, 191, 216]
+            };
+
+            function convertColorToHex(colorName) {
+              if (colorNames[colorName]) {
+                const [r, g, b] = colorNames[colorName];
+                const hex = convert.rgb.hex([r, g, b]);
+                return `#${hex}`;
+              }
+              return colorName;
+            }
+
+            function processDisplayName(displayName) {
+              if (displayName) {
+                const data = JSON.parse(displayName);
+                let result = '';
+
+                if (data.extra && Array.isArray(data.extra)) {
+                  data.extra.forEach((element) => {
+                    if (element.text) {
+                      let text = element.text;
+
+                      if (element.bold) {
+                        text = `<b>${text}</b>`;
+                      }
+                      if (element.italic) {
+                        text = `<i>${text}</i>`;
+                      }
+                      if (element.underlined) {
+                        text = `<u>${text}</u>`;
+                      }
+                      if (element.strikethrough) {
+                        text = `<s>${text}</s>`;
+                      }
+                      if (element.obfuscated) {
+                        text = "#";
+                      }
+
+                      // Применяем цвет к тексту
+                      if (element.color) {
+                        const hexColor = convertColorToHex(element.color);
+                        text = `<span style="color: ${hexColor}"> ${text} </span>`;
+                      }
+
+                      result += text;
+                    }
+                  });
+                }
+
+                return result;
+              } else {
+                return "";
+              }
+            }
+
+            const minecraftCustomResultItem = processDisplayName(offer.resultItem.meta?.["display-name"]);
+            const minecraftCustomItem1 = processDisplayName(offer.item1?.meta?.["display-name"]);
+            const minecraftCustomItem2 = processDisplayName(offer.item2?.meta?.["display-name"]);
+
             return {
               id: offerKey,
               resultItem: offer.resultItem ?
                 {
                   type: offer.resultItem.type ? offer.resultItem.type.toLowerCase() : "",
                   type_ru: matchingResultItemData.length === 0 ? "{NO translation}" : matchingResultItemData[0].item_name_ru,
+                  minecraft_custom: minecraftCustomResultItem === "" ? undefined : minecraftCustomResultItem,
                   amount: offer.resultItem.amount ? offer.resultItem.amount : 1,
-                  potion: offer.resultItem.meta && offer.resultItem.meta?.["meta-type"] === "POTION" ? offer.resultItem.meta?.["potion-type"].split(':')[1] : "",
+                  firework_power: offer.resultItem.meta?.["meta-type"] === "FIREWORK" ? offer.resultItem.meta.power : undefined,
+                  potion: offer.resultItem.meta && offer.resultItem.meta?.["meta-type"] === "POTION" ? offer.resultItem.meta?.["potion-type"].split(':')[1] : undefined,
                   instrument: offer.resultItem.meta && offer.resultItem.meta?.["meta-type"] === "MUSIC_INSTRUMENT" ? {
                     instrument_type: offer.resultItem?.meta?.instrument.split(':')[1].toLowerCase(),
                     instrument_type_ru: instrumentDataResultItem[0].instrument_ru
-                  } : {},
-                  enchant: offer.resultItem.meta && offer.resultItem.meta?.enchants ? transformEnchant(offer.resultItem.meta.enchants) : [],
-                  stored_enchant: offer.resultItem.meta && offer.resultItem.meta?.["stored-enchants"] ? transformEnchant(offer.resultItem.meta?.["stored-enchants"]) : [],
+                  } : undefined,
+                  enchant: offer.resultItem.meta && offer.resultItem.meta?.enchants ? transformEnchant(offer.resultItem.meta.enchants) : undefined,
+                  stored_enchant: offer.resultItem.meta && offer.resultItem.meta?.["stored-enchants"] ? transformEnchant(offer.resultItem.meta?.["stored-enchants"]) : undefined,
                   content: offer.resultItem.meta && offer.resultItem.meta.internal !== undefined ? await parseInternal(offer.resultItem.meta.internal) : [],
                 }
                 :
@@ -177,14 +313,16 @@ async function selectData(data) {
                 {
                   type: offer.item1.type ? offer.item1.type.toLowerCase() : "",
                   type_ru: matchingItem1Data.length === 0 ? "{NO translation}" : matchingItem1Data[0].item_name_ru,
+                  minecraft_custom: minecraftCustomItem1 === "" ? undefined : minecraftCustomItem1,
                   amount: offer.item1.amount ? offer.item1.amount : 1,
-                  potion: offer.item1.meta && offer.item1.meta?.["meta-type"] === "POTION" ? offer.item1.meta?.["potion-type"].split(':')[1] : "",
+                  firework_power: offer.item1.meta?.["meta-type"] === "FIREWORK" ? offer.item1.meta.power : undefined,
+                  potion: offer.item1.meta && offer.item1.meta?.["meta-type"] === "POTION" ? offer.item1.meta?.["potion-type"].split(':')[1] : undefined,
                   instrument: offer.item1.meta && offer.item1.meta?.["meta-type"] === "MUSIC_INSTRUMENT" ? {
                     instrument_type: offer.item1?.meta?.instrument.split(':')[1].toLowerCase(),
                     instrument_type_ru: instrumentDataItem1[0].instrument_ru
-                  } : {},
-                  enchant: offer.item1.meta && offer.item1.meta?.enchants ? transformEnchant(offer.item1.meta.enchants) : [],
-                  stored_enchant: offer.item1.meta && offer.item1.meta?.["stored-enchants"] ? transformEnchant(offer.item1.meta?.["stored-enchants"]) : [],
+                  } : undefined,
+                  enchant: offer.item1.meta && offer.item1.meta?.enchants ? transformEnchant(offer.item1.meta.enchants) : undefined,
+                  stored_enchant: offer.item1.meta && offer.item1.meta?.["stored-enchants"] ? transformEnchant(offer.item1.meta?.["stored-enchants"]) : undefined,
                   content: offer.item1.meta && offer.item1.meta.internal !== undefined ? await parseInternal(offer.item1.meta.internal) : [],
                 }
                 :
@@ -193,14 +331,16 @@ async function selectData(data) {
                 {
                   type: offer.item2.type ? offer.item2.type.toLowerCase() : "",
                   type_ru: matchingItem2Data.length === 0 ? "{NO translation}" : matchingItem2Data[0].item_name_ru,
+                  minecraft_custom: minecraftCustomItem2 === "" ? undefined : minecraftCustomItem2,
                   amount: offer.item2.amount ? offer.item2.amount : 1,
-                  potion: offer.item2.meta && offer.item2.meta?.["meta-type"] === "POTION" ? offer.item2.meta?.["potion-type"].split(':')[1] : "",
+                  firework_power: offer.item2.meta?.["meta-type"] === "FIREWORK" ? offer.item2.meta.power : undefined,
+                  potion: offer.item2.meta && offer.item2.meta?.["meta-type"] === "POTION" ? offer.item2.meta?.["potion-type"].split(':')[1] : undefined,
                   instrument: offer.item2.meta && offer.item2.meta?.["meta-type"] === "MUSIC_INSTRUMENT" ? {
                     instrument_type: offer.item2?.meta?.instrument.split(':')[1].toLowerCase(),
                     instrument_type_ru: instrumentDataItem2[0].instrument_ru
-                  } : {},
-                  enchant: offer.item2.meta && offer.item2.meta?.enchants ? transformEnchant(offer.item2.meta.enchants) : [],
-                  stored_enchant: offer.item2.meta && offer.item2.meta?.["stored-enchants"] ? transformEnchant(offer.item2.meta?.["stored-enchants"]) : [],
+                  } : undefined,
+                  enchant: offer.item2.meta && offer.item2.meta?.enchants ? transformEnchant(offer.item2.meta.enchants) : undefined,
+                  stored_enchant: offer.item2.meta && offer.item2.meta?.["stored-enchants"] ? transformEnchant(offer.item2.meta?.["stored-enchants"]) : undefined,
                   content: offer.item2.meta && offer.item2.meta.internal !== undefined ? await parseInternal(offer.item2.meta.internal) : [],
                 }
                 :
