@@ -41,9 +41,22 @@ const OneItem = (props) => {
     }, 100);
   };
 
+  const calculateLeftPosition = (x) => {
+    const minWidth = 250;
+    const maxWidth = 420 + 28;
+    const tooltipWidth = Math.min(Math.max(minWidth, maxWidth), maxWidth);
+    const windowWidth = window.innerWidth;
+
+    if (x + tooltipWidth > windowWidth) {
+      return windowWidth - tooltipWidth + 10;
+    }
+
+    return x + 10; // 10 - отступ от курсора
+  };
+
   const tooltipStyle = {
     top: tooltipPosition.y + 10,
-    left: tooltipPosition.x + 10,
+    left: calculateLeftPosition(tooltipPosition.x),
     display: showTooltip ? 'block' : 'none',
     visibility: tooltipVisible ? 'visible' : 'hidden'
   };

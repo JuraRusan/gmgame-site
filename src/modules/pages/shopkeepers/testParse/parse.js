@@ -75,7 +75,7 @@ async function selectData(data) {
               // -------------------- instrument
               let instrumentDataRu = [];
               if (id.toLowerCase() === "goat_horn") {
-                instrumentTypeTime = item.tag.value?.instrument?.value.split(':')[1].toLowerCase();
+                const instrumentTypeTime = item.tag.value?.instrument?.value.split(':')[1].toLowerCase();
                 instrumentDataRu = goat_horn_array.filter((item) => item.instrument === instrumentTypeTime);
               } else {
                 instrumentDataRu = []

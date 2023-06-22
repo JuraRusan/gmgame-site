@@ -66,6 +66,7 @@ $parameterItem: 64px;
   .tooltip {
     display: flex;
     position: fixed;
+    min-width: 250px;
     max-width: 420px;
     max-height: 214px;
     padding: 8px;
@@ -73,6 +74,7 @@ $parameterItem: 64px;
     border-radius: 8px;
     border: 1px solid $color-22;
     z-index: 50;
+    margin-left: 28px;
 
     .name {
       height: 24px;
