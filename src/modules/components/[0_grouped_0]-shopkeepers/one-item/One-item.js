@@ -34,15 +34,13 @@ const OneItem = (props) => {
     setShowTooltip(true);
     setTimeout(() => {
       setTooltipVisible(true);
-    }, 100);
-  };
+    }, 350);
+  }
 
   const handleMouseLeave = () => {
     setTooltipVisible(false);
-    setTimeout(() => {
-      setShowTooltip(false);
-    }, 100);
-  };
+    setShowTooltip(false);
+  }
 
   const calculateLeftPosition = (x) => {
     const minWidth = 250;
@@ -67,17 +65,20 @@ const OneItem = (props) => {
   return (
     <div className={classNames(styles["oneItemBlock"])} onClick={props.onClick}>
       <div className={classNames(styles["photoItem"])} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-        <span className={classNames(styles["itemCount"])}>{props.item_count}</span>
         <MinecraftImage
           item_minecraft_name_id={props.item_minecraft_name_id}
           item_minecraft_id_potion={props.item_minecraft_id_potion}
           enchantsList={props.enchantsList}
         />
+        <span className={classNames(styles["itemCount"])}>{props.item_count}</span>
       </div>
       {
         showTooltip === true
           ?
-          <div className={classNames(styles["tooltip"])} style={tooltipStyle}>
+          <div
+            className={classNames(styles["tooltip"])}
+            style={tooltipStyle}
+          >
             <MinecraftName
               goat_horn_instrument_type_ru={props.goat_horn_instrument_type_ru}
               firework_power_lvl={props.firework_power_lvl}

@@ -111,24 +111,32 @@
           width: 4px !important;
         }
 
-        .oneShop {
-          color: $color-3;
-          font-family: $fontCustom2;
-          font-size: 14px;
-          height: 28px;
-          line-height: 28px;
-          padding: 0 8px;
-          transition: all 0.35s ease;
-          border-radius: 4px;
+        .oneShopList {
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          height: auto;
 
-          &:hover {
-            background: $color-14;
+          .oneShop {
+            color: $color-3;
+            font-family: $fontCustom2;
+            font-size: 14px;
+            height: 28px;
+            line-height: 28px;
+            width: 100%;
+            padding: 0 8px;
+            transition: all 0.35s ease;
+            border-radius: 4px;
+
+            &:hover {
+              background: $color-14;
+            }
           }
-        }
 
-        .activeShop {
-          background-color: $color-4 !important;
-          color: $color-2 !important;
+          .activeShop {
+            background-color: $color-4 !important;
+            color: $color-2 !important;
+          }
         }
       }
 
@@ -183,6 +191,11 @@
           width: 100%;
           height: 36px;
           line-height: 36px;
+          position: sticky;
+          top: 0;
+          background: $color-7;
+          z-index: 1;
+          border-bottom: 1px solid $color-21;
         }
 
         .onClick {
@@ -263,7 +276,9 @@
             flex-direction: row;
             width: auto;
             height: auto;
-            //border-right: 1px solid $color-22;
+            border-width: 1px;
+            border-right-style: solid;
+            border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), $color-22, $color-22, $color-22, rgba(0, 0, 0, 0)) 1 100%;
 
             .imageWrapper {
               width: 204px;

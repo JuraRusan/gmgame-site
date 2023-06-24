@@ -13,17 +13,17 @@ const MinecraftImage = (props) => {
 
   const getImageSource = () => {
     if (itemNameId === "enchanted_golden_apple") {
-      return "./site_assets/minecraft-item/animation_apng/enchanted_golden_apple.apng";
+      return "./site_assets/minecraft-item/animation_webp/enchanted_golden_apple.webp";
     } else if (itemNameId === "written_book") {
-      return "./site_assets/minecraft-item/animation_apng/written_book.apng";
+      return "./site_assets/minecraft-item/animation_webp/written_book.webp";
     } else if (itemNameId === "enchanted_book") {
-      return "./site_assets/minecraft-item/animation_apng/enchanted_book.apng";
+      return "./site_assets/minecraft-item/animation_webp/enchanted_book.webp";
     } else if (itemNameId === "end_crystal") {
-      return "./site_assets/minecraft-item/animation_apng/end_crystal.apng";
+      return "./site_assets/minecraft-item/animation_webp/end_crystal.webp";
     } else if (itemNameId === "sculk_sensor") {
-      return "./site_assets/minecraft-item/animation_apng/sculk_sensor.apng";
+      return "./site_assets/minecraft-item/animation_webp/sculk_sensor.webp";
     } else if (itemNameId === "calibrated_sculk_sensor") {
-      return "./site_assets/minecraft-item/animation_apng/calibrated_sculk_sensor.apng";
+      return "./site_assets/minecraft-item/animation_webp/calibrated_sculk_sensor.webp";
     } else if (
       itemNameId === "tipped_arrow" ||
       itemNameId === "splash_potion" ||
@@ -33,7 +33,7 @@ const MinecraftImage = (props) => {
       return `./site_assets/minecraft-item/webp/${itemNameId}_${idPotion}.webp`;
     } else if (animation_type.includes(itemNameId)) {
       if (props.enchantsList?.length > 0) {
-        return `./site_assets/minecraft-item/animation_apng/${itemNameId}.apng`;
+        return `./site_assets/minecraft-item/animation_webp/${itemNameId}.webp`;
       } else {
         return `./site_assets/minecraft-item/webp/${itemNameId}.webp`;
       }

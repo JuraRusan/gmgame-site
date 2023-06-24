@@ -7,6 +7,7 @@ import ShulkerBox from "../../components/[0_grouped_0]-shopkeepers/shulker-box/S
 import {shopData} from "./testParse/test_data";
 import {shulkers_type} from "./ShulkersType";
 import AOS from "aos";
+import {Link} from "react-scroll";
 import {debounce} from "lodash";
 import MinecraftImage from "../../components/[0_grouped_0]-shopkeepers/mini-component/Minecraft-image";
 import MinecraftName from "../../components/[0_grouped_0]-shopkeepers/mini-component/Minecraft-name";
@@ -46,7 +47,6 @@ const Shopkeepers = () => {
   const [infoProfession, setInfoProfession] = useState("none");
   const [infoVillagerType, setInfoVillagerType] = useState("savanna");
 
-  const [activeItem, setActiveItem] = useState(null);
   const [valueSearchShop, setValueSearchShop] = useState('');
   const [valueSearchItem, setValueSearchItem] = useState('');
   const [activeScroll, setActiveScroll] = useState(0);
@@ -77,7 +77,7 @@ const Shopkeepers = () => {
 
   const handleScroll = () => {
     const scrollY = window.scrollY || document.documentElement.scrollTop;
-    setShowButton(scrollY > 200);
+    setShowButton(scrollY > 350);
   };
 
   useEffect(() => {
@@ -86,7 +86,6 @@ const Shopkeepers = () => {
   }, []);
 
   const handleItemClick = (itemId, offers) => {
-    setActiveItem(itemId);
     const element = document.getElementById(itemId);
     element.scrollIntoView({behavior: 'smooth'});
 
@@ -203,7 +202,7 @@ const Shopkeepers = () => {
             onChange={debounce((e) => setValueSearchShop(e.target.value.toLowerCase()), 350)}
             data-aos="zoom-in"
           />
-          <ul className={classNames(styles["ulBlock"])} data-aos="zoom-in">
+          <ul className={classNames(styles["ulBlock"])}>
             {filteredData.map((id, i) => (
               <>
                 {id.offers.length === 0
@@ -212,10 +211,19 @@ const Shopkeepers = () => {
                   :
                   <li
                     key={i}
-                    onClick={() => handleItemClick(`scroll${id.shop_id}`)}
-                    className={activeItem === `scroll${id.shop_id}` ? classNames(styles["oneShop"], styles["activeShop"]) : classNames(styles["oneShop"])}
+                    className={classNames(styles["oneShopList"])}
+                    data-aos="zoom-in"
                   >
-                    {id.name === "" ? id.owner : id.name}
+                    <Link
+                      activeClass={classNames(styles["activeShop"])}
+                      className={classNames(styles["oneShop"])}
+                      smooth
+                      spy
+                      to={`scroll_${id.shop_id}`}
+                      onClick={() => handleItemClick(`scroll_${id.shop_id}`)}
+                    >
+                      {id.name === "" ? id.owner : id.name}
+                    </Link>
                   </li>
                 }
               </>
@@ -232,9 +240,9 @@ const Shopkeepers = () => {
               <>
                 {el.offers.length === 0
                   ?
-                  <div id={`scroll${el.shop_id}`} key={i}></div>
+                  <section id={`scroll_${el.shop_id}`} key={i}></section>
                   :
-                  <div id={`scroll${el.shop_id}`} key={i} className={classNames(styles["oneOffersShop"])}>
+                  <section id={`scroll_${el.shop_id}`} key={i} className={classNames(styles["oneOffersShop"])}>
                     <h4 className={classNames(styles["blockShop"])}>{el.name === "" ? el.owner : el.name}</h4>
                     {el.offers.map((offer, index) => (
                         <div
@@ -322,7 +330,7 @@ const Shopkeepers = () => {
                         </div>
                       )
                     )}
-                  </div>
+                  </section>
                 }
               </>
             )
@@ -380,7 +388,7 @@ const Shopkeepers = () => {
             </div>
           }
           <div className={classNames(styles["villagerShopInfo"])}>
-            <div className={classNames(styles["villager"])}>
+            <div className={classNames(styles["villager"])} data-aos="zoom-in">
               <div className={classNames(styles["villagerInfo"])}>
                 <h4 className={classNames(styles["styleH4"])}>Владелец:
                   <span className={classNames(styles["color"])}>{infoShopOwnerName}</span>
