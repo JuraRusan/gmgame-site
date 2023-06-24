@@ -1,0 +1,45 @@
+@import "../../../../Variables";
+
+$length: 34px;
+
+.shulkerBoxMini {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: $color-7;
+  width: max-content;
+  max-width: 333px;
+  height: auto;
+  border-radius: 5px;
+  border: 1px solid $color-22;
+  transition: all 0.25s ease;
+  padding: 3px;
+
+  .item {
+    width: $length;
+    height: $length;
+    min-width: $length;
+    max-width: $length;
+    min-height: $length;
+    max-height: $length;
+    margin: 1px;
+    padding: 1px;
+    position: relative;
+    display: flex;
+    border: 1px solid darken($color-22, 50%);
+    flex-direction: row;
+
+    .count {
+      position: absolute;
+      font-size: 9px;
+      font-family: $fontCustom2;
+      font-weight: 400;
+      line-height: 14px;
+      height: 14px;
+      color: $color-3;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}

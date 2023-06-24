@@ -1,6 +1,6 @@
 @import "../../../Variables.scss";
 
-@keyframes box-height-opacity {
+@keyframes animation_visible {
   0% {
     opacity: 0;
     height: 0;
@@ -8,6 +8,22 @@
   100% {
     opacity: 1;
     height: 212px;
+  }
+}
+
+@keyframes button_visible {
+  0% {
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+  99% {
+    opacity: 0;
+    height: 30px;
+    width: 80%;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -120,20 +136,21 @@
         border-top: 1px solid $color-21;
         display: flex;
         flex-direction: column;
-        width: auto;
-        height: auto;
 
         .scrollTop {
+          animation: button_visible 1s ease-in-out;
           height: 30px;
           line-height: 30px;
           background: $color-20;
-          color: $color-8;
+          color: $color-3;
           text-align: center;
-          font-size: 32px;
+          font-size: 12px;
+          font-weight: 400;
+          font-family: $fontCustom2;
           width: 80%;
-          margin: 10px auto;
+          margin: 8px auto;
           border-radius: 4px;
-          border: 1px solid $color-2;
+          border: 1px solid $color-22;
           cursor: pointer;
         }
       }
@@ -216,10 +233,68 @@
         }
       }
 
-      .viewShulker {
+      .prev {
+        display: flex;
+        flex-direction: row;
         width: auto;
         margin: 10px auto 0 auto;
-        animation: box-height-opacity 1s ease-in-out;
+        animation: animation_visible 1s ease-in;
+
+        .viewShulker {
+          width: auto;
+          height: auto;
+        }
+
+        .viewItem {
+          display: flex;
+          flex-direction: row;
+          width: 620px;
+          max-width: 620px;
+          min-width: 0;
+          height: 100%;
+          min-height: 212px;
+          max-height: 212px;
+          padding: 3px;
+          border: 1px solid $color-22;
+          border-radius: 4px;
+
+          .columnOne {
+            display: flex;
+            flex-direction: row;
+            width: auto;
+            height: auto;
+            //border-right: 1px solid $color-22;
+
+            .imageWrapper {
+              width: 204px;
+              height: 204px;
+            }
+          }
+
+          .columnTwo {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: auto;
+            height: 204px;
+            max-height: 204px;
+            padding: 8px;
+
+            .top {
+              display: flex;
+              flex-direction: column;
+              width: auto;
+              height: auto;
+            }
+
+            .bottom {
+              display: flex;
+              flex-direction: column;
+              width: auto;
+              height: auto;
+            }
+          }
+        }
       }
 
       .villagerShopInfo {

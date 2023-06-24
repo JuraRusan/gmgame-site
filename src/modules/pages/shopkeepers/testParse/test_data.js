@@ -24030,6 +24030,221 @@ export const shopData = [
           "content": []
         },
         "item2": {}
+      },
+      {
+        "id": "17",
+        "resultItem": {
+          "type": "light_blue_shulker_box",
+          "type_ru": "Голубой шалкеровый ящик",
+          "minecraft_custom": "<span style=\"color: #009DC4\"> Набор «Разоритель морских крепостей». N.Viento™ </span>",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "conduit",
+              "id_ru": "Морской источник",
+              "count": 1
+            },
+            {
+              "slot": 1,
+              "id": "spruce_boat",
+              "id_ru": "Еловая лодка",
+              "count": 1
+            },
+            {
+              "slot": 2,
+              "id": "milk_bucket",
+              "id_ru": "Ведро молока",
+              "count": 1
+            },
+            {
+              "slot": 3,
+              "id": "milk_bucket",
+              "id_ru": "Ведро молока",
+              "count": 1
+            },
+            {
+              "slot": 4,
+              "id": "milk_bucket",
+              "id_ru": "Ведро молока",
+              "count": 1
+            },
+            {
+              "slot": 5,
+              "id": "potion",
+              "id_ru": "Зелье водного дыхания",
+              "count": 1,
+              "potion": "long_water_breathing"
+            },
+            {
+              "slot": 6,
+              "id": "potion",
+              "id_ru": "Зелье водного дыхания",
+              "count": 1,
+              "potion": "long_water_breathing"
+            },
+            {
+              "slot": 7,
+              "id": "potion",
+              "id_ru": "Зелье силы",
+              "count": 1,
+              "potion": "long_strength"
+            },
+            {
+              "slot": 8,
+              "id": "potion",
+              "id_ru": "Зелье силы",
+              "count": 1,
+              "potion": "long_strength"
+            },
+            {
+              "slot": 9,
+              "id": "prismarine_bricks",
+              "id_ru": "Призмариновые кирпичи",
+              "count": 64
+            },
+            {
+              "slot": 10,
+              "id": "prismarine_bricks",
+              "id_ru": "Призмариновые кирпичи",
+              "count": 64
+            },
+            {
+              "slot": 11,
+              "id": "milk_bucket",
+              "id_ru": "Ведро молока",
+              "count": 1
+            },
+            {
+              "slot": 12,
+              "id": "milk_bucket",
+              "id_ru": "Ведро молока",
+              "count": 1
+            },
+            {
+              "slot": 13,
+              "id": "milk_bucket",
+              "id_ru": "Ведро молока",
+              "count": 1
+            },
+            {
+              "slot": 14,
+              "id": "potion",
+              "id_ru": "Зелье водного дыхания",
+              "count": 1,
+              "potion": "long_water_breathing"
+            },
+            {
+              "slot": 15,
+              "id": "potion",
+              "id_ru": "Зелье водного дыхания",
+              "count": 1,
+              "potion": "long_water_breathing"
+            },
+            {
+              "slot": 16,
+              "id": "potion",
+              "id_ru": "Зелье силы",
+              "count": 1,
+              "potion": "long_strength"
+            },
+            {
+              "slot": 17,
+              "id": "potion",
+              "id_ru": "Зелье силы",
+              "count": 1,
+              "potion": "long_strength"
+            },
+            {
+              "slot": 18,
+              "id": "warped_door",
+              "id_ru": "Искажённая дверь",
+              "count": 64
+            },
+            {
+              "slot": 19,
+              "id": "trident",
+              "id_ru": "Трезубец",
+              "minecraft_custom": "<span style=\"color: #009DC4\"> Гарпун разорителя морских крепостей </span>",
+              "count": 1,
+              "enchant": [
+                {
+                  "enchant_id": "impaling",
+                  "enchant_id_ru": "Пронзатель",
+                  "lvl": 5
+                },
+                {
+                  "enchant_id": "loyalty",
+                  "enchant_id_ru": "Верность",
+                  "lvl": 3
+                },
+                {
+                  "enchant_id": "mending",
+                  "enchant_id_ru": "Починка",
+                  "lvl": 1
+                },
+                {
+                  "enchant_id": "unbreaking",
+                  "enchant_id_ru": "Прочность",
+                  "lvl": 3
+                }
+              ]
+            },
+            {
+              "slot": 20,
+              "id": "milk_bucket",
+              "id_ru": "Ведро молока",
+              "count": 1
+            },
+            {
+              "slot": 21,
+              "id": "milk_bucket",
+              "id_ru": "Ведро молока",
+              "count": 1
+            },
+            {
+              "slot": 22,
+              "id": "milk_bucket",
+              "id_ru": "Ведро молока",
+              "count": 1
+            },
+            {
+              "slot": 23,
+              "id": "potion",
+              "id_ru": "Зелье водного дыхания",
+              "count": 1,
+              "potion": "long_water_breathing"
+            },
+            {
+              "slot": 24,
+              "id": "potion",
+              "id_ru": "Зелье водного дыхания",
+              "count": 1,
+              "potion": "long_water_breathing"
+            },
+            {
+              "slot": 25,
+              "id": "potion",
+              "id_ru": "Зелье силы",
+              "count": 1,
+              "potion": "long_strength"
+            },
+            {
+              "slot": 26,
+              "id": "potion",
+              "id_ru": "Зелье силы",
+              "count": 1,
+              "potion": "long_strength"
+            }
+          ]
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 64,
+          "content": []
+        },
+        "item2": {}
       }
     ]
   },
@@ -31257,6 +31472,528 @@ export const shopData = [
           "content": []
         },
         "item2": {}
+      }
+    ]
+  },
+  {
+    "shop_id": "83",
+    "x": -3825,
+    "y": -31,
+    "z": 7044,
+    "name": "",
+    "owner": "prestig9110",
+    "object_profession": "NONE",
+    "object_villager_type": "PLAINS",
+    "offers": [
+      {
+        "id": "1",
+        "resultItem": {
+          "type": "white_shulker_box",
+          "type_ru": "Белый шалкеровый ящик",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "oak_log",
+              "id_ru": "Дубовое бревно",
+              "count": 64
+            },
+            {
+              "slot": 1,
+              "id": "oak_log",
+              "id_ru": "Дубовое бревно",
+              "count": 64
+            },
+            {
+              "slot": 2,
+              "id": "oak_log",
+              "id_ru": "Дубовое бревно",
+              "count": 64
+            },
+            {
+              "slot": 3,
+              "id": "oak_log",
+              "id_ru": "Дубовое бревно",
+              "count": 64
+            },
+            {
+              "slot": 4,
+              "id": "oak_log",
+              "id_ru": "Дубовое бревно",
+              "count": 64
+            },
+            {
+              "slot": 5,
+              "id": "oak_log",
+              "id_ru": "Дубовое бревно",
+              "count": 64
+            },
+            {
+              "slot": 6,
+              "id": "oak_log",
+              "id_ru": "Дубовое бревно",
+              "count": 64
+            },
+            {
+              "slot": 7,
+              "id": "oak_log",
+              "id_ru": "Дубовое бревно",
+              "count": 64
+            },
+            {
+              "slot": 8,
+              "id": "oak_log",
+              "id_ru": "Дубовое бревно",
+              "count": 64
+            },
+            {
+              "slot": 9,
+              "id": "oak_log",
+              "id_ru": "Дубовое бревно",
+              "count": 64
+            },
+            {
+              "slot": 10,
+              "id": "oak_log",
+              "id_ru": "Дубовое бревно",
+              "count": 64
+            },
+            {
+              "slot": 11,
+              "id": "oak_log",
+              "id_ru": "Дубовое бревно",
+              "count": 64
+            },
+            {
+              "slot": 12,
+              "id": "oak_log",
+              "id_ru": "Дубовое бревно",
+              "count": 64
+            },
+            {
+              "slot": 13,
+              "id": "oak_log",
+              "id_ru": "Дубовое бревно",
+              "count": 64
+            },
+            {
+              "slot": 14,
+              "id": "oak_log",
+              "id_ru": "Дубовое бревно",
+              "count": 64
+            },
+            {
+              "slot": 15,
+              "id": "oak_log",
+              "id_ru": "Дубовое бревно",
+              "count": 64
+            },
+            {
+              "slot": 16,
+              "id": "oak_log",
+              "id_ru": "Дубовое бревно",
+              "count": 64
+            },
+            {
+              "slot": 17,
+              "id": "oak_log",
+              "id_ru": "Дубовое бревно",
+              "count": 64
+            },
+            {
+              "slot": 18,
+              "id": "oak_log",
+              "id_ru": "Дубовое бревно",
+              "count": 64
+            },
+            {
+              "slot": 19,
+              "id": "oak_log",
+              "id_ru": "Дубовое бревно",
+              "count": 64
+            },
+            {
+              "slot": 20,
+              "id": "oak_log",
+              "id_ru": "Дубовое бревно",
+              "count": 64
+            },
+            {
+              "slot": 21,
+              "id": "oak_log",
+              "id_ru": "Дубовое бревно",
+              "count": 64
+            },
+            {
+              "slot": 22,
+              "id": "oak_log",
+              "id_ru": "Дубовое бревно",
+              "count": 64
+            },
+            {
+              "slot": 23,
+              "id": "oak_log",
+              "id_ru": "Дубовое бревно",
+              "count": 64
+            },
+            {
+              "slot": 24,
+              "id": "oak_log",
+              "id_ru": "Дубовое бревно",
+              "count": 64
+            },
+            {
+              "slot": 25,
+              "id": "oak_log",
+              "id_ru": "Дубовое бревно",
+              "count": 64
+            },
+            {
+              "slot": 26,
+              "id": "oak_log",
+              "id_ru": "Дубовое бревно",
+              "count": 64
+            }
+          ]
+        },
+        "item1": {
+          "type": "white_shulker_box",
+          "type_ru": "Белый шалкеровый ящик",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 1,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 2,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 3,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 4,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 5,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 6,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 7,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 8,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 9,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 10,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 11,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 12,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 13,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 14,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 15,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 16,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 17,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 18,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 19,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 20,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 21,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 22,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 23,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 24,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 25,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 26,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            }
+          ]
+        },
+        "item2": {
+          "type": "white_shulker_box",
+          "type_ru": "Белый шалкеровый ящик",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 1,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 2,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 3,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 4,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 5,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 6,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 7,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 8,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 9,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 10,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 11,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 12,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 13,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 14,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 15,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 16,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 17,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 18,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 19,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 20,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 21,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 22,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 23,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 24,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 25,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            },
+            {
+              "slot": 26,
+              "id": "cobbled_deepslate",
+              "id_ru": "Колотый глубинный сланец",
+              "count": 64
+            }
+          ]
+        }
       }
     ]
   },

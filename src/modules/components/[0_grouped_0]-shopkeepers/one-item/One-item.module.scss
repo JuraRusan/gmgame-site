@@ -37,16 +37,6 @@ $parameterItem: 64px;
       z-index: 35;
       font-family: $fontCustom2;
     }
-
-    .image {
-      display: flex;
-      width: calc(#{$parameterItem} - 6px);
-      min-width: calc(#{$parameterItem} - 6px);
-      max-width: calc(#{$parameterItem} - 6px);
-      height: calc(#{$parameterItem} - 6px);
-      min-height: calc(#{$parameterItem} - 6px);
-      max-height: calc(#{$parameterItem} - 6px);
-    }
   }
 
   .photoItemNone {
@@ -66,98 +56,20 @@ $parameterItem: 64px;
   .tooltip {
     display: flex;
     position: fixed;
-    min-width: 250px;
-    max-width: 420px;
-    max-height: 214px;
-    padding: 8px;
+    width: auto;
+    height: auto;
+    padding: 4px;
     background: $color-2;
     border-radius: 8px;
     border: 1px solid $color-22;
     z-index: 50;
     margin-left: 28px;
 
-    .name {
-      height: auto;
-      line-height: 24px;
-      width: auto;
-      color: $color-3;
-      font-weight: 400;
-      font-size: 14px;
-      font-family: $fontCustom2 !important;
-
-      .goatHorn {
-        font-family: inherit !important;
-        font-weight: inherit !important;
-        font-size: 13px;
-        color: lighten($color-8, 25%);
-      }
-
-      span {
-        font-family: inherit !important;
-        font-weight: inherit !important;
-        font-size: inherit !important;
-
-        b,
-        i,
-        u,
-        s {
-          font-family: inherit !important;
-          font-size: inherit !important;
-        }
-      }
-
-    }
-
-    .minecraftId {
-      height: 18px;
-      line-height: 18px;
-      color: $color-13;
-      font-weight: 400;
-      font-size: 12px;
-      margin: 6px 0 0 0;
-      font-family: $fontCustom2;
-    }
-
-    .listWrapper {
+    .shulkerWrapper {
       display: flex;
-      flex-direction: column;
-      width: auto;
-      height: auto;
-      padding-left: 8px;
-
-      .list {
-        height: auto;
-        min-height: 0;
-        max-height: none;
-        font-size: 11px;
-        font-weight: 400;
-        font-family: $fontCustom2;
-        list-style: inside;
-        line-height: 1.5;
-        margin: 1px 0;
-        letter-spacing: 0.5px;
-        color: $color-3;
-
-        .red {
-          color: lighten($color-9, 25%) !important;
-          font-family: inherit;
-          font-size: inherit;
-          font-weight: inherit;
-        }
-
-        .main {
-          color: $color-3 !important;
-          font-family: inherit;
-          font-size: inherit;
-          font-weight: inherit;
-        }
-      }
-    }
-
-    .scale {
-      margin-top: 8px;
-      transform: scale(0.65);
-      transform-origin: top left;
+      flex-direction: row;
+      width: max-content;
+      height: max-content;
     }
   }
 }
