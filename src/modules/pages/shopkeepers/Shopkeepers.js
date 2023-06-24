@@ -61,8 +61,8 @@ const Shopkeepers = () => {
     setInfoShopCoordinatesX(props.x);
     setInfoShopCoordinatesY(props.y);
     setInfoShopCoordinatesZ(props.z);
-    setInfoVillagerType(props.object_villager_type.toLowerCase());
-    setInfoProfession(props.object_profession.toLowerCase());
+    setInfoVillagerType(props.object_villager_type);
+    setInfoProfession(props.object_profession);
   }
 
   const scrollActive = () => {
@@ -221,6 +221,15 @@ const Shopkeepers = () => {
                       spy
                       to={`scroll_${id.shop_id}`}
                       onClick={() => handleItemClick(`scroll_${id.shop_id}`)}
+                      onSetActive={debounce(() => {
+                        setInfoShopName(id.name);
+                        setInfoShopOwnerName(id.owner);
+                        setInfoShopCoordinatesX(id.x);
+                        setInfoShopCoordinatesY(id.y);
+                        setInfoShopCoordinatesZ(id.z);
+                        setInfoVillagerType(id.object_villager_type);
+                        setInfoProfession(id.object_profession);
+                      }, 250)}
                     >
                       {id.name === "" ? id.owner : id.name}
                     </Link>

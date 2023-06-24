@@ -169,8 +169,8 @@ async function selectData(data) {
         z: dataObj.z,
         name: dataObj.name,
         owner: dataObj.owner,
-        object_profession: dataObj.object ? dataObj.object.profession : null,
-        object_villager_type: dataObj.object ? dataObj.object.villagerType : null,
+        object_profession: dataObj.object ? dataObj.object.profession.toLowerCase() : null,
+        object_villager_type: dataObj.object ? dataObj.object.villagerType.toLowerCase() : null,
         offers: await Promise.all(offerKeys.map(async (offerKey) => {
             const offer = offers[offerKey];
 

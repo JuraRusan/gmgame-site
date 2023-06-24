@@ -6,8 +6,8 @@ export const shopData = [
     "z": 72,
     "name": "PandaTreasure",
     "owner": "SoftPanda3",
-    "object_profession": "CLERIC",
-    "object_villager_type": "SAVANNA",
+    "object_profession": "cleric",
+    "object_villager_type": "savanna",
     "offers": [
       {
         "id": "1",
@@ -312,8 +312,8 @@ export const shopData = [
     "z": 76,
     "name": "PandaMusic",
     "owner": "SoftPanda3",
-    "object_profession": "MASON",
-    "object_villager_type": "DESERT",
+    "object_profession": "mason",
+    "object_villager_type": "desert",
     "offers": [
       {
         "id": "1",
@@ -557,8 +557,8 @@ export const shopData = [
     "z": 77,
     "name": "Blackirita",
     "owner": "Blackirita",
-    "object_profession": "CLERIC",
-    "object_villager_type": "SWAMP",
+    "object_profession": "cleric",
+    "object_villager_type": "swamp",
     "offers": [
       {
         "id": "1",
@@ -1669,8 +1669,8 @@ export const shopData = [
     "z": 104,
     "name": "KerubifinoThorns",
     "owner": "_Kerubifi_",
-    "object_profession": "WEAPONSMITH",
-    "object_villager_type": "TAIGA",
+    "object_profession": "weaponsmith",
+    "object_villager_type": "taiga",
     "offers": [
       {
         "id": "1",
@@ -2833,8 +2833,8 @@ export const shopData = [
     "z": 15,
     "name": "Blackirita",
     "owner": "Blackirita",
-    "object_profession": "SHEPHERD",
-    "object_villager_type": "SAVANNA",
+    "object_profession": "shepherd",
+    "object_villager_type": "savanna",
     "offers": [
       {
         "id": "1",
@@ -3053,8 +3053,8 @@ export const shopData = [
     "z": 56,
     "name": "KerubifiTools",
     "owner": "_Kerubifi_",
-    "object_profession": "TOOLSMITH",
-    "object_villager_type": "TAIGA",
+    "object_profession": "toolsmith",
+    "object_villager_type": "taiga",
     "offers": [
       {
         "id": "1",
@@ -3732,8 +3732,8 @@ export const shopData = [
     "z": 53,
     "name": "VonderanShop",
     "owner": "Vonderan",
-    "object_profession": "MASON",
-    "object_villager_type": "TAIGA",
+    "object_profession": "mason",
+    "object_villager_type": "taiga",
     "offers": [
       {
         "id": "1",
@@ -6269,8 +6269,8 @@ export const shopData = [
     "z": 10,
     "name": "DrunkenSage",
     "owner": "Jean_Viento",
-    "object_profession": "CLERIC",
-    "object_villager_type": "JUNGLE",
+    "object_profession": "cleric",
+    "object_villager_type": "jungle",
     "offers": [
       {
         "id": "1",
@@ -9543,8 +9543,8 @@ export const shopData = [
     "z": -13,
     "name": "PandaSand",
     "owner": "SoftPanda3",
-    "object_profession": "CARTOGRAPHER",
-    "object_villager_type": "DESERT",
+    "object_profession": "cartographer",
+    "object_villager_type": "desert",
     "offers": [
       {
         "id": "1",
@@ -9741,8 +9741,8 @@ export const shopData = [
     "z": -68,
     "name": "Dalandis shop",
     "owner": "prestig9110",
-    "object_profession": "TOOLSMITH",
-    "object_villager_type": "JUNGLE",
+    "object_profession": "toolsmith",
+    "object_villager_type": "jungle",
     "offers": [
       {
         "id": "1",
@@ -9783,8 +9783,8 @@ export const shopData = [
     "z": -31,
     "name": "",
     "owner": "SolyankaXD",
-    "object_profession": "FLETCHER",
-    "object_villager_type": "SWAMP",
+    "object_profession": "fletcher",
+    "object_villager_type": "swamp",
     "offers": [
       {
         "id": "1",
@@ -10882,8 +10882,8 @@ export const shopData = [
     "z": -92,
     "name": "Shop on trees",
     "owner": "gerhugwsif",
-    "object_profession": "CARTOGRAPHER",
-    "object_villager_type": "SAVANNA",
+    "object_profession": "cartographer",
+    "object_villager_type": "savanna",
     "offers": [
       {
         "id": "1",
@@ -11423,8 +11423,8 @@ export const shopData = [
     "z": 129,
     "name": "LioraShop",
     "owner": "Li_Ora",
-    "object_profession": "FLETCHER",
-    "object_villager_type": "SWAMP",
+    "object_profession": "fletcher",
+    "object_villager_type": "swamp",
     "offers": [
       {
         "id": "1",
@@ -12215,8 +12215,8 @@ export const shopData = [
     "z": -45,
     "name": "BlackPirat",
     "owner": "BlackPirat",
-    "object_profession": "WEAPONSMITH",
-    "object_villager_type": "PLAINS",
+    "object_profession": "weaponsmith",
+    "object_villager_type": "plains",
     "offers": [
       {
         "id": "1",
@@ -12371,8 +12371,8 @@ export const shopData = [
     "z": -11,
     "name": "Kermitik",
     "owner": "kermitik",
-    "object_profession": "LIBRARIAN",
-    "object_villager_type": "SNOW",
+    "object_profession": "librarian",
+    "object_villager_type": "snow",
     "offers": [
       {
         "id": "1",
@@ -13012,8 +13012,8 @@ export const shopData = [
     "z": 208,
     "name": "VonderanShop 3",
     "owner": "Vonderan",
-    "object_profession": "LEATHERWORKER",
-    "object_villager_type": "TAIGA",
+    "object_profession": "leatherworker",
+    "object_villager_type": "taiga",
     "offers": [
       {
         "id": "1",
@@ -14377,8 +14377,8 @@ export const shopData = [
     "z": 162,
     "name": "VonderanShop 2",
     "owner": "Vonderan",
-    "object_profession": "ARMORER",
-    "object_villager_type": "TAIGA",
+    "object_profession": "armorer",
+    "object_villager_type": "taiga",
     "offers": [
       {
         "id": "1",
@@ -15908,8 +15908,8 @@ export const shopData = [
     "z": -93,
     "name": "prestig9110 shop",
     "owner": "prestig9110",
-    "object_profession": "LEATHERWORKER",
-    "object_villager_type": "PLAINS",
+    "object_profession": "leatherworker",
+    "object_villager_type": "plains",
     "offers": [
       {
         "id": "1",
@@ -17540,8 +17540,8 @@ export const shopData = [
     "z": 80,
     "name": "",
     "owner": "_BaXy_",
-    "object_profession": "NONE",
-    "object_villager_type": "PLAINS",
+    "object_profession": "none",
+    "object_villager_type": "plains",
     "offers": [
       {
         "id": "1",
@@ -17910,8 +17910,8 @@ export const shopData = [
     "z": 51,
     "name": "",
     "owner": "_BaXy_",
-    "object_profession": "NONE",
-    "object_villager_type": "PLAINS",
+    "object_profession": "none",
+    "object_villager_type": "plains",
     "offers": [
       {
         "id": "1",
@@ -18282,8 +18282,8 @@ export const shopData = [
     "z": -38,
     "name": "NiksLiana",
     "owner": "Niksa_Viento",
-    "object_profession": "FISHERMAN",
-    "object_villager_type": "SWAMP",
+    "object_profession": "fisherman",
+    "object_villager_type": "swamp",
     "offers": [
       {
         "id": "1",
@@ -19430,8 +19430,8 @@ export const shopData = [
     "z": -10,
     "name": "NiksWoodman",
     "owner": "Niksa_Viento",
-    "object_profession": "NONE",
-    "object_villager_type": "JUNGLE",
+    "object_profession": "none",
+    "object_villager_type": "jungle",
     "offers": [
       {
         "id": "1",
@@ -21062,8 +21062,8 @@ export const shopData = [
     "z": -20,
     "name": "NiksMasterBox",
     "owner": "Niksa_Viento",
-    "object_profession": "CARTOGRAPHER",
-    "object_villager_type": "SNOW",
+    "object_profession": "cartographer",
+    "object_villager_type": "snow",
     "offers": [
       {
         "id": "1",
@@ -24255,8 +24255,8 @@ export const shopData = [
     "z": -8,
     "name": "NiksLeaves",
     "owner": "Niksa_Viento",
-    "object_profession": "FLETCHER",
-    "object_villager_type": "SWAMP",
+    "object_profession": "fletcher",
+    "object_villager_type": "swamp",
     "offers": [
       {
         "id": "1",
@@ -25783,8 +25783,8 @@ export const shopData = [
     "z": 28,
     "name": "",
     "owner": "_Kerubifi_",
-    "object_profession": "ARMORER",
-    "object_villager_type": "TAIGA",
+    "object_profession": "armorer",
+    "object_villager_type": "taiga",
     "offers": [
       {
         "id": "1",
@@ -27081,8 +27081,8 @@ export const shopData = [
     "z": -36,
     "name": "NiksFlowers",
     "owner": "Niksa_Viento",
-    "object_profession": "NONE",
-    "object_villager_type": "SAVANNA",
+    "object_profession": "none",
+    "object_villager_type": "savanna",
     "offers": [
       {
         "id": "1",
@@ -27509,8 +27509,8 @@ export const shopData = [
     "z": 102,
     "name": "KerubifiThorns",
     "owner": "_Kerubifi_",
-    "object_profession": "MASON",
-    "object_villager_type": "TAIGA",
+    "object_profession": "mason",
+    "object_villager_type": "taiga",
     "offers": [
       {
         "id": "1",
@@ -28793,8 +28793,8 @@ export const shopData = [
     "z": 56,
     "name": "KerubifiFight",
     "owner": "_Kerubifi_",
-    "object_profession": "FLETCHER",
-    "object_villager_type": "TAIGA",
+    "object_profession": "fletcher",
+    "object_villager_type": "taiga",
     "offers": [
       {
         "id": "1",
@@ -29984,8 +29984,8 @@ export const shopData = [
     "z": -13,
     "name": "PandaSand",
     "owner": "SoftPanda3",
-    "object_profession": "CARTOGRAPHER",
-    "object_villager_type": "DESERT",
+    "object_profession": "cartographer",
+    "object_villager_type": "desert",
     "offers": [
       {
         "id": "1",
@@ -30182,8 +30182,8 @@ export const shopData = [
     "z": -22,
     "name": "NiksThings",
     "owner": "Niksa_Viento",
-    "object_profession": "FLETCHER",
-    "object_villager_type": "TAIGA",
+    "object_profession": "fletcher",
+    "object_villager_type": "taiga",
     "offers": [
       {
         "id": "1",
@@ -31474,533 +31474,5 @@ export const shopData = [
         "item2": {}
       }
     ]
-  },
-  {
-    "shop_id": "83",
-    "x": -3825,
-    "y": -31,
-    "z": 7044,
-    "name": "",
-    "owner": "prestig9110",
-    "object_profession": "NONE",
-    "object_villager_type": "PLAINS",
-    "offers": [
-      {
-        "id": "1",
-        "resultItem": {
-          "type": "white_shulker_box",
-          "type_ru": "Белый шалкеровый ящик",
-          "amount": 1,
-          "content": [
-            {
-              "slot": 0,
-              "id": "oak_log",
-              "id_ru": "Дубовое бревно",
-              "count": 64
-            },
-            {
-              "slot": 1,
-              "id": "oak_log",
-              "id_ru": "Дубовое бревно",
-              "count": 64
-            },
-            {
-              "slot": 2,
-              "id": "oak_log",
-              "id_ru": "Дубовое бревно",
-              "count": 64
-            },
-            {
-              "slot": 3,
-              "id": "oak_log",
-              "id_ru": "Дубовое бревно",
-              "count": 64
-            },
-            {
-              "slot": 4,
-              "id": "oak_log",
-              "id_ru": "Дубовое бревно",
-              "count": 64
-            },
-            {
-              "slot": 5,
-              "id": "oak_log",
-              "id_ru": "Дубовое бревно",
-              "count": 64
-            },
-            {
-              "slot": 6,
-              "id": "oak_log",
-              "id_ru": "Дубовое бревно",
-              "count": 64
-            },
-            {
-              "slot": 7,
-              "id": "oak_log",
-              "id_ru": "Дубовое бревно",
-              "count": 64
-            },
-            {
-              "slot": 8,
-              "id": "oak_log",
-              "id_ru": "Дубовое бревно",
-              "count": 64
-            },
-            {
-              "slot": 9,
-              "id": "oak_log",
-              "id_ru": "Дубовое бревно",
-              "count": 64
-            },
-            {
-              "slot": 10,
-              "id": "oak_log",
-              "id_ru": "Дубовое бревно",
-              "count": 64
-            },
-            {
-              "slot": 11,
-              "id": "oak_log",
-              "id_ru": "Дубовое бревно",
-              "count": 64
-            },
-            {
-              "slot": 12,
-              "id": "oak_log",
-              "id_ru": "Дубовое бревно",
-              "count": 64
-            },
-            {
-              "slot": 13,
-              "id": "oak_log",
-              "id_ru": "Дубовое бревно",
-              "count": 64
-            },
-            {
-              "slot": 14,
-              "id": "oak_log",
-              "id_ru": "Дубовое бревно",
-              "count": 64
-            },
-            {
-              "slot": 15,
-              "id": "oak_log",
-              "id_ru": "Дубовое бревно",
-              "count": 64
-            },
-            {
-              "slot": 16,
-              "id": "oak_log",
-              "id_ru": "Дубовое бревно",
-              "count": 64
-            },
-            {
-              "slot": 17,
-              "id": "oak_log",
-              "id_ru": "Дубовое бревно",
-              "count": 64
-            },
-            {
-              "slot": 18,
-              "id": "oak_log",
-              "id_ru": "Дубовое бревно",
-              "count": 64
-            },
-            {
-              "slot": 19,
-              "id": "oak_log",
-              "id_ru": "Дубовое бревно",
-              "count": 64
-            },
-            {
-              "slot": 20,
-              "id": "oak_log",
-              "id_ru": "Дубовое бревно",
-              "count": 64
-            },
-            {
-              "slot": 21,
-              "id": "oak_log",
-              "id_ru": "Дубовое бревно",
-              "count": 64
-            },
-            {
-              "slot": 22,
-              "id": "oak_log",
-              "id_ru": "Дубовое бревно",
-              "count": 64
-            },
-            {
-              "slot": 23,
-              "id": "oak_log",
-              "id_ru": "Дубовое бревно",
-              "count": 64
-            },
-            {
-              "slot": 24,
-              "id": "oak_log",
-              "id_ru": "Дубовое бревно",
-              "count": 64
-            },
-            {
-              "slot": 25,
-              "id": "oak_log",
-              "id_ru": "Дубовое бревно",
-              "count": 64
-            },
-            {
-              "slot": 26,
-              "id": "oak_log",
-              "id_ru": "Дубовое бревно",
-              "count": 64
-            }
-          ]
-        },
-        "item1": {
-          "type": "white_shulker_box",
-          "type_ru": "Белый шалкеровый ящик",
-          "amount": 1,
-          "content": [
-            {
-              "slot": 0,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 1,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 2,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 3,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 4,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 5,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 6,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 7,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 8,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 9,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 10,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 11,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 12,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 13,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 14,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 15,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 16,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 17,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 18,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 19,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 20,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 21,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 22,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 23,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 24,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 25,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 26,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            }
-          ]
-        },
-        "item2": {
-          "type": "white_shulker_box",
-          "type_ru": "Белый шалкеровый ящик",
-          "amount": 1,
-          "content": [
-            {
-              "slot": 0,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 1,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 2,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 3,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 4,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 5,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 6,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 7,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 8,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 9,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 10,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 11,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 12,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 13,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 14,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 15,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 16,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 17,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 18,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 19,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 20,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 21,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 22,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 23,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 24,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 25,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            },
-            {
-              "slot": 26,
-              "id": "cobbled_deepslate",
-              "id_ru": "Колотый глубинный сланец",
-              "count": 64
-            }
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "shop_id": "data-version",
-    "object_profession": null,
-    "object_villager_type": null,
-    "offers": []
   }
 ];
