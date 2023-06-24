@@ -212,7 +212,6 @@ const Shopkeepers = () => {
                   <li
                     key={i}
                     className={classNames(styles["oneShopList"])}
-                    data-aos="zoom-in"
                   >
                     <Link
                       activeClass={classNames(styles["activeShop"])}
@@ -397,7 +396,7 @@ const Shopkeepers = () => {
             </div>
           }
           <div className={classNames(styles["villagerShopInfo"])}>
-            <div className={classNames(styles["villager"])} data-aos="zoom-in">
+            <div className={classNames(styles["villager"])}>
               <div className={classNames(styles["villagerInfo"])}>
                 <h4 className={classNames(styles["styleH4"])}>Владелец:
                   <span className={classNames(styles["color"])}>{infoShopOwnerName}</span>
