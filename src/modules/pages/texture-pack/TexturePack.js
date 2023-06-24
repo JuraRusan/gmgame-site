@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom';
 import {LazyLoadImage} from 'react-lazy-load-image-component';
 import Warn from "../../components/warn/Warn.js";
 import {DataBaseTexturePack} from "./texturePackDB.js";
+import {debounce} from "lodash";
 
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import styles from "./TexturePack.module.scss";
@@ -45,7 +46,7 @@ const TexturePack = () => {
         className={classNames(styles["searchInputTexturePack"])}
         type="search"
         placeholder="Найти..."
-        onChange={(e) => setQueryDataTexturePack(e.target.value.toLowerCase())}
+        onChange={debounce((e) => setQueryDataTexturePack(e.target.value.toLowerCase()), 350)}
       />
 
       {DataBaseTexturePack.filter((fil) => fil.main.toLowerCase().includes(queryDataTexturePack) || fil.info_item.toLowerCase().includes(queryDataTexturePack) || fil.variability_name.find(c => JSON.stringify(c).toLowerCase().includes(queryDataTexturePack))).map((tab, i) => (
