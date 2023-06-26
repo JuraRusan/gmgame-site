@@ -13,7 +13,7 @@ import styles from "./One-item.module.scss"
 const OneItem = (props) => {
 
   const [showTooltip, setShowTooltip] = useState(false);
-  const [tooltipPosition, setTooltipPosition] = useState({x: 0, y: 0});
+  const [tooltipPosition, setTooltipPosition] = useState({x: undefined, y: undefined});
   const [tooltipVisible, setTooltipVisible] = useState(false);
 
   useEffect(() => {
