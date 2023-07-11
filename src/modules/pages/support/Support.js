@@ -22,9 +22,9 @@ const Support = () => {
             <p className={classNames(styles["subTitleSupport"])}>Благодаря этим людям сервер живет и позволяет комфортно играть без лагов и читеров. Мы стараемся каждый день улучшить игровой опыт на сервере и будем признательны за любую помощь. Если у вас есть возможность помочь серверу нижеперечисленными способами, то, пожалуйста, воспользуйтесь ими.</p>
             <p className={classNames(styles["subTitleSupport"])}>На пожертвования уже куплено мощное железо для сервера, источник бесперебойного питания и множество плагинов для комфортной игры. Спасибо всем игрокам, без вашей поддержки не было бы сервера GMGame.</p>
             <div className={classNames(styles["linkWrapper"])}>
-              <a className={classNames(styles["supportLink"])} target="_blank" rel="noreferrer" href="https://new.donatepay.ru/@gmgame">- Донатом &#129133;</a>
-              <a className={classNames(styles["supportLink"])} target="_blank" rel="noreferrer" href="https://hotmc.ru/casino-205185">- Розыгрыш на мониторинге (HotMC) &#129133;</a>
-              <a className={classNames(styles["supportLink"])} target="_blank" rel="noreferrer" href="https://discord.gg/AesVsdPsFj">- Проголосовать на мониторингах &#129133;</a>
+              <a className={classNames(styles["supportLink"])} target="_blank" rel="noreferrer" href="https://new.donatepay.ru/@gmgame">- Донатом &#10148;</a>
+              <a className={classNames(styles["supportLink"])} target="_blank" rel="noreferrer" href="https://hotmc.ru/casino-205185">- Розыгрыш на мониторинге (HotMC) &#10148;</a>
+              <a className={classNames(styles["supportLink"])} target="_blank" rel="noreferrer" href="https://discord.gg/AesVsdPsFj">- Проголосовать на мониторингах &#10148;</a>
             </div>
             <h5 className={classNames(styles["footerSupport"])}>Спасибо! Ваша поддержка очень важна. &#129392;</h5>
           </div>
@@ -47,7 +47,7 @@ const Support = () => {
         {/*    <div className={classNames(styles["partnerLineTwo"])}>*/}
         {/*      <h4 className={classNames(styles["name"])}>Hosting SuperHub</h4>*/}
         {/*      <h5 className={classNames(styles["subText"])}>Дешёвый и надёжный хостинг для Minecraft серверов.</h5>*/}
-        {/*      <a className={classNames(styles["supportLink"])} target="_blank" rel="noreferrer" href="https://superhub.host/referral/c45b819b">Hosting SuperHub &#129133;</a>*/}
+        {/*      <a className={classNames(styles["supportLink"])} target="_blank" rel="noreferrer" href="https://superhub.host/referral/c45b819b">Hosting SuperHub &#10148;</a>*/}
         {/*    </div>*/}
         {/*  </div>*/}
         {/*</div>*/}

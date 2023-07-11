@@ -34,7 +34,7 @@ const AnalyticsPost = () => {
                   <img className={classNames(styles["userIcon"])} src={`https://minotar.net/helm/${user}/100`}
                        alt=" "></img>
                   <h4 className={classNames(styles["usersName"])}>{user}</h4>
-                  {/*<a href="https://www.google.com.ua/" className={classNames(styles["linkUsers"])}>&#129133;</a>*/}
+                  {/*<a href="https://www.google.com.ua/" className={classNames(styles["linkUsers"])}>&#10148;</a>*/}
                 </div>
               )}
             </>
@@ -50,7 +50,7 @@ const AnalyticsPost = () => {
                   <img className={classNames(styles["userIcon"])} src={`https://minotar.net/helm/${user}/100`}
                        alt=" "></img>
                   <h4 className={classNames(styles["usersName"])}>{user}</h4>
-                  {/*<a href="https://www.google.com.ua/" className={classNames(styles["linkUsers"])}>&#129133;</a>*/}
+                  {/*<a href="https://www.google.com.ua/" className={classNames(styles["linkUsers"])}>&#10148;</a>*/}
                 </div>
               )}
             </>

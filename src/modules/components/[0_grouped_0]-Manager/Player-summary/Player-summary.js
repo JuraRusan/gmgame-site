@@ -436,7 +436,7 @@ const PlayerSummary = () => {
                 <th className={classNames(styles["tableStylingColumns"], styles["coordinatesColumn"])}>x</th>
                 <th className={classNames(styles["tableStylingColumns"], styles["coordinatesColumn"])}>y</th>
                 <th className={classNames(styles["tableStylingColumns"], styles["coordinatesColumn"])}>z</th>
-                <th className={classNames(styles["tableStylingColumns"], styles["mapsLinkColumn"])}>&#129133;</th>
+                <th className={classNames(styles["tableStylingColumns"], styles["mapsLinkColumn"])}>&#10148;</th>
                 <th className={classNames(styles["tableStylingColumns"], styles["mapsActionColumn"])}>Действия</th>
               </tr>
               </thead>
@@ -495,7 +495,7 @@ const PlayerSummary = () => {
                       className={classNames(styles["linkMap"])}
                       target="_blank"
                       rel="noreferrer"
-                    >&#129133;
+                    >&#10148;
                     </a>
                   </th>
                   <th className={classNames(styles["tableStylingColumns"], styles["mapsActionColumn"])}>
@@ -534,7 +534,7 @@ const PlayerSummary = () => {
                 <th className={classNames(styles["tableStylingColumns"], styles["coordinatesColumn"])}>xStop</th>
                 <th className={classNames(styles["tableStylingColumns"], styles["coordinatesColumn"])}>zStart</th>
                 <th className={classNames(styles["tableStylingColumns"], styles["coordinatesColumn"])}>zStop</th>
-                <th className={classNames(styles["tableStylingColumns"], styles["mapsLinkColumn"])}>&#129133;</th>
+                <th className={classNames(styles["tableStylingColumns"], styles["mapsLinkColumn"])}>&#10148;</th>
                 <th className={classNames(styles["tableStylingColumns"], styles["mapsActionColumn"])}>Действия</th>
               </tr>
               </thead>
@@ -600,7 +600,7 @@ const PlayerSummary = () => {
                       className={classNames(styles["linkMap"])}
                       target="_blank"
                       rel="noreferrer"
-                    >&#129133;
+                    >&#10148;
                     </a>
                   </th>
                   <th className={classNames(styles["tableStylingColumns"], styles["mapsActionColumn"])}>
@@ -630,7 +630,7 @@ const PlayerSummary = () => {
             <tr className={classNames(styles["tableStylingRows"])}>
               <th className={classNames(styles["tableStylingColumns"], styles["userNameColumn"])}>Имя</th>
               <th className={classNames(styles["tableStylingColumns"], styles["userIdColumn"])}>id</th>
-              <th className={classNames(styles["tableStylingColumns"], styles["regenLinkColumn"])}>&#129133;</th>
+              <th className={classNames(styles["tableStylingColumns"], styles["regenLinkColumn"])}>&#10148;</th>
               <th className={classNames(styles["tableStylingColumns"], styles["regenActionColumn"])}>Действия</th>
             </tr>
             </thead>
@@ -649,7 +649,7 @@ const PlayerSummary = () => {
                     target="_blank"
                     rel="noreferrer"
                     className={classNames(styles["linkUser"])}
-                  >&#129133;
+                  >&#10148;
                   </a>
                 </th>
                 <th className={classNames(styles["tableStylingColumns"], styles["regenActionColumn"])}>

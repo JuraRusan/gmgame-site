@@ -28,14 +28,14 @@ const TexturePack = () => {
         <div className={classNames(styles["texturePackInformation"])}>
           <h4 className={classNames(styles["informationH4"])}>Для использования набора ресурсов необходимо установить модификацию Optifine или Sodium с дополнениями.</h4>
           <h4 className={classNames(styles["informationH4"])}>Без модов он работать не будет.
-            <Link to={'/mods'} className={classNames(styles["linkModsPage"])}> Моды &#129133;</Link>
+            <Link to={'/mods'} className={classNames(styles["linkModsPage"])}> Моды &#10148;</Link>
           </h4>
           <h4 className={classNames(styles["informationH4"])}>По вопросам обращаться к игрокам:
             <span>_Kerubifi_, SoftPanda3</span>
           </h4>
         </div>
         <div className={classNames(styles["downloadWrapper"])}>
-          <a href="./texturePack" className={classNames(styles["downloadFiles"])} download="/static/download/Totem-Elytra-Body-1.19.zip">Скачать текстур пак &#129133;</a>
+          <a href="./texturePack" className={classNames(styles["downloadFiles"])} download="/static/download/Totem-Elytra-Body-1.19.zip">Скачать текстур пак &#10148;</a>
         </div>
         <div className={classNames(styles["warnWrapper"])}>
           <Warn inf={InformationFromTheAdministration}/>

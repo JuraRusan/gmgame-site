@@ -100,11 +100,11 @@ const OneItem = (props) => {
                 <ShulkerBoxMini content={props.contentHover}/>
               </div>
               :
-              <></>
+              null
             }
           </div>
           :
-          <></>
+          null
       }
     </div>
   );

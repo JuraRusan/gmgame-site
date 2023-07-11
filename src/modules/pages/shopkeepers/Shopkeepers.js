@@ -7,7 +7,7 @@ import ShulkerBox from "../../components/[0_grouped_0]-shopkeepers/shulker-box/S
 import {shopData} from "./testParse/test_data";
 import {shulkers_type} from "./ShulkersType";
 import AOS from "aos";
-import {Link} from "react-scroll";
+import {Link, animateScroll as scroll} from "react-scroll";
 import {debounce} from "lodash";
 import MinecraftImage from "../../components/[0_grouped_0]-shopkeepers/mini-component/Minecraft-image";
 import MinecraftName from "../../components/[0_grouped_0]-shopkeepers/mini-component/Minecraft-name";
@@ -190,6 +190,20 @@ const Shopkeepers = () => {
     })
     : filterShopData;
 
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const scrollTo = urlParams.get('scrollTo');
+
+    if (scrollTo) {
+      const targetElement = document.getElementById(scrollTo);
+      if (targetElement) {
+        scroll.scrollTo(targetElement.offsetTop, {
+          smooth: true
+        });
+      }
+    }
+  }, []);
+
   return (
     <div className={classNames(styles["mainShopkeepersBlock"])} id="topScroll">
       <h4 className={classNames(styles["titleShopH4"])}>Товары игроков сервера</h4>
@@ -228,7 +242,7 @@ const Shopkeepers = () => {
                       //   setInfoShopCoordinatesZ(id.z);
                       //   setInfoVillagerType(id.object_villager_type);
                       //   setInfoProfession(id.object_profession);
-                      // }, 500)}
+                      // }, 500)} // --- !!! --- Вызывает лаги --- !!! ---
                     >
                       {id.name === "" ? id.owner : id.name}
                     </Link>

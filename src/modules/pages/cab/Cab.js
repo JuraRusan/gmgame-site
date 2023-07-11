@@ -78,7 +78,7 @@ const Cab = () => {
         }
 
         <div className={classNames(styles["buttonWrapper"])}>
-          <button id="buttonDelete" className={classNames(styles["buttonPhone"], styles["buttonPhoneNoVisible"])} onClick={phoneCabFunctionRemove}>&#128473;</button>
+          <button id="buttonDelete" className={classNames(styles["buttonPhone"], styles["buttonPhoneNoVisible"])} onClick={phoneCabFunctionRemove}>&#120;</button>
           <button id="buttonAdd" className={classNames(styles["buttonPhone"])} onClick={phoneCabFunctionAdd}>&#9776;</button>
         </div>
 
@@ -98,7 +98,7 @@ const Cab = () => {
                   <NavLink onClick={phoneCabFunctionRemove} className={({isActive}) => setActive(isActive)} to="markers">Мои метки</NavLink>
                   <NavLink onClick={phoneCabFunctionRemove} className={({isActive}) => setActive(isActive)} to="articles">Статьи</NavLink>
                   {/*<NavLink onClick={phoneCabFunctionRemove} className={({isActive}) => setActive(isActive)} to="gallery">Моя галерея</NavLink>*/}
-                  {/*<NavLink onClick={phoneCabFunctionRemove} className={({isActive}) => setActive(isActive)} to="shop_user">Тороговая зона</NavLink>*/}
+                  {/*<NavLink onClick={phoneCabFunctionRemove} className={({isActive}) => setActive(isActive)} to="shop_user">Мои магазины</NavLink>*/}
                   <NavLink onClick={phoneCabFunctionRemove} className={({isActive}) => setActive(isActive)} to="prize">Призы</NavLink>
                   <NavLink onClick={phoneCabFunctionRemove} className={({isActive}) => setActive(isActive)} to="change_password">Изменить пароль</NavLink>
                 </>

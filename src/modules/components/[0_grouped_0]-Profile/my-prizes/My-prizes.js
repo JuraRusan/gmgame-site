@@ -82,7 +82,7 @@ const MyPrizes = () => {
           );
         })}
       </div>
-      <a target="_blank" className={classNames(styles["prizes-link"])} rel="noreferrer" href="https://discord.gg/AesVsdPsFj">Если у Вас нет выигрышей, примите участие в розыгрыше на мониторинге &#129133;</a>
+      <a target="_blank" className={classNames(styles["prizes-link"])} rel="noreferrer" href="https://discord.gg/AesVsdPsFj">Если у Вас нет выигрышей, примите участие в розыгрыше на мониторинге &#10148;</a>
     </div>
   );
 };

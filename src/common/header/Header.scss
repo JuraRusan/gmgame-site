@@ -333,7 +333,7 @@
 
       .activeBt {
         &::after {
-          content: "\1F5D9";
+          content: "\0078";
         }
       }
 
@@ -363,6 +363,23 @@
 }
 
 @media screen and (max-width: 768px) {
+  .header {
+    .menu {
+      .content-menu {
+        .links {
+          .links-li {
+            .drop-phone {
+              .drop-li {
+                &:nth-child(n + 2):nth-child(-n + 10) {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 640px) {

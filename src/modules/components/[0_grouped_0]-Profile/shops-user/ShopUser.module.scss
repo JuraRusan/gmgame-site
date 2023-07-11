@@ -2,11 +2,10 @@
 
 .shopWrapper {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
   width: 100%;
   height: 100%;
+  padding-right: 4px;
 
   .userInfo {
     display: flex;
@@ -40,60 +39,143 @@
     .wrapper {
       display: flex;
       flex-direction: row;
-      justify-content: center;
       width: 100%;
-      margin-top: 18px;
+      margin-top: 4px;
     }
   }
 
-  .oneShopWrapper {
-    width: 100%;
-    min-width: auto;
-    max-width: 500px;
-    height: max-content;
+  .allShop {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    background: $color-20;
-    border: 1px solid $color-2;
-    border-radius: 4px;
-    margin: 8px auto;
-    padding: 8px;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    overflow: auto;
 
-    .descriptionBox {
-      display: flex;
-      flex-direction: column;
-      width: auto;
-
-      .h4Style {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 24px;
-        height: 24px;
-        width: min-content;
-        color: $color-3;
-
-        .spanStyle {
-          margin-left: 8px;
-          color: $color-8;
-          font-size: inherit;
-          font-weight: inherit;
-        }
-
-        .err {
-          color: $color-9;
-        }
-      }
+    &::-webkit-scrollbar {
+      width: 4px;
     }
 
-    .villagerImage {
+    .oneShopWrapper {
+      width: 100%;
+      min-width: auto;
+      max-width: 500px;
+      height: max-content;
       display: flex;
       flex-direction: row;
-      justify-content: center;
-      width: 125px;
-      min-width: 125px;
-      max-width: 125px;
-      height: 225px;
+      justify-content: space-between;
+      background: $color-20;
+      border: 1px solid $color-2;
+      border-radius: 4px;
+      margin: 8px auto;
+      padding: 8px;
+
+      .descriptionBox {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+
+        .h4Style {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 24px;
+          height: 24px;
+          width: min-content;
+          color: $color-3;
+
+          .spanStyle {
+            margin-left: 8px;
+            color: $color-8;
+            font-size: inherit;
+            font-weight: inherit;
+          }
+
+          .err {
+            color: $color-9;
+          }
+        }
+
+        .linkOffers {
+          margin-top: auto;
+          width: auto;
+          height: 24px;
+          line-height: 24px;
+          color: $color-1;
+          font-weight: 400;
+          font-size: 13px;
+          text-decoration: none;
+          transition: all 0.35s ease;
+
+          &:hover {
+            color: $color-12;
+          }
+        }
+      }
+
+      .villagerImage {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 125px;
+        min-width: 125px;
+        max-width: 125px;
+        height: 225px;
+      }
+    }
+  }
+
+  .noneWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    height: 100%;
+
+    .smile {
+      text-align: center;
+      width: auto;
+      height: 54px;
+      font-family: $fontCustom2;
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 54px;
+      color: $color-3;
+    }
+
+    .text {
+      font-size: 16px;
+      font-weight: 400;
+      width: auto;
+      text-align: center;
+      height: auto;
+      line-height: 1.5;
+      color: $color-8;
+      font-family: $fontCustom2;
+    }
+
+    .info {
+      font-size: 14px;
+      font-weight: 400;
+      width: auto;
+      text-align: center;
+      height: auto;
+      line-height: 1.5;
+      color: $color-3;
+      margin-top: 18px;
+
+      .linkWiki {
+        color: $color-1;
+        font-weight: inherit;
+        font-size: inherit;
+        font-family: inherit;
+        text-decoration: none;
+        margin-left: 4px;
+        transition: all 0.35s ease;
+
+        &:hover {
+          color: $color-12;
+        }
+      }
     }
   }
 
@@ -112,14 +194,6 @@
 }
 
 @media screen and (max-width: 1400px) {
-  .shopWrapper {
-    padding-right: 4px;
-    overflow: auto;
-
-    &::-webkit-scrollbar {
-      width: 4px;
-    }
-  }
 }
 
 @media screen and (max-width: 1280px) {
@@ -132,6 +206,10 @@
   .shopWrapper {
     padding-right: 0;
     overflow: hidden;
+
+    .noneWrapper {
+      height: 350px;
+    }
 
     .warnWrapper {
       margin-top: 8px;
@@ -147,12 +225,14 @@
 
 @media screen and (max-width: 480px) {
   .shopWrapper {
-    .oneShopWrapper {
-      .villagerImage {
-        width: 100px;
-        min-width: 100px;
-        max-width: 100px;
-        height: 200px;
+    .allShop {
+      .oneShopWrapper {
+        .villagerImage {
+          width: 100px;
+          min-width: 100px;
+          max-width: 100px;
+          height: 200px;
+        }
       }
     }
   }
