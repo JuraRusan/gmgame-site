@@ -1,12 +1,14 @@
 const fs = require('fs');
 const yaml = require('js-yaml');
 const nbt = require('nbt');
-const {Buffer} = require('buffer');
+const { Buffer } = require('buffer');
 const convert = require('color-convert');
 
-const {transformedArray} = require("./item_name_data");
-const {enchantArray} = require("./enchantmentsArray");
-const {goat_horn_array} = require("./goat_horn");
+const { transformedArray } = require("./item_name_data");
+const { enchantArray } = require("./enchantmentsArray");
+const { goat_horn_array } = require("./goat_horn");
+const { armors_paterns_array } = require('./PaternsArray');
+const { trim_materials_array } = require('./TrimMaterialsArray')
 const saveData = fs.readFileSync('save.yml', 'utf8');
 
 const cleanedData = saveData.replace(/^\s*data-version:.*(\r?\n)/, '');
@@ -127,7 +129,7 @@ async function selectData(data) {
                   const enchant_id_ru = matchingEnchantData.length === 0 ? "{NO translation}" : matchingEnchantData[0].enchant_id_ru;
                   const lvl = el.lvl.value;
 
-                  return {enchant_id, enchant_id_ru, lvl}
+                  return { enchant_id, enchant_id_ru, lvl }
                 });
 
               // -------------------- stored_enchant
@@ -138,7 +140,7 @@ async function selectData(data) {
                   const enchant_id_ru = matchingEnchantData.length === 0 ? "{NO translation}" : matchingEnchantData[0].enchant_id_ru;
                   const lvl = el.lvl.value;
 
-                  return {enchant_id, enchant_id_ru, lvl}
+                  return { enchant_id, enchant_id_ru, lvl }
                 })
 
               // -------------------- instrument
@@ -154,7 +156,18 @@ async function selectData(data) {
                 instrument_type_ru: instrumentDataRu.length === 0 ? undefined : instrumentDataRu[0].instrument_ru
               }
 
-              return {slot, id, id_ru, minecraft_custom, count, firework_power, potion, instrument, enchant, stored_enchant};
+              // -------------------- armor trim
+              const armorMaterial = item.tag?.value?.Trim?.value.material ? trim_materials_array.filter((el) => el.material === item.tag?.value?.Trim?.value.material.value.split(':')[1].toLowerCase()) : [];
+              const armorTypePatern = item.tag?.value?.Trim?.value.pattern ? armors_paterns_array.filter((el) => el.pattern === item.tag?.value?.Trim?.value.pattern.value.split(':')[1].toLowerCase()) : [];
+
+              const trim = item.tag?.value?.Trim === undefined ? undefined : {
+                material: item.tag.value?.Trim?.value.material.value.split(':')[1].toLowerCase(),
+                material_ru: armorMaterial[0].material_ru,
+                pattern: item.tag.value?.Trim?.value.pattern.value.split(':')[1].toLowerCase(),
+                pattern_ru: armorTypePatern[0].pattern_ru
+              }
+
+              return { slot, id, id_ru, minecraft_custom, count, firework_power, potion, instrument, enchant, stored_enchant, trim };
             });
 
             resolve(result);
@@ -222,6 +235,14 @@ async function selectData(data) {
             const instrumentDataResultItem = offer.resultItem?.meta?.instrument ? goat_horn_array.filter((item) => item.instrument === offer.resultItem?.meta?.instrument.split(':')[1].toLowerCase()) : [];
             const instrumentDataItem1 = offer.item1?.meta?.instrument ? goat_horn_array.filter((item) => item.instrument === offer.item1?.meta?.instrument.split(':')[1].toLowerCase()) : [];
             const instrumentDataItem2 = offer.item2?.meta?.instrument ? goat_horn_array.filter((item) => item.instrument === offer.item2?.meta?.instrument.split(':')[1].toLowerCase()) : [];
+
+            const armorTypePaternResultItem = offer.resultItem?.meta?.trim ? armors_paterns_array.filter((item) => item.pattern === offer.resultItem?.meta?.trim.pattern.split(':')[1].toLowerCase()) : [];
+            const armorTypePaternItem1 = offer.item1?.meta?.trim ? armors_paterns_array.filter((item) => item.pattern === offer.item1?.meta?.trim.pattern.split(':')[1].toLowerCase()) : [];
+            const armorTypePaternItem2 = offer.item2?.meta?.trim ? armors_paterns_array.filter((item) => item.pattern === offer.item2?.meta?.trim.pattern.split(':')[1].toLowerCase()) : [];
+
+            const armorTypeMaterialResultItem = offer.resultItem?.meta?.trim ? trim_materials_array.filter((item) => item.material === offer.resultItem?.meta?.trim.material.split(':')[1].toLowerCase()) : [];
+            const armorTypeMaterialItem1 = offer.item1?.meta?.trim ? trim_materials_array.filter((item) => item.material === offer.item1?.meta?.trim.material.split(':')[1].toLowerCase()) : [];
+            const armorTypeMaterialItem2 = offer.item2?.meta?.trim ? trim_materials_array.filter((item) => item.material === offer.item2?.meta?.trim.material.split(':')[1].toLowerCase()) : [];
 
             const colorNames = {
               ...convert.keyword.rgb,
@@ -305,6 +326,12 @@ async function selectData(data) {
                   } : undefined,
                   enchant: offer.resultItem.meta && offer.resultItem.meta?.enchants ? transformEnchant(offer.resultItem.meta.enchants) : undefined,
                   stored_enchant: offer.resultItem.meta && offer.resultItem.meta?.["stored-enchants"] ? transformEnchant(offer.resultItem.meta?.["stored-enchants"]) : undefined,
+                  trim: offer.resultItem.meta?.trim ? {
+                    material: offer.resultItem?.meta?.trim?.material.split(':')[1].toLowerCase(),
+                    material_ru: armorTypeMaterialResultItem[0].material_ru,
+                    pattern: offer.resultItem?.meta?.trim?.pattern.split(':')[1].toLowerCase(),
+                    pattern_ru: armorTypePaternResultItem[0].pattern_ru
+                  } : undefined,
                   content: offer.resultItem.meta && offer.resultItem.meta.internal !== undefined ? await parseInternal(offer.resultItem.meta.internal) : [],
                 }
                 :
@@ -323,6 +350,12 @@ async function selectData(data) {
                   } : undefined,
                   enchant: offer.item1.meta && offer.item1.meta?.enchants ? transformEnchant(offer.item1.meta.enchants) : undefined,
                   stored_enchant: offer.item1.meta && offer.item1.meta?.["stored-enchants"] ? transformEnchant(offer.item1.meta?.["stored-enchants"]) : undefined,
+                  trim: offer.item1.meta?.trim ? {
+                    material: offer.item1?.meta?.trim?.material.split(':')[1].toLowerCase(),
+                    material_ru: armorTypeMaterialItem1[0].material_ru,
+                    pattern: offer.item1?.meta?.trim?.pattern.split(':')[1].toLowerCase(),
+                    pattern_ru: armorTypePaternItem1[0].pattern_ru
+                  } : undefined,
                   content: offer.item1.meta && offer.item1.meta.internal !== undefined ? await parseInternal(offer.item1.meta.internal) : [],
                 }
                 :
@@ -341,6 +374,12 @@ async function selectData(data) {
                   } : undefined,
                   enchant: offer.item2.meta && offer.item2.meta?.enchants ? transformEnchant(offer.item2.meta.enchants) : undefined,
                   stored_enchant: offer.item2.meta && offer.item2.meta?.["stored-enchants"] ? transformEnchant(offer.item2.meta?.["stored-enchants"]) : undefined,
+                  trim: offer.item2.meta?.trim ? {
+                    material: offer.item2?.meta?.trim?.material.split(':')[1].toLowerCase(),
+                    material_ru: armorTypeMaterialItem2[0].material_ru,
+                    pattern: offer.item2?.meta?.trim?.pattern.split(':')[1].toLowerCase(),
+                    pattern_ru: armorTypePaternItem2[0].pattern_ru
+                  } : undefined,
                   content: offer.item2.meta && offer.item2.meta.internal !== undefined ? await parseInternal(offer.item2.meta.internal) : [],
                 }
                 :

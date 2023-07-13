@@ -5,8 +5,9 @@ import MinecraftName from "../mini-component/Minecraft-name";
 import MinecraftRegister from "../mini-component/Minecraft-register";
 import MinecraftList from "../mini-component/Minecraft-list";
 import MinecraftImage from "../mini-component/Minecraft-image";
+import MinecraftArmorType from "../mini-component/Minecraft-armor-type";
+import MinecraftArmorName from "../mini-component/Minecraft-armor-name";
 import {shulkers_type} from "../../../pages/shopkeepers/ShulkersType";
-import {debounce} from 'lodash';
 
 import styles from "./One-item.module.scss"
 
@@ -84,7 +85,17 @@ const OneItem = (props) => {
               firework_power_lvl={props.firework_power_lvl}
               minecraft_custom_name={props.minecraft_custom_name}
               item_name_title={props.item_name_title}
+              item_minecraft_name_id={props.item_minecraft_name_id}
             />
+            {props.armor_trim_type_ru === undefined
+              ?
+              null
+              :
+              <MinecraftArmorName
+                armor_trim_type_ru={props.armor_trim_type_ru}
+                armor_trim_material_ru={props.armor_trim_material_ru}
+              />
+            }
             <MinecraftList
               enchantsList={props.enchantsList}
               storedEnchantsList={props.storedEnchantsList}
@@ -93,7 +104,19 @@ const OneItem = (props) => {
               item_minecraft_name_id={props.item_minecraft_name_id}
               goat_horn_instrument_type={props.goat_horn_instrument_type}
               item_minecraft_id_potion={props.item_minecraft_id_potion}
+              armor_trim_type={props.armor_trim_type}
+              armor_trim_material={props.armor_trim_material}
             />
+            {props.armor_trim_type === undefined
+              ?
+              null
+              :
+              <MinecraftArmorType
+                item_type_armor={props.item_minecraft_name_id}
+                armor_trim_type={props.armor_trim_type}
+                armor_trim_material={props.armor_trim_material}
+              />
+            }
             {shulkers_type.includes(props.item_minecraft_name_id)
               ?
               <div className={classNames(styles["shulkerWrapper"])}>

@@ -1,6 +1,6 @@
 @import "../../../Variables.scss";
 
-@keyframes animation_visible {
+@keyframes animation_visible_mini {
   0% {
     opacity: 0;
     height: 0;
@@ -8,6 +8,17 @@
   100% {
     opacity: 1;
     height: 212px;
+  }
+}
+
+@keyframes animation_visible_full {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+  100% {
+    opacity: 1;
+    height: 342px;
   }
 }
 
@@ -215,7 +226,7 @@
       min-height: 100%;
       max-width: 632px;
       height: 100%;
-      max-height: 718px;
+      max-height: none;
       padding: 5px;
       border: 1px solid $color-21;
       border-radius: 5px;
@@ -246,12 +257,19 @@
         }
       }
 
+      .animationMini {
+        animation: animation_visible_mini 1s ease-in;
+      }
+
+      .animationFull {
+        animation: animation_visible_full 1s ease-in;
+      }
+
       .prev {
         display: flex;
         flex-direction: row;
         width: auto;
         margin: 10px auto 0 auto;
-        animation: animation_visible 1s ease-in;
 
         .viewShulker {
           width: auto;
@@ -265,8 +283,8 @@
           max-width: 620px;
           min-width: 0;
           height: 100%;
-          min-height: 212px;
-          max-height: 212px;
+          //min-height: 212px;
+          //max-height: 212px;
           padding: 3px;
           border: 1px solid $color-22;
           border-radius: 4px;
@@ -280,9 +298,14 @@
             border-right-style: solid;
             border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), $color-22, $color-22, $color-22, rgba(0, 0, 0, 0)) 1 100%;
 
-            .imageWrapper {
+            .imageWrapperAll {
               width: 204px;
               height: 204px;
+            }
+
+            .imageWrapperArmor {
+              width: 204px;
+              height: auto;
             }
           }
 
@@ -291,8 +314,8 @@
             flex-direction: column;
             justify-content: space-between;
             width: auto;
-            height: 204px;
-            max-height: 204px;
+            height: auto;
+            max-height: none;
             padding: 8px;
 
             .top {

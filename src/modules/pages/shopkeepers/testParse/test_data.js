@@ -31474,5 +31474,2055 @@ export const shopData = [
         "item2": {}
       }
     ]
+  },
+  {
+    "shop_id": "100",
+    "x": 10,
+    "y": 67,
+    "z": 1,
+    "name": "",
+    "owner": "prestig9110",
+    "object_profession": "none",
+    "object_villager_type": "plains",
+    "offers": [
+      {
+        "id": "1",
+        "resultItem": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "enchant": [
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "durability",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
+          "trim": {
+            "material": "redstone",
+            "material_ru": "Редстоун",
+            "pattern": "host",
+            "pattern_ru": "Вождь"
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "redstone",
+            "material_ru": "Редстоун",
+            "pattern": "host",
+            "pattern_ru": "Вождь"
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "2",
+        "resultItem": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "redstone",
+            "material_ru": "Редстоун",
+            "pattern": "shaper",
+            "pattern_ru": "Скульптор"
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "redstone",
+            "material_ru": "Редстоун",
+            "pattern": "shaper",
+            "pattern_ru": "Скульптор"
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "3",
+        "resultItem": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "redstone",
+            "material_ru": "Редстоун",
+            "pattern": "wayfinder",
+            "pattern_ru": "Искатель"
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "redstone",
+            "material_ru": "Редстоун",
+            "pattern": "wayfinder",
+            "pattern_ru": "Искатель"
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "4",
+        "resultItem": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "redstone",
+            "material_ru": "Редстоун",
+            "pattern": "dune",
+            "pattern_ru": "Дюна"
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "redstone",
+            "material_ru": "Редстоун",
+            "pattern": "dune",
+            "pattern_ru": "Дюна"
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "5",
+        "resultItem": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "redstone",
+            "material_ru": "Редстоун",
+            "pattern": "coast",
+            "pattern_ru": "Берег"
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "redstone",
+            "material_ru": "Редстоун",
+            "pattern": "coast",
+            "pattern_ru": "Берег"
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "6",
+        "resultItem": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "redstone",
+            "material_ru": "Редстоун",
+            "pattern": "wild",
+            "pattern_ru": "Дебри"
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "redstone",
+            "material_ru": "Редстоун",
+            "pattern": "wild",
+            "pattern_ru": "Дебри"
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "7",
+        "resultItem": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "redstone",
+            "material_ru": "Редстоун",
+            "pattern": "sentry",
+            "pattern_ru": "Страж"
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "redstone",
+            "material_ru": "Редстоун",
+            "pattern": "sentry",
+            "pattern_ru": "Страж"
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "8",
+        "resultItem": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "redstone",
+            "material_ru": "Редстоун",
+            "pattern": "spire",
+            "pattern_ru": "Шпиль"
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "redstone",
+            "material_ru": "Редстоун",
+            "pattern": "spire",
+            "pattern_ru": "Шпиль"
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "9",
+        "resultItem": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "redstone",
+            "material_ru": "Редстоун",
+            "pattern": "eye",
+            "pattern_ru": "Око"
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "redstone",
+            "material_ru": "Редстоун",
+            "pattern": "eye",
+            "pattern_ru": "Око"
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "10",
+        "resultItem": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "redstone",
+            "material_ru": "Редстоун",
+            "pattern": "vex",
+            "pattern_ru": "Вредина"
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "redstone",
+            "material_ru": "Редстоун",
+            "pattern": "vex",
+            "pattern_ru": "Вредина"
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "11",
+        "resultItem": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "redstone",
+            "material_ru": "Редстоун",
+            "pattern": "raiser",
+            "pattern_ru": "Сборщик"
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "redstone",
+            "material_ru": "Редстоун",
+            "pattern": "raiser",
+            "pattern_ru": "Сборщик"
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "12",
+        "resultItem": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "redstone",
+            "material_ru": "Редстоун",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "redstone",
+            "material_ru": "Редстоун",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "13",
+        "resultItem": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "redstone",
+            "material_ru": "Редстоун",
+            "pattern": "tide",
+            "pattern_ru": "Прилыв"
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "redstone",
+            "material_ru": "Редстоун",
+            "pattern": "tide",
+            "pattern_ru": "Прилыв"
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "14",
+        "resultItem": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "redstone",
+            "material_ru": "Редстоун",
+            "pattern": "ward",
+            "pattern_ru": "Хранитель"
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "redstone",
+            "material_ru": "Редстоун",
+            "pattern": "ward",
+            "pattern_ru": "Хранитель"
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "15",
+        "resultItem": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "redstone",
+            "material_ru": "Редстоун",
+            "pattern": "snout",
+            "pattern_ru": "Рыло"
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "redstone",
+            "material_ru": "Редстоун",
+            "pattern": "snout",
+            "pattern_ru": "Рыло"
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "16",
+        "resultItem": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "redstone",
+            "material_ru": "Редстоун",
+            "pattern": "rib",
+            "pattern_ru": "Ребро"
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "redstone",
+            "material_ru": "Редстоун",
+            "pattern": "rib",
+            "pattern_ru": "Ребро"
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "17",
+        "resultItem": {
+          "type": "white_shulker_box",
+          "type_ru": "Белый шалкеровый ящик",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "redstone",
+                "material_ru": "Редстоун",
+                "pattern": "eye",
+                "pattern_ru": "Око"
+              }
+            },
+            {
+              "slot": 1,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "redstone",
+                "material_ru": "Редстоун",
+                "pattern": "spire",
+                "pattern_ru": "Шпиль"
+              }
+            },
+            {
+              "slot": 2,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "redstone",
+                "material_ru": "Редстоун",
+                "pattern": "sentry",
+                "pattern_ru": "Страж"
+              }
+            },
+            {
+              "slot": 3,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "redstone",
+                "material_ru": "Редстоун",
+                "pattern": "rib",
+                "pattern_ru": "Ребро"
+              }
+            },
+            {
+              "slot": 4,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "redstone",
+                "material_ru": "Редстоун",
+                "pattern": "ward",
+                "pattern_ru": "Хранитель"
+              }
+            },
+            {
+              "slot": 5,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "redstone",
+                "material_ru": "Редстоун",
+                "pattern": "wild",
+                "pattern_ru": "Дебри"
+              }
+            },
+            {
+              "slot": 6,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "redstone",
+                "material_ru": "Редстоун",
+                "pattern": "coast",
+                "pattern_ru": "Берег"
+              }
+            },
+            {
+              "slot": 7,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "redstone",
+                "material_ru": "Редстоун",
+                "pattern": "snout",
+                "pattern_ru": "Рыло"
+              }
+            },
+            {
+              "slot": 8,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "redstone",
+                "material_ru": "Редстоун",
+                "pattern": "tide",
+                "pattern_ru": "Прилыв"
+              }
+            },
+            {
+              "slot": 9,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "redstone",
+                "material_ru": "Редстоун",
+                "pattern": "dune",
+                "pattern_ru": "Дюна"
+              }
+            },
+            {
+              "slot": 10,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "redstone",
+                "material_ru": "Редстоун",
+                "pattern": "wayfinder",
+                "pattern_ru": "Искатель"
+              }
+            },
+            {
+              "slot": 11,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "redstone",
+                "material_ru": "Редстоун",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            },
+            {
+              "slot": 12,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "redstone",
+                "material_ru": "Редстоун",
+                "pattern": "raiser",
+                "pattern_ru": "Сборщик"
+              }
+            },
+            {
+              "slot": 13,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "redstone",
+                "material_ru": "Редстоун",
+                "pattern": "shaper",
+                "pattern_ru": "Скульптор"
+              }
+            },
+            {
+              "slot": 14,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "redstone",
+                "material_ru": "Редстоун",
+                "pattern": "host",
+                "pattern_ru": "Вождь"
+              }
+            },
+            {
+              "slot": 15,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "redstone",
+                "material_ru": "Редстоун",
+                "pattern": "vex",
+                "pattern_ru": "Вредина"
+              }
+            }
+          ]
+        },
+        "item1": {
+          "type": "white_shulker_box",
+          "type_ru": "Белый шалкеровый ящик",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "redstone",
+                "material_ru": "Редстоун",
+                "pattern": "eye",
+                "pattern_ru": "Око"
+              }
+            },
+            {
+              "slot": 1,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "redstone",
+                "material_ru": "Редстоун",
+                "pattern": "spire",
+                "pattern_ru": "Шпиль"
+              }
+            },
+            {
+              "slot": 2,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "redstone",
+                "material_ru": "Редстоун",
+                "pattern": "sentry",
+                "pattern_ru": "Страж"
+              }
+            },
+            {
+              "slot": 3,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "redstone",
+                "material_ru": "Редстоун",
+                "pattern": "rib",
+                "pattern_ru": "Ребро"
+              }
+            },
+            {
+              "slot": 4,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "redstone",
+                "material_ru": "Редстоун",
+                "pattern": "ward",
+                "pattern_ru": "Хранитель"
+              }
+            },
+            {
+              "slot": 5,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "redstone",
+                "material_ru": "Редстоун",
+                "pattern": "wild",
+                "pattern_ru": "Дебри"
+              }
+            },
+            {
+              "slot": 6,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "redstone",
+                "material_ru": "Редстоун",
+                "pattern": "coast",
+                "pattern_ru": "Берег"
+              }
+            },
+            {
+              "slot": 7,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "redstone",
+                "material_ru": "Редстоун",
+                "pattern": "snout",
+                "pattern_ru": "Рыло"
+              }
+            },
+            {
+              "slot": 8,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "redstone",
+                "material_ru": "Редстоун",
+                "pattern": "tide",
+                "pattern_ru": "Прилыв"
+              }
+            },
+            {
+              "slot": 9,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "redstone",
+                "material_ru": "Редстоун",
+                "pattern": "dune",
+                "pattern_ru": "Дюна"
+              }
+            },
+            {
+              "slot": 10,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "redstone",
+                "material_ru": "Редстоун",
+                "pattern": "wayfinder",
+                "pattern_ru": "Искатель"
+              }
+            },
+            {
+              "slot": 11,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "redstone",
+                "material_ru": "Редстоун",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            },
+            {
+              "slot": 12,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "redstone",
+                "material_ru": "Редстоун",
+                "pattern": "raiser",
+                "pattern_ru": "Сборщик"
+              }
+            },
+            {
+              "slot": 13,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "redstone",
+                "material_ru": "Редстоун",
+                "pattern": "shaper",
+                "pattern_ru": "Скульптор"
+              }
+            },
+            {
+              "slot": 14,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "redstone",
+                "material_ru": "Редстоун",
+                "pattern": "host",
+                "pattern_ru": "Вождь"
+              }
+            },
+            {
+              "slot": 15,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "redstone",
+                "material_ru": "Редстоун",
+                "pattern": "vex",
+                "pattern_ru": "Вредина"
+              }
+            }
+          ]
+        },
+        "item2": {}
+      },
+      {
+        "id": "18",
+        "resultItem": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "redstone",
+            "material_ru": "Редстоун",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "redstone",
+            "material_ru": "Редстоун",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "19",
+        "resultItem": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "redstone",
+            "material_ru": "Редстоун",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "redstone",
+            "material_ru": "Редстоун",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "20",
+        "resultItem": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "copper",
+            "material_ru": "Медь",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "copper",
+            "material_ru": "Медь",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "21",
+        "resultItem": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "amethyst",
+            "material_ru": "Аметист",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "amethyst",
+            "material_ru": "Аметист",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "22",
+        "resultItem": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "diamond",
+            "material_ru": "Алмаз",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "diamond",
+            "material_ru": "Алмаз",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "23",
+        "resultItem": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "gold",
+            "material_ru": "Золото",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "gold",
+            "material_ru": "Золото",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "24",
+        "resultItem": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "iron",
+            "material_ru": "Железо",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "iron",
+            "material_ru": "Железо",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "25",
+        "resultItem": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "lapis",
+            "material_ru": "Лазурит",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "lapis",
+            "material_ru": "Лазурит",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "26",
+        "resultItem": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "quartz",
+            "material_ru": "Кварц",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "quartz",
+            "material_ru": "Кварц",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "27",
+        "resultItem": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "netherite",
+            "material_ru": "Незерит",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "trim": {
+            "material": "netherite",
+            "material_ru": "Незерит",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "28",
+        "resultItem": {
+          "type": "white_shulker_box",
+          "type_ru": "Белый шалкеровый ящик",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "copper",
+                "material_ru": "Медь",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            },
+            {
+              "slot": 1,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "amethyst",
+                "material_ru": "Аметист",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            },
+            {
+              "slot": 2,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "diamond",
+                "material_ru": "Алмаз",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            },
+            {
+              "slot": 3,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "emerald",
+                "material_ru": "Изумруд",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            },
+            {
+              "slot": 4,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "gold",
+                "material_ru": "Золото",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            },
+            {
+              "slot": 5,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "iron",
+                "material_ru": "Железо",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            },
+            {
+              "slot": 6,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "lapis",
+                "material_ru": "Лазурит",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            },
+            {
+              "slot": 7,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "quartz",
+                "material_ru": "Кварц",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            },
+            {
+              "slot": 8,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "netherite",
+                "material_ru": "Незерит",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            },
+            {
+              "slot": 9,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "redstone",
+                "material_ru": "Редстоун",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            }
+          ]
+        },
+        "item1": {
+          "type": "white_shulker_box",
+          "type_ru": "Белый шалкеровый ящик",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "copper",
+                "material_ru": "Медь",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            },
+            {
+              "slot": 1,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "amethyst",
+                "material_ru": "Аметист",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            },
+            {
+              "slot": 2,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "diamond",
+                "material_ru": "Алмаз",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            },
+            {
+              "slot": 3,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "emerald",
+                "material_ru": "Изумруд",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            },
+            {
+              "slot": 4,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "gold",
+                "material_ru": "Золото",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            },
+            {
+              "slot": 5,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "iron",
+                "material_ru": "Железо",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            },
+            {
+              "slot": 6,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "lapis",
+                "material_ru": "Лазурит",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            },
+            {
+              "slot": 7,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "quartz",
+                "material_ru": "Кварц",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            },
+            {
+              "slot": 8,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "netherite",
+                "material_ru": "Незерит",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            },
+            {
+              "slot": 9,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "trim": {
+                "material": "redstone",
+                "material_ru": "Редстоун",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            }
+          ]
+        },
+        "item2": {}
+      }
+    ]
+  },
+  {
+    "shop_id": "101",
+    "x": 18,
+    "y": 67,
+    "z": -3,
+    "name": "",
+    "owner": "prestig9110",
+    "object_profession": "none",
+    "object_villager_type": "plains",
+    "offers": [
+      {
+        "id": "1",
+        "resultItem": {
+          "type": "sentry_armor_trim_smithing_template",
+          "type_ru": "Кузнечный шаблон",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "sentry_armor_trim_smithing_template",
+          "type_ru": "Кузнечный шаблон",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "2",
+        "resultItem": {
+          "type": "vex_armor_trim_smithing_template",
+          "type_ru": "Кузнечный шаблон",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "vex_armor_trim_smithing_template",
+          "type_ru": "Кузнечный шаблон",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "3",
+        "resultItem": {
+          "type": "wild_armor_trim_smithing_template",
+          "type_ru": "Кузнечный шаблон",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "wild_armor_trim_smithing_template",
+          "type_ru": "Кузнечный шаблон",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "4",
+        "resultItem": {
+          "type": "coast_armor_trim_smithing_template",
+          "type_ru": "Кузнечный шаблон",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "coast_armor_trim_smithing_template",
+          "type_ru": "Кузнечный шаблон",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "5",
+        "resultItem": {
+          "type": "dune_armor_trim_smithing_template",
+          "type_ru": "Кузнечный шаблон",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "dune_armor_trim_smithing_template",
+          "type_ru": "Кузнечный шаблон",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "6",
+        "resultItem": {
+          "type": "wayfinder_armor_trim_smithing_template",
+          "type_ru": "Кузнечный шаблон",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "wayfinder_armor_trim_smithing_template",
+          "type_ru": "Кузнечный шаблон",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "7",
+        "resultItem": {
+          "type": "raiser_armor_trim_smithing_template",
+          "type_ru": "Кузнечный шаблон",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "raiser_armor_trim_smithing_template",
+          "type_ru": "Кузнечный шаблон",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "8",
+        "resultItem": {
+          "type": "shaper_armor_trim_smithing_template",
+          "type_ru": "Кузнечный шаблон",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "shaper_armor_trim_smithing_template",
+          "type_ru": "Кузнечный шаблон",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "9",
+        "resultItem": {
+          "type": "host_armor_trim_smithing_template",
+          "type_ru": "Кузнечный шаблон",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "host_armor_trim_smithing_template",
+          "type_ru": "Кузнечный шаблон",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "10",
+        "resultItem": {
+          "type": "ward_armor_trim_smithing_template",
+          "type_ru": "Кузнечный шаблон",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "ward_armor_trim_smithing_template",
+          "type_ru": "Кузнечный шаблон",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "11",
+        "resultItem": {
+          "type": "silence_armor_trim_smithing_template",
+          "type_ru": "Кузнечный шаблон",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "silence_armor_trim_smithing_template",
+          "type_ru": "Кузнечный шаблон",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "12",
+        "resultItem": {
+          "type": "tide_armor_trim_smithing_template",
+          "type_ru": "Кузнечный шаблон",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "tide_armor_trim_smithing_template",
+          "type_ru": "Кузнечный шаблон",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "13",
+        "resultItem": {
+          "type": "snout_armor_trim_smithing_template",
+          "type_ru": "Кузнечный шаблон",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "snout_armor_trim_smithing_template",
+          "type_ru": "Кузнечный шаблон",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "14",
+        "resultItem": {
+          "type": "rib_armor_trim_smithing_template",
+          "type_ru": "Кузнечный шаблон",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "rib_armor_trim_smithing_template",
+          "type_ru": "Кузнечный шаблон",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "15",
+        "resultItem": {
+          "type": "eye_armor_trim_smithing_template",
+          "type_ru": "Кузнечный шаблон",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "eye_armor_trim_smithing_template",
+          "type_ru": "Кузнечный шаблон",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "16",
+        "resultItem": {
+          "type": "spire_armor_trim_smithing_template",
+          "type_ru": "Кузнечный шаблон",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "spire_armor_trim_smithing_template",
+          "type_ru": "Кузнечный шаблон",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "17",
+        "resultItem": {
+          "type": "netherite_upgrade_smithing_template",
+          "type_ru": "Кузнечный шаблон",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "netherite_upgrade_smithing_template",
+          "type_ru": "Кузнечный шаблон",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "18",
+        "resultItem": {
+          "type": "white_shulker_box",
+          "type_ru": "Белый шалкеровый ящик",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "shaper_armor_trim_smithing_template",
+              "id_ru": "Кузнечный шаблон",
+              "count": 1
+            },
+            {
+              "slot": 1,
+              "id": "raiser_armor_trim_smithing_template",
+              "id_ru": "Кузнечный шаблон",
+              "count": 1
+            },
+            {
+              "slot": 2,
+              "id": "dune_armor_trim_smithing_template",
+              "id_ru": "Кузнечный шаблон",
+              "count": 1
+            }
+          ]
+        },
+        "item1": {
+          "type": "white_shulker_box",
+          "type_ru": "Белый шалкеровый ящик",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "shaper_armor_trim_smithing_template",
+              "id_ru": "Кузнечный шаблон",
+              "count": 1
+            },
+            {
+              "slot": 1,
+              "id": "raiser_armor_trim_smithing_template",
+              "id_ru": "Кузнечный шаблон",
+              "count": 1
+            },
+            {
+              "slot": 2,
+              "id": "dune_armor_trim_smithing_template",
+              "id_ru": "Кузнечный шаблон",
+              "count": 1
+            }
+          ]
+        },
+        "item2": {}
+      }
+    ]
+  },
+  {
+    "shop_id": "102",
+    "x": 16,
+    "y": 67,
+    "z": -7,
+    "name": "",
+    "owner": "prestig9110",
+    "object_profession": "none",
+    "object_villager_type": "plains",
+    "offers": [
+      {
+        "id": "1",
+        "resultItem": {
+          "type": "angler_pottery_sherd",
+          "type_ru": "Глиняный черепок «Рыбак»",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "angler_pottery_sherd",
+          "type_ru": "Глиняный черепок «Рыбак»",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "2",
+        "resultItem": {
+          "type": "archer_pottery_sherd",
+          "type_ru": "Глиняный черепок «Лучник»",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "archer_pottery_sherd",
+          "type_ru": "Глиняный черепок «Лучник»",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "3",
+        "resultItem": {
+          "type": "arms_up_pottery_sherd",
+          "type_ru": "Глиняный черепок «Руки вверх»",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "arms_up_pottery_sherd",
+          "type_ru": "Глиняный черепок «Руки вверх»",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "4",
+        "resultItem": {
+          "type": "blade_pottery_sherd",
+          "type_ru": "Глиняный черепок «Клинок»",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "blade_pottery_sherd",
+          "type_ru": "Глиняный черепок «Клинок»",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "5",
+        "resultItem": {
+          "type": "brewer_pottery_sherd",
+          "type_ru": "Глиняный черепок «Зельевар»",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "brewer_pottery_sherd",
+          "type_ru": "Глиняный черепок «Зельевар»",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "6",
+        "resultItem": {
+          "type": "burn_pottery_sherd",
+          "type_ru": "Глиняный черепок «Пламя»",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "burn_pottery_sherd",
+          "type_ru": "Глиняный черепок «Пламя»",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "7",
+        "resultItem": {
+          "type": "danger_pottery_sherd",
+          "type_ru": "Глиняный черепок «Опасность»",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "danger_pottery_sherd",
+          "type_ru": "Глиняный черепок «Опасность»",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "8",
+        "resultItem": {
+          "type": "danger_pottery_sherd",
+          "type_ru": "Глиняный черепок «Опасность»",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "danger_pottery_sherd",
+          "type_ru": "Глиняный черепок «Опасность»",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "9",
+        "resultItem": {
+          "type": "explorer_pottery_sherd",
+          "type_ru": "Глиняный черепок «Исследователь»",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "explorer_pottery_sherd",
+          "type_ru": "Глиняный черепок «Исследователь»",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "10",
+        "resultItem": {
+          "type": "howl_pottery_sherd",
+          "type_ru": "Глиняный черепок «Вой»",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "howl_pottery_sherd",
+          "type_ru": "Глиняный черепок «Вой»",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "11",
+        "resultItem": {
+          "type": "miner_pottery_sherd",
+          "type_ru": "Глиняный черепок «Шахтёр»",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "miner_pottery_sherd",
+          "type_ru": "Глиняный черепок «Шахтёр»",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "12",
+        "resultItem": {
+          "type": "mourner_pottery_sherd",
+          "type_ru": "Глиняный черепок «Скорбь»",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "mourner_pottery_sherd",
+          "type_ru": "Глиняный черепок «Скорбь»",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "13",
+        "resultItem": {
+          "type": "plenty_pottery_sherd",
+          "type_ru": "Глиняный черепок «Изобилие»",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "plenty_pottery_sherd",
+          "type_ru": "Глиняный черепок «Изобилие»",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "14",
+        "resultItem": {
+          "type": "prize_pottery_sherd",
+          "type_ru": "Глиняный черепок «Награда»",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "prize_pottery_sherd",
+          "type_ru": "Глиняный черепок «Награда»",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "15",
+        "resultItem": {
+          "type": "sheaf_pottery_sherd",
+          "type_ru": "Глиняный черепок «Пучок»",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "sheaf_pottery_sherd",
+          "type_ru": "Глиняный черепок «Пучок»",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "16",
+        "resultItem": {
+          "type": "shelter_pottery_sherd",
+          "type_ru": "Глиняный черепок «Убежище»",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "shelter_pottery_sherd",
+          "type_ru": "Глиняный черепок «Убежище»",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "17",
+        "resultItem": {
+          "type": "skull_pottery_sherd",
+          "type_ru": "Глиняный черепок «Череп»",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "skull_pottery_sherd",
+          "type_ru": "Глиняный черепок «Череп»",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "18",
+        "resultItem": {
+          "type": "snort_pottery_sherd",
+          "type_ru": "Глиняный черепок «Нюхач»",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "snort_pottery_sherd",
+          "type_ru": "Глиняный черепок «Нюхач»",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      }
+    ]
   }
 ];

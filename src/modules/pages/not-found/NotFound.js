@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import React, {useEffect} from "react";
 import AOS from "aos";
-import {proxy} from '../../../../package.json';
+import proxy from '../../../../package.json';
 
 import styles from "./NotFound.module.scss";
 import "aos/dist/aos.css";

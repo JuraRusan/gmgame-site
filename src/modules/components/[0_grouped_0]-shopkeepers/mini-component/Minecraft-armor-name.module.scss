@@ -1,0 +1,21 @@
+@import "../../../../Variables";
+
+.trimStyle {
+  font-size: 12px;
+  color: $color-3;
+  height: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: $fontCustom2 !important;
+  margin-left: 8px;
+
+  span {
+    font-size: inherit;
+    height: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    color: $color-8;
+    margin-left: 4px;
+  }
+}

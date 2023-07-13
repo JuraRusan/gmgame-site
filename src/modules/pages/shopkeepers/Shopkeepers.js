@@ -13,6 +13,8 @@ import MinecraftImage from "../../components/[0_grouped_0]-shopkeepers/mini-comp
 import MinecraftName from "../../components/[0_grouped_0]-shopkeepers/mini-component/Minecraft-name";
 import MinecraftList from "../../components/[0_grouped_0]-shopkeepers/mini-component/Minecraft-list";
 import MinecraftRegister from "../../components/[0_grouped_0]-shopkeepers/mini-component/Minecraft-register";
+import MinecraftArmorType from "../../components/[0_grouped_0]-shopkeepers/mini-component/Minecraft-armor-type";
+import MinecraftArmorName from "../../components/[0_grouped_0]-shopkeepers/mini-component/Minecraft-armor-name";
 
 import styles from "./Shopkeepers.module.scss"
 import 'react-lazy-load-image-component/src/effects/blur.css';
@@ -348,6 +350,21 @@ const Shopkeepers = () => {
                             firework_power_lvl_Item2={offer.item2.firework_power}
                             firework_power_lvl_ResultItem={offer.resultItem.firework_power}
 
+                            armor_trim_type_Item1={offer.item1.trim?.pattern}
+                            armor_trim_type_Item2={offer.item2.trim?.pattern}
+                            armor_trim_type_ResultItem={offer.resultItem.trim?.pattern}
+
+                            armor_trim_material_Item1={offer.item1.trim?.material}
+                            armor_trim_material_Item2={offer.item2.trim?.material}
+                            armor_trim_material_ResultItem={offer.resultItem.trim?.material}
+
+                            armor_trim_type_ru_Item1={offer.item1.trim?.pattern_ru}
+                            armor_trim_type_ru_Item2={offer.item2.trim?.pattern_ru}
+                            armor_trim_type_ru_ResultItem={offer.resultItem.trim?.pattern_ru}
+
+                            armor_trim_material_ru_Item1={offer.item1.trim?.material_ru}
+                            armor_trim_material_ru_Item2={offer.item2.trim?.material_ru}
+                            armor_trim_material_ru_ResultItem={offer.resultItem.trim?.material_ru}
                           />
                         </div>
                       )
@@ -367,7 +384,7 @@ const Shopkeepers = () => {
             placeholder="Найти..."
           />
           {visible &&
-            <div className={classNames(styles["prev"])}>
+            <div className={!selectedItemOne?.trim?.pattern ? classNames(styles["prev"], styles["animationMini"]) : classNames(styles["prev"], styles["animationFull"])}>
               {selectedItem &&
                 <div className={classNames(styles["viewShulker"])}>
                   <ShulkerBox content={selectedItem.content}/>
@@ -376,13 +393,24 @@ const Shopkeepers = () => {
               {selectedItemOne &&
                 <div className={classNames(styles["viewItem"])}>
                   <div className={classNames(styles["columnOne"])}>
-                    <div className={classNames(styles["imageWrapper"])}>
-                      <MinecraftImage
-                        item_minecraft_name_id={selectedItemOne.type}
-                        item_minecraft_id_potion={selectedItemOne.potion}
-                        enchantsList={selectedItemOne.enchant}
-                      />
-                    </div>
+                    {selectedItemOne.trim === undefined
+                      ?
+                      <div className={classNames(styles["imageWrapperAll"])}>
+                        <MinecraftImage
+                          item_minecraft_name_id={selectedItemOne.type}
+                          item_minecraft_id_potion={selectedItemOne.potion}
+                          enchantsList={selectedItemOne.enchant}
+                        />
+                      </div>
+                      :
+                      <div className={classNames(styles["imageWrapperArmor"])}>
+                        <MinecraftArmorType
+                          item_type_armor={selectedItemOne.type}
+                          armor_trim_type={selectedItemOne.trim?.pattern}
+                          armor_trim_material={selectedItemOne.trim?.material}
+                        />
+                      </div>
+                    }
                   </div>
                   <div className={classNames(styles["columnTwo"])}>
                     <div className={classNames(styles["top"])}>
@@ -391,7 +419,17 @@ const Shopkeepers = () => {
                         firework_power_lvl={selectedItemOne.firework_power}
                         minecraft_custom_name={selectedItemOne.minecraft_custom}
                         item_name_title={selectedItemOne.type_ru}
+                        item_minecraft_name_id={selectedItemOne.type}
                       />
+                      {selectedItemOne.trim === undefined
+                        ?
+                        null
+                        :
+                        <MinecraftArmorName
+                          armor_trim_type_ru={selectedItemOne.trim.pattern_ru}
+                          armor_trim_material_ru={selectedItemOne.trim.material_ru}
+                        />
+                      }
                       <MinecraftList
                         enchantsList={selectedItemOne.enchant}
                         storedEnchantsList={selectedItemOne.stored_enchant}
@@ -402,6 +440,8 @@ const Shopkeepers = () => {
                         item_minecraft_name_id={selectedItemOne.type}
                         goat_horn_instrument_type={selectedItemOne.instrument?.instrument_type}
                         item_minecraft_id_potion={selectedItemOne.potion}
+                        armor_trim_type={selectedItemOne.trim?.pattern}
+                        armor_trim_material={selectedItemOne.trim?.material}
                       />
                     </div>
                   </div>
