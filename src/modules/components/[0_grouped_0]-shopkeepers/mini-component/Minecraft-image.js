@@ -13,32 +13,32 @@ const MinecraftImage = (props) => {
 
   const getImageSource = () => {
     if (itemNameId === "enchanted_golden_apple") {
-      return "./site_assets/minecraft-item/animation_webp/enchanted_golden_apple.webp";
+      return "./site_assets/animation_webp/enchanted_golden_apple.webp";
     } else if (itemNameId === "written_book") {
-      return "./site_assets/minecraft-item/animation_webp/written_book.webp";
+      return "./site_assets/animation_webp/written_book.webp";
     } else if (itemNameId === "enchanted_book") {
-      return "./site_assets/minecraft-item/animation_webp/enchanted_book.webp";
+      return "./site_assets/animation_webp/enchanted_book.webp";
     } else if (itemNameId === "end_crystal") {
-      return "./site_assets/minecraft-item/animation_webp/end_crystal.webp";
+      return "./site_assets/animation_webp/end_crystal.webp";
     } else if (itemNameId === "sculk_sensor") {
-      return "./site_assets/minecraft-item/animation_webp/sculk_sensor.webp";
+      return "./site_assets/animation_webp/sculk_sensor.webp";
     } else if (itemNameId === "calibrated_sculk_sensor") {
-      return "./site_assets/minecraft-item/animation_webp/calibrated_sculk_sensor.webp";
+      return "./site_assets/animation_webp/calibrated_sculk_sensor.webp";
     } else if (
       itemNameId === "tipped_arrow" ||
       itemNameId === "splash_potion" ||
       itemNameId === "potion" ||
       itemNameId === "lingering_potion"
     ) {
-      return `./site_assets/minecraft-item/webp/${itemNameId}_${idPotion}.webp`;
+      return `./site_assets/minecraft-item/${itemNameId}_${idPotion}.webp`;
     } else if (animation_type.includes(itemNameId)) {
       if (props.enchantsList?.length > 0) {
-        return `./site_assets/minecraft-item/animation_webp/${itemNameId}.webp`;
+        return `./site_assets/animation_webp/${itemNameId}.webp`;
       } else {
-        return `./site_assets/minecraft-item/webp/${itemNameId}.webp`;
+        return `./site_assets/minecraft-item/${itemNameId}.webp`;
       }
     } else {
-      return `./site_assets/minecraft-item/webp/${itemNameId}.webp`;
+      return `./site_assets/minecraft-item/${itemNameId}.webp`;
     }
   };
 

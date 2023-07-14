@@ -56,7 +56,7 @@ const TexturePack = () => {
               className={classNames(styles["icon"])}
               alt="none"
               effect="blur"
-              src={`./site_assets/texture-pack/webp/${tab.img}`}/>
+              src={`./site_assets/texture-pack/${tab.img}`}/>
           </div>
           <div className={classNames(styles["columnCardTwo"])}>
             <h3 className={classNames(styles["itemTitleName"])}>Предмет: {tab.main}

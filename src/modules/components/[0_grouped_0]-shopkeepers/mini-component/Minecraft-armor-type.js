@@ -13,75 +13,75 @@ const MinecraftArmorType = (props) => {
 
   const getSourceHelmetBase = () => {
     if (itemNameArmor === "turtle_helmet") {
-      return "./site_assets/minecraft-armor-trim/base-armor/helmet/turtle.png"; // turtle_helmet
+      return "./site_assets/minecraft-armor-trim/base-armor/helmet/turtle.webp"; // turtle_helmet
     } else if (itemNameArmor === "diamond_helmet") {
-      return "./site_assets/minecraft-armor-trim/base-armor/helmet/diamond.png"; // diamond_helmet
+      return "./site_assets/minecraft-armor-trim/base-armor/helmet/diamond.webp"; // diamond_helmet
     } else if (itemNameArmor === "golden_helmet") {
-      return "./site_assets/minecraft-armor-trim/base-armor/helmet/golden.png"; // golden_helmet
+      return "./site_assets/minecraft-armor-trim/base-armor/helmet/golden.webp"; // golden_helmet
     } else if (itemNameArmor === "iron_helmet") {
-      return "./site_assets/minecraft-armor-trim/base-armor/helmet/iron.png"; // iron_helmet
+      return "./site_assets/minecraft-armor-trim/base-armor/helmet/iron.webp"; // iron_helmet
     } else if (itemNameArmor === "netherite_helmet") {
-      return "./site_assets/minecraft-armor-trim/base-armor/helmet/netherite.png"; // netherite_helmet
+      return "./site_assets/minecraft-armor-trim/base-armor/helmet/netherite.webp"; // netherite_helmet
     } else if (itemNameArmor === "chainmail_helmet") {
-      return "./site_assets/minecraft-armor-trim/base-armor/helmet/chainmail.png"; // chainmail_helmet
+      return "./site_assets/minecraft-armor-trim/base-armor/helmet/chainmail.webp"; // chainmail_helmet
     } else {
-      return `./site_assets/minecraft-armor-trim/base-armor/helmet/leather.png`;
+      return `./site_assets/minecraft-armor-trim/base-armor/helmet/leather.webp`;
     }
   };
 
   const getSourceChestplateBase = () => {
     if (itemNameArmor === "diamond_chestplate") {
-      return "./site_assets/minecraft-armor-trim/base-armor/chestplate/diamond.png"; // diamond_chestplate
+      return "./site_assets/minecraft-armor-trim/base-armor/chestplate/diamond.webp"; // diamond_chestplate
     } else if (itemNameArmor === "golden_chestplate") {
-      return "./site_assets/minecraft-armor-trim/base-armor/chestplate/golden.png"; // golden_chestplate
+      return "./site_assets/minecraft-armor-trim/base-armor/chestplate/golden.webp"; // golden_chestplate
     } else if (itemNameArmor === "iron_chestplate") {
-      return "./site_assets/minecraft-armor-trim/base-armor/chestplate/iron.png"; // iron_chestplate
+      return "./site_assets/minecraft-armor-trim/base-armor/chestplate/iron.webp"; // iron_chestplate
     } else if (itemNameArmor === "netherite_chestplate") {
-      return "./site_assets/minecraft-armor-trim/base-armor/chestplate/netherite.png"; // netherite_chestplate
+      return "./site_assets/minecraft-armor-trim/base-armor/chestplate/netherite.webp"; // netherite_chestplate
     } else if (itemNameArmor === "chainmail_chestplate") {
-      return "./site_assets/minecraft-armor-trim/base-armor/chestplate/chainmail.png"; // chainmail_chestplate
+      return "./site_assets/minecraft-armor-trim/base-armor/chestplate/chainmail.webp"; // chainmail_chestplate
     } else {
-      return `./site_assets/minecraft-armor-trim/base-armor/chestplate/leather.png`;
+      return `./site_assets/minecraft-armor-trim/base-armor/chestplate/leather.webp`;
     }
   };
 
   const getSourceLeggingsBase = () => {
     if (itemNameArmor === "diamond_leggings") {
-      return "./site_assets/minecraft-armor-trim/base-armor/leggings/diamond.png"; // diamond_leggings
+      return "./site_assets/minecraft-armor-trim/base-armor/leggings/diamond.webp"; // diamond_leggings
     } else if (itemNameArmor === "golden_leggings") {
-      return "./site_assets/minecraft-armor-trim/base-armor/leggings/golden.png"; // golden_leggings
+      return "./site_assets/minecraft-armor-trim/base-armor/leggings/golden.webp"; // golden_leggings
     } else if (itemNameArmor === "iron_leggings") {
-      return "./site_assets/minecraft-armor-trim/base-armor/leggings/iron.png"; // iron_leggings
+      return "./site_assets/minecraft-armor-trim/base-armor/leggings/iron.webp"; // iron_leggings
     } else if (itemNameArmor === "netherite_leggings") {
-      return "./site_assets/minecraft-armor-trim/base-armor/leggings/netherite.png"; // netherite_leggings
+      return "./site_assets/minecraft-armor-trim/base-armor/leggings/netherite.webp"; // netherite_leggings
     } else if (itemNameArmor === "chainmail_leggings") {
-      return "./site_assets/minecraft-armor-trim/base-armor/leggings/chainmail.png"; // chainmail_leggings
+      return "./site_assets/minecraft-armor-trim/base-armor/leggings/chainmail.webp"; // chainmail_leggings
     } else {
-      return `./site_assets/minecraft-armor-trim/base-armor/leggings/leather.png`;
+      return `./site_assets/minecraft-armor-trim/base-armor/leggings/leather.webp`;
     }
   };
 
   const getSourceBootsBase = () => {
     if (itemNameArmor === "diamond_boots") {
-      return "./site_assets/minecraft-armor-trim/base-armor/boots/diamond.png"; // diamond_boots
+      return "./site_assets/minecraft-armor-trim/base-armor/boots/diamond.webp"; // diamond_boots
     } else if (itemNameArmor === "golden_boots") {
-      return "./site_assets/minecraft-armor-trim/base-armor/boots/golden.png"; // golden_boots
+      return "./site_assets/minecraft-armor-trim/base-armor/boots/golden.webp"; // golden_boots
     } else if (itemNameArmor === "iron_boots") {
-      return "./site_assets/minecraft-armor-trim/base-armor/boots/iron.png"; // iron_boots
+      return "./site_assets/minecraft-armor-trim/base-armor/boots/iron.webp"; // iron_boots
     } else if (itemNameArmor === "netherite_boots") {
-      return "./site_assets/minecraft-armor-trim/base-armor/boots/netherite.png"; // netherite_boots
+      return "./site_assets/minecraft-armor-trim/base-armor/boots/netherite.webp"; // netherite_boots
     } else if (itemNameArmor === "chainmail_boots") {
-      return "./site_assets/minecraft-armor-trim/base-armor/boots/chainmail.png"; // chainmail_boots
+      return "./site_assets/minecraft-armor-trim/base-armor/boots/chainmail.webp"; // chainmail_boots
     } else {
-      return `./site_assets/minecraft-armor-trim/base-armor/boots/leather.png`;
+      return `./site_assets/minecraft-armor-trim/base-armor/boots/leather.webp`;
     }
   };
 
   const getSwipeChestplate = () => {
     if (itemNameArmor === "iron_chestplate") {
-      return `./site_assets/minecraft-armor-trim/trims/metalchestplates/${armorTrim}/${armorTrim}_${armorTrimMaterial}.png`;
+      return `./site_assets/minecraft-armor-trim/trims/metalchestplates/${armorTrim}/${armorTrim}_${armorTrimMaterial}.webp`;
     } else {
-      return `./site_assets/minecraft-armor-trim/trims/chestplate/${armorTrim}/${armorTrim}_${armorTrimMaterial}.png`;
+      return `./site_assets/minecraft-armor-trim/trims/chestplate/${armorTrim}/${armorTrim}_${armorTrimMaterial}.webp`;
     }
   };
 
@@ -97,7 +97,7 @@ const MinecraftArmorType = (props) => {
 
       <LazyLoadImage
         className={classNames(styles["layersArmorStand"])}
-        src="./site_assets/minecraft-armor-trim/armor_stand.png"
+        src="./site_assets/minecraft-armor-trim/armor_stand.webp"
         width="auto"
         height="auto"
         effect="blur"
@@ -117,7 +117,7 @@ const MinecraftArmorType = (props) => {
           />
           <LazyLoadImage
             className={classNames(styles["layersTrim"])}
-            src={`./site_assets/minecraft-armor-trim/trims/leggings/${armorTrim}/${armorTrim}_${armorTrimMaterial}.png`}
+            src={`./site_assets/minecraft-armor-trim/trims/leggings/${armorTrim}/${armorTrim}_${armorTrimMaterial}.webp`}
             alt=""
             width="auto"
             height="auto"
@@ -141,7 +141,7 @@ const MinecraftArmorType = (props) => {
           />
           <LazyLoadImage
             className={classNames(styles["layersTrim"])}
-            src={`./site_assets/minecraft-armor-trim/trims/boots/${armorTrim}/${armorTrim}_${armorTrimMaterial}.png`}
+            src={`./site_assets/minecraft-armor-trim/trims/boots/${armorTrim}/${armorTrim}_${armorTrimMaterial}.webp`}
             alt=""
             width="auto"
             height="auto"
@@ -187,7 +187,7 @@ const MinecraftArmorType = (props) => {
           />
           <LazyLoadImage
             className={classNames(styles["layersTrim"])}
-            src={`./site_assets/minecraft-armor-trim/trims/helmet/${armorTrim}/${armorTrim}_${armorTrimMaterial}.png`}
+            src={`./site_assets/minecraft-armor-trim/trims/helmet/${armorTrim}/${armorTrim}_${armorTrimMaterial}.webp`}
             alt=""
             width="auto"
             height="auto"

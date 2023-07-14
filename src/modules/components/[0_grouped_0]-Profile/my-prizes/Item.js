@@ -6,7 +6,7 @@ import styles from "./My-prizes.module.scss";
 const Item = (props) => {
 
   const [indexItem, setIndexItem] = useState(0);
-  const picturesItem = ["../site_assets/minecraft-item/png/netherite_pickaxe.png", "../site_assets/minecraft-item/png/netherite_axe.png", "../site_assets/minecraft-item/png/netherite_hoe.png", "../site_assets/minecraft-item/png/netherite_shovel.png"];
+  const picturesItem = ["../site_assets/minecraft-item/netherite_pickaxe.webp", "../site_assets/minecraft-item/netherite_axe.webp", "../site_assets/minecraft-item/netherite_hoe.webp", "../site_assets/minecraft-item/netherite_shovel.webp"];
 
   useEffect(() => {
     const intervalId = setInterval(() => {

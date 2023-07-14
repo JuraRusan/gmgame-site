@@ -55,7 +55,7 @@ const Shopkeepers = () => {
 
   const [selectedItem, setSelectedItem] = useState(null);
   const [selectedItemOne, setSelectedItemOne] = useState("");
-  const [visible, setVisile] = useState(false)
+  const [visible, setVisible] = useState(false)
 
   function shopFunction(props) {
     setInfoShopName(props.name);
@@ -291,31 +291,31 @@ const Shopkeepers = () => {
                             onClickR={isItemInteractiveResult(offer) ? () => {
                               setSelectedItem(offer.resultItem)
                               setSelectedItemOne(null)
-                              setVisile(true)
+                              setVisible(true)
                             } : () => {
                               setSelectedItem(null)
                               setSelectedItemOne(offer.resultItem)
-                              setVisile(true)
+                              setVisible(true)
                             }}
 
                             onClick1={isItemInteractiveItem1(offer) ? () => {
                               setSelectedItem(offer.item1)
                               setSelectedItemOne(null)
-                              setVisile(true)
+                              setVisible(true)
                             } : () => {
                               setSelectedItem(null)
                               setSelectedItemOne(offer.item1)
-                              setVisile(true)
+                              setVisible(true)
                             }}
 
                             onClick2={isItemInteractiveItem2(offer) ? () => {
                               setSelectedItem(offer.item2)
                               setSelectedItemOne(null)
-                              setVisile(true)
+                              setVisible(true)
                             } : () => {
                               setSelectedItem(null)
                               setSelectedItemOne(offer.item2)
-                              setVisile(true)
+                              setVisible(true)
                             }}
 
                             contentHover1={offer.item1.content}
@@ -479,7 +479,7 @@ const Shopkeepers = () => {
                 <LazyLoadImage
                   effect="blur"
                   className={classNames(styles["wrapper"])}
-                  src={`./site_assets/villager/webp/${infoVillagerType}_${infoProfession}.webp`}
+                  src={`./site_assets/villager/${infoVillagerType}_${infoProfession}.webp`}
                   width="auto"
                   height="100%"
                   alt="none"

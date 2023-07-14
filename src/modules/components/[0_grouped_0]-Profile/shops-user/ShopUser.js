@@ -201,7 +201,7 @@ const ShopUser = () => {
                   <span className={classNames(styles["spanStyle"])}>{el.z}</span>
                 </h4>
                 <a
-                  href={`http://127.0.0.1:3000/shopkeepers?scrollTo=scroll_${el.shop_id}`}
+                  href={`https://gmgame.ru/shopkeepers?scrollTo=scroll_${el.shop_id}`}
                   target="_blank"
                   rel="noreferrer"
                   className={classNames(styles["linkOffers"])}
@@ -213,7 +213,7 @@ const ShopUser = () => {
                 <LazyLoadImage
                   effect="blur"
                   className={classNames(styles["wrapper"])}
-                  src={`../site_assets/villager/webp/${el.object_villager_type}_${el.object_profession}.webp`}
+                  src={`../site_assets/villager/${el.object_villager_type}_${el.object_profession}.webp`}
                   width="auto"
                   height="100%"
                   alt="none"
