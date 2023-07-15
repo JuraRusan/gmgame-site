@@ -1,9 +1,9 @@
-// import classNames from "classnames";
+import classNames from "classnames";
 import React from "react";
 import {LazyLoadImage} from "react-lazy-load-image-component";
 import {animation_type} from "../../../pages/shopkeepers/AnimationType";
 
-// import styles from "./Minecraft-image.module.scss"
+import styles from "./Minecraft-image.module.scss"
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const MinecraftImage = (props) => {
@@ -42,10 +42,24 @@ const MinecraftImage = (props) => {
     }
   };
 
+  const getImageTypeFolder = () => {
+    if (itemNameId.includes("helmet")) {
+      return "helmet";
+    } else if (itemNameId.includes("chestplate")) {
+      return "chestplate";
+    } else if (itemNameId.includes("leggings")) {
+      return "leggings";
+    } else {
+      return `boots`;
+    }
+  };
+
+
   const imageSource = getImageSource();
+  const imageTypeFolder = getImageTypeFolder();
 
   return (
-    <>
+    <div className={classNames(styles["wrapperImage"])}>
       <LazyLoadImage
         src={imageSource}
         width="100%"
@@ -53,7 +67,21 @@ const MinecraftImage = (props) => {
         effect="blur"
         alt="none"
       />
-    </>
+      {props.armor_trim_material !== undefined
+        ?
+        <div className={classNames(styles["absoluteArmor"])}>
+          <LazyLoadImage
+            src={`./site_assets/view_trim/${imageTypeFolder}/${props.armor_trim_material}.webp`}
+            width="100%"
+            height="100%"
+            effect="blur"
+            alt="none"
+          />
+        </div>
+        :
+        null
+      }
+    </div>
   );
 };
 

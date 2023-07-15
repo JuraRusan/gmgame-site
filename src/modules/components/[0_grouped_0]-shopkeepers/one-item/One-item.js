@@ -70,6 +70,7 @@ const OneItem = (props) => {
           item_minecraft_name_id={props.item_minecraft_name_id}
           item_minecraft_id_potion={props.item_minecraft_id_potion}
           enchantsList={props.enchantsList}
+          armor_trim_material={props.armor_trim_material}
         />
         <span className={classNames(styles["itemCount"])}>{props.item_count}</span>
       </div>

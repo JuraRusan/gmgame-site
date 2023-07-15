@@ -31491,24 +31491,34 @@ export const shopData = [
           "type": "netherite_chestplate",
           "type_ru": "Незеритовый нагрудник",
           "amount": 1,
-          "enchant": [
-            {
-              "enchant_id": "mending",
-              "enchant_id_ru": "Починка",
-              "lvl": 1
-            },
-            {
-              "enchant_id": "durability",
-              "enchant_id_ru": "Прочность",
-              "lvl": 3
-            }
-          ],
           "trim": {
             "material": "redstone",
             "material_ru": "Редстоун",
             "pattern": "host",
             "pattern_ru": "Вождь"
           },
+          "enchant": [
+            {
+              "enchant_id": "efficiency",
+              "enchant_id_ru": "Эффективность",
+              "lvl": 5
+            },
+            {
+              "enchant_id": "fortune",
+              "enchant_id_ru": "Удача",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "unbreaking",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
           "content": []
         },
         "item1": {
@@ -32371,6 +32381,28 @@ export const shopData = [
             "pattern": "silence",
             "pattern_ru": "Тишина"
           },
+          "enchant": [
+            {
+              "enchant_id": "efficiency",
+              "enchant_id_ru": "Эффективность",
+              "lvl": 5
+            },
+            {
+              "enchant_id": "fortune",
+              "enchant_id_ru": "Удача",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "unbreaking",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
           "content": []
         },
         "item2": {}
@@ -32399,6 +32431,28 @@ export const shopData = [
             "pattern": "silence",
             "pattern_ru": "Тишина"
           },
+          "enchant": [
+            {
+              "enchant_id": "efficiency",
+              "enchant_id_ru": "Эффективность",
+              "lvl": 5
+            },
+            {
+              "enchant_id": "fortune",
+              "enchant_id_ru": "Удача",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "unbreaking",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
           "content": []
         },
         "item2": {}
@@ -32415,6 +32469,28 @@ export const shopData = [
             "pattern": "silence",
             "pattern_ru": "Тишина"
           },
+          "enchant": [
+            {
+              "enchant_id": "efficiency",
+              "enchant_id_ru": "Эффективность",
+              "lvl": 5
+            },
+            {
+              "enchant_id": "fortune",
+              "enchant_id_ru": "Удача",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "unbreaking",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
           "content": []
         },
         "item1": {
@@ -32427,6 +32503,28 @@ export const shopData = [
             "pattern": "silence",
             "pattern_ru": "Тишина"
           },
+          "enchant": [
+            {
+              "enchant_id": "efficiency",
+              "enchant_id_ru": "Эффективность",
+              "lvl": 5
+            },
+            {
+              "enchant_id": "fortune",
+              "enchant_id_ru": "Удача",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "unbreaking",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
           "content": []
         },
         "item2": {}
@@ -32443,6 +32541,28 @@ export const shopData = [
             "pattern": "silence",
             "pattern_ru": "Тишина"
           },
+          "enchant": [
+            {
+              "enchant_id": "efficiency",
+              "enchant_id_ru": "Эффективность",
+              "lvl": 5
+            },
+            {
+              "enchant_id": "fortune",
+              "enchant_id_ru": "Удача",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "unbreaking",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
           "content": []
         },
         "item1": {
@@ -32455,6 +32575,28 @@ export const shopData = [
             "pattern": "silence",
             "pattern_ru": "Тишина"
           },
+          "enchant": [
+            {
+              "enchant_id": "efficiency",
+              "enchant_id_ru": "Эффективность",
+              "lvl": 5
+            },
+            {
+              "enchant_id": "fortune",
+              "enchant_id_ru": "Удача",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "unbreaking",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
           "content": []
         },
         "item2": {}
@@ -32471,6 +32613,28 @@ export const shopData = [
             "pattern": "silence",
             "pattern_ru": "Тишина"
           },
+          "enchant": [
+            {
+              "enchant_id": "efficiency",
+              "enchant_id_ru": "Эффективность",
+              "lvl": 5
+            },
+            {
+              "enchant_id": "fortune",
+              "enchant_id_ru": "Удача",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "unbreaking",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
           "content": []
         },
         "item1": {
@@ -32483,6 +32647,28 @@ export const shopData = [
             "pattern": "silence",
             "pattern_ru": "Тишина"
           },
+          "enchant": [
+            {
+              "enchant_id": "efficiency",
+              "enchant_id_ru": "Эффективность",
+              "lvl": 5
+            },
+            {
+              "enchant_id": "fortune",
+              "enchant_id_ru": "Удача",
+              "lvl": 3
+            },
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            },
+            {
+              "enchant_id": "unbreaking",
+              "enchant_id_ru": "Прочность",
+              "lvl": 3
+            }
+          ],
           "content": []
         },
         "item2": {}
@@ -33520,6 +33706,532 @@ export const shopData = [
           "type_ru": "Глиняный черепок «Нюхач»",
           "amount": 1,
           "content": []
+        },
+        "item2": {}
+      }
+    ]
+  },
+  {
+    "shop_id": "103",
+    "x": 20,
+    "y": 67,
+    "z": -4,
+    "name": "",
+    "owner": "prestig9110",
+    "object_profession": "none",
+    "object_villager_type": "plains",
+    "offers": [
+      {
+        "id": "1",
+        "resultItem": {
+          "type": "leather_helmet",
+          "type_ru": "Кожаный шлем",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "leather_helmet",
+          "type_ru": "Кожаный шлем",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "2",
+        "resultItem": {
+          "type": "leather_chestplate",
+          "type_ru": "Кожаная куртка",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "leather_chestplate",
+          "type_ru": "Кожаная куртка",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "3",
+        "resultItem": {
+          "type": "leather_leggings",
+          "type_ru": "Кожаные штаны",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "leather_leggings",
+          "type_ru": "Кожаные штаны",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "4",
+        "resultItem": {
+          "type": "leather_boots",
+          "type_ru": "Кожаные ботинки",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "leather_boots",
+          "type_ru": "Кожаные ботинки",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "5",
+        "resultItem": {
+          "type": "leather_leggings",
+          "type_ru": "Кожаные штаны",
+          "amount": 1,
+          "leather_color": {
+            "red": 181,
+            "blue": 118,
+            "green": 156
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "leather_leggings",
+          "type_ru": "Кожаные штаны",
+          "amount": 1,
+          "leather_color": {
+            "red": 181,
+            "blue": 118,
+            "green": 156
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "6",
+        "resultItem": {
+          "type": "leather_chestplate",
+          "type_ru": "Кожаная куртка",
+          "amount": 1,
+          "leather_color": {
+            "red": 181,
+            "blue": 118,
+            "green": 156
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "leather_chestplate",
+          "type_ru": "Кожаная куртка",
+          "amount": 1,
+          "leather_color": {
+            "red": 181,
+            "blue": 118,
+            "green": 156
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "7",
+        "resultItem": {
+          "type": "leather_helmet",
+          "type_ru": "Кожаный шлем",
+          "amount": 1,
+          "leather_color": {
+            "red": 181,
+            "blue": 118,
+            "green": 156
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "leather_helmet",
+          "type_ru": "Кожаный шлем",
+          "amount": 1,
+          "leather_color": {
+            "red": 181,
+            "blue": 118,
+            "green": 156
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "8",
+        "resultItem": {
+          "type": "leather_boots",
+          "type_ru": "Кожаные ботинки",
+          "amount": 1,
+          "leather_color": {
+            "red": 181,
+            "blue": 118,
+            "green": 156
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "leather_boots",
+          "type_ru": "Кожаные ботинки",
+          "amount": 1,
+          "leather_color": {
+            "red": 181,
+            "blue": 118,
+            "green": 156
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "9",
+        "resultItem": {
+          "type": "leather_helmet",
+          "type_ru": "Кожаный шлем",
+          "amount": 1,
+          "leather_color": {
+            "red": 128,
+            "blue": 31,
+            "green": 199
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "leather_helmet",
+          "type_ru": "Кожаный шлем",
+          "amount": 1,
+          "leather_color": {
+            "red": 128,
+            "blue": 31,
+            "green": 199
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "10",
+        "resultItem": {
+          "type": "leather_chestplate",
+          "type_ru": "Кожаная куртка",
+          "amount": 1,
+          "leather_color": {
+            "red": 128,
+            "blue": 31,
+            "green": 199
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "leather_chestplate",
+          "type_ru": "Кожаная куртка",
+          "amount": 1,
+          "leather_color": {
+            "red": 128,
+            "blue": 31,
+            "green": 199
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "11",
+        "resultItem": {
+          "type": "leather_leggings",
+          "type_ru": "Кожаные штаны",
+          "amount": 1,
+          "leather_color": {
+            "red": 128,
+            "blue": 31,
+            "green": 199
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "leather_leggings",
+          "type_ru": "Кожаные штаны",
+          "amount": 1,
+          "leather_color": {
+            "red": 128,
+            "blue": 31,
+            "green": 199
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "12",
+        "resultItem": {
+          "type": "leather_boots",
+          "type_ru": "Кожаные ботинки",
+          "amount": 1,
+          "leather_color": {
+            "red": 128,
+            "blue": 31,
+            "green": 199
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "leather_boots",
+          "type_ru": "Кожаные ботинки",
+          "amount": 1,
+          "leather_color": {
+            "red": 128,
+            "blue": 31,
+            "green": 199
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "13",
+        "resultItem": {
+          "type": "white_shulker_box",
+          "type_ru": "Белый шалкеровый ящик",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "leather_helmet",
+              "id_ru": "Кожаный шлем",
+              "count": 1,
+              "leather_color": {
+                "red": 128,
+                "blue": 31,
+                "green": 199
+              }
+            },
+            {
+              "slot": 1,
+              "id": "leather_chestplate",
+              "id_ru": "Кожаная куртка",
+              "count": 1,
+              "leather_color": {
+                "red": 128,
+                "blue": 31,
+                "green": 199
+              }
+            },
+            {
+              "slot": 2,
+              "id": "leather_leggings",
+              "id_ru": "Кожаные штаны",
+              "count": 1,
+              "leather_color": {
+                "red": 128,
+                "blue": 31,
+                "green": 199
+              }
+            },
+            {
+              "slot": 3,
+              "id": "leather_boots",
+              "id_ru": "Кожаные ботинки",
+              "count": 1,
+              "leather_color": {
+                "red": 128,
+                "blue": 31,
+                "green": 199
+              }
+            },
+            {
+              "slot": 9,
+              "id": "leather_helmet",
+              "id_ru": "Кожаный шлем",
+              "count": 1,
+              "leather_color": {
+                "red": 181,
+                "blue": 118,
+                "green": 156
+              }
+            },
+            {
+              "slot": 10,
+              "id": "leather_chestplate",
+              "id_ru": "Кожаная куртка",
+              "count": 1,
+              "leather_color": {
+                "red": 181,
+                "blue": 118,
+                "green": 156
+              }
+            },
+            {
+              "slot": 11,
+              "id": "leather_leggings",
+              "id_ru": "Кожаные штаны",
+              "count": 1,
+              "leather_color": {
+                "red": 181,
+                "blue": 118,
+                "green": 156
+              }
+            },
+            {
+              "slot": 12,
+              "id": "leather_boots",
+              "id_ru": "Кожаные ботинки",
+              "count": 1,
+              "leather_color": {
+                "red": 181,
+                "blue": 118,
+                "green": 156
+              }
+            },
+            {
+              "slot": 18,
+              "id": "leather_helmet",
+              "id_ru": "Кожаный шлем",
+              "count": 1
+            },
+            {
+              "slot": 19,
+              "id": "leather_chestplate",
+              "id_ru": "Кожаная куртка",
+              "count": 1
+            },
+            {
+              "slot": 20,
+              "id": "leather_leggings",
+              "id_ru": "Кожаные штаны",
+              "count": 1
+            },
+            {
+              "slot": 21,
+              "id": "leather_boots",
+              "id_ru": "Кожаные ботинки",
+              "count": 1
+            }
+          ]
+        },
+        "item1": {
+          "type": "white_shulker_box",
+          "type_ru": "Белый шалкеровый ящик",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "leather_helmet",
+              "id_ru": "Кожаный шлем",
+              "count": 1,
+              "leather_color": {
+                "red": 128,
+                "blue": 31,
+                "green": 199
+              }
+            },
+            {
+              "slot": 1,
+              "id": "leather_chestplate",
+              "id_ru": "Кожаная куртка",
+              "count": 1,
+              "leather_color": {
+                "red": 128,
+                "blue": 31,
+                "green": 199
+              }
+            },
+            {
+              "slot": 2,
+              "id": "leather_leggings",
+              "id_ru": "Кожаные штаны",
+              "count": 1,
+              "leather_color": {
+                "red": 128,
+                "blue": 31,
+                "green": 199
+              }
+            },
+            {
+              "slot": 3,
+              "id": "leather_boots",
+              "id_ru": "Кожаные ботинки",
+              "count": 1,
+              "leather_color": {
+                "red": 128,
+                "blue": 31,
+                "green": 199
+              }
+            },
+            {
+              "slot": 9,
+              "id": "leather_helmet",
+              "id_ru": "Кожаный шлем",
+              "count": 1,
+              "leather_color": {
+                "red": 181,
+                "blue": 118,
+                "green": 156
+              }
+            },
+            {
+              "slot": 10,
+              "id": "leather_chestplate",
+              "id_ru": "Кожаная куртка",
+              "count": 1,
+              "leather_color": {
+                "red": 181,
+                "blue": 118,
+                "green": 156
+              }
+            },
+            {
+              "slot": 11,
+              "id": "leather_leggings",
+              "id_ru": "Кожаные штаны",
+              "count": 1,
+              "leather_color": {
+                "red": 181,
+                "blue": 118,
+                "green": 156
+              }
+            },
+            {
+              "slot": 12,
+              "id": "leather_boots",
+              "id_ru": "Кожаные ботинки",
+              "count": 1,
+              "leather_color": {
+                "red": 181,
+                "blue": 118,
+                "green": 156
+              }
+            },
+            {
+              "slot": 18,
+              "id": "leather_helmet",
+              "id_ru": "Кожаный шлем",
+              "count": 1
+            },
+            {
+              "slot": 19,
+              "id": "leather_chestplate",
+              "id_ru": "Кожаная куртка",
+              "count": 1
+            },
+            {
+              "slot": 20,
+              "id": "leather_leggings",
+              "id_ru": "Кожаные штаны",
+              "count": 1
+            },
+            {
+              "slot": 21,
+              "id": "leather_boots",
+              "id_ru": "Кожаные ботинки",
+              "count": 1
+            }
+          ]
         },
         "item2": {}
       }

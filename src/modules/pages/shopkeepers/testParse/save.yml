@@ -1,6 +1,1284 @@
 # This file is not intended to be manually modified! If you want to manually edit this file anyways, ensure that the server is not running currently and that you have prepared a backup of this file.
 
 data-version: 3|2|3337
+'100':
+  uniqueId: 569d80b3-6a0f-427d-a945-ee2b9039837f
+  world: world
+  x: 10
+  y: 67
+  z: 1
+  yaw: 98.32134
+  type: trade
+  name: ''
+  object:
+    type: villager
+    baby: false
+    profession: NONE
+    villagerType: PLAINS
+    villagerLevel: 1
+  owner uuid: 5d5a533d-b97b-4c97-8522-637b3350752b
+  owner: prestig9110
+  chestx: 10
+  chesty: 67
+  chestz: 0
+  offers:
+    '1':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:redstone
+            pattern: minecraft:host
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:redstone
+            pattern: minecraft:host
+    '2':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:redstone
+            pattern: minecraft:shaper
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:redstone
+            pattern: minecraft:shaper
+    '3':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:redstone
+            pattern: minecraft:wayfinder
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:redstone
+            pattern: minecraft:wayfinder
+    '4':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:redstone
+            pattern: minecraft:dune
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:redstone
+            pattern: minecraft:dune
+    '5':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:redstone
+            pattern: minecraft:coast
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:redstone
+            pattern: minecraft:coast
+    '6':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:redstone
+            pattern: minecraft:wild
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:redstone
+            pattern: minecraft:wild
+    '7':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:redstone
+            pattern: minecraft:sentry
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:redstone
+            pattern: minecraft:sentry
+    '8':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:redstone
+            pattern: minecraft:spire
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:redstone
+            pattern: minecraft:spire
+    '9':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:redstone
+            pattern: minecraft:eye
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:redstone
+            pattern: minecraft:eye
+    '10':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:redstone
+            pattern: minecraft:vex
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:redstone
+            pattern: minecraft:vex
+    '11':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:redstone
+            pattern: minecraft:raiser
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:redstone
+            pattern: minecraft:raiser
+    '12':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:redstone
+            pattern: minecraft:silence
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:redstone
+            pattern: minecraft:silence
+    '13':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:redstone
+            pattern: minecraft:tide
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:redstone
+            pattern: minecraft:tide
+    '14':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:redstone
+            pattern: minecraft:ward
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:redstone
+            pattern: minecraft:ward
+    '15':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:redstone
+            pattern: minecraft:snout
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:redstone
+            pattern: minecraft:snout
+    '16':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:redstone
+            pattern: minecraft:rib
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:redstone
+            pattern: minecraft:rib
+    '17':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: WHITE_SHULKER_BOX
+        meta:
+          ==: ItemMeta
+          meta-type: TILE_ENTITY
+          internal: H4sIAAAAAAAA/8XVzW6DMAwAYFOgpWyl7aZd9yA77uew83qvUnDBakhQMFt5+1FtUvwE5OzE+uTYTg6QQ/GqbXn5MEw8HlSdwYIqeGrJYOnUmV/6ZtAXdMeTva4h/WRs+xwAdhEkX9oy/F149hcMcoOOGI9lgz13WjFGkL7ZwXCUQ8yqjmH5rlpV45RoIiQHR20GWTuddKQ0PPhsDquercEMVp3iKW5g46M43lL8U6L5KVtRp46cwCzmx+wEBg270WvioK/k6OQpyfyUwkd/lKu8JQ1rIS0sy6DdW1rVs8eswo6SsYPAZEFfiakSY70OaqkGIyz5/JZHOUnjmUyFzoPu5gftRdeQRlOK+twHXcFOUS+Lswn7ITSqk5oiaB83Vi6bbdDP6RuvtxTwCyDJfKMNCQAA
+          blockMaterial: WHITE_SHULKER_BOX
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: WHITE_SHULKER_BOX
+        meta:
+          ==: ItemMeta
+          meta-type: TILE_ENTITY
+          internal: H4sIAAAAAAAA/8XVzW6DMAwAYFOgpWyl7aZd9yA77uew83qvUnDBakhQMFt5+1FtUvwE5OzE+uTYTg6QQ/GqbXn5MEw8HlSdwYIqeGrJYOnUmV/6ZtAXdMeTva4h/WRs+xwAdhEkX9oy/F149hcMcoOOGI9lgz13WjFGkL7ZwXCUQ8yqjmH5rlpV45RoIiQHR20GWTuddKQ0PPhsDquercEMVp3iKW5g46M43lL8U6L5KVtRp46cwCzmx+wEBg270WvioK/k6OQpyfyUwkd/lKu8JQ1rIS0sy6DdW1rVs8eswo6SsYPAZEFfiakSY70OaqkGIyz5/JZHOUnjmUyFzoPu5gftRdeQRlOK+twHXcFOUS+Lswn7ITSqk5oiaB83Vi6bbdDP6RuvtxTwCyDJfKMNCQAA
+          blockMaterial: WHITE_SHULKER_BOX
+    '18':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:redstone
+            pattern: minecraft:silence
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:redstone
+            pattern: minecraft:silence
+    '19':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:redstone
+            pattern: minecraft:silence
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:redstone
+            pattern: minecraft:silence
+    '20':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:copper
+            pattern: minecraft:silence
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:copper
+            pattern: minecraft:silence
+    '21':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:amethyst
+            pattern: minecraft:silence
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:amethyst
+            pattern: minecraft:silence
+    '22':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:diamond
+            pattern: minecraft:silence
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:diamond
+            pattern: minecraft:silence
+    '23':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:gold
+            pattern: minecraft:silence
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:gold
+            pattern: minecraft:silence
+    '24':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:iron
+            pattern: minecraft:silence
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:iron
+            pattern: minecraft:silence
+    '25':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:lapis
+            pattern: minecraft:silence
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:lapis
+            pattern: minecraft:silence
+    '26':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:quartz
+            pattern: minecraft:silence
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:quartz
+            pattern: minecraft:silence
+    '27':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:netherite
+            pattern: minecraft:silence
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: ARMOR
+          trim:
+            material: minecraft:netherite
+            pattern: minecraft:silence
+    '28':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: WHITE_SHULKER_BOX
+        meta:
+          ==: ItemMeta
+          meta-type: TILE_ENTITY
+          internal: H4sIAAAAAAAA/7XUO0/DMBDA8UuTtG6G8hJrP0hHHgMz3avDORKrfmFfJMqnJxVI7oCEF8/2/f1bfB1AB5sH7eTx2bLi0x4HAQvVw71RlmTAd97FcdJHCoc397mG9oXJxA7mwQqaV+0Yfga2acASjxQU00GOFNlrZKqgfXST5aqDmnGoYfmEBgeCcwmafVBGgDDzzaBQw3WqSec9BQErjzyfWri5oClNVp4jv5iqBOY21dDMuVPkTM6iBOfiwV6hcbbP1NSFNWQooM7VNCU0m1QbXDalLUxRwdlMyrIE5SrVNHoVMy2rwj/7Y8LAX5kYUQJz90ct07MuvGkC9ZGd/ZcD8A3z3UebxQUAAA==
+          blockMaterial: WHITE_SHULKER_BOX
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: WHITE_SHULKER_BOX
+        meta:
+          ==: ItemMeta
+          meta-type: TILE_ENTITY
+          internal: H4sIAAAAAAAA/7XUP0/DMBCH4V+apE0zFChi5YN0LDAw0706kiOx6j/BvkiUT08QSOnAgKVktu/1s/hKoMRmr111erKi5HygpsBC1bgzynLl6U12oe31if3x1X2skT8Lm1BiGEyQvWgn+Bm4HwcsS8teCR+rloN0moRLpEJNiuUjGWoY3wFkB69MgcIMF7wijesxUrmuY19g1ZEMpxY3FyKl2VZDJEH+4HorCX4xyYSY7RghM1TOQWI5iwk5Fw/WioyzdawmnUfDhj3paE02oWYzRhoXT8nnoSjvbCxlOSHlaoxo6lSItazm+dnvPXn5jMUUE2Ju/4jEetbzbBrPdRBn/88BvgDXIEOwxQUAAA==
+          blockMaterial: WHITE_SHULKER_BOX
+  snapshots: []
+'101':
+  uniqueId: f2865b9a-30c6-40bf-8f7f-5ec64e5de572
+  world: world
+  x: 18
+  y: 67
+  z: -3
+  yaw: 68.16838
+  type: trade
+  name: ''
+  object:
+    type: villager
+    baby: false
+    profession: NONE
+    villagerType: PLAINS
+    villagerLevel: 1
+  owner uuid: 5d5a533d-b97b-4c97-8522-637b3350752b
+  owner: prestig9110
+  chestx: 18
+  chesty: 67
+  chestz: -1
+  offers:
+    '1':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE
+    '2':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: VEX_ARMOR_TRIM_SMITHING_TEMPLATE
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: VEX_ARMOR_TRIM_SMITHING_TEMPLATE
+    '3':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: WILD_ARMOR_TRIM_SMITHING_TEMPLATE
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: WILD_ARMOR_TRIM_SMITHING_TEMPLATE
+    '4':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: COAST_ARMOR_TRIM_SMITHING_TEMPLATE
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: COAST_ARMOR_TRIM_SMITHING_TEMPLATE
+    '5':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: DUNE_ARMOR_TRIM_SMITHING_TEMPLATE
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: DUNE_ARMOR_TRIM_SMITHING_TEMPLATE
+    '6':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE
+    '7':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: RAISER_ARMOR_TRIM_SMITHING_TEMPLATE
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: RAISER_ARMOR_TRIM_SMITHING_TEMPLATE
+    '8':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE
+    '9':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: HOST_ARMOR_TRIM_SMITHING_TEMPLATE
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: HOST_ARMOR_TRIM_SMITHING_TEMPLATE
+    '10':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: WARD_ARMOR_TRIM_SMITHING_TEMPLATE
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: WARD_ARMOR_TRIM_SMITHING_TEMPLATE
+    '11':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE
+    '12':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: TIDE_ARMOR_TRIM_SMITHING_TEMPLATE
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: TIDE_ARMOR_TRIM_SMITHING_TEMPLATE
+    '13':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE
+    '14':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: RIB_ARMOR_TRIM_SMITHING_TEMPLATE
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: RIB_ARMOR_TRIM_SMITHING_TEMPLATE
+    '15':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: EYE_ARMOR_TRIM_SMITHING_TEMPLATE
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: EYE_ARMOR_TRIM_SMITHING_TEMPLATE
+    '16':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE
+    '17':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_UPGRADE_SMITHING_TEMPLATE
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: NETHERITE_UPGRADE_SMITHING_TEMPLATE
+    '18':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: WHITE_SHULKER_BOX
+        meta:
+          ==: ItemMeta
+          meta-type: TILE_ENTITY
+          internal: H4sIAAAAAAAA/5XMvQrCMBSG4S/VgnZw8yrEG3BUHJx1D7GN7aH5KScnoHdvoYKCi+7v+1RAhdXexbo/BiF5XEy7QEEN1p6CrdncZJe67HrL+hrvS5QnsT5VAGYK87OLgmnYfg5mGHvDPrIWJq+TJ+kotHqcB2fEKpSHmIMovBT1pbCh9K9STMrmrTQ52B8N4AlRHWfxDwEAAA==
+          blockMaterial: WHITE_SHULKER_BOX
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: WHITE_SHULKER_BOX
+        meta:
+          ==: ItemMeta
+          meta-type: TILE_ENTITY
+          internal: H4sIAAAAAAAA/5XMvQrCMBSG4S/VgnZw8yrEG3BUHJx1D7GN7aH5KScnoHdvoYKCi+7v+1RAhdXexbo/BiF5XEy7QEEN1p6CrdncZJe67HrL+hrvS5QnsT5VAGYK87OLgmnYfg5mGHvDPrIWJq+TJ+kotHqcB2fEKpSHmIMovBT1pbCh9K9STMrmrTQ52B8N4AlRHWfxDwEAAA==
+          blockMaterial: WHITE_SHULKER_BOX
+  snapshots: []
+'102':
+  uniqueId: 0d5e45ac-0889-41aa-aa88-fd3e61253c11
+  world: world
+  x: 16
+  y: 67
+  z: -7
+  yaw: 0.07772072
+  type: trade
+  name: ''
+  object:
+    type: villager
+    baby: false
+    profession: NONE
+    villagerType: PLAINS
+    villagerLevel: 1
+  owner uuid: 5d5a533d-b97b-4c97-8522-637b3350752b
+  owner: prestig9110
+  chestx: 15
+  chesty: 67
+  chestz: -7
+  offers:
+    '1':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: ANGLER_POTTERY_SHERD
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: ANGLER_POTTERY_SHERD
+    '2':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: ARCHER_POTTERY_SHERD
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: ARCHER_POTTERY_SHERD
+    '3':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: ARMS_UP_POTTERY_SHERD
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: ARMS_UP_POTTERY_SHERD
+    '4':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: BLADE_POTTERY_SHERD
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: BLADE_POTTERY_SHERD
+    '5':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: BREWER_POTTERY_SHERD
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: BREWER_POTTERY_SHERD
+    '6':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: BURN_POTTERY_SHERD
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: BURN_POTTERY_SHERD
+    '7':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: DANGER_POTTERY_SHERD
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: DANGER_POTTERY_SHERD
+    '8':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: DANGER_POTTERY_SHERD
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: DANGER_POTTERY_SHERD
+    '9':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: EXPLORER_POTTERY_SHERD
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: EXPLORER_POTTERY_SHERD
+    '10':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: HOWL_POTTERY_SHERD
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: HOWL_POTTERY_SHERD
+    '11':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: MINER_POTTERY_SHERD
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: MINER_POTTERY_SHERD
+    '12':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: MOURNER_POTTERY_SHERD
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: MOURNER_POTTERY_SHERD
+    '13':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: PLENTY_POTTERY_SHERD
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: PLENTY_POTTERY_SHERD
+    '14':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: PRIZE_POTTERY_SHERD
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: PRIZE_POTTERY_SHERD
+    '15':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: SHEAF_POTTERY_SHERD
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: SHEAF_POTTERY_SHERD
+    '16':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: SHELTER_POTTERY_SHERD
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: SHELTER_POTTERY_SHERD
+    '17':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: SKULL_POTTERY_SHERD
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: SKULL_POTTERY_SHERD
+    '18':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: SNORT_POTTERY_SHERD
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: SNORT_POTTERY_SHERD
+  snapshots: []
+'103':
+  uniqueId: 877a952e-27c1-489b-9e43-22f37acce9bd
+  world: world
+  x: 20
+  y: 67
+  z: -4
+  yaw: 106.97576
+  type: trade
+  name: ''
+  object:
+    type: villager
+    baby: false
+    profession: NONE
+    villagerType: PLAINS
+    villagerLevel: 1
+  owner uuid: 5d5a533d-b97b-4c97-8522-637b3350752b
+  owner: prestig9110
+  chestx: 20
+  chesty: 68
+  chestz: -6
+  offers:
+    '1':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: LEATHER_HELMET
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: LEATHER_HELMET
+    '2':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: LEATHER_CHESTPLATE
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: LEATHER_CHESTPLATE
+    '3':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: LEATHER_LEGGINGS
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: LEATHER_LEGGINGS
+    '4':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: LEATHER_BOOTS
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: LEATHER_BOOTS
+    '5':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: LEATHER_LEGGINGS
+        meta:
+          ==: ItemMeta
+          meta-type: COLORABLE_ARMOR
+          color:
+            ==: Color
+            ALPHA: 255
+            RED: 181
+            BLUE: 118
+            GREEN: 156
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: LEATHER_LEGGINGS
+        meta:
+          ==: ItemMeta
+          meta-type: COLORABLE_ARMOR
+          color:
+            ==: Color
+            ALPHA: 255
+            RED: 181
+            BLUE: 118
+            GREEN: 156
+    '6':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: LEATHER_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: COLORABLE_ARMOR
+          color:
+            ==: Color
+            ALPHA: 255
+            RED: 181
+            BLUE: 118
+            GREEN: 156
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: LEATHER_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: COLORABLE_ARMOR
+          color:
+            ==: Color
+            ALPHA: 255
+            RED: 181
+            BLUE: 118
+            GREEN: 156
+    '7':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: LEATHER_HELMET
+        meta:
+          ==: ItemMeta
+          meta-type: COLORABLE_ARMOR
+          color:
+            ==: Color
+            ALPHA: 255
+            RED: 181
+            BLUE: 118
+            GREEN: 156
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: LEATHER_HELMET
+        meta:
+          ==: ItemMeta
+          meta-type: COLORABLE_ARMOR
+          color:
+            ==: Color
+            ALPHA: 255
+            RED: 181
+            BLUE: 118
+            GREEN: 156
+    '8':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: LEATHER_BOOTS
+        meta:
+          ==: ItemMeta
+          meta-type: COLORABLE_ARMOR
+          color:
+            ==: Color
+            ALPHA: 255
+            RED: 181
+            BLUE: 118
+            GREEN: 156
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: LEATHER_BOOTS
+        meta:
+          ==: ItemMeta
+          meta-type: COLORABLE_ARMOR
+          color:
+            ==: Color
+            ALPHA: 255
+            RED: 181
+            BLUE: 118
+            GREEN: 156
+    '9':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: LEATHER_HELMET
+        meta:
+          ==: ItemMeta
+          meta-type: COLORABLE_ARMOR
+          color:
+            ==: Color
+            ALPHA: 255
+            RED: 128
+            BLUE: 31
+            GREEN: 199
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: LEATHER_HELMET
+        meta:
+          ==: ItemMeta
+          meta-type: COLORABLE_ARMOR
+          color:
+            ==: Color
+            ALPHA: 255
+            RED: 128
+            BLUE: 31
+            GREEN: 199
+    '10':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: LEATHER_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: COLORABLE_ARMOR
+          color:
+            ==: Color
+            ALPHA: 255
+            RED: 128
+            BLUE: 31
+            GREEN: 199
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: LEATHER_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: COLORABLE_ARMOR
+          color:
+            ==: Color
+            ALPHA: 255
+            RED: 128
+            BLUE: 31
+            GREEN: 199
+    '11':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: LEATHER_LEGGINGS
+        meta:
+          ==: ItemMeta
+          meta-type: COLORABLE_ARMOR
+          color:
+            ==: Color
+            ALPHA: 255
+            RED: 128
+            BLUE: 31
+            GREEN: 199
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: LEATHER_LEGGINGS
+        meta:
+          ==: ItemMeta
+          meta-type: COLORABLE_ARMOR
+          color:
+            ==: Color
+            ALPHA: 255
+            RED: 128
+            BLUE: 31
+            GREEN: 199
+    '12':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: LEATHER_BOOTS
+        meta:
+          ==: ItemMeta
+          meta-type: COLORABLE_ARMOR
+          color:
+            ==: Color
+            ALPHA: 255
+            RED: 128
+            BLUE: 31
+            GREEN: 199
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: LEATHER_BOOTS
+        meta:
+          ==: ItemMeta
+          meta-type: COLORABLE_ARMOR
+          color:
+            ==: Color
+            ALPHA: 255
+            RED: 128
+            BLUE: 31
+            GREEN: 199
+    '13':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: WHITE_SHULKER_BOX
+        meta:
+          ==: ItemMeta
+          meta-type: TILE_ENTITY
+          internal: H4sIAAAAAAAA/63QTWrCQBjG8Sem8WMUF7aiSKH36LKtC9d1L2N8nQxOMiXzKnXXg/QansFrGUjBwmSjyQGe3wN/AQgM34yNd/OMNR+XUnXR0huMU51RnMstv7pkb3aUr9b2u4dowZQ6AWAQ4OHTWEY5mF4HhiQnxSAhkxILhCxViPaHTKWiYll8djbafRl5DBHF1tgcP+cXIED0bvcZB/izg9J+9u04IceFwFTHb5X+zPcNKaUz5eroYalPfH1tLdeie41EP/0eKmzRWPRqv99Q9Gp90ET0anp0e3Qfebyvrg893ZPRZ8Y39/pnABc6gDUqQgQAAA==
+          blockMaterial: WHITE_SHULKER_BOX
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3465
+        type: WHITE_SHULKER_BOX
+        meta:
+          ==: ItemMeta
+          meta-type: TILE_ENTITY
+          internal: H4sIAAAAAAAA/53QzU7CQBTF8VNqRUbCQiEaY+J7uPRjwRr3ZCjX6YRpx3QuRnY+iK/hM/BaFAy6aNDr7E9+J/krQGFw53y+eKzY8upJmxN07Byj0laU1/qZb0OxdAuqpzP/1kM2ZiqDAtBPcDRxnpEgu/fLihOFlLVJcfygS22o2TR6d27Di9OrFFnuna/xvr4Bvk4uf04caS6ak4JcSVtzZyfx9nXbzgsK3OyZ9n4n3r9q+46MsZUJez2N1y/a+sx7/qZ7/6Q/P17F0VW8LYp+Gu8Lovfj9b+in/1GS+ueCxBRxqEAEvQaCZiDYYANZcWgrEIEAAA=
+          blockMaterial: WHITE_SHULKER_BOX
+  snapshots: []
+
 '4':
   uniqueId: 5c4f4f4a-9420-48b7-9861-f0a907666d06
   world: gmgame
@@ -6054,6 +7332,23 @@ data-version: 3|2|3337
         v: 3337
         type: DEEPSLATE_DIAMOND_ORE
         amount: 32
+    '17':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: LIGHT_BLUE_SHULKER_BOX
+        meta:
+          ==: ItemMeta
+          meta-type: TILE_ENTITY
+          display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#009DC4","text":"Набор
+            «Разоритель морских крепостей». N.Viento™"}],"text":""}'
+          internal: H4sIAAAAAAAA/8WVTU8TQRjHp7SFtiJvgqgkplmvhBD1Yk+Gl4OJIUSNF2Oa6e7QTjq708zOCg0hAYQb0UT9AMYrB4uRoICQcPBoZr+Cn8RnW9qt2xCyprWZw3amv+c//+eZyTMphFJoYIZxvThvSSrLz3A+gXqogcZMahFd4CWZsQsOKxKRzfGVJIo/ksS0UwihiQiKPWVcogiKz3LHkpFa5LAfqXPLcKhHVMlIgGzeoyQcncAWuEH3XEyblBWzOUcvkgYdDUXHQtHxBp1CUelVqHeRS8otdNuPY9zKZ5ex9AolCJYFauVRTX3Ip0q1uHPh3k4J910oPB4QtqUgVl4WLlNMtF0xWVd8WAMnmkBBbRMLmEPKVC/a9ZjUP8RcCXXW/aHoq6HogU4d92CnhIfafurDbVccCdyJpjNYxqJEjKzBuajT1wL7R1HqCSlhKma5LaGrDSZR/7ylF7AlTWLJaqeL1YRHfGFqljCD+vWgKHvFUBy1tD7Gy5jJ8jkQbQVA3fAVIufAqA84lndMRZ+JwuidwybOEzAFjbvPoHaJ4XICxRawSdCvVY2sSIG1zItVLceZoWWWMLPJpEYl2NUbU8cyiAD/xCeg2hSuakFwJ19orPLckmPrcGd8UOeMCy2j3ZmefjA3e1+b1CRsCgvqvaq46+rUfa1+pOFHRR2oE/h+czfVvjpy36bVsbfgbqhDWNxOq0P4d1+dwuJGlfmurb1syGlrSRR7zAVJeCeAdv9rbvfueqMpt3futjpRX71k0uoLWIfZMVg/AtuH7ubfxtHPrpo921UfW6q/c3n1z46mAnkcdLfoTRcKRgVukLsFie15aUEWlfQMw3pxkQosA8Y/d9f4B6gwFLXqc8/dcd94BXbX0wtTzyk0Ff5761PAcGt/ABcGsPW+NRrqpRkLRV8PRY936rG50Snhm21/c261TxGhPxLUBsWFCwAA
+          blockMaterial: LIGHT_BLUE_SHULKER_BOX
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: DEEPSLATE_DIAMOND_ORE
+        amount: 64
   snapshots: []
 '69':
   uniqueId: f1a2c894-446c-4d9c-a7c1-7946d9f42964

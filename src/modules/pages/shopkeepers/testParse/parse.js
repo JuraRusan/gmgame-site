@@ -101,6 +101,18 @@ async function selectData(data) {
                 }
               }
 
+              function decodeColor(color) {
+                var red = (color >> 16) & 255;
+                var green = (color >> 8) & 255;
+                var blue = color & 255;
+
+                return {
+                  red: red,
+                  green: green,
+                  blue: blue,
+                };
+              }
+
               const minecraftCustomName = processDisplayName(item.tag?.value?.display?.value?.Name?.value);
 
               const slot = item.Slot.value;
@@ -167,7 +179,15 @@ async function selectData(data) {
                 pattern_ru: armorTypePatern[0].pattern_ru
               }
 
-              return { slot, id, id_ru, minecraft_custom, count, firework_power, potion, instrument, enchant, stored_enchant, trim };
+              // -------------------- color
+              let rgbaColor = decodeColor(item.tag?.value?.display?.value?.color?.value);
+              const leather_color = item.tag?.value?.display?.value?.color === undefined ? undefined : {
+                red: rgbaColor.red,
+                blue: rgbaColor.blue,
+                green: rgbaColor.green
+              }
+
+              return { slot, id, id_ru, minecraft_custom, count, firework_power, potion, instrument, enchant, stored_enchant, trim, leather_color };
             });
 
             resolve(result);
@@ -332,6 +352,11 @@ async function selectData(data) {
                     pattern: offer.resultItem?.meta?.trim?.pattern.split(':')[1].toLowerCase(),
                     pattern_ru: armorTypePaternResultItem[0].pattern_ru
                   } : undefined,
+                  leather_color: offer.resultItem.meta && offer.resultItem.meta?.["meta-type"] === "COLORABLE_ARMOR" ? {
+                    red: offer.resultItem.meta.color.RED,
+                    blue: offer.resultItem.meta.color.BLUE,
+                    green: offer.resultItem.meta.color.GREEN,
+                  } : undefined,
                   content: offer.resultItem.meta && offer.resultItem.meta.internal !== undefined ? await parseInternal(offer.resultItem.meta.internal) : [],
                 }
                 :
@@ -356,6 +381,11 @@ async function selectData(data) {
                     pattern: offer.item1?.meta?.trim?.pattern.split(':')[1].toLowerCase(),
                     pattern_ru: armorTypePaternItem1[0].pattern_ru
                   } : undefined,
+                  leather_color: offer.resultItem.meta && offer.resultItem.meta?.["meta-type"] === "COLORABLE_ARMOR" ? {
+                    red: offer.resultItem.meta.color.RED,
+                    blue: offer.resultItem.meta.color.BLUE,
+                    green: offer.resultItem.meta.color.GREEN,
+                  } : undefined,
                   content: offer.item1.meta && offer.item1.meta.internal !== undefined ? await parseInternal(offer.item1.meta.internal) : [],
                 }
                 :
@@ -379,6 +409,11 @@ async function selectData(data) {
                     material_ru: armorTypeMaterialItem2[0].material_ru,
                     pattern: offer.item2?.meta?.trim?.pattern.split(':')[1].toLowerCase(),
                     pattern_ru: armorTypePaternItem2[0].pattern_ru
+                  } : undefined,
+                  leather_color: offer.resultItem.meta && offer.resultItem.meta?.["meta-type"] === "COLORABLE_ARMOR" ? {
+                    red: offer.resultItem.meta.color.RED,
+                    blue: offer.resultItem.meta.color.BLUE,
+                    green: offer.resultItem.meta.color.GREEN,
                   } : undefined,
                   content: offer.item2.meta && offer.item2.meta.internal !== undefined ? await parseInternal(offer.item2.meta.internal) : [],
                 }

@@ -35,6 +35,7 @@ const ShulkerBoxMini = (props) => {
                   item_minecraft_name_id={el.id}
                   item_minecraft_id_potion={el.potion}
                   enchantsList={el.enchant}
+                  armor_trim_material={el.trim?.material}
                 />
                 <span className={classNames(styles["count"])}>{el.count}</span>
               </>
