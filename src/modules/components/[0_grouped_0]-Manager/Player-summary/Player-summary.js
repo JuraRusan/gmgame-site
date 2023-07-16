@@ -9,6 +9,7 @@ import debounce from 'lodash.debounce';
 
 import styles from "./Player-summary.module.scss";
 import "aos/dist/aos.css";
+import { set } from "lodash";
 
 const PlayerSummary = () => {
 
@@ -98,7 +99,7 @@ const PlayerSummary = () => {
           tagUser[user.username] = tag.id ? tag : JSON.parse(tag);
         } catch (err) {
           const email = user.tag.match(/email": "(.+?)"/);
-          tagUser[user.username] = email[1] ? {email: email[1]} : '';
+          tagUser[user.username] = email && email[1] ? {email: email[1]} : '';
         }
         makersUser[user.username] = user.markers;
         terrUser[user.username] = user.territories;
@@ -153,7 +154,7 @@ const PlayerSummary = () => {
       setTerritories({all: response});
       setUser({});
       setMarkers([]);
-      setRegens([])
+      setRegens([]);
     });
   }
 
@@ -214,7 +215,7 @@ const PlayerSummary = () => {
 
   const delTerr = (id, index, username) => {
     actionMarkers(id, '/api/admin/delete_territory');
-    
+
     const newTerritories = JSON.parse(JSON.stringify(territories));
     newTerritories[username][index].notRender = true;
     setTerritories(newTerritories);
@@ -317,6 +318,37 @@ const PlayerSummary = () => {
     });
   }
 
+  const getWhiteList = () => {
+    sendRequest(
+      '/api/admin/get_whitelist',
+      'POST',
+      {}
+    ).then(response => {
+      if (!response.length > 0) {
+        alert.error('Список пуст');
+        return;
+      }
+      setTag({});
+      let tagUser = {};
+      response.forEach(user => {
+        try {
+          let tag = JSON.parse(user.tag);
+          tagUser[user.username] = tag.id ? tag : JSON.parse(tag);
+        } catch (err) {
+          const email = user.tag.match(/email": "(.+?)"/);
+          tagUser[user.username] = email && email[1] ? {email: email[1]} : '';
+        }
+      })
+      setTag(tagUser);
+      setRegens([]);
+      setTerritories({});
+      setUser({});
+      setMarkers([]);
+      setUser(response);
+    });
+  }
+
+
   const regenAction = (user_id, action) => {
     sendRequest(
       '/api/admin/regen_action',
@@ -346,6 +378,7 @@ const PlayerSummary = () => {
         <button className={classNames(styles["buttonSearchAll"])} type="submit" onClick={getMarkers}>Отображение всех меток</button>
         <button className={classNames(styles["buttonSearchAll"])} type="submit" onClick={getTerritories}>Отображение всех территорий</button>
         <button className={classNames(styles["buttonSearchAll"])} type="submit" onClick={getRegens}>Пользователи для регена</button>
+        <button className={classNames(styles["buttonSearchAll"])} type="submit" onClick={getWhiteList}>WhiteList</button>
       </div>
 
       {/*-----------------------------------------------------------------------------------------------*/}
