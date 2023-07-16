@@ -522,7 +522,7 @@ const PlayerSummary = () => {
                   </th>
                   <th className={classNames(styles["tableStylingColumns"], styles["mapsLinkColumn"])}>
                     <a
-                      href={`https://map.gmgame.ru/#/${el.x}/64/${el.z}/-4/GMGameWorld-overworld/over`} // Нужен фикс, с миром траблы
+                      href={`https://map.gmgame.ru/#/${el.x}/64/${el.z}/-4/GMGameWorld/over`} // Нужен фикс, с миром траблы
                       className={classNames(styles["linkMap"])}
                       target="_blank"
                       rel="noreferrer"
@@ -628,7 +628,7 @@ const PlayerSummary = () => {
                   </th>
                   <th className={classNames(styles["tableStylingColumns"], styles["mapsLinkColumn"])}>
                     <a
-                      href={`https://map.gmgame.ru/#/${(el.xStart + el.xStop)/2}/64/${(el.zStart + el.zStop)/2}/-4/GMGameWorld%20-%20overworld/over`} // Нужен фикс, с миром траблы (кроме координат, они тут чотко по центру терры)
+                      href={`https://map.gmgame.ru/#/${(el.xStart + el.xStop)/2}/64/${(el.zStart + el.zStop)/2}/-4/GMGameWorld/over`} // Нужен фикс, с миром траблы (кроме координат, они тут чотко по центру терры)
                       className={classNames(styles["linkMap"])}
                       target="_blank"
                       rel="noreferrer"
