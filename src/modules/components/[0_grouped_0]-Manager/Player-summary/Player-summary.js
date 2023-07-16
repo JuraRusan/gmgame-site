@@ -212,20 +212,18 @@ const PlayerSummary = () => {
     actionMarkers(id, '/api/admin/update_territory', inputTerrs);
   }
 
-  const delTerr = (id) => {
-    const newTerrs = [...territories];
+  const delTerr = (id, index, username) => {
     actionMarkers(id, '/api/admin/delete_territory');
-
-    const index = newTerrs.findIndex((terr) => terr.id === id);
-    newTerrs.splice(index, 1);
-    setTerritories(newTerrs);
+    
+    const newTerritories = JSON.parse(JSON.stringify(territories));
+    newTerritories[username][index].notRender = true;
+    setTerritories(newTerritories);
   }
 
   const actionMarkers = (id, url, input) => {
     let payload = {id: id};
     if (input) {
       payload = {...payload, ...input[id]};
-
     }
     sendRequest(
       url,
@@ -539,7 +537,8 @@ const PlayerSummary = () => {
               </tr>
               </thead>
               <tbody className={classNames(styles["tableTbodyStyling"])}>
-              {territories[username].map((el, i) => (
+              {territories[username].map((el, i) => {
+                return(<>{!el.notRender && 
                 <tr className={classNames(styles["tableStylingRows"])} key={i}>
                   {username === 'all' &&
                     <th className={classNames(styles["tableStylingColumns"], styles["userNameColumn"])}>
@@ -604,11 +603,12 @@ const PlayerSummary = () => {
                     </a>
                   </th>
                   <th className={classNames(styles["tableStylingColumns"], styles["mapsActionColumn"])}>
-                    <button className={classNames(styles["managerActionsButton"])} type="submit" onClick={() => delTerr(el.id, username)}>Удалить</button>
+                    <button className={classNames(styles["managerActionsButton"])} type="submit" onClick={() => delTerr(el.id, i, username)}>Удалить</button>
                     <button className={classNames(styles["managerActionsButton"])} type="submit" onClick={() => updateTerr(el.id)}>Обновить</button>
                   </th>
                 </tr>
-              ))}
+                }</>)
+              })}
               </tbody>
             </table>
           </React.Fragment>
