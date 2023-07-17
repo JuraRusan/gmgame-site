@@ -13,7 +13,7 @@ const NotFound = () => {
   }, []);
 
   if (window.location.pathname === '/api/login') {
-    window.location = `${proxy}api/login`;
+    window.location = `${proxy.proxy}api/login`;
     return;
   }
 

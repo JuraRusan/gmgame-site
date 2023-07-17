@@ -253,7 +253,7 @@ const EditAddMarker = (params) => {
       </div>
       <div className={classNames(styles["columnsAddTwo"])}>
         {id === 'new'
-          ? <iframe title="map" src="https://map.gmgame.ru/#/-7/64/-54/-4/GMGameWorld%20-%20overworld/over" width="100%" height="100%"/>
+          ? <iframe title="map" src="https://map.gmgame.ru/#/-7/64/-54/-4/GMGameWorld/over" width="100%" height="100%"/>
           : <iframe title="map" src={`https://map.gmgame.ru/#/${data.marker.x}/64/${data.marker.z}/-4/${data.world.worldName}/${data.world.layer}`} width="100%" height="100%"/>
         }
       </div>

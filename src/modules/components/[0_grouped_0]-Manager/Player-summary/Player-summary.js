@@ -9,6 +9,7 @@ import debounce from 'lodash.debounce';
 
 import styles from "./Player-summary.module.scss";
 import "aos/dist/aos.css";
+import { set } from "lodash";
 
 const PlayerSummary = () => {
 
@@ -98,7 +99,7 @@ const PlayerSummary = () => {
           tagUser[user.username] = tag.id ? tag : JSON.parse(tag);
         } catch (err) {
           const email = user.tag.match(/email": "(.+?)"/);
-          tagUser[user.username] = email[1] ? {email: email[1]} : '';
+          tagUser[user.username] = email && email[1] ? {email: email[1]} : '';
         }
         makersUser[user.username] = user.markers;
         terrUser[user.username] = user.territories;
@@ -153,7 +154,7 @@ const PlayerSummary = () => {
       setTerritories({all: response});
       setUser({});
       setMarkers([]);
-      setRegens([])
+      setRegens([]);
     });
   }
 
@@ -212,20 +213,18 @@ const PlayerSummary = () => {
     actionMarkers(id, '/api/admin/update_territory', inputTerrs);
   }
 
-  const delTerr = (id) => {
-    const newTerrs = [...territories];
+  const delTerr = (id, index, username) => {
     actionMarkers(id, '/api/admin/delete_territory');
 
-    const index = newTerrs.findIndex((terr) => terr.id === id);
-    newTerrs.splice(index, 1);
-    setTerritories(newTerrs);
+    const newTerritories = JSON.parse(JSON.stringify(territories));
+    newTerritories[username][index].notRender = true;
+    setTerritories(newTerritories);
   }
 
   const actionMarkers = (id, url, input) => {
     let payload = {id: id};
     if (input) {
       payload = {...payload, ...input[id]};
-
     }
     sendRequest(
       url,
@@ -319,6 +318,37 @@ const PlayerSummary = () => {
     });
   }
 
+  const getWhiteList = () => {
+    sendRequest(
+      '/api/admin/get_whitelist',
+      'POST',
+      {}
+    ).then(response => {
+      if (!response.length > 0) {
+        alert.error('Список пуст');
+        return;
+      }
+      setTag({});
+      let tagUser = {};
+      response.forEach(user => {
+        try {
+          let tag = JSON.parse(user.tag);
+          tagUser[user.username] = tag.id ? tag : JSON.parse(tag);
+        } catch (err) {
+          const email = user.tag.match(/email": "(.+?)"/);
+          tagUser[user.username] = email && email[1] ? {email: email[1]} : '';
+        }
+      })
+      setTag(tagUser);
+      setRegens([]);
+      setTerritories({});
+      setUser({});
+      setMarkers([]);
+      setUser(response);
+    });
+  }
+
+
   const regenAction = (user_id, action) => {
     sendRequest(
       '/api/admin/regen_action',
@@ -348,6 +378,7 @@ const PlayerSummary = () => {
         <button className={classNames(styles["buttonSearchAll"])} type="submit" onClick={getMarkers}>Отображение всех меток</button>
         <button className={classNames(styles["buttonSearchAll"])} type="submit" onClick={getTerritories}>Отображение всех территорий</button>
         <button className={classNames(styles["buttonSearchAll"])} type="submit" onClick={getRegens}>Пользователи для регена</button>
+        <button className={classNames(styles["buttonSearchAll"])} type="submit" onClick={getWhiteList}>WhiteList</button>
       </div>
 
       {/*-----------------------------------------------------------------------------------------------*/}
@@ -491,7 +522,7 @@ const PlayerSummary = () => {
                   </th>
                   <th className={classNames(styles["tableStylingColumns"], styles["mapsLinkColumn"])}>
                     <a
-                      href={`https://map.gmgame.ru/#/${el.x}/64/${el.z}/-4/GMGameWorld-overworld/over`} // Нужен фикс, с миром траблы
+                      href={`https://map.gmgame.ru/#/${el.x}/64/${el.z}/-4/GMGameWorld/over`} // Нужен фикс, с миром траблы
                       className={classNames(styles["linkMap"])}
                       target="_blank"
                       rel="noreferrer"
@@ -539,7 +570,8 @@ const PlayerSummary = () => {
               </tr>
               </thead>
               <tbody className={classNames(styles["tableTbodyStyling"])}>
-              {territories[username].map((el, i) => (
+              {territories[username].map((el, i) => {
+                return(<>{!el.notRender && 
                 <tr className={classNames(styles["tableStylingRows"])} key={i}>
                   {username === 'all' &&
                     <th className={classNames(styles["tableStylingColumns"], styles["userNameColumn"])}>
@@ -596,7 +628,7 @@ const PlayerSummary = () => {
                   </th>
                   <th className={classNames(styles["tableStylingColumns"], styles["mapsLinkColumn"])}>
                     <a
-                      href={`https://map.gmgame.ru/#/${(el.xStart + el.xStop)/2}/64/${(el.zStart + el.zStop)/2}/-4/GMGameWorld%20-%20overworld/over`} // Нужен фикс, с миром траблы (кроме координат, они тут чотко по центру терры)
+                      href={`https://map.gmgame.ru/#/${(el.xStart + el.xStop)/2}/64/${(el.zStart + el.zStop)/2}/-4/GMGameWorld/over`} // Нужен фикс, с миром траблы (кроме координат, они тут чотко по центру терры)
                       className={classNames(styles["linkMap"])}
                       target="_blank"
                       rel="noreferrer"
@@ -604,11 +636,12 @@ const PlayerSummary = () => {
                     </a>
                   </th>
                   <th className={classNames(styles["tableStylingColumns"], styles["mapsActionColumn"])}>
-                    <button className={classNames(styles["managerActionsButton"])} type="submit" onClick={() => delTerr(el.id, username)}>Удалить</button>
+                    <button className={classNames(styles["managerActionsButton"])} type="submit" onClick={() => delTerr(el.id, i, username)}>Удалить</button>
                     <button className={classNames(styles["managerActionsButton"])} type="submit" onClick={() => updateTerr(el.id)}>Обновить</button>
                   </th>
                 </tr>
-              ))}
+                }</>)
+              })}
               </tbody>
             </table>
           </React.Fragment>
