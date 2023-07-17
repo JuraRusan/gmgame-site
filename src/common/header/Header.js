@@ -44,7 +44,6 @@ const Header = () => {
                 <li className="drop-li"><a href="/statistic">Статистика</a></li>
                 <li className="drop-li"><a href="/support">Поддержать</a></li>
                 <li className="drop-li"><a href="/texture_pack">Текстур пак</a></li>
-                <li className="drop-li"><a href="/shopkeepers">Торговая зона</a></li>
               </ul>
             </li>
             <li className="links-li">
@@ -80,7 +79,6 @@ const Header = () => {
                         <li className="drop-li"><a href="/cab/markers">Мои метки</a></li>
                         <li className="drop-li"><a href="/cab/articles">Статьи</a></li>
                         {/*<li className="drop-li"><a href="/cab/gallery">Моя галерея</a></li>*/}
-                        {/*<li className="drop-li"><a href="/cab/shop_user">Мои магазины</a></li>*/}
                         <li className="drop-li"><a href="/cab/prize">Призы</a></li>
                         <li className="drop-li"><a href="/cab/change_password">Изменить пароль</a></li>
                       </>

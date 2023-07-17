@@ -43,11 +43,9 @@ const Articles = lazy(() => import(/* webpackChunkName: "cab" */ './modules/comp
 const MyProfile = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/my-profile/My-profile.js'));
 const MyPrizes = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/my-prizes/My-prizes.js'));
 const ChangePassword = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/change-password/Change-password.js'));
-const ShopUser = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/shops-user/ShopUser'));
 // --
 const Statistic = lazy(() => import(/* webpackChunkName: "statistics" */ './modules/pages/statistic/Statistic.js'));
 const TexturePack = lazy(() => import(/* webpackChunkName: "texture_pack" */ './modules/pages/texture-pack/TexturePack.js'));
-const Shopkeepers = lazy(() => import(/* webpackChunkName: "shopkeepers" */ './modules/pages/shopkeepers/Shopkeepers.js'));
 const Mods = lazy(() => import(/* webpackChunkName: "mods" */ './modules/pages/mods/Mods.js'));
 const Maps = lazy(() => import(/* webpackChunkName: "maps" */ './modules/pages/maps/Maps.js'));
 const Support = lazy(() => import(/* webpackChunkName: "support" */ './modules/pages/support/Support.js'));
@@ -88,8 +86,6 @@ const Router = () => {
             {/*----------*/}
             <Route path="prize" element={<MyPrizes/>}/>
             {/*----------*/}
-            <Route path="shop_user" element={<ShopUser/>}/>
-            {/*----------*/}
             <Route path="change_password" element={<ChangePassword/>}/>
             {/*----------*/}
           </Route>
@@ -106,7 +102,6 @@ const Router = () => {
           <Route path="/support" element={<Support/>}/>
           <Route path="/online_map" element={<Maps/>}/>
           <Route path="/texture_pack" element={<TexturePack/>}/>
-          <Route path="/shopkeepers" element={<Shopkeepers/>}/>
 
           <Route exact path="/manager" element={<Manager/>}>
             <Route path="player_summary" element={<PlayerSummary/>}/>
