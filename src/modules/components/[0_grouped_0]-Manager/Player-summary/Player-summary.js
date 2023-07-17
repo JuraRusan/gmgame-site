@@ -398,7 +398,7 @@ const PlayerSummary = () => {
       {/*--- Таблица для отображения пользователя или всех пользователей ---*/}
       {user[0]?.status &&
         <>
-          <TableMain data-aos="zoom-in">
+          <TableMain>
             <THead>
               <Tr>
                 <Th type="text" content="Имя"/>
@@ -457,7 +457,7 @@ const PlayerSummary = () => {
         return (
           <React.Fragment key={i}>
             <h4 className={classNames(styles["managerTitleH4"])} data-aos="zoom-in">Метки {username}</h4>
-            <TableMain data-aos="zoom-in">
+            <TableMain>
               <THead>
                 <Tr>
                   {username === 'all' && <Th type="text" content="Имя"/>}
@@ -516,7 +516,7 @@ const PlayerSummary = () => {
         return (
           <React.Fragment key={i}>
             <h4 className={classNames(styles["managerTitleH4"])} data-aos="zoom-in">Территории {username}</h4>
-            <TableMain data-aos="zoom-in">
+            <TableMain>
               <THead>
                 <Tr>
                   {username === 'all' && <Th type="text" content="Имя"/>}
@@ -578,7 +578,7 @@ const PlayerSummary = () => {
       {regens.length > 0 &&
         <>
           <h4 className={classNames(styles["managerTitleH4"])} data-aos="zoom-in">Список на реген</h4>
-          <TableMain data-aos="zoom-in">
+          <TableMain>
             <THead>
               <Tr>
                 <Th type="text" content="Имя"></Th>
@@ -727,7 +727,7 @@ const PlayerSummary = () => {
       >
         <button className={classNames(styles["closeModal"])} onClick={handleCloseModal}>X</button>
         <div className={classNames(styles["cardLog"])} data-aos="zoom-in">
-          <TableMain data-aos="zoom-in">
+          <TableMain>
             <THead>
               <Tr>
                 <Th type="text" content="Время"/>
