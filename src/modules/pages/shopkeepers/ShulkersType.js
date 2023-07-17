@@ -15,5 +15,23 @@ export const shulkers_type = [
   "red_shulker_box",
   "shulker_box",
   "white_shulker_box",
-  "yellow_shulker_box",
+  "yellow_shulker_box"
+]
+export const banner_type = [
+  "black_banner",
+  "blue_banner",
+  "brown_banner",
+  "cyan_banner",
+  "gray_banner",
+  "green_banner",
+  "light_blue_banner",
+  "light_gray_banner",
+  "lime_banner",
+  "magenta_banner",
+  "orange_banner",
+  "pink_banner",
+  "purple_banner",
+  "red_banner",
+  "white_banner",
+  "yellow_banner"
 ]

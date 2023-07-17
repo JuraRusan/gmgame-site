@@ -1,4 +1,4 @@
-export const shopData = [
+export const shopData =  [
   {
     "shop_id": "4",
     "x": -392,
@@ -1426,87 +1426,6 @@ export const shopData = [
       {
         "id": "7",
         "resultItem": {
-          "type": "orange_shulker_box",
-          "type_ru": "Оранжевый шалкеровый ящик",
-          "minecraft_custom": "<span style=\"color: gold\"> 3 Взрывных эликсира огнестойкости </span>",
-          "amount": 1,
-          "content": [
-            {
-              "slot": 12,
-              "id": "splash_potion",
-              "id_ru": "Взрывное зелье огнестойкости",
-              "count": 1,
-              "potion": "long_fire_resistance"
-            },
-            {
-              "slot": 13,
-              "id": "splash_potion",
-              "id_ru": "Взрывное зелье огнестойкости",
-              "count": 1,
-              "potion": "long_fire_resistance"
-            },
-            {
-              "slot": 14,
-              "id": "splash_potion",
-              "id_ru": "Взрывное зелье огнестойкости",
-              "count": 1,
-              "potion": "long_fire_resistance"
-            }
-          ]
-        },
-        "item1": {
-          "type": "deepslate_diamond_ore",
-          "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 1,
-          "content": []
-        },
-        "item2": {}
-      },
-      {
-        "id": "8",
-        "resultItem": {
-          "type": "orange_shulker_box",
-          "type_ru": "Оранжевый шалкеровый ящик",
-          "minecraft_custom": "<span style=\"color: gold\"> 3 Эликсира огнестойкости </span>",
-          "amount": 1,
-          "content": [
-            {
-              "slot": 12,
-              "id": "potion",
-              "id_ru": "Зелье огнестойкости",
-              "minecraft_custom": "<span style=\"color: gold\"> Эликсир огнестойкости </span>",
-              "count": 1,
-              "potion": "long_fire_resistance"
-            },
-            {
-              "slot": 13,
-              "id": "potion",
-              "id_ru": "Зелье огнестойкости",
-              "minecraft_custom": "<span style=\"color: gold\"> Эликсир огнестойкости </span>",
-              "count": 1,
-              "potion": "long_fire_resistance"
-            },
-            {
-              "slot": 14,
-              "id": "potion",
-              "id_ru": "Зелье огнестойкости",
-              "minecraft_custom": "<span style=\"color: gold\"> Эликсир огнестойкости </span>",
-              "count": 1,
-              "potion": "long_fire_resistance"
-            }
-          ]
-        },
-        "item1": {
-          "type": "deepslate_diamond_ore",
-          "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 1,
-          "content": []
-        },
-        "item2": {}
-      },
-      {
-        "id": "9",
-        "resultItem": {
           "type": "blue_shulker_box",
           "type_ru": "Синий шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: blue\"> 3 зелья ночного зрения </span>",
@@ -1544,7 +1463,7 @@ export const shopData = [
         "item2": {}
       },
       {
-        "id": "10",
+        "id": "8",
         "resultItem": {
           "type": "cyan_shulker_box",
           "type_ru": "Бирюзовый шалкеровый ящик",
@@ -1583,7 +1502,7 @@ export const shopData = [
         "item2": {}
       },
       {
-        "id": "11",
+        "id": "9",
         "resultItem": {
           "type": "light_blue_shulker_box",
           "type_ru": "Голубой шалкеровый ящик",
@@ -1622,7 +1541,7 @@ export const shopData = [
         "item2": {}
       },
       {
-        "id": "12",
+        "id": "10",
         "resultItem": {
           "type": "magenta_shulker_box",
           "type_ru": "Пурпурный шалкеровый ящик",
@@ -1649,6 +1568,84 @@ export const shopData = [
               "id_ru": "Зелье регенерации",
               "count": 1,
               "potion": "long_regeneration"
+            }
+          ]
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "11",
+        "resultItem": {
+          "type": "orange_shulker_box",
+          "type_ru": "Оранжевый шалкеровый ящик",
+          "minecraft_custom": "<span style=\"color: gold\"> 3 Эликсира огнестойкости </span>",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 12,
+              "id": "potion",
+              "id_ru": "Зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
+            },
+            {
+              "slot": 13,
+              "id": "potion",
+              "id_ru": "Зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
+            },
+            {
+              "slot": 14,
+              "id": "potion",
+              "id_ru": "Зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
+            }
+          ]
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "12",
+        "resultItem": {
+          "type": "orange_shulker_box",
+          "type_ru": "Оранжевый шалкеровый ящик",
+          "minecraft_custom": "<span style=\"color: gold\"> 3 Взрывных эликсира огнестойкости </span>",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 12,
+              "id": "splash_potion",
+              "id_ru": "Взрывное зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
+            },
+            {
+              "slot": 13,
+              "id": "splash_potion",
+              "id_ru": "Взрывное зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
+            },
+            {
+              "slot": 14,
+              "id": "splash_potion",
+              "id_ru": "Взрывное зелье огнестойкости",
+              "count": 1,
+              "potion": "long_fire_resistance"
             }
           ]
         },
@@ -3033,13 +3030,13 @@ export const shopData = [
         "resultItem": {
           "type": "redstone_block",
           "type_ru": "Редстоуновый блок",
-          "amount": 1,
+          "amount": 64,
           "content": []
         },
         "item1": {
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
-          "amount": 8,
+          "amount": 6,
           "content": []
         },
         "item2": {}
@@ -4959,6 +4956,28 @@ export const shopData = [
                   "enchant_id": "unbreaking",
                   "enchant_id_ru": "Прочность",
                   "lvl": 3
+                }
+              ],
+              "banner_pattern": [
+                {
+                  "color": "light_gray",
+                  "pattern": "gru"
+                },
+                {
+                  "color": "yellow",
+                  "pattern": "cs"
+                },
+                {
+                  "color": "yellow",
+                  "pattern": "ms"
+                },
+                {
+                  "color": "orange",
+                  "pattern": "sc"
+                },
+                {
+                  "color": "gray",
+                  "pattern": "flo"
                 }
               ]
             }
@@ -24245,6 +24264,186 @@ export const shopData = [
           "content": []
         },
         "item2": {}
+      },
+      {
+        "id": "18",
+        "resultItem": {
+          "type": "white_shulker_box",
+          "type_ru": "Белый шалкеровый ящик",
+          "minecraft_custom": "<span style=\"color: #D2B48C\"> Кварц. N.Viento™ </span>",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "quartz_block",
+              "id_ru": "Кварцевый блок",
+              "count": 64
+            },
+            {
+              "slot": 1,
+              "id": "quartz_block",
+              "id_ru": "Кварцевый блок",
+              "count": 64
+            },
+            {
+              "slot": 2,
+              "id": "quartz_block",
+              "id_ru": "Кварцевый блок",
+              "count": 64
+            },
+            {
+              "slot": 3,
+              "id": "quartz_block",
+              "id_ru": "Кварцевый блок",
+              "count": 64
+            },
+            {
+              "slot": 4,
+              "id": "quartz_block",
+              "id_ru": "Кварцевый блок",
+              "count": 64
+            },
+            {
+              "slot": 5,
+              "id": "quartz_block",
+              "id_ru": "Кварцевый блок",
+              "count": 64
+            },
+            {
+              "slot": 6,
+              "id": "quartz_block",
+              "id_ru": "Кварцевый блок",
+              "count": 64
+            },
+            {
+              "slot": 7,
+              "id": "quartz_block",
+              "id_ru": "Кварцевый блок",
+              "count": 64
+            },
+            {
+              "slot": 8,
+              "id": "quartz_block",
+              "id_ru": "Кварцевый блок",
+              "count": 64
+            },
+            {
+              "slot": 9,
+              "id": "quartz_block",
+              "id_ru": "Кварцевый блок",
+              "count": 64
+            },
+            {
+              "slot": 10,
+              "id": "quartz_block",
+              "id_ru": "Кварцевый блок",
+              "count": 64
+            },
+            {
+              "slot": 11,
+              "id": "quartz_block",
+              "id_ru": "Кварцевый блок",
+              "count": 64
+            },
+            {
+              "slot": 12,
+              "id": "quartz_block",
+              "id_ru": "Кварцевый блок",
+              "count": 64
+            },
+            {
+              "slot": 13,
+              "id": "quartz_block",
+              "id_ru": "Кварцевый блок",
+              "count": 64
+            },
+            {
+              "slot": 14,
+              "id": "quartz_block",
+              "id_ru": "Кварцевый блок",
+              "count": 64
+            },
+            {
+              "slot": 15,
+              "id": "quartz_block",
+              "id_ru": "Кварцевый блок",
+              "count": 64
+            },
+            {
+              "slot": 16,
+              "id": "quartz_block",
+              "id_ru": "Кварцевый блок",
+              "count": 64
+            },
+            {
+              "slot": 17,
+              "id": "quartz_block",
+              "id_ru": "Кварцевый блок",
+              "count": 64
+            },
+            {
+              "slot": 18,
+              "id": "quartz_block",
+              "id_ru": "Кварцевый блок",
+              "count": 64
+            },
+            {
+              "slot": 19,
+              "id": "quartz_block",
+              "id_ru": "Кварцевый блок",
+              "count": 64
+            },
+            {
+              "slot": 20,
+              "id": "quartz_block",
+              "id_ru": "Кварцевый блок",
+              "count": 64
+            },
+            {
+              "slot": 21,
+              "id": "quartz_block",
+              "id_ru": "Кварцевый блок",
+              "count": 64
+            },
+            {
+              "slot": 22,
+              "id": "quartz_block",
+              "id_ru": "Кварцевый блок",
+              "count": 64
+            },
+            {
+              "slot": 23,
+              "id": "quartz_block",
+              "id_ru": "Кварцевый блок",
+              "count": 64
+            },
+            {
+              "slot": 24,
+              "id": "quartz_block",
+              "id_ru": "Кварцевый блок",
+              "count": 64
+            },
+            {
+              "slot": 25,
+              "id": "quartz_block",
+              "id_ru": "Кварцевый блок",
+              "count": 64
+            },
+            {
+              "slot": 26,
+              "id": "quartz_block",
+              "id_ru": "Кварцевый блок",
+              "count": 64
+            }
+          ]
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 14,
+          "content": []
+        },
+        "item2": {}
       }
     ]
   },
@@ -31476,6 +31675,82 @@ export const shopData = [
     ]
   },
   {
+    "shop_id": "84",
+    "x": -451,
+    "y": 67,
+    "z": 42,
+    "name": "",
+    "owner": "ChancellorIkseew",
+    "object_profession": "librarian",
+    "object_villager_type": "savanna",
+    "offers": [
+      {
+        "id": "1",
+        "resultItem": {
+          "type": "emerald_block",
+          "type_ru": "Изумрудный блок",
+          "amount": 40,
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "2",
+        "resultItem": {
+          "type": "nether_wart",
+          "type_ru": "Незерский нарост",
+          "amount": 32,
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "3",
+        "resultItem": {
+          "type": "dead_bush",
+          "type_ru": "Мёртвый куст",
+          "amount": 16,
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "4",
+        "resultItem": {
+          "type": "dragon_breath",
+          "type_ru": "Драконье дыхание",
+          "amount": 16,
+          "content": []
+        },
+        "item1": {
+          "type": "deepslate_diamond_ore",
+          "type_ru": "Алмазоносный глубинный сланец",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {}
+      }
+    ]
+  },
+  {
     "shop_id": "100",
     "x": 10,
     "y": 67,
@@ -31497,28 +31772,6 @@ export const shopData = [
             "pattern": "host",
             "pattern_ru": "Вождь"
           },
-          "enchant": [
-            {
-              "enchant_id": "efficiency",
-              "enchant_id_ru": "Эффективность",
-              "lvl": 5
-            },
-            {
-              "enchant_id": "fortune",
-              "enchant_id_ru": "Удача",
-              "lvl": 3
-            },
-            {
-              "enchant_id": "mending",
-              "enchant_id_ru": "Починка",
-              "lvl": 1
-            },
-            {
-              "enchant_id": "unbreaking",
-              "enchant_id_ru": "Прочность",
-              "lvl": 3
-            }
-          ],
           "content": []
         },
         "item1": {
@@ -32381,28 +32634,6 @@ export const shopData = [
             "pattern": "silence",
             "pattern_ru": "Тишина"
           },
-          "enchant": [
-            {
-              "enchant_id": "efficiency",
-              "enchant_id_ru": "Эффективность",
-              "lvl": 5
-            },
-            {
-              "enchant_id": "fortune",
-              "enchant_id_ru": "Удача",
-              "lvl": 3
-            },
-            {
-              "enchant_id": "mending",
-              "enchant_id_ru": "Починка",
-              "lvl": 1
-            },
-            {
-              "enchant_id": "unbreaking",
-              "enchant_id_ru": "Прочность",
-              "lvl": 3
-            }
-          ],
           "content": []
         },
         "item2": {}
@@ -32431,28 +32662,6 @@ export const shopData = [
             "pattern": "silence",
             "pattern_ru": "Тишина"
           },
-          "enchant": [
-            {
-              "enchant_id": "efficiency",
-              "enchant_id_ru": "Эффективность",
-              "lvl": 5
-            },
-            {
-              "enchant_id": "fortune",
-              "enchant_id_ru": "Удача",
-              "lvl": 3
-            },
-            {
-              "enchant_id": "mending",
-              "enchant_id_ru": "Починка",
-              "lvl": 1
-            },
-            {
-              "enchant_id": "unbreaking",
-              "enchant_id_ru": "Прочность",
-              "lvl": 3
-            }
-          ],
           "content": []
         },
         "item2": {}
@@ -32469,28 +32678,6 @@ export const shopData = [
             "pattern": "silence",
             "pattern_ru": "Тишина"
           },
-          "enchant": [
-            {
-              "enchant_id": "efficiency",
-              "enchant_id_ru": "Эффективность",
-              "lvl": 5
-            },
-            {
-              "enchant_id": "fortune",
-              "enchant_id_ru": "Удача",
-              "lvl": 3
-            },
-            {
-              "enchant_id": "mending",
-              "enchant_id_ru": "Починка",
-              "lvl": 1
-            },
-            {
-              "enchant_id": "unbreaking",
-              "enchant_id_ru": "Прочность",
-              "lvl": 3
-            }
-          ],
           "content": []
         },
         "item1": {
@@ -32503,28 +32690,6 @@ export const shopData = [
             "pattern": "silence",
             "pattern_ru": "Тишина"
           },
-          "enchant": [
-            {
-              "enchant_id": "efficiency",
-              "enchant_id_ru": "Эффективность",
-              "lvl": 5
-            },
-            {
-              "enchant_id": "fortune",
-              "enchant_id_ru": "Удача",
-              "lvl": 3
-            },
-            {
-              "enchant_id": "mending",
-              "enchant_id_ru": "Починка",
-              "lvl": 1
-            },
-            {
-              "enchant_id": "unbreaking",
-              "enchant_id_ru": "Прочность",
-              "lvl": 3
-            }
-          ],
           "content": []
         },
         "item2": {}
@@ -32541,28 +32706,6 @@ export const shopData = [
             "pattern": "silence",
             "pattern_ru": "Тишина"
           },
-          "enchant": [
-            {
-              "enchant_id": "efficiency",
-              "enchant_id_ru": "Эффективность",
-              "lvl": 5
-            },
-            {
-              "enchant_id": "fortune",
-              "enchant_id_ru": "Удача",
-              "lvl": 3
-            },
-            {
-              "enchant_id": "mending",
-              "enchant_id_ru": "Починка",
-              "lvl": 1
-            },
-            {
-              "enchant_id": "unbreaking",
-              "enchant_id_ru": "Прочность",
-              "lvl": 3
-            }
-          ],
           "content": []
         },
         "item1": {
@@ -32575,28 +32718,6 @@ export const shopData = [
             "pattern": "silence",
             "pattern_ru": "Тишина"
           },
-          "enchant": [
-            {
-              "enchant_id": "efficiency",
-              "enchant_id_ru": "Эффективность",
-              "lvl": 5
-            },
-            {
-              "enchant_id": "fortune",
-              "enchant_id_ru": "Удача",
-              "lvl": 3
-            },
-            {
-              "enchant_id": "mending",
-              "enchant_id_ru": "Починка",
-              "lvl": 1
-            },
-            {
-              "enchant_id": "unbreaking",
-              "enchant_id_ru": "Прочность",
-              "lvl": 3
-            }
-          ],
           "content": []
         },
         "item2": {}
@@ -32613,28 +32734,6 @@ export const shopData = [
             "pattern": "silence",
             "pattern_ru": "Тишина"
           },
-          "enchant": [
-            {
-              "enchant_id": "efficiency",
-              "enchant_id_ru": "Эффективность",
-              "lvl": 5
-            },
-            {
-              "enchant_id": "fortune",
-              "enchant_id_ru": "Удача",
-              "lvl": 3
-            },
-            {
-              "enchant_id": "mending",
-              "enchant_id_ru": "Починка",
-              "lvl": 1
-            },
-            {
-              "enchant_id": "unbreaking",
-              "enchant_id_ru": "Прочность",
-              "lvl": 3
-            }
-          ],
           "content": []
         },
         "item1": {
@@ -32647,28 +32746,6 @@ export const shopData = [
             "pattern": "silence",
             "pattern_ru": "Тишина"
           },
-          "enchant": [
-            {
-              "enchant_id": "efficiency",
-              "enchant_id_ru": "Эффективность",
-              "lvl": 5
-            },
-            {
-              "enchant_id": "fortune",
-              "enchant_id_ru": "Удача",
-              "lvl": 3
-            },
-            {
-              "enchant_id": "mending",
-              "enchant_id_ru": "Починка",
-              "lvl": 1
-            },
-            {
-              "enchant_id": "unbreaking",
-              "enchant_id_ru": "Прочность",
-              "lvl": 3
-            }
-          ],
           "content": []
         },
         "item2": {}
@@ -33063,6 +33140,824 @@ export const shopData = [
               "trim": {
                 "material": "redstone",
                 "material_ru": "Редстоун",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            }
+          ]
+        },
+        "item2": {}
+      },
+      {
+        "id": "29",
+        "resultItem": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "enchant": [
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            }
+          ],
+          "trim": {
+            "material": "copper",
+            "material_ru": "Медь",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "enchant": [
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            }
+          ],
+          "trim": {
+            "material": "copper",
+            "material_ru": "Медь",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "30",
+        "resultItem": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "enchant": [
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            }
+          ],
+          "trim": {
+            "material": "netherite",
+            "material_ru": "Незерит",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "enchant": [
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            }
+          ],
+          "trim": {
+            "material": "netherite",
+            "material_ru": "Незерит",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "31",
+        "resultItem": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "enchant": [
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            }
+          ],
+          "trim": {
+            "material": "amethyst",
+            "material_ru": "Аметист",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "enchant": [
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            }
+          ],
+          "trim": {
+            "material": "amethyst",
+            "material_ru": "Аметист",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "32",
+        "resultItem": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "enchant": [
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            }
+          ],
+          "trim": {
+            "material": "diamond",
+            "material_ru": "Алмаз",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "enchant": [
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            }
+          ],
+          "trim": {
+            "material": "diamond",
+            "material_ru": "Алмаз",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "33",
+        "resultItem": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "enchant": [
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            }
+          ],
+          "trim": {
+            "material": "emerald",
+            "material_ru": "Изумруд",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "enchant": [
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            }
+          ],
+          "trim": {
+            "material": "emerald",
+            "material_ru": "Изумруд",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "34",
+        "resultItem": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "enchant": [
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            }
+          ],
+          "trim": {
+            "material": "gold",
+            "material_ru": "Золото",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "enchant": [
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            }
+          ],
+          "trim": {
+            "material": "gold",
+            "material_ru": "Золото",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "35",
+        "resultItem": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "enchant": [
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            }
+          ],
+          "trim": {
+            "material": "iron",
+            "material_ru": "Железо",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "enchant": [
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            }
+          ],
+          "trim": {
+            "material": "iron",
+            "material_ru": "Железо",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "36",
+        "resultItem": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "enchant": [
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            }
+          ],
+          "trim": {
+            "material": "lapis",
+            "material_ru": "Лазурит",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "enchant": [
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            }
+          ],
+          "trim": {
+            "material": "lapis",
+            "material_ru": "Лазурит",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "37",
+        "resultItem": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "enchant": [
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            }
+          ],
+          "trim": {
+            "material": "quartz",
+            "material_ru": "Кварц",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "enchant": [
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            }
+          ],
+          "trim": {
+            "material": "quartz",
+            "material_ru": "Кварц",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "38",
+        "resultItem": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "enchant": [
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            }
+          ],
+          "trim": {
+            "material": "redstone",
+            "material_ru": "Редстоун",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item1": {
+          "type": "netherite_chestplate",
+          "type_ru": "Незеритовый нагрудник",
+          "amount": 1,
+          "enchant": [
+            {
+              "enchant_id": "mending",
+              "enchant_id_ru": "Починка",
+              "lvl": 1
+            }
+          ],
+          "trim": {
+            "material": "redstone",
+            "material_ru": "Редстоун",
+            "pattern": "silence",
+            "pattern_ru": "Тишина"
+          },
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "39",
+        "resultItem": {
+          "type": "white_shulker_box",
+          "type_ru": "Белый шалкеровый ящик",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "enchant": [
+                {
+                  "enchant_id": "mending",
+                  "enchant_id_ru": "Починка",
+                  "lvl": 1
+                }
+              ],
+              "trim": {
+                "material": "quartz",
+                "material_ru": "Кварц",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            },
+            {
+              "slot": 1,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "enchant": [
+                {
+                  "enchant_id": "mending",
+                  "enchant_id_ru": "Починка",
+                  "lvl": 1
+                }
+              ],
+              "trim": {
+                "material": "copper",
+                "material_ru": "Медь",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            },
+            {
+              "slot": 2,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "enchant": [
+                {
+                  "enchant_id": "mending",
+                  "enchant_id_ru": "Починка",
+                  "lvl": 1
+                }
+              ],
+              "trim": {
+                "material": "redstone",
+                "material_ru": "Редстоун",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            },
+            {
+              "slot": 3,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "enchant": [
+                {
+                  "enchant_id": "mending",
+                  "enchant_id_ru": "Починка",
+                  "lvl": 1
+                }
+              ],
+              "trim": {
+                "material": "netherite",
+                "material_ru": "Незерит",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            },
+            {
+              "slot": 4,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "enchant": [
+                {
+                  "enchant_id": "mending",
+                  "enchant_id_ru": "Починка",
+                  "lvl": 1
+                }
+              ],
+              "trim": {
+                "material": "diamond",
+                "material_ru": "Алмаз",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            },
+            {
+              "slot": 5,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "enchant": [
+                {
+                  "enchant_id": "mending",
+                  "enchant_id_ru": "Починка",
+                  "lvl": 1
+                }
+              ],
+              "trim": {
+                "material": "emerald",
+                "material_ru": "Изумруд",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            },
+            {
+              "slot": 6,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "enchant": [
+                {
+                  "enchant_id": "mending",
+                  "enchant_id_ru": "Починка",
+                  "lvl": 1
+                }
+              ],
+              "trim": {
+                "material": "gold",
+                "material_ru": "Золото",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            },
+            {
+              "slot": 7,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "enchant": [
+                {
+                  "enchant_id": "mending",
+                  "enchant_id_ru": "Починка",
+                  "lvl": 1
+                }
+              ],
+              "trim": {
+                "material": "iron",
+                "material_ru": "Железо",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            },
+            {
+              "slot": 8,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "enchant": [
+                {
+                  "enchant_id": "mending",
+                  "enchant_id_ru": "Починка",
+                  "lvl": 1
+                }
+              ],
+              "trim": {
+                "material": "lapis",
+                "material_ru": "Лазурит",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            },
+            {
+              "slot": 9,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "enchant": [
+                {
+                  "enchant_id": "mending",
+                  "enchant_id_ru": "Починка",
+                  "lvl": 1
+                }
+              ],
+              "trim": {
+                "material": "amethyst",
+                "material_ru": "Аметист",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            }
+          ]
+        },
+        "item1": {
+          "type": "white_shulker_box",
+          "type_ru": "Белый шалкеровый ящик",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "enchant": [
+                {
+                  "enchant_id": "mending",
+                  "enchant_id_ru": "Починка",
+                  "lvl": 1
+                }
+              ],
+              "trim": {
+                "material": "quartz",
+                "material_ru": "Кварц",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            },
+            {
+              "slot": 1,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "enchant": [
+                {
+                  "enchant_id": "mending",
+                  "enchant_id_ru": "Починка",
+                  "lvl": 1
+                }
+              ],
+              "trim": {
+                "material": "copper",
+                "material_ru": "Медь",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            },
+            {
+              "slot": 2,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "enchant": [
+                {
+                  "enchant_id": "mending",
+                  "enchant_id_ru": "Починка",
+                  "lvl": 1
+                }
+              ],
+              "trim": {
+                "material": "redstone",
+                "material_ru": "Редстоун",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            },
+            {
+              "slot": 3,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "enchant": [
+                {
+                  "enchant_id": "mending",
+                  "enchant_id_ru": "Починка",
+                  "lvl": 1
+                }
+              ],
+              "trim": {
+                "material": "netherite",
+                "material_ru": "Незерит",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            },
+            {
+              "slot": 4,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "enchant": [
+                {
+                  "enchant_id": "mending",
+                  "enchant_id_ru": "Починка",
+                  "lvl": 1
+                }
+              ],
+              "trim": {
+                "material": "diamond",
+                "material_ru": "Алмаз",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            },
+            {
+              "slot": 5,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "enchant": [
+                {
+                  "enchant_id": "mending",
+                  "enchant_id_ru": "Починка",
+                  "lvl": 1
+                }
+              ],
+              "trim": {
+                "material": "emerald",
+                "material_ru": "Изумруд",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            },
+            {
+              "slot": 6,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "enchant": [
+                {
+                  "enchant_id": "mending",
+                  "enchant_id_ru": "Починка",
+                  "lvl": 1
+                }
+              ],
+              "trim": {
+                "material": "gold",
+                "material_ru": "Золото",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            },
+            {
+              "slot": 7,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "enchant": [
+                {
+                  "enchant_id": "mending",
+                  "enchant_id_ru": "Починка",
+                  "lvl": 1
+                }
+              ],
+              "trim": {
+                "material": "iron",
+                "material_ru": "Железо",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            },
+            {
+              "slot": 8,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "enchant": [
+                {
+                  "enchant_id": "mending",
+                  "enchant_id_ru": "Починка",
+                  "lvl": 1
+                }
+              ],
+              "trim": {
+                "material": "lapis",
+                "material_ru": "Лазурит",
+                "pattern": "silence",
+                "pattern_ru": "Тишина"
+              }
+            },
+            {
+              "slot": 9,
+              "id": "netherite_chestplate",
+              "id_ru": "Незеритовый нагрудник",
+              "count": 1,
+              "enchant": [
+                {
+                  "enchant_id": "mending",
+                  "enchant_id_ru": "Починка",
+                  "lvl": 1
+                }
+              ],
+              "trim": {
+                "material": "amethyst",
+                "material_ru": "Аметист",
                 "pattern": "silence",
                 "pattern_ru": "Тишина"
               }
@@ -34235,6 +35130,3522 @@ export const shopData = [
         },
         "item2": {}
       }
+    ]
+  },
+  {
+    "shop_id": "104",
+    "x": 24,
+    "y": 65,
+    "z": 6,
+    "name": "",
+    "owner": "prestig9110",
+    "object_profession": "none",
+    "object_villager_type": "plains",
+    "offers": [
+      {
+        "id": "1",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "rs"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "rs"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "2",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "ls"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "ls"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "3",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "ts"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "ts"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "4",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "bs"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "bs"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "5",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "tr"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "tr"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "6",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "tl"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "tl"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "7",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "br"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "br"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "8",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "bl"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "bl"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "9",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "cs"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "cs"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "10",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "ms"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "ms"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "11",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "drs"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "drs"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "12",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "dls"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "dls"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "13",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "cr"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "cr"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "14",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "ss"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "ss"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "15",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "sc"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "sc"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "16",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "bt"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "bt"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "17",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "tt"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "tt"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "18",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "bts"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "bts"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "19",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "tts"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "tts"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "20",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "ld"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "ld"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "21",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "rd"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "rd"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "22",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "lud"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "lud"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "23",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "rud"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "rud"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "24",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "mc"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "mc"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "25",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "mr"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "mr"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "26",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "vh"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "vh"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "27",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "hh"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "hh"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "28",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "gru"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "gru"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "29",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "cre"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "cre"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "30",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "flo"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "flo"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "31",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "gra"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "gra"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "32",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "bri"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "bri"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "33",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "cbo"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "cbo"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "34",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "bo"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "bo"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "35",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "vhr"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "vhr"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "36",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "hhb"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "hhb"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "37",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "pig"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "pig"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "38",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "glb"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "glb"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "39",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "moj"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "moj"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "40",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "sku"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "sku"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "41",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "cyan",
+              "pattern": "mr"
+            },
+            {
+              "color": "light_gray",
+              "pattern": "bs"
+            },
+            {
+              "color": "gray",
+              "pattern": "cs"
+            },
+            {
+              "color": "light_gray",
+              "pattern": "bo"
+            },
+            {
+              "color": "black",
+              "pattern": "ms"
+            },
+            {
+              "color": "light_gray",
+              "pattern": "hh"
+            },
+            {
+              "color": "light_gray",
+              "pattern": "mc"
+            },
+            {
+              "color": "black",
+              "pattern": "bo"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "cyan",
+              "pattern": "mr"
+            },
+            {
+              "color": "light_gray",
+              "pattern": "bs"
+            },
+            {
+              "color": "gray",
+              "pattern": "cs"
+            },
+            {
+              "color": "light_gray",
+              "pattern": "bo"
+            },
+            {
+              "color": "black",
+              "pattern": "ms"
+            },
+            {
+              "color": "light_gray",
+              "pattern": "hh"
+            },
+            {
+              "color": "light_gray",
+              "pattern": "mc"
+            },
+            {
+              "color": "black",
+              "pattern": "bo"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "42",
+        "resultItem": {
+          "type": "white_shulker_box",
+          "type_ru": "Белый шалкеровый ящик",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "rs"
+                }
+              ]
+            },
+            {
+              "slot": 1,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "ls"
+                }
+              ]
+            },
+            {
+              "slot": 2,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "ts"
+                }
+              ]
+            },
+            {
+              "slot": 3,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "tr"
+                }
+              ]
+            },
+            {
+              "slot": 4,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "bs"
+                }
+              ]
+            },
+            {
+              "slot": 5,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "tl"
+                }
+              ]
+            },
+            {
+              "slot": 6,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "br"
+                }
+              ]
+            },
+            {
+              "slot": 7,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "bl"
+                }
+              ]
+            },
+            {
+              "slot": 8,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "cs"
+                }
+              ]
+            },
+            {
+              "slot": 9,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "ms"
+                }
+              ]
+            },
+            {
+              "slot": 10,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "drs"
+                }
+              ]
+            },
+            {
+              "slot": 11,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "dls"
+                }
+              ]
+            },
+            {
+              "slot": 12,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "cr"
+                }
+              ]
+            },
+            {
+              "slot": 13,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "ss"
+                }
+              ]
+            },
+            {
+              "slot": 14,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "sc"
+                }
+              ]
+            },
+            {
+              "slot": 15,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "bt"
+                }
+              ]
+            },
+            {
+              "slot": 16,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "tt"
+                }
+              ]
+            },
+            {
+              "slot": 17,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "bts"
+                }
+              ]
+            },
+            {
+              "slot": 18,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "tts"
+                }
+              ]
+            },
+            {
+              "slot": 19,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "ld"
+                }
+              ]
+            },
+            {
+              "slot": 20,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "rd"
+                }
+              ]
+            },
+            {
+              "slot": 21,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "lud"
+                }
+              ]
+            },
+            {
+              "slot": 22,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "rud"
+                }
+              ]
+            },
+            {
+              "slot": 23,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "mc"
+                }
+              ]
+            },
+            {
+              "slot": 24,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "mr"
+                }
+              ]
+            },
+            {
+              "slot": 25,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "hh"
+                }
+              ]
+            },
+            {
+              "slot": 26,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "vh"
+                }
+              ]
+            }
+          ]
+        },
+        "item1": {
+          "type": "white_shulker_box",
+          "type_ru": "Белый шалкеровый ящик",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "rs"
+                }
+              ]
+            },
+            {
+              "slot": 1,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "ls"
+                }
+              ]
+            },
+            {
+              "slot": 2,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "ts"
+                }
+              ]
+            },
+            {
+              "slot": 3,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "tr"
+                }
+              ]
+            },
+            {
+              "slot": 4,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "bs"
+                }
+              ]
+            },
+            {
+              "slot": 5,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "tl"
+                }
+              ]
+            },
+            {
+              "slot": 6,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "br"
+                }
+              ]
+            },
+            {
+              "slot": 7,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "bl"
+                }
+              ]
+            },
+            {
+              "slot": 8,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "cs"
+                }
+              ]
+            },
+            {
+              "slot": 9,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "ms"
+                }
+              ]
+            },
+            {
+              "slot": 10,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "drs"
+                }
+              ]
+            },
+            {
+              "slot": 11,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "dls"
+                }
+              ]
+            },
+            {
+              "slot": 12,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "cr"
+                }
+              ]
+            },
+            {
+              "slot": 13,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "ss"
+                }
+              ]
+            },
+            {
+              "slot": 14,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "sc"
+                }
+              ]
+            },
+            {
+              "slot": 15,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "bt"
+                }
+              ]
+            },
+            {
+              "slot": 16,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "tt"
+                }
+              ]
+            },
+            {
+              "slot": 17,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "bts"
+                }
+              ]
+            },
+            {
+              "slot": 18,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "tts"
+                }
+              ]
+            },
+            {
+              "slot": 19,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "ld"
+                }
+              ]
+            },
+            {
+              "slot": 20,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "rd"
+                }
+              ]
+            },
+            {
+              "slot": 21,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "lud"
+                }
+              ]
+            },
+            {
+              "slot": 22,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "rud"
+                }
+              ]
+            },
+            {
+              "slot": 23,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "mc"
+                }
+              ]
+            },
+            {
+              "slot": 24,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "mr"
+                }
+              ]
+            },
+            {
+              "slot": 25,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "hh"
+                }
+              ]
+            },
+            {
+              "slot": 26,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "vh"
+                }
+              ]
+            }
+          ]
+        },
+        "item2": {}
+      },
+      {
+        "id": "43",
+        "resultItem": {
+          "type": "white_shulker_box",
+          "type_ru": "Белый шалкеровый ящик",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "gru"
+                }
+              ]
+            },
+            {
+              "slot": 1,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "cre"
+                }
+              ]
+            },
+            {
+              "slot": 2,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "flo"
+                }
+              ]
+            },
+            {
+              "slot": 3,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "bri"
+                }
+              ]
+            },
+            {
+              "slot": 4,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "gra"
+                }
+              ]
+            },
+            {
+              "slot": 5,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "cbo"
+                }
+              ]
+            },
+            {
+              "slot": 6,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "bo"
+                }
+              ]
+            },
+            {
+              "slot": 7,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "vhr"
+                }
+              ]
+            },
+            {
+              "slot": 8,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "hhb"
+                }
+              ]
+            },
+            {
+              "slot": 9,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "pig"
+                }
+              ]
+            },
+            {
+              "slot": 10,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "glb"
+                }
+              ]
+            },
+            {
+              "slot": 11,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "moj"
+                }
+              ]
+            },
+            {
+              "slot": 12,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "sku"
+                }
+              ]
+            },
+            {
+              "slot": 13,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "cyan",
+                  "pattern": "mr"
+                },
+                {
+                  "color": "light_gray",
+                  "pattern": "bs"
+                },
+                {
+                  "color": "gray",
+                  "pattern": "cs"
+                },
+                {
+                  "color": "light_gray",
+                  "pattern": "bo"
+                },
+                {
+                  "color": "black",
+                  "pattern": "ms"
+                },
+                {
+                  "color": "light_gray",
+                  "pattern": "hh"
+                },
+                {
+                  "color": "light_gray",
+                  "pattern": "mc"
+                },
+                {
+                  "color": "black",
+                  "pattern": "bo"
+                }
+              ]
+            }
+          ]
+        },
+        "item1": {
+          "type": "white_shulker_box",
+          "type_ru": "Белый шалкеровый ящик",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "gru"
+                }
+              ]
+            },
+            {
+              "slot": 1,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "cre"
+                }
+              ]
+            },
+            {
+              "slot": 2,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "flo"
+                }
+              ]
+            },
+            {
+              "slot": 3,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "bri"
+                }
+              ]
+            },
+            {
+              "slot": 4,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "gra"
+                }
+              ]
+            },
+            {
+              "slot": 5,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "cbo"
+                }
+              ]
+            },
+            {
+              "slot": 6,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "bo"
+                }
+              ]
+            },
+            {
+              "slot": 7,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "vhr"
+                }
+              ]
+            },
+            {
+              "slot": 8,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "hhb"
+                }
+              ]
+            },
+            {
+              "slot": 9,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "pig"
+                }
+              ]
+            },
+            {
+              "slot": 10,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "glb"
+                }
+              ]
+            },
+            {
+              "slot": 11,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "moj"
+                }
+              ]
+            },
+            {
+              "slot": 12,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "sku"
+                }
+              ]
+            },
+            {
+              "slot": 13,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "cyan",
+                  "pattern": "mr"
+                },
+                {
+                  "color": "light_gray",
+                  "pattern": "bs"
+                },
+                {
+                  "color": "gray",
+                  "pattern": "cs"
+                },
+                {
+                  "color": "light_gray",
+                  "pattern": "bo"
+                },
+                {
+                  "color": "black",
+                  "pattern": "ms"
+                },
+                {
+                  "color": "light_gray",
+                  "pattern": "hh"
+                },
+                {
+                  "color": "light_gray",
+                  "pattern": "mc"
+                },
+                {
+                  "color": "black",
+                  "pattern": "bo"
+                }
+              ]
+            }
+          ]
+        },
+        "item2": {}
+      },
+      {
+        "id": "44",
+        "resultItem": {
+          "type": "gray_banner",
+          "type_ru": "Серый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "white",
+              "pattern": "bt"
+            },
+            {
+              "color": "black",
+              "pattern": "ts"
+            },
+            {
+              "color": "red",
+              "pattern": "cr"
+            },
+            {
+              "color": "magenta",
+              "pattern": "cbo"
+            },
+            {
+              "color": "brown",
+              "pattern": "mc"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "gray_banner",
+          "type_ru": "Серый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "white",
+              "pattern": "bt"
+            },
+            {
+              "color": "black",
+              "pattern": "ts"
+            },
+            {
+              "color": "red",
+              "pattern": "cr"
+            },
+            {
+              "color": "magenta",
+              "pattern": "cbo"
+            },
+            {
+              "color": "brown",
+              "pattern": "mc"
+            }
+          ],
+          "content": []
+        },
+        "item2": {}
+      },
+      {
+        "id": "45",
+        "resultItem": {
+          "type": "white_shulker_box",
+          "type_ru": "Белый шалкеровый ящик",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "gray_banner",
+              "id_ru": "Серый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "pattern": "bt"
+                },
+                {
+                  "color": "black",
+                  "pattern": "ts"
+                },
+                {
+                  "color": "red",
+                  "pattern": "cr"
+                },
+                {
+                  "color": "magenta",
+                  "pattern": "cbo"
+                },
+                {
+                  "color": "brown",
+                  "pattern": "mc"
+                }
+              ]
+            }
+          ]
+        },
+        "item1": {
+          "type": "white_shulker_box",
+          "type_ru": "Белый шалкеровый ящик",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "gray_banner",
+              "id_ru": "Серый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "pattern": "bt"
+                },
+                {
+                  "color": "black",
+                  "pattern": "ts"
+                },
+                {
+                  "color": "red",
+                  "pattern": "cr"
+                },
+                {
+                  "color": "magenta",
+                  "pattern": "cbo"
+                },
+                {
+                  "color": "brown",
+                  "pattern": "mc"
+                }
+              ]
+            }
+          ]
+        },
+        "item2": {}
+      }
+    ]
+  },
+  {
+    "shop_id": "106",
+    "x": 15,
+    "y": 65,
+    "z": 9,
+    "name": "",
+    "owner": "prestig9110",
+    "object_profession": "none",
+    "object_villager_type": "plains",
+    "offers": [
+      {
+        "id": "1",
+        "resultItem": {
+          "type": "black_banner",
+          "type_ru": "Чёрный флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "white",
+              "pattern": "bl"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "black_banner",
+          "type_ru": "Чёрный флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "white",
+              "pattern": "bl"
+            }
+          ],
+          "content": []
+        },
+        "item2": {
+          "type": "white_dye",
+          "type_ru": "Белый краситель",
+          "amount": 1,
+          "content": []
+        }
+      },
+      {
+        "id": "2",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "light_gray",
+              "pattern": "bl"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "light_gray",
+              "pattern": "bl"
+            }
+          ],
+          "content": []
+        },
+        "item2": {
+          "type": "light_gray_dye",
+          "type_ru": "Светло-серый краситель",
+          "amount": 1,
+          "content": []
+        }
+      },
+      {
+        "id": "3",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "gray",
+              "pattern": "bl"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "gray",
+              "pattern": "bl"
+            }
+          ],
+          "content": []
+        },
+        "item2": {
+          "type": "gray_dye",
+          "type_ru": "Серый краситель",
+          "amount": 1,
+          "content": []
+        }
+      },
+      {
+        "id": "4",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "black",
+              "pattern": "bl"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "black",
+              "pattern": "bl"
+            }
+          ],
+          "content": []
+        },
+        "item2": {
+          "type": "black_dye",
+          "type_ru": "Чёрный краситель",
+          "amount": 1,
+          "content": []
+        }
+      },
+      {
+        "id": "5",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "brown",
+              "pattern": "bl"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "brown",
+              "pattern": "bl"
+            }
+          ],
+          "content": []
+        },
+        "item2": {
+          "type": "brown_dye",
+          "type_ru": "Коричневый краситель",
+          "amount": 1,
+          "content": []
+        }
+      },
+      {
+        "id": "6",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "bl"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "red",
+              "pattern": "bl"
+            }
+          ],
+          "content": []
+        },
+        "item2": {
+          "type": "red_dye",
+          "type_ru": "Красный краситель",
+          "amount": 1,
+          "content": []
+        }
+      },
+      {
+        "id": "7",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "orange",
+              "pattern": "bl"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "orange",
+              "pattern": "bl"
+            }
+          ],
+          "content": []
+        },
+        "item2": {
+          "type": "orange_dye",
+          "type_ru": "Оранжевый краситель",
+          "amount": 1,
+          "content": []
+        }
+      },
+      {
+        "id": "8",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "yellow",
+              "pattern": "bl"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "yellow",
+              "pattern": "bl"
+            }
+          ],
+          "content": []
+        },
+        "item2": {
+          "type": "yellow_dye",
+          "type_ru": "Жёлтый краситель",
+          "amount": 1,
+          "content": []
+        }
+      },
+      {
+        "id": "9",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "lime",
+              "pattern": "bl"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "lime",
+              "pattern": "bl"
+            }
+          ],
+          "content": []
+        },
+        "item2": {
+          "type": "lime_dye",
+          "type_ru": "Лаймовый краситель",
+          "amount": 1,
+          "content": []
+        }
+      },
+      {
+        "id": "10",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "green",
+              "pattern": "bl"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "green",
+              "pattern": "bl"
+            }
+          ],
+          "content": []
+        },
+        "item2": {
+          "type": "green_dye",
+          "type_ru": "Зелёный краситель",
+          "amount": 1,
+          "content": []
+        }
+      },
+      {
+        "id": "11",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "cyan",
+              "pattern": "bl"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "cyan",
+              "pattern": "bl"
+            }
+          ],
+          "content": []
+        },
+        "item2": {
+          "type": "cyan_dye",
+          "type_ru": "Бирюзовый краситель",
+          "amount": 1,
+          "content": []
+        }
+      },
+      {
+        "id": "12",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "light_blue",
+              "pattern": "bl"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "light_blue",
+              "pattern": "bl"
+            }
+          ],
+          "content": []
+        },
+        "item2": {
+          "type": "light_blue_dye",
+          "type_ru": "Голубой краситель",
+          "amount": 1,
+          "content": []
+        }
+      },
+      {
+        "id": "13",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "blue",
+              "pattern": "bl"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "blue",
+              "pattern": "bl"
+            }
+          ],
+          "content": []
+        },
+        "item2": {
+          "type": "blue_dye",
+          "type_ru": "Синий краситель",
+          "amount": 1,
+          "content": []
+        }
+      },
+      {
+        "id": "14",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "purple",
+              "pattern": "bl"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "purple",
+              "pattern": "bl"
+            }
+          ],
+          "content": []
+        },
+        "item2": {
+          "type": "purple_dye",
+          "type_ru": "Фиолетовый краситель",
+          "amount": 1,
+          "content": []
+        }
+      },
+      {
+        "id": "15",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "magenta",
+              "pattern": "bl"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "magenta",
+              "pattern": "bl"
+            }
+          ],
+          "content": []
+        },
+        "item2": {
+          "type": "magenta_dye",
+          "type_ru": "Пурпурный краситель",
+          "amount": 1,
+          "content": []
+        }
+      },
+      {
+        "id": "16",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "pink",
+              "pattern": "bl"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "pink",
+              "pattern": "bl"
+            }
+          ],
+          "content": []
+        },
+        "item2": {
+          "type": "pink_dye",
+          "type_ru": "Розовый краситель",
+          "amount": 1,
+          "content": []
+        }
+      },
+      {
+        "id": "17",
+        "resultItem": {
+          "type": "white_shulker_box",
+          "type_ru": "Белый шалкеровый ящик",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "black_banner",
+              "id_ru": "Чёрный флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "pattern": "bl"
+                }
+              ]
+            },
+            {
+              "slot": 1,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "light_gray",
+                  "pattern": "bl"
+                }
+              ]
+            },
+            {
+              "slot": 2,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "gray",
+                  "pattern": "bl"
+                }
+              ]
+            },
+            {
+              "slot": 3,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "black",
+                  "pattern": "bl"
+                }
+              ]
+            },
+            {
+              "slot": 4,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "brown",
+                  "pattern": "bl"
+                }
+              ]
+            },
+            {
+              "slot": 5,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "bl"
+                }
+              ]
+            },
+            {
+              "slot": 6,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "orange",
+                  "pattern": "bl"
+                }
+              ]
+            },
+            {
+              "slot": 7,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "yellow",
+                  "pattern": "bl"
+                }
+              ]
+            },
+            {
+              "slot": 8,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "lime",
+                  "pattern": "bl"
+                }
+              ]
+            },
+            {
+              "slot": 9,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "green",
+                  "pattern": "bl"
+                }
+              ]
+            },
+            {
+              "slot": 10,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "cyan",
+                  "pattern": "bl"
+                }
+              ]
+            },
+            {
+              "slot": 11,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "light_blue",
+                  "pattern": "bl"
+                }
+              ]
+            },
+            {
+              "slot": 12,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "blue",
+                  "pattern": "bl"
+                }
+              ]
+            },
+            {
+              "slot": 13,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "purple",
+                  "pattern": "bl"
+                }
+              ]
+            },
+            {
+              "slot": 14,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "magenta",
+                  "pattern": "bl"
+                }
+              ]
+            },
+            {
+              "slot": 15,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "pink",
+                  "pattern": "bl"
+                }
+              ]
+            }
+          ]
+        },
+        "item1": {
+          "type": "white_shulker_box",
+          "type_ru": "Белый шалкеровый ящик",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "black_banner",
+              "id_ru": "Чёрный флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "pattern": "bl"
+                }
+              ]
+            },
+            {
+              "slot": 1,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "light_gray",
+                  "pattern": "bl"
+                }
+              ]
+            },
+            {
+              "slot": 2,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "gray",
+                  "pattern": "bl"
+                }
+              ]
+            },
+            {
+              "slot": 3,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "black",
+                  "pattern": "bl"
+                }
+              ]
+            },
+            {
+              "slot": 4,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "brown",
+                  "pattern": "bl"
+                }
+              ]
+            },
+            {
+              "slot": 5,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "red",
+                  "pattern": "bl"
+                }
+              ]
+            },
+            {
+              "slot": 6,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "orange",
+                  "pattern": "bl"
+                }
+              ]
+            },
+            {
+              "slot": 7,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "yellow",
+                  "pattern": "bl"
+                }
+              ]
+            },
+            {
+              "slot": 8,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "lime",
+                  "pattern": "bl"
+                }
+              ]
+            },
+            {
+              "slot": 9,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "green",
+                  "pattern": "bl"
+                }
+              ]
+            },
+            {
+              "slot": 10,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "cyan",
+                  "pattern": "bl"
+                }
+              ]
+            },
+            {
+              "slot": 11,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "light_blue",
+                  "pattern": "bl"
+                }
+              ]
+            },
+            {
+              "slot": 12,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "blue",
+                  "pattern": "bl"
+                }
+              ]
+            },
+            {
+              "slot": 13,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "purple",
+                  "pattern": "bl"
+                }
+              ]
+            },
+            {
+              "slot": 14,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "magenta",
+                  "pattern": "bl"
+                }
+              ]
+            },
+            {
+              "slot": 15,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "pink",
+                  "pattern": "bl"
+                }
+              ]
+            }
+          ]
+        },
+        "item2": {}
+      },
+      {
+        "id": "18",
+        "resultItem": {
+          "type": "white_shulker_box",
+          "type_ru": "Белый шалкеровый ящик",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "cyan",
+                  "pattern": "mr"
+                },
+                {
+                  "color": "light_gray",
+                  "pattern": "bs"
+                },
+                {
+                  "color": "gray",
+                  "pattern": "cs"
+                },
+                {
+                  "color": "light_gray",
+                  "pattern": "bo"
+                },
+                {
+                  "color": "black",
+                  "pattern": "ms"
+                },
+                {
+                  "color": "light_gray",
+                  "pattern": "hh"
+                },
+                {
+                  "color": "light_gray",
+                  "pattern": "mc"
+                },
+                {
+                  "color": "black",
+                  "pattern": "bo"
+                }
+              ]
+            }
+          ]
+        },
+        "item1": {
+          "type": "white_shulker_box",
+          "type_ru": "Белый шалкеровый ящик",
+          "amount": 1,
+          "content": [
+            {
+              "slot": 0,
+              "id": "white_banner",
+              "id_ru": "Белый флаг",
+              "count": 1,
+              "banner_pattern": [
+                {
+                  "color": "cyan",
+                  "pattern": "mr"
+                },
+                {
+                  "color": "light_gray",
+                  "pattern": "bs"
+                },
+                {
+                  "color": "gray",
+                  "pattern": "cs"
+                },
+                {
+                  "color": "light_gray",
+                  "pattern": "bo"
+                },
+                {
+                  "color": "black",
+                  "pattern": "ms"
+                },
+                {
+                  "color": "light_gray",
+                  "pattern": "hh"
+                },
+                {
+                  "color": "light_gray",
+                  "pattern": "mc"
+                },
+                {
+                  "color": "black",
+                  "pattern": "bo"
+                }
+              ]
+            }
+          ]
+        },
+        "item2": {}
+      },
+      {
+        "id": "19",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "content": []
+        },
+        "item1": {
+          "type": "blue_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "content": []
+        },
+        "item2": {
+          "type": "pink_dye",
+          "type_ru": "Розовый краситель",
+          "amount": 1,
+          "content": []
+        }
+      },
+      {
+        "id": "20",
+        "resultItem": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "pink",
+              "pattern": "bl"
+            }
+          ],
+          "content": []
+        },
+        "item1": {
+          "type": "white_banner",
+          "type_ru": "Белый флаг",
+          "amount": 1,
+          "banner_pattern": [
+            {
+              "color": "pink",
+              "pattern": "bl"
+            }
+          ],
+          "content": []
+        },
+        "item2": {
+          "type": "pink_dye",
+          "type_ru": "Розовый краситель",
+          "amount": 1,
+          "content": []
+        }
+      },
     ]
   }
 ];

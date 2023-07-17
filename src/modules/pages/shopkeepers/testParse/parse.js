@@ -1,14 +1,15 @@
 const fs = require('fs');
 const yaml = require('js-yaml');
 const nbt = require('nbt');
-const { Buffer } = require('buffer');
+const {Buffer} = require('buffer');
 const convert = require('color-convert');
 
-const { transformedArray } = require("./item_name_data");
-const { enchantArray } = require("./enchantmentsArray");
-const { goat_horn_array } = require("./goat_horn");
-const { armors_paterns_array } = require('./PaternsArray');
-const { trim_materials_array } = require('./TrimMaterialsArray')
+const {transformedArray} = require("./item_name_data");
+const {enchantArray} = require("./enchantmentsArray");
+const {goat_horn_array} = require("./goat_horn");
+const {armors_paterns_array} = require('./PaternsArray');
+const {trim_materials_array} = require('./TrimMaterialsArray')
+const {color_id_name} = require("./color_id");
 const saveData = fs.readFileSync('save.yml', 'utf8');
 
 const cleanedData = saveData.replace(/^\s*data-version:.*(\r?\n)/, '');
@@ -141,7 +142,7 @@ async function selectData(data) {
                   const enchant_id_ru = matchingEnchantData.length === 0 ? "{NO translation}" : matchingEnchantData[0].enchant_id_ru;
                   const lvl = el.lvl.value;
 
-                  return { enchant_id, enchant_id_ru, lvl }
+                  return {enchant_id, enchant_id_ru, lvl}
                 });
 
               // -------------------- stored_enchant
@@ -152,7 +153,7 @@ async function selectData(data) {
                   const enchant_id_ru = matchingEnchantData.length === 0 ? "{NO translation}" : matchingEnchantData[0].enchant_id_ru;
                   const lvl = el.lvl.value;
 
-                  return { enchant_id, enchant_id_ru, lvl }
+                  return {enchant_id, enchant_id_ru, lvl}
                 })
 
               // -------------------- instrument
@@ -187,7 +188,32 @@ async function selectData(data) {
                 green: rgbaColor.green
               }
 
-              return { slot, id, id_ru, minecraft_custom, count, firework_power, potion, instrument, enchant, stored_enchant, trim, leather_color };
+              const banner_pattern = item.tag?.value?.BlockEntityTag?.value?.Patterns?.value?.value === undefined ? undefined :
+                item.tag?.value?.BlockEntityTag?.value?.Patterns?.value?.value.map((el) => {
+
+                  const colorsArray = el.Color?.value ? color_id_name.filter((item) => item.color_id === el.Color.value) : [];
+                  return {
+                    color: colorsArray[0]?.color_name,
+                    pattern: el.Pattern.value.toLowerCase(),
+                  };
+                });
+
+
+              return {
+                slot,
+                id,
+                id_ru,
+                minecraft_custom,
+                count,
+                firework_power,
+                potion,
+                instrument,
+                enchant,
+                stored_enchant,
+                trim,
+                leather_color,
+                banner_pattern
+              };
             });
 
             resolve(result);
@@ -357,6 +383,13 @@ async function selectData(data) {
                     blue: offer.resultItem.meta.color.BLUE,
                     green: offer.resultItem.meta.color.GREEN,
                   } : undefined,
+                  banner_pattern: offer.resultItem.meta && offer.resultItem.meta?.["meta-type"] === "BANNER" ?
+                    offer.resultItem.meta.patterns.map((pattern) => {
+                      return {
+                        color: pattern.color.toLowerCase(),
+                        pattern: pattern.pattern.toLowerCase(),
+                      };
+                    }) : undefined,
                   content: offer.resultItem.meta && offer.resultItem.meta.internal !== undefined ? await parseInternal(offer.resultItem.meta.internal) : [],
                 }
                 :
@@ -381,11 +414,18 @@ async function selectData(data) {
                     pattern: offer.item1?.meta?.trim?.pattern.split(':')[1].toLowerCase(),
                     pattern_ru: armorTypePaternItem1[0].pattern_ru
                   } : undefined,
-                  leather_color: offer.resultItem.meta && offer.resultItem.meta?.["meta-type"] === "COLORABLE_ARMOR" ? {
-                    red: offer.resultItem.meta.color.RED,
-                    blue: offer.resultItem.meta.color.BLUE,
-                    green: offer.resultItem.meta.color.GREEN,
+                  leather_color: offer.item1.meta && offer.item1.meta?.["meta-type"] === "COLORABLE_ARMOR" ? {
+                    red: offer.item1.meta.color.RED,
+                    blue: offer.item1.meta.color.BLUE,
+                    green: offer.item1.meta.color.GREEN,
                   } : undefined,
+                  banner_pattern: offer.item1.meta && offer.item1.meta?.["meta-type"] === "BANNER" ?
+                    offer.item1.meta.patterns.map((pattern) => {
+                      return {
+                        color: pattern.color.toLowerCase(),
+                        pattern: pattern.pattern.toLowerCase(),
+                      };
+                    }) : undefined,
                   content: offer.item1.meta && offer.item1.meta.internal !== undefined ? await parseInternal(offer.item1.meta.internal) : [],
                 }
                 :
@@ -410,11 +450,18 @@ async function selectData(data) {
                     pattern: offer.item2?.meta?.trim?.pattern.split(':')[1].toLowerCase(),
                     pattern_ru: armorTypePaternItem2[0].pattern_ru
                   } : undefined,
-                  leather_color: offer.resultItem.meta && offer.resultItem.meta?.["meta-type"] === "COLORABLE_ARMOR" ? {
-                    red: offer.resultItem.meta.color.RED,
-                    blue: offer.resultItem.meta.color.BLUE,
-                    green: offer.resultItem.meta.color.GREEN,
+                  leather_color: offer.item2.meta && offer.item2.meta?.["meta-type"] === "COLORABLE_ARMOR" ? {
+                    red: offer.item2.meta.color.RED,
+                    blue: offer.item2.meta.color.BLUE,
+                    green: offer.item2.meta.color.GREEN,
                   } : undefined,
+                  banner_pattern: offer.item2.meta && offer.item2.meta?.["meta-type"] === "BANNER" ?
+                    offer.item2.meta.patterns.map((pattern) => {
+                      return {
+                        color: pattern.color.toLowerCase(),
+                        pattern: pattern.pattern.toLowerCase(),
+                      };
+                    }) : undefined,
                   content: offer.item2.meta && offer.item2.meta.internal !== undefined ? await parseInternal(offer.item2.meta.internal) : [],
                 }
                 :
