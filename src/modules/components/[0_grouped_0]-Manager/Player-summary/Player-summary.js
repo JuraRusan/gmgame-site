@@ -456,7 +456,7 @@ const PlayerSummary = () => {
         }
         return (
           <React.Fragment key={i}>
-            <h4 className={classNames(styles["managerTitleH4"])} data-aos="zoom-in">Метки {username}</h4>
+            <h4 className={classNames(styles["managerTitleH4"])} data-aos="zoom-in">Метки {username === "all" ? "всех игроков" : username}</h4>
             <TableMain>
               <THead>
                 <Tr>
@@ -515,7 +515,7 @@ const PlayerSummary = () => {
         }
         return (
           <React.Fragment key={i}>
-            <h4 className={classNames(styles["managerTitleH4"])} data-aos="zoom-in">Территории {username}</h4>
+            <h4 className={classNames(styles["managerTitleH4"])} data-aos="zoom-in">Территории {username === "all" ? "всех игроков" : username}</h4>
             <TableMain>
               <THead>
                 <Tr>
