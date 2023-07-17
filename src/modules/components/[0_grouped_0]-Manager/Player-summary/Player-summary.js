@@ -400,7 +400,7 @@ const PlayerSummary = () => {
         <>
           <TableMain>
             <THead>
-              <Tr>
+              <Tr header={true}>
                 <Th type="text" content="Имя"/>
                 <Th type="text" content="email"/>
                 <Th type="text" content="Возраст"/>
@@ -459,7 +459,7 @@ const PlayerSummary = () => {
             <h4 className={classNames(styles["managerTitleH4"])} data-aos="zoom-in">Метки {username === "all" ? "всех игроков" : username}</h4>
             <TableMain>
               <THead>
-                <Tr>
+                <Tr header={true}>
                   {username === 'all' && <Th type="text" content="Имя"/>}
                   <Th type="text" content="Название"/>
                   <Th type="text" content="Описание"/>
@@ -518,7 +518,7 @@ const PlayerSummary = () => {
             <h4 className={classNames(styles["managerTitleH4"])} data-aos="zoom-in">Территории {username === "all" ? "всех игроков" : username}</h4>
             <TableMain>
               <THead>
-                <Tr>
+                <Tr header={true}>
                   {username === 'all' && <Th type="text" content="Имя"/>}
                   <Th type="text" content="Название"/>
                   <Th type="text" content="Сервер"/>
@@ -580,7 +580,7 @@ const PlayerSummary = () => {
           <h4 className={classNames(styles["managerTitleH4"])} data-aos="zoom-in">Список на реген</h4>
           <TableMain>
             <THead>
-              <Tr>
+              <Tr header={true}>
                 <Th type="text" content="Имя"></Th>
                 <Th type="text" content="id"></Th>
                 <Th type="text" content="Просмотр"></Th>
@@ -729,7 +729,7 @@ const PlayerSummary = () => {
         <div className={classNames(styles["cardLog"])} data-aos="zoom-in">
           <TableMain>
             <THead>
-              <Tr>
+              <Tr header={true}>
                 <Th type="text" content="Время"/>
                 <Th type="text" content="Лог"/>
                 <Th type="text" content="Менеджер"/>

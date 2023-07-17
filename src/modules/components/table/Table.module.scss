@@ -37,6 +37,10 @@ $table-parameter: 34;
   background: lighten($color-7, 2) !important;
 }
 
+.tableRowsHeader {
+  background: transparent !important;
+}
+
 .tableColumns {
   width: auto;
   height: #{$table-parameter}px;

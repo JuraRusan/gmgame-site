@@ -9,7 +9,8 @@ const Tr = (props) => {
       classNames(styles["tableRows"],
         {
           [styles["tableRowsBackground1"]]: props.keyStyle % 2 === 0,
-          [styles["tableRowsBackground2"]]: props.keyStyle % 2 !== 0
+          [styles["tableRowsBackground2"]]: props.keyStyle % 2 !== 0,
+          [styles["tableRowsHeader"]]: props.header  === true
         }
       )
     }
