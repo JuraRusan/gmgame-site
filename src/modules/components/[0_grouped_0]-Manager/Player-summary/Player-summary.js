@@ -420,7 +420,7 @@ const PlayerSummary = () => {
                     <TButton name="Log" onClick={() => handleOpenModal(el.user_id)}/>
                     <TButton name="User Details" onClick={() => handleOpenModalUd(el)}/>
                   </Th>
-                  <Th type="actions">
+                  <Th type="editing">
                     <TSelect
                       name={getActions(el)}
                       value={action[el.user_id]?.action || ""}
