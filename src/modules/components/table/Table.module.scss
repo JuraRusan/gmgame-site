@@ -1,0 +1,203 @@
+@import "../../../Variables.scss";
+
+$table-parameter: 34;
+
+.tableMain {
+  width: auto;
+  min-width: 0;
+  max-width: 100%;
+  border: 1px solid $color-22;
+  background: $color-7;
+  margin: 5px auto;
+}
+
+.tableThead {
+  width: auto;
+  height: auto;
+}
+
+.tableTbody {
+  width: auto;
+  height: auto;
+}
+
+.tableRows {
+  height: #{$table-parameter}px;
+  min-height: #{$table-parameter}px;
+  max-height: calc(#{$table-parameter} * 5px);
+  border-top: 1px solid $color-22;
+  transition: all 0.20s ease;
+}
+
+.tableRowsBackground1 {
+  background: lighten($color-7, 1) !important;
+}
+
+.tableRowsBackground2 {
+  background: lighten($color-7, 2) !important;
+}
+
+.tableRowsHeader {
+  background: transparent !important;
+}
+
+.tableColumns {
+  width: auto;
+  height: #{$table-parameter}px;
+  font-weight: 400;
+  border-left: 1px solid $color-22;
+  transition: all 0.15s ease;
+  line-height: 32px; // зависит от `$table-parameter` минус 2px (функция калькалятора не работает почемуто)
+
+  &:nth-child(1) {
+    border: none;
+  }
+}
+
+.tableColumnsNoCenter {
+  vertical-align: bottom;
+  line-height: normal;
+}
+
+.tableText {
+  width: 100%;
+  height: calc(#{$table-parameter} - 1px);
+  line-height: #{$table-parameter}px;
+  font-size: 13px;
+  padding: 0 8px;
+  color: $color-3;
+  transition: all 0.20s ease;
+
+  &:hover {
+    color: lighten($color-8, 20%);
+  }
+}
+
+.tableButton {
+  width: auto;
+  max-width: 150px;
+  height: 24px;
+  margin: auto 8px;
+  text-align: center;
+  padding: 0 8px;
+  background: $color-7;
+  border: 1px solid $color-22;
+  border-radius: 4px;
+  transition: all 0.25s ease-in-out;
+  color: $color-8;
+  cursor: pointer;
+  font-size: 13px;
+
+  &:hover {
+    background: $color-21;
+  }
+}
+
+.tableSelect {
+  width: 100%;
+  height: #{$table-parameter}px;
+  line-height: #{$table-parameter}px;
+  border: none;
+  border-radius: 0;
+  color: $color-8;
+  text-align: start;
+  font-size: 13px;
+  font-weight: 400;
+  outline: none !important;
+  padding: 0 4px;
+  background: transparent;
+  cursor: pointer;
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+    background: $color-21;
+  }
+}
+
+.tableLink {
+  width: auto;
+  height: #{$table-parameter}px;
+  line-height: #{$table-parameter}px;
+  font-size: 13px;
+  padding: 0 10px;
+  text-decoration: none;
+  color: $color-1;
+  transition: all 0.35s ease;
+
+  &:hover {
+    color: $color-8;
+  }
+}
+
+.tableTextarea {
+  outline: none;
+  border: none;
+  border-radius: 0;
+  width: 700px;
+  min-width: 700px;
+  max-width: 700px;
+  height: #{$table-parameter}px;
+  min-height: #{$table-parameter}px;
+  max-height: calc(#{$table-parameter} * 3px);
+  line-height: #{$table-parameter}px;
+  background: transparent;
+  color: $color-3;
+  padding: 0 10px;
+  font-size: 13px;
+  transition: all 0.2s ease;
+  vertical-align: bottom;
+
+  &:hover {
+    color: lighten($color-8, 20%);
+  }
+
+  &:focus {
+    color: $color-1;
+  }
+}
+
+.tableInput {
+  border: none;
+  border-radius: 0;
+  outline: none;
+  height: #{$table-parameter}px;
+  line-height: #{$table-parameter}px;
+  background: transparent;
+  padding: 0 10px;
+  font-size: 13px;
+  color: $color-3;
+
+  &:hover {
+    color: lighten($color-8, 20%);
+  }
+
+  &:focus {
+    color: $color-1;
+  }
+}
+
+.tableInputSmall {
+  width: 80px;
+  min-width: 80px;
+  max-width: 80px;
+}
+
+.tableInputMiddle {
+  width: 180px;
+  min-width: 180px;
+  max-width: 180px;
+}
+
+.tableInputLarge {
+  width: 280px;
+  min-width: 280px;
+  max-width: 280px;
+}
+
+.tableInputSuperLarge {
+  width: 880px;
+  min-width: 880px;
+  max-width: 880px;
+}
