@@ -1,11 +1,12 @@
 import classNames from "classnames";
 import {React, useState, useEffect} from "react";
-import {useAxios} from '../../../../DataProvider';
+import {useAxios, sendRequest} from '../../../../DataProvider';
 import {Link} from 'react-router-dom';
 import Preload from "../../preloader/Preload.js";
 import SvgAddMarker from "../../../../bases/icons/SvgAddMarker.js";
 import BinSvgComponent from "../../../../bases/icons/binSVG/binSvg";
 import AOS from "aos";
+import {useAlert} from "react-alert";
 
 import styles from "../maps-elements.module.scss";
 import "aos/dist/aos.css";
@@ -16,8 +17,10 @@ const MyTerritories = () => {
     AOS.init({duration: 1000});
   }, []);
 
+  const alert = useAlert();
   const [isLoading, setIsLoading] = useState(true);
   let [fileter, setFileter] = useState(null);
+  let [data, setData] = useState({markers: [], count: -1});
 
   const resParams = useAxios(
     "/api/get_territories",
@@ -37,7 +40,37 @@ const MyTerritories = () => {
     return <Preload />;
   }
 
-  const data = resParams.data;
+  if (resParams.data && data.count === -1) {
+    setData({markers: resParams.data.markers, count: resParams.data.count});
+  }
+
+  function showMessage(response, id) {
+    if (response.message) {
+      alert.success(response.message);
+      setData({markers: data.markers.filter(el => el.id !== id), count: data.count - 1});
+    } else {
+      alert.error(response.error);
+    }
+  }
+
+  const deleteMarker = (marker) => {
+    console.log(marker)
+    sendRequest(
+      '/api/delete_terr',
+      'POST',
+      {
+        server: marker.world || 'gmgame',
+        name: marker.name,
+        startX: marker.xStart,
+        stopX: marker.xStop,
+        startZ: marker.zStart,
+        stopZ: marker.zStop,
+        terrID: marker.id
+      }
+    ).then(response => {
+      showMessage(response, marker.id);
+    });
+  }
 
   return (
     <div className={classNames(styles["boxMapWrapper"])} data-aos="zoom-in">
@@ -66,7 +99,7 @@ const MyTerritories = () => {
               </div>
               <div className={classNames(styles["columnsTwo"])}>
                 <Link to={`edit_add_terr/${el.id}`} className={classNames(styles["elementActions"])}>Настроить</Link>
-                <button className={classNames(styles["deleteButton"])}>
+                <button className={classNames(styles["deleteButton"])} onClick={() => deleteMarker(el)}>
                   <BinSvgComponent width="100%" height="100%" color="#f4f4f4"/>
                 </button>
               </div>

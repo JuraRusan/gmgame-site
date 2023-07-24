@@ -18,7 +18,6 @@ import TTextarea from "../../table/TTextarea";
 
 import styles from "./Player-summary.module.scss";
 import "aos/dist/aos.css";
-import { set } from "lodash";
 
 const PlayerSummary = () => {
 
@@ -78,6 +77,9 @@ const PlayerSummary = () => {
   }, []);
 
   const getUser = (event) => {
+    if (event?.target?.value?.length < 3) {
+      return;
+    }
     setSearchParam(event?.target?.value || event);
     sendRequest(
       '/api/admin/get_user',

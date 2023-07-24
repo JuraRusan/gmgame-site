@@ -15,9 +15,9 @@ const Maps = () => {
       <div className="maps">
         <h4 className="maps-title font-custom-2">Уникальная web-онлайн карта</h4>
         <h5 className="maps-sub-title">Обновления карты плавающий, обновление запускается в течении 10 минут после предыдущего обновления. (Статус обновления можно видеть в углу карты)</h5>
-        <a className="link-btn-map" rel="noreferrer" href="https://map.gmgame.ru/#/-7/64/-54/-4/GMGameWorld/over" target="_blank">Открыть в новом окне &#10148;</a>
+        <a className="link-btn-map" rel="noreferrer" href="https://map.gmgame.ru/" target="_blank">Открыть в новом окне &#10148;</a>
         <div className="prev-map-page" data-aos="zoom-in">
-          <iframe title="map" src="https://map.gmgame.ru/#/-7/64/-54/-4/GMGameWorld/over" width="100%" height="100%"/>
+          <iframe title="map" src="https://map.gmgame.ru/" width="100%" height="100%"/>
         </div>
       </div>
     </div>
