@@ -360,7 +360,7 @@ const PlayerSummary = () => {
   }
 
 
-  const regenAction = (user_id, action) => {
+  const regenAction = (user_id, action, index) => {
     sendRequest(
       '/api/admin/regen_action',
       'POST',
@@ -370,12 +370,10 @@ const PlayerSummary = () => {
         alert.error(response.message);
         return;
       }
-      const newRegens = [...regens];
+      let newRegens = JSON.parse(JSON.stringify(regens));
+      newRegens[index].notRender = true;
 
-      const index = newRegens.findIndex((regen) => regen.User_id === user_id);
-      newRegens.splice(index, 1);
-
-      setRegens(newRegens)
+      setRegens(newRegens);
     });
   }
 
@@ -590,17 +588,18 @@ const PlayerSummary = () => {
               </Tr>
             </THead>
             <TBody>
-              {regens.map((regen, i) => (
+              {regens.map((regen, i) => {
+                return(<>{!regen.notRender &&
                 <Tr key={i} keyStyle={i}>
                   <Th type="text" content={regen.username}/>
                   <Th type="text" content={regen.user_id}/>
                   <Th type="link" href={`/manager/player_summary?user_id=${regen.user_id}`}/>
                   <Th type="actions">
-                    <TButton name="Реген" type="submit" onClick={() => regenAction(regen.user_id, 'regen')}/>
-                    <TButton name="Оставить" type="submit" onClick={() => regenAction(regen.user_id, 'settle')}/>
+                    <TButton name="Реген" type="submit" onClick={() => regenAction(regen.user_id, 'regen', i)}/>
+                    <TButton name="Оставить" type="submit" onClick={() => regenAction(regen.user_id, 'settle', i)}/>
                   </Th>
                 </Tr>
-              ))}
+              }</>)})}
             </TBody>
           </TableMain>
         </>
