@@ -589,17 +589,18 @@ const PlayerSummary = () => {
             </THead>
             <TBody>
               {regens.map((regen, i) => {
-                return(<>{!regen.notRender &&
-                <Tr key={i} keyStyle={i}>
-                  <Th type="text" content={regen.username}/>
-                  <Th type="text" content={regen.user_id}/>
-                  <Th type="link" href={`/manager/player_summary?user_id=${regen.user_id}`}/>
-                  <Th type="actions">
-                    <TButton name="Реген" type="submit" onClick={() => regenAction(regen.user_id, 'regen', i)}/>
-                    <TButton name="Оставить" type="submit" onClick={() => regenAction(regen.user_id, 'settle', i)}/>
-                  </Th>
-                </Tr>
-              }</>)})}
+                return (<>{!regen.notRender &&
+                  <Tr key={i} keyStyle={i}>
+                    <Th type="text" content={regen.username}/>
+                    <Th type="text" content={regen.user_id}/>
+                    <Th type="link" href={`/manager/player_summary?user_id=${regen.user_id}`}/>
+                    <Th type="actions">
+                      <TButton name="Реген" type="submit" onClick={() => regenAction(regen.user_id, 'regen', i)}/>
+                      <TButton name="Оставить" type="submit" onClick={() => regenAction(regen.user_id, 'settle', i)}/>
+                    </Th>
+                  </Tr>
+                }</>)
+              })}
             </TBody>
           </TableMain>
         </>
