@@ -22,8 +22,7 @@ const Support = () => {
             <p className={classNames(styles["subTitleSupport"])}>Благодаря этим людям сервер живет и позволяет комфортно играть без лагов и читеров. Мы стараемся каждый день улучшить игровой опыт на сервере и будем признательны за любую помощь. Если у вас есть возможность помочь серверу нижеперечисленными способами, то, пожалуйста, воспользуйтесь ими.</p>
             <p className={classNames(styles["subTitleSupport"])}>На пожертвования уже куплено мощное железо для сервера, источник бесперебойного питания и множество плагинов для комфортной игры. Спасибо всем игрокам, без вашей поддержки не было бы сервера GMGame.</p>
             <div className={classNames(styles["linkWrapper"])}>
-              <a className={classNames(styles["supportLink"])} target="_blank" rel="noreferrer">- Переводом по номеру карты 2202 2032 5684 4806 &#10148;</a>
-              {/* <a className={classNames(styles["supportLink"])} target="_blank" rel="noreferrer" href="https://new.donatepay.ru/@gmgame">- Донатом &#10148;</a> */}
+              <a className={classNames(styles["supportLink"])} target="_blank" rel="noreferrer" href="/support">- Переводом по номеру карты 2202 2032 5684 4806 &#10148;</a>
               <a className={classNames(styles["supportLink"])} target="_blank" rel="noreferrer" href="https://hotmc.ru/promote-minecraft-server-205185?mode=packs">- Подарить алмазы (HotMC) &#10148;</a>
               <a className={classNames(styles["supportLink"])} target="_blank" rel="noreferrer" href="https://hotmc.ru/casino-205185">- Розыгрыш на мониторинге (HotMC) &#10148;</a>
               <a className={classNames(styles["supportLink"])} target="_blank" rel="noreferrer" href="https://discord.gg/AesVsdPsFj">- Проголосовать на мониторингах &#10148;</a>
