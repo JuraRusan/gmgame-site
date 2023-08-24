@@ -57,21 +57,22 @@ const Statistic = () => {
       headerName: 'Убито мобов',
       field: 'mobs',
       sortable: true,
-      comparator: numberSort
+      comparator: numberSort,
+      valueFormatter: ({value}) => Intl.NumberFormat('en-US').format(value)
     },
     {
       headerName: 'Сломано блоков',
       field: 'broken',
       sortable: true,
       comparator: numberSort,
-      valueFormatter: ({value}) => !value ? 0 : value
+      valueFormatter: ({value}) => Intl.NumberFormat('en-US').format(!value ? 0 : value)
     },
     {
       headerName: 'Установлено блоков',
       field: 'supplied',
       sortable: true,
       comparator: numberSort,
-      valueFormatter: ({value}) => !value ? 0 : value
+      valueFormatter: ({value}) => Intl.NumberFormat('en-US').format(!value ? 0 : value)
     },
   ]);
 
