@@ -36,7 +36,7 @@ const EditAddPost = () => {
     const divs = [];
     for (let i = 0; i < countImage; i++) {
       divs.push(
-        <div className={classNames(styles["margin"])} key={i} data-aos="zoom-in" data-aos-offset="-3000">
+        <div className={classNames(styles["margin"])} key={i}>
           <ReactImagePickerEditor config={config2} imageSrcProp={initialImage}/>
         </div>);
     }
@@ -112,7 +112,7 @@ const EditAddPost = () => {
   }, []);
 
   return (
-    <div className={classNames(styles["containerAddEdit"])} data-aos="zoom-in">
+    <div className={classNames(styles["containerAddEdit"])}>
 
       <div className={classNames(styles["left"])}>
         <div className={classNames(styles["postParameters"])}>
