@@ -583,6 +583,7 @@ const PlayerSummary = () => {
               <Tr header={true}>
                 <Th type="text" content="Имя"></Th>
                 <Th type="text" content="id"></Th>
+                <Th type="text" content="Статус"></Th>
                 <Th type="text" content="Просмотр"></Th>
                 <Th type="text" content="Действия"></Th>
               </Tr>
@@ -593,6 +594,7 @@ const PlayerSummary = () => {
                   <Tr key={i} keyStyle={i}>
                     <Th type="text" content={regen.username}/>
                     <Th type="text" content={regen.user_id}/>
+                    <Th type="text" content="Не известно"/>
                     <Th type="link" href={`/manager/player_summary?user_id=${regen.user_id}`}/>
                     <Th type="actions">
                       <TButton name="Реген" type="submit" onClick={() => regenAction(regen.user_id, 'regen', i)}/>
