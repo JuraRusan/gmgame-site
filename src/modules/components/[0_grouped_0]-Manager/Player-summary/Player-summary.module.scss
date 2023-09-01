@@ -128,11 +128,12 @@ body {
     bottom: 45px;
     width: auto;
     height: auto;
+    overflow: auto;
 
     .closeModal {
       position: absolute;
-      top: -40px;
-      right: -40px;
+      top: 4px;
+      right: 4px;
       width: auto;
       max-width: 150px;
       height: 35px;
@@ -147,6 +148,7 @@ body {
       color: $color-8;
       cursor: pointer;
       font-size: 14px;
+      z-index: 5555555;
 
       &:hover,
       &:focus,
