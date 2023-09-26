@@ -33,7 +33,7 @@ const General = () => {
   const worldNameFarm = "Фермерский";
 
   const survival = "Выживание";
-  const skyBlock = "Скайблок";
+  // const skyBlock = "Скайблок";
   const creative = "Креатив";
 
   const serverInformationRes = "Здесь добываются все необходимые ресурсы. Мир можно копать где и как угодно. Вайпается каждое обновление майнкрафта.";
@@ -42,7 +42,7 @@ const General = () => {
 
   const serverModeServer = "режимы";
   const survivalInfo = "Главный режим всего сервера, где игроки выживают и творят. Вход только по заявкам.";
-  const skyBlockInfo = "Неклассический режим скайблока с квестами и миссиями и другими плагинами. Без вайтлиста.";
+  // const skyBlockInfo = "Неклассический режим скайблока с квестами и миссиями и другими плагинами. Без вайтлиста.";
   const creativeInfo = "Креатив с WorldEdit и другими упрощающими жизнь инструментами. Без вайтлиста.";
 
   return (
@@ -114,7 +114,7 @@ const General = () => {
         <h3 className={classNames(styles["modeTitle"])} data-aos="zoom-in">{serverModeServer}</h3>
         <div className={classNames(styles["mode"])}>
           <Mode name={survival} info={survivalInfo}/>
-          <Mode name={skyBlock} info={skyBlockInfo}/>
+          {/*<Mode name={skyBlock} info={skyBlockInfo}/>*/}
           <Mode name={creative} info={creativeInfo}/>
         </div>
       </div>
