@@ -39,19 +39,6 @@ const Support = () => {
             <a data-aos="zoom-in" className={classNames(styles["monitoringCard"])} target="_blank" rel="noreferrer" href={el.url} key={i}>{el.name}</a>
           )}
         </div>
-        {/*<div className={classNames(styles["partnerBlock"])} data-aos="zoom-in">*/}
-        {/*  <h4 className={classNames(styles["titleAll"])}>Наши партнеры</h4>*/}
-        {/*  <div className={classNames(styles["superHub"])}>*/}
-        {/*    <div className={classNames(styles["partnerLineOne"])}>*/}
-        {/*      <img className={classNames(styles["superHubLogo"])} src="./site_assets/pages/webp/SuperHub.webp" width="100%" height="100%" alt="none"/>*/}
-        {/*    </div>*/}
-        {/*    <div className={classNames(styles["partnerLineTwo"])}>*/}
-        {/*      <h4 className={classNames(styles["name"])}>Hosting SuperHub</h4>*/}
-        {/*      <h5 className={classNames(styles["subText"])}>Дешёвый и надёжный хостинг для Minecraft серверов.</h5>*/}
-        {/*      <a className={classNames(styles["supportLink"])} target="_blank" rel="noreferrer" href="https://superhub.host/referral/c45b819b">Hosting SuperHub &#10148;</a>*/}
-        {/*    </div>*/}
-        {/*  </div>*/}
-        {/*</div>*/}
       </div>
     </div>
   );
