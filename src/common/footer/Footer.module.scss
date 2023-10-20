@@ -1,0 +1,148 @@
+@import "../../Variables";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  background: transparent;
+  padding-bottom: 8px;
+
+  .rows-bt {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    margin: auto 0;
+
+    .leftLine,
+    .rightLine {
+      width: 100%;
+      height: auto;
+      margin: auto 32px;
+      border-width: 1px;
+      border-bottom-style: solid;
+    }
+
+    .leftLine {
+      border-image: linear-gradient(to right, rgba(0, 0, 0, 0), $color-22, $color-13) 1 0;
+    }
+
+    .rightLine {
+      border-image: linear-gradient(to right, $color-13, $color-22, rgba(0, 0, 0, 0)) 1 0;
+    }
+
+    .wrapperLink {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      height: auto;
+      width: 250px;
+      min-width: 250px;
+      max-width: 250px;
+
+      .bt-links {
+        height: 60px;
+        width: 60px;
+        margin: auto 10px;
+        padding: 10px;
+        border: none;
+        border-radius: 8px;
+        background: $color-22;
+      }
+    }
+  }
+
+  .gmgame-title-f {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: auto;
+    margin: 0 auto;
+
+    .classText {
+      width: 100%;
+      height: 24px;
+      line-height: 24px;
+      font-size: 14px;
+      font-weight: 400;
+      color: $color-3;
+      text-align: center;
+      margin: 0 auto 8px auto;
+      font-family: $fontCustom2;
+
+      a {
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+        color: inherit;
+        text-decoration: none;
+        padding-left: 4px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 960px) {
+  .footer {
+    .rows-bt {
+      .leftLine,
+      .rightLine {
+        margin: auto 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 640px) {
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    height: 200px;
+
+    .rows-bt {
+      .wrapperLink {
+        width: auto;
+        min-width: auto;
+        max-width: none;
+
+        .bt-links {
+          height: 48px;
+          width: 48px;
+          padding: 8px;
+          margin: 0 6px;
+        }
+      }
+    }
+
+    .gmgame-title-f {
+      .classText {
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+}
