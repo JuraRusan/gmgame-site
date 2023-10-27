@@ -75,7 +75,7 @@ const Header = () => {
           </a>
         </div>
         <div className={classNames(styles["centerBlock"], styles["blockNumbered"])}>
-          <a className={classNames(styles["swipePage"])} href="/asdasda">Правила</a>
+          <a className={classNames(styles["swipePage"])} href="/regulations">Правила</a>
           <div className={classNames(styles["dropOpen"])} onClick={() => setMainDropMenu(!mainDropMenu)}>
             {mainDropMenu === false
               ?
@@ -96,7 +96,7 @@ const Header = () => {
               </div>
             }
           </div>
-          <a className={classNames(styles["swipePage"])} href="/asdasda">Вопросы</a>
+          <a className={classNames(styles["swipePage"])} href="/faq">Вопросы</a>
         </div>
         <div className={classNames(styles["rightBlock"], styles["blockNumbered"])}>
           {!resParams?.data?.discordUser
