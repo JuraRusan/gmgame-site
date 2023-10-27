@@ -757,21 +757,21 @@ const Faq = () => {
                   disabled={currentTab === i}
                   onClick={handleTabClick.bind(null, i)}
                 >
-                  {tab.tabTitle}
+                  {tab.tabTitle.charAt(0).toUpperCase() + tab.tabTitle.slice(1)}
                 </button>
               ))}
             </div>
             <div className={classNames(styles["content"])} data-aos="zoom-in">
               <div className={classNames(styles["idTab"])}>
                 <div className={classNames(styles["tabOne"])}>
-                  <h3 className={classNames(styles["title"])}>{selectedTab?.tabTitle}</h3>
+                  <h3 className={classNames(styles["title"])}>{selectedTab?.tabTitle.charAt(0).toUpperCase() + selectedTab?.tabTitle.slice(1)}</h3>
                   <p className={classNames(styles["info"])}>{selectedTab?.titleInf}</p>
                   <div className={classNames(styles["lists"])}>
                     {selectedTab?.itfContent.map((el) => {
                       return (
                         <div className={classNames(styles["listOne"])} key={el.id}>
                           <input className={classNames(styles["oneInputCheckBox"])} id={el.forIndex} type="checkbox"/>
-                          <label className={classNames(styles["question"])} htmlFor={el.forIndex}>{el.question}</label>
+                          <label className={classNames(styles["question"])} htmlFor={el.forIndex}>&#8226; {el.question}</label>
                           <p className={classNames(styles["answerWrapperBox"])} dangerouslySetInnerHTML={{__html: el.answer}}>
                           </p>
                         </div>

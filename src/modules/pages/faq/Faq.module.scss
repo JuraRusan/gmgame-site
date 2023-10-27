@@ -11,10 +11,8 @@
     flex-direction: column;
     width: 85%;
     height: auto;
-    margin: 25px auto 0 auto;
+    margin: 24px auto 0 auto;
     padding: 25px;
-    background: $color-11;
-    border-radius: 7px;
 
     .faqTitleWrapper {
       display: flex;
@@ -24,7 +22,7 @@
       width: 100%;
 
       .titleH2Styles {
-        color: $color-3;
+        color: $site-color-2;
         font-weight: 400;
         font-size: 24px;
         height: 35px;
@@ -38,9 +36,10 @@
     .wrapperTabsFaq {
       display: flex;
       flex-direction: row;
+      justify-content: flex-start;
       width: 100%;
       margin: 0 auto;
-      padding: 15px;
+      padding: 16px;
       height: auto;
 
       .tabs {
@@ -50,37 +49,56 @@
         width: auto;
         height: 100%;
         position: sticky;
-        top: 50px;
+        top: 164px;
         bottom: 0;
+        background: $site-color-4;
+        border: 1px solid $site-color-5;
+        border-radius: 8px;
+        padding: 16px;
 
         .buttonFaqTab {
           cursor: pointer;
           width: 200px;
-          height: 75px;
-          margin: 15px;
-          background: $color-21;
+          height: 32px;
+          line-height: 32px;
+          margin: 4px 0 4px 0;
           border: none;
-          border-radius: 5px;
-          transition: all 0.5s ease-out;
-          color: $color-3;
+          border-radius: 4px;
+          background: transparent;
+          transition: all 0.35s ease-out;
+          color: $site-color-2;
           font-weight: 400;
-          font-size: 20px;
+          font-size: 14px;
+          font-family: $fontCustom2;
+          text-align: start;
+          padding: 0 8px 0 20px;
+          position: relative;
+
+          &:before {
+            content: '\2022';
+            position: absolute;
+            left: 8px;
+            margin-top: 2px;
+          }
 
           &:hover {
-            background: $color-22;
+            background: $site-color-1;
+            color: $site-color-9;
           }
 
           &:disabled {
-            background: $color-4;
-            color: $color-3;
+            color: $site-color-9;
           }
         }
       }
 
       .content {
         width: 100%;
-        margin: 15px;
-        padding: 20px;
+        margin: 0 0 0 16px;
+        padding: 16px;
+        background: $site-color-4;
+        border: 1px solid $site-color-5;
+        border-radius: 8px;
 
         .idTab {
           display: flex;
@@ -95,19 +113,21 @@
             height: auto;
 
             .title {
-              color: $color-3;
+              color: $site-color-9;
               width: 100%;
-              height: 35px;
-              line-height: 35px;
+              height: 36px;
+              line-height: 36px;
               font-weight: 400;
               font-size: 24px;
+              font-family: $fontCustom2;
+              margin-bottom: 12px;
             }
 
             .info {
-              color: $color-3;
+              color: $site-color-2;
               width: 100%;
-              height: 35px;
-              line-height: 35px;
+              height: auto;
+              line-height: 1.5;
               font-weight: 400;
               font-size: 16px;
             }
@@ -118,7 +138,6 @@
               width: 100%;
               height: 100%;
               margin-top: 20px;
-              padding-right: 15px;
 
               .listOne {
                 display: flex;
@@ -139,19 +158,19 @@
                   justify-content: space-between;
                   padding: 16px;
                   line-height: 1.35;
-                  background: $color-20;
-                  border: 1px solid $color-2;
+                  background: $site-color-12;
+                  border: 1px solid $site-color-5;
                   border-radius: 6px;
-                  color: $color-3;
+                  color: $site-color-2;
                   font-weight: 400;
                   font-size: 16px;
                   cursor: pointer;
-                  transition: all 0.25s ease;
+                  transition: all 0.35s ease;
                   position: relative;
                   align-items: center;
 
                   &:hover {
-                    background: $color-7;
+                    background: $site-color-1;
                   }
 
                   &::after {
@@ -168,14 +187,14 @@
                   width: 100%;
                   max-height: 0;
                   line-height: 1.5;
-                  color: $color-3;
+                  color: $site-color-2;
                   font-size: 15px;
-                  background: $color-7;
+                  background: $site-color-12;
                   transition: all 0.25s ease;
                   opacity: 0;
 
                   .link {
-                    color: $color-1;
+                    color: $site-color-10;
                     transition: all 0.35s ease;
                     text-decoration: none;
 
@@ -203,9 +222,9 @@
     max-height: 100vh !important;
     margin-bottom: 10px;
     padding: 16px;
-    border-right: 1px solid $color-2;
-    border-left: 1px solid $color-2;
-    border-bottom: 1px solid $color-2;
+    border-right: 1px solid $site-color-5;
+    border-left: 1px solid $site-color-5;
+    border-bottom: 1px solid $site-color-5;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
   }
@@ -214,12 +233,12 @@
     margin-bottom: 0 !important;
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
-    background: $color-21 !important;
-    color: $color-8 !important;
+    background: $site-color-12 !important;
+    color: $site-color-8 !important;
 
     &::after {
       transform: rotate(90deg);
-      color: $color-8;
+      color: $site-color-8;
     }
   }
 }
@@ -236,23 +255,17 @@
   .mainFaqBox {
     .faqBox {
       width: 96%;
-      padding: 15px;
+      padding: 0 0 24px 0;
 
       .faqTitleWrapper {
-        margin-top: 15px;
+        margin: 0 0 16px 0;
       }
 
       .wrapperTabsFaq {
-        padding: 10px;
+        padding: 8px;
 
         .tabs {
-          .buttonFaqTab {
-            width: 180px;
-          }
-        }
-
-        .content {
-          padding: 10px;
+          top: 128px;
         }
       }
     }
@@ -263,29 +276,16 @@
   .mainFaqBox {
     .faqBox {
       .wrapperTabsFaq {
-        padding: 10px;
-
         .tabs {
+          padding: 12px;
 
           .buttonFaqTab {
-            width: 170px;
-            margin: 10px;
-            height: 65px;
-            font-size: 18px;
+            width: 180px;
           }
         }
 
         .content {
-          margin: 0;
-          margin-left: 5px;
-
-          .idTab {
-            .tabOne {
-              .lists {
-                padding-right: 0;
-              }
-            }
-          }
+          margin: 0 0 0 8px;
         }
       }
     }
@@ -301,24 +301,26 @@
 @media screen and (max-width: 768px) {
   .mainFaqBox {
     .faqBox {
-      .faqTitleWrapper {
-        margin-bottom: 10px;
-      }
-
       .wrapperTabsFaq {
-        padding: 7px;
+        flex-direction: column;
+        padding: 0;
 
         .tabs {
+          position: relative;
+          top: 0;
+          width: 100%;
+          min-width: auto;
+          max-width: 80%;
+          margin: 0 auto 16px auto;
 
           .buttonFaqTab {
-            width: 150px;
-            margin: 7px;
-            height: 50px;
-            font-size: 16px;
+            width: 100%;
           }
         }
 
         .content {
+          margin: 0;
+
           .idTab {
             .tabOne {
               .lists {
@@ -347,8 +349,6 @@
 @media screen and (max-width: 640px) {
   .mainFaqBox {
     .faqBox {
-      padding: 7px;
-
       .faqTitleWrapper {
         .titleH2Styles {
           font-size: 20px;
@@ -361,21 +361,15 @@
         padding: 0;
 
         .tabs {
-          margin-top: 15px;
-          margin-bottom: 10px;
-          top: 0;
-          position: relative;
+          margin: 12px auto 12px auto;
 
           .buttonFaqTab {
-            margin: 6px auto;
-            font-size: 15px;
-            height: 45px;
-            width: 250px;
+            font-size: 14px;
           }
         }
 
         .content {
-          margin: 0;
+          padding: 12px;
 
           .idTab {
             .tabOne {
@@ -387,7 +381,7 @@
 
                   .answerWrapperBox {
                     font-size: 14px;
-                    line-height: 1.1;
+                    line-height: 1.25;
                   }
                 }
               }
@@ -419,23 +413,25 @@
 
       .wrapperTabsFaq {
         .tabs {
-          margin-top: 10px;
+          max-width: none;
+          padding: 8px;
         }
 
         .content {
-          padding: 7px;
+          padding: 8px;
 
           .idTab {
             .tabOne {
               .title {
                 height: 30px;
                 line-height: 30px;
-                font-size: 22px;
+                font-size: 20px;
+                margin-bottom: 8px;
               }
 
               .info {
                 height: auto;
-                line-height: 1.1;
+                line-height: 1.25;
                 font-size: 15px;
               }
             }
