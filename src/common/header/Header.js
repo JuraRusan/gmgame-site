@@ -1,96 +1,150 @@
-import React, {useEffect} from "react";
-import {useAxios} from '../../DataProvider';
+import classNames from "classnames";
+import React, {useEffect, useState} from "react";
+import {sendRequest, useAxios} from '../../DataProvider';
 import AOS from "aos";
+import SvgDiscord from "../../bases/icons/SvgDiscord";
 
-import "./Header.scss";
+import styles from "./Header.module.scss";
 import "aos/dist/aos.css";
 
 const Header = () => {
+
+  useEffect(() => {
+    AOS.init({duration: 1000});
+  }, []);
+
   const resParams = useAxios(
     "/api/",
     'GET',
     {}
   );
 
-  useEffect(() => {
-    AOS.init({duration: 1000});
-  }, []);
-
-  function toggle() {
-    document.getElementById("toggle").classList.toggle("activeBt");
-    document.getElementById('links').classList.toggle('linksActive');
+  const logout = () => {
+    sendRequest(
+      '/api/logout',
+      'POST',
+      {}
+    ).then(response => {
+      localStorage.clear();
+      window.location.href = '/';
+    });
   }
 
+  const [cabDropMenu, setCabDropMenu] = useState(false);
+  const closeMenuCab = () => {
+    setCabDropMenu(false);
+  };
+
+  useEffect(() => {
+    if (cabDropMenu) {
+      document.addEventListener('click', closeMenuCab);
+    } else {
+      document.removeEventListener('click', closeMenuCab);
+    }
+
+    return () => {
+      document.removeEventListener('click', closeMenuCab);
+    };
+  }, [cabDropMenu]);
+
+  const [mainDropMenu, setMainDropMenu] = useState(false);
+  const closeMenuMain = () => {
+    setMainDropMenu(false);
+  };
+
+  useEffect(() => {
+    if (mainDropMenu) {
+      document.addEventListener('click', closeMenuMain);
+    } else {
+      document.removeEventListener('click', closeMenuMain);
+    }
+
+    return () => {
+      document.removeEventListener('click', closeMenuMain);
+    };
+  }, [mainDropMenu]);
+
   return (
-    <div className="header" data-aos="fade-down">
-      <div className="menu">
-        <div id="toggle" className="togglePhone" onClick={toggle}></div>
-        <div className="content-menu" id="links">
-          <ul className="links">
-            <li className="links-li li-custom-right links-li-ho-hover">
-              <a className="title-logo desktop-link" href="/">
-                <span className="colored-title-span-1 font-custom-1">G</span>
-                <span className="colored-title-span-2 font-custom-1">M</span>
-                <span className="font-custom-1">GAME</span></a>
-            </li>
-            <li className="links-li">
-              <div className="replace desktop-link font-custom-3">Полезное</div>
-              <input type="checkbox" id="two-menu"/>
-              <label htmlFor="two-menu">Полезное</label>
-              <ul className="drop">
-                <li className="drop-li"><a href="/articles_wiki">Вики</a></li>
-                <li className="drop-li"><a href="/mods">Моды</a></li>
-                <li className="drop-li"><a href="/online_map">Онлайн карта</a></li>
-                <li className="drop-li"><a href="/statistic">Статистика</a></li>
-                <li className="drop-li"><a href="/support">Поддержать</a></li>
-                <li className="drop-li"><a href="/texture_pack">Текстур пак</a></li>
-              </ul>
-            </li>
-            <li className="links-li">
-              <a className="desktop-link font-custom-3" href="/regulations">Правила</a>
-              <input type="checkbox" id="three-menu"/>
-              <label htmlFor="three-menu">Правила</label>
-            </li>
-            <li className="links-li">
-              <a className="desktop-link font-custom-3" href="/faq">faq</a>
-              <input type="checkbox" id="four-menu"/>
-              <label htmlFor="four-menu">faq</label>
-            </li>
-            <li className="links-li li-custom-left">
-              {!resParams?.data?.discordUser
+    <div className={classNames(styles["header"])} data-aos="fade-down">
+      <div className={classNames(styles["mainBox"])}>
+        <div className={classNames(styles["leftBlock"], styles["blockNumbered"])}>
+          <a className={classNames(styles["logoGeneral"])} href="/">
+            <span className={classNames(styles["colored-1"])}>G</span>
+            <span className={classNames(styles["colored-2"])}>M</span>
+            <span className={classNames(styles["noColored"])}>GAME</span>
+          </a>
+        </div>
+        <div className={classNames(styles["centerBlock"], styles["blockNumbered"])}>
+          <a className={classNames(styles["swipePage"])} href="/asdasda">Правила</a>
+          <div className={classNames(styles["dropOpen"])} onClick={() => setMainDropMenu(!mainDropMenu)}>
+            {mainDropMenu === false
+              ?
+              <span className={classNames(styles["ico"])}>&#9776;</span>
+              :
+              <span className={classNames(styles["ico"])}>&#128500;</span>
+            }
+            {mainDropMenu === false ? undefined :
+              <div className={classNames(styles["dropMenuMain"])} data-aos="zoom-out-down" data-aos-duration="250">
+                <div className={classNames(styles["boxList"])}>
+                  <a className={classNames(styles["list"])} href="/support">Поддержать</a>
+                  <a className={classNames(styles["list"])} href="/online_map">Онлайн карта</a>
+                  <a className={classNames(styles["list"])} href="/statistic">Статистика</a>
+                  <a className={classNames(styles["list"])} href="/articles_wiki">Вики сервера</a>
+                  <a className={classNames(styles["list"])} href="/mods">Моды</a>
+                  <a className={classNames(styles["list"], styles["last"])} href="/texture_pack">Текстур пак</a>
+                </div>
+              </div>
+            }
+          </div>
+          <a className={classNames(styles["swipePage"])} href="/asdasda">Вопросы</a>
+        </div>
+        <div className={classNames(styles["rightBlock"], styles["blockNumbered"])}>
+          {!resParams?.data?.discordUser
+            ?
+            <a className={classNames(styles["swipePage"])} href="/api/login">Войти</a>
+            :
+            <div className={classNames(styles["wrapperBoxCab"])} onClick={() => setCabDropMenu(!cabDropMenu)}>
+              {resParams?.data?.discordUser?.localuser?.username === undefined
                 ?
-                <a className="desktop-link custon-header" href="/api/login">
-                  <p className="ico-name-player font-custom-2">Войти</p>
-                </a>
+                <div className={classNames(styles["cabOpen"])}>
+                  {resParams.data.discordUser.avatar === null
+                    ?
+                    <SvgDiscord width="36px" height="36px" color="white"/>
+                    :
+                    <img
+                      className={classNames(styles["iconPlayer"])}
+                      src={`https://cdn.discordapp.com/avatars/${resParams.data.discordUser.id}/${resParams.data.discordUser.avatar}.png`}
+                      alt="none"
+                    />
+                  }
+                  <label className={classNames(styles["nameUser"])}>{resParams.data.discordUser.username}</label>
+                </div>
                 :
-                <div className="replace desktop-link custon-header">
+                <div className={classNames(styles["cabOpen"])}>
                   <img
-                    className="ico-player"
-                    src={`https://cdn.discordapp.com/avatars/${resParams.data.discordUser.id}/${resParams.data.discordUser.avatar}.png`}
+                    className={classNames(styles["iconPlayer"])}
+                    src={`https://minotar.net/helm/${resParams.data.discordUser.localuser.username}/100`}
                     alt="none"
                   />
-                  <p className="ico-name-player font-custom-2">{resParams.data.discordUser.username}</p>
-                  <input type="checkbox" id="five-menu"/>
-                  <ul className="drop drop-phone">
-                    <li className="drop-li"><a href="/cab/profile">Профиль</a></li>
-                    {resParams?.data?.discordUser?.localuser?.status === 2 &&
-                      <>
-                        <li className="drop-li"><a href="/cab/territories">Мои территории</a></li>
-                        <li className="drop-li"><a href="/cab/markers">Мои метки</a></li>
-                        <li className="drop-li"><a href="/cab/articles">Статьи</a></li>
-                        {/*<li className="drop-li"><a href="/cab/gallery">Моя галерея</a></li>*/}
-                        <li className="drop-li"><a href="/cab/prize">Призы</a></li>
-                        <li className="drop-li"><a href="/cab/change_password">Изменить пароль</a></li>
-                      </>
-                    }
-                    {resParams?.data?.discordUser?.role === 'admin' &&
-                      <li className="drop-li"><a href="/manager">Менеджер</a></li>
-                    }
-                  </ul>
+                  <label className={classNames(styles["nameUser"])}>{resParams.data.discordUser.localuser.username}</label>
                 </div>
               }
-            </li>
-          </ul>
+              {cabDropMenu === false ? undefined :
+                <div className={classNames(styles["dropMenuCab"])} data-aos="zoom-out-down" data-aos-duration="250">
+                  <div className={classNames(styles["boxList"])}>
+                    <div className={classNames(styles["prevDropUser"])}>
+                      <label className={classNames(styles["miniName"])}>{resParams.data.discordUser.localuser.username}</label>
+                    </div>
+                    <a className={classNames(styles["list"])} href="/cab/profile">Профиль</a>
+                    {resParams?.data?.discordUser?.role === 'admin' &&
+                      <a className={classNames(styles["list"])} href="/manager">Менеджер</a>
+                    }
+                    <span className={classNames(styles["list"], styles["last"])} onClick={logout}>Выйти из аккаунта</span>
+                  </div>
+                </div>
+              }
+            </div>
+          }
         </div>
       </div>
     </div>
