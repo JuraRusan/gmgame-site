@@ -11,6 +11,8 @@
     position: relative;
     width: 100%;
     height: 100vh;
+    background: url(../../../bases/assets/webp/Main-background.webp) no-repeat center;
+    background-size: cover;
 
     .mainContent {
       display: flex;
@@ -19,24 +21,24 @@
       width: 100%;
 
       .mainTitleH1 {
-        margin: 255px auto 0 auto;
+        margin: 80px auto 0 auto;
         width: auto;
         height: 160px;
         line-height: 160px;
         font-weight: 400;
         font-size: 110px;
-        color: $color-3;
+        color: $site-color-2;
         font-family: $fontCustom1;
 
         .coloredTitleSpanOne {
-          color: $color-4;
+          color: $site-color-9;
           font: inherit;
           overflow: hidden;
           position: relative;
         }
 
         .coloredTitleSpanTwo {
-          color: $color-1;
+          color: $site-color-10;
           font: inherit;
           overflow: hidden;
           position: relative;
@@ -69,7 +71,7 @@
     flex-direction: column;
     width: 100%;
     height: auto;
-    background: $color-2;
+    background: $site-color-3;
     padding-top: 125px;
     padding-bottom: 100px;
 
@@ -79,7 +81,7 @@
       justify-content: space-evenly;
       height: 600px;
       width: 100%;
-      color: $color-3;
+      color: $site-color-2;
 
       .informationTextDivStyle {
         width: 50%;
@@ -148,7 +150,7 @@
         font-weight: 400;
         font-size: 64px;
         text-align: center;
-        color: $color-3;
+        color: $site-color-2;
         text-transform: uppercase;
         margin-bottom: 15px;
         font-family: $fontCustom3;
@@ -159,7 +161,7 @@
         max-width: 550px;
         width: auto;
         text-align: center;
-        color: $color-3;
+        color: $site-color-2;
         line-height: 20px;
         font-weight: 400;
         margin: auto;
@@ -191,7 +193,7 @@
   .rowContainerNumberFour {
     display: flex;
     flex-direction: column;
-    background: $color-2;
+    background: $site-color-3;
     width: 100%;
     height: auto;
     padding-top: 50px;
@@ -203,7 +205,7 @@
       line-height: 79px;
       font-weight: 400;
       font-size: 64px;
-      color: $color-3;
+      color: $site-color-2;
       font-family: $fontCustom3;
     }
   }
@@ -211,21 +213,21 @@
   .lineNoContentTop {
     height: 200px;
     width: 100%;
-    background: $color-2;
-    background: linear-gradient(180deg, $color-2 0%, rgba(228, 0, 127, 0) 100%);
+    background: $site-color-3;
+    background: linear-gradient(180deg, $site-color-3 0%, transparent 100%);
   }
 
   .lineNoContentBottom {
     height: 200px;
     width: 100%;
-    background: $color-2;
-    background: linear-gradient(0deg, $color-2 0%, rgba(1, 22, 37, 0) 100%);
+    background: $site-color-3;
+    background: linear-gradient(0deg, $site-color-3 0%, transparent 100%);
   }
 
   .lineNoContentTopTwo {
     height: 200px;
     width: 100%;
-    background: linear-gradient(180deg, $color-2 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(180deg, $site-color-3 0%, transparent 100%);
   }
 }
 
@@ -234,7 +236,7 @@
     .rowContainerNumberOne {
       .mainContent {
         .mainTitleH1 {
-          margin-top: 180px;
+          margin-top: 75px;
         }
       }
     }
@@ -256,7 +258,7 @@
     .rowContainerNumberOne {
       .mainContent {
         .mainTitleH1 {
-          margin-top: 170px;
+          margin-top: 70px;
         }
       }
     }
@@ -345,12 +347,12 @@
     .rowContainerNumberOne {
       .mainContent {
         .mainTitleH1 {
-          margin-top: 180px;
+          margin-top: 65px;
           font-size: 82px;
         }
 
         .mainTextH3 {
-          font-size: 22px;
+          font-size: 20px;
         }
       }
     }
@@ -411,6 +413,20 @@
         }
       }
     }
+
+    .rowContainerNumberTwo {
+      .contentInformation {
+        .informationTextDivStyle {
+          .h2Information {
+            font-size: 38px;
+          }
+
+          .h4Information {
+            font-size: 19px;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -422,7 +438,7 @@
           padding: 10px;
 
           .h2Information {
-            font-size: 38px;
+            font-size: 34px;
             margin-top: 20px;
             margin-bottom: 20px;
           }
@@ -488,7 +504,7 @@
           padding: 8px;
 
           .h2Information {
-            font-size: 32px;
+            font-size: 24px;
             margin-top: 15px;
             margin-bottom: 15px;
           }
@@ -513,9 +529,7 @@
 
       .blockWorlds {
         .hoverMeBlock {
-          left: 35%;
-          width: 275px;
-          height: 275px;
+          display: none;
         }
       }
     }
@@ -624,10 +638,6 @@
 
       .blockWorlds {
         padding-top: 60px;
-
-        .hoverMeBlock {
-          display: none;
-        }
       }
     }
   }

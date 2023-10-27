@@ -49,6 +49,7 @@ const General = () => {
     <div className={classNames(styles["main"])}>
 
       <div className={classNames(styles["rowContainerNumberOne"])}>
+        <div className={classNames(styles["lineNoContentTop"])}></div>
         <div className={classNames(styles["mainContent"])}>
           <h1 className={classNames(styles["mainTitleH1"])} data-aos="zoom-in">
             <span className={classNames(styles["coloredTitleSpanOne"])}>G</span>
