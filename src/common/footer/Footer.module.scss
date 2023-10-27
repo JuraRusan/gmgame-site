@@ -5,9 +5,11 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  height: 300px;
+  height: 200px;
   background: transparent;
   padding-bottom: 8px;
+  border-top: 1px solid $site-color-5;
+  background: $site-color-3;
 
   .rows-bt {
     display: flex;
@@ -27,11 +29,11 @@
     }
 
     .leftLine {
-      border-image: linear-gradient(to right, rgba(0, 0, 0, 0), $color-22, $color-13) 1 0;
+      border-image: linear-gradient(to right, rgba(0, 0, 0, 0), $site-color-5) 1 0;
     }
 
     .rightLine {
-      border-image: linear-gradient(to right, $color-13, $color-22, rgba(0, 0, 0, 0)) 1 0;
+      border-image: linear-gradient(to right, $site-color-5, rgba(0, 0, 0, 0)) 1 0;
     }
 
     .wrapperLink {
@@ -50,7 +52,24 @@
         padding: 10px;
         border: none;
         border-radius: 8px;
-        background: $color-22;
+        background: transparent;
+        transition: all 0.35s ease;
+
+        &:hover {
+          background: $site-color-1;
+
+          svg {
+            path {
+              fill: $site-color-9;
+            }
+          }
+        }
+
+        svg {
+          path {
+            transition: all 0.35s ease;
+          }
+        }
       }
     }
   }
@@ -68,7 +87,7 @@
       line-height: 24px;
       font-size: 14px;
       font-weight: 400;
-      color: $color-3;
+      color: $site-color-2;
       text-align: center;
       margin: 0 auto 8px auto;
       font-family: $fontCustom2;
@@ -117,7 +136,7 @@
 
 @media screen and (max-width: 480px) {
   .footer {
-    height: 200px;
+    height: 160px;
 
     .rows-bt {
       .wrapperLink {
@@ -126,8 +145,8 @@
         max-width: none;
 
         .bt-links {
-          height: 48px;
-          width: 48px;
+          height: 36px;
+          width: 36px;
           padding: 8px;
           margin: 0 6px;
         }
