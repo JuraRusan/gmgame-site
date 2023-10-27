@@ -8,7 +8,7 @@ html {
 body {
   height: 100%;
   width: 100%;
-  background-color: rgb(23, 55, 75);
+  background-color: $site-color-3;
 }
 
 div#root {
@@ -24,37 +24,31 @@ div#root {
 
 *::-webkit-scrollbar {
   width: 8px;
-  background-color: rgb(32, 42, 48);
-}
-
-*::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: $site-color-7;
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: rgb(23, 55, 75);
+  background-color: $site-color-6;
   transition: 2s all ease;
-}
-
-*::-webkit-scrollbar-thumb:hover {
-  background-color: rgb(34, 78, 105);
 }
 
 .main-wrapper-bg {
   width: 100%;
   height: auto;
-  background: $color-7;
-  background: url(./bases/assets/webp/Main-background.webp);
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-size: cover;
-  background-attachment: fixed;
-  box-shadow: inset 0 0 2000px 20000px rgba(0, 0, 0, 0.25);
+  background: $site-color-3;
 }
 
 .class-z-index-10000-header {
   position: relative;
   z-index: 10000;
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid $site-color-5;
+  background: $site-color-3;
+  transition: all 0.35s ease;
 }
 
 .class-z-index-8000-footer {
@@ -89,13 +83,6 @@ div#root {
 }
 
 @media screen and (max-width: 960px) {
-  .class-z-index-10000-header {
-    position: fixed;
-    width: 100%;
-  }
-  .class-z-index-1000 {
-    padding-top: 40px;
-  }
 }
 
 @media screen and (max-width: 768px) {
