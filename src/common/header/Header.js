@@ -86,6 +86,8 @@ const Header = () => {
             {mainDropMenu === false ? undefined :
               <div className={classNames(styles["dropMenuMain"])} data-aos="zoom-out-down" data-aos-duration="250">
                 <div className={classNames(styles["boxList"])}>
+                  <a className={classNames(styles["list"], styles["phoneLink"])} href="/regulations">Правила</a>
+                  <a className={classNames(styles["list"], styles["phoneLink"])} href="/faq">Вопросы</a>
                   <a className={classNames(styles["list"])} href="/support">Поддержать</a>
                   <a className={classNames(styles["list"])} href="/online_map">Онлайн карта</a>
                   <a className={classNames(styles["list"])} href="/statistic">Статистика</a>
