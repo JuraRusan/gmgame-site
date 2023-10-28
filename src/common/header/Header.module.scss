@@ -289,6 +289,13 @@ $line: 36px;
 }
 
 @media screen and (max-width: 1024px) {
+  .header {
+    .mainBox {
+      .dropMenuCab {
+        right: -4px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 960px) {
@@ -336,13 +343,15 @@ $line: 36px;
       }
 
       .dropMenuCab {
+        right: 4px;
+
         &:before {
           left: 90%;
         }
       }
 
       .dropMenuMain {
-        left: 0;
+        left: -4px;
         transform: translate(0);
 
         &:before {
@@ -396,7 +405,7 @@ $line: 36px;
         min-width: auto;
         left: 0;
         right: 0;
-        margin: 0 10px;
+        margin: 0 12px;
         top: 70px;
 
         &:before {
@@ -433,6 +442,11 @@ $line: 36px;
         .wrapperBoxCab {
           margin-right: 8px;
         }
+      }
+
+      .dropMenuCab,
+      .dropMenuMain {
+        margin: 0 6px;
       }
     }
   }
