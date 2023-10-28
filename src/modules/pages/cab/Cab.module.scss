@@ -1,20 +1,13 @@
 @import "../../../Variables.scss";
 
-@keyframes appearance {
+@keyframes display {
   0% {
     opacity: 0;
+    height: 0;
   }
   100% {
-    opacity: 1 !important;
-  }
-}
-
-@keyframes disappearance {
-  0% {
     opacity: 1;
-  }
-  100% {
-    opacity: 0;
+    height: auto;
   }
 }
 
@@ -26,30 +19,18 @@
   position: relative;
 
   .boxWrapper {
-    max-width: 1500px;
+    max-width: 1580px;
     width: 100%;
     height: 800px;
-    background: $color-11;
-    margin: 25px auto 0 auto;
-    padding: 5px;
+    background: $site-color-4;
+    margin: 24px auto 24px auto;
     display: flex;
     flex-direction: row;
-    border: 1px solid $color-2;
-    border-radius: 5px;
+    border: 1px solid $site-color-5;
+    border-radius: 8px;
     position: relative;
 
-    .banned {
-      position: absolute;
-      left: 0;
-      right: 0;
-      margin: auto 0;
-      scale: 0.95;
-      top: 50%;
-      bottom: 50%;
-      transform: translate(-50%, 0, -50%);
-    }
-
-    .buttonWrapper {
+    .phoneContent {
       display: none;
     }
   }
@@ -59,13 +40,11 @@
   width: 275px;
   min-width: 275px;
   max-width: 275px;
-  padding: 10px;
   display: flex;
   flex-direction: column;
   height: 100%;
-  border-width: 1px;
-  border-right-style: solid;
-  border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), $color-2, $color-2, $color-2, rgba(0, 0, 0, 0)) 1 100%;
+  border: none;
+  border-right: 1px solid $site-color-5;
 
   .menuCab {
     display: flex;
@@ -73,49 +52,93 @@
     justify-content: flex-start;
     width: 100%;
     height: 100%;
-    margin-top: 10px;
+    padding: 10px;
 
     .blockLink {
       display: flex;
       flex-direction: column;
       width: auto;
-      margin-top: auto;
-
-      &:nth-child(1) {
-        margin: 0;
-      }
+      height: auto;
 
       .tab {
         background: transparent;
         cursor: pointer;
-        transition: all 0.5s ease;
+        transition: all 0.35s ease;
         width: 100%;
-        height: 40px;
+        height: 32px;
+        line-height: 32px;
         text-decoration: none;
         font-weight: 400;
-        font-size: 20px;
-        line-height: 40px;
-        margin: 3px 0 3px 0;
-        padding-left: 12px;
-        color: $color-3;
+        font-size: 16px;
+        font-family: $fontCustom2;
+        padding: 0 12px 0 22px;
+        color: $site-color-2;
         border: none;
         text-align: start;
-        border-radius: 15px;
-        outline: none;
+        border-radius: 8px;
+        margin: 2px 0;
 
-        &:active,
-        &:hover {
-          outline: none;
+        &:before {
+          content: '\2022';
+          position: absolute;
+          left: 18px;
+          margin-top: 2px;
+        }
+
+        &:active {
+          color: $site-color-2;
         }
 
         &:hover {
-          background: $color-14;
+          background: $site-color-1;
         }
       }
 
       .checked {
-        background-color: $color-4 !important;
-        color: $color-2 !important;
+        color: $site-color-9 !important;
+      }
+
+      .disabled {
+        color: $site-color-5;
+        cursor: default;
+
+        &:active {
+          color: $site-color-5;
+        }
+
+        &:hover {
+          background: transparent !important;
+        }
+      }
+    }
+
+    .blockLinkLogout {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      width: auto;
+      height: 100%;
+      min-height: 0;
+      max-height: none;
+
+      .logout {
+        margin: 100% 0 0 0;
+      }
+    }
+
+    .delimiter {
+      display: none;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      height: auto;
+
+      .bullet {
+        font-size: 24px;
+        font-weight: 400;
+        font-family: $fontCustom2;
+        color: $site-color-5;
+        margin: 8px 28px 0 28px;
       }
     }
   }
@@ -124,9 +147,8 @@
 .columnTwo {
   width: 100%;
   height: 100%;
-  padding: 8px;
   display: flex;
-  color: $color-3;
+  padding: 10px;
 }
 
 @media screen and (max-width: 1600px) {
@@ -134,7 +156,7 @@
     .boxWrapper {
       max-width: none;
       width: auto;
-      margin: 20px 15px 0 15px;
+      margin: 24px 16px;
     }
   }
 }
@@ -145,9 +167,9 @@
 @media screen and (max-width: 1280px) {
   .mainCab {
     .columnOne {
-      width: 250px;
-      min-width: 250px;
-      max-width: 250px;
+      width: 260px;
+      min-width: 260px;
+      max-width: 260px;
     }
   }
 }
@@ -155,7 +177,7 @@
 @media screen and (max-width: 1024px) {
   .mainCab {
     .boxWrapper {
-      margin: 0 15px 0 15px;
+      margin: 16px 12px;
     }
 
     .columnOne {
@@ -166,14 +188,13 @@
       .menuCab {
         .blockLink {
           .tab {
-            font-size: 18px;
+            font-size: 14px;
           }
         }
       }
     }
   }
 }
-
 
 @media screen and (max-width: 960px) {
   .mainCab {
@@ -182,78 +203,90 @@
       height: auto;
       min-height: 100vh;
 
-      .buttonWrapper {
+      .phoneContent {
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
-        width: 100%;
+        justify-content: center;
+        border-bottom: 1px solid $site-color-5;
         height: 32px;
-        min-height: 32px;
-        max-height: 32px;
 
-        .buttonPhone {
+        .swipePhone {
           display: flex;
           flex-direction: row;
-          justify-content: center;
-          background: transparent;
-          color: $color-3;
-          text-align: center;
-          border: none;
-          font-weight: 400;
-          font-size: 20px;
-          width: 32px;
-          height: 32px;
-          line-height: 32px;
+          width: auto;
+          height: 24px;
+          margin: 4px 0;
+          padding: 0 18px;
           cursor: pointer;
-          animation: appearance 0.85s both ease;
+          border: none;
+          border-radius: 4px;
           transition: all 0.35s ease;
 
           &:hover {
-            color: $color-8;
-            background: $color-21;
-            border-radius: 4px;
+            background: $site-color-1;
           }
-        }
 
-        .buttonPhoneNoVisible {
-          display: none !important;
-          opacity: 0 !important;
+          .ico,
+          .text {
+            color: $site-color-2;
+            font-weight: 400;
+            line-height: 24px;
+            height: 24px;
+            width: auto;
+            cursor: pointer;
+          }
+
+          .ico {
+            font-size: 22px;
+          }
+
+          .text {
+            font-size: 14px;
+            font-family: $fontCustom2;
+            margin-left: 8px;
+          }
+
+          .customColorIco {
+            color: $site-color-9;
+          }
         }
       }
 
       .columnOne {
-        padding: 0 8px;
-        width: 300px;
-        min-width: 300px;
-        max-width: 300px;
         display: none;
-        opacity: 0;
-        transition: all 0.35s ease;
+        height: auto;
+        width: 80%;
+        min-width: 0;
+        max-width: none;
+        border: 1px solid $site-color-5;
+        border-top: none;
+        min-height: 0;
+        max-height: max-content;
+        top: 32px;
+        background: $site-color-4;
+        left: 50%;
+        transform: translate(-50%);
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        animation: display 0.35s both ease;
 
-        .menuCab {
-          .blockLink {
-            &:nth-child(2) {
-              margin-top: 15%;
-            }
+        .blockLinkLogout {
+          height: auto;
+
+          .logout {
+            margin: 0;
           }
+        }
+
+        .delimiter {
+          display: flex;
         }
       }
 
-      .columnOneRender {
-        display: flex !important;
-        opacity: 1;
-        animation: appearance 0.85s both ease;
-      }
-
-      .columnTwo {
-        padding: 0 8px;
-        transition: all 0.35s ease;
-        animation: appearance 0.85s both ease;
-      }
-
-      .columnTwoRender {
-        display: none !important;
-        opacity: 0;
+      .display {
+        display: flex;
+        position: absolute;
+        z-index: 1;
       }
     }
   }
@@ -268,18 +301,16 @@
 @media screen and (max-width: 480px) {
   .mainCab {
     .boxWrapper {
-      margin: 5px;
-      padding: 5px;
+      margin: 6px;
 
       .columnOne {
-        padding: 0 5px;
         width: 100%;
-        min-width: auto;
-        max-width: none;
+        border-right: none;
+        border-left: none;
       }
 
       .columnTwo {
-        padding: 0 5px;
+        padding: 0 6px;
       }
     }
   }
