@@ -8,7 +8,7 @@ function Preload() {
   return (
     <div className={classNames(styles["preloaderWrapper"])}>
       <div className={classNames(styles["preloader"])}>
-        <Triangle/>
+        <Triangle color="#e4007f"/>
       </div>
     </div>
   );
