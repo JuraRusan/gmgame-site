@@ -80,9 +80,9 @@ const Router = () => {
             {/*----------*/}
             <Route path="articles" element={<Articles/>}/>
             {/*----------*/}
-            {/*<Route path="gallery" element={<Gallery/>}/>*/}
-            {/*<Route path="gallery/edit_add_post" element={<EditAddPost/>}/>*/}
-            {/*<Route path="gallery/post_analytics" element={<AnalyticsPost/>}/>*/}
+            <Route path="gallery" element={<Articles/>}/>  {/* <Route path="gallery" element={<Gallery/>}/> */}
+            <Route path="gallery/edit_add_post" element={<Articles/>}/> {/*<Route path="gallery/edit_add_post" element={<EditAddPost/>}/>*/}
+            <Route path="gallery/post_analytics" element={<Articles/>}/> {/*<Route path="gallery/post_analytics" element={<AnalyticsPost/>}/>*/}
             {/*----------*/}
             <Route path="prize" element={<MyPrizes/>}/>
             {/*----------*/}
@@ -92,7 +92,7 @@ const Router = () => {
 
           <Route path="building_a_hyperloop_server" element={<BuildingAHyperloop/>}/> {/*-------------------- temporarily --------------------*/}
           <Route path="/articles_wiki" element={<ArticlesWiki/>}/>
-          {/*<Route path="/gallery" element={<MainGallery/>}/>*/}
+          <Route path="/gallery" element={<ArticlesWiki/>}/> {/*<Route path="/gallery" element={<MainGallery/>}/>*/}
 
           <Route path="/faq" element={<Faq/>}/>
           <Route path="/regulations" element={<Regulations/>}/>
