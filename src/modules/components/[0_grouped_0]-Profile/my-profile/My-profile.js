@@ -41,39 +41,34 @@ const MyProfile = () => {
 
   return (
     <div className={classNames(styles["profileBlock"])} data-aos="zoom-in">
-      {/*<div className={classNames(styles["discordLinkWrapper"])}>*/}
-      {/*  <img className={classNames(styles["discordImageUser"])} src={`https://cdn.discordapp.com/avatars/${data.discordUser.id}/${data.discordUser.avatar}.png`} alt=""/>*/}
-      {/*  <h5 className={classNames(styles["discordNameUser"])}>{data.discordUser.username}@{data.discordUser.discriminator}</h5>*/}
-      {/*</div>*/}
-      <div className={classNames(styles["profileBlockWrapper"])}>
+      <div className={classNames(styles["content"])}>
 
-        {data.user.status === 4
+        {data.user.status === 1
           ?
-          <></>
+          <div className={classNames(styles["wrapperText"])}>
+            <h4 className={classNames(styles["text"])}>Ваша заявка на рассмотрении. Пожалуйста ожидайте.</h4>
+          </div>
           :
-          <>
-            <div className={classNames(styles["profileOneCube"])}>
-              <h5 className={classNames(styles["titleH5"])}>Статус аккаунта</h5>
-              <label className={classNames(styles["labelText"])}>{data.status}</label>
-            </div>
-            <div className={classNames(styles["profileOneCube"])}>
-              <h5 className={classNames(styles["titleH5"])}>Версия игры</h5>
-              <label className={classNames(styles["labelText"])}>Java Edition {data.version}</label>
-            </div>
-          </>
+          undefined
         }
 
-        {data.user.status === 2 &&
-          <div className={classNames(styles["profileOneCubeCustomIp"])}>
-            <h5 className={classNames(styles["titleH5"])}>Адреса сервера</h5>
+        {data.user.status === 2
+          ?
+          <div className={classNames(styles["wrapperText"])}>
+            <h4 className={classNames(styles["text"], styles["good"])}>Ваша заявка одобрена. Добро пожаловать на сервер!</h4>
+            <h4 className={classNames(styles["text"])}>Пожалуйста, ознакомьтесь с "правилами" и разделом "Часто задаваемые вопросы" для получения полезной информации.</h4>
+            <div className={classNames(styles["version"])}>
+              <span className={classNames(styles["versionNumber"])}>Java Edition {data.version}</span>
+            </div>
             <div className={classNames(styles["ipList"])}>
+              <label className={classNames(styles["label"])}>Серверные адреса для подключения:</label>
               {ipArray.map((el, index) => (
-                <div className={classNames(styles["wrapperIp"])} key={index}>
-                  <label className={classNames(styles["text"])}>{el}</label>
-                  <button className={classNames(styles["copy"])} onClick={() => handleCopyClick(index)}>
+                <div className={classNames(styles["wrapper"])} key={index} onClick={() => handleCopyClick(index)}>
+                  <label className={classNames(styles["ip"], {[styles["ipTo"]]: copiedIndex === index})}>{el}</label>
+                  <div className={classNames(styles["copy"])}>
                     {copiedIndex === index
                       ?
-                      <span className={classNames(styles["ico"])}>
+                      <span className={classNames(styles["ico"], styles["icoTo"])}>
                         <CheckSvgComponent width="100%" height="100%" color="#f4f4f4"/>
                       </span>
                       :
@@ -81,17 +76,49 @@ const MyProfile = () => {
                         <CopySvgComponent width="100%" height="100%" color="#f4f4f4"/>
                       </span>
                     }
-                  </button>
+                  </div>
                 </div>
               ))}
             </div>
           </div>
+          :
+          undefined
+        }
+
+        {data.user.status === 3
+          ?
+          <div className={classNames(styles["wrapperText"])}>
+            <h4 className={classNames(styles["text"])}>Ваша заявка отклонена. Спасибо за понимание.</h4>
+          </div>
+          :
+          undefined
+        }
+
+        {data.user.status === 4
+          ?
+          <img
+            className={classNames(styles["banned"])}
+            src="../site_assets/pages/webp/banned.webp"
+            alt=""
+            width="100%"
+            height="auto"
+          />
+          :
+          undefined
+        }
+
+        {data.user.status === 5
+          ?
+          <div className={classNames(styles["wrapperText"])}>
+            <h4 className={classNames(styles["text"])}>Ваш аккаунт неактивен из-за продолжительного отсутствия. Обратитесь к нам в Discord, если желаете восстановить активность.</h4>
+          </div>
+          :
+          undefined
         }
 
       </div>
     </div>
-  )
-    ;
+  );
 }
 
 export default MyProfile;

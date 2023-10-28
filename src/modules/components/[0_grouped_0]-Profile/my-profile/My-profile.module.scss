@@ -19,32 +19,7 @@
   display: flex;
   flex-direction: column;
 
-  .discordLinkWrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    height: 75px;
-    margin-top: 8px;
-
-    .discordImageUser {
-      display: flex;
-      width: 75px;
-      height: 75px;
-    }
-
-    .discordNameUser {
-      display: flex;
-      color: $color-3;
-      height: 75px;
-      line-height: 75px;
-      font-weight: 400;
-      font-size: 20px;
-      margin-left: 8px;
-    }
-  }
-
-  .profileBlockWrapper {
+  .content {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -53,130 +28,142 @@
     width: 100%;
     height: 100%;
 
-    .profileOneCube {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      border-radius: 16px;
-      width: 480px;
-      height: auto;
-      background: $color-14;
-      margin: 10px auto 10px auto;
-      padding-bottom: 12px;
+    .banned {
+      padding: 32px;
     }
 
-    .profileOneCubeCustomIp {
+    .wrapperText {
       display: flex;
       flex-direction: column;
-      width: 650px;
-      height: auto;
-      max-height: 280px;
-      background: $color-14;
-      margin: 0 auto;
-      border-radius: 16px;
-      padding-bottom: 12px;
+      padding: 0 48px;
+
+      .text {
+        font-weight: 400;
+        font-size: 18px;
+        font-family: $fontCustom2;
+        color: $site-color-2;
+        text-align: center;
+        line-height: 1.5;
+      }
+
+      .good {
+        color: $site-color-9;
+        margin-bottom: 16px;
+      }
+
+      .version {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        max-width: 80%;
+        height: auto;
+        margin: 32px auto;
+        border: 1px solid $site-color-5;
+        border-radius: 8px;
+        background: $site-color-12;
+        padding: 16px 24px;
+
+        .versionNumber {
+          font-family: $fontCustom2;
+          font-weight: 400;
+          font-size: 24px;
+          color: $site-color-2;
+        }
+      }
 
       .ipList {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
+        width: auto;
+        height: auto;
 
-        .wrapperIp {
+        .label {
+          font-family: $fontCustom2;
+          font-weight: 400;
+          font-size: 14px;
+          color: $site-color-2;
+          height: 24px;
+          line-height: 24px;
+          margin: 0 auto;
+        }
+
+        .wrapper {
           display: flex;
           flex-direction: row;
           justify-content: center;
-          background: $color-15;
-          border-radius: 12px;
+          height: 32px;
+          line-height: 32px;
           width: 100%;
-          max-width: 90%;
-          height: 48px;
-          padding: 0 25px;
-          margin: 0 auto 8px auto;
+          min-width: 250px;
+          max-width: 250px;
+          margin: 4px auto;
+          padding: 0 24px;
+          border: 1px solid $site-color-5;
+          border-radius: 8px;
+          cursor: pointer;
+          transition: all 0.35s ease;
+          background: $site-color-12;
 
-          .text {
-            line-height: 24px;
-            height: 24px;
-            margin: auto 0;
-            font-family: $fontCustom2;
+          &:hover {
+            background: $site-color-1;
+          }
+
+          .ip {
+            color: $site-color-2;
+            font-size: 12px;
             font-weight: 400;
-            font-size: 16px;
+            font-family: $fontCustom2;
+            line-height: 30px;
+            height: 30px;
+            width: auto;
+            cursor: pointer;
+            transition: all 0.35s ease;
+          }
+
+          .ipTo {
+            color: $site-color-9;
           }
 
           .copy {
-            font-size: 14px;
-            font-weight: inherit;
-            font-family: inherit;
-            height: 28px;
-            line-height: 28px;
+            line-height: 30px;
+            height: 30px;
             width: auto;
-            outline: none;
-            margin: auto 0 auto 10px;
-            color: $color-3;
-            padding: 0 5px;
             cursor: pointer;
+            padding: 4px;
             transition: all 0.35s ease;
-            background: none;
-            border-radius: 0;
-            border: 1px solid $color-15;
 
-            svg {
-              path {
-                fill: currentColor;
+            .ico {
+              svg {
+                path {
+                  transition: all 0.35s ease;
+                }
+              }
+
+              &:hover {
+                svg {
+                  path {
+                    fill: $site-color-9;
+                  }
+                }
               }
             }
 
-            &:hover {
-              color: $color-8;
-              background: $color-11;
-              border: 1px solid $color-21;
-              border-radius: 5px;
-            }
-
-            .ico {
-              animation: animationBtn 2s both;
+            .icoTo {
+              svg {
+                path {
+                  fill: $site-color-9;
+                }
+              }
             }
           }
         }
       }
     }
-
-    .titleH5 {
-      width: 100%;
-      height: 64px;
-      line-height: 64px;
-      font-weight: 400;
-      font-size: 22px;
-      text-align: center;
-      color: $color-3;
-      margin: 0 auto;
-    }
-
-    .labelText {
-      width: 100%;
-      max-width: 90%;
-      height: 48px;
-      line-height: 48px;
-      font-weight: 400;
-      font-size: 20px;
-      padding: 0 25px;
-      text-align: center;
-      color: $color-3;
-      background: $color-15;
-      border-radius: 12px;
-      margin: 0 auto 8px auto;
-      font-family: $fontCustom2;
-    }
   }
 }
 
 @media screen and (max-width: 1600px) {
-  .profileBlock {
-    .profileBlockWrapper {
-      .profileOneCube {
-        width: 48%;
-      }
-    }
-  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -189,38 +176,86 @@
 }
 
 @media screen and (max-width: 960px) {
+  .profileBlock {
+    .content {
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: 80px;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
   .profileBlock {
-    .profileBlockWrapper {
-      .profileOneCube {
-        width: 96%;
-      }
+    .content {
+      .wrapperText {
+        padding: 0 36px;
 
-      .profileOneCubeCustomIp {
-        width: 96%;
-      }
+        .text {
+          font-size: 16px;
+        }
 
-      .titleH5 {
-        height: 48px;
-        line-height: 48px;
-        font-size: 20px;
-      }
-
-      .labelText {
-        font-size: 16px;
-        height: 42px;
-        line-height: 42px;
+        .version {
+          .versionNumber {
+            font-size: 22px;
+          }
+        }
       }
     }
   }
 }
 
 @media screen and (max-width: 640px) {
+  .profileBlock {
+    .content {
+      .wrapperText {
+        padding: 0 16px;
+
+        .version {
+          margin: 24px auto;
+          max-width: none;
+
+          .versionNumber {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 480px) {
+  .profileBlock {
+    .content {
+      margin-top: 50px;
+
+      .wrapperText {
+        .text {
+          font-size: 14px;
+        }
+
+        .good {
+          margin-bottom: 8px;
+        }
+
+        .version {
+          padding: 12px 16px;
+          margin: 16px auto;
+
+          .versionNumber {
+            font-size: 18px;
+          }
+        }
+
+        .ipList {
+          .wrapper {
+            max-width: none;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 360px) {
