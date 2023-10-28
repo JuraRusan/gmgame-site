@@ -68,9 +68,21 @@ const MyPrizes = () => {
     });
   }
 
+  function getWordForm(count) {
+    if (count % 10 === 1 && count % 100 !== 11) {
+      return 'выигрыш';
+    } else if (count % 10 >= 2 && count % 10 <= 4 && (count % 100 < 10 || count % 100 >= 20)) {
+      return 'выигрыша';
+    } else {
+      return 'выигрышей';
+    }
+  }
+
+  const wordForm = getWordForm(data.count);
+
   return (
     <div className={classNames(styles["boxPrizesWrapper"])} data-aos="zoom-in">
-      <h4 className={classNames(styles["prizesTitleH4"])}>У Вас {data.count} выигрышей</h4>
+      <h4 className={classNames(styles["prizesTitleH4"])}>У Вас {data.count} {wordForm}</h4>
       <div className={classNames(styles["allPrizesContainer"])}>
         {data.awards.map((el, index) => {
           return (
