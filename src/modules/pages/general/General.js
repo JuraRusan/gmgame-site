@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import React, {useEffect} from "react";
 import AOS from "aos";
-import Button from "../../components/button/Button.js";
+import {Link} from "react-router-dom";
 import Mode from "../../components/[0_grouped_0]-Generals/mode/Mode.js";
 import World from "../../components/[0_grouped_0]-Generals/world/World.js";
 import SvgHoverMe from "../../../bases/icons/SvgHoverMe.js";
@@ -58,7 +58,9 @@ const General = () => {
           <h3 className={classNames(styles["mainTextH3"])} data-aos="zoom-in">{serverInformation1}</h3>
           <h3 className={classNames(styles["mainTextH3"])} data-aos="zoom-in">{serverInformation2}</h3>
           <div className={classNames(styles["buttonContainerWrapper"])} data-aos="zoom-in">
-            <Button/>
+            <Link to={'/cab/profile'}>
+              <button className={classNames(styles["btn"])}>Подать заявку</button>
+            </Link>
           </div>
         </div>
         <div className={classNames(styles["lineNoContentBottom"])}></div>

@@ -1,58 +1,5 @@
 @import "../../../Variables";
 
-@keyframes shine {
-  from {
-    margin-left: 0;
-  }
-  to {
-    margin-left: 300%;
-  }
-}
-
-.buttonStyle {
-  width: 300px;
-  height: 75px;
-  line-height: 75px;
-  font-size: 30px;
-  text-decoration: none;
-  background-color: $color-4;
-  border-radius: 22px;
-  border: none;
-  margin: 0 auto;
-  overflow: hidden;
-  position: relative;
-  cursor: pointer;
-  font-family: $fontCustom3;
-
-  &:before {
-    content: " ";
-    display: block;
-    width: 200px;
-    height: 40px;
-    background: $color-6;
-    position: absolute;
-    top: -10px;
-    left: -200px;
-    transform: rotate(-45deg);
-    transition: all 0.85s ease-in-out;
-    animation: shine 3s infinite ease;
-  }
-
-  &:after {
-    content: " ";
-    display: block;
-    width: 200px;
-    height: 30px;
-    background: $color-6;
-    position: absolute;
-    top: -10px;
-    left: -120px;
-    transform: rotate(-45deg);
-    transition: all 0.85s ease-in-out;
-    animation: shine 3s infinite ease;
-  }
-}
-
 @media screen and (max-width: 1600px) {
 }
 
@@ -69,37 +16,13 @@
 }
 
 @media screen and (max-width: 768px) {
-  .buttonStyle {
-    width: 280px;
-    height: 70px;
-    line-height: 70px;
-    font-size: 28px;
-  }
 }
 
 @media screen and (max-width: 640px) {
-  .buttonStyle {
-    width: 250px;
-    height: 55px;
-    line-height: 55px;
-    font-size: 24px;
-  }
 }
 
 @media screen and (max-width: 480px) {
-  .buttonStyle {
-    width: 215px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 20px;
-  }
 }
 
 @media screen and (max-width: 360px) {
-  .buttonStyle {
-    width: 180px;
-    height: 35px;
-    line-height: 35px;
-    font-size: 16px;
-  }
 }
