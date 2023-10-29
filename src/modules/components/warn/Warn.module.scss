@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   width: auto;
   height: auto;
 
@@ -18,8 +19,9 @@
     height: auto;
     min-height: 24px;
     line-height: 24px;
-    color: $color-4;
-    font-size: 14px;
+    color: $site-color-9;
+    font-size: 13px;
+    font-family: $fontCustom2;
     font-weight: 400;
   }
 }
@@ -55,7 +57,7 @@
     .warnInformation {
       text-align: center;
       line-height: 1.5;
-      font-size: 13px;
+      font-size: 12px;
     }
   }
 }
