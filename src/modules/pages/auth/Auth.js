@@ -1,11 +1,12 @@
+import classNames from "classnames";
 import React from "react";
+import AuthComponent from "../../components/auth-comp/Auth-comp.js";
 
-import "./Auth.scss";
-import AuthComponent from "../../components/[0_grouped_0]-Auth/auth-comp/Auth-comp.js";
+import styles from "./Auth.module.scss";
 
 const Auth = () => {
   return (
-    <div className="main-reg">
+    <div className={classNames(styles["main-reg"])}>
       <AuthComponent/>
     </div>
   );

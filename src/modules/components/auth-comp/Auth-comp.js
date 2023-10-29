@@ -3,11 +3,11 @@ import React, {useEffect} from "react";
 import {useForm} from "react-hook-form";
 import {ErrorMessage} from "@hookform/error-message";
 import AOS from "aos";
-import {sendRequest} from '../../../../DataProvider';
+import {sendRequest} from '../../../DataProvider';
 import {useAlert} from "react-alert";
-import Warn from "../../warn/Warn.js";
+import Warn from "../warn/Warn.js";
 
-import styles from"./Auth-comp.module.scss";
+import styles from "./Auth-comp.module.scss";
 import "aos/dist/aos.css";
 
 const AuthComponent = () => {
