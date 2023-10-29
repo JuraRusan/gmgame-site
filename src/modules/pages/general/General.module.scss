@@ -61,7 +61,7 @@
         height: 30px;
         line-height: 30px;
         margin: 0 auto;
-        color: $color-3;
+        color: $site-color-2;
       }
 
       .buttonContainerWrapper {
@@ -78,7 +78,7 @@
           line-height: 75px;
           font-size: 30px;
           text-decoration: none;
-          background-color: $color-4;
+          background-color: $site-color-9;
           border-radius: 22px;
           border: none;
           margin: 0 auto;
@@ -90,7 +90,7 @@
           &:before {
             content: " ";
             display: block;
-            width: 200px;
+            width: 250px;
             height: 40px;
             background: $color-6;
             position: absolute;
@@ -104,9 +104,9 @@
           &:after {
             content: " ";
             display: block;
-            width: 200px;
+            width: 250px;
             height: 30px;
-            background: $color-6;
+            background: $site-color-9;
             position: absolute;
             top: -10px;
             left: -120px;
