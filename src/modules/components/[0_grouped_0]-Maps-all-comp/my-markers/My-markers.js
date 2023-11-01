@@ -1,24 +1,22 @@
 import classNames from "classnames";
-import {React, useState, useEffect} from "react";
+import {useState} from "react";
 import {useAxios, sendRequest} from '../../../../DataProvider';
 import {Link} from 'react-router-dom';
-import SvgAddMarker from "../../../../bases/icons/SvgAddMarker.js";
 import Preload from "../../preloader/Preload.js";
-import BinSvgComponent from "../../../../bases/icons/binSVG/binSvg";
-import AOS from "aos";
 import {useAlert} from "react-alert";
+import MapViewBlock from "../mini-marker-components/map-view-block/MapViewBlock";
+import MapSvgAddBlock from "../mini-marker-components/map-svg-add-block/MapSvgAddBlock";
+import CabSearch from "../../[0_grouped_0]-Profile/cab-search/CabSearch";
+import useLoading from "../../../loading/useLoading";
 
 import styles from "../maps-elements.module.scss";
-import "aos/dist/aos.css";
 
 const MyMarkers = () => {
-  useEffect(() => {
-    AOS.init({duration: 1000});
-  }, []);
+
+  const isLoading = useLoading();
 
   const alert = useAlert();
-  const [isLoading, setIsLoading] = useState(true);
-  let [fileter, setFileter] = useState(null);
+  let [filter, setFilter] = useState(null);
   let [data, setData] = useState({markers: [], count: -1});
 
   const resParams = useAxios(
@@ -27,16 +25,8 @@ const MyMarkers = () => {
     {}
   );
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 500);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   if (resParams.loading || isLoading) {
-    return <Preload />;
+    return <Preload/>;
   }
 
   if (resParams.data && data.count === -1) {
@@ -71,37 +61,24 @@ const MyMarkers = () => {
   }
 
   return (
-    <div className={classNames(styles["boxMapWrapper"])} data-aos="zoom-in">
-      <div className={classNames(styles["boxSearchWrapper"])}>
-        <input className={classNames(styles["searchInput"])} onChange={(e) => setFileter(e.target.value)} type="search" placeholder="Поиск"/>
-        <h4 className={classNames(styles["numberListCount"])}>Количество меток - {data.count}</h4>
-      </div>
+    <div className={classNames(styles["boxMapWrapper"])}>
+      <CabSearch count={data.count} onChange={(e) => setFilter(e.target.value)} name="меток"/>
       <div className={classNames(styles["boxListWrapper"])}>
         <Link to={'edit_add_marker/new'}>
-          {/* eslint-disable-next-line */}
-          <div className={classNames(styles["oneMapsElement"])}>
-            <div className={classNames(styles["marginAddBox"])}>
-              <SvgAddMarker width="100%" height="100%" color="#f4f4f4"/>
-            </div>
-          </div>
+          <MapSvgAddBlock/>
         </Link>
         {data.markers.map((el, index) => {
-          if (fileter && !el.description.toLowerCase().includes(fileter.toLowerCase())) {
+          if (filter && !el.description.toLowerCase().includes(filter.toLowerCase())) {
             return false;
           }
           return (
-            <div key={el.id} className={classNames(styles["oneMapsElement"])}>
-              <div className={classNames(styles["columnsOne"])}>
-                <p className={classNames(styles["elementIndex"])}>{index + 1}</p>
-                <h3 className={classNames(styles["elementH3Name"])}>{el.name}</h3>
-              </div>
-              <div className={classNames(styles["columnsTwo"])}>
-                <Link to={`edit_add_marker/${el.id}`} className={classNames(styles["elementActions"])}>Настроить</Link>
-                <button className={classNames(styles["deleteButton"])} onClick={() => deleteMarker(el)}>
-                  <BinSvgComponent width="100%" height="100%" color="#f4f4f4"/>
-                </button>
-              </div>
-            </div>
+            <MapViewBlock
+              key={el.id}
+              index={index}
+              name={el.name}
+              link_to={`edit_add_marker/${el.id}`}
+              onClick={() => deleteMarker(el)}
+            />
           );
         })}
       </div>
