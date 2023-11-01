@@ -1,18 +1,20 @@
 import classNames from "classnames";
-import React, {useEffect, useMemo, useState} from "react";
-import AOS from "aos";
+import React, {useMemo, useState} from "react";
 import {useAxios} from '../../../DataProvider';
 import Preload from "../../components/preloader/Preload";
 import {AgGridReact} from 'ag-grid-react';
+import useLoading from "../../loading/useLoading";
 
 import 'ag-grid-community/styles/ag-grid.css';
 import 'ag-grid-community/styles/ag-theme-alpine.css';
 
 import styles from "./Statistic.module.scss";
 import "../../custon-modules/ag-grid.scss";
-import "aos/dist/aos.css";
 
 const Statistic = () => {
+
+  const isLoading = useLoading();
+
   const containerStyle = useMemo(() => ({width: '100%', height: '100%'}), []);
   const gridStyle = useMemo(() => ({height: '100%', width: '100%'}), []);
 
@@ -76,11 +78,7 @@ const Statistic = () => {
     },
   ]);
 
-  useEffect(() => {
-    AOS.init({duration: 1000});
-  }, []);
-
-  if (resParams.loading) {
+  if (resParams.loading || isLoading) {
     return <Preload/>;
   }
 
@@ -220,10 +218,10 @@ const Statistic = () => {
   }
 
   return (
-    <div className={classNames(styles["mainStatistic"])} data-aos="zoom-in">
+    <div className={classNames(styles["mainStatistic"])}>
       <div className={classNames(styles["statistic"])}>
         <h4 className={classNames(styles["title"])}>Статистика игроков сервера</h4>
-        <div style={containerStyle} data-aos="zoom-in">
+        <div style={containerStyle}>
           <div style={gridStyle} className="ag-theme-alpine-dark">
             <AgGridReact
               rowData={resParams.data}

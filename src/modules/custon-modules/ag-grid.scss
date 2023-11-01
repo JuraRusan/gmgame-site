@@ -6,36 +6,36 @@
 }
 
 .ag-root-wrapper {
-  border: 1px solid $color-22;
-  background: $color-7;
+  border: 1px solid $site-color-5;
+  background: $site-color-4;
 }
 
 .ag-header {
-  background-color: $color-7;
-  border-bottom-color: $color-22;
+  background-color: $site-color-4;
+  border-bottom-color: $site-color-5;
 }
 
 .ag-paging-panel {
-  border-top-color: $color-22;
+  border-top-color: $site-color-5;
 }
 
 .ag-header-cell {
   transition: all 0.35s ease;
 
   &:hover {
-    color: $color-8 !important;
+    color: $site-color-8 !important;
   }
 }
 
 .ag-row {
-  border-bottom: 1px solid $color-22;
+  border-bottom: 1px solid $site-color-5;
 
   &:nth-child(even) {
-    background-color: lighten($color-7, 1);
+    background-color: lighten($site-color-4, 1);
   }
 
   &:nth-child(odd) {
-    background-color: lighten($color-7, 2);
+    background-color: lighten($site-color-4, 2);
   }
 
   &:nth-child(20) {
@@ -47,7 +47,7 @@
   transition: all 0.35s ease;
 
   &:hover {
-    color: $color-8;
+    color: $site-color-8;
   }
 }
 
@@ -67,6 +67,6 @@
   transition: all 0.35s ease;
 
   &:hover {
-    color: $color-8;
+    color: $site-color-8;
   }
 }
