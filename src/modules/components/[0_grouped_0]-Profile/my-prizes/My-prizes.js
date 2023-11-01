@@ -1,23 +1,18 @@
 import classNames from "classnames";
-import {React, useEffect, useState} from "react";
+import React, {useState} from "react";
 import Item from "./Item.js";
 import Money from "./Money.js";
 import Preload from "../../preloader/Preload.js";
 import {sendRequest, useAxios} from '../../../../DataProvider';
 import {useAlert} from "react-alert";
-import AOS from "aos";
+import useLoading from "../../../loading/useLoading";
 
 import styles from "./My-prizes.module.scss";
-import "aos/dist/aos.css";
 
 const MyPrizes = () => {
 
-  useEffect(() => {
-    AOS.init({duration: 1000});
-  }, []);
-
+  const isLoading = useLoading();
   const alert = useAlert();
-  const [isLoading, setIsLoading] = useState(true);
   const [refreshData, setRefreshData] = useState(false);
   const [refresh, setRefresh] = useState(false);
 
@@ -27,14 +22,6 @@ const MyPrizes = () => {
     {},
     refreshData
   );
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 500);
-
-    return () => clearTimeout(timer);
-  }, []);
 
   if (body.loading || refresh || isLoading) {
     return <Preload/>
@@ -46,7 +33,6 @@ const MyPrizes = () => {
     console.log(response);
     if (response.message) {
       alert.success(response.message);
-      // navigate(-1);
     } else {
       alert.error(response.error);
     }

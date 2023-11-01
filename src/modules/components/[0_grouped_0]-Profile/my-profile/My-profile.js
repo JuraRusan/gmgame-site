@@ -1,20 +1,17 @@
 import classNames from "classnames";
-import {React, useState, useEffect} from "react";
+import React, {useState} from "react";
 import {useAxios} from '../../../../DataProvider';
 import Preload from "../../preloader/Preload.js";
 import CopySvgComponent from "../../../../bases/icons/copySVG/copySvg";
 import CheckSvgComponent from "../../../../bases/icons/checkSVG/checkSvg";
-import AOS from "aos";
+import useLoading from "../../../loading/useLoading";
 
 import styles from "./My-profile.module.scss";
 import "aos/dist/aos.css";
 
 const MyProfile = () => {
 
-  useEffect(() => {
-    AOS.init({duration: 1000});
-  }, []);
-
+  const isLoading = useLoading();
   const [copiedIndex, setCopiedIndex] = useState(null);
 
   const resParams = useAxios(
@@ -23,7 +20,7 @@ const MyProfile = () => {
     {}
   );
 
-  if (resParams.loading) {
+  if (resParams.loading || isLoading) {
     return <Preload/>
   }
 
@@ -40,7 +37,7 @@ const MyProfile = () => {
   };
 
   return (
-    <div className={classNames(styles["profileBlock"])} data-aos="zoom-in">
+    <div className={classNames(styles["profileBlock"])}>
       <div className={classNames(styles["content"])}>
 
         {data.user.status === 1
@@ -96,13 +93,7 @@ const MyProfile = () => {
 
         {data.user.status === 4
           ?
-          <img
-            className={classNames(styles["banned"])}
-            src="../site_assets/pages/webp/banned.webp"
-            alt=""
-            width="100%"
-            height="auto"
-          />
+          <img className={classNames(styles["banned"])} src="../site_assets/pages/webp/banned.webp" alt="" width="100%" height="auto"/>
           :
           undefined
         }
