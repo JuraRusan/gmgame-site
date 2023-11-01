@@ -79,7 +79,7 @@ const Statistic = () => {
   ]);
 
   if (resParams.loading || isLoading) {
-    return <Preload/>;
+    return <Preload full={false}/>;
   }
 
   function timeFormat(params) {

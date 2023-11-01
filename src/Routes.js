@@ -62,7 +62,7 @@ const options = {
 
 const Router = () => {
   return (
-    <Suspense fallback={<Preload/>}>
+    <Suspense fallback={<Preload full={true}/>}>
       <Provider template={AlertTemplate} {...options}>
         <Routes>
           <Route path="/" element={<General/>}/>

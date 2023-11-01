@@ -21,7 +21,7 @@ const Manager = () => {
   }, []);
 
   if (resParams.loading) {
-    return <Preload/>
+    return <Preload full={false}/>
   }
   
   if (!resParams.data?.user) {

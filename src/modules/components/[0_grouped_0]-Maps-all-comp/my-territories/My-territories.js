@@ -26,7 +26,7 @@ const MyTerritories = () => {
   );
 
   if (resParams.loading || isLoading) {
-    return <Preload/>;
+    return <Preload full={false}/>;
   }
 
   if (resParams.data && data.count === -1) {

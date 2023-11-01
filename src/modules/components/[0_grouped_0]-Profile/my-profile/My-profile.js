@@ -21,7 +21,7 @@ const MyProfile = () => {
   );
 
   if (resParams.loading || isLoading) {
-    return <Preload/>
+    return <Preload full={false}/>
   }
 
   const data = resParams.data;

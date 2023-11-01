@@ -1,17 +1,10 @@
-import React, {useEffect} from "react";
-import AOS from "aos";
+import React from "react";
 
 import "./Maps.scss";
-import "aos/dist/aos.css";
 
 const Maps = () => {
-
-  useEffect(() => {
-    AOS.init({duration: 1000});
-  }, []);
-
   return (
-    <div className="main-maps" data-aos="zoom-in">
+    <div className="main-maps">
       <div className="maps">
         <h4 className="maps-title font-custom-2">Уникальная web-онлайн карта</h4>
         <h5 className="maps-sub-title">Обновления карты плавающий, обновление запускается в течении 10 минут после предыдущего обновления. (Статус обновления можно видеть в углу карты)</h5>

@@ -5,16 +5,13 @@ import {Link, Navigate, NavLink, Outlet} from "react-router-dom";
 import PlayerCabinet from "../../components/[0_grouped_0]-Profile/player-cabinet/Player-cabinet.js";
 import Auth from "../../../modules/pages/auth/Auth.js";
 import Preload from "../../components/preloader/Preload.js";
-import AOS from "aos";
+import useLoading from "../../loading/useLoading";
 
 import styles from "./Cab.module.scss";
-import "aos/dist/aos.css";
 
 const Cab = () => {
 
-  useEffect(() => {
-    AOS.init({duration: 1000});
-  }, []);
+  const isLoading = useLoading();
 
   const [openMenu, setOpenMenu] = useState(false)
 
@@ -48,8 +45,8 @@ const Cab = () => {
 
   const resParams = useAxios("/api/profile", 'GET', {});
 
-  if (resParams.loading) {
-    return <Preload/>
+  if (resParams.loading || isLoading) {
+    return <Preload full={true}/>
   }
 
   if (!resParams.data?.discordUser) {
@@ -94,7 +91,7 @@ const Cab = () => {
           avatar={resParams.data.discordUser.avatar}
           global={resParams.data.discordUser.global_name}
         />
-        <div className={classNames(styles["menuCab"])} data-aos="zoom-in">
+        <div className={classNames(styles["menuCab"])}>
           <div className={classNames(styles["blockLink"])}>
             {resParams.data.user.status === 1 || resParams.data.user.status === 3 || resParams.data.user.status === 4 || resParams.data.user.status === 5 || resParams.data.user.status === 6
               ?

@@ -1,20 +1,13 @@
 import classNames from "classnames";
-import React, {useEffect} from "react";
-import AOS from "aos";
+import React from "react";
 import {LazyLoadImage} from "react-lazy-load-image-component";
 
 import styles from "./Building_a_hyperloop.module.scss";
-import "aos/dist/aos.css";
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const BuildingAHyperloop = () => {
-
-  useEffect(() => {
-    AOS.init({duration: 1000});
-  }, []);
-
   return (
-    <div className={classNames(styles["buildHyperloopBox"])} data-aos="zoom-in">
+    <div className={classNames(styles["buildHyperloopBox"])}>
       <h3 className={classNames(styles["mainTitle"])}>Инструкция по постройке ответвления хайперлупа</h3>
       <h3 className={classNames(styles["miniTitle"])}>Введение</h3>
       <h3 className={classNames(styles["textAll"])}>Статья посвящена особенностям постройки ответвления хайперлупа, ведущего к базе или общественному месту, от главных веток системы хайперлупов Основного сервера в режиме Выживания.</h3>

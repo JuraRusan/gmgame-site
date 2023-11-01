@@ -1,19 +1,12 @@
 import classNames from "classnames";
-import React, {useEffect} from "react";
-import AOS from "aos";
+import React from "react";
 import {monitoringBase} from "./monitoringBase";
 
 import styles from "./Support.module.scss";
-import "aos/dist/aos.css";
 
 const Support = () => {
-
-  useEffect(() => {
-    AOS.init({duration: 1000});
-  }, []);
-
   return (
-    <div className={classNames(styles["mainSupport"])} data-aos="zoom-in">
+    <div className={classNames(styles["mainSupport"])} >
       <div className={classNames(styles["support"])}>
         <h4 className={classNames(styles["titleSupport"])}>Поддержать проект</h4>
         <div className={classNames(styles["donatBlock"])}>
@@ -33,10 +26,10 @@ const Support = () => {
             <img className={classNames(styles["image"])} src="./site_assets/pages/webp/7.webp" width="100%" height="100%" alt="none"/>
           </div>
         </div>
-        <div className={classNames(styles["monitoringBlock"])} data-aos="zoom-in">
+        <div className={classNames(styles["monitoringBlock"])}>
           <h4 className={classNames(styles["titleAll"])}>Мы на мониторингах</h4>
           {monitoringBase.map((el, i) =>
-            <a data-aos="zoom-in" className={classNames(styles["monitoringCard"])} target="_blank" rel="noreferrer" href={el.url} key={i}>{el.name}</a>
+            <a className={classNames(styles["monitoringCard"])} target="_blank" rel="noreferrer" href={el.url} key={i}>{el.name}</a>
           )}
         </div>
       </div>

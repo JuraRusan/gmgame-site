@@ -247,7 +247,7 @@ const FaqEditor = () => {
   const alert = useAlert();
 
   if (resParams.loading || resFaq.loading) {
-    return <Preload/>
+    return <Preload full={true}/>
   }
 
   if (resParams.loaded && mentions.length === 0) {

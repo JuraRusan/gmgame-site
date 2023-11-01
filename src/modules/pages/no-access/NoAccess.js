@@ -1,18 +1,11 @@
 import classNames from "classnames";
-import React, {useEffect} from "react";
-import AOS from "aos";
+import React from "react";
 
 import styles from "./NoAccess.module.scss";
-import "aos/dist/aos.css";
-
 const NoAccess = () => {
 
-  useEffect(() => {
-    AOS.init({duration: 1000});
-  }, []);
-
   return (
-    <div className={classNames(styles["mainNoAccess403"])} data-aos="zoom-in">
+    <div className={classNames(styles["mainNoAccess403"])}>
       <div className={classNames(styles["NoAccessContainer"])}>
         <div className={classNames(styles["wrapperLock"])}>
           <div className={classNames(styles["lock"])}></div>

@@ -24,7 +24,7 @@ const MyPrizes = () => {
   );
 
   if (body.loading || refresh || isLoading) {
-    return <Preload/>
+    return <Preload full={false}/>
   }
 
   let data = body.data;

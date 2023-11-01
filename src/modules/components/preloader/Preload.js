@@ -4,9 +4,9 @@ import {Triangle} from 'react-loader-spinner';
 
 import styles from "./Preload.module.scss";
 
-function Preload() {
+function Preload(props) {
   return (
-    <div className={classNames(styles["preloaderWrapper"])}>
+    <div className={classNames(styles["preloaderWrapper"], {[styles["full"]]: props.full === true})}>
       <div className={classNames(styles["preloader"])}>
         <Triangle color="#e4007f"/>
       </div>
