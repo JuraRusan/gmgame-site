@@ -1,32 +1,6 @@
 @import "../../../Variables.scss";
 
-.mainMods {
-  display: flex;
-  flex-direction: column;
-  width: auto;
-  height: auto;
-
-  .boxWrapperMods {
-    width: 100%;
-    height: auto;
-    min-height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    .titleH3Mods {
-      width: auto;
-      height: auto;
-      margin: 0 auto;
-      font-weight: 400;
-      font-size: 32px;
-      color: $site-color-2;
-      text-align: center;
-      font-family: $fontCustom2;
-    }
-  }
-}
-
+.mainMods {}
 
 @media screen and (max-width: 1600px) {
 }
@@ -47,25 +21,9 @@
 }
 
 @media screen and (max-width: 640px) {
-  .mainMods {
-    .boxWrapperMods {
-      .titleH3Mods {
-        font-size: 24px;
-        padding: 0 16px;
-      }
-    }
-  }
 }
 
 @media screen and (max-width: 480px) {
-  .mainMods {
-    .boxWrapperMods {
-      .titleH3Mods {
-        font-size: 18px;
-        padding: 0 12px;
-      }
-    }
-  }
 }
 
 @media screen and (max-width: 360px) {

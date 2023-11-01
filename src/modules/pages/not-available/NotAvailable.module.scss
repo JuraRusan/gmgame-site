@@ -1,0 +1,85 @@
+@import "../../../Variables.scss";
+
+.not_available {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100vh;
+
+  .not_available_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 18%;
+
+    .title {
+      font-size: 28px;
+      font-family: $fontCustom2;
+      font-weight: 400;
+      color: $site-color-2;
+      padding: 0 16px;
+      text-align: center;
+      line-height: 1.35;
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+  .not_available {
+    .not_available_wrapper {
+      margin-top: 24%;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+}
+
+@media screen and (max-width: 768px) {
+  .not_available {
+    .not_available_wrapper {
+      margin-top: 32%;
+
+      .title {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .not_available {
+    .not_available_wrapper {
+      margin-top: 48%;
+
+      .title {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .not_available {
+    .not_available_wrapper {
+      margin-top: 54%;
+
+      .title {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+}
