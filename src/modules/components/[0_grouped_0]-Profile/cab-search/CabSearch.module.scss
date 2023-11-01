@@ -1,0 +1,112 @@
+@import "../../../../Variables";
+
+$height: 36px;
+
+.boxSearchWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  height: 35px;
+
+  .numberListCount {
+    display: flex;
+    width: 350px;
+    height: $height;
+    line-height: $height;
+    margin: 0 0 0 16px;
+    padding: 0;
+    font-weight: 400;
+    font-size: 16px;
+    color: $site-color-2;
+    font-family: $fontCustom2;
+  }
+
+  .searchInput {
+    display: flex;
+    width: 225px;
+    height: $height;
+    line-height: $height;
+    outline: none;
+    background: $site-color-12;
+    border: 1px solid $site-color-5;
+    border-radius: 5px;
+    transition: all 0.25s ease-in-out;
+    color: $site-color-8;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      outline: none;
+      background: $site-color-1;
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 960px) {
+}
+
+@media screen and (max-width: 768px) {
+  .boxSearchWrapper {
+    .numberListCount {
+      height: 30px;
+      line-height: 30px;
+      font-size: 14px;
+    }
+
+    .searchInput {
+      line-height: 30px;
+      height: 30px;
+      width: 200px;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .boxSearchWrapper {
+    height: auto;
+
+    .numberListCount {
+      width: 100%;
+      margin: 0 0 0 8px;
+    }
+
+    .searchInput {
+      width: 140px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .boxSearchWrapper {
+    flex-direction: column;
+    height: auto;
+
+    .numberListCount {
+      margin: 0;
+      justify-content: center;
+    }
+
+    .searchInput {
+      width: 100%;
+      margin: 8px auto;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+}
