@@ -4,14 +4,15 @@ import {Route, Routes} from "react-router-dom";
 import {positions, Provider} from "react-alert";
 import AlertTemplate from "react-alert-template-basic";
 
-import BuildingAHyperloop from "./modules/pages/articles/temporarily/Building_a_hyperloop"; // -------------------- temporarily --------------------
-
 // --
 import General from "./modules/pages/general/General.js";
 // --
 const Auth = lazy(() => import(/* webpackChunkName: "auth" */ /* webpackPreload: true */ /* webPackPrefetch: true */ './modules/pages/auth/Auth.js'));
 const NotFound = lazy(() => import(/* webpackChunkName: "404" */ './modules/pages/not-found/NotFound.js'));
 const NoAccess = lazy(() => import(/* webpackChunkName: "no_access" */ './modules/pages/no-access/NoAccess.js'));
+// --
+const CabNotAvailable = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/cab-not-available/CabNotAvailable'));
+const NotAvailable = lazy(() => import(/* webpackChunkName: "not_available" */ './modules/pages/not-available/NotAvailable'));
 // --
 const Manager = lazy(() => import(/* webpackChunkName: "manager" */ './modules/pages/manager/Manager'));
 const PlayerSummary = lazy(() => import(/* webpackChunkName: "manager" */ './modules/components/[0_grouped_0]-Manager/Player-summary/Player-summary'));
@@ -37,8 +38,9 @@ const EditAddMarker = lazy(() => import(/* webpackChunkName: "cab" */ './modules
 const MyTerritories = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Maps-all-comp/my-territories/My-territories.js'));
 const EditAddTerr = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Maps-all-comp/my-territories/EditAddTerr.js'));
 // --
-const ArticlesWiki = lazy(() => import(/* webpackChunkName: "wiki" */ './modules/pages/articles/Articles-wiki.js'));
-const Articles = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/articles/Articles.js'));
+// const ArticlesWiki = lazy(() => import(/* webpackChunkName: "wiki" */ './modules/pages/articles/Articles-wiki.js'));
+// const Articles = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/articles/Articles.js'));
+const BuildingAHyperloop = lazy(() => import(/* webpackChunkName: "building_a_hyperloop" */ './modules/pages/articles/temporarily/Building_a_hyperloop')); // -------------------- temporarily --------------------
 // --
 const MyProfile = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/my-profile/My-profile.js'));
 const MyPrizes = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/my-prizes/My-prizes.js'));
@@ -46,7 +48,7 @@ const ChangePassword = lazy(() => import(/* webpackChunkName: "cab" */ './module
 // --
 const Statistic = lazy(() => import(/* webpackChunkName: "statistics" */ './modules/pages/statistic/Statistic.js'));
 const TexturePack = lazy(() => import(/* webpackChunkName: "texture_pack" */ './modules/pages/texture-pack/TexturePack.js'));
-const Mods = lazy(() => import(/* webpackChunkName: "mods" */ './modules/pages/mods/Mods.js'));
+// const Mods = lazy(() => import(/* webpackChunkName: "mods" */ './modules/pages/mods/Mods.js'));
 const Maps = lazy(() => import(/* webpackChunkName: "maps" */ './modules/pages/maps/Maps.js'));
 const Support = lazy(() => import(/* webpackChunkName: "support" */ './modules/pages/support/Support.js'));
 const Cab = lazy(() => import(/* webpackChunkName: "cab" */ './modules/pages/cab/Cab.js'));
@@ -78,11 +80,11 @@ const Router = () => {
             <Route path="markers" element={<MyMarkers/>}/>
             <Route path="markers/edit_add_marker/:id" element={<EditAddMarker/>}/>
             {/*----------*/}
-            <Route path="articles" element={<Articles/>}/>
+            <Route path="articles" element={<CabNotAvailable/>}/> {/* <Route path="articles" element={<Articles/>}/> */}
             {/*----------*/}
-            <Route path="gallery" element={<Articles/>}/>  {/* <Route path="gallery" element={<Gallery/>}/> */}
-            <Route path="gallery/edit_add_post" element={<Articles/>}/> {/*<Route path="gallery/edit_add_post" element={<EditAddPost/>}/>*/}
-            <Route path="gallery/post_analytics" element={<Articles/>}/> {/*<Route path="gallery/post_analytics" element={<AnalyticsPost/>}/>*/}
+            <Route path="gallery" element={<CabNotAvailable/>}/> {/* <Route path="gallery" element={<Gallery/>}/> */}
+            <Route path="gallery/edit_add_post" element={<CabNotAvailable/>}/> {/*<Route path="gallery/edit_add_post" element={<EditAddPost/>}/>*/}
+            <Route path="gallery/post_analytics" element={<CabNotAvailable/>}/> {/*<Route path="gallery/post_analytics" element={<AnalyticsPost/>}/>*/}
             {/*----------*/}
             <Route path="prize" element={<MyPrizes/>}/>
             {/*----------*/}
@@ -91,13 +93,14 @@ const Router = () => {
           </Route>
 
           <Route path="building_a_hyperloop_server" element={<BuildingAHyperloop/>}/> {/*-------------------- temporarily --------------------*/}
-          <Route path="/articles_wiki" element={<ArticlesWiki/>}/>
-          <Route path="/gallery" element={<ArticlesWiki/>}/> {/*<Route path="/gallery" element={<MainGallery/>}/>*/}
+
+          <Route path="/articles_wiki" element={<NotAvailable/>}/> {/* <Route path="/articles_wiki" element={<ArticlesWiki/>}/> */}
+          <Route path="/gallery" element={<NotAvailable/>}/> {/*<Route path="/gallery" element={<MainGallery/>}/>*/}
 
           <Route path="/faq" element={<Faq/>}/>
           <Route path="/regulations" element={<Regulations/>}/>
 
-          <Route path="/mods" element={<Mods/>}/>
+          <Route path="/mods" element={<NotAvailable/>}/> {/* <Route path="/mods" element={<Mods/>}/> */}
           <Route path="/statistic" element={<Statistic/>}/>
           <Route path="/support" element={<Support/>}/>
           <Route path="/online_map" element={<Maps/>}/>
