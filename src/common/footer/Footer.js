@@ -1,17 +1,12 @@
 import classNames from "classnames";
-import React, {useEffect} from "react";
-import AOS from "aos";
+import React from "react";
 import SvgDiscord from "../../bases/icons/SvgDiscord.js";
 import SvgInstagram from "../../bases/icons/SvgInstagram.js";
 import SvgVk from "../../bases/icons/SvgVk.js";
 
 import styles from "./Footer.module.scss";
-import "aos/dist/aos.css";
 
 const Footer = () => {
-  useEffect(() => {
-    AOS.init({duration: 1000});
-  }, []);
 
   return (
     <div className={classNames(styles["footer"])}>

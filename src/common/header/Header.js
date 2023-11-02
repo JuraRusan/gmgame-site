@@ -65,7 +65,7 @@ const Header = () => {
   }, [mainDropMenu]);
 
   return (
-    <div className={classNames(styles["header"])} data-aos="fade-down">
+    <div className={classNames(styles["header"])}>
       <div className={classNames(styles["mainBox"])}>
         <div className={classNames(styles["leftBlock"], styles["blockNumbered"])}>
           <a className={classNames(styles["logoGeneral"])} href="/">
