@@ -104,7 +104,7 @@ const Router = () => {
           <Route path="/statistic" element={<Statistic/>}/>
           <Route path="/support" element={<Support/>}/>
           <Route path="/online_map" element={<Maps/>}/>
-          <Route path="/texture_pack" element={<TexturePack/>}/>
+          <Route path="/texture_pack" element={<NotAvailable/>}/> {/* <Route path="/texture_pack" element={<TexturePack/>}/> */}
 
           <Route exact path="/manager" element={<Manager/>}>
             <Route path="player_summary" element={<PlayerSummary/>}/>
