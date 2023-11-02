@@ -2,7 +2,6 @@ import classNames from "classnames";
 import React, {useEffect, useState} from "react";
 import {sendRequest, useAxios} from '../../DataProvider';
 import AOS from "aos";
-import SvgDiscord from "../../bases/icons/SvgDiscord";
 
 import styles from "./Header.module.scss";
 import "aos/dist/aos.css";
@@ -64,8 +63,6 @@ const Header = () => {
     };
   }, [mainDropMenu]);
 
-  console.log(resParams?.data)
-
   return (
     <div className={classNames(styles["header"])}>
       <div className={classNames(styles["mainBox"])}>
@@ -114,7 +111,11 @@ const Header = () => {
                 <div className={classNames(styles["cabOpen"])}>
                   {resParams.data.discordUser.avatar === null
                     ?
-                    <SvgDiscord width="36px" height="36px" color="white"/>
+                    <img
+                      className={classNames(styles["iconPlayer"])}
+                      src={`../site_assets/pages/webp/avatar_undefined.webp`}
+                      alt="none"
+                    />
                     :
                     <img
                       className={classNames(styles["iconPlayer"])}

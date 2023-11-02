@@ -89,7 +89,7 @@ const Cab = () => {
           username={resParams.data.user.username}
           id={resParams.data.discordUser.id}
           avatar={resParams.data.discordUser.avatar}
-          global={resParams.data.discordUser.global_name}
+          global={resParams.data.discordUser.global_name || resParams.data.discordUser.username}
         />
         <div className={classNames(styles["menuCab"])}>
           <div className={classNames(styles["blockLink"])}>

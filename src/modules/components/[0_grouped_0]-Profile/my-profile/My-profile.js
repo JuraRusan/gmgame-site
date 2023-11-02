@@ -93,7 +93,7 @@ const MyProfile = () => {
 
         {data.user.status === 4
           ?
-          <img className={classNames(styles["banned"])} src="../site_assets/pages/webp/banned.webp" alt="" width="100%" height="auto"/>
+          <img className={classNames(styles["banned"])} src="../site_assets/pages/webp/banned.webp" alt="none" width="100%" height="auto"/>
           :
           undefined
         }

@@ -38,11 +38,20 @@ const PlayerCabinet = (props) => {
         <h5 className={classNames(styles["namePlayerH5"])}>{props.username}</h5>
       </div>
       <div className={classNames(styles["rowUser"])}>
-        <img
-          className={classNames(styles["image"])}
-          src={`https://cdn.discordapp.com/avatars/${props.id}/${props.avatar}.png`}
-          alt="none"
-        />
+        {props.avatar === null
+          ?
+          <img
+            className={classNames(styles["image"])}
+            src={`../site_assets/pages/webp/avatar_undefined.webp`}
+            alt="none"
+          />
+          :
+          <img
+            className={classNames(styles["image"])}
+            src={`https://cdn.discordapp.com/avatars/${props.id}/${props.avatar}.png`}
+            alt="none"
+          />
+        }
         <h5 className={classNames(styles["namePlayerH5"])}>@{outName}</h5>
       </div>
     </div>
