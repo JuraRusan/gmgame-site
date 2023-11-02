@@ -1,28 +1,25 @@
 import classNames from "classnames";
-import {React, useState, useEffect} from "react";
+import React, {useState} from "react";
 import Warn from "../../warn/Warn.js";
 import {sendRequest, useAxios} from '../../../../DataProvider';
 import {useNavigate, useParams} from 'react-router-dom';
 import {useAlert} from "react-alert";
 import Preload from "../../preloader/Preload";
 import Error from "../../error/Error";
-import AOS from "aos";
 
 import styles from "../maps-elements-add.module.scss";
 import "aos/dist/aos.css";
+import useLoading from "../../../loading/useLoading";
 
 const EditAddTerr = (params) => {
 
-  useEffect(() => {
-    AOS.init({duration: 1000});
-  }, []);
+  const isLoading = useLoading();
 
   const navigate = useNavigate();
   const alert = useAlert();
 
   const {id} = useParams();
 
-  const [isLoading, setIsLoading] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
   let [formXStart, setFormXStart] = useState('');
   let [formXStop, setFormXStop] = useState('');
@@ -77,14 +74,6 @@ const EditAddTerr = (params) => {
     {}
   );
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 500);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   if (resParams.loading || isLoading) {
     return <Preload full={false}/>;
   }
@@ -123,7 +112,7 @@ const EditAddTerr = (params) => {
   ]
 
   return (
-    <div className={classNames(styles["boxMarkerAddWrapper"])} data-aos="zoom-in">
+    <div className={classNames(styles["boxMarkerAddWrapper"])}>
       <div className={classNames(styles["columnsAddOne"])}>
         <div className={classNames(styles["rowWrapperContent"])}>
           <button onClick={() => navigate(-1)} className={classNames(styles["back"])}>{"<-- Показать весь список"}</button>
