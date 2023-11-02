@@ -1,9 +1,8 @@
-import React, {useEffect, useState} from "react";
-import AOS from "aos";
+import classNames from "classnames";
+import React, {useState} from "react";
 import {regulationsAllListAndComponents} from "./regulationsAllList.js";
 
-import "aos/dist/aos.css";
-import "./Regulations.scss";
+import styles from "./Regulations.module.scss";
 
 const Regulations = () => {
 
@@ -12,22 +11,25 @@ const Regulations = () => {
     setCurrentTab(e.target.id);
   }
 
-  useEffect(() => {
-    AOS.init({duration: 1000});
-  }, []);
-
   return (
-    <div className="main-regulations">
-      <div className="regulations-box" data-aos="zoom-in">
-        <div className="list-reg" data-aos="zoom-in">
+    <div className={classNames(styles["main-regulations"])}>
+      <div className={classNames(styles["regulations-box"])}>
+        <div className={classNames(styles["list-reg"])}>
           {regulationsAllListAndComponents.map((tab, i) =>
-            <button className="btn-click font-custom-2" key={i} id={tab.id} disabled={currentTab === `${tab.id}`} onClick={(handleTabClick)}>{tab.name}</button>)}
+            <button
+              className={classNames(styles["btn-click"])}
+              key={i}
+              id={tab.id}
+              disabled={currentTab === `${tab.id}`}
+              onClick={(handleTabClick)}>{tab.name}
+            </button>
+          )}
         </div>
-        <div className="content-reg" data-aos="zoom-in">
+        <div className={classNames(styles["content-reg"])}>
           {regulationsAllListAndComponents.map((cont, i) =>
-            <div className="wrapper" key={i}>{currentTab === `${cont.id}` &&
-              <div className="div-id-tab-content">
-                <h2 className="title-division font-custom-2">{cont.name}</h2>
+            <div className={classNames(styles["wrapper"])} key={i}>{currentTab === `${cont.id}` &&
+              <div className={classNames(styles["div-id-tab-content"])}>
+                <h2 className={classNames(styles["title-division"])}>{cont.name}</h2>
                 {cont.content}
               </div>}
             </div>)}
