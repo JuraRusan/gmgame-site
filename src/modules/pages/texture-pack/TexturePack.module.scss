@@ -1,13 +1,435 @@
+//@import "../../../Variables.scss";
+//
+//.mainTexturePackContainer {
+//  display: flex;
+//  flex-direction: row;
+//  justify-content: center;
+//  flex-wrap: wrap;
+//  width: auto;
+//  height: auto;
+//  color: #f4f4f4 !important;
+//
+//  .blockText {
+//    display: flex;
+//    flex-direction: column;
+//    flex-wrap: wrap;
+//
+//    .texturePackTitleH3 {
+//      font-size: 24px;
+//      width: 100%;
+//      height: 32px;
+//      line-height: 32px;
+//      text-align: center;
+//      font-weight: 400;
+//      color: $color-3;
+//      margin: 15px auto 22px auto;
+//      font-family: $fontCustom2;
+//    }
+//
+//    .texturePackInformation {
+//      display: flex;
+//      flex-direction: column;
+//      width: 100%;
+//      max-width: 1200px;
+//      margin: 15px auto;
+//
+//      .informationH4 {
+//        width: 100%;
+//        height: auto;
+//        line-height: 1.25;
+//        font-size: 16px;
+//        font-weight: 400;
+//        color: $color-3;
+//        text-align: center;
+//        margin-bottom: 8px;
+//        padding: 0 20px;
+//
+//        .linkModsPage {
+//          font-weight: 400;
+//          width: auto;
+//          color: $color-1;
+//          outline: none;
+//          transition: all 0.55s ease;
+//          text-decoration: none;
+//
+//          &:active,
+//          &:visited,
+//          &:hover {
+//            outline: none;
+//          }
+//
+//          &:hover {
+//            color: $color-12;
+//          }
+//        }
+//
+//        span {
+//          font-style: italic;
+//        }
+//      }
+//    }
+//
+//    .downloadWrapper {
+//      display: flex;
+//      width: 100%;
+//      max-width: 270px;
+//      margin: 8px auto;
+//
+//      .downloadFiles {
+//        font-weight: 400;
+//        width: 100%;
+//        height: 40px;
+//        line-height: 40px;
+//        padding: 0 8px;
+//        color: $color-1;
+//        margin: auto 25px;
+//        outline: none;
+//        transition: all 0.55s ease;
+//        text-decoration: none;
+//        background: $color-7;
+//        border: 0.5px solid $color-22;
+//        border-radius: 5px;
+//        text-align: center;
+//
+//        &:active,
+//        &:visited,
+//        &:hover {
+//          outline: none;
+//        }
+//
+//        &:hover {
+//          color: $color-12;
+//          background: $color-21;
+//        }
+//
+//      }
+//    }
+//
+//    .warnWrapper {
+//      width: 100%;
+//      max-width: 1400px;
+//      margin: 15px auto 15px auto;
+//    }
+//  }
+//
+//  .searchInputTexturePack {
+//    display: flex;
+//    width: 100%;
+//    max-width: 1550px;
+//    height: 45px;
+//    margin: 15px auto;
+//    line-height: 45px;
+//    outline: none;
+//    background: $color-7;
+//    border: 0.5px solid $color-22;
+//    border-radius: 5px;
+//    transition: all 0.25s ease-in-out;
+//    color: $color-8;
+//    padding-left: 10px;
+//    padding-right: 10px;
+//    font-size: 15px;
+//
+//    &:hover,
+//    &:focus,
+//    &:active {
+//      outline: none;
+//      background: $color-21;
+//    }
+//  }
+//
+//  .cardItem {
+//    display: flex;
+//    width: 500px;
+//    height: 200px;
+//    background: $color-7;
+//    border: 0.5px solid $color-22;
+//    border-radius: 5px;
+//    margin: 10px;
+//    transition: all 0.35s ease;
+//
+//    &:hover {
+//      background: $color-21;
+//    }
+//
+//    .columnCardOne {
+//      display: flex;
+//      flex-direction: column;
+//      justify-content: center;
+//      margin: 0;
+//      width: 100%;
+//      max-width: 200px;
+//      height: 100%;
+//      position: relative;
+//
+//      .icon {
+//        height: 100%;
+//        width: 100%;
+//        max-width: 200px;
+//        max-height: 200px;
+//        margin: 0 auto;
+//        padding: 10px;
+//        transition: all 0.25s ease-in-out;
+//      }
+//    }
+//
+//    .columnCardTwo {
+//      display: flex;
+//      flex-direction: column;
+//      width: 100%;
+//      height: 100%;
+//
+//      .itemTitleName {
+//        color: $color-3;
+//        font-size: 16px;
+//        font-weight: 400;
+//        height: 28px;
+//        line-height: 28px;
+//        margin-top: 5px;
+//        text-align: center;
+//        border-width: 1px;
+//        border-bottom-style: solid;
+//        border-image: linear-gradient(to right, $color-3, $color-3, rgba(0, 0, 0, 0)) 1 0%;
+//        position: relative;
+//
+//        .hoverEffect {
+//          position: absolute;
+//          display: flex;
+//          flex-direction: row;
+//          justify-content: center;
+//          margin: 0 auto;
+//          height: auto;
+//          background: $color-7;
+//          border: 0.5px solid $color-22;
+//          border-radius: 5px;
+//          color: $color-8;
+//          font-weight: 400;
+//          padding: 0 10px;
+//          right: 0;
+//          opacity: 0;
+//          top: 32px;
+//          transition: all 0.35s ease;
+//        }
+//
+//        &:hover > .hoverEffect {
+//          opacity: 1;
+//          right: 15px;
+//        }
+//      }
+//
+//      .listName {
+//        display: flex;
+//        flex-direction: column;
+//        padding-left: 5px;
+//        overflow: auto;
+//        height: auto;
+//        margin: 7px 15px 5px 0;
+//
+//        &::-webkit-scrollbar {
+//          width: 4px !important;
+//        }
+//
+//        .listNameOne {
+//          line-height: 24px;
+//          height: 24px;
+//          font-weight: 400;
+//          font-size: 12px;
+//
+//          &:before {
+//            content: "\27E1";
+//            margin-right: 5px;
+//            color: $color-8;
+//          }
+//        }
+//      }
+//    }
+//  }
+//}
+//
+//@media screen and (max-width: 1600px) {
+//  .mainTexturePackContainer {
+//    .searchInputTexturePack {
+//      width: 95%;
+//      max-width: none;
+//    }
+//  }
+//}
+//
+//@media screen and (max-width: 1400px) {
+//}
+//
+//@media screen and (max-width: 1280px) {
+//  .mainTexturePackContainer {
+//    .blockText {
+//      .warnWrapper {
+//        width: 90%;
+//      }
+//    }
+//  }
+//}
+//
+//@media screen and (max-width: 1024px) {
+//  .mainTexturePackContainer {
+//    .blockText {
+//      .warnWrapper {
+//        margin: 15px auto;
+//      }
+//    }
+//
+//    .cardItem {
+//      width: 450px;
+//      height: 180px;
+//
+//      .columnCardOne {
+//        max-width: 180px;
+//
+//        .icon {
+//          max-width: 180px;
+//          max-height: 180px;
+//        }
+//      }
+//    }
+//  }
+//}
+//
+//@media screen and (max-width: 960px) {
+//}
+//
+//@media screen and (max-width: 768px) {
+//  .mainTexturePackContainer {
+//    .blockText {
+//      .texturePackTitleH3 {
+//        font-size: 22px;
+//      }
+//
+//      .texturePackInformation {
+//        margin: 0;
+//        width: 100%;
+//        max-width: none;
+//
+//        .informationH4 {
+//          font-size: 14px;
+//        }
+//      }
+//
+//      .downloadWrapper {
+//        max-width: none;
+//        margin: 0;
+//
+//        .downloadFiles {
+//          max-width: 300px;
+//          margin: 0 auto;
+//        }
+//      }
+//
+//      .warnWrapper {
+//        width: 96%;
+//        margin: 7px auto;
+//      }
+//    }
+//  }
+//}
+//
+//@media screen and (max-width: 640px) {
+//  .mainTexturePackContainer {
+//    .blockText {
+//      .texturePackTitleH3 {
+//        margin: 10px auto;
+//        font-size: 16px;
+//      }
+//    }
+//
+//    .cardItem {
+//      width: 94%;
+//      margin: 5px auto;
+//    }
+//  }
+//}
+//
+//@media screen and (max-width: 480px) {
+//  .mainTexturePackContainer {
+//    .blockText {
+//      .texturePackTitleH3 {
+//        margin: 5px auto;
+//        font-size: 14px;
+//      }
+//
+//      .texturePackInformation {
+//        .informationH4 {
+//          padding: 10px;
+//          font-size: 13px;
+//
+//          .linkModsPage {
+//            width: 100%;
+//            margin: 0 auto;
+//          }
+//        }
+//      }
+//
+//      .downloadWrapper {
+//        margin: 8px auto;
+//      }
+//    }
+//
+//    .searchInputTexturePack {
+//      width: 98%;
+//      font-size: 14px;
+//      height: 40px;
+//      line-height: 40px;
+//    }
+//
+//    .cardItem {
+//      width: 98%;
+//      height: 140px;
+//
+//      .columnCardOne {
+//        max-width: 140px;
+//
+//        .icon {
+//          max-width: 140px;
+//          max-height: 140px;
+//        }
+//      }
+//
+//      .columnCardTwo {
+//        .itemTitleName {
+//          font-size: 13px;
+//        }
+//      }
+//    }
+//  }
+//}
+//
+//@media screen and (max-width: 360px) {
+//  .mainTexturePackContainer {
+//    .cardItem {
+//      width: 98%;
+//      height: 125px;
+//
+//      .columnCardOne {
+//        max-width: 125px;
+//
+//        .icon {
+//          max-width: 125px;
+//          max-height: 125px;
+//        }
+//      }
+//    }
+//  }
+//}
+
 @import "../../../Variables.scss";
 
 .mainTexturePackContainer {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   flex-wrap: wrap;
   width: auto;
+  max-width: 1440px;
   height: auto;
   color: #f4f4f4 !important;
+  padding: 0 25px;
+  margin: 0 auto;
 
   .blockText {
     display: flex;
@@ -112,305 +534,129 @@
     }
   }
 
-  .searchInputTexturePack {
+  .wrapperPack {
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     width: 100%;
-    max-width: 1550px;
-    height: 45px;
-    margin: 15px auto;
-    line-height: 45px;
-    outline: none;
-    background: $color-7;
-    border: 0.5px solid $color-22;
-    border-radius: 5px;
-    transition: all 0.25s ease-in-out;
-    color: $color-8;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 15px;
+    height: auto;
+    min-height: 480px;
+    background: $color-11;
+    border-radius: 4px;
+    border: 1px solid $color-2;
+    padding: 8px;
 
-    &:hover,
-    &:focus,
-    &:active {
-      outline: none;
-      background: $color-21;
-    }
-  }
-
-  .cardItem {
-    display: flex;
-    width: 500px;
-    height: 200px;
-    background: $color-7;
-    border: 0.5px solid $color-22;
-    border-radius: 5px;
-    margin: 10px;
-    transition: all 0.35s ease;
-
-    &:hover {
-      background: $color-21;
+    .fixedLeftMenuWrapper {
+      width: 260px;
+      min-width: 260px;
+      max-width: 260px;
+      display: flex;
+      padding-right: 8px;
+      border-width: 1px;
+      border-right-style: solid;
+      border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), $color-2, $color-2, $color-2, rgba(0, 0, 0, 0)) 1 100%;
     }
 
-    .columnCardOne {
+    .previewPack {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      margin: 0;
+      justify-content: flex-start;
       width: 100%;
-      max-width: 200px;
-      height: 100%;
-      position: relative;
+      height: auto;
 
-      .icon {
-        height: 100%;
+      .wrapperActions {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
         width: 100%;
-        max-width: 200px;
-        max-height: 200px;
-        margin: 0 auto;
-        padding: 10px;
-        transition: all 0.25s ease-in-out;
+        height: auto;
+        padding-left: 8px;
+        padding-right: 8px;
+
+        .search {
+          display: flex;
+          width: 100%;
+          height: 24px;
+          line-height: 24px;
+          outline: none;
+          background: $color-7;
+          border: 1px solid $color-2;
+          border-radius: 4px;
+          transition: all 0.25s ease-in-out;
+          color: $color-8;
+          padding: 4px 10px;
+          font-size: 13px;
+          margin-right: 16px;
+
+          &:hover,
+          &:focus,
+          &:active {
+            outline: none;
+            background: $color-21;
+          }
+        }
+
+        .type {
+          background: $color-7;
+          border: 1px solid $color-2;
+          border-radius: 4px;
+          margin-left: 8px;
+          color: $color-3;
+          padding: 4px;
+          cursor: pointer;
+          transition: all 0.25s ease-in-out;
+
+          &:hover {
+            outline: none;
+            background: $color-21;
+            color: $color-8;
+
+            svg {
+              path {
+                fill: $color-8;
+              }
+            }
+          }
+        }
       }
-    }
 
-    .columnCardTwo {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      height: 100%;
+      .cardAll {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 8px 0 0 8px;
 
-      .itemTitleName {
-        color: $color-3;
-        font-size: 16px;
-        font-weight: 400;
-        height: 28px;
-        line-height: 28px;
-        margin-top: 5px;
-        text-align: center;
-        border-width: 1px;
-        border-bottom-style: solid;
-        border-image: linear-gradient(to right, $color-3, $color-3, rgba(0, 0, 0, 0)) 1 0%;
-        position: relative;
-
-        .hoverEffect {
-          position: absolute;
+        .oneCard {
           display: flex;
           flex-direction: row;
           justify-content: center;
-          margin: 0 auto;
-          height: auto;
           background: $color-7;
-          border: 0.5px solid $color-22;
-          border-radius: 5px;
-          color: $color-8;
-          font-weight: 400;
-          padding: 0 10px;
-          right: 0;
-          opacity: 0;
-          top: 32px;
-          transition: all 0.35s ease;
-        }
+          border: 1px solid $color-2;
+          border-radius: 4px;
+          width: 168px;
+          height: 168px;
+          position: relative;
+          margin: 0 8px 8px 0;
 
-        &:hover > .hoverEffect {
-          opacity: 1;
-          right: 15px;
-        }
-      }
-
-      .listName {
-        display: flex;
-        flex-direction: column;
-        padding-left: 5px;
-        overflow: auto;
-        height: auto;
-        margin: 7px 15px 5px 0;
-
-        &::-webkit-scrollbar {
-          width: 4px !important;
-        }
-
-        .listNameOne {
-          line-height: 24px;
-          height: 24px;
-          font-weight: 400;
-          font-size: 12px;
-
-          &:before {
-            content: "\27E1";
-            margin-right: 5px;
-            color: $color-8;
+          .imageWrapper {
+            .image {
+              width: 140px;
+              height: 140px;
+            }
           }
-        }
-      }
-    }
-  }
-}
 
-@media screen and (max-width: 1600px) {
-  .mainTexturePackContainer {
-    .searchInputTexturePack {
-      width: 95%;
-      max-width: none;
-    }
-  }
-}
+          .textWrapper {
+            position: absolute;
+            bottom: 5px;
 
-@media screen and (max-width: 1400px) {
-}
-
-@media screen and (max-width: 1280px) {
-  .mainTexturePackContainer {
-    .blockText {
-      .warnWrapper {
-        width: 90%;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .mainTexturePackContainer {
-    .blockText {
-      .warnWrapper {
-        margin: 15px auto;
-      }
-    }
-
-    .cardItem {
-      width: 450px;
-      height: 180px;
-
-      .columnCardOne {
-        max-width: 180px;
-
-        .icon {
-          max-width: 180px;
-          max-height: 180px;
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 960px) {
-}
-
-@media screen and (max-width: 768px) {
-  .mainTexturePackContainer {
-    .blockText {
-      .texturePackTitleH3 {
-        font-size: 22px;
-      }
-
-      .texturePackInformation {
-        margin: 0;
-        width: 100%;
-        max-width: none;
-
-        .informationH4 {
-          font-size: 14px;
-        }
-      }
-
-      .downloadWrapper {
-        max-width: none;
-        margin: 0;
-
-        .downloadFiles {
-          max-width: 300px;
-          margin: 0 auto;
-        }
-      }
-
-      .warnWrapper {
-        width: 96%;
-        margin: 7px auto;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 640px) {
-  .mainTexturePackContainer {
-    .blockText {
-      .texturePackTitleH3 {
-        margin: 10px auto;
-        font-size: 16px;
-      }
-    }
-
-    .cardItem {
-      width: 94%;
-      margin: 5px auto;
-    }
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .mainTexturePackContainer {
-    .blockText {
-      .texturePackTitleH3 {
-        margin: 5px auto;
-        font-size: 14px;
-      }
-
-      .texturePackInformation {
-        .informationH4 {
-          padding: 10px;
-          font-size: 13px;
-
-          .linkModsPage {
-            width: 100%;
-            margin: 0 auto;
+            .name {
+              font-weight: 400;
+              font-size: 13px;
+              color: $color-3;
+              font-family: $fontCustom2;
+            }
           }
-        }
-      }
-
-      .downloadWrapper {
-        margin: 8px auto;
-      }
-    }
-
-    .searchInputTexturePack {
-      width: 98%;
-      font-size: 14px;
-      height: 40px;
-      line-height: 40px;
-    }
-
-    .cardItem {
-      width: 98%;
-      height: 140px;
-
-      .columnCardOne {
-        max-width: 140px;
-
-        .icon {
-          max-width: 140px;
-          max-height: 140px;
-        }
-      }
-
-      .columnCardTwo {
-        .itemTitleName {
-          font-size: 13px;
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 360px) {
-  .mainTexturePackContainer {
-    .cardItem {
-      width: 98%;
-      height: 125px;
-
-      .columnCardOne {
-        max-width: 125px;
-
-        .icon {
-          max-width: 125px;
-          max-height: 125px;
         }
       }
     }
