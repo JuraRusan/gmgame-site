@@ -67,7 +67,7 @@ const MyPrizes = () => {
   const wordForm = getWordForm(data.count);
 
   return (
-    <div className={classNames(styles["boxPrizesWrapper"])} data-aos="zoom-in">
+    <div className={classNames(styles["boxPrizesWrapper"])}>
       <h4 className={classNames(styles["prizesTitleH4"])}>У Вас {data.count} {wordForm}</h4>
       <div className={classNames(styles["allPrizesContainer"])}>
         {data.awards.map((el, index) => {

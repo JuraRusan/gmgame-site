@@ -100,8 +100,8 @@ const Cab = () => {
                 <span onClick={() => {setOpenMenu(false)}} className={classNames(styles["tab"], styles["disabled"])}>Мои территории</span>
                 <span onClick={() => {setOpenMenu(false)}} className={classNames(styles["tab"], styles["disabled"])}>Мои метки</span>
                 <span onClick={() => {setOpenMenu(false)}} className={classNames(styles["tab"], styles["disabled"])}>Статьи</span>
-                <span onClick={() => {setOpenMenu(false)}} className={classNames(styles["tab"], styles["disabled"])}>Моя галерея</span>
                 <span onClick={() => {setOpenMenu(false)}} className={classNames(styles["tab"], styles["disabled"])}>Призы</span>
+                <span onClick={() => {setOpenMenu(false)}} className={classNames(styles["tab"], styles["disabled"])}>Моя галерея</span>
                 <span onClick={() => {setOpenMenu(false)}} className={classNames(styles["tab"], styles["disabled"])}>Изменить пароль</span>
               </>
               :
@@ -110,8 +110,8 @@ const Cab = () => {
                 <NavLink onClick={() => {setOpenMenu(false)}} className={({isActive}) => setActive(isActive)} to="territories">Мои территории</NavLink>
                 <NavLink onClick={() => {setOpenMenu(false)}} className={({isActive}) => setActive(isActive)} to="markers">Мои метки</NavLink>
                 <NavLink onClick={() => {setOpenMenu(false)}} className={({isActive}) => setActive(isActive)} to="articles">Статьи</NavLink>
-                <NavLink onClick={() => {setOpenMenu(false)}} className={({isActive}) => setActive(isActive)} to="gallery">Моя галерея</NavLink>
                 <NavLink onClick={() => {setOpenMenu(false)}} className={({isActive}) => setActive(isActive)} to="prize">Призы</NavLink>
+                <NavLink onClick={() => {setOpenMenu(false)}} className={({isActive}) => setActive(isActive)} to="gallery">Моя галерея</NavLink>
                 <NavLink onClick={() => {setOpenMenu(false)}} className={({isActive}) => setActive(isActive)} to="change_password">Изменить пароль</NavLink>
               </>
             }

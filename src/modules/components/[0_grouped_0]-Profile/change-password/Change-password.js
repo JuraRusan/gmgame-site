@@ -4,10 +4,14 @@ import {useForm} from "react-hook-form";
 import {sendRequest} from '../../../../DataProvider';
 import {useAlert} from "react-alert";
 import {ErrorMessage} from "@hookform/error-message";
+import useLoading from "../../../loading/useLoading";
+import Preload from "../../preloader/Preload";
 
 import styles from "./Change-password.module.scss";
 
 const ChangePassword = () => {
+
+  const isLoading = useLoading();
 
   const [type, setType] = useState("password")
   const [checked, setChecked] = useState(false);
@@ -15,6 +19,10 @@ const ChangePassword = () => {
   const alert = useAlert();
 
   const {register, handleSubmit, formState: {errors},} = useForm({mode: "onChange"});
+
+  if (isLoading) {
+    return <Preload full={false}/>
+  }
 
   const changePassword = (params) => {
     sendRequest(
