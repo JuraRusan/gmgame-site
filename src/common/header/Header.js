@@ -139,7 +139,7 @@ const Header = () => {
                 <div className={classNames(styles["dropMenuCab"])} data-aos="zoom-out-down" data-aos-duration="250">
                   <div className={classNames(styles["boxList"])}>
                     <div className={classNames(styles["prevDropUser"])}>
-                      <label className={classNames(styles["miniName"])}>{resParams?.data?.discordUser?.localuser?.username}</label>
+                      <label className={classNames(styles["miniName"])}>{resParams.data.discordUser.localuser?.username === undefined ? resParams.data.discordUser.username : resParams.data.discordUser.localuser.username}</label>
                     </div>
                     <a className={classNames(styles["list"])} href="/cab/profile">Профиль</a>
                     {resParams?.data?.discordUser?.role === 'admin' &&
