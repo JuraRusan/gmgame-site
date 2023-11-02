@@ -199,10 +199,11 @@ const AuthComponent = () => {
         <div className={classNames(styles["wrapper-warn"])}>
           <Warn inf="Относитесь ответственно к заполнению заявки"/>
         </div>
-        <form className={classNames(styles["margin-block"])}>
+        <form className={classNames(styles["action_block"])}>
           <button
             id="submitButton"
             type="Submit"
+            className={classNames(styles["action"])}
             onClick={handleSubmit((d) => registration(d))}
           >
             Отправить

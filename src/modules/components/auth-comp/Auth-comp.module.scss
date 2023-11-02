@@ -26,13 +26,14 @@
     max-width: 80%;
     height: 100%;
     min-height: 750px;
-    max-height: 750px;
+    max-height: none;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     border-radius: 16px;
     border: 1px solid $site-color-5;
     background: $site-color-4;
+    padding-bottom: 12px;
 
     .title-register {
       font-size: 20px;
@@ -197,6 +198,35 @@
 
     .wrapper-warn {
       margin: 12px auto;
+    }
+
+    .action_block {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      height: auto;
+
+      .action {
+        width: 140px;
+        height: 36px;
+        line-height: 36px;
+        border: none;
+        border-radius: 12px;
+        font-weight: 400;
+        font-size: 14px;
+        color: $site-color-2;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.35s ease;
+        font-family: $fontCustom2;
+        background: $color-4;
+
+        &:hover {
+          background: $color-6;
+          color: $color-2;
+        }
+      }
     }
   }
 }
