@@ -2,7 +2,7 @@ import {lazy, Suspense} from 'react';
 import Preload from "./modules/components/preloader/Preload";
 import {Route, Routes} from "react-router-dom";
 import {positions, Provider} from "react-alert";
-import AlertTemplate from "react-alert-template-basic";
+import Alert from "././common/alert/Alert";
 
 // --
 import General from "./modules/pages/general/General.js";
@@ -47,7 +47,7 @@ const MyPrizes = lazy(() => import(/* webpackChunkName: "cab" */ './modules/comp
 const ChangePassword = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/change-password/Change-password.js'));
 // --
 const Statistic = lazy(() => import(/* webpackChunkName: "statistics" */ './modules/pages/statistic/Statistic.js'));
-const TexturePack = lazy(() => import(/* webpackChunkName: "texture_pack" */ './modules/pages/texture-pack/TexturePack.js'));
+// const TexturePack = lazy(() => import(/* webpackChunkName: "texture_pack" */ './modules/pages/texture-pack/TexturePack.js'));
 // const Mods = lazy(() => import(/* webpackChunkName: "mods" */ './modules/pages/mods/Mods.js'));
 const Maps = lazy(() => import(/* webpackChunkName: "maps" */ './modules/pages/maps/Maps.js'));
 const Support = lazy(() => import(/* webpackChunkName: "support" */ './modules/pages/support/Support.js'));
@@ -55,7 +55,7 @@ const Cab = lazy(() => import(/* webpackChunkName: "cab" */ './modules/pages/cab
 // --
 
 const options = {
-  timeout: 7000,
+  timeout: 10000,
   position: positions.BOTTOM_CENTER,
   offset: '15px',
 };
@@ -63,7 +63,7 @@ const options = {
 const Router = () => {
   return (
     <Suspense fallback={<Preload full={true}/>}>
-      <Provider template={AlertTemplate} {...options}>
+      <Provider template={Alert} {...options}>
         <Routes>
           <Route path="/" element={<General/>}/>
           <Route path="/auth" element={<Auth/>}/>
