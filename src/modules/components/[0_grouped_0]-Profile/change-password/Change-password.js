@@ -6,6 +6,7 @@ import {useAlert} from "react-alert";
 import {ErrorMessage} from "@hookform/error-message";
 import useLoading from "../../../loading/useLoading";
 import Preload from "../../preloader/Preload";
+import Button from "../../button/Button";
 
 import styles from "./Change-password.module.scss";
 
@@ -64,7 +65,13 @@ const ChangePassword = () => {
           <span className={classNames(styles["checkmark"])}></span>
           <span className={classNames(styles["checkboxMessage"])}>Показать пароль</span>
         </label>
-        <button className={classNames(styles["buttonPasswordSubmit"])} onClick={handleSubmit((d) => changePassword(d))}>Изменить</button>
+        <div className={classNames(styles["wrapper_btn"])}>
+          <Button
+            label="Изменить"
+            view="submit"
+            onClick={handleSubmit((d) => changePassword(d))}
+          />
+        </div>
       </form>
     </div>
   );
