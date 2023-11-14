@@ -206,27 +206,6 @@
       justify-content: center;
       width: 100%;
       height: auto;
-
-      .action {
-        width: 140px;
-        height: 36px;
-        line-height: 36px;
-        border: none;
-        border-radius: 12px;
-        font-weight: 400;
-        font-size: 14px;
-        color: $site-color-2;
-        text-align: center;
-        cursor: pointer;
-        transition: all 0.35s ease;
-        font-family: $fontCustom2;
-        background: $color-4;
-
-        &:hover {
-          background: $color-6;
-          color: $color-2;
-        }
-      }
     }
   }
 }
