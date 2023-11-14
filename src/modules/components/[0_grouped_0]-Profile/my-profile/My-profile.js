@@ -53,7 +53,7 @@ const MyProfile = () => {
           ?
           <div className={classNames(styles["wrapperText"])}>
             <h4 className={classNames(styles["text"], styles["good"])}>Ваша заявка одобрена. Добро пожаловать на сервер!</h4>
-            <h4 className={classNames(styles["text"])}>Пожалуйста, ознакомьтесь с "правилами" и разделом "Часто задаваемые вопросы" для получения полезной информации.</h4>
+            <h4 className={classNames(styles["text"])}>Пожалуйста, ознакомьтесь с правилами и разделом часто задаваемые вопросы для получения полезной информации.</h4>
             <div className={classNames(styles["version"])}>
               <span className={classNames(styles["versionNumber"])}>Java Edition {data.version}</span>
             </div>
