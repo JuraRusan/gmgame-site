@@ -1,11 +1,9 @@
 import classNames from "classnames";
 import {useState} from "react";
 import {useAxios, sendRequest} from '../../../../DataProvider';
-import {Link} from 'react-router-dom';
 import Preload from "../../preloader/Preload.js";
 import {useAlert} from "react-alert";
 import MapViewBlock from "../mini-marker-components/map-view-block/MapViewBlock";
-import MapSvgAddBlock from "../mini-marker-components/map-svg-add-block/MapSvgAddBlock";
 import CabSearch from "../../[0_grouped_0]-Profile/cab-search/CabSearch";
 import useLoading from "../../../loading/useLoading";
 
@@ -62,11 +60,13 @@ const MyMarkers = () => {
 
   return (
     <div className={classNames(styles["boxMapWrapper"])}>
-      <CabSearch count={data.count} onChange={(e) => setFilter(e.target.value)} name="меток"/>
+      <CabSearch
+        count={data.count}
+        onChange={(e) => setFilter(e.target.value)}
+        name="меток"
+        to={'edit_add_marker/new'}
+      />
       <div className={classNames(styles["boxListWrapper"])}>
-        <Link to={'edit_add_marker/new'}>
-          <MapSvgAddBlock/>
-        </Link>
         {data.markers.map((el, index) => {
           if (filter && !el.description.toLowerCase().includes(filter.toLowerCase())) {
             return false;
