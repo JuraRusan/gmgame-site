@@ -77,12 +77,20 @@
         text-align: start;
         border-radius: 8px;
         margin: 2px 0;
+        position: relative;
 
         &:before {
           content: '\2022';
           position: absolute;
-          left: 18px;
+          left: 8px;
           margin-top: 2px;
+        }
+
+        &:after {
+          content: "\276F";
+          position: absolute;
+          font-size: 14px;
+          right: 8px;
         }
 
         &:active {
@@ -96,6 +104,7 @@
 
       .checked {
         color: $site-color-9 !important;
+        background: $site-color-12;
       }
 
       .disabled {

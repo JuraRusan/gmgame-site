@@ -1,0 +1,44 @@
+@import "../../../../../Variables";
+
+.inputStyle {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: 36px;
+  max-height: 180px;
+  border: 1px solid $site-color-5;
+  border-radius: 7px;
+  color: $site-color-8;
+  text-align: start;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none !important;
+  padding: 7px;
+  background: $site-color-12;
+  transition: all 0.35s ease;
+
+  &::-webkit-scrollbar {
+    width: 4px !important;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+    background: $site-color-1;
+  }
+
+  .optionList {
+    color: $site-color-2;
+    background: $site-color-12;
+    font-size: 14px;
+    border-radius: 7px;
+
+    &:hover,
+    &:active,
+    &:focus {
+      outline: none;
+    }
+  }
+}

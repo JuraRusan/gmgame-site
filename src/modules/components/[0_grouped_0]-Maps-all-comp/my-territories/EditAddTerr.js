@@ -6,10 +6,13 @@ import {useNavigate, useParams} from 'react-router-dom';
 import {useAlert} from "react-alert";
 import Preload from "../../preloader/Preload";
 import Error from "../../error/Error";
+import useLoading from "../../../loading/useLoading";
+import MapInputLine from "../mini-marker-components/map-input-line/MapInputLine";
+import MapNameLine from "../mini-marker-components/map-name-line/MapNameLine";
+import MapSelectLine from "../mini-marker-components/map-select-line/MapSelectLine";
 
 import styles from "../maps-elements-add.module.scss";
 import "aos/dist/aos.css";
-import useLoading from "../../../loading/useLoading";
 
 const EditAddTerr = (params) => {
 
@@ -21,13 +24,16 @@ const EditAddTerr = (params) => {
   const {id} = useParams();
 
   const [errorMessage, setErrorMessage] = useState(null);
+
+  let [formName, setFormName] = useState('');
+  let [formServer, setFormServer] = useState('gmgame');
+
   let [formXStart, setFormXStart] = useState('');
   let [formXStop, setFormXStop] = useState('');
   let [formZStart, setFormZStart] = useState('');
   let [formZStop, setFormZStop] = useState('');
+
   let [init, setInit] = useState(false);
-  let [formName, setFormName] = useState('');
-  let [formServer, setFormServer] = useState('gmgame');
 
   function showMessage(response) {
     if (response.message) {
@@ -90,8 +96,6 @@ const EditAddTerr = (params) => {
     setFormServer(data.terr.world)
   }
 
-  const AttentionCoords = "Учтите, что визуально точки смещаются примерно на 30-50 блоков вниз!"
-
   const valueOption = [
     {
       value: "gmgame",
@@ -111,100 +115,94 @@ const EditAddTerr = (params) => {
     },
   ]
 
+  function checkForm(number) {
+    const cord = number.trim();
+    if (!/^[0-9+-]+$/.test(cord)) {
+      setErrorMessage(<Error inf="Только числа"/>)
+    } else {
+      setErrorMessage(null);
+    }
+  }
+
+  function checkName(name) {
+    const label = name.trim();
+    if (label.length < 5 || label.length > 300) {
+      setErrorMessage(<Error inf="Имя должно содержать от 5 до 300 символов."/>);
+    } else {
+      setErrorMessage(null);
+    }
+  }
+
   return (
     <div className={classNames(styles["boxMarkerAddWrapper"])}>
       <div className={classNames(styles["columnsAddOne"])}>
         <div className={classNames(styles["rowWrapperContent"])}>
           <button onClick={() => navigate(-1)} className={classNames(styles["back"])}>{"<-- Показать весь список"}</button>
-          <h5 className={classNames(styles["nameInput"])}>Название</h5>
-          <input
-            className={classNames(styles["inputStyle"])}
+          <MapNameLine label="Название"/>
+          <MapInputLine
+            small={false}
             defaultValue={formName}
             onChange={e => {
               setFormName(e.target.value)
-              const name = e.target.value.trim();
-              if (name.length < 5 || name.length > 300) {
-                setErrorMessage(<Error inf="Имя должно содержать от 5 до 300 символов."/>); /* --- Возможно нужна корректировка --- */
-              } else {
-                setErrorMessage(null);
-              }
-            }}/>
+              checkName(e.target.value)
+            }}
+          />
         </div>
         <div className={classNames(styles["rowWrapperContent"])}>
-          <h5 className={classNames(styles["nameInput"])}>Сервер</h5>
-          <select className={classNames(styles["inputStyle"])} onChange={(e) => setFormServer(e.target.value)} defaultValue={formServer}>
-            {valueOption.map((el) =>
-              <option className={classNames(styles["optionList"])} value={el.value}>{el.name}</option>
-            )}
-          </select>
+          <MapNameLine label="Сервер"/>
+          <MapSelectLine list={valueOption} onChange={(e) => setFormServer(e.target.value)} defaultValue={formServer}/>
         </div>
         <div className={classNames(styles["coordinatesWrapper"])}>
-          <h5 className={classNames(styles["nameInput"])}>Координаты</h5>
+          <MapNameLine label="Координаты"/>
           <div className={classNames(styles["blockRow"])}>
             <div className={classNames(styles["rowWrapperContentCustom"])}>
-              <h5 className={classNames(styles["nameInput"])}>StartX</h5>
-              <input
-                className={classNames(styles["inputStyle"], styles["custom"])}
+              <MapNameLine label="StartX"/>
+              <MapInputLine
+                small={true}
                 defaultValue={formXStart}
                 onChange={e => {
                   setFormXStart(e.target.value)
-                  const name = e.target.value.trim();
-                  if (!/^[0-9+-]+$/.test(name)) {
-                    setErrorMessage(<Error inf="Только числа"/>) /* --- Возможно нужна корректировка --- */
-                  } else {
-                    setErrorMessage(null);
-                  }
-                }}/>
+                  checkForm(e.target.value)
+                }}
+              />
             </div>
             <div className={classNames(styles["rowWrapperContentCustom"])}>
-              <h5 className={classNames(styles["nameInput"])}>StopX</h5>
-              <input
-                className={classNames(styles["inputStyle"], styles["custom"])}
+              <MapNameLine label="StopX"/>
+              <MapInputLine
+                small={true}
                 defaultValue={formXStop}
                 onChange={e => {
                   setFormXStop(e.target.value)
-                  const name = e.target.value.trim();
-                  if (!/^[0-9+-]+$/.test(name)) {
-                    setErrorMessage(<Error inf="Только числа"/>) /* --- Возможно нужна корректировка --- */
-                  } else {
-                    setErrorMessage(null);
-                  }
-                }}/>
+                  checkForm(e.target.value)
+                }}
+              />
             </div>
           </div>
           <div className={classNames(styles["blockRow"])}>
             <div className={classNames(styles["rowWrapperContentCustom"])}>
-              <h5 className={classNames(styles["nameInput"])}>StartZ</h5>
-              <input
-                className={classNames(styles["inputStyle"], styles["custom"])}
+              <MapNameLine label="StartZ"/>
+              <MapInputLine
+                small={true}
                 defaultValue={formZStart}
                 onChange={e => {
                   setFormZStart(e.target.value)
-                  const name = e.target.value.trim();
-                  if (!/^[0-9+-]+$/.test(name)) {
-                    setErrorMessage(<Error inf="Только числа"/>) /* --- Возможно нужна корректировка --- */
-                  } else {
-                    setErrorMessage(null);
-                  }
-                }}/>
+                  checkForm(e.target.value)
+                }}
+              />
             </div>
             <div className={classNames(styles["rowWrapperContentCustom"])}>
-              <h5 className={classNames(styles["nameInput"])}>StopZ</h5>
-              <input
-                className={classNames(styles["inputStyle"], styles["custom"])}
+              <MapNameLine label="StopZ"/>
+              <MapInputLine
+                small={true}
                 defaultValue={formZStop}
                 onChange={e => {
                   setFormZStop(e.target.value)
-                  const name = e.target.value.trim();
-                  if (!/^[0-9+-]+$/.test(name)) {
-                    setErrorMessage(<Error inf="Только числа"/>) /* --- Возможно нужна корректировка --- */
-                  } else {
-                    setErrorMessage(null);
-                  }
-                }}/>
+                  checkForm(e.target.value)
+                }}
+              />
             </div>
           </div>
-          <Warn inf={AttentionCoords}/>
+          <Warn inf="Учтите, что визуально точки смещаются примерно на 30-50 блоков вниз!"/>
         </div>
         {errorMessage && <div className={classNames(styles["error"])}>{errorMessage}</div>}
         <div className={classNames(styles["boxActionsWrapper"])}>

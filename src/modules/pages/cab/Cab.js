@@ -65,7 +65,7 @@ const Cab = () => {
   }
 
   function setActive(isActive) {
-    return isActive ? classNames(styles["tab"], styles["checked"]) : styles["tab"];
+    return isActive ? classNames(styles["tab"], styles["checked"]) : classNames(styles["tab"]);
   }
 
   return (<div className={classNames(styles["mainCab"])}>
@@ -85,12 +85,7 @@ const Cab = () => {
         }
       </div>
       <div className={classNames(styles["columnOne"])} id="display">
-        <PlayerCabinet
-          username={resParams.data.user.username}
-          id={resParams.data.discordUser.id}
-          avatar={resParams.data.discordUser.avatar}
-          global={resParams.data.discordUser.global_name || resParams.data.discordUser.username}
-        />
+        <PlayerCabinet username={resParams.data.user.username}/>
         <div className={classNames(styles["menuCab"])}>
           <div className={classNames(styles["blockLink"])}>
             {resParams.data.user.status === 1 || resParams.data.user.status === 3 || resParams.data.user.status === 4 || resParams.data.user.status === 5 || resParams.data.user.status === 6

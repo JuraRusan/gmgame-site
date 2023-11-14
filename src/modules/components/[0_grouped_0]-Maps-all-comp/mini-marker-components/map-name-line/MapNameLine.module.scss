@@ -1,0 +1,13 @@
+@import "../../../../../Variables";
+
+.nameInput {
+  width: auto;
+  height: 28px;
+  line-height: 28px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: $fontCustom2;
+  color: $site-color-2;
+  padding-left: 10px;
+  padding-right: 10px;
+}
