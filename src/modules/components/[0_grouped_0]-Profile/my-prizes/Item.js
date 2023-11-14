@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import React, {useEffect, useState} from "react";
+import Button from "../../button/Button";
 
 import styles from "./My-prizes.module.scss";
 
@@ -32,7 +33,13 @@ const Item = (props) => {
       </div>
       <div className={classNames(styles["prizesDescription"])}>
         <h5 className={classNames(styles["textInformationH5"])}>Получение инструмента со случайными зачарованиями</h5>
-        <button className={classNames(styles["pick"])} onClick={(event) => props.action(props.id, event)}>Забрать</button>
+        <div className={classNames(styles["btn_wrapper"])}>
+          <Button
+            label="Забрать"
+            view="submit"
+            onClick={(event) => props.action(props.id, event)}
+          />
+        </div>
       </div>
     </div>
   );

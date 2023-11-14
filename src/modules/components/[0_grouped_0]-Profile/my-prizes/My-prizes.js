@@ -69,18 +69,24 @@ const MyPrizes = () => {
   return (
     <div className={classNames(styles["boxPrizesWrapper"])}>
       <h4 className={classNames(styles["prizesTitleH4"])}>У Вас {data.count} {wordForm}</h4>
-      <div className={classNames(styles["allPrizesContainer"])}>
-        {data.awards.map((el, index) => {
-          return (
-            el.type === 'money'
-              ?
-              <Money {...{id: el.id, action: giveReward}} key={index}/>
-              :
-              <Item id={el.id} action={giveReward} key={index}/>
-          );
-        })}
-      </div>
-      <a target="_blank" className={classNames(styles["prizes-link"])} rel="noreferrer" href="https://discord.gg/AesVsdPsFj">Если у Вас нет выигрышей, примите участие в розыгрыше на мониторинге &#10148;</a>
+      {data.count <= 0
+        ?
+        <h4 className={classNames(styles["warn_title"])}>Если у Вас нет выигрышей, примите участие в розыгрыше на
+          <a target="_blank" rel="noreferrer" href="https://discord.gg/AesVsdPsFj">мониторинге</a>
+        </h4>
+        :
+        <div className={classNames(styles["allPrizesContainer"])}>
+          {data.awards.map((el, index) => {
+            return (
+              el.type === 'money'
+                ?
+                <Money {...{id: el.id, action: giveReward}} key={index}/>
+                :
+                <Item id={el.id} action={giveReward} key={index}/>
+            );
+          })}
+        </div>
+      }
     </div>
   );
 };
