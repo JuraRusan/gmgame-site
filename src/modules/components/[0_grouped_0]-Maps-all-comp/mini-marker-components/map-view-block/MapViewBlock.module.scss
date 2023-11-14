@@ -1,6 +1,6 @@
 @import "../../../../../Variables";
 
-.oneMapsElement {
+.one_maps_element {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -12,95 +12,86 @@
   margin-bottom: 4px;
   border: 1px solid $site-color-5;
   border-radius: 4px;
-  padding: 8px;
-  transition: all 0.35s ease;
   background: $site-color-12;
 
-  &:hover {
-    background: $site-color-1;
-  }
-
-  .columnsOne {
+  .link_to {
     display: flex;
-    width: 100%;
-    max-width: none;
-    min-width: 0;
-    height: auto;
-    min-height: 0;
-    max-height: none;
     flex-direction: row;
     justify-content: flex-start;
-    margin: auto 0;
+    width: 100%;
+    height: 100%;
+    padding: 8px 0 8px 8px;
+    border-radius: 4px;
+    transition: all 0.35s ease;
+    text-decoration: none !important;
 
-    .elementIndex {
-      display: none;
+    &:hover {
+      background: $site-color-1;
     }
 
-    .elementH3Name {
-      width: auto;
-      min-height: 40px;
-      max-height: none;
+    .wrapper {
+      display: flex;
+      width: 100%;
+      max-width: 100%;
+      min-width: 100%;
       height: auto;
-      line-height: 40px;
-      font-size: 14px;
-      font-weight: 400;
-      font-family: $fontCustom2;
-      color: $site-color-2;
-      padding-left: 12px;
-      padding-right: 12px;
+      min-height: 0;
+      max-height: none;
+      flex-direction: row;
+      justify-content: flex-start;
+      margin: auto 0;
+
+      .elementIndex {
+        display: none;
+      }
+
+      .elementH3Name {
+        width: auto;
+        min-height: 40px;
+        max-height: none;
+        height: auto;
+        line-height: 40px;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: $fontCustom2;
+        color: $site-color-2;
+        padding-left: 12px;
+        padding-right: 12px;
+      }
     }
   }
 
-  .columnsTwo {
-    display: flex;
-    flex-direction: row;
-    margin: auto 0;
-    min-width: max-content;
-    max-width: max-content;
-    width: auto;
+  .actions {
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    margin: auto 8px auto 8px;
+    background: transparent;
+    border: transparent;
+    border-radius: 4px;
+    color: $site-color-2;
+    text-decoration: none;
+    transition: all 0.35s ease;
+    padding: 6px;
 
-    .actions {
-      cursor: pointer;
-      height: 40px;
-      width: 40px;
-      margin: 0 0 0 8px;
-      background: $site-color-12;
-      border: 1px solid $site-color-5;
-      border-radius: 5px;
-      color: $site-color-2;
-      text-decoration: none;
-      transition: all 0.35s ease;
-      padding: 6px;
+    svg {
+      path {
+        transition: all 0.35s ease;
+      }
+    }
+
+    &:hover {
+      background: $site-color-1;
+    }
+  }
+
+  .hover_delete {
+    &:hover {
+      background: $site-color-1;
 
       svg {
         path {
-          transition: all 0.35s ease;
-        }
-      }
-
-      &:hover {
-        background: $site-color-1;
-      }
-    }
-
-    .hover_settings {
-      &:hover {
-        svg {
-          path {
-            fill: $site-color-9;
-          }
-        }
-      }
-    }
-
-    .hover_delete {
-      &:hover {
-        background: $site-color-1;
-
-        svg {
-          path {
-            stroke: $site-color-9;
-          }
+          stroke: $site-color-9;
         }
       }
     }
@@ -117,11 +108,13 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .oneMapsElement {
-    .columnsOne {
-      .elementH3Name {
-        min-height: 36px;
-        line-height: 36px;
+  .one_maps_element {
+    .link_to {
+      .wrapper {
+        .elementH3Name {
+          min-height: 36px;
+          line-height: 36px;
+        }
       }
     }
   }
@@ -131,59 +124,54 @@
 }
 
 @media screen and (max-width: 768px) {
-  .oneMapsElement {
+  .one_maps_element {
     min-height: 48px;
 
-    .columnsOne {
-      .elementH3Name {
-        font-size: 13px;
-        min-height: 28px;
-        line-height: 28px;
-        margin: auto 0;
+    .link_to {
+      .wrapper {
+        .elementH3Name {
+          font-size: 13px;
+          min-height: 28px;
+          line-height: 28px;
+          margin: auto 0;
+        }
       }
     }
   }
 }
 
 @media screen and (max-width: 640px) {
-  .oneMapsElement {
-    .columnsTwo {
-      .actions {
-        height: 32px;
-        width: 32px;
-        padding: 5px;
-      }
+  .one_maps_element {
+    .actions {
+      height: 32px;
+      width: 32px;
+      padding: 5px;
     }
   }
 }
 
 @media screen and (max-width: 480px) {
-  .oneMapsElement {
+  .one_maps_element {
     flex-direction: column;
 
-    .columnsOne {
-      flex-direction: column;
+    .link_to {
+      .wrapper {
+        flex-direction: column;
 
-      .elementH3Name {
-        width: 100%;
-        min-width: 0;
-        max-width: none;
-        font-size: 12px;
-        min-height: 24px;
-        line-height: 24px;
-        text-align: center;
+        .elementH3Name {
+          width: 100%;
+          min-width: 0;
+          max-width: none;
+          font-size: 12px;
+          min-height: 24px;
+          line-height: 24px;
+          text-align: center;
+        }
       }
     }
 
-    .columnsTwo {
-      justify-content: center;
-      width: 100%;
-      min-width: 0;
-      max-width: none;
-
-      .actions {
-        margin: 0 4px;
-      }
+    .actions {
+      margin: 4px auto;
     }
   }
 }
