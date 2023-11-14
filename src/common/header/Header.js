@@ -106,40 +106,28 @@ const Header = () => {
             <a className={classNames(styles["swipePage"])} href="/api/login">Войти</a>
             :
             <div className={classNames(styles["wrapperBoxCab"])} onClick={() => setCabDropMenu(!cabDropMenu)}>
-              {resParams?.data?.discordUser?.localuser?.username === undefined
-                ?
-                <div className={classNames(styles["cabOpen"])}>
-                  {resParams.data.discordUser.avatar === null
-                    ?
-                    <img
-                      className={classNames(styles["iconPlayer"])}
-                      src={`../site_assets/pages/webp/avatar_undefined.webp`}
-                      alt="none"
-                    />
-                    :
-                    <img
-                      className={classNames(styles["iconPlayer"])}
-                      src={`https://cdn.discordapp.com/avatars/${resParams.data.discordUser.id}/${resParams.data.discordUser.avatar}.png`}
-                      alt="none"
-                    />
-                  }
-                  <label className={classNames(styles["nameUser"])}>{resParams.data.discordUser.username}</label>
-                </div>
-                :
-                <div className={classNames(styles["cabOpen"])}>
+              <div className={classNames(styles["cabOpen"])}>
+                {resParams.data.discordUser.avatar === null
+                  ?
                   <img
                     className={classNames(styles["iconPlayer"])}
-                    src={`https://minotar.net/helm/${resParams.data.discordUser.localuser.username}/100`}
+                    src={`../site_assets/pages/webp/avatar_undefined.webp`}
                     alt="none"
                   />
-                  <label className={classNames(styles["nameUser"])}>{resParams.data.discordUser.localuser.username}</label>
-                </div>
-              }
+                  :
+                  <img
+                    className={classNames(styles["iconPlayer"])}
+                    src={`https://cdn.discordapp.com/avatars/${resParams.data.discordUser.id}/${resParams.data.discordUser.avatar}.png`}
+                    alt="none"
+                  />
+                }
+                <label className={classNames(styles["nameUser"])}>{resParams.data.discordUser.username}</label>
+              </div>
               {cabDropMenu === false ? undefined :
                 <div className={classNames(styles["dropMenuCab"])} data-aos="zoom-out-down" data-aos-duration="250">
                   <div className={classNames(styles["boxList"])}>
                     <div className={classNames(styles["prevDropUser"])}>
-                      <label className={classNames(styles["miniName"])}>{resParams.data.discordUser.localuser?.username === undefined ? resParams.data.discordUser.username : resParams.data.discordUser.localuser.username}</label>
+                      <label className={classNames(styles["miniName"])}>{resParams.data.discordUser.username}</label>
                     </div>
                     <a className={classNames(styles["list"])} href="/cab/profile">Профиль</a>
                     {resParams?.data?.discordUser?.role === 'admin' &&
