@@ -1,19 +1,17 @@
 @import "../../../../Variables";
 
-$height: 36px;
-
 .boxSearchWrapper {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   width: 100%;
-  height: 35px;
+  height: auto;
 
   .numberListCount {
     display: flex;
     width: 350px;
-    height: $height;
-    line-height: $height;
+    height: 36px;
+    line-height: 36px;
     margin: 0 0 0 16px;
     padding: 0;
     font-weight: 400;
@@ -22,19 +20,25 @@ $height: 36px;
     font-family: $fontCustom2;
   }
 
+  .margin_btn {
+    margin: 0 10px 0 auto;
+  }
+
   .searchInput {
     display: flex;
     width: 225px;
-    height: $height;
-    line-height: $height;
+    height: 36px;
     outline: none;
     background: $site-color-12;
     border: 1px solid $site-color-5;
     border-radius: 5px;
-    transition: all 0.25s ease-in-out;
+    transition: all 0.35s ease-in-out;
     color: $site-color-8;
     padding-left: 10px;
     padding-right: 10px;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: $fontCustom2;
 
     &:hover,
     &:focus,
@@ -58,6 +62,11 @@ $height: 36px;
 }
 
 @media screen and (max-width: 960px) {
+  .boxSearchWrapper {
+    .margin_btn {
+      margin: 0 0 0 auto;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -69,7 +78,6 @@ $height: 36px;
     }
 
     .searchInput {
-      line-height: 30px;
       height: 30px;
       width: 200px;
     }
@@ -83,6 +91,7 @@ $height: 36px;
     .numberListCount {
       width: 100%;
       margin: 0 0 0 8px;
+      font-size: 13px;
     }
 
     .searchInput {
@@ -104,6 +113,10 @@ $height: 36px;
     .searchInput {
       width: 100%;
       margin: 8px auto;
+    }
+
+    .margin_btn {
+      margin: 0 auto;
     }
   }
 }
