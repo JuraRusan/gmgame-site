@@ -1,5 +1,5 @@
 import React from 'react';
-import CodeSvgComponent from "../../bases/icons/formatCodeSVG/CodeSVG";
+import CodeSvgComponent from "../../bases/icons/formatCodeSvg/CodeSvg";
 import {arrayDefault} from "../IconDefaultStorybookTypes";
 
 export default {

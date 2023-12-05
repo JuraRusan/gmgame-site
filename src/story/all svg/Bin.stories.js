@@ -1,5 +1,5 @@
 import React from 'react';
-import BinSvgComponent from "../../bases/icons/binSVG/binSvg";
+import BinSvgComponent from "../../bases/icons/binSvg/BinSvg";
 import {arrayDefault} from "../IconDefaultStorybookTypes";
 
 export default {

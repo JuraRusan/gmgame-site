@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import React from "react";
 import {regulationsAllDB} from "../../../pages/regulations/regulationsAllDB";
-import SvgArrow from "../../../../bases/icons/SvgArrow";
+import ArrowSvgComponent from "../../../../bases/icons/arrowSvg/ArrowSvg";
 
 import styles from "../../../pages/regulations/Regulations.module.scss"
 
@@ -27,7 +27,7 @@ const AllMainRules = () => {
       <div className={classNames(styles["svg-punishment-one"])}>
         <div className={classNames(styles["svg-rotate-div"])}>
           <span className={classNames(styles["rotate"])}>
-            <SvgArrow width="100%" height="100%" color="#FF0000"/>
+            <ArrowSvgComponent width="100%" height="100%" color="#FF0000"/>
           </span>
           <span className={classNames(styles["span-war"])}>{regulationsAllDB.punishment}</span>
         </div>
@@ -41,7 +41,7 @@ const AllMainRules = () => {
       <div className={classNames(styles["svg-punishment-one"])}>
         <div className={classNames(styles["svg-rotate-div"])}>
           <span className={classNames(styles["rotate"])}>
-            <SvgArrow width="100%" height="100%" color="#FF0000"/>
+            <ArrowSvgComponent width="100%" height="100%" color="#FF0000"/>
           </span>
           <span className={classNames(styles["span-war"])}>{regulationsAllDB.punishment}</span>
         </div>
@@ -56,7 +56,7 @@ const AllMainRules = () => {
       <div className={classNames(styles["svg-punishment-one"])}>
         <div className={classNames(styles["svg-rotate-div"])}>
           <span className={classNames(styles["rotate"])}>
-            <SvgArrow width="100%" height="100%" color="#FF0000"/>
+            <ArrowSvgComponent width="100%" height="100%" color="#FF0000"/>
           </span>
           <span className={classNames(styles["span-war"])}>{regulationsAllDB.punishment}</span>
         </div>
@@ -71,7 +71,7 @@ const AllMainRules = () => {
       <div className={classNames(styles["svg-punishment-one"])}>
         <div className={classNames(styles["svg-rotate-div"])}>
           <span className={classNames(styles["rotate"])}>
-            <SvgArrow width="100%" height="100%" color="#FF0000"/>
+            <ArrowSvgComponent width="100%" height="100%" color="#FF0000"/>
           </span>
           <span className={classNames(styles["span-war"])}>{regulationsAllDB.punishment}</span>
         </div>
@@ -86,7 +86,7 @@ const AllMainRules = () => {
       <div className={classNames(styles["svg-punishment-one"])}>
         <div className={classNames(styles["svg-rotate-div"])}>
           <span className={classNames(styles["rotate"])}>
-            <SvgArrow width="100%" height="100%" color="#FF0000"/>
+            <ArrowSvgComponent width="100%" height="100%" color="#FF0000"/>
           </span>
           <span className={classNames(styles["span-war"])}>{regulationsAllDB.punishment}</span>
         </div>
@@ -101,7 +101,7 @@ const AllMainRules = () => {
       <div className={classNames(styles["svg-punishment-one"])}>
         <div className={classNames(styles["svg-rotate-div"])}>
           <span className={classNames(styles["rotate"])}>
-            <SvgArrow width="100%" height="100%" color="#FF0000"/>
+            <ArrowSvgComponent width="100%" height="100%" color="#FF0000"/>
           </span>
           <span className={classNames(styles["span-war"])}>{regulationsAllDB.punishment}</span>
         </div>
@@ -116,7 +116,7 @@ const AllMainRules = () => {
       <div className={classNames(styles["svg-punishment-one"])}>
         <div className={classNames(styles["svg-rotate-div"])}>
           <span className={classNames(styles["rotate"])}>
-            <SvgArrow width="100%" height="100%" color="#FF0000"/>
+            <ArrowSvgComponent width="100%" height="100%" color="#FF0000"/>
           </span>
           <span className={classNames(styles["span-war"])}>{regulationsAllDB.punishment}</span>
         </div>
@@ -131,7 +131,7 @@ const AllMainRules = () => {
       <div className={classNames(styles["svg-punishment-one"])}>
         <div className={classNames(styles["svg-rotate-div"])}>
           <span className={classNames(styles["rotate"])}>
-            <SvgArrow width="100%" height="100%" color="#FF0000"/>
+            <ArrowSvgComponent width="100%" height="100%" color="#FF0000"/>
           </span>
           <span className={classNames(styles["span-war"])}>{regulationsAllDB.punishment}</span>
         </div>
@@ -146,7 +146,7 @@ const AllMainRules = () => {
       <div className={classNames(styles["svg-punishment-one"])}>
         <div className={classNames(styles["svg-rotate-div"])}>
           <span className={classNames(styles["rotate"])}>
-            <SvgArrow width="100%" height="100%" color="#FF0000"/>
+            <ArrowSvgComponent width="100%" height="100%" color="#FF0000"/>
           </span>
           <span className={classNames(styles["span-war"])}>{regulationsAllDB.punishment}</span>
         </div>
@@ -161,7 +161,7 @@ const AllMainRules = () => {
       <div className={classNames(styles["svg-punishment-one"])}>
         <div className={classNames(styles["svg-rotate-div"])}>
           <span className={classNames(styles["rotate"])}>
-            <SvgArrow width="100%" height="100%" color="#FF0000"/>
+            <ArrowSvgComponent width="100%" height="100%" color="#FF0000"/>
           </span>
           <span className={classNames(styles["span-war"])}>{regulationsAllDB.punishment}</span>
         </div>
@@ -176,7 +176,7 @@ const AllMainRules = () => {
       <div className={classNames(styles["svg-punishment-one"])}>
         <div className={classNames(styles["svg-rotate-div"])}>
           <span className={classNames(styles["rotate"])}>
-            <SvgArrow width="100%" height="100%" color="#FF0000"/>
+            <ArrowSvgComponent width="100%" height="100%" color="#FF0000"/>
           </span>
           <span className={classNames(styles["span-war"])}>{regulationsAllDB.punishment}</span>
         </div>
@@ -191,7 +191,7 @@ const AllMainRules = () => {
       <div className={classNames(styles["svg-punishment-one"])}>
         <div className={classNames(styles["svg-rotate-div"])}>
           <span className={classNames(styles["rotate"])}>
-            <SvgArrow width="100%" height="100%" color="#FF0000"/>
+            <ArrowSvgComponent width="100%" height="100%" color="#FF0000"/>
           </span>
           <span className={classNames(styles["span-war"])}>{regulationsAllDB.punishment}</span>
         </div>

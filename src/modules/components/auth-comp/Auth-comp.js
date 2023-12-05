@@ -5,7 +5,7 @@ import {ErrorMessage} from "@hookform/error-message";
 import AOS from "aos";
 import {sendRequest} from '../../../DataProvider';
 import {useAlert} from "react-alert";
-import Warn from "../warn/Warn.js";
+import Notifications from "../notifications/Notifications";
 import Button from "../button/Button";
 
 import styles from "./Auth-comp.module.scss";
@@ -198,7 +198,7 @@ const AuthComponent = () => {
           </div>
         </form>
         <div className={classNames(styles["wrapper-warn"])}>
-          <Warn inf="Относитесь ответственно к заполнению заявки"/>
+          <Notifications inf="Относитесь ответственно к заполнению заявки" type="warn"/>
         </div>
         <form className={classNames(styles["action_block"])}>
           <Button

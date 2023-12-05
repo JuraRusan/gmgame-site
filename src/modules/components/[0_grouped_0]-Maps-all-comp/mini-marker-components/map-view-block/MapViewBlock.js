@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import React from "react";
 import {Link} from 'react-router-dom';
-import BinSvgComponent from "../../../../../bases/icons/binSVG/binSvg";
+import BinSvgComponent from "../../../../../bases/icons/binSvg/BinSvg";
 
 import styles from "./MapViewBlock.module.scss";
 

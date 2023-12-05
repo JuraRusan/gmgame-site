@@ -1,5 +1,5 @@
 import React from 'react';
-import ItalicSvgComponent from "../../bases/icons/formatItalicSVG/ItalicSVG";
+import ItalicSvgComponent from "../../bases/icons/formatItalicSvg/ItalicSvg";
 import {arrayDefault} from "../IconDefaultStorybookTypes";
 
 export default {

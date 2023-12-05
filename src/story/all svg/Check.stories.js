@@ -1,5 +1,5 @@
 import React from 'react';
-import CheckSvgComponent from "../../bases/icons/checkSVG/checkSvg";
+import CheckSvgComponent from "../../bases/icons/checkSvg/CheckSvg";
 import {arrayDefault} from "../IconDefaultStorybookTypes";
 
 export default {

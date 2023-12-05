@@ -1,5 +1,5 @@
 import React from 'react';
-import BoldSvgComponent from "../../bases/icons/formatBoldSVG/BoldSVG";
+import BoldSvgComponent from "../../bases/icons/formatBoldSvg/BoldSvg";
 import {arrayDefault} from "../IconDefaultStorybookTypes";
 
 export default {

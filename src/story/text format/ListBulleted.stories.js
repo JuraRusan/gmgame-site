@@ -1,5 +1,5 @@
 import React from 'react';
-import ListBulletedSvgComponent from "../../bases/icons/formatListBulletedSVG/ListBulletedSVG";
+import ListBulletedSvgComponent from "../../bases/icons/formatListBulletedSvg/ListBulletedSvg";
 import {arrayDefault} from "../IconDefaultStorybookTypes";
 
 export default {

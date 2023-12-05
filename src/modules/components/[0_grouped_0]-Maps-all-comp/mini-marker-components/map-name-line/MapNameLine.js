@@ -3,9 +3,9 @@ import React from "react";
 
 import styles from "./MapNameLine.module.scss";
 
-const MapNameLine = (props) => {
+const MapNameLine = ({label}) => {
   return (
-    <h5 className={classNames(styles["nameInput"])}>{props.label}</h5>
+    <h5 className={classNames(styles["name_parameters"])}>{label}</h5>
   );
 };
 

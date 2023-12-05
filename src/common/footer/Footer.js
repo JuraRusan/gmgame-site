@@ -1,8 +1,8 @@
 import classNames from "classnames";
 import React from "react";
-import SvgDiscord from "../../bases/icons/SvgDiscord.js";
-import SvgInstagram from "../../bases/icons/SvgInstagram.js";
-import SvgVk from "../../bases/icons/SvgVk.js";
+import VkSvgComponent from "../../bases/icons/vkSvg/VkSvg";
+import InstagramSvgComponent from "../../bases/icons/instagramSvg/InstagramSvg";
+import DiscordSvgComponent from "../../bases/icons/discordSvg/DiscordSvg";
 
 import styles from "./Footer.module.scss";
 
@@ -14,13 +14,13 @@ const Footer = () => {
         <div className={classNames(styles["leftLine"])}></div>
         <div className={classNames(styles["wrapperLink"])}>
           <a className={classNames(styles["bt-links"])} href="https://vk.com/gmgameru">
-            <SvgVk width="100%" height="100%" color="white"/>
+            <VkSvgComponent width="100%" height="100%" color="white"/>
           </a>
           <a className={classNames(styles["bt-links"])} href="https://www.instagram.com/gmgameserver/">
-            <SvgInstagram width="100%" height="100%" color="white"/>
+            <InstagramSvgComponent width="100%" height="100%" color="white"/>
           </a>
           <a className={classNames(styles["bt-links"])} href="https://discord.gg/cAM6tUYEuX">
-            <SvgDiscord width="100%" height="100%" color="white"/>
+            <DiscordSvgComponent width="100%" height="100%" color="white"/>
           </a>
         </div>
         <div className={classNames(styles["rightLine"])}></div>

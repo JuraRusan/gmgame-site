@@ -3,12 +3,12 @@ import React from "react";
 
 import styles from "./MapInputLine.module.scss";
 
-const MapInputLine = (props) => {
+const MapInputLine = ({defaultValue, small, onChange}) => {
   return (
     <input
-      className={classNames(styles["inputStyle"], {[styles["custom"]]: props.small === true})}
-      defaultValue={props.defaultValue}
-      onChange={props.onChange}
+      className={classNames(styles["input_style"], {[styles["custom"]]: small === true})}
+      defaultValue={defaultValue}
+      onChange={onChange}
     />
   );
 };

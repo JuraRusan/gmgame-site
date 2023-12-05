@@ -1,15 +1,17 @@
 import classNames from "classnames";
 import React, {useState} from "react";
-import Warn from "../../warn/Warn.js";
+import Notifications from "../../notifications/Notifications";
 import {sendRequest, useAxios} from '../../../../DataProvider';
 import {useNavigate, useParams} from 'react-router-dom';
 import {useAlert} from "react-alert";
 import Preload from "../../preloader/Preload";
-import Error from "../../error/Error";
 import useLoading from "../../../loading/useLoading";
 import MapInputLine from "../mini-marker-components/map-input-line/MapInputLine";
 import MapNameLine from "../mini-marker-components/map-name-line/MapNameLine";
 import MapSelectLine from "../mini-marker-components/map-select-line/MapSelectLine";
+import {checkName} from "../mini-marker-components/function/CheckName"
+import {checkForm} from "../mini-marker-components/function/CheckForm"
+import Button from "../../button/Button";
 
 import styles from "../maps-elements-add.module.scss";
 import "aos/dist/aos.css";
@@ -25,15 +27,15 @@ const EditAddTerr = (params) => {
 
   const [errorMessage, setErrorMessage] = useState(null);
 
-  let [formName, setFormName] = useState('');
-  let [formServer, setFormServer] = useState('gmgame');
+  const [formName, setFormName] = useState('');
+  const [formServer, setFormServer] = useState('gmgame');
 
-  let [formXStart, setFormXStart] = useState('');
-  let [formXStop, setFormXStop] = useState('');
-  let [formZStart, setFormZStart] = useState('');
-  let [formZStop, setFormZStop] = useState('');
+  const [formXStart, setFormXStart] = useState('');
+  const [formXStop, setFormXStop] = useState('');
+  const [formZStart, setFormZStart] = useState('');
+  const [formZStop, setFormZStop] = useState('');
 
-  let [init, setInit] = useState(false);
+  const [init, setInit] = useState(false);
 
   function showMessage(response) {
     if (response.message) {
@@ -115,28 +117,10 @@ const EditAddTerr = (params) => {
     },
   ]
 
-  function checkForm(number) {
-    const cord = number.trim();
-    if (!/^[0-9+-]+$/.test(cord)) {
-      setErrorMessage(<Error inf="Только числа"/>)
-    } else {
-      setErrorMessage(null);
-    }
-  }
-
-  function checkName(name) {
-    const label = name.trim();
-    if (label.length < 5 || label.length > 300) {
-      setErrorMessage(<Error inf="Имя должно содержать от 5 до 300 символов."/>);
-    } else {
-      setErrorMessage(null);
-    }
-  }
-
   return (
-    <div className={classNames(styles["boxMarkerAddWrapper"])}>
-      <div className={classNames(styles["columnsAddOne"])}>
-        <div className={classNames(styles["rowWrapperContent"])}>
+    <div className={classNames(styles["box_map_add_wrapper"])}>
+      <div className={classNames(styles["columns_add_one"])}>
+        <div className={classNames(styles["row_wrapper_content"])}>
           <button onClick={() => navigate(-1)} className={classNames(styles["back"])}>{"<-- Показать весь список"}</button>
           <MapNameLine label="Название"/>
           <MapInputLine
@@ -144,79 +128,92 @@ const EditAddTerr = (params) => {
             defaultValue={formName}
             onChange={e => {
               setFormName(e.target.value)
-              checkName(e.target.value)
+              checkName(e.target.value, setErrorMessage)
             }}
           />
         </div>
-        <div className={classNames(styles["rowWrapperContent"])}>
+        <div className={classNames(styles["row_wrapper_content"])}>
           <MapNameLine label="Сервер"/>
-          <MapSelectLine list={valueOption} onChange={(e) => setFormServer(e.target.value)} defaultValue={formServer}/>
+          <MapSelectLine
+            list={valueOption}
+            onChange={(e) => setFormServer(e.target.value)}
+            defaultValue={formServer}
+          />
         </div>
-        <div className={classNames(styles["coordinatesWrapper"])}>
+        <div className={classNames(styles["coordinates_wrapper"])}>
           <MapNameLine label="Координаты"/>
-          <div className={classNames(styles["blockRow"])}>
-            <div className={classNames(styles["rowWrapperContentCustom"])}>
+          <div className={classNames(styles["block_row"])}>
+            <div className={classNames(styles["row_wrapper_content_custom"])}>
               <MapNameLine label="StartX"/>
               <MapInputLine
                 small={true}
                 defaultValue={formXStart}
                 onChange={e => {
                   setFormXStart(e.target.value)
-                  checkForm(e.target.value)
+                  checkForm(e.target.value, setErrorMessage)
                 }}
               />
             </div>
-            <div className={classNames(styles["rowWrapperContentCustom"])}>
+            <div className={classNames(styles["row_wrapper_content_custom"])}>
               <MapNameLine label="StopX"/>
               <MapInputLine
                 small={true}
                 defaultValue={formXStop}
                 onChange={e => {
                   setFormXStop(e.target.value)
-                  checkForm(e.target.value)
+                  checkForm(e.target.value, setErrorMessage)
                 }}
               />
             </div>
           </div>
-          <div className={classNames(styles["blockRow"])}>
-            <div className={classNames(styles["rowWrapperContentCustom"])}>
+          <div className={classNames(styles["block_row"])}>
+            <div className={classNames(styles["row_wrapper_content_custom"])}>
               <MapNameLine label="StartZ"/>
               <MapInputLine
                 small={true}
                 defaultValue={formZStart}
                 onChange={e => {
                   setFormZStart(e.target.value)
-                  checkForm(e.target.value)
+                  checkForm(e.target.value, setErrorMessage)
                 }}
               />
             </div>
-            <div className={classNames(styles["rowWrapperContentCustom"])}>
+            <div className={classNames(styles["row_wrapper_content_custom"])}>
               <MapNameLine label="StopZ"/>
               <MapInputLine
                 small={true}
                 defaultValue={formZStop}
                 onChange={e => {
                   setFormZStop(e.target.value)
-                  checkForm(e.target.value)
+                  checkForm(e.target.value, setErrorMessage)
                 }}
               />
             </div>
           </div>
-          <Warn inf="Учтите, что визуально точки смещаются примерно на 30-50 блоков вниз!"/>
+          <Notifications inf="Учтите, что визуально точки смещаются примерно на 30-50 блоков вниз!" type="warn"/>
         </div>
         {errorMessage && <div className={classNames(styles["error"])}>{errorMessage}</div>}
-        <div className={classNames(styles["boxActionsWrapper"])}>
-          <button className={classNames(styles["buttonAllStyles"], styles["buttonAdd"])} onClick={id === 'new' ? addMarker : saveMarker}>Сохранить</button>
-          {id === 'new'
-            ? ''
-            : <button className={classNames(styles["buttonAllStyles"], styles["buttonDelete"])} onClick={deleteMarker}>Удалить</button>
-          }
+        <div className={classNames(styles["actions_box"])}>
+          <Button view="submit" label="Сохранить" onClick={id === 'new' ? addMarker : saveMarker}/>
+          {id === 'new' ? null : <Button view="delete" label="Удалить" onClick={deleteMarker}/>}
         </div>
       </div>
-      <div className={classNames(styles["columnsAddTwo"])}>
+      <div className={classNames(styles["columns_add_two"])}>
         {id === 'new'
-          ? <iframe title="map" src="https://map.gmgame.ru/#/-7/64/-54/-4/GMGameWorld/over" width="100%" height="100%"/>
-          : <iframe title="map" src={`https://map.gmgame.ru/#/${data.terr.xStart}/64/${data.terr.zStart}/-4/${data.world.worldName}/${data.world.layer}`} width="100%" height="100%"/>
+          ?
+          <iframe
+            title="map"
+            src="https://map.gmgame.ru/#/-7/64/-54/-4/GMGameWorld/over"
+            width="100%"
+            height="100%"
+          />
+          :
+          <iframe
+            title="map"
+            src={`https://map.gmgame.ru/#/${data.terr.xStart}/64/${data.terr.zStart}/-4/${data.world.worldName}/${data.world.layer}`}
+            width="100%"
+            height="100%"
+          />
         }
       </div>
     </div>

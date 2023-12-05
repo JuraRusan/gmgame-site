@@ -1,15 +1,15 @@
 import * as React from "react"
 
-const BinSvgComponent = (props) => (
+const BinSvgComponent = ({width, height, color}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={props.width}
-    height={props.height}
+    width={width}
+    height={height}
     fill="none"
     viewBox="0 0 24 24"
   >
     <path
-      stroke={props.color}
+      stroke={color}
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={1.5}

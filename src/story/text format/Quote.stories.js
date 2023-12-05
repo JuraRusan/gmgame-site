@@ -1,5 +1,5 @@
 import React from 'react';
-import QuoteSvgComponent from "../../bases/icons/formatQuoteSVG/QuoteSVG";
+import QuoteSvgComponent from "../../bases/icons/formatQuoteSvg/QuoteSvg";
 import {arrayDefault} from "../IconDefaultStorybookTypes";
 
 export default {

@@ -1,7 +1,6 @@
 import classNames from "classnames";
 import React, {useEffect, useState} from "react";
 import AOS from "aos";
-import Warn from "../../warn/Warn";
 
 import styles from "./Permissions-status.module.scss";
 import "aos/dist/aos.css";
@@ -122,7 +121,6 @@ const PermissionsStatus = () => {
             </label>
           ))}
         </form>
-        <Warn inf="DDO &#129046; Deepslate_diamond_ore"/>
 
       </div>
 

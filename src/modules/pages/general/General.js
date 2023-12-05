@@ -4,7 +4,7 @@ import AOS from "aos";
 import {Link} from "react-router-dom";
 import Mode from "../../components/[0_grouped_0]-Generals/mode/Mode.js";
 import World from "../../components/[0_grouped_0]-Generals/world/World.js";
-import SvgHoverMe from "../../../bases/icons/SvgHoverMe.js";
+import HoverMeSvgComponent from "../../../bases/icons/hoverMeSvg/HoverMeSvg";
 
 import styles from "./General.module.scss";
 import "aos/dist/aos.css";
@@ -104,7 +104,7 @@ const General = () => {
         </div>
         <div className={classNames(styles["blockWorlds"])} data-aos="zoom-in">
           <div className={classNames(styles["hoverMeBlock"])}>
-            <SvgHoverMe width="100%" height="100%" color="#292929"/>
+            <HoverMeSvgComponent width="100%" height="100%" color="#292929"/>
           </div>
           <World name={worldNameRes} src="./site_assets/pages/webp/4.webp" inf={serverInformationRes}/>
           <World name={worldNameGMGame} src="./site_assets/pages/webp/5.webp" inf={serverInformationGMGame}/>

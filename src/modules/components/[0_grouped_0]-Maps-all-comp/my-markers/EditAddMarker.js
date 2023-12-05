@@ -1,12 +1,18 @@
 import classNames from "classnames";
 import React, {useState} from "react";
-import Warn from "../../warn/Warn.js";
+import Notifications from "../../notifications/Notifications";
 import {sendRequest, useAxios} from '../../../../DataProvider';
 import {useNavigate, useParams} from 'react-router-dom';
 import {useAlert} from "react-alert";
 import Preload from "../../preloader/Preload";
-import Error from "../../error/Error";
 import useLoading from "../../../loading/useLoading";
+import MapNameLine from "../mini-marker-components/map-name-line/MapNameLine";
+import MapInputLine from "../mini-marker-components/map-input-line/MapInputLine";
+import Button from "../../button/Button";
+import {checkName} from "../mini-marker-components/function/CheckName";
+import {checkForm} from "../mini-marker-components/function/CheckForm";
+import MapSelectLine from "../mini-marker-components/map-select-line/MapSelectLine";
+import MapTextareaLine from "../mini-marker-components/map-textarea-line/MapTextareaLine";
 
 import styles from "../maps-elements-add.module.scss";
 
@@ -20,13 +26,16 @@ const EditAddMarker = (params) => {
   const {id} = useParams();
 
   const [errorMessage, setErrorMessage] = useState(null);
-  let [selectedOption, setSelectedOption] = useState('basePlayers');
-  let [formDescription, setFormDescription] = useState('');
-  let [formX, setFormX] = useState('');
-  let [formZ, setFormZ] = useState('');
-  let [init, setInit] = useState(false);
-  let [formName, setFormName] = useState('');
-  let [formServer, setFormServer] = useState('gmgame');
+
+  const [formName, setFormName] = useState('');
+  const [formServer, setFormServer] = useState('gmgame');
+  const [selectedOption, setSelectedOption] = useState('basePlayers');
+  const [formDescription, setFormDescription] = useState('');
+
+  const [formX, setFormX] = useState('');
+  const [formZ, setFormZ] = useState('');
+
+  const [init, setInit] = useState(false);
 
   function showMessage(response) {
     if (response.message) {
@@ -89,8 +98,6 @@ const EditAddMarker = (params) => {
     setFormServer(data.marker?.server)
   }
 
-  const AttentionCoords = "Учтите, что визуально точки смещаются примерно на 30-50 блоков вниз!"
-
   const worldValue = [
     {
       value: "gmgame",
@@ -145,104 +152,91 @@ const EditAddMarker = (params) => {
   ]
 
   return (
-    <div className={classNames(styles["boxMarkerAddWrapper"])}>
-      <div className={classNames(styles["columnsAddOne"])}>
-        <div className={classNames(styles["rowWrapperContent"])}>
+    <div className={classNames(styles["box_map_add_wrapper"])}>
+      <div className={classNames(styles["columns_add_one"])}>
+        <div className={classNames(styles["row_wrapper_content"])}>
           <button onClick={() => navigate(-1)} className={classNames(styles["back"])}>{"<-- Показать весь список"}</button>
-          <h5 className={classNames(styles["nameInput"])}>Имя</h5>
-          <input
-            className={classNames(styles["inputStyle"])}
+          <MapNameLine label="Имя"/>
+          <MapInputLine
+            small={false}
             defaultValue={formName}
             onChange={e => {
-              setFormName(e.target.value)
-              const name = e.target.value.trim();
-              if (name.length < 5 || name.length > 300) {
-                setErrorMessage(<Error inf="Имя должно содержать от 5 до 300 символов."/>); /* --- Возможно нужна корректировка --- */
-              } else {
-                setErrorMessage(null);
-              }
+              setFormName(e.target.value);
+              checkName(e.target.value, setErrorMessage)
             }}
           />
-          <h5 className={classNames(styles["nameInput"])}>Описание</h5>
-          <textarea
-            className={classNames(styles["inputStyle"])}
+          <MapNameLine label="Описание"/>
+          <MapTextareaLine
             defaultValue={formDescription}
             onChange={e => {
               setFormDescription(e.target.value)
-              const name = e.target.value.trim();
-              if (name.length > 16) {
-                setErrorMessage(<Error inf="Описание должно содержать не более n-символов"/>);  /* --- Возможно нужна корректировка --- */
-              } else {
-                setErrorMessage(null);
-              }
             }}
           />
         </div>
-        <div className={classNames(styles["rowWrapperContent"])}>
-          <h5 className={classNames(styles["nameInput"])}>Сервер</h5>
-          <select className={classNames(styles["inputStyle"])} onChange={(e) => setFormServer(e.target.value)} defaultValue={formServer}>
-            {worldValue.map((el) =>
-              <option className={classNames(styles["optionList"])} value={el.value}>{el.name}</option>
-            )}
-          </select>
-          <h5 className={classNames(styles["nameInput"])}>Тип метки</h5>
-          <select className={classNames(styles["inputStyle"])} onChange={(e) => setSelectedOption(e.target.value)} defaultValue={selectedOption}>
-            {valueOption.map((el) =>
-              <option className={classNames(styles["optionList"])} value={el.value}>{el.name}</option>
-            )}
-          </select>
+        <div className={classNames(styles["row_wrapper_content"])}>
+          <MapNameLine label="Сервер"/>
+          <MapSelectLine
+            list={worldValue}
+            onChange={(e) => setFormServer(e.target.value)}
+            defaultValue={formServer}
+          />
+          <MapNameLine label="Тип метки"/>
+          <MapSelectLine
+            list={valueOption}
+            onChange={(e) => setSelectedOption(e.target.value)}
+            defaultValue={selectedOption}
+          />
         </div>
-        <div className={classNames(styles["coordinatesWrapper"])}>
-          <h5 className={classNames(styles["nameInput"])}>Координаты</h5>
-          <div className={classNames(styles["blockRow"])}>
-            <div className={classNames(styles["rowWrapperContentCustom"])}>
-              <h5 className={classNames(styles["nameInput"])}>X</h5>
-              <input
-                className={classNames(styles["inputStyle"], styles["custom"])}
+        <div className={classNames(styles["coordinates_wrapper"])}>
+          <MapNameLine label="Координаты"/>
+          <div className={classNames(styles["block_row"])}>
+            <div className={classNames(styles["row_wrapper_content_custom"])}>
+              <MapNameLine label="X"/>
+              <MapInputLine
+                small={true}
                 defaultValue={formX}
                 onChange={e => {
                   setFormX(e.target.value)
-                  const name = e.target.value.trim();
-                  if (!/^[0-9+-]+$/.test(name)) {
-                    setErrorMessage(<Error inf="Только числа"/>) /* --- Возможно нужна корректировка --- */
-                  } else {
-                    setErrorMessage(null);
-                  }
+                  checkForm(e.target.value, setErrorMessage)
                 }}
               />
             </div>
-            <div className={classNames(styles["rowWrapperContentCustom"])}>
-              <h5 className={classNames(styles["nameInput"])}>Z</h5>
-              <input
-                className={classNames(styles["inputStyle"], styles["custom"])}
+            <div className={classNames(styles["row_wrapper_content_custom"])}>
+              <MapNameLine label="Z"/>
+              <MapInputLine
+                small={true}
                 defaultValue={formZ}
                 onChange={e => {
                   setFormZ(e.target.value)
-                  const name = e.target.value.trim();
-                  if (!/^[0-9+-]+$/.test(name)) {
-                    setErrorMessage(<Error inf="Только числа"/>) /* --- Возможно нужна корректировка --- */
-                  } else {
-                    setErrorMessage(null);
-                  }
+                  checkForm(e.target.value, setErrorMessage)
                 }}
               />
             </div>
           </div>
-          <Warn inf={AttentionCoords}/>
+          <Notifications inf="Учтите, что визуально точки смещаются примерно на 30-50 блоков вниз!" type="warn"/>
         </div>
         {errorMessage && <div className={classNames(styles["error"])}>{errorMessage}</div>}
-        <div className={classNames(styles["boxActionsWrapper"])}>
-          <button className={classNames(styles["buttonAllStyles"], styles["buttonAdd"])} onClick={id === 'new' ? addMarker : saveMarker}>Сохранить</button>
-          {id === 'new'
-            ? ''
-            : <button className={classNames(styles["buttonAllStyles"], styles["buttonDelete"])} onClick={deleteMarker}>Удалить</button>
-          }
+        <div className={classNames(styles["actions_box"])}>
+          <Button view="submit" label="Сохранить" onClick={id === 'new' ? addMarker : saveMarker}/>
+          {id === 'new' ? null : <Button view="delete" label="Удалить" onClick={deleteMarker}/>}
         </div>
       </div>
-      <div className={classNames(styles["columnsAddTwo"])}>
+      <div className={classNames(styles["columns_add_two"])}>
         {id === 'new'
-          ? <iframe title="map" src="https://map.gmgame.ru/#/-7/64/-54/-4/GMGameWorld/over" width="100%" height="100%"/>
-          : <iframe title="map" src={`https://map.gmgame.ru/#/${data.marker.x}/64/${data.marker.z}/-4/${data.world.worldName}/${data.world.layer}`} width="100%" height="100%"/>
+          ?
+          <iframe
+            title="map"
+            src="https://map.gmgame.ru/#/-7/64/-54/-4/GMGameWorld/over"
+            width="100%"
+            height="100%"
+          />
+          :
+          <iframe
+            title="map"
+            src={`https://map.gmgame.ru/#/${data.marker.x}/64/${data.marker.z}/-4/${data.world.worldName}/${data.world.layer}`}
+            width="100%"
+            height="100%"
+          />
         }
       </div>
     </div>

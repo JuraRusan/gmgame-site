@@ -1,5 +1,5 @@
 import React from 'react';
-import AlignCenterSvgComponent from "../../bases/icons/formatAlignCenterSVG/AlignCenterSVG";
+import AlignCenterSvgComponent from "../../bases/icons/formatAlignCenterSvg/AlignCenterSvg";
 import {arrayDefault} from "../IconDefaultStorybookTypes";
 
 export default {

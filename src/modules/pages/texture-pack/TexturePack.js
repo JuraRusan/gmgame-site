@@ -6,8 +6,8 @@ import {debounce} from "lodash";
 import {LazyLoadImage} from 'react-lazy-load-image-component';
 import {arrayTexturePackAll} from './texturePackDB';
 import Modal from "react-modal";
-import AlignCenterSvgComponent from "../../../bases/icons/formatAlignCenterSVG/AlignCenterSVG";
-import AlignLeftSvgComponent from "../../../bases/icons/formatAlignLeftSVG/AlignLeftSVG";
+import AlignCenterSvgComponent from "../../../bases/icons/formatAlignCenterSvg/AlignCenterSvg";
+import AlignLeftSvgComponent from "../../../bases/icons/formatAlignLeftSvg/AlignLeftSvg";
 
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import styles from "./TexturePack.module.scss";

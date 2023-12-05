@@ -1,6 +1,6 @@
 @import "../../../../../Variables";
 
-.inputStyle {
+.select_style {
   height: 36px;
   width: 100%;
   min-width: 100%;
@@ -24,10 +24,37 @@
     background: $site-color-1;
   }
 
-  .optionList {
+  .select_options {
     color: $site-color-2;
     background: $site-color-12;
     font-size: 13px;
     font-weight: 400;
   }
+}
+
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 960px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 640px) {
+}
+
+@media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 360px) {
 }

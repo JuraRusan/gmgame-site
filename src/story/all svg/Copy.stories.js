@@ -1,10 +1,10 @@
 import React from 'react';
-import CopySvgComponent from "../../bases/icons/copySVG/copySvg";
+import CopySvgComponent from "../../bases/icons/copySvg/CopySvg";
 import {arrayDefault} from "../IconDefaultStorybookTypes";
 
 export default {
   title: 'UI/Svg/All/Copy',
-  component: CopySvgComponent,
+  component: CopySvgComponent
 };
 
 const Template = (args) => <CopySvgComponent {...args}/>

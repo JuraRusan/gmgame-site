@@ -2,8 +2,8 @@ import classNames from "classnames";
 import React, {useState} from "react";
 import {useAxios} from '../../../../DataProvider';
 import Preload from "../../preloader/Preload.js";
-import CopySvgComponent from "../../../../bases/icons/copySVG/copySvg";
-import CheckSvgComponent from "../../../../bases/icons/checkSVG/checkSvg";
+import CopySvgComponent from "../../../../bases/icons/copySvg/CopySvg";
+import CheckSvgComponent from "../../../../bases/icons/checkSvg/CheckSvg";
 import useLoading from "../../../loading/useLoading";
 
 import styles from "./My-profile.module.scss";

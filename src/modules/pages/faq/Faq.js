@@ -2,7 +2,7 @@ import classNames from "classnames";
 import React, {useMemo, useState} from "react";
 import {useAxios} from '../../../DataProvider';
 import Preload from "../../components/preloader/Preload";
-import SvgFaq from "../../../bases/icons/SvgFaq.js";
+import FaqSvgComponent from "../../../bases/icons/faqSvg/FaqSvg";
 import useLoading from "../../loading/useLoading";
 
 import styles from "./Faq.module.scss";
@@ -102,7 +102,7 @@ const Faq = () => {
         <div className={classNames(styles["faqBox"])}>
           <div className={classNames(styles["faqTitleWrapper"])}>
           <span>
-            <SvgFaq width="100%" height="100%" color="#f4f4f4"/>
+            <FaqSvgComponent width="100%" height="100%" color="#f4f4f4"/>
           </span>
             <h2 className={classNames(styles["titleH2Styles"])}>Часто задаваемые вопросы</h2>
           </div>

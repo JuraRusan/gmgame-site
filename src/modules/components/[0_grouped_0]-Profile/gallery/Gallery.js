@@ -3,7 +3,7 @@ import React, {useEffect, useState} from 'react';
 import {LazyLoadImage} from "react-lazy-load-image-component";
 import {Link} from "react-router-dom";
 import {array} from "../../../pages/gallery/GalleryArray";
-import SvgAddMarker from "../../../../bases/icons/SvgAddMarker";
+import AddSvgComponent from "../../../../bases/icons/addSvg/AddSvg";
 import AOS from "aos";
 
 import styles from "./Gallery.module.scss";
@@ -54,7 +54,7 @@ const Gallery = () => {
       <input className={classNames(styles["searchPost"])} type="search" placeholder="#tag"/>
       <Link to={`edit_add_post`} className={classNames(styles["onePostGallery"])}>
         <span className={classNames(styles["addPost"])}>
-          <SvgAddMarker width="100%" height="100%" color="#f4f4f4"/>
+          <AddSvgComponent width="100%" height="100%" color="#f4f4f4"/>
         </span>
       </Link>
       {array.length === 0 ?

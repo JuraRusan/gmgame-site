@@ -5,7 +5,7 @@ import Modal from 'react-modal';
 import AOS from "aos";
 import {LazyLoadImage} from "react-lazy-load-image-component";
 import {array} from "./GalleryArray";
-import SvgHeart from "../../../bases/icons/SvgHeart";
+import HeartSvgComponent from "../../../bases/icons/heartSvg/HeartSvg";
 import Particles from "../../components/particles/Particles";
 
 import styles from "./Gallery.module.scss";
@@ -118,13 +118,13 @@ const MainGallery = () => {
               <div className={classNames(styles["containerLike"])}>
                 <div className={classNames(styles["likes"])}>
                   <button className={classNames(styles["click"], styles["like"])}>
-                    <Particles text={<SvgHeart height="20px" width="20px"/>} type="like"/>
+                    <Particles text={<HeartSvgComponent height="20px" width="20px" color="#f4f4f4"/>} type="like"/>
                   </button>
                   <label className={classNames(styles["text"])}>{items.likes}</label>
                 </div>
                 <div className={classNames(styles["likes"])}>
                   <button className={classNames(styles["click"], styles["dislike"])}>
-                    <Particles text={<SvgHeart height="20px" width="20px"/>} type="dislike"/>
+                    <Particles text={<HeartSvgComponent height="20px" width="20px" color="#f4f4f4"/>} type="dislike"/>
                   </button>
                   <label className={classNames(styles["text"])}>{items.dislikes}</label>
                 </div>

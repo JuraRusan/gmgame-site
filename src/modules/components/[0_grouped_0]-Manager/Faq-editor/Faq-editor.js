@@ -8,9 +8,9 @@ import {sendRequest, useAxios} from '../../../../DataProvider';
 import {useAlert} from "react-alert";
 import Preload from "../../../components/preloader/Preload.js";
 import ReactDOM from 'react-dom'
-import BoldSvgComponent from "../../../../bases/icons/formatBoldSVG/BoldSVG";
-import ItalicSvgComponent from "../../../../bases/icons/formatItalicSVG/ItalicSVG";
-import UnderlineSvgComponent from "../../../../bases/icons/formatUnderlineSVG/UnderlineSVG";
+import BoldSvgComponent from "../../../../bases/icons/formatBoldSvg/BoldSvg";
+import ItalicSvgComponent from "../../../../bases/icons/formatItalicSvg/ItalicSvg";
+import UnderlineSvgComponent from "../../../../bases/icons/formatUnderlineSvg/UnderlineSvg";
 
 import styles from "./Faq-editor.module.scss";
 import "aos/dist/aos.css";

@@ -1,5 +1,5 @@
 import React from 'react';
-import UnderlineSvgComponent from "../../bases/icons/formatUnderlineSVG/UnderlineSVG";
+import UnderlineSvgComponent from "../../bases/icons/formatUnderlineSvg/UnderlineSvg";
 import {arrayDefault} from "../IconDefaultStorybookTypes";
 
 export default {

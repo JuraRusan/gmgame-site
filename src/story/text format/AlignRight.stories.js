@@ -1,5 +1,5 @@
 import React from 'react';
-import AlignRightSvgComponent from "../../bases/icons/formatAlignRightSVG/AlignRightSVG";
+import AlignRightSvgComponent from "../../bases/icons/formatAlignRightSvg/AlignRightSvg";
 import {arrayDefault} from "../IconDefaultStorybookTypes";
 
 export default {

@@ -1,5 +1,5 @@
 import React from 'react';
-import ListNumberedSvgComponent from "../../bases/icons/formatListNumberedSVG/ListNumberedSVG";
+import ListNumberedSvgComponent from "../../bases/icons/formatListNumberedSvg/ListNumberedSvg";
 import {arrayDefault} from "../IconDefaultStorybookTypes";
 
 export default {
