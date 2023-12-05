@@ -1,10 +1,10 @@
 import React from "react";
-import NotificationsSvgComponent from "../../../../../bases/icons/notificationsSvg/NotificationsSvg";
+import Notifications from "../../../notifications/Notifications";
 
 export function checkForm(number, setErrorMessage) {
   const cord = number.trim();
   if (!/^[0-9+-]+$/.test(cord)) {
-    setErrorMessage(<NotificationsSvgComponent inf="Только числа" type="error"/>)
+    setErrorMessage(<Notifications inf="Только числа" type="error"/>)
   } else {
     setErrorMessage(null);
   }

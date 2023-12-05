@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import React, {useState} from "react";
-import NotificationsSvgComponent from "../../../../bases/icons/notificationsSvg/NotificationsSvg";
+import Notifications from "../../notifications/Notifications";
 import {sendRequest, useAxios} from '../../../../DataProvider';
 import {useNavigate, useParams} from 'react-router-dom';
 import {useAlert} from "react-alert";
@@ -189,7 +189,7 @@ const EditAddTerr = (params) => {
               />
             </div>
           </div>
-          <NotificationsSvgComponent inf="Учтите, что визуально точки смещаются примерно на 30-50 блоков вниз!" type="warn"/>
+          <Notifications inf="Учтите, что визуально точки смещаются примерно на 30-50 блоков вниз!" type="warn"/>
         </div>
         {errorMessage && <div className={classNames(styles["error"])}>{errorMessage}</div>}
         <div className={classNames(styles["actions_box"])}>
