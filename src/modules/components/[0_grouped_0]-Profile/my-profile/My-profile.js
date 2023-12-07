@@ -87,7 +87,7 @@ const MyProfile = () => {
           <div className={classNames(styles["wrapperText"])}>
             <h4 className={classNames(styles["text"])}>Ваша заявка отклонена. Спасибо за понимание.</h4>
             {data.user.age >= 15 ?
-              <h6 className={classNames(styles["text"])}>К сожалению, игроки сервера отклонили вашу заявку, для уточнения деталей, пожалуйста свяжитесь с <a target="_blank" rel="noreferrer" href="https://discordapp.com/users/637661714732810260/">Krest111k</a> в дискорде</h6>
+              <h6 className={classNames(styles["text"])}>К сожалению, игроки сервера отклонили вашу заявку, для уточнения деталей, пожалуйста, свяжитесь с <a target="_blank" rel="noreferrer" href="https://discordapp.com/users/637661714732810260/">Krest111k</a> в дискорде</h6>
               :
               ''
             }
