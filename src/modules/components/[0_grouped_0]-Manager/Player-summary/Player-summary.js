@@ -2,6 +2,7 @@ import classNames from "classnames";
 import React, {useEffect, useMemo, useState} from "react";
 import AOS from "aos";
 import {useSearchParams} from "react-router-dom";
+import { Link } from "react-router-dom";
 import {sendRequest} from '../../../../DataProvider';
 import {useAlert} from "react-alert";
 import ReactModal from 'react-modal';
@@ -20,7 +21,6 @@ import styles from "./Player-summary.module.scss";
 import "aos/dist/aos.css";
 
 const PlayerSummary = () => {
-
   const [searchParams] = useSearchParams();
   let [searchParam, setSearchParam] = useState('Поиск работает по discord_id/nickname/discord_tag');
   let [user, setUser] = useState([]);
@@ -28,6 +28,7 @@ const PlayerSummary = () => {
   const [action, setAction] = useState({});
   const [markers, setMarkers] = useState({});
   const [territories, setTerritories] = useState({});
+  const [tickets, setTickets] = useState({});
   const [modalLog, setModalLog] = useState(false);
   const [modalUd, setModalUd] = useState(false);
   const [logs, setLogs] = useState([]);
@@ -93,6 +94,7 @@ const PlayerSummary = () => {
         setTag({});
         setMarkers({});
         setTerritories({});
+        setTickets({});
         // alert.error(response.message);
         return;
       }
@@ -104,6 +106,7 @@ const PlayerSummary = () => {
       setTag({});
       setMarkers({});
       setTerritories({});
+      setTickets({});
       response.forEach(user => {
         try {
           let tag = JSON.parse(user.tag);
@@ -114,10 +117,12 @@ const PlayerSummary = () => {
         }
         makersUser[user.username] = user.markers;
         terrUser[user.username] = user.territories;
+        tickets[user.username] = user.tickets;
       })
       setTag(tagUser);
       setMarkers(makersUser);
       setTerritories(terrUser);
+      setTickets(tickets);
       setRegens([])
     });
   }
@@ -146,6 +151,7 @@ const PlayerSummary = () => {
       setMarkers({all: response});
       setUser({});
       setTerritories([]);
+      setTickets([]);
       setRegens([])
     });
   }
@@ -377,6 +383,16 @@ const PlayerSummary = () => {
     });
   }
 
+  const downLoadDile = (name, html) => {
+    const element = document.createElement("a");
+    const file = new Blob([html], {type: 'text/html'});
+    element.href = URL.createObjectURL(file);
+    element.download = name;
+    document.body.appendChild(element); // Required for this to work in FireFox
+    element.click();
+
+  }
+
   return (
     <div className={classNames(styles["mainUserSummary"])} data-aos="zoom-in">
 
@@ -558,6 +574,48 @@ const PlayerSummary = () => {
                           <TButton name="Удалить" type="submit" onClick={() => delTerr(el.id, i, username)}/>
                           <TButton name="Обновить" type="submit" onClick={() => updateTerr(el.id)}/>
                         </Th>
+                      </Tr>}
+                    </>
+                  )
+                })}
+              </TBody>
+            </TableMain>
+          </React.Fragment>
+        )
+      })
+      }
+
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*--- Таблица для тикетов пользователя или всех возможных тикетов ---*/}
+      {Object.keys(tickets).map((username, i) => {
+        if (tickets[username].length === 0) {
+          return null;
+        }
+        return (
+          <React.Fragment key={i}>
+            <h4 className={classNames(styles["managerTitleH4"])} data-aos="zoom-in">Тикеты {username === "all" ? "всех игроков" : username}</h4>
+            <TableMain>
+              <THead>
+                <Tr header={true}>
+                  {username === 'all' && <Th type="text" content="Имя"/>}
+                  <Th type="text" content="Название"/>
+                  <Th type="text" content="Просмотр"/>
+                </Tr>
+              </THead>
+              <TBody>
+                {tickets[username].map((el, i) => {
+                  return(<>{!el.notRender &&
+                      <Tr key={i} keyStyle={i}>
+                        {username === 'all' && <Th type="text" content={el?.username || "-"}/>}
+                        <Th type="editing">
+                          <TInput id="name" size="large" onChange={(e) => terrsChange(e, el.id)} defaultValue={el.name}/>
+                        </Th>
+                        {/* <Link to="/ticket" state={{ html: el.html }}>link</Link> */}
+                        <TButton name="Скачать" type="submit" onClick={() => downLoadDile(el.name, el.html)}/>
                       </Tr>}
                     </>
                   )
