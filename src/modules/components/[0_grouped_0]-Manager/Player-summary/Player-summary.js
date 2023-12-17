@@ -2,6 +2,7 @@ import classNames from "classnames";
 import React, {useEffect, useMemo, useState} from "react";
 import AOS from "aos";
 import {useSearchParams} from "react-router-dom";
+import { Link } from "react-router-dom";
 import {sendRequest} from '../../../../DataProvider';
 import {useAlert} from "react-alert";
 import ReactModal from 'react-modal';
@@ -20,7 +21,6 @@ import styles from "./Player-summary.module.scss";
 import "aos/dist/aos.css";
 
 const PlayerSummary = () => {
-
   const [searchParams] = useSearchParams();
   let [searchParam, setSearchParam] = useState('Поиск работает по discord_id/nickname/discord_tag');
   let [user, setUser] = useState([]);
@@ -383,6 +383,16 @@ const PlayerSummary = () => {
     });
   }
 
+  const downLoadDile = (name, html) => {
+    const element = document.createElement("a");
+    const file = new Blob([html], {type: 'text/html'});
+    element.href = URL.createObjectURL(file);
+    element.download = name;
+    document.body.appendChild(element); // Required for this to work in FireFox
+    element.click();
+
+  }
+
   return (
     <div className={classNames(styles["mainUserSummary"])} data-aos="zoom-in">
 
@@ -604,6 +614,8 @@ const PlayerSummary = () => {
                         <Th type="editing">
                           <TInput id="name" size="large" onChange={(e) => terrsChange(e, el.id)} defaultValue={el.name}/>
                         </Th>
+                        {/* <Link to="/ticket" state={{ html: el.html }}>link</Link> */}
+                        <TButton name="Скачать" type="submit" onClick={() => downLoadDile(el.name, el.html)}/>
                       </Tr>}
                     </>
                   )
