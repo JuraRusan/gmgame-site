@@ -22,7 +22,7 @@ const TexturePackEditor = lazy(() => import(/* webpackChunkName: "manager" */ '.
 const RegulationsEditor = lazy(() => import(/* webpackChunkName: "manager" */ './modules/components/[0_grouped_0]-Manager/Regulations-editor/Regulations-editor'));
 const MonitoringSummary = lazy(() => import(/* webpackChunkName: "manager" */ './modules/components/[0_grouped_0]-Manager/Monitoring-summary/Monitoring-summary'));
 const GalleryStatusView = lazy(() => import(/* webpackChunkName: "manager" */ './modules/components/[0_grouped_0]-Manager/Gallery-status-view/Gallery-status-view'));
-const PermissionsStatus = lazy(() => import(/* webpackChunkName: "manager" */ './modules/components/[0_grouped_0]-Manager/Permissions-status/Permissions-status'));
+// const PermissionsStatus = lazy(() => import(/* webpackChunkName: "manager" */ './modules/components/[0_grouped_0]-Manager/Permissions-status/Permissions-status'));
 // --
 const Faq = lazy(() => import(/* webpackChunkName: "faq" */ './modules/pages/faq/Faq.js'));
 const Regulations = lazy(() => import(/* webpackChunkName: "regulations" */ './modules/pages/regulations/Regulations.js'));
@@ -39,8 +39,8 @@ const MyTerritories = lazy(() => import(/* webpackChunkName: "cab" */ './modules
 const EditAddTerr = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Maps-all-comp/my-territories/EditAddTerr.js'));
 // --
 // const ArticlesWiki = lazy(() => import(/* webpackChunkName: "wiki" */ './modules/pages/articles/Articles-wiki.js'));
-const Articles = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/articles/Articles.js'));
-const EditAddArticle = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/articles/EditAddArticle.js'));
+// const Articles = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/articles/Articles.js'));
+// const EditAddArticle = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/articles/EditAddArticle.js'));
 const BuildingAHyperloop = lazy(() => import(/* webpackChunkName: "building_a_hyperloop" */ './modules/pages/articles/temporarily/Building_a_hyperloop')); // -------------------- temporarily --------------------
 // --
 const MyProfile = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/my-profile/My-profile.js'));
@@ -81,8 +81,8 @@ const Router = () => {
             <Route path="markers" element={<MyMarkers/>}/>
             <Route path="markers/edit_add_marker/:id" element={<EditAddMarker/>}/>
             {/*----------*/}
-            <Route path="articles" element={<Articles/>}/> {/* <Route path="articles" element={<Articles/>}/> */}
-            <Route path="articles/edit_add_article/:id" element={<EditAddArticle/>}/>
+            <Route path="articles" element={<CabNotAvailable/>}/>
+            <Route path="articles/edit_add_article/:id" element={<CabNotAvailable/>}/>
             {/*----------*/}
             <Route path="gallery" element={<CabNotAvailable/>}/> {/* <Route path="gallery" element={<Gallery/>}/> */}
             <Route path="gallery/edit_add_post" element={<CabNotAvailable/>}/> {/*<Route path="gallery/edit_add_post" element={<EditAddPost/>}/>*/}
@@ -116,7 +116,7 @@ const Router = () => {
             <Route path="regulations_editor" element={<RegulationsEditor/>}/>
             <Route path="monitoring_summary" element={<MonitoringSummary/>}/>
             <Route path="gallery_status_view" element={<GalleryStatusView/>}/>
-            <Route path="permissions_status" element={<PermissionsStatus/>}/>
+            <Route path="permissions_status" element={<NotAvailable/>}/> {/*<Route path="permissions_status" element={<PermissionsStatus/>}/>*/}
           </Route>
 
         </Routes>
