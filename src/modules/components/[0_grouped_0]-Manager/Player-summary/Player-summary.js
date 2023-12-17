@@ -28,6 +28,7 @@ const PlayerSummary = () => {
   const [action, setAction] = useState({});
   const [markers, setMarkers] = useState({});
   const [territories, setTerritories] = useState({});
+  const [tickets, setTickets] = useState({});
   const [modalLog, setModalLog] = useState(false);
   const [modalUd, setModalUd] = useState(false);
   const [logs, setLogs] = useState([]);
@@ -93,6 +94,7 @@ const PlayerSummary = () => {
         setTag({});
         setMarkers({});
         setTerritories({});
+        setTickets({});
         // alert.error(response.message);
         return;
       }
@@ -104,6 +106,7 @@ const PlayerSummary = () => {
       setTag({});
       setMarkers({});
       setTerritories({});
+      setTickets({});
       response.forEach(user => {
         try {
           let tag = JSON.parse(user.tag);
@@ -114,10 +117,12 @@ const PlayerSummary = () => {
         }
         makersUser[user.username] = user.markers;
         terrUser[user.username] = user.territories;
+        tickets[user.username] = user.tickets;
       })
       setTag(tagUser);
       setMarkers(makersUser);
       setTerritories(terrUser);
+      setTickets(tickets);
       setRegens([])
     });
   }
@@ -146,6 +151,7 @@ const PlayerSummary = () => {
       setMarkers({all: response});
       setUser({});
       setTerritories([]);
+      setTickets([]);
       setRegens([])
     });
   }
@@ -557,6 +563,46 @@ const PlayerSummary = () => {
                         <Th type="actions">
                           <TButton name="Удалить" type="submit" onClick={() => delTerr(el.id, i, username)}/>
                           <TButton name="Обновить" type="submit" onClick={() => updateTerr(el.id)}/>
+                        </Th>
+                      </Tr>}
+                    </>
+                  )
+                })}
+              </TBody>
+            </TableMain>
+          </React.Fragment>
+        )
+      })
+      }
+
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*-----------------------------------------------------------------------------------------------*/}
+      {/*--- Таблица для тикетов пользователя или всех возможных тикетов ---*/}
+      {Object.keys(tickets).map((username, i) => {
+        if (tickets[username].length === 0) {
+          return null;
+        }
+        return (
+          <React.Fragment key={i}>
+            <h4 className={classNames(styles["managerTitleH4"])} data-aos="zoom-in">Тикеты {username === "all" ? "всех игроков" : username}</h4>
+            <TableMain>
+              <THead>
+                <Tr header={true}>
+                  {username === 'all' && <Th type="text" content="Имя"/>}
+                  <Th type="text" content="Название"/>
+                  <Th type="text" content="Просмотр"/>
+                </Tr>
+              </THead>
+              <TBody>
+                {tickets[username].map((el, i) => {
+                  return(<>{!el.notRender &&
+                      <Tr key={i} keyStyle={i}>
+                        {username === 'all' && <Th type="text" content={el?.username || "-"}/>}
+                        <Th type="editing">
+                          <TInput id="name" size="large" onChange={(e) => terrsChange(e, el.id)} defaultValue={el.name}/>
                         </Th>
                       </Tr>}
                     </>
