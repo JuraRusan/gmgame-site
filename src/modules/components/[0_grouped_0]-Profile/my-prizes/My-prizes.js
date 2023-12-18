@@ -6,6 +6,7 @@ import Preload from "../../preloader/Preload.js";
 import {sendRequest, useAxios} from '../../../../DataProvider';
 import {useAlert} from "react-alert";
 import useLoading from "../../../loading/useLoading";
+import Notifications from "../../notifications/Notifications";
 
 import styles from "./My-prizes.module.scss";
 
@@ -85,6 +86,14 @@ const MyPrizes = () => {
                 <Item id={el.id} action={giveReward} key={index}/>
             );
           })}
+        </div>
+      }
+      {data.count <= 0 ? null :
+        <div className={classNames(styles["box_warn"])}>
+          <Notifications
+            inf="Для получения приза необходимо находиться онлайн на основном сервере (за исключением денежных призов)"
+            type="warn"
+          />
         </div>
       }
     </div>
