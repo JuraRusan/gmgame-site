@@ -604,22 +604,26 @@ const PlayerSummary = () => {
                   {username === 'all' && <Th type="text" content="Имя"/>}
                   <Th type="text" content="Название"/>
                   <Th type="text" content="Просмотр"/>
+                  <Th type="text" content="Действия"/>
                 </Tr>
               </THead>
               <TBody>
-                {tickets[username].map((el, i) => {
-                  return(<>{!el.notRender &&
+                {tickets[username].map((el, i) =>
+                  <>
+                    {!el.notRender &&
                       <Tr key={i} keyStyle={i}>
                         {username === 'all' && <Th type="text" content={el?.username || "-"}/>}
                         <Th type="editing">
                           <TInput id="name" size="large" onChange={(e) => terrsChange(e, el.id)} defaultValue={el.name}/>
                         </Th>
-                        {/* <Link to="/ticket" state={{ html: el.html }}>link</Link> */}
-                        <TButton name="Скачать" type="submit" onClick={() => downLoadDile(el.name, el.html)}/>
-                      </Tr>}
-                    </>
-                  )
-                })}
+                        <Th type="link" href={`/ticket`}></Th>
+                        <Th type="actions">
+                          <TButton name="Скачать" type="submit" onClick={() => downLoadDile(el.name, el.html)}/>
+                        </Th>
+                      </Tr>
+                    }
+                  </>
+                )}
               </TBody>
             </TableMain>
           </React.Fragment>
