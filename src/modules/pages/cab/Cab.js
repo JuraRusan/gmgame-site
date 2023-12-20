@@ -116,9 +116,7 @@ const Cab = () => {
                   }}
                   className={classNames(styles["tab"], styles["disabled"])}
                 >
-                  <span className={classNames(styles["stroke_color"])}>
-                    <MapSvgComponent width="100%" height="100%" color="#f4f4f4"/>
-                  </span>
+                  <MapSvgComponent width="100%" height="100%" color="#f4f4f4"/>
                   Мои территории
                 </span>
                 <span
@@ -138,9 +136,7 @@ const Cab = () => {
                   }}
                   className={classNames(styles["tab"], styles["disabled"])}
                 >
-                  <span className={classNames(styles["stroke_color"])}>
-                    <ArticlesSvgComponent width="100%" height="100%" color="#f4f4f4"/>
-                  </span>
+                  <ArticlesSvgComponent width="100%" height="100%" color="#f4f4f4"/>
                   Статьи
                 </span>
                 <span
@@ -190,9 +186,7 @@ const Cab = () => {
                   className={({isActive}) => setActive(isActive)}
                   to="territories"
                 >
-                  <span className={classNames(styles["stroke_color"])}>
-                    <MapSvgComponent width="100%" height="100%" color="#f4f4f4"/>
-                  </span>
+                  <MapSvgComponent width="100%" height="100%" color="#f4f4f4"/>
                   Мои территории
                 </NavLink>
                 <NavLink
@@ -214,9 +208,7 @@ const Cab = () => {
                   className={({isActive}) => setActive(isActive)}
                   to="articles"
                 >
-                  <span className={classNames(styles["stroke_color"])}>
-                    <ArticlesSvgComponent width="100%" height="100%" color="#f4f4f4"/>
-                  </span>
+                  <ArticlesSvgComponent width="100%" height="100%" color="#f4f4f4"/>
                   Статьи
                 </NavLink>
                 <NavLink
