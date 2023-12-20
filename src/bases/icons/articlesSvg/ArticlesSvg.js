@@ -5,15 +5,12 @@ const ArticlesSvgComponent = ({width, height, color}) => (
     xmlns="http://www.w3.org/2000/svg"
     width={width}
     height={height}
-    viewBox="0 0 48 48"
+    viewBox="0 0 512 512"
   >
     <path
-      d="M43.5 13.044H24.77c-1.963-.108-5.931-4.238-8.188-4.238H6.68v-.001A2.176 2.176 0 0 0 4.5 10.976v7.307M10.68 39.195h30.64a2.176 2.176 0 0 0 2.18-2.171V18.283h-27m-12 0v20.912"
-      fill="none"
-      stroke={color}
-      strokeWidth={4}
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      fill={color}
+      fillRule="evenodd"
+      d="M426.667 42.667v426.666H85.333V42.667h341.334ZM384 85.333H128v341.334h256V85.333ZM341.333 320v42.667H170.667V320h170.666Zm0-85.333v42.666H170.667v-42.666h170.666Zm0-85.334V192H170.667v-42.667h170.666Z"
     />
   </svg>
 )
