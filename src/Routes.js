@@ -22,6 +22,7 @@ const TexturePackEditor = lazy(() => import(/* webpackChunkName: "manager" */ '.
 const RegulationsEditor = lazy(() => import(/* webpackChunkName: "manager" */ './modules/components/[0_grouped_0]-Manager/Regulations-editor/Regulations-editor'));
 const MonitoringSummary = lazy(() => import(/* webpackChunkName: "manager" */ './modules/components/[0_grouped_0]-Manager/Monitoring-summary/Monitoring-summary'));
 const GalleryStatusView = lazy(() => import(/* webpackChunkName: "manager" */ './modules/components/[0_grouped_0]-Manager/Gallery-status-view/Gallery-status-view'));
+const ShopkeepersAllStatus = lazy(() => import(/* webpackChunkName: "manager" */ './modules/components/[0_grouped_0]-Manager/Shopkeepers-all-status/Shopkeepers-all-status'));
 // const PermissionsStatus = lazy(() => import(/* webpackChunkName: "manager" */ './modules/components/[0_grouped_0]-Manager/Permissions-status/Permissions-status'));
 // --
 const Faq = lazy(() => import(/* webpackChunkName: "faq" */ './modules/pages/faq/Faq.js'));
@@ -45,6 +46,7 @@ const BuildingAHyperloop = lazy(() => import(/* webpackChunkName: "building_a_hy
 // --
 const MyProfile = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/my-profile/My-profile.js'));
 const MyPrizes = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/my-prizes/My-prizes.js'));
+const ShopUser = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/shops-user/ShopUser'));
 const ChangePassword = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/change-password/Change-password.js'));
 // --
 const Statistic = lazy(() => import(/* webpackChunkName: "statistics" */ './modules/pages/statistic/Statistic.js'));
@@ -52,6 +54,7 @@ const Statistic = lazy(() => import(/* webpackChunkName: "statistics" */ './modu
 // const Mods = lazy(() => import(/* webpackChunkName: "mods" */ './modules/pages/mods/Mods.js'));
 const Maps = lazy(() => import(/* webpackChunkName: "maps" */ './modules/pages/maps/Maps.js'));
 const Support = lazy(() => import(/* webpackChunkName: "support" */ './modules/pages/support/Support.js'));
+const Shopkeepers = lazy(() => import(/* webpackChunkName: "shopkeepers" */ './modules/pages/shopkeepers/Shopkeepers.js'));
 const Cab = lazy(() => import(/* webpackChunkName: "cab" */ './modules/pages/cab/Cab.js'));
 // --
 
@@ -90,6 +93,8 @@ const Router = () => {
             {/*----------*/}
             <Route path="prize" element={<MyPrizes/>}/>
             {/*----------*/}
+            <Route path="shop_user" element={<ShopUser/>}/>
+            {/*----------*/}
             <Route path="change_password" element={<ChangePassword/>}/>
             {/*----------*/}
           </Route>
@@ -107,6 +112,7 @@ const Router = () => {
           <Route path="/support" element={<Support/>}/>
           <Route path="/online_map" element={<Maps/>}/>
           <Route path="/texture_pack" element={<NotAvailable/>}/> {/* <Route path="/texture_pack" element={<TexturePack/>}/> */}
+          <Route path="/shopkeepers" element={<Shopkeepers/>}/>
 
           <Route exact path="/manager" element={<Manager/>}>
             <Route path="player_summary" element={<PlayerSummary/>}/>
@@ -116,6 +122,7 @@ const Router = () => {
             <Route path="regulations_editor" element={<RegulationsEditor/>}/>
             <Route path="monitoring_summary" element={<MonitoringSummary/>}/>
             <Route path="gallery_status_view" element={<GalleryStatusView/>}/>
+            <Route path="shopkeepers_all_status" element={<ShopkeepersAllStatus/>}/>
             <Route path="permissions_status" element={<NotAvailable/>}/> {/*<Route path="permissions_status" element={<PermissionsStatus/>}/>*/}
           </Route>
 

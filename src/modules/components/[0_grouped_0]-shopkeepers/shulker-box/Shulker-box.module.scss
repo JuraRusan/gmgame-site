@@ -1,0 +1,20 @@
+@import "../../../../Variables";
+
+.oneShulkerBox {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 3px;
+  //background: $site-color-12;
+  width: max-content;
+  max-width: 620px;
+  height: auto;
+  border-radius: 5px;
+  border: 1px solid $site-color-5;
+  transition: all 0.25s ease;
+
+  &:hover {
+    background: $site-color-1;
+  }
+}

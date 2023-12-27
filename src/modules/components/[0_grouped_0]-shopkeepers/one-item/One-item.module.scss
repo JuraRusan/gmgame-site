@@ -1,0 +1,75 @@
+@import "../../../../Variables";
+
+$parameterItem: 64px;
+
+.oneItemBlock {
+  display: flex;
+  width: calc(#{$parameterItem} + 4px);
+  height: calc(#{$parameterItem} + 4px);
+
+  .photoItem {
+    display: flex;
+    width: $parameterItem;
+    height: $parameterItem;
+    padding: 2px;
+    margin: 2px;
+    //background: $site-color-12-fixed;
+    border-radius: 4px;
+    border: 1px solid $site-color-5;
+    transition: all 0.3s ease;
+    position: relative;
+
+    &:hover {
+      cursor: help;
+      //background: $site-color-1;
+    }
+
+    .itemCount {
+      width: auto;
+      height: auto;
+      position: absolute;
+      display: flex;
+      right: 3px;
+      bottom: 3px;
+      font-size: 13px;
+      font-weight: 400;
+      color: $color-3;
+      font-family: $fontCustom2;
+    }
+  }
+
+  .photoItemNone {
+    display: flex;
+    margin: 3px;
+    width: calc(#{$parameterItem} - 2px);
+    height: calc(#{$parameterItem} - 2px);
+    //background: $site-color-12-fixed;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    border: 1px solid $site-color-5;
+
+    &:hover {
+      //background: $site-color-1;
+    }
+  }
+
+  .tooltip {
+    display: flex;
+    position: fixed;
+    width: auto;
+    height: auto;
+    padding: 4px;
+    background: $site-color-4;
+    border-radius: 8px;
+    border: 1px solid $site-color-5;
+    z-index: 50;
+    margin-left: 28px;
+
+    .shulkerWrapper {
+      display: flex;
+      flex-direction: row;
+      width: max-content;
+      height: max-content;
+    }
+  }
+}

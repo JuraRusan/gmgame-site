@@ -46,6 +46,7 @@ const Manager = () => {
         <NavLink className={({isActive}) => setActive(isActive)} to="regulations_editor">Редактор правил</NavLink>
         <NavLink className={({isActive}) => setActive(isActive)} to="monitoring_summary">Сводка по мониторингам</NavLink>
         <NavLink className={({isActive}) => setActive(isActive)} to="permissions_status">Разрешения</NavLink>
+        <NavLink className={({isActive}) => setActive(isActive)} to="shopkeepers_all_status">Все магазины</NavLink>
       </div>
       <div className={classNames(styles["contentContainer"])}>
         <Outlet/>

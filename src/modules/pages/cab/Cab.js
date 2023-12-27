@@ -15,6 +15,7 @@ import ImageSvgComponent from "../../../bases/icons/imageSvg/ImageSvg";
 import SettingsSvgComponent from "../../../bases/icons/settingsSvg/SettingsSvg";
 import ManagerSvgComponent from "../../../bases/icons/managerSvg/ManagerSvg";
 import GoOutSvgComponent from "../../../bases/icons/goOutSvg/GoOutSvg";
+import ShopSvgComponent from "../../../bases/icons/shopSvg/ShopSvg";
 
 import styles from "./Cab.module.scss";
 
@@ -163,6 +164,17 @@ const Cab = () => {
                   }}
                   className={classNames(styles["tab"], styles["disabled"])}
                 >
+                  <span className={classNames(styles["stroke_color"])}>
+                    <ShopSvgComponent width="100%" height="100%" color="#f4f4f4"/>
+                  </span>
+                  Мои магазины
+                </span>
+                <span
+                  onClick={() => {
+                    setOpenMenu(false)
+                  }}
+                  className={classNames(styles["tab"], styles["disabled"])}
+                >
                   <SettingsSvgComponent width="100%" height="100%" color="#f4f4f4"/>
                   Изменить пароль
                 </span>
@@ -230,6 +242,18 @@ const Cab = () => {
                 >
                   <ImageSvgComponent width="100%" height="100%" color="#f4f4f4"/>
                   Моя галерея
+                </NavLink>
+                <NavLink
+                  onClick={() => {
+                    setOpenMenu(false)
+                  }}
+                  className={({isActive}) => setActive(isActive)}
+                  to="shop_user"
+                >
+                  <span className={classNames(styles["stroke_color"])}>
+                    <ShopSvgComponent width="100%" height="100%" color="#f4f4f4"/>
+                  </span>
+                  Мои магазины
                 </NavLink>
                 <NavLink
                   onClick={() => {
