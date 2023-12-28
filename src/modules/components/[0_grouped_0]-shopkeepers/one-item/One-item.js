@@ -11,6 +11,7 @@ import MinecraftBanner from "../mini-component/Minecraft-banner";
 import MinecraftShield from "../mini-component/Minecraft-shield";
 import MinecraftShieldColor from "../mini-component/Minecraft-shield-color";
 import {SHULKERS_TYPE} from "../../../pages/shopkeepers/ShulkersType";
+import MinecraftArmorColor from "../mini-component/Minecraft-armor-color";
 
 import styles from "./One-item.module.scss"
 
@@ -80,6 +81,7 @@ const OneItem = ({item, onClick}) => {
           <MinecraftName item={item}/>
           {item.trim === undefined ? null : <MinecraftArmorName item={item}/>}
           {item.shield_color?.color === undefined ? null : <MinecraftShieldColor item={item}/>}
+          {item.leather_color === undefined ? null : <MinecraftArmorColor item={item}/>}
           <MinecraftList item={item}/>
           <MinecraftRegister item={item}/>
           {item.trim === undefined ? null : <MinecraftArmorType item={item}/>}

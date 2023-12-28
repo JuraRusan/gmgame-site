@@ -10,6 +10,7 @@ import MinecraftRegister from "../mini-component/Minecraft-register";
 import MinecraftBanner from "../mini-component/Minecraft-banner";
 import MinecraftShield from "../mini-component/Minecraft-shield";
 import MinecraftShieldColor from "../mini-component/Minecraft-shield-color";
+import MinecraftArmorColor from "../mini-component/Minecraft-armor-color";
 
 import styles from "./Preview-component.module.scss";
 
@@ -59,6 +60,7 @@ const PreviewComponent = ({selectedItem, selectedItemOne}) => {
               <MinecraftName item={selectedItemOne}/>
               {selectedItemOne.trim === undefined ? null : <MinecraftArmorName item={selectedItemOne}/>}
               {selectedItemOne.shield_color?.color === undefined ? null : <MinecraftShieldColor item={selectedItemOne}/>}
+              {selectedItemOne.leather_color === undefined ? null : <MinecraftArmorColor item={selectedItemOne}/>}
               <MinecraftList item={selectedItemOne}/>
             </div>
             <div className={classNames(styles["bottom"])}>
