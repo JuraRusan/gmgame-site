@@ -20,17 +20,17 @@
     line-height: 1.5;
     margin: 1px 0;
     letter-spacing: 0.5px;
-    color: $color-3;
+    color: $site-color-2;
 
     .red {
-      color: lighten($color-9, 25%) !important;
+      color: lighten($site-color-11, 25%) !important;
       font-family: inherit;
       font-size: inherit;
       font-weight: inherit;
     }
 
     .main {
-      color: $color-3 !important;
+      color: $site-color-2 !important;
       font-family: inherit;
       font-size: inherit;
       font-weight: inherit;

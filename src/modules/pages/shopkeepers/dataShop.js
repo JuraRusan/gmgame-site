@@ -16,7 +16,7 @@ export const dataShop = [
           "type": "elytra",
           "type_ru": "Элитры",
           "amount": 1,
-          "remainder": 3,
+          "remainder": 10,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -45,7 +45,7 @@ export const dataShop = [
           "type": "nether_star",
           "type_ru": "Звезда Незера",
           "amount": 12,
-          "remainder": 13,
+          "remainder": 1,
           "content": []
         },
         "item1": {
@@ -62,7 +62,7 @@ export const dataShop = [
           "type": "wither_skeleton_skull",
           "type_ru": "Череп визер-скелета",
           "amount": 12,
-          "remainder": 5,
+          "remainder": 2,
           "content": []
         },
         "item1": {
@@ -79,7 +79,7 @@ export const dataShop = [
           "type": "dragon_head",
           "type_ru": "Голова дракона",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 9,
           "content": []
         },
         "item1": {
@@ -96,7 +96,7 @@ export const dataShop = [
           "type": "enchanted_book",
           "type_ru": "Чародейская книга",
           "amount": 1,
-          "remainder": 5,
+          "remainder": 0,
           "stored_enchant": [
             {
               "enchant_id": "swift_sneak",
@@ -120,7 +120,7 @@ export const dataShop = [
           "type": "sponge",
           "type_ru": "Губка",
           "amount": 1,
-          "remainder": 14,
+          "remainder": 7,
           "content": []
         },
         "item1": {
@@ -137,7 +137,7 @@ export const dataShop = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 64,
-          "remainder": 12,
+          "remainder": 11,
           "content": []
         },
         "item1": {
@@ -331,7 +331,7 @@ export const dataShop = [
           "type_ru": "Белый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #FFFFFF\"> Пластинки  </span><span style=\"color: #FFAA00\"> <b>PandaMusic</b> </span><span style=\"color: #FFAA00\"> ™ </span>",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 6,
           "content": [
             {
               "slot": 0,
@@ -511,7 +511,7 @@ export const dataShop = [
           "type": "music_disc_pigstep",
           "type_ru": "Пластинка",
           "amount": 1,
-          "remainder": 15,
+          "remainder": 8,
           "content": []
         },
         "item1": {
@@ -533,7 +533,7 @@ export const dataShop = [
           "type": "music_disc_5",
           "type_ru": "Пластинка",
           "amount": 1,
-          "remainder": 12,
+          "remainder": 8,
           "content": []
         },
         "item1": {
@@ -550,7 +550,7 @@ export const dataShop = [
           "type": "music_disc_otherside",
           "type_ru": "Пластинка",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 13,
           "content": []
         },
         "item1": {
@@ -567,7 +567,7 @@ export const dataShop = [
           "type": "music_disc_relic",
           "type_ru": "Пластинка",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 11,
           "content": []
         },
         "item1": {
@@ -598,7 +598,7 @@ export const dataShop = [
           "type_ru": "Незерский нарост",
           "minecraft_custom": "<span style=\"color: #FF5555\"> Нарост из глубин ада </span>",
           "amount": 32,
-          "remainder": 0,
+          "remainder": 4,
           "content": []
         },
         "item1": {
@@ -616,7 +616,7 @@ export const dataShop = [
           "type_ru": "Завершённая книга",
           "minecraft_custom": "<span style=\"color: #FFFFFF\"> # </span><span style=\"color: #AA0000\"> <i><b>В</b></i> </span><span style=\"color: #FF5555\"> <s>о</s> </span><span style=\"color: #FFAA00\"> <b>л</b> </span><span style=\"color: #FFFF55\"> <u>ш</u> </span><span style=\"color: #55FF55\"> <b>е</b> </span><span style=\"color: #00AA00\"> <i>б</i> </span><span style=\"color: #00AAAA\"> <b>н</b> </span><span style=\"color: #55FFFF\"> <s>о</s> </span><span style=\"color: #0000AA\"> <b>е </b> </span><span style=\"color: #5555FF\"> п </span><span style=\"color: #AA00AA\"> <b>е</b> </span><span style=\"color: #FF55FF\"> р </span><span style=\"color: #AA0000\"> <b>е</b> </span><span style=\"color: #FF5555\"> и </span><span style=\"color: #FFAA00\"> <b>м</b> </span><span style=\"color: #FFFF55\"> <u>е</u> </span><span style=\"color: #55FF55\"> <b>н</b> </span><span style=\"color: #00AA00\"> <s><i>о</i></s> </span><span style=\"color: #00AAAA\"> <b>в</b> </span><span style=\"color: #55FFFF\"> а </span><span style=\"color: #0000AA\"> <b>н</b> </span><span style=\"color: #5555FF\"> <u>и</u> </span><span style=\"color: #AA00AA\"> <b>е</b> </span><span style=\"color: #FFFFFF\"> # </span>",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 2,
           "content": []
         },
         "item1": {
@@ -634,7 +634,7 @@ export const dataShop = [
           "type_ru": "Серый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #55FF55\"> Зелья слабости </span>",
           "amount": 1,
-          "remainder": 15,
+          "remainder": 14,
           "content": [
             {
               "slot": 0,
@@ -842,7 +842,7 @@ export const dataShop = [
           "type_ru": "Фиолетовый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #5555FF\"> С днём рождения! </span>",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 3,
           "content": [
             {
               "slot": 0,
@@ -1051,7 +1051,7 @@ export const dataShop = [
           "type_ru": "Оранжевый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #FFAA00\"> Эликсиры огнестойкости </span>",
           "amount": 1,
-          "remainder": 15,
+          "remainder": 9,
           "content": [
             {
               "slot": 0,
@@ -1259,7 +1259,7 @@ export const dataShop = [
           "type_ru": "Синий шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #5555FF\"> Ночное зрение </span>",
           "amount": 1,
-          "remainder": 12,
+          "remainder": 7,
           "content": [
             {
               "slot": 0,
@@ -1467,7 +1467,7 @@ export const dataShop = [
           "type_ru": "Синий шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #5555FF\"> 3 зелья ночного зрения </span>",
           "amount": 1,
-          "remainder": 4,
+          "remainder": 1,
           "content": [
             {
               "slot": 12,
@@ -1507,7 +1507,7 @@ export const dataShop = [
           "type_ru": "Бирюзовый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> 3 Эликсира неуловимости </span>",
           "amount": 1,
-          "remainder": 13,
+          "remainder": 9,
           "content": [
             {
               "slot": 12,
@@ -1547,7 +1547,7 @@ export const dataShop = [
           "type_ru": "Голубой шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #55FFFF\"> 3 Эликсира ветра </span>",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 4,
           "content": [
             {
               "slot": 12,
@@ -1587,7 +1587,7 @@ export const dataShop = [
           "type_ru": "Пурпурный шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #AA00AA\"> 3 Зелья регенерации </span>",
           "amount": 1,
-          "remainder": 3,
+          "remainder": 10,
           "content": [
             {
               "slot": 12,
@@ -1627,7 +1627,7 @@ export const dataShop = [
           "type_ru": "Оранжевый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #FFAA00\"> 3 Эликсира огнестойкости </span>",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 11,
           "content": [
             {
               "slot": 12,
@@ -1667,7 +1667,7 @@ export const dataShop = [
           "type_ru": "Оранжевый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #FFAA00\"> 3 Взрывных эликсира огнестойкости </span>",
           "amount": 1,
-          "remainder": 4,
+          "remainder": 12,
           "content": [
             {
               "slot": 12,
@@ -1719,7 +1719,7 @@ export const dataShop = [
           "type": "netherite_ingot",
           "type_ru": "Незеритовый слиток",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 6,
           "content": []
         },
         "item1": {
@@ -1736,7 +1736,7 @@ export const dataShop = [
           "type": "netherite_upgrade_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 5,
+          "remainder": 2,
           "content": []
         },
         "item1": {
@@ -1753,7 +1753,7 @@ export const dataShop = [
           "type": "enchanted_book",
           "type_ru": "Чародейская книга",
           "amount": 1,
-          "remainder": 3,
+          "remainder": 0,
           "stored_enchant": [
             {
               "enchant_id": "swift_sneak",
@@ -1778,7 +1778,7 @@ export const dataShop = [
           "type_ru": "Щит",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Щит 🛡 </span>",
           "amount": 1,
-          "remainder": 12,
+          "remainder": 4,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -1808,7 +1808,7 @@ export const dataShop = [
           "type_ru": "Пурпурная глазурованная керамика",
           "minecraft_custom": "<span style=\"color: #AA0000\"> Защита </span>",
           "amount": 1,
-          "remainder": 13,
+          "remainder": 6,
           "content": []
         },
         "item1": {
@@ -1826,7 +1826,7 @@ export const dataShop = [
           "type_ru": "Алмазный шлем",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Защитный шлем 🛡 </span>",
           "amount": 1,
-          "remainder": 13,
+          "remainder": 8,
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -1871,7 +1871,7 @@ export const dataShop = [
           "type_ru": "Черепаший панцирь",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Защитный черепаший шлем 🛡 </span>",
           "amount": 1,
-          "remainder": 2,
+          "remainder": 4,
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -1916,7 +1916,7 @@ export const dataShop = [
           "type_ru": "Алмазный нагрудник",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Защитная кираса 🛡 </span>",
           "amount": 1,
-          "remainder": 9,
+          "remainder": 11,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -1951,7 +1951,7 @@ export const dataShop = [
           "type_ru": "Алмазные поножи",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Защитные штаны 🛡 </span>",
           "amount": 1,
-          "remainder": 4,
+          "remainder": 11,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -1986,7 +1986,7 @@ export const dataShop = [
           "type_ru": "Алмазные ботинки",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Защитные сапоги 🛡 </span>",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 5,
           "enchant": [
             {
               "enchant_id": "depth_strider",
@@ -2036,7 +2036,7 @@ export const dataShop = [
           "type_ru": "Алмазные ботинки",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Защитный ледорез ❄ </span>",
           "amount": 1,
-          "remainder": 2,
+          "remainder": 9,
           "enchant": [
             {
               "enchant_id": "protection_fall",
@@ -2086,7 +2086,7 @@ export const dataShop = [
           "type_ru": "Пурпурная глазурованная керамика",
           "minecraft_custom": "<span style=\"color: #AA0000\"> Защита от снарядов </span>",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 10,
           "content": []
         },
         "item1": {
@@ -2149,7 +2149,7 @@ export const dataShop = [
           "type_ru": "Черепаший панцирь",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Непробиваемый черепаший шлем 🛡 </span>",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 7,
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -2194,7 +2194,7 @@ export const dataShop = [
           "type_ru": "Алмазный нагрудник",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Непробиваемая кираса 🛡 </span>",
           "amount": 1,
-          "remainder": 10,
+          "remainder": 1,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -2229,7 +2229,7 @@ export const dataShop = [
           "type_ru": "Алмазные поножи",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Непробиваемые штаны 🛡 </span>",
           "amount": 1,
-          "remainder": 12,
+          "remainder": 13,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -2264,7 +2264,7 @@ export const dataShop = [
           "type_ru": "Алмазные ботинки",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Непробиваемые сапоги 🛡 </span>",
           "amount": 1,
-          "remainder": 0,
+          "remainder": 13,
           "enchant": [
             {
               "enchant_id": "depth_strider",
@@ -2314,7 +2314,7 @@ export const dataShop = [
           "type_ru": "Алмазные ботинки",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Непробиваемый ледорез ❄ </span>",
           "amount": 1,
-          "remainder": 4,
+          "remainder": 2,
           "enchant": [
             {
               "enchant_id": "protection_fall",
@@ -2364,7 +2364,7 @@ export const dataShop = [
           "type_ru": "Пурпурная глазурованная керамика",
           "minecraft_custom": "<span style=\"color: #AA0000\"> Огнеупорность </span>",
           "amount": 1,
-          "remainder": 4,
+          "remainder": 1,
           "content": []
         },
         "item1": {
@@ -2382,7 +2382,7 @@ export const dataShop = [
           "type_ru": "Алмазный шлем",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Огнеупорный шлем 🛡 </span>",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 5,
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -2427,7 +2427,7 @@ export const dataShop = [
           "type_ru": "Черепаший панцирь",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Огнеупорный черепаший шлем 🛡 </span>",
           "amount": 1,
-          "remainder": 8,
+          "remainder": 4,
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -2472,7 +2472,7 @@ export const dataShop = [
           "type_ru": "Алмазный нагрудник",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Огнеупорная кираса 🛡 </span>",
           "amount": 1,
-          "remainder": 8,
+          "remainder": 13,
           "enchant": [
             {
               "enchant_id": "protection_fire",
@@ -2507,7 +2507,7 @@ export const dataShop = [
           "type_ru": "Алмазные поножи",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Огнеупорные штаны 🛡 </span>",
           "amount": 1,
-          "remainder": 10,
+          "remainder": 4,
           "enchant": [
             {
               "enchant_id": "protection_fire",
@@ -2542,7 +2542,7 @@ export const dataShop = [
           "type_ru": "Алмазные ботинки",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Огнеупорные сапоги 🛡 </span>",
           "amount": 1,
-          "remainder": 7,
+          "remainder": 14,
           "enchant": [
             {
               "enchant_id": "depth_strider",
@@ -2592,7 +2592,7 @@ export const dataShop = [
           "type_ru": "Алмазные ботинки",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Огнеупорный ледорез ❄ </span>",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 3,
           "enchant": [
             {
               "enchant_id": "protection_fall",
@@ -2642,7 +2642,7 @@ export const dataShop = [
           "type_ru": "Пурпурная глазурованная керамика",
           "minecraft_custom": "<span style=\"color: #AA0000\"> Взрывоустойчивость </span>",
           "amount": 1,
-          "remainder": 2,
+          "remainder": 12,
           "content": []
         },
         "item1": {
@@ -2660,7 +2660,7 @@ export const dataShop = [
           "type_ru": "Алмазный шлем",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Взрывоустойчивый шлем 🛡 </span>",
           "amount": 1,
-          "remainder": 5,
+          "remainder": 3,
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -2705,7 +2705,7 @@ export const dataShop = [
           "type_ru": "Черепаший панцирь",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Взрывоустойчивый черепаший шлем 🛡 </span>",
           "amount": 1,
-          "remainder": 0,
+          "remainder": 5,
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -2750,7 +2750,7 @@ export const dataShop = [
           "type_ru": "Алмазный нагрудник",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Взрывоустойчивая кираса 🛡 </span>",
           "amount": 1,
-          "remainder": 8,
+          "remainder": 2,
           "enchant": [
             {
               "enchant_id": "protection_explosions",
@@ -2785,7 +2785,7 @@ export const dataShop = [
           "type_ru": "Алмазные поножи",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Взрывоустойчивые штаны 🛡 </span>",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 14,
           "enchant": [
             {
               "enchant_id": "protection_explosions",
@@ -2820,7 +2820,7 @@ export const dataShop = [
           "type_ru": "Алмазные ботинки",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Взрывоустойчивые сапоги 🛡 </span>",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 0,
           "enchant": [
             {
               "enchant_id": "protection_explosions",
@@ -2870,7 +2870,7 @@ export const dataShop = [
           "type_ru": "Алмазные ботинки",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Взрывоустойчивый ледорез ❄ </span>",
           "amount": 1,
-          "remainder": 5,
+          "remainder": 8,
           "enchant": [
             {
               "enchant_id": "protection_explosions",
@@ -2932,7 +2932,7 @@ export const dataShop = [
           "type": "iron_block",
           "type_ru": "Железный блок",
           "amount": 64,
-          "remainder": 1,
+          "remainder": 12,
           "content": []
         },
         "item1": {
@@ -2949,7 +2949,7 @@ export const dataShop = [
           "type": "ender_chest",
           "type_ru": "Эндер-сундук",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 8,
           "content": []
         },
         "item1": {
@@ -2966,7 +2966,7 @@ export const dataShop = [
           "type": "goat_horn",
           "type_ru": "Козий рог",
           "amount": 1,
-          "remainder": 12,
+          "remainder": 9,
           "instrument": {
             "instrument_type": "feel_goat_horn",
             "instrument_type_ru": "Чувство"
@@ -2987,7 +2987,7 @@ export const dataShop = [
           "type": "goat_horn",
           "type_ru": "Козий рог",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 7,
           "instrument": {
             "instrument_type": "ponder_goat_horn",
             "instrument_type_ru": "Размышление"
@@ -3008,7 +3008,7 @@ export const dataShop = [
           "type": "goat_horn",
           "type_ru": "Козий рог",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 9,
           "instrument": {
             "instrument_type": "seek_goat_horn",
             "instrument_type_ru": "Стремление"
@@ -3029,7 +3029,7 @@ export const dataShop = [
           "type": "goat_horn",
           "type_ru": "Козий рог",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 2,
           "instrument": {
             "instrument_type": "sing_goat_horn",
             "instrument_type_ru": "Воспевание"
@@ -3050,7 +3050,7 @@ export const dataShop = [
           "type": "goat_horn",
           "type_ru": "Козий рог",
           "amount": 1,
-          "remainder": 7,
+          "remainder": 10,
           "instrument": {
             "instrument_type": "admire_goat_horn",
             "instrument_type_ru": "Восторг"
@@ -3092,7 +3092,7 @@ export const dataShop = [
           "type": "goat_horn",
           "type_ru": "Козий рог",
           "amount": 1,
-          "remainder": 13,
+          "remainder": 8,
           "instrument": {
             "instrument_type": "dream_goat_horn",
             "instrument_type_ru": "Мечта"
@@ -3113,7 +3113,7 @@ export const dataShop = [
           "type": "goat_horn",
           "type_ru": "Козий рог",
           "amount": 1,
-          "remainder": 2,
+          "remainder": 8,
           "instrument": {
             "instrument_type": "yearn_goat_horn",
             "instrument_type_ru": "Тоска"
@@ -3134,7 +3134,7 @@ export const dataShop = [
           "type": "redstone_block",
           "type_ru": "Редстоуновый блок",
           "amount": 64,
-          "remainder": 12,
+          "remainder": 15,
           "content": []
         },
         "item1": {
@@ -3164,7 +3164,7 @@ export const dataShop = [
           "type": "netherite_ingot",
           "type_ru": "Незеритовый слиток",
           "amount": 1,
-          "remainder": 5,
+          "remainder": 6,
           "content": []
         },
         "item1": {
@@ -3181,7 +3181,7 @@ export const dataShop = [
           "type": "netherite_upgrade_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 7,
+          "remainder": 11,
           "content": []
         },
         "item1": {
@@ -3199,7 +3199,7 @@ export const dataShop = [
           "type_ru": "Алмазная кирка",
           "minecraft_custom": "<span style=\"color: #FFAA00\"> Осторожный бур ⛏ </span>",
           "amount": 1,
-          "remainder": 14,
+          "remainder": 9,
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -3239,7 +3239,7 @@ export const dataShop = [
           "type_ru": "Алмазная кирка",
           "minecraft_custom": "<span style=\"color: #FFAA00\"> Счастливый бур ⛏ </span>",
           "amount": 1,
-          "remainder": 10,
+          "remainder": 1,
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -3279,7 +3279,7 @@ export const dataShop = [
           "type_ru": "Алмазная лопата",
           "minecraft_custom": "<span style=\"color: #FFAA00\"> Осторожная лопатка ⛏ </span>",
           "amount": 1,
-          "remainder": 15,
+          "remainder": 7,
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -3359,7 +3359,7 @@ export const dataShop = [
           "type_ru": "Пурпурная глазурованная керамика",
           "minecraft_custom": "<span style=\"color: #AA0000\"> Острота </span>",
           "amount": 1,
-          "remainder": 12,
+          "remainder": 15,
           "content": []
         },
         "item1": {
@@ -3377,7 +3377,7 @@ export const dataShop = [
           "type_ru": "Алмазный топор",
           "minecraft_custom": "<span style=\"color: #FFAA00\"> Аккуратно заточенный топорик 🪓 </span>",
           "amount": 1,
-          "remainder": 13,
+          "remainder": 1,
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -3422,7 +3422,7 @@ export const dataShop = [
           "type_ru": "Алмазный топор",
           "minecraft_custom": "<span style=\"color: #FFAA00\"> Удачно заточенный топорик 🪓 </span>",
           "amount": 1,
-          "remainder": 14,
+          "remainder": 10,
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -3467,7 +3467,7 @@ export const dataShop = [
           "type_ru": "Пурпурная глазурованная керамика",
           "minecraft_custom": "<span style=\"color: #AA0000\"> Небесная кара </span>",
           "amount": 1,
-          "remainder": 3,
+          "remainder": 13,
           "content": []
         },
         "item1": {
@@ -3485,7 +3485,7 @@ export const dataShop = [
           "type_ru": "Алмазный топор",
           "minecraft_custom": "<span style=\"color: #FFAA00\"> Аккуратное наказание 🪓 </span>",
           "amount": 1,
-          "remainder": 5,
+          "remainder": 10,
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -3530,7 +3530,7 @@ export const dataShop = [
           "type_ru": "Алмазный топор",
           "minecraft_custom": "<span style=\"color: #FFAA00\"> Удачное наказание 🪓 </span>",
           "amount": 1,
-          "remainder": 7,
+          "remainder": 10,
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -3575,7 +3575,7 @@ export const dataShop = [
           "type_ru": "Пурпурная глазурованная керамика",
           "minecraft_custom": "<span style=\"color: #AA0000\"> Бич членистоногих </span>",
           "amount": 1,
-          "remainder": 15,
+          "remainder": 4,
           "content": []
         },
         "item1": {
@@ -3593,7 +3593,7 @@ export const dataShop = [
           "type_ru": "Алмазный топор",
           "minecraft_custom": "<span style=\"color: #FFAA00\"> Аккуратно разрубающий топорик 🪓 </span>",
           "amount": 1,
-          "remainder": 13,
+          "remainder": 1,
           "enchant": [
             {
               "enchant_id": "damage_arthropods",
@@ -3638,7 +3638,7 @@ export const dataShop = [
           "type_ru": "Алмазный топор",
           "minecraft_custom": "<span style=\"color: #FFAA00\"> Удачно разрубающий топорик 🪓 </span>",
           "amount": 1,
-          "remainder": 12,
+          "remainder": 1,
           "enchant": [
             {
               "enchant_id": "damage_arthropods",
@@ -3683,7 +3683,7 @@ export const dataShop = [
           "type_ru": "Ножницы",
           "minecraft_custom": "<span style=\"color: #FFAA00\"> Ножницы ✂ </span>",
           "amount": 1,
-          "remainder": 10,
+          "remainder": 15,
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -3718,7 +3718,7 @@ export const dataShop = [
           "type_ru": "Алмазная мотыга",
           "minecraft_custom": "<span style=\"color: #FFAA00\"> Аккуратная мотыга ⛏ </span>",
           "amount": 1,
-          "remainder": 4,
+          "remainder": 13,
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -3758,7 +3758,7 @@ export const dataShop = [
           "type_ru": "Алмазная мотыга",
           "minecraft_custom": "<span style=\"color: #FFAA00\"> Удачная мотыга ⛏ </span>",
           "amount": 1,
-          "remainder": 5,
+          "remainder": 14,
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -3798,7 +3798,7 @@ export const dataShop = [
           "type_ru": "Огниво",
           "minecraft_custom": "<span style=\"color: #FFAA00\"> Зажигалка 🔥 </span>",
           "amount": 1,
-          "remainder": 0,
+          "remainder": 3,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -3828,7 +3828,7 @@ export const dataShop = [
           "type_ru": "Удочка",
           "minecraft_custom": "<span style=\"color: #5555FF\"> Спиннинг 🎣 </span>",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 12,
           "enchant": [
             {
               "enchant_id": "luck",
@@ -3881,7 +3881,7 @@ export const dataShop = [
           "type_ru": "Лаймовый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #55FFFF\"> # </span><span style=\"color: #FFAA00\"> <u>Набор новичка</u> </span> <span style=\"color: #55FFFF\"> # </span> <span style=\"color: #55FF55\"> -12% </span>",
           "amount": 1,
-          "remainder": 9,
+          "remainder": 0,
           "content": [
             {
               "slot": 0,
@@ -4207,7 +4207,7 @@ export const dataShop = [
           "type_ru": "Голубой шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #AA00AA\"> <u>Набор шёлковых инструментов</u> </span> <span style=\"color: #FFAA00\"> -7% </span>",
           "amount": 1,
-          "remainder": 4,
+          "remainder": 2,
           "content": [
             {
               "slot": 4,
@@ -4318,7 +4318,7 @@ export const dataShop = [
           "type_ru": "Бирюзовый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #AA00AA\"> <u>Набор везучих инструментов</u> </span> <span style=\"color: #FFAA00\"> -7% </span>",
           "amount": 1,
-          "remainder": 9,
+          "remainder": 12,
           "content": [
             {
               "slot": 4,
@@ -4429,7 +4429,7 @@ export const dataShop = [
           "type_ru": "Алмазная кирка",
           "minecraft_custom": "<span style=\"color: #FFAA00\"> # </span><span style=\"color: #55FFFF\"> <u>Шёлковая кирочка</u> </span> <span style=\"color: #FFAA00\"> # </span>",
           "amount": 1,
-          "remainder": 5,
+          "remainder": 9,
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -4469,7 +4469,7 @@ export const dataShop = [
           "type_ru": "Алмазная кирка",
           "minecraft_custom": "<span style=\"color: #FFAA00\"> # </span><span style=\"color: #55FFFF\"> <u>Везучая кирочка</u> </span> <span style=\"color: #FFAA00\"> # </span>",
           "amount": 1,
-          "remainder": 2,
+          "remainder": 8,
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -4509,7 +4509,7 @@ export const dataShop = [
           "type_ru": "Алмазная лопата",
           "minecraft_custom": "<span style=\"color: #FFAA00\"> # </span><span style=\"color: #55FF55\"> <u>Шёлковая копалка</u> </span> <span style=\"color: #FFAA00\"> # </span>",
           "amount": 1,
-          "remainder": 5,
+          "remainder": 14,
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -4549,7 +4549,7 @@ export const dataShop = [
           "type_ru": "Алмазная лопата",
           "minecraft_custom": "<span style=\"color: #FFAA00\"> # </span><span style=\"color: #55FF55\"> <u>Везучая копалка</u> </span> <span style=\"color: #FFAA00\"> # </span>",
           "amount": 1,
-          "remainder": 2,
+          "remainder": 0,
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -4589,7 +4589,7 @@ export const dataShop = [
           "type_ru": "Алмазный топор",
           "minecraft_custom": "<span style=\"color: #FFAA00\"> # </span><span style=\"color: #FF5555\"> <u>Шёлковый колун</u> </span> <span style=\"color: #FFAA00\"> # </span>",
           "amount": 1,
-          "remainder": 2,
+          "remainder": 8,
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -4634,7 +4634,7 @@ export const dataShop = [
           "type_ru": "Алмазный топор",
           "minecraft_custom": "<span style=\"color: #FFAA00\"> # </span><span style=\"color: #FF5555\"> <u>Везучий колун</u> </span> <span style=\"color: #FFAA00\"> # </span>",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 14,
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -4679,7 +4679,7 @@ export const dataShop = [
           "type_ru": "Алмазная мотыга",
           "minecraft_custom": "<span style=\"color: #55FFFF\"> # </span><span style=\"color: #AA00AA\"> <u>Шёлковая тяпка</u> </span> <span style=\"color: #55FFFF\"> # </span>",
           "amount": 1,
-          "remainder": 15,
+          "remainder": 10,
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -4719,7 +4719,7 @@ export const dataShop = [
           "type_ru": "Алмазная мотыга",
           "minecraft_custom": "<span style=\"color: #55FFFF\"> # </span><span style=\"color: #AA00AA\"> <u>Везучая тяпка</u> </span> <span style=\"color: #55FFFF\"> # </span>",
           "amount": 1,
-          "remainder": 12,
+          "remainder": 5,
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -4758,7 +4758,7 @@ export const dataShop = [
           "type": "netherite_ingot",
           "type_ru": "Незеритовый слиток",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 3,
           "content": []
         },
         "item1": {
@@ -4776,7 +4776,7 @@ export const dataShop = [
           "type_ru": "Алмазный меч",
           "minecraft_custom": "<span style=\"color: #FF5555\"> # </span><span style=\"color: #FFAA00\"> <u>Отталкивающе заточенная зубочистка</u> </span> <span style=\"color: #FF5555\"> # </span>",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 13,
           "enchant": [
             {
               "enchant_id": "fire_aspect",
@@ -4831,7 +4831,7 @@ export const dataShop = [
           "type_ru": "Лук",
           "minecraft_custom": "<span style=\"color: #FF5555\"> # </span><span style=\"color: #FFAA00\"> <u>Лучок пустоты</u> </span> <span style=\"color: #FF5555\"> # </span>",
           "amount": 1,
-          "remainder": 0,
+          "remainder": 12,
           "enchant": [
             {
               "enchant_id": "arrow_fire",
@@ -4876,7 +4876,7 @@ export const dataShop = [
           "type_ru": "Лук",
           "minecraft_custom": "<span style=\"color: #FF5555\"> # </span><span style=\"color: #FFAA00\"> <u>Лучок постоянства</u> </span> <span style=\"color: #FF5555\"> # </span>",
           "amount": 1,
-          "remainder": 3,
+          "remainder": 2,
           "enchant": [
             {
               "enchant_id": "arrow_fire",
@@ -4921,7 +4921,7 @@ export const dataShop = [
           "type_ru": "Зелёный шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #00AA00\"> <u>Набор варвара</u> </span> <span style=\"color: #55FF55\"> -13% </span>",
           "amount": 1,
-          "remainder": 13,
+          "remainder": 10,
           "content": [
             {
               "slot": 3,
@@ -5165,7 +5165,7 @@ export const dataShop = [
           "type_ru": "Серый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #FF5555\"> # </span><span style=\"color: #55FFFF\"> # </span><span style=\"color: #FFAA00\"> <u>Набор воителя</u> </span> <span style=\"color: #55FFFF\"> # </span><span style=\"color: #FF5555\"> # </span> <span style=\"color: #55FF55\"> -11% </span>",
           "amount": 1,
-          "remainder": 9,
+          "remainder": 14,
           "content": [
             {
               "slot": 3,
@@ -5414,7 +5414,7 @@ export const dataShop = [
           "type_ru": "Пурпурный шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #FF55FF\"> # </span><span style=\"color: #FFAA00\"> <u>Набор самолёта</u> </span> <span style=\"color: #FF55FF\"> # </span> <span style=\"color: #FFAA00\"> -7% </span>",
           "amount": 1,
-          "remainder": 10,
+          "remainder": 6,
           "content": [
             {
               "slot": 0,
@@ -5634,7 +5634,7 @@ export const dataShop = [
           "type_ru": "Фиолетовый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #FFFFFF\"> # </span><span style=\"color: #FF5555\"> <u>Фейерверки III</u> </span> <span style=\"color: #FFFFFF\"> # </span>",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 8,
           "content": [
             {
               "slot": 0,
@@ -5842,7 +5842,7 @@ export const dataShop = [
           "type_ru": "Элитры",
           "minecraft_custom": "<span style=\"color: #AA00AA\"> # </span><span style=\"color: #FF55FF\"> <u>Шустрые полетайки</u> </span> <span style=\"color: #AA00AA\"> # </span>",
           "amount": 1,
-          "remainder": 10,
+          "remainder": 7,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -5872,7 +5872,7 @@ export const dataShop = [
           "type_ru": "Оранжевый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #55FFFF\"> # </span><span style=\"color: #FFAA00\"> <u>Набор бронетряпочек</u> </span> <span style=\"color: #55FFFF\"> # </span> <span style=\"color: #55FF55\"> -11% </span>",
           "amount": 1,
-          "remainder": 15,
+          "remainder": 9,
           "content": [
             {
               "slot": 3,
@@ -6032,7 +6032,7 @@ export const dataShop = [
           "type_ru": "Алмазный шлем",
           "minecraft_custom": "<span style=\"color: #55FFFF\"> # </span><span style=\"color: #FFAA00\"> <u>Бронепанамка</u> </span> <span style=\"color: #55FFFF\"> # </span>",
           "amount": 1,
-          "remainder": 8,
+          "remainder": 9,
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -6082,7 +6082,7 @@ export const dataShop = [
           "type_ru": "Алмазный нагрудник",
           "minecraft_custom": "<span style=\"color: #55FFFF\"> # </span><span style=\"color: #FFAA00\"> <u>Бронелифчик</u> </span> <span style=\"color: #55FFFF\"> # </span>",
           "amount": 1,
-          "remainder": 12,
+          "remainder": 1,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -6122,7 +6122,7 @@ export const dataShop = [
           "type_ru": "Алмазные поножи",
           "minecraft_custom": "<span style=\"color: #55FFFF\"> # </span><span style=\"color: #FFAA00\"> <u>Бронетрусики</u> </span> <span style=\"color: #55FFFF\"> # </span>",
           "amount": 1,
-          "remainder": 2,
+          "remainder": 5,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -6162,7 +6162,7 @@ export const dataShop = [
           "type_ru": "Алмазные ботинки",
           "minecraft_custom": "<span style=\"color: #55FFFF\"> # </span><span style=\"color: #FFAA00\"> <u>Бронетапочки</u> </span> <span style=\"color: #55FFFF\"> # </span>",
           "amount": 1,
-          "remainder": 2,
+          "remainder": 14,
           "enchant": [
             {
               "enchant_id": "depth_strider",
@@ -6217,7 +6217,7 @@ export const dataShop = [
           "type_ru": "Жёлтый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #55FFFF\"> # </span><span style=\"color: #FFAA00\"> <u>Детский сад</u> </span> <span style=\"color: #55FFFF\"> # </span>",
           "amount": 1,
-          "remainder": 0,
+          "remainder": 14,
           "content": [
             {
               "slot": 0,
@@ -6425,7 +6425,7 @@ export const dataShop = [
           "type_ru": "Тотем бессмертия",
           "minecraft_custom": "<span style=\"color: #55FFFF\"> # </span><span style=\"color: #FFFF55\"> Румяный ребёнок </span> <span style=\"color: #55FFFF\"> # </span>",
           "amount": 1,
-          "remainder": 15,
+          "remainder": 7,
           "content": []
         },
         "item1": {
@@ -6472,7 +6472,7 @@ export const dataShop = [
           "type": "shulker_box",
           "type_ru": "Шалкеровый ящик",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 12,
           "content": [
             {
               "slot": 0,
@@ -6672,7 +6672,7 @@ export const dataShop = [
           "type": "paper",
           "type_ru": "Бумага",
           "amount": 1,
-          "remainder": 3,
+          "remainder": 1,
           "enchant": [
             {
               "enchant_id": "durability",
@@ -6716,7 +6716,7 @@ export const dataShop = [
           "type": "turtle_egg",
           "type_ru": "Черепашье яйцо",
           "amount": 8,
-          "remainder": 6,
+          "remainder": 5,
           "content": []
         },
         "item1": {
@@ -6733,7 +6733,7 @@ export const dataShop = [
           "type": "sunflower",
           "type_ru": "Подсолнух",
           "amount": 64,
-          "remainder": 8,
+          "remainder": 2,
           "content": []
         },
         "item1": {
@@ -6750,7 +6750,7 @@ export const dataShop = [
           "type": "orange_shulker_box",
           "type_ru": "Оранжевый шалкеровый ящик",
           "amount": 1,
-          "remainder": 3,
+          "remainder": 8,
           "content": [
             {
               "slot": 0,
@@ -6930,7 +6930,7 @@ export const dataShop = [
           "type": "yellow_shulker_box",
           "type_ru": "Жёлтый шалкеровый ящик",
           "amount": 1,
-          "remainder": 9,
+          "remainder": 14,
           "content": [
             {
               "slot": 0,
@@ -7110,7 +7110,7 @@ export const dataShop = [
           "type": "shulker_box",
           "type_ru": "Шалкеровый ящик",
           "amount": 1,
-          "remainder": 15,
+          "remainder": 5,
           "content": [
             {
               "slot": 0,
@@ -7290,7 +7290,7 @@ export const dataShop = [
           "type": "melon",
           "type_ru": "Арбуз",
           "amount": 64,
-          "remainder": 14,
+          "remainder": 3,
           "content": []
         },
         "item1": {
@@ -7307,7 +7307,7 @@ export const dataShop = [
           "type": "twisting_vines",
           "type_ru": "Вьющаяся лоза",
           "amount": 64,
-          "remainder": 1,
+          "remainder": 14,
           "content": []
         },
         "item1": {
@@ -7324,7 +7324,7 @@ export const dataShop = [
           "type": "weeping_vines",
           "type_ru": "Плакучая лоза",
           "amount": 64,
-          "remainder": 7,
+          "remainder": 8,
           "content": []
         },
         "item1": {
@@ -7341,7 +7341,7 @@ export const dataShop = [
           "type": "glow_berries",
           "type_ru": "Светящиеся ягоды",
           "amount": 64,
-          "remainder": 11,
+          "remainder": 15,
           "content": []
         },
         "item1": {
@@ -7358,7 +7358,7 @@ export const dataShop = [
           "type": "vine",
           "type_ru": "Лианы",
           "amount": 16,
-          "remainder": 7,
+          "remainder": 8,
           "content": []
         },
         "item1": {
@@ -7375,7 +7375,7 @@ export const dataShop = [
           "type": "pumpkin",
           "type_ru": "Тыква",
           "amount": 64,
-          "remainder": 14,
+          "remainder": 13,
           "content": []
         },
         "item1": {
@@ -7392,7 +7392,7 @@ export const dataShop = [
           "type": "white_shulker_box",
           "type_ru": "Белый шалкеровый ящик",
           "amount": 1,
-          "remainder": 9,
+          "remainder": 0,
           "content": [
             {
               "slot": 0,
@@ -7572,7 +7572,7 @@ export const dataShop = [
           "type": "fern",
           "type_ru": "Папоротник",
           "amount": 32,
-          "remainder": 13,
+          "remainder": 14,
           "content": []
         },
         "item1": {
@@ -7589,7 +7589,7 @@ export const dataShop = [
           "type": "magenta_shulker_box",
           "type_ru": "Пурпурный шалкеровый ящик",
           "amount": 1,
-          "remainder": 14,
+          "remainder": 10,
           "content": [
             {
               "slot": 0,
@@ -7769,7 +7769,7 @@ export const dataShop = [
           "type": "small_dripleaf",
           "type_ru": "Маленькая бросянка",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 12,
           "content": []
         },
         "item1": {
@@ -7786,7 +7786,7 @@ export const dataShop = [
           "type": "spore_blossom",
           "type_ru": "Спороцвет",
           "amount": 1,
-          "remainder": 4,
+          "remainder": 12,
           "content": []
         },
         "item1": {
@@ -7803,7 +7803,7 @@ export const dataShop = [
           "type": "sea_pickle",
           "type_ru": "Морской огурец",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 13,
           "content": []
         },
         "item1": {
@@ -7833,7 +7833,7 @@ export const dataShop = [
           "type": "shulker_box",
           "type_ru": "Шалкеровый ящик",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 5,
           "content": [
             {
               "slot": 0,
@@ -8013,7 +8013,7 @@ export const dataShop = [
           "type": "creeper_head",
           "type_ru": "Голова крипера",
           "amount": 1,
-          "remainder": 4,
+          "remainder": 9,
           "content": []
         },
         "item1": {
@@ -8030,7 +8030,7 @@ export const dataShop = [
           "type": "skeleton_skull",
           "type_ru": "Череп",
           "amount": 1,
-          "remainder": 12,
+          "remainder": 13,
           "content": []
         },
         "item1": {
@@ -8047,7 +8047,7 @@ export const dataShop = [
           "type": "zombie_head",
           "type_ru": "Голова зомби",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 8,
           "content": []
         },
         "item1": {
@@ -8064,7 +8064,7 @@ export const dataShop = [
           "type": "ender_eye",
           "type_ru": "Око Эндера",
           "amount": 2,
-          "remainder": 1,
+          "remainder": 0,
           "content": []
         },
         "item1": {
@@ -8081,7 +8081,7 @@ export const dataShop = [
           "type": "ender_chest",
           "type_ru": "Эндер-сундук",
           "amount": 1,
-          "remainder": 8,
+          "remainder": 6,
           "content": []
         },
         "item1": {
@@ -8099,7 +8099,7 @@ export const dataShop = [
           "type_ru": "Алмазные поножи",
           "minecraft_custom": "Скоростные поножи",
           "amount": 1,
-          "remainder": 14,
+          "remainder": 5,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -8139,7 +8139,7 @@ export const dataShop = [
           "type_ru": "Алмазные поножи",
           "minecraft_custom": "Скоростные поножи",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 4,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -8178,7 +8178,7 @@ export const dataShop = [
           "type": "amethyst_cluster",
           "type_ru": "Аметистовая друза",
           "amount": 15,
-          "remainder": 2,
+          "remainder": 15,
           "content": []
         },
         "item1": {
@@ -8195,7 +8195,7 @@ export const dataShop = [
           "type": "large_amethyst_bud",
           "type_ru": "Большой аметистовый бутон",
           "amount": 18,
-          "remainder": 5,
+          "remainder": 7,
           "content": []
         },
         "item1": {
@@ -8212,7 +8212,7 @@ export const dataShop = [
           "type": "medium_amethyst_bud",
           "type_ru": "Средний аметистовый бутон",
           "amount": 21,
-          "remainder": 10,
+          "remainder": 14,
           "content": []
         },
         "item1": {
@@ -8229,7 +8229,7 @@ export const dataShop = [
           "type": "small_amethyst_bud",
           "type_ru": "Малый аметистовый бутон",
           "amount": 24,
-          "remainder": 12,
+          "remainder": 9,
           "content": []
         },
         "item1": {
@@ -8246,7 +8246,7 @@ export const dataShop = [
           "type": "deepslate_diamond_ore",
           "type_ru": "Алмазоносный глубинный сланец",
           "amount": 16,
-          "remainder": 14,
+          "remainder": 12,
           "content": []
         },
         "item1": {
@@ -8263,7 +8263,7 @@ export const dataShop = [
           "type": "sculk_sensor",
           "type_ru": "Скалк-сенсор",
           "amount": 32,
-          "remainder": 15,
+          "remainder": 0,
           "content": []
         },
         "item1": {
@@ -8280,7 +8280,7 @@ export const dataShop = [
           "type": "sculk_shrieker",
           "type_ru": "Скалковый крикун",
           "amount": 8,
-          "remainder": 2,
+          "remainder": 12,
           "content": []
         },
         "item1": {
@@ -8297,7 +8297,7 @@ export const dataShop = [
           "type": "sculk_catalyst",
           "type_ru": "Скалковый катализатор",
           "amount": 16,
-          "remainder": 0,
+          "remainder": 9,
           "content": []
         },
         "item1": {
@@ -8314,7 +8314,7 @@ export const dataShop = [
           "type": "disc_fragment_5",
           "type_ru": "Осколок пластинки",
           "amount": 1,
-          "remainder": 7,
+          "remainder": 12,
           "content": []
         },
         "item1": {
@@ -8348,7 +8348,7 @@ export const dataShop = [
           "type": "echo_shard",
           "type_ru": "Осколок эха",
           "amount": 1,
-          "remainder": 14,
+          "remainder": 3,
           "content": []
         },
         "item1": {
@@ -8365,7 +8365,7 @@ export const dataShop = [
           "type": "small_dripleaf",
           "type_ru": "Маленькая бросянка",
           "amount": 1,
-          "remainder": 3,
+          "remainder": 8,
           "content": []
         },
         "item1": {
@@ -8395,7 +8395,7 @@ export const dataShop = [
           "type": "shulker_box",
           "type_ru": "Шалкеровый ящик",
           "amount": 1,
-          "remainder": 7,
+          "remainder": 9,
           "content": [
             {
               "slot": 0,
@@ -8575,7 +8575,7 @@ export const dataShop = [
           "type": "honeycomb",
           "type_ru": "Пчелиные соты",
           "amount": 64,
-          "remainder": 4,
+          "remainder": 13,
           "content": []
         },
         "item1": {
@@ -8592,7 +8592,7 @@ export const dataShop = [
           "type": "packed_mud",
           "type_ru": "Плотная грязь",
           "amount": 64,
-          "remainder": 4,
+          "remainder": 5,
           "content": []
         },
         "item1": {
@@ -8609,7 +8609,7 @@ export const dataShop = [
           "type": "mud_bricks",
           "type_ru": "Саманные кирпичи",
           "amount": 64,
-          "remainder": 1,
+          "remainder": 12,
           "content": []
         },
         "item1": {
@@ -8626,7 +8626,7 @@ export const dataShop = [
           "type": "honey_block",
           "type_ru": "Блок мёда",
           "amount": 64,
-          "remainder": 6,
+          "remainder": 13,
           "content": []
         },
         "item1": {
@@ -8643,7 +8643,7 @@ export const dataShop = [
           "type": "shulker_box",
           "type_ru": "Шалкеровый ящик",
           "amount": 1,
-          "remainder": 14,
+          "remainder": 6,
           "content": [
             {
               "slot": 0,
@@ -8823,7 +8823,7 @@ export const dataShop = [
           "type": "shulker_box",
           "type_ru": "Шалкеровый ящик",
           "amount": 1,
-          "remainder": 13,
+          "remainder": 10,
           "content": [
             {
               "slot": 0,
@@ -9003,7 +9003,7 @@ export const dataShop = [
           "type": "shulker_box",
           "type_ru": "Шалкеровый ящик",
           "amount": 1,
-          "remainder": 7,
+          "remainder": 12,
           "content": [
             {
               "slot": 0,
@@ -9196,7 +9196,7 @@ export const dataShop = [
           "type": "raw_copper_block",
           "type_ru": "Блок рудной меди",
           "amount": 64,
-          "remainder": 7,
+          "remainder": 0,
           "content": []
         },
         "item1": {
@@ -9213,7 +9213,7 @@ export const dataShop = [
           "type": "emerald_block",
           "type_ru": "Изумрудный блок",
           "amount": 64,
-          "remainder": 13,
+          "remainder": 1,
           "content": []
         },
         "item1": {
@@ -9247,7 +9247,7 @@ export const dataShop = [
           "type": "waxed_copper_block",
           "type_ru": "Вощёный медный блок",
           "amount": 64,
-          "remainder": 15,
+          "remainder": 11,
           "content": []
         },
         "item1": {
@@ -9281,7 +9281,7 @@ export const dataShop = [
           "type": "waxed_weathered_copper",
           "type_ru": "Вощёный состаренный медный блок",
           "amount": 64,
-          "remainder": 2,
+          "remainder": 1,
           "content": []
         },
         "item1": {
@@ -9298,7 +9298,7 @@ export const dataShop = [
           "type": "waxed_oxidized_copper",
           "type_ru": "Вощёный окисленный медный блок",
           "amount": 64,
-          "remainder": 13,
+          "remainder": 9,
           "content": []
         },
         "item1": {
@@ -9315,7 +9315,7 @@ export const dataShop = [
           "type": "honeycomb",
           "type_ru": "Пчелиные соты",
           "amount": 64,
-          "remainder": 3,
+          "remainder": 6,
           "content": []
         },
         "item1": {
@@ -9332,7 +9332,7 @@ export const dataShop = [
           "type": "honey_bottle",
           "type_ru": "Бутылочка мёда",
           "amount": 16,
-          "remainder": 0,
+          "remainder": 1,
           "content": []
         },
         "item1": {
@@ -9362,7 +9362,7 @@ export const dataShop = [
           "type": "trident",
           "type_ru": "Трезубец",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 15,
           "enchant": [
             {
               "enchant_id": "channeling",
@@ -9440,7 +9440,7 @@ export const dataShop = [
           "type": "shulker_box",
           "type_ru": "Шалкеровый ящик",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 9,
           "content": [
             {
               "slot": 0,
@@ -9620,7 +9620,7 @@ export const dataShop = [
           "type": "shulker_box",
           "type_ru": "Шалкеровый ящик",
           "amount": 1,
-          "remainder": 9,
+          "remainder": 15,
           "content": [
             {
               "slot": 0,
@@ -9800,7 +9800,7 @@ export const dataShop = [
           "type": "shulker_box",
           "type_ru": "Шалкеровый ящик",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 13,
           "content": [
             {
               "slot": 0,
@@ -9980,7 +9980,7 @@ export const dataShop = [
           "type": "netherite_ingot",
           "type_ru": "Незеритовый слиток",
           "amount": 1,
-          "remainder": 5,
+          "remainder": 14,
           "content": []
         },
         "item1": {
@@ -10011,7 +10011,7 @@ export const dataShop = [
           "type_ru": "Красный шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #FFAA00\"> # </span><span style=\"color: #FF5555\"> <u>Набор опустошающего истребления</u> </span> <span style=\"color: #FFAA00\"> # </span> <span style=\"color: #55FF55\"> -11% </span>",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 0,
           "content": [
             {
               "slot": 4,
@@ -10115,7 +10115,7 @@ export const dataShop = [
           "type_ru": "Оранжевый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #FF5555\"> # </span><span style=\"color: #FFAA00\"> <u>Набор постоянного истребления</u> </span> <span style=\"color: #FF5555\"> # </span> <span style=\"color: #55FF55\"> -13% </span>",
           "amount": 1,
-          "remainder": 14,
+          "remainder": 12,
           "content": [
             {
               "slot": 4,
@@ -10214,7 +10214,7 @@ export const dataShop = [
           "type_ru": "Алмазный меч",
           "minecraft_custom": "<span style=\"color: #FF5555\"> # </span><span style=\"color: #FFAA00\"> <u>Отталкивающе заточенная зубочистка</u> </span> <span style=\"color: #FF5555\"> # </span>",
           "amount": 1,
-          "remainder": 15,
+          "remainder": 9,
           "enchant": [
             {
               "enchant_id": "fire_aspect",
@@ -10269,7 +10269,7 @@ export const dataShop = [
           "type_ru": "Алмазный меч",
           "minecraft_custom": "<span style=\"color: #FF5555\"> # </span><span style=\"color: #FFAA00\"> <u>Заточенная зубочистка</u> </span> <span style=\"color: #FF5555\"> # </span>",
           "amount": 1,
-          "remainder": 0,
+          "remainder": 4,
           "enchant": [
             {
               "enchant_id": "fire_aspect",
@@ -10319,7 +10319,7 @@ export const dataShop = [
           "type_ru": "Голубой шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> # </span><span style=\"color: #55FFFF\"> <u>Набор опустошающей кары</u> </span> <span style=\"color: #00AAAA\"> # </span>",
           "amount": 1,
-          "remainder": 9,
+          "remainder": 4,
           "content": [
             {
               "slot": 4,
@@ -10423,7 +10423,7 @@ export const dataShop = [
           "type_ru": "Бирюзовый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #55FFFF\"> # </span><span style=\"color: #00AAAA\"> <u>Набор постоянной кары</u> </span> <span style=\"color: #55FFFF\"> # </span>",
           "amount": 1,
-          "remainder": 12,
+          "remainder": 0,
           "content": [
             {
               "slot": 4,
@@ -10522,7 +10522,7 @@ export const dataShop = [
           "type_ru": "Алмазный меч",
           "minecraft_custom": "<span style=\"color: #55FFFF\"> # </span><span style=\"color: #FFFFFF\"> <u>Отталкивающе религиозная зубочистка</u> </span> <span style=\"color: #55FFFF\"> # </span>",
           "amount": 1,
-          "remainder": 10,
+          "remainder": 13,
           "enchant": [
             {
               "enchant_id": "fire_aspect",
@@ -10577,7 +10577,7 @@ export const dataShop = [
           "type_ru": "Алмазный меч",
           "minecraft_custom": "<span style=\"color: #55FFFF\"> # </span><span style=\"color: #FFFFFF\"> <u>Религиозная зубочистка</u> </span> <span style=\"color: #55FFFF\"> # </span>",
           "amount": 1,
-          "remainder": 8,
+          "remainder": 7,
           "enchant": [
             {
               "enchant_id": "fire_aspect",
@@ -10627,7 +10627,7 @@ export const dataShop = [
           "type_ru": "Серый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #AAAAAA\"> # </span><span style=\"color: #AA0000\"> <u>Набор опустошающего очищения</u> </span> <span style=\"color: #AAAAAA\"> # </span>",
           "amount": 1,
-          "remainder": 7,
+          "remainder": 9,
           "content": [
             {
               "slot": 4,
@@ -10731,7 +10731,7 @@ export const dataShop = [
           "type_ru": "Светло-серый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #AA0000\"> # </span><span style=\"color: #AAAAAA\"> <u>Набор постоянного очищения</u> </span> <span style=\"color: #AA0000\"> # </span>",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 2,
           "content": [
             {
               "slot": 4,
@@ -10830,7 +10830,7 @@ export const dataShop = [
           "type_ru": "Алмазный меч",
           "minecraft_custom": "<span style=\"color: #AA0000\"> # </span><span style=\"color: #AAAAAA\"> <u>Отталкивающе дихлофосная зубочистка</u> </span> <span style=\"color: #AA0000\"> # </span>",
           "amount": 1,
-          "remainder": 9,
+          "remainder": 2,
           "enchant": [
             {
               "enchant_id": "damage_arthropods",
@@ -10885,7 +10885,7 @@ export const dataShop = [
           "type_ru": "Алмазный меч",
           "minecraft_custom": "<span style=\"color: #AA0000\"> # </span><span style=\"color: #AAAAAA\"> <u>Дихлофосная зубочистка</u> </span> <span style=\"color: #AA0000\"> # </span>",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 12,
           "enchant": [
             {
               "enchant_id": "damage_arthropods",
@@ -10935,7 +10935,7 @@ export const dataShop = [
           "type_ru": "Лук",
           "minecraft_custom": "<span style=\"color: #FF5555\"> # </span><span style=\"color: #FFAA00\"> <u>Лучок пустоты</u> </span> <span style=\"color: #FF5555\"> # </span>",
           "amount": 1,
-          "remainder": 15,
+          "remainder": 2,
           "enchant": [
             {
               "enchant_id": "arrow_fire",
@@ -11025,7 +11025,7 @@ export const dataShop = [
           "type_ru": "Арбалет",
           "minecraft_custom": "<span style=\"color: #55FFFF\"> # </span><span style=\"color: #AA00AA\"> <u>Тройной харчок</u> </span> <span style=\"color: #55FFFF\"> # </span>",
           "amount": 1,
-          "remainder": 15,
+          "remainder": 4,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -11065,7 +11065,7 @@ export const dataShop = [
           "type_ru": "Арбалет",
           "minecraft_custom": "<span style=\"color: #55FFFF\"> # </span><span style=\"color: #AA00AA\"> <u>Сквозной харчок</u> </span> <span style=\"color: #55FFFF\"> # </span>",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 0,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -11105,7 +11105,7 @@ export const dataShop = [
           "type_ru": "Алмазный топор",
           "minecraft_custom": "<span style=\"color: #FFFFFF\"> # </span><span style=\"color: #55FFFF\"> <u>Религиозный шёлковый колун</u> </span> <span style=\"color: #FFFFFF\"> # </span>",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 0,
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -11150,7 +11150,7 @@ export const dataShop = [
           "type_ru": "Алмазный топор",
           "minecraft_custom": "<span style=\"color: #FFFFFF\"> # </span><span style=\"color: #55FFFF\"> <u>Религиозный везучий колун</u> </span> <span style=\"color: #FFFFFF\"> # </span>",
           "amount": 1,
-          "remainder": 3,
+          "remainder": 14,
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -11195,7 +11195,7 @@ export const dataShop = [
           "type_ru": "Алмазный топор",
           "minecraft_custom": "<span style=\"color: #AAAAAA\"> # </span><span style=\"color: #AA0000\"> <u>Дихлофосный шёлковый колун</u> </span> <span style=\"color: #AAAAAA\"> # </span>",
           "amount": 1,
-          "remainder": 2,
+          "remainder": 1,
           "enchant": [
             {
               "enchant_id": "damage_arthropods",
@@ -11240,7 +11240,7 @@ export const dataShop = [
           "type_ru": "Алмазный топор",
           "minecraft_custom": "<span style=\"color: #AAAAAA\"> # </span><span style=\"color: #AA0000\"> <u>Дихлофосный везучий колун</u> </span> <span style=\"color: #AAAAAA\"> # </span>",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 7,
           "enchant": [
             {
               "enchant_id": "damage_arthropods",
@@ -11284,7 +11284,7 @@ export const dataShop = [
           "type": "netherite_ingot",
           "type_ru": "Незеритовый слиток",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 4,
           "content": []
         },
         "item1": {
@@ -11302,7 +11302,7 @@ export const dataShop = [
           "type_ru": "Трезубец",
           "minecraft_custom": "<span style=\"color: #55FFFF\"> # </span><span style=\"color: #00AAAA\"> <u>Ложка на верёвочке</u> </span> <span style=\"color: #55FFFF\"> # </span>",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 5,
           "enchant": [
             {
               "enchant_id": "channeling",
@@ -11347,7 +11347,7 @@ export const dataShop = [
           "type_ru": "Трезубец",
           "minecraft_custom": "<span style=\"color: #55FFFF\"> # </span><span style=\"color: #00AAAA\"> <u>Ложка со стартером</u> </span> <span style=\"color: #55FFFF\"> # </span>",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 13,
           "enchant": [
             {
               "enchant_id": "impaling",
@@ -11400,7 +11400,7 @@ export const dataShop = [
           "type_ru": "Красный шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #55FFFF\"> # </span><span style=\"color: #FF5555\"> <u>Набор жаротряпочек</u> </span> <span style=\"color: #55FFFF\"> # </span> <span style=\"color: #55FF55\"> -11% </span>",
           "amount": 1,
-          "remainder": 4,
+          "remainder": 1,
           "content": [
             {
               "slot": 3,
@@ -11560,7 +11560,7 @@ export const dataShop = [
           "type_ru": "Алмазный шлем",
           "minecraft_custom": "<span style=\"color: #55FFFF\"> # </span><span style=\"color: #FF5555\"> <u>Жаропанамка</u> </span> <span style=\"color: #55FFFF\"> # </span>",
           "amount": 1,
-          "remainder": 9,
+          "remainder": 10,
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -11610,7 +11610,7 @@ export const dataShop = [
           "type_ru": "Алмазный нагрудник",
           "minecraft_custom": "<span style=\"color: #55FFFF\"> # </span><span style=\"color: #FF5555\"> <u>Жаролифчик</u> </span> <span style=\"color: #55FFFF\"> # </span>",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 0,
           "enchant": [
             {
               "enchant_id": "protection_fire",
@@ -11650,7 +11650,7 @@ export const dataShop = [
           "type_ru": "Алмазные поножи",
           "minecraft_custom": "<span style=\"color: #55FFFF\"> # </span><span style=\"color: #FF5555\"> <u>Жаротрусики</u> </span> <span style=\"color: #55FFFF\"> # </span>",
           "amount": 1,
-          "remainder": 4,
+          "remainder": 2,
           "enchant": [
             {
               "enchant_id": "protection_fire",
@@ -11690,7 +11690,7 @@ export const dataShop = [
           "type_ru": "Алмазные ботинки",
           "minecraft_custom": "<span style=\"color: #55FFFF\"> # </span><span style=\"color: #FF5555\"> <u>Жаротапочки</u> </span> <span style=\"color: #55FFFF\"> # </span>",
           "amount": 1,
-          "remainder": 2,
+          "remainder": 7,
           "enchant": [
             {
               "enchant_id": "depth_strider",
@@ -11745,7 +11745,7 @@ export const dataShop = [
           "type_ru": "Лаймовый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #55FFFF\"> # </span><span style=\"color: #55FF55\"> <u>Набор антигрибковых тряпочек</u> </span> <span style=\"color: #55FFFF\"> # </span> <span style=\"color: #55FF55\"> -11% </span>",
           "amount": 1,
-          "remainder": 8,
+          "remainder": 0,
           "content": [
             {
               "slot": 3,
@@ -11905,7 +11905,7 @@ export const dataShop = [
           "type_ru": "Алмазный шлем",
           "minecraft_custom": "<span style=\"color: #55FFFF\"> # </span><span style=\"color: #55FF55\"> <u>Антигрибковая панамка</u> </span> <span style=\"color: #55FFFF\"> # </span>",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 5,
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -11955,7 +11955,7 @@ export const dataShop = [
           "type_ru": "Алмазный нагрудник",
           "minecraft_custom": "<span style=\"color: #55FFFF\"> # </span><span style=\"color: #55FF55\"> <u>Антигрибковый лифчик</u> </span> <span style=\"color: #55FFFF\"> # </span>",
           "amount": 1,
-          "remainder": 7,
+          "remainder": 8,
           "enchant": [
             {
               "enchant_id": "protection_explosions",
@@ -11995,7 +11995,7 @@ export const dataShop = [
           "type_ru": "Алмазные поножи",
           "minecraft_custom": "<span style=\"color: #55FFFF\"> # </span><span style=\"color: #55FF55\"> <u>Антигрибковые трусики</u> </span> <span style=\"color: #55FFFF\"> # </span>",
           "amount": 1,
-          "remainder": 2,
+          "remainder": 8,
           "enchant": [
             {
               "enchant_id": "protection_explosions",
@@ -12035,7 +12035,7 @@ export const dataShop = [
           "type_ru": "Алмазные ботинки",
           "minecraft_custom": "<span style=\"color: #55FFFF\"> # </span><span style=\"color: #55FF55\"> <u>Антигрибковые тапочки</u> </span> <span style=\"color: #55FFFF\"> # </span>",
           "amount": 1,
-          "remainder": 4,
+          "remainder": 8,
           "enchant": [
             {
               "enchant_id": "protection_explosions",
@@ -12090,7 +12090,7 @@ export const dataShop = [
           "type_ru": "Голубой шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #FFFFFF\"> # </span><span style=\"color: #55FFFF\"> <u>Набор антишишковых тряпочек</u> </span> <span style=\"color: #FFFFFF\"> # </span>",
           "amount": 1,
-          "remainder": 14,
+          "remainder": 4,
           "content": [
             {
               "slot": 3,
@@ -12250,7 +12250,7 @@ export const dataShop = [
           "type_ru": "Алмазный шлем",
           "minecraft_custom": "<span style=\"color: #FFFFFF\"> # </span><span style=\"color: #55FFFF\"> <u>Антишишковая панамка</u> </span> <span style=\"color: #FFFFFF\"> # </span>",
           "amount": 1,
-          "remainder": 2,
+          "remainder": 6,
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -12300,7 +12300,7 @@ export const dataShop = [
           "type_ru": "Алмазный нагрудник",
           "minecraft_custom": "<span style=\"color: #FFFFFF\"> # </span><span style=\"color: #55FFFF\"> <u>Антишишковый лифчик</u> </span> <span style=\"color: #FFFFFF\"> # </span>",
           "amount": 1,
-          "remainder": 13,
+          "remainder": 14,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -12380,7 +12380,7 @@ export const dataShop = [
           "type_ru": "Алмазные ботинки",
           "minecraft_custom": "<span style=\"color: #FFFFFF\"> # </span><span style=\"color: #55FFFF\"> <u>Антишишковые тапочки</u> </span> <span style=\"color: #FFFFFF\"> # </span>",
           "amount": 1,
-          "remainder": 5,
+          "remainder": 2,
           "enchant": [
             {
               "enchant_id": "depth_strider",
@@ -12434,7 +12434,7 @@ export const dataShop = [
           "type": "netherite_ingot",
           "type_ru": "Незеритовый слиток",
           "amount": 1,
-          "remainder": 12,
+          "remainder": 10,
           "content": []
         },
         "item1": {
@@ -12452,7 +12452,7 @@ export const dataShop = [
           "type_ru": "Жёлтый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #55FFFF\"> # </span><span style=\"color: #FFAA00\"> <u>Набор модных тряпочек</u> </span> <span style=\"color: #55FFFF\"> # </span> <span style=\"color: #55FF55\"> -11% </span>",
           "amount": 1,
-          "remainder": 14,
+          "remainder": 1,
           "content": [
             {
               "slot": 4,
@@ -12612,7 +12612,7 @@ export const dataShop = [
           "type_ru": "Алмазный шлем",
           "minecraft_custom": "<span style=\"color: #55FFFF\"> # </span><span style=\"color: #FFAA00\"> <u>Бронекепка</u> </span> <span style=\"color: #55FFFF\"> # </span>",
           "amount": 1,
-          "remainder": 13,
+          "remainder": 6,
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -12662,7 +12662,7 @@ export const dataShop = [
           "type_ru": "Алмазный нагрудник",
           "minecraft_custom": "<span style=\"color: #55FFFF\"> # </span><span style=\"color: #FFAA00\"> <u>Бронехудос</u> </span> <span style=\"color: #55FFFF\"> # </span>",
           "amount": 1,
-          "remainder": 9,
+          "remainder": 14,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -12702,7 +12702,7 @@ export const dataShop = [
           "type_ru": "Алмазные поножи",
           "minecraft_custom": "<span style=\"color: #55FFFF\"> # </span><span style=\"color: #FFAA00\"> <u>Бронесемейники</u> </span> <span style=\"color: #55FFFF\"> # </span>",
           "amount": 1,
-          "remainder": 8,
+          "remainder": 11,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -12742,7 +12742,7 @@ export const dataShop = [
           "type_ru": "Алмазные ботинки",
           "minecraft_custom": "<span style=\"color: #55FFFF\"> # </span><span style=\"color: #FFAA00\"> <u>Бронесандалики</u> </span> <span style=\"color: #55FFFF\"> # </span>",
           "amount": 1,
-          "remainder": 12,
+          "remainder": 9,
           "enchant": [
             {
               "enchant_id": "depth_strider",
@@ -12797,7 +12797,7 @@ export const dataShop = [
           "type_ru": "Алмазная конская броня",
           "minecraft_custom": "<span style=\"color: #55FF55\"> # </span><span style=\"color: #55FFFF\"> <u>Голубенький конский фрак</u> </span> <span style=\"color: #55FF55\"> # </span>",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 9,
           "content": []
         },
         "item1": {
@@ -12815,7 +12815,7 @@ export const dataShop = [
           "type_ru": "Золотая конская броня",
           "minecraft_custom": "<span style=\"color: #FF5555\"> # </span><span style=\"color: #FFAA00\"> <u>Жёлтенький конский фрак</u> </span> <span style=\"color: #FF5555\"> # </span>",
           "amount": 1,
-          "remainder": 13,
+          "remainder": 0,
           "content": []
         },
         "item1": {
@@ -12833,7 +12833,7 @@ export const dataShop = [
           "type_ru": "Железная конская броня",
           "minecraft_custom": "<span style=\"color: #55FFFF\"> # </span><span style=\"color: #AAAAAA\"> <u>Серенький конский фрак</u> </span> <span style=\"color: #55FFFF\"> # </span>",
           "amount": 1,
-          "remainder": 0,
+          "remainder": 11,
           "content": []
         },
         "item1": {
@@ -12851,7 +12851,7 @@ export const dataShop = [
           "type_ru": "Кожаная конская броня",
           "minecraft_custom": "<span style=\"color: #FF5555\"> # </span><span style=\"color: #AA0000\"> <u>Грязный конский фрак</u> </span> <span style=\"color: #FF5555\"> # </span>",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 4,
           "leather_color": {},
           "content": []
         },
@@ -12870,7 +12870,7 @@ export const dataShop = [
           "type_ru": "Седло",
           "minecraft_custom": "<span style=\"color: #FF55FF\"> # </span><span style=\"color: #55FF55\"> <u>Тыгыдыдыльное кресло</u> </span> <span style=\"color: #FF55FF\"> # </span>",
           "amount": 1,
-          "remainder": 4,
+          "remainder": 11,
           "content": []
         },
         "item1": {
@@ -12888,7 +12888,7 @@ export const dataShop = [
           "type_ru": "Щит",
           "minecraft_custom": "<span style=\"color: #55FFFF\"> # </span><span style=\"color: #FFAA00\"> <u>Бронедверь</u> </span> <span style=\"color: #55FFFF\"> # </span>",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 4,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -12944,7 +12944,7 @@ export const dataShop = [
           "type_ru": "Щит",
           "minecraft_custom": "<span style=\"color: #55FFFF\"> # </span><span style=\"color: #FFAA00\"> <u>Дверь в клуб</u> </span> <span style=\"color: #55FFFF\"> # </span>",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 15,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -13013,7 +13013,7 @@ export const dataShop = [
           "type_ru": "Синий шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #5555FF\"> Берёза `Wooden_store™` </span>",
           "amount": 1,
-          "remainder": 4,
+          "remainder": 1,
           "content": [
             {
               "slot": 0,
@@ -13194,7 +13194,7 @@ export const dataShop = [
           "type_ru": "Синий шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #5555FF\"> Тропическое дерево `Wooden_store™` </span>",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 4,
           "content": [
             {
               "slot": 0,
@@ -13375,7 +13375,7 @@ export const dataShop = [
           "type_ru": "Синий шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #5555FF\"> Акация `Wooden_store™` </span>",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 6,
           "content": [
             {
               "slot": 0,
@@ -13556,7 +13556,7 @@ export const dataShop = [
           "type_ru": "Синий шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #5555FF\"> Ель `Wooden_store™` </span>",
           "amount": 1,
-          "remainder": 5,
+          "remainder": 1,
           "content": [
             {
               "slot": 0,
@@ -13737,7 +13737,7 @@ export const dataShop = [
           "type_ru": "Синий шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #5555FF\"> Дуб `Wooden_store™` </span>",
           "amount": 1,
-          "remainder": 0,
+          "remainder": 15,
           "content": [
             {
               "slot": 0,
@@ -13918,7 +13918,7 @@ export const dataShop = [
           "type_ru": "Синий шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #5555FF\"> Мангровое дерево `Wooden_store™` </span>",
           "amount": 1,
-          "remainder": 13,
+          "remainder": 15,
           "content": [
             {
               "slot": 0,
@@ -14099,7 +14099,7 @@ export const dataShop = [
           "type_ru": "Синий шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #5555FF\"> Искажённый стебель `Wooden_store™` </span>",
           "amount": 1,
-          "remainder": 9,
+          "remainder": 11,
           "content": [
             {
               "slot": 0,
@@ -14280,7 +14280,7 @@ export const dataShop = [
           "type_ru": "Синий шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #5555FF\"> Багровый стебель `Wooden_store™` </span>",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 7,
           "content": [
             {
               "slot": 0,
@@ -14461,7 +14461,7 @@ export const dataShop = [
           "type_ru": "Синий шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #5555FF\"> Тёмный дуб `Wooden_store™` </span>",
           "amount": 1,
-          "remainder": 14,
+          "remainder": 6,
           "content": [
             {
               "slot": 0,
@@ -14654,7 +14654,7 @@ export const dataShop = [
           "type": "host_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 3,
+          "remainder": 15,
           "content": []
         },
         "item1": {
@@ -14671,7 +14671,7 @@ export const dataShop = [
           "type": "raiser_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 4,
+          "remainder": 8,
           "content": []
         },
         "item1": {
@@ -14688,7 +14688,7 @@ export const dataShop = [
           "type": "shaper_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 8,
+          "remainder": 0,
           "content": []
         },
         "item1": {
@@ -14705,7 +14705,7 @@ export const dataShop = [
           "type": "wayfinder_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 14,
+          "remainder": 2,
           "content": []
         },
         "item1": {
@@ -14722,7 +14722,7 @@ export const dataShop = [
           "type": "sentry_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 5,
+          "remainder": 2,
           "content": []
         },
         "item1": {
@@ -14739,7 +14739,7 @@ export const dataShop = [
           "type": "snout_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 10,
+          "remainder": 2,
           "content": []
         },
         "item1": {
@@ -14756,7 +14756,7 @@ export const dataShop = [
           "type": "coast_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 15,
+          "remainder": 13,
           "content": []
         },
         "item1": {
@@ -14773,7 +14773,7 @@ export const dataShop = [
           "type": "rib_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 2,
+          "remainder": 7,
           "content": []
         },
         "item1": {
@@ -14790,7 +14790,7 @@ export const dataShop = [
           "type": "netherite_upgrade_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 7,
+          "remainder": 4,
           "content": []
         },
         "item1": {
@@ -14807,7 +14807,7 @@ export const dataShop = [
           "type": "dune_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 13,
+          "remainder": 0,
           "content": []
         },
         "item1": {
@@ -14824,7 +14824,7 @@ export const dataShop = [
           "type": "spire_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 6,
           "content": []
         },
         "item1": {
@@ -14841,7 +14841,7 @@ export const dataShop = [
           "type": "ward_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 9,
+          "remainder": 7,
           "content": []
         },
         "item1": {
@@ -14858,7 +14858,7 @@ export const dataShop = [
           "type": "tide_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 3,
+          "remainder": 0,
           "content": []
         },
         "item1": {
@@ -14875,7 +14875,7 @@ export const dataShop = [
           "type": "eye_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 2,
           "content": []
         },
         "item1": {
@@ -14909,7 +14909,7 @@ export const dataShop = [
           "type": "vex_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 15,
+          "remainder": 5,
           "content": []
         },
         "item1": {
@@ -14926,7 +14926,7 @@ export const dataShop = [
           "type": "silence_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 4,
+          "remainder": 13,
           "content": []
         },
         "item1": {
@@ -14957,7 +14957,7 @@ export const dataShop = [
           "type_ru": "Лаймовый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #00AA00\"> Изумруды  </span><span style=\"color: #55FF55\"> <b>BaXyEmerald</b> </span><span style=\"color: #55FF55\"> ™ </span>",
           "amount": 1,
-          "remainder": 4,
+          "remainder": 13,
           "content": [
             {
               "slot": 0,
@@ -15138,7 +15138,7 @@ export const dataShop = [
           "type_ru": "Жёлтый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #FFFF55\"> <b>▕</b> </span> <span style=\"color: #FFFF55\"> Светокамень  </span><span style=\"color: #FFFF55\"> <b>▕ </b> </span><span style=\"color: #55FF55\"> <b>BaXyEmerald</b> </span><span style=\"color: #55FF55\"> ™ </span>",
           "amount": 1,
-          "remainder": 7,
+          "remainder": 6,
           "content": [
             {
               "slot": 0,
@@ -15332,7 +15332,7 @@ export const dataShop = [
           "type_ru": "Голубой шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #3B91B4\">  Набор «Коралловый риф». N.Viento™ </span>",
           "amount": 1,
-          "remainder": 0,
+          "remainder": 7,
           "content": [
             {
               "slot": 0,
@@ -15513,7 +15513,7 @@ export const dataShop = [
           "type_ru": "Коричневый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #4C3024\">  Набор «Сельхоз». N.Viento™ </span>",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 10,
           "content": [
             {
               "slot": 0,
@@ -15694,7 +15694,7 @@ export const dataShop = [
           "type_ru": "Белый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #717486\">  Нитки. Viento™ </span>",
           "amount": 1,
-          "remainder": 0,
+          "remainder": 15,
           "content": [
             {
               "slot": 0,
@@ -15874,7 +15874,7 @@ export const dataShop = [
           "type": "moss_block",
           "type_ru": "Блок мха",
           "amount": 64,
-          "remainder": 1,
+          "remainder": 5,
           "content": []
         },
         "item1": {
@@ -15891,7 +15891,7 @@ export const dataShop = [
           "type": "cactus",
           "type_ru": "Кактус",
           "amount": 32,
-          "remainder": 9,
+          "remainder": 10,
           "content": []
         },
         "item1": {
@@ -15908,7 +15908,7 @@ export const dataShop = [
           "type": "fern",
           "type_ru": "Папоротник",
           "amount": 32,
-          "remainder": 4,
+          "remainder": 7,
           "content": []
         },
         "item1": {
@@ -15925,7 +15925,7 @@ export const dataShop = [
           "type": "grass",
           "type_ru": "Трава",
           "amount": 32,
-          "remainder": 14,
+          "remainder": 0,
           "content": []
         },
         "item1": {
@@ -15942,7 +15942,7 @@ export const dataShop = [
           "type": "glow_berries",
           "type_ru": "Светящиеся ягоды",
           "amount": 64,
-          "remainder": 11,
+          "remainder": 15,
           "content": []
         },
         "item1": {
@@ -15959,7 +15959,7 @@ export const dataShop = [
           "type": "sweet_berries",
           "type_ru": "Сладкие ягоды",
           "amount": 32,
-          "remainder": 9,
+          "remainder": 11,
           "content": []
         },
         "item1": {
@@ -15976,7 +15976,7 @@ export const dataShop = [
           "type": "glow_lichen",
           "type_ru": "Светящийся лишайник",
           "amount": 32,
-          "remainder": 11,
+          "remainder": 2,
           "content": []
         },
         "item1": {
@@ -15993,7 +15993,7 @@ export const dataShop = [
           "type": "vine",
           "type_ru": "Лианы",
           "amount": 32,
-          "remainder": 15,
+          "remainder": 5,
           "content": []
         },
         "item1": {
@@ -16010,7 +16010,7 @@ export const dataShop = [
           "type": "sculk_vein",
           "type_ru": "Скалковая жила",
           "amount": 32,
-          "remainder": 6,
+          "remainder": 8,
           "content": []
         },
         "item1": {
@@ -16027,7 +16027,7 @@ export const dataShop = [
           "type": "hanging_roots",
           "type_ru": "Свисающие корни",
           "amount": 32,
-          "remainder": 8,
+          "remainder": 0,
           "content": []
         },
         "item1": {
@@ -16044,7 +16044,7 @@ export const dataShop = [
           "type": "lily_pad",
           "type_ru": "Кувшинка",
           "amount": 16,
-          "remainder": 12,
+          "remainder": 11,
           "content": []
         },
         "item1": {
@@ -16061,7 +16061,7 @@ export const dataShop = [
           "type": "big_dripleaf",
           "type_ru": "Большая бросянка",
           "amount": 64,
-          "remainder": 6,
+          "remainder": 11,
           "content": []
         },
         "item1": {
@@ -16078,7 +16078,7 @@ export const dataShop = [
           "type": "dead_bush",
           "type_ru": "Мёртвый куст",
           "amount": 16,
-          "remainder": 8,
+          "remainder": 12,
           "content": []
         },
         "item1": {
@@ -16095,7 +16095,7 @@ export const dataShop = [
           "type": "red_mushroom",
           "type_ru": "Красный гриб",
           "amount": 16,
-          "remainder": 12,
+          "remainder": 2,
           "content": []
         },
         "item1": {
@@ -16112,7 +16112,7 @@ export const dataShop = [
           "type": "brown_mushroom",
           "type_ru": "Коричневый гриб",
           "amount": 16,
-          "remainder": 11,
+          "remainder": 1,
           "content": []
         },
         "item1": {
@@ -16129,7 +16129,7 @@ export const dataShop = [
           "type": "crimson_fungus",
           "type_ru": "Багровый гриб",
           "amount": 32,
-          "remainder": 9,
+          "remainder": 8,
           "content": []
         },
         "item1": {
@@ -16146,7 +16146,7 @@ export const dataShop = [
           "type": "warped_fungus",
           "type_ru": "Искажённый гриб",
           "amount": 32,
-          "remainder": 6,
+          "remainder": 7,
           "content": []
         },
         "item1": {
@@ -16163,7 +16163,7 @@ export const dataShop = [
           "type": "warped_roots",
           "type_ru": "Искажённые корни",
           "amount": 32,
-          "remainder": 0,
+          "remainder": 1,
           "content": []
         },
         "item1": {
@@ -16180,7 +16180,7 @@ export const dataShop = [
           "type": "crimson_roots",
           "type_ru": "Багровые корни",
           "amount": 32,
-          "remainder": 11,
+          "remainder": 8,
           "content": []
         },
         "item1": {
@@ -16197,7 +16197,7 @@ export const dataShop = [
           "type": "twisting_vines",
           "type_ru": "Вьющаяся лоза",
           "amount": 32,
-          "remainder": 3,
+          "remainder": 11,
           "content": []
         },
         "item1": {
@@ -16214,7 +16214,7 @@ export const dataShop = [
           "type": "weeping_vines",
           "type_ru": "Плакучая лоза",
           "amount": 32,
-          "remainder": 3,
+          "remainder": 15,
           "content": []
         },
         "item1": {
@@ -16231,7 +16231,7 @@ export const dataShop = [
           "type": "chorus_flower",
           "type_ru": "Цветок хоруса",
           "amount": 16,
-          "remainder": 8,
+          "remainder": 2,
           "content": []
         },
         "item1": {
@@ -16248,7 +16248,7 @@ export const dataShop = [
           "type": "bamboo",
           "type_ru": "Бамбук",
           "amount": 64,
-          "remainder": 0,
+          "remainder": 13,
           "content": []
         },
         "item1": {
@@ -16265,7 +16265,7 @@ export const dataShop = [
           "type": "kelp",
           "type_ru": "Ламинария",
           "amount": 64,
-          "remainder": 13,
+          "remainder": 4,
           "content": []
         },
         "item1": {
@@ -16282,7 +16282,7 @@ export const dataShop = [
           "type": "string",
           "type_ru": "Нить",
           "amount": 64,
-          "remainder": 6,
+          "remainder": 1,
           "content": []
         },
         "item1": {
@@ -16299,7 +16299,7 @@ export const dataShop = [
           "type": "mangrove_roots",
           "type_ru": "Мангровые корни",
           "amount": 32,
-          "remainder": 2,
+          "remainder": 12,
           "content": []
         },
         "item1": {
@@ -16498,7 +16498,7 @@ export const dataShop = [
           "type_ru": "Розовый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #F57584\"> Розовые лепестки. N.Viento™ </span>",
           "amount": 1,
-          "remainder": 8,
+          "remainder": 5,
           "content": [
             {
               "slot": 0,
@@ -16678,7 +16678,7 @@ export const dataShop = [
           "type": "pink_petals",
           "type_ru": "Розовые лепестки",
           "amount": 32,
-          "remainder": 13,
+          "remainder": 15,
           "content": []
         },
         "item1": {
@@ -16709,7 +16709,7 @@ export const dataShop = [
           "type_ru": "Светло-серый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #99846B\"> Дуб. NMB™ </span>",
           "amount": 1,
-          "remainder": 10,
+          "remainder": 1,
           "content": [
             {
               "slot": 0,
@@ -16890,7 +16890,7 @@ export const dataShop = [
           "type_ru": "Коричневый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #664D47\"> Ель. NMB™ </span>",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 15,
           "content": [
             {
               "slot": 0,
@@ -17071,7 +17071,7 @@ export const dataShop = [
           "type_ru": "Чёрный шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #4D2D26\"> Тёмный дуб. NMB™ </span>",
           "amount": 1,
-          "remainder": 14,
+          "remainder": 10,
           "content": [
             {
               "slot": 0,
@@ -17252,7 +17252,7 @@ export const dataShop = [
           "type_ru": "Белый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #E6DC8A\"> Берёза. NMB™ </span>",
           "amount": 1,
-          "remainder": 9,
+          "remainder": 4,
           "content": [
             {
               "slot": 0,
@@ -17433,7 +17433,7 @@ export const dataShop = [
           "type_ru": "Розовый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #B3856B\"> Тропическое дерево NMB™ </span>",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 8,
           "content": [
             {
               "slot": 0,
@@ -17614,7 +17614,7 @@ export const dataShop = [
           "type_ru": "Оранжевый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #993700\"> Акация. NMB™ </span>",
           "amount": 1,
-          "remainder": 0,
+          "remainder": 3,
           "content": [
             {
               "slot": 0,
@@ -17795,7 +17795,7 @@ export const dataShop = [
           "type_ru": "Красный шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #800000\"> Мангровое дерево. N.Viento™ </span>",
           "amount": 1,
-          "remainder": 7,
+          "remainder": 3,
           "content": [
             {
               "slot": 0,
@@ -17976,7 +17976,7 @@ export const dataShop = [
           "type_ru": "Пурпурный шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #661F30\"> Багровая древесина. NMB™ </span>",
           "amount": 1,
-          "remainder": 12,
+          "remainder": 10,
           "content": [
             {
               "slot": 0,
@@ -18157,7 +18157,7 @@ export const dataShop = [
           "type_ru": "Бирюзовый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #0D7980\"> Искажённая древесина. NMB™ </span>",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 3,
           "content": [
             {
               "slot": 0,
@@ -18338,7 +18338,7 @@ export const dataShop = [
           "type_ru": "Розовый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #F57584\"> Вишня. N.Viento™ </span>",
           "amount": 1,
-          "remainder": 2,
+          "remainder": 4,
           "content": [
             {
               "slot": 0,
@@ -18519,7 +18519,7 @@ export const dataShop = [
           "type_ru": "Лаймовый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #ACDD4D\"> Блоки бамбука. N.Viento™ </span>",
           "amount": 1,
-          "remainder": 0,
+          "remainder": 1,
           "content": [
             {
               "slot": 0,
@@ -18713,7 +18713,7 @@ export const dataShop = [
           "type_ru": "Пурпурный шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #A2006D\"> Набор «Палитра». N.Viento™ </span>",
           "amount": 1,
-          "remainder": 4,
+          "remainder": 9,
           "content": [
             {
               "slot": 0,
@@ -18894,7 +18894,7 @@ export const dataShop = [
           "type_ru": "Красный шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #B10000\"> Набор «Ремонт фермы». N.Viento™ </span>",
           "amount": 1,
-          "remainder": 13,
+          "remainder": 10,
           "content": [
             {
               "slot": 0,
@@ -19075,7 +19075,7 @@ export const dataShop = [
           "type_ru": "Синий шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #013E62\"> Набор «Декоративные блоки-1». N.Viento™ </span>",
           "amount": 1,
-          "remainder": 8,
+          "remainder": 3,
           "content": [
             {
               "slot": 0,
@@ -19256,7 +19256,7 @@ export const dataShop = [
           "type_ru": "Бирюзовый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #0C8990\"> Набор «Цветные свечки». N.Viento™ </span>",
           "amount": 1,
-          "remainder": 4,
+          "remainder": 5,
           "content": [
             {
               "slot": 0,
@@ -19437,7 +19437,7 @@ export const dataShop = [
           "type_ru": "Оранжевый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #C99415\"> Набор «Обычные свечки». N.Viento™ </span>",
           "amount": 1,
-          "remainder": 10,
+          "remainder": 0,
           "content": [
             {
               "slot": 0,
@@ -19618,7 +19618,7 @@ export const dataShop = [
           "type_ru": "Фиолетовый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #8B00FF\">  Аметистовые друзы. N.Viento™ </span>",
           "amount": 1,
-          "remainder": 4,
+          "remainder": 15,
           "content": [
             {
               "slot": 0,
@@ -19804,7 +19804,7 @@ export const dataShop = [
           "type_ru": "Синий шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #00CC99\"> Набор «Квампы». N.Viento™ </span>",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 1,
           "content": [
             {
               "slot": 0,
@@ -19985,7 +19985,7 @@ export const dataShop = [
           "type_ru": "Красный шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #800008\"> Ракеты III. NMB™ </span>",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 0,
           "content": [
             {
               "slot": 0,
@@ -20193,7 +20193,7 @@ export const dataShop = [
           "type_ru": "Светло-серый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #47454D\"> Ракеты II. NMB™ </span>",
           "amount": 1,
-          "remainder": 5,
+          "remainder": 10,
           "content": [
             {
               "slot": 0,
@@ -20401,7 +20401,7 @@ export const dataShop = [
           "type_ru": "Белый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #B8C0CC\"> Ракеты I. NMB™ </span>",
           "amount": 1,
-          "remainder": 14,
+          "remainder": 11,
           "content": [
             {
               "slot": 0,
@@ -20609,7 +20609,7 @@ export const dataShop = [
           "type_ru": "Лаймовый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #6F9D02\"> Замшелый булыжник. N.Viento™ </span>",
           "amount": 1,
-          "remainder": 5,
+          "remainder": 8,
           "content": [
             {
               "slot": 0,
@@ -20790,7 +20790,7 @@ export const dataShop = [
           "type_ru": "Зелёный шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #396413\"> Замшелые каменные кирпичи. N.Viento™ </span>",
           "amount": 1,
-          "remainder": 7,
+          "remainder": 1,
           "content": [
             {
               "slot": 0,
@@ -20971,7 +20971,7 @@ export const dataShop = [
           "type_ru": "Серый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #475466\"> Колотый глубинный сланец. N.Viento™ </span>",
           "amount": 1,
-          "remainder": 7,
+          "remainder": 6,
           "content": [
             {
               "slot": 0,
@@ -21152,7 +21152,7 @@ export const dataShop = [
           "type_ru": "Жёлтый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #DCD747\"> Огненный стержень. N.Viento™ </span>",
           "amount": 1,
-          "remainder": 0,
+          "remainder": 9,
           "content": [
             {
               "slot": 0,
@@ -21333,7 +21333,7 @@ export const dataShop = [
           "type_ru": "Голубой шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #009DC4\"> Набор «Разоритель морских крепостей». N.Viento™ </span>",
           "amount": 1,
-          "remainder": 12,
+          "remainder": 4,
           "content": [
             {
               "slot": 0,
@@ -21549,7 +21549,7 @@ export const dataShop = [
           "type_ru": "Белый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #D2B48C\"> Кварц. N.Viento™ </span>",
           "amount": 1,
-          "remainder": 14,
+          "remainder": 8,
           "content": [
             {
               "slot": 0,
@@ -21730,7 +21730,7 @@ export const dataShop = [
           "type_ru": "Жёлтый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #E6A500\"> С Днем Рождения! </span>",
           "amount": 1,
-          "remainder": 4,
+          "remainder": 7,
           "content": [
             {
               "slot": 0,
@@ -21911,7 +21911,7 @@ export const dataShop = [
           "type_ru": "Жёлтый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #E6A500\"> С Днем Рождения! </span>",
           "amount": 1,
-          "remainder": 2,
+          "remainder": 0,
           "content": [
             {
               "slot": 0,
@@ -22105,7 +22105,7 @@ export const dataShop = [
           "type_ru": "Зелёный шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #2E4D26\"> Дубовая листва. NMB™ </span>",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 7,
           "content": [
             {
               "slot": 0,
@@ -22286,7 +22286,7 @@ export const dataShop = [
           "type_ru": "Зелёный шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #014B43\"> Хвоя. N.Viento™ </span>",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 0,
           "content": [
             {
               "slot": 0,
@@ -22467,7 +22467,7 @@ export const dataShop = [
           "type_ru": "Зелёный шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #063305\"> Листва тёмного дуба. NMB™ </span>",
           "amount": 1,
-          "remainder": 13,
+          "remainder": 12,
           "content": [
             {
               "slot": 0,
@@ -22648,7 +22648,7 @@ export const dataShop = [
           "type_ru": "Зелёный шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #808000\"> Листва акации. N.Viento™ </span>",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 13,
           "content": [
             {
               "slot": 0,
@@ -23010,7 +23010,7 @@ export const dataShop = [
           "type_ru": "Лаймовый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #6F9D02\"> Листва азалии. N.Viento™ </span>",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 13,
           "content": [
             {
               "slot": 0,
@@ -23191,7 +23191,7 @@ export const dataShop = [
           "type_ru": "Пурпурный шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #C154C1\"> Листва цветущей азалии. N.Viento™ </span>",
           "amount": 1,
-          "remainder": 8,
+          "remainder": 7,
           "content": [
             {
               "slot": 0,
@@ -23371,7 +23371,7 @@ export const dataShop = [
           "type": "oak_sapling",
           "type_ru": "Саженец дуба",
           "amount": 64,
-          "remainder": 2,
+          "remainder": 6,
           "content": []
         },
         "item1": {
@@ -23388,7 +23388,7 @@ export const dataShop = [
           "type": "spruce_sapling",
           "type_ru": "Саженец ели",
           "amount": 64,
-          "remainder": 3,
+          "remainder": 11,
           "content": []
         },
         "item1": {
@@ -23405,7 +23405,7 @@ export const dataShop = [
           "type": "dark_oak_sapling",
           "type_ru": "Саженец тёмного дуба",
           "amount": 32,
-          "remainder": 5,
+          "remainder": 11,
           "content": []
         },
         "item1": {
@@ -23439,7 +23439,7 @@ export const dataShop = [
           "type": "acacia_sapling",
           "type_ru": "Саженец акации",
           "amount": 64,
-          "remainder": 6,
+          "remainder": 1,
           "content": []
         },
         "item1": {
@@ -23456,7 +23456,7 @@ export const dataShop = [
           "type": "jungle_sapling",
           "type_ru": "Саженец тропического дерева",
           "amount": 32,
-          "remainder": 2,
+          "remainder": 9,
           "content": []
         },
         "item1": {
@@ -23473,7 +23473,7 @@ export const dataShop = [
           "type": "azalea",
           "type_ru": "Азалия",
           "amount": 64,
-          "remainder": 4,
+          "remainder": 12,
           "content": []
         },
         "item1": {
@@ -23490,7 +23490,7 @@ export const dataShop = [
           "type": "flowering_azalea",
           "type_ru": "Цветущая азалия",
           "amount": 64,
-          "remainder": 6,
+          "remainder": 14,
           "content": []
         },
         "item1": {
@@ -23524,7 +23524,7 @@ export const dataShop = [
           "type": "oak_leaves",
           "type_ru": "Дубовые листья",
           "amount": 64,
-          "remainder": 4,
+          "remainder": 9,
           "content": []
         },
         "item1": {
@@ -23541,7 +23541,7 @@ export const dataShop = [
           "type": "dark_oak_leaves",
           "type_ru": "Листья тёмного дуба",
           "amount": 64,
-          "remainder": 6,
+          "remainder": 13,
           "content": []
         },
         "item1": {
@@ -23558,7 +23558,7 @@ export const dataShop = [
           "type": "jungle_leaves",
           "type_ru": "Листья тропического дерева",
           "amount": 64,
-          "remainder": 3,
+          "remainder": 0,
           "content": []
         },
         "item1": {
@@ -23575,7 +23575,7 @@ export const dataShop = [
           "type": "azalea_leaves",
           "type_ru": "Листья азалии",
           "amount": 64,
-          "remainder": 5,
+          "remainder": 4,
           "content": []
         },
         "item1": {
@@ -23592,7 +23592,7 @@ export const dataShop = [
           "type": "flowering_azalea_leaves",
           "type_ru": "Листья цветущей азалии",
           "amount": 64,
-          "remainder": 8,
+          "remainder": 7,
           "content": []
         },
         "item1": {
@@ -23609,7 +23609,7 @@ export const dataShop = [
           "type": "mangrove_leaves",
           "type_ru": "Мангровые листья",
           "amount": 64,
-          "remainder": 1,
+          "remainder": 2,
           "content": []
         },
         "item1": {
@@ -23626,7 +23626,7 @@ export const dataShop = [
           "type": "mangrove_roots",
           "type_ru": "Мангровые корни",
           "amount": 64,
-          "remainder": 7,
+          "remainder": 4,
           "content": []
         },
         "item1": {
@@ -23644,7 +23644,7 @@ export const dataShop = [
           "type_ru": "Розовый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #DB9690\"> Вишнёвые листья. N.Viento™ </span>",
           "amount": 1,
-          "remainder": 2,
+          "remainder": 13,
           "content": [
             {
               "slot": 0,
@@ -23824,7 +23824,7 @@ export const dataShop = [
           "type": "cherry_leaves",
           "type_ru": "Вишнёвые листья",
           "amount": 64,
-          "remainder": 12,
+          "remainder": 10,
           "content": []
         },
         "item1": {
@@ -23854,7 +23854,7 @@ export const dataShop = [
           "type": "netherite_ingot",
           "type_ru": "Незеритовый слиток",
           "amount": 1,
-          "remainder": 8,
+          "remainder": 0,
           "content": []
         },
         "item1": {
@@ -23871,7 +23871,7 @@ export const dataShop = [
           "type": "netherite_upgrade_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 15,
+          "remainder": 13,
           "content": []
         },
         "item1": {
@@ -23889,7 +23889,7 @@ export const dataShop = [
           "type_ru": "Алмазный меч",
           "minecraft_custom": "<span style=\"color: #FFAA00\"> Заточенный длинный меч 🗡 </span>",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 5,
           "enchant": [
             {
               "enchant_id": "fire_aspect",
@@ -23944,7 +23944,7 @@ export const dataShop = [
           "type_ru": "Алмазный меч",
           "minecraft_custom": "<span style=\"color: #FFAA00\"> Заточенный меч 🗡 </span>",
           "amount": 1,
-          "remainder": 12,
+          "remainder": 10,
           "enchant": [
             {
               "enchant_id": "fire_aspect",
@@ -23994,7 +23994,7 @@ export const dataShop = [
           "type_ru": "Алмазная кирка",
           "minecraft_custom": "<span style=\"color: #FFAA00\"> Осторожный бур ⛏ </span>",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 5,
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -24034,7 +24034,7 @@ export const dataShop = [
           "type_ru": "Алмазная кирка",
           "minecraft_custom": "<span style=\"color: #FFAA00\"> Счастливый бур ⛏ </span>",
           "amount": 1,
-          "remainder": 13,
+          "remainder": 8,
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -24074,7 +24074,7 @@ export const dataShop = [
           "type_ru": "Алмазная лопата",
           "minecraft_custom": "<span style=\"color: #FFAA00\"> Осторожная лопатка ⛏ </span>",
           "amount": 1,
-          "remainder": 4,
+          "remainder": 5,
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -24114,7 +24114,7 @@ export const dataShop = [
           "type_ru": "Алмазная лопата",
           "minecraft_custom": "<span style=\"color: #FFAA00\"> Счастливая лопатка ⛏ </span>",
           "amount": 1,
-          "remainder": 8,
+          "remainder": 10,
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -24199,7 +24199,7 @@ export const dataShop = [
           "type_ru": "Алмазный топор",
           "minecraft_custom": "<span style=\"color: #FFAA00\"> Удачно заточенный топорик 🪓 </span>",
           "amount": 1,
-          "remainder": 15,
+          "remainder": 8,
           "enchant": [
             {
               "enchant_id": "dig_speed",
@@ -24244,7 +24244,7 @@ export const dataShop = [
           "type_ru": "Пурпурная глазурованная керамика",
           "minecraft_custom": "<span style=\"color: #AA0000\"> Защита без шипов </span>",
           "amount": 1,
-          "remainder": 14,
+          "remainder": 5,
           "content": []
         },
         "item1": {
@@ -24262,7 +24262,7 @@ export const dataShop = [
           "type_ru": "Алмазный шлем",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Защитный шлем 🛡 </span>",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 13,
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -24307,7 +24307,7 @@ export const dataShop = [
           "type_ru": "Черепаший панцирь",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Защитный черепаший шлем 🛡 </span>",
           "amount": 1,
-          "remainder": 12,
+          "remainder": 8,
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -24352,7 +24352,7 @@ export const dataShop = [
           "type_ru": "Алмазный нагрудник",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Защитная кираса 🛡 </span>",
           "amount": 1,
-          "remainder": 8,
+          "remainder": 0,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -24387,7 +24387,7 @@ export const dataShop = [
           "type_ru": "Алмазные поножи",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Защитные штаны 🛡 </span>",
           "amount": 1,
-          "remainder": 4,
+          "remainder": 14,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -24422,7 +24422,7 @@ export const dataShop = [
           "type_ru": "Алмазные ботинки",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Защитные сапоги 🛡 </span>",
           "amount": 1,
-          "remainder": 10,
+          "remainder": 12,
           "enchant": [
             {
               "enchant_id": "depth_strider",
@@ -24472,7 +24472,7 @@ export const dataShop = [
           "type_ru": "Алмазные ботинки",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Защитный ледорез ❄ </span>",
           "amount": 1,
-          "remainder": 7,
+          "remainder": 6,
           "enchant": [
             {
               "enchant_id": "protection_fall",
@@ -24522,7 +24522,7 @@ export const dataShop = [
           "type_ru": "Пурпурная глазурованная керамика",
           "minecraft_custom": "<span style=\"color: #AA0000\"> Защита с шипами </span>",
           "amount": 1,
-          "remainder": 10,
+          "remainder": 15,
           "content": []
         },
         "item1": {
@@ -24540,7 +24540,7 @@ export const dataShop = [
           "type_ru": "Алмазный шлем",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Шипастый защитный шлем 🛡 </span>",
           "amount": 1,
-          "remainder": 12,
+          "remainder": 7,
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -24590,7 +24590,7 @@ export const dataShop = [
           "type_ru": "Черепаший панцирь",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Шипастый защитный черепаший шлем 🛡 </span>",
           "amount": 1,
-          "remainder": 13,
+          "remainder": 9,
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -24640,7 +24640,7 @@ export const dataShop = [
           "type_ru": "Алмазный нагрудник",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Шипастая защитная кираса 🛡 </span>",
           "amount": 1,
-          "remainder": 3,
+          "remainder": 6,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -24680,7 +24680,7 @@ export const dataShop = [
           "type_ru": "Алмазные поножи",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Шипастые защитные штаны 🛡 </span>",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 11,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -24720,7 +24720,7 @@ export const dataShop = [
           "type_ru": "Алмазные ботинки",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Шипастые защитные сапоги 🛡 </span>",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 13,
           "enchant": [
             {
               "enchant_id": "depth_strider",
@@ -24775,7 +24775,7 @@ export const dataShop = [
           "type_ru": "Алмазные ботинки",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Шипастый защитный ледорез ❄ </span>",
           "amount": 1,
-          "remainder": 15,
+          "remainder": 7,
           "enchant": [
             {
               "enchant_id": "protection_fall",
@@ -24830,7 +24830,7 @@ export const dataShop = [
           "type_ru": "Лук",
           "minecraft_custom": "<span style=\"color: #AA00AA\"> Магический лук 🏹 </span>",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 14,
           "enchant": [
             {
               "enchant_id": "arrow_fire",
@@ -24875,7 +24875,7 @@ export const dataShop = [
           "type_ru": "Лук",
           "minecraft_custom": "<span style=\"color: #AA00AA\"> Улучшенный лук 🏹 </span>",
           "amount": 1,
-          "remainder": 7,
+          "remainder": 13,
           "enchant": [
             {
               "enchant_id": "arrow_fire",
@@ -24920,7 +24920,7 @@ export const dataShop = [
           "type_ru": "Белый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #FFFFFF\"> Набор стрел </span>",
           "amount": 1,
-          "remainder": 5,
+          "remainder": 10,
           "content": [
             {
               "slot": 0,
@@ -25101,7 +25101,7 @@ export const dataShop = [
           "type_ru": "Трезубец",
           "minecraft_custom": "<span style=\"color: #5555FF\"> Повелитель морей 🔱 </span>",
           "amount": 1,
-          "remainder": 3,
+          "remainder": 0,
           "enchant": [
             {
               "enchant_id": "impaling",
@@ -25141,7 +25141,7 @@ export const dataShop = [
           "type_ru": "Трезубец",
           "minecraft_custom": "<span style=\"color: #5555FF\"> Повелитель молний 🔱 </span>",
           "amount": 1,
-          "remainder": 3,
+          "remainder": 10,
           "enchant": [
             {
               "enchant_id": "channeling",
@@ -25198,7 +25198,7 @@ export const dataShop = [
           "type": "cornflower",
           "type_ru": "Синий василёк",
           "amount": 32,
-          "remainder": 3,
+          "remainder": 5,
           "content": []
         },
         "item1": {
@@ -25215,7 +25215,7 @@ export const dataShop = [
           "type": "blue_orchid",
           "type_ru": "Синяя орхидея",
           "amount": 32,
-          "remainder": 0,
+          "remainder": 8,
           "content": []
         },
         "item1": {
@@ -25232,7 +25232,7 @@ export const dataShop = [
           "type": "lily_of_the_valley",
           "type_ru": "Ландыш",
           "amount": 32,
-          "remainder": 9,
+          "remainder": 1,
           "content": []
         },
         "item1": {
@@ -25249,7 +25249,7 @@ export const dataShop = [
           "type": "red_tulip",
           "type_ru": "Красный тюльпан",
           "amount": 32,
-          "remainder": 7,
+          "remainder": 1,
           "content": []
         },
         "item1": {
@@ -25266,7 +25266,7 @@ export const dataShop = [
           "type": "orange_tulip",
           "type_ru": "Оранжевый тюльпан",
           "amount": 32,
-          "remainder": 12,
+          "remainder": 3,
           "content": []
         },
         "item1": {
@@ -25283,7 +25283,7 @@ export const dataShop = [
           "type": "white_tulip",
           "type_ru": "Белый тюльпан",
           "amount": 32,
-          "remainder": 15,
+          "remainder": 12,
           "content": []
         },
         "item1": {
@@ -25300,7 +25300,7 @@ export const dataShop = [
           "type": "pink_tulip",
           "type_ru": "Розовый тюльпан",
           "amount": 32,
-          "remainder": 14,
+          "remainder": 15,
           "content": []
         },
         "item1": {
@@ -25317,7 +25317,7 @@ export const dataShop = [
           "type": "allium",
           "type_ru": "Лук-батун",
           "amount": 32,
-          "remainder": 14,
+          "remainder": 10,
           "content": []
         },
         "item1": {
@@ -25334,7 +25334,7 @@ export const dataShop = [
           "type": "azure_bluet",
           "type_ru": "Хаустония серая",
           "amount": 64,
-          "remainder": 14,
+          "remainder": 15,
           "content": []
         },
         "item1": {
@@ -25351,7 +25351,7 @@ export const dataShop = [
           "type": "oxeye_daisy",
           "type_ru": "Ромашка",
           "amount": 64,
-          "remainder": 12,
+          "remainder": 10,
           "content": []
         },
         "item1": {
@@ -25368,7 +25368,7 @@ export const dataShop = [
           "type": "dandelion",
           "type_ru": "Одуванчик",
           "amount": 64,
-          "remainder": 7,
+          "remainder": 2,
           "content": []
         },
         "item1": {
@@ -25385,7 +25385,7 @@ export const dataShop = [
           "type": "poppy",
           "type_ru": "Мак",
           "amount": 64,
-          "remainder": 6,
+          "remainder": 1,
           "content": []
         },
         "item1": {
@@ -25402,7 +25402,7 @@ export const dataShop = [
           "type": "rose_bush",
           "type_ru": "Розовый куст",
           "amount": 64,
-          "remainder": 15,
+          "remainder": 11,
           "content": []
         },
         "item1": {
@@ -25419,7 +25419,7 @@ export const dataShop = [
           "type": "peony",
           "type_ru": "Пион",
           "amount": 64,
-          "remainder": 9,
+          "remainder": 3,
           "content": []
         },
         "item1": {
@@ -25436,7 +25436,7 @@ export const dataShop = [
           "type": "sunflower",
           "type_ru": "Подсолнух",
           "amount": 64,
-          "remainder": 4,
+          "remainder": 9,
           "content": []
         },
         "item1": {
@@ -25453,7 +25453,7 @@ export const dataShop = [
           "type": "lilac",
           "type_ru": "Сирень",
           "amount": 64,
-          "remainder": 2,
+          "remainder": 7,
           "content": []
         },
         "item1": {
@@ -25470,7 +25470,7 @@ export const dataShop = [
           "type": "wither_rose",
           "type_ru": "Роза визера",
           "amount": 16,
-          "remainder": 13,
+          "remainder": 2,
           "content": []
         },
         "item1": {
@@ -25487,7 +25487,7 @@ export const dataShop = [
           "type": "flower_pot",
           "type_ru": "Цветочный горшок",
           "amount": 16,
-          "remainder": 2,
+          "remainder": 11,
           "content": []
         },
         "item1": {
@@ -25504,7 +25504,7 @@ export const dataShop = [
           "type": "azalea",
           "type_ru": "Азалия",
           "amount": 64,
-          "remainder": 1,
+          "remainder": 7,
           "content": []
         },
         "item1": {
@@ -25521,7 +25521,7 @@ export const dataShop = [
           "type": "flowering_azalea",
           "type_ru": "Цветущая азалия",
           "amount": 64,
-          "remainder": 8,
+          "remainder": 13,
           "content": []
         },
         "item1": {
@@ -25538,7 +25538,7 @@ export const dataShop = [
           "type": "mangrove_propagule",
           "type_ru": "Мангровый отросток",
           "amount": 64,
-          "remainder": 14,
+          "remainder": 11,
           "content": []
         },
         "item1": {
@@ -25555,7 +25555,7 @@ export const dataShop = [
           "type": "acacia_sapling",
           "type_ru": "Саженец акации",
           "amount": 64,
-          "remainder": 15,
+          "remainder": 13,
           "content": []
         },
         "item1": {
@@ -25572,7 +25572,7 @@ export const dataShop = [
           "type": "spruce_sapling",
           "type_ru": "Саженец ели",
           "amount": 64,
-          "remainder": 9,
+          "remainder": 5,
           "content": []
         },
         "item1": {
@@ -25589,7 +25589,7 @@ export const dataShop = [
           "type": "birch_sapling",
           "type_ru": "Саженец берёзы",
           "amount": 64,
-          "remainder": 8,
+          "remainder": 15,
           "content": []
         },
         "item1": {
@@ -25606,7 +25606,7 @@ export const dataShop = [
           "type": "oak_sapling",
           "type_ru": "Саженец дуба",
           "amount": 64,
-          "remainder": 6,
+          "remainder": 2,
           "content": []
         },
         "item1": {
@@ -25623,7 +25623,7 @@ export const dataShop = [
           "type": "jungle_sapling",
           "type_ru": "Саженец тропического дерева",
           "amount": 32,
-          "remainder": 5,
+          "remainder": 11,
           "content": []
         },
         "item1": {
@@ -25640,7 +25640,7 @@ export const dataShop = [
           "type": "cherry_sapling",
           "type_ru": "Саженец вишни",
           "amount": 64,
-          "remainder": 3,
+          "remainder": 10,
           "content": []
         },
         "item1": {
@@ -25657,7 +25657,7 @@ export const dataShop = [
           "type": "torchflower",
           "type_ru": "Факельник",
           "amount": 4,
-          "remainder": 15,
+          "remainder": 7,
           "content": []
         },
         "item1": {
@@ -25674,7 +25674,7 @@ export const dataShop = [
           "type": "pitcher_plant",
           "type_ru": "Кувшинница",
           "amount": 4,
-          "remainder": 8,
+          "remainder": 15,
           "content": []
         },
         "item1": {
@@ -25704,7 +25704,7 @@ export const dataShop = [
           "type": "netherite_ingot",
           "type_ru": "Незеритовый слиток",
           "amount": 1,
-          "remainder": 2,
+          "remainder": 12,
           "content": []
         },
         "item1": {
@@ -25721,7 +25721,7 @@ export const dataShop = [
           "type": "netherite_upgrade_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 14,
+          "remainder": 10,
           "content": []
         },
         "item1": {
@@ -25738,7 +25738,7 @@ export const dataShop = [
           "type": "enchanted_book",
           "type_ru": "Чародейская книга",
           "amount": 1,
-          "remainder": 8,
+          "remainder": 11,
           "stored_enchant": [
             {
               "enchant_id": "swift_sneak",
@@ -25763,7 +25763,7 @@ export const dataShop = [
           "type_ru": "Щит",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Щит 🛡 </span>",
           "amount": 1,
-          "remainder": 2,
+          "remainder": 1,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -25793,7 +25793,7 @@ export const dataShop = [
           "type_ru": "Пурпурная глазурованная керамика",
           "minecraft_custom": "<span style=\"color: #AA0000\"> Защита </span>",
           "amount": 1,
-          "remainder": 7,
+          "remainder": 8,
           "content": []
         },
         "item1": {
@@ -25811,7 +25811,7 @@ export const dataShop = [
           "type_ru": "Алмазный шлем",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Шипастый защитный шлем 🛡 </span>",
           "amount": 1,
-          "remainder": 7,
+          "remainder": 5,
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -25861,7 +25861,7 @@ export const dataShop = [
           "type_ru": "Черепаший панцирь",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Шипастый защитный черепаший шлем 🛡 </span>",
           "amount": 1,
-          "remainder": 5,
+          "remainder": 4,
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -25911,7 +25911,7 @@ export const dataShop = [
           "type_ru": "Алмазный нагрудник",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Шипастая защитная кираса 🛡 </span>",
           "amount": 1,
-          "remainder": 7,
+          "remainder": 15,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -25951,7 +25951,7 @@ export const dataShop = [
           "type_ru": "Алмазные поножи",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Шипастые защитные штаны 🛡 </span>",
           "amount": 1,
-          "remainder": 8,
+          "remainder": 4,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -25991,7 +25991,7 @@ export const dataShop = [
           "type_ru": "Алмазные ботинки",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Шипастые защитные сапоги 🛡 </span>",
           "amount": 1,
-          "remainder": 12,
+          "remainder": 2,
           "enchant": [
             {
               "enchant_id": "depth_strider",
@@ -26046,7 +26046,7 @@ export const dataShop = [
           "type_ru": "Алмазные ботинки",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Шипастый защитный ледорез ❄ </span>",
           "amount": 1,
-          "remainder": 14,
+          "remainder": 10,
           "enchant": [
             {
               "enchant_id": "protection_fall",
@@ -26101,7 +26101,7 @@ export const dataShop = [
           "type_ru": "Пурпурная глазурованная керамика",
           "minecraft_custom": "<span style=\"color: #AA0000\"> Защита от снарядов </span>",
           "amount": 1,
-          "remainder": 7,
+          "remainder": 3,
           "content": []
         },
         "item1": {
@@ -26119,7 +26119,7 @@ export const dataShop = [
           "type_ru": "Алмазный шлем",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Шипастый непробиваемый шлем 🛡 </span>",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 1,
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -26169,7 +26169,7 @@ export const dataShop = [
           "type_ru": "Черепаший панцирь",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Шипастый непробиваемый черепаший шлем 🛡 </span>",
           "amount": 1,
-          "remainder": 14,
+          "remainder": 12,
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -26219,7 +26219,7 @@ export const dataShop = [
           "type_ru": "Алмазный нагрудник",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Шипастая непробиваемая кираса 🛡 </span>",
           "amount": 1,
-          "remainder": 15,
+          "remainder": 12,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -26259,7 +26259,7 @@ export const dataShop = [
           "type_ru": "Алмазные поножи",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Шипастые непробиваемые штаны 🛡 </span>",
           "amount": 1,
-          "remainder": 5,
+          "remainder": 7,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -26299,7 +26299,7 @@ export const dataShop = [
           "type_ru": "Алмазные ботинки",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Шипастые непробиваемые сапоги 🛡 </span>",
           "amount": 1,
-          "remainder": 5,
+          "remainder": 1,
           "enchant": [
             {
               "enchant_id": "depth_strider",
@@ -26354,7 +26354,7 @@ export const dataShop = [
           "type_ru": "Алмазные ботинки",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Шипастый непробиваемый ледорез ❄ </span>",
           "amount": 1,
-          "remainder": 2,
+          "remainder": 12,
           "enchant": [
             {
               "enchant_id": "protection_fall",
@@ -26427,7 +26427,7 @@ export const dataShop = [
           "type_ru": "Алмазный шлем",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Шипастый огнеупорный шлем 🛡 </span>",
           "amount": 1,
-          "remainder": 0,
+          "remainder": 9,
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -26477,7 +26477,7 @@ export const dataShop = [
           "type_ru": "Черепаший панцирь",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Шипастый огнеупорный черепаший шлем 🛡 </span>",
           "amount": 1,
-          "remainder": 12,
+          "remainder": 7,
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -26527,7 +26527,7 @@ export const dataShop = [
           "type_ru": "Алмазный нагрудник",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Шипастая огнеупорная кираса 🛡 </span>",
           "amount": 1,
-          "remainder": 9,
+          "remainder": 5,
           "enchant": [
             {
               "enchant_id": "protection_fire",
@@ -26567,7 +26567,7 @@ export const dataShop = [
           "type_ru": "Алмазные поножи",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Шипастые огнеупорные штаны 🛡 </span>",
           "amount": 1,
-          "remainder": 15,
+          "remainder": 1,
           "enchant": [
             {
               "enchant_id": "protection_fire",
@@ -26607,7 +26607,7 @@ export const dataShop = [
           "type_ru": "Алмазные ботинки",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Шипастые огнеупорные сапоги 🛡 </span>",
           "amount": 1,
-          "remainder": 10,
+          "remainder": 9,
           "enchant": [
             {
               "enchant_id": "depth_strider",
@@ -26662,7 +26662,7 @@ export const dataShop = [
           "type_ru": "Алмазные ботинки",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Шипастый огнеупорный ледорез ❄ </span>",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 4,
           "enchant": [
             {
               "enchant_id": "protection_fall",
@@ -26735,7 +26735,7 @@ export const dataShop = [
           "type_ru": "Алмазный шлем",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Шипастый взрывоустойчивый шлем 🛡 </span>",
           "amount": 1,
-          "remainder": 5,
+          "remainder": 13,
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -26785,7 +26785,7 @@ export const dataShop = [
           "type_ru": "Черепаший панцирь",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Шипастый взрывоустойчивый черепаший шлем 🛡 </span>",
           "amount": 1,
-          "remainder": 5,
+          "remainder": 2,
           "enchant": [
             {
               "enchant_id": "water_worker",
@@ -26835,7 +26835,7 @@ export const dataShop = [
           "type_ru": "Алмазный нагрудник",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Шипастая взрывоустойчивая кираса 🛡 </span>",
           "amount": 1,
-          "remainder": 15,
+          "remainder": 13,
           "enchant": [
             {
               "enchant_id": "protection_explosions",
@@ -26875,7 +26875,7 @@ export const dataShop = [
           "type_ru": "Алмазные поножи",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Шипастые взрывоустойчивые штаны 🛡 </span>",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 14,
           "enchant": [
             {
               "enchant_id": "protection_explosions",
@@ -26915,7 +26915,7 @@ export const dataShop = [
           "type_ru": "Алмазные ботинки",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Шипастые взрывоустойчивые сапоги 🛡 </span>",
           "amount": 1,
-          "remainder": 5,
+          "remainder": 14,
           "enchant": [
             {
               "enchant_id": "protection_explosions",
@@ -26970,7 +26970,7 @@ export const dataShop = [
           "type_ru": "Алмазные ботинки",
           "minecraft_custom": "<span style=\"color: #00AAAA\"> Шипастый взрывоустойчивый ледорез ❄ </span>",
           "amount": 1,
-          "remainder": 3,
+          "remainder": 15,
           "enchant": [
             {
               "enchant_id": "protection_explosions",
@@ -27037,7 +27037,7 @@ export const dataShop = [
           "type": "netherite_ingot",
           "type_ru": "Незеритовый слиток",
           "amount": 1,
-          "remainder": 13,
+          "remainder": 6,
           "content": []
         },
         "item1": {
@@ -27054,7 +27054,7 @@ export const dataShop = [
           "type": "netherite_upgrade_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 15,
           "content": []
         },
         "item1": {
@@ -27072,7 +27072,7 @@ export const dataShop = [
           "type_ru": "Пурпурная глазурованная керамика",
           "minecraft_custom": "<span style=\"color: #AA0000\"> Острота </span>",
           "amount": 1,
-          "remainder": 10,
+          "remainder": 4,
           "content": []
         },
         "item1": {
@@ -27090,7 +27090,7 @@ export const dataShop = [
           "type_ru": "Алмазный меч",
           "minecraft_custom": "<span style=\"color: #FFAA00\"> Заточенный длинный меч 🗡 </span>",
           "amount": 1,
-          "remainder": 15,
+          "remainder": 4,
           "enchant": [
             {
               "enchant_id": "fire_aspect",
@@ -27145,7 +27145,7 @@ export const dataShop = [
           "type_ru": "Алмазный меч",
           "minecraft_custom": "<span style=\"color: #FFAA00\"> Заточенный меч 🗡 </span>",
           "amount": 1,
-          "remainder": 15,
+          "remainder": 0,
           "enchant": [
             {
               "enchant_id": "fire_aspect",
@@ -27195,7 +27195,7 @@ export const dataShop = [
           "type_ru": "Пурпурная глазурованная керамика",
           "minecraft_custom": "<span style=\"color: #AA0000\"> Небесная кара </span>",
           "amount": 1,
-          "remainder": 10,
+          "remainder": 15,
           "content": []
         },
         "item1": {
@@ -27213,7 +27213,7 @@ export const dataShop = [
           "type_ru": "Алмазный меч",
           "minecraft_custom": "<span style=\"color: #FFAA00\"> Небесный длинный меч 🗡 </span>",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 14,
           "enchant": [
             {
               "enchant_id": "fire_aspect",
@@ -27268,7 +27268,7 @@ export const dataShop = [
           "type_ru": "Алмазный меч",
           "minecraft_custom": "<span style=\"color: #FFAA00\"> Небесный меч 🗡 </span>",
           "amount": 1,
-          "remainder": 3,
+          "remainder": 13,
           "enchant": [
             {
               "enchant_id": "fire_aspect",
@@ -27318,7 +27318,7 @@ export const dataShop = [
           "type_ru": "Пурпурная глазурованная керамика",
           "minecraft_custom": "<span style=\"color: #AA0000\"> Бич членистоногих </span>",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 0,
           "content": []
         },
         "item1": {
@@ -27336,7 +27336,7 @@ export const dataShop = [
           "type_ru": "Алмазный меч",
           "minecraft_custom": "<span style=\"color: #FFAA00\"> Разрубающий длинный меч 🗡 </span>",
           "amount": 1,
-          "remainder": 5,
+          "remainder": 8,
           "enchant": [
             {
               "enchant_id": "damage_arthropods",
@@ -27391,7 +27391,7 @@ export const dataShop = [
           "type_ru": "Алмазный меч",
           "minecraft_custom": "<span style=\"color: #FFAA00\"> Разрубающий меч 🗡 </span>",
           "amount": 1,
-          "remainder": 13,
+          "remainder": 0,
           "enchant": [
             {
               "enchant_id": "damage_arthropods",
@@ -27441,7 +27441,7 @@ export const dataShop = [
           "type_ru": "Лук",
           "minecraft_custom": "<span style=\"color: #AA00AA\"> Магический лук 🏹 </span>",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 8,
           "enchant": [
             {
               "enchant_id": "arrow_fire",
@@ -27486,7 +27486,7 @@ export const dataShop = [
           "type_ru": "Лук",
           "minecraft_custom": "<span style=\"color: #AA00AA\"> Улучшенный лук 🏹 </span>",
           "amount": 1,
-          "remainder": 9,
+          "remainder": 6,
           "enchant": [
             {
               "enchant_id": "arrow_fire",
@@ -27531,7 +27531,7 @@ export const dataShop = [
           "type_ru": "Арбалет",
           "minecraft_custom": "<span style=\"color: #AA00AA\"> Пронзающий арбалет 🏹 </span>",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 0,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -27806,7 +27806,7 @@ export const dataShop = [
           "type_ru": "Оранжевый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #FFAA00\"> Набор спектральных стрел </span>",
           "amount": 1,
-          "remainder": 5,
+          "remainder": 4,
           "content": [
             {
               "slot": 0,
@@ -27987,7 +27987,7 @@ export const dataShop = [
           "type_ru": "Белый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #FFFFFF\"> Набор стрел </span>",
           "amount": 1,
-          "remainder": 14,
+          "remainder": 0,
           "content": [
             {
               "slot": 0,
@@ -28168,7 +28168,7 @@ export const dataShop = [
           "type_ru": "Трезубец",
           "minecraft_custom": "<span style=\"color: #5555FF\"> Повелитель молний 🔱 </span>",
           "amount": 1,
-          "remainder": 5,
+          "remainder": 14,
           "enchant": [
             {
               "enchant_id": "channeling",
@@ -28213,7 +28213,7 @@ export const dataShop = [
           "type_ru": "Трезубец",
           "minecraft_custom": "<span style=\"color: #5555FF\"> Повелитель морей 🔱 </span>",
           "amount": 1,
-          "remainder": 14,
+          "remainder": 12,
           "enchant": [
             {
               "enchant_id": "impaling",
@@ -28265,7 +28265,7 @@ export const dataShop = [
           "type": "shulker_box",
           "type_ru": "Шалкеровый ящик",
           "amount": 1,
-          "remainder": 9,
+          "remainder": 6,
           "content": [
             {
               "slot": 0,
@@ -28466,7 +28466,7 @@ export const dataShop = [
           "type_ru": "Жёлтый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #DCB20C\"> Элики опыта. N.Viento™ </span>",
           "amount": 1,
-          "remainder": 13,
+          "remainder": 1,
           "content": [
             {
               "slot": 0,
@@ -28647,7 +28647,7 @@ export const dataShop = [
           "type_ru": "Красный шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #B10000\">  Золотые яблочки. N.Viento™ </span>",
           "amount": 1,
-          "remainder": 12,
+          "remainder": 5,
           "content": [
             {
               "slot": 0,
@@ -28827,7 +28827,7 @@ export const dataShop = [
           "type": "golden_apple",
           "type_ru": "Золотое яблоко",
           "amount": 64,
-          "remainder": 9,
+          "remainder": 1,
           "content": []
         },
         "item1": {
@@ -28845,7 +28845,7 @@ export const dataShop = [
           "type_ru": "Оранжевый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #E5841B\"> Золотая морковка. N.Viento™ </span>",
           "amount": 1,
-          "remainder": 4,
+          "remainder": 11,
           "content": [
             {
               "slot": 0,
@@ -29026,7 +29026,7 @@ export const dataShop = [
           "type_ru": "Фиолетовый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #B57EDC\"> Перламутровые квампы. N.Viento™ </span>",
           "amount": 1,
-          "remainder": 12,
+          "remainder": 13,
           "content": [
             {
               "slot": 0,
@@ -29206,7 +29206,7 @@ export const dataShop = [
           "type": "pearlescent_froglight",
           "type_ru": "Перламутровая квампа",
           "amount": 64,
-          "remainder": 12,
+          "remainder": 8,
           "content": []
         },
         "item1": {
@@ -29224,7 +29224,7 @@ export const dataShop = [
           "type_ru": "Жёлтый шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #F0DB7D\"> Охристые квампы. N.Viento™ </span>",
           "amount": 1,
-          "remainder": 15,
+          "remainder": 5,
           "content": [
             {
               "slot": 0,
@@ -29404,7 +29404,7 @@ export const dataShop = [
           "type": "ochre_froglight",
           "type_ru": "Охристая квампа",
           "amount": 64,
-          "remainder": 8,
+          "remainder": 1,
           "content": []
         },
         "item1": {
@@ -29422,7 +29422,7 @@ export const dataShop = [
           "type_ru": "Зелёный шалкеровый ящик",
           "minecraft_custom": "<span style=\"color: #63B76C\"> Малахитовые квампы. N.Viento™ </span>",
           "amount": 1,
-          "remainder": 13,
+          "remainder": 10,
           "content": [
             {
               "slot": 0,
@@ -29602,7 +29602,7 @@ export const dataShop = [
           "type": "verdant_froglight",
           "type_ru": "Малахитовая квампа",
           "amount": 64,
-          "remainder": 12,
+          "remainder": 2,
           "content": []
         },
         "item1": {
@@ -29619,7 +29619,7 @@ export const dataShop = [
           "type": "shroomlight",
           "type_ru": "Грибосвет",
           "amount": 64,
-          "remainder": 1,
+          "remainder": 4,
           "content": []
         },
         "item1": {
@@ -29636,7 +29636,7 @@ export const dataShop = [
           "type": "turtle_egg",
           "type_ru": "Черепашье яйцо",
           "amount": 32,
-          "remainder": 9,
+          "remainder": 3,
           "content": []
         },
         "item1": {
@@ -29653,7 +29653,7 @@ export const dataShop = [
           "type": "cobweb",
           "type_ru": "Паутина",
           "amount": 16,
-          "remainder": 13,
+          "remainder": 5,
           "content": []
         },
         "item1": {
@@ -29670,7 +29670,7 @@ export const dataShop = [
           "type": "amethyst_cluster",
           "type_ru": "Аметистовая друза",
           "amount": 16,
-          "remainder": 4,
+          "remainder": 3,
           "content": []
         },
         "item1": {
@@ -29687,7 +29687,7 @@ export const dataShop = [
           "type": "pointed_dripstone",
           "type_ru": "Капельник",
           "amount": 32,
-          "remainder": 9,
+          "remainder": 3,
           "content": []
         },
         "item1": {
@@ -29704,7 +29704,7 @@ export const dataShop = [
           "type": "glow_ink_sac",
           "type_ru": "Светящийся чернильный мешок",
           "amount": 16,
-          "remainder": 11,
+          "remainder": 6,
           "content": []
         },
         "item1": {
@@ -29721,7 +29721,7 @@ export const dataShop = [
           "type": "sculk_shrieker",
           "type_ru": "Скалковый крикун",
           "amount": 16,
-          "remainder": 7,
+          "remainder": 14,
           "content": []
         },
         "item1": {
@@ -29738,7 +29738,7 @@ export const dataShop = [
           "type": "sculk_sensor",
           "type_ru": "Скалк-сенсор",
           "amount": 32,
-          "remainder": 12,
+          "remainder": 3,
           "content": []
         },
         "item1": {
@@ -29755,7 +29755,7 @@ export const dataShop = [
           "type": "mud_bricks",
           "type_ru": "Саманные кирпичи",
           "amount": 64,
-          "remainder": 5,
+          "remainder": 15,
           "content": []
         },
         "item1": {
@@ -29802,7 +29802,7 @@ export const dataShop = [
           "type": "nether_wart",
           "type_ru": "Незерский нарост",
           "amount": 32,
-          "remainder": 15,
+          "remainder": 7,
           "content": []
         },
         "item1": {
@@ -29819,7 +29819,7 @@ export const dataShop = [
           "type": "dead_bush",
           "type_ru": "Мёртвый куст",
           "amount": 16,
-          "remainder": 15,
+          "remainder": 6,
           "content": []
         },
         "item1": {
@@ -29836,7 +29836,7 @@ export const dataShop = [
           "type": "dragon_breath",
           "type_ru": "Драконье дыхание",
           "amount": 16,
-          "remainder": 12,
+          "remainder": 15,
           "content": []
         },
         "item1": {
@@ -29866,7 +29866,7 @@ export const dataShop = [
           "type": "netherite_upgrade_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 5,
+          "remainder": 6,
           "content": []
         },
         "item1": {
@@ -29883,7 +29883,7 @@ export const dataShop = [
           "type": "sentry_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 5,
           "content": []
         },
         "item1": {
@@ -29900,7 +29900,7 @@ export const dataShop = [
           "type": "vex_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 4,
+          "remainder": 13,
           "content": []
         },
         "item1": {
@@ -29917,7 +29917,7 @@ export const dataShop = [
           "type": "wild_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 12,
+          "remainder": 7,
           "content": []
         },
         "item1": {
@@ -29934,7 +29934,7 @@ export const dataShop = [
           "type": "coast_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 14,
+          "remainder": 5,
           "content": []
         },
         "item1": {
@@ -29951,7 +29951,7 @@ export const dataShop = [
           "type": "dune_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 5,
+          "remainder": 2,
           "content": []
         },
         "item1": {
@@ -29968,7 +29968,7 @@ export const dataShop = [
           "type": "wayfinder_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 14,
+          "remainder": 12,
           "content": []
         },
         "item1": {
@@ -29985,7 +29985,7 @@ export const dataShop = [
           "type": "raiser_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 15,
+          "remainder": 10,
           "content": []
         },
         "item1": {
@@ -30002,7 +30002,7 @@ export const dataShop = [
           "type": "shaper_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 12,
           "content": []
         },
         "item1": {
@@ -30019,7 +30019,7 @@ export const dataShop = [
           "type": "host_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 8,
           "content": []
         },
         "item1": {
@@ -30036,7 +30036,7 @@ export const dataShop = [
           "type": "ward_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 10,
+          "remainder": 1,
           "content": []
         },
         "item1": {
@@ -30053,7 +30053,7 @@ export const dataShop = [
           "type": "silence_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 14,
+          "remainder": 4,
           "content": []
         },
         "item1": {
@@ -30070,7 +30070,7 @@ export const dataShop = [
           "type": "tide_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 3,
+          "remainder": 2,
           "content": []
         },
         "item1": {
@@ -30087,7 +30087,7 @@ export const dataShop = [
           "type": "snout_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 7,
+          "remainder": 15,
           "content": []
         },
         "item1": {
@@ -30104,7 +30104,7 @@ export const dataShop = [
           "type": "rib_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 14,
+          "remainder": 11,
           "content": []
         },
         "item1": {
@@ -30121,7 +30121,7 @@ export const dataShop = [
           "type": "eye_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 15,
+          "remainder": 6,
           "content": []
         },
         "item1": {
@@ -30138,7 +30138,7 @@ export const dataShop = [
           "type": "spire_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 0,
+          "remainder": 6,
           "content": []
         },
         "item1": {
@@ -30155,7 +30155,7 @@ export const dataShop = [
           "type": "netherite_ingot",
           "type_ru": "Незеритовый слиток",
           "amount": 1,
-          "remainder": 7,
+          "remainder": 12,
           "content": []
         },
         "item1": {
@@ -30172,7 +30172,7 @@ export const dataShop = [
           "type": "emerald",
           "type_ru": "Изумруд",
           "amount": 4,
-          "remainder": 0,
+          "remainder": 11,
           "content": []
         },
         "item1": {
@@ -30189,7 +30189,7 @@ export const dataShop = [
           "type": "diamond",
           "type_ru": "Алмаз",
           "amount": 2,
-          "remainder": 5,
+          "remainder": 6,
           "content": []
         },
         "item1": {
@@ -30223,7 +30223,7 @@ export const dataShop = [
           "type": "gold_ingot",
           "type_ru": "Золотой слиток",
           "amount": 4,
-          "remainder": 6,
+          "remainder": 14,
           "content": []
         },
         "item1": {
@@ -30240,7 +30240,7 @@ export const dataShop = [
           "type": "redstone",
           "type_ru": "Редстоуновая пыль",
           "amount": 4,
-          "remainder": 7,
+          "remainder": 13,
           "content": []
         },
         "item1": {
@@ -30257,7 +30257,7 @@ export const dataShop = [
           "type": "lapis_lazuli",
           "type_ru": "Лазурит",
           "amount": 4,
-          "remainder": 11,
+          "remainder": 8,
           "content": []
         },
         "item1": {
@@ -30274,7 +30274,7 @@ export const dataShop = [
           "type": "quartz",
           "type_ru": "Незер-кварц",
           "amount": 4,
-          "remainder": 14,
+          "remainder": 13,
           "content": []
         },
         "item1": {
@@ -30291,7 +30291,7 @@ export const dataShop = [
           "type": "amethyst_shard",
           "type_ru": "Осколок аметиста",
           "amount": 4,
-          "remainder": 4,
+          "remainder": 2,
           "content": []
         },
         "item1": {
@@ -30308,7 +30308,7 @@ export const dataShop = [
           "type": "copper_ingot",
           "type_ru": "Медный слиток",
           "amount": 4,
-          "remainder": 7,
+          "remainder": 13,
           "content": []
         },
         "item1": {
@@ -30338,7 +30338,7 @@ export const dataShop = [
           "type": "netherite_chestplate",
           "type_ru": "Незеритовый нагрудник",
           "amount": 1,
-          "remainder": 15,
+          "remainder": 14,
           "trim": {
             "material": "redstone",
             "material_ru": "Редстоун",
@@ -30367,7 +30367,7 @@ export const dataShop = [
           "type": "netherite_chestplate",
           "type_ru": "Незеритовый нагрудник",
           "amount": 1,
-          "remainder": 14,
+          "remainder": 15,
           "trim": {
             "material": "redstone",
             "material_ru": "Редстоун",
@@ -30396,7 +30396,7 @@ export const dataShop = [
           "type": "netherite_chestplate",
           "type_ru": "Незеритовый нагрудник",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 10,
           "trim": {
             "material": "redstone",
             "material_ru": "Редстоун",
@@ -30425,7 +30425,7 @@ export const dataShop = [
           "type": "netherite_chestplate",
           "type_ru": "Незеритовый нагрудник",
           "amount": 1,
-          "remainder": 10,
+          "remainder": 6,
           "trim": {
             "material": "redstone",
             "material_ru": "Редстоун",
@@ -30454,7 +30454,7 @@ export const dataShop = [
           "type": "netherite_chestplate",
           "type_ru": "Незеритовый нагрудник",
           "amount": 1,
-          "remainder": 9,
+          "remainder": 15,
           "trim": {
             "material": "redstone",
             "material_ru": "Редстоун",
@@ -30483,7 +30483,7 @@ export const dataShop = [
           "type": "netherite_chestplate",
           "type_ru": "Незеритовый нагрудник",
           "amount": 1,
-          "remainder": 0,
+          "remainder": 7,
           "trim": {
             "material": "redstone",
             "material_ru": "Редстоун",
@@ -30512,7 +30512,7 @@ export const dataShop = [
           "type": "netherite_chestplate",
           "type_ru": "Незеритовый нагрудник",
           "amount": 1,
-          "remainder": 10,
+          "remainder": 0,
           "trim": {
             "material": "redstone",
             "material_ru": "Редстоун",
@@ -30541,7 +30541,7 @@ export const dataShop = [
           "type": "netherite_chestplate",
           "type_ru": "Незеритовый нагрудник",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 4,
           "trim": {
             "material": "redstone",
             "material_ru": "Редстоун",
@@ -30570,7 +30570,7 @@ export const dataShop = [
           "type": "netherite_chestplate",
           "type_ru": "Незеритовый нагрудник",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 8,
           "trim": {
             "material": "redstone",
             "material_ru": "Редстоун",
@@ -30599,7 +30599,7 @@ export const dataShop = [
           "type": "netherite_chestplate",
           "type_ru": "Незеритовый нагрудник",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 0,
           "trim": {
             "material": "redstone",
             "material_ru": "Редстоун",
@@ -30628,7 +30628,7 @@ export const dataShop = [
           "type": "netherite_chestplate",
           "type_ru": "Незеритовый нагрудник",
           "amount": 1,
-          "remainder": 15,
+          "remainder": 2,
           "trim": {
             "material": "redstone",
             "material_ru": "Редстоун",
@@ -30657,7 +30657,7 @@ export const dataShop = [
           "type": "netherite_chestplate",
           "type_ru": "Незеритовый нагрудник",
           "amount": 1,
-          "remainder": 2,
+          "remainder": 8,
           "trim": {
             "material": "redstone",
             "material_ru": "Редстоун",
@@ -30686,7 +30686,7 @@ export const dataShop = [
           "type": "netherite_chestplate",
           "type_ru": "Незеритовый нагрудник",
           "amount": 1,
-          "remainder": 13,
+          "remainder": 0,
           "trim": {
             "material": "redstone",
             "material_ru": "Редстоун",
@@ -30715,7 +30715,7 @@ export const dataShop = [
           "type": "netherite_chestplate",
           "type_ru": "Незеритовый нагрудник",
           "amount": 1,
-          "remainder": 2,
+          "remainder": 11,
           "trim": {
             "material": "redstone",
             "material_ru": "Редстоун",
@@ -30744,7 +30744,7 @@ export const dataShop = [
           "type": "netherite_chestplate",
           "type_ru": "Незеритовый нагрудник",
           "amount": 1,
-          "remainder": 7,
+          "remainder": 10,
           "trim": {
             "material": "redstone",
             "material_ru": "Редстоун",
@@ -30773,7 +30773,7 @@ export const dataShop = [
           "type": "netherite_chestplate",
           "type_ru": "Незеритовый нагрудник",
           "amount": 1,
-          "remainder": 10,
+          "remainder": 8,
           "trim": {
             "material": "redstone",
             "material_ru": "Редстоун",
@@ -30802,7 +30802,7 @@ export const dataShop = [
           "type": "white_shulker_box",
           "type_ru": "Белый шалкеровый ящик",
           "amount": 1,
-          "remainder": 3,
+          "remainder": 5,
           "content": [
             {
               "slot": 0,
@@ -31205,7 +31205,7 @@ export const dataShop = [
           "type": "netherite_chestplate",
           "type_ru": "Незеритовый нагрудник",
           "amount": 1,
-          "remainder": 14,
+          "remainder": 0,
           "trim": {
             "material": "redstone",
             "material_ru": "Редстоун",
@@ -31234,7 +31234,7 @@ export const dataShop = [
           "type": "netherite_chestplate",
           "type_ru": "Незеритовый нагрудник",
           "amount": 1,
-          "remainder": 7,
+          "remainder": 0,
           "trim": {
             "material": "redstone",
             "material_ru": "Редстоун",
@@ -31263,7 +31263,7 @@ export const dataShop = [
           "type": "netherite_chestplate",
           "type_ru": "Незеритовый нагрудник",
           "amount": 1,
-          "remainder": 0,
+          "remainder": 14,
           "trim": {
             "material": "copper",
             "material_ru": "Медь",
@@ -31292,7 +31292,7 @@ export const dataShop = [
           "type": "netherite_chestplate",
           "type_ru": "Незеритовый нагрудник",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 10,
           "trim": {
             "material": "amethyst",
             "material_ru": "Аметист",
@@ -31321,7 +31321,7 @@ export const dataShop = [
           "type": "netherite_chestplate",
           "type_ru": "Незеритовый нагрудник",
           "amount": 1,
-          "remainder": 12,
+          "remainder": 13,
           "trim": {
             "material": "diamond",
             "material_ru": "Алмаз",
@@ -31350,7 +31350,7 @@ export const dataShop = [
           "type": "netherite_chestplate",
           "type_ru": "Незеритовый нагрудник",
           "amount": 1,
-          "remainder": 8,
+          "remainder": 7,
           "trim": {
             "material": "gold",
             "material_ru": "Золото",
@@ -31408,7 +31408,7 @@ export const dataShop = [
           "type": "netherite_chestplate",
           "type_ru": "Незеритовый нагрудник",
           "amount": 1,
-          "remainder": 5,
+          "remainder": 14,
           "trim": {
             "material": "lapis",
             "material_ru": "Лазурит",
@@ -31466,7 +31466,7 @@ export const dataShop = [
           "type": "netherite_chestplate",
           "type_ru": "Незеритовый нагрудник",
           "amount": 1,
-          "remainder": 4,
+          "remainder": 5,
           "trim": {
             "material": "netherite",
             "material_ru": "Незерит",
@@ -31495,7 +31495,7 @@ export const dataShop = [
           "type": "white_shulker_box",
           "type_ru": "Белый шалкеровый ящик",
           "amount": 1,
-          "remainder": 15,
+          "remainder": 12,
           "content": [
             {
               "slot": 0,
@@ -31754,7 +31754,7 @@ export const dataShop = [
           "type": "netherite_chestplate",
           "type_ru": "Незеритовый нагрудник",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 10,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -31797,7 +31797,7 @@ export const dataShop = [
           "type": "netherite_chestplate",
           "type_ru": "Незеритовый нагрудник",
           "amount": 1,
-          "remainder": 8,
+          "remainder": 1,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -31840,7 +31840,7 @@ export const dataShop = [
           "type": "netherite_chestplate",
           "type_ru": "Незеритовый нагрудник",
           "amount": 1,
-          "remainder": 15,
+          "remainder": 8,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -31883,7 +31883,7 @@ export const dataShop = [
           "type": "netherite_chestplate",
           "type_ru": "Незеритовый нагрудник",
           "amount": 1,
-          "remainder": 15,
+          "remainder": 12,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -31926,7 +31926,7 @@ export const dataShop = [
           "type": "netherite_chestplate",
           "type_ru": "Незеритовый нагрудник",
           "amount": 1,
-          "remainder": 14,
+          "remainder": 13,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -31969,7 +31969,7 @@ export const dataShop = [
           "type": "netherite_chestplate",
           "type_ru": "Незеритовый нагрудник",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 10,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -32055,7 +32055,7 @@ export const dataShop = [
           "type": "netherite_chestplate",
           "type_ru": "Незеритовый нагрудник",
           "amount": 1,
-          "remainder": 10,
+          "remainder": 8,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -32141,7 +32141,7 @@ export const dataShop = [
           "type": "netherite_chestplate",
           "type_ru": "Незеритовый нагрудник",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 4,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -32184,7 +32184,7 @@ export const dataShop = [
           "type": "white_shulker_box",
           "type_ru": "Белый шалкеровый ящик",
           "amount": 1,
-          "remainder": 13,
+          "remainder": 5,
           "content": [
             {
               "slot": 0,
@@ -32596,7 +32596,7 @@ export const dataShop = [
           "type": "sentry_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 13,
+          "remainder": 4,
           "content": []
         },
         "item1": {
@@ -32613,7 +32613,7 @@ export const dataShop = [
           "type": "vex_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 2,
           "content": []
         },
         "item1": {
@@ -32630,7 +32630,7 @@ export const dataShop = [
           "type": "wild_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 6,
           "content": []
         },
         "item1": {
@@ -32647,7 +32647,7 @@ export const dataShop = [
           "type": "coast_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 4,
+          "remainder": 0,
           "content": []
         },
         "item1": {
@@ -32664,7 +32664,7 @@ export const dataShop = [
           "type": "dune_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 3,
+          "remainder": 14,
           "content": []
         },
         "item1": {
@@ -32681,7 +32681,7 @@ export const dataShop = [
           "type": "wayfinder_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 14,
+          "remainder": 7,
           "content": []
         },
         "item1": {
@@ -32698,7 +32698,7 @@ export const dataShop = [
           "type": "raiser_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 8,
+          "remainder": 15,
           "content": []
         },
         "item1": {
@@ -32715,7 +32715,7 @@ export const dataShop = [
           "type": "shaper_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 4,
+          "remainder": 14,
           "content": []
         },
         "item1": {
@@ -32732,7 +32732,7 @@ export const dataShop = [
           "type": "host_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 8,
+          "remainder": 11,
           "content": []
         },
         "item1": {
@@ -32749,7 +32749,7 @@ export const dataShop = [
           "type": "ward_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 15,
+          "remainder": 0,
           "content": []
         },
         "item1": {
@@ -32766,7 +32766,7 @@ export const dataShop = [
           "type": "silence_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 8,
+          "remainder": 3,
           "content": []
         },
         "item1": {
@@ -32783,7 +32783,7 @@ export const dataShop = [
           "type": "tide_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 7,
+          "remainder": 2,
           "content": []
         },
         "item1": {
@@ -32800,7 +32800,7 @@ export const dataShop = [
           "type": "snout_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 6,
           "content": []
         },
         "item1": {
@@ -32817,7 +32817,7 @@ export const dataShop = [
           "type": "rib_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 7,
+          "remainder": 5,
           "content": []
         },
         "item1": {
@@ -32834,7 +32834,7 @@ export const dataShop = [
           "type": "eye_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 3,
+          "remainder": 13,
           "content": []
         },
         "item1": {
@@ -32851,7 +32851,7 @@ export const dataShop = [
           "type": "spire_armor_trim_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 12,
+          "remainder": 4,
           "content": []
         },
         "item1": {
@@ -32868,7 +32868,7 @@ export const dataShop = [
           "type": "netherite_upgrade_smithing_template",
           "type_ru": "Кузнечный шаблон",
           "amount": 1,
-          "remainder": 0,
+          "remainder": 15,
           "content": []
         },
         "item1": {
@@ -32885,7 +32885,7 @@ export const dataShop = [
           "type": "white_shulker_box",
           "type_ru": "Белый шалкеровый ящик",
           "amount": 1,
-          "remainder": 0,
+          "remainder": 8,
           "content": [
             {
               "slot": 0,
@@ -32953,7 +32953,7 @@ export const dataShop = [
           "type": "angler_pottery_sherd",
           "type_ru": "Глиняный черепок «Рыбак»",
           "amount": 1,
-          "remainder": 12,
+          "remainder": 1,
           "content": []
         },
         "item1": {
@@ -32970,7 +32970,7 @@ export const dataShop = [
           "type": "archer_pottery_sherd",
           "type_ru": "Глиняный черепок «Лучник»",
           "amount": 1,
-          "remainder": 0,
+          "remainder": 3,
           "content": []
         },
         "item1": {
@@ -32987,7 +32987,7 @@ export const dataShop = [
           "type": "arms_up_pottery_sherd",
           "type_ru": "Глиняный черепок «Руки вверх»",
           "amount": 1,
-          "remainder": 14,
+          "remainder": 10,
           "content": []
         },
         "item1": {
@@ -33004,7 +33004,7 @@ export const dataShop = [
           "type": "blade_pottery_sherd",
           "type_ru": "Глиняный черепок «Клинок»",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 15,
           "content": []
         },
         "item1": {
@@ -33021,7 +33021,7 @@ export const dataShop = [
           "type": "brewer_pottery_sherd",
           "type_ru": "Глиняный черепок «Зельевар»",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 9,
           "content": []
         },
         "item1": {
@@ -33038,7 +33038,7 @@ export const dataShop = [
           "type": "burn_pottery_sherd",
           "type_ru": "Глиняный черепок «Пламя»",
           "amount": 1,
-          "remainder": 9,
+          "remainder": 2,
           "content": []
         },
         "item1": {
@@ -33055,7 +33055,7 @@ export const dataShop = [
           "type": "danger_pottery_sherd",
           "type_ru": "Глиняный черепок «Опасность»",
           "amount": 1,
-          "remainder": 8,
+          "remainder": 14,
           "content": []
         },
         "item1": {
@@ -33072,7 +33072,7 @@ export const dataShop = [
           "type": "danger_pottery_sherd",
           "type_ru": "Глиняный черепок «Опасность»",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 3,
           "content": []
         },
         "item1": {
@@ -33089,7 +33089,7 @@ export const dataShop = [
           "type": "explorer_pottery_sherd",
           "type_ru": "Глиняный черепок «Исследователь»",
           "amount": 1,
-          "remainder": 8,
+          "remainder": 6,
           "content": []
         },
         "item1": {
@@ -33140,7 +33140,7 @@ export const dataShop = [
           "type": "mourner_pottery_sherd",
           "type_ru": "Глиняный черепок «Скорбь»",
           "amount": 1,
-          "remainder": 12,
+          "remainder": 3,
           "content": []
         },
         "item1": {
@@ -33157,7 +33157,7 @@ export const dataShop = [
           "type": "plenty_pottery_sherd",
           "type_ru": "Глиняный черепок «Изобилие»",
           "amount": 1,
-          "remainder": 0,
+          "remainder": 12,
           "content": []
         },
         "item1": {
@@ -33174,7 +33174,7 @@ export const dataShop = [
           "type": "prize_pottery_sherd",
           "type_ru": "Глиняный черепок «Награда»",
           "amount": 1,
-          "remainder": 10,
+          "remainder": 5,
           "content": []
         },
         "item1": {
@@ -33191,7 +33191,7 @@ export const dataShop = [
           "type": "sheaf_pottery_sherd",
           "type_ru": "Глиняный черепок «Пучок»",
           "amount": 1,
-          "remainder": 3,
+          "remainder": 11,
           "content": []
         },
         "item1": {
@@ -33208,7 +33208,7 @@ export const dataShop = [
           "type": "shelter_pottery_sherd",
           "type_ru": "Глиняный черепок «Убежище»",
           "amount": 1,
-          "remainder": 4,
+          "remainder": 7,
           "content": []
         },
         "item1": {
@@ -33225,7 +33225,7 @@ export const dataShop = [
           "type": "skull_pottery_sherd",
           "type_ru": "Глиняный черепок «Череп»",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 8,
           "content": []
         },
         "item1": {
@@ -33242,7 +33242,7 @@ export const dataShop = [
           "type": "snort_pottery_sherd",
           "type_ru": "Глиняный черепок «Нюхач»",
           "amount": 1,
-          "remainder": 4,
+          "remainder": 0,
           "content": []
         },
         "item1": {
@@ -33272,7 +33272,7 @@ export const dataShop = [
           "type": "leather_helmet",
           "type_ru": "Кожаный шлем",
           "amount": 1,
-          "remainder": 12,
+          "remainder": 2,
           "content": []
         },
         "item1": {
@@ -33306,7 +33306,7 @@ export const dataShop = [
           "type": "leather_leggings",
           "type_ru": "Кожаные штаны",
           "amount": 1,
-          "remainder": 0,
+          "remainder": 3,
           "content": []
         },
         "item1": {
@@ -33323,7 +33323,7 @@ export const dataShop = [
           "type": "leather_boots",
           "type_ru": "Кожаные ботинки",
           "amount": 1,
-          "remainder": 5,
+          "remainder": 15,
           "content": []
         },
         "item1": {
@@ -33340,7 +33340,7 @@ export const dataShop = [
           "type": "leather_leggings",
           "type_ru": "Кожаные штаны",
           "amount": 1,
-          "remainder": 15,
+          "remainder": 13,
           "leather_color": {
             "red": 181,
             "blue": 118,
@@ -33367,7 +33367,7 @@ export const dataShop = [
           "type": "leather_chestplate",
           "type_ru": "Кожаная куртка",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 8,
           "leather_color": {
             "red": 181,
             "blue": 118,
@@ -33394,7 +33394,7 @@ export const dataShop = [
           "type": "leather_helmet",
           "type_ru": "Кожаный шлем",
           "amount": 1,
-          "remainder": 0,
+          "remainder": 11,
           "leather_color": {
             "red": 181,
             "blue": 118,
@@ -33421,7 +33421,7 @@ export const dataShop = [
           "type": "leather_boots",
           "type_ru": "Кожаные ботинки",
           "amount": 1,
-          "remainder": 14,
+          "remainder": 15,
           "leather_color": {
             "red": 181,
             "blue": 118,
@@ -33448,7 +33448,7 @@ export const dataShop = [
           "type": "leather_helmet",
           "type_ru": "Кожаный шлем",
           "amount": 1,
-          "remainder": 3,
+          "remainder": 12,
           "leather_color": {
             "red": 128,
             "blue": 31,
@@ -33475,7 +33475,7 @@ export const dataShop = [
           "type": "leather_chestplate",
           "type_ru": "Кожаная куртка",
           "amount": 1,
-          "remainder": 0,
+          "remainder": 4,
           "leather_color": {
             "red": 128,
             "blue": 31,
@@ -33502,7 +33502,7 @@ export const dataShop = [
           "type": "leather_leggings",
           "type_ru": "Кожаные штаны",
           "amount": 1,
-          "remainder": 15,
+          "remainder": 13,
           "leather_color": {
             "red": 128,
             "blue": 31,
@@ -33529,7 +33529,7 @@ export const dataShop = [
           "type": "leather_boots",
           "type_ru": "Кожаные ботинки",
           "amount": 1,
-          "remainder": 10,
+          "remainder": 12,
           "leather_color": {
             "red": 128,
             "blue": 31,
@@ -33556,7 +33556,7 @@ export const dataShop = [
           "type": "white_shulker_box",
           "type_ru": "Белый шалкеровый ящик",
           "amount": 1,
-          "remainder": 5,
+          "remainder": 6,
           "content": [
             {
               "slot": 0,
@@ -33812,7 +33812,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 4,
+          "remainder": 15,
           "banner_pattern": [
             {
               "color": "red",
@@ -33841,7 +33841,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 4,
           "banner_pattern": [
             {
               "color": "red",
@@ -33870,7 +33870,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 10,
+          "remainder": 14,
           "banner_pattern": [
             {
               "color": "red",
@@ -33899,7 +33899,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 13,
           "banner_pattern": [
             {
               "color": "red",
@@ -33928,7 +33928,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 7,
+          "remainder": 13,
           "banner_pattern": [
             {
               "color": "red",
@@ -33957,7 +33957,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 14,
           "banner_pattern": [
             {
               "color": "red",
@@ -33986,7 +33986,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 13,
+          "remainder": 10,
           "banner_pattern": [
             {
               "color": "red",
@@ -34015,7 +34015,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 9,
+          "remainder": 14,
           "banner_pattern": [
             {
               "color": "red",
@@ -34044,7 +34044,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 14,
+          "remainder": 15,
           "banner_pattern": [
             {
               "color": "red",
@@ -34073,7 +34073,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 7,
           "banner_pattern": [
             {
               "color": "red",
@@ -34102,7 +34102,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 9,
+          "remainder": 7,
           "banner_pattern": [
             {
               "color": "red",
@@ -34131,7 +34131,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 10,
+          "remainder": 8,
           "banner_pattern": [
             {
               "color": "red",
@@ -34160,7 +34160,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 0,
+          "remainder": 7,
           "banner_pattern": [
             {
               "color": "red",
@@ -34189,7 +34189,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 4,
           "banner_pattern": [
             {
               "color": "red",
@@ -34218,7 +34218,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 4,
+          "remainder": 5,
           "banner_pattern": [
             {
               "color": "red",
@@ -34276,7 +34276,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 12,
+          "remainder": 0,
           "banner_pattern": [
             {
               "color": "red",
@@ -34305,7 +34305,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 5,
+          "remainder": 6,
           "banner_pattern": [
             {
               "color": "red",
@@ -34334,7 +34334,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 9,
+          "remainder": 5,
           "banner_pattern": [
             {
               "color": "red",
@@ -34363,7 +34363,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 4,
+          "remainder": 6,
           "banner_pattern": [
             {
               "color": "red",
@@ -34392,7 +34392,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 10,
+          "remainder": 9,
           "banner_pattern": [
             {
               "color": "red",
@@ -34421,7 +34421,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 0,
+          "remainder": 13,
           "banner_pattern": [
             {
               "color": "red",
@@ -34450,7 +34450,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 3,
+          "remainder": 10,
           "banner_pattern": [
             {
               "color": "red",
@@ -34479,7 +34479,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 0,
+          "remainder": 6,
           "banner_pattern": [
             {
               "color": "red",
@@ -34508,7 +34508,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 2,
+          "remainder": 13,
           "banner_pattern": [
             {
               "color": "red",
@@ -34537,7 +34537,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 10,
+          "remainder": 9,
           "banner_pattern": [
             {
               "color": "red",
@@ -34566,7 +34566,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 15,
+          "remainder": 1,
           "banner_pattern": [
             {
               "color": "red",
@@ -34595,7 +34595,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 15,
           "banner_pattern": [
             {
               "color": "red",
@@ -34624,7 +34624,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 4,
+          "remainder": 7,
           "banner_pattern": [
             {
               "color": "red",
@@ -34653,7 +34653,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 6,
           "banner_pattern": [
             {
               "color": "red",
@@ -34682,7 +34682,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 13,
+          "remainder": 7,
           "banner_pattern": [
             {
               "color": "red",
@@ -34711,7 +34711,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 13,
           "banner_pattern": [
             {
               "color": "red",
@@ -34740,7 +34740,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 5,
           "banner_pattern": [
             {
               "color": "red",
@@ -34769,7 +34769,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 7,
+          "remainder": 15,
           "banner_pattern": [
             {
               "color": "red",
@@ -34798,7 +34798,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 14,
+          "remainder": 15,
           "banner_pattern": [
             {
               "color": "red",
@@ -34827,7 +34827,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 3,
+          "remainder": 13,
           "banner_pattern": [
             {
               "color": "red",
@@ -34856,7 +34856,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 9,
           "banner_pattern": [
             {
               "color": "red",
@@ -34885,7 +34885,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 2,
+          "remainder": 12,
           "banner_pattern": [
             {
               "color": "red",
@@ -34914,7 +34914,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 0,
+          "remainder": 9,
           "banner_pattern": [
             {
               "color": "red",
@@ -34943,7 +34943,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 12,
           "banner_pattern": [
             {
               "color": "red",
@@ -34972,7 +34972,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 7,
+          "remainder": 8,
           "banner_pattern": [
             {
               "color": "cyan",
@@ -35057,7 +35057,7 @@ export const dataShop = [
           "type": "white_shulker_box",
           "type_ru": "Белый шалкеровый ящик",
           "amount": 1,
-          "remainder": 9,
+          "remainder": 4,
           "content": [
             {
               "slot": 0,
@@ -35724,7 +35724,7 @@ export const dataShop = [
           "type": "white_shulker_box",
           "type_ru": "Белый шалкеровый ящик",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 12,
           "content": [
             {
               "slot": 0,
@@ -36135,7 +36135,7 @@ export const dataShop = [
           "type": "gray_banner",
           "type_ru": "Серый флаг",
           "amount": 1,
-          "remainder": 2,
+          "remainder": 1,
           "banner_pattern": [
             {
               "color": "white",
@@ -36196,7 +36196,7 @@ export const dataShop = [
           "type": "white_shulker_box",
           "type_ru": "Белый шалкеровый ящик",
           "amount": 1,
-          "remainder": 14,
+          "remainder": 0,
           "content": [
             {
               "slot": 0,
@@ -36284,7 +36284,7 @@ export const dataShop = [
           "type": "black_banner",
           "type_ru": "Чёрный флаг",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 15,
           "banner_pattern": [
             {
               "color": "white",
@@ -36318,7 +36318,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 13,
+          "remainder": 6,
           "banner_pattern": [
             {
               "color": "light_gray",
@@ -36352,7 +36352,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 9,
+          "remainder": 8,
           "banner_pattern": [
             {
               "color": "gray",
@@ -36420,7 +36420,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 5,
+          "remainder": 8,
           "banner_pattern": [
             {
               "color": "brown",
@@ -36454,7 +36454,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 15,
           "banner_pattern": [
             {
               "color": "red",
@@ -36488,7 +36488,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 2,
+          "remainder": 4,
           "banner_pattern": [
             {
               "color": "orange",
@@ -36522,7 +36522,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 9,
+          "remainder": 0,
           "banner_pattern": [
             {
               "color": "yellow",
@@ -36556,7 +36556,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 6,
           "banner_pattern": [
             {
               "color": "lime",
@@ -36590,7 +36590,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 12,
           "banner_pattern": [
             {
               "color": "green",
@@ -36624,7 +36624,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 2,
+          "remainder": 9,
           "banner_pattern": [
             {
               "color": "cyan",
@@ -36658,7 +36658,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 7,
+          "remainder": 4,
           "banner_pattern": [
             {
               "color": "light_blue",
@@ -36692,7 +36692,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 15,
+          "remainder": 12,
           "banner_pattern": [
             {
               "color": "blue",
@@ -36726,7 +36726,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 10,
+          "remainder": 2,
           "banner_pattern": [
             {
               "color": "purple",
@@ -36760,7 +36760,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 13,
+          "remainder": 9,
           "banner_pattern": [
             {
               "color": "magenta",
@@ -36794,7 +36794,7 @@ export const dataShop = [
           "type": "white_banner",
           "type_ru": "Белый флаг",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 5,
           "banner_pattern": [
             {
               "color": "pink",
@@ -36828,7 +36828,7 @@ export const dataShop = [
           "type": "white_shulker_box",
           "type_ru": "Белый шалкеровый ящик",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 8,
           "content": [
             {
               "slot": 0,
@@ -37231,7 +37231,7 @@ export const dataShop = [
           "type": "white_shulker_box",
           "type_ru": "Белый шалкеровый ящик",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 0,
           "content": [
             {
               "slot": 0,
@@ -37343,7 +37343,7 @@ export const dataShop = [
           "type": "shield",
           "type_ru": "Щит",
           "amount": 1,
-          "remainder": 13,
+          "remainder": 3,
           "content": []
         },
         "item1": {
@@ -37360,7 +37360,7 @@ export const dataShop = [
           "type": "shield",
           "type_ru": "Щит",
           "amount": 1,
-          "remainder": 14,
+          "remainder": 9,
           "shield_color": {
             "color": "white",
             "color_ru": "Белый"
@@ -37453,7 +37453,7 @@ export const dataShop = [
           "type": "shield",
           "type_ru": "Щит",
           "amount": 1,
-          "remainder": 6,
+          "remainder": 15,
           "shield_color": {
             "color": "white",
             "color_ru": "Белый"
@@ -37490,7 +37490,7 @@ export const dataShop = [
           "type": "shield",
           "type_ru": "Щит",
           "amount": 1,
-          "remainder": 3,
+          "remainder": 7,
           "shield_color": {
             "color": "gray",
             "color_ru": "Сервый"
@@ -37559,7 +37559,7 @@ export const dataShop = [
           "type": "white_shulker_box",
           "type_ru": "Белый шалкеровый ящик",
           "amount": 1,
-          "remainder": 12,
+          "remainder": 5,
           "content": [
             {
               "slot": 4,
@@ -37850,7 +37850,7 @@ export const dataShop = [
           "type": "gray_banner",
           "type_ru": "Серый флаг",
           "amount": 1,
-          "remainder": 3,
+          "remainder": 6,
           "banner_pattern": [
             {
               "color": "white",
@@ -37911,7 +37911,7 @@ export const dataShop = [
           "type": "shield",
           "type_ru": "Щит",
           "amount": 1,
-          "remainder": 8,
+          "remainder": 4,
           "content": []
         },
         "item1": {
@@ -37928,7 +37928,7 @@ export const dataShop = [
           "type": "shield",
           "type_ru": "Щит",
           "amount": 1,
-          "remainder": 13,
+          "remainder": 5,
           "shield_color": {
             "color": "magenta",
             "color_ru": "Пурпурный"
@@ -37953,7 +37953,7 @@ export const dataShop = [
           "type": "shield",
           "type_ru": "Щит",
           "amount": 1,
-          "remainder": 5,
+          "remainder": 13,
           "shield_color": {
             "color": "black",
             "color_ru": "Чёрный"
@@ -37978,7 +37978,7 @@ export const dataShop = [
           "type": "shield",
           "type_ru": "Щит",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 13,
           "shield_color": {
             "color": "white",
             "color_ru": "Белый"
@@ -38003,7 +38003,7 @@ export const dataShop = [
           "type": "shield",
           "type_ru": "Щит",
           "amount": 1,
-          "remainder": 9,
+          "remainder": 10,
           "shield_color": {
             "color": "lime",
             "color_ru": "Лаймовый"
@@ -38028,7 +38028,7 @@ export const dataShop = [
           "type": "shield",
           "type_ru": "Щит",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 5,
           "shield_color": {
             "color": "white",
             "color_ru": "Белый"
@@ -38065,7 +38065,7 @@ export const dataShop = [
           "type": "white_shulker_box",
           "type_ru": "Белый шалкеровый ящик",
           "amount": 1,
-          "remainder": 9,
+          "remainder": 5,
           "content": [
             {
               "slot": 0,
@@ -38189,7 +38189,7 @@ export const dataShop = [
           "type": "leather_helmet",
           "type_ru": "Кожаный шлем",
           "amount": 1,
-          "remainder": 7,
+          "remainder": 12,
           "leather_color": {
             "red": 128,
             "blue": 31,
@@ -38216,7 +38216,7 @@ export const dataShop = [
           "type": "leather_helmet",
           "type_ru": "Кожаный шлем",
           "amount": 1,
-          "remainder": 8,
+          "remainder": 3,
           "leather_color": {
             "red": 181,
             "blue": 118,
@@ -38260,7 +38260,7 @@ export const dataShop = [
           "type": "leather_chestplate",
           "type_ru": "Кожаная куртка",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 14,
           "leather_color": {
             "red": 128,
             "blue": 31,
@@ -38287,7 +38287,7 @@ export const dataShop = [
           "type": "leather_chestplate",
           "type_ru": "Кожаная куртка",
           "amount": 1,
-          "remainder": 9,
+          "remainder": 8,
           "leather_color": {
             "red": 181,
             "blue": 118,
@@ -38314,7 +38314,7 @@ export const dataShop = [
           "type": "leather_chestplate",
           "type_ru": "Кожаная куртка",
           "amount": 1,
-          "remainder": 9,
+          "remainder": 0,
           "content": []
         },
         "item1": {
@@ -38331,7 +38331,7 @@ export const dataShop = [
           "type": "leather_leggings",
           "type_ru": "Кожаные штаны",
           "amount": 1,
-          "remainder": 1,
+          "remainder": 6,
           "leather_color": {
             "red": 128,
             "blue": 31,
@@ -38358,7 +38358,7 @@ export const dataShop = [
           "type": "leather_leggings",
           "type_ru": "Кожаные штаны",
           "amount": 1,
-          "remainder": 15,
+          "remainder": 12,
           "leather_color": {
             "red": 181,
             "blue": 118,
@@ -38385,7 +38385,7 @@ export const dataShop = [
           "type": "leather_leggings",
           "type_ru": "Кожаные штаны",
           "amount": 1,
-          "remainder": 2,
+          "remainder": 15,
           "content": []
         },
         "item1": {
@@ -38402,7 +38402,7 @@ export const dataShop = [
           "type": "leather_boots",
           "type_ru": "Кожаные ботинки",
           "amount": 1,
-          "remainder": 15,
+          "remainder": 0,
           "leather_color": {
             "red": 128,
             "blue": 31,
@@ -38429,7 +38429,7 @@ export const dataShop = [
           "type": "leather_boots",
           "type_ru": "Кожаные ботинки",
           "amount": 1,
-          "remainder": 8,
+          "remainder": 0,
           "leather_color": {
             "red": 181,
             "blue": 118,
@@ -38456,7 +38456,7 @@ export const dataShop = [
           "type": "leather_boots",
           "type_ru": "Кожаные ботинки",
           "amount": 1,
-          "remainder": 2,
+          "remainder": 9,
           "content": []
         },
         "item1": {
@@ -38473,7 +38473,7 @@ export const dataShop = [
           "type": "white_shulker_box",
           "type_ru": "Белый шалкеровый ящик",
           "amount": 1,
-          "remainder": 3,
+          "remainder": 6,
           "content": [
             {
               "slot": 0,
@@ -38716,7 +38716,7 @@ export const dataShop = [
           "type": "leather_helmet",
           "type_ru": "Кожаный шлем",
           "amount": 1,
-          "remainder": 12,
+          "remainder": 3,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -38798,7 +38798,7 @@ export const dataShop = [
           "type": "leather_helmet",
           "type_ru": "Кожаный шлем",
           "amount": 1,
-          "remainder": 14,
+          "remainder": 11,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -38806,7 +38806,6 @@ export const dataShop = [
               "lvl": 1
             }
           ],
-          "leather_color": {},
           "content": []
         },
         "item1": {
@@ -38820,7 +38819,6 @@ export const dataShop = [
               "lvl": 1
             }
           ],
-          "leather_color": {},
           "content": []
         },
         "item2": {}
@@ -38831,7 +38829,7 @@ export const dataShop = [
           "type": "leather_chestplate",
           "type_ru": "Кожаная куртка",
           "amount": 1,
-          "remainder": 3,
+          "remainder": 5,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -38872,7 +38870,7 @@ export const dataShop = [
           "type": "leather_chestplate",
           "type_ru": "Кожаная куртка",
           "amount": 1,
-          "remainder": 10,
+          "remainder": 11,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -38913,7 +38911,7 @@ export const dataShop = [
           "type": "leather_chestplate",
           "type_ru": "Кожаная куртка",
           "amount": 1,
-          "remainder": 12,
+          "remainder": 11,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -38921,7 +38919,6 @@ export const dataShop = [
               "lvl": 1
             }
           ],
-          "leather_color": {},
           "content": []
         },
         "item1": {
@@ -38935,7 +38932,6 @@ export const dataShop = [
               "lvl": 1
             }
           ],
-          "leather_color": {},
           "content": []
         },
         "item2": {}
@@ -38946,7 +38942,7 @@ export const dataShop = [
           "type": "leather_leggings",
           "type_ru": "Кожаные штаны",
           "amount": 1,
-          "remainder": 2,
+          "remainder": 14,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -38987,7 +38983,7 @@ export const dataShop = [
           "type": "leather_leggings",
           "type_ru": "Кожаные штаны",
           "amount": 1,
-          "remainder": 3,
+          "remainder": 13,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -39028,7 +39024,7 @@ export const dataShop = [
           "type": "leather_leggings",
           "type_ru": "Кожаные штаны",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 13,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -39036,7 +39032,6 @@ export const dataShop = [
               "lvl": 1
             }
           ],
-          "leather_color": {},
           "content": []
         },
         "item1": {
@@ -39050,7 +39045,6 @@ export const dataShop = [
               "lvl": 1
             }
           ],
-          "leather_color": {},
           "content": []
         },
         "item2": {}
@@ -39061,7 +39055,7 @@ export const dataShop = [
           "type": "leather_boots",
           "type_ru": "Кожаные ботинки",
           "amount": 1,
-          "remainder": 11,
+          "remainder": 7,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -39102,7 +39096,7 @@ export const dataShop = [
           "type": "leather_boots",
           "type_ru": "Кожаные ботинки",
           "amount": 1,
-          "remainder": 8,
+          "remainder": 5,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -39143,7 +39137,7 @@ export const dataShop = [
           "type": "leather_boots",
           "type_ru": "Кожаные ботинки",
           "amount": 1,
-          "remainder": 12,
+          "remainder": 2,
           "enchant": [
             {
               "enchant_id": "mending",
@@ -39151,7 +39145,6 @@ export const dataShop = [
               "lvl": 1
             }
           ],
-          "leather_color": {},
           "content": []
         },
         "item1": {
@@ -39165,7 +39158,6 @@ export const dataShop = [
               "lvl": 1
             }
           ],
-          "leather_color": {},
           "content": []
         },
         "item2": {}
@@ -39176,7 +39168,7 @@ export const dataShop = [
           "type": "white_shulker_box",
           "type_ru": "Белый шалкеровый ящик",
           "amount": 1,
-          "remainder": 3,
+          "remainder": 7,
           "content": [
             {
               "slot": 0,
@@ -39824,7 +39816,7 @@ export const dataShop = [
           "type": "iron_horse_armor",
           "type_ru": "Железная конская броня",
           "amount": 1,
-          "remainder": 14,
+          "remainder": 9,
           "content": []
         },
         "item1": {
@@ -39846,7 +39838,7 @@ export const dataShop = [
           "type": "golden_horse_armor",
           "type_ru": "Золотая конская броня",
           "amount": 1,
-          "remainder": 9,
+          "remainder": 0,
           "content": []
         },
         "item1": {
@@ -39868,7 +39860,7 @@ export const dataShop = [
           "type": "diamond_horse_armor",
           "type_ru": "Алмазная конская броня",
           "amount": 1,
-          "remainder": 2,
+          "remainder": 3,
           "content": []
         },
         "item1": {
@@ -39890,7 +39882,7 @@ export const dataShop = [
           "type": "leather_horse_armor",
           "type_ru": "Кожаная конская броня",
           "amount": 1,
-          "remainder": 2,
+          "remainder": 12,
           "content": []
         },
         "item1": {
@@ -39912,7 +39904,7 @@ export const dataShop = [
           "type": "leather_horse_armor",
           "type_ru": "Кожаная конская броня",
           "amount": 1,
-          "remainder": 9,
+          "remainder": 11,
           "leather_color": {
             "red": 137,
             "blue": 184,
@@ -39949,7 +39941,7 @@ export const dataShop = [
           "type": "leather_horse_armor",
           "type_ru": "Кожаная конская броня",
           "amount": 1,
-          "remainder": 5,
+          "remainder": 1,
           "leather_color": {
             "red": 166,
             "blue": 37,
@@ -39986,7 +39978,7 @@ export const dataShop = [
           "type": "pink_shulker_box",
           "type_ru": "Розовый шалкеровый ящик",
           "amount": 1,
-          "remainder": 7,
+          "remainder": 12,
           "content": [
             {
               "slot": 0,

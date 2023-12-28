@@ -118,7 +118,7 @@ const MinecraftImage = ({item}) => {
         null
       }
 
-      {itemEnchant.length > 0 || itemStoredEnchant.length > 0
+      {(itemEnchant.length > 0 || itemStoredEnchant.length > 0) && itemNameId !== "enchanted_book"
         ?
         <div className={classNames(styles["enchant"])}>
           <LazyLoadImage

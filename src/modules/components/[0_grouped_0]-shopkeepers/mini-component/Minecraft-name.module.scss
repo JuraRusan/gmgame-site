@@ -4,7 +4,7 @@
   height: auto;
   line-height: 24px;
   width: max-content;
-  color: $color-3;
+  color: $site-color-2;
   font-weight: 400;
   font-size: 14px;
   font-family: $fontCustom2 !important;
@@ -15,7 +15,7 @@
     font-family: inherit !important;
     font-weight: inherit !important;
     font-size: 13px;
-    color: lighten($color-8, 25%);
+    color: lighten($site-color-8, 25%);
   }
 
   span {

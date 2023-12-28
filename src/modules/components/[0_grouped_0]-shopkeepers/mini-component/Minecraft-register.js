@@ -4,17 +4,14 @@ import React from "react";
 import styles from "./Minecraft-register.module.scss";
 
 
-const MinecraftRegister = (props) => {
+const MinecraftRegister = ({item}) => {
 
-  const minecraftItem = props.item
+  const goatHorn = item.instrument === undefined ? "" : `. [${item.instrument.instrument_type}]`;
+  const idPotion = item.potion === undefined ? "" : `. [${item.potion}]`;
+  const armorType = item.trim === undefined ? "" : `. [${item.trim.pattern}]`;
+  const armorMaterial = item.trim === undefined ? "" : `. [${item.trim.material}]`;
 
-  const itemNameId = minecraftItem.type;
-  const goatHorn = minecraftItem.instrument === undefined ? "" : `. [${minecraftItem.instrument.instrument_type}]`;
-  const idPotion = minecraftItem.potion === undefined ? "" : `. [${minecraftItem.potion}]`;
-  const armorType = minecraftItem.trim === undefined ? "" : `. [${minecraftItem.trim.pattern}]`;
-  const armorMaterial = minecraftItem.trim === undefined ? "" : `. [${minecraftItem.trim.material}]`;
-
-  let minecraftId = `minecraft:${itemNameId}`;
+  let minecraftId = `minecraft:${item.type}`;
   minecraftId += idPotion;
   minecraftId += goatHorn;
   minecraftId += armorType;

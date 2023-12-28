@@ -5,13 +5,11 @@ import {LazyLoadImage} from "react-lazy-load-image-component";
 import styles from "./Minecraft-armor-type.module.scss"
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
-const MinecraftArmorType = (props) => {
+const MinecraftArmorType = ({item}) => {
 
-  const minecraftItem = props.item
-
-  const itemNameArmor = minecraftItem.type;
-  const armorTrim = minecraftItem.trim.pattern;
-  const armorTrimMaterial = minecraftItem.trim.material
+  const itemNameArmor = item.type;
+  const armorTrim = item.trim.pattern;
+  const armorTrimMaterial = item.trim.material
 
   const getSourceHelmetBase = () => {
     if (itemNameArmor === "turtle_helmet") {

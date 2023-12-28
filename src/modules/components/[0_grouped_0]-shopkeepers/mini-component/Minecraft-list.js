@@ -3,9 +3,7 @@ import React from "react";
 
 import styles from "./Minecraft-list.module.scss"
 
-const MinecraftList = (props) => {
-
-  const minecraftItem = props.item
+const MinecraftList = ({item}) => {
 
   function renderEnchantItem(el) {
     const isSpecialEnchant = el.enchant_id_ru === "Проклятье утраты" || el.enchant_id_ru === "Проклятие несъёмности";
@@ -20,12 +18,12 @@ const MinecraftList = (props) => {
   return (
     <>
       <ul className={classNames(styles["listWrapper"])}>
-        {minecraftItem.enchant?.map((el, i) => (
+        {item.enchant?.map((el, i) => (
           <li className={classNames(styles["list"])} key={i}>
             {renderEnchantItem(el)}
           </li>
         ))}
-        {minecraftItem.stored_enchant?.map((el, i) => (
+        {item.stored_enchant?.map((el, i) => (
           <li className={classNames(styles["list"])} key={i}>
             {renderEnchantItem(el)}
           </li>

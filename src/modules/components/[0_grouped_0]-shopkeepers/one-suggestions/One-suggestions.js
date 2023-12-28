@@ -5,12 +5,7 @@ import OneItemNone from "../one-item/One-item-none";
 
 import styles from "./One-suggestions.module.scss"
 
-const OneSuggestions = (props) => {
-
-  const itemOne = props.itemOne
-  const itemTwo = props.itemTwo
-  const itemRes = props.itemRes
-
+const OneSuggestions = ({itemOne, itemTwo, itemRes, onClickOne, onClickTwo, onClickRes}) => {
   return (
     <div className={classNames(styles["one_suggestions_block"])}>
       <div className={classNames(styles["double_block"])}>
@@ -18,13 +13,13 @@ const OneSuggestions = (props) => {
           ?
           <OneItemNone/>
           :
-          <OneItem item={itemOne} onClick={props.onClickOne}/>
+          <OneItem item={itemOne} onClick={onClickOne}/>
         }
         {itemTwo.type_ru === undefined
           ?
           <OneItemNone/>
           :
-          <OneItem item={itemTwo} onClick={props.onClickTwo}/>
+          <OneItem item={itemTwo} onClick={onClickTwo}/>
         }
       </div>
       <span className={classNames(styles["arrow_suggestions"])}>&#10132;</span>
@@ -32,7 +27,7 @@ const OneSuggestions = (props) => {
         ?
         <OneItemNone/>
         :
-        <OneItem item={itemRes} onClick={props.onClickRes}/>
+        <OneItem item={itemRes} onClick={onClickRes}/>
       }
     </div>
   )

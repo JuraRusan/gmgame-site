@@ -3,23 +3,11 @@ import React from 'react';
 import MinecraftImage from "../mini-component/Minecraft-image";
 import MinecraftBanner from "../mini-component/Minecraft-banner";
 import MinecraftShield from "../mini-component/Minecraft-shield";
+import {completeArray} from "../function/CompleteArray";
 
 import styles from "./Shulker-box-mini.module.scss";
 
 const ShulkerBoxMini = ({item}) => {
-
-  function completeArray(arr) {
-    const filledArray = [];
-    for (let i = 0; i <= 26; i++) {
-      const item = arr.find((el) => Number(el.slot) === i);
-      if (item) {
-        filledArray.push(item);
-      } else {
-        filledArray.push({slot: String(i), type: null, type_ru: null, amount: null});
-      }
-    }
-    return filledArray;
-  }
 
   const filledArray = completeArray(item.content);
 

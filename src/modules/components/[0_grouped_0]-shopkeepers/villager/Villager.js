@@ -5,20 +5,17 @@ import {LazyLoadImage} from "react-lazy-load-image-component";
 import styles from "./Villager.module.scss";
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
-const Villager = (props) => {
-
-  const shopVillagerInfo = props.shop
-
+const Villager = ({shop}) => {
   return (
     <div className={classNames(styles["villager"])}>
       <div className={classNames(styles["villagerInfo"])}>
         <h4 className={classNames(styles["styleH4"])}>Владелец:
-          <span className={classNames(styles["color"])}>{shopVillagerInfo.ownerName}</span>
+          <span className={classNames(styles["color"])}>{shop.ownerName}</span>
         </h4>
         <h4 className={classNames(styles["styleH4"])}>Название:
-          {shopVillagerInfo.name === ""
+          {shop.name === ""
             ? <span className={classNames(styles["red"])}> - </span>
-            : <span className={classNames(styles["color"])}>{shopVillagerInfo.name}</span>
+            : <span className={classNames(styles["color"])}>{shop.name}</span>
           }
         </h4>
         <h4 className={classNames(styles["styleH4"])}>Discord:
@@ -26,18 +23,18 @@ const Villager = (props) => {
         </h4>
         <h4 className={classNames(styles["styleH4"])}>Расположение:</h4>
         <h4 className={classNames(styles["styleH4"], styles["left"])}>Х:
-          <span className={classNames(styles["color"])}>{shopVillagerInfo.coordinatesX}</span>
+          <span className={classNames(styles["color"])}>{shop.coordinatesX}</span>
         </h4>
         <h4 className={classNames(styles["styleH4"], styles["left"])}>Y:
-          <span className={classNames(styles["color"])}>{shopVillagerInfo.coordinatesY}</span>
+          <span className={classNames(styles["color"])}>{shop.coordinatesY}</span>
         </h4>
         <h4 className={classNames(styles["styleH4"], styles["left"])}>Z:
-          <span className={classNames(styles["color"])}>{shopVillagerInfo.coordinatesZ}</span>
+          <span className={classNames(styles["color"])}>{shop.coordinatesZ}</span>
         </h4>
         <h4 className={classNames(styles["styleH4"])}>Осталось предметов в наличии:
-          {/*{shopVillagerInfo.remainder < 1*/}
+          {/*{shop.remainder < 1*/}
           {/*  ? <span className={classNames(styles["red"])}>0</span>*/}
-          {/*  : <span className={classNames(styles["color"])}>{shopVillagerInfo.remainder}</span>*/}
+          {/*  : <span className={classNames(styles["color"])}>{shop.remainder}</span>*/}
           {/*}*/}
           <span className={classNames(styles["color"])}>Неизвестно</span>
         </h4>
@@ -46,7 +43,7 @@ const Villager = (props) => {
         <LazyLoadImage
           effect="blur"
           className={classNames(styles["wrapper"])}
-          src={`./site_assets/villager/${shopVillagerInfo.villagerType}_${shopVillagerInfo.profession}.webp`}
+          src={`./site_assets/villager/${shop.villagerType}_${shop.profession}.webp`}
           width="auto"
           height="100%"
           alt="none"
