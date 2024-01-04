@@ -43,6 +43,19 @@ const MinecraftShield = ({item, type}) => {
           />
         </div>
       ))}
+      {!item.enchant ?
+        null
+        :
+        <div className={classNames(styles["enchant"])}>
+          <LazyLoadImage
+            src={`./site_assets/animation_v.png`}
+            width="100%"
+            height="100%"
+            alt="none"
+            effect="blur"
+          />
+        </div>
+      }
     </div>
   );
 };

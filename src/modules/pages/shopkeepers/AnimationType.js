@@ -82,4 +82,6 @@ export const ARRAY_MAPPINGS = {
   enchanted_book: "book",
   written_book: "book",
   enchanted_golden_apple: "golden_apple",
+  shield: "shield",
+  paper: "paper",
 };
