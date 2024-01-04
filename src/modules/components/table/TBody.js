@@ -3,9 +3,9 @@ import React from "react";
 
 import styles from "./Table.module.scss";
 
-const TBody = (props) => {
+const TBody = ({children}) => {
   return (
-    <tbody className={classNames(styles["tableTbody"])}>{props.children}</tbody>
+    <tbody className={classNames(styles["tableTbody"])}>{children}</tbody>
   );
 };
 

@@ -3,9 +3,9 @@ import React from "react";
 
 import styles from "./Table.module.scss";
 
-const TButton = (props) => {
+const TButton = ({onClick, type, name}) => {
   return (
-    <button className={classNames(styles["tableButton"])} onClick={props?.onClick} type={props?.type}>{props?.name}</button>
+    <button className={classNames(styles["tableButton"])} onClick={onClick} type={type}>{name}</button>
   );
 };
 

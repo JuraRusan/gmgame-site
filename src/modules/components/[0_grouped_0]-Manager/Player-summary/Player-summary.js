@@ -1,8 +1,6 @@
 import classNames from "classnames";
 import React, {useEffect, useMemo, useState} from "react";
-import AOS from "aos";
 import {useSearchParams} from "react-router-dom";
-import { Link } from "react-router-dom";
 import {sendRequest} from '../../../../DataProvider';
 import {useAlert} from "react-alert";
 import ReactModal from 'react-modal';
@@ -18,7 +16,6 @@ import TInput from "../../table/TInput";
 import TTextarea from "../../table/TTextarea";
 
 import styles from "./Player-summary.module.scss";
-import "aos/dist/aos.css";
 
 const PlayerSummary = () => {
   const [searchParams] = useSearchParams();
@@ -72,10 +69,6 @@ const PlayerSummary = () => {
   }
 
   const alert = useAlert();
-
-  useEffect(() => {
-    AOS.init({duration: 1000});
-  }, []);
 
   const getUser = (event) => {
     if (event?.target?.value?.length < 3) {
@@ -394,12 +387,12 @@ const PlayerSummary = () => {
   }
 
   return (
-    <div className={classNames(styles["mainUserSummary"])} data-aos="zoom-in">
+    <div className={classNames(styles["mainUserSummary"])}>
 
-      <input className={classNames(styles["searchPlayers"])} placeholder={searchParam} onChange={debouncedGetUser} type="search" data-aos="zoom-in"/>
-      <button className={classNames(styles["buttonSearchPlayers"])} type="submit" onClick={() => getUser(searchParam)} data-aos="zoom-in">Поиск</button>
+      <input className={classNames(styles["searchPlayers"])} placeholder={searchParam} onChange={debouncedGetUser} type="search"/>
+      <button className={classNames(styles["buttonSearchPlayers"])} type="submit" onClick={() => getUser(searchParam)}>Поиск</button>
 
-      <div className={classNames(styles["wrapperButtonManager"])} data-aos="zoom-in">
+      <div className={classNames(styles["wrapperButtonManager"])}>
         <button className={classNames(styles["buttonSearchAll"])} type="submit" onClick={getMarkers}>Отображение всех меток</button>
         <button className={classNames(styles["buttonSearchAll"])} type="submit" onClick={getTerritories}>Отображение всех территорий</button>
         <button className={classNames(styles["buttonSearchAll"])} type="submit" onClick={getRegens}>Пользователи для регена</button>
@@ -417,6 +410,7 @@ const PlayerSummary = () => {
           <TableMain>
             <THead>
               <Tr header={true}>
+                <Th type="text" content="i"/>
                 <Th type="text" content="Имя"/>
                 <Th type="text" content="email"/>
                 <Th type="text" content="Возраст"/>
@@ -428,6 +422,7 @@ const PlayerSummary = () => {
             <TBody>
               {user?.map((el, i) => (
                 <Tr key={i} keyStyle={i}>
+                  <Th type="text" content={i + 1}/>
                   <Th type="text" content={el?.username || "-"}/>
                   <Th type="text" content={tag[el?.username]?.email || "-"}/>
                   <Th type="text" content={el?.age || "-"}/>
@@ -472,10 +467,11 @@ const PlayerSummary = () => {
         }
         return (
           <React.Fragment key={i}>
-            <h4 className={classNames(styles["managerTitleH4"])} data-aos="zoom-in">Метки {username === "all" ? "всех игроков" : username}</h4>
+            <h4 className={classNames(styles["managerTitleH4"])}>Метки {username === "all" ? "всех игроков" : username}</h4>
             <TableMain>
               <THead>
                 <Tr header={true}>
+                  <Th type="text" content="i"/>
                   {username === 'all' && <Th type="text" content="Имя"/>}
                   <Th type="text" content="Название"/>
                   <Th type="text" content="Описание"/>
@@ -489,6 +485,7 @@ const PlayerSummary = () => {
               <TBody>
                 {markers[username].map((el, i) => (
                   <Tr key={i} keyStyle={i}>
+                    <Th type="text" content={i + 1}/>
                     {username === 'all' && <Th type="text" content={el?.username || "-"}/>}
                     <Th type="editing">
                       <TInput id="name" size="large" onChange={(e) => markerChange(e, el.id)} defaultValue={el.name}/>
@@ -531,10 +528,11 @@ const PlayerSummary = () => {
         }
         return (
           <React.Fragment key={i}>
-            <h4 className={classNames(styles["managerTitleH4"])} data-aos="zoom-in">Территории {username === "all" ? "всех игроков" : username}</h4>
+            <h4 className={classNames(styles["managerTitleH4"])}>Территории {username === "all" ? "всех игроков" : username}</h4>
             <TableMain>
               <THead>
                 <Tr header={true}>
+                  <Th type="text" content="i"/>
                   {username === 'all' && <Th type="text" content="Имя"/>}
                   <Th type="text" content="Название"/>
                   <Th type="text" content="Сервер"/>
@@ -550,6 +548,7 @@ const PlayerSummary = () => {
                 {territories[username].map((el, i) => {
                   return(<>{!el.notRender &&
                       <Tr key={i} keyStyle={i}>
+                        <Th type="text" content={i + 1}/>
                         {username === 'all' && <Th type="text" content={el?.username || "-"}/>}
                         <Th type="editing">
                           <TInput id="name" size="large" onChange={(e) => terrsChange(e, el.id)} defaultValue={el.name}/>
@@ -597,10 +596,11 @@ const PlayerSummary = () => {
         }
         return (
           <React.Fragment key={i}>
-            <h4 className={classNames(styles["managerTitleH4"])} data-aos="zoom-in">Тикеты {username === "all" ? "всех игроков" : username}</h4>
+            <h4 className={classNames(styles["managerTitleH4"])}>Тикеты {username === "all" ? "всех игроков" : username}</h4>
             <TableMain>
               <THead>
                 <Tr header={true}>
+                  <Th type="text" content="i"/>
                   {username === 'all' && <Th type="text" content="Имя"/>}
                   <Th type="text" content="Название"/>
                   <Th type="text" content="Просмотр"/>
@@ -612,6 +612,7 @@ const PlayerSummary = () => {
                   <>
                     {!el.notRender &&
                       <Tr key={i} keyStyle={i}>
+                        <Th type="text" content={i + 1}/>
                         {username === 'all' && <Th type="text" content={el?.username || "-"}/>}
                         <Th type="editing">
                           <TInput id="name" size="large" onChange={(e) => terrsChange(e, el.id)} defaultValue={el.name}/>
@@ -639,10 +640,11 @@ const PlayerSummary = () => {
       {/*--- Таблица для regen_user ---*/}
       {regens.length > 0 &&
         <>
-          <h4 className={classNames(styles["managerTitleH4"])} data-aos="zoom-in">Список на реген</h4>
+          <h4 className={classNames(styles["managerTitleH4"])}>Список на реген</h4>
           <TableMain>
             <THead>
               <Tr header={true}>
+                <Th type="text" content="i"/>
                 <Th type="text" content="Имя"></Th>
                 <Th type="text" content="id"></Th>
                 <Th type="text" content="Статус"></Th>
@@ -654,6 +656,7 @@ const PlayerSummary = () => {
               {regens.map((regen, i) => {
                 return (<>{!regen.notRender &&
                   <Tr key={i} keyStyle={i}>
+                    <Th type="text" content={i + 1}/>
                     <Th type="text" content={regen.username}/>
                     <Th type="text" content={regen.user_id}/>
                     <Th type="text" content="Не известно"/>
@@ -683,7 +686,7 @@ const PlayerSummary = () => {
         overlayClassName={classNames(styles["overlayModal"])}
       >
         <button className={classNames(styles["closeModal"])} onClick={handleCloseModalUd}>X</button>
-        <div className={classNames(styles["cardWrapperManagerUser"])} data-aos="zoom-in">
+        <div className={classNames(styles["cardWrapperManagerUser"])}>
           <div className={classNames(styles["cardOne"])}>
             <div className={classNames(styles["wrapperActionsAndIcon"])}>
               <img className={classNames(styles["playerImage"])} src={`https://minotar.net/helm/${userDetails?.username}/150`} alt="none"/>
@@ -792,10 +795,11 @@ const PlayerSummary = () => {
         overlayClassName={classNames(styles["overlayModal"])}
       >
         <button className={classNames(styles["closeModal"])} onClick={handleCloseModal}>X</button>
-        <div className={classNames(styles["cardLog"])} data-aos="zoom-in">
+        <div className={classNames(styles["cardLog"])}>
           <TableMain>
             <THead>
               <Tr header={true}>
+                <Th type="text" content="i"/>
                 <Th type="text" content="Время"/>
                 <Th type="text" content="Лог"/>
                 <Th type="text" content="Менеджер"/>
@@ -805,6 +809,7 @@ const PlayerSummary = () => {
               {logs?.map((el, i) => {
                 return (
                   <Tr key={i} keyStyle={i}>
+                    <Th type="text" content={i + 1}/>
                     <Th type="text" content={new Date(el.log_date).toLocaleString()}/>
                     <Th type="text" content={(() => {
                       let log = el.log;

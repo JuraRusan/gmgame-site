@@ -3,9 +3,15 @@ import React from "react";
 
 import styles from "./Table.module.scss";
 
-const TTextarea = (props) => {
+const TTextarea = ({onChange, id, defaultValue, rows}) => {
   return (
-    <textarea className={classNames(styles["tableTextarea"])} onChange={props?.onChange} id={props?.id} defaultValue={props?.defaultValue} rows={props?.rows}/>
+    <textarea
+      className={classNames(styles["tableTextarea"])}
+      onChange={onChange}
+      id={id}
+      defaultValue={defaultValue}
+      rows={rows}
+    />
   );
 };
 

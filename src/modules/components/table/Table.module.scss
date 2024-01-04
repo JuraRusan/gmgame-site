@@ -6,9 +6,9 @@ $table-parameter: 34;
   width: auto;
   min-width: 0;
   max-width: 100%;
-  border: 1px solid $color-22;
-  background: $color-7;
-  margin: 5px auto;
+  border: 1px solid $site-color-5;
+  background: $site-color-12;
+  margin: 8px auto 0 auto;
 }
 
 .tableThead {
@@ -25,16 +25,16 @@ $table-parameter: 34;
   height: #{$table-parameter}px;
   min-height: #{$table-parameter}px;
   max-height: calc(#{$table-parameter} * 5px);
-  border-top: 1px solid $color-22;
+  border-top: 1px solid $site-color-5;
   transition: all 0.20s ease;
 }
 
 .tableRowsBackground1 {
-  background: lighten($color-7, 1) !important;
+  background: lighten($site-color-12, 4) !important;
 }
 
 .tableRowsBackground2 {
-  background: lighten($color-7, 2) !important;
+  background: lighten($site-color-12, 6) !important;
 }
 
 .tableRowsHeader {
@@ -45,7 +45,7 @@ $table-parameter: 34;
   width: auto;
   height: #{$table-parameter}px;
   font-weight: 400;
-  border-left: 1px solid $color-22;
+  border-left: 1px solid $site-color-5;
   transition: all 0.15s ease;
   line-height: 32px; // зависит от `$table-parameter` минус 2px (функция калькалятора не работает почемуто)
 
@@ -65,12 +65,32 @@ $table-parameter: 34;
   line-height: #{$table-parameter}px;
   font-size: 13px;
   padding: 0 8px;
-  color: $color-3;
+  color: $site-color-2;
   transition: all 0.20s ease;
 
   &:hover {
-    color: lighten($color-8, 20%);
+    color: lighten($site-color-8, 20%);
   }
+}
+
+.tableText:hover > .full_text {
+  display: flex !important;
+}
+
+.full_text {
+  position: fixed;
+  display: none;
+  left: 128px;
+  bottom: 128px;
+  right: 128px;
+  top: 90%;
+  background: $site-color-12;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.3);
+  width: auto;
+  height: 42px;
+  line-height: 1.5;
+  justify-content: center;
+  padding: 4px;
 }
 
 .tableButton {
@@ -80,16 +100,16 @@ $table-parameter: 34;
   margin: auto 8px;
   text-align: center;
   padding: 0 8px;
-  background: $color-7;
+  background: $site-color-12;
   border: 1px solid $color-22;
   border-radius: 4px;
-  transition: all 0.25s ease-in-out;
-  color: $color-8;
+  transition: all 0.25s ease;
+  color: $site-color-8;
   cursor: pointer;
   font-size: 13px;
 
   &:hover {
-    background: $color-21;
+    background: $site-color-1;
   }
 }
 
@@ -99,7 +119,7 @@ $table-parameter: 34;
   line-height: #{$table-parameter}px;
   border: none;
   border-radius: 0;
-  color: $color-8;
+  color: $site-color-8;
   text-align: start;
   font-size: 13px;
   font-weight: 400;
@@ -107,12 +127,13 @@ $table-parameter: 34;
   padding: 0 4px;
   background: transparent;
   cursor: pointer;
+  transition: all 0.25s ease;
 
   &:hover,
   &:active,
   &:focus {
     outline: none;
-    background: $color-21;
+    background: $site-color-12;
   }
 }
 
@@ -123,11 +144,11 @@ $table-parameter: 34;
   font-size: 13px;
   padding: 0 10px;
   text-decoration: none;
-  color: $color-1;
+  color: $site-color-10;
   transition: all 0.35s ease;
 
   &:hover {
-    color: $color-8;
+    color: $site-color-8;
   }
 }
 
@@ -143,18 +164,18 @@ $table-parameter: 34;
   max-height: calc(#{$table-parameter} * 3px);
   line-height: #{$table-parameter}px;
   background: transparent;
-  color: $color-3;
+  color: $site-color-2;
   padding: 0 10px;
   font-size: 13px;
   transition: all 0.2s ease;
   vertical-align: bottom;
 
   &:hover {
-    color: lighten($color-8, 20%);
+    color: lighten($site-color-8, 20%);
   }
 
   &:focus {
-    color: $color-1;
+    color: $site-color-10;
   }
 }
 
@@ -167,14 +188,14 @@ $table-parameter: 34;
   background: transparent;
   padding: 0 10px;
   font-size: 13px;
-  color: $color-3;
+  color: $site-color-2;
 
   &:hover {
-    color: lighten($color-8, 20%);
+    color: lighten($site-color-8, 20%);
   }
 
   &:focus {
-    color: $color-1;
+    color: $site-color-10;
   }
 }
 

@@ -1,12 +1,10 @@
 import classNames from "classnames";
-import React, {useEffect} from "react";
-import AOS from "aos";
+import React from "react";
 import {NavLink, Outlet, Navigate} from "react-router-dom";
 import Preload from "../../components/preloader/Preload.js";
 import {useAxios} from '../../../DataProvider.js';
 
 import styles from "./Manager.module.scss";
-import "aos/dist/aos.css";
 
 const Manager = () => {
 
@@ -15,10 +13,6 @@ const Manager = () => {
     'GET',
     {}
   );
-
-  useEffect(() => {
-    AOS.init({duration: 1000});
-  }, []);
 
   if (resParams.loading) {
     return <Preload full={false}/>
@@ -37,7 +31,7 @@ const Manager = () => {
   }
   
   return (
-    <div className={classNames(styles["wrapperManager"])} data-aos="zoom-in">
+    <div className={classNames(styles["wrapperManager"])}>
       <div className={classNames(styles["actions"])}>
         <NavLink className={({isActive}) => setActive(isActive)} to="player_summary">Сводка по игрокам</NavLink>
         <NavLink className={({isActive}) => setActive(isActive)} to="faq_editor">Редактор Faq</NavLink>

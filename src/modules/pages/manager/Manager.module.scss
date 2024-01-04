@@ -13,7 +13,7 @@
     justify-content: center;
 
     .tab {
-      background-color: $color-21;
+      background-color: $site-color-4;
       cursor: pointer;
       transition: all 0.5s ease;
       width: auto;
@@ -24,8 +24,8 @@
       line-height: 22px;
       margin: 0 3px;
       padding: 0 8px;
-      color: $color-3;
-      border: 1px solid $color-22;
+      color: $site-color-2;
+      border: 1px solid $site-color-5;
       text-align: start;
       border-radius: 2px;
       outline: none;
@@ -38,12 +38,12 @@
       }
 
       &:hover {
-        color: $color-8;
+        color: $site-color-8;
       }
     }
 
     .checked {
-      color: $color-8 !important;
+      color: $site-color-8 !important;
     }
   }
 
