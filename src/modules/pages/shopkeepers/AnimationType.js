@@ -78,4 +78,8 @@ export const ARRAY_MAPPINGS = {
   fishing_rod: "fishing_rod",
   carrot_on_a_stick: "carrot_on_a_stick",
   warped_fungus_on_a_stick: "warped_fungus_on_a_stick",
+
+  enchanted_book: "book",
+  written_book: "book",
+  enchanted_golden_apple: "golden_apple",
 };

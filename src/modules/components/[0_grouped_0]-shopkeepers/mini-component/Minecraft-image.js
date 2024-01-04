@@ -15,17 +15,17 @@ const MinecraftImage = ({item}) => {
   const itemTrimMaterial = item.trim?.material;
   const {red, green, blue} = item.leather_color ?? {};
   const colorBG = red !== undefined ? {backgroundColor: `rgb(${red},${green},${blue})`} : {};
-  const armorType = ARRAY_MAPPINGS[itemNameId];
+  const includesType = ARRAY_MAPPINGS[itemNameId];
 
   const getImageSource = () => {
     if (itemNameId === "enchanted_golden_apple") {
-      return "./site_assets/animation_webp/enchanted_golden_apple.webp";
+      return "./site_assets/minecraft-item/golden_apple.webp";
 
     } else if (itemNameId === "written_book") {
-      return "./site_assets/animation_webp/written_book.webp";
+      return "./site_assets/minecraft-item/book.webp";
 
     } else if (itemNameId === "enchanted_book") {
-      return "./site_assets/animation_webp/enchanted_book.webp";
+      return "./site_assets/minecraft-item/book.webp";
 
     } else if (itemNameId === "end_crystal") {
       return "./site_assets/animation_webp/end_crystal.webp";
@@ -118,11 +118,11 @@ const MinecraftImage = ({item}) => {
         null
       }
 
-      {(itemEnchant.length > 0 || itemStoredEnchant.length > 0) && itemNameId !== "enchanted_book"
+      {itemEnchant.length > 0 || itemStoredEnchant.length > 0 || itemNameId === "written_book" || itemNameId === "enchanted_golden_apple"
         ?
         <div className={classNames(styles["enchant"])}>
           <LazyLoadImage
-            src={`./site_assets/111.gif`}
+            src={`./site_assets/animation_h.png`}
             width="100%"
             height="100%"
             effect="blur"
@@ -133,7 +133,7 @@ const MinecraftImage = ({item}) => {
         null
       }
 
-      {armorType ? renderArmorImage(armorType) : null}
+      {includesType ? renderArmorImage(includesType) : null}
 
     </div>
   );
