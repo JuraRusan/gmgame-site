@@ -1,218 +1,155 @@
 @import "../../../../Variables";
 
-.galleryBlock {
+.gallery_block {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
-  overflow: auto;
 
-  &::-webkit-scrollbar {
-    width: 4px;
-  }
-
-  .searchPost {
+  .box_no_post {
     display: flex;
-    width: auto;
-    height: 36px;
-    line-height: 36px;
-    outline: none;
-    background: $color-7;
-    border: 0.5px solid $color-22;
-    border-radius: 5px;
-    transition: all 0.25s ease-in-out;
-    color: $color-8;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: 0 10px 10px 0;
-
-    &:hover,
-    &:focus,
-    &:active {
-      outline: none;
-      background: $color-21;
-    }
-  }
-
-  .noPosts {
-    font-family: $fontCustom2;
-    font-weight: 400;
-    font-size: 14px;
+    flex-direction: column;
+    padding: 15%;
     width: 100%;
-    height: auto;
-    min-height: 20px;
-    line-height: 20px;
-    text-align: center;
-    color: $color-3;
-    margin-top: 15px;
+    height: 100%;
+
+    .no_posts {
+      font-family: $fontCustom2;
+      font-weight: 400;
+      font-size: 15px;
+      width: 100%;
+      height: auto;
+      min-height: 20px;
+      line-height: 20px;
+      text-align: center;
+      color: $site-color-2;
+      margin-top: 15px;
+    }
   }
 
-  .onePostGallery {
-    width: auto;
-    //height: 100%;
-    //max-height: 164px;
-    //min-height: 164px;
-    padding: 10px;
+  .box_all_post {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0 10px 10px 0;
-    background: $color-20;
-    border: 1px solid $color-22;
-    border-radius: 5px;
-    height: auto;
-    min-height: fit-content;
-    max-height: none;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    margin-top: 4px;
+    padding-right: 10px;
 
-    &:nth-child(1) {
-      height: 140px;
-      min-height: 140px;
-      max-height: 140px;
+    &::-webkit-scrollbar {
+      width: 4px;
     }
 
-
-    &:hover > .addPost {
-      padding: 0;
-    }
-
-    .addPost {
-      width: 64px;
-      height: 64px;
-      position: relative;
-      padding: 8px;
-      transition: all 0.35s ease;
-      margin: auto 0;
-    }
-
-    .wrapperImage {
+    .one_post_gallery {
+      width: auto;
+      padding: 10px;
       display: flex;
       flex-direction: row;
       justify-content: center;
-      align-items: center;
-      position: relative;
-      overflow: hidden;
-      width: 230px;
-      max-width: 230px;
-      min-width: 230px;
-      height: auto;
-      max-height: 120px;
-      margin: auto 0;
-      border: none;
+      margin: 4px 0 4px 0;
+      background: $site-color-12;
+      border: 1px solid $site-color-5;
       border-radius: 5px;
+      height: auto;
+      min-height: fit-content;
+      max-height: none;
+      text-decoration: none;
+      transition: all 0.35s ease;
+      position: relative;
 
-      .image {
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;
-      }
-    }
-
-    .desc {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-
-      .title {
-        font-size: 18px;
-        font-weight: 400;
-        text-align: center;
-        height: 32px;
-        width: 100%;
-        line-height: 35px;
-        padding: 0 10px;
-        color: $color-3;
+      &:hover {
+        background: $site-color-1;
       }
 
-      .paragraph {
-        display: flex;
+      .status {
+        position: absolute;
+        background: $site-color-8;
+        left: 0;
+        top: 18%;
+        z-index: 1;
+        padding: 6px 64px 6px 6px;
         font-size: 14px;
         font-weight: 400;
-        line-height: 1.25;
-        padding: 0 25px;
-        color: $color-3;
-        width: auto;
-        text-align: center;
-        margin: 4px auto;
+        font-family: $fontCustom2;
+        opacity: 0.8;
+        color: $site-color-4;
       }
 
-      .tags {
+      .wrapper_image {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        flex-wrap: wrap;
-        width: 100%;
-        margin: auto 0;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        width: 230px;
+        max-width: 230px;
+        min-width: 230px;
         height: auto;
-        min-height: 24px;
-        max-height: none;
+        max-height: 120px;
+        margin: auto 0;
+        border: none;
+        border-radius: 5px;
 
-        .oneTag {
-          margin: 2px 4px;
-          font-size: 12px;
-          height: 20px;
-          line-height: 20px;
-          border-radius: 4px;
-          color: darken($color-3, 50%);
-          background: $color-22;
-          padding: 0 8px;
+        .image {
+          width: 100%;
+          height: 100%;
+          margin: 0 auto;
         }
       }
 
-      .containerActions {
+      .description_post {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin: 4px 0 0 0;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
 
-        .actions {
-          height: 28px;
-          line-height: 28px;
-          border: none;
-          border-radius: 8px;
-          text-decoration: none;
-          background: transparent;
-          color: $color-3;
-          padding: 0 8px;
-          outline: none;
+        .title {
+          font-size: 16px;
           font-weight: 400;
-          font-size: 14px;
-          cursor: pointer;
-          transition: all 0.35s ease;
-          margin: 0 10px;
-
-          &:active,
-          &:hover,
-          &:focus,
-          &:visited {
-            color: $color-3;
-            outline: none;
-            border: none;
-          }
+          font-family: $fontCustom2;
+          text-align: center;
+          width: 100%;
+          height: 35px;
+          line-height: 35px;
+          padding: 0 10px;
+          color: $site-color-2;
         }
 
-        .analytics {
-          background: darken($color-8, 18%);
-
-          &:hover {
-            background: lighten($color-8, 20%);
-            color: $color-2;
-          }
+        .paragraph {
+          display: flex;
+          font-size: 12px;
+          font-weight: 400;
+          font-family: $fontCustom2;
+          line-height: 1.35;
+          padding: 0 25px;
+          color: $site-color-2;
+          width: auto;
+          text-align: center;
+          margin: 4px auto;
         }
 
-        .edit {
-          background: $color-4;
+        .tags {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          flex-wrap: wrap;
+          width: 100%;
+          margin: 4px auto;
+          height: auto;
+          min-height: 24px;
+          max-height: none;
 
-          &:hover {
-            background: $color-6;
-            color: $color-2;
-          }
-        }
-
-        .delete {
-          background: $color-9;
-
-          &:hover {
-            color: $color-2;
+          .oneTag {
+            margin: 2px 4px;
+            font-size: 11px;
+            font-family: $fontCustom2;
+            height: 20px;
+            line-height: 20px;
+            border-radius: 4px;
+            color: darken($site-color-2, 50%);
+            background: lighten($site-color-12, 20%);
+            padding: 0 8px;
           }
         }
       }
@@ -230,33 +167,18 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .galleryBlock {
-    .onePostGallery {
-      height: auto;
-      min-height: fit-content;
-      max-height: none;
-
-      &:nth-child(1) {
-        height: 140px;
-        min-height: 140px;
-        max-height: 140px;
-      }
-    }
-  }
 }
 
 @media screen and (max-width: 960px) {
-  .galleryBlock {
-    .searchPost {
-      margin: 0 0 8px 0;
-    }
+  .gallery_block {
+    .box_all_post {
+      padding-right: 0;
 
-    .onePostGallery {
-      margin: 0 0 8px 0;
-
-      .desc {
-        .tags {
-          margin: 6px auto;
+      .one_post_gallery {
+        .description_post {
+          .tags {
+            margin: 6px auto;
+          }
         }
       }
     }
@@ -264,11 +186,27 @@
 }
 
 @media screen and (max-width: 768px) {
-  .galleryBlock {
-    .onePostGallery {
-      .desc {
-        .title {
-          font-size: 17px;
+  .gallery_block {
+    .box_all_post {
+      .one_post_gallery {
+        flex-direction: column;
+
+        .status {
+          top: 6%;
+        }
+
+        .wrapper_image {
+          width: 330px;
+          max-width: 330px;
+          min-width: 330px;
+          max-height: 220px;
+          margin: 0 auto;
+        }
+
+        .description_post {
+          .title {
+            font-size: 14px;
+          }
         }
       }
     }
@@ -276,36 +214,21 @@
 }
 
 @media screen and (max-width: 640px) {
-  .galleryBlock {
-    .onePostGallery {
-      flex-direction: column;
+  .gallery_block {
+    .box_all_post {
+      .one_post_gallery {
+        .description_post {
+          .title {
+            font-size: 13px;
+            min-height: 32px;
+            height: auto;
+            line-height: 1.5;
+            padding: 6px 8px;
+          }
 
-      .wrapperImage {
-        margin: 0 auto;
-        width: 360px;
-        max-width: 360px;
-        min-width: 360px;
-        height: auto;
-        max-height: 150px;
-      }
-
-      .addPost {
-        margin: 0 auto;
-      }
-
-      .desc {
-        margin: 8px auto 0 auto;
-
-        .title {
-          height: 100%;
-          min-height: fit-content;
-          max-height: fit-content;
-          line-height: 1.5;
-          font-size: 16px;
-        }
-
-        .paragraph {
-          margin: 8px auto;
+          .paragraph {
+            font-size: 11px;
+          }
         }
       }
     }
@@ -313,15 +236,17 @@
 }
 
 @media screen and (max-width: 480px) {
-  .galleryBlock {
-    .onePostGallery {
-      .desc {
-        .title {
-          font-size: 15px;
-        }
+  .gallery_block {
+    .box_all_post {
+      .one_post_gallery {
+        .description_post {
+          .title {
+            padding: 6px;
+          }
 
-        .paragraph {
-          font-size: 13px;
+          .paragraph {
+            padding: 0 8px;
+          }
         }
       }
     }
