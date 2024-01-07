@@ -54,6 +54,13 @@
         }
       }
 
+      .logo {
+        max-width: 1500px;
+        min-width: 750px;
+        height: auto;
+        margin: 0 auto;
+      }
+
       .mainTextH3 {
         width: auto;
         font-weight: 400;
@@ -404,6 +411,10 @@
           font-size: 82px;
         }
 
+        .logo {
+          min-width: 600px;
+        }
+
         .mainTextH3 {
           font-size: 20px;
         }
@@ -556,6 +567,11 @@
           font-size: 72px;
         }
 
+        .logo {
+          margin-top: 64px;
+          min-width: 450px;
+        }
+
         .mainTextH3 {
           font-size: 18px;
         }
@@ -637,6 +653,10 @@
           font-size: 54px;
           height: 94px;
           line-height: 94px;
+        }
+
+        .logo {
+          min-width: 80%;
         }
 
         .mainTextH3 {
