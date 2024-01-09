@@ -1,27 +1,43 @@
 import classNames from "classnames";
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import ImageGallery from 'react-image-gallery';
 import Modal from 'react-modal';
-import AOS from "aos";
 import {LazyLoadImage} from "react-lazy-load-image-component";
-import {array} from "./GalleryArray";
+import {array, testArrayTags, testArrayUsers} from "./GalleryArray";
 import HeartSvgComponent from "../../../bases/icons/heartSvg/HeartSvg";
 import Particles from "../../components/particles/Particles";
 
 import styles from "./Gallery.module.scss";
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import "../../custon-modules/Image-gallery.scss";
-import "aos/dist/aos.css";
+
+const AddSearch = ({list, placeholder, name, mapArray, onChange}) => {
+  return (
+    <>
+      <datalist id={list}>
+        {mapArray.map((e, i) =>
+          <option key={i} value={e}/>
+        )}
+      </datalist>
+      <input
+        name={name}
+        className={classNames(styles["search_input"])}
+        type="search"
+        list={list}
+        placeholder={placeholder}
+        onChange={onChange}
+      />
+      <button type="submit" className={classNames(styles["add_submit"])}>&#10003;</button>
+    </>
+  )
+}
 
 const MainGallery = () => {
 
-  useEffect(() => {
-    AOS.init({duration: 1000});
-  }, []);
-
   const [modalIsOpen, setIsOpen] = useState(false);
-  // const [names, setNames] = useState([]);
-  // const [selectedTags, setSelectedTags] = useState([]);
+  const [names, setNames] = useState([]);
+  const [selectedTags, setSelectedTags] = useState([]);
+  const filteredOneItem = array.filter(ids => ids.id === 1)
 
   function openModal() {
     setIsOpen(true);
@@ -31,91 +47,89 @@ const MainGallery = () => {
     setIsOpen(false);
   }
 
-  const filteredOneItem = array.filter(ids => ids.id === 1) // тимчасова функція її треба потім видалити
+  function handleAddName(e) {
+    e.preventDefault();
+    const name = e.target.elements.name.value.trim();
+    setNames(prevNames => [...prevNames, name.toLowerCase()]);
+    e.target.elements.name.value = "";
+  }
 
-  // function handleAddName(e) {
-  //   e.preventDefault();
-  //   const name = e.target.elements.name.value.trim();
-  //   setNames(prevNames => [...prevNames, name.toLowerCase()]);
-  //   e.target.elements.name.value = "";
-  // }
-  //
-  // function handleAddTag(e) {
-  //   e.preventDefault();
-  //   const tags = e.target.elements.tags.value.trim();
-  //   setSelectedTags(prevTags => [...prevTags, tags.toLowerCase()]);
-  //   e.target.elements.tags.value = "";
-  // }
+  function handleAddTag(e) {
+    e.preventDefault();
+    const tags = e.target.elements.tags.value.trim();
+    setSelectedTags(prevTags => [...prevTags, tags.toLowerCase()]);
+    e.target.elements.tags.value = "";
+  }
 
   return (
-    <div className={classNames(styles["mainGallery"])} data-aos="zoom-in">
-      <h3 className={classNames(styles["mainGalleryTitle"])}>Общая галерея игроков сервера</h3>
-
-      <div className={classNames(styles["wrapper"])}>
-
-        {/*<div className={classNames(styles["navigationGallery"])}>*/}
-        {/*  <h3 className={classNames(styles["navigationTitle"])}>Навигация:</h3>*/}
-        {/*  <form onSubmit={handleAddName}>*/}
-        {/*    <datalist id="userList">*/}
-        {/*      {testArrayUsers.map((e, i) =>*/}
-        {/*        <option key={i} value={e}/>*/}
-        {/*      )}*/}
-        {/*    </datalist>*/}
-        {/*    <input*/}
-        {/*      name="name"*/}
-        {/*      className={classNames(styles["searchInput"])}*/}
-        {/*      type="search"*/}
-        {/*      list="userList"*/}
-        {/*      placeholder="Найти по игроку ..."*/}
-        {/*    />*/}
-        {/*    <button type="submit" className={classNames(styles["addSubmit"])}>&#10003;</button>*/}
-        {/*  </form>*/}
-        {/*  {names.map((name, index) => (*/}
-        {/*    <div className={classNames(styles["previewSelected"])} key={index} data-aos="zoom-in">*/}
-        {/*      <img className={classNames(styles[""])} src={`https://minotar.net/helm/${name}/17`} alt=" "></img>*/}
-        {/*      <label className={classNames(styles[""])}>{name}</label>*/}
-        {/*      <button className={classNames(styles[""])} onClick={() => setNames(prevNames => prevNames.filter((_, i) => i !== index))}>&#10008;</button>*/}
-        {/*    </div>*/}
-        {/*  ))}*/}
-        {/*  <form onSubmit={handleAddTag}>*/}
-        {/*    <datalist id="tagList">*/}
-        {/*      {testArrayTags.map((e, i) =>*/}
-        {/*        <option key={i} value={e}/>*/}
-        {/*      )}*/}
-        {/*    </datalist>*/}
-        {/*    <input*/}
-        {/*      name="tags"*/}
-        {/*      className={classNames(styles["searchInput"])}*/}
-        {/*      type="search"*/}
-        {/*      list="tagList"*/}
-        {/*      placeholder="Найти по #tag ..."*/}
-        {/*      // onChange={(e) => setFilterTag(e.target.value.toLowerCase())}*/}
-        {/*    />*/}
-        {/*    <button type="submit" className={classNames(styles["addSubmit"])}>&#10003;</button>*/}
-        {/*  </form>*/}
-        {/*  <div className={classNames(styles["previewWrapper"])}>*/}
-        {/*    {selectedTags.map((el, index) => (*/}
-        {/*      <div className={classNames(styles["selectedTag"])} key={index} data-aos="zoom-in">*/}
-        {/*        <label className={classNames(styles["tagName"])}>#{el}</label>*/}
-        {/*        <button className={classNames(styles["actions"])} onClick={() => setSelectedTags(prevNames => prevNames.filter((_, i) => i !== index))}>&#10008;</button>*/}
-        {/*      </div>*/}
-        {/*    ))}*/}
-        {/*  </div>*/}
-        {/*</div>*/}
-
-        <div className={classNames(styles["galleryList"])}>
+    <div className={classNames(styles["main_gallery"])}>
+      <h3 className={classNames(styles["page_title"])}>Общая галерея игроков сервера</h3>
+      <div className={classNames(styles["box_content"])}>
+        <div className={classNames(styles["navigation_page"])}>
+          <h3 className={classNames(styles["navigation_title"])}>Навигация:</h3>
+          <select className={classNames(styles["sort_select"])}>
+            <option className={classNames(styles["sort_option"])}>Новые</option>
+            <option className={classNames(styles["sort_option"])}>Популярное</option>
+            <option className={classNames(styles["sort_option"])}>Старые</option>
+            <option className={classNames(styles["sort_option"])}>Случайные</option>
+          </select>
+          <form onSubmit={handleAddName}>
+            <AddSearch
+              name="name"
+              list="userList"
+              mapArray={testArrayUsers}
+              placeholder="Найти по игроку ..."
+            />
+          </form>
+          <div className={classNames(styles["preview_box"])}>
+            {names.map((name, index) => (
+              <div className={classNames(styles["selected_tag"])} key={index}>
+                <img className={classNames(styles["image"])} src={`https://minotar.net/helm/${name}/17`} alt=""/>
+                <label className={classNames(styles["name"])}>{name}</label>
+                <button
+                  className={classNames(styles["actions"])}
+                  onClick={() => setNames(prevNames => prevNames.filter((_, i) => i !== index))}
+                >
+                  &#10008;
+                </button>
+              </div>
+            ))}
+          </div>
+          <form onSubmit={handleAddTag}>
+            <AddSearch
+              name="tags"
+              list="tagList"
+              mapArray={testArrayTags}
+              placeholder="Найти по #tag ..."
+            />
+          </form>
+          <div className={classNames(styles["preview_box"])}>
+            {selectedTags.map((el, index) => (
+              <div className={classNames(styles["selected_tag"])} key={index}>
+                <label className={classNames(styles["name"])}>#{el}</label>
+                <button
+                  className={classNames(styles["actions"])}
+                  onClick={() => setSelectedTags(prevNames => prevNames.filter((_, i) => i !== index))}
+                >
+                  &#10008;
+                </button>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className={classNames(styles["gallery_list"])}>
           {array.map((items, i) =>
-            <div className={classNames(styles["oneContainer"])} data-aos="zoom-in" key={i}>
-              <div className={classNames(styles["wrapperImage"])}>
+            <div className={classNames(styles["one_container"])} key={i}>
+              <div className={classNames(styles["wrapper_image"])}>
                 <LazyLoadImage
-                  className={classNames(styles["imgClass"])}
+                  className={classNames(styles["img"])}
                   alt={items.picturesView}
                   effect="blur"
                   src={items.picturesView}
                   onClick={openModal}
                 />
               </div>
-              <div className={classNames(styles["containerLike"])}>
+              <div className={classNames(styles["container_like"])}>
                 <div className={classNames(styles["likes"])}>
                   <button className={classNames(styles["click"], styles["like"])}>
                     <Particles text={<HeartSvgComponent height="20px" width="20px" color="#f4f4f4"/>} type="like"/>

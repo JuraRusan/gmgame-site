@@ -3,19 +3,16 @@ import React, {useEffect, useState} from 'react';
 import {LazyLoadImage} from "react-lazy-load-image-component";
 import {Link} from "react-router-dom";
 import {array} from "../../../pages/gallery/GalleryArray";
-import AddSvgComponent from "../../../../bases/icons/addSvg/AddSvg";
-import AOS from "aos";
+import CabSearch from "../cab-search/CabSearch";
+import useLoading from "../../../loading/useLoading";
+import Preload from "../../preloader/Preload";
 
 import styles from "./Gallery.module.scss";
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import 'react-image-picker-editor/dist/index.css'
-import "aos/dist/aos.css";
 
 const Gallery = () => {
 
-  useEffect(() => {
-    AOS.init({duration: 1000});
-  }, []);
+  const isLoading = useLoading();
 
   const [numberLengthTitle, setNumberLengthTitle] = useState(0);
   const [numberLengthDescription, setNumberLengthDescription] = useState(0);
@@ -36,7 +33,7 @@ const Gallery = () => {
         setNumberLengthTitle(40);
         setNumberLengthDescription(160);
       } else if (window.innerWidth >= 640) {
-        setNumberLengthTitle(30);
+        setNumberLengthTitle(50);
         setNumberLengthDescription(160);
       } else {
         setNumberLengthTitle(100);
@@ -45,28 +42,33 @@ const Gallery = () => {
     }
 
     window.addEventListener('resize', handleResize);
-    handleResize(); // Set initial value
+    handleResize();
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  if (isLoading) {
+    return <Preload full={false}/>
+  }
+
   return (
-    <div className={classNames(styles["galleryBlock"])} data-aos="zoom-in">
-      <input className={classNames(styles["searchPost"])} type="search" placeholder="#tag"/>
-      <Link to={`edit_add_post`} className={classNames(styles["onePostGallery"])}>
-        <span className={classNames(styles["addPost"])}>
-          <AddSvgComponent width="100%" height="100%" color="#f4f4f4"/>
-        </span>
-      </Link>
-      {array.length === 0 ?
-        <>
-          <h4 className={classNames(styles["noPosts"])}>Здесь пока нет изображений ;(</h4>
-          <h4 className={classNames(styles["noPosts"])}>Добавьте красивых скриншотов, чтобы Ваша галерея не грустила.</h4>
-        </>
+    <div className={classNames(styles["gallery_block"])}>
+      <CabSearch
+        count={array.length}
+        // onChange={ }
+        name="публикаций"
+        to={'edit_add_post'}
+      />
+      {!array.length ?
+        <div className={classNames(styles["box_no_post"])}>
+          <h4 className={classNames(styles["no_posts"])}>Здесь пока нет изображений</h4>
+          <h4 className={classNames(styles["no_posts"])}>Добавьте красивых скриншотов, чтобы ваша галерея не грустила</h4>
+        </div>
         :
-        <>
+        <div className={classNames(styles["box_all_post"])}>
           {array.map((post, index) =>
-            <div className={classNames(styles["onePostGallery"])} key={index}>
-              <div className={classNames(styles["wrapperImage"])}>
+            <Link to="edit_add_post" className={classNames(styles["one_post_gallery"])} key={index}>
+              <label className={classNames(styles["status"])}>Проверка</label>
+              <div className={classNames(styles["wrapper_image"])}>
                 <LazyLoadImage
                   className={classNames(styles["image"])}
                   alt={post.picturesView}
@@ -74,7 +76,7 @@ const Gallery = () => {
                   src={post.picturesView}
                 />
               </div>
-              <div className={classNames(styles["desc"])}>
+              <div className={classNames(styles["description_post"])}>
                 <h4 className={classNames(styles["title"])}>{shortenText(post.name, numberLengthTitle)}</h4>
                 <p className={classNames(styles["paragraph"])}>{shortenText(post.description, numberLengthDescription)}</p>
                 <div className={classNames(styles["tags"])}>
@@ -83,15 +85,10 @@ const Gallery = () => {
                   ))}
                   {post.tagNavigation.length > 9 && <span className={classNames(styles["oneTag"])}>and more...</span>}
                 </div>
-                <div className={classNames(styles["containerActions"])}>
-                  <Link to={`post_analytics`} className={classNames(styles["actions"], styles["analytics"])}>Аналитика</Link>
-                  <Link to={`edit_add_post`} className={classNames(styles["actions"], styles["edit"])}>Редактировать</Link>
-                  <button className={classNames(styles["actions"], styles["delete"])}>Удалить</button>
-                </div>
               </div>
-            </div>
+            </Link>
           )}
-        </>
+        </div>
       }
     </div>
   );
