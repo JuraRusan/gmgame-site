@@ -1,0 +1,121 @@
+@import "../../../Variables.scss";
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  position: relative;
+
+  .box_nav {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: auto;
+
+    .box_btn {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      height: auto;
+      position: sticky;
+      top: 70px;
+      margin: 0 0 0 32px;
+      width: 225px;
+      z-index: 2;
+
+      .btn {
+        border: 1px solid $site-color-5;
+        border-radius: 4px;
+        margin: 2px 8px;
+        background: $site-color-4;
+        color: $site-color-2;
+        transition: all 0.35s ease;
+        font-size: 12px;
+        font-weight: 400;
+        font-family: $fontCustom2;
+        padding: 4px 8px;
+        cursor: pointer;
+
+        &:hover {
+          color: $site-color-9;
+        }
+      }
+    }
+
+    .nav {
+      width: 225px;
+      background: $site-color-4;
+      border: 1px solid $site-color-5;
+      box-shadow: 0 0 25px 40px $site-color-12;
+      border-radius: 4px;
+      padding: 4px;
+      margin: 0 0 0 32px;
+      position: sticky;
+      top: 100px;
+
+      .line {
+        color: $site-color-2;
+        font-size: 12px;
+        font-family: $fontCustom2;
+        font-weight: 400;
+        transition: all 0.35s ease;
+        padding: 2px 4px;
+        margin: 8px 2px;
+
+        &:hover {
+          cursor: pointer;
+          color: $site-color-9;
+        }
+      }
+    }
+  }
+
+  .stat_box {
+    width: 100%;
+    max-width: 1410px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 48px auto;
+    position: relative;
+
+    .title {
+      font-size: 18px;
+      font-weight: 400;
+      color: $color-3;
+      margin: 25px auto;
+      font-family: $fontCustom2;
+    }
+
+    .box_wight_1 {
+      min-width: 810px;
+      margin: 0 auto;
+    }
+
+    .box_wight_2 {
+      min-width: 100%;
+      margin: 0 auto;
+    }
+
+    .box_wight_3 {
+      min-width: 1210px;
+      margin: 0 auto;
+    }
+
+    .box_wight_4 {
+      min-width: 100%;
+      margin: 0 auto;
+    }
+
+    .box_wight_5 {
+      min-width: 402px;
+      margin: 0 auto;
+    }
+
+    .box_wight_6 {
+      min-width: 802px;
+      margin: 0 auto;
+    }
+  }
+}
