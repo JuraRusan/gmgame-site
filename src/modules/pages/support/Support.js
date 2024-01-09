@@ -23,7 +23,7 @@ const Support = () => {
             <h5 className={classNames(styles["footerSupport"])}>Спасибо! Ваша поддержка очень важна. &#129392;</h5>
           </div>
           <div className={classNames(styles["imgBlockWrapper"])}>
-            <img className={classNames(styles["image"])} src="./site_assets/pages/webp/7.webp" width="100%" height="100%" alt="none"/>
+            <img className={classNames(styles["image"])} src="./site_assets/pages/webp/new_7.webp" width="100%" height="100%" alt="none"/>
           </div>
         </div>
         <div className={classNames(styles["monitoringBlock"])}>
