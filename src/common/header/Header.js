@@ -2,6 +2,7 @@ import classNames from "classnames";
 import React, {useEffect, useState} from "react";
 import {sendRequest, useAxios} from '../../DataProvider';
 import AOS from "aos";
+import LogoMainTextSvgComponent from "../../bases/icons/LogoMainText";
 
 import styles from "./Header.module.scss";
 import "aos/dist/aos.css";
@@ -68,9 +69,12 @@ const Header = () => {
       <div className={classNames(styles["mainBox"])}>
         <div className={classNames(styles["leftBlock"], styles["blockNumbered"])}>
           <a className={classNames(styles["logoGeneral"])} href="/">
-            <span className={classNames(styles["colored-1"])}>G</span>
-            <span className={classNames(styles["colored-2"])}>M</span>
-            <span className={classNames(styles["noColored"])}>GAME</span>
+            {/*<span className={classNames(styles["colored-1"])}>G</span>*/}
+            {/*<span className={classNames(styles["colored-2"])}>M</span>*/}
+            {/*<span className={classNames(styles["noColored"])}>GAME</span>*/}
+            <div className={classNames(styles["logo"])}>
+              <LogoMainTextSvgComponent height="100%" width="100%"/>
+            </div>
           </a>
         </div>
         <div className={classNames(styles["centerBlock"], styles["blockNumbered"])}>
