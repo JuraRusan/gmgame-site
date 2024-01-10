@@ -43,7 +43,7 @@
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts --max_old_space_size=1024 build",
+    "build": "GENERATE_SOURCEMAP=false react-scripts --max_old_space_size=768 build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "watch": "npm-watch",
