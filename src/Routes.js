@@ -48,7 +48,7 @@ const MyPrizes = lazy(() => import(/* webpackChunkName: "cab" */ './modules/comp
 const ChangePassword = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/change-password/Change-password.js'));
 // --
 const Statistic = lazy(() => import(/* webpackChunkName: "statistics" */ './modules/pages/statistic/Statistic.js'));
-// const EventStatistic = lazy(() => import(/* webpackChunkName: "event_statistics" */ './modules/pages/event/event'));
+const EventStatistic = lazy(() => import(/* webpackChunkName: "event_statistics" */ './modules/pages/event/event'));
 // const TexturePack = lazy(() => import(/* webpackChunkName: "texture_pack" */ './modules/pages/texture-pack/TexturePack.js'));
 // const Mods = lazy(() => import(/* webpackChunkName: "mods" */ './modules/pages/mods/Mods.js'));
 const Maps = lazy(() => import(/* webpackChunkName: "maps" */ './modules/pages/maps/Maps.js'));
@@ -105,7 +105,7 @@ const Router = () => {
 
           <Route path="/mods" element={<NotAvailable/>}/> {/* <Route path="/mods" element={<Mods/>}/> */}
           <Route path="/statistic" element={<Statistic/>}/>
-          {/*<Route path="/event_statistic" element={<EventStatistic/>}/>*/}
+          <Route path="/event_statistic" element={<EventStatistic/>}/>
           <Route path="/support" element={<Support/>}/>
           <Route path="/online_map" element={<Maps/>}/>
           <Route path="/texture_pack" element={<NotAvailable/>}/> {/* <Route path="/texture_pack" element={<TexturePack/>}/> */}

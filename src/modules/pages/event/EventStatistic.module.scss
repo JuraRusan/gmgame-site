@@ -7,6 +7,18 @@
   height: auto;
   position: relative;
 
+  .inf {
+    display: none;
+    margin: 25% auto 0 auto;
+    font-family: $fontCustom2;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 0 48px;
+    text-align: center;
+    color: $site-color-2;
+    line-height: 1.5;
+  }
+
   .box_nav {
     position: absolute;
     z-index: 1;
@@ -94,17 +106,20 @@
     }
 
     .box_wight_2 {
-      min-width: 100%;
+      //min-width: 100%;
+      width: 95%;
       margin: 0 auto;
     }
 
     .box_wight_3 {
-      min-width: 1210px;
+      //min-width: 1210px;
+      width: 85.25%;
       margin: 0 auto;
     }
 
     .box_wight_4 {
-      min-width: 100%;
+      //min-width: 100%;
+      width: 95%;
       margin: 0 auto;
     }
 
@@ -118,4 +133,44 @@
       margin: 0 auto;
     }
   }
+}
+
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+  .stat {
+    .box_nav {
+      display: none;
+    }
+
+    .stat_box {
+      display: none;
+    }
+
+    .inf {
+      display: flex;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 640px) {
+}
+
+@media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 360px) {
 }

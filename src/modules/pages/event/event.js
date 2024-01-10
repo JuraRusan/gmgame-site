@@ -1431,6 +1431,7 @@ const EventStatistic = () => {
 
   return (
     <div className={classNames(styles["stat"])}>
+      <h3 className={classNames(styles["inf"])}>Извините, статистика доступна на екранах ширина которых больше 1024px</h3>
       <div className={classNames(styles["box_nav"])}>
         <div className={classNames(styles["box_btn"])}>
           <button onClick={()=> {setShow(true)}} className={classNames(styles["btn"])}>Открыть</button>
