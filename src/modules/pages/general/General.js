@@ -2,7 +2,6 @@ import classNames from "classnames";
 import React, {useEffect} from "react";
 import AOS from "aos";
 import {Link} from "react-router-dom";
-import Mode from "../../components/[0_grouped_0]-Generals/mode/Mode.js";
 import World from "../../components/[0_grouped_0]-Generals/world/World.js";
 import HoverMeSvgComponent from "../../../bases/icons/hoverMeSvg/HoverMeSvg";
 import LogoMainTextSvgComponent from "../../../bases/icons/LogoMainText";
@@ -33,18 +32,9 @@ const General = () => {
   const worldNameGMGame = "Основной";
   const worldNameFarm = "Фермерский";
 
-  const survival = "Выживание";
-  // const skyBlock = "Скайблок";
-  const creative = "Креатив";
-
   const serverInformationRes = "Здесь добываются все необходимые ресурсы. Мир можно копать где и как угодно. Вайпается каждое обновление майнкрафта.";
   const serverInformationGMGame = "Мир со всеми постройками и проектами. Игроки выбирают территорию и занимаются строительством. Вайпов нет, но при обновлении генерации мир расширяют.";
   const serverInformationFarm = "Все механизмы и фермы с редстоуном строятся здесь, чтобы не нагружать основной сервер. Не вайпается и расширяется по необходимости.";
-
-  const serverModeServer = "режимы";
-  const survivalInfo = "Главный режим всего сервера, где игроки выживают и творят. Вход только по заявкам.";
-  // const skyBlockInfo = "Неклассический режим скайблока с квестами и миссиями и другими плагинами. Без вайтлиста.";
-  const creativeInfo = "Креатив с WorldEdit и другими упрощающими жизнь инструментами. Без вайтлиста.";
 
   return (
     <div className={classNames(styles["main"])}>
@@ -116,17 +106,6 @@ const General = () => {
         </div>
         <div className={classNames(styles["lineNoContentBottom"])}></div>
       </div>
-
-      <div className={classNames(styles["rowContainerNumberFour"])}>
-        <h3 className={classNames(styles["modeTitle"])} data-aos="zoom-in">{serverModeServer}</h3>
-        <div className={classNames(styles["mode"])}>
-          <Mode name={survival} info={survivalInfo}/>
-          {/*<Mode name={skyBlock} info={skyBlockInfo}/>*/}
-          <Mode name={creative} info={creativeInfo}/>
-        </div>
-      </div>
-
-      <div className={classNames(styles["lineNoContentTopTwo"])}></div>
 
     </div>
   );

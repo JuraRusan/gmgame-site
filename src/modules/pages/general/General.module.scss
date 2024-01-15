@@ -250,26 +250,6 @@
     }
   }
 
-  .rowContainerNumberFour {
-    display: flex;
-    flex-direction: column;
-    background: $site-color-3;
-    width: 100%;
-    height: auto;
-    padding-top: 50px;
-
-    .modeTitle {
-      text-align: center;
-      width: 100%;
-      height: 79px;
-      line-height: 79px;
-      font-weight: 400;
-      font-size: 64px;
-      color: $site-color-2;
-      font-family: $fontCustom3;
-    }
-  }
-
   .lineNoContentTop {
     height: 200px;
     width: 100%;
@@ -282,12 +262,6 @@
     width: 100%;
     background: $site-color-3;
     background: linear-gradient(0deg, $site-color-3 0%, transparent 100%);
-  }
-
-  .lineNoContentTopTwo {
-    height: 200px;
-    width: 100%;
-    background: linear-gradient(180deg, $site-color-3 0%, transparent 100%);
   }
 }
 
@@ -391,14 +365,6 @@
         }
       }
     }
-
-    .rowContainerNumberFour {
-      padding-top: 45px;
-
-      .modeTitle {
-        font-size: 54px;
-      }
-    }
   }
 }
 
@@ -456,10 +422,6 @@
 
     .lineNoContentBottom {
       height: 160px;
-    }
-
-    .lineNoContentTopTwo {
-      height: 150px;
     }
   }
 }
@@ -548,12 +510,6 @@
         }
       }
     }
-
-    .rowContainerNumberFour {
-      .modeTitle {
-        font-size: 46px;
-      }
-    }
   }
 }
 
@@ -625,21 +581,11 @@
       }
     }
 
-    .rowContainerNumberFour {
-      .modeTitle {
-        font-size: 42px;
-      }
-    }
-
     .lineNoContentTop {
       height: 130px;
     }
 
     .lineNoContentBottom {
-      height: 130px;
-    }
-
-    .lineNoContentTopTwo {
       height: 130px;
     }
   }
@@ -808,14 +754,6 @@
 
       .blockWorlds {
         padding-top: 30px;
-      }
-    }
-
-    .rowContainerNumberFour {
-      .modeTitle {
-        font-size: 24px;
-        line-height: 30px;
-        height: 30px;
       }
     }
   }
