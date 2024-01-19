@@ -203,7 +203,10 @@ const PlayerSummary = () => {
     let valueDate = '';
     if (event.target.id === 'expiration_date') {
       valueDate = new Date(event.target.value).toISOString();
-      console.log(valueDate)
+    }
+
+    if (event.target.id === 'citizenship') {
+      valueDate = event.target.value === 'true' ? true : false;
     }
 
     input[id] = {...input[id], ...{[event.target.id]: valueDate || event.target.value}};
@@ -752,6 +755,17 @@ const PlayerSummary = () => {
                   onChange={(e) => userDetailsChange(e, userDetails.user_id)}
                   className={classNames(styles["inputUserRedactor"])}
                   defaultValue={userDetails?.immun}
+                />
+                <span className={classNames(styles["viewRedactor"])}>&#10043;</span>
+              </div>
+              {/*----- citizenship -----*/}
+              <div className={classNames(styles["oneBlock"])}>
+                <p className={classNames(styles["textDescriptionParagraph"])}>Гражданство:</p>
+                <input
+                  id="citizenship"
+                  onChange={(e) => userDetailsChange(e, userDetails.user_id)}
+                  className={classNames(styles["inputUserRedactor"])}
+                  defaultValue={userDetails?.citizenship}
                 />
                 <span className={classNames(styles["viewRedactor"])}>&#10043;</span>
               </div>
