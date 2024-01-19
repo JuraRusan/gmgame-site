@@ -419,7 +419,8 @@ const PlayerSummary = () => {
                 <Th type="text" content="discord_id"/>
                 <Th type="text" content="Возраст"/>
                 <Th type="text" content="Статус"/>
-                <Th type="text" content="Имунитет"/>
+                <Th type="text" content="Имун"/>
+                <Th type="text" content="Гражд."/>
                 <Th type="text" content="Доп. инфа"/>
                 <Th type="text" content="Действия"/>
               </Tr>
@@ -434,6 +435,7 @@ const PlayerSummary = () => {
                   <Th type="text" content={el?.age || "-"}/>
                   <Th type="text" content={el?.status || "-"}/>
                   <Th type="text" content={el?.immun === true ? "true" : "false"}/>
+                  <Th type="text" content={el?.citizenship === true ? "true" : "false"}/>
                   <Th type="actions">
                     <TButton name="Log" onClick={() => handleOpenModal(el.user_id)}/>
                     <TButton name="User Details" onClick={() => handleOpenModalUd(el)}/>
