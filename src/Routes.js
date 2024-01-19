@@ -21,7 +21,7 @@ const ModEditor = lazy(() => import(/* webpackChunkName: "manager" */ './modules
 const TexturePackEditor = lazy(() => import(/* webpackChunkName: "manager" */ './modules/components/[0_grouped_0]-Manager/Texture-pack-editor/Texture-pack-editor'));
 const RegulationsEditor = lazy(() => import(/* webpackChunkName: "manager" */ './modules/components/[0_grouped_0]-Manager/Regulations-editor/Regulations-editor'));
 const MonitoringSummary = lazy(() => import(/* webpackChunkName: "manager" */ './modules/components/[0_grouped_0]-Manager/Monitoring-summary/Monitoring-summary'));
-// const GalleryStatusView = lazy(() => import(/* webpackChunkName: "manager" */ './modules/components/[0_grouped_0]-Manager/Gallery-status-view/Gallery-status-view'));
+const GalleryStatusView = lazy(() => import(/* webpackChunkName: "manager" */ './modules/components/[0_grouped_0]-Manager/Gallery-status-view/Gallery-status-view'));
 // const PermissionsStatus = lazy(() => import(/* webpackChunkName: "manager" */ './modules/components/[0_grouped_0]-Manager/Permissions-status/Permissions-status'));
 // --
 const Faq = lazy(() => import(/* webpackChunkName: "faq" */ './modules/pages/faq/Faq.js'));
@@ -117,7 +117,7 @@ const Router = () => {
             <Route path="texture_pack_editor" element={<TexturePackEditor/>}/>
             <Route path="regulations_editor" element={<RegulationsEditor/>}/>
             <Route path="monitoring_summary" element={<MonitoringSummary/>}/>
-            <Route path="gallery_status_view" element={<NotAvailable/>}/>
+            <Route path="gallery_status_view" element={<GalleryStatusView/>}/>
             <Route path="permissions_status" element={<NotAvailable/>}/> {/*<Route path="permissions_status" element={<PermissionsStatus/>}/>*/}
           </Route>
 
