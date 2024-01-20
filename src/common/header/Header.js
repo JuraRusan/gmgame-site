@@ -1,6 +1,6 @@
 import classNames from "classnames";
-import React, { useEffect, useState } from "react";
-import { sendRequest, useAxios } from "../../DataProvider";
+import React, {useEffect, useState} from "react";
+import {sendRequest, useAxios} from "../../DataProvider";
 import AOS from "aos";
 import LogoMainTextSvgComponent from "../../bases/icons/LogoMainText";
 
@@ -8,9 +8,6 @@ import styles from "./Header.module.scss";
 import "aos/dist/aos.css";
 
 const Header = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
 
   const resParams = useAxios("/api/", "GET", {});
 
@@ -55,27 +52,25 @@ const Header = () => {
     };
   }, [mainDropMenu]);
 
+  useEffect(() => {
+    AOS.init({duration: 1000});
+  }, []);
+
   return (
     <div className={classNames(styles["header"])}>
       <div className={classNames(styles["mainBox"])}>
-        <div
-          className={classNames(styles["leftBlock"], styles["blockNumbered"])}
-        >
+        <div className={classNames(styles["leftBlock"], styles["blockNumbered"])}>
           <a className={classNames(styles["logoGeneral"])} href="/">
             {/*<span className={classNames(styles["colored-1"])}>G</span>*/}
             {/*<span className={classNames(styles["colored-2"])}>M</span>*/}
             {/*<span className={classNames(styles["noColored"])}>GAME</span>*/}
             <div className={classNames(styles["logo"])}>
-              <LogoMainTextSvgComponent height="100%" width="100%" />
+              <LogoMainTextSvgComponent height="100%" width="100%"/>
             </div>
           </a>
         </div>
-        <div
-          className={classNames(styles["centerBlock"], styles["blockNumbered"])}
-        >
-          <a className={classNames(styles["swipePage"])} href="/regulations">
-            Правила
-          </a>
+        <div className={classNames(styles["centerBlock"], styles["blockNumbered"])}>
+          <a className={classNames(styles["swipePage"])} href="/regulations">Правила</a>
           <div
             className={classNames(styles["dropOpen"])}
             onClick={() => setMainDropMenu(!mainDropMenu)}
@@ -92,62 +87,26 @@ const Header = () => {
                 data-aos-duration="250"
               >
                 <div className={classNames(styles["boxList"])}>
-                  <a
-                    className={classNames(styles["list"], styles["phoneLink"])}
-                    href="/regulations"
-                  >
-                    Правила
-                  </a>
-                  <a
-                    className={classNames(styles["list"], styles["phoneLink"])}
-                    href="/faq"
-                  >
-                    Вопросы
-                  </a>
-                  <a className={classNames(styles["list"])} href="/support">
-                    Поддержать
-                  </a>
-                  <a className={classNames(styles["list"])} href="/online_map">
-                    Онлайн карта
-                  </a>
-                  <a className={classNames(styles["list"])} href="/statistic">
-                    Статистика
-                  </a>
-                  <a className={classNames(styles["list"])} href="/gallery">
-                    Галерея
-                  </a>
-                  <a
-                    className={classNames(styles["list"])}
-                    href="https://wiki.gmgame.ru/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Вики сервера
-                  </a>
-                  <a className={classNames(styles["list"])} href="/mods">
-                    Моды
-                  </a>
-                  <a
-                    className={classNames(styles["list"], styles["last"])}
-                    href="/texture_pack"
-                  >
-                    Текстур пак
-                  </a>
+                  <a className={classNames(styles["list"], styles["phoneLink"])} href="/regulations">Правила</a>
+                  <a className={classNames(styles["list"], styles["phoneLink"])} href="/faq">Вопросы</a>
+                  <a className={classNames(styles["list"])} href="/support">Поддержать</a>
+                  <a className={classNames(styles["list"])} href="/online_map">Онлайн карта</a>
+                  <a className={classNames(styles["list"])} href="/statistic">Статистика</a>
+                  <a className={classNames(styles["list"])} href="/gallery">Галерея</a>
+                  <a className={classNames(styles["list"])} href="https://wiki.gmgame.ru/" target="_blank" rel="noreferrer">Вики сервера</a>
+                  <a className={classNames(styles["list"])} href="/mods">Моды</a>
+                  <a className={classNames(styles["list"], styles["last"])} href="/texture_pack">Текстур пак</a>
                 </div>
               </div>
             )}
           </div>
-          <a className={classNames(styles["swipePage"])} href="/faq">
-            Вопросы
-          </a>
+          <a className={classNames(styles["swipePage"])} href="/faq">Вопросы</a>
         </div>
         <div
           className={classNames(styles["rightBlock"], styles["blockNumbered"])}
         >
           {!resParams?.data?.discordUser ? (
-            <a className={classNames(styles["swipePage"])} href="/api/login">
-              Войти
-            </a>
+            <a className={classNames(styles["swipePage"])} href="/api/login">Войти</a>
           ) : (
             <div
               className={classNames(styles["wrapperBoxCab"])}
@@ -183,23 +142,11 @@ const Header = () => {
                         {resParams.data.discordUser.username}
                       </label>
                     </div>
-                    <a
-                      className={classNames(styles["list"])}
-                      href="/cab/profile"
-                    >
-                      Профиль
-                    </a>
+                    <a className={classNames(styles["list"])} href="/cab/profile">Профиль</a>
                     {resParams?.data?.discordUser?.role === "admin" && (
-                      <a className={classNames(styles["list"])} href="/manager">
-                        Менеджер
-                      </a>
+                      <a className={classNames(styles["list"])} href="/manager">Менеджер</a>
                     )}
-                    <span
-                      className={classNames(styles["list"], styles["last"])}
-                      onClick={logout}
-                    >
-                      Выйти из аккаунта
-                    </span>
+                    <span className={classNames(styles["list"], styles["last"])} onClick={logout}>Выйти из аккаунта</span>
                   </div>
                 </div>
               )}
