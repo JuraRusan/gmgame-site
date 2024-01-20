@@ -451,23 +451,29 @@ const PlayerSummary = () => {
           <TableMain>
             <THead>
               <Tr header={true}>
-                <Th type="text" content="i" />
-                <Th type="text" content="Имя" />
-                <Th type="text" content="email" />
-                <Th type="text" content="Возраст" />
-                <Th type="text" content="Статус" />
-                <Th type="text" content="Доп. инфа" />
-                <Th type="text" content="Действия" />
+                <Th type="text" content="i"/>
+                <Th type="text" content="Имя"/>
+                <Th type="text" content="email"/>
+                <Th type="text" content="discord_id"/>
+                <Th type="text" content="Возраст"/>
+                <Th type="text" content="Статус"/>
+                <Th type="text" content="Имун"/>
+                <Th type="text" content="Гражд."/>
+                <Th type="text" content="Доп. инфа"/>
+                <Th type="text" content="Действия"/>
               </Tr>
             </THead>
             <TBody>
               {user?.map((el, i) => (
                 <Tr key={i} keyStyle={i}>
-                  <Th type="text" content={i + 1} />
-                  <Th type="text" content={el?.username || "-"} />
-                  <Th type="text" content={tag[el?.username]?.email || "-"} />
-                  <Th type="text" content={el?.age || "-"} />
-                  <Th type="text" content={el?.status || "-"} />
+                  <Th type="text" content={i + 1}/>
+                  <Th type="text" content={el?.username || "-"}/>
+                  <Th type="text" content={tag[el?.username]?.email || "-"}/>
+                  <Th type="text" content={el?.user_id || "-"}/>
+                  <Th type="text" content={el?.age || "-"}/>
+                  <Th type="text" content={el?.status || "-"}/>
+                  <Th type="text" content={el?.immun === true ? "true" : "false"}/>
+                  <Th type="text" content={el?.citizenship === true ? "true" : "false"}/>
                   <Th type="actions">
                     <TButton
                       name="Log"
