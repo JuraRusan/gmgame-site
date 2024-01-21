@@ -7,6 +7,7 @@ import CopySvgComponent from "../../../../bases/icons/copySvg/CopySvg";
 import CheckSvgComponent from "../../../../bases/icons/checkSvg/CheckSvg";
 import useLoading from "../../../loading/useLoading";
 import { sendRequest } from "../../../../DataProvider";
+import Button from "../../button/Button";
 
 import styles from "./My-profile.module.scss";
 import "aos/dist/aos.css";
@@ -119,8 +120,8 @@ const MyProfile = () => {
             <h4 className={classNames(styles["text"])}>
               Ваша заявка отклонена. Спасибо за понимание.
             </h4>
-            {!data.user.reapplication ? (
-              <button onClick={() => resubmit()}>Переподать заявку</button>
+            {!data.user.reapplication && data.user.status === 3 ? (
+              <Button view="submit" label="Переподать заявку" onClick={() => resubmit()}/>
             ) : (
               ""
             )}
