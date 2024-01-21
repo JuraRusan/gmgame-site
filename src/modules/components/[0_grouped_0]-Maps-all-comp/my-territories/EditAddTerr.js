@@ -88,7 +88,7 @@ const EditAddTerr = (params) => {
 
   const data = resParams.data;
 
-  if (data.terr?.xStart) { 
+  if (data.terr?.xStart && !init) { 
     setUrl(`https://map.gmgame.ru/#/${data.terr.xStart}/64/${data.terr.zStart}/-4/${data.world.worldName}/${data.world.layer}`);
   }
 
