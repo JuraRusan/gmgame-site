@@ -35,11 +35,12 @@ const EditAddTerr = (params) => {
   const [formZStop, setFormZStop] = useState('');
 
   const [init, setInit] = useState(false);
+  const [url, setUrl] = useState('https://map.gmgame.ru/#/-7/64/-54/-4/GMGameWorld/over');
 
-  function showMessage(response) {
+  function showMessage(response, worldName='GMGameWorld', formLayer='over') {
     if (response.message) {
       alert.success(response.message);
-      navigate(-1);
+      setUrl(`https://map.gmgame.ru/#/${formXStart}/64/${formXStart}/-4/${worldName}/${formLayer}`);
     } else {
       alert.error(response.error);
     }
@@ -59,7 +60,7 @@ const EditAddTerr = (params) => {
         terrID: id === 'new' ? -1 : id
       }
     ).then(response => {
-      showMessage(response);
+      showMessage(response, response.worldName, response.layer);
     });
   }
 
@@ -86,6 +87,10 @@ const EditAddTerr = (params) => {
   }
 
   const data = resParams.data;
+
+  if (data.terr?.xStart) { 
+    setUrl(`https://map.gmgame.ru/#/${data.terr.xStart}/64/${data.terr.zStart}/-4/${data.world.worldName}/${data.world.layer}`);
+  }
 
   if (resParams.loaded && id !== 'new' && !init) {
     setInit(true);
@@ -198,22 +203,13 @@ const EditAddTerr = (params) => {
         </div>
       </div>
       <div className={classNames(styles["columns_add_two"])}>
-        {id === 'new'
-          ?
           <iframe
             title="map"
-            src="https://map.gmgame.ru/#/-7/64/-54/-4/GMGameWorld/over"
+            key={url}
+            src={url}
             width="100%"
             height="100%"
           />
-          :
-          <iframe
-            title="map"
-            src={`https://map.gmgame.ru/#/${data.terr.xStart}/64/${data.terr.zStart}/-4/${data.world.worldName}/${data.world.layer}`}
-            width="100%"
-            height="100%"
-          />
-        }
       </div>
     </div>
   );
