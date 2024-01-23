@@ -17,6 +17,44 @@ import TTextarea from "../../table/TTextarea";
 
 import styles from "./Player-summary.module.scss";
 
+const StrokeName = ({name}) => {
+  return (
+    <div className={classNames(styles["main_line_user"])}>
+      <img
+        className={classNames(styles["ico_player"])}
+        src={`https://minotar.net/helm/${name}/150`}
+        alt="none"
+      />
+      <p className={classNames(styles["stroke_name"])}>Ник игрока:
+        <span className={classNames(styles["span_display"])}>{name}</span>
+      </p>
+    </div>
+  )
+}
+
+const StrokeInfo = ({label, info}) => {
+  return (
+    <p className={classNames(styles["stroke"])}>{label}
+      <span className={classNames(styles["color"])}>{info}</span>
+    </p>
+  )
+}
+
+const StrokeRedactor = ({label, onChange, defaultValue, id, type}) => {
+  return (
+    <div className={classNames(styles["stroke_row"])}>
+      <p className={classNames(styles["label_name"])}>{label}</p>
+      <input
+        className={classNames(styles["input"])}
+        id={id}
+        type={type}
+        onChange={onChange}
+        defaultValue={defaultValue}
+      />
+    </div>
+  )
+}
+
 const PlayerSummary = () => {
   const [searchParams] = useSearchParams();
   let [searchParam, setSearchParam] = useState(
@@ -868,200 +906,141 @@ const PlayerSummary = () => {
         className={classNames(styles["modalMain"])}
         overlayClassName={classNames(styles["overlayModal"])}
       >
-        <button
-          className={classNames(styles["closeModal"])}
-          onClick={handleCloseModalUd}
-        >
-          X
-        </button>
-        <div className={classNames(styles["cardWrapperManagerUser"])}>
-          <div className={classNames(styles["cardOne"])}>
-            <div className={classNames(styles["wrapperActionsAndIcon"])}>
-              <img
-                className={classNames(styles["playerImage"])}
-                src={`https://minotar.net/helm/${userDetails?.username}/150`}
-                alt="none"
-              />
-              <button
-                className={classNames(styles["buttonSubmit"])}
-                type="submit"
-                onClick={() => updateUser(userDetails.user_id)}
-              >
-                Сохранить
-              </button>
-            </div>
-            <div className={classNames(styles["textContainer"])}>
-              {/*----- username -----*/}
-              <div className={classNames(styles["oneBlock"])}>
-                <p className={classNames(styles["textDescriptionParagraph"])}>
-                  Ник игрока:
-                </p>
-                <span className={classNames(styles["lime"])}>
-                  {userDetails?.username}
-                </span>
-              </div>
-              {/*----- user_id -----*/}
-              <div className={classNames(styles["oneBlock"])}>
-                <p className={classNames(styles["textDescriptionParagraph"])}>
-                  Discord id игрока:
-                </p>
-                <span className={classNames(styles["lime"])}>
-                  {userDetails?.user_id}
-                </span>
-              </div>
-              {/*----- age -----*/}
-              <div className={classNames(styles["oneBlock"])}>
-                <p className={classNames(styles["textDescriptionParagraph"])}>
-                  Возраст:
-                </p>
-                <span className={classNames(styles["lime"])}>
-                  {userDetails?.age}
-                </span>
-              </div>
-              {/*----- status -----*/}
-              <div className={classNames(styles["oneBlock"])}>
-                <p className={classNames(styles["textDescriptionParagraph"])}>
-                  Статус игрока:
-                </p>
-                {userDetails?.status === 1 && (
-                  <span className={classNames(styles["lime"])}>
-                    Заявка на рассмотрении [base_status_number -{" "}
-                    {userDetails?.status}]
-                  </span>
-                )}
-                {userDetails?.status === 2 && (
-                  <span className={classNames(styles["lime"])}>
-                    Игрок сервера [base_status_number - {userDetails?.status}]
-                  </span>
-                )}
-                {userDetails?.status === 3 && (
-                  <span className={classNames(styles["lime"])}>
-                    Отказ по заявке [base_status_number - {userDetails?.status}]
-                  </span>
-                )}
-                {userDetails?.status === 4 && (
-                  <span className={classNames(styles["lime"])}>
-                    Бан на сервере [base_status_number - {userDetails?.status}]
-                  </span>
-                )}
-                {userDetails?.status === 5 && (
-                  <span className={classNames(styles["lime"])}>
-                    Не активный игрок [base_status_number -{" "}
-                    {userDetails?.status}]
-                  </span>
-                )}
-                {userDetails?.status === "default" && (
-                  <span className={classNames(styles["lime"])}>
-                    Новая заявка [base_status_number - {userDetails?.status}]
-                  </span>
-                )}
-              </div>
-              {/*----- user_id -----*/}
-              <div className={classNames(styles["oneBlock"])}>
-                <p className={classNames(styles["textDescriptionParagraph"])}>
-                  Партнер:
-                </p>
-                <input
-                  id="partner"
-                  onChange={(e) => userDetailsChange(e, userDetails.user_id)}
-                  className={classNames(styles["inputUserRedactor"])}
-                  defaultValue={userDetails?.partner}
-                />
-                <span className={classNames(styles["viewRedactor"])}>
-                  &#10043;
-                </span>
-              </div>
-              {/*----- from_about -----*/}
-              <div className={classNames(styles["oneBlock"])}>
-                <p className={classNames(styles["textDescriptionParagraph"])}>
-                  Откуда узнал о проекте:
-                </p>
-                <span className={classNames(styles["lime"])}>
-                  {userDetails?.from_about}
-                </span>
-              </div>
-              {/*----- you_about -----*/}
-              <div className={classNames(styles["oneBlock"])}>
-                <p className={classNames(styles["textDescriptionParagraph"])}>
-                  Описание:
-                </p>
-                <span className={classNames(styles["lime"])}>
-                  {userDetails?.you_about}
-                </span>
-              </div>
-              {/*----- immun -----*/}
-              <div className={classNames(styles["oneBlock"])}>
-                <p className={classNames(styles["textDescriptionParagraph"])}>
-                  Иммунитет:
-                </p>
-                <input
-                  id="immun"
-                  onChange={(e) => userDetailsChange(e, userDetails.user_id)}
-                  className={classNames(styles["inputUserRedactor"])}
-                  defaultValue={userDetails?.immun}
-                />
-                <span className={classNames(styles["viewRedactor"])}>
-                  &#10043;
-                </span>
-              </div>
-              {/*----- citizenship -----*/}
-              <div className={classNames(styles["oneBlock"])}>
-                <p className={classNames(styles["textDescriptionParagraph"])}>
-                  Гражданство:
-                </p>
-                <input
-                  id="citizenship"
-                  onChange={(e) => userDetailsChange(e, userDetails.user_id)}
-                  className={classNames(styles["inputUserRedactor"])}
-                  defaultValue={userDetails?.citizenship}
-                />
-                <span className={classNames(styles["viewRedactor"])}>
-                  &#10043;
-                </span>
-              </div>
-              {/*----- expiration_date -----*/}
-              <div className={classNames(styles["oneBlock"])}>
-                <p className={classNames(styles["textDescriptionParagraph"])}>
-                  Дата окончания:
-                </p>
-                <input
-                  id="expiration_date"
-                  onChange={(e) => userDetailsChange(e, userDetails.user_id)}
-                  className={classNames(styles["inputUserRedactor"])}
-                  type="date"
-                  defaultValue={
-                    userDetails.expirationDate
-                      ? userDetails.expirationDate
-                          .toISOString()
-                          .substring(0, 10)
-                      : ""
-                  }
-                />
-                <span className={classNames(styles["viewRedactor"])}>
-                  &#10043;
-                </span>
-              </div>
-              {/*----- note -----*/}
-              <div className={classNames(styles["oneBlock"])}>
-                <p className={classNames(styles["textDescriptionParagraph"])}>
-                  Заметка:
-                </p>
-                <textarea
-                  id="note"
-                  className={classNames(styles["inputUserRedactor"])}
-                  rows="4"
-                  cols="1000"
-                  onChange={(e) => userDetailsChange(e, userDetails.user_id)}
-                  defaultValue={userDetails?.note}
-                />
-                <span className={classNames(styles["viewRedactor"])}>
-                  &#10043;
-                </span>
-              </div>
-              {/*-----  -----*/}
-            </div>
+        <h3 className={classNames(styles["app_info"])}>Активная заявка</h3>
+        <div className={classNames(styles["active_app"])}>
+          <StrokeName name={userDetails?.username}/>
+          <div className={classNames(styles["description_user"])}>
+            <StrokeInfo
+              label="Дискорд id:"
+              info={userDetails?.user_id}
+            />
+            <StrokeInfo
+              label="Возраст:"
+              info={userDetails?.age}
+            />
+            <StrokeInfo
+              label="Статус игрока:"
+              info={userDetails?.status}
+            />
+            <StrokeRedactor
+              label="Партнер:"
+              id="partner"
+              type="text"
+              onChange={(e) => userDetailsChange(e, userDetails.user_id)}
+              defaultValue={userDetails?.partner}
+            />
+            <StrokeInfo
+              label="Откуда узнал о проекте:"
+              info={userDetails?.from_about}
+            />
+            <StrokeInfo
+              label="О себе:"
+              info={userDetails?.you_about}
+            />
+            <StrokeRedactor
+              label="Иммунитет:"
+              id="immun"
+              type="text"
+              onChange={(e) => userDetailsChange(e, userDetails.user_id)}
+              defaultValue={userDetails?.immun}
+            />
+            <StrokeRedactor
+              label="Гражданство:"
+              id="citizenship"
+              type="text"
+              onChange={(e) => userDetailsChange(e, userDetails.user_id)}
+              defaultValue={userDetails?.citizenship}
+            />
+            <StrokeRedactor
+              label="Дата_окончания:"
+              id="expiration_date"
+              type="date"
+              onChange={(e) => userDetailsChange(e, userDetails.user_id)}
+              defaultValue={
+                userDetails.expirationDate
+                  ? userDetails.expirationDate
+                    .toISOString()
+                    .substring(0, 10)
+                  : ""
+              }
+            />
+            <textarea
+              className={classNames(styles["notes"])}
+              id="note"
+              onChange={(e) => userDetailsChange(e, userDetails.user_id)}
+              defaultValue={userDetails?.note}
+            />
+          </div>
+          <div className={classNames(styles["wrapper_actions"])}>
+            <button
+              className={classNames(styles["submit"])}
+              type="submit"
+              onClick={() => updateUser(userDetails.user_id)}
+            >
+              Сохранить
+            </button>
           </div>
         </div>
+        {!userDetails.oldUsers ? null :
+          userDetails.oldUsers.map((el, index) => (
+            <>
+              <h3 className={classNames(styles["app_info"])}>Старая заявка [ {index + 1} ]</h3>
+              <div className={classNames(styles["old_app"])}>
+                <StrokeName name={el?.username}/>
+                <div className={classNames(styles["description_user"])}>
+                  <StrokeInfo
+                    label="Дискорд id:"
+                    info={userDetails?.oldUsers[index]?.user_id}
+                  />
+                  <StrokeInfo
+                    label="Возраст:"
+                    info={userDetails?.oldUsers[index]?.age}
+                  />
+                  <StrokeInfo
+                    label="Баланс:"
+                    info={userDetails?.oldUsers[index]?.balance}
+                  />
+                  <StrokeInfo
+                    label="Гражданство:"
+                    info={userDetails?.oldUsers[index]?.citizenship === true ? "true" : "false"}
+                  />
+                  <StrokeInfo
+                    label="Друзья:"
+                    info={!userDetails?.oldUsers[index]?.friends ? "-" : userDetails?.oldUsers[index]?.friends}
+                  />
+                  <StrokeInfo
+                    label="Откуда узнали о проэкте:"
+                    info={!userDetails?.oldUsers[index]?.from_about ? "-" : userDetails?.oldUsers[index]?.from_about}
+                  />
+                  <StrokeInfo
+                    label="О себе:"
+                    info={!userDetails?.oldUsers[index]?.you_about ? "-" : userDetails?.oldUsers[index]?.you_about}
+                  />
+                  <StrokeInfo
+                    label="Сервера:"
+                    info={!userDetails?.oldUsers[index]?.server ? "-" : userDetails?.oldUsers[index]?.server}
+                  />
+                  <StrokeInfo
+                    label="Имунитет:"
+                    info={userDetails?.oldUsers[index]?.immun === true ? "true" : "false"}
+                  />
+                  <StrokeInfo
+                    label="Is_discord:"
+                    info={userDetails?.oldUsers[index]?.is_discord === true ? "true" : "false"}
+                  />
+                  <StrokeInfo
+                    label="Заметка о игроке:"
+                    info={!userDetails?.oldUsers[index]?.note ? "-" : userDetails?.oldUsers[index]?.note}
+                  />
+                  <StrokeInfo
+                    label="Партнёр:"
+                    info={!userDetails?.oldUsers[index]?.partner ? "-" : userDetails?.oldUsers[index]?.partner}
+                  />
+                </div>
+              </div>
+            </>
+          ))
+        }
       </ReactModal>
 
       {/*-----------------------------------------------------------------------------------------------*/}
@@ -1076,12 +1055,6 @@ const PlayerSummary = () => {
         className={classNames(styles["modalMain"])}
         overlayClassName={classNames(styles["overlayModal"])}
       >
-        <button
-          className={classNames(styles["closeModal"])}
-          onClick={handleCloseModal}
-        >
-          X
-        </button>
         <div className={classNames(styles["cardLog"])}>
           <TableMain>
             <THead>

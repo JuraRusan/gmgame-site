@@ -121,7 +121,9 @@ const MyProfile = () => {
               Ваша заявка отклонена. Спасибо за понимание.
             </h4>
             {!data.user.reapplication && data.user.status === 3 ? (
-              <Button view="submit" label="Переподать заявку" onClick={() => resubmit()}/>
+              <div className={classNames(styles["user_update_statement"])}>
+                <Button view="submit" label="Переподать заявку" onClick={() => resubmit()}/>
+              </div>
             ) : (
               ""
             )}
