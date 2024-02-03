@@ -5,6 +5,11 @@ import {testArrayTags, testArrayUsers} from "../../../pages/gallery/GalleryArray
 import Notifications from "../../notifications/Notifications";
 import Button from "../../button/Button";
 import {LazyLoadImage} from "react-lazy-load-image-component";
+import {sendRequest, useAxios} from "../../../../DataProvider";
+import {useNavigate, useParams} from "react-router-dom";
+import {useAlert} from "react-alert";
+import useLoading from "../../../loading/useLoading";
+import Preload from "../../preloader/Preload";
 
 import styles from "./EditAddPost.module.scss";
 import '../../../custon-modules/react-image-picker-editor-index.scss'
@@ -37,7 +42,14 @@ const ADD = ({list, arr, placeholder, name, onChange}) => {
   )
 }
 
-const EditAddPost = () => {
+const EditAddPost = (params) => {
+
+  const isLoading = useLoading();
+
+  const navigate = useNavigate();
+  const {id} = useParams();
+
+  const alert = useAlert();
 
   const config2 = {
     borderRadius: '5px',
@@ -48,7 +60,6 @@ const EditAddPost = () => {
     compressInitial: null,
   };
   const initialImage = '';
-  // const initialImage = '/assets/images/8ptAya.webp';
 
   const [errorMessage, setErrorMessage] = useState(null);
   const [errorMessageTags, setErrorMessageTags] = useState(null);
@@ -56,9 +67,15 @@ const EditAddPost = () => {
   const [errorMessagePostNameLength, setErrorMessagePostNameLength] = useState(null);
   const [errorMessagePostDescription, setErrorMessagePostDescription] = useState(null);
   const [errorMessagePostDescriptionLength, setErrorMessagePostDescriptionLength] = useState(null);
+
+  const [init, setInit] = useState(false);
+
   const [countImage, setCountImage] = useState(1);
   const [names, setNames] = useState([]);
   const [selectedTags, setSelectedTags] = useState([]);
+  const [title, setTitle] = useState('');
+  const [description, setDescription] = useState('');
+  const [images, setImages] = useState([])
 
   const handleAdd = () => {
     if (countImage < 16) {
@@ -77,7 +94,27 @@ const EditAddPost = () => {
     for (let i = 0; i < countImage; i++) {
       divs.push(
         <div className={classNames(styles["margin"])} key={i}>
-          <ReactImagePickerEditor config={config2} imageSrcProp={initialImage}/>
+          <ReactImagePickerEditor
+            config={config2}
+            imageSrcProp={initialImage}
+            imageChanged={(newDataImageUrl) => {
+              if (!newDataImageUrl) {
+                return
+              }
+              const copyData = [...images]
+              const imageIndex = copyData.findIndex(el => el.index === i)
+
+              if (imageIndex > -1) {
+                copyData[imageIndex] = {...copyData[imageIndex], url: newDataImageUrl}
+                setImages(copyData)
+              } else {
+                setImages(prev => [...prev, {
+                  url: newDataImageUrl,
+                  index: i
+                }])
+              }
+            }}
+          />
         </div>);
     }
     return divs;
@@ -111,9 +148,85 @@ const EditAddPost = () => {
     }
   }
 
+  function showMessage(response) {
+    if (response.message) {
+      alert.success(response.message);
+      navigate(-1);
+    } else {
+      alert.error(response.error);
+    }
+  }
+
+  function postRequest(url) {
+    sendRequest(
+      url,
+      'POST',
+      {
+        authors: JSON.stringify(names),
+        tags: JSON.stringify(selectedTags),
+        title: title,
+        description: description,
+        url: images.map(el => el.url),
+        check: false,
+        galleryID: id === 'new' ? -1 : id
+      }
+    ).then(response => {
+      showMessage(response);
+    });
+  }
+
+  const addPost = () => {
+    postRequest('/api/add_gallery');
+  }
+
+  const savePost = () => {
+    postRequest('/api/edit_gallery');
+  }
+
+  const deletePost = () => {
+    postRequest('/api/delete_gallery');
+  }
+
+  const resParams = useAxios(
+    `/api/get_gallery/${id}`,
+    'GET',
+    {}
+  );
+
+  if (resParams.loading || isLoading) {
+    return <Preload full={false}/>;
+  }
+
+  const data = resParams.data;
+
+  if (resParams.loaded && id !== 'new' && !init) {
+    setInit(true);
+    setNames(JSON.parse(data.data.authors))
+    setSelectedTags(JSON.parse(data.data.tags))
+    setTitle(data.data.title)
+    setDescription(data.data.description)
+    // setImages(data.url)
+  }
+
+  // async function addPost(e) {
+  //   e.preventDefault()
+  //   const result = {
+  //     authors: names,
+  //     tags: selectedTags,
+  //     title: title,
+  //     description: description,
+  //     url: images.map(el => el.url),
+  //     galID: -1
+  //   }
+  //   console.log(result)
+  //   const request = await axios.post('/api/add_gallery', result)
+  //   // console.log(request)
+  // }
+
   return (
     <div className={classNames(styles["container_add_edit"])}>
       <div className={classNames(styles["left"])}>
+        <button onClick={() => navigate(-1)} className={classNames(styles["back"])}>{"<-- Показать весь список"}</button>
         <div className={classNames(styles["post_parameters"])}>
           <button className={classNames(styles["button_count"])} onClick={handleAdd}>+</button>
           <button className={classNames(styles["button_count"])} onClick={handleRemove}>-</button>
@@ -210,6 +323,7 @@ const EditAddPost = () => {
             <h4 className={classNames(styles["count"])}>{errorMessagePostNameLength}</h4>
           </div>
           <input
+            value={title}
             className={classNames(styles["choice_text"])}
             type="text"
             name="postName"
@@ -227,6 +341,7 @@ const EditAddPost = () => {
                 setErrorMessagePostName(null);
                 setErrorMessagePostNameLength(<span>{postName.length}/{maxCount}</span>);
               }
+              setTitle(e.target.value)
             }}
           />
           <div className={classNames(styles["title_check"])}>
@@ -235,6 +350,7 @@ const EditAddPost = () => {
             <h4 className={classNames(styles["count"])}>{errorMessagePostDescriptionLength}</h4>
           </div>
           <textarea
+            value={description}
             className={classNames(styles["choice_text"])}
             rows="3"
             name="postDescription"
@@ -252,12 +368,13 @@ const EditAddPost = () => {
                 setErrorMessagePostDescription(null);
                 setErrorMessagePostDescriptionLength(<span>{postName.length}/{maxCount}</span>);
               }
+              setDescription(e.target.value)
             }}
           />
         </div>
         <div className={classNames(styles["wrapper_actions"])}>
-          <Button view="submit" label="Сохранить"/>
-          <Button view="delete" label="Удалить"/>
+          <Button view="submit" label="Сохранить" onClick={id === 'new' ? addPost : savePost}/>
+          {id === 'new' ? null : <Button view="delete" label="Удалить" onClick={deletePost}/>}
         </div>
       </div>
     </div>

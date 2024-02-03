@@ -1,9 +1,10 @@
 import classNames from "classnames";
 import React from "react";
+import {Link} from "react-router-dom";
 
 import styles from "./Table.module.scss";
 
-const Th = ({type, href, content, children}) => {
+const Th = ({type, href, content, children, to}) => {
 
   function trimString(str, maxLength) {
     if (str?.length > maxLength) {
@@ -16,6 +17,7 @@ const Th = ({type, href, content, children}) => {
   const length = 150
   const tooltip = content?.length > length ? <span className={classNames(styles["full_text"])}>{content}</span> : null
   const link = <a href={href} className={classNames(styles["tableLink"])} target="_blank" rel="noreferrer">&#10148;</a>
+  const swipe = <Link to={to} className={classNames(styles["tableLink"])} target="_blank" rel="noreferrer">&#10148;</Link>
   const text = <p className={classNames(styles["tableText"])}>{trimString(content, length)}{tooltip}</p>
 
   const getTypeChildren = () => {
@@ -25,10 +27,13 @@ const Th = ({type, href, content, children}) => {
       return children;
     } else if (type === "link") {
       return link;
+    } else if (type === "swipe") {
+      return swipe;
     } else {
       return text;
     }
   };
+
   const getType = getTypeChildren();
 
   return (

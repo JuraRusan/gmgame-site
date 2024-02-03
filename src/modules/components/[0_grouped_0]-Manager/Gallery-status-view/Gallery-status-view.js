@@ -9,6 +9,9 @@ import Tr from "../../table/Tr";
 import TButton from "../../table/TButton";
 import ReactModal from "react-modal";
 import EditAddPost from "../../[0_grouped_0]-Profile/gallery/EditAddPost";
+// import {useAxios} from "../../../../DataProvider";
+// import Preload from "../../preloader/Preload";
+// import useLoading from "../../../loading/useLoading";
 
 import styles from "./Gallery-status-view.module.scss";
 
@@ -58,7 +61,6 @@ const GalleryStatusView = () => {
       >
         <div className={classNames(styles["container"])}>
           <EditAddPost/>
-
         </div>
       </ReactModal>
     </div>

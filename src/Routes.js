@@ -27,9 +27,9 @@ const GalleryStatusView = lazy(() => import(/* webpackChunkName: "manager" */ '.
 const Faq = lazy(() => import(/* webpackChunkName: "faq" */ './modules/pages/faq/Faq.js'));
 const Regulations = lazy(() => import(/* webpackChunkName: "regulations" */ './modules/pages/regulations/Regulations.js'));
 // --
-// const MainGallery = lazy(() => import(/* webpackChunkName: "gallery" */ './modules/pages/gallery/Gallery.js'));
-// const Gallery = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/gallery/Gallery.js'));
-// const EditAddPost = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/gallery/EditAddPost.js'));
+const MainGallery = lazy(() => import(/* webpackChunkName: "gallery" */ './modules/pages/gallery/Gallery.js'));
+const Gallery = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/gallery/Gallery.js'));
+const EditAddPost = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/gallery/EditAddPost.js'));
 // const AnalyticsPost = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/gallery/AnalyticsPost.js'));
 // --
 const MyMarkers = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Maps-all-comp/my-markers/My-markers.js'));
@@ -85,8 +85,8 @@ const Router = () => {
             <Route path="articles" element={<CabNotAvailable/>}/>
             <Route path="articles/edit_add_article/:id" element={<CabNotAvailable/>}/>
             {/*----------*/}
-            <Route path="gallery" element={<CabNotAvailable/>}/>
-            <Route path="gallery/edit_add_post" element={<CabNotAvailable/>}/>
+            <Route path="gallery" element={<Gallery/>}/>
+            <Route path="gallery/edit_add_post/:id" element={<EditAddPost/>}/>
             <Route path="gallery/post_analytics" element={<CabNotAvailable/>}/>
             {/*----------*/}
             <Route path="prize" element={<MyPrizes/>}/>
@@ -98,7 +98,7 @@ const Router = () => {
           <Route path="building_a_hyperloop_server" element={<BuildingAHyperloop/>}/> {/*-------------------- temporarily --------------------*/}
 
           <Route path="/articles_wiki" element={<NotAvailable/>}/> {/* <Route path="/articles_wiki" element={<ArticlesWiki/>}/> */}
-          <Route path="/gallery" element={<NotAvailable/>}/>
+          <Route path="/gallery" element={<MainGallery/>}/>
 
           <Route path="/faq" element={<Faq/>}/>
           <Route path="/regulations" element={<Regulations/>}/>

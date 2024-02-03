@@ -13,6 +13,27 @@
     width: auto;
     height: auto;
 
+    .back {
+      background: transparent;
+      border: none;
+      border-radius: 0;
+      font-weight: 400;
+      font-size: 14px;
+      text-align: center;
+      color: $site-color-2;
+      margin-bottom: 15px;
+      cursor: pointer;
+      outline: none;
+      transition: all 0.25s ease;
+
+      &:hover,
+      &:active,
+      &:focus {
+        outline: none;
+        color: $site-color-9;
+      }
+    }
+
     .post_parameters {
       display: flex;
       width: auto;

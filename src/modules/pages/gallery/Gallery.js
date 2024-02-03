@@ -1,59 +1,115 @@
 import classNames from "classnames";
-import React, {useState} from "react";
-import ImageGallery from 'react-image-gallery';
+import React, {useCallback, useEffect, useState} from "react";
+// import ImageGallery from 'react-image-gallery';
 import Modal from 'react-modal';
 import {LazyLoadImage} from "react-lazy-load-image-component";
-import {array} from "./GalleryArray";
-import HeartSvgComponent from "../../../bases/icons/heartSvg/HeartSvg";
-import Particles from "../../components/particles/Particles";
+// import {array} from "./GalleryArray";
+// import HeartSvgComponent from "../../../bases/icons/heartSvg/HeartSvg";
+// import Particles from "../../components/particles/Particles";
+import {sendRequest, useAxios} from "../../../DataProvider";
+import useLoading from "../../loading/useLoading";
+import Preload from "../../components/preloader/Preload";
 
 import styles from "./Gallery.module.scss";
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import "../../custon-modules/Image-gallery.scss";
 
+// function blobToBase64(blob) {
+//   return new Promise((resolve, _) => {
+//     const reader = new FileReader();
+//     reader.onloadend = () => resolve(reader.result);
+//     reader.readAsDataURL(blob);
+//   });
+// }
+
 const MainGallery = () => {
 
-  const [modalIsOpen, setIsOpen] = useState(false);
-  const filteredOneItem = array.filter(ids => ids.id === 1)
+  const isLoading = useLoading();
 
-  function openModal() {
+  // const [galleries, setGalleries] = useState([])
+  const [activeId, setActiveId] = useState([])
+
+  const resParams = useAxios(
+    "/api/get_all_galleries",
+    'GET',
+    {}
+  );
+
+  // const getGalleries = useCallback(async () => {
+  //   const request = await sendRequest('/api/get_galleries', "GET")
+  //   if (request) {
+  //     request.data.map(async (el) => {
+  //       const imgs =  await Promise.all(JSON.parse(el.url).map(
+  //         async (el) =>
+  //           await blobToBase64(new Blob([el], { type: "image/jpeg" }))
+  //       ));
+  //
+  //       console.log({imgs});
+  //
+  //       setGalleries(prev => [...prev,
+  //         {
+  //           authors: JSON.parse(el.authors),
+  //           tags: JSON.parse(el.tags),
+  //           url: imgs,
+  //           title: el.title,
+  //           description: el.description,
+  //           id: el.id,
+  //         }
+  //         ])
+  //
+  //     });
+  //
+  //
+  //   }
+  // }, [])
+
+  const [modalIsOpen, setIsOpen] = useState(false);
+
+  // const filteredOneItem = array.filter(ids => ids.id === activeId)
+
+  function openModal(id) {
     setIsOpen(true);
+    setActiveId(id)
   }
 
   function closeModal() {
     setIsOpen(false);
   }
 
+  // useEffect(() => {
+  //   getGalleries()
+  // }, [getGalleries])
+
+  if (resParams.loading || isLoading) {
+    return <Preload full={false}/>;
+  }
+
+  // console.log(resParams.data.data)
+
   return (
     <div className={classNames(styles["main_gallery"])}>
       <h3 className={classNames(styles["page_title"])}>Общая галерея игроков сервера</h3>
       <div className={classNames(styles["gallery_list"])}>
-        {array.map((items, i) =>
-          <div className={classNames(styles["one_container"])} key={i}>
-            <div className={classNames(styles["wrapper_image"])}>
-              <LazyLoadImage
-                className={classNames(styles["img"])}
-                alt={items.picturesView}
-                effect="blur"
-                src={items.picturesView}
-                onClick={openModal}
-              />
-            </div>
-            <div className={classNames(styles["container_like"])}>
-              <div className={classNames(styles["likes"])}>
-                <button className={classNames(styles["click"], styles["like"])}>
-                  <Particles text={<HeartSvgComponent height="20px" width="20px" color="#f4f4f4"/>} type="like"/>
-                </button>
-                <label className={classNames(styles["text"])}>{items.likes}</label>
+        {resParams.data.data.map((items, i) => {
+            if (items.check === false) {
+              return null
+            }
+            return (
+              <div className={classNames(styles["one_container"])} key={i}>
+                <div className={classNames(styles["wrapper_image"])}>
+                  <LazyLoadImage
+                    className={classNames(styles["img"])}
+                    alt="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg"
+                    effect="blur"
+                    src="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg"
+                    onClick={() => {
+                      openModal(items.id)
+                    }}
+                  />
+                </div>
               </div>
-              <div className={classNames(styles["likes"])}>
-                <button className={classNames(styles["click"], styles["dislike"])}>
-                  <Particles text={<HeartSvgComponent height="20px" width="20px" color="#f4f4f4"/>} type="dislike"/>
-                </button>
-                <label className={classNames(styles["text"])}>{items.dislikes}</label>
-              </div>
-            </div>
-          </div>
+            )
+          }
         )}
       </div>
 
@@ -64,40 +120,46 @@ const MainGallery = () => {
         onRequestClose={closeModal}
       >
         <button onClick={closeModal} className={classNames(styles["close"])}>&#10008;</button>
-        {filteredOneItem.map((one, i) =>
-          <>
-            <div className={classNames(styles["galleryBackground"])} key={i}>
-              <div className={classNames(styles["galleryWrapper"])}>
-                <ImageGallery items={one.picturesList} lazyLoad="true" showIndex="true"/>
-              </div>
-            </div>
-            <div className={classNames(styles["containerDescription"])}>
-              <div className={classNames(styles["containerBuilders"])}>
-                <ul className={classNames(styles["ulList"])}>
-                  <li className={classNames(styles["liAuthorsTitle"])}>Авторы:</li>
-                  {one.users.map((oneUser, index) =>
-                    <li className={classNames(styles["liUser"])} key={index}>
-                      <img
-                        className={classNames(styles["imgUser"])}
-                        src={`https://minotar.net/helm/${oneUser}/100`}
-                        alt={`https://minotar.net/helm/${oneUser}/100`}>
-                      </img>
-                      <label className={classNames(styles["userName"])}>{oneUser}</label>
-                    </li>
-                  )}
-                </ul>
-              </div>
-              <div className={classNames(styles["description"])}>
-                <h4 className={classNames(styles["titleNameImageList"])}>{one.name}</h4>
-                <p className={classNames(styles["textParagraph"])}>{one.description}</p>
-                <div className={classNames(styles["blockTag"])}>
-                  {one.tagNavigation.map((tag, index) => (
-                    <span className={classNames(styles["oneTag"])} key={index}>{"#" + tag.trim()}</span>
-                  ))}
+        {resParams.data.data.map((one, i) => {
+            if (activeId !== one.id) {
+              return false;
+            }
+            return (
+              <>
+                <div className={classNames(styles["galleryBackground"])} key={i}>
+                  <div className={classNames(styles["galleryWrapper"])}>
+                    {/*<ImageGallery items={one.picturesList} lazyLoad="true" showIndex="true"/>*/}
+                  </div>
                 </div>
-              </div>
-            </div>
-          </>
+                <div className={classNames(styles["containerDescription"])}>
+                  <div className={classNames(styles["containerBuilders"])}>
+                    <ul className={classNames(styles["ulList"])}>
+                      <li className={classNames(styles["liAuthorsTitle"])}>Авторы:</li>
+                      {JSON.parse(one?.authors).map((oneUser, index) =>
+                        <li className={classNames(styles["liUser"])} key={index}>
+                          <img
+                            className={classNames(styles["imgUser"])}
+                            src={`https://minotar.net/helm/${oneUser}/100`}
+                            alt={`https://minotar.net/helm/${oneUser}/100`}>
+                          </img>
+                          <label className={classNames(styles["userName"])}>{oneUser}</label>
+                        </li>
+                      )}
+                    </ul>
+                  </div>
+                  <div className={classNames(styles["description"])}>
+                    <h4 className={classNames(styles["titleNameImageList"])}>{one.title}</h4>
+                    <p className={classNames(styles["textParagraph"])}>{one.description}</p>
+                    <div className={classNames(styles["blockTag"])}>
+                      {JSON.parse(one?.tags).map((tag, index) => (
+                        <span className={classNames(styles["oneTag"])} key={index}>{"#" + tag.trim()}</span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </>
+            )
+          }
         )}
       </Modal>
 
