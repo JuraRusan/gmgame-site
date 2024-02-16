@@ -38,11 +38,6 @@ const EditAddMarker = lazy(() => import(/* webpackChunkName: "cab" */ './modules
 const MyTerritories = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Maps-all-comp/my-territories/My-territories.js'));
 const EditAddTerr = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Maps-all-comp/my-territories/EditAddTerr.js'));
 // --
-// const ArticlesWiki = lazy(() => import(/* webpackChunkName: "wiki" */ './modules/pages/articles/Articles-wiki.js'));
-// const Articles = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/articles/Articles.js'));
-// const EditAddArticle = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/articles/EditAddArticle.js'));
-const BuildingAHyperloop = lazy(() => import(/* webpackChunkName: "building_a_hyperloop" */ './modules/pages/articles/temporarily/Building_a_hyperloop')); // -------------------- temporarily --------------------
-// --
 const MyProfile = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/my-profile/My-profile.js'));
 const MyPrizes = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/my-prizes/My-prizes.js'));
 const ChangePassword = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/change-password/Change-password.js'));
@@ -82,9 +77,6 @@ const Router = () => {
             <Route path="markers" element={<MyMarkers/>}/>
             <Route path="markers/edit_add_marker/:id" element={<EditAddMarker/>}/>
             {/*----------*/}
-            <Route path="articles" element={<CabNotAvailable/>}/>
-            <Route path="articles/edit_add_article/:id" element={<CabNotAvailable/>}/>
-            {/*----------*/}
             <Route path="gallery" element={<CabNotAvailable/>}/>
             <Route path="gallery/edit_add_post" element={<CabNotAvailable/>}/>
             <Route path="gallery/post_analytics" element={<CabNotAvailable/>}/>
@@ -95,9 +87,6 @@ const Router = () => {
             {/*----------*/}
           </Route>
 
-          <Route path="building_a_hyperloop_server" element={<BuildingAHyperloop/>}/> {/*-------------------- temporarily --------------------*/}
-
-          <Route path="/articles_wiki" element={<NotAvailable/>}/> {/* <Route path="/articles_wiki" element={<ArticlesWiki/>}/> */}
           <Route path="/gallery" element={<NotAvailable/>}/>
 
           <Route path="/faq" element={<Faq/>}/>
