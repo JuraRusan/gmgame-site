@@ -1,0 +1,54 @@
+@import "../../../../Variables";
+
+.villager {
+  display: flex;
+  flex-direction: row;
+
+  .villagerInfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .styleH4 {
+      color: $site-color-2;
+      font-size: 14px;
+      font-weight: 400;
+      height: 24px;
+      line-height: 24px;
+
+      .color,
+      .red {
+        font-weight: inherit;
+        font-size: 13px;
+        font-family: $fontCustom2;
+        margin-left: 8px;
+      }
+
+      .color {
+        color: $site-color-8;
+      }
+
+      .red {
+        color: $site-color-11;
+      }
+    }
+
+    .left {
+      text-indent: 2ch;
+    }
+  }
+
+  .villagerImage {
+    display: flex;
+    width: 100%;
+    max-width: 125px;
+    height: auto;
+    margin: 0 auto;
+
+    .wrapper {
+      margin: 0 auto;
+      width: auto;
+      height: 250px;
+    }
+  }
+}

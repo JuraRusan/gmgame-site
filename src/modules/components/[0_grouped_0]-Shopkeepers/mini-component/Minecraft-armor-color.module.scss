@@ -1,0 +1,21 @@
+@import "../../../../Variables";
+
+.color_style_box {
+  font-size: 12px;
+  color: $site-color-2;
+  height: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: $fontCustom2 !important;
+  margin-left: 8px;
+
+  .span_color {
+    font-size: inherit;
+    height: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    color: $site-color-8;
+    margin-left: 4px;
+  }
+}
