@@ -27,7 +27,7 @@ const MainGallery = () => {
   const isLoading = useLoading();
 
   // const [galleries, setGalleries] = useState([])
-  const [activeId, setActiveId] = useState([])
+  const [activeId, setActiveId] = useState(0)
 
   const resParams = useAxios(
     "/api/get_all_galleries",
@@ -74,6 +74,7 @@ const MainGallery = () => {
 
   function closeModal() {
     setIsOpen(false);
+    setActiveId(0)
   }
 
   // useEffect(() => {
