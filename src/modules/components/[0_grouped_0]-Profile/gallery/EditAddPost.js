@@ -1,19 +1,54 @@
 import classNames from "classnames";
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import ReactImagePickerEditor from 'react-image-picker-editor';
 import {testArrayTags, testArrayUsers} from "../../../pages/gallery/GalleryArray";
-import Warn from "../../warn/Warn";
-import AOS from "aos";
+import Notifications from "../../notifications/Notifications";
+import Button from "../../button/Button";
+import {LazyLoadImage} from "react-lazy-load-image-component";
 
 import styles from "./EditAddPost.module.scss";
 import '../../../custon-modules/react-image-picker-editor-index.scss'
-import "aos/dist/aos.css";
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
+const LOAD_AND_EDIT_WARN = "Внимание! При работе с файлами в большом разрешении могут наблюдаться задержки отрисовки изображения. Рекомендуется использовать изображения в умеренном качестве, в ином случае сохранять спокойствие."
+const ERROR_VALUE_ONE = "Имя должно содержать от 3 до 16 символов."
+const ERROR_VALUE_TWO = "Имя может содержать только буквы, цифры и символы подчеркивания."
+const ERROR_VALUE_TREE = "Тег может содержать от 3 до 24 символов."
+const ERROR_VALUE_FOUR = "Тег может содержать только буквы, цифры и символы подчеркивания."
+
+const ADD = ({list, arr, placeholder, name, onChange}) => {
+  return (
+    <div className={classNames(styles["add"])}>
+      <datalist id={list}>
+        {arr.map((e, i) =>
+          <option key={i} value={e}/>
+        )}
+      </datalist>
+      <input
+        name={name}
+        list={list}
+        type="search"
+        className={classNames(styles["choice_form"])}
+        placeholder={placeholder}
+        onChange={onChange}
+      />
+      <button type="submit" className={classNames(styles["submit"])}>&#10003;</button>
+    </div>
+  )
+}
 
 const EditAddPost = () => {
 
-  useEffect(() => {
-    AOS.init({duration: 1000});
-  }, []);
+  const config2 = {
+    borderRadius: '5px',
+    language: 'ru',
+    width: '280px',
+    height: '200px',
+    objectFit: 'contain',
+    compressInitial: null,
+  };
+  const initialImage = '';
+  // const initialImage = '/assets/images/8ptAya.webp';
 
   const [errorMessage, setErrorMessage] = useState(null);
   const [errorMessageTags, setErrorMessageTags] = useState(null);
@@ -24,24 +59,6 @@ const EditAddPost = () => {
   const [countImage, setCountImage] = useState(1);
   const [names, setNames] = useState([]);
   const [selectedTags, setSelectedTags] = useState([]);
-  const [numberTextareaRow, setNumberTextareaRow] = useState(0);
-
-  const loadAndEditWarn = "Внимание! При работе с файлами в большом разрешении могут наблюдаться задержки отрисовки изображения. Рекомендуется использовать изображения в умеренном качестве, в ином случае сохранять спокойствие."
-  const ErrorValueOne = "Имя должно содержать от 3 до 16 символов."
-  const ErrorValueTwo = "Имя может содержать только буквы, цифры и символы подчеркивания."
-  const ErrorValueTree = "Тег может содержать от 3 до 24 символов. "
-  const ErrorValueFour = "Тег может содержать только буквы, цифры и символы подчеркивания."
-
-  function createDivs() {
-    const divs = [];
-    for (let i = 0; i < countImage; i++) {
-      divs.push(
-        <div className={classNames(styles["margin"])} key={i}>
-          <ReactImagePickerEditor config={config2} imageSrcProp={initialImage}/>
-        </div>);
-    }
-    return divs;
-  }
 
   const handleAdd = () => {
     if (countImage < 16) {
@@ -55,13 +72,24 @@ const EditAddPost = () => {
     }
   };
 
+  function createDivs() {
+    const divs = [];
+    for (let i = 0; i < countImage; i++) {
+      divs.push(
+        <div className={classNames(styles["margin"])} key={i}>
+          <ReactImagePickerEditor config={config2} imageSrcProp={initialImage}/>
+        </div>);
+    }
+    return divs;
+  }
+
   function handleAddName(e) {
     e.preventDefault();
     const name = e.target.elements.name.value.trim();
     if (name.length < 3 || name.length > 16) {
-      setErrorMessage(<span>{ErrorValueOne}</span>);
+      setErrorMessage(ERROR_VALUE_ONE);
     } else if (!/^[a-zA-Z0-9_]+$/.test(name)) {
-      setErrorMessage(<span>{ErrorValueTwo}</span>);
+      setErrorMessage(ERROR_VALUE_TWO);
     } else {
       setErrorMessage(null);
       setNames(prevNames => [...prevNames, name]);
@@ -73,9 +101,9 @@ const EditAddPost = () => {
     e.preventDefault();
     const tags = e.target.elements.tags.value.trim();
     if (tags.length < 3 || tags.length > 16) {
-      setErrorMessageTags(<span>{ErrorValueTree}</span>);
+      setErrorMessageTags(ERROR_VALUE_TREE);
     } else if (!/^[а-яА-Яa-zA-Z0-9_]+$/.test(tags)) {
-      setErrorMessageTags(<span>{ErrorValueFour}</span>);
+      setErrorMessageTags(ERROR_VALUE_FOUR);
     } else {
       setErrorMessageTags(null);
       setSelectedTags(prevTags => [...prevTags, tags]);
@@ -83,140 +111,106 @@ const EditAddPost = () => {
     }
   }
 
-  const config2 = {
-    borderRadius: '5px',
-    language: 'ru',
-    width: '280px',
-    height: '200px',
-    objectFit: 'contain',
-    compressInitial: null,
-  };
-
-  // const initialImage = '/assets/images/8ptAya.webp';
-  const initialImage = '';
-
-  useEffect(() => {
-    function handleResize() {
-      if (window.innerWidth > 960 && window.innerWidth < 1280) {
-        setNumberTextareaRow(2);
-      } else if (window.innerWidth >= 1280) {
-        setNumberTextareaRow(4);
-      } else {
-        setNumberTextareaRow(6);
-      }
-    }
-
-    window.addEventListener('resize', handleResize);
-    handleResize();
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
   return (
-    <div className={classNames(styles["containerAddEdit"])}>
-
+    <div className={classNames(styles["container_add_edit"])}>
       <div className={classNames(styles["left"])}>
-        <div className={classNames(styles["postParameters"])}>
-          <button className={classNames(styles["buttonCount"], styles["addCount"])} onClick={handleAdd}>+</button>
-          <button className={classNames(styles["buttonCount"], styles["delCount"])} onClick={handleRemove}>-</button>
-          <p className={classNames(styles["countNumber"])}>{countImage}/16</p>
+        <div className={classNames(styles["post_parameters"])}>
+          <button className={classNames(styles["button_count"])} onClick={handleAdd}>+</button>
+          <button className={classNames(styles["button_count"])} onClick={handleRemove}>-</button>
+          <p className={classNames(styles["count_number"])}>{countImage}/16</p>
         </div>
-        <div className={classNames(styles["containerPhotos"])}>{createDivs()}</div>
+        <div className={classNames(styles["container_photos"])}>{createDivs()}</div>
       </div>
-
       <div className={classNames(styles["right"])}>
-
-        <div className={classNames(styles["warmContainer"])}>
-          <Warn inf={loadAndEditWarn}/>
+        <div className={classNames(styles["warn_container"])}>
+          <Notifications inf={LOAD_AND_EDIT_WARN} type="warn"/>
         </div>
-
-        <div className={classNames(styles["interfaceUserAdd"])}>
+        <div className={classNames(styles["interface_user_add"])}>
           <h4 className={classNames(styles["title"])}>Выбор и отображение строителей:</h4>
           <form onSubmit={handleAddName}>
-            <div className={classNames(styles["add"])}>
-              <datalist id="usersAdd">
-                {testArrayUsers.map((e, i) =>
-                  <option key={i} value={e}/>
-                )}
-              </datalist>
-              <input
-                name="name"
-                list="usersAdd"
-                type="search"
-                className={classNames(styles["usersName"])}
-                placeholder="Name"
-                onChange={e => {
-                  const name = e.target.value.trim();
-                  if (name.length < 3 || name.length > 16) {
-                    setErrorMessage(<span>{ErrorValueOne}</span>);
-                  } else if (!/^[a-zA-Z0-9_]+$/.test(name)) {
-                    setErrorMessage(<span>{ErrorValueTwo}</span>);
-                  } else {
-                    setErrorMessage(null);
-                  }
-                }}
-              />
-              <button type="submit" className={classNames(styles["submit"])}>&#10003;</button>
-            </div>
-            {errorMessage && <div className={classNames(styles["errorWrapper"])}>{errorMessage}</div>}
+            <ADD
+              list="usersAdd"
+              arr={testArrayUsers}
+              placeholder="Ник игрока"
+              name="name"
+              onChange={e => {
+                const name = e.target.value.trim();
+                if (name.length < 3 || name.length > 16) {
+                  setErrorMessage(ERROR_VALUE_ONE);
+                } else if (!/^[a-zA-Z0-9_]+$/.test(name)) {
+                  setErrorMessage(ERROR_VALUE_TWO);
+                } else {
+                  setErrorMessage(null);
+                }
+              }}
+            />
+            {errorMessage && <Notifications inf={errorMessage} type="error"/>}
           </form>
-          <div className={classNames(styles["usersBlock"])}>
+          <div className={classNames(styles["users_block"])}>
             {names.map((name, index) => (
-              <div className={classNames(styles["oneName"])} key={index}>
-                <img className={classNames(styles["userViewIcon"])} src={`https://minotar.net/helm/${name}/100`} alt=" "></img>
-                <label className={classNames(styles["userViewName"])}>{name}</label>
-                <button className={classNames(styles["userViewDel"])} onClick={() => setNames(prevNames => prevNames.filter((_, i) => i !== index))}>&#10008;</button>
+              <div className={classNames(styles["one_name"])} key={index}>
+                <LazyLoadImage
+                  wrapperClassName={classNames(styles["user_view_icon"])}
+                  width="100%"
+                  height="100%"
+                  src={`https://minotar.net/helm/${name}/100`}
+                  alt=""
+                  effect="blur"
+                />
+                <label className={classNames(styles["user_view_name"])}>{name}</label>
+                <button
+                  className={classNames(styles["user_view_actions"])}
+                  onClick={() => setNames(prevNames => prevNames.filter((_, i) => i !== index))}
+                >
+                  &#10008;
+                </button>
               </div>
             ))}
           </div>
         </div>
-
-        <div className={classNames(styles["interfaceTagAdd"])}>
+        <div className={classNames(styles["interface_tag_add"])}>
           <h4 className={classNames(styles["title"])}>Выбор и отображение тегов:</h4>
           <form onSubmit={handleAddTag}>
-            <div className={classNames(styles["add"])}>
-              <datalist id="tagsAdd">
-                {testArrayTags.map((e, i) =>
-                  <option key={i} value={e}/>
-                )}
-              </datalist>
-              <input
-                name="tags"
-                list="tagsAdd"
-                type="search"
-                className={classNames(styles["usersName"])}
-                placeholder="#tags"
-                onChange={e => {
-                  const name = e.target.value.trim();
-                  if (name.length < 3 || name.length > 16) {
-                    setErrorMessageTags(<span>{ErrorValueTree}</span>);
-                  } else if (!/^[а-яА-Яa-zA-Z0-9_]+$/.test(name)) {
-                    setErrorMessageTags(<span>{ErrorValueFour}</span>);
-                  } else {
-                    setErrorMessageTags(null);
-                  }
-                }}
-              />
-              <button type="submit" className={classNames(styles["submit"])}>&#10003;</button>
-            </div>
-            {errorMessageTags && <div className={classNames(styles["errorWrapper"])}>{errorMessageTags}</div>}
+            <ADD
+              list="tagsAdd"
+              arr={testArrayTags}
+              placeholder="Тег"
+              name="tags"
+              onChange={e => {
+                const name = e.target.value.trim();
+                if (name.length < 3 || name.length > 16) {
+                  setErrorMessageTags(ERROR_VALUE_TREE);
+                } else if (!/^[а-яА-Яa-zA-Z0-9_]+$/.test(name)) {
+                  setErrorMessageTags(ERROR_VALUE_FOUR);
+                } else {
+                  setErrorMessageTags(null);
+                }
+              }}
+            />
+            {errorMessageTags && <Notifications inf={errorMessageTags} type="error"/>}
           </form>
-          <div className={classNames(styles["tagsBlock"])}>
+          <div className={classNames(styles["tags_block"])}>
             {selectedTags.map((el, index) => (
-              <div className={classNames(styles["oneTag"])} key={index}>
-                <label className={classNames(styles["tagViewName"])}>{"#" + el.trim()}</label>
-                <button className={classNames(styles["tagViewDel"])} onClick={() => setSelectedTags(prevTags => prevTags.filter((_, i) => i !== index))}>&#10008;</button>
+              <div className={classNames(styles["one_tag"])} key={index}>
+                <label className={classNames(styles["tag_view_name"])}>{"#" + el.trim()}</label>
+                <button
+                  className={classNames(styles["tag_view_actions"])}
+                  onClick={() => setSelectedTags(prevTags => prevTags.filter((_, i) => i !== index))}
+                >
+                  &#10008;
+                </button>
               </div>
             ))}
           </div>
         </div>
-
-        <div className={classNames(styles["fillTextBlock"])}>
-          <div className={classNames(styles["titleCheck"])}>
-            <h4 className={classNames(styles["title"])}>Название: {errorMessagePostName}</h4>
-            <h4 className={classNames(styles["title"])}>{errorMessagePostNameLength}</h4>
+        <div className={classNames(styles["text_block"])}>
+          <div className={classNames(styles["title_check"])}>
+            <h4 className={classNames(styles["title"])}>Название: </h4>
+            {errorMessagePostName && <Notifications inf={errorMessagePostName} type="error"/>}
+            <h4 className={classNames(styles["count"])}>{errorMessagePostNameLength}</h4>
           </div>
           <input
-            className={classNames(styles["in"])}
+            className={classNames(styles["choice_text"])}
             type="text"
             name="postName"
             onChange={e => {
@@ -224,50 +218,48 @@ const EditAddPost = () => {
               const minCount = 16
               const maxCount = 160
               if (postName.length < minCount) {
-                setErrorMessagePostName(<span className={styles["error"]}>Название слишком короткое</span>);
-                setErrorMessagePostNameLength(<span className={styles["true"]}>{postName.length}/{maxCount}</span>);
+                setErrorMessagePostName("Название слишком короткое");
+                setErrorMessagePostNameLength(<span>{postName.length}/{maxCount}</span>);
               } else if (postName.length > maxCount) {
-                setErrorMessagePostName(<span className={styles["error"]}>Название слишком длинное</span>);
-                setErrorMessagePostNameLength(<span className={styles["error"]}>{postName.length}/{maxCount}</span>);
+                setErrorMessagePostName("Название слишком длинное");
+                setErrorMessagePostNameLength(<label>{postName.length}/{maxCount}</label>);
               } else {
                 setErrorMessagePostName(null);
-                setErrorMessagePostNameLength(<span className={styles["true"]}>{postName.length}/{maxCount}</span>);
+                setErrorMessagePostNameLength(<span>{postName.length}/{maxCount}</span>);
               }
             }}
           />
-          <div className={classNames(styles["titleCheck"])}>
-            <h4 className={classNames(styles["title"])}>Описание: {errorMessagePostDescription}</h4>
-            <h4 className={classNames(styles["title"])}>{errorMessagePostDescriptionLength}</h4>
+          <div className={classNames(styles["title_check"])}>
+            <h4 className={classNames(styles["title"])}>Описание: </h4>
+            {errorMessagePostDescription && <Notifications inf={errorMessagePostDescription} type="error"/>}
+            <h4 className={classNames(styles["count"])}>{errorMessagePostDescriptionLength}</h4>
           </div>
           <textarea
-            className={classNames(styles["in"])}
-            rows={numberTextareaRow}
+            className={classNames(styles["choice_text"])}
+            rows="3"
             name="postDescription"
             onChange={e => {
               const postName = e.target.value.trim();
               const minCount = 20
               const maxCount = 1000
               if (postName.length < minCount) {
-                setErrorMessagePostDescription(<span className={styles["error"]}>Описание слишком короткое</span>);
-                setErrorMessagePostDescriptionLength(<span className={styles["true"]}>{postName.length}/{maxCount}</span>);
+                setErrorMessagePostDescription("Описание слишком короткое");
+                setErrorMessagePostDescriptionLength(<span>{postName.length}/{maxCount}</span>);
               } else if (postName.length > maxCount) {
-                setErrorMessagePostDescription(<span className={styles["error"]}>Описание слишком длинное</span>);
-                setErrorMessagePostDescriptionLength(<span className={styles["error"]}>{postName.length}/{maxCount}</span>);
+                setErrorMessagePostDescription("Описание слишком длинное");
+                setErrorMessagePostDescriptionLength(<label>{postName.length}/{maxCount}</label>);
               } else {
                 setErrorMessagePostDescription(null);
-                setErrorMessagePostDescriptionLength(<span className={styles["true"]}>{postName.length}/{maxCount}</span>);
+                setErrorMessagePostDescriptionLength(<span>{postName.length}/{maxCount}</span>);
               }
             }}
           />
         </div>
-
-        <div className={classNames(styles["wrapperBtn"])}>
-          <button className={classNames(styles["actions"], styles["save"])}>Сохранить</button>
-          <button className={classNames(styles["actions"], styles["delete"])}>Удалить</button>
+        <div className={classNames(styles["wrapper_actions"])}>
+          <Button view="submit" label="Сохранить"/>
+          <Button view="delete" label="Удалить"/>
         </div>
-
       </div>
-
     </div>
   );
 };

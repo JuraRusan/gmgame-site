@@ -3,9 +3,9 @@ import React from "react";
 
 import styles from "./Table.module.scss";
 
-const TSelect = (props) => {
+const TSelect = ({onChange, value, name}) => {
   return (
-    <select className={classNames(styles["tableSelect"])} onChange={props?.onChange} value={props?.value}>{props?.name}</select>
+    <select className={classNames(styles["tableSelect"])} onChange={onChange} value={value}>{name}</select>
   );
 };
 

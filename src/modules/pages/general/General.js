@@ -2,9 +2,9 @@ import classNames from "classnames";
 import React, {useEffect} from "react";
 import AOS from "aos";
 import {Link} from "react-router-dom";
-import Mode from "../../components/[0_grouped_0]-Generals/mode/Mode.js";
 import World from "../../components/[0_grouped_0]-Generals/world/World.js";
 import HoverMeSvgComponent from "../../../bases/icons/hoverMeSvg/HoverMeSvg";
+import LogoMainTextSvgComponent from "../../../bases/icons/LogoMainText";
 
 import styles from "./General.module.scss";
 import "aos/dist/aos.css";
@@ -32,18 +32,9 @@ const General = () => {
   const worldNameGMGame = "Основной";
   const worldNameFarm = "Фермерский";
 
-  const survival = "Выживание";
-  // const skyBlock = "Скайблок";
-  const creative = "Креатив";
-
   const serverInformationRes = "Здесь добываются все необходимые ресурсы. Мир можно копать где и как угодно. Вайпается каждое обновление майнкрафта.";
   const serverInformationGMGame = "Мир со всеми постройками и проектами. Игроки выбирают территорию и занимаются строительством. Вайпов нет, но при обновлении генерации мир расширяют.";
   const serverInformationFarm = "Все механизмы и фермы с редстоуном строятся здесь, чтобы не нагружать основной сервер. Не вайпается и расширяется по необходимости.";
-
-  const serverModeServer = "режимы";
-  const survivalInfo = "Главный режим всего сервера, где игроки выживают и творят. Вход только по заявкам.";
-  // const skyBlockInfo = "Неклассический режим скайблока с квестами и миссиями и другими плагинами. Без вайтлиста.";
-  const creativeInfo = "Креатив с WorldEdit и другими упрощающими жизнь инструментами. Без вайтлиста.";
 
   return (
     <div className={classNames(styles["main"])}>
@@ -51,10 +42,13 @@ const General = () => {
       <div className={classNames(styles["rowContainerNumberOne"])}>
         <div className={classNames(styles["lineNoContentTop"])}></div>
         <div className={classNames(styles["mainContent"])}>
-          <h1 className={classNames(styles["mainTitleH1"])} data-aos="zoom-in">
-            <span className={classNames(styles["coloredTitleSpanOne"])}>G</span>
-            <span className={classNames(styles["coloredTitleSpanTwo"])}>M</span>GAME
-          </h1>
+          {/*<h1 className={classNames(styles["mainTitleH1"])} data-aos="zoom-in">*/}
+          {/*  <span className={classNames(styles["coloredTitleSpanOne"])}>G</span>*/}
+          {/*  <span className={classNames(styles["coloredTitleSpanTwo"])}>M</span>GAME*/}
+          {/*</h1>*/}
+          <div className={classNames(styles["logo"])}>
+            <LogoMainTextSvgComponent height="100%" width="100%"/>
+          </div>
           <h3 className={classNames(styles["mainTextH3"])} data-aos="zoom-in">{serverInformation1}</h3>
           <h3 className={classNames(styles["mainTextH3"])} data-aos="zoom-in">{serverInformation2}</h3>
           <div className={classNames(styles["buttonContainerWrapper"])} data-aos="zoom-in">
@@ -73,12 +67,12 @@ const General = () => {
             <h4 className={classNames(styles["h4Information"], styles["leftH4"])}>{serverConcept}</h4>
           </div>
           <div className={classNames(styles["informationWrapperImage"])}>
-            <img className={classNames(styles["informationImageStyle"])} src="./site_assets/pages/webp/1.webp" alt=""/>
+            <img className={classNames(styles["informationImageStyle"])} src="./site_assets/pages/webp/new_1.webp" alt=""/>
           </div>
         </div>
         <div className={classNames(styles["contentInformation"], styles["reverse"])} data-aos="zoom-in">
           <div className={classNames(styles["informationWrapperImage"])}>
-            <img className={classNames(styles["informationImageStyle"])} src="./site_assets/pages/webp/2.webp" alt=""/>
+            <img className={classNames(styles["informationImageStyle"])} src="./site_assets/pages/webp/new_2.webp" alt=""/>
           </div>
           <div className={classNames(styles["informationTextDivStyle"])}>
             <h2 className={classNames(styles["h2Information"], styles["rightH2"])}>{serverBlockTitleCommunity}</h2>
@@ -91,7 +85,7 @@ const General = () => {
             <h4 className={classNames(styles["h4Information"], styles["leftH4"])}>{serverGameProcess}</h4>
           </div>
           <div className={classNames(styles["informationWrapperImage"])}>
-            <img className={classNames(styles["informationImageStyle"])} src="./site_assets/pages/webp/3.webp" alt=""/>
+            <img className={classNames(styles["informationImageStyle"])} src="./site_assets/pages/webp/new_3.webp" alt=""/>
           </div>
         </div>
       </div>
@@ -106,23 +100,12 @@ const General = () => {
           <div className={classNames(styles["hoverMeBlock"])}>
             <HoverMeSvgComponent width="100%" height="100%" color="#292929"/>
           </div>
-          <World name={worldNameRes} src="./site_assets/pages/webp/4.webp" inf={serverInformationRes}/>
-          <World name={worldNameGMGame} src="./site_assets/pages/webp/5.webp" inf={serverInformationGMGame}/>
-          <World name={worldNameFarm} src="./site_assets/pages/webp/6.webp" inf={serverInformationFarm}/>
+          <World name={worldNameRes} src="./site_assets/pages/webp/new_4.webp" inf={serverInformationRes}/>
+          <World name={worldNameGMGame} src="./site_assets/pages/webp/new_5.webp" inf={serverInformationGMGame}/>
+          <World name={worldNameFarm} src="./site_assets/pages/webp/new_6.webp" inf={serverInformationFarm}/>
         </div>
         <div className={classNames(styles["lineNoContentBottom"])}></div>
       </div>
-
-      <div className={classNames(styles["rowContainerNumberFour"])}>
-        <h3 className={classNames(styles["modeTitle"])} data-aos="zoom-in">{serverModeServer}</h3>
-        <div className={classNames(styles["mode"])}>
-          <Mode name={survival} info={survivalInfo}/>
-          {/*<Mode name={skyBlock} info={skyBlockInfo}/>*/}
-          <Mode name={creative} info={creativeInfo}/>
-        </div>
-      </div>
-
-      <div className={classNames(styles["lineNoContentTopTwo"])}></div>
 
     </div>
   );

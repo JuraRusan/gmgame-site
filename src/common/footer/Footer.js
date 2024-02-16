@@ -29,7 +29,7 @@ const Footer = () => {
         <h3 className={classNames(styles["classText"])}>Мы на
           <a href="https://mineserv.top/gmgame">Mineserv.top</a>
         </h3>
-        <h3 className={classNames(styles["classText"])}>© 2020 - 2023 GMGame Minecraft Server</h3>
+        <h3 className={classNames(styles["classText"])}>© 2020 - 2024 GMGame Minecraft Server</h3>
       </div>
     </div>
   );

@@ -4,6 +4,7 @@ export const testArrayTags = ["base", "farm", "dalandis_base", "home", "air_base
 export const array = [
   {
     id: 1,
+    author: "prestig9110",
     users: ["prestig9110", "Dalandis", "SoftPanda3", "_BaXy_", "Niksa_Viento", "Li_Ora"],
     tagNavigation: ["base", "farm", "dalandis_base", "home", "air_base", "base", "farm", "dalandis_base", "home", "air_base", "base", "farm", "dalandis_base", "home", "air_base"],
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Etiam non quam lacus suspendisse faucibus. ",
@@ -29,6 +30,7 @@ export const array = [
   },
   {
     id: 2,
+    author: "Dalandis",
     users: ["prestig9110", "Dalandis"],
     tagNavigation: ["base", "tunnel", "туннель"],
     name: "Base",
@@ -54,6 +56,7 @@ export const array = [
   },
   {
     id: 3,
+    author: "Dalandis",
     users: ["prestig9110", "Dalandis"],
     tagNavigation: ["туннель", "фермы"],
     name: "Base",
@@ -79,6 +82,7 @@ export const array = [
   },
   {
     id: 4,
+    author: "Dalandis",
     users: ["prestig9110", "Dalandis"],
     tagNavigation: ["база", "base"],
     name: "Base",
@@ -104,6 +108,7 @@ export const array = [
   },
   {
     id: 5,
+    author: "prestig9110",
     users: ["prestig9110", "Dalandis"],
     tagNavigation: ["base", "tunnel", "туннель"],
     name: "Base",
@@ -129,6 +134,7 @@ export const array = [
   },
   {
     id: 6,
+    author: "prestig9110",
     users: ["prestig9110", "Dalandis"],
     tagNavigation: ["base", "tunnel", "туннель"],
     name: "Base",
@@ -154,6 +160,7 @@ export const array = [
   },
   {
     id: 7,
+    author: "Niksa",
     users: ["prestig9110", "Dalandis"],
     tagNavigation: ["base", "tunnel", "туннель"],
     name: "Base",
@@ -179,6 +186,7 @@ export const array = [
   },
   {
     id: 8,
+    author: "Niksa",
     users: ["prestig9110", "Dalandis"],
     tagNavigation: ["base", "tunnel", "туннель"],
     name: "Base",
@@ -204,6 +212,7 @@ export const array = [
   },
   {
     id: 9,
+    author: "Niksa",
     users: ["prestig9110", "Dalandis"],
     tagNavigation: ["base", "tunnel", "туннель"],
     name: "Base",
@@ -229,6 +238,7 @@ export const array = [
   },
   {
     id: 10,
+    author: "prestig9110",
     users: ["prestig9110", "Dalandis"],
     tagNavigation: ["base", "tunnel", "туннель"],
     name: "Base",
@@ -254,6 +264,7 @@ export const array = [
   },
   {
     id: 11,
+    author: "prestig9110",
     users: ["prestig9110", "Dalandis"],
     tagNavigation: ["base", "tunnel", "туннель"],
     name: "Base",
@@ -279,6 +290,7 @@ export const array = [
   },
   {
     id: 12,
+    author: "prestig9110",
     users: ["prestig9110", "Dalandis"],
     tagNavigation: ["base", "tunnel", "туннель"],
     name: "Base",
@@ -304,6 +316,7 @@ export const array = [
   },
   {
     id: 13,
+    author: "SoftPanda3",
     users: ["prestig9110", "Dalandis"],
     tagNavigation: ["base", "tunnel", "туннель"],
     name: "Base",
@@ -329,6 +342,7 @@ export const array = [
   },
   {
     id: 14,
+    author: "SoftPanda3",
     users: ["prestig9110", "Dalandis"],
     tagNavigation: ["base", "tunnel", "туннель"],
     name: "Base",
@@ -354,6 +368,7 @@ export const array = [
   },
   {
     id: 15,
+    author: "SoftPanda3",
     users: ["prestig9110", "Dalandis"],
     tagNavigation: ["base", "tunnel", "туннель"],
     name: "Base",
@@ -379,6 +394,7 @@ export const array = [
   },
   {
     id: 16,
+    author: "prestig9110",
     users: ["prestig9110", "Dalandis"],
     tagNavigation: ["base", "tunnel", "туннель"],
     name: "Base",
@@ -404,6 +420,7 @@ export const array = [
   },
   {
     id: 17,
+    author: "prestig9110",
     users: ["prestig9110", "Dalandis"],
     tagNavigation: ["base", "tunnel", "туннель"],
     name: "Base",
@@ -429,6 +446,7 @@ export const array = [
   },
   {
     id: 18,
+    author: "prestig9110",
     users: ["prestig9110", "Dalandis"],
     tagNavigation: ["base", "tunnel", "туннель"],
     name: "Base",
@@ -454,6 +472,7 @@ export const array = [
   },
   {
     id: 19,
+    author: "prestig9110",
     users: ["prestig9110", "Dalandis"],
     tagNavigation: ["base", "tunnel", "туннель"],
     name: "Base",
@@ -479,6 +498,7 @@ export const array = [
   },
   {
     id: 20,
+    author: "prestig9110",
     users: ["prestig9110", "Dalandis"],
     tagNavigation: ["base", "tunnel", "туннель"],
     name: "Base",

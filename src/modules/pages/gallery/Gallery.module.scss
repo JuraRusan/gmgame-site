@@ -3,7 +3,7 @@
 @keyframes animationModal {
   0% {
     opacity: 0;
-    width: 0;
+    width: 100%;
     height: 0;
   }
   100% {
@@ -13,7 +13,7 @@
   }
 }
 
-.mainGallery {
+.main_gallery {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -21,7 +21,7 @@
   height: auto;
   margin: 0 auto;
 
-  .mainGalleryTitle {
+  .page_title {
     width: 100%;
     height: 34px;
     line-height: 34px;
@@ -33,139 +33,20 @@
     color: $color-3;
   }
 
-  .wrapper {
-    display: flex;
-    flex-direction: row;
-
-    .navigationGallery {
-      display: flex;
-      flex-direction: column;
-      width: 250px;
-      min-width: 250px;
-      max-width: 250px;
-      height: auto;
-      min-height: 550px;
-      max-height: 600px;
-      top: 50px;
-      position: sticky;
-      border: 1px solid $color-22;
-      background: $color-20;
-      border-radius: 8px;
-      padding: 10px;
-
-      .navigationTitle {
-        font-size: 16px;
-        font-family: $fontCustom2;
-        font-weight: 400;
-        height: 24px;
-        line-height: 24px;
-        width: 100%;
-        margin-bottom: 8px;
-        color: $color-3;
-        text-align: center;
-      }
-
-      form {
-        display: flex;
-        flex-direction: row;
-
-        .searchInput {
-          width: 100%;
-          height: 26px;
-          margin: 10px auto;
-          background: $color-7;
-          outline: none;
-          border: 1px solid $color-22;
-          border-radius: 5px;
-          transition: all 0.25s ease-in-out;
-          color: $color-8;
-          padding-left: 10px;
-          padding-right: 4px;
-          font-size: 14px;
-
-          &:hover,
-          &:focus,
-          &:active {
-            outline: none;
-            background: $color-21;
-          }
-        }
-
-        .addSubmit {
-          border: 1px solid $color-22;
-          width: 26px;
-          min-width: 26px;
-          height: 26px;
-          border-radius: 4px;
-          font-size: 14px;
-          outline: none;
-          background: $color-7;
-          color: $color-3;
-          transition: all 0.35s ease;
-          cursor: pointer;
-          margin: auto 0 auto 5px;
-          padding: 0;
-
-          &:hover,
-          &:active,
-          &:focus {
-            outline: none;
-            color: $color-8;
-          }
-        }
-      }
-
-      .previewWrapper {
-        display: flex;
-        flex-direction: column;
-
-        .selectedTag {
-          display: flex;
-          flex-direction: row;
-          margin: 2px 4px;
-          border-radius: 4px;
-          background: $color-22;
-          padding: 0 0 0 8px;
-
-          .tagName {
-            font-size: 12px;
-            height: 20px;
-            line-height: 20px;
-            color: darken($color-3, 50%);
-          }
-
-          .actions {
-            margin: 0 0 0 auto;
-            height: 20px;
-            line-height: 20px;
-            width: 20px;
-            border: none;
-            border-radius: 0;
-            background: none;
-            outline: none;
-            cursor: pointer;
-            color: darken($color-3, 50%);
-            transition: all 0.35s ease;
-
-            &:hover {
-              color: $color-8;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .galleryList {
+  .gallery_list {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     width: 100%;
     height: auto;
-    padding: 0 15px;
+    padding: 0 8px;
+    border: 1px solid $site-color-5;
+    background: $site-color-4;
+    margin-bottom: 16px;
+    border-radius: 8px;
 
-    .oneContainer {
+    .one_container {
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -185,7 +66,7 @@
         scale: 1.10;
       }
 
-      .wrapperImage {
+      .wrapper_image {
         width: 100%;
         height: 100%;
         display: flex;
@@ -194,7 +75,7 @@
         align-items: center;
         position: relative;
 
-        .imgClass {
+        .img {
           display: flex;
           width: 100%;
           height: 100%;
@@ -203,7 +84,7 @@
         }
       }
 
-      .containerLike {
+      .container_like {
         display: flex;
         flex-direction: row;
         position: absolute;
@@ -216,15 +97,15 @@
           flex-direction: row;
           width: auto;
           height: 20px;
-          color: $color-3;
+          color: $site-color-2;
           transition: all 0.35s ease;
 
           .like {
-            color: $color-8;
+            color: $site-color-8;
           }
 
           .dislike {
-            color: $color-2;
+            color: $site-color-4;
           }
 
           .click {
@@ -262,13 +143,13 @@
             line-height: 20px;
             font-weight: 400;
             font-size: 12px;
-            color: $color-3;
+            font-family: $fontCustom2;
+            color: $site-color-2;
             padding: 0 3px 0 1px;
           }
         }
       }
     }
-
 
   }
 }
@@ -281,16 +162,16 @@ body {
     bottom: 0;
     position: fixed;
     z-index: 12002;
-    background: $color-11;
-    animation: animationModal 1s both ease !important;
+    background: lighten($site-color-12, 20%);
+    animation: animationModal 0.5s both ease !important;
   }
 
   .modalGallery {
     position: absolute;
     outline: none;
     z-index: 12001;
-    background: $color-21;
-    border: 0.5px solid $color-22;
+    background: $site-color-4;
+    border: 1px solid $site-color-5;
     border-radius: 5px;
     top: 15px;
     left: 15px;
@@ -316,10 +197,9 @@ body {
       padding: 0 12px;
       line-height: 35px;
       text-align: center;
-      outline: none;
-      background: $color-7;
-      border: 1px solid $color-22;
-      border-radius: 5px;
+      background: $site-color-12;
+      border: 1px solid $site-color-5;
+      border-radius: 4px;
       transition: all 0.25s ease-in-out;
       color: $color-8;
       cursor: pointer;
@@ -328,14 +208,13 @@ body {
       &:hover,
       &:focus,
       &:active {
-        outline: none;
-        background: $color-21;
+        background: $site-color-1;
       }
     }
 
     .galleryBackground {
-      background: $color-7;
-      border: 1px solid $color-22;
+      background: $site-color-12;
+      border: 1px solid $site-color-5;
       border-radius: 5px;
       width: 100%;
       max-width: 90%;
@@ -358,8 +237,8 @@ body {
       max-width: 90%;
       margin: 15px auto 0 auto;
       height: auto;
-      background: $color-7;
-      border: 1px solid $color-22;
+      background: $site-color-12;
+      border: 1px solid $site-color-5;
       border-radius: 5px;
       padding: 15px;
 
@@ -382,13 +261,13 @@ body {
             height: 24px;
             font-size: 14px;
             font-weight: 400;
-            color: $color-3;
+            color: $site-color-2;
             font-family: $fontCustom2;
             margin-bottom: 5px;
             padding-left: 10px;
             border-width: 1px;
             border-bottom-style: solid;
-            border-image: linear-gradient(to right, rgba(0, 0, 0, 0), $color-13, rgba(0, 0, 0, 0)) 1 0;
+            border-image: linear-gradient(to right, $site-color-2, $site-color-2, rgba(0, 0, 0, 0)) 1 0;
           }
 
           .liUser {
@@ -412,7 +291,7 @@ body {
               height: 24px;
               font-size: 14px;
               font-weight: 400;
-              color: $color-3;
+              color: $site-color-2;
               margin-left: 5px;
               font-family: $fontCustom2;
             }
@@ -423,6 +302,7 @@ body {
       .description {
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
         margin-left: 10px;
         width: auto;
         height: 100%;
@@ -430,21 +310,23 @@ body {
         .titleNameImageList {
           font-weight: 400;
           font-size: 18px;
+          font-family: $fontCustom2;
           min-height: 32px;
           height: auto;
           text-align: center;
           line-height: 32px;
           width: 100%;
           padding-left: 25px;
-          color: $color-3;
+          color: $site-color-2;
           margin: 0 auto 0 auto;
         }
 
         .textParagraph {
-          text-indent: 15px;
+          text-indent: 16px;
           font-weight: 400;
-          font-size: 14px;
-          color: $color-3;
+          font-size: 13px;
+          color: $site-color-2;
+          font-family: $fontCustom2;
           line-height: 1.25;
         }
 
@@ -456,13 +338,14 @@ body {
           margin-top: 8px;
 
           .oneTag {
+            font-size: 11px;
             margin: 2px 4px;
-            font-size: 12px;
+            font-family: $fontCustom2;
+            border-radius: 4px;
             height: 20px;
             line-height: 20px;
-            border-radius: 4px;
-            color: darken($color-3, 50%);
-            background: $color-22;
+            color: darken($site-color-2, 50%);
+            background: lighten($site-color-12, 20%);
             padding: 0 8px;
           }
         }
@@ -470,3 +353,171 @@ body {
     }
   }
 }
+
+//.box_content {
+//  display: flex;
+//  flex-direction: row;
+//  border: 1px solid $site-color-5;
+//  background: $site-color-4;
+//  padding: 8px;
+//  border-radius: 8px;
+//  margin-bottom: 16px;
+//
+//  .navigation_page {
+//    display: flex;
+//    flex-direction: column;
+//    width: 250px;
+//    min-width: 250px;
+//    max-width: 250px;
+//    height: auto;
+//    min-height: 550px;
+//    max-height: 690px;
+//    top: 75px;
+//    position: sticky;
+//    border: 1px solid $site-color-5;
+//    background: $site-color-12;
+//    border-radius: 8px;
+//    padding: 10px;
+//
+//    .navigation_title {
+//      font-size: 16px;
+//      font-family: $fontCustom2;
+//      font-weight: 400;
+//      height: 24px;
+//      line-height: 24px;
+//      width: 100%;
+//      margin-bottom: 8px;
+//      color: $site-color-2;
+//      text-align: center;
+//    }
+//
+//    .sort_select {
+//      background: $site-color-12;
+//      border: 1px solid $site-color-5;
+//      border-radius: 4px;
+//      color: $site-color-8;
+//      padding: 0 4px 0 8px;
+//      margin: 8px auto;
+//      font-size: 13px;
+//      font-family: $fontCustom2;
+//      font-weight: 400;
+//      height: 26px;
+//      width: 100%;
+//      outline: none;
+//
+//      .sort_option {
+//        font-size: 12px;
+//        font-family: $fontCustom2;
+//        font-weight: 400;
+//      }
+//    }
+//
+//    form {
+//      display: flex;
+//      flex-direction: row;
+//
+//      .search_input {
+//        width: 100%;
+//        height: 26px;
+//        margin: 8px auto;
+//        background: $site-color-12;
+//        outline: none;
+//        border: 1px solid $site-color-5;
+//        border-radius: 4px;
+//        transition: all 0.25s ease-in-out;
+//        color: $site-color-8;
+//        padding-left: 8px;
+//        padding-right: 4px;
+//        font-size: 13px;
+//        font-family: $fontCustom2;
+//        font-weight: 400;
+//
+//        &:hover,
+//        &:focus,
+//        &:active {
+//          outline: none;
+//          background: $site-color-1;
+//        }
+//      }
+//
+//      .add_submit {
+//        border: 1px solid $site-color-5;
+//        width: 26px;
+//        min-width: 26px;
+//        height: 26px;
+//        border-radius: 4px;
+//        font-size: 14px;
+//        background: $site-color-12;
+//        color: $site-color-2;
+//        transition: all 0.35s ease;
+//        cursor: pointer;
+//        margin: auto 0 auto 5px;
+//        padding: 0;
+//
+//        &:hover,
+//        &:active,
+//        &:focus {
+//          color: $site-color-8;
+//        }
+//      }
+//    }
+//
+//    .preview_box {
+//      display: flex;
+//      flex-direction: column;
+//      max-height: 250px;
+//      overflow: auto;
+//      padding-right: 4px;
+//
+//      &::-webkit-scrollbar {
+//        width: 4px;
+//      }
+//
+//      .selected_tag {
+//        display: flex;
+//        flex-direction: row;
+//        margin: 2px 0;
+//        border-radius: 4px;
+//        color: darken($site-color-2, 50%);
+//        background: lighten($site-color-12, 20%);
+//        padding: 0 0 0 8px;
+//
+//        .image {
+//          height: 16px;
+//          min-height: 16px;
+//          max-height: 16px;
+//          width: 16px;
+//          min-width: 16px;
+//          max-width: 16px;
+//          margin: 2px;
+//        }
+//
+//        .name {
+//          margin: 2px 4px;
+//          font-size: 11px;
+//          font-family: $fontCustom2;
+//          height: 16px;
+//          line-height: 16px;
+//        }
+//
+//        .actions {
+//          margin: 2px 0 2px auto;
+//          height: 16px;
+//          line-height: 16px;
+//          width: 20px;
+//          border: none;
+//          border-radius: 0;
+//          background: none;
+//          outline: none;
+//          cursor: pointer;
+//          color: darken($color-3, 50%);
+//          transition: all 0.35s ease;
+//
+//          &:hover {
+//            color: $color-8;
+//          }
+//        }
+//      }
+//    }
+//  }
+//}

@@ -54,6 +54,13 @@
         }
       }
 
+      .logo {
+        max-width: 1500px;
+        min-width: 750px;
+        height: auto;
+        margin: 0 auto;
+      }
+
       .mainTextH3 {
         width: auto;
         font-weight: 400;
@@ -243,26 +250,6 @@
     }
   }
 
-  .rowContainerNumberFour {
-    display: flex;
-    flex-direction: column;
-    background: $site-color-3;
-    width: 100%;
-    height: auto;
-    padding-top: 50px;
-
-    .modeTitle {
-      text-align: center;
-      width: 100%;
-      height: 79px;
-      line-height: 79px;
-      font-weight: 400;
-      font-size: 64px;
-      color: $site-color-2;
-      font-family: $fontCustom3;
-    }
-  }
-
   .lineNoContentTop {
     height: 200px;
     width: 100%;
@@ -275,12 +262,6 @@
     width: 100%;
     background: $site-color-3;
     background: linear-gradient(0deg, $site-color-3 0%, transparent 100%);
-  }
-
-  .lineNoContentTopTwo {
-    height: 200px;
-    width: 100%;
-    background: linear-gradient(180deg, $site-color-3 0%, transparent 100%);
   }
 }
 
@@ -384,14 +365,6 @@
         }
       }
     }
-
-    .rowContainerNumberFour {
-      padding-top: 45px;
-
-      .modeTitle {
-        font-size: 54px;
-      }
-    }
   }
 }
 
@@ -402,6 +375,10 @@
         .mainTitleH1 {
           margin-top: 65px;
           font-size: 82px;
+        }
+
+        .logo {
+          min-width: 600px;
         }
 
         .mainTextH3 {
@@ -445,10 +422,6 @@
 
     .lineNoContentBottom {
       height: 160px;
-    }
-
-    .lineNoContentTopTwo {
-      height: 150px;
     }
   }
 }
@@ -537,12 +510,6 @@
         }
       }
     }
-
-    .rowContainerNumberFour {
-      .modeTitle {
-        font-size: 46px;
-      }
-    }
   }
 }
 
@@ -554,6 +521,11 @@
           height: 130px;
           line-height: 130px;
           font-size: 72px;
+        }
+
+        .logo {
+          margin-top: 64px;
+          min-width: 450px;
         }
 
         .mainTextH3 {
@@ -609,21 +581,11 @@
       }
     }
 
-    .rowContainerNumberFour {
-      .modeTitle {
-        font-size: 42px;
-      }
-    }
-
     .lineNoContentTop {
       height: 130px;
     }
 
     .lineNoContentBottom {
-      height: 130px;
-    }
-
-    .lineNoContentTopTwo {
       height: 130px;
     }
   }
@@ -637,6 +599,10 @@
           font-size: 54px;
           height: 94px;
           line-height: 94px;
+        }
+
+        .logo {
+          min-width: 80%;
         }
 
         .mainTextH3 {
@@ -788,14 +754,6 @@
 
       .blockWorlds {
         padding-top: 30px;
-      }
-    }
-
-    .rowContainerNumberFour {
-      .modeTitle {
-        font-size: 24px;
-        line-height: 30px;
-        height: 30px;
       }
     }
   }

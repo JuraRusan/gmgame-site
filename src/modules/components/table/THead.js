@@ -3,9 +3,9 @@ import React from "react";
 
 import styles from "./Table.module.scss";
 
-const THead = (props) => {
+const THead = ({children}) => {
   return (
-    <thead className={classNames(styles["tableThead"])}>{props.children}</thead>
+    <thead className={classNames(styles["tableThead"])}>{children}</thead>
   );
 };
 

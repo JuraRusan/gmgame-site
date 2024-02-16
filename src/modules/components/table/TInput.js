@@ -3,19 +3,19 @@ import React from "react";
 
 import styles from "./Table.module.scss";
 
-const TInput = (props) => {
+const TInput = ({onChange, id, defaultValue, size}) => {
   return (
     <input
-      onChange={props?.onChange}
-      id={props?.id}
-      defaultValue={props?.defaultValue}
+      onChange={onChange}
+      id={id}
+      defaultValue={defaultValue}
       className={
         classNames(styles["tableInput"],
           {
-            [styles["tableInputSmall"]]: props.size === "small",
-            [styles["tableInputMiddle"]]: props.size === "middle",
-            [styles["tableInputLarge"]]: props.size === "large",
-            [styles["tableInputSuperLarge"]]: props.size === "super_large",
+            [styles["tableInputSmall"]]: size === "small",
+            [styles["tableInputMiddle"]]: size === "middle",
+            [styles["tableInputLarge"]]: size === "large",
+            [styles["tableInputSuperLarge"]]: size === "super_large",
           }
         )}
     />
