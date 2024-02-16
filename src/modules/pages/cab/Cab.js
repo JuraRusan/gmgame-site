@@ -121,7 +121,7 @@ const Cab = () => {
                       <span onClick={() => {setOpenMenu(false);}} className={classNames(styles["tab"], styles["disabled"])}><span className={classNames(styles["stroke_color"])}><MarkerSvgComponent width="100%" height="100%" color="#f4f4f4"/></span>Мои метки</span>
                       <span onClick={() => {setOpenMenu(false);}} className={classNames(styles["tab"], styles["disabled"])}><PrizeSvgComponent width="100%" height="100%" color="#f4f4f4"/>Призы</span>
                       <span onClick={() => {setOpenMenu(false);}} className={classNames(styles["tab"], styles["disabled"])}><ImageSvgComponent width="100%" height="100%" color="#f4f4f4"/>Моя галерея</span>
-                      <span onClick={() => {setOpenMenu(false)}} className={classNames(styles["tab"], styles["disabled"])}><span className={classNames(styles["stroke_color"])}><ShopSvgComponent width="100%" height="100%" color="#f4f4f4"/></span>Мои магазины</span>
+                      <span onClick={() => {setOpenMenu(false);}} className={classNames(styles["tab"], styles["disabled"])}><span className={classNames(styles["stroke_color"])}><ShopSvgComponent width="100%" height="100%" color="#f4f4f4"/></span>Мои магазины</span>
                       <span onClick={() => {setOpenMenu(false);}} className={classNames(styles["tab"], styles["disabled"])}><SettingsSvgComponent width="100%" height="100%" color="#f4f4f4"/>Изменить пароль</span>
                     </>
                   ) : (
