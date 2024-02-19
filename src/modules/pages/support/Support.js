@@ -1,10 +1,38 @@
 import classNames from "classnames";
-import React from "react";
+import React, {useEffect, useState} from "react";
 import {monitoringBase} from "./monitoringBase";
+import useLoading from "../../loading/useLoading";
+import {useAxios} from "../../../DataProvider";
+import Preload from "../../components/preloader/Preload";
 
 import styles from "./Support.module.scss";
 
+const DEFAULT = {viewing: false, current: 0, full: 0}
+
 const Support = () => {
+
+  const isLoading = useLoading();
+
+  const [dataDonat, setDataDonat] = useState(DEFAULT)
+
+  const resParams = useAxios(
+    "/api/get_donate_status",
+    'GET',
+    {}
+  );
+
+  // useEffect(()=> {
+  //   if (!resParams.loading || !resParams.data.length) {
+  //     setDataDonat(DEFAULT)
+  //   } else {
+  //     setDataDonat(resParams.data.data)
+  //   }
+  // }, [resParams])
+
+  if (resParams.loading || isLoading) {
+    return <Preload full={false}/>;
+  }
+
   return (
     <div className={classNames(styles["mainSupport"])} >
       <div className={classNames(styles["support"])}>
@@ -26,6 +54,34 @@ const Support = () => {
             <img className={classNames(styles["image"])} src="./site_assets/pages/webp/new_7.webp" width="100%" height="100%" alt="none"/>
           </div>
         </div>
+        {!dataDonat.viewing ? null :
+          <div className={classNames(styles["current_donate_block"])}>
+            <h2 className={classNames(styles["current_title"])}>Текущий сбор</h2>
+            <div className={classNames(styles["information_block"])}>
+              <h3 className={classNames(styles["text"])}>Время неумолимо мчится вперед и оборудование устаревает, поэтому мы решили открыть новый сбор средств на полный апгрейд сервера. </h3>
+              <ul className={classNames(styles["list"])}>
+                <li className={classNames(styles["stroke"])}>Процессор — AMD Ryzen 9 7950X
+                  <a className={classNames(styles["link_site"])} target="_blank" rel="noreferrer" href="https://www.amd.com/en/products/cpu/amd-ryzen-9-7950x">&#10148;</a>
+                </li>
+                <li className={classNames(styles["stroke"])}>Материнская плата — GIGABYTE X670 AORUS ELITE AX
+                  <a className={classNames(styles["link_site"])} target="_blank" rel="noreferrer" href="https://www.gigabyte.com/ua/Motherboard/X670-AORUS-ELITE-AX-rev-10-12">&#10148;</a>
+                </li>
+                <li className={classNames(styles["stroke"])}>Оперативная память — FURY Beast Black 128 ГБ
+                  <a className={classNames(styles["link_site"])} target="_blank" rel="noreferrer" href="https://www.kingston.com/ru/memory/gaming/kingston-fury-beast-ddr5-memory?speed=6000mt%2Fs&total%20(kit)%20capacity=64gb&kit=kit%20of%202&dram%20density=16gbit&profile%20type=amd%20expo&color=black">&#10148;</a>
+                </li>
+                <li className={classNames(styles["stroke"])}>Блок питания — DEEPCOOL PK600D
+                  <a className={classNames(styles["link_site"])} target="_blank" rel="noreferrer" href="https://www.deepcool.com/products/PowerSupplyUnits/powersupplyunits/PK600D-80-PLUS-Bronze-Power-Supply/2022/15620.shtml">&#10148;</a>
+                </li>
+              </ul>
+              <h3 className={classNames(styles["text"])}>Итого ≈ {dataDonat.full} ₽</h3>
+              <h3 className={classNames(styles["text"])}>Это довольно большая сумма, и возможно её сбор будет длительным процессом, поэтому состав оборудования и их стоимость вероятно будет меняться, подстраиваясь под современные реалии.</h3>
+              <h3 className={classNames(styles["text"])}>На данный момент собранно {dataDonat.current} из {dataDonat.full} ₽
+                <a className={classNames(styles["link_site"])} target="_blank" rel="noreferrer" href="https://discord.com/channels/723912565234728972/994603198587359252">&#10148;</a>
+              </h3>
+              <h3 className={classNames(styles["text"])}>Благодаря Вашим усилиям игра на сервере будет оставаться комфортной и приятной. Спасибо!</h3>
+            </div>
+          </div>
+        }
         <div className={classNames(styles["monitoringBlock"])}>
           <h4 className={classNames(styles["titleAll"])}>Мы на мониторингах</h4>
           {monitoringBase.map((el, i) =>
