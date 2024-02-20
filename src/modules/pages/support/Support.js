@@ -1,37 +1,30 @@
 import classNames from "classnames";
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import {monitoringBase} from "./monitoringBase";
-import useLoading from "../../loading/useLoading";
-import {useAxios} from "../../../DataProvider";
-import Preload from "../../components/preloader/Preload";
+// import useLoading from "../../loading/useLoading";
+// import {useAxios} from "../../../DataProvider";
+// import Preload from "../../components/preloader/Preload";
 
 import styles from "./Support.module.scss";
 
-const DEFAULT = {viewing: false, current: 0, full: 0}
+const DEFAULT = {viewing: true, current: 70535, full: 136000}
+// const DEFAULT = {viewing: false, current: 0, full: 0}
 
 const Support = () => {
 
-  const isLoading = useLoading();
+  // const isLoading = useLoading();
 
   const [dataDonat, setDataDonat] = useState(DEFAULT)
 
-  const resParams = useAxios(
-    "/api/get_donate_status",
-    'GET',
-    {}
-  );
+  // const resParams = useAxios(
+  //   "/api/get_goals",
+  //   'GET',
+  //   {}
+  // );
 
-  // useEffect(()=> {
-  //   if (!resParams.loading || !resParams.data.length) {
-  //     setDataDonat(DEFAULT)
-  //   } else {
-  //     setDataDonat(resParams.data.data)
-  //   }
-  // }, [resParams])
-
-  if (resParams.loading || isLoading) {
-    return <Preload full={false}/>;
-  }
+  // if (resParams.loading || isLoading) {
+  //   return <Preload full={false}/>;
+  // }
 
   return (
     <div className={classNames(styles["mainSupport"])} >
