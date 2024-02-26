@@ -7,7 +7,7 @@ import {monitoringBase} from "./monitoringBase";
 
 import styles from "./Support.module.scss";
 
-const DEFAULT = {viewing: true, current: 70535, full: 136000}
+const DEFAULT = {viewing: true, current: 72535, full: 136000}
 // const DEFAULT = {viewing: false, current: 0, full: 0}
 
 const Support = () => {
@@ -68,7 +68,7 @@ const Support = () => {
               </ul>
               <h3 className={classNames(styles["text"])}>Итого ≈ {dataDonat.full} ₽</h3>
               <h3 className={classNames(styles["text"])}>Это довольно большая сумма, и возможно её сбор будет длительным процессом, поэтому состав оборудования и их стоимость вероятно будет меняться, подстраиваясь под современные реалии.</h3>
-              <h3 className={classNames(styles["text"])}>На данный момент собранно {dataDonat.current} из {dataDonat.full} ₽
+              <h3 className={classNames(styles["text"])}>Перейдите по ссылке для просмотра актуальной информации по сбору
                 <a className={classNames(styles["link_site"])} target="_blank" rel="noreferrer" href="https://discord.com/channels/723912565234728972/994603198587359252">&#10148;</a>
               </h3>
               <h3 className={classNames(styles["text"])}>Благодаря Вашим усилиям игра на сервере будет оставаться комфортной и приятной. Спасибо!</h3>
