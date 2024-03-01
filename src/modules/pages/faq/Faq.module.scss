@@ -199,13 +199,13 @@
                     transition: all 0.35s ease;
                     text-decoration: none;
 
-                    &:active,
-                    &:visited,
-                    &:focus {
-                      color: inherit;
+                    &:visited {
+                      color: $site-color-10;
                     }
 
-                    &:hover {
+                    &:hover,
+                    &:active,
+                    &:focus {
                       color: $color-12;
                     }
                   }

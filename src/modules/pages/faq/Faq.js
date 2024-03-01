@@ -88,7 +88,7 @@ const Faq = () => {
             return `@${ch.character.name}`
           }
           const linkClass = classNames(styles["link"])
-          return `<a class="${linkClass}" href='https://discord.com/channels/723912565234728972/${ch.character.id}' target="_blank" rel="noreferrer">{"#"}${ch.character.name}</a>`
+          return `<a class="${linkClass}" href='https://discord.com/channels/723912565234728972/${ch.character.id}' target="_blank" rel="noreferrer">#${ch.character.name}</a>`
         }
       }).join('') + '<br/>';
     }).join('');
