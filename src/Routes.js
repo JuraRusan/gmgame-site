@@ -18,6 +18,7 @@ const Manager = lazy(() => import(/* webpackChunkName: "manager" */ './modules/p
 const PlayerSummary = lazy(() => import(/* webpackChunkName: "manager" */ './modules/components/[0_grouped_0]-Manager/Player-summary/Player-summary'));
 const FaqEditor = lazy(() => import(/* webpackChunkName: "manager" */ './modules/components/[0_grouped_0]-Manager/Faq-editor/Faq-editor'));
 const ModEditor = lazy(() => import(/* webpackChunkName: "manager" */ './modules/components/[0_grouped_0]-Manager/Mod-editor/Mod-editor'));
+const DonateStatusEditor = lazy(() => import(/* webpackChunkName: "manager" */ './modules/components/[0_grouped_0]-Manager/Donate-status/Donate-status-editor'));
 const TexturePackEditor = lazy(() => import(/* webpackChunkName: "manager" */ './modules/components/[0_grouped_0]-Manager/Texture-pack-editor/Texture-pack-editor'));
 const RegulationsEditor = lazy(() => import(/* webpackChunkName: "manager" */ './modules/components/[0_grouped_0]-Manager/Regulations-editor/Regulations-editor'));
 const MonitoringSummary = lazy(() => import(/* webpackChunkName: "manager" */ './modules/components/[0_grouped_0]-Manager/Monitoring-summary/Monitoring-summary'));
@@ -37,11 +38,6 @@ const EditAddMarker = lazy(() => import(/* webpackChunkName: "cab" */ './modules
 // --
 const MyTerritories = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Maps-all-comp/my-territories/My-territories.js'));
 const EditAddTerr = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Maps-all-comp/my-territories/EditAddTerr.js'));
-// --
-// const ArticlesWiki = lazy(() => import(/* webpackChunkName: "wiki" */ './modules/pages/articles/Articles-wiki.js'));
-// const Articles = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/articles/Articles.js'));
-// const EditAddArticle = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/articles/EditAddArticle.js'));
-const BuildingAHyperloop = lazy(() => import(/* webpackChunkName: "building_a_hyperloop" */ './modules/pages/articles/temporarily/Building_a_hyperloop')); // -------------------- temporarily --------------------
 // --
 const MyProfile = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/my-profile/My-profile.js'));
 const MyPrizes = lazy(() => import(/* webpackChunkName: "cab" */ './modules/components/[0_grouped_0]-Profile/my-prizes/My-prizes.js'));
@@ -82,9 +78,6 @@ const Router = () => {
             <Route path="markers" element={<MyMarkers/>}/>
             <Route path="markers/edit_add_marker/:id" element={<EditAddMarker/>}/>
             {/*----------*/}
-            <Route path="articles" element={<CabNotAvailable/>}/>
-            <Route path="articles/edit_add_article/:id" element={<CabNotAvailable/>}/>
-            {/*----------*/}
             <Route path="gallery" element={<CabNotAvailable/>}/>
             <Route path="gallery/edit_add_post" element={<CabNotAvailable/>}/>
             <Route path="gallery/post_analytics" element={<CabNotAvailable/>}/>
@@ -95,9 +88,6 @@ const Router = () => {
             {/*----------*/}
           </Route>
 
-          <Route path="building_a_hyperloop_server" element={<BuildingAHyperloop/>}/> {/*-------------------- temporarily --------------------*/}
-
-          <Route path="/articles_wiki" element={<NotAvailable/>}/> {/* <Route path="/articles_wiki" element={<ArticlesWiki/>}/> */}
           <Route path="/gallery" element={<NotAvailable/>}/>
 
           <Route path="/faq" element={<Faq/>}/>
@@ -114,6 +104,7 @@ const Router = () => {
             <Route path="player_summary" element={<PlayerSummary/>}/>
             <Route path="faq_editor" element={<FaqEditor/>}/>
             <Route path="mod_editor" element={<ModEditor/>}/>
+            <Route path="donate_status_editor" element={<DonateStatusEditor/>}/>
             <Route path="texture_pack_editor" element={<TexturePackEditor/>}/>
             <Route path="regulations_editor" element={<RegulationsEditor/>}/>
             <Route path="monitoring_summary" element={<MonitoringSummary/>}/>

@@ -1,23 +1,17 @@
 import classNames from "classnames";
-import React, {useEffect} from "react";
+import React from "react";
 import {useForm} from "react-hook-form";
 import {ErrorMessage} from "@hookform/error-message";
-import AOS from "aos";
 import {sendRequest} from '../../../DataProvider';
 import {useAlert} from "react-alert";
 import Notifications from "../notifications/Notifications";
 import Button from "../button/Button";
 
 import styles from "./Auth-comp.module.scss";
-import "aos/dist/aos.css";
 
 const AuthComponent = () => {
 
   const alert = useAlert();
-
-  useEffect(() => {
-    AOS.init({duration: 1000});
-  }, []);
 
   const {register, handleSubmit, formState: {errors},} = useForm({mode: "onChange"});
 
@@ -66,7 +60,7 @@ const AuthComponent = () => {
 
   return (
     <div className={classNames(styles["auth-block"])}>
-      <div className={classNames(styles["container"])} data-aos="zoom-in">
+      <div className={classNames(styles["container"])}>
         <h4 className={classNames(styles["title-register"])}>Создание заявки на GMGame</h4>
         <form onSubmit={handleSubmit(onSubmit)}>
           <label htmlFor="usernameFor" className={classNames(styles["line"])}>
