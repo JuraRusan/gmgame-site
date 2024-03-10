@@ -2,10 +2,10 @@ import classNames from "classnames";
 import React, {useEffect, useState} from "react";
 import {LazyLoadImage} from "react-lazy-load-image-component";
 import Notifications from "../../notifications/Notifications";
-import {dataUserShop} from "./dataUserShop";
 import useLoading from "../../../loading/useLoading";
 import {useAxios} from "../../../../DataProvider";
 import Preload from "../../preloader/Preload";
+import axios from "axios";
 
 import styles from "./ShopUser.module.scss";
 import 'react-lazy-load-image-component/src/effects/blur.css';
@@ -26,6 +26,14 @@ const ShopUser = () => {
 
   const isLoading = useLoading();
   const [currentTime, setCurrentTime] = useState(new Date().getTime());
+
+  const [dataUserShop, setDataUserShop] = useState([])
+
+  useEffect(() => {
+    axios.get("http://localhost:4000/cab_shop_user").then((res) => {
+      setDataUserShop(res.data.data)
+    })
+  }, [])
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -156,7 +164,7 @@ const ShopUser = () => {
           <h3 className={classNames(styles["info"])}>
             Для получения магазина изучите соответствующую статью в
             <a
-              href="https://gmgame.ru/articles_wiki"
+              href="https://wiki.gmgame.ru/books/gaidy/page/instrukciia-po-sozdaniiu-magazina"
               target="_blank"
               rel="noreferrer"
               className={classNames(styles["link_wiki"])}

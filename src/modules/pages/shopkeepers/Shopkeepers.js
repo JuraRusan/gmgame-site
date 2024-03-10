@@ -1,16 +1,31 @@
 import classNames from "classnames";
 import React, {useEffect, useState} from "react";
-import {dataShop} from "./dataShop";
 import {SHULKERS_TYPE} from "./ShulkersType";
-import {Link, animateScroll as scroll} from "react-scroll";
+import {Link, scroller} from "react-scroll";
 import OneSuggestions from "../../components/[0_grouped_0]-Shopkeepers/one-suggestions/One-suggestions.js";
 import Notifications from "../../components/notifications/Notifications";
 import Villager from "../../components/[0_grouped_0]-Shopkeepers/villager/Villager";
 import PreviewComponent from "../../components/[0_grouped_0]-Shopkeepers/preview-component/Preview-component";
 import {debounce} from "lodash";
 import Button from "../../components/button/Button";
+import useLoading from "../../loading/useLoading";
+import axios from "axios";
+import Preload from "../../components/preloader/Preload";
 
 import styles from "./Shopkeepers.module.scss"
+
+const INFO_DEFAULT = "Поиск работает по всем предметам, даже по тем что лежат в шалкерах."
+
+const DEFAULT_INFO_SHOP = {
+  name: " ",
+  ownerName: " ",
+  coordinatesX: " ",
+  coordinatesY: " ",
+  coordinatesZ: " ",
+  remainder: " ",
+  villagerType: "savanna",
+  profession: "none"
+}
 
 function isItemInteractiveResult(item) {
   return SHULKERS_TYPE.includes(item.resultItem.type);
@@ -26,27 +41,19 @@ function isItemInteractiveItem2(item) {
 
 const Shopkeepers = () => {
 
-  const infoSearch = "Поиск работает по всем предметам, даже по тем что лежат в шалкерах."
+  const isLoading = useLoading();
 
-  const [infoShop, setInfoShop] = useState({
-    name: " ",
-    ownerName: " ",
-    coordinatesX: " ",
-    coordinatesY: " ",
-    coordinatesZ: " ",
-    remainder: " ",
-    villagerType: "savanna",
-    profession: "none"
-  });
+  const [infoShop, setInfoShop] = useState(DEFAULT_INFO_SHOP);
 
   const [showButton, setShowButton] = useState(false);
   const [valueSearchShop, setValueSearchShop] = useState('');
   const [valueSearchItem, setValueSearchItem] = useState('');
-  const [activeScroll, setActiveScroll] = useState(0);
 
   const [selectedItem, setSelectedItem] = useState(null);
   const [selectedItemOne, setSelectedItemOne] = useState("");
   const [visible, setVisible] = useState(false)
+
+  const [dataShop, setDataShop] = useState([])
 
   function shopFunction(props, remainder) {
     setInfoShop({
@@ -63,7 +70,7 @@ const Shopkeepers = () => {
 
   const scrollActive = () => {
     const top = document.getElementById("topScroll");
-    const offset = 80;
+    const offset = 100;
     const elementTop = top.offsetTop - offset;
     window.scrollTo({
       top: elementTop,
@@ -74,27 +81,6 @@ const Shopkeepers = () => {
   const handleScroll = () => {
     const scrollY = window.scrollY || document.documentElement.scrollTop;
     setShowButton(scrollY > 350);
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const handleItemClick = (itemId, offers) => {
-    const element = document.getElementById(itemId);
-    element.scrollIntoView({behavior: 'smooth'});
-
-    setActiveScroll(itemId);
-    const top = document.getElementById("topScroll");
-    const offset = 80;
-    const elementTop = top.offsetTop - offset;
-    if (activeScroll === itemId) {
-      window.scrollTo({
-        top: elementTop,
-        behavior: 'smooth'
-      });
-    }
   };
 
   const filterShopData = valueSearchShop.trim() === ''
@@ -136,68 +122,85 @@ const Shopkeepers = () => {
     : filterShopData;
 
   useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    axios.get("http://localhost:4000/all_shops_with_offers").then((res) => {
+      setDataShop(res.data.data)
+    })
+  }, [])
+
+  useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
     const scrollTo = urlParams.get('scrollTo');
 
     if (scrollTo) {
-      const targetElement = document.getElementById(scrollTo);
-      if (targetElement) {
-        scroll.scrollTo(targetElement.offsetTop, {
-          smooth: true
-        });
-      }
+      scroller.scrollTo(scrollTo, {
+        smooth: true,
+        spy: true,
+        offset: -64,
+      });
     }
-  }, []);
+
+  }, [isLoading])
+
+  if (isLoading) {
+    return <Preload full={false}/>;
+  }
 
   return (
     <div className={classNames(styles["main_shopkeepers_block"])} id="topScroll">
       <h4 className={classNames(styles["title_shop_block"])}>Товары игроков сервера</h4>
       <div className={classNames(styles["center_block"])}>
         <div className={classNames(styles["shop_list_wrapper"])}>
-          <input
-            type="search"
-            className={classNames(styles["search_shop"])}
-            placeholder="Поиск по названию магазина"
-            onChange={debounce((e) => setValueSearchShop(e.target.value.toLowerCase()), 350)}
-          />
-          <ul className={classNames(styles["ul_block"])}>
-            {filteredData.map((id, i) => (
-              <>
-                {id.offers.length === 0
-                  ?
-                  <></>
-                  :
-                  <li
-                    key={i}
-                    className={classNames(styles["one_shop_list_line"])}
-                  >
-                    <Link
-                      activeClass={classNames(styles["active"])}
-                      className={classNames(styles["one_line"])}
-                      spy={true}
-                      smooth={true}
-                      to={`scroll_${id.shop_id}`}
-                      onClick={() => handleItemClick(`scroll_${id.shop_id}`)}
-                      // onSetActive={debounce(() => {
-                      //   setInfoShop({
-                      //     name: id.name,
-                      //     ownerName: id.owner,
-                      //     coordinatesX: id.x,
-                      //     coordinatesY: id.y,
-                      //     coordinatesZ: id.z,
-                      //     remainder: 0,
-                      //     villagerType: id.object_villager_type,
-                      //     profession: id.object_profession
-                      //   })
-                      // }, 500)} // --- !!! --- Вызывает ОГРОМНЫЕ лаги --- !!! ---
+          <div className={classNames(styles["shop_list_box"])}>
+            <input
+              type="search"
+              className={classNames(styles["search_shop"])}
+              placeholder="Поиск по названию магазина"
+              onChange={debounce((e) => setValueSearchShop(e.target.value.toLowerCase()), 350)}
+            />
+            <ul className={classNames(styles["ul_block"])}>
+              {filteredData.map((id, index) => (
+                <>
+                  {id.offers.length === 0
+                    ?
+                    null
+                    :
+                    <li
+                      key={index}
+                      className={classNames(styles["one_shop_list_line"])}
                     >
-                      {id.name === "" ? id.owner : id.name}
-                    </Link>
-                  </li>
-                }
-              </>
-            ))}
-          </ul>
+                      <Link
+                        activeClass={classNames(styles["active"])}
+                        className={classNames(styles["one_line"])}
+                        spy={true}
+                        smooth={true}
+                        offset={-64}
+                        to={`scroll_${id.shop_id}`}
+                        // onSetActive={debounce(() => {
+                        //   setInfoShop({
+                        //     name: id.name,
+                        //     ownerName: id.owner,
+                        //     coordinatesX: id.x,
+                        //     coordinatesY: id.y,
+                        //     coordinatesZ: id.z,
+                        //     remainder: 0,
+                        //     villagerType: id.object_villager_type,
+                        //     profession: id.object_profession
+                        //   })
+                        // }, 500)} // --- !!! --- Вызывает ОГРОМНЫЕ лаги --- !!! ---
+                      >
+                        {id.name === "" ? id.owner : id.name}
+                      </Link>
+                    </li>
+                  }
+                </>
+              ))}
+            </ul>
+          </div>
           {showButton &&
             <div className={classNames(styles["scroll"])}>
               <Button view="submit" type="submit" onClick={scrollActive} label="Прокрутка вверх"/>
@@ -264,7 +267,7 @@ const Shopkeepers = () => {
           )}
         </div>
         <div className={classNames(styles["shopOneSuggestions"])}>
-          <Notifications inf={infoSearch} type="warn"/>
+          <Notifications inf={INFO_DEFAULT} type="warn"/>
           <input
             type="search"
             className={classNames(styles["searchInputItems"])}
@@ -278,7 +281,6 @@ const Shopkeepers = () => {
           </div>
         </div>
       </div>
-
     </div>
   );
 };

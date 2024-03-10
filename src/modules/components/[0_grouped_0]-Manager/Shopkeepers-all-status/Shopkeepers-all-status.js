@@ -1,15 +1,21 @@
 import classNames from "classnames";
-import React from "react";
+import React, {useEffect, useState} from "react";
 import TableMain from "../../table/TableMain";
 import THead from "../../table/THead";
 import Tr from "../../table/Tr";
 import Th from "../../table/Th";
 import TBody from "../../table/TBody";
-import {dataUserShop} from "../../[0_grouped_0]-Profile/shops-user/dataUserShop";
+import axios from "axios";
+import Preload from "../../preloader/Preload";
+import useLoading from "../../../loading/useLoading";
 
 import styles from "./Shopkeepers-all-status.module.scss";
 
 const ShopkeepersAllStatus = () => {
+
+  const isLoading = useLoading();
+
+  const [dataUserShop, setDataUserShop] = useState([])
 
   function formatUnixTime(unixTime) {
     const date = new Date(unixTime);
@@ -25,8 +31,18 @@ const ShopkeepersAllStatus = () => {
     return `${day}.${month}.${year} ${hours}:${minutes}:${seconds}`;
   }
 
+  useEffect(() => {
+    axios.get("http://localhost:4000/all_shop_users").then((res) => {
+      setDataUserShop(res.data.data)
+    })
+  }, [])
+
+  if (isLoading) {
+    return <Preload full={false}/>
+  }
+
   return (
-    <div className={classNames(styles["shopkeepers_all_status_box"])} data-aos="zoom-in">
+    <div className={classNames(styles["shopkeepers_all_status_box"])}>
       {dataUserShop.map((user, index) => (
         <div key={index} className={classNames(styles["one_users"])}>
           <p className={classNames(styles["owner_name"])}>{user.owner}, [{user.villager.length}/6], {formatUnixTime(user.last_seen + 2592000000)}</p>
@@ -45,7 +61,7 @@ const ShopkeepersAllStatus = () => {
               {user.villager.map((vil, index) => (
                 <Tr key={index}>
                   <Th type="text" content={vil.shop_id}/>
-                  <Th type="text" content={vil.name}/>
+                  <Th type="text" content={vil.name === "" ? "-" : vil.name}/>
                   <Th type="text" content={vil.x}/>
                   <Th type="text" content={vil.y}/>
                   <Th type="text" content={vil.z}/>
