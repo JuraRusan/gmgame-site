@@ -17,7 +17,7 @@ import TTextarea from "../../table/TTextarea";
 
 import styles from "./Player-summary.module.scss";
 
-const StrokeName = ({name}) => {
+const StrokeName = ({ name }) => {
   return (
     <div className={classNames(styles["main_line_user"])}>
       <img
@@ -25,22 +25,24 @@ const StrokeName = ({name}) => {
         src={`https://minotar.net/helm/${name}/150`}
         alt="none"
       />
-      <p className={classNames(styles["stroke_name"])}>Ник игрока:
+      <p className={classNames(styles["stroke_name"])}>
+        Ник игрока:
         <span className={classNames(styles["span_display"])}>{name}</span>
       </p>
     </div>
-  )
-}
+  );
+};
 
-const StrokeInfo = ({label, info}) => {
+const StrokeInfo = ({ label, info }) => {
   return (
-    <p className={classNames(styles["stroke"])}>{label}
+    <p className={classNames(styles["stroke"])}>
+      {label}
       <span className={classNames(styles["color"])}>{info}</span>
     </p>
-  )
-}
+  );
+};
 
-const StrokeRedactor = ({label, onChange, defaultValue, id, type}) => {
+const StrokeRedactor = ({ label, onChange, defaultValue, id, type }) => {
   return (
     <div className={classNames(styles["stroke_row"])}>
       <p className={classNames(styles["label_name"])}>{label}</p>
@@ -52,8 +54,8 @@ const StrokeRedactor = ({label, onChange, defaultValue, id, type}) => {
         defaultValue={defaultValue}
       />
     </div>
-  )
-}
+  );
+};
 
 const PlayerSummary = () => {
   const [searchParams] = useSearchParams();
@@ -411,22 +413,14 @@ const PlayerSummary = () => {
     });
   };
 
-  const downloadFile = (data, fileName) => {
-    const blob = new Blob([data], { type: "text/html" });
-    const link = document.createElement("a");
-    link.href = window.URL.createObjectURL(blob);
-    link.download = fileName;
-    link.click();
-  };
-
-  const downLoadDile = (name, id) => {
-    sendRequest("/api/admin/get_ticket", "POST", { id: id }).then(
+  const getLink = (name) => {
+    sendRequest("/api/admin/get_link", "POST", { name: name }).then(
       (response) => {
         if (response.error) {
           alert.error(response.message);
           return;
         }
-        downloadFile(response.html, name);
+        window.open(response, "_blank");
       }
     );
   };
@@ -489,29 +483,35 @@ const PlayerSummary = () => {
           <TableMain>
             <THead>
               <Tr header={true}>
-                <Th type="text" content="i"/>
-                <Th type="text" content="Имя"/>
-                <Th type="text" content="email"/>
-                <Th type="text" content="discord_id"/>
-                <Th type="text" content="Возраст"/>
-                <Th type="text" content="Статус"/>
-                <Th type="text" content="Имун"/>
-                <Th type="text" content="Гражд."/>
-                <Th type="text" content="Доп. инфа"/>
-                <Th type="text" content="Действия"/>
+                <Th type="text" content="i" />
+                <Th type="text" content="Имя" />
+                <Th type="text" content="email" />
+                <Th type="text" content="discord_id" />
+                <Th type="text" content="Возраст" />
+                <Th type="text" content="Статус" />
+                <Th type="text" content="Имун" />
+                <Th type="text" content="Гражд." />
+                <Th type="text" content="Доп. инфа" />
+                <Th type="text" content="Действия" />
               </Tr>
             </THead>
             <TBody>
               {user?.map((el, i) => (
                 <Tr key={i} keyStyle={i}>
-                  <Th type="text" content={i + 1}/>
-                  <Th type="text" content={el?.username || "-"}/>
-                  <Th type="text" content={tag[el?.username]?.email || "-"}/>
-                  <Th type="text" content={el?.user_id || "-"}/>
-                  <Th type="text" content={el?.age || "-"}/>
-                  <Th type="text" content={el?.status || "-"}/>
-                  <Th type="text" content={el?.immun === true ? "true" : "false"}/>
-                  <Th type="text" content={el?.citizenship === true ? "true" : "false"}/>
+                  <Th type="text" content={i + 1} />
+                  <Th type="text" content={el?.username || "-"} />
+                  <Th type="text" content={tag[el?.username]?.email || "-"} />
+                  <Th type="text" content={el?.user_id || "-"} />
+                  <Th type="text" content={el?.age || "-"} />
+                  <Th type="text" content={el?.status || "-"} />
+                  <Th
+                    type="text"
+                    content={el?.immun === true ? "true" : "false"}
+                  />
+                  <Th
+                    type="text"
+                    content={el?.citizenship === true ? "true" : "false"}
+                  />
                   <Th type="actions">
                     <TButton
                       name="Log"
@@ -794,7 +794,6 @@ const PlayerSummary = () => {
                   {username === "all" && <Th type="text" content="Имя" />}
                   <Th type="text" content="Название" />
                   <Th type="text" content="Просмотр" />
-                  <Th type="text" content="Действия" />
                 </Tr>
               </THead>
               <TBody>
@@ -806,20 +805,17 @@ const PlayerSummary = () => {
                         {username === "all" && (
                           <Th type="text" content={el?.username || "-"} />
                         )}
-                        <Th type="editing">
-                          <TInput
-                            id="name"
-                            size="large"
-                            onChange={(e) => terrsChange(e, el.id)}
-                            defaultValue={el.name}
-                          />
-                        </Th>
-                        <Th type="link" href={`/ticket`}></Th>
+                        <Th
+                          type="text"
+                          id="name"
+                          size="large"
+                          content={el.name}
+                        />
                         <Th type="actions">
                           <TButton
-                            name="Скачать"
                             type="submit"
-                            onClick={() => downLoadDile(el.name, el.id)}
+                            name="Посмотреть"
+                            onClick={() => getLink(el.name)}
                           />
                         </Th>
                       </Tr>
@@ -908,20 +904,11 @@ const PlayerSummary = () => {
       >
         <h3 className={classNames(styles["app_info"])}>Активная заявка</h3>
         <div className={classNames(styles["active_app"])}>
-          <StrokeName name={userDetails?.username}/>
+          <StrokeName name={userDetails?.username} />
           <div className={classNames(styles["description_user"])}>
-            <StrokeInfo
-              label="Дискорд id:"
-              info={userDetails?.user_id}
-            />
-            <StrokeInfo
-              label="Возраст:"
-              info={userDetails?.age}
-            />
-            <StrokeInfo
-              label="Статус игрока:"
-              info={userDetails?.status}
-            />
+            <StrokeInfo label="Дискорд id:" info={userDetails?.user_id} />
+            <StrokeInfo label="Возраст:" info={userDetails?.age} />
+            <StrokeInfo label="Статус игрока:" info={userDetails?.status} />
             <StrokeRedactor
               label="Партнер:"
               id="partner"
@@ -933,10 +920,7 @@ const PlayerSummary = () => {
               label="Откуда узнал о проекте:"
               info={userDetails?.from_about}
             />
-            <StrokeInfo
-              label="О себе:"
-              info={userDetails?.you_about}
-            />
+            <StrokeInfo label="О себе:" info={userDetails?.you_about} />
             <StrokeRedactor
               label="Иммунитет:"
               id="immun"
@@ -958,9 +942,7 @@ const PlayerSummary = () => {
               onChange={(e) => userDetailsChange(e, userDetails.user_id)}
               defaultValue={
                 userDetails.expirationDate
-                  ? userDetails.expirationDate
-                    .toISOString()
-                    .substring(0, 10)
+                  ? userDetails.expirationDate.toISOString().substring(0, 10)
                   : ""
               }
             />
@@ -981,66 +963,104 @@ const PlayerSummary = () => {
             </button>
           </div>
         </div>
-        {!userDetails.oldUsers ? null :
-          userDetails.oldUsers.map((el, index) => (
-            <>
-              <h3 className={classNames(styles["app_info"])}>Старая заявка [ {index + 1} ]</h3>
-              <div className={classNames(styles["old_app"])}>
-                <StrokeName name={el?.username}/>
-                <div className={classNames(styles["description_user"])}>
-                  <StrokeInfo
-                    label="Дискорд id:"
-                    info={userDetails?.oldUsers[index]?.user_id}
-                  />
-                  <StrokeInfo
-                    label="Возраст:"
-                    info={userDetails?.oldUsers[index]?.age}
-                  />
-                  <StrokeInfo
-                    label="Баланс:"
-                    info={userDetails?.oldUsers[index]?.balance}
-                  />
-                  <StrokeInfo
-                    label="Гражданство:"
-                    info={userDetails?.oldUsers[index]?.citizenship === true ? "true" : "false"}
-                  />
-                  <StrokeInfo
-                    label="Друзья:"
-                    info={!userDetails?.oldUsers[index]?.friends ? "-" : userDetails?.oldUsers[index]?.friends}
-                  />
-                  <StrokeInfo
-                    label="Откуда узнали о проэкте:"
-                    info={!userDetails?.oldUsers[index]?.from_about ? "-" : userDetails?.oldUsers[index]?.from_about}
-                  />
-                  <StrokeInfo
-                    label="О себе:"
-                    info={!userDetails?.oldUsers[index]?.you_about ? "-" : userDetails?.oldUsers[index]?.you_about}
-                  />
-                  <StrokeInfo
-                    label="Сервера:"
-                    info={!userDetails?.oldUsers[index]?.server ? "-" : userDetails?.oldUsers[index]?.server}
-                  />
-                  <StrokeInfo
-                    label="Имунитет:"
-                    info={userDetails?.oldUsers[index]?.immun === true ? "true" : "false"}
-                  />
-                  <StrokeInfo
-                    label="Is_discord:"
-                    info={userDetails?.oldUsers[index]?.is_discord === true ? "true" : "false"}
-                  />
-                  <StrokeInfo
-                    label="Заметка о игроке:"
-                    info={!userDetails?.oldUsers[index]?.note ? "-" : userDetails?.oldUsers[index]?.note}
-                  />
-                  <StrokeInfo
-                    label="Партнёр:"
-                    info={!userDetails?.oldUsers[index]?.partner ? "-" : userDetails?.oldUsers[index]?.partner}
-                  />
+        {!userDetails.oldUsers
+          ? null
+          : userDetails.oldUsers.map((el, index) => (
+              <>
+                <h3 className={classNames(styles["app_info"])}>
+                  Старая заявка [ {index + 1} ]
+                </h3>
+                <div className={classNames(styles["old_app"])}>
+                  <StrokeName name={el?.username} />
+                  <div className={classNames(styles["description_user"])}>
+                    <StrokeInfo
+                      label="Дискорд id:"
+                      info={userDetails?.oldUsers[index]?.user_id}
+                    />
+                    <StrokeInfo
+                      label="Возраст:"
+                      info={userDetails?.oldUsers[index]?.age}
+                    />
+                    <StrokeInfo
+                      label="Баланс:"
+                      info={userDetails?.oldUsers[index]?.balance}
+                    />
+                    <StrokeInfo
+                      label="Гражданство:"
+                      info={
+                        userDetails?.oldUsers[index]?.citizenship === true
+                          ? "true"
+                          : "false"
+                      }
+                    />
+                    <StrokeInfo
+                      label="Друзья:"
+                      info={
+                        !userDetails?.oldUsers[index]?.friends
+                          ? "-"
+                          : userDetails?.oldUsers[index]?.friends
+                      }
+                    />
+                    <StrokeInfo
+                      label="Откуда узнали о проэкте:"
+                      info={
+                        !userDetails?.oldUsers[index]?.from_about
+                          ? "-"
+                          : userDetails?.oldUsers[index]?.from_about
+                      }
+                    />
+                    <StrokeInfo
+                      label="О себе:"
+                      info={
+                        !userDetails?.oldUsers[index]?.you_about
+                          ? "-"
+                          : userDetails?.oldUsers[index]?.you_about
+                      }
+                    />
+                    <StrokeInfo
+                      label="Сервера:"
+                      info={
+                        !userDetails?.oldUsers[index]?.server
+                          ? "-"
+                          : userDetails?.oldUsers[index]?.server
+                      }
+                    />
+                    <StrokeInfo
+                      label="Имунитет:"
+                      info={
+                        userDetails?.oldUsers[index]?.immun === true
+                          ? "true"
+                          : "false"
+                      }
+                    />
+                    <StrokeInfo
+                      label="Is_discord:"
+                      info={
+                        userDetails?.oldUsers[index]?.is_discord === true
+                          ? "true"
+                          : "false"
+                      }
+                    />
+                    <StrokeInfo
+                      label="Заметка о игроке:"
+                      info={
+                        !userDetails?.oldUsers[index]?.note
+                          ? "-"
+                          : userDetails?.oldUsers[index]?.note
+                      }
+                    />
+                    <StrokeInfo
+                      label="Партнёр:"
+                      info={
+                        !userDetails?.oldUsers[index]?.partner
+                          ? "-"
+                          : userDetails?.oldUsers[index]?.partner
+                      }
+                    />
+                  </div>
                 </div>
-              </div>
-            </>
-          ))
-        }
+              </>
+            ))}
       </ReactModal>
 
       {/*-----------------------------------------------------------------------------------------------*/}
