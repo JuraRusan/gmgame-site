@@ -43,6 +43,10 @@
     font-family: $fontCustom2;
   }
 
+  .WWW {
+    display: none;
+  }
+
   .center_block {
     width: 100%;
     max-width: 1600px;
@@ -254,12 +258,51 @@
 }
 
 @media screen and (max-width: 1600px) {
+  .main_shopkeepers_block {
+    .center_block {
+      .shop_list_wrapper {
+        .shop_list_box {
+          width: 220px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1400px) {
+  .main_shopkeepers_block {
+    .center_block {
+      .shop_all_suggestions {
+        padding: 8px;
+        max-width: 32%;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1280px) {
+  .main_shopkeepers_block {
+    .title_shop_block {
+      display: none;
+    }
+
+    .WWW {
+      display: flex;
+      font-size: 24px;
+      font-weight: 400;
+      font-family: $fontCustom2;
+      text-align: center;
+      width: auto;
+      margin: 19% auto;
+      padding: 0 24px;
+      color: $site-color-2;
+      line-height: 1.45;
+    }
+
+    .center_block {
+      display: none;
+    }
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -272,6 +315,12 @@
 }
 
 @media screen and (max-width: 640px) {
+  .main_shopkeepers_block {
+    .WWW {
+      margin: 45% auto;
+      font-size: 20px;
+    }
+  }
 }
 
 @media screen and (max-width: 480px) {

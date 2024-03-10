@@ -32,7 +32,7 @@ const ShopkeepersAllStatus = () => {
   }
 
   useEffect(() => {
-    axios.get("http://localhost:4000/all_shop_users").then((res) => {
+    axios.get("http://46.0.203.33:4000/all_shop_users").then((res) => {
       setDataUserShop(res.data.data)
     })
   }, [])

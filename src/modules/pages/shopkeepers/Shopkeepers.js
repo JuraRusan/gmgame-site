@@ -127,7 +127,7 @@ const Shopkeepers = () => {
   }, []);
 
   useEffect(() => {
-    axios.get("http://localhost:4000/all_shops_with_offers").then((res) => {
+    axios.get("http://46.0.203.33:4000/all_shops_with_offers").then((res) => {
       setDataShop(res.data.data)
     })
   }, [])
@@ -153,6 +153,7 @@ const Shopkeepers = () => {
   return (
     <div className={classNames(styles["main_shopkeepers_block"])} id="topScroll">
       <h4 className={classNames(styles["title_shop_block"])}>Товары игроков сервера</h4>
+      <p className={classNames(styles["WWW"])}>Временно не доступно с этого дисплея</p>
       <div className={classNames(styles["center_block"])}>
         <div className={classNames(styles["shop_list_wrapper"])}>
           <div className={classNames(styles["shop_list_box"])}>
