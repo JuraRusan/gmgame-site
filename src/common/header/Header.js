@@ -91,6 +91,7 @@ const Header = () => {
                   <a className={classNames(styles["list"])} href="/gallery">Галерея</a>
                   <a className={classNames(styles["list"])} href="https://minecraft-calculator.netlify.app/" target="_blank" rel="noreferrer">Калькулятор</a>
                   <a className={classNames(styles["list"])} href="https://wiki.gmgame.ru/" target="_blank" rel="noreferrer">Вики сервера</a>
+                  <a className={classNames(styles["list"])} href="/shopkeepers">Торговая зона</a>
                   <a className={classNames(styles["list"])} href="/mods">Моды</a>
                   <a className={classNames(styles["list"], styles["last"])} href="/texture_pack">Текстур пак</a>
                 </div>

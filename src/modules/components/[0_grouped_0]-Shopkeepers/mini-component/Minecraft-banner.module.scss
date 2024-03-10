@@ -1,0 +1,30 @@
+.flag_group {
+  height: auto;
+  width: auto;
+  position: relative;
+
+  .flag,
+  .shadow {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .flag {
+    padding-bottom: 2px;
+  }
+}
+
+.center {
+  margin: 4px auto;
+
+  .flag {
+    padding-bottom: 0 !important;
+  }
+}
+
+.normal {
+  margin: 4px;
+}

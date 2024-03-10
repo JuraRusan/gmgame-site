@@ -1,0 +1,26 @@
+@import "../../../../Variables.scss";
+
+.shopkeepers_all_status_box {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  margin-top: 16px;
+
+  .one_users {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: auto;
+    height: auto;
+    margin-bottom: 16px;
+
+    .owner_name {
+      font-family: $fontCustom2;
+      font-weight: 400;
+      font-size: 13px;
+      color: $site-color-8;
+      text-align: center;
+    }
+  }
+}

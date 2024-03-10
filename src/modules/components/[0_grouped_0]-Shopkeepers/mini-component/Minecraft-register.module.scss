@@ -1,0 +1,12 @@
+@import "../../../../Variables";
+
+.minecraft_id {
+  width: max-content;
+  height: 18px;
+  line-height: 18px;
+  color: $site-color-5;
+  font-weight: 400;
+  font-size: 12px;
+  margin: 6px 16px 0 4px;
+  font-family: $fontCustom2;
+}
