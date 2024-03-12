@@ -154,134 +154,139 @@ const Shopkeepers = () => {
     <div className={classNames(styles["main_shopkeepers_block"])} id="topScroll">
       <h4 className={classNames(styles["title_shop_block"])}>Товары игроков сервера</h4>
       <p className={classNames(styles["WWW"])}>Временно не доступно с этого дисплея</p>
-      <div className={classNames(styles["center_block"])}>
-        <div className={classNames(styles["shop_list_wrapper"])}>
-          <div className={classNames(styles["shop_list_box"])}>
-            <input
-              type="search"
-              className={classNames(styles["search_shop"])}
-              placeholder="Поиск по названию магазина"
-              onChange={debounce((e) => setValueSearchShop(e.target.value.toLowerCase()), 350)}
-            />
-            <ul className={classNames(styles["ul_block"])}>
-              {filteredData.map((id, index) => (
-                <>
-                  {id.offers.length === 0
-                    ?
-                    null
-                    :
-                    <li
-                      key={index}
-                      className={classNames(styles["one_shop_list_line"])}
-                    >
-                      <Link
-                        activeClass={classNames(styles["active"])}
-                        className={classNames(styles["one_line"])}
-                        spy={true}
-                        smooth={true}
-                        offset={-64}
-                        to={`scroll_${id.shop_id}`}
-                        // onSetActive={debounce(() => {
-                        //   setInfoShop({
-                        //     name: id.name,
-                        //     ownerName: id.owner,
-                        //     coordinatesX: id.x,
-                        //     coordinatesY: id.y,
-                        //     coordinatesZ: id.z,
-                        //     remainder: 0,
-                        //     villagerType: id.object_villager_type,
-                        //     profession: id.object_profession
-                        //   })
-                        // }, 500)} // --- !!! --- Вызывает ОГРОМНЫЕ лаги --- !!! ---
+      {dataShop.length === 0
+        ?
+        <h4 className={classNames(styles["data_none"])}>Данные отсутствуют в данный момент</h4>
+        :
+        <div className={classNames(styles["center_block"])}>
+          <div className={classNames(styles["shop_list_wrapper"])}>
+            <div className={classNames(styles["shop_list_box"])}>
+              <input
+                type="search"
+                className={classNames(styles["search_shop"])}
+                placeholder="Поиск по названию магазина"
+                onChange={debounce((e) => setValueSearchShop(e.target.value.toLowerCase()), 350)}
+              />
+              <ul className={classNames(styles["ul_block"])}>
+                {filteredData.map((id, index) => (
+                  <>
+                    {id.offers.length === 0
+                      ?
+                      null
+                      :
+                      <li
+                        key={index}
+                        className={classNames(styles["one_shop_list_line"])}
                       >
-                        {id.name === "" ? id.owner : id.name}
-                      </Link>
-                    </li>
+                        <Link
+                          activeClass={classNames(styles["active"])}
+                          className={classNames(styles["one_line"])}
+                          spy={true}
+                          smooth={true}
+                          offset={-64}
+                          to={`scroll_${id.shop_id}`}
+                          // onSetActive={debounce(() => {
+                          //   setInfoShop({
+                          //     name: id.name,
+                          //     ownerName: id.owner,
+                          //     coordinatesX: id.x,
+                          //     coordinatesY: id.y,
+                          //     coordinatesZ: id.z,
+                          //     remainder: 0,
+                          //     villagerType: id.object_villager_type,
+                          //     profession: id.object_profession
+                          //   })
+                          // }, 500)} // --- !!! --- Вызывает ОГРОМНЫЕ лаги --- !!! ---
+                        >
+                          {id.name === "" ? id.owner : id.name}
+                        </Link>
+                      </li>
+                    }
+                  </>
+                ))}
+              </ul>
+            </div>
+            {showButton &&
+              <div className={classNames(styles["scroll"])}>
+                <Button view="submit" type="submit" onClick={scrollActive} label="Прокрутка вверх"/>
+              </div>
+            }
+          </div>
+          <div className={classNames(styles["shop_all_suggestions"])}>
+            {filteredData.map((el, i) => (
+                <>
+                  {el.offers.length === 0
+                    ?
+                    <section id={`scroll_${el.shop_id}`} key={i}></section>
+                    :
+                    <section id={`scroll_${el.shop_id}`} key={i} className={classNames(styles["one_offers_shop"])}>
+                      <h4 className={classNames(styles["block_shop"])}>{el.name === "" ? el.owner : el.name}</h4>
+                      {el.offers.map((offer, index) => (
+                          <div
+                            className={classNames(styles["on_click"])}
+                            key={index}
+                            onClick={() => shopFunction(el, offer.resultItem.remainder)}
+                          >
+                            <OneSuggestions
+                              itemOne={offer.item1}
+                              itemTwo={offer.item2}
+                              itemRes={offer.resultItem}
+
+                              onClickOne={isItemInteractiveItem1(offer) ? () => {
+                                setSelectedItem(offer.item1)
+                                setSelectedItemOne(null)
+                                setVisible(true)
+                              } : () => {
+                                setSelectedItem(null)
+                                setSelectedItemOne(offer.item1)
+                                setVisible(true)
+                              }}
+
+                              onClickTwo={isItemInteractiveItem2(offer) ? () => {
+                                setSelectedItem(offer.item2)
+                                setSelectedItemOne(null)
+                                setVisible(true)
+                              } : () => {
+                                setSelectedItem(null)
+                                setSelectedItemOne(offer.item2)
+                                setVisible(true)
+                              }}
+
+                              onClickRes={isItemInteractiveResult(offer) ? () => {
+                                setSelectedItem(offer.resultItem)
+                                setSelectedItemOne(null)
+                                setVisible(true)
+                              } : () => {
+                                setSelectedItem(null)
+                                setSelectedItemOne(offer.resultItem)
+                                setVisible(true)
+                              }}
+                            />
+                          </div>
+                        )
+                      )}
+                    </section>
                   }
                 </>
-              ))}
-            </ul>
+              )
+            )}
           </div>
-          {showButton &&
-            <div className={classNames(styles["scroll"])}>
-              <Button view="submit" type="submit" onClick={scrollActive} label="Прокрутка вверх"/>
+          <div className={classNames(styles["shopOneSuggestions"])}>
+            <Notifications inf={INFO_DEFAULT} type="warn"/>
+            <input
+              type="search"
+              className={classNames(styles["searchInputItems"])}
+              onChange={debounce((e) => setValueSearchItem(e.target.value.toLowerCase()), 350)}
+              placeholder="Найти..."
+            />
+            {visible && <PreviewComponent selectedItem={selectedItem} selectedItemOne={selectedItemOne}/>}
+            <div className={classNames(styles["villagerShopInfo"])}>
+              <Villager shop={infoShop}/>
+              <Notifications inf="Обновление данных с сервером происходит раз в 15 минут" type="warn"/>
             </div>
-          }
-        </div>
-        <div className={classNames(styles["shop_all_suggestions"])}>
-          {filteredData.map((el, i) => (
-              <>
-                {el.offers.length === 0
-                  ?
-                  <section id={`scroll_${el.shop_id}`} key={i}></section>
-                  :
-                  <section id={`scroll_${el.shop_id}`} key={i} className={classNames(styles["one_offers_shop"])}>
-                    <h4 className={classNames(styles["block_shop"])}>{el.name === "" ? el.owner : el.name}</h4>
-                    {el.offers.map((offer, index) => (
-                        <div
-                          className={classNames(styles["on_click"])}
-                          key={index}
-                          onClick={() => shopFunction(el, offer.resultItem.remainder)}
-                        >
-                          <OneSuggestions
-                            itemOne={offer.item1}
-                            itemTwo={offer.item2}
-                            itemRes={offer.resultItem}
-
-                            onClickOne={isItemInteractiveItem1(offer) ? () => {
-                              setSelectedItem(offer.item1)
-                              setSelectedItemOne(null)
-                              setVisible(true)
-                            } : () => {
-                              setSelectedItem(null)
-                              setSelectedItemOne(offer.item1)
-                              setVisible(true)
-                            }}
-
-                            onClickTwo={isItemInteractiveItem2(offer) ? () => {
-                              setSelectedItem(offer.item2)
-                              setSelectedItemOne(null)
-                              setVisible(true)
-                            } : () => {
-                              setSelectedItem(null)
-                              setSelectedItemOne(offer.item2)
-                              setVisible(true)
-                            }}
-
-                            onClickRes={isItemInteractiveResult(offer) ? () => {
-                              setSelectedItem(offer.resultItem)
-                              setSelectedItemOne(null)
-                              setVisible(true)
-                            } : () => {
-                              setSelectedItem(null)
-                              setSelectedItemOne(offer.resultItem)
-                              setVisible(true)
-                            }}
-                          />
-                        </div>
-                      )
-                    )}
-                  </section>
-                }
-              </>
-            )
-          )}
-        </div>
-        <div className={classNames(styles["shopOneSuggestions"])}>
-          <Notifications inf={INFO_DEFAULT} type="warn"/>
-          <input
-            type="search"
-            className={classNames(styles["searchInputItems"])}
-            onChange={debounce((e) => setValueSearchItem(e.target.value.toLowerCase()), 350)}
-            placeholder="Найти..."
-          />
-          {visible && <PreviewComponent selectedItem={selectedItem} selectedItemOne={selectedItemOne}/>}
-          <div className={classNames(styles["villagerShopInfo"])}>
-            <Villager shop={infoShop}/>
-            <Notifications inf="Обновление данных с сервером происходит раз в 15 минут" type="warn"/>
           </div>
         </div>
-      </div>
+      }
     </div>
   );
 };

@@ -47,6 +47,17 @@
     display: none;
   }
 
+  .data_none {
+    width: 100%;
+    text-align: center;
+    padding: 0 20px;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: $fontCustom2;
+    color: $color-3;
+    margin: 16% auto 0 auto;
+  }
+
   .center_block {
     width: 100%;
     max-width: 1600px;
