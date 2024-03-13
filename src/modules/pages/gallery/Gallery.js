@@ -4,8 +4,8 @@ import ImageGallery from 'react-image-gallery';
 import Modal from 'react-modal';
 import {LazyLoadImage} from "react-lazy-load-image-component";
 import {array} from "./GalleryArray";
-import HeartSvgComponent from "../../../bases/icons/heartSvg/HeartSvg";
-import Particles from "../../components/particles/Particles";
+// import HeartSvgComponent from "../../../bases/icons/heartSvg/HeartSvg";
+// import Particles from "../../components/particles/Particles";
 
 import styles from "./Gallery.module.scss";
 import 'react-lazy-load-image-component/src/effects/blur.css';
@@ -39,20 +39,20 @@ const MainGallery = () => {
                 onClick={openModal}
               />
             </div>
-            <div className={classNames(styles["container_like"])}>
-              <div className={classNames(styles["likes"])}>
-                <button className={classNames(styles["click"], styles["like"])}>
-                  <Particles text={<HeartSvgComponent height="20px" width="20px" color="#f4f4f4"/>} type="like"/>
-                </button>
-                <label className={classNames(styles["text"])}>{items.likes}</label>
-              </div>
-              <div className={classNames(styles["likes"])}>
-                <button className={classNames(styles["click"], styles["dislike"])}>
-                  <Particles text={<HeartSvgComponent height="20px" width="20px" color="#f4f4f4"/>} type="dislike"/>
-                </button>
-                <label className={classNames(styles["text"])}>{items.dislikes}</label>
-              </div>
-            </div>
+            {/*<div className={classNames(styles["container_like"])}>*/}
+            {/*  <div className={classNames(styles["likes"])}>*/}
+            {/*    <button className={classNames(styles["click"], styles["like"])}>*/}
+            {/*      <Particles text={<HeartSvgComponent height="20px" width="20px" color="#f4f4f4"/>} type="like"/>*/}
+            {/*    </button>*/}
+            {/*    <label className={classNames(styles["text"])}>{items.likes}</label>*/}
+            {/*  </div>*/}
+            {/*  <div className={classNames(styles["likes"])}>*/}
+            {/*    <button className={classNames(styles["click"], styles["dislike"])}>*/}
+            {/*      <Particles text={<HeartSvgComponent height="20px" width="20px" color="#f4f4f4"/>} type="dislike"/>*/}
+            {/*    </button>*/}
+            {/*    <label className={classNames(styles["text"])}>{items.dislikes}</label>*/}
+            {/*  </div>*/}
+            {/*</div>*/}
           </div>
         )}
       </div>

@@ -1,13 +1,15 @@
 import classNames from "classnames";
 import React, {useState} from "react";
-import ReactImagePickerEditor from 'react-image-picker-editor';
 import {testArrayTags, testArrayUsers} from "../../../pages/gallery/GalleryArray";
 import Notifications from "../../notifications/Notifications";
 import Button from "../../button/Button";
 import {LazyLoadImage} from "react-lazy-load-image-component";
+import {sendRequest} from "../../../../DataProvider";
+import useLoading from "../../../loading/useLoading";
+import {useAlert} from "react-alert";
+import Preload from "../../preloader/Preload";
 
 import styles from "./EditAddPost.module.scss";
-import '../../../custon-modules/react-image-picker-editor-index.scss'
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const LOAD_AND_EDIT_WARN = "Внимание! При работе с файлами в большом разрешении могут наблюдаться задержки отрисовки изображения. Рекомендуется использовать изображения в умеренном качестве, в ином случае сохранять спокойствие."
@@ -39,16 +41,8 @@ const ADD = ({list, arr, placeholder, name, onChange}) => {
 
 const EditAddPost = () => {
 
-  const config2 = {
-    borderRadius: '5px',
-    language: 'ru',
-    width: '280px',
-    height: '200px',
-    objectFit: 'contain',
-    compressInitial: null,
-  };
-  const initialImage = '';
-  // const initialImage = '/assets/images/8ptAya.webp';
+  const isLoading = useLoading();
+  const alert = useAlert();
 
   const [errorMessage, setErrorMessage] = useState(null);
   const [errorMessageTags, setErrorMessageTags] = useState(null);
@@ -59,6 +53,9 @@ const EditAddPost = () => {
   const [countImage, setCountImage] = useState(1);
   const [names, setNames] = useState([]);
   const [selectedTags, setSelectedTags] = useState([]);
+
+  const [selectedFile, setSelectedFile] = useState(null);
+  const [uploaded, setUploaded] = useState()
 
   const handleAdd = () => {
     if (countImage < 16) {
@@ -72,15 +69,60 @@ const EditAddPost = () => {
     }
   };
 
+  function uploadImagesRequest(url) {
+    const formData = new FormData();
+    formData.append('files', selectedFile);
+
+    console.log(selectedFile)
+
+    sendRequest(
+      url,
+      'POST',
+      {formData}
+    ).then(response => {
+      showMessage(response);
+    });
+  }
+
+  const uploadImages = () => {
+    uploadImagesRequest('/api/upload_images');
+  }
+
+  const handleImageChange = (e) => {
+    setSelectedFile(e.target.files)
+  }
+
+  const handleUploadTest = async () => {
+    if (!selectedFile) {
+      alert("please select a file");
+      return;
+    }
+
+    uploadImages()
+  }
+
   function createDivs() {
     const divs = [];
     for (let i = 0; i < countImage; i++) {
       divs.push(
         <div className={classNames(styles["margin"])} key={i}>
-          <ReactImagePickerEditor config={config2} imageSrcProp={initialImage}/>
+          <input
+            type="file"
+            onChange={handleImageChange}
+            accept="image/*"
+            multiple
+          />
         </div>);
     }
     return divs;
+  }
+
+  function showMessage(response) {
+    if (response.message) {
+      alert.success(response.message);
+    } else {
+      alert.error(response.error);
+    }
   }
 
   function handleAddName(e) {
@@ -109,6 +151,10 @@ const EditAddPost = () => {
       setSelectedTags(prevTags => [...prevTags, tags]);
       e.target.elements.tags.value = "";
     }
+  }
+
+  if (isLoading) {
+    return <Preload full={false}/>;
   }
 
   return (
@@ -256,7 +302,7 @@ const EditAddPost = () => {
           />
         </div>
         <div className={classNames(styles["wrapper_actions"])}>
-          <Button view="submit" label="Сохранить"/>
+          <Button view="submit" onClick={handleUploadTest} label="Сохранить"/>
           <Button view="delete" label="Удалить"/>
         </div>
       </div>
