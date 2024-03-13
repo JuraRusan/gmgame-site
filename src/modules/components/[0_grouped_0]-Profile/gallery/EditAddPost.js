@@ -54,8 +54,8 @@ const EditAddPost = () => {
   const [names, setNames] = useState([]);
   const [selectedTags, setSelectedTags] = useState([]);
 
-  const [selectedFile, setSelectedFile] = useState(null);
-  const [uploaded, setUploaded] = useState()
+  const [images, setImages] = useState([]);
+  const [imagesPrev, setImagesPrev] = useState([]);
 
   const handleAdd = () => {
     if (countImage < 16) {
@@ -69,36 +69,69 @@ const EditAddPost = () => {
     }
   };
 
-  function uploadImagesRequest(url) {
-    const formData = new FormData();
-    formData.append('files', selectedFile);
-
-    console.log(selectedFile)
-
-    sendRequest(
-      url,
-      'POST',
-      {formData}
-    ).then(response => {
-      showMessage(response);
-    });
-  }
-
   const uploadImages = () => {
     uploadImagesRequest('/api/upload_images');
   }
 
-  const handleImageChange = (e) => {
-    setSelectedFile(e.target.files)
-  }
-
   const handleUploadTest = async () => {
-    if (!selectedFile) {
-      alert("please select a file");
+    if (!images) {
+      alert.error("Пожалуйста, выберите хотя бы одно изображение!");
       return;
     }
 
     uploadImages()
+  }
+
+  const handleImageChange = (e, index) => {
+    const selectedImage = e.target.files[0];
+    const updatedImages = [...images];
+    const updatedImagesPrev = [...imagesPrev];
+
+    if (selectedImage) {
+      const reader = new FileReader();
+      reader.onload = () => {
+        updatedImagesPrev[index] = reader.result;
+        setImagesPrev(updatedImagesPrev);
+      };
+      reader.readAsDataURL(selectedImage);
+
+      updatedImages[index] = selectedImage;
+      setImages(updatedImages)
+    }
+  };
+
+  const renderImageInputs = (index) => {
+    const prev = imagesPrev[index]
+
+    return (
+      <div className={classNames(styles["box"])} key={index}>
+        <input
+          id={`imageInput-${index}`}
+          type="file"
+          onChange={(e) => handleImageChange(e, index)}
+          accept="image/*"
+        />
+        <div className={classNames(styles["image_prev"])}>
+          <label htmlFor={`imageInput-${index}`}>{!prev && 'Выбрать изображение'}</label>
+          {prev && (<img src={prev} alt={`Image ${index}`}/>)}
+        </div>
+        {prev && (<label htmlFor={`imageInput-${index}`}>red</label>)}
+      </div>
+    );
+  };
+
+  function uploadImagesRequest(url) {
+    const formData = new FormData();
+    formData.append('files', images);
+
+    sendRequest(
+      url,
+      'POST',
+      {formData},
+      []
+    ).then(response => {
+      showMessage(response);
+    });
   }
 
   function createDivs() {
@@ -106,13 +139,9 @@ const EditAddPost = () => {
     for (let i = 0; i < countImage; i++) {
       divs.push(
         <div className={classNames(styles["margin"])} key={i}>
-          <input
-            type="file"
-            onChange={handleImageChange}
-            accept="image/*"
-            multiple
-          />
-        </div>);
+          {renderImageInputs(i)}
+        </div>
+      );
     }
     return divs;
   }

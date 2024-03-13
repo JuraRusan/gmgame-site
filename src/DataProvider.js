@@ -44,11 +44,12 @@ const useAxios = (url, method, payload, refresh) => {
 };
 
 
-async function sendRequest(url, method, payload) {
+async function sendRequest(url, method, payload, headers) {
   return await axios.request({
     data: payload,
     method,
     url,
+    headers
   })
     .then(response => response.data)
     .catch(error => error.message)

@@ -67,6 +67,53 @@
 
       .margin {
         margin: 5px 6px 5px 0;
+
+        .box {
+          display: flex;
+          flex-direction: column;
+          width: auto;
+          height: auto;
+
+          input {
+            display: none;
+          }
+
+          .image_prev {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 280px;
+            min-width: 280px;
+            max-width: 280px;
+            height: 180px;
+            min-height: 180px;
+            max-height: 180px;
+            border-radius: 4px;
+            border: 1px solid $site-color-5;
+            background: $site-color-12;
+            position: relative;
+
+            label {
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              cursor: pointer;
+              text-align: center;
+            }
+
+            img {
+              width: auto;
+              max-width: 278px;
+              height: auto;
+              max-height: 178px;
+            }
+          }
+        }
       }
     }
   }
