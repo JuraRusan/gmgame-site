@@ -44,7 +44,7 @@ const useAxios = (url, method, payload, refresh) => {
 };
 
 
-async function sendRequest(url, method, payload, headers) {
+async function sendRequest(url, method, payload, headers = {}) {
   return await axios.request({
     data: payload,
     method,
