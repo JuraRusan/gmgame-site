@@ -74,7 +74,7 @@ const EditAddPost = () => {
   }
 
   const handleUploadTest = async () => {
-    if (!images) {
+    if (images.length <= 0) {
       alert.error("Пожалуйста, выберите хотя бы одно изображение!");
       return;
     }
