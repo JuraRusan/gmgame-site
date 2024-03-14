@@ -69,7 +69,43 @@ const EditAddPost = () => {
     }
   };
 
-  const handleUploadTest = async () => {
+  const handleAddName = (e) => {
+    e.preventDefault();
+    const name = e.target.elements.name.value.trim();
+    if (name.length < 3 || name.length > 16) {
+      setErrorMessage(ERROR_VALUE_ONE);
+    } else if (!/^[a-zA-Z0-9_]+$/.test(name)) {
+      setErrorMessage(ERROR_VALUE_TWO);
+    } else {
+      setErrorMessage(null);
+      setNames(prevNames => [...prevNames, name]);
+      e.target.elements.name.value = "";
+    }
+  }
+
+  const handleAddTag = (e) => {
+    e.preventDefault();
+    const tags = e.target.elements.tags.value.trim();
+    if (tags.length < 3 || tags.length > 16) {
+      setErrorMessageTags(ERROR_VALUE_TREE);
+    } else if (!/^[а-яА-Яa-zA-Z0-9_]+$/.test(tags)) {
+      setErrorMessageTags(ERROR_VALUE_FOUR);
+    } else {
+      setErrorMessageTags(null);
+      setSelectedTags(prevTags => [...prevTags, tags]);
+      e.target.elements.tags.value = "";
+    }
+  }
+
+  const showMessage = (response) => {
+    if (response.message) {
+      alert.success(response.message);
+    } else {
+      alert.error(response.error);
+    }
+  }
+
+  const handleUploadSubmit = async () => {
     if (images.length <= 0) {
       alert.error("Пожалуйста, выберите хотя бы одно изображение!");
       return;
@@ -117,6 +153,18 @@ const EditAddPost = () => {
     );
   };
 
+  function createDivs() {
+    const divs = [];
+    for (let i = 0; i < countImage; i++) {
+      divs.push(
+        <div className={classNames(styles["margin"])} key={i}>
+          {renderImageInputs(i)}
+        </div>
+      );
+    }
+    return divs;
+  }
+
   async function uploadImagesRequest() {
     const formData = new FormData();
 
@@ -132,54 +180,6 @@ const EditAddPost = () => {
     ).then(response => {
       showMessage(response);
     });
-  }
-
-  function createDivs() {
-    const divs = [];
-    for (let i = 0; i < countImage; i++) {
-      divs.push(
-        <div className={classNames(styles["margin"])} key={i}>
-          {renderImageInputs(i)}
-        </div>
-      );
-    }
-    return divs;
-  }
-
-  function showMessage(response) {
-    if (response.message) {
-      alert.success(response.message);
-    } else {
-      alert.error(response.error);
-    }
-  }
-
-  function handleAddName(e) {
-    e.preventDefault();
-    const name = e.target.elements.name.value.trim();
-    if (name.length < 3 || name.length > 16) {
-      setErrorMessage(ERROR_VALUE_ONE);
-    } else if (!/^[a-zA-Z0-9_]+$/.test(name)) {
-      setErrorMessage(ERROR_VALUE_TWO);
-    } else {
-      setErrorMessage(null);
-      setNames(prevNames => [...prevNames, name]);
-      e.target.elements.name.value = "";
-    }
-  }
-
-  function handleAddTag(e) {
-    e.preventDefault();
-    const tags = e.target.elements.tags.value.trim();
-    if (tags.length < 3 || tags.length > 16) {
-      setErrorMessageTags(ERROR_VALUE_TREE);
-    } else if (!/^[а-яА-Яa-zA-Z0-9_]+$/.test(tags)) {
-      setErrorMessageTags(ERROR_VALUE_FOUR);
-    } else {
-      setErrorMessageTags(null);
-      setSelectedTags(prevTags => [...prevTags, tags]);
-      e.target.elements.tags.value = "";
-    }
   }
 
   if (isLoading) {
@@ -331,7 +331,7 @@ const EditAddPost = () => {
           />
         </div>
         <div className={classNames(styles["wrapper_actions"])}>
-          <Button view="submit" onClick={handleUploadTest} label="Сохранить"/>
+          <Button view="submit" onClick={handleUploadSubmit} label="Сохранить"/>
           <Button view="delete" label="Удалить"/>
         </div>
       </div>
