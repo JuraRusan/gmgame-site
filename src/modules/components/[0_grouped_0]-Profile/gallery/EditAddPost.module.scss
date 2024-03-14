@@ -68,7 +68,7 @@
       .margin {
         margin: 5px 6px 5px 0;
 
-        .box {
+        .box_one {
           display: flex;
           flex-direction: column;
           width: auto;
@@ -78,7 +78,7 @@
             display: none;
           }
 
-          .image_prev {
+          .image_prev_box {
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -94,9 +94,9 @@
             background: $site-color-12;
             position: relative;
 
-            label {
-              width: 100%;
-              height: 100%;
+            .click_label {
+              width: auto;
+              height: auto;
               position: absolute;
               top: 0;
               left: 0;
@@ -104,13 +104,67 @@
               bottom: 0;
               cursor: pointer;
               text-align: center;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              transition: all 0.35s ease;
+
+              svg {
+                max-width: 80px;
+                max-height: 80px;
+                margin: 0 auto;
+
+                path {
+                  stroke: $site-color-5;
+                }
+              }
+
+              &:hover {
+                background: $site-color-12;
+              }
             }
 
-            img {
+            .image_prev {
               width: auto;
               max-width: 278px;
               height: auto;
               max-height: 178px;
+            }
+          }
+
+          .actions {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: auto;
+            padding: 0 6px;
+
+            .btn {
+              cursor: pointer;
+              width: 24px;
+              height: 24px;
+              padding: 2px;
+              margin: 2px;
+              background: transparent;
+              border: none;
+              border-radius: 0;
+
+              &:hover {
+                path {
+                  stroke: $site-color-8;
+                }
+              }
+
+              svg {
+                path {
+                  transition: all 0.35s ease;
+                  stroke: $site-color-2;
+                }
+              }
+            }
+
+            .btn_shift {
+              margin-left: auto;
             }
           }
         }
@@ -421,6 +475,51 @@
       min-width: 320px;
       margin: auto auto 0 auto;
     }
+  }
+}
+
+body {
+  .modal_main_image_redactor {
+    position: absolute;
+    z-index: 10098;
+    background: $site-color-4;
+    border: 1px solid $site-color-5;
+    border-radius: 5px;
+    top: 2%;
+    left: 4%;
+    right: 4%;
+    bottom: 2%;
+    width: auto;
+    height: auto;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    .box_image_redactor {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 1500px;
+      height: 100%;
+      margin: 0 auto;
+
+      img{
+        max-width: 1500px;
+
+      }
+    }
+  }
+
+  .overlay_modal_image_redactor {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 10099;
+    background: darken($site-color-12, 100%);
   }
 }
 

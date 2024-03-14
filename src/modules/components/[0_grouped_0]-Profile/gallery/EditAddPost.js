@@ -8,6 +8,11 @@ import {sendRequest} from "../../../../DataProvider";
 import useLoading from "../../../loading/useLoading";
 import {useAlert} from "react-alert";
 import Preload from "../../preloader/Preload";
+import CameraReAddSvgComponent from "../../../../bases/icons/cameraReAdd/CameraReAddSvg";
+import ExpandSvgComponent from "../../../../bases/icons/expandSvg/ExpandSvg";
+import BinSvgComponent from "../../../../bases/icons/binSvg/BinSvg";
+import CameraAddSvgComponent from "../../../../bases/icons/cameraAdd/CameraAddSvg";
+import ReactModal from "react-modal";
 
 import styles from "./EditAddPost.module.scss";
 import 'react-lazy-load-image-component/src/effects/blur.css';
@@ -46,16 +51,23 @@ const EditAddPost = () => {
 
   const [errorMessage, setErrorMessage] = useState(null);
   const [errorMessageTags, setErrorMessageTags] = useState(null);
+
   const [errorMessagePostName, setErrorMessagePostName] = useState(null);
   const [errorMessagePostNameLength, setErrorMessagePostNameLength] = useState(null);
+
   const [errorMessagePostDescription, setErrorMessagePostDescription] = useState(null);
   const [errorMessagePostDescriptionLength, setErrorMessagePostDescriptionLength] = useState(null);
+
   const [countImage, setCountImage] = useState(1);
+  const [modalImageActive, setModalImageActive] = useState(null);
+
   const [names, setNames] = useState([]);
   const [selectedTags, setSelectedTags] = useState([]);
 
   const [images, setImages] = useState([]);
   const [imagesPrev, setImagesPrev] = useState([]);
+
+  const [imageRedactor, setImageRedactor] = useState(false);
 
   const handleAdd = () => {
     if (countImage < 16) {
@@ -97,6 +109,16 @@ const EditAddPost = () => {
     }
   }
 
+  const handleOpenModalImageRedactor = (index) => {
+    setImageRedactor(true);
+    setModalImageActive(index);
+  };
+
+  const handleCloseModalImageRedactor = () => {
+    setImageRedactor(false);
+    setModalImageActive(null);
+  };
+
   const showMessage = (response) => {
     if (response.message) {
       alert.success(response.message);
@@ -136,19 +158,59 @@ const EditAddPost = () => {
     const prev = imagesPrev[index]
 
     return (
-      <div className={classNames(styles["box"])} key={index}>
+      <div className={classNames(styles["box_one"])} key={index}>
         <input
           id={`imageInput-${index}`}
           type="file"
           name={`imageInput-${index}`}
-          onChange={(e) => handleImageChange(e, index)}
+          onChange={(e) => {
+            handleImageChange(e, index)
+          }}
           accept="image/*"
         />
-        <div className={classNames(styles["image_prev"])}>
-          <label htmlFor={`imageInput-${index}`}>{!prev && 'Выбрать изображение'}</label>
-          {prev && (<img src={prev} alt={`Image ${index}`}/>)}
+        <div className={classNames(styles["image_prev_box"])}>
+          <label
+            className={classNames(styles["click_label"])}
+            htmlFor={`imageInput-${index}`}
+          >
+            {!prev &&
+              <CameraAddSvgComponent width="100%" height="100%" color="#fff"/>
+            }
+          </label>
+          {prev &&
+            <img
+              src={prev}
+              alt="none"
+              className={classNames(styles["image_prev"])}
+            />
+          }
         </div>
-        {prev && (<label htmlFor={`imageInput-${index}`}>red</label>)}
+        {prev &&
+          <div className={classNames(styles["actions"])}>
+            <label
+              htmlFor={`imageInput-${index}`}
+              className={classNames(styles["btn"])}
+            >
+              <CameraReAddSvgComponent width="100%" height="100%" color="#fff"/>
+            </label>
+            <button
+              className={classNames(styles["btn"])}
+              onClick={() => {
+                handleOpenModalImageRedactor(index)
+              }}
+            >
+              <ExpandSvgComponent width="100%" height="100%" color="#fff"/>
+            </button>
+            <button
+              className={classNames(styles["btn"], styles["btn_shift"])}
+              onClick={() => {
+                clearInput(index)
+              }}
+            >
+              <BinSvgComponent width="100%" height="100%" color="#fff"/>
+            </button>
+          </div>
+        }
       </div>
     );
   };
@@ -165,11 +227,23 @@ const EditAddPost = () => {
     return divs;
   }
 
+  function clearInput(index) {
+    const updatedImages = [...images];
+    const updatedImagesPrev = [...imagesPrev];
+
+    updatedImagesPrev[index] = ""
+    setImagesPrev(updatedImagesPrev);
+
+    updatedImages[index] = undefined;
+    setImages(updatedImages)
+  }
+
   async function uploadImagesRequest() {
+    const nonEmptyImages = images.filter(image => image !== null && image !== undefined);
     const formData = new FormData();
 
-    for (let i = 0; i < countImage; i++) {
-      formData.append('files', images[i]);
+    for (let i = 0; i < nonEmptyImages.length; i++) {
+      formData.append('files', nonEmptyImages[i]);
     }
 
     await sendRequest(
@@ -335,6 +409,18 @@ const EditAddPost = () => {
           <Button view="delete" label="Удалить"/>
         </div>
       </div>
+
+      <ReactModal
+        isOpen={imageRedactor}
+        onRequestClose={handleCloseModalImageRedactor}
+        className={classNames(styles["modal_main_image_redactor"])}
+        overlayClassName={classNames(styles["overlay_modal_image_redactor"])}
+      >
+        <div className={classNames(styles["box_image_redactor"])}>
+          <img src={imagesPrev[modalImageActive]} alt="none"/>
+          <button onClick={handleCloseModalImageRedactor}>close</button>
+        </div>
+      </ReactModal>
     </div>
   );
 };
