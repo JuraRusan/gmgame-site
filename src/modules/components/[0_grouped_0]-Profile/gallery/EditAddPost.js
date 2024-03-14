@@ -69,17 +69,13 @@ const EditAddPost = () => {
     }
   };
 
-  const uploadImages = () => {
-    uploadImagesRequest('/api/upload_images');
-  }
-
   const handleUploadTest = async () => {
     if (images.length <= 0) {
       alert.error("Пожалуйста, выберите хотя бы одно изображение!");
       return;
     }
 
-    uploadImages()
+    await uploadImagesRequest()
   }
 
   const handleImageChange = (e, index) => {
@@ -108,6 +104,7 @@ const EditAddPost = () => {
         <input
           id={`imageInput-${index}`}
           type="file"
+          name={`imageInput-${index}`}
           onChange={(e) => handleImageChange(e, index)}
           accept="image/*"
         />
@@ -120,15 +117,18 @@ const EditAddPost = () => {
     );
   };
 
-  function uploadImagesRequest(url) {
+  async function uploadImagesRequest() {
     const formData = new FormData();
-    formData.append('files', images);
 
-    sendRequest(
-      url,
+    for (let i = 0; i < countImage; i++) {
+      formData.append('files', images[i]);
+    }
+
+    await sendRequest(
+      '/api/upload_images',
       'POST',
-      {formData},
-      []
+      formData,
+      {"Content-Type": 'multipart/form-data'}
     ).then(response => {
       showMessage(response);
     });
