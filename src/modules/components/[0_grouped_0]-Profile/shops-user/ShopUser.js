@@ -30,7 +30,7 @@ const ShopUser = () => {
   const [dataUserShop, setDataUserShop] = useState([])
 
   useEffect(() => {
-    axios.get("http://46.0.203.33:4000/cab_shop_user").then((res) => {
+    axios.get("https://map.gmgame.ru/api/cab_shop_user").then((res) => {
       setDataUserShop(res.data.data)
     })
   }, [])

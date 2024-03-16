@@ -127,7 +127,7 @@ const Shopkeepers = () => {
   }, []);
 
   useEffect(() => {
-    axios.get("http://46.0.203.33:4000/all_shops_with_offers").then((res) => {
+    axios.get("https://map.gmgame.ru/api/all_shops_with_offers").then((res) => {
       setDataShop(res.data.data)
     })
   }, [])
