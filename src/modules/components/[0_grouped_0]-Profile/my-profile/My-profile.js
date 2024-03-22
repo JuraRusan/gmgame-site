@@ -81,7 +81,7 @@ const MyProfile = () => {
         {data.user.status === 3 ? (
           <div className={classNames(styles["wrapperText"])}>
             <h4 className={classNames(styles["text"])}>Ваша заявка отклонена. Спасибо за понимание.</h4>
-            {data.user.reapplication && data.user.status === 3 ?
+            {!data.user.reapplication && data.user.status === 3 ?
               <>
                 <div className={classNames(styles["user_update_statement"])}>
                   <Button view="submit" label="Переподать заявку" onClick={() => resubmit()}/>
