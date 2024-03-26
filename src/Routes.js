@@ -82,8 +82,8 @@ const Router = () => {
             <Route path="markers/edit_add_marker/:id" element={<EditAddMarker/>}/>
             {/*----------*/}
             <Route path="gallery" element={<Gallery/>}/>
-            <Route path="gallery/edit_add_post" element={<EditAddPost/>}/>
-            <Route path="gallery/post_analytics" element={<AnalyticsPost/>}/>
+            <Route path="gallery/edit_add_post/:id" element={<EditAddPost/>}/>
+            <Route path="gallery/post_analytics/:id" element={<AnalyticsPost/>}/>
             {/*----------*/}
             <Route path="prize" element={<MyPrizes/>}/>
             {/*----------*/}

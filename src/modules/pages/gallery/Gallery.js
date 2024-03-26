@@ -1,8 +1,11 @@
 import classNames from "classnames";
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import ImageGallery from 'react-image-gallery';
 import Modal from 'react-modal';
 import {LazyLoadImage} from "react-lazy-load-image-component";
+import {useAxios} from "../../../DataProvider";
+import useLoading from "../../loading/useLoading";
+import Preload from "../../components/preloader/Preload";
 import {array} from "./GalleryArray";
 // import HeartSvgComponent from "../../../bases/icons/heartSvg/HeartSvg";
 // import Particles from "../../components/particles/Particles";
@@ -13,30 +16,59 @@ import "../../custon-modules/Image-gallery.scss";
 
 const MainGallery = () => {
 
-  const [modalIsOpen, setIsOpen] = useState(false);
-  const filteredOneItem = array.filter(ids => ids.id === 1)
+  const isLoading = useLoading();
 
-  function openModal() {
+  const [modalIsOpen, setIsOpen] = useState(false);
+  const [modalActiveData, setActiveData] = useState(null);
+
+  const openModal = (active) => {
+    let array = active.galleryImages.map((item, i) => {
+      return {
+        id: i,
+        original: item.image,
+        thumbnail: item.image,
+        loading: "lazy"
+      };
+    });
+
     setIsOpen(true);
+    setActiveData({
+      name: active.name,
+      description: active.description,
+      galleryImages: array
+    })
   }
 
-  function closeModal() {
+  const closeModal = () => {
     setIsOpen(false);
+    setActiveData(null)
+  }
+
+  const resParams = useAxios(
+    `/api/get_galleries`,
+    'GET',
+    {}
+  );
+
+  if (resParams.loading || isLoading) {
+    return <Preload full={false}/>
   }
 
   return (
     <div className={classNames(styles["main_gallery"])}>
       <h3 className={classNames(styles["page_title"])}>Общая галерея игроков сервера</h3>
       <div className={classNames(styles["gallery_list"])}>
-        {array.map((items, i) =>
+        {resParams.data.map((items, i) =>
           <div className={classNames(styles["one_container"])} key={i}>
             <div className={classNames(styles["wrapper_image"])}>
               <LazyLoadImage
                 className={classNames(styles["img"])}
-                alt={items.picturesView}
+                alt={items.galleryImages[0].image}
                 effect="blur"
-                src={items.picturesView}
-                onClick={openModal}
+                src={items.galleryImages[0].image}
+                onClick={() => {
+                  openModal(items)
+                }}
               />
             </div>
             {/*<div className={classNames(styles["container_like"])}>*/}
@@ -62,43 +94,48 @@ const MainGallery = () => {
         overlayClassName={classNames(styles["overlayModal"])}
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
+        ariaHideApp={false} // Гуглануть и убрать
       >
         <button onClick={closeModal} className={classNames(styles["close"])}>&#10008;</button>
-        {filteredOneItem.map((one, i) =>
+        {!modalActiveData ? null :
           <>
-            <div className={classNames(styles["galleryBackground"])} key={i}>
+            <div className={classNames(styles["galleryBackground"])}>
               <div className={classNames(styles["galleryWrapper"])}>
-                <ImageGallery items={one.picturesList} lazyLoad="true" showIndex="true"/>
+                <ImageGallery
+                  items={modalActiveData.galleryImages}
+                  lazyLoad="true"
+                  showIndex="true"
+                />
               </div>
             </div>
             <div className={classNames(styles["containerDescription"])}>
               <div className={classNames(styles["containerBuilders"])}>
                 <ul className={classNames(styles["ulList"])}>
                   <li className={classNames(styles["liAuthorsTitle"])}>Авторы:</li>
-                  {one.users.map((oneUser, index) =>
-                    <li className={classNames(styles["liUser"])} key={index}>
-                      <img
-                        className={classNames(styles["imgUser"])}
-                        src={`https://minotar.net/helm/${oneUser}/100`}
-                        alt={`https://minotar.net/helm/${oneUser}/100`}>
-                      </img>
-                      <label className={classNames(styles["userName"])}>{oneUser}</label>
-                    </li>
-                  )}
+                  {/*{one.users.map((oneUser, index) =>*/}
+                  {/*  <li className={classNames(styles["liUser"])} key={index}>*/}
+                  {/*    <img*/}
+                  {/*      className={classNames(styles["imgUser"])}*/}
+                  {/*      src={`https://minotar.net/helm/${oneUser}/100`}*/}
+                  {/*      alt={`https://minotar.net/helm/${oneUser}/100`}>*/}
+                  {/*    </img>*/}
+                  {/*    <label className={classNames(styles["userName"])}>{oneUser}</label>*/}
+                  {/*  </li>*/}
+                  {/*)}*/}
                 </ul>
               </div>
               <div className={classNames(styles["description"])}>
-                <h4 className={classNames(styles["titleNameImageList"])}>{one.name}</h4>
-                <p className={classNames(styles["textParagraph"])}>{one.description}</p>
-                <div className={classNames(styles["blockTag"])}>
-                  {one.tagNavigation.map((tag, index) => (
-                    <span className={classNames(styles["oneTag"])} key={index}>{"#" + tag.trim()}</span>
-                  ))}
-                </div>
+                <h4 className={classNames(styles["titleNameImageList"])}>{modalActiveData.name}</h4>
+                <p className={classNames(styles["textParagraph"])}>{modalActiveData.description}</p>
+                {/*<div className={classNames(styles["blockTag"])}>*/}
+                {/*  {one.tagNavigation.map((tag, index) => (*/}
+                {/*    <span className={classNames(styles["oneTag"])} key={index}>{"#" + tag.trim()}</span>*/}
+                {/*  ))}*/}
+                {/*</div>*/}
               </div>
             </div>
           </>
-        )}
+        }
       </Modal>
 
     </div>

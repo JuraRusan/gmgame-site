@@ -1,27 +1,35 @@
 import classNames from "classnames";
-import React, {useState} from "react";
+import React, {useEffect, useMemo, useState} from "react";
 import {testArrayTags, testArrayUsers} from "../../../pages/gallery/GalleryArray";
 import Notifications from "../../notifications/Notifications";
 import Button from "../../button/Button";
 import {LazyLoadImage} from "react-lazy-load-image-component";
-import {sendRequest} from "../../../../DataProvider";
+import {sendRequest, useAxios} from "../../../../DataProvider";
 import useLoading from "../../../loading/useLoading";
 import {useAlert} from "react-alert";
 import Preload from "../../preloader/Preload";
-import CameraReAddSvgComponent from "../../../../bases/icons/cameraReAdd/CameraReAddSvg";
 import ExpandSvgComponent from "../../../../bases/icons/expandSvg/ExpandSvg";
-import BinSvgComponent from "../../../../bases/icons/binSvg/BinSvg";
 import CameraAddSvgComponent from "../../../../bases/icons/cameraAdd/CameraAddSvg";
 import ReactModal from "react-modal";
+import {useNavigate, useParams} from "react-router-dom";
 
 import styles from "./EditAddPost.module.scss";
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import {number} from "prop-types";
 
 const LOAD_AND_EDIT_WARN = "Внимание! При работе с файлами в большом разрешении могут наблюдаться задержки отрисовки изображения. Рекомендуется использовать изображения в умеренном качестве, в ином случае сохранять спокойствие."
+
 const ERROR_VALUE_ONE = "Имя должно содержать от 3 до 16 символов."
 const ERROR_VALUE_TWO = "Имя может содержать только буквы, цифры и символы подчеркивания."
 const ERROR_VALUE_TREE = "Тег может содержать от 3 до 24 символов."
 const ERROR_VALUE_FOUR = "Тег может содержать только буквы, цифры и символы подчеркивания."
+
+const MAX_IMAGES = 16;
+
+const MIN_TITLE = 8;
+const MAX_TITLE = 160;
+const MIN_DESCRIPTION = 16;
+const MAX_DESCRIPTION = 960;
 
 const ADD = ({list, arr, placeholder, name, onChange}) => {
   return (
@@ -44,42 +52,46 @@ const ADD = ({list, arr, placeholder, name, onChange}) => {
   )
 }
 
-const EditAddPost = () => {
+const EditAddPost = (params) => {
 
   const isLoading = useLoading();
   const alert = useAlert();
 
+  const navigate = useNavigate();
+
+  const {id} = useParams();
+
   const [errorMessage, setErrorMessage] = useState(null);
   const [errorMessageTags, setErrorMessageTags] = useState(null);
 
-  const [errorMessagePostName, setErrorMessagePostName] = useState(null);
-  const [errorMessagePostNameLength, setErrorMessagePostNameLength] = useState(null);
+  const [nameLength, setNameLength] = useState(0);
+  const [errorMessagePostName, setErrorMessagePostName] = useState("");
 
-  const [errorMessagePostDescription, setErrorMessagePostDescription] = useState(null);
-  const [errorMessagePostDescriptionLength, setErrorMessagePostDescriptionLength] = useState(null);
+  const [descriptionLength, setDescriptionLength] = useState(0);
+  const [errorMessagePostDescription, setErrorMessagePostDescription] = useState("");
 
-  const [countImage, setCountImage] = useState(1);
-  const [modalImageActive, setModalImageActive] = useState(null);
+  const [images, setImages] = useState([]);
 
   const [names, setNames] = useState([]);
   const [selectedTags, setSelectedTags] = useState([]);
 
-  const [images, setImages] = useState([]);
-  const [imagesPrev, setImagesPrev] = useState([]);
+  const [title, setTitle] = useState('');
+  const [description, setDescription] = useState('');
+
+  const [modalImageActive, setModalImageActive] = useState(0);
 
   const [imageRedactor, setImageRedactor] = useState(false);
 
-  const handleAdd = () => {
-    if (countImage < 16) {
-      setCountImage(countImage + 1);
-    }
-  };
+  const [init, setInit] = useState(false);
 
-  const handleRemove = () => {
-    if (countImage > 1) {
-      setCountImage(countImage - 1);
+  const showMessage = (response) => {
+    if (response.message) {
+      alert.success(response.message);
+      navigate(-1);
+    } else {
+      alert.error(response.error);
     }
-  };
+  }
 
   const handleAddName = (e) => {
     e.preventDefault();
@@ -109,6 +121,34 @@ const EditAddPost = () => {
     }
   }
 
+  const handleText = (e, min, max, type) => {
+    const text = e.target.value.trim();
+
+    if (type === 'title') {
+      if (text.length < min) {
+        setErrorMessagePostName("Название слишком короткое");
+        setNameLength(text.length);
+      } else if (text.length > max) {
+        setErrorMessagePostName("Название слишком длинное");
+        setNameLength(text.length);
+      } else {
+        setErrorMessagePostName("");
+        setNameLength(text.length);
+      }
+    } else {
+      if (text.length < min) {
+        setErrorMessagePostDescription("Описание слишком короткое");
+        setDescriptionLength(text.length);
+      } else if (text.length > max) {
+        setErrorMessagePostDescription("Описание слишком длинное");
+        setDescriptionLength(text.length);
+      } else {
+        setErrorMessagePostDescription("");
+        setDescriptionLength(text.length);
+      }
+    }
+  }
+
   const handleOpenModalImageRedactor = (index) => {
     setImageRedactor(true);
     setModalImageActive(index);
@@ -116,159 +156,173 @@ const EditAddPost = () => {
 
   const handleCloseModalImageRedactor = () => {
     setImageRedactor(false);
-    setModalImageActive(null);
+    setModalImageActive(0);
   };
 
-  const showMessage = (response) => {
-    if (response.message) {
-      alert.success(response.message);
-    } else {
-      alert.error(response.error);
-    }
-  }
-
-  const handleUploadSubmit = async () => {
-    if (images.length <= 0) {
+  const handleSave = (url) => {
+    if (images.length < 0) {
       alert.error("Пожалуйста, выберите хотя бы одно изображение!");
       return;
     }
 
-    await uploadImagesRequest()
-  }
-
-  const handleImageChange = (e, index) => {
-    const selectedImage = e.target.files[0];
-    const updatedImages = [...images];
-    const updatedImagesPrev = [...imagesPrev];
-
-    if (selectedImage) {
-      const reader = new FileReader();
-      reader.onload = () => {
-        updatedImagesPrev[index] = reader.result;
-        setImagesPrev(updatedImagesPrev);
-      };
-      reader.readAsDataURL(selectedImage);
-
-      updatedImages[index] = selectedImage;
-      setImages(updatedImages)
-    }
-  };
-
-  const renderImageInputs = (index) => {
-    const prev = imagesPrev[index]
-
-    return (
-      <div className={classNames(styles["box_one"])} key={index}>
-        <input
-          id={`imageInput-${index}`}
-          type="file"
-          name={`imageInput-${index}`}
-          onChange={(e) => {
-            handleImageChange(e, index)
-          }}
-          accept="image/*"
-        />
-        <div className={classNames(styles["image_prev_box"])}>
-          <label
-            className={classNames(styles["click_label"])}
-            htmlFor={`imageInput-${index}`}
-          >
-            {!prev &&
-              <CameraAddSvgComponent width="100%" height="100%" color="#fff"/>
-            }
-          </label>
-          {prev &&
-            <img
-              src={prev}
-              alt="none"
-              className={classNames(styles["image_prev"])}
-            />
-          }
-        </div>
-        {prev &&
-          <div className={classNames(styles["actions"])}>
-            <label
-              htmlFor={`imageInput-${index}`}
-              className={classNames(styles["btn"])}
-            >
-              <CameraReAddSvgComponent width="100%" height="100%" color="#fff"/>
-            </label>
-            <button
-              className={classNames(styles["btn"])}
-              onClick={() => {
-                handleOpenModalImageRedactor(index)
-              }}
-            >
-              <ExpandSvgComponent width="100%" height="100%" color="#fff"/>
-            </button>
-            <button
-              className={classNames(styles["btn"], styles["btn_shift"])}
-              onClick={() => {
-                clearInput(index)
-              }}
-            >
-              <BinSvgComponent width="100%" height="100%" color="#fff"/>
-            </button>
-          </div>
-        }
-      </div>
-    );
-  };
-
-  function createDivs() {
-    const divs = [];
-    for (let i = 0; i < countImage; i++) {
-      divs.push(
-        <div className={classNames(styles["margin"])} key={i}>
-          {renderImageInputs(i)}
-        </div>
-      );
-    }
-    return divs;
-  }
-
-  function clearInput(index) {
-    const updatedImages = [...images];
-    const updatedImagesPrev = [...imagesPrev];
-
-    updatedImagesPrev[index] = ""
-    setImagesPrev(updatedImagesPrev);
-
-    updatedImages[index] = undefined;
-    setImages(updatedImages)
-  }
-
-  async function uploadImagesRequest() {
-    const nonEmptyImages = images.filter(image => image !== null && image !== undefined);
-    const formData = new FormData();
-
-    for (let i = 0; i < nonEmptyImages.length; i++) {
-      formData.append('files', nonEmptyImages[i]);
+    if (nameLength === 0) {
+      alert.error("Укажите название");
+      return;
     }
 
-    await sendRequest(
-      '/api/upload_images',
+    if (errorMessagePostName !== "") {
+      alert.error(errorMessagePostName);
+      return;
+    }
+
+    if (descriptionLength === 0) {
+      alert.error("Добавте описание");
+      return;
+    }
+
+    if (errorMessagePostDescription !== "") {
+      alert.error(errorMessagePostDescription);
+      return;
+    }
+
+    const payloadAdd = {
+      name: title,
+      description: description,
+      links: images
+    }
+
+    const payloadEdit = {
+      id: Number(id),
+      name: title,
+      description: description,
+      links: images
+    }
+
+    sendRequest(
+      url,
       'POST',
-      formData,
-      {"Content-Type": 'multipart/form-data'}
+      id === "new" ? payloadAdd : payloadEdit
     ).then(response => {
       showMessage(response);
     });
   }
 
-  if (isLoading) {
+  const handleDelete = (id) => {
+    sendRequest(
+      '/api/delete_gallery',
+      'POST',
+      {
+        id: id
+      }
+    ).then(response => {
+      showMessage(response);
+    });
+  }
+
+  const resParams = useAxios(
+    `/api/get_gallery/${id}`,
+    'GET',
+    {}
+  );
+
+  async function handleImageChangeLoad(e) {
+    const selectedImage = e.target.files;
+
+    if (selectedImage) {
+      const formData = new FormData();
+
+      for (let i = 0; i < selectedImage.length; i++) {
+        formData.append('files', selectedImage[i]);
+      }
+
+      await sendRequest(
+        '/api/upload_images',
+        'POST',
+        formData,
+        {"Content-Type": 'multipart/form-data'}
+      ).then(response => {
+        if (response.length === 1) {
+          alert.success("Изображение добавлено");
+        } else {
+          alert.success("Изображения добавлены");
+        }
+        setImages(prevImages => [...prevImages, ...response]);
+      });
+    }
+  }
+
+  useMemo(() => {
+    if (images.length > MAX_IMAGES) {
+      const local = images.slice(0, MAX_IMAGES);
+      setImages(local)
+    }
+  }, [images])
+
+  if (resParams.loaded && id !== 'new' && !init) {
+    const jsonArray = resParams.data.galleryImages;
+    const transformedArray = jsonArray.map(item => item.image)
+
+    setInit(true);
+    setImages(transformedArray)
+    setTitle(resParams.data.name)
+    setNameLength(resParams.data.name.length)
+    setDescription(resParams.data.description)
+    setDescriptionLength(resParams.data.description.length)
+  }
+
+  if (resParams.loading || isLoading) {
     return <Preload full={false}/>;
   }
 
   return (
     <div className={classNames(styles["container_add_edit"])}>
       <div className={classNames(styles["left"])}>
-        <div className={classNames(styles["post_parameters"])}>
-          <button className={classNames(styles["button_count"])} onClick={handleAdd}>+</button>
-          <button className={classNames(styles["button_count"])} onClick={handleRemove}>-</button>
-          <p className={classNames(styles["count_number"])}>{countImage}/16</p>
+        <div className={classNames(styles["container_photos"])}>
+          <div className={classNames(styles["margin"])}>
+            {images.length >= MAX_IMAGES
+              ?
+              null
+              :
+              <div className={classNames(styles["box_one"])}>
+                <input
+                  type="file"
+                  id="load_image"
+                  name="image/*"
+                  onChange={(e) => {
+                    handleImageChangeLoad(e)
+                  }}
+                  accept="image/*"
+                  multiple
+                />
+                <div className={classNames(styles["image_prev_box"])}>
+                  <span className={classNames(styles["count"])}>{images.length}/{MAX_IMAGES}</span>
+                  <label
+                    className={classNames(styles["expand_label"], styles["default_label"])}
+                    htmlFor="load_image"
+                  >
+                    <CameraAddSvgComponent width="100%" height="100%" color="#fff"/>
+                  </label>
+                </div>
+              </div>
+            }
+            {images.map((image, index) => (
+              <div className={classNames(styles["box_one"])} key={index}>
+                <div
+                  className={classNames(styles["image_prev_box"])}
+                  onClick={() => {
+                    handleOpenModalImageRedactor(index)
+                  }}
+                >
+                  <span className={classNames(styles["count"])}>{index + 1}</span>
+                  <img src={image} alt="none" className={classNames(styles["image_prev"])}/>
+                  <label className={classNames(styles["expand_label"], styles["hover_label"])}>
+                    <ExpandSvgComponent width="100%" height="100%" color="#fff"/>
+                  </label>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-        <div className={classNames(styles["container_photos"])}>{createDivs()}</div>
       </div>
       <div className={classNames(styles["right"])}>
         <div className={classNames(styles["warn_container"])}>
@@ -355,58 +409,82 @@ const EditAddPost = () => {
         <div className={classNames(styles["text_block"])}>
           <div className={classNames(styles["title_check"])}>
             <h4 className={classNames(styles["title"])}>Название: </h4>
-            {errorMessagePostName && <Notifications inf={errorMessagePostName} type="error"/>}
-            <h4 className={classNames(styles["count"])}>{errorMessagePostNameLength}</h4>
+            <h4 className={classNames(styles["count"])}>
+              <span
+                className={classNames(styles["number"],
+                  {
+                    [styles["green"]]: nameLength <= MAX_TITLE && nameLength >= MIN_TITLE,
+                    [styles["red"]]: nameLength < MIN_TITLE || nameLength > MAX_TITLE,
+                    [styles["white"]]: nameLength <= 0,
+                  }
+                )}
+              >
+                {nameLength}/{MAX_TITLE}
+              </span>
+            </h4>
           </div>
           <input
             className={classNames(styles["choice_text"])}
             type="text"
-            name="postName"
+            defaultValue={title}
             onChange={e => {
-              const postName = e.target.value.trim();
-              const minCount = 16
-              const maxCount = 160
-              if (postName.length < minCount) {
-                setErrorMessagePostName("Название слишком короткое");
-                setErrorMessagePostNameLength(<span>{postName.length}/{maxCount}</span>);
-              } else if (postName.length > maxCount) {
-                setErrorMessagePostName("Название слишком длинное");
-                setErrorMessagePostNameLength(<label>{postName.length}/{maxCount}</label>);
-              } else {
-                setErrorMessagePostName(null);
-                setErrorMessagePostNameLength(<span>{postName.length}/{maxCount}</span>);
-              }
+              handleText(e, MIN_TITLE, MAX_TITLE, 'title')
+              setTitle(e.target.value)
             }}
           />
           <div className={classNames(styles["title_check"])}>
             <h4 className={classNames(styles["title"])}>Описание: </h4>
-            {errorMessagePostDescription && <Notifications inf={errorMessagePostDescription} type="error"/>}
-            <h4 className={classNames(styles["count"])}>{errorMessagePostDescriptionLength}</h4>
+            <h4 className={classNames(styles["count"])}>
+              <span
+                className={classNames(styles["number"],
+                  {
+                    [styles["green"]]: descriptionLength <= MAX_DESCRIPTION && descriptionLength >= MIN_DESCRIPTION,
+                    [styles["red"]]: descriptionLength < MIN_DESCRIPTION || descriptionLength > MAX_DESCRIPTION,
+                    [styles["white"]]: descriptionLength <= 0
+                  }
+                )}
+              >
+                {descriptionLength}/{MAX_DESCRIPTION}
+              </span>
+            </h4>
           </div>
           <textarea
             className={classNames(styles["choice_text"])}
             rows="3"
-            name="postDescription"
+            defaultValue={description}
             onChange={e => {
-              const postName = e.target.value.trim();
-              const minCount = 20
-              const maxCount = 1000
-              if (postName.length < minCount) {
-                setErrorMessagePostDescription("Описание слишком короткое");
-                setErrorMessagePostDescriptionLength(<span>{postName.length}/{maxCount}</span>);
-              } else if (postName.length > maxCount) {
-                setErrorMessagePostDescription("Описание слишком длинное");
-                setErrorMessagePostDescriptionLength(<label>{postName.length}/{maxCount}</label>);
-              } else {
-                setErrorMessagePostDescription(null);
-                setErrorMessagePostDescriptionLength(<span>{postName.length}/{maxCount}</span>);
-              }
+              handleText(e, MIN_DESCRIPTION, MAX_DESCRIPTION, 'description');
+              setDescription(e.target.value);
             }}
           />
         </div>
         <div className={classNames(styles["wrapper_actions"])}>
-          <Button view="submit" onClick={handleUploadSubmit} label="Сохранить"/>
-          <Button view="delete" label="Удалить"/>
+          <Button
+            view="submit"
+            label="Сохранить"
+            onClick={
+              id === 'new'
+                ?
+                () => {
+                  handleSave('/api/create_gallery')
+                }
+                :
+                () => {
+                  handleSave('/api/edit_gallery')
+                }
+            }
+          />
+          {
+            id === 'new'
+              ? null
+              : <Button
+                view="delete"
+                label="Удалить"
+                onClick={() => {
+                  handleDelete(Number(id))
+                }}
+              />
+          }
         </div>
       </div>
 
@@ -417,7 +495,7 @@ const EditAddPost = () => {
         overlayClassName={classNames(styles["overlay_modal_image_redactor"])}
       >
         <div className={classNames(styles["box_image_redactor"])}>
-          <img src={imagesPrev[modalImageActive]} alt="none"/>
+          <img src={images[modalImageActive]} alt="none"/>
           <button onClick={handleCloseModalImageRedactor}>close</button>
         </div>
       </ReactModal>
