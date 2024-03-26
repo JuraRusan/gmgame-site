@@ -15,7 +15,6 @@ import {useNavigate, useParams} from "react-router-dom";
 
 import styles from "./EditAddPost.module.scss";
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import {number} from "prop-types";
 
 const LOAD_AND_EDIT_WARN = "Внимание! При работе с файлами в большом разрешении могут наблюдаться задержки отрисовки изображения. Рекомендуется использовать изображения в умеренном качестве, в ином случае сохранять спокойствие."
 
@@ -296,10 +295,7 @@ const EditAddPost = (params) => {
                 />
                 <div className={classNames(styles["image_prev_box"])}>
                   <span className={classNames(styles["count"])}>{images.length}/{MAX_IMAGES}</span>
-                  <label
-                    className={classNames(styles["expand_label"], styles["default_label"])}
-                    htmlFor="load_image"
-                  >
+                  <label className={classNames(styles["expand_label"], styles["default_label"])} htmlFor="load_image">
                     <CameraAddSvgComponent width="100%" height="100%" color="#fff"/>
                   </label>
                 </div>
@@ -493,6 +489,7 @@ const EditAddPost = (params) => {
         onRequestClose={handleCloseModalImageRedactor}
         className={classNames(styles["modal_main_image_redactor"])}
         overlayClassName={classNames(styles["overlay_modal_image_redactor"])}
+        ariaHideApp={false}
       >
         <div className={classNames(styles["box_image_redactor"])}>
           <img src={images[modalImageActive]} alt="none"/>
