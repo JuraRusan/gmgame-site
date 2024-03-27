@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import React, {useEffect, useMemo, useState} from "react";
+import React, {useMemo, useState} from "react";
 import {testArrayTags, testArrayUsers} from "../../../pages/gallery/GalleryArray";
 import Notifications from "../../notifications/Notifications";
 import Button from "../../button/Button";
@@ -12,9 +12,11 @@ import ExpandSvgComponent from "../../../../bases/icons/expandSvg/ExpandSvg";
 import CameraAddSvgComponent from "../../../../bases/icons/cameraAdd/CameraAddSvg";
 import ReactModal from "react-modal";
 import {useNavigate, useParams} from "react-router-dom";
+import ImageEditor from "../../image-editor/ImageEditor";
 
 import styles from "./EditAddPost.module.scss";
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import 'react-advanced-cropper/dist/style.css'
 
 const LOAD_AND_EDIT_WARN = "Внимание! При работе с файлами в большом разрешении могут наблюдаться задержки отрисовки изображения. Рекомендуется использовать изображения в умеренном качестве, в ином случае сохранять спокойствие."
 
@@ -29,6 +31,16 @@ const MIN_TITLE = 8;
 const MAX_TITLE = 160;
 const MIN_DESCRIPTION = 16;
 const MAX_DESCRIPTION = 960;
+
+const ARR = [
+  "https://advanced-cropper.github.io/react-advanced-cropper/img/images/photo-1485178575877-1a13bf489dfe.jpg",
+  "https://advanced-cropper.github.io/react-advanced-cropper/img/images/photo-1623432532623-f8f1347d954c.jpg",
+  "https://advanced-cropper.github.io/react-advanced-cropper/img/images/anna1991anna-0WDLQzK7u0E-unsplash.jpg",
+  "https://advanced-cropper.github.io/react-advanced-cropper/img/images/photo-1583853287541-6e82b3d5ea12.jpg",
+  "https://advanced-cropper.github.io/react-advanced-cropper/img/images/photo-1586083718719-019f9dc6ca94.jpg",
+  "https://advanced-cropper.github.io/react-advanced-cropper/img/images/photo-1604335079441-274c03ad99a1.jpg",
+  "https://advanced-cropper.github.io/react-advanced-cropper/img/images/photo-1527137342181-19aab11a8ee8.jpg"
+]
 
 const ADD = ({list, arr, placeholder, name, onChange}) => {
   return (
@@ -52,6 +64,8 @@ const ADD = ({list, arr, placeholder, name, onChange}) => {
 }
 
 const EditAddPost = (params) => {
+
+  const randomIndex = Math.floor(Math.random() * ARR.length);
 
   const isLoading = useLoading();
   const alert = useAlert();
@@ -82,6 +96,12 @@ const EditAddPost = (params) => {
   const [imageRedactor, setImageRedactor] = useState(false);
 
   const [init, setInit] = useState(false);
+
+  const resParams = useAxios(
+    `/api/get_gallery/${id}`,
+    'GET',
+    {}
+  );
 
   const showMessage = (response) => {
     if (response.message) {
@@ -218,14 +238,32 @@ const EditAddPost = (params) => {
     });
   }
 
-  const resParams = useAxios(
-    `/api/get_gallery/${id}`,
-    'GET',
-    {}
-  );
+  const deleteImage = () => {
+    setImages(prevImages => prevImages.filter((_, i) => i !== modalImageActive));
+    handleCloseModalImageRedactor()
+  }
 
-  async function handleImageChangeLoad(e) {
-    const selectedImage = e.target.files;
+  const dataURItoBlob = (dataURI) => {
+    let byteString;
+    if (dataURI.split(',')[0].indexOf('base64') >= 0) {
+      byteString = atob(dataURI.split(',')[1]);
+    } else {
+      byteString = unescape(dataURI.split(',')[1]);
+    }
+
+    let mimeString = dataURI.split(',')[0].split(':')[1].split(';')[0];
+
+    let unit = new Uint8Array(byteString.length);
+
+    for (let i = 0; i < byteString.length; i++) {
+      unit[i] = byteString.charCodeAt(i);
+    }
+
+    return new Blob([unit], {type: mimeString});
+  }
+
+  const handleImageChangeLoad = (e) => {
+    let selectedImage = e.target.files;
 
     if (selectedImage) {
       const formData = new FormData();
@@ -234,7 +272,7 @@ const EditAddPost = (params) => {
         formData.append('files', selectedImage[i]);
       }
 
-      await sendRequest(
+      sendRequest(
         '/api/upload_images',
         'POST',
         formData,
@@ -246,7 +284,37 @@ const EditAddPost = (params) => {
           alert.success("Изображения добавлены");
         }
         setImages(prevImages => [...prevImages, ...response]);
+
+        selectedImage = e.target.value = null;
       });
+    }
+  }
+
+  const handleImageChangeUpdate = (canvas) => {
+    if (canvas) {
+      const formData = new FormData();
+
+      const dataURL = canvas.toDataURL('image/webp', 1);
+      let blob = dataURItoBlob(dataURL);
+
+      formData.append('files', blob, "update/webp");
+
+      sendRequest(
+        '/api/upload_images',
+        'POST',
+        formData,
+        {"Content-Type": 'multipart/form-data'}
+      ).then(response => {
+        if (response.length === 1) {
+          alert.success("Изображение обновлено");
+        }
+        const oldImages = [...images];
+
+        oldImages[modalImageActive] = [...response];
+        setImages(oldImages)
+      });
+
+      handleCloseModalImageRedactor()
     }
   }
 
@@ -486,14 +554,17 @@ const EditAddPost = (params) => {
 
       <ReactModal
         isOpen={imageRedactor}
-        onRequestClose={handleCloseModalImageRedactor}
         className={classNames(styles["modal_main_image_redactor"])}
         overlayClassName={classNames(styles["overlay_modal_image_redactor"])}
         ariaHideApp={false}
       >
         <div className={classNames(styles["box_image_redactor"])}>
-          <img src={images[modalImageActive]} alt="none"/>
-          <button onClick={handleCloseModalImageRedactor}>close</button>
+          <ImageEditor
+            src={ARR[randomIndex]}
+            onSave={handleImageChangeUpdate}
+            onDelete={deleteImage}
+            onClose={handleCloseModalImageRedactor}
+          />
         </div>
       </ReactModal>
     </div>

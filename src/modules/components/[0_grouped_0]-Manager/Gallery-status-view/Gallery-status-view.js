@@ -1,6 +1,5 @@
 import classNames from "classnames";
 import React, {useState} from "react";
-import {array} from "../../../pages/gallery/GalleryArray";
 import TableMain from "../../table/TableMain";
 import THead from "../../table/THead";
 import TBody from "../../table/TBody";

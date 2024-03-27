@@ -1,12 +1,11 @@
 import classNames from "classnames";
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import ImageGallery from 'react-image-gallery';
 import Modal from 'react-modal';
 import {LazyLoadImage} from "react-lazy-load-image-component";
 import {useAxios} from "../../../DataProvider";
 import useLoading from "../../loading/useLoading";
 import Preload from "../../components/preloader/Preload";
-import {array} from "./GalleryArray";
 // import HeartSvgComponent from "../../../bases/icons/heartSvg/HeartSvg";
 // import Particles from "../../components/particles/Particles";
 

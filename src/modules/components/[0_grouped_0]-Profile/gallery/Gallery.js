@@ -146,7 +146,7 @@ const Gallery = () => {
                     {/*</div>*/}
                   </div>
                   <div>
-                    <Link to={`post_analytics/${post.id}`}>статка</Link>
+                    {/*<Link to={`post_analytics/${post.id}`}>статка</Link>*/}
                     <button
                       onClick={() => {
                         handleDelete(post.id)
