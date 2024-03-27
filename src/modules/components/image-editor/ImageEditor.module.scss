@@ -1,0 +1,70 @@
+@import "../../../Variables";
+
+.all_box_image_editor {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 90vh;
+  margin: 0 auto;
+
+  .wrapper {
+    width: 100vw;
+    min-width: 80vw;
+    max-width: 80vw;
+    height: 80vh;
+    position: relative;
+    border: solid 1px $site-color-5;
+
+    .preview {
+      height: 200px;
+      width: 200px;
+      background: $site-color-13;
+      border: solid 1px $site-color-5;
+      position: absolute;
+      left: 20px;
+      top: 20px;
+    }
+
+    .box_coordinates {
+      position: absolute;
+      left: 20px;
+      top: 228px;
+      width: 200px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+
+      .coordinates {
+        font-size: 13px;
+        color: $site-color-2;
+        font-family: $fontCustom2;
+        width: auto;
+      }
+    }
+
+    .cropper_overlay {
+      transition: 0.5s;
+    }
+
+    .cropper_overlay_faded {
+      color: rgba($site-color-13, 0.9);
+    }
+
+    .reset_button {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      background: rgba($site-color-2, 0.1);
+
+      &:hover {
+        fill: $site-color-8;
+        background: rgba($site-color-2, 0.2);
+      }
+    }
+
+    .reset_button_hidden {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+}

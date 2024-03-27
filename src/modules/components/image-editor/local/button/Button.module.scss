@@ -1,0 +1,42 @@
+@import "../../../../../Variables";
+
+.image_editor_button {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: transparent;
+  fill: $site-color-2;
+  transition: 0.35s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: currentColor;
+  padding: 0;
+
+  &:hover,
+  &:focus {
+    background: rgba($site-color-2, 0.03);
+  }
+
+  &:disabled {
+    fill: $site-color-5;
+    cursor: default;
+
+    &:hover {
+      background: transparent;
+    }
+  }
+}
+
+.image_editor_button_active {
+  background: rgba($site-color-2, 0.03);
+  fill: $site-color-8;
+}
+
+//@media (max-width: 540px) {
+//  width: 32px;
+//  height: 32px;
+//}

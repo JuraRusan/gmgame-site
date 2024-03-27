@@ -1,6 +1,6 @@
-import * as React from "react"
+import * as React from "react";
 
-const LogoMainTextSvgComponent = ({width, height}) => (
+const LogoMainTextSvgComponent = ({ width, height }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -397,6 +397,6 @@ const LogoMainTextSvgComponent = ({width, height}) => (
       transform="translate(4.436 -52.696)"
     />
   </svg>
-)
+);
 
-export default LogoMainTextSvgComponent
+export default LogoMainTextSvgComponent;

@@ -1,6 +1,6 @@
-import * as React from "react"
+import * as React from "react";
 
-const InstagramSvgComponent = ({width, height, color}) => (
+const InstagramSvgComponent = ({ width, height, color }) => (
   <svg
     width={width}
     height={height}
@@ -13,6 +13,6 @@ const InstagramSvgComponent = ({width, height, color}) => (
       fill={color}
     />
   </svg>
-)
+);
 
-export default InstagramSvgComponent
+export default InstagramSvgComponent;

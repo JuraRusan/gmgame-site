@@ -1,12 +1,8 @@
 import * as React from "react";
 
-const ProfileSvgComponent = ({width, height, color}) => {
+const ProfileSvgComponent = ({ width, height, color }) => {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 512 512"
-      width={width}
-      height={height}>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width={width} height={height}>
       <path
         fill={color}
         fillRule="evenodd"
@@ -14,6 +10,6 @@ const ProfileSvgComponent = ({width, height, color}) => {
       />
     </svg>
   );
-}
+};
 
 export default ProfileSvgComponent;
