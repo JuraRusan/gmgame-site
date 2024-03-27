@@ -14,7 +14,7 @@ const Support = () => {
 
   // const isLoading = useLoading();
 
-  const [dataDonat, setDataDonat] = useState(DEFAULT)
+  const [dataDonat] = useState(DEFAULT)
 
   // const resParams = useAxios(
   //   "/api/get_goals",
