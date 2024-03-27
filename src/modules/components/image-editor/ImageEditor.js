@@ -23,12 +23,15 @@ const COORDINATES = {
   top: 0
 }
 
-const ImageEditor = ({src, onSave, onDelete, onClose}) => {
+const ImageEditor = ({image, onSave, onDelete, onClose}) => {
 
   const cropperRef = useRef(null);
   const previewRef = useRef(null);
 
+  const [src, setSrc] = useState(image);
+
   const [mode, setMode] = useState("crop");
+
   const [adjustments, setAdjustments] = useState(ADJUSTMENTS);
   const [coordinates, setCoordinates] = useState(COORDINATES);
 
@@ -56,6 +59,30 @@ const ImageEditor = ({src, onSave, onDelete, onClose}) => {
     setAdjustments(ADJUSTMENTS);
   };
 
+  const onUpload = (blob) => {
+    onReset();
+    setMode("crop");
+    setSrc(blob);
+  };
+
+  const onDownload = () => {
+    if (cropperRef.current) {
+      const newTab = window.open();
+      if (newTab) {
+        const customStyle = `
+        <style>
+          body {
+            margin: 0;
+            padding: 0;
+          }
+        </style>`
+
+        newTab.document.head.innerHTML += customStyle
+        newTab.document.body.innerHTML = `<img src="${cropperRef.current.getCanvas()?.toDataURL()}" alt="onDownload"/>`;
+      }
+    }
+  };
+
   const onChangeValue = (value) => {
     if (mode in adjustments) {
       setAdjustments((previousValue) => ({
@@ -72,26 +99,27 @@ const ImageEditor = ({src, onSave, onDelete, onClose}) => {
   return (
     <div className={classNames(styles["all_box_image_editor"])}>
       <div className={classNames(styles["wrapper"])}>
+        <div className={classNames(styles["box_coordinates"])}>
+          <label className={classNames(styles["coordinates"])}>W: {coordinates.width} px</label>
+          <label className={classNames(styles["coordinates"])}>H: {coordinates.height} px</label>
+        </div>
         <Cropper
           src={src}
           ref={cropperRef}
+          defaultSize={defaultSize}
+          backgroundComponent={AdjustableCropperBackground}
+          backgroundProps={adjustments}
+          onUpdate={onUpdate}
+          onChange={onChangeCoordinates}
           stencilProps={{
             grid: true,
             movable: cropperEnabled,
             resizable: cropperEnabled,
             lines: cropperEnabled,
             handlers: cropperEnabled,
-            overlayClassName: classNames(styles["cropper_overlay"],
-              !cropperEnabled && "cropper_overlay_faded"
-            )
+            overlayClassName: classNames(styles["cropper_overlay"], !cropperEnabled && "cropper_overlay_faded")
           }}
-          defaultSize={defaultSize}
-          backgroundComponent={AdjustableCropperBackground}
-          backgroundProps={adjustments}
-          onUpdate={onUpdate}
-          onChange={onChangeCoordinates}
         />
-        {mode !== "crop" && <Slider value={adjustments[mode]} onChange={onChangeValue}/>}
         <CropperPreview
           className={classNames(styles["preview"])}
           ref={previewRef}
@@ -99,10 +127,6 @@ const ImageEditor = ({src, onSave, onDelete, onClose}) => {
           backgroundComponent={AdjustablePreviewBackground}
           backgroundProps={adjustments}
         />
-        <div className={classNames(styles["box_coordinates"])}>
-          <label className={classNames(styles["coordinates"])}>W: {coordinates.width} px</label>
-          <label className={classNames(styles["coordinates"])}>H: {coordinates.height} px</label>
-        </div>
         <Navigation
           mode={mode}
           onChange={setMode}
@@ -110,8 +134,11 @@ const ImageEditor = ({src, onSave, onDelete, onClose}) => {
           onDelete={onDelete}
           onClose={onClose}
           onReset={onReset}
-          onResetDisabled={changed}
+          onDisabled={changed}
+          onDownload={onDownload}
+          onUpload={onUpload}
         />
+        {mode !== "crop" && <Slider value={adjustments[mode]} onChange={onChangeValue}/>}
       </div>
     </div>
   );
