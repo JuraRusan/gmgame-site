@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const ContrastSvgComponent = ({ width, height, color }) => (
+const ContrastSvgComponent = ({ width = "100px", height = "100px", color = "#f4f4f4" }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} fill="none" viewBox="0 0 24 24">
     <path
       fill={color}
@@ -8,4 +8,5 @@ const ContrastSvgComponent = ({ width, height, color }) => (
     />
   </svg>
 );
+
 export default ContrastSvgComponent;

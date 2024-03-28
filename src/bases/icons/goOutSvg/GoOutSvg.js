@@ -1,17 +1,9 @@
 import * as React from "react";
 
-const GoOutSvgComponent = ({ width, height, color }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 24 24">
-    <g fill="none" fillRule="evenodd">
-      <path d="M0 0h24v24H0z" />
-      <path
-        stroke={color}
-        strokeLinecap="round"
-        strokeWidth={2}
-        d="M9 12h10M16 8l2.586 2.586a2 2 0 0 1 0 2.828L16 16"
-      />
-      <path stroke={color} strokeLinecap="round" strokeWidth={2} d="M16 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10" />
-    </g>
+const GoOutSvgComponent = ({ width = "100px", height = "100px", color = "#f4f4f4" }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 24 24" fill="none">
+    <path stroke={color} strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 20a8 8 0 1 1 0-16" />
+    <path stroke={color} strokeLinecap="round" strokeWidth={1.5} d="M10 12h10m0 0-3-3m3 3-3 3" />
   </svg>
 );
 

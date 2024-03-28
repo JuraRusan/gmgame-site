@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 import ManagerSvgComponent from "../../bases/icons/managerSvg/ManagerSvg";
-import {arrayDefault} from "../IconDefaultStorybookTypes";
+import { arrayDefault } from "../IconDefaultStorybookTypes";
 
 export default {
-  title: 'UI/Svg/All/Manager',
-  component: ManagerSvgComponent
+  title: "UI/Svg/All/Manager",
+  component: ManagerSvgComponent,
 };
 
-const Template = (args) => <ManagerSvgComponent {...args}/>
+const Template = (args) => <ManagerSvgComponent {...args} />;
 
-export const Default = Template.bind({})
-Default.args = arrayDefault
+export const Default = Template.bind({});
+Default.args = arrayDefault;

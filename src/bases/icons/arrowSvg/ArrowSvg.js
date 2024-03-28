@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const ArrowSvgComponent = ({ width, height, color }) => (
+const ArrowSvgComponent = ({ width = "100px", height = "100px", color = "#f4f4f4" }) => (
   <svg viewBox="0 0 50 50" width={width} height={height} xmlSpace="preserve" xmlns="http://www.w3.org/2000/svg">
     <path fill="none" d="M0 0h50v50H0z" />
     <path
@@ -9,7 +9,7 @@ const ArrowSvgComponent = ({ width, height, color }) => (
       stroke={color}
       strokeLinecap="round"
       strokeMiterlimit={10}
-      strokeWidth={2}
+      strokeWidth={1.5}
     />
   </svg>
 );

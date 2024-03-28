@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const SettingsSvgComponent = ({ width, height, color }) => (
+const SettingsSvgComponent = ({ width = "100px", height = "100px", color = "#f4f4f4" }) => (
   <svg width={width} height={height} viewBox="0 0 512 512">
     <path
       fill={color}

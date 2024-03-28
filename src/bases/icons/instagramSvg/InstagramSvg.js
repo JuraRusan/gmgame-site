@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const InstagramSvgComponent = ({ width, height, color }) => (
+const InstagramSvgComponent = ({ width = "100px", height = "100px", color = "#f4f4f4" }) => (
   <svg
     width={width}
     height={height}

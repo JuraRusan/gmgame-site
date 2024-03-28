@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 import ListBulletedSvgComponent from "../../bases/icons/formatListBulletedSvg/ListBulletedSvg";
-import {arrayDefault} from "../IconDefaultStorybookTypes";
+import { arrayDefault } from "../IconDefaultStorybookTypes";
 
 export default {
-  title: 'UI/Svg/Format/ListBulleted',
-  component: ListBulletedSvgComponent
+  title: "UI/Svg/Format/ListBulleted",
+  component: ListBulletedSvgComponent,
 };
 
-const Template = (args) => <ListBulletedSvgComponent {...args}/>
+const Template = (args) => <ListBulletedSvgComponent {...args} />;
 
-export const Default = Template.bind({})
-Default.args = arrayDefault
+export const Default = Template.bind({});
+Default.args = arrayDefault;

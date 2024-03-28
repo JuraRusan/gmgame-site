@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const QuoteSvgComponent = ({ width, height, color }) => (
+const QuoteSvgComponent = ({ width = "100px", height = "100px", color = "#f4f4f4" }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 -960 960 960">
     <path
       fill={color}
@@ -8,4 +8,5 @@ const QuoteSvgComponent = ({ width, height, color }) => (
     />
   </svg>
 );
+
 export default QuoteSvgComponent;

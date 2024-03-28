@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const HoverMeSvgComponent = ({ width, height, color }) => (
+const HoverMeSvgComponent = ({ width = "100px", height = "100px", color = "#f4f4f4" }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"

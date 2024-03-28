@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 import MarkerSvgComponent from "../../bases/icons/markerSvg/MarkerSvg";
-import {arrayDefault} from "../IconDefaultStorybookTypes";
+import { arrayDefault } from "../IconDefaultStorybookTypes";
 
 export default {
-  title: 'UI/Svg/All/Marker',
-  component: MarkerSvgComponent
+  title: "UI/Svg/All/Marker",
+  component: MarkerSvgComponent,
 };
 
-const Template = (args) => <MarkerSvgComponent {...args}/>
+const Template = (args) => <MarkerSvgComponent {...args} />;
 
-export const Default = Template.bind({})
-Default.args = arrayDefault
+export const Default = Template.bind({});
+Default.args = arrayDefault;

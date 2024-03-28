@@ -11,4 +11,5 @@ const ExpandSvgComponent = ({ width = 100, height = "100px", color = "#f4f4f4" }
     />
   </svg>
 );
+
 export default ExpandSvgComponent;

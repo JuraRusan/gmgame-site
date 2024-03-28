@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const ImageSvgComponent = ({ width, height, color }) => (
+const ImageSvgComponent = ({ width = "100px", height = "100px", color = "#f4f4f4" }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 512 512">
     <path
       fill={color}

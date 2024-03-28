@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 import CopySvgComponent from "../../bases/icons/copySvg/CopySvg";
-import {arrayDefault} from "../IconDefaultStorybookTypes";
+import { arrayDefault } from "../IconDefaultStorybookTypes";
 
 export default {
-  title: 'UI/Svg/All/Copy',
-  component: CopySvgComponent
+  title: "UI/Svg/All/Copy",
+  component: CopySvgComponent,
 };
 
-const Template = (args) => <CopySvgComponent {...args}/>
+const Template = (args) => <CopySvgComponent {...args} />;
 
-export const Default = Template.bind({})
-Default.args = arrayDefault
+export const Default = Template.bind({});
+Default.args = arrayDefault;

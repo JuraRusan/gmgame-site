@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const PrizeSvgComponent = ({ width, height, color }) => (
+const PrizeSvgComponent = ({ width = "100px", height = "100px", color = "#f4f4f4" }) => (
   <svg xmlns="http://www.w3.org/2000/svg" xmlSpace="preserve" width={width} height={height} viewBox="0 0 512 512">
     <path
       fill={color}

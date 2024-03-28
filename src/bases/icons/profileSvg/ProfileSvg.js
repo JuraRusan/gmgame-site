@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const ProfileSvgComponent = ({ width, height, color }) => {
+const ProfileSvgComponent = ({ width = "100px", height = "100px", color = "#f4f4f4" }) => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width={width} height={height}>
       <path
