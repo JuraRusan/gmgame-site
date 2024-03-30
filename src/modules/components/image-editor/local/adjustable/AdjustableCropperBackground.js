@@ -1,25 +1,14 @@
-import React, {forwardRef} from "react"
-import {getBackgroundStyle} from "advanced-cropper"
-import {AdjustableImage} from "./AdjustableImage"
+import React, { forwardRef } from "react";
+import { getBackgroundStyle } from "advanced-cropper";
+import AdjustableImage from "./AdjustableImage";
 
-export const AdjustableCropperBackground = forwardRef(
-  (
-    {
-      className,
-      cropper,
-      crossOrigin,
-      brightness = 0,
-      saturation = 0,
-      hue = 0,
-      contrast = 0
-    }, ref
-  ) => {
+const AdjustableCropperBackground = forwardRef(
+  ({ className, cropper, crossOrigin, brightness = 0, saturation = 0, hue = 0, contrast = 0 }, ref) => {
+    const state = cropper.getState();
+    const transitions = cropper.getTransitions();
+    const image = cropper.getImage();
 
-    const state = cropper.getState()
-    const transitions = cropper.getTransitions()
-    const image = cropper.getImage()
-
-    const style = image && state ? getBackgroundStyle(image, state, transitions) : {}
+    const style = image && state ? getBackgroundStyle(image, state, transitions) : {};
 
     return (
       <AdjustableImage
@@ -33,6 +22,8 @@ export const AdjustableCropperBackground = forwardRef(
         className={className}
         style={style}
       />
-    )
+    );
   }
-)
+);
+
+export default AdjustableCropperBackground;

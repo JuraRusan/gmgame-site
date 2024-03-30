@@ -1,25 +1,22 @@
-import React from "react"
-import {getPreviewStyle} from "advanced-cropper"
-import {AdjustableImage} from "./AdjustableImage"
+import React from "react";
+import { getPreviewStyle } from "advanced-cropper";
+import AdjustableImage from "./AdjustableImage";
 
-export const AdjustablePreviewBackground = (
-  {
-    className,
-    cropper,
-    crossOrigin,
-    brightness = 0,
-    saturation = 0,
-    hue = 0,
-    contrast = 0,
-    size
-  }
-) => {
+const AdjustablePreviewBackground = ({
+  className,
+  cropper,
+  crossOrigin,
+  brightness = 0,
+  saturation = 0,
+  hue = 0,
+  contrast = 0,
+  size,
+}) => {
+  const state = cropper.getState();
+  const transitions = cropper.getTransitions();
+  const image = cropper.getImage();
 
-  const state = cropper.getState()
-  const transitions = cropper.getTransitions()
-  const image = cropper.getImage()
-
-  const style = image && state && size ? getPreviewStyle(image, state, size, transitions) : {}
+  const style = image && state && size ? getPreviewStyle(image, state, size, transitions) : {};
 
   return (
     <AdjustableImage
@@ -32,5 +29,7 @@ export const AdjustablePreviewBackground = (
       className={className}
       style={style}
     />
-  )
-}
+  );
+};
+
+export default AdjustablePreviewBackground;

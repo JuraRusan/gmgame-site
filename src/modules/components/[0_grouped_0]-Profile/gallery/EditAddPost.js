@@ -13,6 +13,10 @@ import CameraAddSvgComponent from "../../../../bases/icons/cameraAdd/CameraAddSv
 import ReactModal from "react-modal";
 import { useNavigate, useParams } from "react-router-dom";
 import ImageEditor from "../../image-editor/ImageEditor";
+import BackButton from "../../back-button/BackButton";
+import { Triangle } from "react-loader-spinner";
+import Tag from "./tag/Tag";
+import Name from "./name/Name";
 
 import styles from "./EditAddPost.module.scss";
 import "react-lazy-load-image-component/src/effects/blur.css";
@@ -27,20 +31,15 @@ const ERROR_VALUE_FOUR = "Тег может содержать только бу
 
 const MAX_IMAGES = 16;
 
-const MIN_TITLE = 8;
-const MAX_TITLE = 160;
-const MIN_DESCRIPTION = 16;
-const MAX_DESCRIPTION = 960;
+const MIN_BUILDERS = 0;
+const MAX_BUILDERS = 64;
+const MIN_TAGS = 0;
+const MAX_TAGS = 128;
 
-// const ARR = [
-//   "https://advanced-cropper.github.io/react-advanced-cropper/img/images/photo-1485178575877-1a13bf489dfe.jpg",
-//   "https://advanced-cropper.github.io/react-advanced-cropper/img/images/photo-1623432532623-f8f1347d954c.jpg",
-//   "https://advanced-cropper.github.io/react-advanced-cropper/img/images/anna1991anna-0WDLQzK7u0E-unsplash.jpg",
-//   "https://advanced-cropper.github.io/react-advanced-cropper/img/images/photo-1583853287541-6e82b3d5ea12.jpg",
-//   "https://advanced-cropper.github.io/react-advanced-cropper/img/images/photo-1586083718719-019f9dc6ca94.jpg",
-//   "https://advanced-cropper.github.io/react-advanced-cropper/img/images/photo-1604335079441-274c03ad99a1.jpg",
-//   "https://advanced-cropper.github.io/react-advanced-cropper/img/images/photo-1527137342181-19aab11a8ee8.jpg",
-// ];
+const MIN_TITLE = 12;
+const MAX_TITLE = 255;
+const MIN_DESCRIPTION = 24;
+const MAX_DESCRIPTION = 65535;
 
 const ADD = ({ list, arr, placeholder, name, onChange }) => {
   return (
@@ -65,9 +64,28 @@ const ADD = ({ list, arr, placeholder, name, onChange }) => {
   );
 };
 
-const EditAddPost = (params) => {
-  // const randomIndex = Math.floor(Math.random() * ARR.length);
+const TITLE = ({ length, min, max, title, count = true }) => {
+  return (
+    <div className={classNames(styles["row_block_text"])}>
+      <h4 className={classNames(styles["title"])}>{title}</h4>
+      {count !== true ? null : (
+        <h4 className={classNames(styles["count"])}>
+          <span
+            className={classNames(styles["number"], {
+              [styles["green"]]: length <= max && length >= min,
+              [styles["red"]]: length < min || length > max,
+              [styles["white"]]: length <= 0,
+            })}
+          >
+            {length}/{max}
+          </span>
+        </h4>
+      )}
+    </div>
+  );
+};
 
+const EditAddPost = () => {
   const isLoading = useLoading();
   const alert = useAlert();
 
@@ -86,8 +104,11 @@ const EditAddPost = (params) => {
 
   const [images, setImages] = useState([]);
 
+  const [imagesPreloader, setImagesPreloader] = useState(false);
+  const [imagesPreloaderCount, setImagesPreloaderCount] = useState(0);
+
   const [names, setNames] = useState([]);
-  const [selectedTags, setSelectedTags] = useState([]);
+  const [tags, setTags] = useState([]);
 
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
@@ -109,6 +130,17 @@ const EditAddPost = (params) => {
     }
   };
 
+  const handleName = (e) => {
+    const name = e.target.value.trim();
+    if (name.length < 3 || name.length > 16) {
+      setErrorMessage(ERROR_VALUE_ONE);
+    } else if (!/^[a-zA-Z0-9_]+$/.test(name)) {
+      setErrorMessage(ERROR_VALUE_TWO);
+    } else {
+      setErrorMessage(null);
+    }
+  };
+
   const handleAddName = (e) => {
     e.preventDefault();
     const name = e.target.elements.name.value.trim();
@@ -123,6 +155,17 @@ const EditAddPost = (params) => {
     }
   };
 
+  const handleTag = (e) => {
+    const name = e.target.value.trim();
+    if (name.length < 3 || name.length > 16) {
+      setErrorMessageTags(ERROR_VALUE_TREE);
+    } else if (!/^[а-яА-Яa-zA-Z0-9_]+$/.test(name)) {
+      setErrorMessageTags(ERROR_VALUE_FOUR);
+    } else {
+      setErrorMessageTags(null);
+    }
+  };
+
   const handleAddTag = (e) => {
     e.preventDefault();
     const tags = e.target.elements.tags.value.trim();
@@ -132,13 +175,13 @@ const EditAddPost = (params) => {
       setErrorMessageTags(ERROR_VALUE_FOUR);
     } else {
       setErrorMessageTags(null);
-      setSelectedTags((prevTags) => [...prevTags, tags]);
+      setTags((prevTags) => [...prevTags, tags]);
       e.target.elements.tags.value = "";
     }
   };
 
   const handleText = (e, min, max, type) => {
-    const text = e.target.value.trim();
+    const text = e.target.value;
     if (type === "title") {
       if (text.length < min) {
         setErrorMessagePostName("Название слишком короткое");
@@ -167,11 +210,13 @@ const EditAddPost = (params) => {
   const handleOpenModalImageRedactor = (index) => {
     setImageRedactor(true);
     setModalImageActive(index);
+    document.body.style.overflow = "hidden";
   };
 
   const handleCloseModalImageRedactor = () => {
     setImageRedactor(false);
     setModalImageActive(0);
+    document.body.style.overflow = "auto";
   };
 
   const handleSave = (url) => {
@@ -197,6 +242,11 @@ const EditAddPost = (params) => {
 
     if (errorMessagePostDescription !== "") {
       alert.error(errorMessagePostDescription);
+      return;
+    }
+
+    if (imagesPreloader) {
+      alert.error("Дождитесь загрузки изображений");
       return;
     }
 
@@ -256,7 +306,13 @@ const EditAddPost = (params) => {
     if (selectedImage) {
       const formData = new FormData();
 
-      for (let i = 0; i < selectedImage.length; i++) {
+      const calc =
+        selectedImage.length > MAX_IMAGES - images.length ? MAX_IMAGES - images.length : selectedImage.length;
+
+      setImagesPreloader(true);
+      setImagesPreloaderCount(calc);
+
+      for (let i = 0; i < calc; i++) {
         formData.append("files", selectedImage[i]);
       }
 
@@ -267,8 +323,9 @@ const EditAddPost = (params) => {
           } else {
             alert.success("Изображения добавлены");
           }
-          // setImages((prevImages) => [...prevImages, ...response]);
-
+          setImages((prevImages) => [...response, ...prevImages]);
+          setImagesPreloaderCount(0);
+          setImagesPreloader(false);
           selectedImage = e.target.value = "";
         }
       );
@@ -326,6 +383,11 @@ const EditAddPost = (params) => {
   return (
     <div className={classNames(styles["container_add_edit"])}>
       <div className={classNames(styles["left"])}>
+        <BackButton
+          onClick={() => {
+            navigate(-1);
+          }}
+        />
         <div className={classNames(styles["container_photos"])}>
           <div className={classNames(styles["margin"])}>
             {images.length >= MAX_IMAGES ? null : (
@@ -333,7 +395,6 @@ const EditAddPost = (params) => {
                 <input
                   type="file"
                   id="load_image"
-                  name="image/*"
                   onChange={(e) => {
                     handleImageChangeLoad(e);
                   }}
@@ -350,6 +411,13 @@ const EditAddPost = (params) => {
                 </div>
               </div>
             )}
+            {Array.from({ length: imagesPreloaderCount }).map((_, index) => (
+              <div key={index} className={classNames(styles["box_one"])}>
+                <div className={classNames(styles["image_prev_box"])}>
+                  <Triangle color="#e4007f" />
+                </div>
+              </div>
+            ))}
             {images.map((image, index) => (
               <div className={classNames(styles["box_one"])} key={index}>
                 <div
@@ -359,7 +427,12 @@ const EditAddPost = (params) => {
                   }}
                 >
                   <span className={classNames(styles["count"])}>{index + 1}</span>
-                  <img src={image} alt="none" className={classNames(styles["image_prev"])} />
+                  <LazyLoadImage
+                    className={classNames(styles["image_prev"])}
+                    alt="none"
+                    effect="blur"
+                    src={image + "@4"}
+                  />
                   <label className={classNames(styles["expand_label"], styles["hover_label"])}>
                     <ExpandSvgComponent width="100%" height="100%" color="#fff" />
                   </label>
@@ -373,131 +446,98 @@ const EditAddPost = (params) => {
         <div className={classNames(styles["warn_container"])}>
           <Notifications inf={LOAD_AND_EDIT_WARN} type="warn" />
         </div>
-        <div className={classNames(styles["interface_user_add"])}>
-          <h4 className={classNames(styles["title"])}>Выбор и отображение строителей:</h4>
-          <form onSubmit={handleAddName}>
-            <ADD
-              list="usersAdd"
-              arr={testArrayUsers}
-              placeholder="Ник игрока"
-              name="name"
-              onChange={(e) => {
-                const name = e.target.value.trim();
-                if (name.length < 3 || name.length > 16) {
-                  setErrorMessage(ERROR_VALUE_ONE);
-                } else if (!/^[a-zA-Z0-9_]+$/.test(name)) {
-                  setErrorMessage(ERROR_VALUE_TWO);
-                } else {
-                  setErrorMessage(null);
-                }
-              }}
+        <div className={classNames(styles["box_parameters"])}>
+          <div className={classNames(styles["interface_user_add"])}>
+            <TITLE
+              title="Выбор и отображение строителей:"
+              min={MIN_BUILDERS}
+              max={MAX_BUILDERS}
+              length={names.length}
+              count={names.length > MAX_BUILDERS}
             />
-            {errorMessage && <Notifications inf={errorMessage} type="error" />}
-          </form>
-          <div className={classNames(styles["users_block"])}>
-            {names.map((name, index) => (
-              <div className={classNames(styles["one_name"])} key={index}>
-                <LazyLoadImage
-                  wrapperClassName={classNames(styles["user_view_icon"])}
-                  width="100%"
-                  height="100%"
-                  src={`https://minotar.net/helm/${name}/100`}
-                  alt=""
-                  effect="blur"
-                />
-                <label className={classNames(styles["user_view_name"])}>{name}</label>
-                <button
-                  className={classNames(styles["user_view_actions"])}
+            <form onSubmit={handleAddName}>
+              <ADD
+                list="usersAdd"
+                arr={testArrayUsers}
+                placeholder="Ник игрока"
+                name="name"
+                onChange={(e) => {
+                  handleName(e);
+                }}
+              />
+              {errorMessage && (
+                <div className={classNames(styles["error_wrapper"])}>
+                  <Notifications inf={errorMessage} type="error" />
+                </div>
+              )}
+            </form>
+            <div className={classNames(styles["users_block"])}>
+              {names.map((el, index) => (
+                <Name
+                  key={index}
+                  name={el}
                   onClick={() => setNames((prevNames) => prevNames.filter((_, i) => i !== index))}
-                >
-                  &#10008;
-                </button>
-              </div>
-            ))}
+                />
+              ))}
+            </div>
           </div>
-        </div>
-        <div className={classNames(styles["interface_tag_add"])}>
-          <h4 className={classNames(styles["title"])}>Выбор и отображение тегов:</h4>
-          <form onSubmit={handleAddTag}>
-            <ADD
-              list="tagsAdd"
-              arr={testArrayTags}
-              placeholder="Тег"
-              name="tags"
+          <div className={classNames(styles["interface_tag_add"])}>
+            <TITLE
+              title="Выбор и отображение тегов:"
+              min={MIN_TAGS}
+              max={MAX_TAGS}
+              length={tags.length}
+              count={tags.length > MAX_TAGS}
+            />
+            <form onSubmit={handleAddTag}>
+              <ADD
+                list="tagsAdd"
+                arr={testArrayTags}
+                placeholder="Тег"
+                name="tags"
+                onChange={(e) => {
+                  handleTag(e);
+                }}
+              />
+              {errorMessageTags && (
+                <div className={classNames(styles["error_wrapper"])}>
+                  <Notifications inf={errorMessageTags} type="error" />
+                </div>
+              )}
+            </form>
+            <div className={classNames(styles["tags_block"])}>
+              {tags.map((el, index) => (
+                <Tag
+                  btn={true}
+                  key={index}
+                  tag={el.trim()}
+                  onClick={() => setTags((prevTags) => prevTags.filter((_, i) => i !== index))}
+                />
+              ))}
+            </div>
+          </div>
+          <div className={classNames(styles["text_block"])}>
+            <TITLE title="Название:" min={MIN_TITLE} max={MAX_TITLE} length={nameLength} />
+            <input
+              className={classNames(styles["choice_text"])}
+              type="text"
+              defaultValue={title}
               onChange={(e) => {
-                const name = e.target.value.trim();
-                if (name.length < 3 || name.length > 16) {
-                  setErrorMessageTags(ERROR_VALUE_TREE);
-                } else if (!/^[а-яА-Яa-zA-Z0-9_]+$/.test(name)) {
-                  setErrorMessageTags(ERROR_VALUE_FOUR);
-                } else {
-                  setErrorMessageTags(null);
-                }
+                handleText(e, MIN_TITLE, MAX_TITLE, "title");
+                setTitle(e.target.value);
               }}
             />
-            {errorMessageTags && <Notifications inf={errorMessageTags} type="error" />}
-          </form>
-          <div className={classNames(styles["tags_block"])}>
-            {selectedTags.map((el, index) => (
-              <div className={classNames(styles["one_tag"])} key={index}>
-                <label className={classNames(styles["tag_view_name"])}>{"#" + el.trim()}</label>
-                <button
-                  className={classNames(styles["tag_view_actions"])}
-                  onClick={() => setSelectedTags((prevTags) => prevTags.filter((_, i) => i !== index))}
-                >
-                  &#10008;
-                </button>
-              </div>
-            ))}
+            <TITLE title="Описание:" min={MIN_DESCRIPTION} max={MAX_DESCRIPTION} length={descriptionLength} />
+            <textarea
+              className={classNames(styles["choice_text"])}
+              rows="12"
+              defaultValue={description}
+              onChange={(e) => {
+                handleText(e, MIN_DESCRIPTION, MAX_DESCRIPTION, "description");
+                setDescription(e.target.value);
+              }}
+            />
           </div>
-        </div>
-        <div className={classNames(styles["text_block"])}>
-          <div className={classNames(styles["title_check"])}>
-            <h4 className={classNames(styles["title"])}>Название: </h4>
-            <h4 className={classNames(styles["count"])}>
-              <span
-                className={classNames(styles["number"], {
-                  [styles["green"]]: nameLength <= MAX_TITLE && nameLength >= MIN_TITLE,
-                  [styles["red"]]: nameLength < MIN_TITLE || nameLength > MAX_TITLE,
-                  [styles["white"]]: nameLength <= 0,
-                })}
-              >
-                {nameLength}/{MAX_TITLE}
-              </span>
-            </h4>
-          </div>
-          <input
-            className={classNames(styles["choice_text"])}
-            type="text"
-            defaultValue={title}
-            onChange={(e) => {
-              handleText(e, MIN_TITLE, MAX_TITLE, "title");
-              setTitle(e.target.value);
-            }}
-          />
-          <div className={classNames(styles["title_check"])}>
-            <h4 className={classNames(styles["title"])}>Описание: </h4>
-            <h4 className={classNames(styles["count"])}>
-              <span
-                className={classNames(styles["number"], {
-                  [styles["green"]]: descriptionLength <= MAX_DESCRIPTION && descriptionLength >= MIN_DESCRIPTION,
-                  [styles["red"]]: descriptionLength < MIN_DESCRIPTION || descriptionLength > MAX_DESCRIPTION,
-                  [styles["white"]]: descriptionLength <= 0,
-                })}
-              >
-                {descriptionLength}/{MAX_DESCRIPTION}
-              </span>
-            </h4>
-          </div>
-          <textarea
-            className={classNames(styles["choice_text"])}
-            rows="3"
-            defaultValue={description}
-            onChange={(e) => {
-              handleText(e, MIN_DESCRIPTION, MAX_DESCRIPTION, "description");
-              setDescription(e.target.value);
-            }}
-          />
         </div>
         <div className={classNames(styles["wrapper_actions"])}>
           <Button

@@ -1,130 +1,117 @@
-import React, {PureComponent} from "react"
+import React, { PureComponent } from "react";
 import classNames from "classnames";
 
-import styles from "./Slider.module.scss"
+import styles from "./Slider.module.scss";
 
 export class Slider extends PureComponent {
-
-  line = React.createRef()
+  line = React.createRef();
 
   state = {
     focus: false,
-    width: 0
-  }
+    width: 0,
+  };
 
   componentDidMount() {
-    window.addEventListener("resize", this.recalculateWidth)
-    window.addEventListener("orientationchange", this.recalculateWidth)
+    window.addEventListener("resize", this.recalculateWidth);
+    window.addEventListener("orientationchange", this.recalculateWidth);
 
-    window.addEventListener("mouseup", this.onStop, {passive: false})
-    window.addEventListener("mousemove", this.onDrag, {passive: false})
-    window.addEventListener("touchmove", this.onDrag, {passive: false})
-    window.addEventListener("touchend", this.onStop, {passive: false})
+    window.addEventListener("mouseup", this.onStop, { passive: false });
+    window.addEventListener("mousemove", this.onDrag, { passive: false });
+    window.addEventListener("touchmove", this.onDrag, { passive: false });
+    window.addEventListener("touchend", this.onStop, { passive: false });
 
-    const line = this.line.current
+    const line = this.line.current;
     if (line) {
-      line.addEventListener("mousedown", this.onStart)
-      line.addEventListener("touchstart", this.onStart)
+      line.addEventListener("mousedown", this.onStart);
+      line.addEventListener("touchstart", this.onStart);
     }
 
-    this.recalculateWidth()
+    this.recalculateWidth();
   }
 
   componentWillUnmount() {
-    window.removeEventListener("mouseup", this.onStop)
-    window.removeEventListener("mousemove", this.onDrag)
-    window.removeEventListener("touchmove", this.onDrag)
-    window.removeEventListener("touchend", this.onStop)
+    window.removeEventListener("mouseup", this.onStop);
+    window.removeEventListener("mousemove", this.onDrag);
+    window.removeEventListener("touchmove", this.onDrag);
+    window.removeEventListener("touchend", this.onStop);
 
-    window.removeEventListener("resize", this.recalculateWidth)
-    window.removeEventListener("orientationchange", this.recalculateWidth)
+    window.removeEventListener("resize", this.recalculateWidth);
+    window.removeEventListener("orientationchange", this.recalculateWidth);
 
-    const line = this.line.current
+    const line = this.line.current;
     if (line) {
-      line.removeEventListener("mousedown", this.onStart)
-      line.removeEventListener("touchstart", this.onStart)
+      line.removeEventListener("mousedown", this.onStart);
+      line.removeEventListener("touchstart", this.onStart);
     }
   }
 
-  onDrag = e => {
-    const {onChange} = this.props
+  onDrag = (e) => {
+    const { onChange } = this.props;
     if (this.state.focus) {
-      const position = "touches" in e ? e.touches[0].clientX : e.clientX
-      const line = this.line.current
+      const position = "touches" in e ? e.touches[0].clientX : e.clientX;
+      const line = this.line.current;
 
       if (line) {
-        const {left, width} = line.getBoundingClientRect()
+        const { left, width } = line.getBoundingClientRect();
 
         if (onChange) {
-          onChange(
-            Math.max(
-              -1,
-              Math.min(1, (2 * (position - left - width / 2)) / width)
-            )
-          )
+          onChange(Math.max(-1, Math.min(1, (2 * (position - left - width / 2)) / width)));
         }
       }
       if (e.preventDefault) {
-        e.preventDefault()
+        e.preventDefault();
       }
     }
-  }
+  };
 
   onStop = () => {
     this.setState({
-      focus: false
-    })
-  }
+      focus: false,
+    });
+  };
 
-  onStart = e => {
+  onStart = (e) => {
     this.setState({
-      focus: true
-    })
-    this.onDrag(e)
-  }
+      focus: true,
+    });
+    this.onDrag(e);
+  };
 
   recalculateWidth = () => {
-    const line = this.line.current
+    const line = this.line.current;
     if (line) {
       this.setState({
-        width: line.clientWidth
-      })
+        width: line.clientWidth,
+      });
     }
-  }
+  };
 
   render() {
+    const { value = 0 } = this.props;
 
-    const {value = 0} = this.props
+    const handleInsideDot = this.state.width ? Math.abs(value) <= 16 / this.state.width : true;
 
-    const handleInsideDot = this.state.width
-      ? Math.abs(value) <= 16 / this.state.width
-      : true
+    const fillWidth = `${Math.abs(value) * 50}%`;
 
-    const fillWidth = `${Math.abs(value) * 50}%`
+    const fillLeft = `${50 * (1 - Math.abs(Math.min(0, value)))}%`;
 
-    const fillLeft = `${50 * (1 - Math.abs(Math.min(0, value)))}%`
-
-    const formattedValue = `${value > 0 ? "+" : ""}${Math.round(100 * value)}`
+    const formattedValue = `${value > 0 ? "+" : ""}${Math.round(100 * value)}`;
 
     return (
       <div className={classNames(styles["slider"])} ref={this.line}>
         <div className={classNames(styles["line"])}>
-          <div className={classNames(styles["dot"])}/>
+          <div className={classNames(styles["dot"])} />
           <div
             className={classNames(styles["fill"])}
             style={{
               width: fillWidth,
-              left: fillLeft
+              left: fillLeft,
             }}
           />
           <div
-            className={classNames(
-              styles["value"],
-              handleInsideDot && styles["value_hidden"]
-            )
-            }
+            className={classNames(styles["value"], handleInsideDot && styles["value_hidden"])}
             style={{
-              left: `${Math.abs(value * 50 + 50)}%`
+              left: `${Math.abs(value * 50 + 50)}%`,
             }}
           >
             {formattedValue}
@@ -136,11 +123,11 @@ export class Slider extends PureComponent {
               handleInsideDot && styles["handler_hidden"]
             )}
             style={{
-              left: `${value * 50 + 50}%`
+              left: `${value * 50 + 50}%`,
             }}
           />
         </div>
       </div>
-    )
+    );
   }
 }

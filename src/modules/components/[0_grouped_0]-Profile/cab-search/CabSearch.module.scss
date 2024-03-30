@@ -7,23 +7,6 @@
   width: 100%;
   height: auto;
 
-  .numberListCount {
-    display: flex;
-    width: 350px;
-    height: 36px;
-    line-height: 36px;
-    margin: 0 0 0 16px;
-    padding: 0;
-    font-weight: 400;
-    font-size: 16px;
-    color: $site-color-2;
-    font-family: $fontCustom2;
-  }
-
-  .margin_btn {
-    margin: 0 10px 0 auto;
-  }
-
   .searchInput {
     display: flex;
     width: 225px;
@@ -47,6 +30,116 @@
       background: $site-color-1;
     }
   }
+
+  .numberListCount {
+    display: flex;
+    width: auto;
+    height: 36px;
+    line-height: 36px;
+    margin: 0 auto 0 16px;
+    padding: 0;
+    font-weight: 400;
+    font-size: 16px;
+    color: $site-color-2;
+    font-family: $fontCustom2;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: row;
+
+    .gallery_btn {
+      margin: 0 8px 0 0;
+    }
+
+    .margin_btn {
+      margin: 0 10px 0 8px;
+    }
+
+    .link {
+      width: auto;
+      height: auto;
+    }
+  }
+
+  .button_mini_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin: 0;
+    border: 1px solid $site-color-5;
+    border-radius: 4px;
+    padding: 4px;
+    transition: all 0.35s ease;
+    background: $site-color-12;
+    cursor: pointer;
+
+    &:hover {
+      background: $site-color-1;
+
+      > .button_mini_box {
+        padding: 1px;
+      }
+    }
+
+    .button_mini_box {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      min-width: 26px;
+      height: 26px;
+      margin: 0 auto;
+      padding: 3px;
+      transition: all 0.35s ease;
+
+      svg {
+        path {
+          transition: all 0.35s ease;
+          fill: $site-color-8;
+        }
+      }
+
+      &:hover {
+        svg {
+          path {
+            fill: $site_color-9;
+          }
+        }
+      }
+    }
+
+    .disabled {
+      svg {
+        path {
+          fill: $site-color-5;
+        }
+      }
+
+      &:hover {
+        svg {
+          path {
+            fill: $site_color-5;
+          }
+        }
+      }
+    }
+  }
+
+  .cursor {
+    cursor: default;
+
+    &:hover {
+      background: $site-color-12;
+
+      > .button_mini_box {
+        padding: 3px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1600px) {
@@ -56,6 +149,15 @@
 }
 
 @media screen and (max-width: 1280px) {
+  .boxSearchWrapper {
+    .numberListCount {
+      margin: 0 0 0 8px;
+    }
+
+    .box {
+      margin-left: auto;
+    }
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -63,23 +165,34 @@
 
 @media screen and (max-width: 960px) {
   .boxSearchWrapper {
-    .margin_btn {
-      margin: 0 0 0 auto;
+    .box {
+      .margin_btn {
+        margin: 0 0 0 8px;
+      }
     }
   }
 }
 
 @media screen and (max-width: 768px) {
   .boxSearchWrapper {
+    .searchInput {
+      height: 30px;
+      width: 200px;
+    }
+
     .numberListCount {
       height: 30px;
       line-height: 30px;
       font-size: 14px;
     }
 
-    .searchInput {
-      height: 30px;
-      width: 200px;
+    .button_mini_wrapper {
+      padding: 2px;
+
+      .button_mini_box {
+        height: 24px;
+        min-width: 24px;
+      }
     }
   }
 }
@@ -87,38 +200,31 @@
 @media screen and (max-width: 640px) {
   .boxSearchWrapper {
     height: auto;
+    flex-direction: column;
+
+    .searchInput {
+      width: 100%;
+      margin: 0 auto 8px auto;
+    }
 
     .numberListCount {
+      margin: 0;
+      justify-content: center;
       width: 100%;
-      margin: 0 0 0 8px;
       font-size: 13px;
     }
 
-    .searchInput {
-      width: 140px;
+    .button_mini_wrapper {
+      width: 30px;
+    }
+
+    .box {
+      margin: 0 auto;
     }
   }
 }
 
 @media screen and (max-width: 480px) {
-  .boxSearchWrapper {
-    flex-direction: column;
-    height: auto;
-
-    .numberListCount {
-      margin: 0;
-      justify-content: center;
-    }
-
-    .searchInput {
-      width: 100%;
-      margin: 8px auto;
-    }
-
-    .margin_btn {
-      margin: 0 auto;
-    }
-  }
 }
 
 @media screen and (max-width: 360px) {

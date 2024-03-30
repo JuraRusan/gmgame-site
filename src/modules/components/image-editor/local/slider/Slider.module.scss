@@ -15,7 +15,7 @@
   padding-right: 16px;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 20px;
+  bottom: 108px;
   position: absolute;
 
   .line {
@@ -75,11 +75,13 @@
 
       &:hover {
         height: 10px;
+        background-color: $site-color-9;
       }
     }
 
     .handler_focus {
       height: 10px;
+      background-color: $site-color-9;
     }
 
     .handler_hidden,
@@ -87,4 +89,40 @@
       height: 4px;
     }
   }
+}
+
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 960px) {
+}
+
+@media screen and (max-width: 768px) {
+  .slider {
+    bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .slider {
+    bottom: 86px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .slider {
+    max-width: 96%;
+  }
+}
+
+@media screen and (max-width: 360px) {
 }

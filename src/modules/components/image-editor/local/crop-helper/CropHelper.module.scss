@@ -1,0 +1,78 @@
+@import "../../../../../Variables";
+
+.crop_helper {
+  height: auto;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba($site-color-4, 0.4);
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 105px;
+  position: absolute;
+  padding: 2px 28px;
+  border-radius: 31px;
+
+  .crop_button {
+    margin: 4px 8px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .crop_text_position {
+    position: absolute;
+    top: 56px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 960px) {
+  .crop_helper {
+    bottom: 96px;
+
+    .crop_button {
+      margin: 2px 4px;
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 640px) {
+  .crop_helper {
+    .crop_text_position {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .crop_helper {
+    bottom: 86px;
+
+    .crop_button {
+      width: 28px;
+      height: 28px;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+}
