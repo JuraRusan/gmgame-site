@@ -10,7 +10,7 @@ import { debounce } from "lodash";
 import { useAlert } from "react-alert";
 import Tag from "./tag/Tag";
 import ActionsButton from "../actions-button/ActionsButton";
-import StatusSvgComponent from "../../../../bases/icons/statusSvg/StatusSvg";
+// import StatusSvgComponent from "../../../../bases/icons/statusSvg/StatusSvg";
 import BinSvgComponent from "../../../../bases/icons/binSvg/BinSvg";
 
 import styles from "./Gallery.module.scss";
@@ -175,9 +175,9 @@ const Gallery = () => {
                   </div>
                 </Link>
                 <div className={classNames(styles["action_column"])}>
-                  <Link to={`post_analytics/${post.id}`}>
-                    <ActionsButton ico={<StatusSvgComponent width="100%" height="100%" />} />
-                  </Link>
+                  {/*<Link to={`post_analytics/${post.id}`}>*/}
+                  {/*  <ActionsButton ico={<StatusSvgComponent width="100%" height="100%" />} />*/}
+                  {/*</Link>*/}
                   <ActionsButton
                     onClick={() => {
                       handleDelete(post.id);

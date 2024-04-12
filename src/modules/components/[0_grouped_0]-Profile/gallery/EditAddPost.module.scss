@@ -503,3 +503,8 @@ body {
 
 @media screen and (max-width: 360px) {
 }
+
+.interface_user_add,
+.interface_tag_add {
+  display: none !important;
+}
