@@ -63,7 +63,7 @@
       transition: all 0.35s ease;
 
       &:hover {
-        scale: 1.10;
+        scale: 1.1;
       }
 
       .wrapper_image {
@@ -134,7 +134,6 @@
                 fill: currentColor !important;
               }
             }
-
           }
 
           .text {
@@ -150,46 +149,42 @@
         }
       }
     }
-
   }
 }
 
 body {
-  .overlayModal {
+  .overlay_main_modal {
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     position: fixed;
-    z-index: 12002;
-    background: lighten($site-color-12, 20%);
-    animation: animationModal 0.5s both ease !important;
-  }
-
-  .modalGallery {
-    position: absolute;
-    outline: none;
-    z-index: 12001;
-    background: $site-color-4;
-    border: 1px solid $site-color-5;
-    border-radius: 5px;
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
-    width: auto;
-    height: auto;
-    padding: 15px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10099;
+    background: $site-color-4;
+  }
+
+  .modal_main_gallery {
+    position: absolute;
+    z-index: 10098;
+    width: 100%;
+    height: 100%;
     overflow: auto;
+    outline: none;
+    margin: 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
 
     &::-webkit-scrollbar {
-      width: 4px;
+      width: 6px;
     }
 
     .close {
-      position: absolute;
+      position: fixed;
       top: 15px;
       right: 15px;
       width: auto;
@@ -200,37 +195,41 @@ body {
       background: $site-color-12;
       border: 1px solid $site-color-5;
       border-radius: 4px;
-      transition: all 0.25s ease-in-out;
+      transition: all 0.25s ease;
       color: $color-8;
       cursor: pointer;
       font-size: 14px;
+      outline: none;
 
       &:hover,
       &:focus,
       &:active {
+        outline: none;
+      }
+
+      &:hover {
         background: $site-color-1;
       }
     }
 
-    .galleryBackground {
+    .gallery_background {
       background: $site-color-12;
       border: 1px solid $site-color-5;
-      border-radius: 5px;
+      border-radius: 4px;
       width: 100%;
       max-width: 90%;
       margin: 0 auto;
       padding: 15px;
 
-      .galleryWrapper {
+      .wrapper {
         width: 100%;
-        max-width: 1100px !important;
+        max-width: 1400px !important;
         margin: 0 auto;
-        max-height: 700px;
         height: auto;
       }
     }
 
-    .containerDescription {
+    .container_description {
       display: flex;
       flex-direction: row;
       width: 100%;
@@ -239,24 +238,25 @@ body {
       height: auto;
       background: $site-color-12;
       border: 1px solid $site-color-5;
-      border-radius: 5px;
+      border-radius: 4px;
       padding: 15px;
 
-      .containerBuilders {
+      .container_builders {
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
         width: 250px;
         min-width: 250px;
         max-width: 250px;
         height: auto;
 
-        .ulList {
+        .ul_list {
           display: flex;
           flex-direction: column;
           width: 100%;
           height: auto;
 
-          .liAuthorsTitle {
+          .li_authors_title {
             line-height: 24px;
             height: 24px;
             font-size: 14px;
@@ -264,20 +264,16 @@ body {
             color: $site-color-2;
             font-family: $fontCustom2;
             margin-bottom: 5px;
-            padding-left: 10px;
-            border-width: 1px;
-            border-bottom-style: solid;
-            border-image: linear-gradient(to right, $site-color-2, $site-color-2, rgba(0, 0, 0, 0)) 1 0;
           }
 
-          .liUser {
+          .li_user {
             display: flex;
             flex-direction: row;
             width: 100%;
             height: auto;
             margin: 3px auto;
 
-            .imgUser {
+            .img_user {
               height: 24px;
               margin: 0;
               padding: 0;
@@ -286,7 +282,7 @@ body {
               overflow: hidden;
             }
 
-            .userName {
+            .user_name {
               line-height: 24px;
               height: 24px;
               font-size: 14px;
@@ -302,222 +298,45 @@ body {
       .description {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: flex-start;
         margin-left: 10px;
         width: auto;
         height: 100%;
 
-        .titleNameImageList {
+        .title_name_image_list {
           font-weight: 400;
           font-size: 18px;
           font-family: $fontCustom2;
           min-height: 32px;
           height: auto;
           text-align: center;
-          line-height: 32px;
+          line-height: 1.45;
           width: 100%;
-          padding-left: 25px;
           color: $site-color-2;
-          margin: 0 auto 0 auto;
+          margin: 8px auto 32px auto;
         }
 
-        .textParagraph {
+        .text_paragraph {
           text-indent: 16px;
           font-weight: 400;
-          font-size: 13px;
+          font-size: 14px;
           color: $site-color-2;
-          font-family: $fontCustom2;
-          line-height: 1.25;
+          line-height: 1.4;
         }
 
-        .blockTag {
+        .block_tag {
           display: flex;
           flex-direction: row;
           justify-content: center;
           flex-wrap: wrap;
-          margin-top: 8px;
-
-          .oneTag {
-            font-size: 11px;
-            margin: 2px 4px;
-            font-family: $fontCustom2;
-            border-radius: 4px;
-            height: 20px;
-            line-height: 20px;
-            color: darken($site-color-2, 50%);
-            background: lighten($site-color-12, 20%);
-            padding: 0 8px;
-          }
+          margin-top: 16px;
         }
       }
     }
   }
 }
 
-//.box_content {
-//  display: flex;
-//  flex-direction: row;
-//  border: 1px solid $site-color-5;
-//  background: $site-color-4;
-//  padding: 8px;
-//  border-radius: 8px;
-//  margin-bottom: 16px;
-//
-//  .navigation_page {
-//    display: flex;
-//    flex-direction: column;
-//    width: 250px;
-//    min-width: 250px;
-//    max-width: 250px;
-//    height: auto;
-//    min-height: 550px;
-//    max-height: 690px;
-//    top: 75px;
-//    position: sticky;
-//    border: 1px solid $site-color-5;
-//    background: $site-color-12;
-//    border-radius: 8px;
-//    padding: 10px;
-//
-//    .navigation_title {
-//      font-size: 16px;
-//      font-family: $fontCustom2;
-//      font-weight: 400;
-//      height: 24px;
-//      line-height: 24px;
-//      width: 100%;
-//      margin-bottom: 8px;
-//      color: $site-color-2;
-//      text-align: center;
-//    }
-//
-//    .sort_select {
-//      background: $site-color-12;
-//      border: 1px solid $site-color-5;
-//      border-radius: 4px;
-//      color: $site-color-8;
-//      padding: 0 4px 0 8px;
-//      margin: 8px auto;
-//      font-size: 13px;
-//      font-family: $fontCustom2;
-//      font-weight: 400;
-//      height: 26px;
-//      width: 100%;
-//      outline: none;
-//
-//      .sort_option {
-//        font-size: 12px;
-//        font-family: $fontCustom2;
-//        font-weight: 400;
-//      }
-//    }
-//
-//    form {
-//      display: flex;
-//      flex-direction: row;
-//
-//      .search_input {
-//        width: 100%;
-//        height: 26px;
-//        margin: 8px auto;
-//        background: $site-color-12;
-//        outline: none;
-//        border: 1px solid $site-color-5;
-//        border-radius: 4px;
-//        transition: all 0.25s ease-in-out;
-//        color: $site-color-8;
-//        padding-left: 8px;
-//        padding-right: 4px;
-//        font-size: 13px;
-//        font-family: $fontCustom2;
-//        font-weight: 400;
-//
-//        &:hover,
-//        &:focus,
-//        &:active {
-//          outline: none;
-//          background: $site-color-1;
-//        }
-//      }
-//
-//      .add_submit {
-//        border: 1px solid $site-color-5;
-//        width: 26px;
-//        min-width: 26px;
-//        height: 26px;
-//        border-radius: 4px;
-//        font-size: 14px;
-//        background: $site-color-12;
-//        color: $site-color-2;
-//        transition: all 0.35s ease;
-//        cursor: pointer;
-//        margin: auto 0 auto 5px;
-//        padding: 0;
-//
-//        &:hover,
-//        &:active,
-//        &:focus {
-//          color: $site-color-8;
-//        }
-//      }
-//    }
-//
-//    .preview_box {
-//      display: flex;
-//      flex-direction: column;
-//      max-height: 250px;
-//      overflow: auto;
-//      padding-right: 4px;
-//
-//      &::-webkit-scrollbar {
-//        width: 4px;
-//      }
-//
-//      .selected_tag {
-//        display: flex;
-//        flex-direction: row;
-//        margin: 2px 0;
-//        border-radius: 4px;
-//        color: darken($site-color-2, 50%);
-//        background: lighten($site-color-12, 20%);
-//        padding: 0 0 0 8px;
-//
-//        .image {
-//          height: 16px;
-//          min-height: 16px;
-//          max-height: 16px;
-//          width: 16px;
-//          min-width: 16px;
-//          max-width: 16px;
-//          margin: 2px;
-//        }
-//
-//        .name {
-//          margin: 2px 4px;
-//          font-size: 11px;
-//          font-family: $fontCustom2;
-//          height: 16px;
-//          line-height: 16px;
-//        }
-//
-//        .actions {
-//          margin: 2px 0 2px auto;
-//          height: 16px;
-//          line-height: 16px;
-//          width: 20px;
-//          border: none;
-//          border-radius: 0;
-//          background: none;
-//          outline: none;
-//          cursor: pointer;
-//          color: darken($color-3, 50%);
-//          transition: all 0.35s ease;
-//
-//          &:hover {
-//            color: $color-8;
-//          }
-//        }
-//      }
-//    }
-//  }
-//}
+.ul_list,
+.block_tag {
+  display: none !important;
+}

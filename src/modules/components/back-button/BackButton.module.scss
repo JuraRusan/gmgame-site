@@ -1,0 +1,21 @@
+@import "../../../Variables";
+
+.back {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: $site-color-2;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.25s ease;
+
+  &:hover {
+    outline: none;
+    color: $site-color-9;
+  }
+}

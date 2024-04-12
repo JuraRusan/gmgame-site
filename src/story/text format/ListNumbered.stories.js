@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 import ListNumberedSvgComponent from "../../bases/icons/formatListNumberedSvg/ListNumberedSvg";
-import {arrayDefault} from "../IconDefaultStorybookTypes";
+import { arrayDefault } from "../IconDefaultStorybookTypes";
 
 export default {
-  title: 'UI/Svg/Format/ListNumbered',
-  component: ListNumberedSvgComponent
+  title: "UI/Svg/Format/ListNumbered",
+  component: ListNumberedSvgComponent,
 };
 
-const Template = (args) => <ListNumberedSvgComponent {...args}/>
+const Template = (args) => <ListNumberedSvgComponent {...args} />;
 
-export const Default = Template.bind({})
-Default.args = arrayDefault
+export const Default = Template.bind({});
+Default.args = arrayDefault;

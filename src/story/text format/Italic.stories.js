@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 import ItalicSvgComponent from "../../bases/icons/formatItalicSvg/ItalicSvg";
-import {arrayDefault} from "../IconDefaultStorybookTypes";
+import { arrayDefault } from "../IconDefaultStorybookTypes";
 
 export default {
-  title: 'UI/Svg/Format/Italic',
-  component: ItalicSvgComponent
+  title: "UI/Svg/Format/Italic",
+  component: ItalicSvgComponent,
 };
 
-const Template = (args) => <ItalicSvgComponent {...args}/>
+const Template = (args) => <ItalicSvgComponent {...args} />;
 
-export const Default = Template.bind({})
-Default.args = arrayDefault
+export const Default = Template.bind({});
+Default.args = arrayDefault;

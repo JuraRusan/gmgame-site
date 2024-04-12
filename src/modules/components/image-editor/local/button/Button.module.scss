@@ -1,0 +1,136 @@
+@import "../../../../../Variables";
+
+.image_editor_button {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: transparent;
+  transition: 0.35s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: $site-color-2;
+  padding: 0;
+
+  &:hover {
+    background: rgba($site-color-2, 0.03);
+
+    svg {
+      path {
+        fill: $site-color-9;
+      }
+    }
+
+    .span_stroke {
+      svg {
+        path {
+          fill: none;
+          stroke: $site-color-9;
+        }
+      }
+    }
+  }
+
+  svg {
+    path {
+      fill: $site-color-2;
+      transition: all 0.3s ease;
+    }
+  }
+
+  .span_stroke {
+    display: flex;
+    width: auto;
+    height: auto;
+
+    svg {
+      path {
+        fill: none;
+        stroke: $site-color-2;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+
+  &:disabled {
+    color: $site-color-5;
+    cursor: default;
+
+    &:hover {
+      background: transparent;
+    }
+
+    svg {
+      path {
+        fill: $site-color-5;
+      }
+    }
+
+    .span_stroke {
+      svg {
+        path {
+          fill: none;
+          stroke: $site-color-5;
+        }
+      }
+    }
+  }
+}
+
+.image_editor_button_active {
+  background: rgba($site-color-2, 0.03);
+  color: $site-color-8 !important;
+
+  svg {
+    path {
+      fill: $site-color-8 !important;
+    }
+  }
+
+  .span_stroke {
+    svg {
+      path {
+        fill: none;
+        stroke: $site-color-8 !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 960px) {
+  .image_editor_button {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 640px) {
+}
+
+@media screen and (max-width: 480px) {
+  .image_editor_button {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+}

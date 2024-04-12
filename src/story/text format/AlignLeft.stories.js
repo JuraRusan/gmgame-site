@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 import AlignLeftSvgComponent from "../../bases/icons/formatAlignLeftSvg/AlignLeftSvg";
-import {arrayDefault} from "../IconDefaultStorybookTypes";
+import { arrayDefault } from "../IconDefaultStorybookTypes";
 
 export default {
-  title: 'UI/Svg/Format/Format align left',
-  component: AlignLeftSvgComponent
+  title: "UI/Svg/Format/FormatAlignLeft",
+  component: AlignLeftSvgComponent,
 };
 
-const Template = (args) => <AlignLeftSvgComponent {...args}/>
+const Template = (args) => <AlignLeftSvgComponent {...args} />;
 
-export const Default = Template.bind({})
-Default.args = arrayDefault
+export const Default = Template.bind({});
+Default.args = arrayDefault;

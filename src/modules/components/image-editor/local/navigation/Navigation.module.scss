@@ -1,0 +1,106 @@
+@import "../../../../../Variables";
+
+.navigation {
+  background: $site-color-12;
+  height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  .upload {
+    display: none;
+    left: -8000px;
+  }
+
+  .box_actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text_position {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .navigation_one_button {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1280px) {
+  .navigation {
+    margin-top: auto;
+
+    .navigation_one_button {
+      margin-left: 6px;
+      margin-right: 6px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 960px) {
+  .navigation {
+    height: 68px;
+
+    .navigation_one_button {
+      margin-left: 4px;
+      margin-right: 4px;
+    }
+
+    .text_position {
+      top: -18px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navigation {
+    position: relative;
+
+    .box_actions {
+      flex-direction: row;
+      width: 320px;
+      overflow: auto;
+      justify-content: flex-start;
+      padding-bottom: 4px;
+      top: 3.5px;
+      position: relative;
+
+      &::-webkit-scrollbar {
+        height: 3px;
+      }
+    }
+
+    .text_position {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+}
+
+@media screen and (max-width: 480px) {
+  .navigation {
+    .box_actions {
+      width: 228px;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+}

@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 import PrizeSvgComponent from "../../bases/icons/prizeSvg/PrizeSvg";
-import {arrayDefault} from "../IconDefaultStorybookTypes";
+import { arrayDefault } from "../IconDefaultStorybookTypes";
 
 export default {
-  title: 'UI/Svg/All/Prize',
-  component: PrizeSvgComponent
+  title: "UI/Svg/All/Prize",
+  component: PrizeSvgComponent,
 };
 
-const Template = (args) => <PrizeSvgComponent {...args}/>
+const Template = (args) => <PrizeSvgComponent {...args} />;
 
-export const Default = Template.bind({})
-Default.args = arrayDefault
+export const Default = Template.bind({});
+Default.args = arrayDefault;

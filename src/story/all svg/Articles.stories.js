@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 import ArticlesSvgComponent from "../../bases/icons/articlesSvg/ArticlesSvg";
-import {arrayDefault} from "../IconDefaultStorybookTypes";
+import { arrayDefault } from "../IconDefaultStorybookTypes";
 
 export default {
-  title: 'UI/Svg/All/Articles',
-  component: ArticlesSvgComponent
+  title: "UI/Svg/All/Articles",
+  component: ArticlesSvgComponent,
 };
 
-const Template = (args) => <ArticlesSvgComponent {...args}/>
+const Template = (args) => <ArticlesSvgComponent {...args} />;
 
-export const Default = Template.bind({})
-Default.args = arrayDefault
+export const Default = Template.bind({});
+Default.args = arrayDefault;

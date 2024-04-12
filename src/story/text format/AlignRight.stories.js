@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 import AlignRightSvgComponent from "../../bases/icons/formatAlignRightSvg/AlignRightSvg";
-import {arrayDefault} from "../IconDefaultStorybookTypes";
+import { arrayDefault } from "../IconDefaultStorybookTypes";
 
 export default {
-  title: 'UI/Svg/Format/Format align right',
-  component: AlignRightSvgComponent
+  title: "UI/Svg/Format/FormatAlignRight",
+  component: AlignRightSvgComponent,
 };
 
-const Template = (args) => <AlignRightSvgComponent {...args}/>
+const Template = (args) => <AlignRightSvgComponent {...args} />;
 
-export const Default = Template.bind({})
-Default.args = arrayDefault
+export const Default = Template.bind({});
+Default.args = arrayDefault;

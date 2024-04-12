@@ -61,40 +61,15 @@
     }
   }
 
-  .actions {
-    cursor: pointer;
-    height: 40px;
-    width: 40px;
-    margin: auto 8px auto 8px;
-    background: transparent;
-    border: transparent;
-    border-radius: 4px;
-    color: $site-color-2;
-    text-decoration: none;
-    transition: all 0.35s ease;
-    padding: 6px;
-
-    svg {
-      path {
-        transition: all 0.35s ease;
-      }
-    }
-
-    &:hover {
-      background: $site-color-1;
-    }
-  }
-
-  .hover_delete {
-    &:hover {
-      background: $site-color-1;
-
-      svg {
-        path {
-          stroke: $site-color-9;
-        }
-      }
-    }
+  .action_column {
+    width: 100%;
+    min-width: 44px;
+    max-width: 44px;
+    height: 100%;
+    display: flex;
+    padding: 0 2px;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
@@ -141,13 +116,6 @@
 }
 
 @media screen and (max-width: 640px) {
-  .one_maps_element {
-    .actions {
-      height: 32px;
-      width: 32px;
-      padding: 5px;
-    }
-  }
 }
 
 @media screen and (max-width: 480px) {
@@ -170,8 +138,12 @@
       }
     }
 
-    .actions {
-      margin: 4px auto;
+    .action_column {
+      min-width: 0;
+      max-width: none;
+      flex-direction: row;
+      height: auto;
+      padding: 4px 0;
     }
   }
 }
