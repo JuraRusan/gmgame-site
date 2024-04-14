@@ -56,7 +56,7 @@ const CropHelper = ({ center, resize, maximize, className, MouseEnter, MouseLeav
   return (
     <div className={classNames(styles["crop_helper"])}>
       {List.map((el, i) => (
-        <>
+        <div key={i}>
           <TextLineHelper
             className={classNames(styles["crop_text_position"])}
             id={`label_crop_${el.id}`}
@@ -74,7 +74,7 @@ const CropHelper = ({ center, resize, maximize, className, MouseEnter, MouseLeav
           >
             {el.icon}
           </Button>
-        </>
+        </div>
       ))}
     </div>
   );

@@ -30,6 +30,7 @@ const ERROR_VALUE_TREE = "Тег может содержать от 3 до 24 с
 const ERROR_VALUE_FOUR = "Тег может содержать только буквы, цифры и символы подчеркивания.";
 
 const MAX_IMAGES = 16;
+const MAX_IMAGES_SIZE = 10;
 
 const MIN_BUILDERS = 0;
 const MAX_BUILDERS = 64;
@@ -119,7 +120,7 @@ const EditAddPost = () => {
 
   const [init, setInit] = useState(false);
 
-  const resParams = useAxios(`/api/get_gallery/${id}`, "GET", {});
+  let resParams;
 
   const showMessage = (response) => {
     if (response.message) {
@@ -318,12 +319,16 @@ const EditAddPost = () => {
 
       sendRequest("/api/upload_images", "POST", formData, { "Content-Type": "multipart/form-data" }).then(
         (response) => {
-          if (response.length === 1) {
-            alert.success("Изображение добавлено");
+          if (response.success === true) {
+            if (response.data.length === 1) {
+              alert.success("Изображение добавлено");
+            } else {
+              alert.success("Изображения добавлены");
+            }
+            setImages((prevImages) => [...response.data, ...prevImages]);
           } else {
-            alert.success("Изображения добавлены");
+            alert.error(response);
           }
-          setImages((prevImages) => [...response, ...prevImages]);
           setImagesPreloaderCount(0);
           setImagesPreloader(false);
           selectedImage = e.target.value = "";
@@ -349,7 +354,7 @@ const EditAddPost = () => {
           const oldImages = [...images];
 
           oldImages[modalImageActive] = [...response];
-          setImages(oldImages);
+          setImages(oldImages.flat(2));
         }
       );
 
@@ -364,16 +369,27 @@ const EditAddPost = () => {
     }
   }, [images]);
 
-  if (resParams.loaded && id !== "new" && !init) {
-    const jsonArray = resParams.data.galleryImages;
-    const transformedArray = jsonArray.map((item) => item.image);
+  if (id === "new") {
+    resParams = {};
+  } else {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    resParams = useAxios(`/api/get_gallery/${id}`, "GET", {});
+  }
 
+  if (resParams.loaded && id !== "new" && !init) {
     setInit(true);
-    setImages(transformedArray);
-    setTitle(resParams.data.name);
-    setNameLength(resParams.data.name.length);
-    setDescription(resParams.data.description);
-    setDescriptionLength(resParams.data.description.length);
+    if (resParams.data.error) {
+      alert.error(resParams.data.error);
+    } else {
+      const jsonArray = resParams.data.galleryImages;
+      const transformedArray = jsonArray.map((item) => item.image);
+
+      setImages(transformedArray);
+      setTitle(resParams.data.name);
+      setNameLength(resParams.data.name.length);
+      setDescription(resParams.data.description);
+      setDescriptionLength(resParams.data.description.length);
+    }
   }
 
   if (resParams.loading || isLoading) {
@@ -402,6 +418,7 @@ const EditAddPost = () => {
                   multiple
                 />
                 <div className={classNames(styles["image_prev_box"])}>
+                  <span className={classNames(styles["size"])}>{MAX_IMAGES_SIZE} MB</span>
                   <span className={classNames(styles["count"])}>
                     {images.length}/{MAX_IMAGES}
                   </span>
