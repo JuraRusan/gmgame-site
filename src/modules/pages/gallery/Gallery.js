@@ -9,6 +9,7 @@ import Preload from "../../components/preloader/Preload";
 // import HeartSvgComponent from "../../../bases/icons/heartSvg/HeartSvg";
 // import Particles from "../../components/particles/Particles";
 import Tag from "../../components/[0_grouped_0]-Profile/gallery/tag/Tag";
+import { prepare } from "../../components/text-editor/Prepare";
 
 import styles from "./Gallery.module.scss";
 import "react-lazy-load-image-component/src/effects/blur.css";
@@ -3142,6 +3143,7 @@ const MainGallery = () => {
         overlayClassName={classNames(styles["overlay_main_modal"])}
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
+        ariaHideApp={false}
       >
         <button onClick={closeModal} className={classNames(styles["close"])}>
           &#10008;
@@ -3171,7 +3173,10 @@ const MainGallery = () => {
               </div>
               <div className={classNames(styles["description"])}>
                 <h4 className={classNames(styles["title_name_image_list"])}>{modalActiveData.name}</h4>
-                <p className={classNames(styles["text_paragraph"])}>{modalActiveData.description}</p>
+                <p
+                  className={classNames(styles["text"])}
+                  dangerouslySetInnerHTML={{ __html: prepare(modalActiveData.description) }}
+                />
                 <div className={classNames(styles["block_tag"])}>
                   {TAG.map((tag, index) => (
                     <Tag tag={tag.trim()} key={index} />

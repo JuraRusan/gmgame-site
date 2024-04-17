@@ -226,6 +226,7 @@ body {
         max-width: 1400px !important;
         margin: 0 auto;
         height: auto;
+        min-height: 80vh;
       }
     }
 
@@ -316,10 +317,7 @@ body {
           margin: 8px auto 32px auto;
         }
 
-        .text_paragraph {
-          text-indent: 16px;
-          font-weight: 400;
-          font-size: 14px;
+        .text {
           color: $site-color-2;
           line-height: 1.4;
         }

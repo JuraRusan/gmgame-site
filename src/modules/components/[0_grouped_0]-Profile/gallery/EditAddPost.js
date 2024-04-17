@@ -17,6 +17,8 @@ import BackButton from "../../back-button/BackButton";
 import { Triangle } from "react-loader-spinner";
 import Tag from "./tag/Tag";
 import Name from "./name/Name";
+import TextEditor from "../../text-editor/TextEditor";
+import { DEFAULT_VALUE } from "../../text-editor/Default-value";
 
 import styles from "./EditAddPost.module.scss";
 import "react-lazy-load-image-component/src/effects/blur.css";
@@ -112,7 +114,7 @@ const EditAddPost = () => {
   const [tags, setTags] = useState([]);
 
   const [title, setTitle] = useState("");
-  const [description, setDescription] = useState("");
+  const [description, setDescription] = useState(DEFAULT_VALUE);
 
   const [modalImageActive, setModalImageActive] = useState(0);
 
@@ -236,15 +238,15 @@ const EditAddPost = () => {
       return;
     }
 
-    if (descriptionLength === 0) {
-      alert.error("Добавте описание");
-      return;
-    }
+    // if (descriptionLength === 0) {
+    //   alert.error("Добавте описание");
+    //   return;
+    // }
 
-    if (errorMessagePostDescription !== "") {
-      alert.error(errorMessagePostDescription);
-      return;
-    }
+    // if (errorMessagePostDescription !== "") {
+    //   alert.error(errorMessagePostDescription);
+    //   return;
+    // }
 
     if (imagesPreloader) {
       alert.error("Дождитесь загрузки изображений");
@@ -387,7 +389,7 @@ const EditAddPost = () => {
       setImages(transformedArray);
       setTitle(resParams.data.name);
       setNameLength(resParams.data.name.length);
-      setDescription(resParams.data.description);
+      setDescription(JSON.parse(resParams.data.description));
       setDescriptionLength(resParams.data.description.length);
     }
   }
@@ -545,15 +547,16 @@ const EditAddPost = () => {
               }}
             />
             <TITLE title="Описание:" min={MIN_DESCRIPTION} max={MAX_DESCRIPTION} length={descriptionLength} />
-            <textarea
-              className={classNames(styles["choice_text"])}
-              rows="12"
-              defaultValue={description}
-              onChange={(e) => {
-                handleText(e, MIN_DESCRIPTION, MAX_DESCRIPTION, "description");
-                setDescription(e.target.value);
-              }}
-            />
+            {/*<textarea*/}
+            {/*  className={classNames(styles["choice_text"])}*/}
+            {/*  rows="12"*/}
+            {/*  defaultValue={description}*/}
+            {/*  onChange={(e) => {*/}
+            {/*    handleText(e, MIN_DESCRIPTION, MAX_DESCRIPTION, "description");*/}
+            {/*    setDescription(e.target.value);*/}
+            {/*  }}*/}
+            {/*/>*/}
+            <TextEditor value={description} setValue={setDescription} />
           </div>
         </div>
         <div className={classNames(styles["wrapper_actions"])}>

@@ -1,0 +1,114 @@
+@import "../../../Variables.scss";
+
+.text_editor {
+  background: $site-color-12;
+  border: 1px solid $site-color-5;
+  border-radius: 4px;
+}
+
+.toolbar {
+  display: flex;
+  flex-direction: row;
+  padding: 4px;
+  border-bottom: 1px solid $site-color-5;
+  position: sticky;
+  top: 0;
+  background: $site-color-14;
+  z-index: 1;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: $site-color-12;
+  }
+}
+
+.editor {
+  outline: none;
+  padding: 5px;
+  margin: 0;
+  color: $site-color-2;
+  min-height: 350px;
+  font-family: $fontCustom2 !important;
+
+  p {
+    margin: 0;
+    line-height: 1.45;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  span,
+  ol,
+  ul,
+  li {
+    font-family: $fontCustom2 !important;
+  }
+
+  li,
+  blockquote,
+  span {
+    font-size: 13px;
+  }
+}
+
+.button_style {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+  border-radius: 4px;
+  transition: all 0.35s ease;
+
+  svg {
+    transition: all 0.35s ease;
+
+    path {
+      transition: all 0.35s ease;
+    }
+  }
+
+  &:hover {
+    background: $site-color-5;
+
+    svg {
+      path {
+        fill: $site-color-9;
+      }
+    }
+  }
+
+  &:nth-child(4),
+  &:nth-child(11) {
+    margin-right: auto;
+  }
+}
+
+.active_on {
+  color: $site-color-8;
+
+  svg {
+    path {
+      fill: $site-color-8;
+    }
+  }
+}
+
+.active_off {
+  color: $site-color-2;
+
+  svg {
+    path {
+      fill: $site-color-2;
+    }
+  }
+}
