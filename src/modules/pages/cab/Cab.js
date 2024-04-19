@@ -123,6 +123,7 @@ const Cab = () => {
                       <span onClick={() => {setOpenMenu(false);}} className={classNames(styles["tab"], styles["disabled"])}><ImageSvgComponent width="100%" height="100%" color="#f4f4f4"/>Моя галерея</span>
                       <span onClick={() => {setOpenMenu(false);}} className={classNames(styles["tab"], styles["disabled"])}><span className={classNames(styles["stroke_color"])}><ShopSvgComponent width="100%" height="100%" color="#f4f4f4"/></span>Мои магазины</span>
                       <span onClick={() => {setOpenMenu(false);}} className={classNames(styles["tab"], styles["disabled"])}><SettingsSvgComponent width="100%" height="100%" color="#f4f4f4"/>Изменить пароль</span>
+                      <span onClick={() => {setOpenMenu(false);}} className={classNames(styles["tab"], styles["disabled"])}><SettingsSvgComponent width="100%" height="100%" color="#f4f4f4"/>Изменить имя</span>
                     </>
                   ) : (
                     <>
@@ -133,6 +134,7 @@ const Cab = () => {
                       <NavLink onClick={() => {setOpenMenu(false);}} className={({isActive}) => setActive(isActive)} to="gallery"><ImageSvgComponent width="100%" height="100%" color="#f4f4f4"/>Моя галерея</NavLink>
                       <NavLink onClick={() => {setOpenMenu(false);}} className={({isActive}) => setActive(isActive)} to="shop_user"><span className={classNames(styles["stroke_color"])}><ShopSvgComponent width="100%" height="100%" color="#f4f4f4"/></span>Мои магазины</NavLink>
                       <NavLink onClick={() => {setOpenMenu(false);}} className={({isActive}) => setActive(isActive)} to="change_password"><SettingsSvgComponent width="100%" height="100%" color="#f4f4f4"/>Изменить пароль</NavLink>
+                      <NavLink onClick={() => {setOpenMenu(false);}} className={({isActive}) => setActive(isActive)} to="change_name"><SettingsSvgComponent width="100%" height="100%" color="#f4f4f4"/>Изменить имя</NavLink>
                     </>
                   )}
               {resParams.data.discordUser.role === "admin" && (

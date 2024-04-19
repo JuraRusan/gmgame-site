@@ -6,6 +6,7 @@ import Alert from "././common/alert/Alert";
 
 // --
 import General from "./modules/pages/general/General.js";
+import ChangeUsername from "./modules/components/[0_grouped_0]-Profile/change-username/Change-username.js";
 
 // --
 const Auth = lazy(() => import(/* webpackChunkName: "auth" */ /* webpackPreload: true */ /* webPackPrefetch: true */ "./modules/pages/auth/Auth.js")); // prettier-ignore
@@ -53,6 +54,7 @@ const MyProfile = lazy(() => import(/* webpackChunkName: "cab" */ "./modules/com
 const MyPrizes = lazy(() => import(/* webpackChunkName: "cab" */ "./modules/components/[0_grouped_0]-Profile/my-prizes/My-prizes.js")); // prettier-ignore
 const ShopUser = lazy(() => import(/* webpackChunkName: "cab" */ "./modules/components/[0_grouped_0]-Profile/shops-user/ShopUser")); // prettier-ignore
 const ChangePassword = lazy(() => import(/* webpackChunkName: "cab" */ "./modules/components/[0_grouped_0]-Profile/change-password/Change-password.js")); // prettier-ignore
+const ChangeUserame = lazy(() => import(/* webpackChunkName: "cab" */ "./modules/components/[0_grouped_0]-Profile/change-username/Change-username.js")); // prettier-ignore
 
 // --
 const Statistic = lazy(() => import(/* webpackChunkName: "statistics" */ "./modules/pages/statistic/Statistic.js"));
@@ -99,6 +101,8 @@ const Router = () => {
             <Route path="shop_user" element={<ShopUser />} />
             {/* ---------- */}
             <Route path="change_password" element={<ChangePassword />} />
+            {/* ---------- */}
+            <Route path="change_name" element={<ChangeUsername />} />
             {/* ---------- */}
           </Route>
           <Route path="/gallery" element={<MainGallery />} />
