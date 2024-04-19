@@ -1,0 +1,168 @@
+@import "../../../../Variables";
+
+.blockUsername {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 90px 0 0 0;
+  width: 100%;
+  height: 100%;
+
+  .usernameTitle {
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: $site-color-2;
+    font-family: $fontCustom2;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    .usernameInput {
+      width: 350px;
+      height: 45px;
+      line-height: 45px;
+      outline: none;
+      background: $site-color-12;
+      border: 1px solid $site-color-5;
+      border-radius: 5px;
+      transition: all 0.25s ease-in-out;
+      color: $site-color-8;
+      padding: 0 10px;
+      margin: 10px auto;
+
+      &:hover,
+      &:focus,
+      &:active {
+        outline: none;
+      }
+    }
+
+    .error {
+      bottom: 25px;
+      width: auto;
+      max-width: 350px;
+      min-width: 225px;
+      font-size: 16px;
+      font-weight: 400;
+      font-family: $fontCustom2;
+      height: 20px;
+      line-height: 20px;
+      text-align: center;
+      margin: 0 auto 4px auto;
+      color: $site-color-11;
+      transition: all 0.35s ease;
+    }
+
+    .labelWrapperCheckbox {
+      width: auto;
+      height: 22px;
+      margin: 5px auto 0 auto;
+      display: flex;
+      flex-direction: row;
+
+      .checkboxMessage {
+        height: 22px;
+        line-height: 22px;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: $fontCustom2;
+        color: $site-color-2;
+        margin-left: 8px;
+      }
+
+      input[type="checkbox"] {
+        display: none;
+      }
+
+      .checkmark {
+        display: flex;
+        width: 20px;
+        height: 20px;
+        border: 1px solid $site-color-5;
+        border-radius: 4px;
+        position: relative;
+        vertical-align: middle;
+      }
+
+      .checkmark::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 13px;
+        height: 13px;
+        background-color: $site-color-8;
+        border-radius: 2px;
+        opacity: 0;
+        transition: opacity 0.35s ease-in-out;
+      }
+
+      input[type="checkbox"]:checked + .checkmark::before {
+        opacity: 1;
+      }
+    }
+
+    .wrapper_btn {
+      display: flex;
+      margin: 16px auto;
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 960px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 640px) {
+  .blockUsername {
+    .usernameTitle {
+      font-size: 18px;
+    }
+
+    form {
+      .error {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .blockUsername {
+    form {
+      .passwordInput {
+        width: 100%;
+        min-width: 0;
+        max-width: none;
+        height: 40px;
+        margin-top: 12px;
+        line-height: 40px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+}
