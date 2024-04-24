@@ -29,9 +29,9 @@
     "react-scroll": "^1.8.9",
     "react-window": "^1.8.8",
     "sass": "^1.53.0",
-    "slate": "^0.94.1",
-    "slate-history": "^0.93.0",
-    "slate-react": "^0.94.2",
+    "slate": "^0.102.0",
+    "slate-history": "^0.100.0",
+    "slate-react": "^0.102.0",
     "storybook": "^8.0.5",
     "web-vitals": "^1.0.1"
   },
@@ -78,6 +78,7 @@
     "npm-watch": "^0.11.0",
     "prop-types": "^15.8.1",
     "react-docgen-typescript-loader": "^3.7.2",
+    "react-refresh": "^0.14.0",
     "webpack": "^5.88.1"
   },
   "watch": {
