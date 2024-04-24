@@ -95,7 +95,14 @@
 
 .a_editor {
   text-decoration: underline;
-  cursor: auto;
+  cursor: pointer;
+  color: $site-color-10;
+
+  &:visited,
+  &:active,
+  &:hover {
+    color: $site-color-10;
+  }
 }
 
 .ol_editor {

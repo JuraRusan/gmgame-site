@@ -12,8 +12,12 @@ function format(code) {
         if (format.italic) styles += " em_editor";
         if (format.underline) styles += " u_editor";
         if (format.code) styles += " code_editor";
+        if (format.link) styles += " a_editor";
 
-        return `<span class="${styles}">${format.text}</span>`;
+        if (!format.link) {
+          return `<span class="${styles}">${format.text}</span>`;
+        }
+        return `<a href=${format.text} rel="noreferrer" target="_blank" class="${styles}">${format.text}</a>`;
       }
     })
     .join("");

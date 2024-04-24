@@ -21,6 +21,7 @@ import HeadingFourSvgComponent from "../../../bases/icons/formatHeadingFourSvg/H
 import HeadingFiveSvgComponent from "../../../bases/icons/formatHeadingFiveSvg/HeadingFiveSvg";
 import HeadingSixSvgComponent from "../../../bases/icons/formatHeadingSixSvg/HeadingSixSvg";
 import ParagraphSvgComponent from "../../../bases/icons/formatParagraphSvg/ParagraphSvg";
+import LinkSvgComponent from "../../../bases/icons/formatLinkSvg/LinkSvg";
 import { CalculatingTextLength } from "./functions/CalculatingTextLength";
 import { DEFAULT_VALUE } from "./Default-value";
 
@@ -224,6 +225,10 @@ const Leaf = ({ attributes, children, leaf }) => {
     children = <code className="code_editor">{children}</code>;
   }
 
+  if (leaf.link) {
+    children = <span className="a_editor">{children}</span>;
+  }
+
   return (
     <span className="span_editor" {...attributes}>
       {children}
@@ -265,6 +270,7 @@ const RichTextExample = ({ value = DEFAULT_VALUE, setValue, textLength = () => {
           <MarkButton format="italic" icon={<ItalicSvgComponent width="100%" height="100%" />} />
           <MarkButton format="underline" icon={<UnderlineSvgComponent width="100%" height="100%" />} />
           <MarkButton format="code" icon={<CodeSvgComponent width="100%" height="100%" />} />
+          <MarkButton format="link" icon={<LinkSvgComponent width="100%" height="100%" />} />
           <BlockButton format="paragraph" icon={<ParagraphSvgComponent width="100%" height="100%" />} />
           <BlockButton format="heading-one" icon={<HeadingOneSvgComponent width="100%" height="100%" />} />
           <BlockButton format="heading-two" icon={<HeadingTwoSvgComponent width="100%" height="100%" />} />
