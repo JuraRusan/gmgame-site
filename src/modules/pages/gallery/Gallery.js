@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import React, { useState } from "react";
-import ImageGallery from "react-image-gallery";
+// import ImageGallery from "react-image-gallery";
 import Modal from "react-modal";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useAxios } from "../../../DataProvider";
@@ -13,7 +13,7 @@ import { prepare } from "../../components/text-editor/functions/Prepare";
 
 import styles from "./Gallery.module.scss";
 import "react-lazy-load-image-component/src/effects/blur.css";
-import "../../custon-modules/Image-gallery.scss";
+// import "../../custon-modules/Image-gallery.scss";
 
 const TAG = [
   "base",
