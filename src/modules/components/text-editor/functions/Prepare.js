@@ -57,8 +57,6 @@ export function prepare(code) {
         if (el.align === "right") styles += " right_editor";
         if (el.align === "justify") styles += " justify_editor";
 
-        console.log(styles);
-
         if (el.type === "paragraph") {
           return `<p class="${styles}">${format(el.children)}</p>`;
         }
