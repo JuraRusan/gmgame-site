@@ -230,6 +230,7 @@ const MainGallery = () => {
                     src={el.thumbnail}
                     alt="none"
                     onClick={() => {
+                      setPreloader(true);
                       setImageIndexShow(el.id);
                     }}
                   />
