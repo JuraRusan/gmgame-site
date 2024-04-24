@@ -38,38 +38,59 @@ export function prepare(code) {
   return JSON.parse(code)
     .map((el) => {
       const local = () => {
+        let styles = "";
+
+        if (el.type === "paragraph") styles += " p_editor";
+        if (el.type === "heading-one") styles += " h1_editor";
+        if (el.type === "heading-two") styles += " h2_editor";
+        if (el.type === "heading-three") styles += " h3_editor";
+        if (el.type === "heading-four") styles += " h4_editor";
+        if (el.type === "heading-five") styles += " h5_editor";
+        if (el.type === "heading-six") styles += " h6_editor";
+        if (el.type === "block-quote") styles += " blockquote_editor";
+        if (el.type === "code") styles += " code_editor";
+        if (el.type === "bulleted-list") styles += " ul_editor";
+        if (el.type === "numbered-list") styles += " ol_editor";
+
+        if (el.align === "left") styles += " left_editor";
+        if (el.align === "center") styles += " center_editor";
+        if (el.align === "right") styles += " right_editor";
+        if (el.align === "justify") styles += " justify_editor";
+
+        console.log(styles);
+
         if (el.type === "paragraph") {
-          return `<p class="p_editor">${format(el.children)}</p>`;
+          return `<p class="${styles}">${format(el.children)}</p>`;
         }
         if (el.type === "heading-one") {
-          return `<h1 class="h1_editor">${format(el.children)}</h1>`;
+          return `<h1 class="${styles}">${format(el.children)}</h1>`;
         }
         if (el.type === "heading-two") {
-          return `<h2 class="h2_editor">${format(el.children)}</h2>`;
+          return `<h2 class="${styles}">${format(el.children)}</h2>`;
         }
         if (el.type === "heading-three") {
-          return `<h3 class="h3_editor">${format(el.children)}</h3>`;
+          return `<h3 class="${styles}">${format(el.children)}</h3>`;
         }
         if (el.type === "heading-four") {
-          return `<h4 class="h4_editor">${format(el.children)}</h4>`;
+          return `<h4 class="${styles}">${format(el.children)}</h4>`;
         }
         if (el.type === "heading-five") {
-          return `<h5 class="h5_editor">${format(el.children)}</h5>`;
+          return `<h5 class="${styles}">${format(el.children)}</h5>`;
         }
         if (el.type === "heading-six") {
-          return `<h6 class="h6_editor">${format(el.children)}</h6>`;
+          return `<h6 class="${styles}">${format(el.children)}</h6>`;
         }
         if (el.type === "block-quote") {
-          return `<blockquote class="blockquote_editor">${format(el.children)}</blockquote>`;
+          return `<blockquote class="${styles}">${format(el.children)}</blockquote>`;
         }
         if (el.type === "code") {
-          return `<code class="code_editor">${format(el.children)}</code>`;
+          return `<code class="${styles}">${format(el.children)}</code>`;
         }
         if (el.type === "bulleted-list") {
-          return `<ul class="ul_editor">${list(el.children)}</ul>`;
+          return `<ul class="${styles}">${list(el.children)}</ul>`;
         }
         if (el.type === "numbered-list") {
-          return `<ol class="ol_editor">${list(el.children)}</ol>`;
+          return `<ol class="${styles}">${list(el.children)}</ol>`;
         }
       };
       return local();
