@@ -95,13 +95,16 @@ const MainGallery = () => {
   const [modalIsOpen, setIsOpen] = useState(false);
   const [modalActiveData, setActiveData] = useState(null);
 
+  const [imageIndexShow, setImageIndexShow] = useState(0);
+  const [preloader, setPreloader] = useState(false);
+
   const openModal = (active) => {
     document.body.style.overflow = "hidden";
     let array = active.galleryImages.map((item, i) => {
       return {
         id: i,
         original: item.image,
-        thumbnail: item.image + "@4",
+        thumbnail: item.image + "@8",
         loading: "lazy",
       };
     });
@@ -118,6 +121,20 @@ const MainGallery = () => {
     setIsOpen(false);
     setActiveData(null);
     document.body.style.overflow = "auto";
+  };
+
+  const decrementImageIndexShow = () => {
+    if (imageIndexShow > 0) {
+      setImageIndexShow(imageIndexShow - 1);
+      setPreloader(true);
+    }
+  };
+
+  const incrementImageIndexShow = () => {
+    if (imageIndexShow < modalActiveData.galleryImages.length - 1) {
+      setImageIndexShow(imageIndexShow + 1);
+      setPreloader(true);
+    }
   };
 
   const resParams = useAxios(`/api/get_galleries`, "GET", {});
@@ -175,7 +192,48 @@ const MainGallery = () => {
           <>
             <div className={classNames(styles["gallery_background"])}>
               <div className={classNames(styles["wrapper"])}>
-                <ImageGallery items={modalActiveData.galleryImages} lazyLoad="true" showIndex="true" />
+                {/*<ImageGallery items={modalActiveData.galleryImages} lazyLoad="true" showIndex="true" />*/}
+                <img
+                  width="100%"
+                  height="100%"
+                  src={modalActiveData.galleryImages[imageIndexShow].original}
+                  alt="none"
+                  onLoad={() => setPreloader(false)}
+                />
+                {preloader && (
+                  <div className={classNames(styles["preload_center"])}>
+                    <Preload />
+                  </div>
+                )}
+                <button
+                  disabled={imageIndexShow === 0}
+                  className={classNames(styles["btn_swipe"], styles["left"])}
+                  onClick={decrementImageIndexShow}
+                >
+                  {"<"}
+                </button>
+                <button
+                  disabled={imageIndexShow === modalActiveData.galleryImages.length - 1}
+                  className={classNames(styles["btn_swipe"], styles["right"])}
+                  onClick={incrementImageIndexShow}
+                >
+                  {">"}
+                </button>
+              </div>
+              <div className={classNames(styles["navigator"])}>
+                {modalActiveData.galleryImages.map((el, i) => (
+                  <img
+                    className={classNames(styles["prev"], { [styles["active"]]: el.id === imageIndexShow })}
+                    key={i}
+                    width="100%"
+                    height="100%"
+                    src={el.thumbnail}
+                    alt="none"
+                    onClick={() => {
+                      setImageIndexShow(el.id);
+                    }}
+                  />
+                ))}
               </div>
             </div>
             <div className={classNames(styles["container_description"])}>
