@@ -21,10 +21,11 @@ import HeadingFourSvgComponent from "../../../bases/icons/formatHeadingFourSvg/H
 import HeadingFiveSvgComponent from "../../../bases/icons/formatHeadingFiveSvg/HeadingFiveSvg";
 import HeadingSixSvgComponent from "../../../bases/icons/formatHeadingSixSvg/HeadingSixSvg";
 import ParagraphSvgComponent from "../../../bases/icons/formatParagraphSvg/ParagraphSvg";
+import { CalculatingTextLength } from "./functions/CalculatingTextLength";
 import { DEFAULT_VALUE } from "./Default-value";
 
 import styles from "./TextEditor.module.scss";
-import prepareStyle from "./Prepare.module.scss";
+import "./functions/Prepare.scss";
 
 const LIST_TYPES = ["numbered-list", "bulleted-list"];
 const TEXT_ALIGN_TYPES = ["left", "center", "right", "justify"];
@@ -133,73 +134,73 @@ const Element = ({ attributes, children, element }) => {
   switch (element.type) {
     case "block-quote":
       return (
-        <blockquote className={classNames(prepareStyle["blockquote_editor"])} style={style} {...attributes}>
+        <blockquote className="blockquote_editor" style={style} {...attributes}>
           {children}
         </blockquote>
       );
     case "bulleted-list":
       return (
-        <ul className={classNames(prepareStyle["ul_editor"])} style={style} {...attributes}>
+        <ul className="ul_editor" style={style} {...attributes}>
           {children}
         </ul>
       );
     case "numbered-list":
       return (
-        <ol className={classNames(prepareStyle["ol_editor"])} style={style} {...attributes}>
+        <ol className="ol_editor" style={style} {...attributes}>
           {children}
         </ol>
       );
     case "list-item":
       return (
-        <li className={classNames(prepareStyle["li_editor"])} style={style} {...attributes}>
+        <li className="li_editor" style={style} {...attributes}>
           {children}
         </li>
       );
     case "paragraph":
       return (
-        <p className={classNames(prepareStyle["p_editor"])} style={style} {...attributes}>
+        <p className="p_editor" style={style} {...attributes}>
           {children}
         </p>
       );
     case "heading-one":
       return (
-        <h1 className={classNames(prepareStyle["h1_editor"])} style={style} {...attributes}>
+        <h1 className="h1_editor" style={style} {...attributes}>
           {children}
         </h1>
       );
     case "heading-two":
       return (
-        <h2 className={classNames(prepareStyle["h2_editor"])} style={style} {...attributes}>
+        <h2 className="h2_editor" style={style} {...attributes}>
           {children}
         </h2>
       );
     case "heading-three":
       return (
-        <h3 className={classNames(prepareStyle["h3_editor"])} style={style} {...attributes}>
+        <h3 className="h3_editor" style={style} {...attributes}>
           {children}
         </h3>
       );
     case "heading-four":
       return (
-        <h4 className={classNames(prepareStyle["h4_editor"])} style={style} {...attributes}>
+        <h4 className="h4_editor" style={style} {...attributes}>
           {children}
         </h4>
       );
     case "heading-five":
       return (
-        <h5 className={classNames(prepareStyle["h5_editor"])} style={style} {...attributes}>
+        <h5 className="h5_editor" style={style} {...attributes}>
           {children}
         </h5>
       );
     case "heading-six":
       return (
-        <h6 className={classNames(prepareStyle["h6_editor"])} style={style} {...attributes}>
+        <h6 className="h6_editor" style={style} {...attributes}>
           {children}
         </h6>
       );
     default:
       return (
-        <p className={classNames(prepareStyle["p_editor"])} style={style} {...attributes}>
+        <p className="p_editor" style={style} {...attributes}>
           {children}
         </p>
       );
@@ -208,23 +209,23 @@ const Element = ({ attributes, children, element }) => {
 
 const Leaf = ({ attributes, children, leaf }) => {
   if (leaf.bold) {
-    children = <strong className={classNames(prepareStyle["strong_editor"])}>{children}</strong>;
+    children = <strong className="strong_editor">{children}</strong>;
   }
 
   if (leaf.italic) {
-    children = <em className={classNames(prepareStyle["em_editor"])}>{children}</em>;
+    children = <em className="em_editor">{children}</em>;
   }
 
   if (leaf.underline) {
-    children = <u className={classNames(prepareStyle["u_editor"])}>{children}</u>;
+    children = <u className="u_editor">{children}</u>;
   }
 
   if (leaf.code) {
-    children = <code className={classNames(prepareStyle["code_editor"])}>{children}</code>;
+    children = <code className="code_editor">{children}</code>;
   }
 
   return (
-    <span className={classNames(prepareStyle["span_editor"])} {...attributes}>
+    <span className="span_editor" {...attributes}>
       {children}
     </span>
   );
@@ -232,21 +233,30 @@ const Leaf = ({ attributes, children, leaf }) => {
 
 const Toolbar = ({ children }) => <div className={classNames(styles["toolbar"])}>{children}</div>;
 
-const RichTextExample = ({ value = DEFAULT_VALUE, setValue }) => {
+const RichTextExample = ({ value = DEFAULT_VALUE, setValue, textLength = () => {} }) => {
   const renderElement = useCallback((props) => <Element {...props} />, []);
   const renderLeaf = useCallback((props) => <Leaf {...props} />, []);
   const editor = useMemo(() => withHistory(withReact(createEditor())), []);
+
+  let dataValue;
+
+  try {
+    dataValue = JSON.parse(value);
+  } catch {
+    dataValue = value;
+  }
 
   return (
     <div className={classNames(styles["text_editor"])}>
       <Slate
         editor={editor}
-        initialValue={value}
+        initialValue={dataValue}
         onChange={(value) => {
           const isAstChange = editor.operations.some((op) => "set_selection" !== op.type);
+
           if (isAstChange) {
-            const content = JSON.stringify(value);
-            setValue(content);
+            setValue(JSON.stringify(value));
+            textLength(CalculatingTextLength(value));
           }
         }}
       >

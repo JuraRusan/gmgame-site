@@ -312,10 +312,7 @@
           width: 100%;
           min-width: 100%;
           max-width: 100%;
-          height: auto;
-          min-height: 34px;
-          max-height: 800px;
-          line-height: 24px;
+          height: 34px;
           padding: 5px;
           font-size: 13px;
           font-family: $fontCustom2;
@@ -325,18 +322,11 @@
           background: $site-color-12;
           transition: all 0.35s ease;
           outline: none;
-          overflow: auto;
-          resize: vertical;
-          vertical-align: bottom;
 
           &:hover,
           &:active,
           &:focus {
             outline: none;
-          }
-
-          &::-webkit-scrollbar {
-            width: 4px;
           }
         }
       }

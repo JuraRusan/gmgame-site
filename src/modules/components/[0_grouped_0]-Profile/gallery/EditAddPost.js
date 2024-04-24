@@ -19,6 +19,7 @@ import Tag from "./tag/Tag";
 import Name from "./name/Name";
 import TextEditor from "../../text-editor/TextEditor";
 import { DEFAULT_VALUE } from "../../text-editor/Default-value";
+import { CalculatingTextLength } from "../../text-editor/functions/CalculatingTextLength";
 
 import styles from "./EditAddPost.module.scss";
 import "react-lazy-load-image-component/src/effects/blur.css";
@@ -196,17 +197,6 @@ const EditAddPost = () => {
         setErrorMessagePostName("");
         setNameLength(text.length);
       }
-    } else {
-      if (text.length < min) {
-        setErrorMessagePostDescription("Описание слишком короткое");
-        setDescriptionLength(text.length);
-      } else if (text.length > max) {
-        setErrorMessagePostDescription("Описание слишком длинное");
-        setDescriptionLength(text.length);
-      } else {
-        setErrorMessagePostDescription("");
-        setDescriptionLength(text.length);
-      }
     }
   };
 
@@ -238,15 +228,15 @@ const EditAddPost = () => {
       return;
     }
 
-    // if (descriptionLength === 0) {
-    //   alert.error("Добавте описание");
-    //   return;
-    // }
+    if (descriptionLength === 0) {
+      alert.error("Добавте описание");
+      return;
+    }
 
-    // if (errorMessagePostDescription !== "") {
-    //   alert.error(errorMessagePostDescription);
-    //   return;
-    // }
+    if (errorMessagePostDescription !== "") {
+      alert.error(errorMessagePostDescription);
+      return;
+    }
 
     if (imagesPreloader) {
       alert.error("Дождитесь загрузки изображений");
@@ -371,6 +361,18 @@ const EditAddPost = () => {
     }
   }, [images]);
 
+  useMemo(() => {
+    if (descriptionLength !== 0) {
+      if (descriptionLength < MIN_DESCRIPTION) {
+        setErrorMessagePostDescription("Описание слишком короткое");
+      } else if (descriptionLength > MAX_DESCRIPTION) {
+        setErrorMessagePostDescription("Описание слишком длинное");
+      } else {
+        setErrorMessagePostDescription("");
+      }
+    }
+  }, [descriptionLength]);
+
   if (id === "new") {
     resParams = {};
   } else {
@@ -380,17 +382,34 @@ const EditAddPost = () => {
 
   if (resParams.loaded && id !== "new" && !init) {
     setInit(true);
+
     if (resParams.data.error) {
       alert.error(resParams.data.error);
     } else {
       const jsonArray = resParams.data.galleryImages;
       const transformedArray = jsonArray.map((item) => item.image);
 
+      let jsonData;
+      let jsonDataLength;
+
+      try {
+        jsonDataLength = CalculatingTextLength(JSON.parse(resParams.data.description));
+        jsonData = JSON.parse(resParams.data.description);
+      } catch {
+        jsonDataLength = resParams.data.description.length;
+        jsonData = [
+          {
+            type: "paragraph",
+            children: [{ text: resParams.data.description }],
+          },
+        ];
+      }
+
       setImages(transformedArray);
       setTitle(resParams.data.name);
       setNameLength(resParams.data.name.length);
-      setDescription(JSON.parse(resParams.data.description));
-      setDescriptionLength(resParams.data.description.length);
+      setDescription(JSON.stringify(jsonData));
+      setDescriptionLength(jsonDataLength);
     }
   }
 
@@ -547,16 +566,7 @@ const EditAddPost = () => {
               }}
             />
             <TITLE title="Описание:" min={MIN_DESCRIPTION} max={MAX_DESCRIPTION} length={descriptionLength} />
-            {/*<textarea*/}
-            {/*  className={classNames(styles["choice_text"])}*/}
-            {/*  rows="12"*/}
-            {/*  defaultValue={description}*/}
-            {/*  onChange={(e) => {*/}
-            {/*    handleText(e, MIN_DESCRIPTION, MAX_DESCRIPTION, "description");*/}
-            {/*    setDescription(e.target.value);*/}
-            {/*  }}*/}
-            {/*/>*/}
-            <TextEditor value={description} setValue={setDescription} />
+            <TextEditor value={description} setValue={setDescription} textLength={setDescriptionLength} />
           </div>
         </div>
         <div className={classNames(styles["wrapper_actions"])}>

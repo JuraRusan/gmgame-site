@@ -44,7 +44,6 @@ const Gallery = () => {
   const [visible, setVisible] = useState(true);
 
   const [numberLengthTitle, setNumberLengthTitle] = useState(0);
-  const [numberLengthDescription, setNumberLengthDescription] = useState(0);
 
   const shortenText = (text, maxLength) => (text.length > maxLength ? `${text.slice(0, maxLength)}...` : text);
 
@@ -79,22 +78,16 @@ const Gallery = () => {
     function handleResize() {
       if (window.innerWidth >= 1280) {
         setNumberLengthTitle(70);
-        setNumberLengthDescription(180);
       } else if (window.innerWidth >= 1024) {
         setNumberLengthTitle(40);
-        setNumberLengthDescription(150);
       } else if (window.innerWidth >= 960) {
         setNumberLengthTitle(35);
-        setNumberLengthDescription(140);
       } else if (window.innerWidth >= 768) {
         setNumberLengthTitle(40);
-        setNumberLengthDescription(160);
       } else if (window.innerWidth >= 640) {
         setNumberLengthTitle(50);
-        setNumberLengthDescription(160);
       } else {
         setNumberLengthTitle(100);
-        setNumberLengthDescription(200);
       }
     }
 
@@ -163,9 +156,6 @@ const Gallery = () => {
                   </div>
                   <div className={classNames(styles["description_post"])}>
                     <h4 className={classNames(styles["title"])}>{shortenText(post.name, numberLengthTitle)}</h4>
-                    <p className={classNames(styles["paragraph"])}>
-                      {shortenText(post.description, numberLengthDescription)}
-                    </p>
                     <div className={classNames(styles["tags_view"])}>
                       {TAG.slice(0, 6).map((tag, index) => (
                         <Tag tag={tag.trim()} key={index} />

@@ -1,9 +1,10 @@
-@import "../../../Variables.scss";
+@import "../../../../Variables";
 
 .p_editor {
   display: block;
   margin-top: 1em;
   margin-bottom: 1em;
+  text-indent: 2em;
 }
 
 .h1_editor {
