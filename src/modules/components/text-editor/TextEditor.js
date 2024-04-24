@@ -266,25 +266,31 @@ const RichTextExample = ({ value = DEFAULT_VALUE, setValue, textLength = () => {
         }}
       >
         <Toolbar>
-          <MarkButton format="bold" icon={<BoldSvgComponent width="100%" height="100%" />} />
-          <MarkButton format="italic" icon={<ItalicSvgComponent width="100%" height="100%" />} />
-          <MarkButton format="underline" icon={<UnderlineSvgComponent width="100%" height="100%" />} />
-          <MarkButton format="code" icon={<CodeSvgComponent width="100%" height="100%" />} />
-          <MarkButton format="link" icon={<LinkSvgComponent width="100%" height="100%" />} />
-          <BlockButton format="paragraph" icon={<ParagraphSvgComponent width="100%" height="100%" />} />
-          <BlockButton format="heading-one" icon={<HeadingOneSvgComponent width="100%" height="100%" />} />
-          <BlockButton format="heading-two" icon={<HeadingTwoSvgComponent width="100%" height="100%" />} />
-          <BlockButton format="heading-three" icon={<HeadingThreeSvgComponent width="100%" height="100%" />} />
-          <BlockButton format="heading-four" icon={<HeadingFourSvgComponent width="100%" height="100%" />} />
-          <BlockButton format="heading-five" icon={<HeadingFiveSvgComponent width="100%" height="100%" />} />
-          <BlockButton format="heading-six" icon={<HeadingSixSvgComponent width="100%" height="100%" />} />
-          <BlockButton format="block-quote" icon={<QuoteSvgComponent width="100%" height="100%" />} />
-          <BlockButton format="numbered-list" icon={<ListNumberedSvgComponent width="100%" height="100%" />} />
-          <BlockButton format="bulleted-list" icon={<ListBulletedSvgComponent width="100%" height="100%" />} />
-          <BlockButton format="left" icon={<AlignLeftSvgComponent width="100%" height="100%" />} />
-          <BlockButton format="center" icon={<AlignCenterSvgComponent width="100%" height="100%" />} />
-          <BlockButton format="right" icon={<AlignRightSvgComponent width="100%" height="100%" />} />
-          <BlockButton format="justify" icon={<AlignJustifySvgComponent width="100%" height="100%" />} />
+          <div className={classNames(styles["block"])}>
+            <MarkButton format="bold" icon={<BoldSvgComponent width="100%" height="100%" />} />
+            <MarkButton format="italic" icon={<ItalicSvgComponent width="100%" height="100%" />} />
+            <MarkButton format="underline" icon={<UnderlineSvgComponent width="100%" height="100%" />} />
+            <MarkButton format="code" icon={<CodeSvgComponent width="100%" height="100%" />} />
+            <MarkButton format="link" icon={<LinkSvgComponent width="100%" height="100%" />} />
+          </div>
+          <div className={classNames(styles["block"])}>
+            <BlockButton format="paragraph" icon={<ParagraphSvgComponent width="100%" height="100%" />} />
+            <BlockButton format="heading-one" icon={<HeadingOneSvgComponent width="100%" height="100%" />} />
+            <BlockButton format="heading-two" icon={<HeadingTwoSvgComponent width="100%" height="100%" />} />
+            <BlockButton format="heading-three" icon={<HeadingThreeSvgComponent width="100%" height="100%" />} />
+            <BlockButton format="heading-four" icon={<HeadingFourSvgComponent width="100%" height="100%" />} />
+            <BlockButton format="heading-five" icon={<HeadingFiveSvgComponent width="100%" height="100%" />} />
+            <BlockButton format="heading-six" icon={<HeadingSixSvgComponent width="100%" height="100%" />} />
+            <BlockButton format="block-quote" icon={<QuoteSvgComponent width="100%" height="100%" />} />
+          </div>
+          <div className={classNames(styles["block"])}>
+            <BlockButton format="numbered-list" icon={<ListNumberedSvgComponent width="100%" height="100%" />} />
+            <BlockButton format="bulleted-list" icon={<ListBulletedSvgComponent width="100%" height="100%" />} />
+            <BlockButton format="left" icon={<AlignLeftSvgComponent width="100%" height="100%" />} />
+            <BlockButton format="center" icon={<AlignCenterSvgComponent width="100%" height="100%" />} />
+            <BlockButton format="right" icon={<AlignRightSvgComponent width="100%" height="100%" />} />
+            <BlockButton format="justify" icon={<AlignJustifySvgComponent width="100%" height="100%" />} />
+          </div>
         </Toolbar>
         <Editable renderElement={renderElement} renderLeaf={renderLeaf} className={classNames(styles["editor"])} />
       </Slate>

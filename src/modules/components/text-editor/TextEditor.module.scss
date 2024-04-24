@@ -9,6 +9,7 @@
 .toolbar {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   padding: 4px;
   border-bottom: 1px solid $site-color-5;
   position: sticky;
@@ -26,6 +27,13 @@
     z-index: -1;
     background: $site-color-12;
   }
+
+  .block {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+  }
 }
 
 .editor {
@@ -39,6 +47,7 @@
   p {
     margin: 0;
     line-height: 1.45;
+    font-size: 14px;
   }
 
   h1,
@@ -63,8 +72,8 @@
 
 .button_style {
   cursor: pointer;
-  width: 32px;
-  height: 32px;
+  width: 26px;
+  height: 26px;
   padding: 4px;
   border-radius: 4px;
   transition: all 0.35s ease;
@@ -86,11 +95,6 @@
       }
     }
   }
-
-  &:nth-child(4),
-  &:nth-child(12) {
-    margin-right: auto;
-  }
 }
 
 .active_on {
@@ -111,4 +115,48 @@
       fill: $site-color-2;
     }
   }
+}
+
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 960px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 640px) {
+  .toolbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .editor {
+    p {
+      line-height: 1.4;
+      font-size: 14px;
+    }
+
+    li,
+    blockquote,
+    span {
+      font-size: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 360px) {
 }
