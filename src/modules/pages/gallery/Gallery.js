@@ -152,9 +152,9 @@ const MainGallery = () => {
             <div className={classNames(styles["wrapper_image"])}>
               <LazyLoadImage
                 className={classNames(styles["img"])}
-                alt={items.galleryImages[0].image + "@4"}
+                alt={items.galleryImages[0].image}
                 effect="blur"
-                src={items.galleryImages[0].image + "@4"}
+                src={items.galleryImages[0].image}
                 onClick={() => {
                   openModal(items);
                 }}
