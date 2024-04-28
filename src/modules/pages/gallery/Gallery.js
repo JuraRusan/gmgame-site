@@ -159,7 +159,7 @@ const MainGallery = () => {
           <div className={classNames(styles["one_container"])} key={i}>
             <div className={classNames(styles["wrapper_image"])}>
               <LazyLoadImage
-                className={classNames(styles["img"])}
+                className={classNames(styles["image"])}
                 alt={items.galleryImages[0].image}
                 effect="blur"
                 src={items.galleryImages[0].image}
@@ -173,13 +173,13 @@ const MainGallery = () => {
             {/*<div className={classNames(styles["container_like"])}>*/}
             {/*  <div className={classNames(styles["likes"])}>*/}
             {/*    <button className={classNames(styles["click"], styles["like"])}>*/}
-            {/*      <Particles text={<HeartSvgComponent height="20px" width="20px" color="#f4f4f4"/>} type="like"/>*/}
+            {/*      <Particles text={<HeartSvgComponent height="20px" width="20px" color="#f4f4f4" />} type="like" />*/}
             {/*    </button>*/}
             {/*    <label className={classNames(styles["text"])}>{items.likes}</label>*/}
             {/*  </div>*/}
             {/*  <div className={classNames(styles["likes"])}>*/}
             {/*    <button className={classNames(styles["click"], styles["dislike"])}>*/}
-            {/*      <Particles text={<HeartSvgComponent height="20px" width="20px" color="#f4f4f4"/>} type="dislike"/>*/}
+            {/*      <Particles text={<HeartSvgComponent height="20px" width="20px" color="#f4f4f4" />} type="dislike" />*/}
             {/*    </button>*/}
             {/*    <label className={classNames(styles["text"])}>{items.dislikes}</label>*/}
             {/*  </div>*/}
