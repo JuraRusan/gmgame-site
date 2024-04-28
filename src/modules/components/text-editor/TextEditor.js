@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Editable, withReact, useSlate, Slate } from "slate-react";
 import { Editor, Transforms, createEditor, Element as SlateElement } from "slate";
 import { withHistory } from "slate-history";
@@ -27,6 +27,7 @@ import { CalculatingTextLength } from "./functions/CalculatingTextLength";
 import { DEFAULT_VALUE } from "./Default-value";
 import Modal from "react-modal";
 import { prepare } from "./functions/Prepare";
+import EmojiPicker, { Emoji } from "emoji-picker-react";
 
 import styles from "./TextEditor.module.scss";
 import "./functions/Prepare.scss";
@@ -250,12 +251,17 @@ const RichTextExample = ({ value = DEFAULT_VALUE, setValue, textLength = () => {
     dataValue = value;
   }
 
+  const emojiRef = useRef(null);
+
   const renderElement = useCallback((props) => <Element {...props} />, []);
   const renderLeaf = useCallback((props) => <Leaf {...props} />, []);
   const editor = useMemo(() => withHistory(withReact(createEditor())), []);
 
   const [modalOpen, setModalOpen] = useState(false);
   const [prev, setPrev] = useState(dataValue);
+
+  const [emojiModal, setEmojiModal] = useState(false);
+  const [emoji, setEmoji] = useState({});
 
   const openModal = () => {
     document.body.style.overflow = "hidden";
@@ -266,6 +272,36 @@ const RichTextExample = ({ value = DEFAULT_VALUE, setValue, textLength = () => {
     document.body.style.overflow = "auto";
     setModalOpen(false);
   };
+
+  const openEmoji = () => {
+    setEmojiModal(true);
+  };
+
+  const closeEmoji = () => {
+    setEmojiModal(false);
+  };
+
+  const handleOutsideClick = (event) => {
+    if (emojiRef.current && !emojiRef.current.contains(event.target)) {
+      closeEmoji();
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleOutsideClick);
+
+    return () => {
+      document.removeEventListener("click", handleOutsideClick);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (emoji.emoji !== undefined) {
+      closeEmoji();
+      editor.insertText(emoji.emoji);
+      setEmoji({});
+    }
+  }, [editor, emoji]);
 
   return (
     <div className={classNames(styles["text_editor"])}>
@@ -284,6 +320,14 @@ const RichTextExample = ({ value = DEFAULT_VALUE, setValue, textLength = () => {
       >
         <Toolbar>
           <div className={classNames(styles["block"])}>
+            <Button
+              onClick={(e) => {
+                e.stopPropagation();
+                openEmoji();
+              }}
+            >
+              <Emoji unified="1f60a" size="18" />
+            </Button>
             <MarkButton format="bold" icon={<BoldSvgComponent width="100%" height="100%" />} />
             <MarkButton format="italic" icon={<ItalicSvgComponent width="100%" height="100%" />} />
             <MarkButton format="underline" icon={<UnderlineSvgComponent width="100%" height="100%" />} />
@@ -312,6 +356,20 @@ const RichTextExample = ({ value = DEFAULT_VALUE, setValue, textLength = () => {
             </Button>
           </div>
         </Toolbar>
+        {!emojiModal ? null : (
+          <div className={classNames(styles["emoji_modal"])} ref={emojiRef}>
+            <EmojiPicker
+              style={{ margin: "4px" }}
+              theme="dark"
+              height="500px"
+              width="100%"
+              lazyLoadEmojis={true}
+              onEmojiClick={(clickedEmoji) => {
+                setEmoji(clickedEmoji);
+              }}
+            />
+          </div>
+        )}
         <Editable renderElement={renderElement} renderLeaf={renderLeaf} className={classNames(styles["editor"])} />
       </Slate>
       <Modal
