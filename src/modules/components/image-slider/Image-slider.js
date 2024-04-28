@@ -73,6 +73,7 @@ const ImageSlider = ({ array }) => {
     if (play) {
       const interval = setInterval(() => {
         setImageIndexShow((prevIndex) => (prevIndex + 1) % array.galleryImages.length);
+        setPreloader(true);
       }, 3000);
 
       return () => clearInterval(interval);
