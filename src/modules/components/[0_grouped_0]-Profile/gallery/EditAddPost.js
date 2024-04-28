@@ -505,9 +505,9 @@ const EditAddPost = () => {
       setNameLength(resParams.data.name.length);
       setDescription(JSON.stringify(jsonData));
       setDescriptionLength(jsonDataLength);
-      setVisit(resParams.data.visit === "" ? "empty" : resParams.data.visit);
-      setWorld(resParams.data.world === "" ? "empty" : resParams.data.world);
-      setBranch(resParams.data.branch === "" ? "empty" : resParams.data.branch);
+      setVisit(resParams.data.visit === "" || resParams.data.visit === null ? "empty" : resParams.data.visit);
+      setWorld(resParams.data.world === "" || resParams.data.world === null ? "empty" : resParams.data.world);
+      setBranch(resParams.data.branch === "" || resParams.data.branch === null ? "empty" : resParams.data.branch);
       setCoordinates(resParams.data.coordinates);
     }
   }
