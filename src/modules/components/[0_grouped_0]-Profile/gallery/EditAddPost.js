@@ -570,7 +570,6 @@ const EditAddPost = () => {
                 setTitle(e.target.value);
               }}
             />
-            <TITLE title="Посещение:" count={false} required={false} />
             <TITLE title="Описание:" min={MIN_DESCRIPTION} max={MAX_DESCRIPTION} length={descriptionLength} />
             <TextEditor value={description} setValue={setDescription} textLength={setDescriptionLength} />
           </div>
