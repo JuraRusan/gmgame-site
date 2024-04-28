@@ -166,6 +166,7 @@ const EditAddPost = () => {
   const [modalImageActive, setModalImageActive] = useState(0);
 
   const [imageRedactor, setImageRedactor] = useState(false);
+  const [preloader, setPreloader] = useState(false);
 
   const [init, setInit] = useState(false);
 
@@ -256,6 +257,7 @@ const EditAddPost = () => {
   };
 
   const handleOpenModalImageRedactor = (index) => {
+    setPreloader(true);
     setImageRedactor(true);
     setModalImageActive(index);
     document.body.style.overflow = "hidden";
@@ -728,12 +730,22 @@ const EditAddPost = () => {
         ariaHideApp={false}
       >
         <div className={classNames(styles["box_image_redactor"])}>
-          <ImageEditor
-            image={images[modalImageActive]}
-            onSave={handleImageChangeUpdate}
-            onDelete={deleteImage}
-            onClose={handleCloseModalImageRedactor}
+          <img
+            className={classNames(styles["pre"])}
+            src={images[modalImageActive]}
+            alt="none"
+            onLoad={() => setPreloader(false)}
           />
+          {preloader === true ? (
+            <Preload />
+          ) : (
+            <ImageEditor
+              image={images[modalImageActive]}
+              onSave={handleImageChangeUpdate}
+              onDelete={deleteImage}
+              onClose={handleCloseModalImageRedactor}
+            />
+          )}
         </div>
       </ReactModal>
     </div>

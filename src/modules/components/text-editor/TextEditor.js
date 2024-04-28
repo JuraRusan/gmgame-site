@@ -242,20 +242,20 @@ const Leaf = ({ attributes, children, leaf }) => {
 const Toolbar = ({ children }) => <div className={classNames(styles["toolbar"])}>{children}</div>;
 
 const RichTextExample = ({ value = DEFAULT_VALUE, setValue, textLength = () => {} }) => {
-  const renderElement = useCallback((props) => <Element {...props} />, []);
-  const renderLeaf = useCallback((props) => <Leaf {...props} />, []);
-  const editor = useMemo(() => withHistory(withReact(createEditor())), []);
-
-  const [modalOpen, setModalOpen] = useState(false);
-  const [prev, setPrev] = useState(value);
-
-  let dataValue;
+  let dataValue = [];
 
   try {
     dataValue = JSON.parse(value);
   } catch {
     dataValue = value;
   }
+
+  const renderElement = useCallback((props) => <Element {...props} />, []);
+  const renderLeaf = useCallback((props) => <Leaf {...props} />, []);
+  const editor = useMemo(() => withHistory(withReact(createEditor())), []);
+
+  const [modalOpen, setModalOpen] = useState(false);
+  const [prev, setPrev] = useState(dataValue);
 
   const openModal = () => {
     document.body.style.overflow = "hidden";
@@ -277,7 +277,7 @@ const RichTextExample = ({ value = DEFAULT_VALUE, setValue, textLength = () => {
 
           if (isAstChange) {
             setValue(JSON.stringify(value));
-            setPrev(JSON.stringify(value));
+            setPrev(value);
             textLength(CalculatingTextLength(value));
           }
         }}
@@ -323,9 +323,10 @@ const RichTextExample = ({ value = DEFAULT_VALUE, setValue, textLength = () => {
         <button onClick={closeModal} className={classNames(styles["close"])}>
           &#10008;
         </button>
-        {!prev ? null : (
-          <div className={classNames(styles["prev"])} dangerouslySetInnerHTML={{ __html: prepare(prev) }} />
-        )}
+        <div
+          className={classNames(styles["prev"])}
+          dangerouslySetInnerHTML={{ __html: prepare(JSON.stringify(prev)) }}
+        />
       </Modal>
     </div>
   );
