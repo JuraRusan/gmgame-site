@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo } from "react";
+import React, { useCallback, useMemo, useState } from "react";
 import { Editable, withReact, useSlate, Slate } from "slate-react";
 import { Editor, Transforms, createEditor, Element as SlateElement } from "slate";
 import { withHistory } from "slate-history";
@@ -22,8 +22,11 @@ import HeadingFiveSvgComponent from "../../../bases/icons/formatHeadingFiveSvg/H
 import HeadingSixSvgComponent from "../../../bases/icons/formatHeadingSixSvg/HeadingSixSvg";
 import ParagraphSvgComponent from "../../../bases/icons/formatParagraphSvg/ParagraphSvg";
 import LinkSvgComponent from "../../../bases/icons/formatLinkSvg/LinkSvg";
+import VisibleOnSvgComponent from "../../../bases/icons/visibleOnSvg/VisibleOnSvg";
 import { CalculatingTextLength } from "./functions/CalculatingTextLength";
 import { DEFAULT_VALUE } from "./Default-value";
+import Modal from "react-modal";
+import { prepare } from "./functions/Prepare";
 
 import styles from "./TextEditor.module.scss";
 import "./functions/Prepare.scss";
@@ -243,6 +246,9 @@ const RichTextExample = ({ value = DEFAULT_VALUE, setValue, textLength = () => {
   const renderLeaf = useCallback((props) => <Leaf {...props} />, []);
   const editor = useMemo(() => withHistory(withReact(createEditor())), []);
 
+  const [modalOpen, setModalOpen] = useState(false);
+  const [prev, setPrev] = useState(JSON.stringify(value));
+
   let dataValue;
 
   try {
@@ -250,6 +256,16 @@ const RichTextExample = ({ value = DEFAULT_VALUE, setValue, textLength = () => {
   } catch {
     dataValue = value;
   }
+
+  const openModal = () => {
+    document.body.style.overflow = "hidden";
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    document.body.style.overflow = "auto";
+    setModalOpen(false);
+  };
 
   return (
     <div className={classNames(styles["text_editor"])}>
@@ -261,6 +277,7 @@ const RichTextExample = ({ value = DEFAULT_VALUE, setValue, textLength = () => {
 
           if (isAstChange) {
             setValue(JSON.stringify(value));
+            setPrev(JSON.stringify(value));
             textLength(CalculatingTextLength(value));
           }
         }}
@@ -290,10 +307,26 @@ const RichTextExample = ({ value = DEFAULT_VALUE, setValue, textLength = () => {
             <BlockButton format="center" icon={<AlignCenterSvgComponent width="100%" height="100%" />} />
             <BlockButton format="right" icon={<AlignRightSvgComponent width="100%" height="100%" />} />
             <BlockButton format="justify" icon={<AlignJustifySvgComponent width="100%" height="100%" />} />
+            <Button onClick={openModal}>
+              <VisibleOnSvgComponent width="100%" height="100%" />
+            </Button>
           </div>
         </Toolbar>
         <Editable renderElement={renderElement} renderLeaf={renderLeaf} className={classNames(styles["editor"])} />
       </Slate>
+      <Modal
+        className={classNames(styles["modal_main_gallery"])}
+        overlayClassName={classNames(styles["overlay_main_modal"])}
+        isOpen={modalOpen}
+        ariaHideApp={false}
+      >
+        <button onClick={closeModal} className={classNames(styles["close"])}>
+          &#10008;
+        </button>
+        {!prev ? null : (
+          <div className={classNames(styles["prev"])} dangerouslySetInnerHTML={{ __html: prepare(prev) }} />
+        )}
+      </Modal>
     </div>
   );
 };
