@@ -203,30 +203,28 @@ const MainGallery = () => {
               <ImageSlider array={activeData} />
             </div>
             <div className={classNames(styles["container_description"])}>
-              <div className={classNames(styles["container_builders"])}>
-                <ul className={classNames(styles["ul_list"])}>
-                  <li className={classNames(styles["li_authors_title"])}>Авторы:</li>
+              <h4 className={classNames(styles["title"])}>{activeData.name}</h4>
+              <div
+                className={classNames(styles["description"])}
+                dangerouslySetInnerHTML={{ __html: prepare(activeData.description) }}
+              />
+              <div className={classNames(styles["block_tag"])}>
+                {TAG.map((tag, index) => (
+                  <Tag tag={tag.trim()} key={index} />
+                ))}
+              </div>
+              <div className={classNames(styles["builders"])}>
+                <label className={classNames(styles["authors_title"])}>Авторы:</label>
+                <div className={classNames(styles["user_list"])}>
                   {USERS.slice(0, 64).map((oneUser, index) => (
-                    <li className={classNames(styles["li_user"])} key={index}>
+                    <div className={classNames(styles["one_user"])} key={index}>
                       <img
-                        className={classNames(styles["img_user"])}
+                        className={classNames(styles["ico"])}
                         src={`https://minotar.net/helm/${oneUser}/100`}
                         alt={oneUser}
                       />
-                      <label className={classNames(styles["user_name"])}>{oneUser}</label>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className={classNames(styles["description"])}>
-                <h4 className={classNames(styles["title_name_image_list"])}>{activeData.name}</h4>
-                <p
-                  className={classNames(styles["text"])}
-                  dangerouslySetInnerHTML={{ __html: prepare(activeData.description) }}
-                />
-                <div className={classNames(styles["block_tag"])}>
-                  {TAG.map((tag, index) => (
-                    <Tag tag={tag.trim()} key={index} />
+                      <label className={classNames(styles["name"])}>{oneUser}</label>
+                    </div>
                   ))}
                 </div>
               </div>
