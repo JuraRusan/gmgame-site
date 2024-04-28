@@ -45,6 +45,24 @@ const MAX_TITLE = 255;
 const MIN_DESCRIPTION = 24;
 const MAX_DESCRIPTION = 65535;
 
+const BRANCH = ["empty", "Розовая", "Бирюзовая", "Лаймовая", "Оранжевая"];
+
+const VISIT = ["empty", "Запрещенно", "Разрешенно", "Не рекомендуется без владельца"];
+
+const WORLDS = [
+  "empty",
+  "Основный мир - овер",
+  "Основный мир - незер",
+  "Основный мир - енд",
+  "Фермерский мир - овер",
+  "Фермерский мир - незер",
+  "Фермерский мир - енд",
+  "Ресурсный мир",
+  "Лобби",
+  "Ивент",
+  "Общее",
+];
+
 const ADD = ({ list, arr, placeholder, name, onChange }) => {
   return (
     <div className={classNames(styles["add"])}>
@@ -68,10 +86,13 @@ const ADD = ({ list, arr, placeholder, name, onChange }) => {
   );
 };
 
-const TITLE = ({ length, min, max, title, count = true }) => {
+const TITLE = ({ length, min, max, title, count = true, required = true }) => {
   return (
     <div className={classNames(styles["row_block_text"])}>
-      <h4 className={classNames(styles["title"])}>{title}</h4>
+      <h4 className={classNames(styles["title"])}>
+        {title}
+        {required && <span className={classNames(styles["required"])}>*</span>}
+      </h4>
       {count !== true ? null : (
         <h4 className={classNames(styles["count"])}>
           <span
@@ -86,6 +107,24 @@ const TITLE = ({ length, min, max, title, count = true }) => {
         </h4>
       )}
     </div>
+  );
+};
+
+const SELECT = ({ defaultValue, map, onChangeState }) => {
+  return (
+    <select
+      className={classNames(styles["choice_select"])}
+      defaultValue={defaultValue}
+      onChange={(e) => {
+        onChangeState(e.target.value);
+      }}
+    >
+      {map.map((el, i) => (
+        <option key={i} value={el}>
+          {el === "empty" ? "" : el}
+        </option>
+      ))}
+    </select>
   );
 };
 
@@ -106,6 +145,8 @@ const EditAddPost = () => {
   const [descriptionLength, setDescriptionLength] = useState(0);
   const [errorMessagePostDescription, setErrorMessagePostDescription] = useState("");
 
+  const [errorMessagePostCoordinates, setErrorMessagePostCoordinates] = useState("");
+
   const [images, setImages] = useState([]);
 
   const [imagesPreloader, setImagesPreloader] = useState(false);
@@ -117,9 +158,15 @@ const EditAddPost = () => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState(DEFAULT_VALUE);
 
+  const [visit, setVisit] = useState("empty");
+  const [world, setWorld] = useState("empty");
+  const [branch, setBranch] = useState("empty");
+  const [coordinates, setCoordinates] = useState(0);
+
   const [modalImageActive, setModalImageActive] = useState(0);
 
   const [imageRedactor, setImageRedactor] = useState(false);
+  const [preloader, setPreloader] = useState(false);
 
   const [init, setInit] = useState(false);
 
@@ -200,7 +247,17 @@ const EditAddPost = () => {
     }
   };
 
+  const handleCoordinates = (e) => {
+    const number = e.target.value;
+    if (!/^\d+$/.test(number)) {
+      setErrorMessagePostCoordinates("Координаты могут содержать только цифры");
+    } else {
+      setErrorMessagePostCoordinates("");
+    }
+  };
+
   const handleOpenModalImageRedactor = (index) => {
+    setPreloader(true);
     setImageRedactor(true);
     setModalImageActive(index);
     document.body.style.overflow = "hidden";
@@ -215,6 +272,11 @@ const EditAddPost = () => {
   const handleSave = (url) => {
     if (images.length < 0) {
       alert.error("Пожалуйста, выберите хотя бы одно изображение!");
+      return;
+    }
+
+    if (imagesPreloader) {
+      alert.error("Дождитесь загрузки изображений");
       return;
     }
 
@@ -238,15 +300,26 @@ const EditAddPost = () => {
       return;
     }
 
-    if (imagesPreloader) {
-      alert.error("Дождитесь загрузки изображений");
+    if (errorMessagePostCoordinates !== "") {
+      alert.error(errorMessagePostCoordinates);
       return;
+    }
+
+    if (branch !== "empty") {
+      if (!coordinates) {
+        alert.error("Укажите координаты");
+        return;
+      }
     }
 
     const payloadAdd = {
       name: title,
       description: description,
       links: images,
+      visit: visit === "empty" ? "" : visit,
+      world: world === "empty" ? "" : world,
+      branch: branch === "empty" ? "" : branch,
+      coordinates: coordinates,
     };
 
     const payloadEdit = {
@@ -254,6 +327,10 @@ const EditAddPost = () => {
       name: title,
       description: description,
       links: images,
+      visit: visit === "empty" ? "" : visit,
+      world: world === "empty" ? "" : world,
+      branch: branch === "empty" ? "" : branch,
+      coordinates: coordinates,
     };
 
     sendRequest(url, "POST", id === "new" ? payloadAdd : payloadEdit).then((response) => {
@@ -362,6 +439,26 @@ const EditAddPost = () => {
   }, [images]);
 
   useMemo(() => {
+    if (
+      world === "empty" ||
+      world === "Основный мир - енд" ||
+      world === "Фермерский мир - енд" ||
+      world === "Ресурсный мир" ||
+      world === "Лобби" ||
+      world === "Ивент" ||
+      world === "Общее"
+    ) {
+      setBranch("empty");
+    }
+  }, [world]);
+
+  useMemo(() => {
+    if (branch === "empty") {
+      setCoordinates(0);
+    }
+  }, [branch]);
+
+  useMemo(() => {
     if (descriptionLength !== 0) {
       if (descriptionLength < MIN_DESCRIPTION) {
         setErrorMessagePostDescription("Описание слишком короткое");
@@ -410,6 +507,10 @@ const EditAddPost = () => {
       setNameLength(resParams.data.name.length);
       setDescription(JSON.stringify(jsonData));
       setDescriptionLength(jsonDataLength);
+      setVisit(resParams.data.visit === "" || resParams.data.visit === null ? "empty" : resParams.data.visit);
+      setWorld(resParams.data.world === "" || resParams.data.world === null ? "empty" : resParams.data.world);
+      setBranch(resParams.data.branch === "" || resParams.data.branch === null ? "empty" : resParams.data.branch);
+      setCoordinates(resParams.data.coordinates);
     }
   }
 
@@ -565,6 +666,33 @@ const EditAddPost = () => {
                 setTitle(e.target.value);
               }}
             />
+            <TITLE title="Посещение:" count={false} required={false} />
+            <SELECT defaultValue={visit} map={VISIT} onChangeState={setVisit} />
+            <TITLE title="Мир:" count={false} required={false} />
+            <SELECT defaultValue={world} map={WORLDS} onChangeState={setWorld} />
+            {world === "Основный мир - овер" ||
+            world === "Основный мир - незер" ||
+            world === "Фермерский мир - овер" ||
+            world === "Фермерский мир - незер" ? (
+              <>
+                <TITLE title="Ветка:" count={false} required={false} />
+                <SELECT defaultValue={branch} map={BRANCH} onChangeState={setBranch} />
+              </>
+            ) : null}
+            {branch === "empty" ? null : (
+              <>
+                <TITLE title="Координаты:" count={false} />
+                <input
+                  className={classNames(styles["choice_text"])}
+                  type="text"
+                  defaultValue={coordinates}
+                  onChange={(e) => {
+                    handleCoordinates(e);
+                    setCoordinates(e.target.value);
+                  }}
+                />
+              </>
+            )}
             <TITLE title="Описание:" min={MIN_DESCRIPTION} max={MAX_DESCRIPTION} length={descriptionLength} />
             <TextEditor value={description} setValue={setDescription} textLength={setDescriptionLength} />
           </div>
@@ -602,12 +730,22 @@ const EditAddPost = () => {
         ariaHideApp={false}
       >
         <div className={classNames(styles["box_image_redactor"])}>
-          <ImageEditor
-            image={images[modalImageActive]}
-            onSave={handleImageChangeUpdate}
-            onDelete={deleteImage}
-            onClose={handleCloseModalImageRedactor}
+          <img
+            className={classNames(styles["pre"])}
+            src={images[modalImageActive]}
+            alt="none"
+            onLoad={() => setPreloader(false)}
           />
+          {preloader === true ? (
+            <Preload />
+          ) : (
+            <ImageEditor
+              image={images[modalImageActive]}
+              onSave={handleImageChangeUpdate}
+              onDelete={deleteImage}
+              onClose={handleCloseModalImageRedactor}
+            />
+          )}
         </div>
       </ReactModal>
     </div>

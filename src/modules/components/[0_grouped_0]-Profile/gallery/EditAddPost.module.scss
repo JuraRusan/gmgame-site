@@ -178,6 +178,13 @@
           width: auto;
           font-family: $fontCustom2;
           padding-left: 2px;
+
+          .required {
+            top: -4px;
+            color: $site-color-10;
+            padding-left: 1px;
+            position: relative;
+          }
         }
 
         .count {
@@ -308,7 +315,8 @@
         padding: 8px;
         margin-top: 8px;
 
-        .choice_text {
+        .choice_text,
+        .choice_select {
           width: 100%;
           min-width: 100%;
           max-width: 100%;
@@ -363,6 +371,12 @@ body {
       width: auto;
       height: auto;
       margin: 0 auto;
+    }
+
+    .pre {
+      opacity: 0;
+      width: 0;
+      height: 0;
     }
   }
 
