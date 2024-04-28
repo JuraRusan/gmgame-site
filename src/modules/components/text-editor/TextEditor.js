@@ -247,7 +247,7 @@ const RichTextExample = ({ value = DEFAULT_VALUE, setValue, textLength = () => {
   const editor = useMemo(() => withHistory(withReact(createEditor())), []);
 
   const [modalOpen, setModalOpen] = useState(false);
-  const [prev, setPrev] = useState(JSON.stringify(value));
+  const [prev, setPrev] = useState(value);
 
   let dataValue;
 
