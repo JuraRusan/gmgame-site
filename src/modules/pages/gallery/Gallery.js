@@ -1,6 +1,5 @@
 import classNames from "classnames";
-import React, { useState } from "react";
-// import ImageGallery from "react-image-gallery";
+import React, { useEffect, useState } from "react";
 import Modal from "react-modal";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useAxios } from "../../../DataProvider";
@@ -13,7 +12,6 @@ import { prepare } from "../../components/text-editor/functions/Prepare";
 
 import styles from "./Gallery.module.scss";
 import "react-lazy-load-image-component/src/effects/blur.css";
-// import "../../custon-modules/Image-gallery.scss";
 
 const TAG = [
   "base",
@@ -92,15 +90,18 @@ const USERS = [
 const MainGallery = () => {
   const isLoading = useLoading();
 
-  const [modalIsOpen, setIsOpen] = useState(false);
-  const [modalActiveData, setActiveData] = useState(null);
+  const [isOpen, setIsOpen] = useState(false);
+  const [id, setId] = useState(null);
+  const [activeData, setActiveData] = useState(null);
 
   const [imageIndexShow, setImageIndexShow] = useState(0);
   const [preloader, setPreloader] = useState(false);
 
-  const openModal = (active) => {
+  const openModal = (param) => {
     document.body.style.overflow = "hidden";
-    let array = active.galleryImages.map((item, i) => {
+
+    const local = resParams.data.filter((item) => item.id === Number(param));
+    let array = local[0].galleryImages.map((item, i) => {
       return {
         id: i,
         original: item.image,
@@ -109,18 +110,25 @@ const MainGallery = () => {
       };
     });
 
+    if (!activeData) {
+      setActiveData({
+        name: local[0].name,
+        description: local[0].description,
+        galleryImages: array,
+      });
+    }
+
     setIsOpen(true);
-    setActiveData({
-      name: active.name,
-      description: active.description,
-      galleryImages: array,
-    });
   };
 
   const closeModal = () => {
+    setId(null);
     setIsOpen(false);
     setActiveData(null);
     document.body.style.overflow = "auto";
+
+    const newUrl = `${window.location.origin}/gallery`;
+    window.history.pushState({ path: newUrl }, "", newUrl);
   };
 
   const decrementImageIndexShow = () => {
@@ -131,13 +139,29 @@ const MainGallery = () => {
   };
 
   const incrementImageIndexShow = () => {
-    if (imageIndexShow < modalActiveData.galleryImages.length - 1) {
+    if (imageIndexShow < activeData.galleryImages.length - 1) {
       setImageIndexShow(imageIndexShow + 1);
       setPreloader(true);
     }
   };
 
   const resParams = useAxios(`/api/get_galleries`, "GET", {});
+
+  useEffect(() => {
+    const url = new URLSearchParams(window.location.search);
+    setId(url.get("id"));
+  }, []);
+
+  useEffect(() => {
+    if (resParams.loaded === true) {
+      if (id !== null) {
+        openModal(id);
+      } else {
+        setIsOpen(false);
+      }
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [id, resParams]);
 
   if (resParams.loading || isLoading) {
     return <Preload full={false} />;
@@ -156,7 +180,9 @@ const MainGallery = () => {
                 effect="blur"
                 src={items.galleryImages[0].image}
                 onClick={() => {
-                  openModal(items);
+                  const newUrl = `${window.location.origin}/gallery?id=${items.id}`;
+                  window.history.pushState({ path: newUrl }, "", newUrl);
+                  setId(items.id);
                 }}
               />
             </div>
@@ -181,22 +207,20 @@ const MainGallery = () => {
       <Modal
         className={classNames(styles["modal_main_gallery"])}
         overlayClassName={classNames(styles["overlay_main_modal"])}
-        isOpen={modalIsOpen}
-        onRequestClose={closeModal}
+        isOpen={isOpen}
         ariaHideApp={false}
       >
         <button onClick={closeModal} className={classNames(styles["close"])}>
           &#10008;
         </button>
-        {!modalActiveData ? null : (
+        {!activeData ? null : (
           <>
             <div className={classNames(styles["gallery_background"])}>
               <div className={classNames(styles["wrapper"])}>
-                {/*<ImageGallery items={modalActiveData.galleryImages} lazyLoad="true" showIndex="true" />*/}
                 <img
                   width="100%"
                   height="100%"
-                  src={modalActiveData.galleryImages[imageIndexShow].original}
+                  src={activeData.galleryImages[imageIndexShow].original}
                   alt="none"
                   onLoad={() => setPreloader(false)}
                 />
@@ -213,7 +237,7 @@ const MainGallery = () => {
                   {"<"}
                 </button>
                 <button
-                  disabled={imageIndexShow === modalActiveData.galleryImages.length - 1}
+                  disabled={imageIndexShow === activeData.galleryImages.length - 1}
                   className={classNames(styles["btn_swipe"], styles["right"])}
                   onClick={incrementImageIndexShow}
                 >
@@ -221,7 +245,7 @@ const MainGallery = () => {
                 </button>
               </div>
               <div className={classNames(styles["navigator"])}>
-                {modalActiveData.galleryImages.map((el, i) => (
+                {activeData.galleryImages.map((el, i) => (
                   <img
                     className={classNames(styles["prev"], { [styles["active"]]: el.id === imageIndexShow })}
                     key={i}
@@ -254,10 +278,10 @@ const MainGallery = () => {
                 </ul>
               </div>
               <div className={classNames(styles["description"])}>
-                <h4 className={classNames(styles["title_name_image_list"])}>{modalActiveData.name}</h4>
+                <h4 className={classNames(styles["title_name_image_list"])}>{activeData.name}</h4>
                 <p
                   className={classNames(styles["text"])}
-                  dangerouslySetInnerHTML={{ __html: prepare(modalActiveData.description) }}
+                  dangerouslySetInnerHTML={{ __html: prepare(activeData.description) }}
                 />
                 <div className={classNames(styles["block_tag"])}>
                   {TAG.map((tag, index) => (
