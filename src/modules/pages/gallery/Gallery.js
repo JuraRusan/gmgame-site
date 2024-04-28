@@ -9,6 +9,7 @@ import Preload from "../../components/preloader/Preload";
 // import Particles from "../../components/particles/Particles";
 import Tag from "../../components/[0_grouped_0]-Profile/gallery/tag/Tag";
 import { prepare } from "../../components/text-editor/functions/Prepare";
+import ImageSlider from "../../components/image-slider/Image-slider";
 
 import styles from "./Gallery.module.scss";
 import "react-lazy-load-image-component/src/effects/blur.css";
@@ -94,9 +95,6 @@ const MainGallery = () => {
   const [id, setId] = useState(null);
   const [activeData, setActiveData] = useState(null);
 
-  const [imageIndexShow, setImageIndexShow] = useState(0);
-  const [preloader, setPreloader] = useState(false);
-
   const openModal = (param) => {
     document.body.style.overflow = "hidden";
 
@@ -129,20 +127,6 @@ const MainGallery = () => {
 
     const newUrl = `${window.location.origin}/gallery`;
     window.history.pushState({ path: newUrl }, "", newUrl);
-  };
-
-  const decrementImageIndexShow = () => {
-    if (imageIndexShow > 0) {
-      setImageIndexShow(imageIndexShow - 1);
-      setPreloader(true);
-    }
-  };
-
-  const incrementImageIndexShow = () => {
-    if (imageIndexShow < activeData.galleryImages.length - 1) {
-      setImageIndexShow(imageIndexShow + 1);
-      setPreloader(true);
-    }
   };
 
   const resParams = useAxios(`/api/get_galleries`, "GET", {});
@@ -216,50 +200,7 @@ const MainGallery = () => {
         {!activeData ? null : (
           <>
             <div className={classNames(styles["gallery_background"])}>
-              <div className={classNames(styles["wrapper"])}>
-                <img
-                  width="100%"
-                  height="100%"
-                  src={activeData.galleryImages[imageIndexShow].original}
-                  alt="none"
-                  onLoad={() => setPreloader(false)}
-                />
-                {preloader && (
-                  <div className={classNames(styles["preload_center"])}>
-                    <Preload />
-                  </div>
-                )}
-                <button
-                  disabled={imageIndexShow === 0}
-                  className={classNames(styles["btn_swipe"], styles["left"])}
-                  onClick={decrementImageIndexShow}
-                >
-                  {"<"}
-                </button>
-                <button
-                  disabled={imageIndexShow === activeData.galleryImages.length - 1}
-                  className={classNames(styles["btn_swipe"], styles["right"])}
-                  onClick={incrementImageIndexShow}
-                >
-                  {">"}
-                </button>
-              </div>
-              <div className={classNames(styles["navigator"])}>
-                {activeData.galleryImages.map((el, i) => (
-                  <img
-                    className={classNames(styles["prev"], { [styles["active"]]: el.id === imageIndexShow })}
-                    key={i}
-                    width="100%"
-                    height="100%"
-                    src={el.thumbnail}
-                    alt="none"
-                    onClick={() => {
-                      setPreloader(true);
-                      setImageIndexShow(el.id);
-                    }}
-                  />
-                ))}
-              </div>
+              <ImageSlider array={activeData} />
             </div>
             <div className={classNames(styles["container_description"])}>
               <div className={classNames(styles["container_builders"])}>
