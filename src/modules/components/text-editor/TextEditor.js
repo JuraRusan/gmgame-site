@@ -293,6 +293,7 @@ const RichTextExample = ({ value = DEFAULT_VALUE, setValue, textLength = () => {
     return () => {
       document.removeEventListener("click", handleOutsideClick);
     };
+    // eslint-disable-next-line
   }, []);
 
   useEffect(() => {
