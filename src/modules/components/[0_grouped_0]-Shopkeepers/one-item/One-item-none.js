@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import React from "react";
 
-import styles from "./One-item.module.scss"
+import styles from "./One-item.module.scss";
 
 const OneItemNone = () => {
   return (

@@ -1,4 +1,4 @@
-import React, { forwardRef, useRef, useLayoutEffect } from "react";
+import React, { forwardRef, useLayoutEffect, useRef } from "react";
 import classNames from "classnames";
 import { mergeRefs } from "react-advanced-cropper";
 

@@ -1,17 +1,17 @@
 import classNames from "classnames";
 import React from "react";
-import {regulationsAllDB} from "../../../pages/regulations/regulationsAllDB";
+import { regulationsAllDB } from "../../../pages/regulations/regulationsAllDB";
 import ArrowSvgComponent from "../../../../bases/icons/arrowSvg/ArrowSvg";
 
-import styles from "../../../pages/regulations/Regulations.module.scss"
+import styles from "../../../pages/regulations/Regulations.module.scss";
 
 const AllMainRules = () => {
   return (
     <div className={classNames(styles["regulations-list"])}>
-
       <p className={classNames(styles["one-content-p"])}>
         <span>1.</span>
-        <label>{regulationsAllDB.twoOneRegulation}
+        <label>
+          {regulationsAllDB.twoOneRegulation}
           <ul className={classNames(styles["content-ul"])}>
             <li className={classNames(styles["ul-content-li"])}>{regulationsAllDB.twoOneOneRegulation}</li>
             <li className={classNames(styles["ul-content-li"])}>{regulationsAllDB.twoOneTwoRegulation}</li>
@@ -27,7 +27,7 @@ const AllMainRules = () => {
       <div className={classNames(styles["svg-punishment-one"])}>
         <div className={classNames(styles["svg-rotate-div"])}>
           <span className={classNames(styles["rotate"])}>
-            <ArrowSvgComponent width="100%" height="100%" color="#FF0000"/>
+            <ArrowSvgComponent width="100%" height="100%" color="#FF0000" />
           </span>
           <span className={classNames(styles["span-war"])}>{regulationsAllDB.punishment}</span>
         </div>
@@ -41,13 +41,12 @@ const AllMainRules = () => {
       <div className={classNames(styles["svg-punishment-one"])}>
         <div className={classNames(styles["svg-rotate-div"])}>
           <span className={classNames(styles["rotate"])}>
-            <ArrowSvgComponent width="100%" height="100%" color="#FF0000"/>
+            <ArrowSvgComponent width="100%" height="100%" color="#FF0000" />
           </span>
           <span className={classNames(styles["span-war"])}>{regulationsAllDB.punishment}</span>
         </div>
         <label className={classNames(styles["punishment-one"])}>{regulationsAllDB.twoTwoPunishment}</label>
       </div>
-
 
       <p className={classNames(styles["one-content-p"])}>
         <span>3.</span>
@@ -56,13 +55,12 @@ const AllMainRules = () => {
       <div className={classNames(styles["svg-punishment-one"])}>
         <div className={classNames(styles["svg-rotate-div"])}>
           <span className={classNames(styles["rotate"])}>
-            <ArrowSvgComponent width="100%" height="100%" color="#FF0000"/>
+            <ArrowSvgComponent width="100%" height="100%" color="#FF0000" />
           </span>
           <span className={classNames(styles["span-war"])}>{regulationsAllDB.punishment}</span>
         </div>
         <label className={classNames(styles["punishment-one"])}>{regulationsAllDB.twoThreePunishment}</label>
       </div>
-
 
       <p className={classNames(styles["one-content-p"])}>
         <span>4.</span>
@@ -71,13 +69,12 @@ const AllMainRules = () => {
       <div className={classNames(styles["svg-punishment-one"])}>
         <div className={classNames(styles["svg-rotate-div"])}>
           <span className={classNames(styles["rotate"])}>
-            <ArrowSvgComponent width="100%" height="100%" color="#FF0000"/>
+            <ArrowSvgComponent width="100%" height="100%" color="#FF0000" />
           </span>
           <span className={classNames(styles["span-war"])}>{regulationsAllDB.punishment}</span>
         </div>
         <label className={classNames(styles["punishment-one"])}>{regulationsAllDB.twoFourPunishment}</label>
       </div>
-
 
       <p className={classNames(styles["one-content-p"])}>
         <span>5.</span>
@@ -86,13 +83,12 @@ const AllMainRules = () => {
       <div className={classNames(styles["svg-punishment-one"])}>
         <div className={classNames(styles["svg-rotate-div"])}>
           <span className={classNames(styles["rotate"])}>
-            <ArrowSvgComponent width="100%" height="100%" color="#FF0000"/>
+            <ArrowSvgComponent width="100%" height="100%" color="#FF0000" />
           </span>
           <span className={classNames(styles["span-war"])}>{regulationsAllDB.punishment}</span>
         </div>
         <label className={classNames(styles["punishment-one"])}>{regulationsAllDB.twoFivePunishment}</label>
       </div>
-
 
       <p className={classNames(styles["one-content-p"])}>
         <span>6.</span>
@@ -101,13 +97,12 @@ const AllMainRules = () => {
       <div className={classNames(styles["svg-punishment-one"])}>
         <div className={classNames(styles["svg-rotate-div"])}>
           <span className={classNames(styles["rotate"])}>
-            <ArrowSvgComponent width="100%" height="100%" color="#FF0000"/>
+            <ArrowSvgComponent width="100%" height="100%" color="#FF0000" />
           </span>
           <span className={classNames(styles["span-war"])}>{regulationsAllDB.punishment}</span>
         </div>
         <label className={classNames(styles["punishment-one"])}>{regulationsAllDB.twoSixPunishment}</label>
       </div>
-
 
       <p className={classNames(styles["one-content-p"])}>
         <span>7.</span>
@@ -116,13 +111,12 @@ const AllMainRules = () => {
       <div className={classNames(styles["svg-punishment-one"])}>
         <div className={classNames(styles["svg-rotate-div"])}>
           <span className={classNames(styles["rotate"])}>
-            <ArrowSvgComponent width="100%" height="100%" color="#FF0000"/>
+            <ArrowSvgComponent width="100%" height="100%" color="#FF0000" />
           </span>
           <span className={classNames(styles["span-war"])}>{regulationsAllDB.punishment}</span>
         </div>
         <label className={classNames(styles["punishment-one"])}>{regulationsAllDB.twoSevenPunishment}</label>
       </div>
-
 
       <p className={classNames(styles["one-content-p"])}>
         <span>8.</span>
@@ -131,13 +125,12 @@ const AllMainRules = () => {
       <div className={classNames(styles["svg-punishment-one"])}>
         <div className={classNames(styles["svg-rotate-div"])}>
           <span className={classNames(styles["rotate"])}>
-            <ArrowSvgComponent width="100%" height="100%" color="#FF0000"/>
+            <ArrowSvgComponent width="100%" height="100%" color="#FF0000" />
           </span>
           <span className={classNames(styles["span-war"])}>{regulationsAllDB.punishment}</span>
         </div>
         <label className={classNames(styles["punishment-one"])}>{regulationsAllDB.twoEightPunishment}</label>
       </div>
-
 
       <p className={classNames(styles["one-content-p"])}>
         <span>9.</span>
@@ -146,13 +139,12 @@ const AllMainRules = () => {
       <div className={classNames(styles["svg-punishment-one"])}>
         <div className={classNames(styles["svg-rotate-div"])}>
           <span className={classNames(styles["rotate"])}>
-            <ArrowSvgComponent width="100%" height="100%" color="#FF0000"/>
+            <ArrowSvgComponent width="100%" height="100%" color="#FF0000" />
           </span>
           <span className={classNames(styles["span-war"])}>{regulationsAllDB.punishment}</span>
         </div>
         <label className={classNames(styles["punishment-one"])}>{regulationsAllDB.twoNinePunishment}</label>
       </div>
-
 
       <p className={classNames(styles["one-content-p"])}>
         <span>10.</span>
@@ -161,13 +153,12 @@ const AllMainRules = () => {
       <div className={classNames(styles["svg-punishment-one"])}>
         <div className={classNames(styles["svg-rotate-div"])}>
           <span className={classNames(styles["rotate"])}>
-            <ArrowSvgComponent width="100%" height="100%" color="#FF0000"/>
+            <ArrowSvgComponent width="100%" height="100%" color="#FF0000" />
           </span>
           <span className={classNames(styles["span-war"])}>{regulationsAllDB.punishment}</span>
         </div>
         <label className={classNames(styles["punishment-one"])}>{regulationsAllDB.twoTenPunishment}</label>
       </div>
-
 
       <p className={classNames(styles["one-content-p"])}>
         <span>11.</span>
@@ -176,13 +167,12 @@ const AllMainRules = () => {
       <div className={classNames(styles["svg-punishment-one"])}>
         <div className={classNames(styles["svg-rotate-div"])}>
           <span className={classNames(styles["rotate"])}>
-            <ArrowSvgComponent width="100%" height="100%" color="#FF0000"/>
+            <ArrowSvgComponent width="100%" height="100%" color="#FF0000" />
           </span>
           <span className={classNames(styles["span-war"])}>{regulationsAllDB.punishment}</span>
         </div>
         <label className={classNames(styles["punishment-one"])}>{regulationsAllDB.twoElevenPunishment}</label>
       </div>
-
 
       <p className={classNames(styles["one-content-p"])}>
         <span>12.</span>
@@ -191,13 +181,12 @@ const AllMainRules = () => {
       <div className={classNames(styles["svg-punishment-one"])}>
         <div className={classNames(styles["svg-rotate-div"])}>
           <span className={classNames(styles["rotate"])}>
-            <ArrowSvgComponent width="100%" height="100%" color="#FF0000"/>
+            <ArrowSvgComponent width="100%" height="100%" color="#FF0000" />
           </span>
           <span className={classNames(styles["span-war"])}>{regulationsAllDB.punishment}</span>
         </div>
         <label className={classNames(styles["punishment-one"])}>{regulationsAllDB.twoTwelvePunishment}</label>
       </div>
-
     </div>
   );
 };

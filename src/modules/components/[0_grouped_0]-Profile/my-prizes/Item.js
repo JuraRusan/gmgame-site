@@ -1,13 +1,17 @@
 import classNames from "classnames";
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import Button from "../../button/Button";
 
 import styles from "./My-prizes.module.scss";
 
 const Item = (props) => {
-
   const [indexItem, setIndexItem] = useState(0);
-  const picturesItem = ["../site_assets/minecraft-item/netherite_pickaxe.webp", "../site_assets/minecraft-item/netherite_axe.webp", "../site_assets/minecraft-item/netherite_hoe.webp", "../site_assets/minecraft-item/netherite_shovel.webp"];
+  const picturesItem = [
+    "../site_assets/minecraft-item/netherite_pickaxe.webp",
+    "../site_assets/minecraft-item/netherite_axe.webp",
+    "../site_assets/minecraft-item/netherite_hoe.webp",
+    "../site_assets/minecraft-item/netherite_shovel.webp",
+  ];
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -34,11 +38,7 @@ const Item = (props) => {
       <div className={classNames(styles["prizesDescription"])}>
         <h5 className={classNames(styles["textInformationH5"])}>Получение инструмента со случайными зачарованиями</h5>
         <div className={classNames(styles["btn_wrapper"])}>
-          <Button
-            label="Забрать"
-            view="submit"
-            onClick={(event) => props.action(props.id, event)}
-          />
+          <Button label="Забрать" view="submit" onClick={(event) => props.action(props.id, event)} />
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { Editable, withReact, useSlate, Slate } from "slate-react";
-import { Editor, Transforms, createEditor, Element as SlateElement } from "slate";
+import { Editable, Slate, useSlate, withReact } from "slate-react";
+import { createEditor, Editor, Element as SlateElement, Transforms } from "slate";
 import { withHistory } from "slate-history";
 import classNames from "classnames";
 import BoldSvgComponent from "../../../bases/icons/formatBoldSvg/BoldSvg";

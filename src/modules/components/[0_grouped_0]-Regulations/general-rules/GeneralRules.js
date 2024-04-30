@@ -1,8 +1,8 @@
 import classNames from "classnames";
 import React from "react";
-import {regulationsAllDB} from "../../../pages/regulations/regulationsAllDB";
+import { regulationsAllDB } from "../../../pages/regulations/regulationsAllDB";
 
-import styles from "../../../pages/regulations/Regulations.module.scss"
+import styles from "../../../pages/regulations/Regulations.module.scss";
 
 const GeneralRules = () => {
   return (
@@ -21,7 +21,8 @@ const GeneralRules = () => {
       </p>
       <p className={classNames(styles["one-content-p"])}>
         <span>4.</span>
-        <label>{regulationsAllDB.fourRegulation}
+        <label>
+          {regulationsAllDB.fourRegulation}
           <ul className={classNames(styles["content-ul"])}>
             <li className={classNames(styles["ul-content-li"])}>{regulationsAllDB.fourOneRegulation}</li>
             <li className={classNames(styles["ul-content-li"])}>{regulationsAllDB.fourTwoRegulation}</li>

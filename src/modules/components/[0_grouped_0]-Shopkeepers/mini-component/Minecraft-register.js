@@ -3,9 +3,7 @@ import React from "react";
 
 import styles from "./Minecraft-register.module.scss";
 
-
-const MinecraftRegister = ({item}) => {
-
+const MinecraftRegister = ({ item }) => {
   const goatHorn = item.instrument === undefined ? "" : `. [${item.instrument.instrument_type}]`;
   const idPotion = item.potion === undefined ? "" : `. [${item.potion}]`;
   const armorType = item.trim === undefined ? "" : `. [${item.trim.pattern}]`;
@@ -26,9 +24,7 @@ const MinecraftRegister = ({item}) => {
 
   const truncatedMinecraftId = truncateString(minecraftId, 50);
 
-  return (
-    <p className={classNames(styles["minecraft_id"])}>{truncatedMinecraftId}</p>
-  );
+  return <p className={classNames(styles["minecraft_id"])}>{truncatedMinecraftId}</p>;
 };
 
 export default MinecraftRegister;

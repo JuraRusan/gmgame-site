@@ -6,16 +6,17 @@ import styles from "./CabNotAvailable.module.scss";
 import Preload from "../../preloader/Preload";
 
 const CabNotAvailable = () => {
-
   const isLoading = useLoading();
 
   if (isLoading) {
-    return <Preload full={false}/>
+    return <Preload full={false} />;
   }
 
   return (
     <div className={classNames(styles["wrapper_not_available"])}>
-      <h4 className={classNames(styles["title"])}>Страница находится в процессе разработки, ожидайте в ближайшем будущем.</h4>
+      <h4 className={classNames(styles["title"])}>
+        Страница находится в процессе разработки, ожидайте в ближайшем будущем.
+      </h4>
     </div>
   );
 };

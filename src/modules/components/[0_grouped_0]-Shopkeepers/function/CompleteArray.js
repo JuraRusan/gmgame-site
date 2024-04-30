@@ -5,7 +5,7 @@ export function completeArray(arr) {
     if (item) {
       filledArray.push(item);
     } else {
-      filledArray.push({slot: String(i), type: null, type_ru: null, amount: null});
+      filledArray.push({ slot: String(i), type: null, type_ru: null, amount: null });
     }
   }
   return filledArray;

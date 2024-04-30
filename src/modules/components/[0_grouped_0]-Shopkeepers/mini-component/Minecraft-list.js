@@ -1,10 +1,9 @@
 import classNames from "classnames";
 import React from "react";
 
-import styles from "./Minecraft-list.module.scss"
+import styles from "./Minecraft-list.module.scss";
 
-const MinecraftList = ({item}) => {
-
+const MinecraftList = ({ item }) => {
   function renderEnchantItem(el) {
     const isSpecialEnchant = el.enchant_id_ru === "Проклятье утраты" || el.enchant_id_ru === "Проклятие несъёмности";
     const mainClass = isSpecialEnchant ? styles["red"] : styles["main"];

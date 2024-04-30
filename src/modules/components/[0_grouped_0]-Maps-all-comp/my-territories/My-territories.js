@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import { useState } from "react";
-import { useAxios, sendRequest } from "../../../../DataProvider";
+import { sendRequest, useAxios } from "../../../../DataProvider";
 import Preload from "../../preloader/Preload.js";
 import { useAlert } from "react-alert";
 import MapViewBlock from "../mini-marker-components/map-view-block/MapViewBlock";

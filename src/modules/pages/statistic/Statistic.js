@@ -1,28 +1,23 @@
 import classNames from "classnames";
-import React, {useMemo, useState} from "react";
-import {useAxios} from '../../../DataProvider';
+import React, { useMemo, useState } from "react";
+import { useAxios } from "../../../DataProvider";
 import Preload from "../../components/preloader/Preload";
-import {AgGridReact} from 'ag-grid-react';
+import { AgGridReact } from "ag-grid-react";
 import useLoading from "../../loading/useLoading";
 
-import 'ag-grid-community/styles/ag-grid.css';
-import 'ag-grid-community/styles/ag-theme-alpine.css';
+import "ag-grid-community/styles/ag-grid.css";
+import "ag-grid-community/styles/ag-theme-alpine.css";
 
 import styles from "./Statistic.module.scss";
 import "../../custon-modules/ag-grid.scss";
 
 const Statistic = () => {
-
   const isLoading = useLoading();
 
-  const containerStyle = useMemo(() => ({width: '100%', height: '100%'}), []);
-  const gridStyle = useMemo(() => ({height: '100%', width: '100%'}), []);
+  const containerStyle = useMemo(() => ({ width: "100%", height: "100%" }), []);
+  const gridStyle = useMemo(() => ({ height: "100%", width: "100%" }), []);
 
-  const resParams = useAxios(
-    "/api/get_statistics",
-    'GET',
-    {}
-  );
+  const resParams = useAxios("/api/get_statistics", "GET", {});
 
   const numberSort = (num1, num2) => {
     return num1 - num2;
@@ -30,56 +25,56 @@ const Statistic = () => {
 
   const [columns] = useState([
     {
-      headerName: 'Ник',
-      field: 'name',
+      headerName: "Ник",
+      field: "name",
       filter: true,
-      sortable: true
-    },
-    {
-      headerName: 'Активное время игры',
-      field: 'active_playtime',
       sortable: true,
-      valueFormatter: params => timeFormat(params),
-      comparator: numberSort
     },
     {
-      headerName: 'АФК',
-      field: 'afk',
+      headerName: "Активное время игры",
+      field: "active_playtime",
       sortable: true,
-      valueFormatter: params => timeFormat(params),
-      comparator: numberSort
+      valueFormatter: (params) => timeFormat(params),
+      comparator: numberSort,
     },
     {
-      headerName: 'Смерти',
-      field: 'deaths',
+      headerName: "АФК",
+      field: "afk",
       sortable: true,
-      comparator: numberSort
+      valueFormatter: (params) => timeFormat(params),
+      comparator: numberSort,
     },
     {
-      headerName: 'Убито мобов',
-      field: 'mobs',
+      headerName: "Смерти",
+      field: "deaths",
       sortable: true,
       comparator: numberSort,
-      valueFormatter: ({value}) => Intl.NumberFormat('en-US').format(value)
     },
     {
-      headerName: 'Сломано блоков',
-      field: 'broken',
+      headerName: "Убито мобов",
+      field: "mobs",
       sortable: true,
       comparator: numberSort,
-      valueFormatter: ({value}) => Intl.NumberFormat('en-US').format(!value ? 0 : value)
+      valueFormatter: ({ value }) => Intl.NumberFormat("en-US").format(value),
     },
     {
-      headerName: 'Установлено блоков',
-      field: 'supplied',
+      headerName: "Сломано блоков",
+      field: "broken",
       sortable: true,
       comparator: numberSort,
-      valueFormatter: ({value}) => Intl.NumberFormat('en-US').format(!value ? 0 : value)
+      valueFormatter: ({ value }) => Intl.NumberFormat("en-US").format(!value ? 0 : value),
+    },
+    {
+      headerName: "Установлено блоков",
+      field: "supplied",
+      sortable: true,
+      comparator: numberSort,
+      valueFormatter: ({ value }) => Intl.NumberFormat("en-US").format(!value ? 0 : value),
     },
   ]);
 
   if (resParams.loading || isLoading) {
-    return <Preload full={false}/>;
+    return <Preload full={false} />;
   }
 
   function timeFormat(params) {
@@ -90,7 +85,7 @@ const Statistic = () => {
     let d = Math.floor(value / cd);
     let h = Math.floor((value - d * cd) / ch);
     let m = Math.round((value - d * cd - h * ch) / 60000);
-    const pad = (n) => n < 10 ? '0' + n : n;
+    const pad = (n) => (n < 10 ? "0" + n : n);
 
     if (m === 60) {
       h++;
@@ -118,104 +113,104 @@ const Statistic = () => {
 
   const localText = {
     // for filter panel
-    page: 'Страница',
-    more: 'ещё',
-    to: 'к',
-    of: 'из',
-    next: 'Следующая',
-    last: 'Последняя',
-    first: 'Первая',
-    previous: 'Предыдущая',
-    loadingOoo: 'Загрузка...',
+    page: "Страница",
+    more: "ещё",
+    to: "к",
+    of: "из",
+    next: "Следующая",
+    last: "Последняя",
+    first: "Первая",
+    previous: "Предыдущая",
+    loadingOoo: "Загрузка...",
 
     // for set filter
-    selectAll: 'Выделить всё',
-    searchOoo: 'Поиск...',
-    blanks: 'Ничего не найдено',
+    selectAll: "Выделить всё",
+    searchOoo: "Поиск...",
+    blanks: "Ничего не найдено",
 
     // for number filter and text filter
-    filterOoo: 'Фильтровать...',
-    applyFilter: 'Применить фильтр...',
-    equals: 'Равно',
-    notEqual: 'Не равно',
+    filterOoo: "Фильтровать...",
+    applyFilter: "Применить фильтр...",
+    equals: "Равно",
+    notEqual: "Не равно",
 
     // for number filter
-    lessThan: 'Меньше чем',
-    greaterThan: 'Больше чем',
-    lessThanOrEqual: 'Меньше или равно',
-    greaterThanOrEqual: 'Больше или равно',
-    inRange: 'В промежутке',
+    lessThan: "Меньше чем",
+    greaterThan: "Больше чем",
+    lessThanOrEqual: "Меньше или равно",
+    greaterThanOrEqual: "Больше или равно",
+    inRange: "В промежутке",
 
     // for text filter
-    contains: 'Содержит',
-    notContains: 'Не содержит',
-    startsWith: 'Начинается с',
-    endsWith: 'Заканчивается',
+    contains: "Содержит",
+    notContains: "Не содержит",
+    startsWith: "Начинается с",
+    endsWith: "Заканчивается",
 
     // filter conditions
     andCondition: '"И"',
     orCondition: '"ИЛИ"',
 
     // the header of the default group column
-    group: 'Группа',
+    group: "Группа",
 
     // tool panel
-    columns: 'Столбцы',
-    filters: 'Фильтры',
-    rowGroupColumns: 'Столбцы группировки по строкам',
-    rowGroupColumnsEmptyMessage: 'Перетащите сюда для группировки по строкам',
-    valueColumns: 'Столбцы со значениями',
-    pivotMode: 'Режим сводной таблицы',
-    groups: 'Группы',
-    values: 'Значения',
-    pivots: 'Заголовки столбцов',
-    valueColumnsEmptyMessage: 'Перетащите сюда для агрегации',
-    pivotColumnsEmptyMessage: 'Перетащите сюда, чтобы задать заголовки столбам',
-    toolPanelButton: 'Панель инструментов',
+    columns: "Столбцы",
+    filters: "Фильтры",
+    rowGroupColumns: "Столбцы группировки по строкам",
+    rowGroupColumnsEmptyMessage: "Перетащите сюда для группировки по строкам",
+    valueColumns: "Столбцы со значениями",
+    pivotMode: "Режим сводной таблицы",
+    groups: "Группы",
+    values: "Значения",
+    pivots: "Заголовки столбцов",
+    valueColumnsEmptyMessage: "Перетащите сюда для агрегации",
+    pivotColumnsEmptyMessage: "Перетащите сюда, чтобы задать заголовки столбам",
+    toolPanelButton: "Панель инструментов",
 
     // other
-    noRowsToShow: 'Нет данных',
+    noRowsToShow: "Нет данных",
 
     // enterprise menu
-    pinColumn: 'Закрепить колонку',
-    valueAggregation: 'Агрегация по значению',
-    autosizeThiscolumn: 'Автоматически задавать размер этой колонки',
-    autosizeAllColumns: 'Автоматически задавать размер всем колонкам',
-    groupBy: 'Группировать по',
-    ungroupBy: 'Разгруппировать по',
-    resetColumns: 'Сбросить столбцы',
-    expandAll: 'Развернуть всё',
-    collapseAll: 'Свернуть всё',
-    toolPanel: 'Панель инструментов',
-    export: 'Экспорт',
-    csvExport: 'Экспорт в CSV',
-    excelExport: 'Экспорт в Excel (.xlsx)',
-    excelXmlExport: 'Экспорт в XML (.xml)',
+    pinColumn: "Закрепить колонку",
+    valueAggregation: "Агрегация по значению",
+    autosizeThiscolumn: "Автоматически задавать размер этой колонки",
+    autosizeAllColumns: "Автоматически задавать размер всем колонкам",
+    groupBy: "Группировать по",
+    ungroupBy: "Разгруппировать по",
+    resetColumns: "Сбросить столбцы",
+    expandAll: "Развернуть всё",
+    collapseAll: "Свернуть всё",
+    toolPanel: "Панель инструментов",
+    export: "Экспорт",
+    csvExport: "Экспорт в CSV",
+    excelExport: "Экспорт в Excel (.xlsx)",
+    excelXmlExport: "Экспорт в XML (.xml)",
 
     // enterprise menu pinning
-    pinLeft: 'Закрепить слева <<',
-    pinRight: 'Закрепить справа >>',
-    noPin: 'Не закреплять <>',
+    pinLeft: "Закрепить слева <<",
+    pinRight: "Закрепить справа >>",
+    noPin: "Не закреплять <>",
 
     // enterprise menu aggregation and status bar
-    sum: 'Сумма',
-    min: 'Минимум',
-    max: 'Максимум',
-    none: 'Пусто',
-    count: 'Количество',
-    average: 'Среднее значение',
-    filteredRows: 'Отфильтрованные',
-    selectedRows: 'Выделенные',
-    totalRows: 'Всего строк',
-    totalAndFilteredRows: 'Строк',
+    sum: "Сумма",
+    min: "Минимум",
+    max: "Максимум",
+    none: "Пусто",
+    count: "Количество",
+    average: "Среднее значение",
+    filteredRows: "Отфильтрованные",
+    selectedRows: "Выделенные",
+    totalRows: "Всего строк",
+    totalAndFilteredRows: "Строк",
 
     // standard menu
-    copy: 'Копировать',
-    copyWithHeaders: 'Копировать с заголовком',
-    ctrlC: 'Ctrl+C',
-    paste: 'Вставить',
-    ctrlV: 'Ctrl+V'
-  }
+    copy: "Копировать",
+    copyWithHeaders: "Копировать с заголовком",
+    ctrlC: "Ctrl+C",
+    paste: "Вставить",
+    ctrlV: "Ctrl+V",
+  };
 
   return (
     <div className={classNames(styles["mainStatistic"])}>

@@ -7,21 +7,21 @@ export const regulationsAllListAndComponents = [
   {
     id: 1,
     name: "Общее",
-    content: <GeneralRules/>
+    content: <GeneralRules />,
   },
   {
     id: 2,
     name: "Правила",
-    content: <AllMainRules/>
+    content: <AllMainRules />,
   },
   {
     id: 3,
     name: "Вайтлист",
-    content: <Whitelist/>
+    content: <Whitelist />,
   },
   {
     id: 4,
     name: "Добровольный бан/мут",
-    content: <Rest/>
-  }
-]
+    content: <Rest />,
+  },
+];

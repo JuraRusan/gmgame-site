@@ -7,7 +7,7 @@ import styles from "./Auth.module.scss";
 const Auth = () => {
   return (
     <div className={classNames(styles["main-reg"])}>
-      <AuthComponent/>
+      <AuthComponent />
     </div>
   );
 };

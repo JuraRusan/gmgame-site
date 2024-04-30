@@ -1,20 +1,17 @@
 import classNames from "classnames";
 import React from "react";
-import {LazyLoadImage} from "react-lazy-load-image-component";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
-import styles from "./Minecraft-shield.module.scss"
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import styles from "./Minecraft-shield.module.scss";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
-const MinecraftShield = ({item, type}) => {
-
+const MinecraftShield = ({ item, type }) => {
   return (
     <div
-      className={classNames(styles["shield_group"],
-        {
-          [styles["center"]]: type === "center",
-          [styles["normal"]]: type === "normal"
-        }
-      )}
+      className={classNames(styles["shield_group"], {
+        [styles["center"]]: type === "center",
+        [styles["normal"]]: type === "normal",
+      })}
     >
       <LazyLoadImage
         src={`./site_assets/shield_pattern/${item.shield_color.color}_shield.webp`}
@@ -43,19 +40,11 @@ const MinecraftShield = ({item, type}) => {
           />
         </div>
       ))}
-      {!item.enchant ?
-        null
-        :
+      {!item.enchant ? null : (
         <div className={classNames(styles["enchant"])}>
-          <LazyLoadImage
-            src={`./site_assets/animation_v.png`}
-            width="100%"
-            height="100%"
-            alt="none"
-            effect="blur"
-          />
+          <LazyLoadImage src={`./site_assets/animation_v.png`} width="100%" height="100%" alt="none" effect="blur" />
         </div>
-      }
+      )}
     </div>
   );
 };

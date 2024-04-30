@@ -1,43 +1,46 @@
 import classNames from "classnames";
 import React from "react";
-import {useForm} from "react-hook-form";
-import {ErrorMessage} from "@hookform/error-message";
-import {sendRequest} from '../../../DataProvider';
-import {useAlert} from "react-alert";
+import { useForm } from "react-hook-form";
+import { ErrorMessage } from "@hookform/error-message";
+import { sendRequest } from "../../../DataProvider";
+import { useAlert } from "react-alert";
 import Notifications from "../notifications/Notifications";
 import Button from "../button/Button";
 
 import styles from "./Auth-comp.module.scss";
 
 const AuthComponent = () => {
-
   const alert = useAlert();
 
-  const {register, handleSubmit, formState: {errors},} = useForm({mode: "onChange"});
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({ mode: "onChange" });
 
   const onSubmit = (data) => console.log(data);
 
   function ErrorRender(name) {
     return (
-      <ErrorMessage errors={errors} name={name.name} render={({message}) => <span className={classNames(styles["error"])}>{message}</span>}/>
+      <ErrorMessage
+        errors={errors}
+        name={name.name}
+        render={({ message }) => <span className={classNames(styles["error"])}>{message}</span>}
+      />
     );
   }
 
   const registration = (d) => {
-    sendRequest(
-      '/api/registration_user',
-      'POST',
-      {
-        login: d.username,
-        password: d.password,
-        type: d.type_account,
-        age: d.age,
-        from_about: d.about,
-        you_about: d.interests,
-        servers: d.back_servers,
-        friend_name: d.friend_name
-      }
-    ).then(response => {
+    sendRequest("/api/registration_user", "POST", {
+      login: d.username,
+      password: d.password,
+      type: d.type_account,
+      age: d.age,
+      from_about: d.about,
+      you_about: d.interests,
+      servers: d.back_servers,
+      friend_name: d.friend_name,
+    }).then((response) => {
       if (!response.error) {
         alert.success(response.message);
         window.location.reload(true);
@@ -45,7 +48,7 @@ const AuthComponent = () => {
         alert.error(response.body?.error || response.error);
       }
     });
-  }
+  };
 
   const errorInfo = {
     username: errors.username,
@@ -55,7 +58,7 @@ const AuthComponent = () => {
     about: errors.about,
     interests: errors.interests,
     back_servers: errors.back_servers,
-    checkbox: errors.checkbox
+    checkbox: errors.checkbox,
   };
 
   return (
@@ -69,10 +72,10 @@ const AuthComponent = () => {
               id="usernameFor"
               placeholder="&nbsp;"
               autoComplete="off"
-              className={errorInfo.username ? classNames(styles["inputErrors"]) : ''}
+              className={errorInfo.username ? classNames(styles["inputErrors"]) : ""}
               {...register("username", {
-                required: {value: true, message: "Обязательное поле"},
-                maxLength: {value: 16, message: "Слишком длинный логин"},
+                required: { value: true, message: "Обязательное поле" },
+                maxLength: { value: 16, message: "Слишком длинный логин" },
                 pattern: {
                   value: /^[a-zA-Z0-9_]+$/,
                   message: "Недопустимые символы",
@@ -80,7 +83,7 @@ const AuthComponent = () => {
               })}
             />
             <span className={classNames(styles["label"])}>Игровой ник</span>
-            <ErrorRender name="username"/>
+            <ErrorRender name="username" />
           </label>
           <label htmlFor="passwordFor" className={classNames(styles["line"])}>
             <input
@@ -88,22 +91,22 @@ const AuthComponent = () => {
               id="passwordFor"
               placeholder="&nbsp;"
               autoComplete="off"
-              className={errorInfo.password ? classNames(styles["inputErrors"]) : ''}
+              className={errorInfo.password ? classNames(styles["inputErrors"]) : ""}
               {...register("password", {
-                required: {value: true, message: "Обязательное поле"},
-                minLength: {value: 8, message: "Пароль должен быть от 8 символов"},
+                required: { value: true, message: "Обязательное поле" },
+                minLength: { value: 8, message: "Пароль должен быть от 8 символов" },
               })}
             />
             <span className={classNames(styles["label"])}>Пароль для входа на сервер</span>
-            <ErrorRender name="password"/>
+            <ErrorRender name="password" />
           </label>
           <label htmlFor="type_accountFor" className={classNames(styles["line"])}>
             <select
               id="type_accountFor"
               placeholder="&nbsp;"
-              className={errorInfo.type_account ? classNames(styles["inputErrors"]) : ''}
+              className={errorInfo.type_account ? classNames(styles["inputErrors"]) : ""}
               {...register("type_account", {
-                required: {value: true, message: "Обязательное поле"},
+                required: { value: true, message: "Обязательное поле" },
               })}
             >
               <option value=" "></option>
@@ -111,7 +114,7 @@ const AuthComponent = () => {
               <option value="0">Пиратка</option>
             </select>
             <span className={classNames(styles["label"])}>Тип аккаунта</span>
-            <ErrorRender name="type_account"/>
+            <ErrorRender name="type_account" />
           </label>
           <label htmlFor="ageFor" className={classNames(styles["line"])}>
             <input
@@ -119,14 +122,14 @@ const AuthComponent = () => {
               id="ageFor"
               placeholder="&nbsp;"
               autoComplete="off"
-              className={errorInfo.age ? classNames(styles["inputErrors"]) : ''}
+              className={errorInfo.age ? classNames(styles["inputErrors"]) : ""}
               {...register("age", {
-                required: {value: true, message: "Обязательное поле"},
-                pattern: {value: /^[0-9]+$/, message: "Только цифры"},
+                required: { value: true, message: "Обязательное поле" },
+                pattern: { value: /^[0-9]+$/, message: "Только цифры" },
               })}
             />
             <span className={classNames(styles["label"])}>Возраст</span>
-            <ErrorRender name="age"/>
+            <ErrorRender name="age" />
           </label>
           <label htmlFor="friend_nameFor" className={classNames(styles["line"])}>
             <input
@@ -144,13 +147,13 @@ const AuthComponent = () => {
               id="aboutFor"
               placeholder="&nbsp;"
               autoComplete="off"
-              className={errorInfo.about ? classNames(styles["inputErrors"]) : ''}
+              className={errorInfo.about ? classNames(styles["inputErrors"]) : ""}
               {...register("about", {
-                required: {value: true, message: "Обязательное поле"},
+                required: { value: true, message: "Обязательное поле" },
               })}
             />
             <span className={classNames(styles["label"])}>Откуда узнали о проекте</span>
-            <ErrorRender name="about"/>
+            <ErrorRender name="about" />
           </label>
           <label htmlFor="interestsFor" className={classNames(styles["line"])}>
             <input
@@ -158,13 +161,13 @@ const AuthComponent = () => {
               id="interestsFor"
               placeholder="&nbsp;"
               autoComplete="off"
-              className={errorInfo.interests ? classNames(styles["inputErrors"]) : ''}
+              className={errorInfo.interests ? classNames(styles["inputErrors"]) : ""}
               {...register("interests", {
-                required: {value: true, message: "Обязательное поле"},
+                required: { value: true, message: "Обязательное поле" },
               })}
             />
             <span className={classNames(styles["label"])}>Интересы в майнкрафте</span>
-            <ErrorRender name="interests"/>
+            <ErrorRender name="interests" />
           </label>
           <label htmlFor="back_serversFor" className={classNames(styles["line"])}>
             <input
@@ -172,27 +175,28 @@ const AuthComponent = () => {
               id="back_serversFor"
               placeholder="&nbsp;"
               autoComplete="off"
-              className={errorInfo.back_servers ? classNames(styles["inputErrors"]) : ''}
+              className={errorInfo.back_servers ? classNames(styles["inputErrors"]) : ""}
               {...register("back_servers", {
-                required: {value: true, message: "Обязательное поле"},
+                required: { value: true, message: "Обязательное поле" },
               })}
             />
             <span className={classNames(styles["label"])}>Предыдущие сервера</span>
-            <ErrorRender name="back_servers"/>
+            <ErrorRender name="back_servers" />
           </label>
           <div className={classNames(styles["check-block"])}>
             <input
               type="checkbox"
               id="box-1"
-              className={errorInfo.checkbox ? classNames(styles["checkboxErrors"]) : ''}
+              className={errorInfo.checkbox ? classNames(styles["checkboxErrors"]) : ""}
               {...register("checkbox", {
-                required: {value: true, message: "Обязательное подтверждение"},
-              })} />
+                required: { value: true, message: "Обязательное подтверждение" },
+              })}
+            />
             <label htmlFor="box-1">Да, я прочитал правила и обязуюсь им следовать.</label>
           </div>
         </form>
         <div className={classNames(styles["wrapper-warn"])}>
-          <Notifications inf="Относитесь ответственно к заполнению заявки" type="warn"/>
+          <Notifications inf="Относитесь ответственно к заполнению заявки" type="warn" />
         </div>
         <form className={classNames(styles["action_block"])}>
           <Button

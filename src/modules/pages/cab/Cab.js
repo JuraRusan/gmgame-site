@@ -73,9 +73,7 @@ const Cab = () => {
   };
 
   function setActive(isActive) {
-    return isActive
-      ? classNames(styles["tab"], styles["checked"])
-      : classNames(styles["tab"]);
+    return isActive ? classNames(styles["tab"], styles["checked"]) : classNames(styles["tab"]);
   }
 
   return (
@@ -83,23 +81,13 @@ const Cab = () => {
       <div className={classNames(styles["boxWrapper"])}>
         <div className={classNames(styles["phoneContent"])}>
           {openMenu === false ? (
-            <div
-              className={classNames(styles["swipePhone"])}
-              onClick={() => setOpenMenu(!openMenu)}
-            >
+            <div className={classNames(styles["swipePhone"])} onClick={() => setOpenMenu(!openMenu)}>
               <span className={classNames(styles["ico"])}>&#9776;</span>
               <label className={classNames(styles["text"])}>Открыть меню</label>
             </div>
           ) : (
-            <div
-              className={classNames(styles["swipePhone"])}
-              onClick={() => setOpenMenu(!openMenu)}
-            >
-              <span
-                className={classNames(styles["ico"], styles["customColorIco"])}
-              >
-                &#128500;
-              </span>
+            <div className={classNames(styles["swipePhone"])} onClick={() => setOpenMenu(!openMenu)}>
+              <span className={classNames(styles["ico"], styles["customColorIco"])}>&#128500;</span>
               <label className={classNames(styles["text"])}>Закрыть меню</label>
             </div>
           )}
@@ -108,40 +96,53 @@ const Cab = () => {
           <PlayerCabinet username={resParams.data.user.username} />
           <div className={classNames(styles["menuCab"])}>
             <div className={classNames(styles["blockLink"])}>
-              {
-                resParams.data.user.status === 1 ||
-                resParams.data.user.status === 3 ||
-                resParams.data.user.status === 4 ||
-                resParams.data.user.status === 5 ||
-                resParams.data.user.status === 6
-                  ? (
-                    <>
-                      <NavLink onClick={() => {setOpenMenu(false);}} className={classNames(styles["tab"], styles["checked"])} to="profile"><ProfileSvgComponent width="100%" height="100%" color="#f4f4f4"/>Профиль</NavLink>
-                      <span onClick={() => {setOpenMenu(false);}} className={classNames(styles["tab"], styles["disabled"])}><MapSvgComponent width="100%" height="100%" color="#f4f4f4"/>Мои территории</span>
-                      <span onClick={() => {setOpenMenu(false);}} className={classNames(styles["tab"], styles["disabled"])}><span className={classNames(styles["stroke_color"])}><MarkerSvgComponent width="100%" height="100%" color="#f4f4f4"/></span>Мои метки</span>
-                      <span onClick={() => {setOpenMenu(false);}} className={classNames(styles["tab"], styles["disabled"])}><PrizeSvgComponent width="100%" height="100%" color="#f4f4f4"/>Призы</span>
-                      <span onClick={() => {setOpenMenu(false);}} className={classNames(styles["tab"], styles["disabled"])}><ImageSvgComponent width="100%" height="100%" color="#f4f4f4"/>Моя галерея</span>
-                      <span onClick={() => {setOpenMenu(false);}} className={classNames(styles["tab"], styles["disabled"])}><span className={classNames(styles["stroke_color"])}><ShopSvgComponent width="100%" height="100%" color="#f4f4f4"/></span>Мои магазины</span>
-                      <span onClick={() => {setOpenMenu(false);}} className={classNames(styles["tab"], styles["disabled"])}><SettingsSvgComponent width="100%" height="100%" color="#f4f4f4"/>Изменить пароль</span>
-                    </>
-                  ) : (
-                    <>
-                      <NavLink onClick={() => {setOpenMenu(false);}} className={({isActive}) => setActive(isActive)} to="profile"><ProfileSvgComponent width="100%" height="100%" color="#f4f4f4"/>Профиль</NavLink>
-                      <NavLink onClick={() => {setOpenMenu(false);}} className={({isActive}) => setActive(isActive)} to="territories"><MapSvgComponent width="100%" height="100%" color="#f4f4f4"/>Мои территории</NavLink>
-                      <NavLink onClick={() => {setOpenMenu(false);}} className={({isActive}) => setActive(isActive)} to="markers"><span className={classNames(styles["stroke_color"])}><MarkerSvgComponent width="100%" height="100%" color="#f4f4f4"/></span>Мои метки</NavLink>
-                      <NavLink onClick={() => {setOpenMenu(false);}} className={({isActive}) => setActive(isActive)} to="prize"><PrizeSvgComponent width="100%" height="100%" color="#f4f4f4"/>Призы</NavLink>
-                      <NavLink onClick={() => {setOpenMenu(false);}} className={({isActive}) => setActive(isActive)} to="gallery"><ImageSvgComponent width="100%" height="100%" color="#f4f4f4"/>Моя галерея</NavLink>
-                      <NavLink onClick={() => {setOpenMenu(false);}} className={({isActive}) => setActive(isActive)} to="shop_user"><span className={classNames(styles["stroke_color"])}><ShopSvgComponent width="100%" height="100%" color="#f4f4f4"/></span>Мои магазины</NavLink>
-                      <NavLink onClick={() => {setOpenMenu(false);}} className={({isActive}) => setActive(isActive)} to="change_password"><SettingsSvgComponent width="100%" height="100%" color="#f4f4f4"/>Изменить пароль</NavLink>
-                    </>
-                  )}
-              {resParams.data.discordUser.role === "admin" && (
-                <Link to="/manager" className={classNames(styles["tab"])}><ManagerSvgComponent width="100%" height="100%" color="#f4f4f4"/>Менеджер</Link>
+              {resParams.data.user.status === 1 ||
+              resParams.data.user.status === 3 ||
+              resParams.data.user.status === 4 ||
+              resParams.data.user.status === 5 ||
+              resParams.data.user.status === 6 ? (
+                <>
+                  {/* prettier-ignore */}
+                  <NavLink onClick={() => {setOpenMenu(false);}} className={classNames(styles["tab"], styles["checked"])} to="profile"><ProfileSvgComponent width="100%" height="100%" color="#f4f4f4"/>Профиль</NavLink>
+                  {/* prettier-ignore */}
+                  <span onClick={() => {setOpenMenu(false);}} className={classNames(styles["tab"], styles["disabled"])}><MapSvgComponent width="100%" height="100%" color="#f4f4f4"/>Мои территории</span>
+                  {/* prettier-ignore */}
+                  <span onClick={() => {setOpenMenu(false);}} className={classNames(styles["tab"], styles["disabled"])}><span className={classNames(styles["stroke_color"])}><MarkerSvgComponent width="100%" height="100%" color="#f4f4f4"/></span>Мои метки</span>
+                  {/* prettier-ignore */}
+                  <span onClick={() => {setOpenMenu(false);}} className={classNames(styles["tab"], styles["disabled"])}><PrizeSvgComponent width="100%" height="100%" color="#f4f4f4"/>Призы</span>
+                  {/* prettier-ignore */}
+                  <span onClick={() => {setOpenMenu(false);}} className={classNames(styles["tab"], styles["disabled"])}><ImageSvgComponent width="100%" height="100%" color="#f4f4f4"/>Моя галерея</span>
+                  {/* prettier-ignore */}
+                  <span onClick={() => {setOpenMenu(false);}} className={classNames(styles["tab"], styles["disabled"])}><span className={classNames(styles["stroke_color"])}><ShopSvgComponent width="100%" height="100%" color="#f4f4f4"/></span>Мои магазины</span>
+                  {/* prettier-ignore */}
+                  <span onClick={() => {setOpenMenu(false);}} className={classNames(styles["tab"], styles["disabled"])}><SettingsSvgComponent width="100%" height="100%" color="#f4f4f4"/>Изменить пароль</span>
+                </>
+              ) : (
+                <>
+                  {/* prettier-ignore */}
+                  <NavLink onClick={() => {setOpenMenu(false);}} className={({isActive}) => setActive(isActive)} to="profile"><ProfileSvgComponent width="100%" height="100%" color="#f4f4f4"/>Профиль</NavLink>
+                  {/* prettier-ignore */}
+                  <NavLink onClick={() => {setOpenMenu(false);}} className={({isActive}) => setActive(isActive)} to="territories"><MapSvgComponent width="100%" height="100%" color="#f4f4f4"/>Мои территории</NavLink>
+                  {/* prettier-ignore */}
+                  <NavLink onClick={() => {setOpenMenu(false);}} className={({isActive}) => setActive(isActive)} to="markers"><span className={classNames(styles["stroke_color"])}><MarkerSvgComponent width="100%" height="100%" color="#f4f4f4"/></span>Мои метки</NavLink>
+                  {/* prettier-ignore */}
+                  <NavLink onClick={() => {setOpenMenu(false);}} className={({isActive}) => setActive(isActive)} to="prize"><PrizeSvgComponent width="100%" height="100%" color="#f4f4f4"/>Призы</NavLink>
+                  {/* prettier-ignore */}
+                  <NavLink onClick={() => {setOpenMenu(false);}} className={({isActive}) => setActive(isActive)} to="gallery"><ImageSvgComponent width="100%" height="100%" color="#f4f4f4"/>Моя галерея</NavLink>
+                  {/* prettier-ignore */}
+                  <NavLink onClick={() => {setOpenMenu(false);}} className={({isActive}) => setActive(isActive)} to="shop_user"><span className={classNames(styles["stroke_color"])}><ShopSvgComponent width="100%" height="100%" color="#f4f4f4"/></span>Мои магазины</NavLink>
+                  {/* prettier-ignore */}
+                  <NavLink onClick={() => {setOpenMenu(false);}} className={({isActive}) => setActive(isActive)} to="change_password"><SettingsSvgComponent width="100%" height="100%" color="#f4f4f4"/>Изменить пароль</NavLink>
+                </>
               )}
+              {resParams.data.discordUser.role ===
+                "admin" && <Link to="/manager" className={classNames(styles["tab"])}><ManagerSvgComponent width="100%" height="100%" color="#f4f4f4"/>Менеджер</Link> // prettier-ignore
+              }
             </div>
             <div className={classNames(styles["blockLink"], styles["blockLinkLogout"])}>
               <button className={classNames(styles["tab"], styles["logout"])} onClick={logout}>
-                <GoOutSvgComponent width="100%" height="100%" color="#f4f4f4"/>Выйти
+                <GoOutSvgComponent width="100%" height="100%" color="#f4f4f4" />
+                Выйти
               </button>
             </div>
             <div className={classNames(styles["delimiter"])}>

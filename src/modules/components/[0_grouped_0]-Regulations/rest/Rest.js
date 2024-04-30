@@ -1,8 +1,8 @@
 import classNames from "classnames";
 import React from "react";
-import {regulationsAllDB} from "../../../pages/regulations/regulationsAllDB";
+import { regulationsAllDB } from "../../../pages/regulations/regulationsAllDB";
 
-import styles from "../../../pages/regulations/Regulations.module.scss"
+import styles from "../../../pages/regulations/Regulations.module.scss";
 
 const Rest = () => {
   return (

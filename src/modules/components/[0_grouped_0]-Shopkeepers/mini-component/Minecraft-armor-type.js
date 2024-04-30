@@ -1,15 +1,14 @@
 import classNames from "classnames";
 import React from "react";
-import {LazyLoadImage} from "react-lazy-load-image-component";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
-import styles from "./Minecraft-armor-type.module.scss"
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import styles from "./Minecraft-armor-type.module.scss";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
-const MinecraftArmorType = ({item}) => {
-
+const MinecraftArmorType = ({ item }) => {
   const itemNameArmor = item.type;
   const armorTrim = item.trim.pattern;
-  const armorTrimMaterial = item.trim.material
+  const armorTrimMaterial = item.trim.material;
 
   const getSourceHelmetBase = () => {
     if (itemNameArmor === "turtle_helmet") {
@@ -94,7 +93,6 @@ const MinecraftArmorType = ({item}) => {
 
   return (
     <div className={classNames(styles["armor"])}>
-
       <LazyLoadImage
         className={classNames(styles["layersArmorStand"])}
         src="./site_assets/minecraft-armor-trim/armor_stand.webp"
@@ -104,8 +102,7 @@ const MinecraftArmorType = ({item}) => {
         alt=""
       />
 
-      {itemNameArmor.includes("leggings")
-        ?
+      {itemNameArmor.includes("leggings") ? (
         <div className={classNames(styles["leggings"])}>
           <LazyLoadImage
             className={classNames(styles["layersArmor"])}
@@ -124,12 +121,9 @@ const MinecraftArmorType = ({item}) => {
             effect="blur"
           />
         </div>
-        :
-        null
-      }
+      ) : null}
 
-      {itemNameArmor.includes("boots")
-        ?
+      {itemNameArmor.includes("boots") ? (
         <div className={classNames(styles["boots"])}>
           <LazyLoadImage
             className={classNames(styles["layersArmor"])}
@@ -148,11 +142,8 @@ const MinecraftArmorType = ({item}) => {
             effect="blur"
           />
         </div>
-        :
-        null
-      }
-      {itemNameArmor.includes("chestplate")
-        ?
+      ) : null}
+      {itemNameArmor.includes("chestplate") ? (
         <div className={classNames(styles["chestplate"])}>
           <LazyLoadImage
             className={classNames(styles["layersArmor"])}
@@ -171,11 +162,8 @@ const MinecraftArmorType = ({item}) => {
             effect="blur"
           />
         </div>
-        :
-        null
-      }
-      {itemNameArmor.includes("helmet")
-        ?
+      ) : null}
+      {itemNameArmor.includes("helmet") ? (
         <div className={classNames(styles["helmet"])}>
           <LazyLoadImage
             className={classNames(styles["layersArmor"])}
@@ -194,10 +182,7 @@ const MinecraftArmorType = ({item}) => {
             effect="blur"
           />
         </div>
-        :
-        null
-      }
-
+      ) : null}
     </div>
   );
 };

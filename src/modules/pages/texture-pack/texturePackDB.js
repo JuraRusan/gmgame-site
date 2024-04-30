@@ -219,12 +219,7 @@ export const arrayTexturePackAll = [
         main_item: "totem_of_undying",
         main_item_ru: "Тотем",
         img_custom: "Killermax2012.webp",
-        variability_name: [
-          "Killermax2012",
-          "Killermax",
-          "Киллермакс2012",
-          "Киллермакс",
-        ],
+        variability_name: ["Killermax2012", "Killermax", "Киллермакс2012", "Киллермакс"],
       },
       {
         main_item: "totem_of_undying",
@@ -266,12 +261,7 @@ export const arrayTexturePackAll = [
         main_item: "totem_of_undying",
         main_item_ru: "Тотем",
         img_custom: "Lucky_Sword_Imperia.webp",
-        variability_name: [
-          "Lucky_Sword Imperia",
-          "Lucky_Swordi",
-          "Лакии",
-          "Лаки Империя",
-        ],
+        variability_name: ["Lucky_Sword Imperia", "Lucky_Swordi", "Лакии", "Лаки Империя"],
       },
       {
         main_item: "totem_of_undying",
@@ -403,38 +393,19 @@ export const arrayTexturePackAll = [
         main_item: "totem_of_undying",
         main_item_ru: "Тотем",
         img_custom: "SoftPanda3c.webp",
-        variability_name: [
-          "SoftPanda3c",
-          "SoftPandac",
-          "Pandac",
-          "Пандас",
-          "Пандочкас",
-        ],
+        variability_name: ["SoftPanda3c", "SoftPandac", "Pandac", "Пандас", "Пандочкас"],
       },
       {
         main_item: "totem_of_undying",
         main_item_ru: "Тотем",
         img_custom: "SoftPanda3ng.webp",
-        variability_name: [
-          "SoftPanda3ng",
-          "SoftPandang",
-          "Pandang",
-          "Панданг",
-          "Пандочканг",
-        ],
+        variability_name: ["SoftPanda3ng", "SoftPandang", "Pandang", "Панданг", "Пандочканг"],
       },
       {
         main_item: "totem_of_undying",
         main_item_ru: "Тотем",
         img_custom: "SolyankaXD.webp",
-        variability_name: [
-          "SolyankaXD",
-          "Solyanka",
-          "Soniaka",
-          "Soni4ka",
-          "Солянка",
-          "Соничка",
-        ],
+        variability_name: ["SolyankaXD", "Solyanka", "Soniaka", "Soni4ka", "Солянка", "Соничка"],
       },
       {
         main_item: "totem_of_undying",
@@ -495,8 +466,8 @@ export const arrayTexturePackAll = [
         main_item_ru: "Тотем",
         img_custom: "ytka_sorry_t9.webp",
         variability_name: ["Ytka", "ytka_sorry_t9", "Утка", "Уточка"],
-      }
-    ]
+      },
+    ],
   },
   {
     type_category: "elytra", // totem, elytra, food, potion, decoration, and more...
@@ -615,8 +586,8 @@ export const arrayTexturePackAll = [
         main_item_ru: "Елитры",
         img_custom: "warped.webp",
         variability_name: ["warped"],
-      }
-    ]
+      },
+    ],
   },
   {
     type_category: "hats", // totem, elytra, food, potion, decoration, and more...
@@ -699,8 +670,8 @@ export const arrayTexturePackAll = [
         main_item_ru: "вырезаную тыкву",
         img_custom: "wreath.webp",
         variability_name: ["Венок"],
-      }
-    ]
+      },
+    ],
   },
   {
     type_category: "potion", // totem, elytra, food, potion, decoration, and more...
@@ -771,8 +742,8 @@ export const arrayTexturePackAll = [
         main_item_ru: "любое зелье",
         img_custom: "wine.webp",
         variability_name: ["Вино", "Wine"],
-      }
-    ]
+      },
+    ],
   },
   {
     type_category: "food", // totem, elytra, food, potion, decoration, and more...
@@ -1167,7 +1138,7 @@ export const arrayTexturePackAll = [
         main_item_ru: "тушённые грибы",
         img_custom: "pelmenei.webp",
         variability_name: ["Пельмени", "Pelmenei"],
-      }
-    ]
+      },
+    ],
   },
-]
+];

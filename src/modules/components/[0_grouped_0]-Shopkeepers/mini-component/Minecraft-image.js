@@ -1,59 +1,51 @@
 import classNames from "classnames";
 import React from "react";
-import {LazyLoadImage} from "react-lazy-load-image-component";
-import {ARRAY_MAPPINGS} from "../../../pages/shopkeepers/AnimationType";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import { ARRAY_MAPPINGS } from "../../../pages/shopkeepers/AnimationType";
 
-import styles from "./Minecraft-image.module.scss"
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import styles from "./Minecraft-image.module.scss";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
-const MinecraftImage = ({item}) => {
-
+const MinecraftImage = ({ item }) => {
   const itemNameId = item.type;
   const itemEnchant = !item.enchant ? [] : item.enchant;
   const itemStoredEnchant = !item.stored_enchant ? [] : item.stored_enchant;
   const itemPotion = item.potion;
   const itemTrimMaterial = item.trim?.material;
-  const {red, green, blue} = item.leather_color ?? {};
-  const colorBG = red !== undefined ? {backgroundColor: `rgb(${red},${green},${blue})`} : {};
+  const { red, green, blue } = item.leather_color ?? {};
+  const colorBG = red !== undefined ? { backgroundColor: `rgb(${red},${green},${blue})` } : {};
   const includesType = ARRAY_MAPPINGS[itemNameId];
 
   const getImageSource = () => {
     if (itemNameId === "enchanted_golden_apple") {
       return "./site_assets/minecraft-item/golden_apple.webp";
-
     } else if (itemNameId === "written_book") {
       return "./site_assets/minecraft-item/book.webp";
-
     } else if (itemNameId === "enchanted_book") {
       return "./site_assets/minecraft-item/book.webp";
-
     } else if (itemNameId === "end_crystal") {
       return "./site_assets/animation_webp/end_crystal.webp";
-
     } else if (itemNameId === "sculk_sensor") {
       return "./site_assets/animation_webp/sculk_sensor.webp";
-
     } else if (itemNameId === "calibrated_sculk_sensor") {
       return "./site_assets/animation_webp/calibrated_sculk_sensor.webp";
-
     } else if (itemNameId === "leather_helmet" && item.leather_color !== undefined) {
       return "./site_assets/leather_colored_armor/leather_colored_helmet.webp";
-
     } else if (itemNameId === "leather_chestplate" && item.leather_color !== undefined) {
       return "./site_assets/leather_colored_armor/leather_colored_chestplate.webp";
-
     } else if (itemNameId === "leather_leggings" && item.leather_color !== undefined) {
       return "./site_assets/leather_colored_armor/leather_colored_leggings.webp";
-
     } else if (itemNameId === "leather_boots" && item.leather_color !== undefined) {
       return "./site_assets/leather_colored_armor/leather_colored_boots.webp";
-
     } else if (itemNameId === "leather_horse_armor" && item.leather_color !== undefined) {
       return "./site_assets/leather_colored_armor/leather_colored_horse_armor.webp";
-
-    } else if (itemNameId === "tipped_arrow" || itemNameId === "splash_potion" || itemNameId === "potion" || itemNameId === "lingering_potion") {
+    } else if (
+      itemNameId === "tipped_arrow" ||
+      itemNameId === "splash_potion" ||
+      itemNameId === "potion" ||
+      itemNameId === "lingering_potion"
+    ) {
       return `./site_assets/minecraft-item/${itemNameId}_${itemPotion}.webp`;
-
     } else {
       return `./site_assets/minecraft-item/${itemNameId}.webp`;
     }
@@ -94,17 +86,9 @@ const MinecraftImage = ({item}) => {
 
   return (
     <div className={classNames(styles["wrapperImage"])}>
-      <LazyLoadImage
-        style={{...colorBG}}
-        src={imageSource}
-        width="100%"
-        height="100%"
-        effect="blur"
-        alt="none"
-      />
+      <LazyLoadImage style={{ ...colorBG }} src={imageSource} width="100%" height="100%" effect="blur" alt="none" />
 
-      {itemTrimMaterial !== undefined
-        ?
+      {itemTrimMaterial !== undefined ? (
         <div className={classNames(styles["absoluteArmor"])}>
           <LazyLoadImage
             src={`./site_assets/view_trim/${imageTypeFolder}/${itemTrimMaterial}.webp`}
@@ -114,27 +98,18 @@ const MinecraftImage = ({item}) => {
             alt="none"
           />
         </div>
-        :
-        null
-      }
+      ) : null}
 
-      {itemEnchant.length > 0 || itemStoredEnchant.length > 0 || itemNameId === "written_book" || itemNameId === "enchanted_golden_apple"
-        ?
+      {itemEnchant.length > 0 ||
+      itemStoredEnchant.length > 0 ||
+      itemNameId === "written_book" ||
+      itemNameId === "enchanted_golden_apple" ? (
         <div className={classNames(styles["enchant"])}>
-          <LazyLoadImage
-            src={`./site_assets/animation_h.png`}
-            width="100%"
-            height="100%"
-            effect="blur"
-            alt="none"
-          />
+          <LazyLoadImage src={`./site_assets/animation_h.png`} width="100%" height="100%" effect="blur" alt="none" />
         </div>
-        :
-        null
-      }
+      ) : null}
 
       {includesType ? renderArmorImage(includesType) : null}
-
     </div>
   );
 };

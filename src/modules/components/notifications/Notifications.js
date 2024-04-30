@@ -4,19 +4,17 @@ import NotificationsSvgComponent from "../../../bases/icons/notificationsSvg/Not
 
 import styles from "./Notifications.module.scss";
 
-const Notifications = ({inf, type}) => {
+const Notifications = ({ inf, type }) => {
   return (
     <div className={classNames(styles["notifications_container"])}>
       <span className={classNames(styles["span_icon"])}>
-        <NotificationsSvgComponent width="24px" height="24px" color={type === "error" ? "#ff0000" : "#ffb400"}/>
+        <NotificationsSvgComponent width="24px" height="24px" color={type === "error" ? "#ff0000" : "#ffb400"} />
       </span>
       <h4
-        className={classNames(styles["notifications_information"],
-          {
-            [styles["notifications_error"]]: type === "error",
-            [styles["notifications_warn"]]: type === "warn"
-          }
-        )}
+        className={classNames(styles["notifications_information"], {
+          [styles["notifications_error"]]: type === "error",
+          [styles["notifications_warn"]]: type === "warn",
+        })}
       >
         {inf}
       </h4>

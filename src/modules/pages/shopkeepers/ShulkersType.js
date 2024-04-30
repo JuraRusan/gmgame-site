@@ -15,5 +15,5 @@ export const SHULKERS_TYPE = [
   "red_shulker_box",
   "shulker_box",
   "white_shulker_box",
-  "yellow_shulker_box"
-]
+  "yellow_shulker_box",
+];

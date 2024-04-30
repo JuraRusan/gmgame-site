@@ -58,6 +58,5 @@ export const monitoringBase = [
     id: 12,
     name: "Top.grmc",
     url: "https://top.grmc.su/server/2508",
-  }
-
-]
+  },
+];

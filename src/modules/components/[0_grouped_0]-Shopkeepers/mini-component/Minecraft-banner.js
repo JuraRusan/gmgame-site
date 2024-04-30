@@ -1,19 +1,17 @@
 import classNames from "classnames";
 import React from "react";
-import {LazyLoadImage} from "react-lazy-load-image-component";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
-import styles from "./Minecraft-banner.module.scss"
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import styles from "./Minecraft-banner.module.scss";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
-const MinecraftBanner = ({item, type}) => {
+const MinecraftBanner = ({ item, type }) => {
   return (
     <div
-      className={classNames(styles["flag_group"],
-        {
-          [styles["center"]]: type === "center",
-          [styles["normal"]]: type === "normal"
-        }
-      )}
+      className={classNames(styles["flag_group"], {
+        [styles["center"]]: type === "center",
+        [styles["normal"]]: type === "normal",
+      })}
     >
       <LazyLoadImage
         src={`./site_assets/flag_pattern/${item.type}.webp`}
