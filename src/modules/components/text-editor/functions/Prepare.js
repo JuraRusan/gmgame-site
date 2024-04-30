@@ -35,7 +35,7 @@ function list(code) {
 }
 
 export function prepare(code) {
-  return JSON.parse(code)
+  return code
     .map((el) => {
       const local = () => {
         let styles = "";

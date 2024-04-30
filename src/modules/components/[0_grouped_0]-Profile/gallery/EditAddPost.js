@@ -398,8 +398,8 @@ const EditAddPost = () => {
       let jsonDataLength;
 
       try {
-        jsonDataLength = CalculatingTextLength(JSON.parse(resParams.data.description));
-        jsonData = JSON.parse(resParams.data.description);
+        jsonDataLength = CalculatingTextLength(resParams.data.description);
+        jsonData = resParams.data.description;
       } catch {
         jsonDataLength = resParams.data.description.length;
         jsonData = [
@@ -413,7 +413,7 @@ const EditAddPost = () => {
       setImages(transformedArray);
       setTitle(resParams.data.name);
       setNameLength(resParams.data.name.length);
-      setDescription(JSON.stringify(jsonData));
+      setDescription(jsonData);
       setDescriptionLength(jsonDataLength);
     }
   }
