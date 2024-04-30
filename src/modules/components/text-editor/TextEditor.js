@@ -313,7 +313,7 @@ const RichTextExample = ({ value = DEFAULT_VALUE, setValue, textLength = () => {
           const isAstChange = editor.operations.some((op) => "set_selection" !== op.type);
 
           if (isAstChange) {
-            setValue(JSON.stringify(value));
+            setValue(value);
             setPrev(value);
             textLength(CalculatingTextLength(value));
           }
