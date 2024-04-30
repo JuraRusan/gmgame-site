@@ -382,10 +382,7 @@ const RichTextExample = ({ value = DEFAULT_VALUE, setValue, textLength = () => {
         <button onClick={closeModal} className={classNames(styles["close"])}>
           &#10008;
         </button>
-        <div
-          className={classNames(styles["prev"])}
-          dangerouslySetInnerHTML={{ __html: prepare(JSON.stringify(prev)) }}
-        />
+        <div className={classNames(styles["prev"])} dangerouslySetInnerHTML={{ __html: prepare(prev) }} />
       </Modal>
     </div>
   );

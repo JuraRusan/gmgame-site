@@ -20,11 +20,7 @@ import styles from "./Player-summary.module.scss";
 const StrokeName = ({ name }) => {
   return (
     <div className={classNames(styles["main_line_user"])}>
-      <img
-        className={classNames(styles["ico_player"])}
-        src={`https://minotar.net/helm/${name}/150`}
-        alt="none"
-      />
+      <img className={classNames(styles["ico_player"])} src={`https://minotar.net/helm/${name}/150`} alt="none" />
       <p className={classNames(styles["stroke_name"])}>
         Ник игрока:
         <span className={classNames(styles["span_display"])}>{name}</span>
@@ -59,9 +55,7 @@ const StrokeRedactor = ({ label, onChange, defaultValue, id, type }) => {
 
 const PlayerSummary = () => {
   const [searchParams] = useSearchParams();
-  let [searchParam, setSearchParam] = useState(
-    "Поиск работает по discord_id/nickname/discord_tag"
-  );
+  let [searchParam, setSearchParam] = useState("Поиск работает по discord_id/nickname/discord_tag");
   let [user, setUser] = useState([]);
   let [tag, setTag] = useState({});
   const [action, setAction] = useState({});
@@ -80,16 +74,14 @@ const PlayerSummary = () => {
   const handleOpenModal = (userId) => {
     setModalLog(true);
 
-    sendRequest("/api/admin/get_logs", "POST", { id: userId }).then(
-      (response) => {
-        if (!response.length > 0) {
-          setLogs([]);
-          alert.error(response.message);
-          return;
-        }
-        setLogs(response);
+    sendRequest("/api/admin/get_logs", "POST", { id: userId }).then((response) => {
+      if (!response.length > 0) {
+        setLogs([]);
+        alert.error(response.message);
+        return;
       }
-    );
+      setLogs(response);
+    });
   };
 
   const handleCloseModal = () => {
@@ -137,13 +129,7 @@ const PlayerSummary = () => {
       setTerritories({});
       setTickets({});
       response.forEach((user) => {
-        try {
-          let tag = JSON.parse(user.tag);
-          tagUser[user.username] = tag.id ? tag : JSON.parse(tag);
-        } catch (err) {
-          const email = user.tag.match(/email": "(.+?)"/);
-          tagUser[user.username] = email && email[1] ? { email: email[1] } : "";
-        }
+        tagUser[user.username] = user.tag;
         makersUser[user.username] = user.markers;
         terrUser[user.username] = user.territories;
         tickets[user.username] = user.tickets;
@@ -214,9 +200,7 @@ const PlayerSummary = () => {
     input[id] = {
       ...input[id],
       ...{
-        [event.target.id]: ["x", "y", "z"].includes(event.target.id)
-          ? +event.target.value
-          : event.target.value,
+        [event.target.id]: ["x", "y", "z"].includes(event.target.id) ? +event.target.value : event.target.value,
       },
     };
     setInputMarker(input);
@@ -230,9 +214,7 @@ const PlayerSummary = () => {
     input[id] = {
       ...input[id],
       ...{
-        [event.target.id]: ["xStart", "xStop", "zStart", "zStop"].includes(
-          event.target.id
-        )
+        [event.target.id]: ["xStart", "xStop", "zStart", "zStop"].includes(event.target.id)
           ? +event.target.value
           : event.target.value,
       },
@@ -414,15 +396,13 @@ const PlayerSummary = () => {
   };
 
   const getLink = (name) => {
-    sendRequest("/api/admin/get_link", "POST", { name: name }).then(
-      (response) => {
-        if (response.error) {
-          alert.error(response.message);
-          return;
-        }
-        window.open(response, "_blank");
+    sendRequest("/api/admin/get_link", "POST", { name: name }).then((response) => {
+      if (response.error) {
+        alert.error(response.message);
+        return;
       }
-    );
+      window.open(response, "_blank");
+    });
   };
 
   return (
@@ -433,41 +413,21 @@ const PlayerSummary = () => {
         onChange={debouncedGetUser}
         type="search"
       />
-      <button
-        className={classNames(styles["buttonSearchPlayers"])}
-        type="submit"
-        onClick={() => getUser(searchParam)}
-      >
+      <button className={classNames(styles["buttonSearchPlayers"])} type="submit" onClick={() => getUser(searchParam)}>
         Поиск
       </button>
 
       <div className={classNames(styles["wrapperButtonManager"])}>
-        <button
-          className={classNames(styles["buttonSearchAll"])}
-          type="submit"
-          onClick={getMarkers}
-        >
+        <button className={classNames(styles["buttonSearchAll"])} type="submit" onClick={getMarkers}>
           Отображение всех меток
         </button>
-        <button
-          className={classNames(styles["buttonSearchAll"])}
-          type="submit"
-          onClick={getTerritories}
-        >
+        <button className={classNames(styles["buttonSearchAll"])} type="submit" onClick={getTerritories}>
           Отображение всех территорий
         </button>
-        <button
-          className={classNames(styles["buttonSearchAll"])}
-          type="submit"
-          onClick={getRegens}
-        >
+        <button className={classNames(styles["buttonSearchAll"])} type="submit" onClick={getRegens}>
           Пользователи для регена
         </button>
-        <button
-          className={classNames(styles["buttonSearchAll"])}
-          type="submit"
-          onClick={getWhiteList}
-        >
+        <button className={classNames(styles["buttonSearchAll"])} type="submit" onClick={getWhiteList}>
           WhiteList
         </button>
       </div>
@@ -504,23 +464,11 @@ const PlayerSummary = () => {
                   <Th type="text" content={el?.user_id || "-"} />
                   <Th type="text" content={el?.age || "-"} />
                   <Th type="text" content={el?.status || "-"} />
-                  <Th
-                    type="text"
-                    content={el?.immun === true ? "true" : "false"}
-                  />
-                  <Th
-                    type="text"
-                    content={el?.citizenship === true ? "true" : "false"}
-                  />
+                  <Th type="text" content={el?.immun === true ? "true" : "false"} />
+                  <Th type="text" content={el?.citizenship === true ? "true" : "false"} />
                   <Th type="actions">
-                    <TButton
-                      name="Log"
-                      onClick={() => handleOpenModal(el.user_id)}
-                    />
-                    <TButton
-                      name="User Details"
-                      onClick={() => handleOpenModalUd(el)}
-                    />
+                    <TButton name="Log" onClick={() => handleOpenModal(el.user_id)} />
+                    <TButton name="User Details" onClick={() => handleOpenModalUd(el)} />
                   </Th>
                   <Th type="editing">
                     <TSelect
@@ -543,11 +491,7 @@ const PlayerSummary = () => {
               ))}
             </TBody>
           </TableMain>
-          <button
-            className={classNames(styles["buttonPlayersSubmit"])}
-            type="submit"
-            onClick={actionUser}
-          >
+          <button className={classNames(styles["buttonPlayersSubmit"])} type="submit" onClick={actionUser}>
             Применить
           </button>
         </>
@@ -586,16 +530,9 @@ const PlayerSummary = () => {
                 {markers[username].map((el, i) => (
                   <Tr key={i} keyStyle={i}>
                     <Th type="text" content={i + 1} />
-                    {username === "all" && (
-                      <Th type="text" content={el?.username || "-"} />
-                    )}
+                    {username === "all" && <Th type="text" content={el?.username || "-"} />}
                     <Th type="editing">
-                      <TInput
-                        id="name"
-                        size="large"
-                        onChange={(e) => markerChange(e, el.id)}
-                        defaultValue={el.name}
-                      />
+                      <TInput id="name" size="large" onChange={(e) => markerChange(e, el.id)} defaultValue={el.name} />
                     </Th>
                     <Th type="editing">
                       <TTextarea
@@ -606,44 +543,18 @@ const PlayerSummary = () => {
                       />
                     </Th>
                     <Th type="editing">
-                      <TInput
-                        id="x"
-                        size="small"
-                        onChange={(e) => markerChange(e, el.id)}
-                        defaultValue={el.x}
-                      />
+                      <TInput id="x" size="small" onChange={(e) => markerChange(e, el.id)} defaultValue={el.x} />
                     </Th>
                     <Th type="editing">
-                      <TInput
-                        id="y"
-                        size="small"
-                        onChange={(e) => markerChange(e, el.id)}
-                        defaultValue={el.y}
-                      />
+                      <TInput id="y" size="small" onChange={(e) => markerChange(e, el.id)} defaultValue={el.y} />
                     </Th>
                     <Th type="editing">
-                      <TInput
-                        id="z"
-                        size="small"
-                        onChange={(e) => markerChange(e, el.id)}
-                        defaultValue={el.z}
-                      />
+                      <TInput id="z" size="small" onChange={(e) => markerChange(e, el.id)} defaultValue={el.z} />
                     </Th>
-                    <Th
-                      type="link"
-                      href={`https://map.gmgame.ru/#/${el.x}/64/${el.z}/-4/GMGameWorld/over`}
-                    ></Th>
+                    <Th type="link" href={`https://map.gmgame.ru/#/${el.x}/64/${el.z}/-4/GMGameWorld/over`}></Th>
                     <Th type="actions">
-                      <TButton
-                        name="Удалить"
-                        type="submit"
-                        onClick={() => delMarker(el.id, username)}
-                      />
-                      <TButton
-                        name="Обновить"
-                        type="submit"
-                        onClick={() => updateMarker(el.id)}
-                      />
+                      <TButton name="Удалить" type="submit" onClick={() => delMarker(el.id, username)} />
+                      <TButton name="Обновить" type="submit" onClick={() => updateMarker(el.id)} />
                     </Th>
                   </Tr>
                 ))}
@@ -690,9 +601,7 @@ const PlayerSummary = () => {
                       {!el.notRender && (
                         <Tr key={i} keyStyle={i}>
                           <Th type="text" content={i + 1} />
-                          {username === "all" && (
-                            <Th type="text" content={el?.username || "-"} />
-                          )}
+                          {username === "all" && <Th type="text" content={el?.username || "-"} />}
                           <Th type="editing">
                             <TInput
                               id="name"
@@ -743,23 +652,13 @@ const PlayerSummary = () => {
                           </Th>
                           <Th
                             type="link"
-                            href={`https://map.gmgame.ru/#/${
-                              (el.xStart + el.xStop) / 2
-                            }/64/${
+                            href={`https://map.gmgame.ru/#/${(el.xStart + el.xStop) / 2}/64/${
                               (el.zStart + el.zStop) / 2
                             }/-4/GMGameWorld/over`}
                           />
                           <Th type="actions">
-                            <TButton
-                              name="Удалить"
-                              type="submit"
-                              onClick={() => delTerr(el.id, i, username)}
-                            />
-                            <TButton
-                              name="Обновить"
-                              type="submit"
-                              onClick={() => updateTerr(el.id)}
-                            />
+                            <TButton name="Удалить" type="submit" onClick={() => delTerr(el.id, i, username)} />
+                            <TButton name="Обновить" type="submit" onClick={() => updateTerr(el.id)} />
                           </Th>
                         </Tr>
                       )}
@@ -802,21 +701,10 @@ const PlayerSummary = () => {
                     {!el.notRender && (
                       <Tr key={i} keyStyle={i}>
                         <Th type="text" content={i + 1} />
-                        {username === "all" && (
-                          <Th type="text" content={el?.username || "-"} />
-                        )}
-                        <Th
-                          type="text"
-                          id="name"
-                          size="large"
-                          content={el.name}
-                        />
+                        {username === "all" && <Th type="text" content={el?.username || "-"} />}
+                        <Th type="text" id="name" size="large" content={el.name} />
                         <Th type="actions">
-                          <TButton
-                            type="submit"
-                            name="Посмотреть"
-                            onClick={() => getLink(el.name)}
-                          />
+                          <TButton type="submit" name="Посмотреть" onClick={() => getLink(el.name)} />
                         </Th>
                       </Tr>
                     )}
@@ -836,9 +724,7 @@ const PlayerSummary = () => {
       {/*--- Таблица для regen_user ---*/}
       {regens.length > 0 && (
         <>
-          <h4 className={classNames(styles["managerTitleH4"])}>
-            Список на реген
-          </h4>
+          <h4 className={classNames(styles["managerTitleH4"])}>Список на реген</h4>
           <TableMain>
             <THead>
               <Tr header={true}>
@@ -860,24 +746,13 @@ const PlayerSummary = () => {
                         <Th type="text" content={regen.username} />
                         <Th type="text" content={regen.user_id} />
                         <Th type="text" content="Не известно" />
-                        <Th
-                          type="link"
-                          href={`/manager/player_summary?user_id=${regen.user_id}`}
-                        />
+                        <Th type="link" href={`/manager/player_summary?user_id=${regen.user_id}`} />
                         <Th type="actions">
-                          <TButton
-                            name="Реген"
-                            type="submit"
-                            onClick={() =>
-                              regenAction(regen.user_id, "regen", i)
-                            }
-                          />
+                          <TButton name="Реген" type="submit" onClick={() => regenAction(regen.user_id, "regen", i)} />
                           <TButton
                             name="Оставить"
                             type="submit"
-                            onClick={() =>
-                              regenAction(regen.user_id, "settle", i)
-                            }
+                            onClick={() => regenAction(regen.user_id, "settle", i)}
                           />
                         </Th>
                       </Tr>
@@ -916,10 +791,7 @@ const PlayerSummary = () => {
               onChange={(e) => userDetailsChange(e, userDetails.user_id)}
               defaultValue={userDetails?.partner}
             />
-            <StrokeInfo
-              label="Откуда узнал о проекте:"
-              info={userDetails?.from_about}
-            />
+            <StrokeInfo label="Откуда узнал о проекте:" info={userDetails?.from_about} />
             <StrokeInfo label="О себе:" info={userDetails?.you_about} />
             <StrokeRedactor
               label="Иммунитет:"
@@ -940,11 +812,7 @@ const PlayerSummary = () => {
               id="expiration_date"
               type="date"
               onChange={(e) => userDetailsChange(e, userDetails.user_id)}
-              defaultValue={
-                userDetails.expirationDate
-                  ? userDetails.expirationDate.toISOString().substring(0, 10)
-                  : ""
-              }
+              defaultValue={userDetails.expirationDate ? userDetails.expirationDate.toISOString().substring(0, 10) : ""}
             />
             <textarea
               className={classNames(styles["notes"])}
@@ -967,95 +835,48 @@ const PlayerSummary = () => {
           ? null
           : userDetails.oldUsers.map((el, index) => (
               <>
-                <h3 className={classNames(styles["app_info"])}>
-                  Старая заявка [ {index + 1} ]
-                </h3>
+                <h3 className={classNames(styles["app_info"])}>Старая заявка [ {index + 1} ]</h3>
                 <div className={classNames(styles["old_app"])}>
                   <StrokeName name={el?.username} />
                   <div className={classNames(styles["description_user"])}>
-                    <StrokeInfo
-                      label="Дискорд id:"
-                      info={userDetails?.oldUsers[index]?.user_id}
-                    />
-                    <StrokeInfo
-                      label="Возраст:"
-                      info={userDetails?.oldUsers[index]?.age}
-                    />
-                    <StrokeInfo
-                      label="Баланс:"
-                      info={userDetails?.oldUsers[index]?.balance}
-                    />
+                    <StrokeInfo label="Дискорд id:" info={userDetails?.oldUsers[index]?.user_id} />
+                    <StrokeInfo label="Возраст:" info={userDetails?.oldUsers[index]?.age} />
+                    <StrokeInfo label="Баланс:" info={userDetails?.oldUsers[index]?.balance} />
                     <StrokeInfo
                       label="Гражданство:"
-                      info={
-                        userDetails?.oldUsers[index]?.citizenship === true
-                          ? "true"
-                          : "false"
-                      }
+                      info={userDetails?.oldUsers[index]?.citizenship === true ? "true" : "false"}
                     />
                     <StrokeInfo
                       label="Друзья:"
-                      info={
-                        !userDetails?.oldUsers[index]?.friends
-                          ? "-"
-                          : userDetails?.oldUsers[index]?.friends
-                      }
+                      info={!userDetails?.oldUsers[index]?.friends ? "-" : userDetails?.oldUsers[index]?.friends}
                     />
                     <StrokeInfo
                       label="Откуда узнали о проэкте:"
-                      info={
-                        !userDetails?.oldUsers[index]?.from_about
-                          ? "-"
-                          : userDetails?.oldUsers[index]?.from_about
-                      }
+                      info={!userDetails?.oldUsers[index]?.from_about ? "-" : userDetails?.oldUsers[index]?.from_about}
                     />
                     <StrokeInfo
                       label="О себе:"
-                      info={
-                        !userDetails?.oldUsers[index]?.you_about
-                          ? "-"
-                          : userDetails?.oldUsers[index]?.you_about
-                      }
+                      info={!userDetails?.oldUsers[index]?.you_about ? "-" : userDetails?.oldUsers[index]?.you_about}
                     />
                     <StrokeInfo
                       label="Сервера:"
-                      info={
-                        !userDetails?.oldUsers[index]?.server
-                          ? "-"
-                          : userDetails?.oldUsers[index]?.server
-                      }
+                      info={!userDetails?.oldUsers[index]?.server ? "-" : userDetails?.oldUsers[index]?.server}
                     />
                     <StrokeInfo
                       label="Имунитет:"
-                      info={
-                        userDetails?.oldUsers[index]?.immun === true
-                          ? "true"
-                          : "false"
-                      }
+                      info={userDetails?.oldUsers[index]?.immun === true ? "true" : "false"}
                     />
                     <StrokeInfo
                       label="Is_discord:"
-                      info={
-                        userDetails?.oldUsers[index]?.is_discord === true
-                          ? "true"
-                          : "false"
-                      }
+                      info={userDetails?.oldUsers[index]?.is_discord === true ? "true" : "false"}
                     />
                     <StrokeInfo
                       label="Заметка о игроке:"
-                      info={
-                        !userDetails?.oldUsers[index]?.note
-                          ? "-"
-                          : userDetails?.oldUsers[index]?.note
-                      }
+                      info={!userDetails?.oldUsers[index]?.note ? "-" : userDetails?.oldUsers[index]?.note}
                     />
                     <StrokeInfo
                       label="Партнёр:"
-                      info={
-                        !userDetails?.oldUsers[index]?.partner
-                          ? "-"
-                          : userDetails?.oldUsers[index]?.partner
-                      }
+                      info={!userDetails?.oldUsers[index]?.partner ? "-" : userDetails?.oldUsers[index]?.partner}
                     />
                   </div>
                 </div>
@@ -1090,10 +911,7 @@ const PlayerSummary = () => {
                 return (
                   <Tr key={i} keyStyle={i}>
                     <Th type="text" content={i + 1} />
-                    <Th
-                      type="text"
-                      content={new Date(el.log_date).toLocaleString()}
-                    />
+                    <Th type="text" content={new Date(el.log_date).toLocaleString()} />
                     <Th
                       type="text"
                       content={(() => {
@@ -1103,9 +921,7 @@ const PlayerSummary = () => {
                         } catch {
                           return log;
                         }
-                        return `${log.action} ${
-                          log.data ? JSON.stringify(log.data) : ""
-                        }`;
+                        return `${log.action} ${log.data ? JSON.stringify(log.data) : ""}`;
                       })()}
                     />
                     <Th type="text" content={el.manager} />
