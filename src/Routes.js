@@ -56,7 +56,6 @@ const ChangePassword = lazy(() => import(/* webpackChunkName: "cab" */ "./module
 
 // --
 const Statistic = lazy(() => import(/* webpackChunkName: "statistics" */ "./modules/pages/statistic/Statistic.js"));
-const EventStatistic = lazy(() => import(/* webpackChunkName: "event_statistics" */ "./modules/pages/event/event")); // pre // prettier-ignorettier-ignore
 // const TexturePack = lazy(() => import(/* webpackChunkName: "texture_pack" */ "./modules/pages/texture-pack/TexturePack.js")); // prettier-ignore
 // const Mods = lazy(() => import(/* webpackChunkName: "mods" */ "./modules/pages/mods/Mods.js")); // prettier-ignore
 const Maps = lazy(() => import(/* webpackChunkName: "maps" */ "./modules/pages/maps/Maps.js")); // prettier-ignore
@@ -106,7 +105,6 @@ const Router = () => {
           <Route path="/regulations" element={<Regulations />} />
           <Route path="/mods" element={<NotAvailable />} /> {/* <Mods/> */}
           <Route path="/statistic" element={<Statistic />} />
-          <Route path="/event_statistic" element={<EventStatistic />} />
           <Route path="/support" element={<Support />} />
           <Route path="/online_map" element={<Maps />} />
           <Route path="/texture_pack" element={<NotAvailable />} /> {/* <TexturePack/> */}
