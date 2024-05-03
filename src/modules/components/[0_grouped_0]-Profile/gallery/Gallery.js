@@ -15,6 +15,7 @@ import BinSvgComponent from "../../../../bases/icons/binSvg/BinSvg";
 
 import styles from "./Gallery.module.scss";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import ConfirmModal from "../../../../common/confirm-modal/ConfirmModal";
 
 const TAG = [
   "base",
@@ -43,6 +44,8 @@ const Gallery = () => {
   const [filter, setFilter] = useState(null);
   const [visible, setVisible] = useState(true);
 
+  const [showConfirm, setShowConfirm] = useState(null);
+
   const [numberLengthTitle, setNumberLengthTitle] = useState(0);
 
   const shortenText = (text, maxLength) => (text.length > maxLength ? `${text.slice(0, maxLength)}...` : text);
@@ -67,6 +70,7 @@ const Gallery = () => {
   };
 
   const handleDelete = (id) => {
+    setShowConfirm(null);
     sendRequest("/api/delete_gallery", "POST", {
       id: id,
     }).then((response) => {
@@ -170,10 +174,20 @@ const Gallery = () => {
                   {/*</Link>*/}
                   <ActionsButton
                     onClick={() => {
-                      handleDelete(post.id);
+                      setShowConfirm(post.id);
                     }}
                     ico={<BinSvgComponent width="100%" height="100%" />}
                   />
+                  {showConfirm !== post.id ? null : (
+                    <ConfirmModal
+                      yes={() => {
+                        handleDelete(post.id);
+                      }}
+                      no={() => {
+                        setShowConfirm(null);
+                      }}
+                    />
+                  )}
                 </div>
               </div>
             );
