@@ -69,37 +69,51 @@ const OneItem = ({ item, onClick }) => {
   return (
     <div className={classNames(styles["oneItemBlock"])} onClick={onClick}>
       <div className={classNames(styles["photoItem"])} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-        {item.banner_pattern === undefined && item.shield_color?.color === undefined ? (
-          <MinecraftImage item={item} />
-        ) : null}
-        {item.banner_pattern !== undefined && item.shield_color?.color === undefined ? (
-          <MinecraftBanner item={item} type="center" />
-        ) : null}
-        {item.shield_color?.color !== undefined ? <MinecraftShield item={item} type="center" /> : null}
+        {/*{item.banner_pattern === undefined && item.shield_color?.color === undefined ? (*/}
+        {/*  <MinecraftImage item={item} />*/}
+        {/*) : null}*/}
+        {/*{item.banner_pattern !== undefined && item.shield_color?.color === undefined ? (*/}
+        {/*  <MinecraftBanner item={item} type="center" />*/}
+        {/*) : null}*/}
+        {/*{item.shield_color?.color !== undefined ? <MinecraftShield item={item} type="center" /> : null}*/}
+        <MinecraftImage item={item} />
         <span className={classNames(styles["itemCount"])}>{item.amount}</span>
       </div>
-      {showTooltip === true ? (
-        <div className={classNames(styles["tooltip"])} style={tooltipStyle}>
-          <MinecraftName item={item} />
-          {item.trim === undefined ? null : <MinecraftArmorName item={item} />}
-          {item.shield_color?.color === undefined ? null : <MinecraftShieldColor item={item} />}
-          {item.leather_color === undefined ? null : <MinecraftArmorColor item={item} />}
-          <MinecraftList item={item} />
-          <MinecraftRegister item={item} />
-          {item.trim === undefined ? null : <MinecraftArmorType item={item} />}
-          {item.banner_pattern !== undefined && item.shield_color?.color === undefined ? (
-            <MinecraftBanner item={item} type="normal" />
-          ) : null}
-          {item.shield_color?.color !== undefined ? <MinecraftShield item={item} type="normal" /> : null}
-          {SHULKERS_TYPE.includes(item.type) ? (
-            <div className={classNames(styles["shulkerWrapper"])}>
-              <ShulkerBoxMini item={item} />
-            </div>
-          ) : null}
-        </div>
-      ) : null}
     </div>
   );
 };
 
 export default OneItem;
+
+// <div className={classNames(styles["oneItemBlock"])} onClick={onClick}>
+//   <div className={classNames(styles["photoItem"])} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+//     {item.banner_pattern === undefined && item.shield_color?.color === undefined ? (
+//       <MinecraftImage item={item} />
+//     ) : null}
+//     {item.banner_pattern !== undefined && item.shield_color?.color === undefined ? (
+//       <MinecraftBanner item={item} type="center" />
+//     ) : null}
+//     {item.shield_color?.color !== undefined ? <MinecraftShield item={item} type="center" /> : null}
+//     <span className={classNames(styles["itemCount"])}>{item.amount}</span>
+//   </div>
+//   {showTooltip === true ? (
+//     <div className={classNames(styles["tooltip"])} style={tooltipStyle}>
+//       <MinecraftName item={item} />
+//       {item.trim === undefined ? null : <MinecraftArmorName item={item} />}
+//       {item.shield_color?.color === undefined ? null : <MinecraftShieldColor item={item} />}
+//       {item.leather_color === undefined ? null : <MinecraftArmorColor item={item} />}
+//       <MinecraftList item={item} />
+//       <MinecraftRegister item={item} />
+//       {item.trim === undefined ? null : <MinecraftArmorType item={item} />}
+//       {item.banner_pattern !== undefined && item.shield_color?.color === undefined ? (
+//         <MinecraftBanner item={item} type="normal" />
+//       ) : null}
+//       {item.shield_color?.color !== undefined ? <MinecraftShield item={item} type="normal" /> : null}
+//       {SHULKERS_TYPE.includes(item.type) ? (
+//         <div className={classNames(styles["shulkerWrapper"])}>
+//           <ShulkerBoxMini item={item} />
+//         </div>
+//       ) : null}
+//     </div>
+//   ) : null}
+// </div>

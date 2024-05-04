@@ -9,11 +9,11 @@ const OneSuggestions = ({ itemOne, itemTwo, itemRes, onClickOne, onClickTwo, onC
   return (
     <div className={classNames(styles["one_suggestions_block"])}>
       <div className={classNames(styles["double_block"])}>
-        {itemOne.type_ru === undefined ? <OneItemNone /> : <OneItem item={itemOne} onClick={onClickOne} />}
-        {itemTwo.type_ru === undefined ? <OneItemNone /> : <OneItem item={itemTwo} onClick={onClickTwo} />}
+        {itemOne.id === undefined ? <OneItemNone /> : <OneItem item={itemOne} onClick={onClickOne} />}
+        {itemTwo.id === undefined ? <OneItemNone /> : <OneItem item={itemTwo} onClick={onClickTwo} />}
       </div>
       <span className={classNames(styles["arrow_suggestions"])}>&#10132;</span>
-      {itemRes.type_ru === undefined ? <OneItemNone /> : <OneItem item={itemRes} onClick={onClickRes} />}
+      {itemRes.id === undefined ? <OneItemNone /> : <OneItem item={itemRes} onClick={onClickRes} />}
     </div>
   );
 };
