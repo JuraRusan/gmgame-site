@@ -175,7 +175,7 @@ const Shopkeepers = () => {
               <ul className={classNames(styles["ul_block"])}>
                 {filteredData.map((id, index) => (
                   <>
-                    {id.offers.length === 0 ? null : (
+                    {id.name === "TestingSHOP9110" || id.offers.length === 0 ? null : (
                       <li key={index} className={classNames(styles["one_shop_list_line"])}>
                         <Link
                           activeClass={classNames(styles["active"])}
@@ -214,7 +214,7 @@ const Shopkeepers = () => {
           <div className={classNames(styles["shop_all_suggestions"])}>
             {filteredData.map((el, i) => (
               <>
-                {el.offers.length === 0 ? (
+                {el.name === "TestingSHOP9110" || el.offers.length === 0 ? (
                   <section id={`scroll_${el.shop_id}`} key={i}></section>
                 ) : (
                   <section id={`scroll_${el.shop_id}`} key={i} className={classNames(styles["one_offers_shop"])}>
