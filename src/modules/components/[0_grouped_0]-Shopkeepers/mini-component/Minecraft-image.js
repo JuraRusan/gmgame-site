@@ -110,17 +110,17 @@ const MinecraftImage = ({ item }) => {
     <div className={classNames(styles["wrapperImage"])}>
       <LazyLoadImage style={{ ...colorBG }} src={imageSource} width="100%" height="100%" effect="blur" alt="none" />
 
-      {itemTrimMaterial !== undefined ? (
+      {item.trim && (
         <div className={classNames(styles["absoluteArmor"])}>
           <LazyLoadImage
-            src={`./site_assets/view_trim/${imageTypeFolder}/${itemTrimMaterial}.webp`}
+            src={`./site_assets/view_trim/${imageTypeFolder}/${item.trim.material}.webp`}
             width="100%"
             height="100%"
             effect="blur"
             alt="none"
           />
         </div>
-      ) : null}
+      )}
 
       {itemEnchant.length > 0 || itemNameId === "written_book" || itemNameId === "enchanted_golden_apple" ? (
         <div className={classNames(styles["enchant"])}>

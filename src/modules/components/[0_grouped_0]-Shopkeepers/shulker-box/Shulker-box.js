@@ -12,7 +12,7 @@ const ShulkerBox = ({ item }) => {
   return (
     <div className={classNames(styles["oneShulkerBox"])}>
       {filledArray.map((el, index) => (
-        <>{el.type === null ? <OneItemNone key={index} /> : <OneItem key={index} item={el} />}</>
+        <>{el.id === null ? <OneItemNone key={index} /> : <OneItem key={index} item={el} />}</>
       ))}
     </div>
   );

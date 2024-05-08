@@ -1,17 +1,8 @@
 import classNames from "classnames";
 import React, { useEffect, useState } from "react";
-import ShulkerBoxMini from "../shulker-box-mini/Shulker-box-mini";
 import MinecraftName from "../mini-component/Minecraft-name";
 import MinecraftRegister from "../mini-component/Minecraft-register";
-import MinecraftList from "../mini-component/Minecraft-list";
 import MinecraftImage from "../mini-component/Minecraft-image";
-import MinecraftArmorType from "../mini-component/Minecraft-armor-type";
-import MinecraftArmorName from "../mini-component/Minecraft-armor-name";
-import MinecraftBanner from "../mini-component/Minecraft-banner";
-import MinecraftShield from "../mini-component/Minecraft-shield";
-import MinecraftShieldColor from "../mini-component/Minecraft-shield-color";
-import { SHULKERS_TYPE } from "../../../pages/shopkeepers/ShulkersType";
-import MinecraftArmorColor from "../mini-component/Minecraft-armor-color";
 
 import styles from "./One-item.module.scss";
 
@@ -79,6 +70,12 @@ const OneItem = ({ item, onClick }) => {
         <MinecraftImage item={item} />
         <span className={classNames(styles["itemCount"])}>{item.amount}</span>
       </div>
+      {showTooltip === true ? (
+        <div className={classNames(styles["tooltip"])} style={tooltipStyle}>
+          <MinecraftName item={item} />
+          <MinecraftRegister item={item} />
+        </div>
+      ) : null}
     </div>
   );
 };

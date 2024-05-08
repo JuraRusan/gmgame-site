@@ -33,14 +33,6 @@ const INFORMATION_GMGAME = "Мир со всеми постройками и п�
 const INFORMATION_FARM = "Все механизмы и фермы с редстоуном строятся здесь, чтобы не нагружать основной сервер. Не вайпается и расширяется по необходимости."; // prettier-ignore
 
 const General = () => {
-  function findShort(s) {
-    const t = s.split(" ").sort();
-    console.log(t);
-    return t[0].length;
-  }
-
-  console.log(findShort("bitcoin take over the world maybe who knows perhaps"));
-
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);

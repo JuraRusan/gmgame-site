@@ -1,6 +1,5 @@
 import classNames from "classnames";
 import React, { useEffect, useState } from "react";
-import { SHULKERS_TYPE } from "./ShulkersType";
 import { Link, scroller } from "react-scroll";
 import OneSuggestions from "../../components/[0_grouped_0]-Shopkeepers/one-suggestions/One-suggestions.js";
 import Notifications from "../../components/notifications/Notifications";
@@ -10,10 +9,11 @@ import { debounce } from "lodash";
 import Button from "../../components/button/Button";
 import useLoading from "../../loading/useLoading";
 import Preload from "../../components/preloader/Preload";
-import { data_test_new_parser } from "./data_test_new_parser";
+import { useDispatch } from "react-redux";
+import { useAxios } from "../../../DataProvider";
+import { useAlert } from "react-alert";
 
 import styles from "./Shopkeepers.module.scss";
-import { useDispatch } from "react-redux";
 
 const INFO_DEFAULT = "Поиск работает по всем предметам, даже по тем что лежат в шалкерах.";
 
@@ -23,52 +23,48 @@ const DEFAULT_INFO_SHOP = {
   coordinatesX: " ",
   coordinatesY: " ",
   coordinatesZ: " ",
-  remainder: " ",
   villagerType: "savanna",
   profession: "none",
+  offerKey: 0,
+  product: " ",
+  balance: {},
 };
 
-function isItemInteractiveResult(item) {
-  return SHULKERS_TYPE.includes(item.product.id);
-}
-
-function isItemInteractiveItem1(item) {
-  return SHULKERS_TYPE.includes(item.price.slot1.id);
-}
-
-function isItemInteractiveItem2(item) {
-  return SHULKERS_TYPE.includes(item.price.slot2.id);
-}
-
 const Shopkeepers = () => {
-  const isLoading = useLoading();
-
   const dispatch = useDispatch();
+  const isLoading = useLoading();
+  const alert = useAlert();
 
   const [infoShop, setInfoShop] = useState(DEFAULT_INFO_SHOP);
 
   const [showButton, setShowButton] = useState(false);
-  const [valueSearchShop, setValueSearchShop] = useState("");
   const [valueSearchItem, setValueSearchItem] = useState("");
 
-  const [selectedItem, setSelectedItem] = useState(null);
-  const [selectedItemOne, setSelectedItemOne] = useState("");
+  const [selected, setSelected] = useState(null);
   const [visible, setVisible] = useState(false);
 
-  const [dataShop, setDataShop] = useState(data_test_new_parser);
+  const [allShopData, setAllShopData] = useState({});
+  const [indexVisible, setIndexVisible] = useState({});
+  const [searchIndex, setSearchIndex] = useState({});
 
-  function shopFunction(props, remainder = 0) {
+  const [init, setInit] = useState(false);
+
+  const resParams = useAxios("api/get_shops", "GET", {});
+
+  const shopFunction = (seller, key = 0, product = "", balance = {}) => {
     setInfoShop({
-      name: props.name,
-      ownerName: props.owner,
-      coordinatesX: props.x,
-      coordinatesY: props.y,
-      coordinatesZ: props.z,
-      remainder: remainder,
-      villagerType: props.object_villager_type,
-      profession: props.object_profession,
+      name: seller.name,
+      ownerName: seller.owner,
+      coordinatesX: seller.x,
+      coordinatesY: seller.y,
+      coordinatesZ: seller.z,
+      villagerType: seller.object_villager_type,
+      profession: seller.object_profession,
+      offerKey: key,
+      product: product,
+      balance: balance,
     });
-  }
+  };
 
   const scrollActive = () => {
     const top = document.getElementById("topScroll");
@@ -85,62 +81,42 @@ const Shopkeepers = () => {
     setShowButton(scrollY > 350);
   };
 
-  // const filterShopData =
-  //   valueSearchShop.trim() === ""
-  //     ? dataShop
-  //     : dataShop.filter(
-  //         (fill) =>
-  //           (fill.name && fill.name.toLowerCase().includes(valueSearchShop)) ||
-  //           (fill.owner && fill.owner.toLowerCase().includes(valueSearchShop))
-  //       );
-  //
-  // const filteredData = valueSearchItem
-  //   ? filterShopData.map((item) => {
-  //       const matchingOffers = item.offers.filter((offer) => {
-  //         return (
-  //           (offer.product.type && offer.product.type.includes(valueSearchItem)) ||
-  //           (offer.product.type_ru && offer.product.type_ru.toLowerCase().includes(valueSearchItem)) ||
-  //           (offer.product.enchant &&
-  //             offer.product.enchant.some(
-  //               (enchantItem) =>
-  //                 (enchantItem.enchant_id && enchantItem.enchant_id.includes(valueSearchItem)) ||
-  //                 (enchantItem.enchant_id_ru && enchantItem.enchant_id_ru.toLowerCase().includes(valueSearchItem))
-  //             )) ||
-  //           (offer.product.stored_enchant &&
-  //             offer.product.stored_enchant.some(
-  //               (enchantItem) =>
-  //                 (enchantItem.enchant_id && enchantItem.enchant_id.includes(valueSearchItem)) ||
-  //                 (enchantItem.enchant_id_ru && enchantItem.enchant_id_ru.toLowerCase().includes(valueSearchItem))
-  //             )) ||
-  //           (offer.product.content &&
-  //             offer.product.content.some(
-  //               (contentItem) =>
-  //                 (contentItem.id && contentItem.id.includes(valueSearchItem)) ||
-  //                 (contentItem.type_ru && contentItem.type_ru.toLowerCase().includes(valueSearchItem)) ||
-  //                 (contentItem.enchant &&
-  //                   contentItem.enchant.some(
-  //                     (enchantItem) =>
-  //                       (enchantItem.enchant_id && enchantItem.enchant_id.includes(valueSearchItem)) ||
-  //                       (enchantItem.enchant_id_ru && enchantItem.enchant_id_ru.toLowerCase().includes(valueSearchItem))
-  //                   ))
-  //             ))
-  //         );
-  //       });
-  //
-  //       return { ...item, offers: matchingOffers };
-  //     })
-  //   : filterShopData;
+  const isName = (props) => {
+    return props.name === "" ? props.owner : props.name;
+  };
+
+  useEffect(() => {
+    if (valueSearchItem === "") {
+      const filteredData = {};
+
+      for (const shop in allShopData) {
+        if (allShopData.hasOwnProperty(shop)) {
+          filteredData[shop] = Object.keys(allShopData[shop].offers);
+        }
+      }
+
+      setIndexVisible(filteredData);
+    } else {
+      let filteredData = {};
+
+      Object.keys(searchIndex).forEach((key) => {
+        if (String(key).toLowerCase().includes(valueSearchItem)) {
+          Object.keys(searchIndex[key]).forEach((innerKey) => {
+            filteredData[innerKey] = filteredData[innerKey]
+              ? [...new Set([...filteredData[innerKey], ...searchIndex[key][innerKey]])]
+              : [...new Set(searchIndex[key][innerKey])];
+          });
+        }
+      });
+
+      setIndexVisible(filteredData);
+    }
+  }, [valueSearchItem, allShopData, searchIndex]);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  // useEffect(() => {
-  //   axios.get("https://map.gmgame.ru/api/all_shops_with_offers").then((res) => {
-  //     setDataShop(res.data.data);
-  //   });
-  // }, []);
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
@@ -150,155 +126,127 @@ const Shopkeepers = () => {
       scroller.scrollTo(scrollTo, {
         smooth: true,
         spy: true,
-        offset: -64,
+        offset: -60,
       });
     }
   }, [isLoading]);
 
-  useEffect(() => {
-    dispatch({ type: "ADD_LANG", payload: dataShop.lang });
-  }, []);
+  if (resParams.loaded && !init) {
+    setInit(true);
 
-  if (isLoading) {
+    if (resParams.data.error) {
+      alert.error(resParams.data.error);
+    } else {
+      dispatch({ type: "ADD_LANG", payload: resParams.data.lang });
+      setAllShopData(resParams.data.shops);
+      setSearchIndex(resParams.data.searchIndex);
+    }
+  }
+
+  if (isLoading || resParams.loading) {
     return <Preload full={false} />;
   }
 
   return (
-    <div className={classNames(styles["main_shopkeepers_block"])} id="topScroll">
-      <h4 className={classNames(styles["title_shop_block"])}>Товары игроков сервера</h4>
-      <p className={classNames(styles["WWW"])}>Временно не доступно с этого дисплея</p>
-      {dataShop.shops.length === 0 ? (
-        <h4 className={classNames(styles["data_none"])}>Данные отсутствуют в данный момент</h4>
-      ) : (
-        <div className={classNames(styles["center_block"])}>
-          <div className={classNames(styles["shop_list_wrapper"])}>
-            <div className={classNames(styles["shop_list_box"])}>
-              <input
-                type="search"
-                className={classNames(styles["search_shop"])}
-                placeholder="Поиск по названию магазина"
-                onChange={debounce((e) => setValueSearchShop(e.target.value.toLowerCase()), 350)}
-              />
-              <ul className={classNames(styles["ul_block"])}>
-                {dataShop.shops.map((id, index) => (
-                  <>
-                    {id.offers.length === 0 ? null : (
-                      <li key={index} className={classNames(styles["one_shop_list_line"])}>
-                        <Link
-                          activeClass={classNames(styles["active"])}
-                          className={classNames(styles["one_line"])}
-                          spy={true}
-                          smooth={true}
-                          offset={-64}
-                          to={`scroll_${id.shop_id}`}
-                          // onSetActive={debounce(() => {
-                          //   setInfoShop({
-                          //     name: id.name,
-                          //     ownerName: id.owner,
-                          //     coordinatesX: id.x,
-                          //     coordinatesY: id.y,
-                          //     coordinatesZ: id.z,
-                          //     remainder: 0,
-                          //     villagerType: id.object_villager_type,
-                          //     profession: id.object_profession
-                          //   })
-                          // }, 500)} // --- !!! --- Вызывает ОГРОМНЫЕ лаги --- !!! ---
-                        >
-                          {id.name === "" ? id.owner : id.name}
-                        </Link>
-                      </li>
-                    )}
-                  </>
-                ))}
-              </ul>
-            </div>
-            {showButton && (
-              <div className={classNames(styles["scroll"])}>
-                <Button view="submit" type="submit" onClick={scrollActive} label="Прокрутка вверх" />
-              </div>
-            )}
-          </div>
-          <div className={classNames(styles["shop_all_suggestions"])}>
-            {dataShop.shops.map((el, i) => (
+    <div className={classNames(styles["shopkeepers"])} id="topScroll">
+      <h4 className={classNames(styles["title"])}>Товары игроков сервера</h4>
+      <div className={classNames(styles["content"])}>
+        <div className={classNames(styles["list"])}>
+          <ul className={classNames(styles["ul_names"])}>
+            {Object.keys(indexVisible).map((keys) => (
               <>
-                {el.offers.length === 0 ? (
-                  <section id={`scroll_${el.shop_id}`} key={i}></section>
-                ) : (
-                  <section id={`scroll_${el.shop_id}`} key={i} className={classNames(styles["one_offers_shop"])}>
-                    <h4 className={classNames(styles["block_shop"])}>{el.name === "" ? el.owner : el.name}</h4>
-                    {el.offers.map((offer, index) => (
-                      <div
-                        className={classNames(styles["on_click"])}
-                        key={index}
-                        onClick={() => shopFunction(el /*, offer.product.remainder */)}
-                      >
-                        <OneSuggestions
-                          itemOne={offer.price.slot1}
-                          itemTwo={offer.price.slot2}
-                          itemRes={offer.product}
-                          onClickOne={
-                            isItemInteractiveItem1(offer)
-                              ? () => {
-                                  setSelectedItem(offer.price.slot1);
-                                  setSelectedItemOne(null);
-                                  setVisible(true);
-                                }
-                              : () => {
-                                  setSelectedItem(null);
-                                  setSelectedItemOne(offer.price.slot1);
-                                  setVisible(true);
-                                }
-                          }
-                          onClickTwo={
-                            isItemInteractiveItem2(offer)
-                              ? () => {
-                                  setSelectedItem(offer.price.slot2);
-                                  setSelectedItemOne(null);
-                                  setVisible(true);
-                                }
-                              : () => {
-                                  setSelectedItem(null);
-                                  setSelectedItemOne(offer.price.slot2);
-                                  setVisible(true);
-                                }
-                          }
-                          onClickRes={
-                            isItemInteractiveResult(offer)
-                              ? () => {
-                                  setSelectedItem(offer.product);
-                                  setSelectedItemOne(null);
-                                  setVisible(true);
-                                }
-                              : () => {
-                                  setSelectedItem(null);
-                                  setSelectedItemOne(offer.product);
-                                  setVisible(true);
-                                }
-                          }
-                        />
-                      </div>
-                    ))}
-                  </section>
+                {allShopData[keys].offers[1] && (
+                  <li key={keys} className={classNames(styles["one"])}>
+                    <Link
+                      activeClass={classNames(styles["active"])}
+                      className={classNames(styles["link"])}
+                      spy={true}
+                      smooth={true}
+                      offset={-64}
+                      to={`scroll_${allShopData[keys].shop_id}`}
+                      onClick={() => shopFunction(allShopData[keys])}
+                    >
+                      {isName(allShopData[keys])}
+                    </Link>
+                  </li>
                 )}
               </>
             ))}
-          </div>
-          <div className={classNames(styles["shopOneSuggestions"])}>
-            <Notifications inf={INFO_DEFAULT} type="warn" />
-            <input
-              type="search"
-              className={classNames(styles["searchInputItems"])}
-              onChange={debounce((e) => setValueSearchItem(e.target.value.toLowerCase()), 350)}
-              placeholder="Найти..."
-            />
-            {visible && <PreviewComponent selectedItem={selectedItem} selectedItemOne={selectedItemOne} />}
-            <div className={classNames(styles["villagerShopInfo"])}>
-              <Villager shop={infoShop} />
-              <Notifications inf="Обновление данных с сервером происходит раз в 15 минут" type="warn" />
+          </ul>
+          {showButton && (
+            <div className={classNames(styles["scroll"])}>
+              <Button view="submit" type="submit" onClick={scrollActive} label="Прокрутка вверх" />
             </div>
+          )}
+        </div>
+        <div className={classNames(styles["offers"])}>
+          {Object.keys(indexVisible).map((keys) => (
+            <>
+              {allShopData[keys].offers[1] === undefined ? (
+                <section
+                  className={classNames(styles["single_offers"])}
+                  id={`scroll_${allShopData[keys].shop_id}`}
+                  key={allShopData[keys].shop_id}
+                />
+              ) : (
+                <section
+                  id={`scroll_${allShopData[keys].shop_id}`}
+                  key={allShopData[keys].shop_id}
+                  className={classNames(styles["single_offers"])}
+                >
+                  <h4 className={classNames(styles["name_fixed"])}>{isName(allShopData[keys])}</h4>
+                  {indexVisible[keys].map((offerKeys) => (
+                    <div
+                      className={classNames(styles["actions"])}
+                      key={offerKeys}
+                      onClick={() =>
+                        shopFunction(
+                          allShopData[keys],
+                          allShopData[keys].offers[offerKeys],
+                          allShopData[keys].offers[offerKeys].product.id,
+                          allShopData[keys].balance
+                        )
+                      }
+                    >
+                      <OneSuggestions
+                        itemOne={allShopData[keys].offers[offerKeys].price.slot1}
+                        itemTwo={allShopData[keys].offers[offerKeys].price.slot2}
+                        itemRes={allShopData[keys].offers[offerKeys].product}
+                        onClickOne={() => {
+                          setSelected(allShopData[keys].offers[offerKeys].price.slot1);
+                          setVisible(true);
+                        }}
+                        onClickTwo={() => {
+                          setSelected(allShopData[keys].offers[offerKeys].price.slot2);
+                          setVisible(true);
+                        }}
+                        onClickRes={() => {
+                          setSelected(allShopData[keys].offers[offerKeys].product);
+                          setVisible(true);
+                        }}
+                      />
+                    </div>
+                  ))}
+                </section>
+              )}
+            </>
+          ))}
+        </div>
+        <div className={classNames(styles["villages_and_preview"])}>
+          <Notifications inf={INFO_DEFAULT} type="warn" />
+          <input
+            type="search"
+            className={classNames(styles["search_items"])}
+            onChange={debounce((e) => setValueSearchItem(e.target.value.toLowerCase()), 300)}
+            placeholder="Найти..."
+          />
+          {visible && <PreviewComponent selected={selected} />}
+          <div className={classNames(styles["villager_info"])}>
+            <Villager shop={infoShop} />
+            <Notifications inf="Обновление данных с сервером происходит раз в 15 минут" type="warn" />
           </div>
         </div>
-      )}
+      </div>
     </div>
   );
 };
