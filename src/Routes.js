@@ -51,7 +51,12 @@ const EditAddTerr = lazy(() => import(/* webpackChunkName: "cab" */ "./modules/c
 // --
 const MyProfile = lazy(() => import(/* webpackChunkName: "cab" */ "./modules/components/[0_grouped_0]-Profile/my-profile/My-profile.js")); // prettier-ignore
 const MyPrizes = lazy(() => import(/* webpackChunkName: "cab" */ "./modules/components/[0_grouped_0]-Profile/my-prizes/My-prizes.js")); // prettier-ignore
+
+// --
 const ShopUser = lazy(() => import(/* webpackChunkName: "cab" */ "./modules/components/[0_grouped_0]-Profile/shops-user/ShopUser")); // prettier-ignore
+const LogTrade = lazy(() => import(/* webpackChunkName: "cab" */ "./modules/components/[0_grouped_0]-Profile/shops-user/LogTrade")); // prettier-ignore
+
+// --
 const ChangePassword = lazy(() => import(/* webpackChunkName: "cab" */ "./modules/components/[0_grouped_0]-Profile/change-password/Change-password.js")); // prettier-ignore
 
 // --
@@ -96,6 +101,7 @@ const Router = () => {
             <Route path="prize" element={<MyPrizes />} />
             {/* ---------- */}
             <Route path="shop_user" element={<ShopUser />} />
+            <Route path="log_trade" element={<LogTrade />} />
             {/* ---------- */}
             <Route path="change_password" element={<ChangePassword />} />
             {/* ---------- */}

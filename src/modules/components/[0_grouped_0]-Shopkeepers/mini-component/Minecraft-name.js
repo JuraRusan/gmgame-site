@@ -16,9 +16,9 @@ const MinecraftName = ({ item }) => {
       ) : (
         <h3 className={classNames(styles["name"])} dangerouslySetInnerHTML={{ __html: item.minecraft_custom }}></h3>
       )}
-      {item.leather_color && (
+      {item.color && (
         <h3 className={classNames(styles["name"])}>
-          - Цвет: <span className={classNames(styles["custom"])}>{RgbToHex(item.leather_color)}</span>
+          - Цвет: <span className={classNames(styles["color"])}>{item.color}</span>
         </h3>
       )}
       {item.improvement && (
@@ -33,17 +33,17 @@ const MinecraftName = ({ item }) => {
       )}
       {item.firework_power && (
         <h3 className={classNames(styles["name"])}>
-          - lvl <span className={classNames(styles["custom"])}>{item.firework_power}</span>
+          - lvl <span className={classNames(styles["color"])}>{item.firework_power}</span>
         </h3>
       )}
       {item.trim?.pattern && (
         <h3 className={classNames(styles["name"])}>
-          - <span className={classNames(styles["custom"])}>{lang[item.trim.pattern]}</span>
+          - <span className={classNames(styles["color"])}>{lang[item.trim.pattern]}</span>
         </h3>
       )}
       {item.trim?.material && (
         <h3 className={classNames(styles["name"])}>
-          - <span className={classNames(styles["custom"])}>{lang[item.trim.material]}</span>
+          - <span className={classNames(styles["color"])}>{lang[item.trim.material]}</span>
         </h3>
       )}
       <MinecraftList item={item} />

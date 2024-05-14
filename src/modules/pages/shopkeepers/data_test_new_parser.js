@@ -283,7 +283,7 @@ export const data_test_new_parser = {
       91: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19"],
       105: ["1", "2", "3", "5", "6", "7"],
       106: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
-      107: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"],
+      107: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16"],
       108: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
     },
     Элитры: {
@@ -483,14 +483,14 @@ export const data_test_new_parser = {
       109: ["15"],
     },
     Проворство: {
-      4: ["5", "7"],
+      4: ["5"],
       18: ["3"],
       45: ["4"],
       78: ["3"],
       107: ["9", "10"],
     },
     Губка: {
-      4: ["5", "6"],
+      4: ["6"],
       90: ["2"],
       106: ["6"],
     },
@@ -2688,6 +2688,7 @@ export const data_test_new_parser = {
     },
     "Алмазный материал": {
       85: ["20"],
+      107: ["16"],
       110: ["29"],
       111: [
         "2",
@@ -4578,13 +4579,17 @@ export const data_test_new_parser = {
     globe_banner_pattern: "Узор флага",
     piglin_banner_pattern: "Узор флага",
     explorer_pottery_sherd: "Глиняный черепок «Исследователь»",
-    amethyst: "Аметистовая",
+    "trim.amethyst": "Аметистовая",
     netherite_chestplate: "Незеритовый нагрудник",
-    lapis: "Лазуритовая",
-    copper: "Медная",
-    gold: "Золотой материал",
-    iron: "Железная",
-    netherite: "Незеритовый материал",
+    "trim.emerald": "Изумрудный материал",
+    "trim.diamond": "Алмазный материал",
+    "trim.lapis": "Лазуритовая",
+    "trim.copper": "Медная",
+    "trim.gold": "Золотой материал",
+    "trim.iron": "Железная",
+    "trim.netherite": "Незеритовый материал",
+    "trim.quartz": "Кварцевая",
+    "trim.redstone": "Редстоуновая",
     netherite_helmet: "Незеритовый шлем",
     netherite_leggings: "Незеритовые поножи",
     netherite_boots: "Незеритовые ботинки",
@@ -4595,18 +4600,6 @@ export const data_test_new_parser = {
     leather_boots: "Кожаные ботинки",
   },
   shops: {
-    1: {
-      name: "df sdsfd asd ",
-      object_profession: "cleric",
-      object_villager_type: "savanna",
-      owner: "SoftPanda3",
-      shop_id: "1",
-      x: -392,
-      y: 74,
-      z: 72,
-      offers: {},
-      balance: {},
-    },
     4: {
       name: "PandaTreasure",
       object_profession: "cleric",
@@ -4783,7 +4776,7 @@ export const data_test_new_parser = {
             amount: 1,
             content: [],
             minecraft_custom:
-              '\u003Cspan style="color: undefined;"\u003E• ☄ • Кристальные элитры • ☄ •\u003C/span\u003E',
+              '\u003Cspan style="color: #CAEAF5;"\u003E• ☄ • Кристальные элитры • ☄ •\u003C/span\u003E',
             enchant: [
               {
                 id: "mending",
@@ -4820,13 +4813,13 @@ export const data_test_new_parser = {
         },
       },
       balance: {
-        1: { elytra: 1 },
-        2: { nether_star: 1 },
-        3: { wither_skeleton_skull: 0 },
-        4: { dragon_head: 0 },
-        5: { enchanted_book: 9 },
-        6: { sponge: 0 },
-        7: { diamond_horse_armor: 6 },
+        elytra: 1,
+        nether_star: 0,
+        wither_skeleton_skull: 0,
+        dragon_head: 0,
+        enchanted_book: 9,
+        sponge: 0,
+        diamond_horse_armor: 6,
       },
     },
     9: {
@@ -6332,7 +6325,7 @@ export const data_test_new_parser = {
         shield: 2,
         magenta_glazed_terracotta: 0,
         diamond_helmet: 8,
-        turtle_helmet: 7,
+        turtle_helmet: 8,
         diamond_chestplate: 8,
         diamond_leggings: 0,
         diamond_boots: 0,
@@ -7296,8 +7289,7 @@ export const data_test_new_parser = {
               improvement: "",
               amount: 1,
               content: [],
-              minecraft_custom:
-                '\u003Cspan style="color: undefined;"\u003EФиксированная цена = 1024 ар\u003C/span\u003E',
+              minecraft_custom: '\u003Cspan style="color: #CAEAF5;"\u003EФиксированная цена = 1024 ар\u003C/span\u003E',
               enchant: [],
             },
             slot2: {
@@ -7305,7 +7297,7 @@ export const data_test_new_parser = {
               improvement: "",
               amount: 1,
               content: [],
-              minecraft_custom: '\u003Cspan style="color: undefined;"\u003EОбращаться в тикет\u003C/span\u003E',
+              minecraft_custom: '\u003Cspan style="color: #CAEAF5;"\u003EОбращаться в тикет\u003C/span\u003E',
               enchant: [],
             },
           },
@@ -7314,7 +7306,7 @@ export const data_test_new_parser = {
             improvement: "",
             amount: 1,
             content: [],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EФиксированная цена = 1024 ар\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #CAEAF5;"\u003EФиксированная цена = 1024 ар\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -7327,7 +7319,7 @@ export const data_test_new_parser = {
               amount: 1,
               content: [],
               minecraft_custom:
-                '\u003Cspan style="color: undefined;"\u003EЦветное переименование предметов\u003C/span\u003E',
+                '\u003Cspan style="color: #CAEAF5;"\u003EЦветное переименование предметов\u003C/span\u003E',
               enchant: [],
             },
             slot2: {
@@ -7335,7 +7327,7 @@ export const data_test_new_parser = {
               improvement: "",
               amount: 1,
               content: [],
-              minecraft_custom: '\u003Cspan style="color: undefined;"\u003EПодробнее на Wiki\u003C/span\u003E',
+              minecraft_custom: '\u003Cspan style="color: #CAEAF5;"\u003EПодробнее на Wiki\u003C/span\u003E',
               enchant: [],
             },
           },
@@ -7345,7 +7337,7 @@ export const data_test_new_parser = {
             amount: 1,
             content: [],
             minecraft_custom:
-              '\u003Cspan style="color: undefined;"\u003EЦветное переименование предметов\u003C/span\u003E',
+              '\u003Cspan style="color: #CAEAF5;"\u003EЦветное переименование предметов\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -7357,7 +7349,7 @@ export const data_test_new_parser = {
               improvement: "",
               amount: 1,
               content: [],
-              minecraft_custom: '\u003Cspan style="color: undefined;"\u003EЭффекты стрел\u003C/span\u003E',
+              minecraft_custom: '\u003Cspan style="color: #CAEAF5;"\u003EЭффекты стрел\u003C/span\u003E',
               enchant: [],
             },
             slot2: {
@@ -7365,7 +7357,7 @@ export const data_test_new_parser = {
               improvement: "",
               amount: 1,
               content: [],
-              minecraft_custom: '\u003Cspan style="color: undefined;"\u003EПодробнее на Wiki\u003C/span\u003E',
+              minecraft_custom: '\u003Cspan style="color: #CAEAF5;"\u003EПодробнее на Wiki\u003C/span\u003E',
               enchant: [],
             },
           },
@@ -7374,7 +7366,7 @@ export const data_test_new_parser = {
             improvement: "",
             amount: 1,
             content: [],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EЭффекты стрел\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #CAEAF5;"\u003EЭффекты стрел\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -7386,7 +7378,7 @@ export const data_test_new_parser = {
               improvement: "",
               amount: 1,
               content: [],
-              minecraft_custom: '\u003Cspan style="color: undefined;"\u003EОткрытие шалкера в воздухе\u003C/span\u003E',
+              minecraft_custom: '\u003Cspan style="color: #CAEAF5;"\u003EОткрытие шалкера в воздухе\u003C/span\u003E',
               enchant: [],
             },
             slot2: {
@@ -7394,7 +7386,7 @@ export const data_test_new_parser = {
               improvement: "",
               amount: 1,
               content: [],
-              minecraft_custom: '\u003Cspan style="color: undefined;"\u003EПодробнее на Wiki\u003C/span\u003E',
+              minecraft_custom: '\u003Cspan style="color: #CAEAF5;"\u003EПодробнее на Wiki\u003C/span\u003E',
               enchant: [],
             },
           },
@@ -7403,7 +7395,7 @@ export const data_test_new_parser = {
             improvement: "",
             amount: 1,
             content: [],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EОткрытие шалкера в воздухе\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #CAEAF5;"\u003EОткрытие шалкера в воздухе\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -7415,7 +7407,7 @@ export const data_test_new_parser = {
               improvement: "",
               amount: 1,
               content: [],
-              minecraft_custom: '\u003Cspan style="color: undefined;"\u003EБлоки телепортации\u003C/span\u003E',
+              minecraft_custom: '\u003Cspan style="color: #CAEAF5;"\u003EБлоки телепортации\u003C/span\u003E',
               enchant: [],
             },
             slot2: {
@@ -7423,7 +7415,7 @@ export const data_test_new_parser = {
               improvement: "",
               amount: 1,
               content: [],
-              minecraft_custom: '\u003Cspan style="color: undefined;"\u003EПодробнее на Wiki\u003C/span\u003E',
+              minecraft_custom: '\u003Cspan style="color: #CAEAF5;"\u003EПодробнее на Wiki\u003C/span\u003E',
               enchant: [],
             },
           },
@@ -7432,7 +7424,7 @@ export const data_test_new_parser = {
             improvement: "",
             amount: 1,
             content: [],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EБлоки телепортации\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #CAEAF5;"\u003EБлоки телепортации\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -9810,10 +9802,10 @@ export const data_test_new_parser = {
       },
       balance: {
         raw_copper_block: 192,
-        shulker_box: 12,
+        shulker_box: 11,
         ender_chest: 3,
         honey_bottle: 48,
-        trident: 6,
+        trident: 5,
       },
     },
     58: {
@@ -12169,7 +12161,7 @@ export const data_test_new_parser = {
         },
       },
       balance: {
-        blue_shulker_box: 6,
+        blue_shulker_box: 4,
       },
     },
     64: {
@@ -12945,7 +12937,7 @@ export const data_test_new_parser = {
         },
       },
       balance: {
-        lime_shulker_box: 6,
+        lime_shulker_box: 5,
       },
     },
     66: {
@@ -13140,7 +13132,7 @@ export const data_test_new_parser = {
               },
             ],
             minecraft_custom:
-              '\u003Cspan style="color: undefined;"\u003E Набор «Коралловый риф». N.Viento™\u003C/span\u003E',
+              '\u003Cspan style="color: #3B91B4;"\u003E Набор «Коралловый риф». N.Viento™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -13325,7 +13317,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003E Набор «Сельхоз». N.Viento™\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #4C3024;"\u003E Набор «Сельхоз». N.Viento™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -13510,7 +13502,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003E Нитки. Viento™\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #717486;"\u003E Нитки. Viento™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -14267,7 +14259,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EУдобрение. N.Viento™\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #C1BECD;"\u003EУдобрение. N.Viento™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -14452,7 +14444,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EРозовые лепестки. N.Viento™\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #F57584;"\u003EРозовые лепестки. N.Viento™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -14704,7 +14696,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EДуб. NMB™\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #99846B;"\u003EДуб. NMB™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -14889,7 +14881,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EЕль. NMB™\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #664D47;"\u003EЕль. NMB™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -15074,7 +15066,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EТёмный дуб. NMB™\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #4D2D26;"\u003EТёмный дуб. NMB™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -15259,7 +15251,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EБерёза. NMB™\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #E6DC8A;"\u003EБерёза. NMB™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -15444,7 +15436,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EТропическое дерево NMB™\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #B3856B;"\u003EТропическое дерево NMB™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -15629,7 +15621,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EАкация. NMB™\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #993700;"\u003EАкация. NMB™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -15814,7 +15806,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EМангровое дерево. N.Viento™\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #800000;"\u003EМангровое дерево. N.Viento™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -15999,7 +15991,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EБагровая древесина. NMB™\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #661F30;"\u003EБагровая древесина. NMB™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -16184,7 +16176,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EИскажённая древесина. NMB™\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #0D7980;"\u003EИскажённая древесина. NMB™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -16369,7 +16361,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EВишня. N.Viento™\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #F57584;"\u003EВишня. N.Viento™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -16554,7 +16546,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EБлоки бамбука. N.Viento™\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #ACDD4D;"\u003EБлоки бамбука. N.Viento™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -16763,7 +16755,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EНабор «Палитра». N.Viento™\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #A2006D;"\u003EНабор «Палитра». N.Viento™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -16949,7 +16941,7 @@ export const data_test_new_parser = {
               },
             ],
             minecraft_custom:
-              '\u003Cspan style="color: undefined;"\u003EНабор «Ремонт фермы». N.Viento™\u003C/span\u003E',
+              '\u003Cspan style="color: #B10000;"\u003EНабор «Ремонт фермы». N.Viento™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -17135,7 +17127,7 @@ export const data_test_new_parser = {
               },
             ],
             minecraft_custom:
-              '\u003Cspan style="color: undefined;"\u003EНабор «Декоративные блоки-1». N.Viento™\u003C/span\u003E',
+              '\u003Cspan style="color: #013E62;"\u003EНабор «Декоративные блоки-1». N.Viento™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -17321,7 +17313,7 @@ export const data_test_new_parser = {
               },
             ],
             minecraft_custom:
-              '\u003Cspan style="color: undefined;"\u003EНабор «Цветные свечки». N.Viento™\u003C/span\u003E',
+              '\u003Cspan style="color: #0C8990;"\u003EНабор «Цветные свечки». N.Viento™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -17507,7 +17499,7 @@ export const data_test_new_parser = {
               },
             ],
             minecraft_custom:
-              '\u003Cspan style="color: undefined;"\u003EНабор «Обычные свечки». N.Viento™\u003C/span\u003E',
+              '\u003Cspan style="color: #C99415;"\u003EНабор «Обычные свечки». N.Viento™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -17699,8 +17691,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom:
-              '\u003Cspan style="color: undefined;"\u003E Аметистовые друзы. N.Viento™\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #8B00FF;"\u003E Аметистовые друзы. N.Viento™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -17885,7 +17876,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EНабор «Квампы». N.Viento™\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #00CC99;"\u003EНабор «Квампы». N.Viento™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -18097,7 +18088,7 @@ export const data_test_new_parser = {
                 firework_power: 3,
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EРакеты III. NMB™\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #800008;"\u003EРакеты III. NMB™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -18309,7 +18300,7 @@ export const data_test_new_parser = {
                 firework_power: 2,
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EРакеты II. NMB™\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #47454D;"\u003EРакеты II. NMB™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -18521,7 +18512,7 @@ export const data_test_new_parser = {
                 firework_power: 1,
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EРакеты I. NMB™\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #B8C0CC;"\u003EРакеты I. NMB™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -18706,8 +18697,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom:
-              '\u003Cspan style="color: undefined;"\u003EЗамшелый булыжник. N.Viento™\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #6F9D02;"\u003EЗамшелый булыжник. N.Viento™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -18893,7 +18883,7 @@ export const data_test_new_parser = {
               },
             ],
             minecraft_custom:
-              '\u003Cspan style="color: undefined;"\u003EЗамшелые каменные кирпичи. N.Viento™\u003C/span\u003E',
+              '\u003Cspan style="color: #396413;"\u003EЗамшелые каменные кирпичи. N.Viento™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -19079,7 +19069,7 @@ export const data_test_new_parser = {
               },
             ],
             minecraft_custom:
-              '\u003Cspan style="color: undefined;"\u003EКолотый глубинный сланец. N.Viento™\u003C/span\u003E',
+              '\u003Cspan style="color: #475466;"\u003EКолотый глубинный сланец. N.Viento™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -19264,8 +19254,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom:
-              '\u003Cspan style="color: undefined;"\u003EОгненный стержень. N.Viento™\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #DCD747;"\u003EОгненный стержень. N.Viento™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -19406,7 +19395,7 @@ export const data_test_new_parser = {
                 amount: 1,
                 slot: 19,
                 minecraft_custom:
-                  '\u003Cspan style="color: undefined;"\u003EГарпун разорителя морских крепостей\u003C/span\u003E',
+                  '\u003Cspan style="color: #009DC4;"\u003EГарпун разорителя морских крепостей\u003C/span\u003E',
               },
               {
                 id: "milk_bucket",
@@ -19452,7 +19441,7 @@ export const data_test_new_parser = {
               },
             ],
             minecraft_custom:
-              '\u003Cspan style="color: undefined;"\u003EНабор «Разоритель морских крепостей». N.Viento™\u003C/span\u003E',
+              '\u003Cspan style="color: #009DC4;"\u003EНабор «Разоритель морских крепостей». N.Viento™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -19637,7 +19626,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EКварц. N.Viento™\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #D2B48C;"\u003EКварц. N.Viento™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -19822,7 +19811,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EС Днем Рождения!\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #E6A500;"\u003EС Днем Рождения!\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -20007,7 +19996,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EС Днем Рождения!\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #E6A500;"\u003EС Днем Рождения!\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -20219,7 +20208,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EДубовая листва. NMB™\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #2E4D26;"\u003EДубовая листва. NMB™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -20404,7 +20393,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EХвоя. N.Viento™\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #014B43;"\u003EХвоя. N.Viento™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -20589,7 +20578,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EЛиства тёмного дуба. NMB™\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #063305;"\u003EЛиства тёмного дуба. NMB™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -20774,7 +20763,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EЛиства акации. N.Viento™\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #808000;"\u003EЛиства акации. N.Viento™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -20960,7 +20949,7 @@ export const data_test_new_parser = {
               },
             ],
             minecraft_custom:
-              '\u003Cspan style="color: undefined;"\u003EЛиства тропического дерева. N.Viento™\u003C/span\u003E',
+              '\u003Cspan style="color: #BBD009;"\u003EЛиства тропического дерева. N.Viento™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -21145,7 +21134,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EЛиства азалии. N.Viento™\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #6F9D02;"\u003EЛиства азалии. N.Viento™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -21331,7 +21320,7 @@ export const data_test_new_parser = {
               },
             ],
             minecraft_custom:
-              '\u003Cspan style="color: undefined;"\u003EЛиства цветущей азалии. N.Viento™\u003C/span\u003E',
+              '\u003Cspan style="color: #C154C1;"\u003EЛиства цветущей азалии. N.Viento™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -21868,7 +21857,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EВишнёвые листья. N.Viento™\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #DB9690;"\u003EВишнёвые листья. N.Viento™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -26887,7 +26876,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EЭлики опыта. N.Viento™\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #DCB20C;"\u003EЭлики опыта. N.Viento™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -27072,7 +27061,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003E Золотые яблочки. N.Viento™\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #B10000;"\u003E Золотые яблочки. N.Viento™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -27279,7 +27268,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EЗолотая морковка. N.Viento™\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #E5841B;"\u003EЗолотая морковка. N.Viento™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -27465,7 +27454,7 @@ export const data_test_new_parser = {
               },
             ],
             minecraft_custom:
-              '\u003Cspan style="color: undefined;"\u003EПерламутровые квампы. N.Viento™\u003C/span\u003E',
+              '\u003Cspan style="color: #B57EDC;"\u003EПерламутровые квампы. N.Viento™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -27672,7 +27661,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EОхристые квампы. N.Viento™\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #F0DB7D;"\u003EОхристые квампы. N.Viento™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -27879,8 +27868,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom:
-              '\u003Cspan style="color: undefined;"\u003EМалахитовые квампы. N.Viento™\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #63B76C;"\u003EМалахитовые квампы. N.Viento™\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -30097,7 +30085,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EСтекло\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #717486;"\u003EСтекло\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -30474,7 +30462,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EКоричневый краситель\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #66381F;"\u003EКоричневый краситель\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -30659,7 +30647,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EСветло-серый краситель\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #66635C;"\u003EСветло-серый краситель\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -30844,7 +30832,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EЗелёный краситель\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #2B4D00;"\u003EЗелёный краситель\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -31029,7 +31017,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EГолубой краситель\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #327DA0;"\u003EГолубой краситель\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -31214,7 +31202,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EБелый краситель\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #CFE4E6;"\u003EБелый краситель\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -31399,7 +31387,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EПурпурный краситель\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #991199;"\u003EПурпурный краситель\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -31584,7 +31572,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EСерый краситель\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #302E33;"\u003EСерый краситель\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -31769,7 +31757,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EЧёрный краситель\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #5C6566;"\u003EЧёрный краситель\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -31954,7 +31942,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EФиолетовый краситель\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #731E8F;"\u003EФиолетовый краситель\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -32139,7 +32127,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EСиний краситель\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #2A52BE;"\u003EСиний краситель\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -32324,7 +32312,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EЛаймовый краситель\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #67A716;"\u003EЛаймовый краситель\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -32509,7 +32497,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EБирюзовый краситель\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #1C7C7D;"\u003EБирюзовый краситель\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -32694,7 +32682,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EКрасный краситель\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #C7031E;"\u003EКрасный краситель\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -32879,7 +32867,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EРозовый краситель\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #DB5079;"\u003EРозовый краситель\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -33064,7 +33052,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EОранжевый краситель\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #C45719;"\u003EОранжевый краситель\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -33249,7 +33237,7 @@ export const data_test_new_parser = {
                 minecraft_custom: "",
               },
             ],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EЖёлтый краситель\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #E49B07;"\u003EЖёлтый краситель\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -33366,7 +33354,7 @@ export const data_test_new_parser = {
             improvement: "spire",
             amount: 1,
             content: [],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EОсновной мир\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #CAEAF5;"\u003EОсновной мир\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -33388,7 +33376,7 @@ export const data_test_new_parser = {
             improvement: "wayfinder",
             amount: 1,
             content: [],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EРесурсный мир\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #CAEAF5;"\u003EРесурсный мир\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -33410,7 +33398,7 @@ export const data_test_new_parser = {
             improvement: "rib",
             amount: 1,
             content: [],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EФермерский мир\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #CAEAF5;"\u003EФермерский мир\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -33454,7 +33442,7 @@ export const data_test_new_parser = {
             improvement: "dune",
             amount: 1,
             content: [],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EФермерский мир\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #CAEAF5;"\u003EФермерский мир\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -33476,7 +33464,7 @@ export const data_test_new_parser = {
             improvement: "eye",
             amount: 1,
             content: [],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EОсновной мир\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #CAEAF5;"\u003EОсновной мир\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -33498,7 +33486,7 @@ export const data_test_new_parser = {
             improvement: "tide",
             amount: 1,
             content: [],
-            minecraft_custom: '\u003Cspan style="color: undefined;"\u003EРесурсный мир\u003C/span\u003E',
+            minecraft_custom: '\u003Cspan style="color: #CAEAF5;"\u003EРесурсный мир\u003C/span\u003E',
             enchant: [],
           },
         },
@@ -34459,7 +34447,7 @@ export const data_test_new_parser = {
           product: {
             id: "sponge",
             improvement: "",
-            amount: 2,
+            amount: 1,
             content: [],
             minecraft_custom: "",
             enchant: [],
@@ -36362,12 +36350,35 @@ export const data_test_new_parser = {
             enchant: [],
           },
         },
+        16: {
+          id: "16",
+          price: {
+            slot1: {
+              id: "diamond",
+              improvement: "",
+              amount: 3,
+              content: [],
+              minecraft_custom: "",
+              enchant: [],
+            },
+            slot2: {},
+          },
+          product: {
+            id: "deepslate_diamond_ore",
+            improvement: "",
+            amount: 1,
+            content: [],
+            minecraft_custom: "",
+            enchant: [],
+          },
+        },
       },
       balance: {
         shulker_box: 8,
         orange_shulker_box: 5,
         red_shulker_box: 6,
-        enchanted_book: 6,
+        enchanted_book: 4,
+        deepslate_diamond_ore: 64,
       },
     },
     108: {
@@ -36605,9 +36616,9 @@ export const data_test_new_parser = {
         fire_coral_block: 256,
         tube_coral_block: 256,
         bubble_coral_block: 306,
-        horn_coral_block: 256,
+        horn_coral_block: 128,
         brain_coral_block: 512,
-        fire_coral_fan: 128,
+        fire_coral_fan: 0,
         bubble_coral_fan: 0,
         tube_coral_fan: 0,
         brain_coral_fan: 0,
@@ -39857,7 +39868,7 @@ export const data_test_new_parser = {
                 },
               ],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "coast",
               },
             },
@@ -39874,7 +39885,7 @@ export const data_test_new_parser = {
                 },
               ],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "coast",
               },
             },
@@ -39892,7 +39903,7 @@ export const data_test_new_parser = {
               },
             ],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "coast",
             },
           },
@@ -39911,7 +39922,7 @@ export const data_test_new_parser = {
                   slot: 0,
                   minecraft_custom: "",
                   trim: {
-                    material: "amethyst",
+                    material: "trim.amethyst",
                     pattern: "coast",
                   },
                 },
@@ -39921,7 +39932,7 @@ export const data_test_new_parser = {
                   slot: 1,
                   minecraft_custom: "",
                   trim: {
-                    material: "amethyst",
+                    material: "trim.amethyst",
                     pattern: "coast",
                   },
                 },
@@ -39931,7 +39942,7 @@ export const data_test_new_parser = {
                   slot: 2,
                   minecraft_custom: "",
                   trim: {
-                    material: "emerald",
+                    material: "trim.emerald",
                     pattern: "coast",
                   },
                 },
@@ -39941,7 +39952,7 @@ export const data_test_new_parser = {
                   slot: 3,
                   minecraft_custom: "",
                   trim: {
-                    material: "diamond",
+                    material: "trim.diamond",
                     pattern: "coast",
                   },
                 },
@@ -39951,7 +39962,7 @@ export const data_test_new_parser = {
                   slot: 4,
                   minecraft_custom: "",
                   trim: {
-                    material: "lapis",
+                    material: "trim.lapis",
                     pattern: "coast",
                   },
                 },
@@ -39961,7 +39972,7 @@ export const data_test_new_parser = {
                   slot: 5,
                   minecraft_custom: "",
                   trim: {
-                    material: "copper",
+                    material: "trim.copper",
                     pattern: "coast",
                   },
                 },
@@ -39971,7 +39982,7 @@ export const data_test_new_parser = {
                   slot: 6,
                   minecraft_custom: "",
                   trim: {
-                    material: "gold",
+                    material: "trim.gold",
                     pattern: "coast",
                   },
                 },
@@ -39981,7 +39992,7 @@ export const data_test_new_parser = {
                   slot: 7,
                   minecraft_custom: "",
                   trim: {
-                    material: "iron",
+                    material: "trim.iron",
                     pattern: "coast",
                   },
                 },
@@ -39991,7 +40002,7 @@ export const data_test_new_parser = {
                   slot: 8,
                   minecraft_custom: "",
                   trim: {
-                    material: "netherite",
+                    material: "trim.netherite",
                     pattern: "coast",
                   },
                 },
@@ -40001,7 +40012,7 @@ export const data_test_new_parser = {
                   slot: 9,
                   minecraft_custom: "",
                   trim: {
-                    material: "quartz",
+                    material: "trim.quartz",
                     pattern: "coast",
                   },
                 },
@@ -40011,7 +40022,7 @@ export const data_test_new_parser = {
                   slot: 10,
                   minecraft_custom: "",
                   trim: {
-                    material: "redstone",
+                    material: "trim.redstone",
                     pattern: "coast",
                   },
                 },
@@ -40030,7 +40041,7 @@ export const data_test_new_parser = {
                   slot: 0,
                   minecraft_custom: "",
                   trim: {
-                    material: "amethyst",
+                    material: "trim.amethyst",
                     pattern: "coast",
                   },
                 },
@@ -40040,7 +40051,7 @@ export const data_test_new_parser = {
                   slot: 1,
                   minecraft_custom: "",
                   trim: {
-                    material: "amethyst",
+                    material: "trim.amethyst",
                     pattern: "coast",
                   },
                 },
@@ -40050,7 +40061,7 @@ export const data_test_new_parser = {
                   slot: 2,
                   minecraft_custom: "",
                   trim: {
-                    material: "emerald",
+                    material: "trim.emerald",
                     pattern: "coast",
                   },
                 },
@@ -40060,7 +40071,7 @@ export const data_test_new_parser = {
                   slot: 3,
                   minecraft_custom: "",
                   trim: {
-                    material: "diamond",
+                    material: "trim.diamond",
                     pattern: "coast",
                   },
                 },
@@ -40070,7 +40081,7 @@ export const data_test_new_parser = {
                   slot: 4,
                   minecraft_custom: "",
                   trim: {
-                    material: "lapis",
+                    material: "trim.lapis",
                     pattern: "coast",
                   },
                 },
@@ -40080,7 +40091,7 @@ export const data_test_new_parser = {
                   slot: 5,
                   minecraft_custom: "",
                   trim: {
-                    material: "copper",
+                    material: "trim.copper",
                     pattern: "coast",
                   },
                 },
@@ -40090,7 +40101,7 @@ export const data_test_new_parser = {
                   slot: 6,
                   minecraft_custom: "",
                   trim: {
-                    material: "gold",
+                    material: "trim.gold",
                     pattern: "coast",
                   },
                 },
@@ -40100,7 +40111,7 @@ export const data_test_new_parser = {
                   slot: 7,
                   minecraft_custom: "",
                   trim: {
-                    material: "iron",
+                    material: "trim.iron",
                     pattern: "coast",
                   },
                 },
@@ -40110,7 +40121,7 @@ export const data_test_new_parser = {
                   slot: 8,
                   minecraft_custom: "",
                   trim: {
-                    material: "netherite",
+                    material: "trim.netherite",
                     pattern: "coast",
                   },
                 },
@@ -40120,7 +40131,7 @@ export const data_test_new_parser = {
                   slot: 9,
                   minecraft_custom: "",
                   trim: {
-                    material: "quartz",
+                    material: "trim.quartz",
                     pattern: "coast",
                   },
                 },
@@ -40130,7 +40141,7 @@ export const data_test_new_parser = {
                   slot: 10,
                   minecraft_custom: "",
                   trim: {
-                    material: "redstone",
+                    material: "trim.redstone",
                     pattern: "coast",
                   },
                 },
@@ -40150,7 +40161,7 @@ export const data_test_new_parser = {
                 slot: 0,
                 minecraft_custom: "",
                 trim: {
-                  material: "amethyst",
+                  material: "trim.amethyst",
                   pattern: "coast",
                 },
               },
@@ -40160,7 +40171,7 @@ export const data_test_new_parser = {
                 slot: 1,
                 minecraft_custom: "",
                 trim: {
-                  material: "amethyst",
+                  material: "trim.amethyst",
                   pattern: "coast",
                 },
               },
@@ -40170,7 +40181,7 @@ export const data_test_new_parser = {
                 slot: 2,
                 minecraft_custom: "",
                 trim: {
-                  material: "emerald",
+                  material: "trim.emerald",
                   pattern: "coast",
                 },
               },
@@ -40180,7 +40191,7 @@ export const data_test_new_parser = {
                 slot: 3,
                 minecraft_custom: "",
                 trim: {
-                  material: "diamond",
+                  material: "trim.diamond",
                   pattern: "coast",
                 },
               },
@@ -40190,7 +40201,7 @@ export const data_test_new_parser = {
                 slot: 4,
                 minecraft_custom: "",
                 trim: {
-                  material: "lapis",
+                  material: "trim.lapis",
                   pattern: "coast",
                 },
               },
@@ -40200,7 +40211,7 @@ export const data_test_new_parser = {
                 slot: 5,
                 minecraft_custom: "",
                 trim: {
-                  material: "copper",
+                  material: "trim.copper",
                   pattern: "coast",
                 },
               },
@@ -40210,7 +40221,7 @@ export const data_test_new_parser = {
                 slot: 6,
                 minecraft_custom: "",
                 trim: {
-                  material: "gold",
+                  material: "trim.gold",
                   pattern: "coast",
                 },
               },
@@ -40220,7 +40231,7 @@ export const data_test_new_parser = {
                 slot: 7,
                 minecraft_custom: "",
                 trim: {
-                  material: "iron",
+                  material: "trim.iron",
                   pattern: "coast",
                 },
               },
@@ -40230,7 +40241,7 @@ export const data_test_new_parser = {
                 slot: 8,
                 minecraft_custom: "",
                 trim: {
-                  material: "netherite",
+                  material: "trim.netherite",
                   pattern: "coast",
                 },
               },
@@ -40240,7 +40251,7 @@ export const data_test_new_parser = {
                 slot: 9,
                 minecraft_custom: "",
                 trim: {
-                  material: "quartz",
+                  material: "trim.quartz",
                   pattern: "coast",
                 },
               },
@@ -40250,7 +40261,7 @@ export const data_test_new_parser = {
                 slot: 10,
                 minecraft_custom: "",
                 trim: {
-                  material: "redstone",
+                  material: "trim.redstone",
                   pattern: "coast",
                 },
               },
@@ -40269,6 +40280,7 @@ export const data_test_new_parser = {
               content: [],
               minecraft_custom: "",
               enchant: [],
+              firework_power: 1,
             },
             slot2: {
               id: "firework_rocket",
@@ -40277,6 +40289,7 @@ export const data_test_new_parser = {
               content: [],
               minecraft_custom: "",
               enchant: [],
+              firework_power: 1,
             },
           },
           product: {
@@ -40286,6 +40299,7 @@ export const data_test_new_parser = {
             content: [],
             minecraft_custom: "",
             enchant: [],
+            firework_power: 1,
           },
         },
         31: {
@@ -40298,6 +40312,7 @@ export const data_test_new_parser = {
               content: [],
               minecraft_custom: "",
               enchant: [],
+              firework_power: 2,
             },
             slot2: {
               id: "firework_rocket",
@@ -40306,6 +40321,7 @@ export const data_test_new_parser = {
               content: [],
               minecraft_custom: "",
               enchant: [],
+              firework_power: 2,
             },
           },
           product: {
@@ -40315,6 +40331,7 @@ export const data_test_new_parser = {
             content: [],
             minecraft_custom: "",
             enchant: [],
+            firework_power: 2,
           },
         },
         32: {
@@ -40327,6 +40344,7 @@ export const data_test_new_parser = {
               content: [],
               minecraft_custom: "",
               enchant: [],
+              firework_power: 3,
             },
             slot2: {
               id: "firework_rocket",
@@ -40335,6 +40353,7 @@ export const data_test_new_parser = {
               content: [],
               minecraft_custom: "",
               enchant: [],
+              firework_power: 3,
             },
           },
           product: {
@@ -40344,6 +40363,7 @@ export const data_test_new_parser = {
             content: [],
             minecraft_custom: "",
             enchant: [],
+            firework_power: 3,
           },
         },
         33: {
@@ -40494,7 +40514,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "coast",
               },
             },
@@ -40506,7 +40526,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "coast",
               },
             },
@@ -40519,7 +40539,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "coast",
             },
           },
@@ -40535,7 +40555,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "coast",
               },
             },
@@ -40547,7 +40567,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "coast",
               },
             },
@@ -40560,7 +40580,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "coast",
             },
           },
@@ -40576,7 +40596,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "coast",
               },
             },
@@ -40588,7 +40608,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "coast",
               },
             },
@@ -40601,7 +40621,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "coast",
             },
           },
@@ -40617,7 +40637,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "coast",
               },
             },
@@ -40629,7 +40649,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "coast",
               },
             },
@@ -40642,7 +40662,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "coast",
             },
           },
@@ -40658,7 +40678,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "coast",
               },
             },
@@ -40670,7 +40690,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "coast",
               },
             },
@@ -40683,7 +40703,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "coast",
             },
           },
@@ -40699,7 +40719,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "coast",
               },
             },
@@ -40711,7 +40731,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "coast",
               },
             },
@@ -40724,7 +40744,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "coast",
             },
           },
@@ -40740,7 +40760,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "coast",
               },
             },
@@ -40752,7 +40772,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "coast",
               },
             },
@@ -40765,7 +40785,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "coast",
             },
           },
@@ -40781,7 +40801,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "coast",
               },
             },
@@ -40793,7 +40813,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "coast",
               },
             },
@@ -40806,7 +40826,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "coast",
             },
           },
@@ -40822,7 +40842,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "coast",
               },
             },
@@ -40834,7 +40854,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "coast",
               },
             },
@@ -40847,7 +40867,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "coast",
             },
           },
@@ -40863,7 +40883,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "coast",
               },
             },
@@ -40875,7 +40895,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "coast",
               },
             },
@@ -40888,7 +40908,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "coast",
             },
           },
@@ -40904,7 +40924,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "dune",
               },
             },
@@ -40916,7 +40936,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "dune",
               },
             },
@@ -40929,7 +40949,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "dune",
             },
           },
@@ -40945,7 +40965,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "dune",
               },
             },
@@ -40957,7 +40977,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "dune",
               },
             },
@@ -40970,7 +40990,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "dune",
             },
           },
@@ -40986,7 +41006,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "dune",
               },
             },
@@ -40998,7 +41018,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "dune",
               },
             },
@@ -41011,7 +41031,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "dune",
             },
           },
@@ -41027,7 +41047,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "dune",
               },
             },
@@ -41039,7 +41059,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "dune",
               },
             },
@@ -41052,7 +41072,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "dune",
             },
           },
@@ -41068,7 +41088,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "dune",
               },
             },
@@ -41080,7 +41100,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "dune",
               },
             },
@@ -41093,7 +41113,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "dune",
             },
           },
@@ -41109,7 +41129,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "dune",
               },
             },
@@ -41121,7 +41141,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "dune",
               },
             },
@@ -41134,7 +41154,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "dune",
             },
           },
@@ -41150,7 +41170,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "dune",
               },
             },
@@ -41162,7 +41182,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "dune",
               },
             },
@@ -41175,7 +41195,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "dune",
             },
           },
@@ -41191,7 +41211,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "dune",
               },
             },
@@ -41203,7 +41223,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "dune",
               },
             },
@@ -41216,7 +41236,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "dune",
             },
           },
@@ -41232,7 +41252,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "dune",
               },
             },
@@ -41244,7 +41264,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "dune",
               },
             },
@@ -41257,7 +41277,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "dune",
             },
           },
@@ -41273,7 +41293,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "dune",
               },
             },
@@ -41285,7 +41305,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "dune",
               },
             },
@@ -41298,7 +41318,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "dune",
             },
           },
@@ -41314,7 +41334,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "eye",
               },
             },
@@ -41326,7 +41346,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "eye",
               },
             },
@@ -41339,7 +41359,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "eye",
             },
           },
@@ -41355,7 +41375,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "eye",
               },
             },
@@ -41367,7 +41387,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "eye",
               },
             },
@@ -41380,7 +41400,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "eye",
             },
           },
@@ -41396,7 +41416,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "eye",
               },
             },
@@ -41408,7 +41428,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "eye",
               },
             },
@@ -41421,7 +41441,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "eye",
             },
           },
@@ -41437,7 +41457,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "eye",
               },
             },
@@ -41449,7 +41469,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "eye",
               },
             },
@@ -41462,7 +41482,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "eye",
             },
           },
@@ -41478,7 +41498,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "eye",
               },
             },
@@ -41490,7 +41510,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "eye",
               },
             },
@@ -41503,7 +41523,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "eye",
             },
           },
@@ -41519,7 +41539,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "eye",
               },
             },
@@ -41531,7 +41551,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "eye",
               },
             },
@@ -41544,7 +41564,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "eye",
             },
           },
@@ -41560,7 +41580,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "eye",
               },
             },
@@ -41572,7 +41592,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "eye",
               },
             },
@@ -41585,7 +41605,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "eye",
             },
           },
@@ -41601,7 +41621,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "eye",
               },
             },
@@ -41613,7 +41633,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "eye",
               },
             },
@@ -41626,7 +41646,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "eye",
             },
           },
@@ -41642,7 +41662,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "eye",
               },
             },
@@ -41654,7 +41674,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "eye",
               },
             },
@@ -41667,7 +41687,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "eye",
             },
           },
@@ -41683,7 +41703,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "eye",
               },
             },
@@ -41695,7 +41715,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "eye",
               },
             },
@@ -41708,7 +41728,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "eye",
             },
           },
@@ -41724,7 +41744,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "host",
               },
             },
@@ -41736,7 +41756,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "host",
               },
             },
@@ -41749,7 +41769,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "host",
             },
           },
@@ -41765,7 +41785,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "host",
               },
             },
@@ -41777,7 +41797,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "host",
               },
             },
@@ -41790,7 +41810,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "host",
             },
           },
@@ -41806,7 +41826,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "host",
               },
             },
@@ -41818,7 +41838,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "host",
               },
             },
@@ -41831,7 +41851,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "host",
             },
           },
@@ -41847,7 +41867,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "host",
               },
             },
@@ -41859,7 +41879,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "host",
               },
             },
@@ -41872,7 +41892,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "host",
             },
           },
@@ -41888,7 +41908,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "host",
               },
             },
@@ -41900,7 +41920,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "host",
               },
             },
@@ -41913,7 +41933,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "host",
             },
           },
@@ -41929,7 +41949,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "host",
               },
             },
@@ -41941,7 +41961,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "host",
               },
             },
@@ -41954,7 +41974,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "host",
             },
           },
@@ -41970,7 +41990,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "host",
               },
             },
@@ -41982,7 +42002,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "host",
               },
             },
@@ -41995,7 +42015,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "host",
             },
           },
@@ -42011,7 +42031,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "host",
               },
             },
@@ -42023,7 +42043,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "host",
               },
             },
@@ -42036,7 +42056,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "host",
             },
           },
@@ -42052,7 +42072,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "host",
               },
             },
@@ -42064,7 +42084,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "host",
               },
             },
@@ -42077,7 +42097,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "host",
             },
           },
@@ -42093,7 +42113,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "host",
               },
             },
@@ -42105,7 +42125,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "host",
               },
             },
@@ -42118,7 +42138,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "host",
             },
           },
@@ -42134,7 +42154,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "raiser",
               },
             },
@@ -42146,7 +42166,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "raiser",
               },
             },
@@ -42159,7 +42179,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "raiser",
             },
           },
@@ -42175,7 +42195,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "raiser",
               },
             },
@@ -42187,7 +42207,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "raiser",
               },
             },
@@ -42200,7 +42220,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "raiser",
             },
           },
@@ -42216,7 +42236,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "raiser",
               },
             },
@@ -42228,7 +42248,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "raiser",
               },
             },
@@ -42241,7 +42261,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "raiser",
             },
           },
@@ -42257,7 +42277,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "raiser",
               },
             },
@@ -42269,7 +42289,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "raiser",
               },
             },
@@ -42282,7 +42302,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "raiser",
             },
           },
@@ -42298,7 +42318,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "raiser",
               },
             },
@@ -42310,7 +42330,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "raiser",
               },
             },
@@ -42323,7 +42343,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "raiser",
             },
           },
@@ -42339,7 +42359,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "raiser",
               },
             },
@@ -42351,7 +42371,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "raiser",
               },
             },
@@ -42364,7 +42384,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "raiser",
             },
           },
@@ -42380,7 +42400,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "raiser",
               },
             },
@@ -42392,7 +42412,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "raiser",
               },
             },
@@ -42405,7 +42425,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "raiser",
             },
           },
@@ -42421,7 +42441,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "raiser",
               },
             },
@@ -42433,7 +42453,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "raiser",
               },
             },
@@ -42446,7 +42466,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "raiser",
             },
           },
@@ -42462,7 +42482,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "raiser",
               },
             },
@@ -42474,7 +42494,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "raiser",
               },
             },
@@ -42487,7 +42507,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "raiser",
             },
           },
@@ -42503,7 +42523,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "raiser",
               },
             },
@@ -42515,7 +42535,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "raiser",
               },
             },
@@ -42528,7 +42548,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "raiser",
             },
           },
@@ -42544,7 +42564,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "rib",
               },
             },
@@ -42556,7 +42576,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "rib",
               },
             },
@@ -42569,7 +42589,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "rib",
             },
           },
@@ -42585,7 +42605,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "rib",
               },
             },
@@ -42597,7 +42617,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "rib",
               },
             },
@@ -42610,7 +42630,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "rib",
             },
           },
@@ -42626,7 +42646,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "rib",
               },
             },
@@ -42638,7 +42658,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "rib",
               },
             },
@@ -42651,7 +42671,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "rib",
             },
           },
@@ -42667,7 +42687,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "rib",
               },
             },
@@ -42679,7 +42699,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "rib",
               },
             },
@@ -42692,7 +42712,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "rib",
             },
           },
@@ -42708,7 +42728,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "rib",
               },
             },
@@ -42720,7 +42740,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "rib",
               },
             },
@@ -42733,7 +42753,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "rib",
             },
           },
@@ -42749,7 +42769,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "rib",
               },
             },
@@ -42761,7 +42781,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "rib",
               },
             },
@@ -42774,7 +42794,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "rib",
             },
           },
@@ -42790,7 +42810,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "rib",
               },
             },
@@ -42802,7 +42822,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "rib",
               },
             },
@@ -42815,7 +42835,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "rib",
             },
           },
@@ -42831,7 +42851,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "rib",
               },
             },
@@ -42843,7 +42863,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "rib",
               },
             },
@@ -42856,7 +42876,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "rib",
             },
           },
@@ -42872,7 +42892,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "rib",
               },
             },
@@ -42884,7 +42904,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "rib",
               },
             },
@@ -42897,7 +42917,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "rib",
             },
           },
@@ -42913,7 +42933,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "rib",
               },
             },
@@ -42925,7 +42945,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "rib",
               },
             },
@@ -42938,7 +42958,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "rib",
             },
           },
@@ -42954,7 +42974,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "sentry",
               },
             },
@@ -42966,7 +42986,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "sentry",
               },
             },
@@ -42979,7 +42999,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "sentry",
             },
           },
@@ -42995,7 +43015,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "sentry",
               },
             },
@@ -43007,7 +43027,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "sentry",
               },
             },
@@ -43020,7 +43040,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "sentry",
             },
           },
@@ -43036,7 +43056,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "sentry",
               },
             },
@@ -43048,7 +43068,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "sentry",
               },
             },
@@ -43061,7 +43081,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "sentry",
             },
           },
@@ -43077,7 +43097,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "sentry",
               },
             },
@@ -43089,7 +43109,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "sentry",
               },
             },
@@ -43102,7 +43122,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "sentry",
             },
           },
@@ -43118,7 +43138,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "sentry",
               },
             },
@@ -43130,7 +43150,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "sentry",
               },
             },
@@ -43143,7 +43163,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "sentry",
             },
           },
@@ -43159,7 +43179,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "sentry",
               },
             },
@@ -43171,7 +43191,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "sentry",
               },
             },
@@ -43184,7 +43204,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "sentry",
             },
           },
@@ -43200,7 +43220,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "sentry",
               },
             },
@@ -43212,7 +43232,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "sentry",
               },
             },
@@ -43225,7 +43245,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "sentry",
             },
           },
@@ -43241,7 +43261,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "sentry",
               },
             },
@@ -43253,7 +43273,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "sentry",
               },
             },
@@ -43266,7 +43286,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "sentry",
             },
           },
@@ -43282,7 +43302,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "sentry",
               },
             },
@@ -43294,7 +43314,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "sentry",
               },
             },
@@ -43307,7 +43327,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "sentry",
             },
           },
@@ -43323,7 +43343,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "sentry",
               },
             },
@@ -43335,7 +43355,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "sentry",
               },
             },
@@ -43348,7 +43368,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "sentry",
             },
           },
@@ -43364,7 +43384,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "shaper",
               },
             },
@@ -43376,7 +43396,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "shaper",
               },
             },
@@ -43389,7 +43409,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "shaper",
             },
           },
@@ -43405,7 +43425,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "shaper",
               },
             },
@@ -43417,7 +43437,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "shaper",
               },
             },
@@ -43430,7 +43450,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "shaper",
             },
           },
@@ -43446,7 +43466,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "shaper",
               },
             },
@@ -43458,7 +43478,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "shaper",
               },
             },
@@ -43471,7 +43491,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "shaper",
             },
           },
@@ -43487,7 +43507,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "shaper",
               },
             },
@@ -43499,7 +43519,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "shaper",
               },
             },
@@ -43512,7 +43532,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "shaper",
             },
           },
@@ -43528,7 +43548,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "shaper",
               },
             },
@@ -43540,7 +43560,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "shaper",
               },
             },
@@ -43553,7 +43573,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "shaper",
             },
           },
@@ -43569,7 +43589,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "shaper",
               },
             },
@@ -43581,7 +43601,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "shaper",
               },
             },
@@ -43594,7 +43614,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "shaper",
             },
           },
@@ -43610,7 +43630,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "shaper",
               },
             },
@@ -43622,7 +43642,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "shaper",
               },
             },
@@ -43635,7 +43655,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "shaper",
             },
           },
@@ -43651,7 +43671,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "shaper",
               },
             },
@@ -43663,7 +43683,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "shaper",
               },
             },
@@ -43676,7 +43696,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "shaper",
             },
           },
@@ -43692,7 +43712,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "shaper",
               },
             },
@@ -43704,7 +43724,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "shaper",
               },
             },
@@ -43717,7 +43737,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "shaper",
             },
           },
@@ -43733,7 +43753,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "shaper",
               },
             },
@@ -43745,7 +43765,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "shaper",
               },
             },
@@ -43758,7 +43778,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "shaper",
             },
           },
@@ -43774,7 +43794,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "silence",
               },
             },
@@ -43786,7 +43806,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "silence",
               },
             },
@@ -43799,7 +43819,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "silence",
             },
           },
@@ -43815,7 +43835,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "silence",
               },
             },
@@ -43827,7 +43847,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "silence",
               },
             },
@@ -43840,7 +43860,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "silence",
             },
           },
@@ -43856,7 +43876,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "silence",
               },
             },
@@ -43868,7 +43888,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "silence",
               },
             },
@@ -43881,7 +43901,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "silence",
             },
           },
@@ -43897,7 +43917,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "silence",
               },
             },
@@ -43909,7 +43929,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "silence",
               },
             },
@@ -43922,7 +43942,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "silence",
             },
           },
@@ -43938,7 +43958,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "silence",
               },
             },
@@ -43950,7 +43970,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "silence",
               },
             },
@@ -43963,7 +43983,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "silence",
             },
           },
@@ -43979,7 +43999,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "silence",
               },
             },
@@ -43991,7 +44011,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "silence",
               },
             },
@@ -44004,7 +44024,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "silence",
             },
           },
@@ -44020,7 +44040,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "silence",
               },
             },
@@ -44032,7 +44052,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "silence",
               },
             },
@@ -44045,7 +44065,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "silence",
             },
           },
@@ -44061,7 +44081,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "silence",
               },
             },
@@ -44073,7 +44093,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "silence",
               },
             },
@@ -44086,7 +44106,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "silence",
             },
           },
@@ -44102,7 +44122,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "silence",
               },
             },
@@ -44114,7 +44134,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "silence",
               },
             },
@@ -44127,7 +44147,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "silence",
             },
           },
@@ -44143,7 +44163,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "silence",
               },
             },
@@ -44155,7 +44175,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "silence",
               },
             },
@@ -44168,7 +44188,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "silence",
             },
           },
@@ -44184,7 +44204,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "snout",
               },
             },
@@ -44196,7 +44216,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "snout",
               },
             },
@@ -44209,7 +44229,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "snout",
             },
           },
@@ -44225,7 +44245,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "snout",
               },
             },
@@ -44237,7 +44257,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "snout",
               },
             },
@@ -44250,7 +44270,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "snout",
             },
           },
@@ -44266,7 +44286,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "snout",
               },
             },
@@ -44278,7 +44298,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "snout",
               },
             },
@@ -44291,7 +44311,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "snout",
             },
           },
@@ -44307,7 +44327,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "snout",
               },
             },
@@ -44319,7 +44339,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "snout",
               },
             },
@@ -44332,7 +44352,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "snout",
             },
           },
@@ -44348,7 +44368,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "snout",
               },
             },
@@ -44360,7 +44380,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "snout",
               },
             },
@@ -44373,7 +44393,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "snout",
             },
           },
@@ -44389,7 +44409,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "snout",
               },
             },
@@ -44401,7 +44421,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "snout",
               },
             },
@@ -44414,7 +44434,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "snout",
             },
           },
@@ -44430,7 +44450,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "snout",
               },
             },
@@ -44442,7 +44462,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "snout",
               },
             },
@@ -44455,7 +44475,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "snout",
             },
           },
@@ -44471,7 +44491,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "snout",
               },
             },
@@ -44483,7 +44503,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "snout",
               },
             },
@@ -44496,7 +44516,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "snout",
             },
           },
@@ -44512,7 +44532,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "snout",
               },
             },
@@ -44524,7 +44544,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "snout",
               },
             },
@@ -44537,7 +44557,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "snout",
             },
           },
@@ -44553,7 +44573,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "snout",
               },
             },
@@ -44565,7 +44585,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "snout",
               },
             },
@@ -44578,7 +44598,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "snout",
             },
           },
@@ -44594,7 +44614,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "spire",
               },
             },
@@ -44606,7 +44626,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "spire",
               },
             },
@@ -44619,7 +44639,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "spire",
             },
           },
@@ -44635,7 +44655,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "spire",
               },
             },
@@ -44647,7 +44667,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "spire",
               },
             },
@@ -44660,7 +44680,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "spire",
             },
           },
@@ -44676,7 +44696,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "spire",
               },
             },
@@ -44688,7 +44708,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "spire",
               },
             },
@@ -44701,7 +44721,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "spire",
             },
           },
@@ -44717,7 +44737,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "spire",
               },
             },
@@ -44729,7 +44749,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "spire",
               },
             },
@@ -44742,7 +44762,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "spire",
             },
           },
@@ -44758,7 +44778,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "spire",
               },
             },
@@ -44770,7 +44790,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "spire",
               },
             },
@@ -44783,7 +44803,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "spire",
             },
           },
@@ -44799,7 +44819,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "spire",
               },
             },
@@ -44811,7 +44831,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "spire",
               },
             },
@@ -44824,7 +44844,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "spire",
             },
           },
@@ -44840,7 +44860,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "spire",
               },
             },
@@ -44852,7 +44872,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "spire",
               },
             },
@@ -44865,7 +44885,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "spire",
             },
           },
@@ -44881,7 +44901,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "spire",
               },
             },
@@ -44893,7 +44913,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "spire",
               },
             },
@@ -44906,7 +44926,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "spire",
             },
           },
@@ -44922,7 +44942,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "spire",
               },
             },
@@ -44934,7 +44954,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "spire",
               },
             },
@@ -44947,7 +44967,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "spire",
             },
           },
@@ -44963,7 +44983,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "spire",
               },
             },
@@ -44975,7 +44995,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "spire",
               },
             },
@@ -44988,7 +45008,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "spire",
             },
           },
@@ -45004,7 +45024,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "tide",
               },
             },
@@ -45016,7 +45036,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "tide",
               },
             },
@@ -45029,7 +45049,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "tide",
             },
           },
@@ -45045,7 +45065,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "tide",
               },
             },
@@ -45057,7 +45077,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "tide",
               },
             },
@@ -45070,7 +45090,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "tide",
             },
           },
@@ -45086,7 +45106,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "tide",
               },
             },
@@ -45098,7 +45118,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "tide",
               },
             },
@@ -45111,7 +45131,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "tide",
             },
           },
@@ -45127,7 +45147,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "tide",
               },
             },
@@ -45139,7 +45159,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "tide",
               },
             },
@@ -45152,7 +45172,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "tide",
             },
           },
@@ -45168,7 +45188,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "tide",
               },
             },
@@ -45180,7 +45200,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "tide",
               },
             },
@@ -45193,7 +45213,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "tide",
             },
           },
@@ -45209,7 +45229,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "tide",
               },
             },
@@ -45221,7 +45241,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "tide",
               },
             },
@@ -45234,7 +45254,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "tide",
             },
           },
@@ -45250,7 +45270,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "tide",
               },
             },
@@ -45262,7 +45282,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "tide",
               },
             },
@@ -45275,7 +45295,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "tide",
             },
           },
@@ -45291,7 +45311,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "tide",
               },
             },
@@ -45303,7 +45323,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "tide",
               },
             },
@@ -45316,7 +45336,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "tide",
             },
           },
@@ -45332,7 +45352,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "tide",
               },
             },
@@ -45344,7 +45364,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "tide",
               },
             },
@@ -45357,7 +45377,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "tide",
             },
           },
@@ -45373,7 +45393,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "tide",
               },
             },
@@ -45385,7 +45405,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "tide",
               },
             },
@@ -45398,7 +45418,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "tide",
             },
           },
@@ -45414,7 +45434,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "vex",
               },
             },
@@ -45426,7 +45446,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "vex",
               },
             },
@@ -45439,7 +45459,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "vex",
             },
           },
@@ -45455,7 +45475,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "vex",
               },
             },
@@ -45467,7 +45487,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "vex",
               },
             },
@@ -45480,7 +45500,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "vex",
             },
           },
@@ -45496,7 +45516,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "vex",
               },
             },
@@ -45508,7 +45528,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "vex",
               },
             },
@@ -45521,7 +45541,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "vex",
             },
           },
@@ -45537,7 +45557,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "vex",
               },
             },
@@ -45549,7 +45569,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "vex",
               },
             },
@@ -45562,7 +45582,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "vex",
             },
           },
@@ -45578,7 +45598,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "vex",
               },
             },
@@ -45590,7 +45610,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "vex",
               },
             },
@@ -45603,7 +45623,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "vex",
             },
           },
@@ -45619,7 +45639,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "vex",
               },
             },
@@ -45631,7 +45651,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "vex",
               },
             },
@@ -45644,7 +45664,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "vex",
             },
           },
@@ -45660,7 +45680,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "vex",
               },
             },
@@ -45672,7 +45692,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "vex",
               },
             },
@@ -45685,7 +45705,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "vex",
             },
           },
@@ -45701,7 +45721,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "vex",
               },
             },
@@ -45713,7 +45733,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "vex",
               },
             },
@@ -45726,7 +45746,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "vex",
             },
           },
@@ -45742,7 +45762,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "vex",
               },
             },
@@ -45754,7 +45774,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "vex",
               },
             },
@@ -45767,7 +45787,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "vex",
             },
           },
@@ -45783,7 +45803,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "vex",
               },
             },
@@ -45795,7 +45815,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "vex",
               },
             },
@@ -45808,7 +45828,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "vex",
             },
           },
@@ -45824,7 +45844,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "ward",
               },
             },
@@ -45836,7 +45856,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "ward",
               },
             },
@@ -45849,7 +45869,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "ward",
             },
           },
@@ -45865,7 +45885,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "ward",
               },
             },
@@ -45877,7 +45897,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "ward",
               },
             },
@@ -45890,7 +45910,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "ward",
             },
           },
@@ -45906,7 +45926,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "ward",
               },
             },
@@ -45918,7 +45938,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "ward",
               },
             },
@@ -45931,7 +45951,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "ward",
             },
           },
@@ -45947,7 +45967,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "ward",
               },
             },
@@ -45959,7 +45979,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "ward",
               },
             },
@@ -45972,7 +45992,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "ward",
             },
           },
@@ -45988,7 +46008,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "ward",
               },
             },
@@ -46000,7 +46020,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "ward",
               },
             },
@@ -46013,7 +46033,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "ward",
             },
           },
@@ -46029,7 +46049,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "ward",
               },
             },
@@ -46041,7 +46061,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "ward",
               },
             },
@@ -46054,7 +46074,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "ward",
             },
           },
@@ -46070,7 +46090,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "ward",
               },
             },
@@ -46082,7 +46102,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "ward",
               },
             },
@@ -46095,7 +46115,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "ward",
             },
           },
@@ -46111,7 +46131,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "ward",
               },
             },
@@ -46123,7 +46143,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "ward",
               },
             },
@@ -46136,7 +46156,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "ward",
             },
           },
@@ -46152,7 +46172,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "ward",
               },
             },
@@ -46164,7 +46184,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "ward",
               },
             },
@@ -46177,7 +46197,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "ward",
             },
           },
@@ -46193,7 +46213,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "ward",
               },
             },
@@ -46205,7 +46225,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "ward",
               },
             },
@@ -46218,7 +46238,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "ward",
             },
           },
@@ -46234,7 +46254,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "wayfinder",
               },
             },
@@ -46246,7 +46266,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "wayfinder",
               },
             },
@@ -46259,7 +46279,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "wayfinder",
             },
           },
@@ -46275,7 +46295,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "wayfinder",
               },
             },
@@ -46287,7 +46307,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "wayfinder",
               },
             },
@@ -46300,7 +46320,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "wayfinder",
             },
           },
@@ -46316,7 +46336,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "wayfinder",
               },
             },
@@ -46328,7 +46348,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "wayfinder",
               },
             },
@@ -46341,7 +46361,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "wayfinder",
             },
           },
@@ -46357,7 +46377,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "wayfinder",
               },
             },
@@ -46369,7 +46389,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "wayfinder",
               },
             },
@@ -46382,7 +46402,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "wayfinder",
             },
           },
@@ -46398,7 +46418,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "wayfinder",
               },
             },
@@ -46410,7 +46430,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "wayfinder",
               },
             },
@@ -46423,7 +46443,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "wayfinder",
             },
           },
@@ -46439,7 +46459,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "wayfinder",
               },
             },
@@ -46451,7 +46471,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "wayfinder",
               },
             },
@@ -46464,7 +46484,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "wayfinder",
             },
           },
@@ -46480,7 +46500,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "wayfinder",
               },
             },
@@ -46492,7 +46512,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "wayfinder",
               },
             },
@@ -46505,7 +46525,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "wayfinder",
             },
           },
@@ -46521,7 +46541,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "wayfinder",
               },
             },
@@ -46533,7 +46553,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "wayfinder",
               },
             },
@@ -46546,7 +46566,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "wayfinder",
             },
           },
@@ -46562,7 +46582,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "wayfinder",
               },
             },
@@ -46574,7 +46594,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "wayfinder",
               },
             },
@@ -46587,7 +46607,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "wayfinder",
             },
           },
@@ -46603,7 +46623,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "wayfinder",
               },
             },
@@ -46615,7 +46635,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "wayfinder",
               },
             },
@@ -46628,7 +46648,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "wayfinder",
             },
           },
@@ -46644,7 +46664,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "wild",
               },
             },
@@ -46656,7 +46676,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "wild",
               },
             },
@@ -46669,7 +46689,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "wild",
             },
           },
@@ -46685,7 +46705,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "wild",
               },
             },
@@ -46697,7 +46717,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "wild",
               },
             },
@@ -46710,7 +46730,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "wild",
             },
           },
@@ -46726,7 +46746,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "wild",
               },
             },
@@ -46738,7 +46758,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "wild",
               },
             },
@@ -46751,7 +46771,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "wild",
             },
           },
@@ -46767,7 +46787,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "wild",
               },
             },
@@ -46779,7 +46799,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "wild",
               },
             },
@@ -46792,7 +46812,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "wild",
             },
           },
@@ -46808,7 +46828,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "wild",
               },
             },
@@ -46820,7 +46840,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "wild",
               },
             },
@@ -46833,7 +46853,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "wild",
             },
           },
@@ -46849,7 +46869,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "wild",
               },
             },
@@ -46861,7 +46881,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "wild",
               },
             },
@@ -46874,7 +46894,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "wild",
             },
           },
@@ -46890,7 +46910,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "wild",
               },
             },
@@ -46902,7 +46922,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "wild",
               },
             },
@@ -46915,7 +46935,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "wild",
             },
           },
@@ -46931,7 +46951,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "wild",
               },
             },
@@ -46943,7 +46963,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "wild",
               },
             },
@@ -46956,7 +46976,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "wild",
             },
           },
@@ -46972,7 +46992,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "wild",
               },
             },
@@ -46984,7 +47004,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "wild",
               },
             },
@@ -46997,7 +47017,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "wild",
             },
           },
@@ -47013,7 +47033,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "wild",
               },
             },
@@ -47025,7 +47045,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "wild",
               },
             },
@@ -47038,7 +47058,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "wild",
             },
           },
@@ -47054,7 +47074,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "coast",
               },
             },
@@ -47066,7 +47086,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "coast",
               },
             },
@@ -47079,7 +47099,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "coast",
             },
           },
@@ -47095,7 +47115,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "coast",
               },
             },
@@ -47107,7 +47127,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "coast",
               },
             },
@@ -47120,7 +47140,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "coast",
             },
           },
@@ -47136,7 +47156,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "coast",
               },
             },
@@ -47148,7 +47168,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "coast",
               },
             },
@@ -47161,7 +47181,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "coast",
             },
           },
@@ -47177,7 +47197,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "coast",
               },
             },
@@ -47189,7 +47209,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "coast",
               },
             },
@@ -47202,7 +47222,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "coast",
             },
           },
@@ -47218,7 +47238,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "coast",
               },
             },
@@ -47230,7 +47250,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "coast",
               },
             },
@@ -47243,7 +47263,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "coast",
             },
           },
@@ -47259,7 +47279,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "coast",
               },
             },
@@ -47271,7 +47291,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "coast",
               },
             },
@@ -47284,7 +47304,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "coast",
             },
           },
@@ -47300,7 +47320,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "coast",
               },
             },
@@ -47312,7 +47332,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "coast",
               },
             },
@@ -47325,7 +47345,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "coast",
             },
           },
@@ -47341,7 +47361,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "coast",
               },
             },
@@ -47353,7 +47373,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "coast",
               },
             },
@@ -47366,7 +47386,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "coast",
             },
           },
@@ -47382,7 +47402,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "coast",
               },
             },
@@ -47394,7 +47414,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "coast",
               },
             },
@@ -47407,7 +47427,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "coast",
             },
           },
@@ -47423,7 +47443,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "coast",
               },
             },
@@ -47435,7 +47455,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "coast",
               },
             },
@@ -47448,7 +47468,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "coast",
             },
           },
@@ -47464,7 +47484,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "dune",
               },
             },
@@ -47476,7 +47496,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "dune",
               },
             },
@@ -47489,7 +47509,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "dune",
             },
           },
@@ -47505,7 +47525,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "dune",
               },
             },
@@ -47517,7 +47537,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "dune",
               },
             },
@@ -47530,7 +47550,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "dune",
             },
           },
@@ -47546,7 +47566,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "dune",
               },
             },
@@ -47558,7 +47578,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "dune",
               },
             },
@@ -47571,7 +47591,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "dune",
             },
           },
@@ -47587,7 +47607,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "dune",
               },
             },
@@ -47599,7 +47619,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "dune",
               },
             },
@@ -47612,7 +47632,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "dune",
             },
           },
@@ -47628,7 +47648,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "dune",
               },
             },
@@ -47640,7 +47660,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "dune",
               },
             },
@@ -47653,7 +47673,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "dune",
             },
           },
@@ -47669,7 +47689,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "dune",
               },
             },
@@ -47681,7 +47701,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "dune",
               },
             },
@@ -47694,7 +47714,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "dune",
             },
           },
@@ -47710,7 +47730,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "dune",
               },
             },
@@ -47722,7 +47742,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "dune",
               },
             },
@@ -47735,7 +47755,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "dune",
             },
           },
@@ -47751,7 +47771,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "dune",
               },
             },
@@ -47763,7 +47783,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "dune",
               },
             },
@@ -47776,7 +47796,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "dune",
             },
           },
@@ -47792,7 +47812,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "dune",
               },
             },
@@ -47804,7 +47824,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "dune",
               },
             },
@@ -47817,7 +47837,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "dune",
             },
           },
@@ -47833,7 +47853,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "dune",
               },
             },
@@ -47845,7 +47865,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "dune",
               },
             },
@@ -47858,7 +47878,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "dune",
             },
           },
@@ -47874,7 +47894,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "eye",
               },
             },
@@ -47886,7 +47906,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "eye",
               },
             },
@@ -47899,7 +47919,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "eye",
             },
           },
@@ -47915,7 +47935,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "eye",
               },
             },
@@ -47927,7 +47947,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "eye",
               },
             },
@@ -47940,7 +47960,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "eye",
             },
           },
@@ -47956,7 +47976,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "eye",
               },
             },
@@ -47968,7 +47988,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "eye",
               },
             },
@@ -47981,7 +48001,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "eye",
             },
           },
@@ -47997,7 +48017,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "eye",
               },
             },
@@ -48009,7 +48029,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "eye",
               },
             },
@@ -48022,7 +48042,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "eye",
             },
           },
@@ -48038,7 +48058,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "eye",
               },
             },
@@ -48050,7 +48070,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "eye",
               },
             },
@@ -48063,7 +48083,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "eye",
             },
           },
@@ -48079,7 +48099,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "eye",
               },
             },
@@ -48091,7 +48111,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "eye",
               },
             },
@@ -48104,7 +48124,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "eye",
             },
           },
@@ -48120,7 +48140,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "eye",
               },
             },
@@ -48132,7 +48152,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "eye",
               },
             },
@@ -48145,7 +48165,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "eye",
             },
           },
@@ -48161,7 +48181,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "eye",
               },
             },
@@ -48173,7 +48193,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "eye",
               },
             },
@@ -48186,7 +48206,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "eye",
             },
           },
@@ -48202,7 +48222,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "eye",
               },
             },
@@ -48214,7 +48234,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "eye",
               },
             },
@@ -48227,7 +48247,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "eye",
             },
           },
@@ -48243,7 +48263,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "eye",
               },
             },
@@ -48255,7 +48275,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "eye",
               },
             },
@@ -48268,7 +48288,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "eye",
             },
           },
@@ -48284,7 +48304,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "host",
               },
             },
@@ -48296,7 +48316,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "host",
               },
             },
@@ -48309,7 +48329,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "host",
             },
           },
@@ -48325,7 +48345,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "host",
               },
             },
@@ -48337,7 +48357,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "host",
               },
             },
@@ -48350,7 +48370,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "host",
             },
           },
@@ -48366,7 +48386,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "host",
               },
             },
@@ -48378,7 +48398,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "host",
               },
             },
@@ -48391,7 +48411,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "host",
             },
           },
@@ -48407,7 +48427,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "host",
               },
             },
@@ -48419,7 +48439,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "host",
               },
             },
@@ -48432,7 +48452,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "host",
             },
           },
@@ -48448,7 +48468,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "host",
               },
             },
@@ -48460,7 +48480,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "host",
               },
             },
@@ -48473,7 +48493,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "host",
             },
           },
@@ -48489,7 +48509,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "host",
               },
             },
@@ -48501,7 +48521,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "host",
               },
             },
@@ -48514,7 +48534,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "host",
             },
           },
@@ -48530,7 +48550,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "host",
               },
             },
@@ -48542,7 +48562,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "host",
               },
             },
@@ -48555,7 +48575,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "host",
             },
           },
@@ -48571,7 +48591,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "host",
               },
             },
@@ -48583,7 +48603,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "host",
               },
             },
@@ -48596,7 +48616,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "host",
             },
           },
@@ -48612,7 +48632,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "host",
               },
             },
@@ -48624,7 +48644,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "host",
               },
             },
@@ -48637,7 +48657,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "host",
             },
           },
@@ -48653,7 +48673,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "host",
               },
             },
@@ -48665,7 +48685,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "host",
               },
             },
@@ -48678,7 +48698,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "host",
             },
           },
@@ -48694,7 +48714,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "raiser",
               },
             },
@@ -48706,7 +48726,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "raiser",
               },
             },
@@ -48719,7 +48739,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "raiser",
             },
           },
@@ -48735,7 +48755,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "raiser",
               },
             },
@@ -48747,7 +48767,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "raiser",
               },
             },
@@ -48760,7 +48780,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "raiser",
             },
           },
@@ -48776,7 +48796,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "raiser",
               },
             },
@@ -48788,7 +48808,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "raiser",
               },
             },
@@ -48801,7 +48821,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "raiser",
             },
           },
@@ -48817,7 +48837,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "raiser",
               },
             },
@@ -48829,7 +48849,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "raiser",
               },
             },
@@ -48842,7 +48862,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "raiser",
             },
           },
@@ -48858,7 +48878,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "raiser",
               },
             },
@@ -48870,7 +48890,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "raiser",
               },
             },
@@ -48883,7 +48903,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "raiser",
             },
           },
@@ -48899,7 +48919,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "raiser",
               },
             },
@@ -48911,7 +48931,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "raiser",
               },
             },
@@ -48924,7 +48944,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "raiser",
             },
           },
@@ -48940,7 +48960,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "raiser",
               },
             },
@@ -48952,7 +48972,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "raiser",
               },
             },
@@ -48965,7 +48985,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "raiser",
             },
           },
@@ -48981,7 +49001,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "raiser",
               },
             },
@@ -48993,7 +49013,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "raiser",
               },
             },
@@ -49006,7 +49026,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "raiser",
             },
           },
@@ -49022,7 +49042,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "raiser",
               },
             },
@@ -49034,7 +49054,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "raiser",
               },
             },
@@ -49047,7 +49067,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "raiser",
             },
           },
@@ -49063,7 +49083,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "raiser",
               },
             },
@@ -49075,7 +49095,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "raiser",
               },
             },
@@ -49088,7 +49108,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "raiser",
             },
           },
@@ -49104,7 +49124,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "rib",
               },
             },
@@ -49116,7 +49136,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "rib",
               },
             },
@@ -49129,7 +49149,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "rib",
             },
           },
@@ -49145,7 +49165,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "rib",
               },
             },
@@ -49157,7 +49177,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "rib",
               },
             },
@@ -49170,7 +49190,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "rib",
             },
           },
@@ -49186,7 +49206,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "rib",
               },
             },
@@ -49198,7 +49218,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "rib",
               },
             },
@@ -49211,7 +49231,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "rib",
             },
           },
@@ -49227,7 +49247,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "rib",
               },
             },
@@ -49239,7 +49259,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "rib",
               },
             },
@@ -49252,7 +49272,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "rib",
             },
           },
@@ -49268,7 +49288,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "rib",
               },
             },
@@ -49280,7 +49300,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "rib",
               },
             },
@@ -49293,7 +49313,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "rib",
             },
           },
@@ -49309,7 +49329,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "rib",
               },
             },
@@ -49321,7 +49341,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "rib",
               },
             },
@@ -49334,7 +49354,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "rib",
             },
           },
@@ -49350,7 +49370,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "rib",
               },
             },
@@ -49362,7 +49382,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "rib",
               },
             },
@@ -49375,7 +49395,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "rib",
             },
           },
@@ -49391,7 +49411,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "rib",
               },
             },
@@ -49403,7 +49423,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "rib",
               },
             },
@@ -49416,7 +49436,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "rib",
             },
           },
@@ -49432,7 +49452,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "rib",
               },
             },
@@ -49444,7 +49464,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "rib",
               },
             },
@@ -49457,7 +49477,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "rib",
             },
           },
@@ -49473,7 +49493,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "rib",
               },
             },
@@ -49485,7 +49505,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "rib",
               },
             },
@@ -49498,7 +49518,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "rib",
             },
           },
@@ -49514,7 +49534,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "sentry",
               },
             },
@@ -49526,7 +49546,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "sentry",
               },
             },
@@ -49539,7 +49559,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "sentry",
             },
           },
@@ -49555,7 +49575,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "sentry",
               },
             },
@@ -49567,7 +49587,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "sentry",
               },
             },
@@ -49580,7 +49600,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "sentry",
             },
           },
@@ -49596,7 +49616,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "sentry",
               },
             },
@@ -49608,7 +49628,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "sentry",
               },
             },
@@ -49621,7 +49641,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "sentry",
             },
           },
@@ -49637,7 +49657,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "sentry",
               },
             },
@@ -49649,7 +49669,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "sentry",
               },
             },
@@ -49662,7 +49682,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "sentry",
             },
           },
@@ -49678,7 +49698,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "sentry",
               },
             },
@@ -49690,7 +49710,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "sentry",
               },
             },
@@ -49703,7 +49723,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "sentry",
             },
           },
@@ -49719,7 +49739,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "sentry",
               },
             },
@@ -49731,7 +49751,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "sentry",
               },
             },
@@ -49744,7 +49764,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "sentry",
             },
           },
@@ -49760,7 +49780,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "sentry",
               },
             },
@@ -49772,7 +49792,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "sentry",
               },
             },
@@ -49785,7 +49805,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "sentry",
             },
           },
@@ -49801,7 +49821,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "sentry",
               },
             },
@@ -49813,7 +49833,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "sentry",
               },
             },
@@ -49826,7 +49846,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "sentry",
             },
           },
@@ -49842,7 +49862,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "sentry",
               },
             },
@@ -49854,7 +49874,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "sentry",
               },
             },
@@ -49867,7 +49887,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "sentry",
             },
           },
@@ -49883,7 +49903,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "sentry",
               },
             },
@@ -49895,7 +49915,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "sentry",
               },
             },
@@ -49908,7 +49928,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "sentry",
             },
           },
@@ -49924,7 +49944,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "shaper",
               },
             },
@@ -49936,7 +49956,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "shaper",
               },
             },
@@ -49949,7 +49969,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "shaper",
             },
           },
@@ -49965,7 +49985,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "shaper",
               },
             },
@@ -49977,7 +49997,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "shaper",
               },
             },
@@ -49990,7 +50010,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "shaper",
             },
           },
@@ -50006,7 +50026,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "shaper",
               },
             },
@@ -50018,7 +50038,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "shaper",
               },
             },
@@ -50031,7 +50051,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "shaper",
             },
           },
@@ -50047,7 +50067,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "shaper",
               },
             },
@@ -50059,7 +50079,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "shaper",
               },
             },
@@ -50072,7 +50092,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "shaper",
             },
           },
@@ -50088,7 +50108,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "shaper",
               },
             },
@@ -50100,7 +50120,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "shaper",
               },
             },
@@ -50113,7 +50133,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "shaper",
             },
           },
@@ -50129,7 +50149,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "shaper",
               },
             },
@@ -50141,7 +50161,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "shaper",
               },
             },
@@ -50154,7 +50174,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "shaper",
             },
           },
@@ -50170,7 +50190,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "shaper",
               },
             },
@@ -50182,7 +50202,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "shaper",
               },
             },
@@ -50195,7 +50215,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "shaper",
             },
           },
@@ -50211,7 +50231,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "shaper",
               },
             },
@@ -50223,7 +50243,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "shaper",
               },
             },
@@ -50236,7 +50256,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "shaper",
             },
           },
@@ -50252,7 +50272,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "shaper",
               },
             },
@@ -50264,7 +50284,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "shaper",
               },
             },
@@ -50277,7 +50297,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "shaper",
             },
           },
@@ -50293,7 +50313,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "shaper",
               },
             },
@@ -50305,7 +50325,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "shaper",
               },
             },
@@ -50318,7 +50338,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "shaper",
             },
           },
@@ -50334,7 +50354,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "silence",
               },
             },
@@ -50346,7 +50366,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "silence",
               },
             },
@@ -50359,7 +50379,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "silence",
             },
           },
@@ -50375,7 +50395,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "silence",
               },
             },
@@ -50387,7 +50407,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "silence",
               },
             },
@@ -50400,7 +50420,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "silence",
             },
           },
@@ -50416,7 +50436,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "silence",
               },
             },
@@ -50428,7 +50448,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "silence",
               },
             },
@@ -50441,7 +50461,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "silence",
             },
           },
@@ -50457,7 +50477,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "silence",
               },
             },
@@ -50469,7 +50489,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "silence",
               },
             },
@@ -50482,7 +50502,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "silence",
             },
           },
@@ -50498,7 +50518,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "silence",
               },
             },
@@ -50510,7 +50530,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "silence",
               },
             },
@@ -50523,7 +50543,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "silence",
             },
           },
@@ -50539,7 +50559,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "silence",
               },
             },
@@ -50551,7 +50571,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "silence",
               },
             },
@@ -50564,7 +50584,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "silence",
             },
           },
@@ -50580,7 +50600,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "silence",
               },
             },
@@ -50592,7 +50612,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "silence",
               },
             },
@@ -50605,7 +50625,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "silence",
             },
           },
@@ -50621,7 +50641,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "silence",
               },
             },
@@ -50633,7 +50653,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "silence",
               },
             },
@@ -50646,7 +50666,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "silence",
             },
           },
@@ -50662,7 +50682,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "silence",
               },
             },
@@ -50674,7 +50694,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "silence",
               },
             },
@@ -50687,7 +50707,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "silence",
             },
           },
@@ -50703,7 +50723,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "silence",
               },
             },
@@ -50715,7 +50735,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "silence",
               },
             },
@@ -50728,7 +50748,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "silence",
             },
           },
@@ -50744,7 +50764,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "snout",
               },
             },
@@ -50756,7 +50776,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "snout",
               },
             },
@@ -50769,7 +50789,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "snout",
             },
           },
@@ -50785,7 +50805,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "snout",
               },
             },
@@ -50797,7 +50817,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "snout",
               },
             },
@@ -50810,7 +50830,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "snout",
             },
           },
@@ -50826,7 +50846,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "snout",
               },
             },
@@ -50838,7 +50858,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "snout",
               },
             },
@@ -50851,7 +50871,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "snout",
             },
           },
@@ -50867,7 +50887,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "snout",
               },
             },
@@ -50879,7 +50899,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "snout",
               },
             },
@@ -50892,7 +50912,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "snout",
             },
           },
@@ -50908,7 +50928,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "snout",
               },
             },
@@ -50920,7 +50940,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "snout",
               },
             },
@@ -50933,7 +50953,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "snout",
             },
           },
@@ -50949,7 +50969,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "snout",
               },
             },
@@ -50961,7 +50981,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "snout",
               },
             },
@@ -50974,7 +50994,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "snout",
             },
           },
@@ -50990,7 +51010,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "snout",
               },
             },
@@ -51002,7 +51022,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "snout",
               },
             },
@@ -51015,7 +51035,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "snout",
             },
           },
@@ -51031,7 +51051,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "snout",
               },
             },
@@ -51043,7 +51063,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "snout",
               },
             },
@@ -51056,7 +51076,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "snout",
             },
           },
@@ -51072,7 +51092,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "snout",
               },
             },
@@ -51084,7 +51104,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "snout",
               },
             },
@@ -51097,7 +51117,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "snout",
             },
           },
@@ -51113,7 +51133,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "snout",
               },
             },
@@ -51125,7 +51145,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "snout",
               },
             },
@@ -51138,7 +51158,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "snout",
             },
           },
@@ -51154,7 +51174,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "spire",
               },
             },
@@ -51166,7 +51186,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "spire",
               },
             },
@@ -51179,7 +51199,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "spire",
             },
           },
@@ -51195,7 +51215,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "spire",
               },
             },
@@ -51207,7 +51227,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "spire",
               },
             },
@@ -51220,7 +51240,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "spire",
             },
           },
@@ -51236,7 +51256,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "spire",
               },
             },
@@ -51248,7 +51268,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "spire",
               },
             },
@@ -51261,7 +51281,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "spire",
             },
           },
@@ -51277,7 +51297,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "spire",
               },
             },
@@ -51289,7 +51309,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "spire",
               },
             },
@@ -51302,7 +51322,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "spire",
             },
           },
@@ -51318,7 +51338,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "spire",
               },
             },
@@ -51330,7 +51350,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "spire",
               },
             },
@@ -51343,7 +51363,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "spire",
             },
           },
@@ -51359,7 +51379,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "spire",
               },
             },
@@ -51371,7 +51391,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "spire",
               },
             },
@@ -51384,7 +51404,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "spire",
             },
           },
@@ -51400,7 +51420,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "spire",
               },
             },
@@ -51412,7 +51432,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "spire",
               },
             },
@@ -51425,7 +51445,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "spire",
             },
           },
@@ -51441,7 +51461,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "spire",
               },
             },
@@ -51453,7 +51473,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "spire",
               },
             },
@@ -51466,7 +51486,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "spire",
             },
           },
@@ -51482,7 +51502,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "spire",
               },
             },
@@ -51494,7 +51514,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "spire",
               },
             },
@@ -51507,7 +51527,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "spire",
             },
           },
@@ -51523,7 +51543,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "spire",
               },
             },
@@ -51535,7 +51555,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "spire",
               },
             },
@@ -51548,7 +51568,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "spire",
             },
           },
@@ -51564,7 +51584,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "tide",
               },
             },
@@ -51576,7 +51596,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "tide",
               },
             },
@@ -51589,7 +51609,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "tide",
             },
           },
@@ -51605,7 +51625,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "tide",
               },
             },
@@ -51617,7 +51637,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "tide",
               },
             },
@@ -51630,7 +51650,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "tide",
             },
           },
@@ -51646,7 +51666,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "tide",
               },
             },
@@ -51658,7 +51678,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "tide",
               },
             },
@@ -51671,7 +51691,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "tide",
             },
           },
@@ -51687,7 +51707,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "tide",
               },
             },
@@ -51699,7 +51719,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "tide",
               },
             },
@@ -51712,7 +51732,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "tide",
             },
           },
@@ -51728,7 +51748,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "tide",
               },
             },
@@ -51740,7 +51760,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "tide",
               },
             },
@@ -51753,7 +51773,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "tide",
             },
           },
@@ -51769,7 +51789,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "tide",
               },
             },
@@ -51781,7 +51801,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "tide",
               },
             },
@@ -51794,7 +51814,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "tide",
             },
           },
@@ -51810,7 +51830,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "tide",
               },
             },
@@ -51822,7 +51842,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "tide",
               },
             },
@@ -51835,7 +51855,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "tide",
             },
           },
@@ -51851,7 +51871,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "tide",
               },
             },
@@ -51863,7 +51883,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "tide",
               },
             },
@@ -51876,7 +51896,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "tide",
             },
           },
@@ -51892,7 +51912,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "tide",
               },
             },
@@ -51904,7 +51924,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "tide",
               },
             },
@@ -51917,7 +51937,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "tide",
             },
           },
@@ -51933,7 +51953,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "tide",
               },
             },
@@ -51945,7 +51965,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "tide",
               },
             },
@@ -51958,7 +51978,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "tide",
             },
           },
@@ -51974,7 +51994,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "vex",
               },
             },
@@ -51986,7 +52006,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "vex",
               },
             },
@@ -51999,7 +52019,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "vex",
             },
           },
@@ -52015,7 +52035,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "vex",
               },
             },
@@ -52027,7 +52047,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "vex",
               },
             },
@@ -52040,7 +52060,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "vex",
             },
           },
@@ -52056,7 +52076,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "vex",
               },
             },
@@ -52068,7 +52088,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "vex",
               },
             },
@@ -52081,7 +52101,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "vex",
             },
           },
@@ -52097,7 +52117,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "vex",
               },
             },
@@ -52109,7 +52129,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "vex",
               },
             },
@@ -52122,7 +52142,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "vex",
             },
           },
@@ -52138,7 +52158,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "vex",
               },
             },
@@ -52150,7 +52170,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "vex",
               },
             },
@@ -52163,7 +52183,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "vex",
             },
           },
@@ -52179,7 +52199,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "vex",
               },
             },
@@ -52191,7 +52211,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "vex",
               },
             },
@@ -52204,7 +52224,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "vex",
             },
           },
@@ -52220,7 +52240,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "vex",
               },
             },
@@ -52232,7 +52252,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "vex",
               },
             },
@@ -52245,7 +52265,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "vex",
             },
           },
@@ -52261,7 +52281,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "vex",
               },
             },
@@ -52273,7 +52293,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "vex",
               },
             },
@@ -52286,7 +52306,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "vex",
             },
           },
@@ -52302,7 +52322,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "vex",
               },
             },
@@ -52314,7 +52334,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "vex",
               },
             },
@@ -52327,7 +52347,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "vex",
             },
           },
@@ -52343,7 +52363,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "vex",
               },
             },
@@ -52355,7 +52375,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "vex",
               },
             },
@@ -52368,7 +52388,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "vex",
             },
           },
@@ -52384,7 +52404,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "ward",
               },
             },
@@ -52396,7 +52416,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "ward",
               },
             },
@@ -52409,7 +52429,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "ward",
             },
           },
@@ -52425,7 +52445,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "ward",
               },
             },
@@ -52437,7 +52457,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "ward",
               },
             },
@@ -52450,7 +52470,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "ward",
             },
           },
@@ -52466,7 +52486,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "ward",
               },
             },
@@ -52478,7 +52498,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "ward",
               },
             },
@@ -52491,7 +52511,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "ward",
             },
           },
@@ -52507,7 +52527,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "ward",
               },
             },
@@ -52519,7 +52539,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "ward",
               },
             },
@@ -52532,7 +52552,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "ward",
             },
           },
@@ -52548,7 +52568,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "ward",
               },
             },
@@ -52560,7 +52580,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "ward",
               },
             },
@@ -52573,7 +52593,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "ward",
             },
           },
@@ -52589,7 +52609,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "ward",
               },
             },
@@ -52601,7 +52621,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "ward",
               },
             },
@@ -52614,7 +52634,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "ward",
             },
           },
@@ -52630,7 +52650,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "ward",
               },
             },
@@ -52642,7 +52662,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "ward",
               },
             },
@@ -52655,7 +52675,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "ward",
             },
           },
@@ -52671,7 +52691,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "ward",
               },
             },
@@ -52683,7 +52703,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "ward",
               },
             },
@@ -52696,7 +52716,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "ward",
             },
           },
@@ -52712,7 +52732,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "ward",
               },
             },
@@ -52724,7 +52744,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "ward",
               },
             },
@@ -52737,7 +52757,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "ward",
             },
           },
@@ -52753,7 +52773,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "ward",
               },
             },
@@ -52765,7 +52785,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "ward",
               },
             },
@@ -52778,7 +52798,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "ward",
             },
           },
@@ -52794,7 +52814,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "wayfinder",
               },
             },
@@ -52806,7 +52826,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "wayfinder",
               },
             },
@@ -52819,7 +52839,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "wayfinder",
             },
           },
@@ -52835,7 +52855,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "wayfinder",
               },
             },
@@ -52847,7 +52867,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "wayfinder",
               },
             },
@@ -52860,7 +52880,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "wayfinder",
             },
           },
@@ -52876,7 +52896,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "wayfinder",
               },
             },
@@ -52888,7 +52908,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "wayfinder",
               },
             },
@@ -52901,7 +52921,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "wayfinder",
             },
           },
@@ -52917,7 +52937,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "wayfinder",
               },
             },
@@ -52929,7 +52949,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "wayfinder",
               },
             },
@@ -52942,7 +52962,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "wayfinder",
             },
           },
@@ -52958,7 +52978,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "wayfinder",
               },
             },
@@ -52970,7 +52990,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "wayfinder",
               },
             },
@@ -52983,7 +53003,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "wayfinder",
             },
           },
@@ -52999,7 +53019,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "wayfinder",
               },
             },
@@ -53011,7 +53031,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "wayfinder",
               },
             },
@@ -53024,7 +53044,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "wayfinder",
             },
           },
@@ -53040,7 +53060,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "wayfinder",
               },
             },
@@ -53052,7 +53072,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "wayfinder",
               },
             },
@@ -53065,7 +53085,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "wayfinder",
             },
           },
@@ -53081,7 +53101,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "wayfinder",
               },
             },
@@ -53093,7 +53113,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "wayfinder",
               },
             },
@@ -53106,7 +53126,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "wayfinder",
             },
           },
@@ -53122,7 +53142,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "wayfinder",
               },
             },
@@ -53134,7 +53154,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "wayfinder",
               },
             },
@@ -53147,7 +53167,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "wayfinder",
             },
           },
@@ -53163,7 +53183,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "wayfinder",
               },
             },
@@ -53175,7 +53195,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "wayfinder",
               },
             },
@@ -53188,7 +53208,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "wayfinder",
             },
           },
@@ -53204,7 +53224,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "wild",
               },
             },
@@ -53216,7 +53236,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "wild",
               },
             },
@@ -53229,7 +53249,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "wild",
             },
           },
@@ -53245,7 +53265,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "wild",
               },
             },
@@ -53257,7 +53277,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "wild",
               },
             },
@@ -53270,7 +53290,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "wild",
             },
           },
@@ -53286,7 +53306,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "wild",
               },
             },
@@ -53298,7 +53318,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "wild",
               },
             },
@@ -53311,7 +53331,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "wild",
             },
           },
@@ -53327,7 +53347,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "wild",
               },
             },
@@ -53339,7 +53359,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "wild",
               },
             },
@@ -53352,7 +53372,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "wild",
             },
           },
@@ -53368,7 +53388,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "wild",
               },
             },
@@ -53380,7 +53400,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "wild",
               },
             },
@@ -53393,7 +53413,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "wild",
             },
           },
@@ -53409,7 +53429,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "wild",
               },
             },
@@ -53421,7 +53441,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "wild",
               },
             },
@@ -53434,7 +53454,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "wild",
             },
           },
@@ -53450,7 +53470,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "wild",
               },
             },
@@ -53462,7 +53482,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "wild",
               },
             },
@@ -53475,7 +53495,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "wild",
             },
           },
@@ -53491,7 +53511,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "wild",
               },
             },
@@ -53503,7 +53523,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "wild",
               },
             },
@@ -53516,7 +53536,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "wild",
             },
           },
@@ -53532,7 +53552,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "wild",
               },
             },
@@ -53544,7 +53564,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "wild",
               },
             },
@@ -53557,7 +53577,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "wild",
             },
           },
@@ -53573,7 +53593,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "wild",
               },
             },
@@ -53585,7 +53605,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "wild",
               },
             },
@@ -53598,7 +53618,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "wild",
             },
           },
@@ -53614,7 +53634,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "coast",
               },
             },
@@ -53626,7 +53646,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "coast",
               },
             },
@@ -53639,7 +53659,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "coast",
             },
           },
@@ -53655,7 +53675,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "coast",
               },
             },
@@ -53667,7 +53687,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "coast",
               },
             },
@@ -53680,7 +53700,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "coast",
             },
           },
@@ -53696,7 +53716,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "coast",
               },
             },
@@ -53708,7 +53728,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "coast",
               },
             },
@@ -53721,7 +53741,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "coast",
             },
           },
@@ -53737,7 +53757,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "coast",
               },
             },
@@ -53749,7 +53769,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "coast",
               },
             },
@@ -53762,7 +53782,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "coast",
             },
           },
@@ -53778,7 +53798,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "coast",
               },
             },
@@ -53790,7 +53810,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "coast",
               },
             },
@@ -53803,7 +53823,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "coast",
             },
           },
@@ -53819,7 +53839,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "coast",
               },
             },
@@ -53831,7 +53851,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "coast",
               },
             },
@@ -53844,7 +53864,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "coast",
             },
           },
@@ -53860,7 +53880,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "coast",
               },
             },
@@ -53872,7 +53892,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "coast",
               },
             },
@@ -53885,7 +53905,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "coast",
             },
           },
@@ -53901,7 +53921,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "coast",
               },
             },
@@ -53913,7 +53933,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "coast",
               },
             },
@@ -53926,7 +53946,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "coast",
             },
           },
@@ -53942,7 +53962,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "coast",
               },
             },
@@ -53954,7 +53974,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "coast",
               },
             },
@@ -53967,7 +53987,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "coast",
             },
           },
@@ -53983,7 +54003,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "coast",
               },
             },
@@ -53995,7 +54015,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "coast",
               },
             },
@@ -54008,7 +54028,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "coast",
             },
           },
@@ -54024,7 +54044,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "dune",
               },
             },
@@ -54036,7 +54056,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "dune",
               },
             },
@@ -54049,7 +54069,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "dune",
             },
           },
@@ -54065,7 +54085,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "dune",
               },
             },
@@ -54077,7 +54097,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "dune",
               },
             },
@@ -54090,7 +54110,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "dune",
             },
           },
@@ -54106,7 +54126,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "dune",
               },
             },
@@ -54118,7 +54138,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "dune",
               },
             },
@@ -54131,7 +54151,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "dune",
             },
           },
@@ -54147,7 +54167,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "dune",
               },
             },
@@ -54159,7 +54179,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "dune",
               },
             },
@@ -54172,7 +54192,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "dune",
             },
           },
@@ -54188,7 +54208,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "dune",
               },
             },
@@ -54200,7 +54220,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "dune",
               },
             },
@@ -54213,7 +54233,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "dune",
             },
           },
@@ -54229,7 +54249,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "dune",
               },
             },
@@ -54241,7 +54261,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "dune",
               },
             },
@@ -54254,7 +54274,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "dune",
             },
           },
@@ -54270,7 +54290,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "dune",
               },
             },
@@ -54282,7 +54302,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "dune",
               },
             },
@@ -54295,7 +54315,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "dune",
             },
           },
@@ -54311,7 +54331,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "dune",
               },
             },
@@ -54323,7 +54343,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "dune",
               },
             },
@@ -54336,7 +54356,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "dune",
             },
           },
@@ -54352,7 +54372,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "dune",
               },
             },
@@ -54364,7 +54384,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "dune",
               },
             },
@@ -54377,7 +54397,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "dune",
             },
           },
@@ -54393,7 +54413,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "dune",
               },
             },
@@ -54405,7 +54425,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "dune",
               },
             },
@@ -54418,7 +54438,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "dune",
             },
           },
@@ -54434,7 +54454,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "eye",
               },
             },
@@ -54446,7 +54466,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "eye",
               },
             },
@@ -54459,7 +54479,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "eye",
             },
           },
@@ -54475,7 +54495,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "eye",
               },
             },
@@ -54487,7 +54507,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "eye",
               },
             },
@@ -54500,7 +54520,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "eye",
             },
           },
@@ -54516,7 +54536,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "eye",
               },
             },
@@ -54528,7 +54548,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "eye",
               },
             },
@@ -54541,7 +54561,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "eye",
             },
           },
@@ -54557,7 +54577,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "eye",
               },
             },
@@ -54569,7 +54589,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "eye",
               },
             },
@@ -54582,7 +54602,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "eye",
             },
           },
@@ -54598,7 +54618,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "eye",
               },
             },
@@ -54610,7 +54630,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "eye",
               },
             },
@@ -54623,7 +54643,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "eye",
             },
           },
@@ -54639,7 +54659,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "eye",
               },
             },
@@ -54651,7 +54671,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "eye",
               },
             },
@@ -54664,7 +54684,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "eye",
             },
           },
@@ -54680,7 +54700,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "eye",
               },
             },
@@ -54692,7 +54712,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "eye",
               },
             },
@@ -54705,7 +54725,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "eye",
             },
           },
@@ -54721,7 +54741,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "eye",
               },
             },
@@ -54733,7 +54753,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "eye",
               },
             },
@@ -54746,7 +54766,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "eye",
             },
           },
@@ -54762,7 +54782,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "eye",
               },
             },
@@ -54774,7 +54794,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "eye",
               },
             },
@@ -54787,7 +54807,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "eye",
             },
           },
@@ -54803,7 +54823,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "eye",
               },
             },
@@ -54815,7 +54835,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "eye",
               },
             },
@@ -54828,7 +54848,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "eye",
             },
           },
@@ -54844,7 +54864,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "host",
               },
             },
@@ -54856,7 +54876,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "host",
               },
             },
@@ -54869,7 +54889,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "host",
             },
           },
@@ -54885,7 +54905,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "host",
               },
             },
@@ -54897,7 +54917,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "host",
               },
             },
@@ -54910,7 +54930,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "host",
             },
           },
@@ -54926,7 +54946,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "host",
               },
             },
@@ -54938,7 +54958,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "host",
               },
             },
@@ -54951,7 +54971,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "host",
             },
           },
@@ -54967,7 +54987,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "host",
               },
             },
@@ -54979,7 +54999,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "host",
               },
             },
@@ -54992,7 +55012,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "host",
             },
           },
@@ -55008,7 +55028,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "host",
               },
             },
@@ -55020,7 +55040,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "host",
               },
             },
@@ -55033,7 +55053,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "host",
             },
           },
@@ -55049,7 +55069,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "host",
               },
             },
@@ -55061,7 +55081,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "host",
               },
             },
@@ -55074,7 +55094,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "host",
             },
           },
@@ -55090,7 +55110,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "host",
               },
             },
@@ -55102,7 +55122,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "host",
               },
             },
@@ -55115,7 +55135,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "host",
             },
           },
@@ -55131,7 +55151,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "host",
               },
             },
@@ -55143,7 +55163,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "host",
               },
             },
@@ -55156,7 +55176,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "host",
             },
           },
@@ -55172,7 +55192,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "host",
               },
             },
@@ -55184,7 +55204,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "host",
               },
             },
@@ -55197,7 +55217,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "host",
             },
           },
@@ -55213,7 +55233,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "host",
               },
             },
@@ -55225,7 +55245,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "host",
               },
             },
@@ -55238,7 +55258,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "host",
             },
           },
@@ -55254,7 +55274,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "raiser",
               },
             },
@@ -55266,7 +55286,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "raiser",
               },
             },
@@ -55279,7 +55299,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "raiser",
             },
           },
@@ -55295,7 +55315,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "raiser",
               },
             },
@@ -55307,7 +55327,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "raiser",
               },
             },
@@ -55320,7 +55340,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "raiser",
             },
           },
@@ -55336,7 +55356,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "raiser",
               },
             },
@@ -55348,7 +55368,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "raiser",
               },
             },
@@ -55361,7 +55381,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "raiser",
             },
           },
@@ -55377,7 +55397,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "raiser",
               },
             },
@@ -55389,7 +55409,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "raiser",
               },
             },
@@ -55402,7 +55422,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "raiser",
             },
           },
@@ -55418,7 +55438,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "raiser",
               },
             },
@@ -55430,7 +55450,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "raiser",
               },
             },
@@ -55443,7 +55463,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "raiser",
             },
           },
@@ -55459,7 +55479,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "raiser",
               },
             },
@@ -55471,7 +55491,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "raiser",
               },
             },
@@ -55484,7 +55504,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "raiser",
             },
           },
@@ -55500,7 +55520,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "raiser",
               },
             },
@@ -55512,7 +55532,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "raiser",
               },
             },
@@ -55525,7 +55545,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "raiser",
             },
           },
@@ -55541,7 +55561,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "raiser",
               },
             },
@@ -55553,7 +55573,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "raiser",
               },
             },
@@ -55566,7 +55586,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "raiser",
             },
           },
@@ -55582,7 +55602,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "raiser",
               },
             },
@@ -55594,7 +55614,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "raiser",
               },
             },
@@ -55607,7 +55627,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "raiser",
             },
           },
@@ -55623,7 +55643,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "raiser",
               },
             },
@@ -55635,7 +55655,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "raiser",
               },
             },
@@ -55648,7 +55668,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "raiser",
             },
           },
@@ -55664,7 +55684,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "rib",
               },
             },
@@ -55676,7 +55696,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "rib",
               },
             },
@@ -55689,7 +55709,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "rib",
             },
           },
@@ -55705,7 +55725,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "rib",
               },
             },
@@ -55717,7 +55737,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "rib",
               },
             },
@@ -55730,7 +55750,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "rib",
             },
           },
@@ -55746,7 +55766,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "rib",
               },
             },
@@ -55758,7 +55778,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "rib",
               },
             },
@@ -55771,7 +55791,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "rib",
             },
           },
@@ -55787,7 +55807,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "rib",
               },
             },
@@ -55799,7 +55819,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "rib",
               },
             },
@@ -55812,7 +55832,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "rib",
             },
           },
@@ -55828,7 +55848,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "rib",
               },
             },
@@ -55840,7 +55860,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "rib",
               },
             },
@@ -55853,7 +55873,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "rib",
             },
           },
@@ -55869,7 +55889,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "rib",
               },
             },
@@ -55881,7 +55901,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "rib",
               },
             },
@@ -55894,7 +55914,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "rib",
             },
           },
@@ -55910,7 +55930,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "rib",
               },
             },
@@ -55922,7 +55942,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "rib",
               },
             },
@@ -55935,7 +55955,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "rib",
             },
           },
@@ -55951,7 +55971,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "rib",
               },
             },
@@ -55963,7 +55983,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "rib",
               },
             },
@@ -55976,7 +55996,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "rib",
             },
           },
@@ -55992,7 +56012,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "rib",
               },
             },
@@ -56004,7 +56024,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "rib",
               },
             },
@@ -56017,7 +56037,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "rib",
             },
           },
@@ -56033,7 +56053,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "rib",
               },
             },
@@ -56045,7 +56065,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "rib",
               },
             },
@@ -56058,7 +56078,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "rib",
             },
           },
@@ -56074,7 +56094,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "sentry",
               },
             },
@@ -56086,7 +56106,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "sentry",
               },
             },
@@ -56099,7 +56119,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "sentry",
             },
           },
@@ -56115,7 +56135,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "sentry",
               },
             },
@@ -56127,7 +56147,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "sentry",
               },
             },
@@ -56140,7 +56160,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "sentry",
             },
           },
@@ -56156,7 +56176,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "sentry",
               },
             },
@@ -56168,7 +56188,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "sentry",
               },
             },
@@ -56181,7 +56201,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "sentry",
             },
           },
@@ -56197,7 +56217,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "sentry",
               },
             },
@@ -56209,7 +56229,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "sentry",
               },
             },
@@ -56222,7 +56242,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "sentry",
             },
           },
@@ -56238,7 +56258,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "sentry",
               },
             },
@@ -56250,7 +56270,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "sentry",
               },
             },
@@ -56263,7 +56283,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "sentry",
             },
           },
@@ -56279,7 +56299,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "sentry",
               },
             },
@@ -56291,7 +56311,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "sentry",
               },
             },
@@ -56304,7 +56324,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "sentry",
             },
           },
@@ -56320,7 +56340,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "sentry",
               },
             },
@@ -56332,7 +56352,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "sentry",
               },
             },
@@ -56345,7 +56365,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "sentry",
             },
           },
@@ -56361,7 +56381,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "sentry",
               },
             },
@@ -56373,7 +56393,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "sentry",
               },
             },
@@ -56386,7 +56406,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "sentry",
             },
           },
@@ -56402,7 +56422,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "sentry",
               },
             },
@@ -56414,7 +56434,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "sentry",
               },
             },
@@ -56427,7 +56447,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "sentry",
             },
           },
@@ -56443,7 +56463,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "sentry",
               },
             },
@@ -56455,7 +56475,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "sentry",
               },
             },
@@ -56468,7 +56488,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "sentry",
             },
           },
@@ -56484,7 +56504,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "shaper",
               },
             },
@@ -56496,7 +56516,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "shaper",
               },
             },
@@ -56509,7 +56529,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "shaper",
             },
           },
@@ -56525,7 +56545,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "shaper",
               },
             },
@@ -56537,7 +56557,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "shaper",
               },
             },
@@ -56550,7 +56570,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "shaper",
             },
           },
@@ -56566,7 +56586,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "shaper",
               },
             },
@@ -56578,7 +56598,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "shaper",
               },
             },
@@ -56591,7 +56611,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "shaper",
             },
           },
@@ -56607,7 +56627,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "shaper",
               },
             },
@@ -56619,7 +56639,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "shaper",
               },
             },
@@ -56632,7 +56652,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "shaper",
             },
           },
@@ -56648,7 +56668,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "shaper",
               },
             },
@@ -56660,7 +56680,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "shaper",
               },
             },
@@ -56673,7 +56693,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "shaper",
             },
           },
@@ -56689,7 +56709,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "shaper",
               },
             },
@@ -56701,7 +56721,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "shaper",
               },
             },
@@ -56714,7 +56734,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "shaper",
             },
           },
@@ -56730,7 +56750,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "shaper",
               },
             },
@@ -56742,7 +56762,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "shaper",
               },
             },
@@ -56755,7 +56775,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "shaper",
             },
           },
@@ -56771,7 +56791,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "shaper",
               },
             },
@@ -56783,7 +56803,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "shaper",
               },
             },
@@ -56796,7 +56816,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "shaper",
             },
           },
@@ -56812,7 +56832,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "shaper",
               },
             },
@@ -56824,7 +56844,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "shaper",
               },
             },
@@ -56837,7 +56857,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "shaper",
             },
           },
@@ -56853,7 +56873,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "shaper",
               },
             },
@@ -56865,7 +56885,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "shaper",
               },
             },
@@ -56878,7 +56898,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "shaper",
             },
           },
@@ -56894,7 +56914,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "silence",
               },
             },
@@ -56906,7 +56926,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "silence",
               },
             },
@@ -56919,7 +56939,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "silence",
             },
           },
@@ -56935,7 +56955,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "silence",
               },
             },
@@ -56947,7 +56967,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "silence",
               },
             },
@@ -56960,7 +56980,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "silence",
             },
           },
@@ -56976,7 +56996,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "silence",
               },
             },
@@ -56988,7 +57008,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "silence",
               },
             },
@@ -57001,7 +57021,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "silence",
             },
           },
@@ -57017,7 +57037,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "silence",
               },
             },
@@ -57029,7 +57049,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "silence",
               },
             },
@@ -57042,7 +57062,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "silence",
             },
           },
@@ -57058,7 +57078,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "silence",
               },
             },
@@ -57070,7 +57090,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "silence",
               },
             },
@@ -57083,7 +57103,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "silence",
             },
           },
@@ -57099,7 +57119,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "silence",
               },
             },
@@ -57111,7 +57131,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "silence",
               },
             },
@@ -57124,7 +57144,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "silence",
             },
           },
@@ -57140,7 +57160,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "silence",
               },
             },
@@ -57152,7 +57172,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "silence",
               },
             },
@@ -57165,7 +57185,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "silence",
             },
           },
@@ -57181,7 +57201,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "silence",
               },
             },
@@ -57193,7 +57213,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "silence",
               },
             },
@@ -57206,7 +57226,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "silence",
             },
           },
@@ -57222,7 +57242,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "silence",
               },
             },
@@ -57234,7 +57254,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "silence",
               },
             },
@@ -57247,7 +57267,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "silence",
             },
           },
@@ -57263,7 +57283,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "silence",
               },
             },
@@ -57275,7 +57295,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "silence",
               },
             },
@@ -57288,7 +57308,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "silence",
             },
           },
@@ -57304,7 +57324,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "snout",
               },
             },
@@ -57316,7 +57336,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "snout",
               },
             },
@@ -57329,7 +57349,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "snout",
             },
           },
@@ -57345,7 +57365,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "snout",
               },
             },
@@ -57357,7 +57377,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "snout",
               },
             },
@@ -57370,7 +57390,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "snout",
             },
           },
@@ -57386,7 +57406,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "snout",
               },
             },
@@ -57398,7 +57418,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "snout",
               },
             },
@@ -57411,7 +57431,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "snout",
             },
           },
@@ -57427,7 +57447,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "snout",
               },
             },
@@ -57439,7 +57459,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "snout",
               },
             },
@@ -57452,7 +57472,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "snout",
             },
           },
@@ -57468,7 +57488,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "snout",
               },
             },
@@ -57480,7 +57500,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "snout",
               },
             },
@@ -57493,7 +57513,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "snout",
             },
           },
@@ -57509,7 +57529,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "snout",
               },
             },
@@ -57521,7 +57541,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "snout",
               },
             },
@@ -57534,7 +57554,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "snout",
             },
           },
@@ -57550,7 +57570,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "snout",
               },
             },
@@ -57562,7 +57582,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "snout",
               },
             },
@@ -57575,7 +57595,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "snout",
             },
           },
@@ -57591,7 +57611,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "snout",
               },
             },
@@ -57603,7 +57623,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "snout",
               },
             },
@@ -57616,7 +57636,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "snout",
             },
           },
@@ -57632,7 +57652,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "snout",
               },
             },
@@ -57644,7 +57664,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "snout",
               },
             },
@@ -57657,7 +57677,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "snout",
             },
           },
@@ -57673,7 +57693,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "snout",
               },
             },
@@ -57685,7 +57705,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "snout",
               },
             },
@@ -57698,7 +57718,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "snout",
             },
           },
@@ -57714,7 +57734,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "spire",
               },
             },
@@ -57726,7 +57746,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "spire",
               },
             },
@@ -57739,7 +57759,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "spire",
             },
           },
@@ -57755,7 +57775,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "spire",
               },
             },
@@ -57767,7 +57787,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "spire",
               },
             },
@@ -57780,7 +57800,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "spire",
             },
           },
@@ -57796,7 +57816,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "spire",
               },
             },
@@ -57808,7 +57828,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "spire",
               },
             },
@@ -57821,7 +57841,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "spire",
             },
           },
@@ -57837,7 +57857,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "spire",
               },
             },
@@ -57849,7 +57869,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "spire",
               },
             },
@@ -57862,7 +57882,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "spire",
             },
           },
@@ -57878,7 +57898,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "spire",
               },
             },
@@ -57890,7 +57910,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "spire",
               },
             },
@@ -57903,7 +57923,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "spire",
             },
           },
@@ -57919,7 +57939,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "spire",
               },
             },
@@ -57931,7 +57951,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "spire",
               },
             },
@@ -57944,7 +57964,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "spire",
             },
           },
@@ -57960,7 +57980,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "spire",
               },
             },
@@ -57972,7 +57992,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "spire",
               },
             },
@@ -57985,7 +58005,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "spire",
             },
           },
@@ -58001,7 +58021,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "spire",
               },
             },
@@ -58013,7 +58033,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "spire",
               },
             },
@@ -58026,7 +58046,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "spire",
             },
           },
@@ -58042,7 +58062,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "spire",
               },
             },
@@ -58054,7 +58074,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "spire",
               },
             },
@@ -58067,7 +58087,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "spire",
             },
           },
@@ -58083,7 +58103,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "spire",
               },
             },
@@ -58095,7 +58115,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "spire",
               },
             },
@@ -58108,7 +58128,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "spire",
             },
           },
@@ -58124,7 +58144,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "tide",
               },
             },
@@ -58136,7 +58156,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "tide",
               },
             },
@@ -58149,7 +58169,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "tide",
             },
           },
@@ -58165,7 +58185,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "tide",
               },
             },
@@ -58177,7 +58197,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "tide",
               },
             },
@@ -58190,7 +58210,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "tide",
             },
           },
@@ -58206,7 +58226,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "tide",
               },
             },
@@ -58218,7 +58238,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "tide",
               },
             },
@@ -58231,7 +58251,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "tide",
             },
           },
@@ -58247,7 +58267,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "tide",
               },
             },
@@ -58259,7 +58279,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "tide",
               },
             },
@@ -58272,7 +58292,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "tide",
             },
           },
@@ -58288,7 +58308,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "tide",
               },
             },
@@ -58300,7 +58320,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "tide",
               },
             },
@@ -58313,7 +58333,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "tide",
             },
           },
@@ -58329,7 +58349,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "tide",
               },
             },
@@ -58341,7 +58361,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "tide",
               },
             },
@@ -58354,7 +58374,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "tide",
             },
           },
@@ -58370,7 +58390,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "tide",
               },
             },
@@ -58382,7 +58402,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "tide",
               },
             },
@@ -58395,7 +58415,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "tide",
             },
           },
@@ -58411,7 +58431,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "tide",
               },
             },
@@ -58423,7 +58443,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "tide",
               },
             },
@@ -58436,7 +58456,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "tide",
             },
           },
@@ -58452,7 +58472,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "tide",
               },
             },
@@ -58464,7 +58484,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "tide",
               },
             },
@@ -58477,7 +58497,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "tide",
             },
           },
@@ -58493,7 +58513,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "tide",
               },
             },
@@ -58505,7 +58525,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "tide",
               },
             },
@@ -58518,7 +58538,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "tide",
             },
           },
@@ -58534,7 +58554,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "vex",
               },
             },
@@ -58546,7 +58566,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "vex",
               },
             },
@@ -58559,7 +58579,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "vex",
             },
           },
@@ -58575,7 +58595,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "vex",
               },
             },
@@ -58587,7 +58607,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "vex",
               },
             },
@@ -58600,7 +58620,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "vex",
             },
           },
@@ -58616,7 +58636,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "vex",
               },
             },
@@ -58628,7 +58648,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "vex",
               },
             },
@@ -58641,7 +58661,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "vex",
             },
           },
@@ -58657,7 +58677,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "vex",
               },
             },
@@ -58669,7 +58689,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "vex",
               },
             },
@@ -58682,7 +58702,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "vex",
             },
           },
@@ -58698,7 +58718,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "vex",
               },
             },
@@ -58710,7 +58730,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "vex",
               },
             },
@@ -58723,7 +58743,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "vex",
             },
           },
@@ -58739,7 +58759,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "vex",
               },
             },
@@ -58751,7 +58771,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "vex",
               },
             },
@@ -58764,7 +58784,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "vex",
             },
           },
@@ -58780,7 +58800,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "vex",
               },
             },
@@ -58792,7 +58812,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "vex",
               },
             },
@@ -58805,7 +58825,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "vex",
             },
           },
@@ -58821,7 +58841,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "vex",
               },
             },
@@ -58833,7 +58853,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "vex",
               },
             },
@@ -58846,7 +58866,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "vex",
             },
           },
@@ -58862,7 +58882,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "vex",
               },
             },
@@ -58874,7 +58894,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "vex",
               },
             },
@@ -58887,7 +58907,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "vex",
             },
           },
@@ -58903,7 +58923,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "vex",
               },
             },
@@ -58915,7 +58935,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "vex",
               },
             },
@@ -58928,7 +58948,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "vex",
             },
           },
@@ -58944,7 +58964,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "ward",
               },
             },
@@ -58956,7 +58976,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "ward",
               },
             },
@@ -58969,7 +58989,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "ward",
             },
           },
@@ -58985,7 +59005,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "ward",
               },
             },
@@ -58997,7 +59017,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "ward",
               },
             },
@@ -59010,7 +59030,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "ward",
             },
           },
@@ -59026,7 +59046,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "ward",
               },
             },
@@ -59038,7 +59058,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "ward",
               },
             },
@@ -59051,7 +59071,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "ward",
             },
           },
@@ -59067,7 +59087,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "ward",
               },
             },
@@ -59079,7 +59099,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "ward",
               },
             },
@@ -59092,7 +59112,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "ward",
             },
           },
@@ -59108,7 +59128,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "ward",
               },
             },
@@ -59120,7 +59140,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "ward",
               },
             },
@@ -59133,7 +59153,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "ward",
             },
           },
@@ -59149,7 +59169,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "ward",
               },
             },
@@ -59161,7 +59181,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "ward",
               },
             },
@@ -59174,7 +59194,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "ward",
             },
           },
@@ -59190,7 +59210,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "ward",
               },
             },
@@ -59202,7 +59222,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "ward",
               },
             },
@@ -59215,7 +59235,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "ward",
             },
           },
@@ -59231,7 +59251,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "ward",
               },
             },
@@ -59243,7 +59263,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "ward",
               },
             },
@@ -59256,7 +59276,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "ward",
             },
           },
@@ -59272,7 +59292,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "ward",
               },
             },
@@ -59284,7 +59304,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "ward",
               },
             },
@@ -59297,7 +59317,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "ward",
             },
           },
@@ -59313,7 +59333,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "ward",
               },
             },
@@ -59325,7 +59345,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "ward",
               },
             },
@@ -59338,7 +59358,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "ward",
             },
           },
@@ -59354,7 +59374,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "wayfinder",
               },
             },
@@ -59366,7 +59386,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "wayfinder",
               },
             },
@@ -59379,7 +59399,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "wayfinder",
             },
           },
@@ -59395,7 +59415,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "wayfinder",
               },
             },
@@ -59407,7 +59427,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "wayfinder",
               },
             },
@@ -59420,7 +59440,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "wayfinder",
             },
           },
@@ -59436,7 +59456,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "wayfinder",
               },
             },
@@ -59448,7 +59468,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "wayfinder",
               },
             },
@@ -59461,7 +59481,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "wayfinder",
             },
           },
@@ -59477,7 +59497,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "wayfinder",
               },
             },
@@ -59489,7 +59509,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "wayfinder",
               },
             },
@@ -59502,7 +59522,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "wayfinder",
             },
           },
@@ -59518,7 +59538,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "wayfinder",
               },
             },
@@ -59530,7 +59550,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "wayfinder",
               },
             },
@@ -59543,7 +59563,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "wayfinder",
             },
           },
@@ -59559,7 +59579,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "wayfinder",
               },
             },
@@ -59571,7 +59591,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "wayfinder",
               },
             },
@@ -59584,7 +59604,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "wayfinder",
             },
           },
@@ -59600,7 +59620,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "wayfinder",
               },
             },
@@ -59612,7 +59632,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "wayfinder",
               },
             },
@@ -59625,7 +59645,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "wayfinder",
             },
           },
@@ -59641,7 +59661,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "wayfinder",
               },
             },
@@ -59653,7 +59673,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "wayfinder",
               },
             },
@@ -59666,7 +59686,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "wayfinder",
             },
           },
@@ -59682,7 +59702,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "wayfinder",
               },
             },
@@ -59694,7 +59714,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "wayfinder",
               },
             },
@@ -59707,7 +59727,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "wayfinder",
             },
           },
@@ -59723,7 +59743,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "wayfinder",
               },
             },
@@ -59735,7 +59755,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "wayfinder",
               },
             },
@@ -59748,7 +59768,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "wayfinder",
             },
           },
@@ -59764,7 +59784,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "wild",
               },
             },
@@ -59776,7 +59796,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "wild",
               },
             },
@@ -59789,7 +59809,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "wild",
             },
           },
@@ -59805,7 +59825,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "wild",
               },
             },
@@ -59817,7 +59837,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "wild",
               },
             },
@@ -59830,7 +59850,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "wild",
             },
           },
@@ -59846,7 +59866,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "wild",
               },
             },
@@ -59858,7 +59878,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "wild",
               },
             },
@@ -59871,7 +59891,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "wild",
             },
           },
@@ -59887,7 +59907,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "wild",
               },
             },
@@ -59899,7 +59919,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "wild",
               },
             },
@@ -59912,7 +59932,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "wild",
             },
           },
@@ -59928,7 +59948,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "wild",
               },
             },
@@ -59940,7 +59960,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "wild",
               },
             },
@@ -59953,7 +59973,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "wild",
             },
           },
@@ -59969,7 +59989,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "wild",
               },
             },
@@ -59981,7 +60001,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "wild",
               },
             },
@@ -59994,7 +60014,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "wild",
             },
           },
@@ -60010,7 +60030,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "wild",
               },
             },
@@ -60022,7 +60042,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "wild",
               },
             },
@@ -60035,7 +60055,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "wild",
             },
           },
@@ -60051,7 +60071,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "wild",
               },
             },
@@ -60063,7 +60083,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "wild",
               },
             },
@@ -60076,7 +60096,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "wild",
             },
           },
@@ -60092,7 +60112,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "wild",
               },
             },
@@ -60104,7 +60124,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "wild",
               },
             },
@@ -60117,7 +60137,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "wild",
             },
           },
@@ -60133,7 +60153,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "wild",
               },
             },
@@ -60145,7 +60165,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "wild",
               },
             },
@@ -60158,7 +60178,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "wild",
             },
           },
@@ -60174,7 +60194,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "coast",
               },
             },
@@ -60186,7 +60206,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "coast",
               },
             },
@@ -60199,7 +60219,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "coast",
             },
           },
@@ -60215,7 +60235,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "coast",
               },
             },
@@ -60227,7 +60247,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "coast",
               },
             },
@@ -60240,7 +60260,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "coast",
             },
           },
@@ -60256,7 +60276,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "coast",
               },
             },
@@ -60268,7 +60288,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "coast",
               },
             },
@@ -60281,7 +60301,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "coast",
             },
           },
@@ -60297,7 +60317,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "coast",
               },
             },
@@ -60309,7 +60329,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "coast",
               },
             },
@@ -60322,7 +60342,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "coast",
             },
           },
@@ -60338,7 +60358,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "coast",
               },
             },
@@ -60350,7 +60370,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "coast",
               },
             },
@@ -60363,7 +60383,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "coast",
             },
           },
@@ -60379,7 +60399,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "coast",
               },
             },
@@ -60391,7 +60411,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "coast",
               },
             },
@@ -60404,7 +60424,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "coast",
             },
           },
@@ -60420,7 +60440,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "coast",
               },
             },
@@ -60432,7 +60452,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "coast",
               },
             },
@@ -60445,7 +60465,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "coast",
             },
           },
@@ -60461,7 +60481,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "coast",
               },
             },
@@ -60473,7 +60493,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "coast",
               },
             },
@@ -60486,7 +60506,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "coast",
             },
           },
@@ -60502,7 +60522,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "coast",
               },
             },
@@ -60514,7 +60534,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "coast",
               },
             },
@@ -60527,7 +60547,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "coast",
             },
           },
@@ -60543,7 +60563,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "coast",
               },
             },
@@ -60555,7 +60575,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "coast",
               },
             },
@@ -60568,7 +60588,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "coast",
             },
           },
@@ -60584,7 +60604,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "dune",
               },
             },
@@ -60596,7 +60616,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "dune",
               },
             },
@@ -60609,7 +60629,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "dune",
             },
           },
@@ -60625,7 +60645,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "dune",
               },
             },
@@ -60637,7 +60657,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "dune",
               },
             },
@@ -60650,7 +60670,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "dune",
             },
           },
@@ -60666,7 +60686,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "dune",
               },
             },
@@ -60678,7 +60698,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "dune",
               },
             },
@@ -60691,7 +60711,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "dune",
             },
           },
@@ -60707,7 +60727,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "dune",
               },
             },
@@ -60719,7 +60739,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "dune",
               },
             },
@@ -60732,7 +60752,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "dune",
             },
           },
@@ -60748,7 +60768,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "dune",
               },
             },
@@ -60760,7 +60780,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "dune",
               },
             },
@@ -60773,7 +60793,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "dune",
             },
           },
@@ -60789,7 +60809,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "dune",
               },
             },
@@ -60801,7 +60821,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "dune",
               },
             },
@@ -60814,7 +60834,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "dune",
             },
           },
@@ -60830,7 +60850,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "dune",
               },
             },
@@ -60842,7 +60862,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "dune",
               },
             },
@@ -60855,7 +60875,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "dune",
             },
           },
@@ -60871,7 +60891,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "dune",
               },
             },
@@ -60883,7 +60903,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "dune",
               },
             },
@@ -60896,7 +60916,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "dune",
             },
           },
@@ -60912,7 +60932,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "dune",
               },
             },
@@ -60924,7 +60944,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "dune",
               },
             },
@@ -60937,7 +60957,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "dune",
             },
           },
@@ -60953,7 +60973,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "dune",
               },
             },
@@ -60965,7 +60985,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "dune",
               },
             },
@@ -60978,7 +60998,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "dune",
             },
           },
@@ -60994,7 +61014,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "eye",
               },
             },
@@ -61006,7 +61026,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "eye",
               },
             },
@@ -61019,7 +61039,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "eye",
             },
           },
@@ -61035,7 +61055,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "eye",
               },
             },
@@ -61047,7 +61067,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "eye",
               },
             },
@@ -61060,7 +61080,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "eye",
             },
           },
@@ -61076,7 +61096,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "eye",
               },
             },
@@ -61088,7 +61108,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "eye",
               },
             },
@@ -61101,7 +61121,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "eye",
             },
           },
@@ -61117,7 +61137,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "eye",
               },
             },
@@ -61129,7 +61149,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "eye",
               },
             },
@@ -61142,7 +61162,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "eye",
             },
           },
@@ -61158,7 +61178,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "eye",
               },
             },
@@ -61170,7 +61190,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "eye",
               },
             },
@@ -61183,7 +61203,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "eye",
             },
           },
@@ -61199,7 +61219,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "eye",
               },
             },
@@ -61211,7 +61231,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "eye",
               },
             },
@@ -61224,7 +61244,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "eye",
             },
           },
@@ -61240,7 +61260,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "eye",
               },
             },
@@ -61252,7 +61272,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "eye",
               },
             },
@@ -61265,7 +61285,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "eye",
             },
           },
@@ -61281,7 +61301,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "eye",
               },
             },
@@ -61293,7 +61313,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "eye",
               },
             },
@@ -61306,7 +61326,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "eye",
             },
           },
@@ -61322,7 +61342,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "eye",
               },
             },
@@ -61334,7 +61354,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "eye",
               },
             },
@@ -61347,7 +61367,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "eye",
             },
           },
@@ -61363,7 +61383,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "eye",
               },
             },
@@ -61375,7 +61395,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "eye",
               },
             },
@@ -61388,7 +61408,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "eye",
             },
           },
@@ -61404,7 +61424,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "host",
               },
             },
@@ -61416,7 +61436,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "host",
               },
             },
@@ -61429,7 +61449,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "host",
             },
           },
@@ -61445,7 +61465,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "host",
               },
             },
@@ -61457,7 +61477,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "host",
               },
             },
@@ -61470,7 +61490,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "host",
             },
           },
@@ -61486,7 +61506,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "host",
               },
             },
@@ -61498,7 +61518,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "host",
               },
             },
@@ -61511,7 +61531,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "host",
             },
           },
@@ -61527,7 +61547,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "host",
               },
             },
@@ -61539,7 +61559,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "host",
               },
             },
@@ -61552,7 +61572,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "host",
             },
           },
@@ -61568,7 +61588,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "host",
               },
             },
@@ -61580,7 +61600,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "host",
               },
             },
@@ -61593,7 +61613,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "host",
             },
           },
@@ -61609,7 +61629,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "host",
               },
             },
@@ -61621,7 +61641,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "host",
               },
             },
@@ -61634,7 +61654,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "host",
             },
           },
@@ -61650,7 +61670,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "host",
               },
             },
@@ -61662,7 +61682,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "host",
               },
             },
@@ -61675,7 +61695,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "host",
             },
           },
@@ -61691,7 +61711,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "host",
               },
             },
@@ -61703,7 +61723,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "host",
               },
             },
@@ -61716,7 +61736,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "host",
             },
           },
@@ -61732,7 +61752,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "host",
               },
             },
@@ -61744,7 +61764,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "host",
               },
             },
@@ -61757,7 +61777,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "host",
             },
           },
@@ -61773,7 +61793,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "host",
               },
             },
@@ -61785,7 +61805,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "host",
               },
             },
@@ -61798,7 +61818,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "host",
             },
           },
@@ -61814,7 +61834,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "raiser",
               },
             },
@@ -61826,7 +61846,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "raiser",
               },
             },
@@ -61839,7 +61859,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "raiser",
             },
           },
@@ -61855,7 +61875,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "raiser",
               },
             },
@@ -61867,7 +61887,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "raiser",
               },
             },
@@ -61880,7 +61900,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "raiser",
             },
           },
@@ -61896,7 +61916,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "raiser",
               },
             },
@@ -61908,7 +61928,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "raiser",
               },
             },
@@ -61921,7 +61941,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "raiser",
             },
           },
@@ -61937,7 +61957,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "raiser",
               },
             },
@@ -61949,7 +61969,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "raiser",
               },
             },
@@ -61962,7 +61982,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "raiser",
             },
           },
@@ -61978,7 +61998,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "raiser",
               },
             },
@@ -61990,7 +62010,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "raiser",
               },
             },
@@ -62003,7 +62023,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "raiser",
             },
           },
@@ -62019,7 +62039,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "raiser",
               },
             },
@@ -62031,7 +62051,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "raiser",
               },
             },
@@ -62044,7 +62064,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "raiser",
             },
           },
@@ -62060,7 +62080,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "raiser",
               },
             },
@@ -62072,7 +62092,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "raiser",
               },
             },
@@ -62085,7 +62105,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "raiser",
             },
           },
@@ -62101,7 +62121,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "raiser",
               },
             },
@@ -62113,7 +62133,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "raiser",
               },
             },
@@ -62126,7 +62146,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "raiser",
             },
           },
@@ -62142,7 +62162,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "raiser",
               },
             },
@@ -62154,7 +62174,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "raiser",
               },
             },
@@ -62167,7 +62187,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "raiser",
             },
           },
@@ -62183,7 +62203,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "raiser",
               },
             },
@@ -62195,7 +62215,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "raiser",
               },
             },
@@ -62208,7 +62228,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "raiser",
             },
           },
@@ -62224,7 +62244,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "rib",
               },
             },
@@ -62236,7 +62256,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "rib",
               },
             },
@@ -62249,7 +62269,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "rib",
             },
           },
@@ -62265,7 +62285,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "rib",
               },
             },
@@ -62277,7 +62297,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "rib",
               },
             },
@@ -62290,7 +62310,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "rib",
             },
           },
@@ -62306,7 +62326,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "rib",
               },
             },
@@ -62318,7 +62338,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "rib",
               },
             },
@@ -62331,7 +62351,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "rib",
             },
           },
@@ -62347,7 +62367,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "rib",
               },
             },
@@ -62359,7 +62379,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "rib",
               },
             },
@@ -62372,7 +62392,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "rib",
             },
           },
@@ -62388,7 +62408,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "rib",
               },
             },
@@ -62400,7 +62420,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "rib",
               },
             },
@@ -62413,7 +62433,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "rib",
             },
           },
@@ -62429,7 +62449,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "rib",
               },
             },
@@ -62441,7 +62461,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "rib",
               },
             },
@@ -62454,7 +62474,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "rib",
             },
           },
@@ -62470,7 +62490,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "rib",
               },
             },
@@ -62482,7 +62502,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "rib",
               },
             },
@@ -62495,7 +62515,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "rib",
             },
           },
@@ -62511,7 +62531,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "rib",
               },
             },
@@ -62523,7 +62543,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "rib",
               },
             },
@@ -62536,7 +62556,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "rib",
             },
           },
@@ -62552,7 +62572,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "rib",
               },
             },
@@ -62564,7 +62584,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "rib",
               },
             },
@@ -62577,7 +62597,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "rib",
             },
           },
@@ -62593,7 +62613,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "rib",
               },
             },
@@ -62605,7 +62625,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "rib",
               },
             },
@@ -62618,7 +62638,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "rib",
             },
           },
@@ -62634,7 +62654,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "sentry",
               },
             },
@@ -62646,7 +62666,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "sentry",
               },
             },
@@ -62659,7 +62679,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "sentry",
             },
           },
@@ -62675,7 +62695,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "sentry",
               },
             },
@@ -62687,7 +62707,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "sentry",
               },
             },
@@ -62700,7 +62720,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "sentry",
             },
           },
@@ -62716,7 +62736,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "sentry",
               },
             },
@@ -62728,7 +62748,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "sentry",
               },
             },
@@ -62741,7 +62761,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "sentry",
             },
           },
@@ -62757,7 +62777,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "sentry",
               },
             },
@@ -62769,7 +62789,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "sentry",
               },
             },
@@ -62782,7 +62802,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "sentry",
             },
           },
@@ -62798,7 +62818,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "sentry",
               },
             },
@@ -62810,7 +62830,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "sentry",
               },
             },
@@ -62823,7 +62843,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "sentry",
             },
           },
@@ -62839,7 +62859,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "sentry",
               },
             },
@@ -62851,7 +62871,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "sentry",
               },
             },
@@ -62864,7 +62884,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "sentry",
             },
           },
@@ -62880,7 +62900,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "sentry",
               },
             },
@@ -62892,7 +62912,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "sentry",
               },
             },
@@ -62905,7 +62925,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "sentry",
             },
           },
@@ -62921,7 +62941,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "sentry",
               },
             },
@@ -62933,7 +62953,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "sentry",
               },
             },
@@ -62946,7 +62966,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "sentry",
             },
           },
@@ -62962,7 +62982,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "sentry",
               },
             },
@@ -62974,7 +62994,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "sentry",
               },
             },
@@ -62987,7 +63007,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "sentry",
             },
           },
@@ -63003,7 +63023,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "sentry",
               },
             },
@@ -63015,7 +63035,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "sentry",
               },
             },
@@ -63028,7 +63048,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "sentry",
             },
           },
@@ -63044,7 +63064,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "shaper",
               },
             },
@@ -63056,7 +63076,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "shaper",
               },
             },
@@ -63069,7 +63089,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "shaper",
             },
           },
@@ -63085,7 +63105,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "shaper",
               },
             },
@@ -63097,7 +63117,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "shaper",
               },
             },
@@ -63110,7 +63130,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "shaper",
             },
           },
@@ -63126,7 +63146,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "shaper",
               },
             },
@@ -63138,7 +63158,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "shaper",
               },
             },
@@ -63151,7 +63171,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "shaper",
             },
           },
@@ -63167,7 +63187,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "shaper",
               },
             },
@@ -63179,7 +63199,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "shaper",
               },
             },
@@ -63192,7 +63212,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "shaper",
             },
           },
@@ -63208,7 +63228,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "shaper",
               },
             },
@@ -63220,7 +63240,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "shaper",
               },
             },
@@ -63233,7 +63253,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "shaper",
             },
           },
@@ -63249,7 +63269,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "shaper",
               },
             },
@@ -63261,7 +63281,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "shaper",
               },
             },
@@ -63274,7 +63294,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "shaper",
             },
           },
@@ -63290,7 +63310,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "shaper",
               },
             },
@@ -63302,7 +63322,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "shaper",
               },
             },
@@ -63315,7 +63335,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "shaper",
             },
           },
@@ -63331,7 +63351,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "shaper",
               },
             },
@@ -63343,7 +63363,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "shaper",
               },
             },
@@ -63356,7 +63376,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "shaper",
             },
           },
@@ -63372,7 +63392,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "shaper",
               },
             },
@@ -63384,7 +63404,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "shaper",
               },
             },
@@ -63397,7 +63417,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "shaper",
             },
           },
@@ -63413,7 +63433,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "shaper",
               },
             },
@@ -63425,7 +63445,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "shaper",
               },
             },
@@ -63438,7 +63458,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "shaper",
             },
           },
@@ -63454,7 +63474,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "silence",
               },
             },
@@ -63466,7 +63486,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "silence",
               },
             },
@@ -63479,7 +63499,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "silence",
             },
           },
@@ -63495,7 +63515,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "silence",
               },
             },
@@ -63507,7 +63527,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "silence",
               },
             },
@@ -63520,7 +63540,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "silence",
             },
           },
@@ -63536,7 +63556,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "silence",
               },
             },
@@ -63548,7 +63568,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "silence",
               },
             },
@@ -63561,7 +63581,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "silence",
             },
           },
@@ -63577,7 +63597,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "silence",
               },
             },
@@ -63589,7 +63609,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "silence",
               },
             },
@@ -63602,7 +63622,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "silence",
             },
           },
@@ -63618,7 +63638,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "silence",
               },
             },
@@ -63630,7 +63650,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "silence",
               },
             },
@@ -63643,7 +63663,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "silence",
             },
           },
@@ -63659,7 +63679,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "silence",
               },
             },
@@ -63671,7 +63691,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "silence",
               },
             },
@@ -63684,7 +63704,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "silence",
             },
           },
@@ -63700,7 +63720,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "silence",
               },
             },
@@ -63712,7 +63732,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "silence",
               },
             },
@@ -63725,7 +63745,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "silence",
             },
           },
@@ -63741,7 +63761,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "silence",
               },
             },
@@ -63753,7 +63773,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "silence",
               },
             },
@@ -63766,7 +63786,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "silence",
             },
           },
@@ -63782,7 +63802,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "silence",
               },
             },
@@ -63794,7 +63814,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "silence",
               },
             },
@@ -63807,7 +63827,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "silence",
             },
           },
@@ -63823,7 +63843,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "silence",
               },
             },
@@ -63835,7 +63855,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "silence",
               },
             },
@@ -63848,7 +63868,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "silence",
             },
           },
@@ -63864,7 +63884,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "snout",
               },
             },
@@ -63876,7 +63896,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "snout",
               },
             },
@@ -63889,7 +63909,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "snout",
             },
           },
@@ -63905,7 +63925,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "snout",
               },
             },
@@ -63917,7 +63937,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "snout",
               },
             },
@@ -63930,7 +63950,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "snout",
             },
           },
@@ -63946,7 +63966,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "snout",
               },
             },
@@ -63958,7 +63978,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "snout",
               },
             },
@@ -63971,7 +63991,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "snout",
             },
           },
@@ -63987,7 +64007,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "snout",
               },
             },
@@ -63999,7 +64019,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "snout",
               },
             },
@@ -64012,7 +64032,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "snout",
             },
           },
@@ -64028,7 +64048,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "snout",
               },
             },
@@ -64040,7 +64060,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "snout",
               },
             },
@@ -64053,7 +64073,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "snout",
             },
           },
@@ -64069,7 +64089,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "snout",
               },
             },
@@ -64081,7 +64101,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "snout",
               },
             },
@@ -64094,7 +64114,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "snout",
             },
           },
@@ -64110,7 +64130,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "snout",
               },
             },
@@ -64122,7 +64142,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "snout",
               },
             },
@@ -64135,7 +64155,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "snout",
             },
           },
@@ -64151,7 +64171,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "snout",
               },
             },
@@ -64163,7 +64183,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "snout",
               },
             },
@@ -64176,7 +64196,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "snout",
             },
           },
@@ -64192,7 +64212,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "snout",
               },
             },
@@ -64204,7 +64224,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "snout",
               },
             },
@@ -64217,7 +64237,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "snout",
             },
           },
@@ -64233,7 +64253,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "snout",
               },
             },
@@ -64245,7 +64265,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "snout",
               },
             },
@@ -64258,7 +64278,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "snout",
             },
           },
@@ -64274,7 +64294,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "spire",
               },
             },
@@ -64286,7 +64306,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "spire",
               },
             },
@@ -64299,7 +64319,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "spire",
             },
           },
@@ -64315,7 +64335,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "spire",
               },
             },
@@ -64327,7 +64347,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "spire",
               },
             },
@@ -64340,7 +64360,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "spire",
             },
           },
@@ -64356,7 +64376,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "spire",
               },
             },
@@ -64368,7 +64388,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "spire",
               },
             },
@@ -64381,7 +64401,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "spire",
             },
           },
@@ -64397,7 +64417,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "spire",
               },
             },
@@ -64409,7 +64429,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "spire",
               },
             },
@@ -64422,7 +64442,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "spire",
             },
           },
@@ -64438,7 +64458,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "spire",
               },
             },
@@ -64450,7 +64470,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "spire",
               },
             },
@@ -64463,7 +64483,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "spire",
             },
           },
@@ -64479,7 +64499,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "spire",
               },
             },
@@ -64491,7 +64511,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "spire",
               },
             },
@@ -64504,7 +64524,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "spire",
             },
           },
@@ -64520,7 +64540,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "spire",
               },
             },
@@ -64532,7 +64552,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "spire",
               },
             },
@@ -64545,7 +64565,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "spire",
             },
           },
@@ -64561,7 +64581,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "spire",
               },
             },
@@ -64573,7 +64593,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "spire",
               },
             },
@@ -64586,7 +64606,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "spire",
             },
           },
@@ -64602,7 +64622,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "spire",
               },
             },
@@ -64614,7 +64634,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "spire",
               },
             },
@@ -64627,7 +64647,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "spire",
             },
           },
@@ -64643,7 +64663,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "spire",
               },
             },
@@ -64655,7 +64675,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "spire",
               },
             },
@@ -64668,7 +64688,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "spire",
             },
           },
@@ -64684,7 +64704,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "tide",
               },
             },
@@ -64696,7 +64716,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "tide",
               },
             },
@@ -64709,7 +64729,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "tide",
             },
           },
@@ -64725,7 +64745,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "tide",
               },
             },
@@ -64737,7 +64757,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "tide",
               },
             },
@@ -64750,7 +64770,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "tide",
             },
           },
@@ -64766,7 +64786,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "tide",
               },
             },
@@ -64778,7 +64798,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "tide",
               },
             },
@@ -64791,7 +64811,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "tide",
             },
           },
@@ -64807,7 +64827,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "tide",
               },
             },
@@ -64819,7 +64839,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "tide",
               },
             },
@@ -64832,7 +64852,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "tide",
             },
           },
@@ -64848,7 +64868,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "tide",
               },
             },
@@ -64860,7 +64880,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "tide",
               },
             },
@@ -64873,7 +64893,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "tide",
             },
           },
@@ -64889,7 +64909,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "tide",
               },
             },
@@ -64901,7 +64921,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "tide",
               },
             },
@@ -64914,7 +64934,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "tide",
             },
           },
@@ -64930,7 +64950,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "tide",
               },
             },
@@ -64942,7 +64962,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "tide",
               },
             },
@@ -64955,7 +64975,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "tide",
             },
           },
@@ -64971,7 +64991,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "tide",
               },
             },
@@ -64983,7 +65003,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "tide",
               },
             },
@@ -64996,7 +65016,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "tide",
             },
           },
@@ -65012,7 +65032,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "tide",
               },
             },
@@ -65024,7 +65044,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "tide",
               },
             },
@@ -65037,7 +65057,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "tide",
             },
           },
@@ -65053,7 +65073,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "tide",
               },
             },
@@ -65065,7 +65085,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "tide",
               },
             },
@@ -65078,7 +65098,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "tide",
             },
           },
@@ -65094,7 +65114,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "vex",
               },
             },
@@ -65106,7 +65126,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "vex",
               },
             },
@@ -65119,7 +65139,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "vex",
             },
           },
@@ -65135,7 +65155,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "vex",
               },
             },
@@ -65147,7 +65167,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "vex",
               },
             },
@@ -65160,7 +65180,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "vex",
             },
           },
@@ -65176,7 +65196,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "vex",
               },
             },
@@ -65188,7 +65208,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "vex",
               },
             },
@@ -65201,7 +65221,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "vex",
             },
           },
@@ -65217,7 +65237,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "vex",
               },
             },
@@ -65229,7 +65249,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "vex",
               },
             },
@@ -65242,7 +65262,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "vex",
             },
           },
@@ -65258,7 +65278,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "vex",
               },
             },
@@ -65270,7 +65290,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "vex",
               },
             },
@@ -65283,7 +65303,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "vex",
             },
           },
@@ -65299,7 +65319,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "vex",
               },
             },
@@ -65311,7 +65331,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "vex",
               },
             },
@@ -65324,7 +65344,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "vex",
             },
           },
@@ -65340,7 +65360,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "vex",
               },
             },
@@ -65352,7 +65372,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "vex",
               },
             },
@@ -65365,7 +65385,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "vex",
             },
           },
@@ -65381,7 +65401,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "vex",
               },
             },
@@ -65393,7 +65413,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "vex",
               },
             },
@@ -65406,7 +65426,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "vex",
             },
           },
@@ -65422,7 +65442,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "vex",
               },
             },
@@ -65434,7 +65454,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "vex",
               },
             },
@@ -65447,7 +65467,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "vex",
             },
           },
@@ -65463,7 +65483,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "vex",
               },
             },
@@ -65475,7 +65495,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "vex",
               },
             },
@@ -65488,7 +65508,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "vex",
             },
           },
@@ -65504,7 +65524,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "ward",
               },
             },
@@ -65516,7 +65536,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "ward",
               },
             },
@@ -65529,7 +65549,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "ward",
             },
           },
@@ -65545,7 +65565,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "ward",
               },
             },
@@ -65557,7 +65577,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "ward",
               },
             },
@@ -65570,7 +65590,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "ward",
             },
           },
@@ -65586,7 +65606,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "ward",
               },
             },
@@ -65598,7 +65618,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "ward",
               },
             },
@@ -65611,7 +65631,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "ward",
             },
           },
@@ -65627,7 +65647,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "ward",
               },
             },
@@ -65639,7 +65659,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "ward",
               },
             },
@@ -65652,7 +65672,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "ward",
             },
           },
@@ -65668,7 +65688,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "ward",
               },
             },
@@ -65680,7 +65700,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "ward",
               },
             },
@@ -65693,7 +65713,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "ward",
             },
           },
@@ -65709,7 +65729,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "ward",
               },
             },
@@ -65721,7 +65741,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "ward",
               },
             },
@@ -65734,7 +65754,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "ward",
             },
           },
@@ -65750,7 +65770,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "ward",
               },
             },
@@ -65762,7 +65782,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "ward",
               },
             },
@@ -65775,7 +65795,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "ward",
             },
           },
@@ -65791,7 +65811,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "ward",
               },
             },
@@ -65803,7 +65823,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "ward",
               },
             },
@@ -65816,7 +65836,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "ward",
             },
           },
@@ -65832,7 +65852,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "ward",
               },
             },
@@ -65844,7 +65864,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "ward",
               },
             },
@@ -65857,7 +65877,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "ward",
             },
           },
@@ -65873,7 +65893,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "ward",
               },
             },
@@ -65885,7 +65905,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "ward",
               },
             },
@@ -65898,7 +65918,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "ward",
             },
           },
@@ -65914,7 +65934,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "wayfinder",
               },
             },
@@ -65926,7 +65946,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "wayfinder",
               },
             },
@@ -65939,7 +65959,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "wayfinder",
             },
           },
@@ -65955,7 +65975,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "wayfinder",
               },
             },
@@ -65967,7 +65987,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "wayfinder",
               },
             },
@@ -65980,7 +66000,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "wayfinder",
             },
           },
@@ -65996,7 +66016,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "wayfinder",
               },
             },
@@ -66008,7 +66028,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "wayfinder",
               },
             },
@@ -66021,7 +66041,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "wayfinder",
             },
           },
@@ -66037,7 +66057,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "wayfinder",
               },
             },
@@ -66049,7 +66069,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "wayfinder",
               },
             },
@@ -66062,7 +66082,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "wayfinder",
             },
           },
@@ -66078,7 +66098,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "wayfinder",
               },
             },
@@ -66090,7 +66110,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "wayfinder",
               },
             },
@@ -66103,7 +66123,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "wayfinder",
             },
           },
@@ -66119,7 +66139,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "wayfinder",
               },
             },
@@ -66131,7 +66151,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "wayfinder",
               },
             },
@@ -66144,7 +66164,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "wayfinder",
             },
           },
@@ -66160,7 +66180,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "wayfinder",
               },
             },
@@ -66172,7 +66192,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "wayfinder",
               },
             },
@@ -66185,7 +66205,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "wayfinder",
             },
           },
@@ -66201,7 +66221,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "wayfinder",
               },
             },
@@ -66213,7 +66233,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "wayfinder",
               },
             },
@@ -66226,7 +66246,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "wayfinder",
             },
           },
@@ -66242,7 +66262,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "wayfinder",
               },
             },
@@ -66254,7 +66274,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "wayfinder",
               },
             },
@@ -66267,7 +66287,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "wayfinder",
             },
           },
@@ -66283,7 +66303,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "wayfinder",
               },
             },
@@ -66295,7 +66315,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "wayfinder",
               },
             },
@@ -66308,7 +66328,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "wayfinder",
             },
           },
@@ -66324,7 +66344,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "wild",
               },
             },
@@ -66336,7 +66356,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "amethyst",
+                material: "trim.amethyst",
                 pattern: "wild",
               },
             },
@@ -66349,7 +66369,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "amethyst",
+              material: "trim.amethyst",
               pattern: "wild",
             },
           },
@@ -66365,7 +66385,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "wild",
               },
             },
@@ -66377,7 +66397,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "emerald",
+                material: "trim.emerald",
                 pattern: "wild",
               },
             },
@@ -66390,7 +66410,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "emerald",
+              material: "trim.emerald",
               pattern: "wild",
             },
           },
@@ -66406,7 +66426,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "wild",
               },
             },
@@ -66418,7 +66438,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "diamond",
+                material: "trim.diamond",
                 pattern: "wild",
               },
             },
@@ -66431,7 +66451,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "diamond",
+              material: "trim.diamond",
               pattern: "wild",
             },
           },
@@ -66447,7 +66467,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "wild",
               },
             },
@@ -66459,7 +66479,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "lapis",
+                material: "trim.lapis",
                 pattern: "wild",
               },
             },
@@ -66472,7 +66492,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "lapis",
+              material: "trim.lapis",
               pattern: "wild",
             },
           },
@@ -66488,7 +66508,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "wild",
               },
             },
@@ -66500,7 +66520,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "copper",
+                material: "trim.copper",
                 pattern: "wild",
               },
             },
@@ -66513,7 +66533,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "copper",
+              material: "trim.copper",
               pattern: "wild",
             },
           },
@@ -66529,7 +66549,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "wild",
               },
             },
@@ -66541,7 +66561,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "gold",
+                material: "trim.gold",
                 pattern: "wild",
               },
             },
@@ -66554,7 +66574,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "gold",
+              material: "trim.gold",
               pattern: "wild",
             },
           },
@@ -66570,7 +66590,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "wild",
               },
             },
@@ -66582,7 +66602,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "iron",
+                material: "trim.iron",
                 pattern: "wild",
               },
             },
@@ -66595,7 +66615,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "iron",
+              material: "trim.iron",
               pattern: "wild",
             },
           },
@@ -66611,7 +66631,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "wild",
               },
             },
@@ -66623,7 +66643,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "netherite",
+                material: "trim.netherite",
                 pattern: "wild",
               },
             },
@@ -66636,7 +66656,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "netherite",
+              material: "trim.netherite",
               pattern: "wild",
             },
           },
@@ -66652,7 +66672,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "wild",
               },
             },
@@ -66664,7 +66684,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "quartz",
+                material: "trim.quartz",
                 pattern: "wild",
               },
             },
@@ -66677,7 +66697,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "quartz",
+              material: "trim.quartz",
               pattern: "wild",
             },
           },
@@ -66693,7 +66713,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "wild",
               },
             },
@@ -66705,7 +66725,7 @@ export const data_test_new_parser = {
               minecraft_custom: "",
               enchant: [],
               trim: {
-                material: "redstone",
+                material: "trim.redstone",
                 pattern: "wild",
               },
             },
@@ -66718,7 +66738,7 @@ export const data_test_new_parser = {
             minecraft_custom: "",
             enchant: [],
             trim: {
-              material: "redstone",
+              material: "trim.redstone",
               pattern: "wild",
             },
           },
@@ -67302,24 +67322,28 @@ export const data_test_new_parser = {
                   amount: 1,
                   slot: 9,
                   minecraft_custom: "",
+                  color: "#988285",
                 },
                 {
                   id: "leather_chestplate",
                   amount: 1,
                   slot: 10,
                   minecraft_custom: "",
+                  color: "#a16f74",
                 },
                 {
                   id: "leather_boots",
                   amount: 1,
                   slot: 11,
                   minecraft_custom: "",
+                  color: "#c0a2a5",
                 },
                 {
                   id: "leather_leggings",
                   amount: 1,
                   slot: 12,
                   minecraft_custom: "",
+                  color: "#a27aa1",
                 },
               ],
               minecraft_custom: "",
@@ -67359,24 +67383,28 @@ export const data_test_new_parser = {
                   amount: 1,
                   slot: 9,
                   minecraft_custom: "",
+                  color: "#988285",
                 },
                 {
                   id: "leather_chestplate",
                   amount: 1,
                   slot: 10,
                   minecraft_custom: "",
+                  color: "#a16f74",
                 },
                 {
                   id: "leather_boots",
                   amount: 1,
                   slot: 11,
                   minecraft_custom: "",
+                  color: "#c0a2a5",
                 },
                 {
                   id: "leather_leggings",
                   amount: 1,
                   slot: 12,
                   minecraft_custom: "",
+                  color: "#a27aa1",
                 },
               ],
               minecraft_custom: "",
@@ -67417,24 +67445,28 @@ export const data_test_new_parser = {
                 amount: 1,
                 slot: 9,
                 minecraft_custom: "",
+                color: "#988285",
               },
               {
                 id: "leather_chestplate",
                 amount: 1,
                 slot: 10,
                 minecraft_custom: "",
+                color: "#a16f74",
               },
               {
                 id: "leather_boots",
                 amount: 1,
                 slot: 11,
                 minecraft_custom: "",
+                color: "#c0a2a5",
               },
               {
                 id: "leather_leggings",
                 amount: 1,
                 slot: 12,
                 minecraft_custom: "",
+                color: "#a27aa1",
               },
             ],
             minecraft_custom: "",
@@ -67451,6 +67483,7 @@ export const data_test_new_parser = {
               content: [],
               minecraft_custom: "",
               enchant: [],
+              color: "#ff988582",
             },
             slot2: {
               id: "leather_helmet",
@@ -67459,6 +67492,7 @@ export const data_test_new_parser = {
               content: [],
               minecraft_custom: "",
               enchant: [],
+              color: "#ff988582",
             },
           },
           product: {
@@ -67468,6 +67502,7 @@ export const data_test_new_parser = {
             content: [],
             minecraft_custom: "",
             enchant: [],
+            color: "#ff988582",
           },
         },
         7: {
@@ -67480,6 +67515,7 @@ export const data_test_new_parser = {
               content: [],
               minecraft_custom: "",
               enchant: [],
+              color: "#ffa1746f",
             },
             slot2: {
               id: "leather_chestplate",
@@ -67488,6 +67524,7 @@ export const data_test_new_parser = {
               content: [],
               minecraft_custom: "",
               enchant: [],
+              color: "#ffa1746f",
             },
           },
           product: {
@@ -67497,6 +67534,7 @@ export const data_test_new_parser = {
             content: [],
             minecraft_custom: "",
             enchant: [],
+            color: "#ffa1746f",
           },
         },
         8: {
@@ -67509,6 +67547,7 @@ export const data_test_new_parser = {
               content: [],
               minecraft_custom: "",
               enchant: [],
+              color: "#ffc0a5a2",
             },
             slot2: {
               id: "leather_boots",
@@ -67517,6 +67556,7 @@ export const data_test_new_parser = {
               content: [],
               minecraft_custom: "",
               enchant: [],
+              color: "#ffc0a5a2",
             },
           },
           product: {
@@ -67526,6 +67566,7 @@ export const data_test_new_parser = {
             content: [],
             minecraft_custom: "",
             enchant: [],
+            color: "#ffc0a5a2",
           },
         },
         9: {
@@ -67538,6 +67579,7 @@ export const data_test_new_parser = {
               content: [],
               minecraft_custom: "",
               enchant: [],
+              color: "#ffa2a17a",
             },
             slot2: {
               id: "leather_leggings",
@@ -67546,6 +67588,7 @@ export const data_test_new_parser = {
               content: [],
               minecraft_custom: "",
               enchant: [],
+              color: "#ffa2a17a",
             },
           },
           product: {
@@ -67555,6 +67598,7 @@ export const data_test_new_parser = {
             content: [],
             minecraft_custom: "",
             enchant: [],
+            color: "#ffa2a17a",
           },
         },
       },
@@ -67565,6 +67609,18 @@ export const data_test_new_parser = {
         leather_boots: 0,
         white_shulker_box: 0,
       },
+    },
+    115: {
+      name: "",
+      object_profession: "none",
+      object_villager_type: "plains",
+      owner: "prestig9110",
+      shop_id: "115",
+      x: -3823,
+      y: -52,
+      z: 6566,
+      offers: {},
+      balance: {},
     },
   },
 };

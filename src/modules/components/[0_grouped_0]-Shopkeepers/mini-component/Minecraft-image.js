@@ -6,7 +6,7 @@ import { ARRAY_MAPPINGS } from "../../../pages/shopkeepers/AnimationType";
 import styles from "./Minecraft-image.module.scss";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
-const MinecraftImage = ({ item }) => {
+const MinecraftImage = ({ item, dots = "." }) => {
   const itemNameId = item.id;
   const itemEnchant = !item.enchant ? [] : item.enchant;
   const itemPotion = item.potion;
@@ -17,59 +17,59 @@ const MinecraftImage = ({ item }) => {
 
   const getImageSource = () => {
     if (itemNameId === "enchanted_golden_apple") {
-      return "./site_assets/minecraft-item/golden_apple.webp";
+      return `${dots}/site_assets/minecraft-item/golden_apple.webp`;
       // --------------------------------------------
     } else if (itemNameId === "written_book") {
-      return "./site_assets/minecraft-item/book.webp";
+      return `${dots}/site_assets/minecraft-item/book.webp`;
       // --------------------------------------------
     } else if (itemNameId === "enchanted_book") {
-      return "./site_assets/minecraft-item/book.webp";
+      return `${dots}/site_assets/minecraft-item/book.webp`;
       // --------------------------------------------
     } else if (itemNameId === "end_crystal") {
-      return "./site_assets/animation_webp/end_crystal.webp";
+      return `${dots}/site_assets/animation_webp/end_crystal.webp`;
       // --------------------------------------------
     } else if (itemNameId === "sculk_sensor") {
-      return "./site_assets/animation_webp/sculk_sensor.webp";
+      return `${dots}/site_assets/animation_webp/sculk_sensor.webp`;
       // --------------------------------------------
     } else if (itemNameId === "calibrated_sculk_sensor") {
-      return "./site_assets/animation_webp/calibrated_sculk_sensor.webp";
+      return `${dots}/site_assets/animation_webp/calibrated_sculk_sensor.webp`;
       // --------------------------------------------
     } else if (itemNameId.includes("tipped_arrow")) {
-      return `./site_assets/minecraft-item/${itemNameId.split(".")[0]}_${itemNameId.split(".")[2]}.webp`;
+      return `${dots}/site_assets/minecraft-item/${itemNameId.split(".")[0]}_${itemNameId.split(".")[2]}.webp`;
       // --------------------------------------------
     } else if (itemNameId.includes("potion")) {
-      return `./site_assets/minecraft-item/${itemNameId.split(".")[0]}_${itemNameId.split(".")[2]}.webp`;
+      return `${dots}/site_assets/minecraft-item/${itemNameId.split(".")[0]}_${itemNameId.split(".")[2]}.webp`;
       // --------------------------------------------
     } else if (itemNameId.includes("splash_potion")) {
-      return `./site_assets/minecraft-item/${itemNameId.split(".")[0]}_${itemNameId.split(".")[2]}.webp`;
+      return `${dots}/site_assets/minecraft-item/${itemNameId.split(".")[0]}_${itemNameId.split(".")[2]}.webp`;
       // --------------------------------------------
     } else if (itemNameId.includes("lingering_potion")) {
-      return `./site_assets/minecraft-item/${itemNameId.split(".")[0]}_${itemNameId.split(".")[2]}.webp`;
+      return `${dots}/site_assets/minecraft-item/${itemNameId.split(".")[0]}_${itemNameId.split(".")[2]}.webp`;
       // --------------------------------------------
     } else if (itemNameId === "smithing_template") {
       if (item.improvement === "netherite_upgrade") {
-        return `./site_assets/minecraft-item/${item.improvement}_${item.id}.webp`;
+        return `${dots}/site_assets/minecraft-item/${item.improvement}_${item.id}.webp`;
       } else {
-        return `./site_assets/minecraft-item/${item.improvement}_armor_trim_${item.id}.webp`;
+        return `${dots}/site_assets/minecraft-item/${item.improvement}_armor_trim_${item.id}.webp`;
       }
       // --------------------------------------------
-    } else if (itemNameId === "leather_helmet" && item.leather_color !== undefined) {
-      return "./site_assets/leather_colored_armor/leather_colored_helmet.webp";
+    } else if (itemNameId === "leather_helmet" && item.color !== undefined) {
+      return `${dots}/site_assets/leather_colored_armor/leather_colored_helmet.webp`;
       // --------------------------------------------
-    } else if (itemNameId === "leather_chestplate" && item.leather_color !== undefined) {
-      return "./site_assets/leather_colored_armor/leather_colored_chestplate.webp";
+    } else if (itemNameId === "leather_chestplate" && item.color !== undefined) {
+      return `${dots}/site_assets/leather_colored_armor/leather_colored_chestplate.webp`;
       // --------------------------------------------
-    } else if (itemNameId === "leather_leggings" && item.leather_color !== undefined) {
-      return "./site_assets/leather_colored_armor/leather_colored_leggings.webp";
+    } else if (itemNameId === "leather_leggings" && item.color !== undefined) {
+      return `${dots}/site_assets/leather_colored_armor/leather_colored_leggings.webp`;
       // --------------------------------------------
-    } else if (itemNameId === "leather_boots" && item.leather_color !== undefined) {
-      return "./site_assets/leather_colored_armor/leather_colored_boots.webp";
+    } else if (itemNameId === "leather_boots" && item.color !== undefined) {
+      return `${dots}/site_assets/leather_colored_armor/leather_colored_boots.webp`;
       // --------------------------------------------
-    } else if (itemNameId === "leather_horse_armor" && item.leather_color !== undefined) {
-      return "./site_assets/leather_colored_armor/leather_colored_horse_armor.webp";
+    } else if (itemNameId === "leather_horse_armor" && item.color !== undefined) {
+      return `${dots}/site_assets/leather_colored_armor/leather_colored_horse_armor.webp`;
       // --------------------------------------------
     } else {
-      return `./site_assets/minecraft-item/${itemNameId}.webp`;
+      return `${dots}/site_assets/minecraft-item/${itemNameId}.webp`;
     }
   };
 
@@ -90,7 +90,7 @@ const MinecraftImage = ({ item }) => {
       return (
         <div className={classNames(styles["absoluteArmor"])}>
           <LazyLoadImage
-            src={`./site_assets/patterns/${itemType}_pattern.webp`}
+            src={`${dots}/site_assets/patterns/${itemType}_pattern.webp`}
             width="100%"
             height="100%"
             effect="blur"
@@ -113,7 +113,7 @@ const MinecraftImage = ({ item }) => {
       {item.trim && (
         <div className={classNames(styles["absoluteArmor"])}>
           <LazyLoadImage
-            src={`./site_assets/view_trim/${imageTypeFolder}/${item.trim.material}.webp`}
+            src={`${dots}/site_assets/view_trim/${imageTypeFolder}/${item.trim.material}.webp`}
             width="100%"
             height="100%"
             effect="blur"
@@ -124,7 +124,13 @@ const MinecraftImage = ({ item }) => {
 
       {itemEnchant.length > 0 || itemNameId === "written_book" || itemNameId === "enchanted_golden_apple" ? (
         <div className={classNames(styles["enchant"])}>
-          <LazyLoadImage src={`./site_assets/animation_h.png`} width="100%" height="100%" effect="blur" alt="none" />
+          <LazyLoadImage
+            src={`${dots}/site_assets/animation_h.png`}
+            width="100%"
+            height="100%"
+            effect="blur"
+            alt="none"
+          />
         </div>
       ) : null}
 

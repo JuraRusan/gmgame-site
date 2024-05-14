@@ -6,9 +6,9 @@ import MinecraftImage from "../mini-component/Minecraft-image";
 
 import styles from "./One-item.module.scss";
 
-const OneItem = ({ item, onClick }) => {
+const OneItem = ({ item, onClick, customLink }) => {
   const [showTooltip, setShowTooltip] = useState(false);
-  const [tooltipPosition, setTooltipPosition] = useState({ x: undefined, y: undefined });
+  const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
   const [tooltipVisible, setTooltipVisible] = useState(false);
 
   useEffect(() => {
@@ -67,7 +67,7 @@ const OneItem = ({ item, onClick }) => {
         {/*  <MinecraftBanner item={item} type="center" />*/}
         {/*) : null}*/}
         {/*{item.shield_color?.color !== undefined ? <MinecraftShield item={item} type="center" /> : null}*/}
-        <MinecraftImage item={item} />
+        <MinecraftImage item={item} dots={customLink} />
         <span className={classNames(styles["itemCount"])}>{item.amount}</span>
       </div>
       {showTooltip === true ? (
