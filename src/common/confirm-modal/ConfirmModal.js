@@ -26,11 +26,9 @@ const ConfirmModal = ({ open = false, close, yes, no }) => {
   };
 
   useEffect(() => {
-    document.body.style.overflow = "hidden";
-  }, []);
-
-  useEffect(() => {
     if (open) {
+      document.body.style.overflow = "hidden";
+
       const startTime = Date.now();
       let isCanceled = false;
 

@@ -24,6 +24,7 @@ import { CalculatingTextLength } from "../../text-editor/functions/CalculatingTe
 import styles from "./EditAddPost.module.scss";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import "react-advanced-cropper/dist/style.css";
+import ConfirmModal from "../../../../common/confirm-modal/ConfirmModal";
 
 const LOAD_AND_EDIT_WARN =
   "Внимание! При работе с файлами в большом разрешении могут наблюдаться задержки отрисовки изображения. Рекомендуется использовать изображения в умеренном качестве, в ином случае сохранять спокойствие."; // prettier-ignore
@@ -122,6 +123,8 @@ const EditAddPost = () => {
   const [description, setDescription] = useState(DEFAULT_VALUE);
 
   const [modalImageActive, setModalImageActive] = useState(0);
+
+  const [isConfirmActive, setIsConfirmActive] = useState(false);
 
   const [imageRedactor, setImageRedactor] = useState(false);
   const [preloader, setPreloader] = useState(false);
@@ -594,10 +597,18 @@ const EditAddPost = () => {
               view="delete"
               label="Удалить"
               onClick={() => {
-                handleDelete(Number(id));
+                setIsConfirmActive(true);
               }}
             />
           )}
+          <ConfirmModal
+            open={isConfirmActive}
+            close={() => setIsConfirmActive(false)}
+            no={() => setIsConfirmActive(false)}
+            yes={() => {
+              handleDelete(Number(id));
+            }}
+          />
         </div>
       </div>
 
