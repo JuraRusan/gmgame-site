@@ -12,10 +12,10 @@ import Tag from "./tag/Tag";
 import ActionsButton from "../actions-button/ActionsButton";
 // import StatusSvgComponent from "../../../../bases/icons/statusSvg/StatusSvg";
 import BinSvgComponent from "../../../../bases/icons/binSvg/BinSvg";
+import ConfirmModal from "../../../../common/confirm-modal/ConfirmModal";
 
 import styles from "./Gallery.module.scss";
 import "react-lazy-load-image-component/src/effects/blur.css";
-import ConfirmModal from "../../../../common/confirm-modal/ConfirmModal";
 
 const TAG = [
   "base",
