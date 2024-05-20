@@ -18,15 +18,13 @@ import { Triangle } from "react-loader-spinner";
 import Tag from "./tag/Tag";
 import Name from "./name/Name";
 import TextEditor from "../../text-editor/TextEditor";
-import { DEFAULT_VALUE } from "../../text-editor/Default-value";
 import { CalculatingTextLength } from "../../text-editor/functions/CalculatingTextLength";
 
 import styles from "./EditAddPost.module.scss";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import "react-advanced-cropper/dist/style.css";
 
-const LOAD_AND_EDIT_WARN =
-  "Внимание! При работе с файлами в большом разрешении могут наблюдаться задержки отрисовки изображения. Рекомендуется использовать изображения в умеренном качестве, в ином случае сохранять спокойствие."; // prettier-ignore
+const LOAD_AND_EDIT_WARN = "Внимание! При работе с файлами в большом разрешении могут наблюдаться задержки отрисовки изображения. Рекомендуется использовать изображения в умеренном качестве, в ином случае сохранять спокойствие."; // prettier-ignore
 
 const ERROR_VALUE_ONE = "Имя должно содержать от 3 до 16 символов.";
 const ERROR_VALUE_TWO = "Имя может содержать только буквы, цифры и символы подчеркивания.";
@@ -119,7 +117,7 @@ const EditAddPost = () => {
   const [tags, setTags] = useState([]);
 
   const [title, setTitle] = useState("");
-  const [description, setDescription] = useState(DEFAULT_VALUE);
+  const [description, setDescription] = useState(null);
 
   const [modalImageActive, setModalImageActive] = useState(0);
 

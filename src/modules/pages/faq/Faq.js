@@ -4,9 +4,10 @@ import { useAxios } from "../../../DataProvider";
 import Preload from "../../components/preloader/Preload";
 import FaqSvgComponent from "../../../bases/icons/faqSvg/FaqSvg";
 import useLoading from "../../loading/useLoading";
+import Title from "../../components/title/Title";
+import { prepare } from "../../components/text-editor/functions/Prepare";
 
 import styles from "./Faq.module.scss";
-import "aos/dist/aos.css";
 
 const Faq = () => {
   const isLoading = useLoading();
@@ -47,16 +48,15 @@ const Faq = () => {
           id: el.id,
           forIndex: generateUniqueHash(24),
           question: el.quest,
-          answer: prepareAnswer(el.answer),
+          answer: prepare(el.answer, true),
         });
       } else {
-        // console.log(prepareAnswer(el.answer));
         tabs[el.category] = [
           {
             id: el.id,
             forIndex: generateUniqueHash(24),
             question: el.quest,
-            answer: prepareAnswer(el.answer),
+            answer: prepare(el.answer, true),
           },
         ];
       }
@@ -73,43 +73,12 @@ const Faq = () => {
     setCurrentTab(0);
   }
 
-  function prepareAnswer(answer) {
-    const prepareAnswer = answer
-      .map((el, i) => {
-        return (
-          el.children
-            .map((ch, j) => {
-              if (ch.text) {
-                if (ch.bold) {
-                  return `<b>${ch.text}</b>`;
-                }
-                return ch.text;
-              }
-              if (ch.character) {
-                if (ch.character.type === "user") {
-                  return `@${ch.character.name}`;
-                }
-                const linkClass = classNames(styles["link"]);
-                return `<a class="${linkClass}" href='https://discord.com/channels/723912565234728972/${ch.character.id}' target="_blank" rel="noreferrer">#${ch.character.name}</a>`;
-              }
-            })
-            .join("") + "<br/>"
-        );
-      })
-      .join("");
-
-    return prepareAnswer;
-  }
-
   return (
     <div className={classNames(styles["mainFaqBox"])}>
       {tabsFaqList.length > 1 && (
         <div className={classNames(styles["faqBox"])}>
           <div className={classNames(styles["faqTitleWrapper"])}>
-            <span>
-              <FaqSvgComponent width="100%" height="100%" color="#f4f4f4" />
-            </span>
-            <h2 className={classNames(styles["titleH2Styles"])}>Часто задаваемые вопросы</h2>
+            <Title ico={<FaqSvgComponent width="100%" height="100%" />}>Часто задаваемые вопросы</Title>
           </div>
           <div className={classNames(styles["wrapperTabsFaq"])}>
             <div className={classNames(styles["tabs"])}>
@@ -140,10 +109,10 @@ const Faq = () => {
                           <label className={classNames(styles["question"])} htmlFor={el.forIndex}>
                             &#8226; {el.question}
                           </label>
-                          <p
+                          <div
                             className={classNames(styles["answerWrapperBox"])}
                             dangerouslySetInnerHTML={{ __html: el.answer }}
-                          ></p>
+                          />
                         </div>
                       );
                     })}

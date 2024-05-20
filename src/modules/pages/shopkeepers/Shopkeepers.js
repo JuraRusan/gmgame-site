@@ -11,6 +11,7 @@ import Button from "../../components/button/Button";
 import useLoading from "../../loading/useLoading";
 import axios from "axios";
 import Preload from "../../components/preloader/Preload";
+import Title from "../../components/title/Title";
 
 import styles from "./Shopkeepers.module.scss";
 
@@ -158,7 +159,7 @@ const Shopkeepers = () => {
 
   return (
     <div className={classNames(styles["main_shopkeepers_block"])} id="topScroll">
-      <h4 className={classNames(styles["title_shop_block"])}>Товары игроков сервера</h4>
+      <Title>Товары игроков сервера</Title>
       <p className={classNames(styles["WWW"])}>Временно не доступно с этого дисплея</p>
       {dataShop.length === 0 ? (
         <h4 className={classNames(styles["data_none"])}>Данные отсутствуют в данный момент</h4>

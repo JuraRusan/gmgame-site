@@ -1,22 +1,25 @@
 import React from "react";
+import classNames from "classnames";
+import Title from "../../components/title/Title";
+import Link from "../../components/link/Link";
 
-import "./Maps.scss";
+import styles from "./Maps.module.scss";
 
 const Maps = () => {
   return (
-    <div className="main-maps">
-      <div className="maps">
-        <h4 className="maps-title font-custom-2">Уникальная web-онлайн карта</h4>
-        <h5 className="maps-sub-title">
-          Обновления карты плавающий, обновление запускается в течении 10 минут после предыдущего обновления. (Статус
-          обновления можно видеть в углу карты)
-        </h5>
-        <a className="link-btn-map" rel="noreferrer" href="https://map.gmgame.ru/" target="_blank">
-          Открыть в новом окне &#10148;
-        </a>
-        <div className="prev-map-page" data-aos="zoom-in">
-          <iframe title="map" src="https://map.gmgame.ru/" width="100%" height="100%" />
-        </div>
+    <div className={classNames(styles["maps"])}>
+      <Title>Уникальная web-онлайн карта</Title>
+      <p className={classNames(styles["text"])}>
+        Обновления карты плавающий, обновление запускается в течении 30 минут после предыдущего обновления. (Статус
+        обновления можно видеть в углу карты)
+      </p>
+      <div className={classNames(styles["link_wrapper"])}>
+        <Link href="https://map.gmgame.ru/" target="_blank" rel="noreferrer">
+          Открыть в новом окне
+        </Link>
+      </div>
+      <div className={classNames(styles["preview"])}>
+        <iframe title="map" src="https://map.gmgame.ru/" width="100%" height="100%" />
       </div>
     </div>
   );

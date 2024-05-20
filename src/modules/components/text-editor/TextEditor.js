@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { Editable, Slate, useSlate, withReact } from "slate-react";
-import { createEditor, Editor, Element as SlateElement, Transforms } from "slate";
+import { Editable, ReactEditor, Slate, useSlate, withReact } from "slate-react";
+import { createEditor, Editor, Element as SlateElement, Range, Transforms } from "slate";
 import { withHistory } from "slate-history";
 import classNames from "classnames";
 import BoldSvgComponent from "../../../bases/icons/formatBoldSvg/BoldSvg";
@@ -24,10 +24,10 @@ import ParagraphSvgComponent from "../../../bases/icons/formatParagraphSvg/Parag
 import LinkSvgComponent from "../../../bases/icons/formatLinkSvg/LinkSvg";
 import VisibleOnSvgComponent from "../../../bases/icons/visibleOnSvg/VisibleOnSvg";
 import { CalculatingTextLength } from "./functions/CalculatingTextLength";
-import { DEFAULT_VALUE } from "./Default-value";
 import Modal from "react-modal";
 import { prepare } from "./functions/Prepare";
 import EmojiPicker, { Emoji } from "emoji-picker-react";
+import ReactDOM from "react-dom";
 
 import styles from "./TextEditor.module.scss";
 import "./functions/Prepare.scss";
@@ -35,18 +35,26 @@ import "./functions/Prepare.scss";
 const LIST_TYPES = ["numbered-list", "bulleted-list"];
 const TEXT_ALIGN_TYPES = ["left", "center", "right", "justify"];
 
+export const DEFAULT_VALUE = [
+  {
+    type: "paragraph",
+    children: [{ text: "Начините писать текст..." }],
+  },
+];
+
 const Button = ({ active, ...props }) => (
   <span
-    {...props}
     className={classNames(styles["button_style"], {
       [styles["active_on"]]: active === true,
       [styles["active_off"]]: active === false,
     })}
+    {...props}
   />
 );
 
 const BlockButton = ({ format, icon }) => {
   const editor = useSlate();
+
   return (
     <Button
       active={isBlockActive(editor, format, TEXT_ALIGN_TYPES.includes(format) ? "align" : "type")}
@@ -62,6 +70,7 @@ const BlockButton = ({ format, icon }) => {
 
 const MarkButton = ({ format, icon }) => {
   const editor = useSlate();
+
   return (
     <Button
       active={isMarkActive(editor, format)}
@@ -78,6 +87,7 @@ const MarkButton = ({ format, icon }) => {
 const toggleBlock = (editor, format) => {
   const isActive = isBlockActive(editor, format, TEXT_ALIGN_TYPES.includes(format) ? "align" : "type");
   const isList = LIST_TYPES.includes(format);
+  let newProperties;
 
   Transforms.unwrapNodes(editor, {
     match: (n) =>
@@ -87,7 +97,7 @@ const toggleBlock = (editor, format) => {
       !TEXT_ALIGN_TYPES.includes(format),
     split: true,
   });
-  let newProperties;
+
   if (TEXT_ALIGN_TYPES.includes(format)) {
     newProperties = {
       align: isActive ? undefined : format,
@@ -131,11 +141,15 @@ const isBlockActive = (editor, format, blockType = "type") => {
 
 const isMarkActive = (editor, format) => {
   const marks = Editor.marks(editor);
+
   return marks ? marks[format] === true : false;
 };
 
-const Element = ({ attributes, children, element }) => {
+const Element = (props) => {
+  const { attributes, children, element } = props;
+
   const style = { textAlign: element.align };
+
   switch (element.type) {
     case "block-quote":
       return (
@@ -203,6 +217,8 @@ const Element = ({ attributes, children, element }) => {
           {children}
         </h6>
       );
+    case "mention":
+      return <Mention {...props} />;
     default:
       return (
         <p className="p_editor" style={style} {...attributes}>
@@ -240,28 +256,75 @@ const Leaf = ({ attributes, children, leaf }) => {
   );
 };
 
-const Toolbar = ({ children }) => <div className={classNames(styles["toolbar"])}>{children}</div>;
+const withMentions = (editor) => {
+  const { isInline, isVoid, markableVoid } = editor;
 
-const RichTextExample = ({ value = DEFAULT_VALUE, setValue, textLength = () => {} }) => {
-  let dataValue = [];
+  editor.isInline = (element) => {
+    return element.type === "mention" ? true : isInline(element);
+  };
 
-  try {
-    dataValue = JSON.parse(value);
-  } catch {
-    dataValue = value;
-  }
+  editor.isVoid = (element) => {
+    return element.type === "mention" ? true : isVoid(element);
+  };
+
+  editor.markableVoid = (element) => {
+    return element.type === "mention" || markableVoid(element);
+  };
+
+  return editor;
+};
+
+const insertMention = (editor, character) => {
+  const mention = {
+    type: "mention",
+    character,
+    children: [{ text: "" }],
+  };
+
+  Transforms.insertNodes(editor, mention);
+  Transforms.move(editor);
+};
+
+const Mention = ({ attributes, children, element }) => {
+  return (
+    <span
+      contentEditable={false}
+      data-cy={`mention-${element.character.name.replace(" ", "-")}`}
+      className="mentions"
+      {...attributes}
+    >
+      {element.character.type === "user" ? "@" : "#"}
+      {element.character.name}
+      {children}
+    </span>
+  );
+};
+
+const TextEditor = ({ value = DEFAULT_VALUE, setValue, textLength = () => {}, mentionsList = [] }) => {
+  let dataValue = value === null ? DEFAULT_VALUE : value;
 
   const emojiRef = useRef(null);
+  const mentionsRef = useRef(null);
 
   const renderElement = useCallback((props) => <Element {...props} />, []);
   const renderLeaf = useCallback((props) => <Leaf {...props} />, []);
-  const editor = useMemo(() => withHistory(withReact(createEditor())), []);
+  const editor = useMemo(() => withMentions(withHistory(withReact(createEditor()))), []);
 
   const [modalOpen, setModalOpen] = useState(false);
   const [prev, setPrev] = useState(dataValue);
 
+  const [search, setSearch] = useState("");
+
+  const [mentions, setMentions] = useState(mentionsList);
+  const [index, setIndex] = useState(0);
+  const [target, setTarget] = useState();
+
   const [emojiModal, setEmojiModal] = useState(false);
-  const [emoji, setEmoji] = useState({});
+  const [emoji, setEmoji] = useState(null);
+
+  const chars = mentions
+    .filter((c) => (c.name ? c.name.toLowerCase().startsWith(search.toLowerCase()) : []))
+    .slice(0, 10);
 
   const openModal = () => {
     document.body.style.overflow = "hidden";
@@ -287,6 +350,95 @@ const RichTextExample = ({ value = DEFAULT_VALUE, setValue, textLength = () => {
     }
   };
 
+  const PortalMention = () => {
+    return (
+      <div ref={mentionsRef} className={classNames(styles["portal"])} data-cy="mentions-portal">
+        {chars.map((char, i) => (
+          <label
+            className={classNames(styles["line"], { [styles["active"]]: i === index })}
+            key={char.name}
+            onClick={() => {
+              Transforms.select(editor, target);
+              insertMention(editor, char);
+              editor.insertText(" ");
+              setTarget(null);
+            }}
+          >
+            {char.name}
+          </label>
+        ))}
+      </div>
+    );
+  };
+
+  const handleEditor = (value) => {
+    const isAstChange = editor.operations.some((op) => "set_selection" !== op.type);
+
+    if (isAstChange) {
+      setValue(value);
+      setPrev(value);
+      textLength(CalculatingTextLength(value));
+    }
+
+    const { selection } = editor;
+
+    if (selection && Range.isCollapsed(selection)) {
+      const [start] = Range.edges(selection);
+      const wordBefore = Editor.before(editor, start, { unit: "word" });
+      const before = wordBefore && Editor.before(editor, wordBefore);
+      const beforeRange = before && Editor.range(editor, before, start);
+      const beforeText = beforeRange && Editor.string(editor, beforeRange);
+      const beforeMatch =
+        beforeText && (beforeText.match(/^@([\wа-яА-ЯёЁ-]+)$/) || beforeText.match(/^#([\wа-яА-ЯёЁ-]+)$/));
+      const after = Editor.after(editor, start);
+      const afterRange = Editor.range(editor, start, after);
+      const afterText = Editor.string(editor, afterRange);
+      const afterMatch = afterText.match(/^(\s|$)/);
+
+      if (beforeMatch && afterMatch) {
+        setTarget(beforeRange);
+        setSearch(beforeMatch[1]);
+        setIndex(0);
+        return;
+      }
+    }
+
+    setTarget(null);
+  };
+
+  const onKeyDown = useCallback(
+    (event) => {
+      if (target && chars.length > 0) {
+        switch (event.key) {
+          case "ArrowDown":
+            event.preventDefault();
+            const prevIndex = index >= chars.length - 1 ? 0 : index + 1;
+            setIndex(prevIndex);
+            break;
+          case "ArrowUp":
+            event.preventDefault();
+            const nextIndex = index <= 0 ? chars.length - 1 : index - 1;
+            setIndex(nextIndex);
+            break;
+          case "Tab":
+          case "Enter":
+            event.preventDefault();
+            Transforms.select(editor, target);
+            insertMention(editor, chars[index]);
+            setTarget(null);
+            break;
+          case "Escape":
+            event.preventDefault();
+            setTarget(null);
+            break;
+          default:
+            break;
+        }
+      }
+    },
+    [chars, editor, index, target]
+  );
+
   useEffect(() => {
     document.addEventListener("click", handleOutsideClick);
 
@@ -297,12 +449,33 @@ const RichTextExample = ({ value = DEFAULT_VALUE, setValue, textLength = () => {
   }, []);
 
   useEffect(() => {
-    if (emoji.emoji !== undefined) {
+    if (emoji !== null) {
       closeEmoji();
       editor.insertText(emoji.emoji);
-      setEmoji({});
+      setEmoji(null);
     }
   }, [editor, emoji]);
+
+  useEffect(() => {
+    if (target && chars.length > 0) {
+      const el = mentionsRef.current;
+      const domRange = ReactEditor.toDOMRange(editor, target);
+      const rect = domRange.getBoundingClientRect();
+      el.style.top = `${rect.top + window.pageYOffset + 18}px`;
+      el.style.left = `${rect.left + window.pageXOffset + 8}px`;
+    }
+  }, [chars.length, editor, index, search, target]);
+
+  useEffect(() => {
+    if (mentionsList.length === 0) {
+      setMentions([
+        { id: "789246865144545280", name: "общий-2", type: "chat" },
+        { id: "799754645614493777", name: "общий-1", type: "chat" },
+        { id: "274466897070915584", name: "dalandis", type: "user" },
+        { id: "502182630238978069", name: "prestig9110", type: "user" },
+      ]);
+    }
+  }, [mentionsList.length]);
 
   return (
     <div className={classNames(styles["text_editor"])}>
@@ -310,16 +483,10 @@ const RichTextExample = ({ value = DEFAULT_VALUE, setValue, textLength = () => {
         editor={editor}
         initialValue={dataValue}
         onChange={(value) => {
-          const isAstChange = editor.operations.some((op) => "set_selection" !== op.type);
-
-          if (isAstChange) {
-            setValue(value);
-            setPrev(value);
-            textLength(CalculatingTextLength(value));
-          }
+          handleEditor(value);
         }}
       >
-        <Toolbar>
+        <div className={classNames(styles["toolbar"])}>
           <div className={classNames(styles["block"])}>
             <Button
               onClick={(e) => {
@@ -356,7 +523,7 @@ const RichTextExample = ({ value = DEFAULT_VALUE, setValue, textLength = () => {
               <VisibleOnSvgComponent width="100%" height="100%" />
             </Button>
           </div>
-        </Toolbar>
+        </div>
         {!emojiModal ? null : (
           <div className={classNames(styles["emoji_modal"])} ref={emojiRef}>
             <EmojiPicker
@@ -371,7 +538,13 @@ const RichTextExample = ({ value = DEFAULT_VALUE, setValue, textLength = () => {
             />
           </div>
         )}
-        <Editable renderElement={renderElement} renderLeaf={renderLeaf} className={classNames(styles["editor"])} />
+        <Editable
+          renderElement={renderElement}
+          renderLeaf={renderLeaf}
+          onKeyDown={onKeyDown}
+          className={classNames(styles["editor"])}
+        />
+        {target && chars.length > 0 && ReactDOM.createPortal(<PortalMention />, document.getElementById("root"))}
       </Slate>
       <Modal
         className={classNames(styles["modal_main_gallery"])}
@@ -388,4 +561,4 @@ const RichTextExample = ({ value = DEFAULT_VALUE, setValue, textLength = () => {
   );
 };
 
-export default RichTextExample;
+export default TextEditor;

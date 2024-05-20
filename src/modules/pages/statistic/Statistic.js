@@ -1,9 +1,10 @@
 import classNames from "classnames";
-import React, { useMemo, useState } from "react";
+import React, { useState } from "react";
 import { useAxios } from "../../../DataProvider";
 import Preload from "../../components/preloader/Preload";
 import { AgGridReact } from "ag-grid-react";
 import useLoading from "../../loading/useLoading";
+import Title from "../../components/title/Title";
 
 import "ag-grid-community/styles/ag-grid.css";
 import "ag-grid-community/styles/ag-theme-alpine.css";
@@ -11,11 +12,109 @@ import "ag-grid-community/styles/ag-theme-alpine.css";
 import styles from "./Statistic.module.scss";
 import "../../custon-modules/ag-grid.scss";
 
+const LOCAL_TEXT = {
+  // for filter panel
+  page: "Страница",
+  more: "ещё",
+  to: "к",
+  of: "из",
+  next: "Следующая",
+  last: "Последняя",
+  first: "Первая",
+  previous: "Предыдущая",
+  loadingOoo: "Загрузка...",
+
+  // for set filter
+  selectAll: "Выделить всё",
+  searchOoo: "Поиск...",
+  blanks: "Ничего не найдено",
+
+  // for number filter and text filter
+  filterOoo: "Фильтровать...",
+  applyFilter: "Применить фильтр...",
+  equals: "Равно",
+  notEqual: "Не равно",
+
+  // for number filter
+  lessThan: "Меньше чем",
+  greaterThan: "Больше чем",
+  lessThanOrEqual: "Меньше или равно",
+  greaterThanOrEqual: "Больше или равно",
+  inRange: "В промежутке",
+
+  // for text filter
+  contains: "Содержит",
+  notContains: "Не содержит",
+  startsWith: "Начинается с",
+  endsWith: "Заканчивается",
+
+  // filter conditions
+  andCondition: '"И"',
+  orCondition: '"ИЛИ"',
+
+  // the header of the default group column
+  group: "Группа",
+
+  // tool panel
+  columns: "Столбцы",
+  filters: "Фильтры",
+  rowGroupColumns: "Столбцы группировки по строкам",
+  rowGroupColumnsEmptyMessage: "Перетащите сюда для группировки по строкам",
+  valueColumns: "Столбцы со значениями",
+  pivotMode: "Режим сводной таблицы",
+  groups: "Группы",
+  values: "Значения",
+  pivots: "Заголовки столбцов",
+  valueColumnsEmptyMessage: "Перетащите сюда для агрегации",
+  pivotColumnsEmptyMessage: "Перетащите сюда, чтобы задать заголовки столбам",
+  toolPanelButton: "Панель инструментов",
+
+  // other
+  noRowsToShow: "Нет данных",
+
+  // enterprise menu
+  pinColumn: "Закрепить колонку",
+  valueAggregation: "Агрегация по значению",
+  autosizeThiscolumn: "Автоматически задавать размер этой колонки",
+  autosizeAllColumns: "Автоматически задавать размер всем колонкам",
+  groupBy: "Группировать по",
+  ungroupBy: "Разгруппировать по",
+  resetColumns: "Сбросить столбцы",
+  expandAll: "Развернуть всё",
+  collapseAll: "Свернуть всё",
+  toolPanel: "Панель инструментов",
+  export: "Экспорт",
+  csvExport: "Экспорт в CSV",
+  excelExport: "Экспорт в Excel (.xlsx)",
+  excelXmlExport: "Экспорт в XML (.xml)",
+
+  // enterprise menu pinning
+  pinLeft: "Закрепить слева <<",
+  pinRight: "Закрепить справа >>",
+  noPin: "Не закреплять <>",
+
+  // enterprise menu aggregation and status bar
+  sum: "Сумма",
+  min: "Минимум",
+  max: "Максимум",
+  none: "Пусто",
+  count: "Количество",
+  average: "Среднее значение",
+  filteredRows: "Отфильтрованные",
+  selectedRows: "Выделенные",
+  totalRows: "Всего строк",
+  totalAndFilteredRows: "Строк",
+
+  // standard menu
+  copy: "Копировать",
+  copyWithHeaders: "Копировать с заголовком",
+  ctrlC: "Ctrl+C",
+  paste: "Вставить",
+  ctrlV: "Ctrl+V",
+};
+
 const Statistic = () => {
   const isLoading = useLoading();
-
-  const containerStyle = useMemo(() => ({ width: "100%", height: "100%" }), []);
-  const gridStyle = useMemo(() => ({ height: "100%", width: "100%" }), []);
 
   const resParams = useAxios("/api/get_statistics", "GET", {});
 
@@ -73,11 +172,7 @@ const Statistic = () => {
     },
   ]);
 
-  if (resParams.loading || isLoading) {
-    return <Preload full={false} />;
-  }
-
-  function timeFormat(params) {
+  const timeFormat = (params) => {
     const value = params.value;
     const cd = 24 * 60 * 60 * 1000;
     const ch = 60 * 60 * 1000;
@@ -109,122 +204,25 @@ const Statistic = () => {
     }
 
     return d + "д " + pad(h) + "ч " + pad(m) + "м";
-  }
-
-  const localText = {
-    // for filter panel
-    page: "Страница",
-    more: "ещё",
-    to: "к",
-    of: "из",
-    next: "Следующая",
-    last: "Последняя",
-    first: "Первая",
-    previous: "Предыдущая",
-    loadingOoo: "Загрузка...",
-
-    // for set filter
-    selectAll: "Выделить всё",
-    searchOoo: "Поиск...",
-    blanks: "Ничего не найдено",
-
-    // for number filter and text filter
-    filterOoo: "Фильтровать...",
-    applyFilter: "Применить фильтр...",
-    equals: "Равно",
-    notEqual: "Не равно",
-
-    // for number filter
-    lessThan: "Меньше чем",
-    greaterThan: "Больше чем",
-    lessThanOrEqual: "Меньше или равно",
-    greaterThanOrEqual: "Больше или равно",
-    inRange: "В промежутке",
-
-    // for text filter
-    contains: "Содержит",
-    notContains: "Не содержит",
-    startsWith: "Начинается с",
-    endsWith: "Заканчивается",
-
-    // filter conditions
-    andCondition: '"И"',
-    orCondition: '"ИЛИ"',
-
-    // the header of the default group column
-    group: "Группа",
-
-    // tool panel
-    columns: "Столбцы",
-    filters: "Фильтры",
-    rowGroupColumns: "Столбцы группировки по строкам",
-    rowGroupColumnsEmptyMessage: "Перетащите сюда для группировки по строкам",
-    valueColumns: "Столбцы со значениями",
-    pivotMode: "Режим сводной таблицы",
-    groups: "Группы",
-    values: "Значения",
-    pivots: "Заголовки столбцов",
-    valueColumnsEmptyMessage: "Перетащите сюда для агрегации",
-    pivotColumnsEmptyMessage: "Перетащите сюда, чтобы задать заголовки столбам",
-    toolPanelButton: "Панель инструментов",
-
-    // other
-    noRowsToShow: "Нет данных",
-
-    // enterprise menu
-    pinColumn: "Закрепить колонку",
-    valueAggregation: "Агрегация по значению",
-    autosizeThiscolumn: "Автоматически задавать размер этой колонки",
-    autosizeAllColumns: "Автоматически задавать размер всем колонкам",
-    groupBy: "Группировать по",
-    ungroupBy: "Разгруппировать по",
-    resetColumns: "Сбросить столбцы",
-    expandAll: "Развернуть всё",
-    collapseAll: "Свернуть всё",
-    toolPanel: "Панель инструментов",
-    export: "Экспорт",
-    csvExport: "Экспорт в CSV",
-    excelExport: "Экспорт в Excel (.xlsx)",
-    excelXmlExport: "Экспорт в XML (.xml)",
-
-    // enterprise menu pinning
-    pinLeft: "Закрепить слева <<",
-    pinRight: "Закрепить справа >>",
-    noPin: "Не закреплять <>",
-
-    // enterprise menu aggregation and status bar
-    sum: "Сумма",
-    min: "Минимум",
-    max: "Максимум",
-    none: "Пусто",
-    count: "Количество",
-    average: "Среднее значение",
-    filteredRows: "Отфильтрованные",
-    selectedRows: "Выделенные",
-    totalRows: "Всего строк",
-    totalAndFilteredRows: "Строк",
-
-    // standard menu
-    copy: "Копировать",
-    copyWithHeaders: "Копировать с заголовком",
-    ctrlC: "Ctrl+C",
-    paste: "Вставить",
-    ctrlV: "Ctrl+V",
   };
+
+  if (resParams.loading || isLoading) {
+    return <Preload full={false} />;
+  }
 
   return (
     <div className={classNames(styles["mainStatistic"])}>
       <div className={classNames(styles["statistic"])}>
-        <h4 className={classNames(styles["title"])}>Статистика игроков сервера</h4>
-        <div style={containerStyle}>
-          <div style={gridStyle} className="ag-theme-alpine-dark">
+        <Title>Статистика игроков сервера</Title>
+        <div className={classNames(styles["wrapper"])}>
+          <div style={{ width: "100%", height: "100%" }} className="ag-theme-alpine-dark">
             <AgGridReact
               rowData={resParams.data}
               columnDefs={columns}
               animateRows={true}
               pagination={true}
               paginationPageSize={20} // Если меняем это значение то, нужно еще менять значение в файле стилей на строке 62, а именно в тексте &:nth-child(20)
-              localeText={localText}
+              localeText={LOCAL_TEXT}
             />
           </div>
         </div>

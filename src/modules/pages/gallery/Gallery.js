@@ -10,6 +10,7 @@ import Preload from "../../components/preloader/Preload";
 import Tag from "../../components/[0_grouped_0]-Profile/gallery/tag/Tag";
 import { prepare } from "../../components/text-editor/functions/Prepare";
 import ImageSlider from "../../components/image-slider/Image-slider";
+import Title from "../../components/title/Title";
 
 import styles from "./Gallery.module.scss";
 import "react-lazy-load-image-component/src/effects/blur.css";
@@ -116,6 +117,8 @@ const MainGallery = () => {
       });
     }
 
+    console.log(JSON.stringify(local[0].description));
+
     setIsOpen(true);
   };
 
@@ -153,7 +156,7 @@ const MainGallery = () => {
 
   return (
     <div className={classNames(styles["main_gallery"])}>
-      <h3 className={classNames(styles["page_title"])}>Общая галерея игроков сервера</h3>
+      <Title>Общая галерея игроков сервера</Title>
       <div className={classNames(styles["gallery_list"])}>
         {resParams.data.map((items, i) => (
           <div className={classNames(styles["one_container"])} key={i}>

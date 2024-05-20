@@ -1,6 +1,6 @@
 @import "../../../Variables.scss";
 
-.mainSupport {
+.main_support_block {
   display: flex;
   flex-direction: column;
   width: auto;
@@ -13,42 +13,8 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding-top: 78px;
 
-
-    .titleSupport {
-      font-size: 32px;
-      font-weight: 400;
-      color: $site-color-2;
-      margin: 0 auto;
-      text-align: center;
-      font-family: $fontCustom2;
-    }
-
-    .supportLink {
-      font-weight: 400;
-      width: auto;
-      max-width: 450px;
-      height: 25px;
-      line-height: 25px;
-      color: $site-color-10;
-      margin: 0 auto 0 25px;
-      outline: none;
-      transition: all 0.55s ease;
-      text-decoration: none;
-
-      &:active,
-      &:visited,
-      &:hover {
-        outline: none;
-      }
-
-      &:hover {
-        color: $color-12;
-      }
-    }
-
-    .donatBlock {
+    .information {
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -57,8 +23,7 @@
       width: auto;
       margin: 25px auto 0 auto;
 
-
-      .text {
+      .text_wrapper {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -67,10 +32,11 @@
         height: 100%;
         margin: auto 0;
 
-        .subTitleSupport {
+        .text_line {
           display: flex;
-          font-size: 16px;
+          font-size: 15px;
           font-weight: 400;
+          font-family: $fontCustom2;
           color: $site-color-2;
           margin: 5px 0;
           text-align: start;
@@ -79,23 +45,14 @@
           width: 100%;
         }
 
-        .linkWrapper {
+        .link_wrapper {
           display: flex;
           flex-direction: column;
-          margin: 0;
-
-        }
-
-        .footerSupport {
-          font-size: 16px;
-          font-weight: 400;
-          color: $site-color-2;
-          margin: 12px 0 0 0;
-          padding: 0 25px 0 25px;
+          margin: 0 0 0 32px;
         }
       }
 
-      .imgBlockWrapper {
+      .img_wrapper {
         display: flex;
         width: 100%;
         max-width: 750px;
@@ -110,7 +67,7 @@
       }
     }
 
-    .titleAll {
+    .sub_title {
       width: 100%;
       display: flex;
       height: 35px;
@@ -124,7 +81,7 @@
       font-family: $fontCustom2;
     }
 
-    .monitoringBlock {
+    .monitoring_block {
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -132,12 +89,12 @@
       width: 80%;
       margin: 100px auto 80px auto;
 
-      .monitoringCard {
-        width: 240px;
-        height: 100px;
+      .monitoring_card {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 240px;
+        height: 100px;
         margin: 8px auto;
         background: $site-color-4;
         border: 1px solid $site-color-5;
@@ -150,89 +107,15 @@
         text-align: center;
         font-size: 18px;
         font-weight: 400;
-        line-height: 1.25;
         font-family: $fontCustom2;
 
-        &:active, &:visited {
-          outline: none;
+        &:active,
+        &:visited {
           color: $site-color-2;
         }
 
         &:hover {
           background: $site-color-1;
-        }
-      }
-    }
-
-    .current_donate_block {
-      height: auto;
-      max-width: 80%;
-      display: flex;
-      flex-direction: column;
-      margin: 32px auto;
-      padding: 16px;
-      border-radius: 8px;
-
-      .current_title {
-        font-size: 24px;
-        font-family: $fontCustom2;
-        color: $site-color-2;
-        font-weight: 400;
-        text-align: center;
-        height: 28px;
-        line-height: 28px;
-      }
-
-      .information_block {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        margin-top: 12px;
-
-        .text {
-          height: auto;
-          line-height: 1.4;
-          color: $site-color-2;
-          font-weight: 400;
-          font-size: 16px;
-          margin: 4px 0;
-        }
-
-        .list {
-          display: flex;
-          flex-direction: column;
-          padding-left: 8px;
-          margin: 4px 0 4px 16px;
-          list-style: disc;
-
-          .stroke {
-            height: auto;
-            line-height: 1.5;
-            color: $site-color-2;
-            font-weight: 400;
-            font-size: 14px;
-          }
-        }
-
-        .link_site {
-          font-weight: inherit;
-          width: auto;
-          height: inherit;
-          line-height: inherit;
-          font-size: inherit;
-          color: $site-color-10;
-          transition: all 0.35s ease;
-          text-decoration: none;
-          margin-left: 4px;
-
-          &:visited,
-          &:active {
-            color: $site-color-10;
-          }
-
-          &:hover {
-            color: $color-12;
-          }
         }
       }
     }
@@ -243,10 +126,10 @@
 }
 
 @media screen and (max-width: 1400px) {
-  .mainSupport {
+  .main_support_block {
     .support {
-      .donatBlock {
-        .text {
+      .information {
+        .text_wrapper {
           margin: 0 15px;
         }
       }
@@ -255,31 +138,21 @@
 }
 
 @media screen and (max-width: 1280px) {
-  .mainSupport {
-    .support {
-      .current_donate_block {
-        margin-top: 32px;
-        max-width: 95%;
-      }
-    }
-  }
 }
 
 @media screen and (max-width: 1024px) {
-  .mainSupport {
+  .main_support_block {
     .support {
-      padding-top: 40px;
-
-      .donatBlock {
-        .text {
+      .information {
+        .text_wrapper {
           margin: 0 10px;
 
-          .subTitleSupport {
+          .text_line {
             line-height: 1.35;
           }
         }
 
-        .imgBlockWrapper {
+        .img_wrapper {
           .image {
             max-width: 450px;
             max-height: 450px;
@@ -291,20 +164,20 @@
 }
 
 @media screen and (max-width: 960px) {
-  .mainSupport {
+  .main_support_block {
     .support {
-      .donatBlock {
+      .information {
         flex-wrap: wrap;
 
-        .text {
+        .text_wrapper {
           max-width: 80%;
 
-          .subTitleSupport {
+          .text_line {
             line-height: 1.5;
           }
         }
 
-        .imgBlockWrapper {
+        .img_wrapper {
           max-width: 80%;
 
           .image {
@@ -320,14 +193,14 @@
 }
 
 @media screen and (max-width: 768px) {
-  .mainSupport {
+  .main_support_block {
     .support {
-      .donatBlock {
-        .text {
+      .information {
+        .text_wrapper {
           max-width: 94%;
         }
 
-        .imgBlockWrapper {
+        .img_wrapper {
           max-width: 94%;
 
           .image {
@@ -336,25 +209,7 @@
         }
       }
 
-      .current_donate_block {
-        .current_title {
-          font-size: 20px;
-        }
-
-        .information_block {
-          .text {
-            font-size: 13px;
-          }
-
-          .list {
-            .stroke {
-              font-size: 12px;
-            }
-          }
-        }
-      }
-
-      .monitoringBlock {
+      .monitoring_block {
         width: 94%;
         margin: 65px auto 65px auto;
       }
@@ -363,14 +218,10 @@
 }
 
 @media screen and (max-width: 640px) {
-  .mainSupport {
+  .main_support_block {
     .support {
-      .titleSupport {
-        font-size: 28px;
-      }
-
-      .donatBlock {
-        .imgBlockWrapper {
+      .information {
+        .img_wrapper {
           width: 100%;
           min-width: auto;
           max-width: none;
@@ -386,49 +237,37 @@
           }
         }
       }
-
-      .current_donate_block {
-        padding: 12px;
-      }
     }
   }
 }
 
 @media screen and (max-width: 480px) {
-  .mainSupport {
+  .main_support_block {
     .support {
-      .titleSupport {
-        font-size: 24px;
-      }
-
-      .donatBlock {
-        .text {
+      .information {
+        .text_wrapper {
           font-size: 14px;
 
-          .subTitleSupport {
+          .text_line {
             font-size: 14px;
           }
         }
 
-        .imgBlockWrapper {
+        .img_wrapper {
           .image {
             max-width: 350px;
           }
         }
       }
 
-      .current_donate_block {
-        padding: 8px;
-      }
-
-      .monitoringBlock {
+      .monitoring_block {
         margin: 60px auto 45px auto;
 
-        .titleAll {
+        .sub_title {
           font-size: 20px;
         }
 
-        .monitoringCard {
+        .monitoring_card {
           width: 80%;
           font-size: 16px;
           height: 75px;
@@ -439,10 +278,10 @@
 }
 
 @media screen and (max-width: 360px) {
-  .mainSupport {
+  .main_support_block {
     .support {
-      .donatBlock {
-        .imgBlockWrapper {
+      .information {
+        .img_wrapper {
           .image {
             max-width: 250px;
           }

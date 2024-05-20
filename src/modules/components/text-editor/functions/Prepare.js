@@ -1,24 +1,33 @@
 import "./Prepare.scss";
 
-function format(code) {
+function format(code, font) {
   return code
     .map((format) => {
-      if (format.text === "") {
-        return `</br>`;
-      } else {
-        let styles = "";
+      let styles = "";
 
-        if (format.bold) styles += " strong_editor";
-        if (format.italic) styles += " em_editor";
-        if (format.underline) styles += " u_editor";
-        if (format.code) styles += " code_editor";
-        if (format.link) styles += " a_editor";
+      if (font) styles += " minecraft_font";
 
-        if (!format.link) {
-          return `<span class="${styles}">${format.text}</span>`;
-        }
+      if (format.bold) styles += " strong_editor";
+      if (format.italic) styles += " em_editor";
+      if (format.underline) styles += " u_editor";
+      if (format.code) styles += " code_editor";
+      if (format.link) styles += " a_editor";
+      if (format.type === "mention") styles += " mentions";
+
+      if (format.link) {
         return `<a href=${format.text} rel="noreferrer" target="_blank" class="${styles}">${format.text}</a>`;
       }
+
+      if (format.type === "mention") {
+        if (format.character.type === "user") {
+          return `<span class="${styles}">@${format.character.name}</span>`;
+        }
+        if (format.character.type === "chat") {
+          return `<a class="${styles}" href='https://discord.com/channels/723912565234728972/${format.character.id}' target="_blank" rel="noreferrer">#${format.character.name}</a>`;
+        }
+      }
+
+      return `<span class="${styles}">${format.text}</span>`;
     })
     .join("");
 }
@@ -34,7 +43,7 @@ function list(code) {
     .join("");
 }
 
-export function prepare(code) {
+export function prepare(code, font = false) {
   return code
     .map((el) => {
       const local = () => {
@@ -58,37 +67,37 @@ export function prepare(code) {
         if (el.align === "justify") styles += " justify_editor";
 
         if (el.type === "paragraph") {
-          return `<p class="${styles}">${format(el.children)}</p>`;
+          return `<p class="${styles}">${format(el.children, font)}</p>`;
         }
         if (el.type === "heading-one") {
-          return `<h1 class="${styles}">${format(el.children)}</h1>`;
+          return `<h1 class="${styles}">${format(el.children, font)}</h1>`;
         }
         if (el.type === "heading-two") {
-          return `<h2 class="${styles}">${format(el.children)}</h2>`;
+          return `<h2 class="${styles}">${format(el.children, font)}</h2>`;
         }
         if (el.type === "heading-three") {
-          return `<h3 class="${styles}">${format(el.children)}</h3>`;
+          return `<h3 class="${styles}">${format(el.children, font)}</h3>`;
         }
         if (el.type === "heading-four") {
-          return `<h4 class="${styles}">${format(el.children)}</h4>`;
+          return `<h4 class="${styles}">${format(el.children, font)}</h4>`;
         }
         if (el.type === "heading-five") {
-          return `<h5 class="${styles}">${format(el.children)}</h5>`;
+          return `<h5 class="${styles}">${format(el.children, font)}</h5>`;
         }
         if (el.type === "heading-six") {
-          return `<h6 class="${styles}">${format(el.children)}</h6>`;
+          return `<h6 class="${styles}">${format(el.children, font)}</h6>`;
         }
         if (el.type === "block-quote") {
-          return `<blockquote class="${styles}">${format(el.children)}</blockquote>`;
+          return `<blockquote class="${styles}">${format(el.children, font)}</blockquote>`;
         }
         if (el.type === "code") {
-          return `<code class="${styles}">${format(el.children)}</code>`;
+          return `<code class="${styles}">${format(el.children, font)}</code>`;
         }
         if (el.type === "bulleted-list") {
-          return `<ul class="${styles}">${list(el.children)}</ul>`;
+          return `<ul class="${styles}">${list(el.children, font)}</ul>`;
         }
         if (el.type === "numbered-list") {
-          return `<ol class="${styles}">${list(el.children)}</ol>`;
+          return `<ol class="${styles}">${list(el.children, font)}</ol>`;
         }
       };
       return local();

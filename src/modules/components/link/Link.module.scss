@@ -1,0 +1,24 @@
+@import "src/Variables";
+
+.link_site {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: $fontCustom2;
+  width: 100%;
+  height: auto;
+  line-height: 1.5;
+  color: $site-color-10;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  outline: none;
+
+  &:active,
+  &:visited {
+    color: $site-color-10;
+  }
+
+  &:hover {
+    color: lighten($site-color-10, 25%);
+  }
+}

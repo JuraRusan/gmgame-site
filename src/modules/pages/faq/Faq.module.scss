@@ -19,7 +19,7 @@
       display: flex;
       flex-direction: row;
       justify-content: center;
-      height: 35px;
+      height: auto;
       width: 100%;
 
       .titleH2Styles {
@@ -164,7 +164,8 @@
                   border-radius: 6px;
                   color: $site-color-2;
                   font-weight: 400;
-                  font-size: 16px;
+                  font-size: 15px;
+                  font-family: $fontCustom2;
                   cursor: pointer;
                   transition: all 0.35s ease;
                   position: relative;
@@ -184,31 +185,15 @@
                 }
 
                 .answerWrapperBox {
-                  font-weight: 400;
                   width: 100%;
                   max-height: 0;
-                  line-height: 1.5;
                   color: $site-color-2;
-                  font-size: 15px;
+                  font-weight: 400;
+                  font-size: 13px;
+                  font-family: $fontCustom2;
                   background: $site-color-12;
                   transition: all 0.25s ease;
                   opacity: 0;
-
-                  .link {
-                    color: $site-color-10;
-                    transition: all 0.35s ease;
-                    text-decoration: none;
-
-                    &:visited {
-                      color: $site-color-10;
-                    }
-
-                    &:hover,
-                    &:active,
-                    &:focus {
-                      color: $color-12;
-                    }
-                  }
                 }
               }
             }
@@ -222,7 +207,7 @@
     opacity: 1 !important;
     max-height: 100vh !important;
     margin-bottom: 10px;
-    padding: 16px;
+    padding: 4px 16px;
     border-right: 1px solid $site-color-5;
     border-left: 1px solid $site-color-5;
     border-bottom: 1px solid $site-color-5;
@@ -331,7 +316,7 @@
                   }
 
                   .answerWrapperBox {
-                    font-size: 14px;
+                    font-size: 12.5px;
                   }
                 }
               }
@@ -342,7 +327,7 @@
     }
 
     .oneInputCheckBox:checked ~ .answerWrapperBox {
-      padding: 12px;
+      padding: 4px 12px;
     }
   }
 }
@@ -378,11 +363,7 @@
                 .listOne {
                   .question {
                     padding: 10px;
-                  }
-
-                  .answerWrapperBox {
                     font-size: 14px;
-                    line-height: 1.25;
                   }
                 }
               }
@@ -393,7 +374,7 @@
     }
 
     .oneInputCheckBox:checked ~ .answerWrapperBox {
-      padding: 10px;
+      padding: 4px 10px;
     }
   }
 }
@@ -402,8 +383,6 @@
   .mainFaqBox {
     .faqBox {
       .faqTitleWrapper {
-        height: 30px;
-
         .titleH2Styles {
           font-size: 16px;
           padding-left: 7px;
@@ -465,11 +444,11 @@
               .lists {
                 .listOne {
                   .question {
-                    font-size: 14px;
+                    font-size: 13px;
                   }
 
                   .answerWrapperBox {
-                    font-size: 12px;
+                    font-size: 11px;
                   }
                 }
               }

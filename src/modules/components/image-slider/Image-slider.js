@@ -109,11 +109,19 @@ const ImageSlider = ({ array }) => {
         </div>
       )}
       {!play ? (
-        <button className={classNames(styles["btn_full_play"], styles["left_play"])} onClick={startPlay}>
+        <button
+          className={classNames(styles["btn_full_play"], styles["left_play"])}
+          onClick={startPlay}
+          disabled={array.galleryImages.length <= 1}
+        >
           <PlaySvgComponent width="100%" height="100%" color="#fff" />
         </button>
       ) : (
-        <button className={classNames(styles["btn_full_play"], styles["left_play"])} onClick={stopPlay}>
+        <button
+          className={classNames(styles["btn_full_play"], styles["left_play"])}
+          onClick={stopPlay}
+          disabled={array.galleryImages.length <= 1}
+        >
           <StopPlaySvgComponent width="100%" height="100%" color="#fff" />
         </button>
       )}

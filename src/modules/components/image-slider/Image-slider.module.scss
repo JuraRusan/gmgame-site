@@ -58,6 +58,17 @@
         }
       }
     }
+
+    &:disabled {
+      cursor: default;
+      background: transparent;
+
+      svg {
+        path {
+          stroke: $site-color-5;
+        }
+      }
+    }
   }
 
   .right_full {
