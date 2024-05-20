@@ -44,7 +44,7 @@ const Gallery = () => {
   const [filter, setFilter] = useState(null);
   const [visible, setVisible] = useState(true);
 
-  const [showConfirm, setShowConfirm] = useState(null);
+  const [isConfirmActive, setIsConfirmActive] = useState(false);
 
   const [numberLengthTitle, setNumberLengthTitle] = useState(0);
 
@@ -70,7 +70,6 @@ const Gallery = () => {
   };
 
   const handleDelete = (id) => {
-    setShowConfirm(null);
     sendRequest("/api/delete_gallery", "POST", {
       id: id,
     }).then((response) => {
@@ -174,20 +173,18 @@ const Gallery = () => {
                   {/*</Link>*/}
                   <ActionsButton
                     onClick={() => {
-                      setShowConfirm(post.id);
+                      setIsConfirmActive(true);
                     }}
                     ico={<BinSvgComponent width="100%" height="100%" />}
                   />
-                  {showConfirm !== post.id ? null : (
-                    <ConfirmModal
-                      yes={() => {
-                        handleDelete(post.id);
-                      }}
-                      no={() => {
-                        setShowConfirm(null);
-                      }}
-                    />
-                  )}
+                  <ConfirmModal
+                    open={isConfirmActive}
+                    close={() => setIsConfirmActive(false)}
+                    no={() => setIsConfirmActive(false)}
+                    yes={() => {
+                      handleDelete(post.id);
+                    }}
+                  />
                 </div>
               </div>
             );
