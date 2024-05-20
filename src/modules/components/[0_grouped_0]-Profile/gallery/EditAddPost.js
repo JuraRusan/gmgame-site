@@ -20,11 +20,11 @@ import Name from "./name/Name";
 import TextEditor from "../../text-editor/TextEditor";
 import { DEFAULT_VALUE } from "../../text-editor/Default-value";
 import { CalculatingTextLength } from "../../text-editor/functions/CalculatingTextLength";
+import ConfirmModal from "../../../../common/confirm-modal/ConfirmModal";
 
 import styles from "./EditAddPost.module.scss";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import "react-advanced-cropper/dist/style.css";
-import ConfirmModal from "../../../../common/confirm-modal/ConfirmModal";
 
 const LOAD_AND_EDIT_WARN =
   "Внимание! При работе с файлами в большом разрешении могут наблюдаться задержки отрисовки изображения. Рекомендуется использовать изображения в умеренном качестве, в ином случае сохранять спокойствие."; // prettier-ignore
