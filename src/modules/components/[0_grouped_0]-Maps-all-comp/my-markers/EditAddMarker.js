@@ -14,6 +14,7 @@ import { checkForm } from "../mini-marker-components/function/CheckForm";
 import MapSelectLine from "../mini-marker-components/map-select-line/MapSelectLine";
 import MapTextareaLine from "../mini-marker-components/map-textarea-line/MapTextareaLine";
 import BackButton from "../../back-button/BackButton";
+import ConfirmModal from "../../../../common/confirm-modal/ConfirmModal";
 
 import styles from "../maps-elements-add.module.scss";
 
@@ -26,6 +27,8 @@ const EditAddMarker = (params) => {
   const { id } = useParams();
 
   const [errorMessage, setErrorMessage] = useState(null);
+
+  const [isConfirmActive, setIsConfirmActive] = useState(false);
 
   const [formName, setFormName] = useState("");
   const [formServer, setFormServer] = useState("gmgame");
@@ -210,7 +213,23 @@ const EditAddMarker = (params) => {
         {errorMessage && <div className={classNames(styles["error"])}>{errorMessage}</div>}
         <div className={classNames(styles["actions_box"])}>
           <Button view="submit" label="Сохранить" onClick={id === "new" ? addMarker : saveMarker} />
-          {id === "new" ? null : <Button view="delete" label="Удалить" onClick={deleteMarker} />}
+          {id === "new" ? null : (
+            <Button
+              view="delete"
+              label="Удалить"
+              onClick={() => {
+                setIsConfirmActive(true);
+              }}
+            />
+          )}
+          <ConfirmModal
+            open={isConfirmActive}
+            close={() => setIsConfirmActive(false)}
+            no={() => setIsConfirmActive(false)}
+            yes={() => {
+              deleteMarker();
+            }}
+          />
         </div>
       </div>
       <div className={classNames(styles["columns_add_two"])}>

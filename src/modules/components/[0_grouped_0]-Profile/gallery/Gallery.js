@@ -12,6 +12,7 @@ import Tag from "./tag/Tag";
 import ActionsButton from "../actions-button/ActionsButton";
 // import StatusSvgComponent from "../../../../bases/icons/statusSvg/StatusSvg";
 import BinSvgComponent from "../../../../bases/icons/binSvg/BinSvg";
+import ConfirmModal from "../../../../common/confirm-modal/ConfirmModal";
 
 import styles from "./Gallery.module.scss";
 import "react-lazy-load-image-component/src/effects/blur.css";
@@ -42,6 +43,8 @@ const Gallery = () => {
 
   const [filter, setFilter] = useState(null);
   const [visible, setVisible] = useState(true);
+
+  const [isConfirmActive, setIsConfirmActive] = useState(false);
 
   const [numberLengthTitle, setNumberLengthTitle] = useState(0);
 
@@ -170,9 +173,17 @@ const Gallery = () => {
                   {/*</Link>*/}
                   <ActionsButton
                     onClick={() => {
-                      handleDelete(post.id);
+                      setIsConfirmActive(true);
                     }}
                     ico={<BinSvgComponent width="100%" height="100%" />}
+                  />
+                  <ConfirmModal
+                    open={isConfirmActive}
+                    close={() => setIsConfirmActive(false)}
+                    no={() => setIsConfirmActive(false)}
+                    yes={() => {
+                      handleDelete(post.id);
+                    }}
                   />
                 </div>
               </div>

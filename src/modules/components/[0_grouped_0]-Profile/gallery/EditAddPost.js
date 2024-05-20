@@ -19,6 +19,7 @@ import Tag from "./tag/Tag";
 import Name from "./name/Name";
 import TextEditor from "../../text-editor/TextEditor";
 import { CalculatingTextLength } from "../../text-editor/functions/CalculatingTextLength";
+import ConfirmModal from "../../../../common/confirm-modal/ConfirmModal";
 
 import styles from "./EditAddPost.module.scss";
 import "react-lazy-load-image-component/src/effects/blur.css";
@@ -120,6 +121,8 @@ const EditAddPost = () => {
   const [description, setDescription] = useState(null);
 
   const [modalImageActive, setModalImageActive] = useState(0);
+
+  const [isConfirmActive, setIsConfirmActive] = useState(false);
 
   const [imageRedactor, setImageRedactor] = useState(false);
   const [preloader, setPreloader] = useState(false);
@@ -592,10 +595,18 @@ const EditAddPost = () => {
               view="delete"
               label="Удалить"
               onClick={() => {
-                handleDelete(Number(id));
+                setIsConfirmActive(true);
               }}
             />
           )}
+          <ConfirmModal
+            open={isConfirmActive}
+            close={() => setIsConfirmActive(false)}
+            no={() => setIsConfirmActive(false)}
+            yes={() => {
+              handleDelete(Number(id));
+            }}
+          />
         </div>
       </div>
 
