@@ -135,8 +135,8 @@ const Cab = () => {
                   <NavLink onClick={() => {setOpenMenu(false);}} className={({isActive}) => setActive(isActive)} to="change_password"><SettingsSvgComponent width="100%" height="100%" color="#f4f4f4"/>Изменить пароль</NavLink>
                 </>
               )}
-              {resParams.data.discordUser.role ===
-                "admin" && <Link to="/manager" className={classNames(styles["tab"])}><ManagerSvgComponent width="100%" height="100%" color="#f4f4f4"/>Менеджер</Link> // prettier-ignore
+              {
+                resParams.data.discordUser.role === "admin" && <Link to="/manager" className={classNames(styles["tab"])}><ManagerSvgComponent width="100%" height="100%" color="#f4f4f4"/>Менеджер</Link> // prettier-ignore
               }
             </div>
             <div className={classNames(styles["blockLink"], styles["blockLinkLogout"])}>
