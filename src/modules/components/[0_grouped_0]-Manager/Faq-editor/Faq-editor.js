@@ -23,7 +23,7 @@ const FaqEditor = () => {
 
   const [editorValue, setEditorValue] = useState(null);
   const [editorValueLength, setEditorValueLength] = useState(0);
-  const [contentValue, setContent] = useState();
+  // const [contentValue, setContent] = useState();
 
   const resParams = useAxios("/api/get_faq", "GET", {});
 

@@ -69,6 +69,8 @@ const ConfirmModal = ({ open = false, close, yes, no }) => {
         }
       };
     }
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [open]);
 
   if (open === false) {
