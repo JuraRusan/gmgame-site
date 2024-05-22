@@ -26,7 +26,7 @@ const Manager = () => {
   }
 
   return (
-    <div className={classNames(styles["wrapperManager"])}>
+    <div className={classNames(styles["manager"])}>
       <div className={classNames(styles["actions"])}>
         {/* prettier-ignore */}
         <NavLink className={({isActive}) => setActive(isActive)} to="player_summary">Сводка по игрокам</NavLink>
@@ -49,7 +49,7 @@ const Manager = () => {
         {/* prettier-ignore */}
         <NavLink className={({isActive}) => setActive(isActive)} to="donate_status_editor">Донаты</NavLink>
       </div>
-      <div className={classNames(styles["contentContainer"])}>
+      <div className={classNames(styles["content_container"])}>
         <Outlet />
       </div>
     </div>

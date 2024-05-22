@@ -1,6 +1,6 @@
 @import "../../../Variables.scss";
 
-.wrapperManager {
+.manager {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -47,14 +47,17 @@
     }
   }
 
-  .contentContainer {
+  .content_container {
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 1800px;
     height: auto;
     margin: 8px auto 16px auto;
-    padding: 0;
+    padding: 8px;
+    background: $site-color-4;
+    border: 1px solid $site-color-5;
+    border-radius: 4px;
   }
 }
 
