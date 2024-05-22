@@ -1,0 +1,79 @@
+@import "src/Variables";
+
+.wrapper {
+  width: auto;
+  height: 22px;
+  margin: 5px auto 0 auto;
+  display: flex;
+  flex-direction: row;
+
+  .message {
+    height: 22px;
+    line-height: 22px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: $fontCustom2;
+    color: $site-color-2;
+    margin-left: 8px;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  .checkmark {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border: 1px solid $site-color-5;
+    border-radius: 4px;
+    position: relative;
+    vertical-align: middle;
+  }
+
+  .checkmark::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 13px;
+    height: 13px;
+    background-color: $site-color-8;
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 0.35s ease-in-out;
+  }
+
+  input[type="checkbox"]:checked + .checkmark::before {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 960px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 640px) {
+}
+
+@media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 360px) {
+}

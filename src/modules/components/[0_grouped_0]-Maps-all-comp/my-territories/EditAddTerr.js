@@ -6,16 +6,26 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useAlert } from "react-alert";
 import Preload from "../../preloader/Preload";
 import useLoading from "../../../loading/useLoading";
-import MapInputLine from "../mini-marker-components/map-input-line/MapInputLine";
-import MapNameLine from "../mini-marker-components/map-name-line/MapNameLine";
-import MapSelectLine from "../mini-marker-components/map-select-line/MapSelectLine";
 import { checkName } from "../mini-marker-components/function/CheckName";
-import { checkForm } from "../mini-marker-components/function/CheckForm";
+import { checkCoordinates } from "../mini-marker-components/function/CheckCoordinates";
 import Button from "../../button/Button";
 import BackButton from "../../back-button/BackButton";
 import ConfirmModal from "../../../../common/confirm-modal/ConfirmModal";
+import FormTitle from "../../form-title/FormTitle";
+import Input from "../../input/Input";
+import Select from "../../select/Select";
 
 import styles from "../maps-elements-add.module.scss";
+
+const VALUE_OPTION = [
+  { value: "gmgame", name: "Основной мир" },
+  { value: "farm", name: "Фермерский мир" },
+  { value: "nether-farm", name: "Фермерский ад" },
+  { value: "end-farm", name: "Фермерский край" },
+];
+
+const MIN_NAME = 12;
+const MAX_NAME = 255;
 
 const EditAddTerr = (params) => {
   const isLoading = useLoading();
@@ -25,19 +35,21 @@ const EditAddTerr = (params) => {
 
   const { id } = useParams();
 
-  const [errorMessage, setErrorMessage] = useState(null);
-
   const [isConfirmActive, setIsConfirmActive] = useState(false);
 
   const [formName, setFormName] = useState("");
-  const [formServer, setFormServer] = useState("gmgame");
+  const [errorName, setErrorName] = useState("");
 
-  const [formXStart, setFormXStart] = useState("");
-  const [formXStop, setFormXStop] = useState("");
-  const [formZStart, setFormZStart] = useState("");
-  const [formZStop, setFormZStop] = useState("");
+  const [formServer, setFormServer] = useState("");
+
+  const [formXStart, setFormXStart] = useState(0);
+  const [formXStop, setFormXStop] = useState(0);
+  const [formZStart, setFormZStart] = useState(0);
+  const [formZStop, setFormZStop] = useState(0);
+  const [errorCoordinates, setErrorCoordinates] = useState("");
 
   const [init, setInit] = useState(false);
+
   const [url, setUrl] = useState("https://map.gmgame.ru/#/-7/64/-54/-4/GMGameWorld/over");
 
   function showMessage(response, worldName = "GMGameWorld", formLayer = "over") {
@@ -50,6 +62,31 @@ const EditAddTerr = (params) => {
   }
 
   function terrRequest(url) {
+    if (formName.length === 0) {
+      alert.error("Укажите название");
+      return;
+    }
+
+    if (errorName !== "") {
+      alert.error(errorName);
+      return;
+    }
+
+    if (formServer === "") {
+      alert.error("Выберите сервер");
+      return;
+    }
+
+    if (errorCoordinates !== "") {
+      alert.error(errorCoordinates);
+      return;
+    }
+
+    if (formXStart === 0 && formXStop === 0 && formZStart === 0 && formZStop === 0) {
+      alert.error("Укажите координаты");
+      return;
+    }
+
     sendRequest(url, "POST", {
       server: formServer,
       name: formName,
@@ -63,15 +100,15 @@ const EditAddTerr = (params) => {
     });
   }
 
-  const saveMarker = () => {
+  const saveTerr = () => {
     terrRequest("/api/edit_terr");
   };
 
-  const addMarker = () => {
+  const addTerr = () => {
     terrRequest("/api/add_terr");
   };
 
-  const deleteMarker = () => {
+  const deleteTerr = () => {
     navigate(-1);
     terrRequest("/api/delete_terr");
   };
@@ -82,42 +119,21 @@ const EditAddTerr = (params) => {
     return <Preload full={false} />;
   }
 
-  const data = resParams.data;
-
-  if (data.terr?.xStart && !init) {
+  if (resParams.data.terr?.xStart && !init) {
     setUrl(
-      `https://map.gmgame.ru/#/${data.terr.xStart}/64/${data.terr.zStart}/-4/${data.world.worldName}/${data.world.layer}`
+      `https://map.gmgame.ru/#/${resParams.data.terr.xStart}/64/${resParams.data.terr.zStart}/-4/${resParams.data.world.worldName}/${resParams.data.world.layer}`
     );
   }
 
   if (resParams.loaded && id !== "new" && !init) {
     setInit(true);
-    setFormXStart(data.terr.xStart);
-    setFormXStop(data.terr.xStop);
-    setFormZStart(data.terr.zStart);
-    setFormZStop(data.terr.zStop);
-    setFormName(data.terr.name);
-    setFormServer(data.terr.world);
+    setFormXStart(resParams.data.terr.xStart);
+    setFormXStop(resParams.data.terr.xStop);
+    setFormZStart(resParams.data.terr.zStart);
+    setFormZStop(resParams.data.terr.zStop);
+    setFormName(resParams.data.terr.name);
+    setFormServer(resParams.data.terr.world);
   }
-
-  const valueOption = [
-    {
-      value: "gmgame",
-      name: "Основной мир",
-    },
-    {
-      value: "farm",
-      name: "Фермерский мир",
-    },
-    {
-      value: "nether-farm",
-      name: "Фермерский ад",
-    },
-    {
-      value: "end-farm",
-      name: "Фермерский край",
-    },
-  ];
 
   return (
     <div className={classNames(styles["box_map_add_wrapper"])}>
@@ -128,75 +144,69 @@ const EditAddTerr = (params) => {
               navigate(-1);
             }}
           />
-          <MapNameLine label="Название" />
-          <MapInputLine
-            small={false}
+          <FormTitle title="Название:" min={MIN_NAME} max={MAX_NAME} length={formName.length} />
+          <Input
             defaultValue={formName}
             onChange={(e) => {
               setFormName(e.target.value);
-              checkName(e.target.value, setErrorMessage);
+              checkName(e.target.value, MIN_NAME, MAX_NAME, setErrorName);
             }}
           />
         </div>
         <div className={classNames(styles["row_wrapper_content"])}>
-          <MapNameLine label="Сервер" />
-          <MapSelectLine list={valueOption} onChange={(e) => setFormServer(e.target.value)} defaultValue={formServer} />
+          <FormTitle title="Сервер:" count={false} />
+          <Select list={VALUE_OPTION} onChange={(e) => setFormServer(e.target.value)} defaultValue={formServer} />
         </div>
         <div className={classNames(styles["coordinates_wrapper"])}>
-          <MapNameLine label="Координаты" />
+          <FormTitle title="Координаты:" count={false} required={false} />
           <div className={classNames(styles["block_row"])}>
             <div className={classNames(styles["row_wrapper_content_custom"])}>
-              <MapNameLine label="StartX" />
-              <MapInputLine
-                small={true}
+              <FormTitle title="StartX:" count={false} />
+              <Input
                 defaultValue={formXStart}
                 onChange={(e) => {
                   setFormXStart(e.target.value);
-                  checkForm(e.target.value, setErrorMessage);
+                  checkCoordinates(e.target.value, setErrorCoordinates);
                 }}
               />
             </div>
             <div className={classNames(styles["row_wrapper_content_custom"])}>
-              <MapNameLine label="StopX" />
-              <MapInputLine
-                small={true}
+              <FormTitle title="StopX:" count={false} />
+              <Input
                 defaultValue={formXStop}
                 onChange={(e) => {
                   setFormXStop(e.target.value);
-                  checkForm(e.target.value, setErrorMessage);
+                  checkCoordinates(e.target.value, setErrorCoordinates);
                 }}
               />
             </div>
           </div>
           <div className={classNames(styles["block_row"])}>
             <div className={classNames(styles["row_wrapper_content_custom"])}>
-              <MapNameLine label="StartZ" />
-              <MapInputLine
-                small={true}
+              <FormTitle title="StartZ:" count={false} />
+              <Input
                 defaultValue={formZStart}
                 onChange={(e) => {
                   setFormZStart(e.target.value);
-                  checkForm(e.target.value, setErrorMessage);
+                  checkCoordinates(e.target.value, setErrorCoordinates);
                 }}
               />
             </div>
             <div className={classNames(styles["row_wrapper_content_custom"])}>
-              <MapNameLine label="StopZ" />
-              <MapInputLine
-                small={true}
+              <FormTitle title="StopZ:" count={false} />
+              <Input
                 defaultValue={formZStop}
                 onChange={(e) => {
                   setFormZStop(e.target.value);
-                  checkForm(e.target.value, setErrorMessage);
+                  checkCoordinates(e.target.value, setErrorCoordinates);
                 }}
               />
             </div>
           </div>
           <Notifications inf="Учтите, что визуально точки смещаются примерно на 30-50 блоков вниз!" type="warn" />
         </div>
-        {errorMessage && <div className={classNames(styles["error"])}>{errorMessage}</div>}
         <div className={classNames(styles["actions_box"])}>
-          <Button view="submit" label="Сохранить" onClick={id === "new" ? addMarker : saveMarker} />
+          <Button view="submit" label="Сохранить" onClick={id === "new" ? addTerr : saveTerr} />
           {id === "new" ? null : (
             <Button
               view="delete"
@@ -211,7 +221,7 @@ const EditAddTerr = (params) => {
             close={() => setIsConfirmActive(false)}
             no={() => setIsConfirmActive(false)}
             yes={() => {
-              deleteMarker();
+              deleteTerr();
             }}
           />
         </div>

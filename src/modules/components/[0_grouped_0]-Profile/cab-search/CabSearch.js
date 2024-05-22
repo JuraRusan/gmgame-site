@@ -5,6 +5,7 @@ import AddSvgComponent from "../../../../bases/icons/addSvg/AddSvg";
 import QuestionSvgComponent from "../../../../bases/icons/questionSvg/QuestionSvg";
 import VisibleOffSvgComponent from "../../../../bases/icons/visibleOffSvg/VisibleOffSvg";
 import VisibleOnSvgComponent from "../../../../bases/icons/visibleOnSvg/VisibleOnSvg";
+import Input from "../../input/Input";
 
 import styles from "./CabSearch.module.scss";
 
@@ -28,10 +29,10 @@ const CabSearch = ({
   disabled = false,
 }) => {
   return (
-    <div className={classNames(styles["boxSearchWrapper"])}>
-      <input className={classNames(styles["searchInput"])} onChange={onChange} type="search" placeholder="Поиск" />
-      <h4 className={classNames(styles["numberListCount"])}>
-        Количество {name} - {count}
+    <div className={classNames(styles["search_wrapper"])}>
+      <Input onChange={onChange} type="search" placeholder="Поиск" className={classNames(styles["custom_width"])} />
+      <h4 className={classNames(styles["text"])}>
+        {name} {count}
       </h4>
       <div className={classNames(styles["box"])}>
         {gallery === false ? null : (

@@ -33,7 +33,7 @@
       flex-direction: column;
       width: 100%;
       height: auto;
-      margin-bottom: 25px;
+      margin-bottom: 16px;
     }
 
     .coordinates_wrapper {
@@ -45,20 +45,17 @@
       .block_row {
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: space-between;
         width: 100%;
         height: auto;
-        margin-bottom: 22px;
+        margin-bottom: 18px;
 
         .row_wrapper_content_custom {
           display: flex;
           flex-direction: row;
+          width: 48%;
         }
       }
-    }
-
-    .error {
-      display: flex;
     }
 
     .actions_box {
@@ -106,11 +103,6 @@
       max-width: none;
       padding: 0 8px 8px 0;
       margin: 0;
-
-      .error {
-        flex-direction: row;
-        justify-content: center;
-      }
 
       .actions_box {
         margin-top: 50px;

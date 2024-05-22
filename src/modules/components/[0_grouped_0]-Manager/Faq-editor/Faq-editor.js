@@ -5,6 +5,8 @@ import { useAlert } from "react-alert";
 import Preload from "../../../components/preloader/Preload.js";
 import TextEditor from "../../text-editor/TextEditor";
 import useLoading from "../../../loading/useLoading";
+import Input from "../../input/Input";
+import Checkbox from "../../checkbox/Checkbox";
 
 import styles from "./Faq-editor.module.scss";
 
@@ -21,6 +23,8 @@ const FaqEditor = () => {
 
   const [faqList, setFaqList] = useState([]);
 
+  const [checked, setChecked] = useState(false);
+
   const [editorValue, setEditorValue] = useState(null);
   const [editorValueLength, setEditorValueLength] = useState(0);
   // const [contentValue, setContent] = useState();
@@ -28,6 +32,10 @@ const FaqEditor = () => {
   const resParams = useAxios("/api/get_faq", "GET", {});
 
   const resMentions = useAxios("/api/get_mentions", "GET", {});
+
+  const handleCheckboxClick = (isChecked) => {
+    setShow(isChecked);
+  };
 
   const saveFaq = () => {
     if (category === "") {
@@ -153,31 +161,23 @@ const FaqEditor = () => {
               return <option key={index} value={item} />;
             })}
           </datalist>
-          <input
+          <Input
             type="text"
             list="category_list"
-            className={classNames(styles["inputStyle"])}
             onChange={(e) => setCategory(e.target.value)}
             value={category}
             placeholder="Категория?"
           />
-          <input
+          <br />
+          <Input
             list="questions_list"
             type="text"
-            className={classNames(styles["inputStyle"])}
             onChange={(e) => searchQuestion(e.target.value)}
             value={question}
             placeholder="Вопрос?"
           />
-          <div className={classNames(styles["viewBox"])}>
-            <input
-              className={classNames(styles["checkboxView"])}
-              type="checkbox"
-              onChange={(e) => setShow(e.target.checked)}
-              checked={show}
-            />
-            <label className={classNames(styles["checkboxName"])}>Скрытие вопроса</label>
-          </div>
+          <br />
+          <Checkbox checked={checked} onChange={setChecked} onClick={handleCheckboxClick} message="Скрытие вопроса" />
         </div>
         <div className={classNames(styles["actionWrapper"])}>
           <button className={classNames(styles["actions"])} onClick={() => publishFaq()}>
@@ -188,7 +188,6 @@ const FaqEditor = () => {
           </button>
         </div>
       </div>
-
       <div className={classNames(styles["bottomLine"])}>
         <TextEditor value={editorValue} setValue={setEditorValue} textLength={setEditorValueLength} />
       </div>

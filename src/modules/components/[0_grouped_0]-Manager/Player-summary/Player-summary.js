@@ -14,6 +14,7 @@ import TButton from "../../table/TButton";
 import TSelect from "../../table/TSelect";
 import TInput from "../../table/TInput";
 import TTextarea from "../../table/TTextarea";
+import Input from "../../input/Input";
 
 import styles from "./Player-summary.module.scss";
 
@@ -407,12 +408,7 @@ const PlayerSummary = () => {
 
   return (
     <div className={classNames(styles["mainUserSummary"])}>
-      <input
-        className={classNames(styles["searchPlayers"])}
-        placeholder={searchParam}
-        onChange={debouncedGetUser}
-        type="search"
-      />
+      <Input placeholder={searchParam} onChange={debouncedGetUser} type="search" />
       <button className={classNames(styles["buttonSearchPlayers"])} type="submit" onClick={() => getUser(searchParam)}>
         Поиск
       </button>

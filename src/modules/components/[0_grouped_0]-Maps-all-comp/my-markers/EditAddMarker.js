@@ -6,17 +6,41 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useAlert } from "react-alert";
 import Preload from "../../preloader/Preload";
 import useLoading from "../../../loading/useLoading";
-import MapNameLine from "../mini-marker-components/map-name-line/MapNameLine";
-import MapInputLine from "../mini-marker-components/map-input-line/MapInputLine";
 import Button from "../../button/Button";
 import { checkName } from "../mini-marker-components/function/CheckName";
-import { checkForm } from "../mini-marker-components/function/CheckForm";
-import MapSelectLine from "../mini-marker-components/map-select-line/MapSelectLine";
-import MapTextareaLine from "../mini-marker-components/map-textarea-line/MapTextareaLine";
+import { checkDescription } from "../mini-marker-components/function/CheckDescription";
+import { checkCoordinates } from "../mini-marker-components/function/CheckCoordinates";
 import BackButton from "../../back-button/BackButton";
 import ConfirmModal from "../../../../common/confirm-modal/ConfirmModal";
+import Input from "../../input/Input";
+import Textarea from "../../textarea/Textarea";
+import Select from "../../select/Select";
+import FormTitle from "../../form-title/FormTitle";
 
 import styles from "../maps-elements-add.module.scss";
+
+const WORLD_VALUE = [
+  { value: "gmgame", name: "Основной мир" },
+  { value: "farm", name: "Фермерский мир" },
+];
+
+const VALUE_OPTION = [
+  { value: "basePlayers", name: "Базы игроков" },
+  { value: "city", name: "Города" },
+  { value: "shopping_centers", name: "Торговые центры - over" },
+  { value: "turquoise", name: "Бирюзовая - nether" },
+  { value: "orange", name: "Оранжевая - nether" },
+  { value: "lime", name: "Лаймовая - nether" },
+  { value: "pink", name: "Розовая - nether" },
+  { value: "farm", name: "Фермы - nether" },
+  { value: "end_portals", name: "Энд порталы - nether" },
+  { value: "pixel_arts", name: "Пиксель арты - end" },
+];
+
+const MIN_NAME = 12;
+const MAX_NAME = 255;
+const MIN_DESCRIPTION = 24;
+const MAX_DESCRIPTION = 255;
 
 const EditAddMarker = (params) => {
   const isLoading = useLoading();
@@ -26,33 +50,76 @@ const EditAddMarker = (params) => {
 
   const { id } = useParams();
 
-  const [errorMessage, setErrorMessage] = useState(null);
-
   const [isConfirmActive, setIsConfirmActive] = useState(false);
 
   const [formName, setFormName] = useState("");
-  const [formServer, setFormServer] = useState("gmgame");
-  const [selectedOption, setSelectedOption] = useState("basePlayers");
-  const [formDescription, setFormDescription] = useState("");
+  const [errorName, setErrorName] = useState("");
 
-  const [formX, setFormX] = useState("");
-  const [formZ, setFormZ] = useState("");
+  const [formDescription, setFormDescription] = useState("");
+  const [errorDescription, setErrorDescription] = useState("");
+
+  const [formServer, setFormServer] = useState("");
+  const [formType, setFormType] = useState("");
+
+  const [formX, setFormX] = useState(0);
+  const [formZ, setFormZ] = useState(0);
+  const [errorCoordinates, setErrorCoordinates] = useState("");
 
   const [init, setInit] = useState(false);
 
-  function showMessage(response) {
+  const showMessage = (response) => {
     if (response.message) {
       alert.success(response.message);
       navigate(-1);
     } else {
       alert.error(response.error);
     }
-  }
+  };
 
-  function markerRequest(url) {
+  const markerRequest = (url) => {
+    if (formName.length === 0) {
+      alert.error("Укажите название");
+      return;
+    }
+
+    if (errorName !== "") {
+      alert.error(errorName);
+      return;
+    }
+
+    if (formDescription.length === 0) {
+      alert.error("Добавте описание");
+      return;
+    }
+
+    if (errorDescription !== "") {
+      alert.error(errorDescription);
+      return;
+    }
+
+    if (formServer === "") {
+      alert.error("Выберите сервер");
+      return;
+    }
+
+    if (formType === "") {
+      alert.error("Выберите тип метки");
+      return;
+    }
+
+    if (errorCoordinates !== "") {
+      alert.error(errorCoordinates);
+      return;
+    }
+
+    if (formX === 0 && formZ === 0) {
+      alert.error("Укажите координаты");
+      return;
+    }
+
     sendRequest(url, "POST", {
       server: formServer,
-      id_type: selectedOption,
+      id_type: formType,
       name: formName,
       x: formX,
       z: formZ,
@@ -61,7 +128,7 @@ const EditAddMarker = (params) => {
     }).then((response) => {
       showMessage(response);
     });
-  }
+  };
 
   const saveMarker = () => {
     markerRequest("/api/edit_marker");
@@ -81,70 +148,15 @@ const EditAddMarker = (params) => {
     return <Preload full={false} />;
   }
 
-  const data = resParams.data;
-
   if (resParams.loaded && id !== "new" && !init) {
     setInit(true);
-    setSelectedOption(data.marker?.id_type);
-    setFormDescription(data.marker?.description);
-    setFormX(data.marker?.x);
-    setFormZ(data.marker?.z);
-    setFormName(data.marker?.name);
-    setFormServer(data.marker?.server);
+    setFormType(resParams.data.marker?.id_type);
+    setFormDescription(resParams.data.marker?.description);
+    setFormX(resParams.data.marker?.x);
+    setFormZ(resParams.data.marker?.z);
+    setFormName(resParams.data.marker?.name);
+    setFormServer(resParams.data.marker?.server);
   }
-
-  const worldValue = [
-    {
-      value: "gmgame",
-      name: "Основной мир",
-    },
-    {
-      value: "farm",
-      name: "Фермерский мир",
-    },
-  ];
-  const valueOption = [
-    {
-      value: "basePlayers",
-      name: "Базы игроков",
-    },
-    {
-      value: "city",
-      name: "Города",
-    },
-    {
-      value: "shopping_centers",
-      name: "Торговые центры - over",
-    },
-    {
-      value: "turquoise",
-      name: "Бирюзовая - nether",
-    },
-    {
-      value: "orange",
-      name: "Оранжевая - nether",
-    },
-    {
-      value: "lime",
-      name: "Лаймовая - nether",
-    },
-    {
-      value: "pink",
-      name: "Розовая - nether",
-    },
-    {
-      value: "farm",
-      name: "Фермы - nether",
-    },
-    {
-      value: "end_portals",
-      name: "Энд порталы - nether",
-    },
-    {
-      value: "pixel_arts",
-      name: "Пиксель арты - end",
-    },
-  ];
 
   return (
     <div className={classNames(styles["box_map_add_wrapper"])}>
@@ -155,62 +167,56 @@ const EditAddMarker = (params) => {
               navigate(-1);
             }}
           />
-          <MapNameLine label="Имя" />
-          <MapInputLine
-            small={false}
+          <FormTitle title="Имя:" min={MIN_NAME} max={MAX_NAME} length={formName.length} />
+          <Input
             defaultValue={formName}
             onChange={(e) => {
               setFormName(e.target.value);
-              checkName(e.target.value, setErrorMessage);
+              checkName(e.target.value, MIN_NAME, MAX_NAME, setErrorName);
             }}
           />
-          <MapNameLine label="Описание" />
-          <MapTextareaLine
+          <FormTitle title="Описание:" min={MIN_DESCRIPTION} max={MAX_DESCRIPTION} length={formDescription.length} />
+          <Textarea
             defaultValue={formDescription}
             onChange={(e) => {
               setFormDescription(e.target.value);
+              checkDescription(e.target.value, MIN_DESCRIPTION, MAX_DESCRIPTION, setErrorDescription);
             }}
+            rows="4"
           />
         </div>
         <div className={classNames(styles["row_wrapper_content"])}>
-          <MapNameLine label="Сервер" />
-          <MapSelectLine list={worldValue} onChange={(e) => setFormServer(e.target.value)} defaultValue={formServer} />
-          <MapNameLine label="Тип метки" />
-          <MapSelectLine
-            list={valueOption}
-            onChange={(e) => setSelectedOption(e.target.value)}
-            defaultValue={selectedOption}
-          />
+          <FormTitle title="Сервер:" count={false} />
+          <Select list={WORLD_VALUE} onChange={(e) => setFormServer(e.target.value)} defaultValue={formServer} />
+          <FormTitle title="Тип метки:" count={false} />
+          <Select list={VALUE_OPTION} onChange={(e) => setFormType(e.target.value)} defaultValue={formType} />
         </div>
         <div className={classNames(styles["coordinates_wrapper"])}>
-          <MapNameLine label="Координаты" />
+          <FormTitle title="Координаты:" count={false} required={false} />
           <div className={classNames(styles["block_row"])}>
             <div className={classNames(styles["row_wrapper_content_custom"])}>
-              <MapNameLine label="X" />
-              <MapInputLine
-                small={true}
+              <FormTitle title="X:" count={false} />
+              <Input
                 defaultValue={formX}
                 onChange={(e) => {
                   setFormX(e.target.value);
-                  checkForm(e.target.value, setErrorMessage);
+                  checkCoordinates(e.target.value, setErrorCoordinates);
                 }}
               />
             </div>
             <div className={classNames(styles["row_wrapper_content_custom"])}>
-              <MapNameLine label="Z" />
-              <MapInputLine
-                small={true}
+              <FormTitle title="Z:" count={false} />
+              <Input
                 defaultValue={formZ}
                 onChange={(e) => {
                   setFormZ(e.target.value);
-                  checkForm(e.target.value, setErrorMessage);
+                  checkCoordinates(e.target.value, setErrorCoordinates);
                 }}
               />
             </div>
           </div>
           <Notifications inf="Учтите, что визуально точки смещаются примерно на 30-50 блоков вниз!" type="warn" />
         </div>
-        {errorMessage && <div className={classNames(styles["error"])}>{errorMessage}</div>}
         <div className={classNames(styles["actions_box"])}>
           <Button view="submit" label="Сохранить" onClick={id === "new" ? addMarker : saveMarker} />
           {id === "new" ? null : (
@@ -238,7 +244,7 @@ const EditAddMarker = (params) => {
         ) : (
           <iframe
             title="map"
-            src={`https://map.gmgame.ru/#/${data.marker.x}/64/${data.marker.z}/-4/${data.world.worldName}/${data.world.layer}`}
+            src={`https://map.gmgame.ru/#/${resParams.data.marker.x}/64/${resParams.data.marker.z}/-4/${resParams.data.world.worldName}/${resParams.data.world.layer}`}
             width="100%"
             height="100%"
           />

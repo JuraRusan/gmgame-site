@@ -112,7 +112,7 @@ const Gallery = () => {
       <CabSearch
         count={arrayData.count === -1 ? 0 : arrayData.count}
         onChange={debounce((e) => setFilter(e.target.value.toLowerCase()), 250)}
-        name="публикаций"
+        name="Количество публикаций -"
         to={"edit_add_post/new"}
         href="https://wiki.gmgame.ru/"
         gallery={true}

@@ -1,0 +1,84 @@
+@import "src/Variables";
+
+.row_block_text {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  .title {
+    font-weight: 400;
+    font-size: 14px;
+    color: $site-color-2;
+    line-height: 32px;
+    height: 32px;
+    width: auto;
+    font-family: $fontCustom2;
+    padding-left: 2px;
+  }
+
+  .required {
+    color: $site-color-10 !important;
+    padding-top: 4px;
+    font-size: 13px;
+    margin-right: 6px;
+  }
+
+  .count {
+    font-weight: 400;
+    font-size: 11px;
+    color: $site-color-2;
+    line-height: 32px;
+    height: 32px;
+    font-family: $fontCustom2;
+    margin-left: auto;
+
+    .number {
+      font-family: inherit;
+      font-size: inherit;
+      font-weight: inherit;
+    }
+
+    .green {
+      color: $site-color-8;
+    }
+
+    .red {
+      color: $site-color-11 !important;
+    }
+
+    .white {
+      color: $site-color-2 !important;
+    }
+  }
+}
+
+.center {
+  justify-content: center;
+}
+
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 960px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 640px) {
+}
+
+@media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 360px) {
+}

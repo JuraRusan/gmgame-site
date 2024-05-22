@@ -20,6 +20,8 @@ import Name from "./name/Name";
 import TextEditor from "../../text-editor/TextEditor";
 import { CalculatingTextLength } from "../../text-editor/functions/CalculatingTextLength";
 import ConfirmModal from "../../../../common/confirm-modal/ConfirmModal";
+import FormTitle from "../../form-title/FormTitle";
+import Input from "../../input/Input";
 
 import styles from "./EditAddPost.module.scss";
 import "react-lazy-load-image-component/src/effects/blur.css";
@@ -53,7 +55,7 @@ const ADD = ({ list, arr, placeholder, name, onChange }) => {
           <option key={i} value={e} />
         ))}
       </datalist>
-      <input
+      <Input
         name={name}
         list={list}
         type="search"
@@ -64,30 +66,6 @@ const ADD = ({ list, arr, placeholder, name, onChange }) => {
       <button type="submit" className={classNames(styles["submit"])}>
         &#10003;
       </button>
-    </div>
-  );
-};
-
-const TITLE = ({ length, min, max, title, count = true, required = true }) => {
-  return (
-    <div className={classNames(styles["row_block_text"])}>
-      <h4 className={classNames(styles["title"])}>
-        {title}
-        {required && <span className={classNames(styles["required"])}>*</span>}
-      </h4>
-      {count !== true ? null : (
-        <h4 className={classNames(styles["count"])}>
-          <span
-            className={classNames(styles["number"], {
-              [styles["green"]]: length <= max && length >= min,
-              [styles["red"]]: length < min || length > max,
-              [styles["white"]]: length <= 0,
-            })}
-          >
-            {length}/{max}
-          </span>
-        </h4>
-      )}
     </div>
   );
 };
@@ -493,7 +471,7 @@ const EditAddPost = () => {
         </div>
         <div className={classNames(styles["box_parameters"])}>
           <div className={classNames(styles["interface_user_add"])}>
-            <TITLE
+            <FormTitle
               title="Выбор и отображение строителей:"
               min={MIN_BUILDERS}
               max={MAX_BUILDERS}
@@ -527,7 +505,7 @@ const EditAddPost = () => {
             </div>
           </div>
           <div className={classNames(styles["interface_tag_add"])}>
-            <TITLE
+            <FormTitle
               title="Выбор и отображение тегов:"
               min={MIN_TAGS}
               max={MAX_TAGS}
@@ -562,9 +540,8 @@ const EditAddPost = () => {
             </div>
           </div>
           <div className={classNames(styles["text_block"])}>
-            <TITLE title="Название:" min={MIN_TITLE} max={MAX_TITLE} length={nameLength} />
-            <input
-              className={classNames(styles["choice_text"])}
+            <FormTitle title="Название:" min={MIN_TITLE} max={MAX_TITLE} length={nameLength} />
+            <Input
               type="text"
               defaultValue={title}
               onChange={(e) => {
@@ -572,7 +549,7 @@ const EditAddPost = () => {
                 setTitle(e.target.value);
               }}
             />
-            <TITLE title="Описание:" min={MIN_DESCRIPTION} max={MAX_DESCRIPTION} length={descriptionLength} />
+            <FormTitle title="Описание:" min={MIN_DESCRIPTION} max={MAX_DESCRIPTION} length={descriptionLength} />
             <TextEditor value={description} setValue={setDescription} textLength={setDescriptionLength} />
           </div>
         </div>

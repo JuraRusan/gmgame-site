@@ -14,27 +14,19 @@ const MyMarkers = () => {
 
   const alert = useAlert();
 
-  let [filter, setFilter] = useState(null);
-  let [data, setData] = useState({ markers: [], count: -1 });
+  const [filter, setFilter] = useState(null);
+  const [data, setData] = useState({ markers: [], count: -1 });
 
   const resParams = useAxios("/api/get_markers/", "GET", {});
 
-  if (resParams.loading || isLoading) {
-    return <Preload full={false} />;
-  }
-
-  if (resParams.data && data.count === -1) {
-    setData({ markers: resParams.data.markers, count: resParams.data.count });
-  }
-
-  function showMessage(response, id) {
+  const showMessage = (response, id) => {
     if (response.message) {
       alert.success(response.message);
       setData({ markers: data.markers.filter((el) => el.id !== id), count: data.count - 1 });
     } else {
       alert.error(response.error);
     }
-  }
+  };
 
   const deleteMarker = (marker) => {
     sendRequest("/api/delete_marker", "POST", {
@@ -50,12 +42,20 @@ const MyMarkers = () => {
     });
   };
 
+  if (resParams.loading || isLoading) {
+    return <Preload full={false} />;
+  }
+
+  if (resParams.data && data.count === -1) {
+    setData({ markers: resParams.data.markers, count: resParams.data.count });
+  }
+
   return (
     <div className={classNames(styles["boxMapWrapper"])}>
       <CabSearch
         count={data.count}
         onChange={(e) => setFilter(e.target.value)}
-        name="меток"
+        name="Количество меток -"
         to={"edit_add_marker/new"}
         href="https://wiki.gmgame.ru/"
       />

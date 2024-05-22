@@ -1,11 +1,9 @@
-import React from "react";
-import Notifications from "../../../notifications/Notifications";
-
-export function checkName(name, setErrorMessage) {
-  const label = name.trim();
-  if (label.length < 5 || label.length > 300) {
-    setErrorMessage(<Notifications inf="Имя должно содержать от 5 до 300 символов." type="error" />);
+export function checkName(text, min, max, set) {
+  if (text.length < min) {
+    set("Название слишком короткое");
+  } else if (text.length > max) {
+    set("Название слишком длинное");
   } else {
-    setErrorMessage(null);
+    set("");
   }
 }

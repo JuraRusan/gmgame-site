@@ -14,29 +14,21 @@ const MyTerritories = () => {
 
   const alert = useAlert();
 
-  let [filter, setFilter] = useState(null);
-  let [data, setData] = useState({ terrs: [], count: -1 });
+  const [filter, setFilter] = useState(null);
+  const [data, setData] = useState({ terrs: [], count: -1 });
 
   const resParams = useAxios("/api/get_territories", "GET", {});
 
-  if (resParams.loading || isLoading) {
-    return <Preload full={false} />;
-  }
-
-  if (resParams.data && data.count === -1) {
-    setData({ terrs: resParams.data.markers, count: resParams.data.count });
-  }
-
-  function showMessage(response, id) {
+  const showMessage = (response, id) => {
     if (response.message) {
       alert.success(response.message);
       setData({ terrs: data.terrs.filter((el) => el.id !== id), count: data.count - 1 });
     } else {
       alert.error(response.error);
     }
-  }
+  };
 
-  const deleteMarker = (terrs) => {
+  const deleteTerr = (terrs) => {
     sendRequest("/api/delete_terr", "POST", {
       server: terrs.world || "gmgame",
       name: terrs.name,
@@ -50,12 +42,20 @@ const MyTerritories = () => {
     });
   };
 
+  if (resParams.loading || isLoading) {
+    return <Preload full={false} />;
+  }
+
+  if (resParams.data && data.count === -1) {
+    setData({ terrs: resParams.data.markers, count: resParams.data.count });
+  }
+
   return (
     <div className={classNames(styles["boxMapWrapper"])}>
       <CabSearch
         count={data.count}
         onChange={(e) => setFilter(e.target.value)}
-        name="территорий"
+        name="Количество территорий -"
         to={"edit_add_terr/new"}
         href="https://wiki.gmgame.ru/books/gaidy/page/kak-dobavit-territoriiu-na-kartu"
       />
@@ -71,7 +71,7 @@ const MyTerritories = () => {
               index={index}
               name={el.name}
               link_to={`edit_add_terr/${el.id}`}
-              onClick={() => deleteMarker(el)}
+              onClick={() => deleteTerr(el)}
             />
           );
         })}

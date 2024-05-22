@@ -1,36 +1,63 @@
 import classNames from "classnames";
 import React, { useState } from "react";
-import { useForm } from "react-hook-form";
 import { sendRequest } from "../../../../DataProvider";
 import { useAlert } from "react-alert";
-import { ErrorMessage } from "@hookform/error-message";
 import useLoading from "../../../loading/useLoading";
 import Preload from "../../preloader/Preload";
 import Button from "../../button/Button";
+import Input from "../../input/Input";
+import Checkbox from "../../checkbox/Checkbox";
+import FormTitle from "../../form-title/FormTitle";
 
 import styles from "./Change-password.module.scss";
+
+const MIN_LENGTH = 8;
+const MAX_LENGTH = 32;
 
 const ChangePassword = () => {
   const isLoading = useLoading();
 
-  const [type, setType] = useState("password");
-  const [checked, setChecked] = useState(false);
-
   const alert = useAlert();
 
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm({ mode: "onChange" });
+  const [passwordValue, setPasswordValue] = useState("");
+  const [passwordErrorValue, setPasswordErrorValue] = useState("");
 
-  if (isLoading) {
-    return <Preload full={false} />;
-  }
+  const [checked, setChecked] = useState(false);
+  const [type, setType] = useState("password");
 
-  const changePassword = (params) => {
+  const handleCheckboxClick = (isChecked) => {
+    setType(isChecked ? "text" : "password");
+  };
+
+  const validatePassword = (text) => {
+    const hasNumber = /\d/;
+    const hasLetter = /[a-zA-Z]/;
+    const hasUnderscore = /_/;
+    const hasSpecialChar = /[!@#$%^&*(),.?":{}|<>]/;
+
+    return hasNumber.test(text) && hasLetter.test(text) && hasUnderscore.test(text) && hasSpecialChar.test(text);
+  };
+
+  const checkPassword = (pass) => {
+    if (pass.length < MIN_LENGTH) {
+      setPasswordErrorValue("Пароль слишком короткий");
+    } else if (pass.length > MAX_LENGTH) {
+      setPasswordErrorValue("Пароль слишком длинный");
+    } else if (validatePassword(pass)) {
+      setPasswordErrorValue("Пароль не соответствует требованиям");
+    } else {
+      setPasswordErrorValue("");
+    }
+  };
+
+  const changePassword = () => {
+    if (passwordErrorValue !== "") {
+      alert.error(passwordErrorValue);
+      return;
+    }
+
     sendRequest("/api/change_password", "POST", {
-      password: params.password,
+      password: passwordValue,
     }).then((response) => {
       if (response.message) {
         alert.success(response.message);
@@ -40,43 +67,29 @@ const ChangePassword = () => {
     });
   };
 
-  function ErrorRender(name) {
-    return (
-      <ErrorMessage
-        errors={errors}
-        name={name.name}
-        render={({ message }) => <span className={classNames(styles["error"])}>{message}</span>}
-      />
-    );
+  if (isLoading) {
+    return <Preload full={false} />;
   }
 
   return (
-    <div className={classNames(styles["blockPassword"])}>
-      <h3 className={classNames(styles["passwordTitle"])}>Введите новый пароль</h3>
-      <form onSubmit={handleSubmit()}>
-        <input
-          className={classNames(styles["passwordInput"])}
-          type={type}
-          {...register("password", {
-            required: { value: true, message: "Обязательное поле" },
-            minLength: { value: 8, message: "Пароль должен быть от 8 символов" },
-          })}
-        />
-        <ErrorRender name="password" />
-        <label className={classNames(styles["labelWrapperCheckbox"])}>
-          <input
-            type="checkbox"
-            checked={checked}
-            onChange={() => setChecked(!checked)}
-            onClick={() => (checked ? setType("password") : setType("text"))}
-          />
-          <span className={classNames(styles["checkmark"])}></span>
-          <span className={classNames(styles["checkboxMessage"])}>Показать пароль</span>
-        </label>
-        <div className={classNames(styles["wrapper_btn"])}>
-          <Button label="Изменить" view="submit" onClick={handleSubmit((d) => changePassword(d))} />
-        </div>
-      </form>
+    <div className={classNames(styles["block_password"])}>
+      <FormTitle title="Введите новый пароль" count={false} required={false} center={true} />
+      <Input
+        className={classNames(styles["password"])}
+        type={type}
+        onChange={(e) => {
+          setPasswordValue(e.target.value);
+          checkPassword(e.target.value);
+        }}
+      />
+      <Checkbox
+        checked={checked}
+        onChange={setChecked}
+        onClick={handleCheckboxClick}
+        message="Показать пароль"
+        className={classNames(styles["check_wrapper"])}
+      />
+      <Button label="Изменить" view="submit" onClick={changePassword} />
     </div>
   );
 };
