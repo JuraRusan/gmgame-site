@@ -6,51 +6,55 @@
   height: 100%;
   width: 100%;
 
-  .one_trade {
+  .log_list {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.one_trade {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: auto;
+  border: 1px solid $site-color-5;
+  border-radius: 4px;
+  background: $site-color-12;
+  padding: 4px;
+  margin-bottom: 6px;
+
+  .text {
+    font-size: 14px;
+    font-family: $fontCustom2;
+    font-weight: 400;
+    color: $site-color-2;
+    text-align: center;
+    width: 400px;
+    height: auto;
+    line-height: 1.5;
+    margin: auto 8px auto 4px;
+  }
+
+  .items {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
-    height: auto;
-    border: 1px solid $site-color-5;
-    border-radius: 4px;
-    background: $site-color-12;
-    padding: 4px;
-    margin-bottom: 6px;
+    width: auto;
+    height: 100%;
 
-    .text {
-      font-size: 14px;
-      font-family: $fontCustom2;
+    .arrow_suggestions {
+      color: $site-color-5;
       font-weight: 400;
-      color: $site-color-2;
+      font-size: 48px;
       text-align: center;
-      width: 400px;
-      height: auto;
-      line-height: 1.5;
-      margin: auto 8px auto 4px;
-    }
-
-    .w {
-      width: 200px;
-    }
-
-    .items {
-      display: flex;
-      flex-direction: row;
-      width: auto;
-      height: 100%;
-
-      .arrow_suggestions {
-        color: $site-color-5;
-        font-weight: 400;
-        font-size: 48px;
-        text-align: center;
-        height: 68px;
-        line-height: 68px;
-        width: 90%;
-        min-width: 90px;
-        max-width: 90px;
-      }
+      height: 68px;
+      line-height: 68px;
+      width: 90%;
+      min-width: 90px;
+      max-width: 90px;
     }
   }
 }
