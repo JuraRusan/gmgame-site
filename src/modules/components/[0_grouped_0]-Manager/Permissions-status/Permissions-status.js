@@ -1,15 +1,9 @@
 import classNames from "classnames";
-import React, { useEffect, useState } from "react";
-import AOS from "aos";
+import React, { useState } from "react";
 
 import styles from "./Permissions-status.module.scss";
-import "aos/dist/aos.css";
 
 const PermissionsStatus = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
-
   const [selectedValue, setSelectedValue] = useState(1);
 
   const handleRadioChange = (event) => {
@@ -98,7 +92,7 @@ const PermissionsStatus = () => {
   const filteredPermissionsArray = permissionsArray.filter((item) => item.id === selectedValue);
 
   return (
-    <div className={classNames(styles["permissionsStatusWrapper"])} data-aos="zoom-in">
+    <div className={classNames(styles["permissionsStatusWrapper"])}>
       <div className={classNames(styles["navigationWrapper"])}>
         <form>
           {permissionsArray.map((el, i) => (
