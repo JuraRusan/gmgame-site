@@ -18,11 +18,11 @@ import styles from "./Shopkeepers.module.scss";
 const INFO_DEFAULT = "Поиск работает по всем предметам, даже по тем что лежат в шалкерах.";
 
 const DEFAULT_INFO_SHOP = {
-  name: " ",
-  ownerName: " ",
-  coordinatesX: " ",
-  coordinatesY: " ",
-  coordinatesZ: " ",
+  name: "",
+  ownerName: "",
+  coordinatesX: "",
+  coordinatesY: "",
+  coordinatesZ: "",
   villagerType: "savanna",
   profession: "none",
 };
@@ -163,11 +163,12 @@ const Shopkeepers = (callback, deps) => {
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
-    const _uuidSearch = !urlParams.get("_uuid") ? [] : [urlParams.get("_uuid")];
+    const param = urlParams.get("_uuid");
+    const _uuidSearch = !param ? [] : [param];
     const uuid = [..._uuidSearch];
 
     if (uuid) {
-      setActive(urlParams.get("_uuid"));
+      setActive(param);
     }
 
     if (fetching) {
@@ -190,6 +191,16 @@ const Shopkeepers = (callback, deps) => {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [fetching]);
+
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const _uuid = urlParams.get("_uuid");
+
+    if (_uuid) {
+      if (loadedAll) shopFunction(urlParams.get("_uuid"));
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [loadedAll]);
 
   if (loadedAll && loadedLang && !init) {
     setInit(true);
@@ -231,6 +242,12 @@ const Shopkeepers = (callback, deps) => {
               <ResetSvgComponent width="100%" height="100%" />
             </button>
           )}
+          {fetching && <Preload full={false} />}
+          {!fetching && valueSearchItem !== "" && dataOffers.length === 0 ? (
+            <div className={classNames(styles["offers_none"])}>
+              <span className={classNames(styles["text"])}>Желаемый товар отсутствует</span>
+            </div>
+          ) : null}
           {dataOffers.map((el, index) => (
             <div className={classNames(styles["actions"])} key={index} onClick={() => shopFunction(el.shop_id)}>
               <OneSuggestions

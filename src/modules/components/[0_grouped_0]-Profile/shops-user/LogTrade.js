@@ -8,7 +8,6 @@ import { useAlert } from "react-alert";
 import Preload from "../../preloader/Preload";
 import useLoading from "../../../loading/useLoading";
 import ReactModal from "react-modal";
-import CabSearch from "../cab-search/CabSearch";
 import ShulkerBox from "../../[0_grouped_0]-Shopkeepers/shulker-box/Shulker-box";
 import { SHULKERS_TYPE } from "../../../pages/shopkeepers/ShulkersType";
 import ButtonCloseSvgComponent from "../../../../bases/icons/buttonCloseSvg/ButtonCloseSvg";
@@ -24,10 +23,11 @@ const LogTrade = () => {
   const { uuid } = useParams();
 
   const [dataLogs, setDataLogs] = useState([]);
-  const [tradeCount, setTradeCount] = useState(0);
 
   const [selected, setSelected] = useState(0);
   const [open, setOpen] = React.useState(false);
+
+  const [size, setSize] = React.useState(false);
 
   const [loaded, setLoaded] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -66,13 +66,18 @@ const LogTrade = () => {
   }, []);
 
   useEffect(() => {
-    let local = 0;
-
-    for (let i = 0; i < dataLogs.length; i++) {
-      local += dataLogs[i].trade_count;
+    function handleResize() {
+      if (window.innerWidth <= 768) {
+        setSize(true);
+      } else {
+        setSize(false);
+      }
     }
-    setTradeCount(local);
-  }, [dataLogs]);
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   if (loaded && !init) {
     setInit(true);
@@ -84,58 +89,47 @@ const LogTrade = () => {
 
   return (
     <div className={classNames(styles["log_wrapper"])}>
-      {dataLogs.length === 0 ? (
-        <div>
-          <span>Нету</span>
-          <button
-            className={classNames(styles["back"])}
-            onClick={() => {
-              navigate(-1);
-            }}
-          >
-            {"<-- Показать весь список"}
-          </button>
+      <button
+        className={classNames(styles["back"])}
+        onClick={() => {
+          navigate(-1);
+        }}
+      >
+        {"<-- Показать весь список"}
+      </button>
+      {dataLogs.length === 0 && loaded ? (
+        <div className={classNames(styles["no_content"])}>
+          <span className={classNames(styles["text"])}>В данном магазине отсутствуют логи продаж</span>
         </div>
       ) : (
-        <>
-          <CabSearch name="проданного товара" count={tradeCount} to="#" />
-          <button
-            className={classNames(styles["back"])}
-            onClick={() => {
-              navigate(-1);
-            }}
-          >
-            {"<-- Показать весь список"}
-          </button>
-          <div className={classNames(styles["log_list"])}>
-            {dataLogs.map((el, index) =>
-              Array.from({ length: el.trade_count }).map((_, tradeIndex) => (
-                <div className={classNames(styles["one_trade"])} key={`${index}-${tradeIndex}`}>
-                  <span className={classNames(styles["text"])}>{el.data + " " + el.time}</span>
-                  <div className={classNames(styles["items"])}>
-                    {!el.item1?.id ? (
-                      <OneItem />
-                    ) : (
-                      <OneItem customLink="../.." item={el.item1} onClick={() => openModal(el.item1)} />
-                    )}
-                    {!el.item2?.id ? (
-                      <OneItem />
-                    ) : (
-                      <OneItem customLink="../.." item={el.item2} onClick={() => openModal(el.item2)} />
-                    )}
-                    <span className={classNames(styles["arrow_suggestions"])}>&#10132;</span>
-                    {!el.resultItem?.id ? (
-                      <OneItem />
-                    ) : (
-                      <OneItem customLink="../.." item={el.resultItem} onClick={() => openModal(el.resultItem)} />
-                    )}
-                  </div>
-                  <span className={classNames(styles["text"])}>{el.player_name}</span>
+        <div className={classNames(styles["log_list"])}>
+          {dataLogs.map((el, index) =>
+            Array.from({ length: el.trade_count }).map((_, tradeIndex) => (
+              <div className={classNames(styles["one_trade"])} key={`${index}-${tradeIndex}`}>
+                <span className={classNames(styles["text"])}>{el.data + " " + el.time}</span>
+                <div className={classNames(styles["items"])}>
+                  {!el.item1?.id ? (
+                    <OneItem />
+                  ) : (
+                    <OneItem customLink="../.." item={el.item1} onClick={() => openModal(el.item1)} />
+                  )}
+                  {!el.item2?.id ? (
+                    <OneItem />
+                  ) : (
+                    <OneItem customLink="../.." item={el.item2} onClick={() => openModal(el.item2)} />
+                  )}
+                  <span className={classNames(styles["arrow_suggestions"])}>&#10132;</span>
+                  {!el.resultItem?.id ? (
+                    <OneItem />
+                  ) : (
+                    <OneItem customLink="../.." item={el.resultItem} onClick={() => openModal(el.resultItem)} />
+                  )}
                 </div>
-              ))
-            )}
-          </div>
-        </>
+                <span className={classNames(styles["text"])}>{el.player_name}</span>
+              </div>
+            ))
+          )}
+        </div>
       )}
 
       <ReactModal

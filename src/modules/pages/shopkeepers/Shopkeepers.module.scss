@@ -115,6 +115,21 @@
         border: none;
         border-radius: 25%;
         cursor: pointer;
+
+        svg {
+          path {
+            fill: $site-color-2;
+            transition: all 0.35s ease;
+          }
+        }
+
+        &:hover {
+          svg {
+            path {
+              fill: $site-color-9;
+            }
+          }
+        }
       }
 
       .actions {
@@ -122,6 +137,20 @@
         height: auto;
         cursor: pointer;
         margin: 0 auto 8px auto;
+      }
+
+      .offers_none {
+        display: flex;
+        margin: auto 0;
+
+        .text {
+          font-size: 18px;
+          font-weight: 400;
+          font-family: $fontCustom2;
+          text-align: center;
+          color: $site-color-2;
+          padding: 0 24px;
+        }
       }
     }
 

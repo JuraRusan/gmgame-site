@@ -219,11 +219,14 @@ const ShopUser = () => {
                   Z:
                   <span className={classNames(styles["span_style"])}>{el.z}</span>
                 </h4>
+                <h4 className={classNames(styles["text"])}>
+                  Проданого товара :<span className={classNames(styles["span_style"])}>{el.log}</span>
+                </h4>
                 <Link to={`/shopkeepers?_uuid=${el.uuid}`} className={classNames(styles["link_offers"])}>
-                  Перейти товару &#10148;
+                  Перейти к товару &#10148;
                 </Link>
                 {!el.log ? (
-                  <span className={classNames(styles["link_offers"])}>логов продаж нету</span>
+                  <span className={classNames(styles["no_offers"])}>Логов продаж нету</span>
                 ) : (
                   <Link to={`/cab/shop_user/${el.uuid}`} className={classNames(styles["link_offers"])}>
                     Перейти к логу продаж &#10148;

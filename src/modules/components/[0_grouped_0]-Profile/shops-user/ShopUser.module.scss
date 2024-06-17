@@ -100,7 +100,6 @@
         }
 
         .link_offers {
-          margin-top: auto;
           width: auto;
           height: 24px;
           line-height: 24px;
@@ -110,10 +109,24 @@
           font-family: $fontCustom2;
           text-decoration: none;
           transition: all 0.35s ease;
+          margin-top: auto;
 
           &:hover {
             color: $color-12;
           }
+
+          &:nth-last-child(1) {
+            margin-top: 0;
+          }
+        }
+
+        .no_offers {
+          height: 24px;
+          line-height: 24px;
+          color: $site-color-2;
+          font-weight: 400;
+          font-size: 12px;
+          font-family: $fontCustom2;
         }
       }
 
