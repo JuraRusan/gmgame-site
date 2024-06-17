@@ -1,0 +1,85 @@
+@import "../../../Variables";
+
+.pagination_box {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 100%;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    margin: auto 0 0 auto;
+
+    .sel {
+      width: 64px;
+      height: 32px;
+      margin: 0 8px 0 auto;
+      background: $site-color-12;
+      border: 1px solid $site-color-5;
+      border-radius: 4px;
+      color: $site-color-2;
+      font-weight: 400;
+      font-size: 12px;
+      font-family: $fontCustom2;
+      outline: none;
+      padding-left: 8px;
+
+      option {
+        font-size: 12px;
+        font-family: $fontCustom2;
+        color: $site-color-2;
+      }
+    }
+
+    .pagination {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      height: 32px;
+      width: auto;
+      max-width: fit-content;
+      background: $site-color-12;
+      border: 1px solid $site-color-5;
+      border-radius: 4px;
+
+      .page_swipe {
+        font-weight: 400;
+        font-size: 13px;
+        font-family: $fontCustom2;
+        text-align: center;
+        color: $site-color-2;
+        height: 28px;
+        line-height: 30px;
+        width: 28px;
+        margin: 2px;
+        transition: all 0.35s ease;
+        background: transparent;
+        border-radius: 2px;
+        cursor: pointer;
+
+        &:hover {
+          color: $site-color-9;
+          background: $site-color-1;
+        }
+      }
+
+      .btn {
+        font-size: 9px;
+      }
+
+      .active {
+        color: $site-color-8 !important;
+      }
+    }
+  }
+}

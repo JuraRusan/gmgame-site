@@ -1,30 +1,31 @@
 @import "../../../../Variables";
 
 $parameterItem: 64px;
+$length: 34px;
 
-.oneItemBlock {
+.item_block {
   display: flex;
-  width: calc(#{$parameterItem} + 4px);
-  height: calc(#{$parameterItem} + 4px);
 
-  .photoItem {
+  .item {
     display: flex;
     width: $parameterItem;
     height: $parameterItem;
-    padding: 2px;
+    padding: 1px;
     margin: 2px;
-    //background: $site-color-12-fixed;
     border-radius: 4px;
-    border: 1px solid $site-color-5;
+    border: 2px solid $site-color-15;
     transition: all 0.3s ease;
+    background: $site-color-14;
+  }
+
+  .content {
     position: relative;
 
     &:hover {
       cursor: help;
-      //background: $site-color-1;
     }
 
-    .itemCount {
+    .count {
       width: auto;
       height: auto;
       position: absolute;
@@ -38,18 +39,15 @@ $parameterItem: 64px;
     }
   }
 
-  .photoItemNone {
-    display: flex;
-    margin: 3px;
-    width: calc(#{$parameterItem} - 2px);
-    height: calc(#{$parameterItem} - 2px);
-    //background: $site-color-12-fixed;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-    border: 1px solid $site-color-5;
+  .mini {
+    width: $length;
+    height: $length;
+    margin: 1px;
 
-    &:hover {
-      //background: $site-color-1;
+    .count {
+      font-size: 9px;
+      bottom: 0;
+      right: 0;
     }
   }
 
@@ -58,18 +56,20 @@ $parameterItem: 64px;
     position: fixed;
     width: auto;
     height: auto;
-    padding: 4px;
+    padding: 6px;
     background: $site-color-4;
     border-radius: 8px;
     border: 1px solid $site-color-5;
     z-index: 50;
     margin-left: 28px;
 
-    .shulkerWrapper {
+    .shulker_wrapper {
       display: flex;
       flex-direction: row;
       width: max-content;
       height: max-content;
+      background: $site-color-12;
     }
   }
 }
+

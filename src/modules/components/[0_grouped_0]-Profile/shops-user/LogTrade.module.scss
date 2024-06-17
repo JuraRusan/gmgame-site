@@ -1,0 +1,243 @@
+@import "../../../../Variables";
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.log_wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+
+  .log_list {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding-right: 10px;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    .one_trade {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100%;
+      height: auto;
+      border: 1px solid $site-color-5;
+      border-radius: 4px;
+      background: $site-color-12;
+      padding: 4px;
+      margin-bottom: 6px;
+
+      .text {
+        font-size: 14px;
+        font-family: $fontCustom2;
+        font-weight: 400;
+        color: $site-color-2;
+        text-align: center;
+        width: 175px;
+        height: auto;
+        line-height: 1.5;
+        margin: auto 8px auto 4px;
+      }
+
+      .items {
+        display: flex;
+        flex-direction: row;
+        width: 305px;
+        height: 100%;
+
+        .arrow_suggestions {
+          color: $site-color-5;
+          font-weight: 400;
+          font-size: 48px;
+          text-align: center;
+          height: 68px;
+          line-height: 68px;
+          width: 90%;
+          min-width: 90px;
+          max-width: 90px;
+        }
+      }
+    }
+  }
+
+  .no_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    .text {
+      font-family: $fontCustom2;
+      font-weight: 400;
+      font-size: 18px;
+      text-align: center;
+      color: $site-color-2;
+    }
+  }
+}
+
+.back {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: $site-color-2;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.25s ease;
+
+  &:hover {
+    outline: none;
+    color: $site-color-9;
+  }
+}
+
+body {
+  .modal_main_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 10098;
+    width: 100%;
+    height: 100%;
+    outline: none;
+
+    .window {
+      display: flex;
+      position: relative;
+      width: auto;
+      height: auto;
+      box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.3);
+      -webkit-box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.3);
+      background: $site-color-4;
+      border-radius: 8px;
+      animation: 0.4s ease show;
+
+      .modal_close {
+        position: absolute;
+        right: -48px;
+        top: 0;
+        width: 38px;
+        height: 38px;
+        padding: 4px;
+        background: $site-color-4;
+        cursor: pointer;
+        border-radius: 25%;
+        border: none;
+        box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.3);
+        transition: all 0.35s ease;
+
+        svg {
+          path {
+            stroke: $site-color-2;
+            transition: all 0.35s ease;
+          }
+        }
+
+        &:hover {
+          svg {
+            path {
+              stroke: $site-color-9;
+            }
+          }
+        }
+      }
+
+      .shulker_wrapper {
+        padding: 24px;
+      }
+    }
+  }
+
+  .overlay_modal_full {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10099;
+    background: $site-color-12;
+    backdrop-filter: blur(12px);
+  }
+}
+
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+  .log_wrapper {
+    .log_list {
+      .one_trade {
+        .items {
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .log_wrapper {
+    .log_list {
+      padding-right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .log_wrapper {
+    .log_list {
+      .one_trade {
+        flex-direction: column;
+        align-items: center;
+        padding: 8px 4px;
+
+        .items {
+          margin: 6px auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+}
+
+@media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 360px) {
+}

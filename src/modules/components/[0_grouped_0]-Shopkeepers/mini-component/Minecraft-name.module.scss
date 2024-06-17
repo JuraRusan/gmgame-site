@@ -1,35 +1,41 @@
 @import "../../../../Variables";
 
-.name {
+.block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
   height: auto;
-  line-height: 24px;
-  width: max-content;
-  color: $site-color-2;
-  font-weight: 400;
-  font-size: 14px;
-  font-family: $fontCustom2 !important;
-  margin-left: 4px;
-  margin-right: 16px;
 
-  .custom {
-    font-family: inherit !important;
-    font-weight: inherit !important;
-    font-size: 13px;
-    color: lighten($site-color-8, 25%);
-  }
+  .name {
+    height: auto;
+    line-height: 24px;
+    width: max-content;
+    color: $site-color-2;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: $fontCustom2 !important;
+    margin-left: 4px;
+    margin-right: 16px;
 
-  span {
-    font-family: inherit !important;
-    font-weight: inherit !important;
-    font-size: inherit !important;
-
-    b,
-    i,
-    u,
-    s {
+    span {
       font-family: inherit !important;
       font-size: inherit !important;
+
+      b,
+      i,
+      u,
+      s {
+        font-family: inherit !important;
+        font-size: inherit !important;
+      }
     }
+  }
+
+  .color {
+    margin-left: 16px;
+    font-size: 13px;
+    color: lighten($site-color-8, 25%);
   }
 
 }

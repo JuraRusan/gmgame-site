@@ -1,15 +1,22 @@
 @import "../../../../Variables";
 
-.oneShulkerBox {
+.shulker_box {
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 3px;
   width: max-content;
-  max-width: 620px;
   height: auto;
   border-radius: 5px;
   border: 1px solid $site-color-5;
   transition: all 0.25s ease;
+  padding: 3px;
+}
+
+.full {
+  max-width: 620px;
+}
+
+.mini {
+  max-width: 333px;
 }

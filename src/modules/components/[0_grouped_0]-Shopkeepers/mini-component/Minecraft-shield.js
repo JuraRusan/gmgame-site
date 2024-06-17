@@ -14,7 +14,7 @@ const MinecraftShield = ({ item, type }) => {
       })}
     >
       <LazyLoadImage
-        src={`./site_assets/shield_pattern/${item.shield_color.color}_shield.webp`}
+        src={`./site_assets/shield_pattern/${item.shield}_shield.webp`}
         width="100%"
         height="100%"
         alt="none"

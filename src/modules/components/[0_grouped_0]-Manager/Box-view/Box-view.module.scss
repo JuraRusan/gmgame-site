@@ -1,18 +1,26 @@
-@import "../../../../Variables.scss";
+@import "src/Variables";
 
-.box_wrapper {
+.main_box {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   width: 100%;
-  min-width: 100%;
   max-width: 1600px;
-  height: 100%;
-  min-height: 100%;
+  min-height: auto;
   max-height: 87vh;
   margin: 0 auto 16px auto;
   background: $site-color-4;
   border-radius: 8px;
   border: 1px solid $site-color-5;
   padding: 8px;
-  position: relative;
+
+  .wrapper {
+    display: flex;
+    overflow: auto;
+    width: 100%;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+  }
 }

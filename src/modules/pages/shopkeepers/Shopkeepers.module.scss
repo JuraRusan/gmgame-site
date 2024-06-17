@@ -1,28 +1,6 @@
 @import "../../../Variables.scss";
 
-@keyframes animation_visible_mini {
-  0% {
-    opacity: 0;
-    height: 0;
-  }
-  100% {
-    opacity: 1;
-    height: 212px;
-  }
-}
-
-@keyframes animation_visible_full {
-  0% {
-    opacity: 0;
-    height: 0;
-  }
-  100% {
-    opacity: 1;
-    height: 342px;
-  }
-}
-
-.main_shopkeepers_block {
+.shopkeepers {
   width: 100%;
   height: auto;
   display: flex;
@@ -30,22 +8,7 @@
   flex-direction: column;
   padding: 0 16px;
 
-  .WWW {
-    display: none;
-  }
-
-  .data_none {
-    width: 100%;
-    text-align: center;
-    padding: 0 20px;
-    font-size: 24px;
-    font-weight: 400;
-    font-family: $fontCustom2;
-    color: $color-3;
-    margin: 16% auto 0 auto;
-  }
-
-  .center_block {
+  .content {
     width: 100%;
     max-width: 1600px;
     height: auto;
@@ -56,10 +19,10 @@
     flex-direction: row;
     background: $site-color-4;
     border: 1px solid $site-color-5;
-    border-radius: 5px;
+    border-radius: 4px;
     padding: 8px;
 
-    .shop_list_wrapper {
+    .list {
       display: flex;
       flex-direction: column;
       width: auto;
@@ -68,80 +31,45 @@
       position: sticky;
       top: 75px;
 
-      .shop_list_box {
+      .ul_names {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         width: 300px;
-        height: auto;
+        height: 100%;
         max-height: 80vh;
         min-height: auto;
         border: 1px solid $site-color-5;
         border-radius: 6px;
         background: $site-color-12;
-        transition: height 0.35s ease;
+        padding: 4px 4px;
+        overflow: auto;
 
-        .search_shop {
+        &::-webkit-scrollbar {
+          width: 4px;
+        }
+
+        .link {
+          color: $site-color-2;
+          font-family: $fontCustom2;
+          font-size: 14px;
+          height: 28px;
+          line-height: 22px;
           width: 100%;
-          height: 32px;
-          min-height: 32px;
-          max-height: 32px;
-          outline: none;
-          background: $site-color-12;
-          border: none;
-          border-radius: 6px 6px 0 0;
-          transition: all 0.25s ease-in-out;
-          color: $site-color-8;
-          padding-left: 10px;
-          padding-right: 10px;
+          padding: 2px 8px 0 8px;
+          transition: all 0.35s ease;
+          border-radius: 4px;
+          margin: 1px 0;
 
-          &:hover,
-          &:focus,
-          &:active {
-            outline: none;
+          &:hover {
             background: $site-color-1;
+            color: $site-color-8;
+            cursor: pointer;
           }
         }
 
-        .ul_block {
-          display: flex;
-          flex-direction: column;
-          width: 100%;
-          height: auto;
-          padding: 8px 4px;
-          overflow: auto;
-          border-top: 1px solid $site-color-5;
-
-          &::-webkit-scrollbar {
-            width: 4px !important;
-          }
-
-          .one_shop_list_line {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            height: auto;
-
-            .one_line {
-              color: $site-color-2;
-              font-family: $fontCustom2;
-              font-size: 14px;
-              height: 28px;
-              line-height: 28px;
-              width: 100%;
-              padding: 0 8px;
-              transition: all 0.35s ease;
-              border-radius: 4px;
-
-              &:hover {
-                background: $site-color-1;
-              }
-            }
-
-            .active {
-              color: $site-color-9 !important;
-            }
-          }
+        .active {
+          color: $site-color-9 !important;
         }
       }
 
@@ -152,43 +80,63 @@
       }
     }
 
-    .shop_all_suggestions {
+    .offers {
       display: flex;
       justify-content: flex-start;
       flex-direction: column;
       align-items: center;
       width: 100%;
-      max-width: 35%;
       height: auto;
       margin: 0 auto;
-      padding: 8px 16px;
+      padding: 0 16px 8px 16px;
+      position: relative;
 
-      .one_offers_shop {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        position: relative;
+      .reset {
+        position: absolute;
+        top: 2px;
+        right: 8px;
+        width: 48px;
+        height: 48px;
+        padding: 6px;
+        background: $site-color-14;
+        border: none;
+        border-radius: 25%;
+        cursor: pointer;
 
-        .block_shop {
-          font-family: $fontCustom2;
-          font-weight: 400;
-          font-size: 16px;
-          text-align: center;
-          color: $site-color-2;
-          background: $site-color-4;
-          width: 100%;
-          height: 36px;
-          line-height: 36px;
-          position: sticky;
-          top: 65px;
-          z-index: 1;
+        svg {
+          path {
+            fill: $site-color-2;
+            transition: all 0.35s ease;
+          }
         }
 
-        .on_click {
-          width: auto;
-          height: auto;
-          cursor: pointer;
-          margin: 5px auto;
+        &:hover {
+          svg {
+            path {
+              fill: $site-color-9;
+            }
+          }
+        }
+      }
+
+      .actions {
+        width: auto;
+        height: auto;
+        cursor: pointer;
+        margin: 0 auto 8px auto;
+      }
+
+      .offers_none {
+        display: flex;
+        margin: auto 0;
+
+        .text {
+          font-size: 18px;
+          font-weight: 400;
+          font-family: $fontCustom2;
+          text-align: center;
+          color: $site-color-2;
+          padding: 0 24px;
         }
       }
     }
@@ -210,7 +158,7 @@
       position: sticky;
       top: 75px;
 
-      .searchInputItems {
+      .search_items {
         display: flex;
         width: 100%;
         height: 36px;
@@ -233,15 +181,7 @@
         }
       }
 
-      .animationMini {
-        animation: animation_visible_mini 1s ease-in;
-      }
-
-      .animationFull {
-        animation: animation_visible_full 1s ease-in;
-      }
-
-      .villagerShopInfo {
+      .villager_info {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -256,51 +196,12 @@
 }
 
 @media screen and (max-width: 1600px) {
-  .main_shopkeepers_block {
-    .center_block {
-      .shop_list_wrapper {
-        .shop_list_box {
-          width: 220px;
-        }
-      }
-    }
-  }
 }
 
 @media screen and (max-width: 1400px) {
-  .main_shopkeepers_block {
-    .center_block {
-      .shop_all_suggestions {
-        padding: 8px;
-        max-width: 32%;
-      }
-    }
-  }
 }
 
 @media screen and (max-width: 1280px) {
-  .main_shopkeepers_block {
-    .title_shop_block {
-      display: none;
-    }
-
-    .WWW {
-      display: flex;
-      font-size: 24px;
-      font-weight: 400;
-      font-family: $fontCustom2;
-      text-align: center;
-      width: auto;
-      margin: 19% auto;
-      padding: 0 24px;
-      color: $site-color-2;
-      line-height: 1.45;
-    }
-
-    .center_block {
-      display: none;
-    }
-  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -313,12 +214,6 @@
 }
 
 @media screen and (max-width: 640px) {
-  .main_shopkeepers_block {
-    .WWW {
-      margin: 45% auto;
-      font-size: 20px;
-    }
-  }
 }
 
 @media screen and (max-width: 480px) {

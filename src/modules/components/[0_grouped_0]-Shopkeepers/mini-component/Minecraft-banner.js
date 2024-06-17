@@ -14,7 +14,7 @@ const MinecraftBanner = ({ item, type }) => {
       })}
     >
       <LazyLoadImage
-        src={`./site_assets/flag_pattern/${item.type}.webp`}
+        src={`./site_assets/flag_pattern/${item.id}.webp`}
         width="100%"
         height="100%"
         alt="none"

@@ -4,32 +4,49 @@
   display: flex;
   flex-direction: row;
 
-  .villagerInfo {
+  .villager_info_block {
     display: flex;
     flex-direction: column;
     width: 100%;
 
-    .styleH4 {
-      color: $site-color-2;
-      font-size: 14px;
-      font-weight: 400;
-      height: 24px;
-      line-height: 24px;
+    .stroke {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      width: 100%;
+      height: auto;
 
-      .color,
-      .red {
-        font-weight: inherit;
+      .text {
+        color: $site-color-2;
         font-size: 13px;
+        font-weight: 400;
         font-family: $fontCustom2;
+        height: 24px;
+        line-height: 24px;
+      }
+
+      .green,
+      .red {
+        text-indent: 0;
+        font-size: 12px;
         margin-left: 8px;
       }
 
-      .color {
+      .green {
         color: $site-color-8;
       }
 
       .red {
         color: $site-color-11;
+      }
+
+      svg {
+        margin: 2px;
+        transition: all 0.3s ease;
+
+        path {
+          fill: $site-color-11;
+        }
       }
     }
 
@@ -38,14 +55,14 @@
     }
   }
 
-  .villagerImage {
+  .image_wrapper {
     display: flex;
     width: 100%;
     max-width: 125px;
     height: auto;
     margin: 0 auto;
 
-    .wrapper {
+    .image {
       margin: 0 auto;
       width: auto;
       height: 250px;

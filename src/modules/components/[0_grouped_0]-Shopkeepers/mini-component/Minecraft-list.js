@@ -1,29 +1,32 @@
 import classNames from "classnames";
 import React from "react";
+import { useSelector } from "react-redux";
 
 import styles from "./Minecraft-list.module.scss";
 
 const MinecraftList = ({ item }) => {
-  function renderEnchantItem(el) {
-    const isSpecialEnchant = el.enchant_id_ru === "Проклятье утраты" || el.enchant_id_ru === "Проклятие несъёмности";
-    const mainClass = isSpecialEnchant ? styles["red"] : styles["main"];
+  const lang = useSelector((state) => state.lang);
+
+  function renderEnchantItem(name) {
+    const specialEnchant =
+      lang[`enchantment.${name.id}`] === "Проклятие утраты" ||
+      lang[`enchantment.${name.id}`] === "Проклятие несъёмности";
+    const classStyle = specialEnchant ? styles["red"] : styles["default"];
+
     return (
       <>
-        <span className={classNames(mainClass)}>{el.enchant_id_ru} </span>- {el.lvl}
+        <span className={classNames(classStyle)}>
+          {lang[`enchantment.${name.id}`]} {lang[`enchantment.level.${name.lvl}`]}
+        </span>
       </>
     );
   }
 
   return (
     <>
-      <ul className={classNames(styles["listWrapper"])}>
+      <ul className={classNames(styles["list"])}>
         {item.enchant?.map((el, i) => (
-          <li className={classNames(styles["list"])} key={i}>
-            {renderEnchantItem(el)}
-          </li>
-        ))}
-        {item.stored_enchant?.map((el, i) => (
-          <li className={classNames(styles["list"])} key={i}>
+          <li className={classNames(styles["item"])} key={i}>
             {renderEnchantItem(el)}
           </li>
         ))}
