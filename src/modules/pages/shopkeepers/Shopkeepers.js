@@ -28,7 +28,7 @@ const DEFAULT_INFO_SHOP = {
   profession: "none",
 };
 
-const Shopkeepers = (callback, deps) => {
+const Shopkeepers = () => {
   const dispatch = useDispatch();
   const isLoading = useLoading();
   const alert = useAlert();

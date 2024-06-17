@@ -9,8 +9,6 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 const MinecraftImage = ({ item, dots = "." }) => {
   const itemNameId = item.id;
   const itemEnchant = !item.enchant ? [] : item.enchant;
-  const itemPotion = item.potion_effect;
-  const itemTrimMaterial = item.trim?.material;
   const colorBG = item.leather_color !== undefined ? { backgroundColor: item.leather_color } : {};
   const includesType = ARRAY_MAPPINGS[itemNameId];
 
@@ -61,15 +59,17 @@ const MinecraftImage = ({ item, dots = "." }) => {
   };
 
   const getImageTypeFolder = () => {
-    // if (itemNameId.includes("helmet")) {
-    //   return "helmet";
-    // } else if (itemNameId.includes("chestplate")) {
-    //   return "chestplate";
-    // } else if (itemNameId.includes("leggings")) {
-    //   return "leggings";
-    // } else {
-    //   return `boots`;
-    // }
+    if (itemNameId.includes("helmet")) {
+      return "helmet";
+    } else if (itemNameId.includes("chestplate")) {
+      return "chestplate";
+    } else if (itemNameId.includes("leggings")) {
+      return "leggings";
+    } else if (itemNameId.includes("boots")) {
+      return `boots`;
+    } else {
+      return `boots`;
+    }
   };
 
   const renderArmorImage = (itemType) => {

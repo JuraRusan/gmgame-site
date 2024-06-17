@@ -27,8 +27,6 @@ const LogTrade = () => {
   const [selected, setSelected] = useState(0);
   const [open, setOpen] = React.useState(false);
 
-  const [size, setSize] = React.useState(false);
-
   const [loaded, setLoaded] = useState(false);
   const [loading, setLoading] = useState(true);
   const [init, setInit] = useState(false);
@@ -63,20 +61,6 @@ const LogTrade = () => {
         });
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  useEffect(() => {
-    function handleResize() {
-      if (window.innerWidth <= 768) {
-        setSize(true);
-      } else {
-        setSize(false);
-      }
-    }
-
-    window.addEventListener("resize", handleResize);
-    handleResize();
-    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   if (loaded && !init) {

@@ -93,7 +93,9 @@ const Pagination = ({ content = [], customLimit = 5, handle = false }) => {
             }}
           >
             {LIMIT.map((e, i) => (
-              <option value={e}>{e}</option>
+              <option value={e} key={i}>
+                {e}
+              </option>
             ))}
           </select>
         )}
