@@ -26,7 +26,7 @@ const TexturePackEditor = lazy(() => import(/* webpackChunkName: "manager" */ ".
 const RegulationsEditor = lazy(() => import(/* webpackChunkName: "manager" */ "./modules/components/[0_grouped_0]-Manager/Regulations-editor/Regulations-editor")); // prettier-ignore
 const MonitoringSummary = lazy(() => import(/* webpackChunkName: "manager" */ "./modules/components/[0_grouped_0]-Manager/Monitoring-summary/Monitoring-summary")); // prettier-ignore
 const GalleryStatusView = lazy(() => import(/* webpackChunkName: "manager" */ "./modules/components/[0_grouped_0]-Manager/Gallery-status-view/Gallery-status-view")); // prettier-ignore
-const BoxViewStatus = lazy(() => import(/* webpackChunkName: "manager" */ "./modules/components/[0_grouped_0]-Manager/Gallery-status-view/Box-view-status")); // prettier-ignore
+const BoxView = lazy(() => import(/* webpackChunkName: "manager" */ "./modules/components/[0_grouped_0]-Manager/Box-view/Box-view")); // prettier-ignore
 const ShopkeepersAllStatus = lazy(() => import(/* webpackChunkName: "manager" */ "./modules/components/[0_grouped_0]-Manager/Shopkeepers-all-status/Shopkeepers-all-status")); // prettier-ignore
 // const PermissionsStatus = lazy(() => import(/* webpackChunkName: "manager" */ "./modules/components/[0_grouped_0]-Manager/Permissions-status/Permissions-status")); // prettier-ignore
 
@@ -101,7 +101,7 @@ const Router = () => {
             <Route path="prize" element={<MyPrizes />} />
             {/* ---------- */}
             <Route path="shop_user" element={<ShopUser />} />
-            <Route path="log_trade" element={<LogTrade />} />
+            <Route path="shop_user/:uuid" element={<LogTrade />} />
             {/* ---------- */}
             <Route path="change_password" element={<ChangePassword />} />
             {/* ---------- */}
@@ -124,8 +124,9 @@ const Router = () => {
             <Route path="regulations_editor" element={<RegulationsEditor />} />
             <Route path="monitoring_summary" element={<MonitoringSummary />} />
             <Route path="gallery_status_view" element={<GalleryStatusView />} />
-            <Route path="gallery_status_view/:id" element={<BoxViewStatus />} />
+            <Route path="gallery_status_view/:id" element={<BoxView type="gallery" />} />
             <Route path="shopkeepers_all_status" element={<ShopkeepersAllStatus />} />
+            <Route path="shopkeepers_all_status/:uuid" element={<BoxView type="shopkeepers_log" />} />
             <Route path="permissions_status" element={<NotAvailable />} /> {/* <PermissionsStatus/> */}
           </Route>
         </Routes>

@@ -18,16 +18,8 @@
     margin-left: 4px;
     margin-right: 16px;
 
-    .color {
-      font-family: inherit !important;
-      font-weight: inherit !important;
-      font-size: 13px;
-      color: lighten($site-color-8, 25%);
-    }
-
     span {
       font-family: inherit !important;
-      font-weight: inherit !important;
       font-size: inherit !important;
 
       b,
@@ -39,4 +31,11 @@
       }
     }
   }
+
+  .color {
+    margin-left: 16px;
+    font-size: 13px;
+    color: lighten($site-color-8, 25%);
+  }
+
 }

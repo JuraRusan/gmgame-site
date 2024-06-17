@@ -38,11 +38,7 @@ const Villager = ({ shop }) => {
           <Stroke type="Y:" param={shop.coordinatesY} />
           <Stroke type="Z:" param={shop.coordinatesZ} />
         </div>
-        <Stroke
-          warn={true}
-          type="Осталось предметов в наличии:"
-          param={shop.offerKey === 0 ? "" : shop.balance[shop.product]}
-        />
+        <Stroke type="Осталось предметов в наличии:" param="Неизвестно" />
       </div>
       <div className={classNames(styles["image_wrapper"])}>
         <LazyLoadImage

@@ -8,12 +8,16 @@ const MinecraftList = ({ item }) => {
   const lang = useSelector((state) => state.lang);
 
   function renderEnchantItem(name) {
-    const specialEnchant = lang[name.id] === "Проклятье утраты" || lang[name.id] === "Проклятие несъёмности";
+    const specialEnchant =
+      lang[`enchantment.${name.id}`] === "Проклятие утраты" ||
+      lang[`enchantment.${name.id}`] === "Проклятие несъёмности";
     const classStyle = specialEnchant ? styles["red"] : styles["default"];
 
     return (
       <>
-        <span className={classNames(classStyle)}>{lang[name.id]} </span>- {name.lvl}
+        <span className={classNames(classStyle)}>
+          {lang[`enchantment.${name.id}`]} {lang[`enchantment.level.${name.lvl}`]}
+        </span>
       </>
     );
   }

@@ -3,10 +3,15 @@ import React, { useEffect, useState } from "react";
 import MinecraftName from "../mini-component/Minecraft-name";
 import MinecraftRegister from "../mini-component/Minecraft-register";
 import MinecraftImage from "../mini-component/Minecraft-image";
+import MinecraftShield from "../mini-component/Minecraft-shield";
+import MinecraftBanner from "../mini-component/Minecraft-banner";
+import ShulkerBox from "../shulker-box/Shulker-box";
+import MinecraftArmorType from "../mini-component/Minecraft-armor-type";
+import { SHULKERS_TYPE } from "../../../pages/shopkeepers/ShulkersType";
 
 import styles from "./One-item.module.scss";
 
-const OneItem = ({ item, onClick, customLink }) => {
+const OneItem = ({ item, onClick, customLink, mini = false }) => {
   const [showTooltip, setShowTooltip] = useState(false);
   const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
   const [tooltipVisible, setTooltipVisible] = useState(false);
@@ -57,60 +62,42 @@ const OneItem = ({ item, onClick, customLink }) => {
     visibility: tooltipVisible ? "visible" : "hidden",
   };
 
-  return (
-    <div className={classNames(styles["oneItemBlock"])} onClick={onClick}>
-      <div className={classNames(styles["photoItem"])} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-        {/*{item.banner_pattern === undefined && item.shield_color?.color === undefined ? (*/}
-        {/*  <MinecraftImage item={item} />*/}
-        {/*) : null}*/}
-        {/*{item.banner_pattern !== undefined && item.shield_color?.color === undefined ? (*/}
-        {/*  <MinecraftBanner item={item} type="center" />*/}
-        {/*) : null}*/}
-        {/*{item.shield_color?.color !== undefined ? <MinecraftShield item={item} type="center" /> : null}*/}
-        <MinecraftImage item={item} dots={customLink} />
-        <span className={classNames(styles["itemCount"])}>{item.amount}</span>
+  if (!item) {
+    return (
+      <div className={classNames(styles["item_block"])}>
+        <div className={classNames(styles["item"], mini && styles["mini"])}></div>
       </div>
-      {showTooltip === true ? (
+    );
+  }
+
+  return (
+    <div className={classNames(styles["item_block"])} onClick={onClick}>
+      <div
+        className={classNames(styles["item"], styles["content"], mini && styles["mini"])}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        {item.shield !== undefined ? <MinecraftShield item={item} type="center" /> : null}
+        {!item.banner_pattern && !item.shield ? <MinecraftImage item={item} dots={customLink} /> : null}
+        {item.banner_pattern !== undefined && !item.shield ? <MinecraftBanner item={item} type="center" /> : null}
+        <span className={classNames(styles["count"])}>{item.amount}</span>
+      </div>
+      {showTooltip && (
         <div className={classNames(styles["tooltip"])} style={tooltipStyle}>
           <MinecraftName item={item} />
+          {!item.trim ? null : <MinecraftArmorType item={item} />}
+          {item.shield !== undefined ? <MinecraftShield item={item} type="normal" /> : null}
+          {item.banner_pattern !== undefined && !item.shield ? <MinecraftBanner item={item} type="normal" /> : null}
+          {SHULKERS_TYPE.includes(item.id) && (
+            <div className={classNames(styles["shulker_wrapper"])}>
+              <ShulkerBox item={item} full={false} customLink={customLink} />
+            </div>
+          )}
           <MinecraftRegister item={item} />
         </div>
-      ) : null}
+      )}
     </div>
   );
 };
 
 export default OneItem;
-
-// <div className={classNames(styles["oneItemBlock"])} onClick={onClick}>
-//   <div className={classNames(styles["photoItem"])} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-//     {item.banner_pattern === undefined && item.shield_color?.color === undefined ? (
-//       <MinecraftImage item={item} />
-//     ) : null}
-//     {item.banner_pattern !== undefined && item.shield_color?.color === undefined ? (
-//       <MinecraftBanner item={item} type="center" />
-//     ) : null}
-//     {item.shield_color?.color !== undefined ? <MinecraftShield item={item} type="center" /> : null}
-//     <span className={classNames(styles["itemCount"])}>{item.amount}</span>
-//   </div>
-//   {showTooltip === true ? (
-//     <div className={classNames(styles["tooltip"])} style={tooltipStyle}>
-//       <MinecraftName item={item} />
-//       {item.trim === undefined ? null : <MinecraftArmorName item={item} />}
-//       {item.shield_color?.color === undefined ? null : <MinecraftShieldColor item={item} />}
-//       {item.leather_color === undefined ? null : <MinecraftArmorColor item={item} />}
-//       <MinecraftList item={item} />
-//       <MinecraftRegister item={item} />
-//       {item.trim === undefined ? null : <MinecraftArmorType item={item} />}
-//       {item.banner_pattern !== undefined && item.shield_color?.color === undefined ? (
-//         <MinecraftBanner item={item} type="normal" />
-//       ) : null}
-//       {item.shield_color?.color !== undefined ? <MinecraftShield item={item} type="normal" /> : null}
-//       {SHULKERS_TYPE.includes(item.type) ? (
-//         <div className={classNames(styles["shulkerWrapper"])}>
-//           <ShulkerBoxMini item={item} />
-//         </div>
-//       ) : null}
-//     </div>
-//   ) : null}
-// </div>

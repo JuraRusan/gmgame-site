@@ -1,6 +1,5 @@
 import classNames from "classnames";
 import React, { useEffect, useState } from "react";
-import { Link, scroller } from "react-scroll";
 import OneSuggestions from "../../components/[0_grouped_0]-Shopkeepers/one-suggestions/One-suggestions.js";
 import Notifications from "../../components/notifications/Notifications";
 import Villager from "../../components/[0_grouped_0]-Shopkeepers/villager/Villager";
@@ -10,8 +9,9 @@ import Button from "../../components/button/Button";
 import useLoading from "../../loading/useLoading";
 import Preload from "../../components/preloader/Preload";
 import { useDispatch } from "react-redux";
-import { useAxios } from "../../../DataProvider";
 import { useAlert } from "react-alert";
+import axios from "axios";
+import ResetSvgComponent from "../../../bases/icons/resetSvg/ResetSvg";
 
 import styles from "./Shopkeepers.module.scss";
 
@@ -25,12 +25,9 @@ const DEFAULT_INFO_SHOP = {
   coordinatesZ: " ",
   villagerType: "savanna",
   profession: "none",
-  offerKey: 0,
-  product: " ",
-  balance: {},
 };
 
-const Shopkeepers = () => {
+const Shopkeepers = (callback, deps) => {
   const dispatch = useDispatch();
   const isLoading = useLoading();
   const alert = useAlert();
@@ -43,26 +40,31 @@ const Shopkeepers = () => {
   const [selected, setSelected] = useState(null);
   const [visible, setVisible] = useState(false);
 
-  const [allShopData, setAllShopData] = useState({});
-  const [indexVisible, setIndexVisible] = useState({});
-  const [searchIndex, setSearchIndex] = useState({});
+  const [currentPage, setCurrentPage] = useState(1);
+  const [fetching, setFetching] = useState(true);
+  const [totalCount, setTotalCount] = useState(0);
+
+  const [dataShops, setDataShops] = useState({});
+  const [dataOffers, setDataOffers] = useState([]);
+
+  const [active, setActive] = useState("");
+
+  const [loadedAll, setLoadedAll] = useState(false);
+  const [loadedLang, setLoadedLang] = useState(false);
+  const [loadingAll, setLoadingAll] = useState(true);
+  const [loadingLang, setLoadingLang] = useState(true);
 
   const [init, setInit] = useState(false);
 
-  const resParams = useAxios("api/get_shops", "GET", {});
-
-  const shopFunction = (seller, key = 0, product = "", balance = {}) => {
+  const shopFunction = (id) => {
     setInfoShop({
-      name: seller.name,
-      ownerName: seller.owner,
-      coordinatesX: seller.x,
-      coordinatesY: seller.y,
-      coordinatesZ: seller.z,
-      villagerType: seller.object_villager_type,
-      profession: seller.object_profession,
-      offerKey: key,
-      product: product,
-      balance: balance,
+      name: dataShops[id].name,
+      ownerName: dataShops[id].owner,
+      coordinatesX: dataShops[id].x,
+      coordinatesY: dataShops[id].y,
+      coordinatesZ: dataShops[id].z,
+      villagerType: dataShops[id].object_villager_type,
+      profession: dataShops[id].object_profession,
     });
   };
 
@@ -70,48 +72,61 @@ const Shopkeepers = () => {
     const top = document.getElementById("topScroll");
     const offset = 100;
     const elementTop = top.offsetTop - offset;
+
     window.scrollTo({
       top: elementTop,
       behavior: "smooth",
     });
   };
 
-  const handleScroll = () => {
-    const scrollY = window.scrollY || document.documentElement.scrollTop;
-    setShowButton(scrollY > 350);
+  const handleReset = () => {
+    const newUrl = `${window.location.origin}/shopkeepers`;
+    window.history.pushState({ path: newUrl }, "", newUrl);
+
+    scrollActive();
+    setInfoShop(DEFAULT_INFO_SHOP);
+    setValueSearchItem("");
+    setDataOffers([]);
+    setCurrentPage(1);
+    setFetching(true);
   };
 
-  const isName = (props) => {
-    return props.name === "" ? props.owner : props.name;
+  const handleActive = (el) => {
+    const newUrl = `${window.location.origin}/shopkeepers?_uuid=${el}`;
+    window.history.pushState({ path: newUrl }, "", newUrl);
+
+    shopFunction(el);
+    scrollActive();
+    setActive(el);
+    setDataOffers([]);
+    setCurrentPage(1);
+    setFetching(true);
+  };
+
+  const handleSearch = (e) => {
+    setValueSearchItem(e.target.value.toLowerCase());
+
+    scrollActive();
+    setDataOffers([]);
+    setCurrentPage(1);
+    setFetching(true);
+  };
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const scrollHandler = (e) => {
+    if (e.target.documentElement.scrollHeight - (e.target.documentElement.scrollTop + window.innerHeight) < 200) {
+      if (dataOffers.length < totalCount) setFetching(true);
+    }
+  };
+
+  const handleScroll = () => {
+    setShowButton((window.scrollY || document.documentElement.scrollTop) > 350);
   };
 
   useEffect(() => {
-    if (valueSearchItem === "") {
-      const filteredData = {};
-
-      for (const shop in allShopData) {
-        if (allShopData.hasOwnProperty(shop)) {
-          filteredData[shop] = Object.keys(allShopData[shop].offers);
-        }
-      }
-
-      setIndexVisible(filteredData);
-    } else {
-      let filteredData = {};
-
-      Object.keys(searchIndex).forEach((key) => {
-        if (String(key).toLowerCase().includes(valueSearchItem)) {
-          Object.keys(searchIndex[key]).forEach((innerKey) => {
-            filteredData[innerKey] = filteredData[innerKey]
-              ? [...new Set([...filteredData[innerKey], ...searchIndex[key][innerKey]])]
-              : [...new Set(searchIndex[key][innerKey])];
-          });
-        }
-      });
-
-      setIndexVisible(filteredData);
-    }
-  }, [valueSearchItem, allShopData, searchIndex]);
+    document.addEventListener("scroll", scrollHandler);
+    return () => document.removeEventListener("scroll", scrollHandler);
+  }, [scrollHandler]);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -119,31 +134,68 @@ const Shopkeepers = () => {
   }, []);
 
   useEffect(() => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const scrollTo = urlParams.get("scrollTo");
-
-    if (scrollTo) {
-      scroller.scrollTo(scrollTo, {
-        smooth: true,
-        spy: true,
-        offset: -60,
+    axios
+      .get("http://127.0.0.1:4000/shops")
+      .then((res) => {
+        setDataShops(res.data.data);
+      })
+      .catch((error) => {
+        alert.error(error);
+      })
+      .finally(() => {
+        setLoadedAll(true);
+        setLoadingAll(false);
       });
-    }
-  }, [isLoading]);
+    axios
+      .get("http://127.0.0.1:4000/lang")
+      .then((res) => {
+        dispatch({ type: "ADD_LANG", payload: res.data.data });
+      })
+      .catch((error) => {
+        alert.error(error);
+      })
+      .finally(() => {
+        setLoadedLang(true);
+        setLoadingLang(false);
+      });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
-  if (resParams.loaded && !init) {
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const _uuidSearch = !urlParams.get("_uuid") ? [] : [urlParams.get("_uuid")];
+    const uuid = [..._uuidSearch];
+
+    if (uuid) {
+      setActive(urlParams.get("_uuid"));
+    }
+
+    if (fetching) {
+      axios
+        .get(
+          `http://127.0.0.1:4000/offers?_limit=64&_page=${currentPage}${uuid.length === 0 ? "" : "&_select=" + uuid}${!valueSearchItem ? "" : "&_search=" + valueSearchItem}`
+        )
+        .then((res) => {
+          setDataOffers([...dataOffers, ...res.data.data]);
+          setTotalCount(res.data.total);
+
+          if (res.data.total > 64) {
+            setCurrentPage((prevState) => prevState + 1);
+          }
+        })
+        .catch((error) => {
+          alert.error(error);
+        })
+        .finally(() => setFetching(false));
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [fetching]);
+
+  if (loadedAll && loadedLang && !init) {
     setInit(true);
-
-    if (resParams.data.error) {
-      alert.error(resParams.data.error);
-    } else {
-      dispatch({ type: "ADD_LANG", payload: resParams.data.lang });
-      setAllShopData(resParams.data.shops);
-      setSearchIndex(resParams.data.searchIndex);
-    }
   }
 
-  if (isLoading || resParams.loading) {
+  if (loadingAll || loadingLang || isLoading) {
     return <Preload full={false} />;
   }
 
@@ -153,21 +205,15 @@ const Shopkeepers = () => {
       <div className={classNames(styles["content"])}>
         <div className={classNames(styles["list"])}>
           <ul className={classNames(styles["ul_names"])}>
-            {Object.keys(indexVisible).map((keys) => (
+            {Object.keys(dataShops).map((el) => (
               <>
-                {allShopData[keys].offers[1] && (
-                  <li key={keys} className={classNames(styles["one"])}>
-                    <Link
-                      activeClass={classNames(styles["active"])}
-                      className={classNames(styles["link"])}
-                      spy={true}
-                      smooth={true}
-                      offset={-64}
-                      to={`scroll_${allShopData[keys].shop_id}`}
-                      onClick={() => shopFunction(allShopData[keys])}
-                    >
-                      {isName(allShopData[keys])}
-                    </Link>
+                {dataShops[el].offers === 0 ? null : (
+                  <li
+                    key={el}
+                    className={classNames(styles["link"], { [styles["active"]]: active === el })}
+                    onClick={() => handleActive(el)}
+                  >
+                    {dataShops[el].name === "" ? dataShops[el].owner : dataShops[el].name}
                   </li>
                 )}
               </>
@@ -180,56 +226,31 @@ const Shopkeepers = () => {
           )}
         </div>
         <div className={classNames(styles["offers"])}>
-          {Object.keys(indexVisible).map((keys) => (
-            <>
-              {allShopData[keys].offers[1] === undefined ? (
-                <section
-                  className={classNames(styles["single_offers"])}
-                  id={`scroll_${allShopData[keys].shop_id}`}
-                  key={allShopData[keys].shop_id}
-                />
-              ) : (
-                <section
-                  id={`scroll_${allShopData[keys].shop_id}`}
-                  key={allShopData[keys].shop_id}
-                  className={classNames(styles["single_offers"])}
-                >
-                  <h4 className={classNames(styles["name_fixed"])}>{isName(allShopData[keys])}</h4>
-                  {indexVisible[keys].map((offerKeys) => (
-                    <div
-                      className={classNames(styles["actions"])}
-                      key={offerKeys}
-                      onClick={() =>
-                        shopFunction(
-                          allShopData[keys],
-                          allShopData[keys].offers[offerKeys],
-                          allShopData[keys].offers[offerKeys].product.id,
-                          allShopData[keys].balance
-                        )
-                      }
-                    >
-                      <OneSuggestions
-                        itemOne={allShopData[keys].offers[offerKeys].price.slot1}
-                        itemTwo={allShopData[keys].offers[offerKeys].price.slot2}
-                        itemRes={allShopData[keys].offers[offerKeys].product}
-                        onClickOne={() => {
-                          setSelected(allShopData[keys].offers[offerKeys].price.slot1);
-                          setVisible(true);
-                        }}
-                        onClickTwo={() => {
-                          setSelected(allShopData[keys].offers[offerKeys].price.slot2);
-                          setVisible(true);
-                        }}
-                        onClickRes={() => {
-                          setSelected(allShopData[keys].offers[offerKeys].product);
-                          setVisible(true);
-                        }}
-                      />
-                    </div>
-                  ))}
-                </section>
-              )}
-            </>
+          {!active && !valueSearchItem ? null : (
+            <button className={classNames(styles["reset"])} onClick={handleReset}>
+              <ResetSvgComponent width="100%" height="100%" />
+            </button>
+          )}
+          {dataOffers.map((el, index) => (
+            <div className={classNames(styles["actions"])} key={index} onClick={() => shopFunction(el.shop_id)}>
+              <OneSuggestions
+                itemOne={el.item1}
+                itemTwo={el.item2}
+                itemRes={el.resultItem}
+                onClickOne={() => {
+                  setSelected(el.item1);
+                  setVisible(true);
+                }}
+                onClickTwo={() => {
+                  setSelected(el.item2);
+                  setVisible(true);
+                }}
+                onClickRes={() => {
+                  setSelected(el.resultItem);
+                  setVisible(true);
+                }}
+              />
+            </div>
           ))}
         </div>
         <div className={classNames(styles["villages_and_preview"])}>
@@ -237,7 +258,7 @@ const Shopkeepers = () => {
           <input
             type="search"
             className={classNames(styles["search_items"])}
-            onChange={debounce((e) => setValueSearchItem(e.target.value.toLowerCase()), 300)}
+            onChange={debounce((e) => handleSearch(e), 500)}
             placeholder="Найти..."
           />
           {visible && <PreviewComponent selected={selected} />}

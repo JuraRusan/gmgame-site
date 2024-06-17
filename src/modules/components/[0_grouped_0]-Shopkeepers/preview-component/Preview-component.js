@@ -6,6 +6,8 @@ import MinecraftImage from "../mini-component/Minecraft-image";
 import MinecraftArmorType from "../mini-component/Minecraft-armor-type";
 import MinecraftName from "../mini-component/Minecraft-name";
 import MinecraftRegister from "../mini-component/Minecraft-register";
+import MinecraftShield from "../mini-component/Minecraft-shield";
+import MinecraftBanner from "../mini-component/Minecraft-banner";
 
 import styles from "./Preview-component.module.scss";
 
@@ -19,14 +21,25 @@ const PreviewComponent = ({ selected }) => {
       ) : (
         <div className={classNames(styles["view_item"])}>
           <div className={classNames(styles["column_one"])}>
-            <div className={classNames(styles["imageWrapperAll"])}>
-              <MinecraftImage item={selected} />
-            </div>
-            {selected.trim?.pattern && (
+            {selected.trim === undefined && selected.banner_pattern === undefined && selected.shield === undefined ? (
+              <div className={classNames(styles["imageWrapperAll"])}>
+                <MinecraftImage item={selected} />
+              </div>
+            ) : null}
+            {selected.trim !== undefined ? (
               <div className={classNames(styles["imageWrapperArmor"])}>
                 <MinecraftArmorType item={selected} />
               </div>
-            )}
+            ) : null}
+            {selected.banner_pattern !== undefined || selected.shield !== undefined ? (
+              <div className={classNames(styles["imageWrapperBanner"])}>
+                {selected.id === "shield" ? (
+                  <MinecraftShield item={selected} type="normal" />
+                ) : (
+                  <MinecraftBanner item={selected} type="normal" />
+                )}
+              </div>
+            ) : null}
           </div>
           <div className={classNames(styles["column_two"])}>
             <MinecraftName item={selected} />
@@ -39,50 +52,3 @@ const PreviewComponent = ({ selected }) => {
 };
 
 export default PreviewComponent;
-
-// {selectedItem && (
-//   <div className={classNames(styles["view_shulker"])}>
-//     <ShulkerBox item={selectedItem} />
-//   </div>
-// )}
-// {selectedItemOne && (
-//   <div className={classNames(styles["view_item"])}>
-//     <div className={classNames(styles["column_one"])}>
-//       {selectedItemOne.trim === undefined &&
-//       selectedItemOne.banner_pattern === undefined &&
-//       selectedItemOne.shield_color?.color === undefined ? (
-//         <div className={classNames(styles["imageWrapperAll"])}>
-//           <MinecraftImage item={selectedItemOne} />
-//         </div>
-//       ) : null}
-//       {selectedItemOne.trim !== undefined ? (
-//         <div className={classNames(styles["imageWrapperArmor"])}>
-//           <MinecraftArmorType item={selectedItemOne} />
-//         </div>
-//       ) : null}
-//       {selectedItemOne.banner_pattern !== undefined || selectedItemOne.shield_color?.color !== undefined ? (
-//         <div className={classNames(styles["imageWrapperBanner"])}>
-//           {selectedItemOne.type === "shield" ? (
-//             <MinecraftShield item={selectedItemOne} type="normal" />
-//           ) : (
-//             <MinecraftBanner item={selectedItemOne} type="normal" />
-//           )}
-//         </div>
-//       ) : null}
-//     </div>
-//     <div className={classNames(styles["column_two"])}>
-//       <div className={classNames(styles["top"])}>
-//         <MinecraftName item={selectedItemOne} />
-//         {/*{selectedItemOne.trim === undefined ? null : <MinecraftArmorName item={selectedItemOne} />}*/}
-//         {/*{selectedItemOne.shield_color?.color === undefined ? null : (*/}
-//         {/*  <MinecraftShieldColor item={selectedItemOne} />*/}
-//         {/*)}*/}
-//         {/*{selectedItemOne.leather_color === undefined ? null : <MinecraftArmorColor item={selectedItemOne} />}*/}
-//         <MinecraftList item={selectedItemOne} />
-//       </div>
-//       <div className={classNames(styles["bottom"])}>
-//         <MinecraftRegister item={selectedItemOne} />
-//       </div>
-//     </div>
-//   </div>
-// )}

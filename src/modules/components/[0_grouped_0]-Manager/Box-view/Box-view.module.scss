@@ -1,0 +1,26 @@
+@import "src/Variables";
+
+.main_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: auto;
+  max-width: 1600px;
+  min-height: auto;
+  max-height: 87vh;
+  margin: 0 auto 16px auto;
+  background: $site-color-4;
+  border-radius: 8px;
+  border: 1px solid $site-color-5;
+  padding: 8px;
+
+  .wrapper {
+    position: relative;
+    display: flex;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+  }
+}

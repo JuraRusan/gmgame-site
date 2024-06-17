@@ -9,10 +9,9 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 const MinecraftImage = ({ item, dots = "." }) => {
   const itemNameId = item.id;
   const itemEnchant = !item.enchant ? [] : item.enchant;
-  const itemPotion = item.potion;
+  const itemPotion = item.potion_effect;
   const itemTrimMaterial = item.trim?.material;
-  const { red, green, blue } = item.leather_color ?? {};
-  const colorBG = red !== undefined ? { backgroundColor: `rgb(${red},${green},${blue})` } : {};
+  const colorBG = item.leather_color !== undefined ? { backgroundColor: item.leather_color } : {};
   const includesType = ARRAY_MAPPINGS[itemNameId];
 
   const getImageSource = () => {
@@ -34,17 +33,20 @@ const MinecraftImage = ({ item, dots = "." }) => {
     } else if (itemNameId === "calibrated_sculk_sensor") {
       return `${dots}/site_assets/animation_webp/calibrated_sculk_sensor.webp`;
       // --------------------------------------------
-    } else if (itemNameId.includes("tipped_arrow")) {
-      return `${dots}/site_assets/minecraft-item/${itemNameId.split(".")[0]}_${itemNameId.split(".")[2]}.webp`;
+    } else if (itemNameId === "leather_helmet" && item.leather_color !== undefined) {
+      return `${dots}/site_assets/leather_colored_armor/leather_colored_helmet.webp`;
       // --------------------------------------------
-    } else if (itemNameId.includes("potion")) {
-      return `${dots}/site_assets/minecraft-item/${itemNameId.split(".")[0]}_${itemNameId.split(".")[2]}.webp`;
+    } else if (itemNameId === "leather_chestplate" && item.leather_color !== undefined) {
+      return `${dots}/site_assets/leather_colored_armor/leather_colored_chestplate.webp`;
       // --------------------------------------------
-    } else if (itemNameId.includes("splash_potion")) {
-      return `${dots}/site_assets/minecraft-item/${itemNameId.split(".")[0]}_${itemNameId.split(".")[2]}.webp`;
+    } else if (itemNameId === "leather_leggings" && item.leather_color !== undefined) {
+      return `${dots}/site_assets/leather_colored_armor/leather_colored_leggings.webp`;
       // --------------------------------------------
-    } else if (itemNameId.includes("lingering_potion")) {
-      return `${dots}/site_assets/minecraft-item/${itemNameId.split(".")[0]}_${itemNameId.split(".")[2]}.webp`;
+    } else if (itemNameId === "leather_boots" && item.leather_color !== undefined) {
+      return `${dots}/site_assets/leather_colored_armor/leather_colored_boots.webp`;
+      // --------------------------------------------
+    } else if (itemNameId === "leather_horse_armor" && item.leather_color !== undefined) {
+      return `${dots}/site_assets/leather_colored_armor/leather_colored_horse_armor.webp`;
       // --------------------------------------------
     } else if (itemNameId === "smithing_template") {
       if (item.improvement === "netherite_upgrade") {
@@ -53,36 +55,21 @@ const MinecraftImage = ({ item, dots = "." }) => {
         return `${dots}/site_assets/minecraft-item/${item.improvement}_armor_trim_${item.id}.webp`;
       }
       // --------------------------------------------
-    } else if (itemNameId === "leather_helmet" && item.color !== undefined) {
-      return `${dots}/site_assets/leather_colored_armor/leather_colored_helmet.webp`;
-      // --------------------------------------------
-    } else if (itemNameId === "leather_chestplate" && item.color !== undefined) {
-      return `${dots}/site_assets/leather_colored_armor/leather_colored_chestplate.webp`;
-      // --------------------------------------------
-    } else if (itemNameId === "leather_leggings" && item.color !== undefined) {
-      return `${dots}/site_assets/leather_colored_armor/leather_colored_leggings.webp`;
-      // --------------------------------------------
-    } else if (itemNameId === "leather_boots" && item.color !== undefined) {
-      return `${dots}/site_assets/leather_colored_armor/leather_colored_boots.webp`;
-      // --------------------------------------------
-    } else if (itemNameId === "leather_horse_armor" && item.color !== undefined) {
-      return `${dots}/site_assets/leather_colored_armor/leather_colored_horse_armor.webp`;
-      // --------------------------------------------
     } else {
       return `${dots}/site_assets/minecraft-item/${itemNameId}.webp`;
     }
   };
 
   const getImageTypeFolder = () => {
-    if (itemNameId.includes("helmet")) {
-      return "helmet";
-    } else if (itemNameId.includes("chestplate")) {
-      return "chestplate";
-    } else if (itemNameId.includes("leggings")) {
-      return "leggings";
-    } else {
-      return `boots`;
-    }
+    // if (itemNameId.includes("helmet")) {
+    //   return "helmet";
+    // } else if (itemNameId.includes("chestplate")) {
+    //   return "chestplate";
+    // } else if (itemNameId.includes("leggings")) {
+    //   return "leggings";
+    // } else {
+    //   return `boots`;
+    // }
   };
 
   const renderArmorImage = (itemType) => {

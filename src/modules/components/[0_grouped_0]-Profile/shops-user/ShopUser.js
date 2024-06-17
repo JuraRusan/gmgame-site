@@ -6,6 +6,8 @@ import useLoading from "../../../loading/useLoading";
 import { useAxios } from "../../../../DataProvider";
 import Preload from "../../preloader/Preload";
 import axios from "axios";
+import { useAlert } from "react-alert";
+import { Link } from "react-router-dom";
 
 import styles from "./ShopUser.module.scss";
 import "react-lazy-load-image-component/src/effects/blur.css";
@@ -20,16 +22,33 @@ const LAST = [
 
 const ShopUser = () => {
   const resParams = useAxios("/api/profile", "GET", {});
+  const alert = useAlert();
 
   const isLoading = useLoading();
   const [currentTime, setCurrentTime] = useState(new Date().getTime());
 
-  const [dataUserShop, setDataUserShop] = useState([]);
+  const [dataAll, setDataAll] = useState({});
+
+  const [loaded, setLoaded] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [init, setInit] = useState(false);
 
   useEffect(() => {
-    axios.get("https://map.gmgame.ru/api/cab_shop_user").then((res) => {
-      setDataUserShop(res.data.data);
-    });
+    if (init !== true) {
+      axios
+        .get("http://127.0.0.1:4000/user_shop")
+        .then((res) => {
+          setDataAll(res.data.data);
+        })
+        .catch((error) => {
+          alert.error(error);
+        })
+        .finally(() => {
+          setLoaded(true);
+          setLoading(false);
+        });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -42,18 +61,22 @@ const ShopUser = () => {
     };
   }, []);
 
-  if (resParams.loading || isLoading) {
+  if (loaded && !init) {
+    setInit(true);
+  }
+
+  if (resParams.loading || loading || isLoading) {
     return <Preload full={false} />;
   }
 
   const userName = resParams.data.user.username;
-  const userShopDataFilter = dataUserShop.filter((fill) => fill.owner === userName);
+  const dataAllFilter = dataAll.filter((fill) => fill.owner === userName);
 
   function FunData() {
-    if (!userShopDataFilter || userShopDataFilter.length === 0) {
+    if (!dataAllFilter || dataAllFilter.length === 0) {
       return LAST;
     } else {
-      return userShopDataFilter;
+      return dataAllFilter;
     }
   }
 
@@ -196,14 +219,16 @@ const ShopUser = () => {
                   Z:
                   <span className={classNames(styles["span_style"])}>{el.z}</span>
                 </h4>
-                <a
-                  href={`https://gmgame.ru/shopkeepers?scrollTo=scroll_${el.shop_id}`}
-                  target="_blank"
-                  rel="noreferrer"
-                  className={classNames(styles["link_offers"])}
-                >
-                  Перейти к сделкам &#10148;
-                </a>
+                <Link to={`/shopkeepers?_uuid=${el.uuid}`} className={classNames(styles["link_offers"])}>
+                  Перейти товару &#10148;
+                </Link>
+                {!el.log ? (
+                  <span className={classNames(styles["link_offers"])}>логов продаж нету</span>
+                ) : (
+                  <Link to={`/cab/shop_user/${el.uuid}`} className={classNames(styles["link_offers"])}>
+                    Перейти к логу продаж &#10148;
+                  </Link>
+                )}
               </div>
               <div className={classNames(styles["villager_image"])}>
                 <LazyLoadImage
