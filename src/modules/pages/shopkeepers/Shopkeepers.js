@@ -13,6 +13,7 @@ import { useDispatch } from "react-redux";
 import { useAlert } from "react-alert";
 import axios from "axios";
 import ResetSvgComponent from "../../../bases/icons/resetSvg/ResetSvg";
+import Input from "../../components/input/Input";
 
 import styles from "./Shopkeepers.module.scss";
 
@@ -273,7 +274,7 @@ const Shopkeepers = () => {
         </div>
         <div className={classNames(styles["villages_and_preview"])}>
           <Notifications inf={INFO_DEFAULT} type="warn" />
-          <input
+          <Input
             type="search"
             className={classNames(styles["search_items"])}
             onChange={debounce((e) => handleSearch(e), 500)}

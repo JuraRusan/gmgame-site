@@ -11,6 +11,7 @@ import ReactModal from "react-modal";
 import ShulkerBox from "../../[0_grouped_0]-Shopkeepers/shulker-box/Shulker-box";
 import { SHULKERS_TYPE } from "../../../pages/shopkeepers/ShulkersType";
 import ButtonCloseSvgComponent from "../../../../bases/icons/buttonCloseSvg/ButtonCloseSvg";
+import BackButton from "../../back-button/BackButton";
 
 import styles from "./LogTrade.module.scss";
 
@@ -73,14 +74,11 @@ const LogTrade = () => {
 
   return (
     <div className={classNames(styles["log_wrapper"])}>
-      <button
-        className={classNames(styles["back"])}
+      <BackButton
         onClick={() => {
           navigate(-1);
         }}
-      >
-        {"<-- Показать весь список"}
-      </button>
+      />
       {dataLogs.length === 0 && loaded ? (
         <div className={classNames(styles["no_content"])}>
           <span className={classNames(styles["text"])}>В данном магазине отсутствуют логи продаж</span>
