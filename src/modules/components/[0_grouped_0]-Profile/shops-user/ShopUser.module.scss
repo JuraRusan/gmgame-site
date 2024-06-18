@@ -198,15 +198,13 @@
     }
   }
 
-  .warn_box {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    height: max-content;
-    min-height: min-content;
-    margin-top: auto;
-    padding-top: 8px;
+  .none_box,
+  .all_shop {
+    margin-bottom: 8px;
+  }
+
+  .pos {
+    flex: 1;
   }
 }
 
@@ -233,6 +231,15 @@
 
     .warn_box {
       margin-top: 8px;
+    }
+
+    .none_box,
+    .all_shop {
+      margin-bottom: 0;
+    }
+
+    .pos {
+      order: 1;
     }
   }
 }

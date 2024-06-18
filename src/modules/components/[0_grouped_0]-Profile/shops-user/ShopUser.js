@@ -179,7 +179,7 @@ const ShopUser = () => {
         </div>
       )}
       {userShopData[0].owner === "none" ? (
-        <div className={classNames(styles["none_box"])}>
+        <div className={classNames(styles["none_box"], styles["pos"])}>
           <h4 className={classNames(styles["smile"])}>¯\_(ツ)_/¯</h4>
           <p className={classNames(styles["text"])}>Магазины отсутствуют</p>
           <h3 className={classNames(styles["info"])}>
@@ -195,7 +195,7 @@ const ShopUser = () => {
           </h3>
         </div>
       ) : (
-        <div className={classNames(styles["all_shop"])}>
+        <div className={classNames(styles["all_shop"], styles["pos"])}>
           {userShopData[0].villager.map((el, index) => (
             <div className={classNames(styles["one_shop_wrapper"])} key={index}>
               <div className={classNames(styles["description_box"])}>
@@ -246,9 +246,7 @@ const ShopUser = () => {
           ))}
         </div>
       )}
-      <div className={classNames(styles["warn_box"])}>
-        <Notifications inf="Обновление данных с сервером происходит раз в 15 минут" type="warn" />
-      </div>
+      <Notifications inf="Обновление данных с сервером происходит раз в 15 минут" type="warn" />
     </div>
   );
 };
