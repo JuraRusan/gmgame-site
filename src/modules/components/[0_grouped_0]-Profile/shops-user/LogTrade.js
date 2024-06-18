@@ -12,8 +12,11 @@ import ShulkerBox from "../../[0_grouped_0]-Shopkeepers/shulker-box/Shulker-box"
 import { SHULKERS_TYPE } from "../../../pages/shopkeepers/ShulkersType";
 import ButtonCloseSvgComponent from "../../../../bases/icons/buttonCloseSvg/ButtonCloseSvg";
 import BackButton from "../../back-button/BackButton";
+import Notifications from "../../notifications/Notifications";
 
 import styles from "./LogTrade.module.scss";
+
+const INFO_DEFAULT = "Обновление лога продаж происходит раз в сутки, в 00:00 по МСК";
 
 const LogTrade = () => {
   const isLoading = useLoading();
@@ -80,11 +83,11 @@ const LogTrade = () => {
         }}
       />
       {dataLogs.length === 0 && loaded ? (
-        <div className={classNames(styles["no_content"])}>
+        <div className={classNames(styles["no_content"], styles["pos"])}>
           <span className={classNames(styles["text"])}>В данном магазине отсутствуют логи продаж</span>
         </div>
       ) : (
-        <div className={classNames(styles["log_list"])}>
+        <div className={classNames(styles["log_list"], styles["pos"])}>
           {dataLogs.map((el, index) =>
             Array.from({ length: el.trade_count }).map((_, tradeIndex) => (
               <div className={classNames(styles["one_trade"])} key={`${index}-${tradeIndex}`}>
@@ -113,6 +116,7 @@ const LogTrade = () => {
           )}
         </div>
       )}
+      <Notifications inf={INFO_DEFAULT} type="warn" />
 
       <ReactModal
         isOpen={open}

@@ -158,6 +158,10 @@
       position: sticky;
       top: 75px;
 
+      .search_items {
+        margin: 8px 0 0 0;
+      }
+
       .villager_info {
         display: flex;
         flex-direction: column;

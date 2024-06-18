@@ -115,7 +115,7 @@ const ShopkeepersAllStatus = () => {
 
   return (
     <div className={classNames(styles["shopkeepers_all_status_box"])}>
-      <p className={classNames(styles["old"])}>Активные магазины</p>
+      <p className={classNames(styles["text"])}>Активные магазины</p>
       <TableMain>
         <THead>
           <Tr header={true}>
@@ -151,7 +151,7 @@ const ShopkeepersAllStatus = () => {
           </TBody>
         ))}
       </TableMain>
-      <p className={classNames(styles["old"])}>Магазины которые уже исчезли</p>
+      <p className={classNames(styles["text"])}>Магазины которые уже исчезли</p>
       <TableMain>
         <THead>
           <Tr header={true}>
@@ -176,7 +176,7 @@ const ShopkeepersAllStatus = () => {
           </TBody>
         ))}
       </TableMain>
-      <p className={classNames(styles["old"])}>Всего продано товаза за все время - {AllTime}</p>
+      <p className={classNames(styles["text"])}>Всего продано товаза за все время - {AllTime}</p>
     </div>
   );
 };
