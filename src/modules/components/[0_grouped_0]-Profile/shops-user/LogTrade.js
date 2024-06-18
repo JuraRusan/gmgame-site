@@ -51,7 +51,7 @@ const LogTrade = () => {
   useEffect(() => {
     if (init !== true) {
       axios
-        .get(`http://127.0.0.1:4000/log?_uuid=${uuid}`)
+        .get(`https://map.gmgame.ru/api/log?_uuid=${uuid}`)
         .then((res) => {
           if (res.data?.data?.value) setDataLogs(res.data.data.value);
           if (res.data?.data?.lang) dispatch({ type: "ADD_LANG", payload: res.data.data.lang });

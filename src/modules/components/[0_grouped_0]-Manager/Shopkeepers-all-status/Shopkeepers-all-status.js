@@ -53,7 +53,7 @@ const ShopkeepersAllStatus = () => {
   useEffect(() => {
     if (init !== true) {
       axios
-        .get("http://127.0.0.1:4000/user_shop")
+        .get("https://map.gmgame.ru/api/user_shop")
         .then((res) => {
           setDataUserShop(res.data.data);
         })
@@ -71,7 +71,7 @@ const ShopkeepersAllStatus = () => {
   useEffect(() => {
     if (init !== true) {
       axios
-        .get("http://127.0.0.1:4000/all_info_csv")
+        .get("https://map.gmgame.ru/api/all_info_csv")
         .then((res) => {
           setDataAllLogs(res.data.data);
         })
