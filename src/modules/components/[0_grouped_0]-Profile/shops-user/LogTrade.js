@@ -123,7 +123,7 @@ const LogTrade = () => {
       )}
       <Notifications inf={INFO_DEFAULT} type="warn" />
 
-      <MyModal open={open} setOpen={setOpen}>
+      <MyModal open={open} close={() => setOpen(false)}>
         <div className={classNames(styles["shulker_wrapper"])}>
           <ShulkerBox customLink="../.." item={selected} full={isLarge} />
         </div>

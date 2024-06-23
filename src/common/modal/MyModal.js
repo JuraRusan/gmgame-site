@@ -5,7 +5,7 @@ import ButtonCloseSvgComponent from "../../bases/icons/buttonCloseSvg/ButtonClos
 
 import styles from "./MyModal.module.scss";
 
-const Footer = ({ open = false, showClose = true, setOpen = () => {}, children, param }) => {
+const MyModal = ({ open = false, showClose = true, close = () => {}, children, param }) => {
   const [modal, setModal] = useState(false);
 
   useEffect(() => {
@@ -33,7 +33,7 @@ const Footer = ({ open = false, showClose = true, setOpen = () => {}, children, 
           <button
             onClick={() => {
               setModal(false);
-              setOpen(false);
+              close();
             }}
             className={classNames(styles["modal_close"])}
           >
@@ -46,4 +46,4 @@ const Footer = ({ open = false, showClose = true, setOpen = () => {}, children, 
   );
 };
 
-export default Footer;
+export default MyModal;

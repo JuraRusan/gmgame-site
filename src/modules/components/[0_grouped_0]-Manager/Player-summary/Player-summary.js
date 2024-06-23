@@ -3,7 +3,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { sendRequest } from "../../../../DataProvider";
 import { useAlert } from "react-alert";
-import ReactModal from "react-modal";
+import MyModal from "../../../../common/modal/MyModal";
 import debounce from "lodash.debounce";
 import TableMain from "../../table/TableMain";
 import THead from "../../table/THead";
@@ -228,18 +228,22 @@ const PlayerSummary = () => {
 
     if (!input[id]) input[id] = {};
 
-    let valueDate = "";
+    let value = "";
     if (event.target.id === "expiration_date") {
-      valueDate = new Date(event.target.value).toISOString();
+      value = new Date(event.target.value).toISOString();
     }
 
     if (event.target.id === "citizenship") {
-      valueDate = event.target.value === "true";
+      value = event.target.value === "true";
+    }
+
+    if (event.target.id === "immun") {
+      value = event.target.value === "true";
     }
 
     input[id] = {
       ...input[id],
-      ...{ [event.target.id]: valueDate || event.target.value },
+      ...{ [event.target.id]: value || event.target.value },
     };
 
     setInputUserDetails(input);
@@ -769,118 +773,119 @@ const PlayerSummary = () => {
       {/*-----------------------------------------------------------------------------------------------*/}
       {/*-----------------------------------------------------------------------------------------------*/}
       {/*--- Модальное окно для user_details ---*/}
-      <ReactModal
-        isOpen={modalUd}
-        onRequestClose={handleCloseModalUd}
-        className={classNames(styles["modalMain"])}
-        overlayClassName={classNames(styles["overlayModal"])}
-      >
-        <h3 className={classNames(styles["app_info"])}>Активная заявка</h3>
-        <div className={classNames(styles["active_app"])}>
-          <StrokeName name={userDetails?.username} />
-          <div className={classNames(styles["description_user"])}>
-            <StrokeInfo label="Дискорд id:" info={userDetails?.user_id} />
-            <StrokeInfo label="Возраст:" info={userDetails?.age} />
-            <StrokeInfo label="Статус игрока:" info={userDetails?.status} />
-            <StrokeRedactor
-              label="Партнер:"
-              id="partner"
-              type="text"
-              onChange={(e) => userDetailsChange(e, userDetails.user_id)}
-              defaultValue={userDetails?.partner}
-            />
-            <StrokeInfo label="Откуда узнал о проекте:" info={userDetails?.from_about} />
-            <StrokeInfo label="О себе:" info={userDetails?.you_about} />
-            <StrokeRedactor
-              label="Иммунитет:"
-              id="immun"
-              type="text"
-              onChange={(e) => userDetailsChange(e, userDetails.user_id)}
-              defaultValue={userDetails?.immun}
-            />
-            <StrokeRedactor
-              label="Гражданство:"
-              id="citizenship"
-              type="text"
-              onChange={(e) => userDetailsChange(e, userDetails.user_id)}
-              defaultValue={userDetails?.citizenship}
-            />
-            <StrokeRedactor
-              label="Дата_окончания:"
-              id="expiration_date"
-              type="date"
-              onChange={(e) => userDetailsChange(e, userDetails.user_id)}
-              defaultValue={userDetails.expirationDate ? userDetails.expirationDate.toISOString().substring(0, 10) : ""}
-            />
-            <textarea
-              className={classNames(styles["notes"])}
-              id="note"
-              onChange={(e) => userDetailsChange(e, userDetails.user_id)}
-              defaultValue={userDetails?.note}
-            />
+      <MyModal open={modalUd} close={handleCloseModalUd}>
+        <div className={classNames(styles["user_app"])}>
+          <h3 className={classNames(styles["app_info"])}>Активная заявка</h3>
+          <div className={classNames(styles["active_app"])}>
+            <StrokeName name={userDetails?.username} />
+            <div className={classNames(styles["description_user"])}>
+              <StrokeInfo label="Дискорд id:" info={userDetails?.user_id} />
+              <StrokeInfo label="Возраст:" info={userDetails?.age} />
+              <StrokeInfo label="Статус игрока:" info={userDetails?.status} />
+              <StrokeRedactor
+                label="Партнер:"
+                id="partner"
+                type="text"
+                onChange={(e) => userDetailsChange(e, userDetails.user_id)}
+                defaultValue={userDetails?.partner}
+              />
+              <StrokeInfo label="Откуда узнал о проекте:" info={userDetails?.from_about} />
+              <StrokeInfo label="О себе:" info={userDetails?.you_about} />
+              <StrokeRedactor
+                label="Иммунитет:"
+                id="immun"
+                type="text"
+                onChange={(e) => userDetailsChange(e, userDetails.user_id)}
+                defaultValue={userDetails?.immun}
+              />
+              <StrokeRedactor
+                label="Гражданство:"
+                id="citizenship"
+                type="text"
+                onChange={(e) => userDetailsChange(e, userDetails.user_id)}
+                defaultValue={userDetails?.citizenship}
+              />
+              <StrokeRedactor
+                label="Дата_окончания:"
+                id="expiration_date"
+                type="date"
+                onChange={(e) => userDetailsChange(e, userDetails.user_id)}
+                defaultValue={
+                  userDetails.expirationDate ? userDetails.expirationDate.toISOString().substring(0, 10) : ""
+                }
+              />
+              <textarea
+                className={classNames(styles["notes"])}
+                id="note"
+                onChange={(e) => userDetailsChange(e, userDetails.user_id)}
+                defaultValue={userDetails?.note}
+              />
+            </div>
+            <div className={classNames(styles["wrapper_actions"])}>
+              <button
+                className={classNames(styles["submit"])}
+                type="submit"
+                onClick={() => updateUser(userDetails.user_id)}
+              >
+                Сохранить
+              </button>
+            </div>
           </div>
-          <div className={classNames(styles["wrapper_actions"])}>
-            <button
-              className={classNames(styles["submit"])}
-              type="submit"
-              onClick={() => updateUser(userDetails.user_id)}
-            >
-              Сохранить
-            </button>
-          </div>
-        </div>
-        {!userDetails.oldUsers
-          ? null
-          : userDetails.oldUsers.map((el, index) => (
-              <>
-                <h3 className={classNames(styles["app_info"])}>Старая заявка [ {index + 1} ]</h3>
-                <div className={classNames(styles["old_app"])}>
-                  <StrokeName name={el?.username} />
-                  <div className={classNames(styles["description_user"])}>
-                    <StrokeInfo label="Дискорд id:" info={userDetails?.oldUsers[index]?.user_id} />
-                    <StrokeInfo label="Возраст:" info={userDetails?.oldUsers[index]?.age} />
-                    <StrokeInfo label="Баланс:" info={userDetails?.oldUsers[index]?.balance} />
-                    <StrokeInfo
-                      label="Гражданство:"
-                      info={userDetails?.oldUsers[index]?.citizenship === true ? "true" : "false"}
-                    />
-                    <StrokeInfo
-                      label="Друзья:"
-                      info={!userDetails?.oldUsers[index]?.friends ? "-" : userDetails?.oldUsers[index]?.friends}
-                    />
-                    <StrokeInfo
-                      label="Откуда узнали о проэкте:"
-                      info={!userDetails?.oldUsers[index]?.from_about ? "-" : userDetails?.oldUsers[index]?.from_about}
-                    />
-                    <StrokeInfo
-                      label="О себе:"
-                      info={!userDetails?.oldUsers[index]?.you_about ? "-" : userDetails?.oldUsers[index]?.you_about}
-                    />
-                    <StrokeInfo
-                      label="Сервера:"
-                      info={!userDetails?.oldUsers[index]?.server ? "-" : userDetails?.oldUsers[index]?.server}
-                    />
-                    <StrokeInfo
-                      label="Имунитет:"
-                      info={userDetails?.oldUsers[index]?.immun === true ? "true" : "false"}
-                    />
-                    <StrokeInfo
-                      label="Is_discord:"
-                      info={userDetails?.oldUsers[index]?.is_discord === true ? "true" : "false"}
-                    />
-                    <StrokeInfo
-                      label="Заметка о игроке:"
-                      info={!userDetails?.oldUsers[index]?.note ? "-" : userDetails?.oldUsers[index]?.note}
-                    />
-                    <StrokeInfo
-                      label="Партнёр:"
-                      info={!userDetails?.oldUsers[index]?.partner ? "-" : userDetails?.oldUsers[index]?.partner}
-                    />
+          {!userDetails.oldUsers
+            ? null
+            : userDetails.oldUsers.map((el, index) => (
+                <>
+                  <h3 className={classNames(styles["app_info"])}>Старая заявка [ {index + 1} ]</h3>
+                  <div className={classNames(styles["old_app"])}>
+                    <StrokeName name={el?.username} />
+                    <div className={classNames(styles["description_user"])}>
+                      <StrokeInfo label="Дискорд id:" info={userDetails?.oldUsers[index]?.user_id} />
+                      <StrokeInfo label="Возраст:" info={userDetails?.oldUsers[index]?.age} />
+                      <StrokeInfo label="Баланс:" info={userDetails?.oldUsers[index]?.balance} />
+                      <StrokeInfo
+                        label="Гражданство:"
+                        info={userDetails?.oldUsers[index]?.citizenship === true ? "true" : "false"}
+                      />
+                      <StrokeInfo
+                        label="Друзья:"
+                        info={!userDetails?.oldUsers[index]?.friends ? "-" : userDetails?.oldUsers[index]?.friends}
+                      />
+                      <StrokeInfo
+                        label="Откуда узнали о проэкте:"
+                        info={
+                          !userDetails?.oldUsers[index]?.from_about ? "-" : userDetails?.oldUsers[index]?.from_about
+                        }
+                      />
+                      <StrokeInfo
+                        label="О себе:"
+                        info={!userDetails?.oldUsers[index]?.you_about ? "-" : userDetails?.oldUsers[index]?.you_about}
+                      />
+                      <StrokeInfo
+                        label="Сервера:"
+                        info={!userDetails?.oldUsers[index]?.server ? "-" : userDetails?.oldUsers[index]?.server}
+                      />
+                      <StrokeInfo
+                        label="Имунитет:"
+                        info={userDetails?.oldUsers[index]?.immun === true ? "true" : "false"}
+                      />
+                      <StrokeInfo
+                        label="Is_discord:"
+                        info={userDetails?.oldUsers[index]?.is_discord === true ? "true" : "false"}
+                      />
+                      <StrokeInfo
+                        label="Заметка о игроке:"
+                        info={!userDetails?.oldUsers[index]?.note ? "-" : userDetails?.oldUsers[index]?.note}
+                      />
+                      <StrokeInfo
+                        label="Партнёр:"
+                        info={!userDetails?.oldUsers[index]?.partner ? "-" : userDetails?.oldUsers[index]?.partner}
+                      />
+                    </div>
                   </div>
-                </div>
-              </>
-            ))}
-      </ReactModal>
+                </>
+              ))}
+        </div>
+      </MyModal>
 
       {/*-----------------------------------------------------------------------------------------------*/}
       {/*-----------------------------------------------------------------------------------------------*/}
@@ -888,12 +893,7 @@ const PlayerSummary = () => {
       {/*-----------------------------------------------------------------------------------------------*/}
       {/*-----------------------------------------------------------------------------------------------*/}
       {/*--- Модальное окно для user_log ---*/}
-      <ReactModal
-        isOpen={modalLog}
-        onRequestClose={handleCloseModal}
-        className={classNames(styles["modalMain"])}
-        overlayClassName={classNames(styles["overlayModal"])}
-      >
+      <MyModal open={modalLog} close={handleCloseModal}>
         <div className={classNames(styles["cardLog"])}>
           <TableMain>
             <THead>
@@ -929,7 +929,7 @@ const PlayerSummary = () => {
             </TBody>
           </TableMain>
         </div>
-      </ReactModal>
+      </MyModal>
 
       {/*-----------------------------------------------------------------------------------------------*/}
       {/*-----------------------------------------------------------------------------------------------*/}

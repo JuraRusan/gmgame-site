@@ -93,79 +93,58 @@ $table-parameter: 34;
   }
 }
 
-body {
-  .modalMain {
-    position: absolute;
-    z-index: 98;
-    background: $site-color-4;
-    border: 1px solid $site-color-5;
-    border-radius: 5px;
-    top: 48px;
-    left: 48px;
-    right: 48px;
-    bottom: 48px;
-    width: auto;
-    height: auto;
-    overflow: auto;
+.cardLog {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow: auto;
+  max-width: 90vw;
+  max-height: 82vh;
+  margin: 12px;
+  padding: 0 8px 0 0;
 
-    &::-webkit-scrollbar {
-      width: 4px;
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+}
+
+.user_app {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  margin: 12px;
+
+  .app_info {
+    color: $site-color-8;
+    line-height: 24px;
+    height: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: $fontCustom2;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .main_line_user {
+    display: flex;
+    flex-direction: row;
+
+    .ico_player {
+      width: 32px;
+      height: 32px;
     }
 
-    .cardLog {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      padding: 15px;
-    }
-
-    .app_info {
-      color: $site-color-8;
-      line-height: 24px;
-      height: 24px;
-      font-weight: 400;
-      font-size: 16px;
-      font-family: $fontCustom2;
-      text-align: center;
-      margin: 0 auto;
-    }
-
-    .main_line_user {
-      display: flex;
-      flex-direction: row;
-
-      .ico_player {
-        width: 32px;
-        height: 32px;
-      }
-
-      .stroke_name {
-        color: $site-color-2;
-        line-height: 32px;
-        height: 32px;
-        margin-left: 8px;
-        font-weight: 400;
-        font-size: 15px;
-        font-family: $fontCustom2;
-
-        .span_display {
-          padding: 0 0 0 4px;
-          color: $site-color-8;
-          font-weight: inherit;
-          font-size: inherit;
-          font-family: inherit;
-        }
-      }
-    }
-
-    .stroke {
+    .stroke_name {
       color: $site-color-2;
-      line-height: 1.5;
-      min-height: 24px;
+      line-height: 32px;
+      height: 32px;
+      margin-left: 8px;
       font-weight: 400;
-      font-size: 14px;
+      font-size: 15px;
+      font-family: $fontCustom2;
 
-      .color {
+      .span_display {
         padding: 0 0 0 4px;
         color: $site-color-8;
         font-weight: inherit;
@@ -173,134 +152,139 @@ body {
         font-family: inherit;
       }
     }
+  }
 
-    .stroke_row {
+  .stroke {
+    color: $site-color-2;
+    line-height: 1.5;
+    min-height: 24px;
+    font-weight: 400;
+    font-size: 14px;
+
+    .color {
+      padding: 0 0 0 4px;
+      color: $site-color-8;
+      font-weight: inherit;
+      font-size: inherit;
+      font-family: inherit;
+    }
+  }
+
+  .stroke_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: auto;
+    height: auto;
+
+    .label_name {
+      display: flex;
+      color: $site-color-2;
+      line-height: 24px;
+      height: 24px;
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    .input {
+      width: 100%;
+      height: 20px;
+      margin: 2px 0 2px 8px;
+      padding: 0 4px;
+      outline: none;
+      border: none;
+      border-radius: 4px;
+      background: $site-color-12;
+      transition: all 0.35s ease;
+      color: $site-color-8;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background: $site-color-1;
+        color: $site-color-8;
+      }
+    }
+  }
+
+  .active_app {
+    display: flex;
+    flex-direction: column;
+    background: $site-color-12;
+    margin: 4px auto 4px auto;
+    width: 1600px;
+    height: auto;
+    border: 1px solid $site-color-5;
+    border-radius: 4px;
+    padding: 12px;
+
+    .wrapper_actions {
       display: flex;
       flex-direction: row;
-      justify-content: flex-start;
-      width: auto;
-      height: auto;
+      justify-content: center;
 
-      .label_name {
-        display: flex;
-        color: $site-color-2;
-        line-height: 24px;
-        height: 24px;
-        font-weight: 400;
+      .submit {
+        width: 200px;
+        height: 28px;
+        line-height: 28px;
+        text-align: center;
+        background: $site-color-12;
+        border: 1px solid $site-color-4;
+        border-radius: 4px;
+        transition: all 0.3s ease-in-out;
+        color: $site-color-8;
+        cursor: pointer;
         font-size: 14px;
-      }
-
-      .input {
-        width: 100%;
-        height: 20px;
-        margin: 2px 0 2px 8px;
-        padding: 0 4px;
-        outline: none;
-        border: none;
-        border-radius: 4px;
-        background: $site-color-12;
-        transition: all 0.35s ease;
-        color: $site-color-8;
 
         &:hover,
-        &:active,
-        &:focus {
+        &:focus,
+        &:active {
           background: $site-color-1;
-          color: $site-color-8;
-        }
-      }
-    }
-
-    .active_app {
-      display: flex;
-      flex-direction: column;
-      background: $site-color-12;
-      margin: 4px auto 4px auto;
-      width: 1600px;
-      height: auto;
-      border: 1px solid $site-color-5;
-      border-radius: 4px;
-      padding: 12px;
-
-      .wrapper_actions {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-
-        .submit {
-          width: 200px;
-          height: 28px;
-          line-height: 28px;
-          text-align: center;
-          background: $site-color-12;
-          border: 1px solid $site-color-4;
-          border-radius: 4px;
-          transition: all 0.3s ease-in-out;
-          color: $site-color-8;
-          cursor: pointer;
-          font-size: 14px;
-
-          &:hover,
-          &:focus,
-          &:active {
-            background: $site-color-1;
-          }
-        }
-      }
-    }
-
-    .old_app {
-      display: flex;
-      flex-direction: column;
-      background: $site-color-12;
-      margin: 4px auto 16px auto;
-      width: 1300px;
-      height: auto;
-      border: 1px solid $site-color-5;
-      border-radius: 4px;
-      padding: 12px;
-    }
-
-    .description_user {
-      display: flex;
-      flex-direction: column;
-      margin-top: 8px;
-
-      .notes {
-        max-width: 1574px;
-        width: 100%;
-        line-height: 1.35;
-        height: auto;
-        min-height: 100px;
-        max-height: 400px;
-        resize: vertical;
-        margin: 4px 0 16px 0;
-        padding: 4px;
-        outline: none;
-        border: none;
-        border-radius: 4px;
-        background: $site-color-12;
-        transition: all 0.35s ease;
-        color: $site-color-8;
-
-        &:hover,
-        &:active,
-        &:focus {
-          background: $site-color-1;
-          color: $site-color-8;
         }
       }
     }
   }
 
-  .overlayModal {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: fixed;
-    z-index: 99;
-    background: darken($site-color-12, 100%);
-    animation: animationModal 0.35s both ease;
+  .old_app {
+    display: flex;
+    flex-direction: column;
+    background: $site-color-12;
+    margin: 4px auto 16px auto;
+    width: 1300px;
+    height: auto;
+    border: 1px solid $site-color-5;
+    border-radius: 4px;
+    padding: 12px;
+  }
+
+  .description_user {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+
+    .notes {
+      max-width: 1574px;
+      width: 100%;
+      line-height: 1.35;
+      height: auto;
+      min-height: 100px;
+      max-height: 400px;
+      resize: vertical;
+      margin: 4px 0 16px 0;
+      padding: 4px;
+      outline: none;
+      border: none;
+      border-radius: 4px;
+      background: $site-color-12;
+      transition: all 0.35s ease;
+      color: $site-color-8;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background: $site-color-1;
+        color: $site-color-8;
+      }
+    }
   }
 }
