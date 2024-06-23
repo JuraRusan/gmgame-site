@@ -7,7 +7,7 @@ import "./App.scss";
 
 function App() {
   window.onscroll = function () {
-    var header = document.getElementById("header");
+    let header = document.getElementById("header");
     if (window.pageYOffset > 0) {
       header.classList.add("sticky-header");
     } else {
