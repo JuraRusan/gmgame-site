@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import styles from "./Table.module.scss";
 
 const Th = ({ type, href, content, children }) => {
-  const length = 150;
+  const length = 200;
 
   const tooltip = content?.length > length ? <span className={classNames(styles["full_text"])}>{content}</span> : null;
 

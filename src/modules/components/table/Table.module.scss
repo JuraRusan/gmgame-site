@@ -83,14 +83,14 @@ $table-parameter: 34;
   left: 128px;
   bottom: 128px;
   right: 128px;
-  top: 90%;
-  background: $site-color-12;
-  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.3);
+  top: 93%;
+  background: $site-color-14;
+  box-shadow: 0 2px 2px 2px $site-color-14;
   width: auto;
-  height: 42px;
+  min-height: 42px;
   line-height: 1.5;
   justify-content: center;
-  padding: 4px;
+  padding: 12px;
 }
 
 .tableButton {
