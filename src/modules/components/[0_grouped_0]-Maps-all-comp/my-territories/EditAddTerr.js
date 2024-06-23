@@ -1,8 +1,8 @@
 import classNames from "classnames";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Notifications from "../../notifications/Notifications";
 import { sendRequest, useAxios } from "../../../../DataProvider";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams, useSearchParams } from "react-router-dom";
 import { useAlert } from "react-alert";
 import Preload from "../../preloader/Preload";
 import useLoading from "../../../loading/useLoading";
@@ -30,6 +30,7 @@ const MAX_NAME = 255;
 const EditAddTerr = (params) => {
   const isLoading = useLoading();
 
+  const [searchParams] = useSearchParams();
   const navigate = useNavigate();
   const alert = useAlert();
 
@@ -114,6 +115,45 @@ const EditAddTerr = (params) => {
   };
 
   const resParams = useAxios(`/api/get_terr/${id}`, "GET", {});
+
+  useEffect(() => {
+    if (!init) {
+      if (searchParams.get("_startX")) {
+        const x = searchParams.get("_startX");
+        setFormXStart(+x);
+        checkCoordinates(x, setErrorCoordinates);
+      }
+      if (searchParams.get("_startZ")) {
+        const z = searchParams.get("_startX");
+        setFormXStop(+z);
+        checkCoordinates(z, setErrorCoordinates);
+      }
+      if (searchParams.get("_stopX")) {
+        const x = searchParams.get("_stopX");
+        setFormZStart(+x);
+        checkCoordinates(x, setErrorCoordinates);
+      }
+      if (searchParams.get("_stopZ")) {
+        const z = searchParams.get("_stopZ");
+        setFormZStop(+z);
+        checkCoordinates(z, setErrorCoordinates);
+      }
+      if (searchParams.get("_server")) {
+        setFormServer(searchParams.get("_server"));
+      }
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    searchParams.set("_startX", formXStart);
+    searchParams.set("_startZ", formXStop);
+    searchParams.set("_stopX", formZStart);
+    searchParams.set("_stopZ", formZStop);
+    searchParams.set("_server", formServer);
+
+    navigate({ search: searchParams.toString() }, { replace: true });
+  }, [formXStart, formXStop, formZStart, formZStop, formServer, searchParams, navigate]);
 
   if (resParams.loading || isLoading) {
     return <Preload full={false} />;

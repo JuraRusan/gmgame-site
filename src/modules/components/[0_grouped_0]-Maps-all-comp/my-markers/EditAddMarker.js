@@ -1,8 +1,8 @@
 import classNames from "classnames";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Notifications from "../../notifications/Notifications";
 import { sendRequest, useAxios } from "../../../../DataProvider";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams, useSearchParams } from "react-router-dom";
 import { useAlert } from "react-alert";
 import Preload from "../../preloader/Preload";
 import useLoading from "../../../loading/useLoading";
@@ -45,6 +45,7 @@ const MAX_DESCRIPTION = 255;
 const EditAddMarker = (params) => {
   const isLoading = useLoading();
 
+  const [searchParams] = useSearchParams();
   const navigate = useNavigate();
   const alert = useAlert();
 
@@ -143,6 +144,37 @@ const EditAddMarker = (params) => {
   };
 
   const resParams = useAxios(`/api/get_marker/${id}`, "GET", {});
+
+  useEffect(() => {
+    if (!init) {
+      if (searchParams.get("_x")) {
+        const x = searchParams.get("_x");
+        setFormX(+x);
+        checkCoordinates(x, setErrorCoordinates);
+      }
+      if (searchParams.get("_z")) {
+        const z = searchParams.get("_z");
+        setFormZ(+z);
+        checkCoordinates(z, setErrorCoordinates);
+      }
+      if (searchParams.get("_server")) {
+        setFormServer(searchParams.get("_server"));
+      }
+      if (searchParams.get("_type")) {
+        setFormType(searchParams.get("_type"));
+      }
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    searchParams.set("_x", formX);
+    searchParams.set("_z", formZ);
+    searchParams.set("_server", formServer);
+    searchParams.set("_type", formType);
+
+    navigate({ search: searchParams.toString() }, { replace: true });
+  }, [formX, formZ, formServer, formType, searchParams, navigate]);
 
   if (resParams.loading || isLoading) {
     return <Preload full={false} />;
