@@ -30,6 +30,8 @@ const LogTrade = () => {
   const [selected, setSelected] = useState(0);
   const [open, setOpen] = React.useState(false);
 
+  const [isLarge, setIsLarge] = useState(window.innerWidth >= 640);
+
   const [loaded, setLoaded] = useState(false);
   const [loading, setLoading] = useState(true);
   const [init, setInit] = useState(false);
@@ -58,6 +60,16 @@ const LogTrade = () => {
         });
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsLarge(window.innerWidth >= 640);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   if (loaded && !init) {
@@ -113,7 +125,7 @@ const LogTrade = () => {
 
       <MyModal open={open} setOpen={setOpen}>
         <div className={classNames(styles["shulker_wrapper"])}>
-          <ShulkerBox customLink="../.." item={selected} />
+          <ShulkerBox customLink="../.." item={selected} full={isLarge} />
         </div>
       </MyModal>
     </div>

@@ -101,7 +101,7 @@
 }
 
 .shulker_wrapper {
-  padding: 24px;
+  padding: 16px;
 }
 
 @media screen and (max-width: 1600px) {
@@ -155,6 +155,10 @@
         }
       }
     }
+  }
+
+  .shulker_wrapper {
+    padding: 12px;
   }
 }
 
