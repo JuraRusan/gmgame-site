@@ -7,8 +7,8 @@ const Select = ({ list, ...props }) => {
   return (
     <select className={classNames(styles["select"])} {...props}>
       <option className={classNames(styles["options"])} value="" disabled={true} />
-      {list.map((el) => (
-        <option className={classNames(styles["options"])} value={el.value}>
+      {list.map((el, index) => (
+        <option className={classNames(styles["options"])} value={el.value} key={index}>
           {el.name}
         </option>
       ))}
