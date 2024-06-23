@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import React, { useEffect, useRef, useState } from "react";
-import MyModal from "../modal/MyModal";
-import Button from "../../modules/components/button/Button";
+import MyModal from "../../../common/modal/MyModal";
+import Button from "../button/Button";
 
 import styles from "./ConfirmModal.module.scss";
 

@@ -11,7 +11,7 @@ import { checkName } from "../mini-marker-components/function/CheckName";
 import { checkDescription } from "../mini-marker-components/function/CheckDescription";
 import { checkCoordinates } from "../mini-marker-components/function/CheckCoordinates";
 import BackButton from "../../back-button/BackButton";
-import ConfirmModal from "../../../../common/confirm-modal/ConfirmModal";
+import ConfirmModal from "../../confirm-modal/ConfirmModal";
 import Input from "../../input/Input";
 import Textarea from "../../textarea/Textarea";
 import Select from "../../select/Select";

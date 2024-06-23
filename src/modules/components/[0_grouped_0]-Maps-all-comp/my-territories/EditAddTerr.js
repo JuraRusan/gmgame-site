@@ -10,7 +10,7 @@ import { checkName } from "../mini-marker-components/function/CheckName";
 import { checkCoordinates } from "../mini-marker-components/function/CheckCoordinates";
 import Button from "../../button/Button";
 import BackButton from "../../back-button/BackButton";
-import ConfirmModal from "../../../../common/confirm-modal/ConfirmModal";
+import ConfirmModal from "../../confirm-modal/ConfirmModal";
 import FormTitle from "../../form-title/FormTitle";
 import Input from "../../input/Input";
 import Select from "../../select/Select";

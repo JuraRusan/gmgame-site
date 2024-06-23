@@ -19,7 +19,7 @@ import Tag from "./tag/Tag";
 import Name from "./name/Name";
 import TextEditor from "../../text-editor/TextEditor";
 import { CalculatingTextLength } from "../../text-editor/functions/CalculatingTextLength";
-import ConfirmModal from "../../../../common/confirm-modal/ConfirmModal";
+import ConfirmModal from "../../confirm-modal/ConfirmModal";
 import FormTitle from "../../form-title/FormTitle";
 import Input from "../../input/Input";
 

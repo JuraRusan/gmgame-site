@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import BinSvgComponent from "../../../../../bases/icons/binSvg/BinSvg";
 import ActionsButton from "../../../[0_grouped_0]-Profile/actions-button/ActionsButton";
-import ConfirmModal from "../../../../../common/confirm-modal/ConfirmModal";
+import ConfirmModal from "../../../confirm-modal/ConfirmModal";
 
 import styles from "./MapViewBlock.module.scss";
 
