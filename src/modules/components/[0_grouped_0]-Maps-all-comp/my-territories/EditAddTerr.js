@@ -198,10 +198,10 @@ const EditAddTerr = (params) => {
           <Select list={VALUE_OPTION} onChange={(e) => setFormServer(e.target.value)} defaultValue={formServer} />
         </div>
         <div className={classNames(styles["coordinates_wrapper"])}>
-          <FormTitle title="Координаты:" count={false} required={false} />
+          <FormTitle title="Начальные координаты:" count={false} required={false} />
           <div className={classNames(styles["block_row"])}>
             <div className={classNames(styles["row_wrapper_content_custom"])}>
-              <FormTitle title="StartX:" count={false} />
+              <FormTitle title="X:" count={false} />
               <Input
                 defaultValue={formXStart}
                 onChange={(e) => {
@@ -211,19 +211,7 @@ const EditAddTerr = (params) => {
               />
             </div>
             <div className={classNames(styles["row_wrapper_content_custom"])}>
-              <FormTitle title="StopX:" count={false} />
-              <Input
-                defaultValue={formXStop}
-                onChange={(e) => {
-                  setFormXStop(e.target.value);
-                  checkCoordinates(e.target.value, setErrorCoordinates);
-                }}
-              />
-            </div>
-          </div>
-          <div className={classNames(styles["block_row"])}>
-            <div className={classNames(styles["row_wrapper_content_custom"])}>
-              <FormTitle title="StartZ:" count={false} />
+              <FormTitle title="Z:" count={false} />
               <Input
                 defaultValue={formZStart}
                 onChange={(e) => {
@@ -232,8 +220,21 @@ const EditAddTerr = (params) => {
                 }}
               />
             </div>
+          </div>
+          <FormTitle title="Конечные координаты:" count={false} required={false} />
+          <div className={classNames(styles["block_row"])}>
             <div className={classNames(styles["row_wrapper_content_custom"])}>
-              <FormTitle title="StopZ:" count={false} />
+              <FormTitle title="X:" count={false} />
+              <Input
+                defaultValue={formXStop}
+                onChange={(e) => {
+                  setFormXStop(e.target.value);
+                  checkCoordinates(e.target.value, setErrorCoordinates);
+                }}
+              />
+            </div>
+            <div className={classNames(styles["row_wrapper_content_custom"])}>
+              <FormTitle title="Z:" count={false} />
               <Input
                 defaultValue={formZStop}
                 onChange={(e) => {
