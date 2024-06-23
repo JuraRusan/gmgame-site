@@ -7,10 +7,9 @@ import { useDispatch } from "react-redux";
 import { useAlert } from "react-alert";
 import Preload from "../../preloader/Preload";
 import useLoading from "../../../loading/useLoading";
-import ReactModal from "react-modal";
+import MyModal from "../../../../common/modal/MyModal";
 import ShulkerBox from "../../[0_grouped_0]-Shopkeepers/shulker-box/Shulker-box";
 import { SHULKERS_TYPE } from "../../../pages/shopkeepers/ShulkersType";
-import ButtonCloseSvgComponent from "../../../../bases/icons/buttonCloseSvg/ButtonCloseSvg";
 import BackButton from "../../back-button/BackButton";
 import Notifications from "../../notifications/Notifications";
 
@@ -39,14 +38,8 @@ const LogTrade = () => {
     if (SHULKERS_TYPE.includes(el.id)) {
       setSelected(el);
       setOpen(true);
-      document.body.style.overflow = "hidden";
     }
   };
-
-  function closeModal() {
-    setOpen(false);
-    document.body.style.overflow = "auto";
-  }
 
   useEffect(() => {
     if (init !== true) {
@@ -118,21 +111,11 @@ const LogTrade = () => {
       )}
       <Notifications inf={INFO_DEFAULT} type="warn" />
 
-      <ReactModal
-        isOpen={open}
-        className={classNames(styles["modal_main_box"])}
-        overlayClassName={classNames(styles["overlay_modal_full"])}
-        ariaHideApp={false}
-      >
-        <div className={classNames(styles["window"])}>
-          <button onClick={closeModal} className={classNames(styles["modal_close"])}>
-            <ButtonCloseSvgComponent width="100%" height="100%" />
-          </button>
-          <div className={classNames(styles["shulker_wrapper"])}>
-            <ShulkerBox customLink="../.." item={selected} />
-          </div>
+      <MyModal open={open} setOpen={setOpen}>
+        <div className={classNames(styles["shulker_wrapper"])}>
+          <ShulkerBox customLink="../.." item={selected} />
         </div>
-      </ReactModal>
+      </MyModal>
     </div>
   );
 };

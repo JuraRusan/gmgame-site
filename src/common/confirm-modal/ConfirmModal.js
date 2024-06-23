@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import React, { useEffect, useRef, useState } from "react";
-import ReactModal from "react-modal";
+import MyModal from "../modal/MyModal";
 import Button from "../../modules/components/button/Button";
 
 import styles from "./ConfirmModal.module.scss";
@@ -14,21 +14,17 @@ const ConfirmModal = ({ open = false, close, yes, no }) => {
   const animationRef = useRef();
 
   const handleYes = () => {
-    document.body.style.overflow = "auto";
     yes();
     close();
   };
 
   const handleNo = () => {
-    document.body.style.overflow = "auto";
     no();
     close();
   };
 
   useEffect(() => {
     if (open) {
-      document.body.style.overflow = "hidden";
-
       const startTime = Date.now();
       let isCanceled = false;
 
@@ -78,13 +74,8 @@ const ConfirmModal = ({ open = false, close, yes, no }) => {
   }
 
   return (
-    <ReactModal
-      isOpen={true}
-      className={classNames(styles["modal_main_box"])}
-      overlayClassName={classNames(styles["overlay_modal_full"])}
-      ariaHideApp={false}
-    >
-      <div className={classNames(styles["window"])}>
+    <MyModal open={true} showClose={false}>
+      <div className={classNames(styles["confirm"])}>
         <p className={classNames(styles["text"])}>Подтвердите удаление</p>
         <div className={classNames(styles["actions"])}>
           <Button onClick={handleNo} view="submit" label="Отменить" />
@@ -98,7 +89,7 @@ const ConfirmModal = ({ open = false, close, yes, no }) => {
           }}
         />
       </div>
-    </ReactModal>
+    </MyModal>
   );
 };
 
