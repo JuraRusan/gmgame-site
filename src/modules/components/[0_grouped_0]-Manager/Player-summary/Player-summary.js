@@ -234,7 +234,7 @@ const PlayerSummary = () => {
     }
 
     if (event.target.id === "citizenship") {
-      valueDate = event.target.value === "true" ? true : false;
+      valueDate = event.target.value === "true";
     }
 
     input[id] = {
@@ -363,18 +363,20 @@ const PlayerSummary = () => {
       setTag({});
       let tagUser = {};
       response.forEach((user) => {
-        try {
-          let tag = JSON.parse(user.tag);
-          tagUser[user.username] = tag.id ? tag : JSON.parse(tag);
-        } catch (err) {
-          const email = user.tag.match(/email": "(.+?)"/);
-          tagUser[user.username] = email && email[1] ? { email: email[1] } : "";
-        }
+        // try {
+        //   let tag = JSON.parse(user.tag);
+        //   tagUser[user.username] = tag.id ? tag : JSON.parse(tag);
+        // } catch (err) {
+        //   const email = user.tag.match(/email": "(.+?)"/);
+        //   tagUser[user.username] = email && email[1] ? { email: email[1] } : "";
+        // }
+        tagUser[user.username] = user.tag.id;
+        tagUser[user.username] = !user.tag.email ? "" : user.tag.email;
       });
       setTag(tagUser);
       setRegens([]);
       setTerritories({});
-      setUser({});
+      setUser([]);
       setMarkers([]);
       setUser(response);
     });
