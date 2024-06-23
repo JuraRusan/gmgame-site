@@ -14,6 +14,7 @@ import { useAlert } from "react-alert";
 import axios from "axios";
 import ResetSvgComponent from "../../../bases/icons/resetSvg/ResetSvg";
 import Input from "../../components/input/Input";
+import { useNavigate, useSearchParams } from "react-router-dom";
 
 import styles from "./Shopkeepers.module.scss";
 
@@ -30,6 +31,9 @@ const DEFAULT_INFO_SHOP = {
 };
 
 const Shopkeepers = () => {
+  const [searchParams] = useSearchParams();
+  const navigate = useNavigate();
+
   const dispatch = useDispatch();
   const isLoading = useLoading();
   const alert = useAlert();
@@ -82,10 +86,11 @@ const Shopkeepers = () => {
   };
 
   const handleReset = () => {
-    const newUrl = `${window.location.origin}/shopkeepers`;
-    window.history.pushState({ path: newUrl }, "", newUrl);
+    searchParams.set("_uuid", "");
+    navigate({ search: searchParams.toString() }, { replace: true });
 
     scrollActive();
+    setActive("");
     setInfoShop(DEFAULT_INFO_SHOP);
     setValueSearchItem("");
     setDataOffers([]);
@@ -94,8 +99,8 @@ const Shopkeepers = () => {
   };
 
   const handleActive = (el) => {
-    const newUrl = `${window.location.origin}/shopkeepers?_uuid=${el}`;
-    window.history.pushState({ path: newUrl }, "", newUrl);
+    searchParams.set("_uuid", el);
+    navigate({ search: searchParams.toString() }, { replace: true });
 
     shopFunction(el);
     scrollActive();
@@ -164,8 +169,7 @@ const Shopkeepers = () => {
   }, []);
 
   useEffect(() => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const param = urlParams.get("_uuid");
+    const param = searchParams.get("_uuid");
     const _uuidSearch = !param ? [] : [param];
     const uuid = [..._uuidSearch];
 
@@ -195,11 +199,10 @@ const Shopkeepers = () => {
   }, [fetching]);
 
   useEffect(() => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const _uuid = urlParams.get("_uuid");
+    const _uuid = searchParams.get("_uuid");
 
     if (_uuid) {
-      if (loadedAll) shopFunction(urlParams.get("_uuid"));
+      if (loadedAll) shopFunction(_uuid);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [loadedAll]);
