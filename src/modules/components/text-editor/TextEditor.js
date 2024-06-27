@@ -500,7 +500,7 @@ const TextEditor = ({ value = DEFAULT_VALUE, setValue, textLength = () => {}, me
             <MarkButton format="italic" icon={<ItalicSvgComponent width="100%" height="100%" />} />
             <MarkButton format="underline" icon={<UnderlineSvgComponent width="100%" height="100%" />} />
             <MarkButton format="code" icon={<CodeSvgComponent width="100%" height="100%" />} />
-            <MarkButton format="link" icon={<LinkSvgComponent width="100%" height="100%" />} />
+            {/*<MarkButton format="link" icon={<LinkSvgComponent width="100%" height="100%" />} />*/}
           </div>
           <div className={classNames(styles["block"])}>
             <BlockButton format="paragraph" icon={<ParagraphSvgComponent width="100%" height="100%" />} />
