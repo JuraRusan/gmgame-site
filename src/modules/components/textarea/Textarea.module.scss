@@ -27,6 +27,18 @@
   &:focus {
     background: $site-color-1;
   }
+
+  &:disabled {
+    border: none;
+    border-radius: 0;
+    color: $site-color-2;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background: $site-color-12;
+    }
+  }
 }
 
 @media screen and (max-width: 1600px) {
