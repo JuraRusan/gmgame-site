@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import React from "react";
 import { Link } from "react-router-dom";
+import BooleanCheck from "../boolean-check/BooleanCheck";
 
 import styles from "./Table.module.scss";
 
@@ -21,6 +22,8 @@ const Th = ({ type, href, content, children }) => {
     </Link>
   );
 
+  const boolean = <BooleanCheck className={classNames(styles["table_boolean"])} value={content} />;
+
   const text = (
     <p className={classNames(styles["tableText"])}>
       {trimString(content, length)}
@@ -37,6 +40,8 @@ const Th = ({ type, href, content, children }) => {
       return link;
     } else if (type === "link_to") {
       return link_to;
+    } else if (type === "boolean") {
+      return boolean;
     } else {
       return text;
     }

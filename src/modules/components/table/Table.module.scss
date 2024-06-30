@@ -1,6 +1,6 @@
 @import "../../../Variables.scss";
 
-$table-parameter: 34;
+$table_parameter: 34;
 
 .tableMain {
   width: auto;
@@ -22,9 +22,9 @@ $table-parameter: 34;
 }
 
 .tableRows {
-  height: #{$table-parameter}px;
-  min-height: #{$table-parameter}px;
-  max-height: calc(#{$table-parameter} * 5px);
+  height: #{$table_parameter}px;
+  min-height: #{$table_parameter}px;
+  max-height: calc(#{$table_parameter}px * 5px);
   border-top: 1px solid $site-color-5;
   transition: all 0.2s ease;
 }
@@ -43,11 +43,11 @@ $table-parameter: 34;
 
 .tableColumns {
   width: auto;
-  height: #{$table-parameter}px;
+  height: #{$table_parameter}px;
   font-weight: 400;
   border-left: 1px solid $site-color-5;
   transition: all 0.15s ease;
-  line-height: 32px; // зависит от `$table-parameter` минус 2px (функция калькалятора не работает почемуто)
+  line-height: 32px; // зависит от `$table_parameter` минус 2px (функция калькалятора не работает почемуто)
 
   &:nth-child(1) {
     border: none;
@@ -61,8 +61,8 @@ $table-parameter: 34;
 
 .tableText {
   width: 100%;
-  height: calc(#{$table-parameter} - 1px);
-  line-height: #{$table-parameter}px;
+  height: calc(#{$table_parameter}px - 1px);
+  line-height: #{$table_parameter}px;
   font-size: 13px;
   padding: 0 8px;
   color: $site-color-2;
@@ -115,8 +115,8 @@ $table-parameter: 34;
 
 .tableSelect {
   width: 100%;
-  height: #{$table-parameter}px;
-  line-height: #{$table-parameter}px;
+  height: #{$table_parameter}px;
+  line-height: #{$table_parameter}px;
   border: none;
   border-radius: 0;
   color: $site-color-8;
@@ -139,8 +139,8 @@ $table-parameter: 34;
 
 .tableLink {
   width: auto;
-  height: #{$table-parameter}px;
-  line-height: #{$table-parameter}px;
+  height: #{$table_parameter}px;
+  line-height: #{$table_parameter}px;
   font-size: 13px;
   padding: 0 10px;
   text-decoration: none;
@@ -152,6 +152,14 @@ $table-parameter: 34;
   }
 }
 
+.table_boolean {
+  width: auto;
+  height: #{$table_parameter}px;
+  line-height: #{$table_parameter}px;
+  font-size: 13px;
+  padding: 0 10px;
+}
+
 .tableTextarea {
   outline: none;
   border: none;
@@ -159,10 +167,10 @@ $table-parameter: 34;
   width: 700px;
   min-width: 700px;
   max-width: 700px;
-  height: #{$table-parameter}px;
-  min-height: #{$table-parameter}px;
-  max-height: calc(#{$table-parameter} * 3px);
-  line-height: #{$table-parameter}px;
+  height: #{$table_parameter}px;
+  min-height: #{$table_parameter}px;
+  max-height: calc(#{$table_parameter}px * 3px);
+  line-height: #{$table_parameter}px;
   background: transparent;
   color: $site-color-2;
   padding: 0 10px;
@@ -183,8 +191,8 @@ $table-parameter: 34;
   border: none;
   border-radius: 0;
   outline: none;
-  height: #{$table-parameter}px;
-  line-height: #{$table-parameter}px;
+  height: #{$table_parameter}px;
+  line-height: #{$table_parameter}px;
   background: transparent;
   padding: 0 10px;
   font-size: 13px;

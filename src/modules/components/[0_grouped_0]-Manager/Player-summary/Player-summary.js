@@ -445,6 +445,7 @@ const PlayerSummary = () => {
                 <Th type="text" content="Статус" />
                 <Th type="text" content="Имун" />
                 <Th type="text" content="Гражд." />
+                <Th type="text" content="Баланс" />
                 <Th type="text" content="Доп. инфа" />
                 <Th type="text" content="Действия" />
               </Tr>
@@ -458,8 +459,9 @@ const PlayerSummary = () => {
                   <Th type="text" content={el?.user_id || "-"} />
                   <Th type="text" content={el?.age || "-"} />
                   <Th type="text" content={el?.status || "-"} />
-                  <Th type="text" content={el?.immun === true ? "true" : "false"} />
-                  <Th type="text" content={el?.citizenship === true ? "true" : "false"} />
+                  <Th type="boolean" content={el?.immun} />
+                  <Th type="boolean" content={el?.citizenship} />
+                  <Th type="text" content={el?.balance} />
                   <Th type="actions">
                     <TButton name="Log" onClick={() => handleOpenModal(el.user_id)} typeClick={true} />
                     <TButton name="User Details" onClick={() => handleOpenModalUd(el)} typeClick={true} />
