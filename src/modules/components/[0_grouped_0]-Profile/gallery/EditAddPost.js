@@ -580,9 +580,7 @@ const EditAddPost = () => {
             open={isConfirmActive}
             close={() => setIsConfirmActive(false)}
             no={() => setIsConfirmActive(false)}
-            yes={() => {
-              handleDelete(Number(id));
-            }}
+            yes={() => handleDelete(Number(id))}
           />
         </div>
       </div>

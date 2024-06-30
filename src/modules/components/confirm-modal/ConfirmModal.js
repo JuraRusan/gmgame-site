@@ -7,7 +7,7 @@ import styles from "./ConfirmModal.module.scss";
 
 const TIME = 3000;
 
-const ConfirmModal = ({ open = false, close, yes, no }) => {
+const ConfirmModal = ({ open = false, close, yes, no, message = "Подтвердите действие «Удалить»" }) => {
   const [width, setWidth] = useState("100%");
   const [color, setColor] = useState("#00ff00");
 
@@ -76,10 +76,10 @@ const ConfirmModal = ({ open = false, close, yes, no }) => {
   return (
     <MyModal open={true} showClose={false}>
       <div className={classNames(styles["confirm"])}>
-        <p className={classNames(styles["text"])}>Подтвердите удаление</p>
+        <p className={classNames(styles["text"])}>{message}</p>
         <div className={classNames(styles["actions"])}>
           <Button onClick={handleNo} view="submit" label="Отменить" />
-          <Button onClick={handleYes} view="delete" label="Удалить" />
+          <Button onClick={handleYes} view="delete" label="Подтвердить" />
         </div>
         <div
           className={classNames(styles["timeline"])}

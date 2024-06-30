@@ -264,9 +264,7 @@ const EditAddMarker = (params) => {
             open={isConfirmActive}
             close={() => setIsConfirmActive(false)}
             no={() => setIsConfirmActive(false)}
-            yes={() => {
-              deleteMarker();
-            }}
+            yes={() => deleteMarker()}
           />
         </div>
       </div>

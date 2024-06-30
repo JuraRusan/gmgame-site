@@ -181,9 +181,7 @@ const Gallery = () => {
                     open={isConfirmActive}
                     close={() => setIsConfirmActive(false)}
                     no={() => setIsConfirmActive(false)}
-                    yes={() => {
-                      handleDelete(post.id);
-                    }}
+                    yes={() => handleDelete(post.id)}
                   />
                 </div>
               </div>

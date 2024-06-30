@@ -15,6 +15,8 @@ import TSelect from "../../table/TSelect";
 import TInput from "../../table/TInput";
 import TTextarea from "../../table/TTextarea";
 import Input from "../../input/Input";
+import ConfirmModal from "../../confirm-modal/ConfirmModal";
+import Button from "../../button/Button";
 
 import styles from "./Player-summary.module.scss";
 
@@ -71,6 +73,8 @@ const PlayerSummary = () => {
   const [inputTerrs, setInputTerrs] = useState({});
   const [regens, setRegens] = useState([]);
   const [inputUserDetails, setInputUserDetails] = useState({});
+
+  const [isConfirmActive, setIsConfirmActive] = useState(false);
 
   const handleOpenModal = (userId) => {
     setModalLog(true);
@@ -415,10 +419,6 @@ const PlayerSummary = () => {
   return (
     <div className={classNames(styles["mainUserSummary"])}>
       <Input placeholder={searchParam} onChange={debouncedGetUser} type="search" />
-      <button className={classNames(styles["buttonSearchPlayers"])} type="submit" onClick={() => getUser(searchParam)}>
-        Поиск
-      </button>
-
       <div className={classNames(styles["wrapperButtonManager"])}>
         <button className={classNames(styles["buttonSearchAll"])} type="submit" onClick={getMarkers}>
           Отображение всех меток
@@ -469,8 +469,8 @@ const PlayerSummary = () => {
                   <Th type="text" content={el?.immun === true ? "true" : "false"} />
                   <Th type="text" content={el?.citizenship === true ? "true" : "false"} />
                   <Th type="actions">
-                    <TButton name="Log" onClick={() => handleOpenModal(el.user_id)} />
-                    <TButton name="User Details" onClick={() => handleOpenModalUd(el)} />
+                    <TButton name="Log" onClick={() => handleOpenModal(el.user_id)} typeClick={true} />
+                    <TButton name="User Details" onClick={() => handleOpenModalUd(el)} typeClick={true} />
                   </Th>
                   <Th type="editing">
                     <TSelect
@@ -493,9 +493,19 @@ const PlayerSummary = () => {
               ))}
             </TBody>
           </TableMain>
-          <button className={classNames(styles["buttonPlayersSubmit"])} type="submit" onClick={actionUser}>
-            Применить
-          </button>
+          <Button
+            className={classNames(styles["box_save"])}
+            view="submit"
+            label="Применить"
+            onClick={() => setIsConfirmActive(true)}
+          />
+          <ConfirmModal
+            open={isConfirmActive}
+            close={() => setIsConfirmActive(false)}
+            no={() => setIsConfirmActive(false)}
+            yes={actionUser}
+            message="Подтвердите действие «Обновить»"
+          />
         </>
       )}
 
@@ -555,8 +565,16 @@ const PlayerSummary = () => {
                     </Th>
                     <Th type="link" href={`https://map.gmgame.ru/#/${el.x}/64/${el.z}/-4/GMGameWorld/over`}></Th>
                     <Th type="actions">
-                      <TButton name="Удалить" type="submit" onClick={() => delMarker(el.id, username)} />
-                      <TButton name="Обновить" type="submit" onClick={() => updateMarker(el.id)} />
+                      <TButton
+                        name="Удалить"
+                        onClick={() => delMarker(el.id, username)}
+                        message="Подтвердите действие «Удалить»"
+                      />
+                      <TButton
+                        name="Обновить"
+                        onClick={() => updateMarker(el.id)}
+                        message="Подтвердите действие «Обновить»"
+                      />
                     </Th>
                   </Tr>
                 ))}
@@ -659,8 +677,16 @@ const PlayerSummary = () => {
                             }/-4/GMGameWorld/over`}
                           />
                           <Th type="actions">
-                            <TButton name="Удалить" type="submit" onClick={() => delTerr(el.id, i, username)} />
-                            <TButton name="Обновить" type="submit" onClick={() => updateTerr(el.id)} />
+                            <TButton
+                              name="Удалить"
+                              onClick={() => delTerr(el.id, i, username)}
+                              message="Подтвердите действие «Удалить»"
+                            />
+                            <TButton
+                              name="Обновить"
+                              onClick={() => updateTerr(el.id)}
+                              message="Подтвердите действие «Обновить»"
+                            />
                           </Th>
                         </Tr>
                       )}
@@ -750,11 +776,15 @@ const PlayerSummary = () => {
                         <Th type="text" content="Не известно" />
                         <Th type="link" href={`/manager/player_summary?user_id=${regen.user_id}`} />
                         <Th type="actions">
-                          <TButton name="Реген" type="submit" onClick={() => regenAction(regen.user_id, "regen", i)} />
+                          <TButton
+                            name="Реген"
+                            onClick={() => regenAction(regen.user_id, "regen", i)}
+                            message="Подтвердите действие «Реген»"
+                          />
                           <TButton
                             name="Оставить"
-                            type="submit"
                             onClick={() => regenAction(regen.user_id, "settle", i)}
+                            message="Подтвердите действие «Оставить»"
                           />
                         </Th>
                       </Tr>

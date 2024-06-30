@@ -261,9 +261,7 @@ const EditAddTerr = (params) => {
             open={isConfirmActive}
             close={() => setIsConfirmActive(false)}
             no={() => setIsConfirmActive(false)}
-            yes={() => {
-              deleteTerr();
-            }}
+            yes={() => deleteTerr()}
           />
         </div>
       </div>

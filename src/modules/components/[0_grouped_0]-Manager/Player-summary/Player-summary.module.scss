@@ -22,29 +22,9 @@ $table-parameter: 34;
   height: auto;
   min-height: 80vh;
 
-  .buttonSearchPlayers,
-  .buttonPlayersSubmit {
-    width: 100%;
-    max-width: 250px;
-    height: 30px;
-    margin: 8px auto;
-    line-height: 30px;
-    text-align: center;
-    outline: none;
-    background: $site-color-12;
-    border: 1px solid $site-color-5;
-    border-radius: 8px;
-    transition: all 0.25s ease-in-out;
-    color: $site-color-2;
-    cursor: pointer;
-    font-size: 14px;
-
-    &:hover,
-    &:focus,
-    &:active {
-      outline: none;
-      background: $site-color-1;
-    }
+  .box_save {
+    width: 200px;
+    margin: 12px auto;
   }
 
   .wrapperButtonManager {
@@ -89,7 +69,7 @@ $table-parameter: 34;
     text-align: center;
     font-size: 20px;
     font-weight: 400;
-    margin: 35px auto 5px auto;
+    margin: 12px auto 12px auto;
   }
 }
 
