@@ -528,7 +528,7 @@ const PlayerSummary = () => {
                 {markers[username].map((el, i) => (
                   <Tr key={i} keyStyle={i}>
                     <Th type="text" content={i + 1} />
-                    {username === "all" && <Th type="text" content={el?.username || "-"} />}
+                    {username === "all" && <Th type="text" content={el?.user.username || "-"} />}
                     <Th type="editing">
                       <TInput id="name" size="large" onChange={(e) => markerChange(e, el.id)} defaultValue={el.name} />
                     </Th>
@@ -607,7 +607,7 @@ const PlayerSummary = () => {
                       {!el.notRender && (
                         <Tr key={i} keyStyle={i}>
                           <Th type="text" content={i + 1} />
-                          {username === "all" && <Th type="text" content={el?.username || "-"} />}
+                          {username === "all" && <Th type="text" content={el?.user.username || "-"} />}
                           <Th type="editing">
                             <TInput
                               id="name"
