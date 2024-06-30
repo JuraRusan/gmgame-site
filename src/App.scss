@@ -38,9 +38,9 @@ div#root {
   background: $site-color-3;
 }
 
-.class-z-index-10000-header {
+.class-z-index-30 {
   position: relative;
-  z-index: 10000;
+  z-index: 30;
 }
 
 .sticky-header {
@@ -51,13 +51,8 @@ div#root {
   transition: all 0.35s ease;
 }
 
-.class-z-index-8000-footer {
-  position: relative;
-  z-index: 8000;
-}
-
-.class-z-index-1000 {
-  z-index: 1000;
+.class-z-index-25 {
+  z-index: 25;
   width: auto;
   max-height: none;
   min-height: 94vh;

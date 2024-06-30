@@ -18,13 +18,13 @@ function App() {
   return (
     <Router>
       <div id="dynamic" className="main-wrapper-bg">
-        <div className="class-z-index-10000-header" id="header">
+        <div className="class-z-index-30" id="header">
           <Header />
         </div>
-        <div className="class-z-index-1000">
+        <div className="class-z-index-25">
           <Routes />
         </div>
-        <div className="class-z-index-10000-footer">
+        <div className="class-z-index-30">
           <Footer />
         </div>
       </div>
