@@ -33,17 +33,7 @@ const Manager = () => {
         {/* prettier-ignore */}
         <NavLink className={({isActive}) => setActive(isActive)} to="faq_editor">Редактор Faq</NavLink>
         {/* prettier-ignore */}
-        <NavLink className={({isActive}) => setActive(isActive)} to="mod_editor">Редактор модов</NavLink>
-        {/* prettier-ignore */}
-        <NavLink className={({isActive}) => setActive(isActive)} to="texture_pack_editor">Редактор текстур пака</NavLink>
-        {/* prettier-ignore */}
-        <NavLink className={({isActive}) => setActive(isActive)} to="regulations_editor">Редактор правил</NavLink>
-        {/* prettier-ignore */}
-        <NavLink className={({isActive}) => setActive(isActive)} to="monitoring_summary">Сводка по мониторингам</NavLink>
-        {/* prettier-ignore */}
         <NavLink className={({isActive}) => setActive(isActive)} to="gallery_status_view">Публикации в галереи</NavLink>
-        {/* prettier-ignore */}
-        <NavLink className={({isActive}) => setActive(isActive)} to="permissions_status">Разрешения</NavLink>
         {/* prettier-ignore */}
         <NavLink className={({isActive}) => setActive(isActive)} to="shopkeepers_all_status">Все магазины</NavLink>
         {/* prettier-ignore */}

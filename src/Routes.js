@@ -14,21 +14,16 @@ const NoAccess = lazy(() => import(/* webpackChunkName: "no_access" */ "./module
 
 // --
 // const CabNotAvailable = lazy(() => import(/* webpackChunkName: "cab" */ "./modules/components/[0_grouped_0]-Profile/cab-not-available/CabNotAvailable")); // prettier-ignore
-const NotAvailable = lazy(() => import(/* webpackChunkName: "not_available" */ "./modules/pages/not-available/NotAvailable")); // prettier-ignore
+// const NotAvailable = lazy(() => import(/* webpackChunkName: "not_available" */ "./modules/pages/not-available/NotAvailable")); // prettier-ignore
 
 // --
 const Manager = lazy(() => import(/* webpackChunkName: "manager" */ "./modules/pages/manager/Manager")); // prettier-ignore
 const PlayerSummary = lazy(() => import(/* webpackChunkName: "manager" */ "./modules/components/[0_grouped_0]-Manager/Player-summary/Player-summary")); // prettier-ignore
 const FaqEditor = lazy(() => import(/* webpackChunkName: "manager" */ "./modules/components/[0_grouped_0]-Manager/Faq-editor/Faq-editor")); // prettier-ignore
-const ModEditor = lazy(() => import(/* webpackChunkName: "manager" */ "./modules/components/[0_grouped_0]-Manager/Mod-editor/Mod-editor")); // prettier-ignore
 const DonateStatusEditor = lazy(() => import(/* webpackChunkName: "manager" */ "./modules/components/[0_grouped_0]-Manager/Donate-status/Donate-status-editor")); // prettier-ignore
-const TexturePackEditor = lazy(() => import(/* webpackChunkName: "manager" */ "./modules/components/[0_grouped_0]-Manager/Texture-pack-editor/Texture-pack-editor")); // prettier-ignore
-const RegulationsEditor = lazy(() => import(/* webpackChunkName: "manager" */ "./modules/components/[0_grouped_0]-Manager/Regulations-editor/Regulations-editor")); // prettier-ignore
-const MonitoringSummary = lazy(() => import(/* webpackChunkName: "manager" */ "./modules/components/[0_grouped_0]-Manager/Monitoring-summary/Monitoring-summary")); // prettier-ignore
 const GalleryStatusView = lazy(() => import(/* webpackChunkName: "manager" */ "./modules/components/[0_grouped_0]-Manager/Gallery-status-view/Gallery-status-view")); // prettier-ignore
 const BoxView = lazy(() => import(/* webpackChunkName: "manager" */ "./modules/components/[0_grouped_0]-Manager/Box-view/Box-view")); // prettier-ignore
 const ShopkeepersAllStatus = lazy(() => import(/* webpackChunkName: "manager" */ "./modules/components/[0_grouped_0]-Manager/Shopkeepers-all-status/Shopkeepers-all-status")); // prettier-ignore
-// const PermissionsStatus = lazy(() => import(/* webpackChunkName: "manager" */ "./modules/components/[0_grouped_0]-Manager/Permissions-status/Permissions-status")); // prettier-ignore
 
 // --
 const Faq = lazy(() => import(/* webpackChunkName: "faq" */ "./modules/pages/faq/Faq.js")); // prettier-ignore
@@ -61,8 +56,6 @@ const ChangePassword = lazy(() => import(/* webpackChunkName: "cab" */ "./module
 
 // --
 const Statistic = lazy(() => import(/* webpackChunkName: "statistics" */ "./modules/pages/statistic/Statistic.js"));
-// const TexturePack = lazy(() => import(/* webpackChunkName: "texture_pack" */ "./modules/pages/texture-pack/TexturePack.js")); // prettier-ignore
-// const Mods = lazy(() => import(/* webpackChunkName: "mods" */ "./modules/pages/mods/Mods.js")); // prettier-ignore
 const Maps = lazy(() => import(/* webpackChunkName: "maps" */ "./modules/pages/maps/Maps.js")); // prettier-ignore
 const Support = lazy(() => import(/* webpackChunkName: "support" */ "./modules/pages/support/Support.js")); // prettier-ignore
 const Shopkeepers = lazy(() => import(/* webpackChunkName: "shopkeepers" */ "./modules/pages/shopkeepers/Shopkeepers.js")); // prettier-ignore
@@ -109,25 +102,18 @@ const Router = () => {
           <Route path="/gallery" element={<MainGallery />} />
           <Route path="/faq" element={<Faq />} />
           <Route path="/regulations" element={<Regulations />} />
-          <Route path="/mods" element={<NotAvailable />} /> {/* <Mods/> */}
           <Route path="/statistic" element={<Statistic />} />
           <Route path="/support" element={<Support />} />
           <Route path="/online_map" element={<Maps />} />
-          <Route path="/texture_pack" element={<NotAvailable />} /> {/* <TexturePack/> */}
           <Route path="/shopkeepers" element={<Shopkeepers />} />
           <Route exact path="/manager" element={<Manager />}>
             <Route path="player_summary" element={<PlayerSummary />} />
             <Route path="faq_editor" element={<FaqEditor />} />
-            <Route path="mod_editor" element={<ModEditor />} />
             <Route path="donate_status_editor" element={<DonateStatusEditor />} />
-            <Route path="texture_pack_editor" element={<TexturePackEditor />} />
-            <Route path="regulations_editor" element={<RegulationsEditor />} />
-            <Route path="monitoring_summary" element={<MonitoringSummary />} />
             <Route path="gallery_status_view" element={<GalleryStatusView />} />
             <Route path="gallery_status_view/:id" element={<BoxView type="gallery" />} />
             <Route path="shopkeepers_all_status" element={<ShopkeepersAllStatus />} />
             <Route path="shopkeepers_all_status/:uuid" element={<BoxView type="shopkeepers_log" />} />
-            <Route path="permissions_status" element={<NotAvailable />} /> {/* <PermissionsStatus/> */}
           </Route>
         </Routes>
       </Provider>
