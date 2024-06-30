@@ -93,7 +93,15 @@ $table-parameter: 34;
   flex-direction: column;
   width: auto;
   height: auto;
+  overflow: auto;
+  max-width: 90vw;
+  max-height: 82vh;
   margin: 12px;
+  padding: 0 8px;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
 
   .app_info {
     color: $site-color-8;
@@ -104,6 +112,10 @@ $table-parameter: 34;
     font-family: $fontCustom2;
     text-align: center;
     margin: 0 auto;
+
+    &:nth-last-child(2) {
+      margin-top: 32px;
+    }
   }
 
   .main_line_user {
@@ -113,33 +125,18 @@ $table-parameter: 34;
     .ico_player {
       width: 32px;
       height: 32px;
-    }
-
-    .stroke_name {
-      color: $site-color-2;
-      line-height: 32px;
-      height: 32px;
-      margin-left: 8px;
-      font-weight: 400;
-      font-size: 15px;
-      font-family: $fontCustom2;
-
-      .span_display {
-        padding: 0 0 0 4px;
-        color: $site-color-8;
-        font-weight: inherit;
-        font-size: inherit;
-        font-family: inherit;
-      }
+      margin-right: 8px;
     }
   }
 
   .stroke {
     color: $site-color-2;
-    line-height: 1.5;
-    min-height: 24px;
+    line-height: 32px;
+    height: 32px;
     font-weight: 400;
     font-size: 14px;
+    font-family: $fontCustom2;
+    padding-left: 2px;
 
     .color {
       padding: 0 0 0 4px;
@@ -147,6 +144,13 @@ $table-parameter: 34;
       font-weight: inherit;
       font-size: inherit;
       font-family: inherit;
+    }
+
+    .padding_children {
+      padding: 0 0 0 4px;
+      line-height: 32px;
+      height: 32px;
+      font-size: 14px;
     }
   }
 
@@ -157,114 +161,29 @@ $table-parameter: 34;
     width: auto;
     height: auto;
 
-    .label_name {
-      display: flex;
-      color: $site-color-2;
-      line-height: 24px;
-      height: 24px;
-      font-weight: 400;
-      font-size: 14px;
-    }
-
-    .input {
-      width: 100%;
+    .input_checkbox {
+      width: 20px;
       height: 20px;
-      margin: 2px 0 2px 8px;
-      padding: 0 4px;
-      outline: none;
-      border: none;
-      border-radius: 4px;
-      background: $site-color-12;
-      transition: all 0.35s ease;
-      color: $site-color-8;
-
-      &:hover,
-      &:active,
-      &:focus {
-        background: $site-color-1;
-        color: $site-color-8;
-      }
+      margin: 6px 8px;
     }
   }
 
-  .active_app {
-    display: flex;
-    flex-direction: column;
-    background: $site-color-12;
-    margin: 4px auto 4px auto;
-    width: 1600px;
-    height: auto;
-    border: 1px solid $site-color-5;
-    border-radius: 4px;
-    padding: 12px;
-
-    .wrapper_actions {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-
-      .submit {
-        width: 200px;
-        height: 28px;
-        line-height: 28px;
-        text-align: center;
-        background: $site-color-12;
-        border: 1px solid $site-color-4;
-        border-radius: 4px;
-        transition: all 0.3s ease-in-out;
-        color: $site-color-8;
-        cursor: pointer;
-        font-size: 14px;
-
-        &:hover,
-        &:focus,
-        &:active {
-          background: $site-color-1;
-        }
-      }
-    }
-  }
-
+  .active_app,
   .old_app {
     display: flex;
     flex-direction: column;
-    background: $site-color-12;
-    margin: 4px auto 16px auto;
-    width: 1300px;
+    width: 800px;
     height: auto;
-    border: 1px solid $site-color-5;
-    border-radius: 4px;
-    padding: 12px;
+
+    .wrapper_actions {
+      width: 200px;
+      margin: 12px auto 0 auto;
+    }
   }
 
   .description_user {
     display: flex;
     flex-direction: column;
     margin-top: 8px;
-
-    .notes {
-      max-width: 1574px;
-      width: 100%;
-      line-height: 1.35;
-      height: auto;
-      min-height: 100px;
-      max-height: 400px;
-      resize: vertical;
-      margin: 4px 0 16px 0;
-      padding: 4px;
-      outline: none;
-      border: none;
-      border-radius: 4px;
-      background: $site-color-12;
-      transition: all 0.35s ease;
-      color: $site-color-8;
-
-      &:hover,
-      &:active,
-      &:focus {
-        background: $site-color-1;
-        color: $site-color-8;
-      }
-    }
   }
 }

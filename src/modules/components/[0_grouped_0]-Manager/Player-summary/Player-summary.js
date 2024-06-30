@@ -17,41 +17,27 @@ import TTextarea from "../../table/TTextarea";
 import Input from "../../input/Input";
 import ConfirmModal from "../../confirm-modal/ConfirmModal";
 import Button from "../../button/Button";
+import Textarea from "../../textarea/Textarea";
+import FormTitle from "../../form-title/FormTitle";
+import BooleanCheck from "../../boolean-check/BooleanCheck";
 
 import styles from "./Player-summary.module.scss";
+
+const StrokeInfo = ({ label, info = undefined, children }) => {
+  return (
+    <p className={classNames(styles["stroke"])}>
+      {label}
+      {info === undefined ? null : <span className={classNames(styles["color"])}>{info}</span>}
+      {children}
+    </p>
+  );
+};
 
 const StrokeName = ({ name }) => {
   return (
     <div className={classNames(styles["main_line_user"])}>
       <img className={classNames(styles["ico_player"])} src={`https://minotar.net/helm/${name}/150`} alt="none" />
-      <p className={classNames(styles["stroke_name"])}>
-        Ник игрока:
-        <span className={classNames(styles["span_display"])}>{name}</span>
-      </p>
-    </div>
-  );
-};
-
-const StrokeInfo = ({ label, info }) => {
-  return (
-    <p className={classNames(styles["stroke"])}>
-      {label}
-      <span className={classNames(styles["color"])}>{info}</span>
-    </p>
-  );
-};
-
-const StrokeRedactor = ({ label, onChange, defaultValue, id, type }) => {
-  return (
-    <div className={classNames(styles["stroke_row"])}>
-      <p className={classNames(styles["label_name"])}>{label}</p>
-      <input
-        className={classNames(styles["input"])}
-        id={id}
-        type={type}
-        onChange={onChange}
-        defaultValue={defaultValue}
-      />
+      <StrokeInfo label="Ник игрока:" info={name} />
     </div>
   );
 };
@@ -237,18 +223,24 @@ const PlayerSummary = () => {
       value = new Date(event.target.value).toISOString();
     }
 
-    if (event.target.id === "citizenship") {
-      value = event.target.value === "true";
-    }
-
-    if (event.target.id === "immun") {
-      value = event.target.value === "true";
-    }
-
     input[id] = {
       ...input[id],
       ...{ [event.target.id]: value || event.target.value },
     };
+
+    if (event.target.id === "citizenship") {
+      input[id] = {
+        ...input[id],
+        ...{ [event.target.id]: event.target.checked },
+      };
+    }
+
+    if (event.target.id === "immun") {
+      input[id] = {
+        ...input[id],
+        ...{ [event.target.id]: event.target.checked },
+      };
+    }
 
     setInputUserDetails(input);
   };
@@ -810,33 +802,52 @@ const PlayerSummary = () => {
             <StrokeName name={userDetails?.username} />
             <div className={classNames(styles["description_user"])}>
               <StrokeInfo label="Дискорд id:" info={userDetails?.user_id} />
+              <StrokeInfo label="Id в базе:" info={userDetails?.id} />
               <StrokeInfo label="Возраст:" info={userDetails?.age} />
               <StrokeInfo label="Статус игрока:" info={userDetails?.status} />
-              <StrokeRedactor
-                label="Партнер:"
+              <StrokeInfo label="Баланс:" info={userDetails?.balance} />
+
+              <div className={classNames(styles["stroke_row"])}>
+                <StrokeInfo label="Иммунитет:" />
+                <input
+                  className={classNames(styles["input_checkbox"])}
+                  id="immun"
+                  type="checkbox"
+                  onChange={(e) => userDetailsChange(e, userDetails.user_id)}
+                  defaultChecked={userDetails?.immun}
+                />
+              </div>
+
+              <div className={classNames(styles["stroke_row"])}>
+                <StrokeInfo label="Гражданство:" />
+                <input
+                  className={classNames(styles["input_checkbox"])}
+                  id="citizenship"
+                  type="checkbox"
+                  onChange={(e) => userDetailsChange(e, userDetails.user_id)}
+                  defaultChecked={userDetails?.citizenship}
+                />
+              </div>
+
+              <FormTitle title="Партнер:" required={false} count={false} />
+              <Input
                 id="partner"
                 type="text"
                 onChange={(e) => userDetailsChange(e, userDetails.user_id)}
                 defaultValue={userDetails?.partner}
               />
-              <StrokeInfo label="Откуда узнал о проекте:" info={userDetails?.from_about} />
-              <StrokeInfo label="О себе:" info={userDetails?.you_about} />
-              <StrokeRedactor
-                label="Иммунитет:"
-                id="immun"
-                type="text"
-                onChange={(e) => userDetailsChange(e, userDetails.user_id)}
-                defaultValue={userDetails?.immun}
-              />
-              <StrokeRedactor
-                label="Гражданство:"
-                id="citizenship"
-                type="text"
-                onChange={(e) => userDetailsChange(e, userDetails.user_id)}
-                defaultValue={userDetails?.citizenship}
-              />
-              <StrokeRedactor
-                label="Дата_окончания:"
+
+              <FormTitle title="Откуда узнал о проекте:" required={false} count={false} />
+              <Textarea disabled defaultValue={userDetails?.from_about} />
+
+              <FormTitle title="О себе:" required={false} count={false} />
+              <Textarea disabled defaultValue={userDetails?.you_about} />
+
+              <FormTitle title="Друзья:" required={false} count={false} />
+              <Textarea defaultValue={userDetails?.friends} disabled />
+
+              <FormTitle title="Дата_окончания:" required={false} count={false} />
+              <Input
                 id="expiration_date"
                 type="date"
                 onChange={(e) => userDetailsChange(e, userDetails.user_id)}
@@ -844,22 +855,21 @@ const PlayerSummary = () => {
                   userDetails.expirationDate ? userDetails.expirationDate.toISOString().substring(0, 10) : ""
                 }
               />
-              <textarea
-                className={classNames(styles["notes"])}
+
+              <FormTitle title="Описание:" required={false} count={false} />
+              <Textarea
                 id="note"
                 onChange={(e) => userDetailsChange(e, userDetails.user_id)}
                 defaultValue={userDetails?.note}
+                rows="16"
               />
             </div>
-            <div className={classNames(styles["wrapper_actions"])}>
-              <button
-                className={classNames(styles["submit"])}
-                type="submit"
-                onClick={() => updateUser(userDetails.user_id)}
-              >
-                Сохранить
-              </button>
-            </div>
+            <Button
+              className={classNames(styles["wrapper_actions"])}
+              view="submit"
+              label="Сохранить"
+              onClick={() => updateUser(userDetails.user_id)}
+            />
           </div>
           {!userDetails.oldUsers
             ? null
@@ -872,44 +882,43 @@ const PlayerSummary = () => {
                       <StrokeInfo label="Дискорд id:" info={userDetails?.oldUsers[index]?.user_id} />
                       <StrokeInfo label="Возраст:" info={userDetails?.oldUsers[index]?.age} />
                       <StrokeInfo label="Баланс:" info={userDetails?.oldUsers[index]?.balance} />
-                      <StrokeInfo
-                        label="Гражданство:"
-                        info={userDetails?.oldUsers[index]?.citizenship === true ? "true" : "false"}
-                      />
-                      <StrokeInfo
-                        label="Друзья:"
-                        info={!userDetails?.oldUsers[index]?.friends ? "-" : userDetails?.oldUsers[index]?.friends}
-                      />
-                      <StrokeInfo
-                        label="Откуда узнали о проэкте:"
-                        info={
-                          !userDetails?.oldUsers[index]?.from_about ? "-" : userDetails?.oldUsers[index]?.from_about
-                        }
-                      />
-                      <StrokeInfo
-                        label="О себе:"
-                        info={!userDetails?.oldUsers[index]?.you_about ? "-" : userDetails?.oldUsers[index]?.you_about}
-                      />
-                      <StrokeInfo
-                        label="Сервера:"
-                        info={!userDetails?.oldUsers[index]?.server ? "-" : userDetails?.oldUsers[index]?.server}
-                      />
-                      <StrokeInfo
-                        label="Имунитет:"
-                        info={userDetails?.oldUsers[index]?.immun === true ? "true" : "false"}
-                      />
-                      <StrokeInfo
-                        label="Is_discord:"
-                        info={userDetails?.oldUsers[index]?.is_discord === true ? "true" : "false"}
-                      />
-                      <StrokeInfo
-                        label="Заметка о игроке:"
-                        info={!userDetails?.oldUsers[index]?.note ? "-" : userDetails?.oldUsers[index]?.note}
-                      />
-                      <StrokeInfo
-                        label="Партнёр:"
-                        info={!userDetails?.oldUsers[index]?.partner ? "-" : userDetails?.oldUsers[index]?.partner}
-                      />
+                      <StrokeInfo label="Партнёр:" info={userDetails?.oldUsers[index]?.partner} />
+
+                      <StrokeInfo label="Гражданство:">
+                        <BooleanCheck
+                          className={classNames(styles["padding_children"])}
+                          value={userDetails?.oldUsers[index]?.citizenship}
+                        />
+                      </StrokeInfo>
+
+                      <StrokeInfo label="Имунитет:">
+                        <BooleanCheck
+                          className={classNames(styles["padding_children"])}
+                          value={userDetails?.oldUsers[index]?.immun}
+                        />
+                      </StrokeInfo>
+
+                      <StrokeInfo label="Is_discord:">
+                        <BooleanCheck
+                          className={classNames(styles["padding_children"])}
+                          value={userDetails?.oldUsers[index]?.is_discord}
+                        />
+                      </StrokeInfo>
+
+                      <FormTitle title="Друзья:" required={false} count={false} />
+                      <Textarea defaultValue={userDetails?.oldUsers[index]?.friends} disabled />
+
+                      <FormTitle title="Откуда узнали о проэкте:" required={false} count={false} />
+                      <Textarea defaultValue={userDetails?.oldUsers[index]?.from_about} disabled />
+
+                      <FormTitle title="О себе:" required={false} count={false} />
+                      <Textarea defaultValue={userDetails?.oldUsers[index]?.you_about} disabled />
+
+                      <FormTitle title="Сервера:" required={false} count={false} />
+                      <Textarea defaultValue={userDetails?.oldUsers[index]?.server} disabled />
+
+                      <FormTitle title="Заметка о игроке:" required={false} count={false} />
+                      <Textarea defaultValue={userDetails?.oldUsers[index]?.note} disabled />
                     </div>
                   </div>
                 </>
