@@ -732,7 +732,7 @@ const PlayerSummary = () => {
                         {username === "all" && <Th type="text" content={el?.username || "-"} />}
                         <Th type="text" id="name" size="large" content={el.name} />
                         <Th type="actions">
-                          <TButton type="submit" name="Посмотреть" onClick={() => getLink(el.name)} />
+                          <TButton name="Посмотреть" onClick={() => getLink(el.name)} typeClick={true} />
                         </Th>
                       </Tr>
                     )}
