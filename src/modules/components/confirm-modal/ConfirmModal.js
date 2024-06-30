@@ -69,12 +69,8 @@ const ConfirmModal = ({ open = false, close, yes, no, message = "Подтвер�
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [open]);
 
-  if (open === false) {
-    return null;
-  }
-
   return (
-    <MyModal open={true} showClose={false}>
+    <MyModal open={open} showClose={false}>
       <div className={classNames(styles["confirm"])}>
         <p className={classNames(styles["text"])}>{message}</p>
         <div className={classNames(styles["actions"])}>
