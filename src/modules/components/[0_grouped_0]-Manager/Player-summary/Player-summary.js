@@ -89,8 +89,6 @@ const PlayerSummary = () => {
   const [modalLog, setModalLog] = useState(false);
   const [modalUserDetails, setModalUserDetails] = useState(false);
 
-  const [init, setInit] = useState(true);
-
   const reset = () => {
     setUser([]);
     setMarkers({});
@@ -136,7 +134,6 @@ const PlayerSummary = () => {
       setUser(response);
 
       setRegens([]);
-      setInit(false);
     });
   };
 
@@ -494,7 +491,7 @@ const PlayerSummary = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchParam]);
 
-  if (init || isLoading) {
+  if (isLoading) {
     return <Preload full={false} />;
   }
 
