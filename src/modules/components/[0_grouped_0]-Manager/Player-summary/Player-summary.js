@@ -57,6 +57,14 @@ const StrokeName = ({ name }) => {
   );
 };
 
+const HandleManager = ({ label, ...props }) => {
+  return (
+    <button className={classNames(styles["buttonSearchAll"])} {...props}>
+      {label}
+    </button>
+  );
+};
+
 const PlayerSummary = () => {
   const alert = useAlert();
   const isLoading = useLoading();
@@ -98,7 +106,6 @@ const PlayerSummary = () => {
     setSearchParam("");
   };
 
-  /* --------------------------------------------------------------------------------------------------------------------------------- */
   /* --- User --- */
 
   const getUser = (e) => {
@@ -227,7 +234,6 @@ const PlayerSummary = () => {
 
   const debouncedGetUser = useMemo(() => debounce(() => getUser(searchParam), 450), [searchParam]);
 
-  /* --------------------------------------------------------------------------------------------------------------------------------- */
   /* --- Markers --- */
   const getMarkers = () => {
     sendRequest("/api/admin/get_markers", "POST", {}).then((response) => {
@@ -272,7 +278,6 @@ const PlayerSummary = () => {
     setMarkers(newMarkers);
   };
 
-  /* --------------------------------------------------------------------------------------------------------------------------------- */
   /* --- Territories --- */
   const getTerritories = () => {
     sendRequest("/api/admin/get_territories", "POST", {}).then((response) => {
@@ -317,7 +322,6 @@ const PlayerSummary = () => {
     setTerritories(newTerritories);
   };
 
-  /* --------------------------------------------------------------------------------------------------------------------------------- */
   /* --- Actions manager --- */
   const actionsManager = (id, url, update) => {
     let payload = { id: id };
@@ -335,7 +339,6 @@ const PlayerSummary = () => {
     });
   };
 
-  /* --------------------------------------------------------------------------------------------------------------------------------- */
   /* --- Regens --- */
   const getRegens = () => {
     sendRequest("/api/admin/get_regens", "POST", {}).then((response) => {
@@ -371,7 +374,6 @@ const PlayerSummary = () => {
     });
   };
 
-  /* --------------------------------------------------------------------------------------------------------------------------------- */
   /* --- WhiteList --- */
   const getWhiteList = () => {
     sendRequest("/api/admin/get_whitelist", "POST", {}).then((response) => {
@@ -387,7 +389,6 @@ const PlayerSummary = () => {
     });
   };
 
-  /* --------------------------------------------------------------------------------------------------------------------------------- */
   /* --- Logs --- */
   const getLogs = (userId) => {
     sendRequest("/api/admin/get_logs", "POST", { id: userId }).then((response) => {
@@ -400,7 +401,6 @@ const PlayerSummary = () => {
     });
   };
 
-  /* --------------------------------------------------------------------------------------------------------------------------------- */
   /* --- Tickets --- */
   const getTickets = () => {
     sendRequest("/api/admin/get_tickets", "POST", {}).then((response) => {
@@ -447,7 +447,6 @@ const PlayerSummary = () => {
     return 0;
   };
 
-  /* --------------------------------------------------------------------------------------------------------------------------------- */
   /* --- Modals --- */
   const handleOpenModalLog = (userId) => {
     setModalLog(true);
@@ -472,7 +471,6 @@ const PlayerSummary = () => {
     setUserDetails({});
   };
 
-  /* --------------------------------------------------------------------------------------------------------------------------------- */
   /* --- useEffect --- */
   useEffect(() => {
     if (urlSearchParams.get("_user")) {
@@ -504,24 +502,13 @@ const PlayerSummary = () => {
         type="search"
       />
       <div className={classNames(styles["wrapperButtonManager"])}>
-        <button className={classNames(styles["buttonSearchAll"])} type="submit" onClick={getMarkers}>
-          Markers
-        </button>
-        <button className={classNames(styles["buttonSearchAll"])} type="submit" onClick={getTerritories}>
-          Territories
-        </button>
-        <button className={classNames(styles["buttonSearchAll"])} type="submit" onClick={getRegens}>
-          Regens
-        </button>
-        <button className={classNames(styles["buttonSearchAll"])} type="submit" onClick={getWhiteList}>
-          WhiteList
-        </button>
-        <button className={classNames(styles["buttonSearchAll"])} type="submit" onClick={getTickets}>
-          Tickets
-        </button>
+        <HandleManager type="submit" onClick={getMarkers} label="Markers" />
+        <HandleManager type="submit" onClick={getTerritories} label="Territories" />
+        <HandleManager type="submit" onClick={getRegens} label="Regens" />
+        <HandleManager type="submit" onClick={getWhiteList} label="WhiteList" />
+        <HandleManager type="submit" onClick={getTickets} label="Tickets" />
       </div>
 
-      {/* --------------------------------------------------------------------------------------------------------------------------------- */}
       {/* --- User --- */}
       {!user.length ? null : (
         <>
@@ -588,7 +575,6 @@ const PlayerSummary = () => {
         </>
       )}
 
-      {/* --------------------------------------------------------------------------------------------------------------------------------- */}
       {/* --- Markers --- */}
       {Object.keys(markers).map((username, i) => {
         if (markers[username].length === 0) {
@@ -658,7 +644,6 @@ const PlayerSummary = () => {
         );
       })}
 
-      {/* --------------------------------------------------------------------------------------------------------------------------------- */}
       {/* --- Territories --- */}
       {Object.keys(territories).map((username, i) => {
         if (territories[username].length === 0) {
@@ -762,7 +747,6 @@ const PlayerSummary = () => {
         );
       })}
 
-      {/* --------------------------------------------------------------------------------------------------------------------------------- */}
       {/* --- Tickets --- */}
       {Object.keys(tickets).map((username, i) => {
         if (tickets[username].length === 0) {
@@ -803,7 +787,6 @@ const PlayerSummary = () => {
         );
       })}
 
-      {/* --------------------------------------------------------------------------------------------------------------------------------- */}
       {/* --- Regens --- */}
       {regens.length > 0 && (
         <>
@@ -842,7 +825,6 @@ const PlayerSummary = () => {
         </>
       )}
 
-      {/* --------------------------------------------------------------------------------------------------------------------------------- */}
       {/* --- Logs --- */}
       <MyModal open={modalLog} close={handleCloseModalLog}>
         <div className={classNames(styles["cardLog"])}>
@@ -882,7 +864,6 @@ const PlayerSummary = () => {
         </div>
       </MyModal>
 
-      {/* --------------------------------------------------------------------------------------------------------------------------------- */}
       {/* --- User Details --- */}
       <MyModal open={modalUserDetails} close={handleCloseModalUserDetails}>
         <div className={classNames(styles["user_app"])}>
