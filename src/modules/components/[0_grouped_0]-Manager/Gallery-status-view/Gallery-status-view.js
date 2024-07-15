@@ -85,18 +85,21 @@ const GalleryStatusView = () => {
                     onClick={() => {
                       handleAprove(el.id);
                     }}
+                    message="Подтвердите действие «Опубликовать»"
                   />
                   <TButton
                     name="Заблокировать"
                     onClick={() => {
                       handleReject(el.id);
                     }}
+                    message="Подтвердите действие «Заблокировать»"
                   />
                   <TButton
                     name="Удалить"
                     onClick={() => {
                       handleDelete(el.id);
                     }}
+                    message="Подтвердите действие «Удалить»"
                   />
                 </Th>
               </Tr>

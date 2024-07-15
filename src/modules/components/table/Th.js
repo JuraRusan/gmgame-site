@@ -50,6 +50,10 @@ const Th = ({ type, href, content, children }) => {
   const getType = getTypeChildren();
 
   function trimString(str, maxLength) {
+    if (!str) {
+      return "-";
+    }
+
     if (str?.length > maxLength) {
       return str.substring(0, maxLength) + "...";
     } else {

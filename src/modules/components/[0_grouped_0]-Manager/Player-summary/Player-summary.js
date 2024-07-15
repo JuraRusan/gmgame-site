@@ -1,27 +1,53 @@
 import classNames from "classnames";
 import React, { useEffect, useMemo, useState } from "react";
-import { useSearchParams } from "react-router-dom";
 import { sendRequest } from "../../../../DataProvider";
 import { useAlert } from "react-alert";
-import MyModal from "../../../../common/modal/MyModal";
-import debounce from "lodash.debounce";
+import { debounce } from "lodash";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import TableMain from "../../table/TableMain";
 import THead from "../../table/THead";
 import TBody from "../../table/TBody";
 import Tr from "../../table/Tr";
 import Th from "../../table/Th";
 import TButton from "../../table/TButton";
-import TSelect from "../../table/TSelect";
 import TInput from "../../table/TInput";
 import TTextarea from "../../table/TTextarea";
-import Input from "../../input/Input";
+import TSelect from "../../table/TSelect";
+import MyModal from "../../../../common/modal/MyModal";
 import ConfirmModal from "../../confirm-modal/ConfirmModal";
 import Button from "../../button/Button";
-import Textarea from "../../textarea/Textarea";
 import FormTitle from "../../form-title/FormTitle";
+import Input from "../../input/Input";
+import Textarea from "../../textarea/Textarea";
 import BooleanCheck from "../../boolean-check/BooleanCheck";
+import useLoading from "../../../loading/useLoading";
+import Preload from "../../preloader/Preload";
 
 import styles from "./Player-summary.module.scss";
+
+const CASE_STATUS = [
+  { id: "default", translate: "Новая заявка" },
+  { id: 1, translate: "Заявка на рассмотрении" },
+  { id: 2, translate: "Игрок сервера" },
+  { id: 3, translate: "Отказ по заявке" },
+  { id: 4, translate: "Бан на сервере" },
+  { id: 5, translate: "Не активный игрок" },
+  { id: 6, translate: "Новый пустой пользователь" },
+  { id: 7, translate: "Старый отклоненный пользователь" },
+];
+
+const USER_EDIT = {
+  default: { action: null, text: "" },
+  accept: { action: "accept", text: "Принять" },
+  delete: { action: "delete", text: "Удалить" },
+  decline: { action: "decline", text: "Отклонить" },
+  ban: { action: "ban", text: "Забанить" },
+  unban: { action: "unban", text: "Разбанить" },
+  addWl: { action: "resume", text: "Вернуть в wl" },
+  delWL: { action: "suspend", text: "Убрать из wl" },
+};
+
+const PLASEHOLDER = "Поиск работает по discord_id/nickname/discord_tag";
 
 const StrokeInfo = ({ label, info = undefined, children }) => {
   return (
@@ -42,179 +68,148 @@ const StrokeName = ({ name }) => {
   );
 };
 
+const HandleManager = ({ label, ...props }) => {
+  return (
+    <button className={classNames(styles["buttonSearchAll"])} {...props}>
+      {label}
+    </button>
+  );
+};
+
 const PlayerSummary = () => {
-  const [searchParams] = useSearchParams();
-  let [searchParam, setSearchParam] = useState("Поиск работает по discord_id/nickname/discord_tag");
-  let [user, setUser] = useState([]);
-  let [tag, setTag] = useState({});
-  const [action, setAction] = useState({});
-  const [markers, setMarkers] = useState({});
-  const [territories, setTerritories] = useState({});
-  const [tickets, setTickets] = useState({});
-  const [modalLog, setModalLog] = useState(false);
-  const [modalUd, setModalUd] = useState(false);
+  const alert = useAlert();
+  const isLoading = useLoading();
+
+  const [urlSearchParams] = useSearchParams();
+  const navigate = useNavigate();
+
+  const [searchParam, setSearchParam] = useState("");
+
+  const [user, setUser] = useState([]);
+  const [updateUserDetails, setUpdateUserDetails] = useState({});
+
   const [logs, setLogs] = useState([]);
   const [userDetails, setUserDetails] = useState({});
-  const [inputMarker, setInputMarker] = useState({});
-  const [inputTerrs, setInputTerrs] = useState({});
-  const [regens, setRegens] = useState([]);
-  const [inputUserDetails, setInputUserDetails] = useState({});
 
   const [isConfirmActive, setIsConfirmActive] = useState(false);
 
-  const handleOpenModal = (userId) => {
-    setModalLog(true);
+  const [action, setAction] = useState({});
 
-    sendRequest("/api/admin/get_logs", "POST", { id: userId }).then((response) => {
-      if (!response.length > 0) {
-        setLogs([]);
-        alert.error(response.message);
-        return;
-      }
-      setLogs(response);
-    });
+  const [regens, setRegens] = useState([]);
+
+  const [markers, setMarkers] = useState({});
+  const [updateMarkers, setUpdateMarkers] = useState({});
+
+  const [territories, setTerritories] = useState({});
+  const [updateTerritories, setUpdateTerritories] = useState({});
+
+  const [tickets, setTickets] = useState({});
+
+  const [modalLog, setModalLog] = useState(false);
+  const [modalUserDetails, setModalUserDetails] = useState(false);
+
+  const [modalStatus, setModalStatus] = useState(false);
+
+  const reset = () => {
+    setUser([]);
+    setMarkers({});
+    setTerritories({});
+    setTickets({});
+    setRegens([]);
+    setSearchParam("");
   };
 
-  const handleCloseModal = () => {
-    setModalLog(false);
-    setLogs([]);
-  };
+  /* --- User --- */
 
-  const handleOpenModalUd = (user) => {
-    const expirationDate = new Date(user.expiration_date);
-    const ud = { ...user, ...{ expirationDate: expirationDate } };
-    setUserDetails(ud);
-    setModalUd(true);
-  };
-
-  const handleCloseModalUd = () => {
-    setModalUd(false);
-  };
-
-  const alert = useAlert();
-
-  const getUser = (event) => {
-    if (event?.target?.value?.length < 3) {
+  const getUser = (e) => {
+    if (e.length < 3) {
       return;
     }
-    setSearchParam(event?.target?.value || event);
-    sendRequest("/api/admin/get_user", "POST", {
-      searchParam: event?.target?.value || event,
-    }).then((response) => {
+
+    sendRequest("/api/admin/get_user", "POST", { searchParam: e }).then((response) => {
       if (!response[0]?.user_id) {
-        setUser({});
-        setTag({});
+        setUser([]);
         setMarkers({});
         setTerritories({});
         setTickets({});
-        // alert.error(response.message);
+        setRegens([]);
+
         return;
       }
+
+      let userMarker = {};
+      let userTerritories = {};
+      let userTickets = {};
+
+      response.forEach((user) => {
+        userMarker[user.username] = user.markers;
+        userTerritories[user.username] = user.territories;
+        userTickets[user.username] = user.tickets;
+      });
+
+      setMarkers(userMarker);
+      setTerritories(userTerritories);
+      setTickets(userTickets);
+
       setUser(response);
 
-      let makersUser = {};
-      let tagUser = {};
-      let terrUser = {};
-      setTag({});
-      setMarkers({});
-      setTerritories({});
-      setTickets({});
-      response.forEach((user) => {
-        tagUser[user.username] = user.tag;
-        makersUser[user.username] = user.markers;
-        terrUser[user.username] = user.territories;
-        tickets[user.username] = user.tickets;
-      });
-      setTag(tagUser);
-      setMarkers(makersUser);
-      setTerritories(terrUser);
-      setTickets(tickets);
       setRegens([]);
     });
   };
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  const debouncedGetUser = useMemo(() => debounce(getUser, 300), []);
+  const getActions = (user) => {
+    let values = [USER_EDIT.default];
 
-  useEffect(() => {
-    if (searchParams.get("user_id")) {
-      getUser(searchParams.get("user_id"));
+    switch (user?.status) {
+      case 1:
+        values.push(USER_EDIT.accept, USER_EDIT.decline, USER_EDIT.delete);
+        break;
+      case 2:
+        values.push(USER_EDIT.ban, USER_EDIT.delete, USER_EDIT.delWL);
+        break;
+      case 3:
+        values.push(USER_EDIT.accept, USER_EDIT.delete);
+        break;
+      case 4:
+        values.push(USER_EDIT.unban, USER_EDIT.delete);
+        break;
+      case 5:
+        values.push(USER_EDIT.addWl, USER_EDIT.delete);
+        break;
+      default:
+        values = [];
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
 
-  const getMarkers = () => {
-    sendRequest("/api/admin/get_markers", "POST", {}).then((response) => {
-      if (!response.length > 0) {
-        setUser({});
-        setTag({});
-        alert.error(response.message);
-        return;
-      }
-      setMarkers({ all: response });
-      setUser({});
-      setTerritories([]);
-      setTickets([]);
-      setRegens([]);
+    return values.map((value, index) => {
+      return (
+        <option key={index} value={value.action}>
+          {value.text}
+        </option>
+      );
     });
   };
 
-  const getTerritories = () => {
-    sendRequest("/api/admin/get_territories", "POST", {}).then((response) => {
-      if (!response.length > 0) {
-        setUser({});
-        setTag({});
-        alert.error(response.message);
-        return;
-      }
-      setTerritories({ all: response });
-      setUser({});
-      setMarkers([]);
-      setRegens([]);
+  const actionUser = () => {
+    Object.keys(action).forEach((user) => {
+      const payload = {
+        action: action[user].action,
+        user: action[user].user,
+      };
+
+      sendRequest("/api/admin/action_user", "POST", payload).then((response) => {
+        if (response.error) {
+          alert.error(response.message);
+        } else {
+          alert.success(response.message);
+        }
+      });
     });
-  };
 
-  const delMarker = (id, username) => {
-    const newMarkers = { ...markers };
-    actionMarkers(id, "/api/admin/delete_marker");
-
-    const index = markers[username].findIndex((marker) => marker.id === id);
-    newMarkers[username].splice(index, 1);
-    setMarkers(newMarkers);
-  };
-
-  const markerChange = (event, id) => {
-    let input = { ...inputMarker };
-
-    if (!input[id]) input[id] = {};
-
-    input[id] = {
-      ...input[id],
-      ...{
-        [event.target.id]: ["x", "y", "z"].includes(event.target.id) ? +event.target.value : event.target.value,
-      },
-    };
-    setInputMarker(input);
-  };
-
-  const terrsChange = (event, id) => {
-    let input = { ...inputTerrs };
-
-    if (!input[id]) input[id] = {};
-
-    input[id] = {
-      ...input[id],
-      ...{
-        [event.target.id]: ["xStart", "xStop", "zStart", "zStop"].includes(event.target.id)
-          ? +event.target.value
-          : event.target.value,
-      },
-    };
-    setInputTerrs(input);
+    setAction({});
   };
 
   const userDetailsChange = (event, id) => {
-    let input = { ...inputUserDetails };
+    let input = { ...updateUserDetails };
 
     if (!input[id]) input[id] = {};
 
@@ -242,34 +237,112 @@ const PlayerSummary = () => {
       };
     }
 
-    setInputUserDetails(input);
+    setUpdateUserDetails(input);
   };
 
   const updateUser = (id) => {
-    actionMarkers(id, "/api/admin/update_user", inputUserDetails);
+    actionsManager(id, "/api/admin/update_user", updateUserDetails);
+    setUpdateUserDetails({});
+  };
+
+  const debouncedGetUser = useMemo(() => debounce(() => getUser(searchParam), 450), [searchParam]);
+
+  /* --- Markers --- */
+  const getMarkers = () => {
+    sendRequest("/api/admin/get_markers", "POST", {}).then((response) => {
+      if (!response.length > 0) {
+        alert.error(response.message);
+
+        reset();
+        return;
+      }
+
+      reset();
+      setMarkers({ all: response });
+    });
+  };
+
+  const markerChange = (event, id) => {
+    const param = ["x", "y", "z"];
+    let input = { ...updateMarkers };
+
+    if (!input[id]) input[id] = {};
+
+    input[id] = {
+      ...input[id],
+      ...{ [event.target.id]: param.includes(event.target.id) ? +event.target.value : event.target.value },
+    };
+
+    setUpdateMarkers(input);
   };
 
   const updateMarker = (id) => {
-    actionMarkers(id, "/api/admin/update_marker", inputMarker);
+    actionsManager(id, "/api/admin/update_marker", updateMarkers);
+    setUpdateMarkers({});
   };
 
-  const updateTerr = (id) => {
-    actionMarkers(id, "/api/admin/update_territory", inputTerrs);
+  const delMarker = (id, username) => {
+    actionsManager(id, "/api/admin/delete_marker");
+
+    const newMarkers = { ...markers };
+    const index = markers[username].findIndex((marker) => marker.id === id);
+    newMarkers[username].splice(index, 1);
+
+    setMarkers(newMarkers);
   };
 
-  const delTerr = (id, index, username) => {
-    actionMarkers(id, "/api/admin/delete_territory");
+  /* --- Territories --- */
+  const getTerritories = () => {
+    sendRequest("/api/admin/get_territories", "POST", {}).then((response) => {
+      if (!response.length > 0) {
+        alert.error(response.message);
 
-    const newTerritories = JSON.parse(JSON.stringify(territories));
-    newTerritories[username][index].notRender = true;
+        reset();
+        return;
+      }
+
+      reset();
+      setTerritories({ all: response });
+    });
+  };
+
+  const territoryChange = (event, id) => {
+    const param = ["xStart", "xStop", "zStart", "zStop"];
+    let input = { ...updateTerritories };
+
+    if (!input[id]) input[id] = {};
+
+    input[id] = {
+      ...input[id],
+      ...{ [event.target.id]: param.includes(event.target.id) ? +event.target.value : event.target.value },
+    };
+
+    setUpdateTerritories(input);
+  };
+
+  const updateTerritory = (id) => {
+    actionsManager(id, "/api/admin/update_territory", updateTerritories);
+    setUpdateTerritories({});
+  };
+
+  const delTerritory = (id, username) => {
+    actionsManager(id, "/api/admin/delete_territory");
+
+    const newTerritories = { ...territories };
+    const index = territories[username].findIndex((territory) => territory.id === id);
+    newTerritories[username].splice(index, 1);
+
     setTerritories(newTerritories);
   };
 
-  const actionMarkers = (id, url, input) => {
+  /* --- Actions manager --- */
+  const actionsManager = (id, url, update) => {
     let payload = { id: id };
-    if (input) {
-      payload = { ...payload, ...input[id] };
+
+    if (update) {
+      payload = { ...payload, ...update[id] };
     }
+
     sendRequest(url, "POST", payload).then((response) => {
       if (response.message) {
         alert.success(response.message);
@@ -279,114 +352,80 @@ const PlayerSummary = () => {
     });
   };
 
-  const actionUser = () => {
-    Object.keys(action).forEach((user) => {
-      sendRequest("/api/admin/action_user", "POST", {
-        action: action[user].action,
-        user: action[user].user,
-      }).then((response) => {
-        if (response.error) {
-          alert.error(response.message);
-        } else {
-          alert.success(response.message);
-        }
-      });
-    });
-
-    setAction({});
-  };
-
-  const getActions = (user) => {
-    const actions = {
-      default: { action: null, text: "" },
-      accept: { action: "accept", text: "Принять" },
-      delete: { action: "delete", text: "Удалить" },
-      decline: { action: "decline", text: "Отклонить" },
-      ban: { action: "ban", text: "Забанить" },
-      unban: { action: "unban", text: "Разбанить" },
-      addWl: { action: "resume", text: "Вернуть в wl" },
-      delWL: { action: "suspend", text: "Убрать из wl" },
-    };
-
-    let values = [actions.default];
-
-    switch (user?.status) {
-      case 1:
-        values.push(actions.accept, actions.decline, actions.delete);
-        break;
-      case 2:
-        values.push(actions.ban, actions.delete, actions.delWL);
-        break;
-      case 3:
-        values.push(actions.accept, actions.delete);
-        break;
-      case 4:
-        values.push(actions.unban, actions.delete);
-        break;
-      case 5:
-        values.push(actions.addWl, actions.delete);
-        break;
-      default:
-        values = [];
-    }
-
-    return values.map((value, index) => {
-      return (
-        <option key={index} value={value.action}>
-          {value.text}
-        </option>
-      );
-    });
-
-    // return options;
-  };
-
+  /* --- Regens --- */
   const getRegens = () => {
     sendRequest("/api/admin/get_regens", "POST", {}).then((response) => {
       if (!response.length > 0) {
-        alert.error("Список пуст");
+        alert.error(response.message);
+
+        reset();
         return;
       }
+
+      reset();
       setRegens(response);
-      setTerritories({});
-      setUser({});
-      setMarkers([]);
     });
   };
 
-  const getWhiteList = () => {
-    sendRequest("/api/admin/get_whitelist", "POST", {}).then((response) => {
-      if (!response.length > 0) {
-        alert.error("Список пуст");
-        return;
-      }
-      setTag({});
-      let tagUser = {};
-      response.forEach((user) => {
-        tagUser[user.username] = user.tag;
-      });
-      setTag(tagUser);
-      setRegens([]);
-      setTerritories({});
-      setUser([]);
-      setMarkers([]);
-      setUser(response);
-    });
-  };
-
-  const regenAction = (user_id, action, index) => {
-    sendRequest("/api/admin/regen_action", "POST", {
+  const regenAction = (user_id, action) => {
+    const payload = {
       user_id: user_id,
       action: action,
-    }).then((response) => {
+    };
+
+    sendRequest("/api/admin/regen_action", "POST", payload).then((response) => {
       if (response.error) {
         alert.error(response.message);
         return;
       }
-      let newRegens = JSON.parse(JSON.stringify(regens));
-      newRegens[index].notRender = true;
+
+      let newRegens = [...regens];
+      const index = regens.findIndex((regen) => regen.user_id === user_id);
+      newRegens[index].splice(index, 1);
 
       setRegens(newRegens);
+    });
+  };
+
+  /* --- WhiteList --- */
+  const getWhiteList = () => {
+    sendRequest("/api/admin/get_whitelist", "POST", {}).then((response) => {
+      if (!response.length > 0) {
+        alert.error(response.message);
+
+        reset();
+        return;
+      }
+
+      reset();
+      setUser(response);
+    });
+  };
+
+  /* --- Logs --- */
+  const getLogs = (userId) => {
+    sendRequest("/api/admin/get_logs", "POST", { id: userId }).then((response) => {
+      if (!response.length > 0) {
+        alert.error(response.message);
+        return;
+      }
+
+      setLogs(response);
+    });
+  };
+
+  /* --- Tickets --- */
+  const getTickets = () => {
+    sendRequest("/api/admin/get_tickets", "POST", {}).then((response) => {
+      if (!response.length > 0) {
+        alert.error(response.message);
+
+        reset();
+        return;
+      }
+
+      reset();
+      setTickets({ all: response });
     });
   };
 
@@ -396,40 +435,109 @@ const PlayerSummary = () => {
         alert.error(response.message);
         return;
       }
+
       window.open(response, "_blank");
     });
   };
 
+  const sortNumberTickets = (a, b) => {
+    const nameA = a.name.replace(".html", "");
+    const nameB = b.name.replace(".html", "");
+
+    const extractParts = (str) => str.match(/\d+|\D+/g).map((part) => (isNaN(part) ? part : parseInt(part, 10)));
+
+    const partsA = extractParts(nameA);
+    const partsB = extractParts(nameB);
+
+    for (let i = 0; i < Math.max(partsA.length, partsB.length); i++) {
+      if (partsA[i] === undefined) return -1;
+      if (partsB[i] === undefined) return 1;
+
+      if (partsA[i] < partsB[i]) return -1;
+      if (partsA[i] > partsB[i]) return 1;
+    }
+
+    return 0;
+  };
+
+  /* --- Modals --- */
+  const handleOpenModalLog = (userId) => {
+    setModalLog(true);
+    getLogs(userId);
+  };
+
+  const handleCloseModalLog = () => {
+    setModalLog(false);
+    setLogs([]);
+  };
+
+  const handleOpenModalUserDetails = (user) => {
+    const expirationDate = new Date(user.expiration_date);
+    const details = { ...user, ...{ expirationDate: expirationDate } };
+
+    setUserDetails(details);
+    setModalUserDetails(true);
+  };
+
+  const handleCloseModalUserDetails = () => {
+    setModalUserDetails(false);
+    setUserDetails({});
+  };
+
+  const handleOpenModalStatus = () => {
+    setModalStatus(true);
+  };
+
+  const handleCloseModalStatus = () => {
+    setModalStatus(false);
+  };
+
+  /* --- useEffect --- */
+  useEffect(() => {
+    if (urlSearchParams.get("_user")) {
+      setSearchParam(urlSearchParams.get("_user"));
+    }
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    urlSearchParams.set("_user", searchParam);
+    navigate({ search: urlSearchParams.toString() }, { replace: true });
+
+    debouncedGetUser();
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [searchParam]);
+
+  if (isLoading) {
+    return <Preload full={false} />;
+  }
+
   return (
     <div className={classNames(styles["mainUserSummary"])}>
-      <Input placeholder={searchParam} onChange={debouncedGetUser} type="search" />
+      <Input
+        placeholder={PLASEHOLDER}
+        defaultValue={searchParam}
+        onChange={(e) => setSearchParam(e.target.value)}
+        type="search"
+      />
       <div className={classNames(styles["wrapperButtonManager"])}>
-        <button className={classNames(styles["buttonSearchAll"])} type="submit" onClick={getMarkers}>
-          Отображение всех меток
-        </button>
-        <button className={classNames(styles["buttonSearchAll"])} type="submit" onClick={getTerritories}>
-          Отображение всех территорий
-        </button>
-        <button className={classNames(styles["buttonSearchAll"])} type="submit" onClick={getRegens}>
-          Пользователи для регена
-        </button>
-        <button className={classNames(styles["buttonSearchAll"])} type="submit" onClick={getWhiteList}>
-          WhiteList
-        </button>
+        <HandleManager type="submit" onClick={getMarkers} label="Markers" />
+        <HandleManager type="submit" onClick={getTerritories} label="Territories" />
+        <HandleManager type="submit" onClick={getRegens} label="Regens" />
+        <HandleManager type="submit" onClick={getWhiteList} label="WhiteList" />
+        <HandleManager type="submit" onClick={getTickets} label="Tickets" />
+        <HandleManager type="submit" onClick={handleOpenModalStatus} label="Status" />
       </div>
 
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*--- Таблица для отображения пользователя или всех пользователей ---*/}
-      {user[0]?.status && (
+      {/* --- User --- */}
+      {!user.length ? null : (
         <>
+          <h4 className={classNames(styles["managerTitleH4"])}>Игроки - {user.length}</h4>
           <TableMain>
             <THead>
               <Tr header={true}>
-                <Th type="text" content="i" />
                 <Th type="text" content="Имя" />
                 <Th type="text" content="email" />
                 <Th type="text" content="discord_id" />
@@ -443,20 +551,19 @@ const PlayerSummary = () => {
               </Tr>
             </THead>
             <TBody>
-              {user?.map((el, i) => (
+              {user.map((el, i) => (
                 <Tr key={i} keyStyle={i}>
-                  <Th type="text" content={i + 1} />
-                  <Th type="text" content={el?.username || "-"} />
-                  <Th type="text" content={tag[el?.username]?.email || "-"} />
-                  <Th type="text" content={el?.user_id || "-"} />
-                  <Th type="text" content={el?.age || "-"} />
-                  <Th type="text" content={el?.status || "-"} />
-                  <Th type="boolean" content={el?.immun} />
-                  <Th type="boolean" content={el?.citizenship} />
-                  <Th type="text" content={el?.balance} />
+                  <Th type="text" content={el.username} />
+                  <Th type="text" content={el.tag.email} />
+                  <Th type="text" content={el.user_id} />
+                  <Th type="text" content={el.age} />
+                  <Th type="text" content={el.status} />
+                  <Th type="boolean" content={el.immun} />
+                  <Th type="boolean" content={el.citizenship} />
+                  <Th type="text" content={el.balance} />
                   <Th type="actions">
-                    <TButton name="Log" onClick={() => handleOpenModal(el.user_id)} typeClick={true} />
-                    <TButton name="User Details" onClick={() => handleOpenModalUd(el)} typeClick={true} />
+                    <TButton name="Log" onClick={() => handleOpenModalLog(el.user_id)} typeClick={true} />
+                    <TButton name="Details" onClick={() => handleOpenModalUserDetails(el)} typeClick={true} />
                   </Th>
                   <Th type="editing">
                     <TSelect
@@ -465,12 +572,7 @@ const PlayerSummary = () => {
                       onChange={(event) =>
                         setAction({
                           ...action,
-                          ...{
-                            [el.user_id]: {
-                              action: event.target.value,
-                              user: el.user_id,
-                            },
-                          },
+                          ...{ [el.user_id]: { action: event.target.value, user: el.user_id } },
                         })
                       }
                     />
@@ -495,25 +597,20 @@ const PlayerSummary = () => {
         </>
       )}
 
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*--- Таблица для меток пользователя или всех возможных меток ---*/}
+      {/* --- Markers --- */}
       {Object.keys(markers).map((username, i) => {
         if (markers[username].length === 0) {
           return null;
         }
+
         return (
-          <React.Fragment key={i}>
-            <h4 className={classNames(styles["managerTitleH4"])}>
-              Метки {username === "all" ? "всех игроков" : username}
+          <>
+            <h4 className={classNames(styles["managerTitleH4"])} key={i}>
+              Метки {username === "all" ? "всех игроков" : username} - {markers[username].length}
             </h4>
             <TableMain>
               <THead>
                 <Tr header={true}>
-                  <Th type="text" content="i" />
                   {username === "all" && <Th type="text" content="Имя" />}
                   <Th type="text" content="Название" />
                   <Th type="text" content="Описание" />
@@ -527,7 +624,6 @@ const PlayerSummary = () => {
               <TBody>
                 {markers[username].map((el, i) => (
                   <Tr key={i} keyStyle={i}>
-                    <Th type="text" content={i + 1} />
                     {username === "all" && <Th type="text" content={el?.user.username || "-"} />}
                     <Th type="editing">
                       <TInput id="name" size="large" onChange={(e) => markerChange(e, el.id)} defaultValue={el.name} />
@@ -566,29 +662,24 @@ const PlayerSummary = () => {
                 ))}
               </TBody>
             </TableMain>
-          </React.Fragment>
+          </>
         );
       })}
 
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*--- Таблица для территорий пользователя или всех возможных территорий ---*/}
+      {/* --- Territories --- */}
       {Object.keys(territories).map((username, i) => {
         if (territories[username].length === 0) {
           return null;
         }
+
         return (
-          <React.Fragment key={i}>
-            <h4 className={classNames(styles["managerTitleH4"])}>
-              Территории {username === "all" ? "всех игроков" : username}
+          <>
+            <h4 className={classNames(styles["managerTitleH4"])} key={i}>
+              Территории {username === "all" ? "всех игроков" : username} - {territories[username].length}
             </h4>
             <TableMain>
               <THead>
                 <Tr header={true}>
-                  <Th type="text" content="i" />
                   {username === "all" && <Th type="text" content="Имя" />}
                   <Th type="text" content="Название" />
                   <Th type="text" content="Сервер" />
@@ -601,148 +692,130 @@ const PlayerSummary = () => {
                 </Tr>
               </THead>
               <TBody>
-                {territories[username].map((el, i) => {
-                  return (
-                    <>
-                      {!el.notRender && (
-                        <Tr key={i} keyStyle={i}>
-                          <Th type="text" content={i + 1} />
-                          {username === "all" && <Th type="text" content={el?.user.username || "-"} />}
-                          <Th type="editing">
-                            <TInput
-                              id="name"
-                              size="large"
-                              onChange={(e) => terrsChange(e, el.id)}
-                              defaultValue={el.name}
-                            />
-                          </Th>
-                          <Th type="editing">
-                            <TInput
-                              id="world"
-                              size="middle"
-                              onChange={(e) => terrsChange(e, el.id)}
-                              defaultValue={el.world}
-                            />
-                          </Th>
-                          <Th type="editing">
-                            <TInput
-                              id="xStart"
-                              size="small"
-                              onChange={(e) => terrsChange(e, el.id)}
-                              defaultValue={el.xStart}
-                            />
-                          </Th>
-                          <Th type="editing">
-                            <TInput
-                              id="xStop"
-                              size="small"
-                              onChange={(e) => terrsChange(e, el.id)}
-                              defaultValue={el.xStop}
-                            />
-                          </Th>
-                          <Th type="editing">
-                            <TInput
-                              id="zStart"
-                              size="small"
-                              onChange={(e) => terrsChange(e, el.id)}
-                              defaultValue={el.zStart}
-                            />
-                          </Th>
-                          <Th type="editing">
-                            <TInput
-                              id="zStop"
-                              size="small"
-                              onChange={(e) => terrsChange(e, el.id)}
-                              defaultValue={el.zStop}
-                            />
-                          </Th>
-                          <Th
-                            type="link"
-                            href={`https://map.gmgame.ru/#/${(el.xStart + el.xStop) / 2}/64/${
-                              (el.zStart + el.zStop) / 2
-                            }/-4/GMGameWorld/over`}
-                          />
-                          <Th type="actions">
-                            <TButton
-                              name="Удалить"
-                              onClick={() => delTerr(el.id, i, username)}
-                              message="Подтвердите действие «Удалить»"
-                            />
-                            <TButton
-                              name="Обновить"
-                              onClick={() => updateTerr(el.id)}
-                              message="Подтвердите действие «Обновить»"
-                            />
-                          </Th>
-                        </Tr>
-                      )}
-                    </>
-                  );
-                })}
+                {territories[username].map((el, i) => (
+                  <Tr key={i} keyStyle={i}>
+                    {username === "all" && <Th type="text" content={el?.user.username || "-"} />}
+                    <Th type="editing">
+                      <TInput
+                        id="name"
+                        size="large"
+                        onChange={(e) => territoryChange(e, el.id)}
+                        defaultValue={el.name}
+                      />
+                    </Th>
+                    <Th type="editing">
+                      <TInput
+                        id="world"
+                        size="middle"
+                        onChange={(e) => territoryChange(e, el.id)}
+                        defaultValue={el.world}
+                      />
+                    </Th>
+                    <Th type="editing">
+                      <TInput
+                        id="xStart"
+                        size="small"
+                        onChange={(e) => territoryChange(e, el.id)}
+                        defaultValue={el.xStart}
+                      />
+                    </Th>
+                    <Th type="editing">
+                      <TInput
+                        id="xStop"
+                        size="small"
+                        onChange={(e) => territoryChange(e, el.id)}
+                        defaultValue={el.xStop}
+                      />
+                    </Th>
+                    <Th type="editing">
+                      <TInput
+                        id="zStart"
+                        size="small"
+                        onChange={(e) => territoryChange(e, el.id)}
+                        defaultValue={el.zStart}
+                      />
+                    </Th>
+                    <Th type="editing">
+                      <TInput
+                        id="zStop"
+                        size="small"
+                        onChange={(e) => territoryChange(e, el.id)}
+                        defaultValue={el.zStop}
+                      />
+                    </Th>
+                    <Th
+                      type="link"
+                      href={`https://map.gmgame.ru/#/${(el.xStart + el.xStop) / 2}/64/${
+                        (el.zStart + el.zStop) / 2
+                      }/-4/GMGameWorld/over`}
+                    />
+                    <Th type="actions">
+                      <TButton
+                        name="Удалить"
+                        onClick={() => delTerritory(el.id, username)}
+                        message="Подтвердите действие «Удалить»"
+                      />
+                      <TButton
+                        name="Обновить"
+                        onClick={() => updateTerritory(el.id)}
+                        message="Подтвердите действие «Обновить»"
+                      />
+                    </Th>
+                  </Tr>
+                ))}
               </TBody>
             </TableMain>
-          </React.Fragment>
+          </>
         );
       })}
 
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*--- Таблица для тикетов пользователя или всех возможных тикетов ---*/}
+      {/* --- Tickets --- */}
       {Object.keys(tickets).map((username, i) => {
         if (tickets[username].length === 0) {
           return null;
         }
+
         return (
           <React.Fragment key={i}>
             <h4 className={classNames(styles["managerTitleH4"])}>
-              Тикеты {username === "all" ? "всех игроков" : username}
+              Тикеты {username === "all" ? "всех игроков" : username} - {tickets[username].length}
             </h4>
             <TableMain>
               <THead>
                 <Tr header={true}>
-                  <Th type="text" content="i" />
-                  {username === "all" && <Th type="text" content="Имя" />}
+                  {username === "all" && <Th type="text" content="Игрок" />}
+                  {username === "all" && <Th type="text" content="discord_id" />}
                   <Th type="text" content="Название" />
                   <Th type="text" content="Просмотр" />
                 </Tr>
               </THead>
               <TBody>
-                {tickets[username].map((el, i) => (
-                  <>
-                    {!el.notRender && (
-                      <Tr key={i} keyStyle={i}>
-                        <Th type="text" content={i + 1} />
-                        {username === "all" && <Th type="text" content={el?.username || "-"} />}
-                        <Th type="text" id="name" size="large" content={el.name} />
-                        <Th type="actions">
-                          <TButton name="Посмотреть" onClick={() => getLink(el.name)} typeClick={true} />
-                        </Th>
-                      </Tr>
-                    )}
-                  </>
-                ))}
+                {tickets[username]
+                  .sort((a, b) => sortNumberTickets(a, b))
+                  .reverse()
+                  .map((el, i) => (
+                    <Tr key={i} keyStyle={i}>
+                      {username === "all" && <Th type="text" content={el.user.username} />}
+                      {username === "all" && <Th type="text" content={el.user_id} />}
+                      <Th type="text" id="name" size="large" content={el.name.replace(".html", "")} />
+                      <Th type="actions">
+                        <TButton name="Посмотреть" onClick={() => getLink(el.name)} typeClick={true} />
+                      </Th>
+                    </Tr>
+                  ))}
               </TBody>
             </TableMain>
           </React.Fragment>
         );
       })}
 
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*--- Таблица для regen_user ---*/}
+      {/* --- Regens --- */}
       {regens.length > 0 && (
         <>
-          <h4 className={classNames(styles["managerTitleH4"])}>Список на реген</h4>
+          <h4 className={classNames(styles["managerTitleH4"])}>Список на реген - {regens.length}</h4>
           <TableMain>
             <THead>
               <Tr header={true}>
-                <Th type="text" content="i" />
                 <Th type="text" content="Имя"></Th>
                 <Th type="text" content="id"></Th>
                 <Th type="text" content="Просмотр"></Th>
@@ -750,44 +823,71 @@ const PlayerSummary = () => {
               </Tr>
             </THead>
             <TBody>
-              {regens.map((regen, i) => {
-                return (
-                  <>
-                    {!regen.notRender && (
-                      <Tr key={i} keyStyle={i}>
-                        <Th type="text" content={i + 1} />
-                        <Th type="text" content={regen.username} />
-                        <Th type="text" content={regen.user_id} />
-                        <Th type="link" href={`/manager/player_summary?user_id=${regen.user_id}`} />
-                        <Th type="actions">
-                          <TButton
-                            name="Реген"
-                            onClick={() => regenAction(regen.user_id, "regen", i)}
-                            message="Подтвердите действие «Реген»"
-                          />
-                          <TButton
-                            name="Оставить"
-                            onClick={() => regenAction(regen.user_id, "settle", i)}
-                            message="Подтвердите действие «Оставить»"
-                          />
-                        </Th>
-                      </Tr>
-                    )}
-                  </>
-                );
-              })}
+              {regens.map((regen, i) => (
+                <Tr key={i} keyStyle={i}>
+                  <Th type="text" content={regen.username} />
+                  <Th type="text" content={regen.user_id} />
+                  <Th type="link" href={`/manager/player_summary?_user=${regen.user_id}`} />
+                  <Th type="actions">
+                    <TButton
+                      name="Реген"
+                      onClick={() => regenAction(regen.user_id, "regen")}
+                      message="Подтвердите действие «Реген»"
+                    />
+                    <TButton
+                      name="Оставить"
+                      onClick={() => regenAction(regen.user_id, "settle")}
+                      message="Подтвердите действие «Оставить»"
+                    />
+                  </Th>
+                </Tr>
+              ))}
             </TBody>
           </TableMain>
         </>
       )}
 
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*--- Модальное окно для user_details ---*/}
-      <MyModal open={modalUd} close={handleCloseModalUd}>
+      {/* --- Logs --- */}
+      <MyModal open={modalLog} close={handleCloseModalLog}>
+        <div className={classNames(styles["cardLog"])}>
+          <TableMain>
+            <THead>
+              <Tr header={true}>
+                <Th type="text" content="i" />
+                <Th type="text" content="Время" />
+                <Th type="text" content="Лог" />
+                <Th type="text" content="Менеджер" />
+              </Tr>
+            </THead>
+            <TBody>
+              {logs?.map((el, i) => {
+                return (
+                  <Tr key={i} keyStyle={i}>
+                    <Th type="text" content={i + 1} />
+                    <Th type="text" content={new Date(el.log_date).toLocaleString()} />
+                    <Th
+                      type="text"
+                      content={(() => {
+                        let log = el.log;
+                        try {
+                          log = JSON.parse(el.log);
+                        } catch {
+                          return log;
+                        }
+                        return `${log.action} ${log.data ? JSON.stringify(log.data) : ""}`;
+                      })()}
+                    />
+                    <Th type="text" content={el.manager} />
+                  </Tr>
+                );
+              })}
+            </TBody>
+          </TableMain>
+        </div>
+      </MyModal>
+
+      {/* --- User Details --- */}
+      <MyModal open={modalUserDetails} close={handleCloseModalUserDetails}>
         <div className={classNames(styles["user_app"])}>
           <h3 className={classNames(styles["app_info"])}>Активная заявка</h3>
           <div className={classNames(styles["active_app"])}>
@@ -918,55 +1018,27 @@ const PlayerSummary = () => {
         </div>
       </MyModal>
 
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*--- Модальное окно для user_log ---*/}
-      <MyModal open={modalLog} close={handleCloseModal}>
-        <div className={classNames(styles["cardLog"])}>
+      {/* --- Status --- */}
+      <MyModal open={modalStatus} close={handleCloseModalStatus}>
+        <div className={classNames(styles["status_helper"])}>
           <TableMain>
             <THead>
               <Tr header={true}>
-                <Th type="text" content="i" />
-                <Th type="text" content="Время" />
-                <Th type="text" content="Лог" />
-                <Th type="text" content="Менеджер" />
+                <Th type="text" content="Ключ" />
+                <Th type="text" content="Название" />
               </Tr>
             </THead>
             <TBody>
-              {logs?.map((el, i) => {
-                return (
-                  <Tr key={i} keyStyle={i}>
-                    <Th type="text" content={i + 1} />
-                    <Th type="text" content={new Date(el.log_date).toLocaleString()} />
-                    <Th
-                      type="text"
-                      content={(() => {
-                        let log = el.log;
-                        try {
-                          log = JSON.parse(el.log);
-                        } catch {
-                          return log;
-                        }
-                        return `${log.action} ${log.data ? JSON.stringify(log.data) : ""}`;
-                      })()}
-                    />
-                    <Th type="text" content={el.manager} />
-                  </Tr>
-                );
-              })}
+              {CASE_STATUS.map((el, i) => (
+                <Tr key={i} keyStyle={i}>
+                  <Th type="text" content={el.id} />
+                  <Th type="text" content={el.translate} />
+                </Tr>
+              ))}
             </TBody>
           </TableMain>
         </div>
       </MyModal>
-
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*-----------------------------------------------------------------------------------------------*/}
-      {/*-----------------------------------------------------------------------------------------------*/}
     </div>
   );
 };
