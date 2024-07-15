@@ -25,6 +25,17 @@ import Preload from "../../preloader/Preload";
 
 import styles from "./Player-summary.module.scss";
 
+const CASE_STATUS = [
+  { id: "default", translate: "Новая заявка" },
+  { id: 1, translate: "Заявка на рассмотрении" },
+  { id: 2, translate: "Игрок сервера" },
+  { id: 3, translate: "Отказ по заявке" },
+  { id: 4, translate: "Бан на сервере" },
+  { id: 5, translate: "Не активный игрок" },
+  { id: 6, translate: "Новый пустой пользователь" },
+  { id: 7, translate: "Старый отклоненный пользователь" },
+];
+
 const USER_EDIT = {
   default: { action: null, text: "" },
   accept: { action: "accept", text: "Принять" },
@@ -96,6 +107,8 @@ const PlayerSummary = () => {
 
   const [modalLog, setModalLog] = useState(false);
   const [modalUserDetails, setModalUserDetails] = useState(false);
+
+  const [modalStatus, setModalStatus] = useState(false);
 
   const reset = () => {
     setUser([]);
@@ -471,6 +484,14 @@ const PlayerSummary = () => {
     setUserDetails({});
   };
 
+  const handleOpenModalStatus = () => {
+    setModalStatus(true);
+  };
+
+  const handleCloseModalStatus = () => {
+    setModalStatus(false);
+  };
+
   /* --- useEffect --- */
   useEffect(() => {
     if (urlSearchParams.get("_user")) {
@@ -507,6 +528,7 @@ const PlayerSummary = () => {
         <HandleManager type="submit" onClick={getRegens} label="Regens" />
         <HandleManager type="submit" onClick={getWhiteList} label="WhiteList" />
         <HandleManager type="submit" onClick={getTickets} label="Tickets" />
+        <HandleManager type="submit" onClick={handleOpenModalStatus} label="Status" />
       </div>
 
       {/* --- User --- */}
@@ -993,6 +1015,28 @@ const PlayerSummary = () => {
                   </div>
                 </>
               ))}
+        </div>
+      </MyModal>
+
+      {/* --- Status --- */}
+      <MyModal open={modalStatus} close={handleCloseModalStatus}>
+        <div className={classNames(styles["status_helper"])}>
+          <TableMain>
+            <THead>
+              <Tr header={true}>
+                <Th type="text" content="Ключ" />
+                <Th type="text" content="Название" />
+              </Tr>
+            </THead>
+            <TBody>
+              {CASE_STATUS.map((el, i) => (
+                <Tr key={i} keyStyle={i}>
+                  <Th type="text" content={el.id} />
+                  <Th type="text" content={el.translate} />
+                </Tr>
+              ))}
+            </TBody>
+          </TableMain>
         </div>
       </MyModal>
     </div>
