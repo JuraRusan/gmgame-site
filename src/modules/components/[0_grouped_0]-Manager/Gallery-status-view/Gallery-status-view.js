@@ -60,7 +60,6 @@ const GalleryStatusView = () => {
       <TableMain>
         <THead>
           <Tr header="true">
-            <Th type="text" content="i" />
             <Th type="text" content="Автор" />
             <Th type="text" content="id" />
             <Th type="text" content="Публикация" />
@@ -73,11 +72,10 @@ const GalleryStatusView = () => {
           {resParams.data.map((el, i) => {
             return (
               <Tr key={i} keyStyle={i}>
-                <Th type="text" content={i + 1} />
                 <Th type="text" content={el.user.username} />
                 <Th type="text" content={el.id} />
-                <Th type="text" content={el.aprove === true ? "true" : "false"} />
-                <Th type="text" content={el.warning === true ? "true" : "false"} />
+                <Th type="boolean" content={el.aprove} />
+                <Th type="boolean" content={el.warning} />
                 <Th type="link_to" href={`${el.id}`} />
                 <Th type="actions">
                   <TButton
