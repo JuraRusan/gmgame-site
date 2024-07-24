@@ -1,0 +1,12 @@
+@import "src/Variables";
+
+.manager_title {
+  color: lighten($site-color-8, 25%);
+  width: auto;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 12px auto 12px auto;
+}

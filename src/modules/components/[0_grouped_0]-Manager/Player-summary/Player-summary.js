@@ -22,6 +22,7 @@ import Textarea from "../../textarea/Textarea";
 import BooleanCheck from "../../boolean-check/BooleanCheck";
 import useLoading from "../../../loading/useLoading";
 import Preload from "../../preloader/Preload";
+import ManagerTitle from "../../manager-title/ManagerTitle";
 
 import styles from "./Player-summary.module.scss";
 
@@ -534,7 +535,7 @@ const PlayerSummary = () => {
       {/* --- User --- */}
       {!user.length ? null : (
         <>
-          <h4 className={classNames(styles["managerTitleH4"])}>Игроки - {user.length}</h4>
+          <ManagerTitle text="Игроки" count={user.length} />
           <TableMain>
             <THead>
               <Tr header={true}>
@@ -605,9 +606,11 @@ const PlayerSummary = () => {
 
         return (
           <>
-            <h4 className={classNames(styles["managerTitleH4"])} key={i}>
-              Метки {username === "all" ? "всех игроков" : username} - {markers[username].length}
-            </h4>
+            <ManagerTitle
+              key={i}
+              text={`Метки ${username === "all" ? "всех игроков" : username}`}
+              count={markers[username].length}
+            />
             <TableMain>
               <THead>
                 <Tr header={true}>
@@ -674,9 +677,11 @@ const PlayerSummary = () => {
 
         return (
           <>
-            <h4 className={classNames(styles["managerTitleH4"])} key={i}>
-              Территории {username === "all" ? "всех игроков" : username} - {territories[username].length}
-            </h4>
+            <ManagerTitle
+              key={i}
+              text={`Территории ${username === "all" ? "всех игроков" : username}`}
+              count={territories[username].length}
+            />
             <TableMain>
               <THead>
                 <Tr header={true}>
@@ -776,10 +781,12 @@ const PlayerSummary = () => {
         }
 
         return (
-          <React.Fragment key={i}>
-            <h4 className={classNames(styles["managerTitleH4"])}>
-              Тикеты {username === "all" ? "всех игроков" : username} - {tickets[username].length}
-            </h4>
+          <>
+            <ManagerTitle
+              key={i}
+              text={`Тикеты ${username === "all" ? "всех игроков" : username}`}
+              count={tickets[username].length}
+            />
             <TableMain>
               <THead>
                 <Tr header={true}>
@@ -805,14 +812,14 @@ const PlayerSummary = () => {
                   ))}
               </TBody>
             </TableMain>
-          </React.Fragment>
+          </>
         );
       })}
 
       {/* --- Regens --- */}
       {regens.length > 0 && (
         <>
-          <h4 className={classNames(styles["managerTitleH4"])}>Список на реген - {regens.length}</h4>
+          <ManagerTitle text="Список на реген" count={regens.length} />
           <TableMain>
             <THead>
               <Tr header={true}>
