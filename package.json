@@ -5,7 +5,6 @@
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@hookform/error-message": "2.0.0",
-    "@storybook/test": "^8.0.5",
     "ag-grid-community": "^29.0.0",
     "ag-grid-react": "^29.0.0",
     "aos": "^2.3.4",
@@ -36,7 +35,6 @@
     "slate": "^0.102.0",
     "slate-history": "^0.100.0",
     "slate-react": "^0.102.0",
-    "storybook": "^8.0.5",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -44,15 +42,12 @@
     "build": "GENERATE_SOURCEMAP=false react-scripts --max_old_space_size=768 build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "watch": "npm-watch",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "watch": "npm-watch"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest",
-      "plugin:storybook/recommended"
+      "react-app/jest"
     ]
   },
   "browserslist": {
@@ -69,16 +64,7 @@
   },
   "proxy": "http://127.0.0.1:3001/",
   "devDependencies": {
-    "@storybook/addon-docs": "^8.0.5",
-    "@storybook/addon-essentials": "^8.0.5",
-    "@storybook/addon-interactions": "^8.0.5",
-    "@storybook/addon-links": "^8.0.5",
-    "@storybook/blocks": "^8.0.5",
-    "@storybook/preset-create-react-app": "^8.0.5",
-    "@storybook/react": "^8.0.5",
-    "@storybook/react-webpack5": "^8.0.5",
     "babel-plugin-named-exports-order": "^0.0.2",
-    "eslint-plugin-storybook": "^0.8.0",
     "npm-watch": "^0.11.0",
     "prop-types": "^15.8.1",
     "react-docgen-typescript-loader": "^3.7.2",
