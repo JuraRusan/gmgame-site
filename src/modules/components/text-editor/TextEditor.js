@@ -21,7 +21,6 @@ import HeadingFourSvgComponent from "../../../bases/icons/formatHeadingFourSvg/H
 import HeadingFiveSvgComponent from "../../../bases/icons/formatHeadingFiveSvg/HeadingFiveSvg";
 import HeadingSixSvgComponent from "../../../bases/icons/formatHeadingSixSvg/HeadingSixSvg";
 import ParagraphSvgComponent from "../../../bases/icons/formatParagraphSvg/ParagraphSvg";
-import LinkSvgComponent from "../../../bases/icons/formatLinkSvg/LinkSvg";
 import VisibleOnSvgComponent from "../../../bases/icons/visibleOnSvg/VisibleOnSvg";
 import { CalculatingTextLength } from "./functions/CalculatingTextLength";
 import Modal from "react-modal";
