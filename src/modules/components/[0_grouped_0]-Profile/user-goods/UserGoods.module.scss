@@ -1,0 +1,9 @@
+@import "src/Variables";
+
+.user_goods {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+}
