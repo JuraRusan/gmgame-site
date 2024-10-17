@@ -588,8 +588,6 @@ const TextEditor = ({
     return <Preload full={true} />;
   }
 
-  console.log(resParams);
-
   return (
     <div className={classNames(styles["text_editor"])}>
       <Slate editor={editor} initialValue={dataValue} onChange={handleEditor}>
