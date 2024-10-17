@@ -22,11 +22,23 @@ import HeadingFiveSvgComponent from "../../../bases/icons/formatHeadingFiveSvg/H
 import HeadingSixSvgComponent from "../../../bases/icons/formatHeadingSixSvg/HeadingSixSvg";
 import ParagraphSvgComponent from "../../../bases/icons/formatParagraphSvg/ParagraphSvg";
 import VisibleOnSvgComponent from "../../../bases/icons/visibleOnSvg/VisibleOnSvg";
+import StrikethroughSvgComponent from "../../../bases/icons/formatStrikethroughSvg/StrikethroughSvg";
+import ColorSvgComponent from "../../../bases/icons/formatColorSvg/ColorSvg";
+import LinkSvgComponent from "../../../bases/icons/formatLinkSvg/LinkSvg";
+import LinkRemoveSvgComponent from "../../../bases/icons/formatLinkRemoveSvg/LinkRemoveSvg";
 import { CalculatingTextLength } from "./functions/CalculatingTextLength";
-import Modal from "react-modal";
+import MyModal from "../../../common/modal/MyModal";
 import { prepare } from "./functions/Prepare";
 import EmojiPicker, { Emoji } from "emoji-picker-react";
 import ReactDOM from "react-dom";
+import Input from "../input/Input";
+import Button from "../button/Button";
+import FormTitle from "../form-title/FormTitle";
+import ColorPickerLite from "../color-picker/ColorPickerLite";
+import ColorPickerFull from "../color-picker/ColorPickerFull";
+import { useAxios } from "../../../DataProvider";
+import Preload from "../preloader/Preload";
+import useLoading from "../../loading/useLoading";
 
 import styles from "./TextEditor.module.scss";
 import "./functions/Prepare.scss";
@@ -41,12 +53,16 @@ export const DEFAULT_VALUE = [
   },
 ];
 
-const Button = ({ active, ...props }) => (
+const ToolbarButton = ({ active = false, className, ...props }) => (
   <span
-    className={classNames(styles["button_style"], {
-      [styles["active_on"]]: active === true,
-      [styles["active_off"]]: active === false,
-    })}
+    className={classNames(
+      styles["button_style"],
+      {
+        [styles["active_on"]]: active === true,
+        [styles["active_off"]]: active === false,
+      },
+      className
+    )}
     {...props}
   />
 );
@@ -55,7 +71,7 @@ const BlockButton = ({ format, icon }) => {
   const editor = useSlate();
 
   return (
-    <Button
+    <ToolbarButton
       active={isBlockActive(editor, format, TEXT_ALIGN_TYPES.includes(format) ? "align" : "type")}
       onMouseDown={(event) => {
         event.preventDefault();
@@ -63,7 +79,7 @@ const BlockButton = ({ format, icon }) => {
       }}
     >
       {icon}
-    </Button>
+    </ToolbarButton>
   );
 };
 
@@ -71,7 +87,7 @@ const MarkButton = ({ format, icon }) => {
   const editor = useSlate();
 
   return (
-    <Button
+    <ToolbarButton
       active={isMarkActive(editor, format)}
       onMouseDown={(event) => {
         event.preventDefault();
@@ -79,7 +95,7 @@ const MarkButton = ({ format, icon }) => {
       }}
     >
       {icon}
-    </Button>
+    </ToolbarButton>
   );
 };
 
@@ -228,28 +244,58 @@ const Element = (props) => {
 };
 
 const Leaf = ({ attributes, children, leaf }) => {
+  const style = { color: leaf.textColor };
+
   if (leaf.bold) {
-    children = <strong className="strong_editor">{children}</strong>;
+    children = (
+      <strong className="strong_editor" style={style}>
+        {children}
+      </strong>
+    );
   }
 
   if (leaf.italic) {
-    children = <em className="em_editor">{children}</em>;
+    children = (
+      <em className="em_editor" style={style}>
+        {children}
+      </em>
+    );
   }
 
   if (leaf.underline) {
-    children = <u className="u_editor">{children}</u>;
+    children = (
+      <u className="u_editor" style={style}>
+        {children}
+      </u>
+    );
+  }
+
+  if (leaf.strikethrough) {
+    children = (
+      <s className="s_editor" style={style}>
+        {children}
+      </s>
+    );
   }
 
   if (leaf.code) {
-    children = <code className="code_editor">{children}</code>;
+    children = (
+      <code className="code_editor" style={style}>
+        {children}
+      </code>
+    );
   }
 
-  if (leaf.link) {
-    children = <span className="a_editor">{children}</span>;
+  if (leaf.url) {
+    children = (
+      <span className="a_editor" style={style}>
+        {children}
+      </span>
+    );
   }
 
   return (
-    <span className="span_editor" {...attributes}>
+    <span className="span_editor" {...attributes} style={style}>
       {children}
     </span>
   );
@@ -299,18 +345,39 @@ const Mention = ({ attributes, children, element }) => {
   );
 };
 
-const TextEditor = ({ value = DEFAULT_VALUE, setValue, textLength = () => {}, mentionsList = [] }) => {
+const ColorTextPlugin = {
+  setTextColor(editor, color) {
+    editor.addMark("textColor", color);
+  },
+};
+
+const LinkTextPlugin = {
+  setLink(editor, href) {
+    editor.addMark("url", href);
+  },
+
+  unsetLink(editor, href) {
+    editor.removeMark("url", href);
+  },
+};
+
+const TextEditor = ({
+  lite = false,
+  size = "medium",
+  value = DEFAULT_VALUE,
+  setValue,
+  textLength = () => {},
+  mentionsList = [],
+}) => {
   let dataValue = value === null ? DEFAULT_VALUE : value;
 
-  const emojiRef = useRef(null);
+  const isLoading = useLoading();
+
   const mentionsRef = useRef(null);
 
   const renderElement = useCallback((props) => <Element {...props} />, []);
   const renderLeaf = useCallback((props) => <Leaf {...props} />, []);
   const editor = useMemo(() => withMentions(withHistory(withReact(createEditor()))), []);
-
-  const [modalOpen, setModalOpen] = useState(false);
-  const [prev, setPrev] = useState(dataValue);
 
   const [search, setSearch] = useState("");
 
@@ -318,21 +385,43 @@ const TextEditor = ({ value = DEFAULT_VALUE, setValue, textLength = () => {}, me
   const [index, setIndex] = useState(0);
   const [target, setTarget] = useState();
 
+  const [previewModal, setPreviewModal] = useState(false);
+  const [preview, setPreview] = useState(dataValue);
+
   const [emojiModal, setEmojiModal] = useState(false);
   const [emoji, setEmoji] = useState(null);
+
+  const [colorPickerModal, setColorPickerModal] = useState(false);
+  const [color, setColor] = useState("#F4F4F4");
+
+  const [urlModal, setUrlModal] = useState(false);
+  const [url, setUrl] = useState("");
 
   const chars = mentions
     .filter((c) => (c.name ? c.name.toLowerCase().startsWith(search.toLowerCase()) : []))
     .slice(0, 10);
 
-  const openModal = () => {
-    document.body.style.overflow = "hidden";
-    setModalOpen(true);
+  const resParams = useAxios("/api/profile", "GET", {});
+
+  const handleActiveColor = (color) => {
+    setColor(color);
   };
 
-  const closeModal = () => {
-    document.body.style.overflow = "auto";
-    setModalOpen(false);
+  const handleActiveUrl = (e) => {
+    setUrl(e.target.value);
+  };
+
+  const handleActiveEmoji = (e) => {
+    setEmoji(e);
+    closeEmoji();
+  };
+
+  const openPreview = () => {
+    setPreviewModal(true);
+  };
+
+  const closePreview = () => {
+    setPreviewModal(false);
   };
 
   const openEmoji = () => {
@@ -341,13 +430,42 @@ const TextEditor = ({ value = DEFAULT_VALUE, setValue, textLength = () => {}, me
 
   const closeEmoji = () => {
     setEmojiModal(false);
+    setEmoji(null);
   };
 
-  const handleOutsideClick = (event) => {
-    if (emojiRef.current && !emojiRef.current.contains(event.target)) {
-      closeEmoji();
-    }
+  const openColorPicker = () => {
+    setColorPickerModal(true);
   };
+
+  const closeColorPicker = () => {
+    setColorPickerModal(false);
+    setColor("#F4F4F4");
+  };
+
+  const openUrl = () => {
+    setUrlModal(true);
+  };
+
+  const closeUrl = () => {
+    setUrlModal(false);
+    setUrl("");
+  };
+
+  const handleChangeAddColor = useCallback(() => {
+    ColorTextPlugin.setTextColor(editor, color);
+    setColorPickerModal(false);
+    setColor("#F4F4F4");
+  }, [editor, color]);
+
+  const handleChangeAddUrl = useCallback(() => {
+    LinkTextPlugin.setLink(editor, url);
+    setUrlModal(false);
+    setUrl("");
+  }, [editor, url]);
+
+  const handleChangeDelUrl = useCallback(() => {
+    LinkTextPlugin.unsetLink(editor);
+  }, [editor]);
 
   const PortalMention = () => {
     return (
@@ -375,7 +493,7 @@ const TextEditor = ({ value = DEFAULT_VALUE, setValue, textLength = () => {}, me
 
     if (isAstChange) {
       setValue(value);
-      setPrev(value);
+      setPreview(value);
       textLength(CalculatingTextLength(value));
     }
 
@@ -439,17 +557,7 @@ const TextEditor = ({ value = DEFAULT_VALUE, setValue, textLength = () => {}, me
   );
 
   useEffect(() => {
-    document.addEventListener("click", handleOutsideClick);
-
-    return () => {
-      document.removeEventListener("click", handleOutsideClick);
-    };
-    // eslint-disable-next-line
-  }, []);
-
-  useEffect(() => {
     if (emoji !== null) {
-      closeEmoji();
       editor.insertText(emoji.emoji);
       setEmoji(null);
     }
@@ -476,86 +584,110 @@ const TextEditor = ({ value = DEFAULT_VALUE, setValue, textLength = () => {}, me
     }
   }, [mentionsList.length]);
 
+  if (resParams.loading || isLoading) {
+    return <Preload full={true} />;
+  }
+
+  console.log(resParams);
+
   return (
     <div className={classNames(styles["text_editor"])}>
-      <Slate
-        editor={editor}
-        initialValue={dataValue}
-        onChange={(value) => {
-          handleEditor(value);
-        }}
-      >
+      <Slate editor={editor} initialValue={dataValue} onChange={handleEditor}>
         <div className={classNames(styles["toolbar"])}>
-          <div className={classNames(styles["block"])}>
-            <Button
-              onClick={(e) => {
-                e.stopPropagation();
-                openEmoji();
-              }}
-            >
-              <Emoji unified="1f60a" size="18" />
-            </Button>
-            <MarkButton format="bold" icon={<BoldSvgComponent width="100%" height="100%" />} />
-            <MarkButton format="italic" icon={<ItalicSvgComponent width="100%" height="100%" />} />
-            <MarkButton format="underline" icon={<UnderlineSvgComponent width="100%" height="100%" />} />
-            <MarkButton format="code" icon={<CodeSvgComponent width="100%" height="100%" />} />
-            {/*<MarkButton format="link" icon={<LinkSvgComponent width="100%" height="100%" />} />*/}
-          </div>
-          <div className={classNames(styles["block"])}>
-            <BlockButton format="paragraph" icon={<ParagraphSvgComponent width="100%" height="100%" />} />
-            <BlockButton format="heading-one" icon={<HeadingOneSvgComponent width="100%" height="100%" />} />
-            <BlockButton format="heading-two" icon={<HeadingTwoSvgComponent width="100%" height="100%" />} />
-            <BlockButton format="heading-three" icon={<HeadingThreeSvgComponent width="100%" height="100%" />} />
-            <BlockButton format="heading-four" icon={<HeadingFourSvgComponent width="100%" height="100%" />} />
-            <BlockButton format="heading-five" icon={<HeadingFiveSvgComponent width="100%" height="100%" />} />
-            <BlockButton format="heading-six" icon={<HeadingSixSvgComponent width="100%" height="100%" />} />
-            <BlockButton format="block-quote" icon={<QuoteSvgComponent width="100%" height="100%" />} />
-          </div>
-          <div className={classNames(styles["block"])}>
-            <BlockButton format="numbered-list" icon={<ListNumberedSvgComponent width="100%" height="100%" />} />
-            <BlockButton format="bulleted-list" icon={<ListBulletedSvgComponent width="100%" height="100%" />} />
-            <BlockButton format="left" icon={<AlignLeftSvgComponent width="100%" height="100%" />} />
-            <BlockButton format="center" icon={<AlignCenterSvgComponent width="100%" height="100%" />} />
-            <BlockButton format="right" icon={<AlignRightSvgComponent width="100%" height="100%" />} />
-            <BlockButton format="justify" icon={<AlignJustifySvgComponent width="100%" height="100%" />} />
-            <Button onClick={openModal}>
-              <VisibleOnSvgComponent width="100%" height="100%" />
-            </Button>
-          </div>
+          {lite ? (
+            <div className={classNames(styles["block"])}>
+              <MarkButton format="bold" icon={<BoldSvgComponent width="100%" height="100%" />} />
+              <MarkButton format="italic" icon={<ItalicSvgComponent width="100%" height="100%" />} />
+              <MarkButton format="underline" icon={<UnderlineSvgComponent width="100%" height="100%" />} />
+              <MarkButton format="strikethrough" icon={<StrikethroughSvgComponent width="100%" height="100%" />} />
+              <ToolbarButton onClick={openColorPicker}>
+                <ColorSvgComponent width="100%" height="100%" />
+              </ToolbarButton>
+            </div>
+          ) : (
+            <>
+              <div className={classNames(styles["block"])}>
+                <ToolbarButton onClick={openEmoji}>
+                  <Emoji unified="1f60a" size="18" />
+                </ToolbarButton>
+                <MarkButton format="bold" icon={<BoldSvgComponent width="100%" height="100%" />} />
+                <MarkButton format="italic" icon={<ItalicSvgComponent width="100%" height="100%" />} />
+                <MarkButton format="underline" icon={<UnderlineSvgComponent width="100%" height="100%" />} />
+                <MarkButton format="strikethrough" icon={<StrikethroughSvgComponent width="100%" height="100%" />} />
+                <MarkButton format="code" icon={<CodeSvgComponent width="100%" height="100%" />} />
+                <ToolbarButton onClick={openUrl}>
+                  <LinkSvgComponent width="100%" height="100%" />
+                </ToolbarButton>
+                <ToolbarButton onClick={handleChangeDelUrl}>
+                  <LinkRemoveSvgComponent width="100%" height="100%" />
+                </ToolbarButton>
+                <ToolbarButton onClick={openColorPicker}>
+                  <ColorSvgComponent width="100%" height="100%" />
+                </ToolbarButton>
+              </div>
+              <div className={classNames(styles["block"])}>
+                <BlockButton format="paragraph" icon={<ParagraphSvgComponent width="100%" height="100%" />} />
+                <BlockButton format="heading-one" icon={<HeadingOneSvgComponent width="100%" height="100%" />} />
+                <BlockButton format="heading-two" icon={<HeadingTwoSvgComponent width="100%" height="100%" />} />
+                <BlockButton format="heading-three" icon={<HeadingThreeSvgComponent width="100%" height="100%" />} />
+                <BlockButton format="heading-four" icon={<HeadingFourSvgComponent width="100%" height="100%" />} />
+                <BlockButton format="heading-five" icon={<HeadingFiveSvgComponent width="100%" height="100%" />} />
+                <BlockButton format="heading-six" icon={<HeadingSixSvgComponent width="100%" height="100%" />} />
+                <BlockButton format="block-quote" icon={<QuoteSvgComponent width="100%" height="100%" />} />
+              </div>
+              <div className={classNames(styles["block"])}>
+                <BlockButton format="numbered-list" icon={<ListNumberedSvgComponent width="100%" height="100%" />} />
+                <BlockButton format="bulleted-list" icon={<ListBulletedSvgComponent width="100%" height="100%" />} />
+                <BlockButton format="left" icon={<AlignLeftSvgComponent width="100%" height="100%" />} />
+                <BlockButton format="center" icon={<AlignCenterSvgComponent width="100%" height="100%" />} />
+                <BlockButton format="right" icon={<AlignRightSvgComponent width="100%" height="100%" />} />
+                <BlockButton format="justify" icon={<AlignJustifySvgComponent width="100%" height="100%" />} />
+                <ToolbarButton onClick={openPreview}>
+                  <VisibleOnSvgComponent width="100%" height="100%" />
+                </ToolbarButton>
+              </div>
+            </>
+          )}
         </div>
-        {!emojiModal ? null : (
-          <div className={classNames(styles["emoji_modal"])} ref={emojiRef}>
-            <EmojiPicker
-              style={{ margin: "4px" }}
-              theme="dark"
-              height="500px"
-              width="100%"
-              lazyLoadEmojis={true}
-              onEmojiClick={(clickedEmoji) => {
-                setEmoji(clickedEmoji);
-              }}
-            />
-          </div>
-        )}
         <Editable
           renderElement={renderElement}
           renderLeaf={renderLeaf}
           onKeyDown={onKeyDown}
-          className={classNames(styles["editor"])}
+          className={classNames(styles["editor"], {
+            [styles["editor_small"]]: size === "small",
+            [styles["editor_medium"]]: size === "medium",
+            [styles["editor_large"]]: size === "large",
+          })}
         />
         {target && chars.length > 0 && ReactDOM.createPortal(<PortalMention />, document.getElementById("root"))}
       </Slate>
-      <Modal
-        className={classNames(styles["modal_main_gallery"])}
-        overlayClassName={classNames(styles["overlay_main_modal"])}
-        isOpen={modalOpen}
-        ariaHideApp={false}
-      >
-        <button onClick={closeModal} className={classNames(styles["close"])}>
-          &#10008;
-        </button>
-        <div className={classNames(styles["prev"])} dangerouslySetInnerHTML={{ __html: prepare(prev) }} />
-      </Modal>
+      <MyModal open={previewModal} close={closePreview}>
+        <div className={classNames(styles["content_box"])}>
+          <div className={classNames(styles["prev"])} dangerouslySetInnerHTML={{ __html: prepare(preview) }} />
+        </div>
+      </MyModal>
+      <MyModal open={colorPickerModal} close={closeColorPicker}>
+        <div className={classNames(styles["picker_box"])}>
+          <p className={classNames(styles["warn_color"])} style={{ color: color }}>
+            Не злоупотребляйте цветами — это затруднит чтение текста. Используйте цвета для выделения важного.
+          </p>
+          {resParams.data.discordUser.role === "admin" && <ColorPickerFull color={color} onChange={setColor} />}
+          <ColorPickerLite onClick={handleActiveColor} />
+          <Button label="Выбрать" onClick={handleChangeAddColor} className={classNames(styles["margin"])} />
+        </div>
+      </MyModal>
+      <MyModal open={emojiModal} close={closeEmoji}>
+        <div className={classNames(styles["emoji_box"])}>
+          <EmojiPicker theme="dark" height="100%" width="100%" lazyLoadEmojis={true} onEmojiClick={handleActiveEmoji} />
+        </div>
+      </MyModal>
+      <MyModal open={urlModal} close={closeUrl}>
+        <div className={classNames(styles["url_box"])}>
+          <FormTitle title="Введите URL-адрес ссылки:" center={true} count={false} required={false} />
+          <Input onChange={handleActiveUrl} />
+          <Button onClick={handleChangeAddUrl} className={classNames(styles["button_custom_style"])} />
+        </div>
+      </MyModal>
     </div>
   );
 };

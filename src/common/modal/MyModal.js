@@ -21,28 +21,32 @@ const MyModal = ({ open = false, showClose = true, close = () => {}, children, p
   }, [open]);
 
   return (
-    <ReactModal
-      isOpen={modal}
-      className={classNames(styles["modal_main_box"])}
-      overlayClassName={classNames(styles["overlay_modal_full"])}
-      ariaHideApp={false}
-      {...param}
-    >
-      <div className={classNames(styles["window"])}>
-        {showClose && (
-          <button
-            onClick={() => {
-              setModal(false);
-              close();
-            }}
-            className={classNames(styles["modal_close"])}
-          >
-            <ButtonCloseSvgComponent width="100%" height="100%" />
-          </button>
-        )}
-        {children}
-      </div>
-    </ReactModal>
+    <>
+      {!open ? null : (
+        <ReactModal
+          isOpen={modal}
+          className={classNames(styles["modal_main_box"])}
+          overlayClassName={classNames(styles["overlay_modal_full"])}
+          ariaHideApp={false}
+          {...param}
+        >
+          <div className={classNames(styles["window"])}>
+            {showClose && (
+              <button
+                onClick={() => {
+                  setModal(false);
+                  close();
+                }}
+                className={classNames(styles["modal_close"])}
+              >
+                <ButtonCloseSvgComponent width="100%" height="100%" />
+              </button>
+            )}
+            {children}
+          </div>
+        </ReactModal>
+      )}
+    </>
   );
 };
 

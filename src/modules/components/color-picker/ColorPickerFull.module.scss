@@ -1,0 +1,66 @@
+@import "src/Variables";
+
+.color_picker_full {
+  .custom_style {
+    background: rgba(28, 28, 31, 1) !important;
+
+    input {
+      width: 100% !important;
+      min-width: 0 !important;
+      max-width: 100% !important;
+      height: 32px !important;
+      padding: 5px 8px !important;
+      font-family: $fontCustom2 !important;
+      font-size: 11px !important;
+      color: $site-color-8 !important;
+      border: 1px solid $site-color-5 !important;
+      border-radius: 4px !important;
+      box-shadow: none !important;
+      outline: none !important;
+      text-align: center !important;
+      transition: all 0.35s ease !important;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background: $site-color-1 !important;
+      }
+    }
+
+    span {
+      font-family: $fontCustom2 !important;
+      font-weight: 400 !important;
+      font-size: 12px !important;
+      color: $site-color-2 !important;
+      margin-top: 6px !important;
+      margin-bottom: 8px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 960px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 640px) {
+}
+
+@media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 360px) {
+}

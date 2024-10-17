@@ -4,18 +4,22 @@ function format(code, font) {
   return code
     .map((format) => {
       let styles = "";
+      let colors = "";
 
       if (font) styles += " minecraft_font";
 
       if (format.bold) styles += " strong_editor";
       if (format.italic) styles += " em_editor";
       if (format.underline) styles += " u_editor";
+      if (format.strikethrough) styles += " s_editor";
       if (format.code) styles += " code_editor";
-      if (format.link) styles += " a_editor";
+      if (format.url) styles += " a_editor";
       if (format.type === "mention") styles += " mentions";
 
-      if (format.link) {
-        return `<a href=${format.text} rel="noreferrer" target="_blank" class="${styles}">${format.text}</a>`;
+      if (format.textColor) colors += "color: " + format.textColor;
+
+      if (format.url) {
+        return `<a href=${format.url} rel="noreferrer" target="_blank" class="${styles}" style="${colors}">${format.text}</a>`;
       }
 
       if (format.type === "mention") {
@@ -27,7 +31,7 @@ function format(code, font) {
         }
       }
 
-      return `<span class="${styles}">${format.text}</span>`;
+      return `<span class="${styles}" style="${colors}">${format.text}</span>`;
     })
     .join("");
 }

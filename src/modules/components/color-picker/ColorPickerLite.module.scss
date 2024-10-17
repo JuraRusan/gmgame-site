@@ -1,0 +1,62 @@
+@import "src/Variables";
+
+.color_picker_lite {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 384px;
+  height: auto;
+
+  .one_color {
+    width: 32px;
+    height: 32px;
+    margin: 8px;
+    border: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      scale: 110%;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 960px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 640px) {
+}
+
+@media screen and (max-width: 480px) {
+  .color_picker_lite {
+    max-width: 320px;
+    margin-top: 8px;
+
+    .one_color {
+      width: 28px;
+      height: 28px;
+      margin: 6px;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+}
