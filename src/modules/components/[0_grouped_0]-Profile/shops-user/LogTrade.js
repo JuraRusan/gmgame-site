@@ -4,7 +4,7 @@ import OneItem from "../../[0_grouped_0]-Shopkeepers/one-item/One-item";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { useAlert } from "react-alert";
+import { useAlert } from "@blaumaus/react-alert"
 import Preload from "../../preloader/Preload";
 import useLoading from "../../../loading/useLoading";
 import MyModal from "../../../../common/modal/MyModal";

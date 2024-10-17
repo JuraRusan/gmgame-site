@@ -8,7 +8,7 @@ import TBody from "../../table/TBody";
 import axios from "axios";
 import Preload from "../../preloader/Preload";
 import useLoading from "../../../loading/useLoading";
-import { useAlert } from "react-alert";
+import { useAlert } from "@blaumaus/react-alert"
 
 import styles from "./Shopkeepers-all-status.module.scss";
 

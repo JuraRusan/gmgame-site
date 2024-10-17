@@ -4,7 +4,7 @@ import TextEditor from "../../text-editor/TextEditor";
 import Button from "../../button/Button";
 import { sendRequest } from "../../../../DataProvider";
 import useLoading from "../../../loading/useLoading";
-import { useAlert } from "react-alert";
+import { useAlert } from "@blaumaus/react-alert"
 import Preload from "../../preloader/Preload";
 
 import styles from "./Donate-status-editor.module.scss";

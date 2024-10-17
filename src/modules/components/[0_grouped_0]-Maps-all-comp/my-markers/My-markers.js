@@ -2,7 +2,7 @@ import classNames from "classnames";
 import { useState } from "react";
 import { sendRequest, useAxios } from "../../../../DataProvider";
 import Preload from "../../preloader/Preload.js";
-import { useAlert } from "react-alert";
+import { useAlert } from "@blaumaus/react-alert"
 import MapViewBlock from "../mini-marker-components/map-view-block/MapViewBlock";
 import CabSearch from "../../[0_grouped_0]-Profile/cab-search/CabSearch";
 import useLoading from "../../../loading/useLoading";

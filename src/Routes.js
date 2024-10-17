@@ -1,7 +1,7 @@
 import { lazy, Suspense } from "react";
 import Preload from "./modules/components/preloader/Preload";
 import { Route, Routes } from "react-router-dom";
-import { positions, Provider } from "react-alert";
+import { positions, Provider } from "@blaumaus/react-alert";
 import Alert from "././common/alert/Alert";
 
 // --

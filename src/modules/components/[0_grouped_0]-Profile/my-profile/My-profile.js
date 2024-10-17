@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import React, { useState } from "react";
-import { useAlert } from "react-alert";
+import { useAlert } from "@blaumaus/react-alert"
 import { sendRequest, useAxios } from "../../../../DataProvider";
 import Preload from "../../preloader/Preload.js";
 import CopySvgComponent from "../../../../bases/icons/copySvg/CopySvg";

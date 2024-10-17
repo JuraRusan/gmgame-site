@@ -7,7 +7,7 @@ import Th from "../../table/Th";
 import Tr from "../../table/Tr";
 import TButton from "../../table/TButton";
 import { sendRequest, useAxios } from "../../../../DataProvider";
-import { useAlert } from "react-alert";
+import { useAlert } from "@blaumaus/react-alert"
 import Preload from "../../preloader/Preload";
 import useLoading from "../../../loading/useLoading";
 

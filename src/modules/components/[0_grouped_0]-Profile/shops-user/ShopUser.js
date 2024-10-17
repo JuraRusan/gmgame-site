@@ -6,7 +6,7 @@ import useLoading from "../../../loading/useLoading";
 import { useAxios } from "../../../../DataProvider";
 import Preload from "../../preloader/Preload";
 import axios from "axios";
-import { useAlert } from "react-alert";
+import { useAlert } from "@blaumaus/react-alert"
 import { Link } from "react-router-dom";
 
 import styles from "./ShopUser.module.scss";

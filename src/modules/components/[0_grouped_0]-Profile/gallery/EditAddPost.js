@@ -6,7 +6,7 @@ import Button from "../../button/Button";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { sendRequest, useAxios } from "../../../../DataProvider";
 import useLoading from "../../../loading/useLoading";
-import { useAlert } from "react-alert";
+import { useAlert } from "@blaumaus/react-alert"
 import Preload from "../../preloader/Preload";
 import ExpandSvgComponent from "../../../../bases/icons/expandSvg/ExpandSvg";
 import CameraAddSvgComponent from "../../../../bases/icons/cameraAdd/CameraAddSvg";

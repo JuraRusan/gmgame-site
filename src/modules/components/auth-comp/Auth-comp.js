@@ -3,7 +3,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { ErrorMessage } from "@hookform/error-message";
 import { sendRequest } from "../../../DataProvider";
-import { useAlert } from "react-alert";
+import { useAlert } from "@blaumaus/react-alert"
 import Notifications from "../notifications/Notifications";
 import Button from "../button/Button";
 

@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import React, { useEffect, useMemo, useState } from "react";
 import { sendRequest } from "../../../../DataProvider";
-import { useAlert } from "react-alert";
+import { useAlert } from "@blaumaus/react-alert"
 import { debounce } from "lodash";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import TableMain from "../../table/TableMain";

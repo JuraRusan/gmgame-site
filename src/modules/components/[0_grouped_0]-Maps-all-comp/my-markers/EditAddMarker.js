@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Notifications from "../../notifications/Notifications";
 import { sendRequest, useAxios } from "../../../../DataProvider";
 import { useNavigate, useParams, useSearchParams } from "react-router-dom";
-import { useAlert } from "react-alert";
+import { useAlert } from "@blaumaus/react-alert"
 import Preload from "../../preloader/Preload";
 import useLoading from "../../../loading/useLoading";
 import Button from "../../button/Button";
