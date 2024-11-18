@@ -4,7 +4,7 @@
 // import Money from "./Money.js";
 // import Preload from "../../preloader/Preload.js";
 // import { sendRequest, useAxios } from "../../../../DataProvider";
-// import { useAlert } from "react-alert";
+// import { useAlert } from "@blaumaus/react-alert"
 // import useLoading from "../../../loading/useLoading";
 // import Notifications from "../../notifications/Notifications";
 //

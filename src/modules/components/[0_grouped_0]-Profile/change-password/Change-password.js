@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import React, { useState } from "react";
 import { sendRequest } from "../../../../DataProvider";
-import { useAlert } from "react-alert";
+import { useAlert } from "@blaumaus/react-alert"
 import useLoading from "../../../loading/useLoading";
 import Preload from "../../preloader/Preload";
 import Button from "../../button/Button";

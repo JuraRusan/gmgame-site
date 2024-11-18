@@ -25,6 +25,9 @@ const MinecraftList = ({ item }) => {
   return (
     <>
       <ul className={classNames(styles["list"])}>
+        {item.lore?.map((el, i) => (
+          <span className={classNames(styles["lore"])} key={i} dangerouslySetInnerHTML={{ __html: el }}></span>
+        ))}
         {item.enchant?.map((el, i) => (
           <li className={classNames(styles["item"])} key={i}>
             {renderEnchantItem(el)}

@@ -7,7 +7,7 @@ import useLoading from "../../../loading/useLoading";
 import Preload from "../../preloader/Preload";
 import { sendRequest, useAxios } from "../../../../DataProvider";
 import { debounce } from "lodash";
-import { useAlert } from "react-alert";
+import { useAlert } from "@blaumaus/react-alert"
 import Tag from "./tag/Tag";
 import ActionsButton from "../actions-button/ActionsButton";
 // import StatusSvgComponent from "../../../../bases/icons/statusSvg/StatusSvg";

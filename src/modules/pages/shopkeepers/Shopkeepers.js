@@ -10,7 +10,7 @@ import useLoading from "../../loading/useLoading";
 import Preload from "../../components/preloader/Preload";
 import Title from "../../components/title/Title";
 import { useDispatch } from "react-redux";
-import { useAlert } from "react-alert";
+import { useAlert } from "@blaumaus/react-alert";
 import axios from "axios";
 import ResetSvgComponent from "../../../bases/icons/resetSvg/ResetSvg";
 import Input from "../../components/input/Input";
@@ -154,7 +154,7 @@ const Shopkeepers = () => {
         setLoadingAll(false);
       });
     axios
-      .get("https://map.gmgame.ru/api/lang")
+      .get("https://map.gmgame.ru/api/languages")
       .then((res) => {
         dispatch({ type: "ADD_LANG", payload: res.data.data });
       })

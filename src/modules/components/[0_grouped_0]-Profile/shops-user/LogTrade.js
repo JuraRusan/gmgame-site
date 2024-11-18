@@ -4,7 +4,7 @@ import OneItem from "../../[0_grouped_0]-Shopkeepers/one-item/One-item";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { useAlert } from "react-alert";
+import { useAlert } from "@blaumaus/react-alert";
 import Preload from "../../preloader/Preload";
 import useLoading from "../../../loading/useLoading";
 import MyModal from "../../../../common/modal/MyModal";
@@ -48,7 +48,7 @@ const LogTrade = () => {
       axios
         .get(`https://map.gmgame.ru/api/log?_uuid=${uuid}`)
         .then((res) => {
-          if (res.data?.data?.value) setDataLogs(res.data.data.value);
+          if (res.data?.data?.value) setDataLogs(res.data.data.value.reverse());
           if (res.data?.data?.lang) dispatch({ type: "ADD_LANG", payload: res.data.data.lang });
         })
         .catch((error) => {
