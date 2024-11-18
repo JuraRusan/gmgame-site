@@ -8,7 +8,7 @@ import TBody from "../../table/TBody";
 import axios from "axios";
 import Preload from "../../preloader/Preload";
 import useLoading from "../../../loading/useLoading";
-import { useAlert } from "@blaumaus/react-alert"
+import { useAlert } from "@blaumaus/react-alert";
 
 import styles from "./Shopkeepers-all-status.module.scss";
 
@@ -71,7 +71,7 @@ const ShopkeepersAllStatus = () => {
   useEffect(() => {
     if (init !== true) {
       axios
-        .get("https://map.gmgame.ru/api/all_info_csv")
+        .get("https://map.gmgame.ru/api/user_all_shop")
         .then((res) => {
           setDataAllLogs(res.data.data);
         })
