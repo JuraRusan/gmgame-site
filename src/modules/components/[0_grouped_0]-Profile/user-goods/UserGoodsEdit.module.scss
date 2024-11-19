@@ -7,11 +7,69 @@
   width: 100%;
   height: auto;
 
-  .row {
+  .offers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    height: auto;
+
+    .item_box {
+      display: flex;
+      flex-direction: column;
+      width: auto;
+      height: auto;
+      position: relative;
+
+      &:hover {
+        .edit_name {
+          opacity: 1;
+        }
+      }
+
+      .edit_name {
+        font-size: 13px;
+        font-weight: 400;
+        font-family: $fontCustom2;
+        color: $site-color-2;
+        position: absolute;
+        opacity: 0;
+        transition: all 0.25s ease;
+        top: 12px;
+        left: 50%;
+        transform: translate(-50%);
+      }
+    }
+
+    .arrow_box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .arrow {
+        color: $site-color-5;
+        font-weight: 400;
+        font-size: 98px;
+        text-align: center;
+        width: 128px;
+        min-width: 128px;
+        max-width: 128px;
+        margin: 0 32px;
+      }
+    }
+  }
+
+  .comment {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    width: 100%;
-    height: auto;
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 500px;
+    min-width: 500px;
+    margin: 12px auto 0 auto;
   }
 }

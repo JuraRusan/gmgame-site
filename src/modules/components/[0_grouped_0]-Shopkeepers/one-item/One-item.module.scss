@@ -51,6 +51,11 @@ $length: 34px;
     }
   }
 
+  .big {
+    width: $parameterItem * 3;
+    height: $parameterItem * 3;
+  }
+
   .tooltip {
     display: flex;
     position: fixed;
@@ -73,4 +78,3 @@ $length: 34px;
     }
   }
 }
-

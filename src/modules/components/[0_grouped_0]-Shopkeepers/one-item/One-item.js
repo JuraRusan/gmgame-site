@@ -11,7 +11,7 @@ import { SHULKERS_TYPE } from "../../../pages/shopkeepers/ShulkersType";
 
 import styles from "./One-item.module.scss";
 
-const OneItem = ({ item, onClick, mini = false }) => {
+const OneItem = ({ item, onClick, mini = false, big = false }) => {
   const [showTooltip, setShowTooltip] = useState(false);
   const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
   const [tooltipVisible, setTooltipVisible] = useState(false);
@@ -73,7 +73,7 @@ const OneItem = ({ item, onClick, mini = false }) => {
   return (
     <div className={classNames(styles["item_block"])} onClick={onClick}>
       <div
-        className={classNames(styles["item"], styles["content"], mini && styles["mini"])}
+        className={classNames(styles["item"], styles["content"], mini && styles["mini"], big && styles["big"])}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
