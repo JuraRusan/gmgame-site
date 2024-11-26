@@ -142,7 +142,7 @@ const Shopkeepers = () => {
 
   useEffect(() => {
     axios
-      .get("https://map.gmgame.ru/api/shops")
+      .get("http://127.0.0.1:4000/shops")
       .then((res) => {
         setDataShops(res.data.data);
       })
@@ -154,7 +154,7 @@ const Shopkeepers = () => {
         setLoadingAll(false);
       });
     axios
-      .get("https://map.gmgame.ru/api/languages")
+      .get("http://127.0.0.1:4000/languages")
       .then((res) => {
         dispatch({ type: "ADD_LANG", payload: res.data.data });
       })
@@ -180,7 +180,7 @@ const Shopkeepers = () => {
     if (fetching) {
       axios
         .get(
-          `https://map.gmgame.ru/api/offers?_limit=64&_page=${currentPage}${uuid.length === 0 ? "" : "&_select=" + uuid}${!valueSearchItem ? "" : "&_search=" + valueSearchItem}`
+          `http://127.0.0.1:4000/offers?_limit=64&_page=${currentPage}${uuid.length === 0 ? "" : "&_select=" + uuid}${!valueSearchItem ? "" : "&_search=" + valueSearchItem}`
         )
         .then((res) => {
           setDataOffers([...dataOffers, ...res.data.data]);

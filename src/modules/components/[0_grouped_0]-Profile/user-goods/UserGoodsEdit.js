@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import Button from "../../button/Button";
 import OneItem from "../../[0_grouped_0]-Shopkeepers/one-item/One-item";
@@ -9,178 +9,39 @@ import Preload from "../../preloader/Preload";
 import FormTitle from "../../form-title/FormTitle";
 import TextEditor from "../../text-editor/TextEditor";
 import Input from "../../input/Input";
+import MyModal from "../../../../common/modal/MyModal";
+import Select from "../../select/Select";
+import ShulkerBox from "../../[0_grouped_0]-Shopkeepers/shulker-box/Shulker-box";
+import QuestionSvgComponent from "../../../../bases/icons/questionSvg/QuestionSvg";
+import { prepareLite } from "../../text-editor/functions/Prepare";
+import { SHULKERS_TYPE } from "../../../pages/shopkeepers/ShulkersType";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import { clone } from "ramda";
 
 import styles from "./UserGoodsEdit.module.scss";
-import MyModal from "../../../../common/modal/MyModal";
-import item from "../my-prizes/Item";
-import Select from "../../select/Select";
-import { prepare, prepareLite } from "../../text-editor/functions/Prepare";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
-const listId = ["stone", "granite", "diorite", "firework_rocket"];
-// const testitems = {
-//   id: "yellow_shulker_box",
-//   content: [
-//     {
-//       slot: 0,
-//       amount: 1,
-//       id: "horn_coral_fan",
-//     },
-//     {
-//       slot: 1,
-//       amount: 1,
-//       id: "orange_tulip",
-//     },
-//     {
-//       slot: 2,
-//       amount: 1,
-//       id: "bell",
-//     },
-//     {
-//       slot: 3,
-//       amount: 1,
-//       id: "honeycomb_block",
-//     },
-//     {
-//       slot: 4,
-//       amount: 1,
-//       id: "honey_bottle",
-//     },
-//     {
-//       slot: 5,
-//       amount: 1,
-//       id: "honeycomb_block",
-//     },
-//     {
-//       slot: 6,
-//       amount: 1,
-//       id: "bell",
-//     },
-//     {
-//       slot: 7,
-//       amount: 1,
-//       id: "orange_tulip",
-//     },
-//     {
-//       slot: 8,
-//       amount: 1,
-//       id: "horn_coral",
-//     },
-//     {
-//       slot: 9,
-//       amount: 1,
-//       id: "experience_bottle",
-//     },
-//     {
-//       slot: 10,
-//       amount: 1,
-//       id: "flower_pot",
-//     },
-//     {
-//       slot: 11,
-//       amount: 1,
-//       id: "glow_berries",
-//     },
-//     {
-//       slot: 12,
-//       amount: 1,
-//       id: "gold_block",
-//     },
-//     {
-//       slot: 13,
-//       amount: 1,
-//       id: "writable_book",
-//     },
-//     {
-//       slot: 14,
-//       amount: 1,
-//       id: "gold_block",
-//     },
-//     {
-//       slot: 15,
-//       amount: 1,
-//       id: "glow_berries",
-//     },
-//     {
-//       slot: 16,
-//       amount: 1,
-//       id: "flower_pot",
-//     },
-//     {
-//       slot: 17,
-//       amount: 1,
-//       id: "experience_bottle",
-//     },
-//     {
-//       slot: 18,
-//       amount: 1,
-//       id: "horn_coral",
-//     },
-//     {
-//       slot: 19,
-//       amount: 1,
-//       id: "orange_tulip",
-//     },
-//     {
-//       slot: 20,
-//       amount: 1,
-//       id: "bell",
-//     },
-//     {
-//       slot: 21,
-//       amount: 1,
-//       id: "honeycomb_block",
-//     },
-//     {
-//       slot: 22,
-//       amount: 1,
-//       id: "honey_bottle",
-//     },
-//     {
-//       slot: 23,
-//       amount: 1,
-//       id: "honeycomb_block",
-//     },
-//     {
-//       slot: 24,
-//       amount: 1,
-//       id: "bell",
-//     },
-//     {
-//       slot: 25,
-//       amount: 1,
-//       id: "orange_tulip",
-//     },
-//     {
-//       slot: 26,
-//       amount: 1,
-//       id: "horn_coral_fan",
-//     },
-//   ],
-//   minecraft_custom: '\u003Cspan style="color: #E6A500"\u003EС Днем Рождения!\u003C/span\u003E',
-// };
+const listId = ["stone", "granite", "diorite", "firework_rocket", "white_banner", "red_banner", "shield"];
 
-const DEFAULT_RESULT = {
-  id: "stone",
-  amount: 64,
-};
-const DEFAULT_ITEM = {
-  id: "deepslate_diamond_ore",
-  amount: 4,
-};
+const TYPE_LIST = [
+  { name: "deepslate_diamond_ore", type: "item" },
+  { name: "shulker_box", type: "shulker" },
+];
 
 const MIN_DESCRIPTION = 24;
 const MAX_DESCRIPTION = 65535;
 
 const FIREWORK_ROCKET_DURATION = [
-  { value: "1", name: "1" },
-  { value: "2", name: "2" },
-  { value: "3", name: "3" },
+  { value: "1", name: 1 },
+  { value: "2", name: 2 },
+  { value: "3", name: 3 },
 ];
 
-const SelectItem = (select) => {
-  const [id, setId] = useState(null);
+const SelectItem = ({ edit, setEdit }) => {
+  const [id, setId] = useState("stone");
   const [name, setName] = useState(null);
   const [lore, setLore] = useState(null);
+  // console.log({ edit });
 
   if (lore) {
     console.log(prepareLite(lore[0]));
@@ -191,17 +52,32 @@ const SelectItem = (select) => {
   }
 
   return (
-    <div>
+    <div className={classNames(styles["editor"])}>
+      <p>{JSON.stringify(edit)}</p>
       <datalist id="testa">
         {listId.map((e, i) => (
           <option key={i} value={e} />
         ))}
       </datalist>
-      <FormTitle title="ID предмета:" count={false} required={true} />
+      <FormTitle title="ID предмета:" count={false} />
       <Input list="testa" onChange={(e) => setId(e.target.value)} />
+      <FormTitle title="Стандартное название предмета:" count={false} required={false} />
+      <Input value={id} disabled />
       {id === "firework_rocket" ? (
         <>
-          <FormTitle title="Длительность полёта:" count={false} required={true} />
+          <FormTitle title="Длительность полёта:" count={false} />
+          <Select list={FIREWORK_ROCKET_DURATION} />
+        </>
+      ) : null}
+      {id === "shield" ? (
+        <>
+          <FormTitle title="Основной цвет:" count={false} />
+          <Select list={FIREWORK_ROCKET_DURATION} />
+        </>
+      ) : null}
+      {id.includes("_banner") || id === "shield" ? (
+        <>
+          <FormTitle title="Узор:" count={false} />
           <Select list={FIREWORK_ROCKET_DURATION} />
         </>
       ) : null}
@@ -223,46 +99,198 @@ const UserGoodsEdit = () => {
   const { id } = useParams();
   const navigate = useNavigate();
 
-  const [main, setMain] = useState({ result: { id: "", amount: 1 }, item: { id: "", amount: 1 } });
+  const [main, setMain] = useState({
+    result: { id: "", amount: 1, content: [] },
+    item: { id: "", amount: 1, content: [{ slot: 2, id: "emerald" }] },
+  });
+
+  const [temporarily, setTemporarily] = useState(null);
+
+  const [select, setSelect] = useState("");
 
   const [description, setDescription] = useState(null);
   const [descriptionLength, setDescriptionLength] = useState(0);
   const [errorMessagePostDescription, setErrorMessagePostDescription] = useState("");
 
   const [editItemModal, setEditItemModal] = useState(false);
+  const [shulkerColorModal, setShulkerColorModal] = useState(false);
+  const [selectTypeModal, setSelectTypeModal] = useState(false);
 
-  const openEditItem = () => {
+  // ---
+  const openEditItemModal = () => {
     setEditItemModal(true);
   };
 
-  const closeEditItem = () => {
+  const closeEditItemModal = () => {
     setEditItemModal(false);
+    setTemporarily(null);
   };
 
+  const itemEdit = (slot, type) => {
+    let tempValue;
+
+    if (type) {
+      setSelect(type);
+    }
+
+    if (typeof slot !== "number") {
+      console.log({ main, select });
+      tempValue = clone(main[select]);
+    } else {
+      let contentArray = main[select].content;
+
+      let foundObject = contentArray.find((item) => item.slot === slot);
+
+      // console.log(foundObject);
+
+      if (!foundObject) {
+        console.log("нету такого слота");
+        console.log(foundObject);
+      } else {
+        console.log("такой слот есть");
+        console.log(foundObject);
+      }
+
+      // let foundObject = contentArray.find((item, index) => index <= maxSlots && item.slot === slot);
+      //
+      // if (!foundObject) {
+      //   foundObject = { slot: slot };
+      //   contentArray.push(foundObject);
+      // }
+      //
+      // tempValue = foundObject;
+    }
+
+    console.log(tempValue);
+    setTemporarily(tempValue);
+    openEditItemModal();
+  };
+
+  const resetItem = (type) => {
+    setMain((prev) => ({
+      ...prev,
+      [type]: { id: "", amount: 1, content: [] },
+    }));
+  };
+
+  // ---
+  const openShulkerColorModal = (type) => {
+    setShulkerColorModal(true);
+
+    setSelect(type);
+  };
+
+  const closeShulkerColorModal = () => {
+    setShulkerColorModal(false);
+
+    setSelect("");
+  };
+
+  const updateShulkerColorMain = (key, type) => {
+    setMain((prev) => ({
+      ...prev,
+      [key]: { ...prev[key], id: type },
+    }));
+  };
+
+  const updateShulkerColor = (type) => {
+    setShulkerColorModal(false);
+
+    if (select === "item") {
+      updateShulkerColorMain("item", type);
+    } else {
+      updateShulkerColorMain("result", type);
+    }
+
+    setSelect("");
+  };
+
+  // ---
+  const openSelectTypeModal = (sel) => {
+    setSelectTypeModal(true);
+    console.log("1", { sel });
+    setSelect(sel);
+  };
+
+  const closeSelectTypeModal = () => {
+    setSelectTypeModal(false);
+    setSelect("");
+  };
+
+  const updateSelectTypeMain = (key, type) => {
+    setMain((prev) => ({
+      ...prev,
+      [key]: { ...prev[key], id: type === "shulker" ? "shulker_box" : "diamond" },
+    }));
+  };
+
+  const updateSelectType = (type) => {
+    setSelectTypeModal(false);
+
+    if (select === "item") {
+      updateSelectTypeMain("item", type);
+    } else {
+      updateSelectTypeMain("result", type);
+    }
+
+    setSelect("");
+  };
+
+  const BOX = ({ type }) => {
+    return (
+      <>
+        {SHULKERS_TYPE.includes(main[type].id) ? (
+          <div onClick={() => setSelect(type)}>
+            <ShulkerBox item={main[type]} onClick={itemEdit} />
+            <button onClick={() => openShulkerColorModal(type)}>color</button>
+            <button onClick={() => resetItem(type)}>reset</button>
+          </div>
+        ) : (
+          <div>
+            <OneItem
+              item={main[type]}
+              onClick={() => {
+                itemEdit(undefined, type);
+              }}
+              big={true}
+            />
+            <button onClick={() => resetItem(type)}>reset</button>
+          </div>
+        )}
+      </>
+    );
+  };
+
+  // ---
   if (isLoading) {
     return <Preload full={false} />;
   }
 
   return (
     <div className={classNames(styles["user_goods_edit"])}>
-      <BackButton
-        onClick={() => {
-          navigate(-1);
-        }}
-      />
+      <BackButton onClick={() => navigate(-1)} />
+      <FormTitle title="Параметры сделки: " count={false} />
       <div className={classNames(styles["offers"])}>
         <div className={classNames(styles["item_box"])}>
-          <div onClick={openEditItem}>предмет</div>
-          {/*<OneItem item={main.item} onClick={openEditItem} big={true} />*/}
-          <span className={classNames(styles["edit_name"])}>Редактировать</span>
+          {main.item.id === "" ? (
+            <div className={classNames(styles["empty"])} onClick={() => openSelectTypeModal("item")}>
+              <QuestionSvgComponent width="100%" height="100%" color="#f4f4f4" />
+            </div>
+          ) : (
+            <BOX type="item" />
+          )}
         </div>
         <div className={classNames(styles["arrow_box"])}>
           <span className={classNames(styles["arrow"])}>&#10132;</span>
         </div>
         <div className={classNames(styles["item_box"])}>
-          {/*<OneItem item={main.result} onClick={openEditItem} big={true} />*/}
-          <div onClick={openEditItem}>результат</div>
-          <span className={classNames(styles["edit_name"])}>Редактировать</span>
+          {main.result.id === "" ? (
+            <div className={classNames(styles["empty"])} onClick={() => openSelectTypeModal("result")}>
+              <QuestionSvgComponent width="100%" height="100%" color="#f4f4f4" />
+            </div>
+          ) : (
+            <BOX type="result" />
+          )}
         </div>
       </div>
       <div className={classNames(styles["comment"])}>
@@ -271,6 +299,7 @@ const UserGoodsEdit = () => {
           min={MIN_DESCRIPTION}
           max={MAX_DESCRIPTION}
           length={descriptionLength}
+          required={false}
         />
         <TextEditor size="small" value={description} setValue={setDescription} textLength={setDescriptionLength} />
       </div>
@@ -281,9 +310,47 @@ const UserGoodsEdit = () => {
         {/*{id === "new" ? null : <Button view="delete" label="Удалить" />}*/}
       </div>
 
-      <MyModal open={editItemModal} close={closeEditItem}>
-        <SelectItem />
-        <Button view="submit" label="Подтвердить" onClick={closeEditItem} />
+      <MyModal open={selectTypeModal} close={closeSelectTypeModal}>
+        <div className={classNames(styles["modal_select_block"])}>
+          <FormTitle title="Выберите тип пустого слота" required={false} center={true} count={false} />
+          <div className={classNames(styles["wrapper"])}>
+            {TYPE_LIST.map((el, i) => (
+              <div className={classNames(styles["single"])} onClick={() => updateSelectType(el.type)} key={i}>
+                <LazyLoadImage
+                  src={process.env.PUBLIC_URL + `/site_assets/minecraft-item/${el.name}.webp`}
+                  width="100%"
+                  height="100%"
+                  effect="blur"
+                  alt="none"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </MyModal>
+
+      <MyModal open={editItemModal} close={closeEditItemModal}>
+        <div className={classNames(styles["wrapper_editor"])}>
+          <SelectItem edit={temporarily} setEdit={setTemporarily} />/
+          <Button view="submit" label="Подтвердить" onClick={closeEditItemModal} />
+        </div>
+      </MyModal>
+
+      <MyModal open={shulkerColorModal} close={closeShulkerColorModal}>
+        <FormTitle title="Выберите тип пустого слота" required={false} center={true} count={false} />
+        <div className={classNames(styles["modal_shulker_color"])}>
+          {SHULKERS_TYPE.map((el, index) => (
+            <div className={classNames(styles["single"])} key={index} onClick={() => updateShulkerColor(el)}>
+              <LazyLoadImage
+                src={process.env.PUBLIC_URL + `/site_assets/minecraft-item/${el}.webp`}
+                width="100%"
+                height="100%"
+                effect="blur"
+                alt="none"
+              />
+            </div>
+          ))}
+        </div>
       </MyModal>
     </div>
   );
