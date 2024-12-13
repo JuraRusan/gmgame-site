@@ -76,7 +76,7 @@
           position: relative;
 
           &:before {
-            content: '\2022';
+            content: "\2022";
             position: absolute;
             left: 8px;
             margin-top: 2px;
@@ -139,92 +139,10 @@
               width: 100%;
               height: 100%;
               margin-top: 20px;
-
-              .listOne {
-                display: flex;
-                width: 100%;
-                height: auto;
-                flex-direction: column;
-                margin-bottom: 5px;
-
-                .oneInputCheckBox {
-                  position: absolute;
-                  left: -10000px;
-                  opacity: 0;
-                  z-index: -1;
-                }
-
-                .question {
-                  display: flex;
-                  justify-content: space-between;
-                  padding: 16px;
-                  line-height: 1.35;
-                  background: $site-color-12;
-                  border: 1px solid $site-color-5;
-                  border-radius: 6px;
-                  color: $site-color-2;
-                  font-weight: 400;
-                  font-size: 15px;
-                  font-family: $fontCustom2;
-                  cursor: pointer;
-                  transition: all 0.35s ease;
-                  position: relative;
-                  align-items: center;
-
-                  &:hover {
-                    background: $site-color-1;
-                  }
-
-                  &::after {
-                    content: "\276F";
-                    width: 16px;
-                    height: 16px;
-                    text-align: center;
-                    transition: all 0.35s;
-                  }
-                }
-
-                .answerWrapperBox {
-                  width: 100%;
-                  max-height: 0;
-                  color: $site-color-2;
-                  font-weight: 400;
-                  font-size: 13px;
-                  font-family: $fontCustom2;
-                  background: $site-color-12;
-                  transition: all 0.25s ease;
-                  opacity: 0;
-                }
-              }
             }
           }
         }
       }
-    }
-  }
-
-  .oneInputCheckBox:checked ~ .answerWrapperBox {
-    opacity: 1 !important;
-    max-height: 100vh !important;
-    margin-bottom: 10px;
-    padding: 4px 16px;
-    border-right: 1px solid $site-color-5;
-    border-left: 1px solid $site-color-5;
-    border-bottom: 1px solid $site-color-5;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
-  }
-
-  .oneInputCheckBox:checked ~ .question {
-    margin-bottom: 0 !important;
-    border-bottom-left-radius: 0 !important;
-    border-bottom-right-radius: 0 !important;
-    background: $site-color-12 !important;
-    color: $site-color-8 !important;
-
-    &::after {
-      transform: rotate(90deg);
-      color: $site-color-8;
     }
   }
 }
@@ -306,22 +224,6 @@
 
         .content {
           margin: 0;
-
-          .idTab {
-            .tabOne {
-              .lists {
-                .listOne {
-                  .question {
-                    padding: 12px;
-                  }
-
-                  .answerWrapperBox {
-                    font-size: 12.5px;
-                  }
-                }
-              }
-            }
-          }
         }
       }
     }
@@ -356,19 +258,6 @@
 
         .content {
           padding: 12px;
-
-          .idTab {
-            .tabOne {
-              .lists {
-                .listOne {
-                  .question {
-                    padding: 10px;
-                    font-size: 14px;
-                  }
-                }
-              }
-            }
-          }
         }
       }
     }
@@ -439,18 +328,6 @@
                 height: auto;
                 line-height: 1.1;
                 font-size: 13px;
-              }
-
-              .lists {
-                .listOne {
-                  .question {
-                    font-size: 13px;
-                  }
-
-                  .answerWrapperBox {
-                    font-size: 11px;
-                  }
-                }
               }
             }
           }
