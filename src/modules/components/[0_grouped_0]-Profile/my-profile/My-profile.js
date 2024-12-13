@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import React, { useState } from "react";
-import { useAlert } from "@blaumaus/react-alert"
+import { useAlert } from "@blaumaus/react-alert";
 import { sendRequest, useAxios } from "../../../../DataProvider";
 import Preload from "../../preloader/Preload.js";
 import CopySvgComponent from "../../../../bases/icons/copySvg/CopySvg";
@@ -10,6 +10,8 @@ import Button from "../../button/Button";
 
 import styles from "./My-profile.module.scss";
 
+const IP_LIST = ["msk.gmgame.ru", "lv.gmgame.ru", "by.gmgame.ru", "fi.gmgame.ru"];
+
 const MyProfile = () => {
   const alert = useAlert();
 
@@ -17,10 +19,6 @@ const MyProfile = () => {
   const [copiedIndex, setCopiedIndex] = useState(null);
 
   const resParams = useAxios("/api/profile", "GET", {});
-
-  if (resParams.loading || isLoading) {
-    return <Preload full={false} />;
-  }
 
   const data = resParams.data;
 
@@ -43,6 +41,10 @@ const MyProfile = () => {
       }
     });
   };
+
+  if (resParams.loading || isLoading) {
+    return <Preload full={false} />;
+  }
 
   return (
     <div className={classNames(styles["profileBlock"])}>
