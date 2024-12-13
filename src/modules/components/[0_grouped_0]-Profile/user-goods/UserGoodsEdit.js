@@ -17,6 +17,7 @@ import { prepareLite } from "../../text-editor/functions/Prepare";
 import { SHULKERS_TYPE } from "../../../pages/shopkeepers/ShulkersType";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { clone } from "ramda";
+import { useAlert } from "@blaumaus/react-alert";
 
 import styles from "./UserGoodsEdit.module.scss";
 import "react-lazy-load-image-component/src/effects/blur.css";
@@ -37,11 +38,49 @@ const FIREWORK_ROCKET_DURATION = [
   { value: "3", name: 3 },
 ];
 
-const SelectItem = ({ edit, setEdit }) => {
-  const [id, setId] = useState("stone");
-  const [name, setName] = useState(null);
-  const [lore, setLore] = useState(null);
-  // console.log({ edit });
+const SelectItem = ({ edit, update }) => {
+  const alert = useAlert();
+
+  const [slot, setSlot] = useState(edit.slot);
+  const [id, setId] = useState(edit.id);
+  const [amount, setAmount] = useState(edit.amount);
+  const [content, setContent] = useState(edit.content);
+  const [customName, setCustomName] = useState(edit.minecraft_custom);
+  const [lore, setLore] = useState(edit.lore);
+  const [fireworkPower, setFireworkPower] = useState(edit.firework_power);
+  const [enchant, setEnchant] = useState(edit.enchant);
+  const [instrument, setInstrument] = useState(edit.instrument);
+  const [trim, setTrim] = useState(edit.trim);
+  const [leatherColor, setLeatherColor] = useState(edit.leather_color);
+  const [shield, setShield] = useState(edit.leather_color);
+  const [bannerPattern, setBannerPattern] = useState(edit.banner_pattern);
+
+  const saveEditedItem = () => {
+    const data = {
+      slot: slot,
+      id: id,
+      amount: amount,
+      content: content,
+      minecraft_custom: customName,
+      lore: lore,
+      firework_power: fireworkPower,
+      enchant: enchant,
+      instrument: instrument,
+      trim: trim,
+      leather_color: leatherColor,
+      shield: shield,
+      banner_pattern: bannerPattern,
+    };
+    const filtered = Object.fromEntries(Object.entries(data).filter(([key, value]) => value !== undefined));
+
+    alert.success("бла бла бла");
+    update(filtered);
+  };
+
+  const checkAmount = (value) => {
+    const numValue = Number(value);
+    setAmount(Math.min(64, Math.max(1, numValue)));
+  };
 
   if (lore) {
     console.log(prepareLite(lore[0]));
@@ -53,20 +92,39 @@ const SelectItem = ({ edit, setEdit }) => {
 
   return (
     <div className={classNames(styles["editor"])}>
-      <p>{JSON.stringify(edit)}</p>
       <datalist id="testa">
         {listId.map((e, i) => (
           <option key={i} value={e} />
         ))}
       </datalist>
-      <FormTitle title="ID предмета:" count={false} />
-      <Input list="testa" onChange={(e) => setId(e.target.value)} />
-      <FormTitle title="Стандартное название предмета:" count={false} required={false} />
-      <Input value={id} disabled />
+      <div className={classNames(styles["row"])}>
+        <FormTitle title="ID предмета:" count={false} />
+        <Input list="testa" value={id} onChange={(e) => setId(e.target.value)} />
+      </div>
+      <div className={classNames(styles["row"])}>
+        <FormTitle title="Стандартное название предмета:" count={false} required={false} />
+        <Input value={id} disabled />
+      </div>
+      <div className={classNames(styles["row"])}>
+        <FormTitle title="Колличество:" count={false} />
+        <Input type="number" min="1" max="64" value={amount} onChange={(e) => checkAmount(e.target.value)} />
+      </div>
+      <div className={classNames(styles["row"])}>
+        <FormTitle title="Кастомное название:" count={false} />
+        <TextEditor size="small" lite={true} value={customName} setValue={setCustomName} />
+      </div>
+      <div className={classNames(styles["row"])}>
+        <FormTitle title="Лор:" count={false} />
+        <TextEditor size="small" lite={true} value={lore} setValue={setLore} />
+      </div>
       {id === "firework_rocket" ? (
         <>
           <FormTitle title="Длительность полёта:" count={false} />
-          <Select list={FIREWORK_ROCKET_DURATION} />
+          <Select
+            list={FIREWORK_ROCKET_DURATION}
+            onChange={(e) => setFireworkPower(e.target.value)}
+            defaultValue={fireworkPower}
+          />
         </>
       ) : null}
       {id === "shield" ? (
@@ -81,27 +139,21 @@ const SelectItem = ({ edit, setEdit }) => {
           <Select list={FIREWORK_ROCKET_DURATION} />
         </>
       ) : null}
-      <div className={classNames(styles["row"])}>
-        <FormTitle title="Название:" count={false} />
-        <TextEditor size="small" lite={true} value={name} setValue={setName} />
-      </div>
-      <div className={classNames(styles["row"])}>
-        <FormTitle title="Лор:" count={false} />
-        <TextEditor size="small" lite={true} value={lore} setValue={setLore} />
-      </div>
+      <Button view="submit" label="Подтвердить" onClick={saveEditedItem} />
     </div>
   );
 };
 
 const UserGoodsEdit = () => {
   const isLoading = useLoading();
+  const alert = useAlert();
 
   const { id } = useParams();
   const navigate = useNavigate();
 
   const [main, setMain] = useState({
     result: { id: "", amount: 1, content: [] },
-    item: { id: "", amount: 1, content: [{ slot: 2, id: "emerald" }] },
+    item: { id: "", amount: 1, content: [] },
   });
 
   const [temporarily, setTemporarily] = useState(null);
@@ -129,41 +181,63 @@ const UserGoodsEdit = () => {
   const itemEdit = (slot, type) => {
     let tempValue;
 
-    if (type) {
-      setSelect(type);
-    }
+    setSelect(type);
 
     if (typeof slot !== "number") {
-      console.log({ main, select });
-      tempValue = clone(main[select]);
+      tempValue = clone(main[type]);
     } else {
-      let contentArray = main[select].content;
-
-      let foundObject = contentArray.find((item) => item.slot === slot);
-
-      // console.log(foundObject);
+      let foundObject = main[type].content.find((item) => item.slot === slot);
 
       if (!foundObject) {
-        console.log("нету такого слота");
-        console.log(foundObject);
+        tempValue = { slot: slot, id: "stone", amount: 1 };
       } else {
-        console.log("такой слот есть");
-        console.log(foundObject);
+        tempValue = foundObject;
       }
-
-      // let foundObject = contentArray.find((item, index) => index <= maxSlots && item.slot === slot);
-      //
-      // if (!foundObject) {
-      //   foundObject = { slot: slot };
-      //   contentArray.push(foundObject);
-      // }
-      //
-      // tempValue = foundObject;
     }
 
-    console.log(tempValue);
     setTemporarily(tempValue);
     openEditItemModal();
+  };
+
+  const updateItem = (data) => {
+    if (!data.slot) {
+      setMain((prev) => ({
+        ...prev,
+        [select]: { ...data },
+      }));
+      setSelect("");
+      setTemporarily(null);
+    } else {
+      setMain((prev) => {
+        let newContent;
+        const updated = prev[select].content;
+
+        const existingIndex = updated.findIndex((obj) => obj.slot === data.slot);
+
+        if (existingIndex !== -1) {
+          newContent = [
+            ...updated.slice(0, existingIndex),
+            { ...updated[existingIndex], ...data },
+            ...updated.slice(existingIndex + 1),
+          ];
+        } else {
+          newContent = [...updated, data];
+        }
+
+        return {
+          ...prev,
+          [select]: {
+            ...prev[select],
+            content: newContent,
+          },
+        };
+      });
+
+      setSelect("");
+      setTemporarily(null);
+    }
+
+    closeEditItemModal();
   };
 
   const resetItem = (type) => {
@@ -208,7 +282,6 @@ const UserGoodsEdit = () => {
   // ---
   const openSelectTypeModal = (sel) => {
     setSelectTypeModal(true);
-    console.log("1", { sel });
     setSelect(sel);
   };
 
@@ -240,21 +313,19 @@ const UserGoodsEdit = () => {
     return (
       <>
         {SHULKERS_TYPE.includes(main[type].id) ? (
-          <div onClick={() => setSelect(type)}>
-            <ShulkerBox item={main[type]} onClick={itemEdit} />
-            <button onClick={() => openShulkerColorModal(type)}>color</button>
-            <button onClick={() => resetItem(type)}>reset</button>
+          <div className={classNames(styles["active"])}>
+            <ShulkerBox item={main[type]} onClick={(e) => itemEdit(e, type)} />
+            <div className={classNames(styles["actions_item"])}>
+              <button onClick={() => openShulkerColorModal(type)}>color</button>
+              <button onClick={() => resetItem(type)}>reset</button>
+            </div>
           </div>
         ) : (
-          <div>
-            <OneItem
-              item={main[type]}
-              onClick={() => {
-                itemEdit(undefined, type);
-              }}
-              big={true}
-            />
-            <button onClick={() => resetItem(type)}>reset</button>
+          <div className={classNames(styles["active"])}>
+            <OneItem item={main[type]} onClick={(e) => itemEdit(e, type)} big={true} />
+            <div className={classNames(styles["actions_item"])}>
+              <button onClick={() => resetItem(type)}>reset</button>
+            </div>
           </div>
         )}
       </>
@@ -270,7 +341,11 @@ const UserGoodsEdit = () => {
     <div className={classNames(styles["user_goods_edit"])}>
       <BackButton onClick={() => navigate(-1)} />
       <FormTitle title="Параметры сделки: " count={false} />
-      <div className={classNames(styles["offers"])}>
+      <div
+        className={classNames(styles["offers"], {
+          [[styles["double"]]]: SHULKERS_TYPE.includes(main.item.id) && SHULKERS_TYPE.includes(main.result.id),
+        })}
+      >
         <div className={classNames(styles["item_box"])}>
           {main.item.id === "" ? (
             <div className={classNames(styles["empty"])} onClick={() => openSelectTypeModal("item")}>
@@ -331,8 +406,7 @@ const UserGoodsEdit = () => {
 
       <MyModal open={editItemModal} close={closeEditItemModal}>
         <div className={classNames(styles["wrapper_editor"])}>
-          <SelectItem edit={temporarily} setEdit={setTemporarily} />/
-          <Button view="submit" label="Подтвердить" onClick={closeEditItemModal} />
+          <SelectItem edit={temporarily} update={updateItem} />
         </div>
       </MyModal>
 
