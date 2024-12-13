@@ -1,7 +1,6 @@
 import classNames from "classnames";
 import React from "react";
 import useLoading from "../../loading/useLoading";
-import { useAxios } from "../../../DataProvider";
 import Preload from "../../components/preloader/Preload";
 import Link from "../../components/link/Link";
 import Title from "../../components/title/Title";
@@ -11,7 +10,6 @@ import styles from "./Support.module.scss";
 const LINKS = [
   { description: "Переводом по номеру карты 2202 2032 5684 4806", link: "/support" },
   { description: "Подарить алмазы (HotMC)", link: "https://hotmc.ru/promote-minecraft-server-205185?mode=packs" },
-  { description: "Розыгрыш на мониторинге (HotMC)", link: "https://hotmc.ru/casino-205185" },
   { description: "Проголосовать на мониторингах", link: "https://discord.gg/AesVsdPsFj" },
 ];
 
@@ -28,62 +26,25 @@ const MONITORING = [
   },
   {
     id: 3,
-    name: "Monitoring minecraft",
-    url: "https://monitoringminecraft.ru/server/694954",
-  },
-  {
-    id: 4,
     name: "Minecraftrating",
     url: "https://minecraftrating.ru/server/gmgame",
   },
   {
+    id: 4,
+    name: "Minecraft-statistic",
+    url: "https://minecraft-statistic.net/en/server/GMGame.html",
+  },
+  {
     id: 5,
-    name: "MNSgame",
-    url: "https://mnsgame.ru/server/86",
-  },
-  {
-    id: 6,
-    name: "Gamemonitoring",
-    url: "https://gamemonitoring.ru/minecraft/servers/662160",
-  },
-  {
-    id: 7,
-    name: "MC-servera",
-    url: "https://mc-servera.net/92122",
-  },
-  {
-    id: 8,
-    name: "MC-monitoring",
-    url: "https://mc-monitoring.info/server/17637",
-  },
-  {
-    id: 9,
-    name: "MC-monitor",
-    url: "https://mc-monitor.org/server/gmgame",
-  },
-  {
-    id: 10,
-    name: "Klauncher",
-    url: "https://klauncher.ru/monitoring/server/2316",
-  },
-  {
-    id: 11,
-    name: "Serversminecraft",
-    url: "https://serversminecraft.ru/server/944",
-  },
-  {
-    id: 12,
-    name: "Top.grmc",
-    url: "https://top.grmc.su/server/2508",
+    name: "MCLike",
+    url: "https://mclike.com/minecraft-server-192962",
   },
 ];
 
 const Support = () => {
   const isLoading = useLoading();
 
-  const resParams = useAxios("/api/get_goals", "GET", {});
-
-  if (resParams.loading || isLoading) {
+  if (isLoading) {
     return <Preload full={false} />;
   }
 
@@ -109,7 +70,12 @@ const Support = () => {
             </p>
             <div className={classNames(styles["link_wrapper"])}>
               {LINKS.map((el, i) => (
-                <Link target="_blank" rel="noreferrer" href={el.link}>
+                <Link
+                  target="_blank"
+                  rel="noreferrer"
+                  href={el.link}
+                  className={classNames(styles["link_support_custom"])}
+                >
                   &#8226; {el.description}
                 </Link>
               ))}
@@ -119,7 +85,7 @@ const Support = () => {
           <div className={classNames(styles["img_wrapper"])}>
             <img
               className={classNames(styles["image"])}
-              src="./site_assets/pages/webp/new_7.webp"
+              src={process.env.PUBLIC_URL + "/site_assets/pages/webp/new_7.webp"}
               width="100%"
               height="100%"
               alt="none"
