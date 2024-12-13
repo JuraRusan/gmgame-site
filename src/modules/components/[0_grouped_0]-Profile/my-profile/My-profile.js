@@ -3,8 +3,6 @@ import React, { useState } from "react";
 import { useAlert } from "@blaumaus/react-alert";
 import { sendRequest, useAxios } from "../../../../DataProvider";
 import Preload from "../../preloader/Preload.js";
-import CopySvgComponent from "../../../../bases/icons/copySvg/CopySvg";
-import CheckSvgComponent from "../../../../bases/icons/checkSvg/CheckSvg";
 import useLoading from "../../../loading/useLoading";
 import Button from "../../button/Button";
 import Link from "../../link/Link";
@@ -71,6 +69,7 @@ const MyProfile = () => {
       <Link
         className={classNames(styles["link_size_discord"])}
         href="https://discord.gg/cAM6tUYEuX"
+        rel="noreferrer"
         target="_blank"
         show={false}
       >
@@ -98,6 +97,7 @@ const MyProfile = () => {
             <Link
               href="https://discord.com/channels/723912565234728972/792059904721944626"
               className={classNames(styles["link_size"])}
+              rel="noreferrer"
               target="_blank"
               show={false}
             >
@@ -109,6 +109,7 @@ const MyProfile = () => {
             <Link
               href="https://discord.com/channels/723912565234728972/849947082591961118"
               className={classNames(styles["link_size"])}
+              rel="noreferrer"
               target="_blank"
               show={false}
             >
@@ -120,6 +121,7 @@ const MyProfile = () => {
             <Link
               href="https://wiki.gmgame.ru/"
               className={classNames(styles["link_size"])}
+              rel="noreferrer"
               target="_blank"
               show={false}
             >
@@ -160,19 +162,27 @@ const MyProfile = () => {
           <Link
             href="https://discord.com/channels/723912565234728972/792059904721944626"
             className={classNames(styles["link_size"])}
+            rel="noreferrer"
             target="_blank"
             show={false}
           >
             правилами
           </Link>
           ,{" "}
-          <Link href="https://wiki.gmgame.ru/" className={classNames(styles["link_size"])} target="_blank" show={false}>
+          <Link
+            href="https://wiki.gmgame.ru/"
+            className={classNames(styles["link_size"])}
+            rel="noreferrer"
+            target="_blank"
+            show={false}
+          >
             wiki{" "}
           </Link>
           и разделом{" "}
           <Link
             href="https://discord.com/channels/723912565234728972/849947082591961118"
             className={classNames(styles["link_size"])}
+            rel="noreferrer"
             target="_blank"
             show={false}
           >
@@ -215,6 +225,7 @@ const MyProfile = () => {
               <Link
                 href="https://wiki.gmgame.ru/books/server/page/zaiavki-i-priem-zaiavok-na-servere-gmgame"
                 className={classNames(styles["link_size"])}
+                rel="noreferrer"
                 target="_blank"
                 show={false}
               >
@@ -263,6 +274,7 @@ const MyProfile = () => {
           <Link
             href="https://discord.com/channels/723912565234728972/1185657616806977647"
             className={classNames(styles["link_size"])}
+            rel="noreferrer"
             target="_blank"
             show={false}
           >

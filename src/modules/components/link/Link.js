@@ -7,7 +7,7 @@ const Link = ({ show = true, className, children, ...props }) => {
   return (
     <a className={classNames(styles["link_site"], className)} {...props}>
       {children}
-      {show && " &#10148;"}
+      {show && ` ${String.fromCharCode(10148)}`}
     </a>
   );
 };
