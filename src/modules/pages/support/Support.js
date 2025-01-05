@@ -8,7 +8,6 @@ import Title from "../../components/title/Title";
 import styles from "./Support.module.scss";
 
 const LINKS = [
-  { description: "Переводом по номеру карты 2202 2032 5684 4806", link: "/support" },
   { description: "Подарить алмазы (HotMC)", link: "https://hotmc.ru/promote-minecraft-server-205185?mode=packs" },
   { description: "Проголосовать на мониторингах", link: "https://discord.gg/AesVsdPsFj" },
 ];
