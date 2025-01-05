@@ -7,6 +7,8 @@ import DiscordSvgComponent from "../../bases/icons/discordSvg/DiscordSvg";
 import styles from "./Footer.module.scss";
 
 const Footer = () => {
+  const date = new Date();
+
   return (
     <div className={classNames(styles["footer"])}>
       <div className={classNames(styles["rows-bt"])}>
@@ -29,7 +31,7 @@ const Footer = () => {
           Мы на
           <a href="https://mineserv.top/gmgame">Mineserv.top</a>
         </h3>
-        <h3 className={classNames(styles["classText"])}>© 2020 - 2024 GMGame Minecraft Server</h3>
+        <h3 className={classNames(styles["classText"])}>© 2020 - {date.getFullYear()} GMGame Minecraft Server</h3>
       </div>
     </div>
   );
