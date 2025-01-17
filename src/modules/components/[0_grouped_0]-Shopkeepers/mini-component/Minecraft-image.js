@@ -100,7 +100,7 @@ const MinecraftImage = ({ item, dots = "." }) => {
       {item.trim && (
         <div className={classNames(styles["absoluteArmor"])}>
           <LazyLoadImage
-            src={`${dots}/site_assets/view_trim/${imageTypeFolder}/${item.trim.material}.webp`}
+            src={`${dots}/site_assets/item_trim/${imageTypeFolder}/${item.trim.material}.webp`}
             width="100%"
             height="100%"
             effect="blur"
