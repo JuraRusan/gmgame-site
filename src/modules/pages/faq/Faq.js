@@ -6,6 +6,7 @@ import FaqSvgComponent from "../../../bases/icons/faqSvg/FaqSvg";
 import useLoading from "../../loading/useLoading";
 import Title from "../../components/title/Title";
 import { prepare } from "../../components/text-editor/functions/Prepare";
+import Accordion from "../../components/accordion/Accordion";
 
 import styles from "./Faq.module.scss";
 
@@ -30,23 +31,11 @@ const Faq = () => {
 
   if (resFaq.loaded && tabsFaqList.length === 0) {
     let tabs = {};
+
     resFaq.data.forEach((el, i) => {
-      function generateUniqueHash(length) {
-        const characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-        let hash = "";
-
-        for (let i = 0; i < length; i++) {
-          const randomIndex = Math.floor(Math.random() * characters.length);
-          hash += characters[randomIndex];
-        }
-
-        return hash;
-      }
-
       if (tabs[el.category]) {
         tabs[el.category].push({
           id: el.id,
-          forIndex: generateUniqueHash(24),
           question: el.quest,
           answer: prepare(el.answer, true),
         });
@@ -54,7 +43,6 @@ const Faq = () => {
         tabs[el.category] = [
           {
             id: el.id,
-            forIndex: generateUniqueHash(24),
             question: el.quest,
             answer: prepare(el.answer, true),
           },
@@ -70,6 +58,7 @@ const Faq = () => {
         itfContent: tabs[tab],
       }))
     );
+
     setCurrentTab(0);
   }
 
@@ -103,18 +92,7 @@ const Faq = () => {
                   <p className={classNames(styles["info"])}>{selectedTab?.titleInf}</p>
                   <div className={classNames(styles["lists"])}>
                     {selectedTab?.itfContent.map((el) => {
-                      return (
-                        <div className={classNames(styles["listOne"])} key={el.id}>
-                          <input className={classNames(styles["oneInputCheckBox"])} id={el.forIndex} type="checkbox" />
-                          <label className={classNames(styles["question"])} htmlFor={el.forIndex}>
-                            &#8226; {el.question}
-                          </label>
-                          <div
-                            className={classNames(styles["answerWrapperBox"])}
-                            dangerouslySetInnerHTML={{ __html: el.answer }}
-                          />
-                        </div>
-                      );
+                      return <Accordion el={el} key={el.id} />;
                     })}
                   </div>
                 </div>

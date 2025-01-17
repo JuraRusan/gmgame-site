@@ -3,10 +3,11 @@ import React from "react";
 
 import styles from "./Link.module.scss";
 
-const Link = ({ children, ...props }) => {
+const Link = ({ show = true, className, children, ...props }) => {
   return (
-    <a className={classNames(styles["link_site"])} {...props}>
-      {children} &#10148;
+    <a className={classNames(styles["link_site"], className)} {...props}>
+      {children}
+      {show && ` ${String.fromCharCode(10148)}`}
     </a>
   );
 };
