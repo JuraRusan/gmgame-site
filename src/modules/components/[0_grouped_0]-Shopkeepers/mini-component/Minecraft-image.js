@@ -14,13 +14,13 @@ const MinecraftImage = ({ item, dots = "." }) => {
 
   const getImageSource = () => {
     if (itemNameId === "enchanted_golden_apple") {
-      return `${dots}/site_assets/minecraft-item/golden_apple.webp`;
+      return `${dots}/site_assets/items/golden_apple.webp`;
       // --------------------------------------------
     } else if (itemNameId === "written_book") {
-      return `${dots}/site_assets/minecraft-item/book.webp`;
+      return `${dots}/site_assets/items/book.webp`;
       // --------------------------------------------
     } else if (itemNameId === "enchanted_book") {
-      return `${dots}/site_assets/minecraft-item/book.webp`;
+      return `${dots}/site_assets/items/book.webp`;
       // --------------------------------------------
     } else if (itemNameId === "end_crystal") {
       return `${dots}/site_assets/animation_webp/end_crystal.webp`;
@@ -48,13 +48,13 @@ const MinecraftImage = ({ item, dots = "." }) => {
       // --------------------------------------------
     } else if (itemNameId === "smithing_template") {
       if (item.improvement === "netherite_upgrade") {
-        return `${dots}/site_assets/minecraft-item/${item.improvement}_${item.id}.webp`;
+        return `${dots}/site_assets/items/${item.improvement}_${item.id}.webp`;
       } else {
-        return `${dots}/site_assets/minecraft-item/${item.improvement}_armor_trim_${item.id}.webp`;
+        return `${dots}/site_assets/items/${item.improvement}_armor_trim_${item.id}.webp`;
       }
       // --------------------------------------------
     } else {
-      return `${dots}/site_assets/minecraft-item/${itemNameId}.webp`;
+      return `${dots}/site_assets/items/${itemNameId}.webp`;
     }
   };
 
