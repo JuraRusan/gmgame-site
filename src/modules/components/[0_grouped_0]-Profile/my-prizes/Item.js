@@ -7,10 +7,10 @@ import styles from "./My-prizes.module.scss";
 const Item = (props) => {
   const [indexItem, setIndexItem] = useState(0);
   const picturesItem = [
-    "../site_assets/minecraft-item/netherite_pickaxe.webp",
-    "../site_assets/minecraft-item/netherite_axe.webp",
-    "../site_assets/minecraft-item/netherite_hoe.webp",
-    "../site_assets/minecraft-item/netherite_shovel.webp",
+    "../site_assets/items/netherite_pickaxe.webp",
+    "../site_assets/items/netherite_axe.webp",
+    "../site_assets/items/netherite_hoe.webp",
+    "../site_assets/items/netherite_shovel.webp",
   ];
 
   useEffect(() => {

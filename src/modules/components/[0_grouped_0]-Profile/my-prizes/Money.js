@@ -7,10 +7,10 @@ import styles from "./My-prizes.module.scss";
 const Money = (props) => {
   const [indexMoney, setIndexMoney] = useState(0);
   const picturesMoney = [
-    "../site_assets/minecraft-item/deepslate_diamond_ore.webp",
-    "../site_assets/minecraft-item/deepslate_emerald_ore.webp",
-    "../site_assets/minecraft-item/deepslate_gold_ore.webp",
-    "../site_assets/minecraft-item/deepslate_redstone_ore.webp",
+    "../site_assets/items/deepslate_diamond_ore.webp",
+    "../site_assets/items/deepslate_emerald_ore.webp",
+    "../site_assets/items/deepslate_gold_ore.webp",
+    "../site_assets/items/deepslate_redstone_ore.webp",
   ];
 
   useEffect(() => {
