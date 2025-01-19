@@ -46,6 +46,11 @@
   margin: 0;
   color: $site-color-2;
   font-family: $fontCustom2 !important;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
 
   p {
     line-height: 1.45;
@@ -73,15 +78,18 @@
 }
 
 .editor_small {
-  min-height: 80px;
+  min-height: 150px;
+  max-height: 350px;
 }
 
 .editor_medium {
   min-height: 450px;
+  max-height: 650px;
 }
 
 .editor_large {
   min-height: 750px;
+  max-height: 950px;
 }
 
 .button_style {

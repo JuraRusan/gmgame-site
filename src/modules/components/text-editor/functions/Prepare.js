@@ -108,3 +108,30 @@ export function prepare(code, font = false) {
     })
     .join("");
 }
+
+function formatLite(code) {
+  return code
+    .map((format) => {
+      let styles = "";
+      let colors = "";
+
+      if (format.bold) styles += " strong_editor";
+      if (format.italic) styles += " em_editor";
+      if (format.underline) styles += " u_editor";
+      if (format.strikethrough) styles += " s_editor";
+
+      if (format.textColor) colors += "color: " + format.textColor;
+
+      return `<span class="${styles}" style="${colors}">${format.text}</span>`;
+    })
+    .join("");
+}
+
+export function prepareLite(code) {
+  const local = () => {
+    if (code.type === "paragraph") {
+      return formatLite(code.children);
+    }
+  };
+  return local();
+}

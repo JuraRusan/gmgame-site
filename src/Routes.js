@@ -48,6 +48,10 @@ const MyProfile = lazy(() => import(/* webpackChunkName: "cab" */ "./modules/com
 const MyPrizes = lazy(() => import(/* webpackChunkName: "cab" */ "./modules/components/[0_grouped_0]-Profile/my-prizes/My-prizes.js")); // prettier-ignore
 
 // --
+const UserGoods = lazy(() => import(/* webpackChunkName: "cab" */ "./modules/components/[0_grouped_0]-Profile/user-goods/UserGoods")); // prettier-ignore
+const UserGoodsEdit = lazy(() => import(/* webpackChunkName: "cab" */ "./modules/components/[0_grouped_0]-Profile/user-goods/UserGoodsEdit")); // prettier-ignore
+
+// --
 const ShopUser = lazy(() => import(/* webpackChunkName: "cab" */ "./modules/components/[0_grouped_0]-Profile/shops-user/ShopUser")); // prettier-ignore
 const LogTrade = lazy(() => import(/* webpackChunkName: "cab" */ "./modules/components/[0_grouped_0]-Profile/shops-user/LogTrade")); // prettier-ignore
 
@@ -92,6 +96,9 @@ const Router = () => {
             <Route path="gallery/post_analytics/:id" element={<AnalyticsPost />} />
             {/* ---------- */}
             <Route path="prize" element={<MyPrizes />} />
+            {/* ---------- */}
+            <Route path="user_goods" element={<UserGoods />} />
+            <Route path="user_goods/edit_add_item/:id" element={<UserGoodsEdit />} />
             {/* ---------- */}
             <Route path="shop_user" element={<ShopUser />} />
             <Route path="shop_user/:uuid" element={<LogTrade />} />

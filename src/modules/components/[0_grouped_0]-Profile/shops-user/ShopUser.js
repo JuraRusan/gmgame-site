@@ -36,7 +36,7 @@ const ShopUser = () => {
   useEffect(() => {
     if (init !== true) {
       axios
-        .get("https://map.gmgame.ru/api/user_shop")
+        .get("http://127.0.0.1:4000/user_shop")
         .then((res) => {
           setDataAll(res.data.data);
         })

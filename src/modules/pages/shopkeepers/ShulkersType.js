@@ -13,7 +13,7 @@ export const SHULKERS_TYPE = [
   "pink_shulker_box",
   "purple_shulker_box",
   "red_shulker_box",
-  "shulker_box",
   "white_shulker_box",
   "yellow_shulker_box",
+  "shulker_box",
 ];

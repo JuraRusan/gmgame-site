@@ -11,7 +11,7 @@ import { SHULKERS_TYPE } from "../../../pages/shopkeepers/ShulkersType";
 
 import styles from "./One-item.module.scss";
 
-const OneItem = ({ item, onClick, customLink, mini = false }) => {
+const OneItem = ({ item, onClick, size = "medium", mini = false, big = false }) => {
   const [showTooltip, setShowTooltip] = useState(false);
   const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
   const [tooltipVisible, setTooltipVisible] = useState(false);
@@ -64,7 +64,7 @@ const OneItem = ({ item, onClick, customLink, mini = false }) => {
 
   if (!item) {
     return (
-      <div className={classNames(styles["item_block"])}>
+      <div className={classNames(styles["item_block"])} onClick={onClick}>
         <div className={classNames(styles["item"], mini && styles["mini"])}></div>
       </div>
     );
@@ -73,12 +73,12 @@ const OneItem = ({ item, onClick, customLink, mini = false }) => {
   return (
     <div className={classNames(styles["item_block"])} onClick={onClick}>
       <div
-        className={classNames(styles["item"], styles["content"], mini && styles["mini"])}
+        className={classNames(styles["item"], styles["content"], mini && styles["mini"], big && styles["big"])}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
         {item.shield !== undefined ? <MinecraftShield item={item} type="center" /> : null}
-        {!item.banner_pattern && !item.shield ? <MinecraftImage item={item} dots={customLink} /> : null}
+        {!item.banner_pattern && !item.shield ? <MinecraftImage item={item} /> : null}
         {item.banner_pattern !== undefined && !item.shield ? <MinecraftBanner item={item} type="center" /> : null}
         <span className={classNames(styles["count"])}>{item.amount}</span>
       </div>
@@ -90,7 +90,7 @@ const OneItem = ({ item, onClick, customLink, mini = false }) => {
           {item.banner_pattern !== undefined && !item.shield ? <MinecraftBanner item={item} type="normal" /> : null}
           {SHULKERS_TYPE.includes(item.id) && (
             <div className={classNames(styles["shulker_wrapper"])}>
-              <ShulkerBox item={item} full={false} customLink={customLink} />
+              <ShulkerBox item={item} full={false} />
             </div>
           )}
           <MinecraftRegister item={item} />
