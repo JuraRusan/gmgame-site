@@ -3,10 +3,7 @@ import React, { useEffect, useState } from "react";
 import MinecraftName from "../mini-component/Minecraft-name";
 import MinecraftRegister from "../mini-component/Minecraft-register";
 import MinecraftImage from "../mini-component/Minecraft-image";
-import MinecraftShield from "../mini-component/Minecraft-shield";
-import MinecraftBanner from "../mini-component/Minecraft-banner";
 import ShulkerBox from "../shulker-box/Shulker-box";
-import MinecraftArmorType from "../mini-component/Minecraft-armor-type";
 import { SHULKERS_TYPE } from "../../../pages/shopkeepers/ShulkersType";
 
 import styles from "./One-item.module.scss";
@@ -77,17 +74,15 @@ const OneItem = ({ item, onClick, size = "medium", mini = false, big = false }) 
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        {item.shield !== undefined ? <MinecraftShield item={item} type="center" /> : null}
-        {!item.banner_pattern && !item.shield ? <MinecraftImage item={item} /> : null}
-        {item.banner_pattern !== undefined && !item.shield ? <MinecraftBanner item={item} type="center" /> : null}
+        <MinecraftImage item={item} width={mini ? 28 : 58} height={mini ? 28 : 58} />
         <span className={classNames(styles["count"])}>{item.amount}</span>
       </div>
       {showTooltip && (
         <div className={classNames(styles["tooltip"])} style={tooltipStyle}>
           <MinecraftName item={item} />
-          {!item.trim ? null : <MinecraftArmorType item={item} />}
-          {item.shield !== undefined ? <MinecraftShield item={item} type="normal" /> : null}
-          {item.banner_pattern !== undefined && !item.shield ? <MinecraftBanner item={item} type="normal" /> : null}
+          {(item.trim || item.shield || item.banner_pattern) && (
+            <MinecraftImage item={item} width={256} height={256} background="#27272a" />
+          )}
           {SHULKERS_TYPE.includes(item.id) && (
             <div className={classNames(styles["shulker_wrapper"])}>
               <ShulkerBox item={item} full={false} />
