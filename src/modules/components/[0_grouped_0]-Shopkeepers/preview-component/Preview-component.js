@@ -3,11 +3,8 @@ import React from "react";
 import { SHULKERS_TYPE } from "../../../pages/shopkeepers/ShulkersType";
 import ShulkerBox from "../shulker-box/Shulker-box";
 import MinecraftImage from "../mini-component/Minecraft-image";
-import MinecraftArmorType from "../mini-component/Minecraft-armor-type";
 import MinecraftName from "../mini-component/Minecraft-name";
 import MinecraftRegister from "../mini-component/Minecraft-register";
-import MinecraftShield from "../mini-component/Minecraft-shield";
-import MinecraftBanner from "../mini-component/Minecraft-banner";
 
 import styles from "./Preview-component.module.scss";
 
@@ -21,25 +18,7 @@ const PreviewComponent = ({ selected }) => {
       ) : (
         <div className={classNames(styles["view_item"])}>
           <div className={classNames(styles["column_one"])}>
-            {selected.trim === undefined && selected.banner_pattern === undefined && selected.shield === undefined ? (
-              <div className={classNames(styles["imageWrapperAll"])}>
-                <MinecraftImage item={selected} />
-              </div>
-            ) : null}
-            {selected.trim !== undefined ? (
-              <div className={classNames(styles["imageWrapperArmor"])}>
-                <MinecraftArmorType item={selected} />
-              </div>
-            ) : null}
-            {selected.banner_pattern !== undefined || selected.shield !== undefined ? (
-              <div className={classNames(styles["imageWrapperBanner"])}>
-                {selected.id === "shield" ? (
-                  <MinecraftShield item={selected} type="normal" />
-                ) : (
-                  <MinecraftBanner item={selected} type="normal" />
-                )}
-              </div>
-            ) : null}
+            <MinecraftImage item={selected} width={256} height={256} />
           </div>
           <div className={classNames(styles["column_two"])}>
             <MinecraftName item={selected} />
