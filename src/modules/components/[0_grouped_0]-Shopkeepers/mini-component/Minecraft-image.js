@@ -122,14 +122,6 @@ const MinecraftImage = ({ item, width, height, background }) => {
       <div className={classNames(styles["crop"])}>
         <CanvasRender width={width} height={height} images={[imagesArr[0]]} type="crop" background={background} />
       </div>
-
-      {/*<CanvasRender*/}
-      {/*  color={item.leather_color}*/}
-      {/*  width={width}*/}
-      {/*  height={height}*/}
-      {/*  enchantment={item.enchant || itemNameId === "written_book" || itemNameId === "enchanted_golden_apple"}*/}
-      {/*  images={imagesArr}*/}
-      {/*/>*/}
     </div>
   );
 };
