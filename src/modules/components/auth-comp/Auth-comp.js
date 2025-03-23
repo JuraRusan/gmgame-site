@@ -3,7 +3,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { ErrorMessage } from "@hookform/error-message";
 import { sendRequest } from "../../../DataProvider";
-import { useAlert } from "@blaumaus/react-alert"
+import { useAlert } from "@blaumaus/react-alert";
 import Notifications from "../notifications/Notifications";
 import Button from "../button/Button";
 
@@ -150,6 +150,8 @@ const AuthComponent = () => {
               className={errorInfo.about ? classNames(styles["inputErrors"]) : ""}
               {...register("about", {
                 required: { value: true, message: "Обязательное поле" },
+                minLength: { value: 24, message: "Слишком короткий текст" },
+                maxLength: { value: 256, message: "Слишком длинный текст" },
               })}
             />
             <span className={classNames(styles["label"])}>Откуда узнали о проекте</span>
@@ -164,6 +166,8 @@ const AuthComponent = () => {
               className={errorInfo.interests ? classNames(styles["inputErrors"]) : ""}
               {...register("interests", {
                 required: { value: true, message: "Обязательное поле" },
+                minLength: { value: 32, message: "Слишком короткий текст" },
+                maxLength: { value: 1000, message: "Слишком длинный текст" },
               })}
             />
             <span className={classNames(styles["label"])}>Интересы в майнкрафте</span>
@@ -178,6 +182,8 @@ const AuthComponent = () => {
               className={errorInfo.back_servers ? classNames(styles["inputErrors"]) : ""}
               {...register("back_servers", {
                 required: { value: true, message: "Обязательное поле" },
+                minLength: { value: 12, message: "Слишком короткий текст" },
+                maxLength: { value: 256, message: "Слишком длинный текст" },
               })}
             />
             <span className={classNames(styles["label"])}>Предыдущие сервера</span>
