@@ -585,7 +585,7 @@ const TextEditor = ({
   }, [mentionsList.length]);
 
   if (resParams.loading || isLoading) {
-    return <Preload full={true} />;
+    return <Preload full={false} />;
   }
 
   return (

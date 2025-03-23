@@ -74,7 +74,7 @@ const OneItem = ({ item, onClick, size = "medium", mini = false, big = false }) 
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <MinecraftImage item={item} width={mini ? 28 : 58} height={mini ? 28 : 58} />
+        <MinecraftImage item={item} width={big ? 187 : mini ? 28 : 58} height={big ? 187 : mini ? 28 : 58} />
         <span className={classNames(styles["count"])}>{item.amount}</span>
       </div>
       {showTooltip && (

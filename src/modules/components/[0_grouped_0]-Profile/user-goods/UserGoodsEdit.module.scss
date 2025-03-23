@@ -58,6 +58,26 @@
           display: flex;
           flex-direction: row;
           justify-content: center;
+
+          button {
+            width: 120px;
+            height: auto;
+            font-size: 14px;
+            font-weight: 400;
+            font-family: $fontCustom2;
+            color: $site-color-2;
+            background: $site-color-14;
+            padding: 4px;
+            margin: 4px;
+            outline: none;
+            transition: all 0.35s ease;
+            border: 2px solid $site-color-15;
+            cursor: pointer;
+
+            &:hover {
+              color: $site-color-9;
+            }
+          }
         }
       }
     }
@@ -104,6 +124,7 @@
   .comment {
     display: flex;
     flex-direction: column;
+    margin-bottom: auto;
   }
 
   .actions {
@@ -116,46 +137,22 @@
   }
 }
 
+.overflow {
+  padding-right: 6px;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+}
+
 .modal_select_block {
   display: flex;
   flex-direction: column;
   padding: 12px;
 
-  .wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-    .single {
-      display: flex;
-      width: 168px;
-      height: 168px;
-      margin: 14px;
-      transition: all 0.25s ease;
-      border-radius: 12px;
-      cursor: pointer;
-
-      &:hover {
-        background: $site-color-15;
-        box-shadow: 0 0 8px 5px $site-color-15;
-      }
-    }
-  }
-}
-
-.modal_shulker_color {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 12px;
-  max-width: 480px;
-
   .single {
     display: flex;
-    width: 96px;
-    height: 96px;
-    margin: 8px;
     transition: all 0.25s ease;
     border-radius: 12px;
     cursor: pointer;
@@ -163,6 +160,36 @@
     &:hover {
       background: $site-color-15;
       box-shadow: 0 0 8px 5px $site-color-15;
+    }
+  }
+
+  .wrapper_type_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 12px;
+    max-width: 760px;
+
+    .single {
+      width: 168px;
+      height: 168px;
+      margin: 14px;
+    }
+  }
+
+  .wrapper_shulker_color {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 12px;
+    max-width: 760px;
+
+    .single {
+      width: 96px;
+      height: 96px;
+      margin: 8px;
     }
   }
 }
