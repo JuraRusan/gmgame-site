@@ -73,7 +73,7 @@ const Header = () => {
             {mainDropMenu === false ? (
               <span className={classNames(styles["ico"])}>&#9776;</span>
             ) : (
-              <span className={classNames(styles["ico"])}>&#128500;</span>
+              <span className={classNames(styles["ico"])}>&#10006;</span>
             )}
             {mainDropMenu === false ? null : (
               <div className={classNames(styles["dropMenuMain"])} data-aos="zoom-out-down" data-aos-duration="250">

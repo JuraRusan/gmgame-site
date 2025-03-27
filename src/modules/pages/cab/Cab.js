@@ -87,7 +87,7 @@ const Cab = () => {
             </div>
           ) : (
             <div className={classNames(styles["swipePhone"])} onClick={() => setOpenMenu(!openMenu)}>
-              <span className={classNames(styles["ico"], styles["customColorIco"])}>&#128500;</span>
+              <span className={classNames(styles["ico"], styles["customColorIco"])}>&#10006;</span>
               <label className={classNames(styles["text"])}>Закрыть меню</label>
             </div>
           )}
