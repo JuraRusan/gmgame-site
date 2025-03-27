@@ -3,12 +3,27 @@ import React, { useEffect, useState } from "react";
 import { sendRequest, useAxios } from "../../DataProvider";
 import AOS from "aos";
 import LogoMainTextSvgComponent from "../../bases/icons/LogoMainText";
+import GoOutSvgComponent from "../../bases/icons/goOutSvg/GoOutSvg";
+import ManagerSvgComponent from "../../bases/icons/managerSvg/ManagerSvg";
+import ProfileSvgComponent from "../../bases/icons/profileSvg/ProfileSvg";
+import CoinsSvgComponent from "../../bases/icons/coinsSvg/CoinsSvg";
 
 import styles from "./Header.module.scss";
 import "aos/dist/aos.css";
 
 const Header = () => {
-  const resParams = useAxios("/api/", "GET", {});
+  const resParams = useAxios("/api/profile", "GET", {});
+
+  const [cabDropMenu, setCabDropMenu] = useState(false);
+  const [mainDropMenu, setMainDropMenu] = useState(false);
+
+  const closeMenuMain = () => {
+    setMainDropMenu(false);
+  };
+
+  const closeMenuCab = () => {
+    setCabDropMenu(false);
+  };
 
   const logout = () => {
     sendRequest("/api/logout", "POST", {}).then((response) => {
@@ -17,9 +32,32 @@ const Header = () => {
     });
   };
 
-  const [cabDropMenu, setCabDropMenu] = useState(false);
-  const closeMenuCab = () => {
-    setCabDropMenu(false);
+  const DiscordIcon = () => {
+    if (resParams.data.discordUser.avatar === null) {
+      return (
+        <img
+          className={classNames(styles["icon_player"])}
+          src={`../site_assets/pages/webp/avatar_undefined.webp`}
+          alt="none"
+        />
+      );
+    } else {
+      return (
+        <img
+          className={classNames(styles["icon_player"])}
+          src={`https://cdn.discordapp.com/avatars/${resParams.data.discordUser.id}/${resParams.data.discordUser.avatar}.png`}
+          alt="none"
+        />
+      );
+    }
+  };
+
+  const Swipe = ({ to, name }) => {
+    return (
+      <a className={classNames(styles["swipe_page"])} href={to}>
+        {name}
+      </a>
+    );
   };
 
   useEffect(() => {
@@ -33,11 +71,6 @@ const Header = () => {
       document.removeEventListener("click", closeMenuCab);
     };
   }, [cabDropMenu]);
-
-  const [mainDropMenu, setMainDropMenu] = useState(false);
-  const closeMenuMain = () => {
-    setMainDropMenu(false);
-  };
 
   useEffect(() => {
     if (mainDropMenu) {
@@ -57,31 +90,31 @@ const Header = () => {
 
   return (
     <div className={classNames(styles["header"])}>
-      <div className={classNames(styles["mainBox"])}>
-        <div className={classNames(styles["leftBlock"], styles["blockNumbered"])}>
-          <a className={classNames(styles["logoGeneral"])} href="/">
-            <div className={classNames(styles["logo"])}>
-              <LogoMainTextSvgComponent height="100%" width="100%" />
-            </div>
+      <div className={classNames(styles["main_container"])}>
+        <div className={classNames(styles["left_block"], styles["container_numbered"])}>
+          <a className={classNames(styles["logo"])} href="/">
+            <LogoMainTextSvgComponent height="100%" width="100%" />
           </a>
         </div>
-        <div className={classNames(styles["centerBlock"], styles["blockNumbered"])}>
-          <a className={classNames(styles["swipePage"])} href="/regulations">
-            Правила
-          </a>
-          <div className={classNames(styles["dropOpen"])} onClick={() => setMainDropMenu(!mainDropMenu)}>
+        <div className={classNames(styles["center_block"], styles["container_numbered"])}>
+          <Swipe to="/regulations" name="Правила" />
+          <div className={classNames(styles["dropdown_menu_button"])} onClick={() => setMainDropMenu(!mainDropMenu)}>
             {mainDropMenu === false ? (
               <span className={classNames(styles["ico"])}>&#9776;</span>
             ) : (
               <span className={classNames(styles["ico"])}>&#10006;</span>
             )}
             {mainDropMenu === false ? null : (
-              <div className={classNames(styles["dropMenuMain"])} data-aos="zoom-out-down" data-aos-duration="250">
-                <div className={classNames(styles["boxList"])}>
-                  <a className={classNames(styles["list"], styles["phoneLink"])} href="/regulations">
+              <div
+                className={classNames(styles["dropdown_menu_main"])}
+                data-aos="zoom-out-down"
+                data-aos-duration="250"
+              >
+                <div className={classNames(styles["box_page_list"])}>
+                  <a className={classNames(styles["list"], styles["phone_list"])} href="/regulations">
                     Правила
                   </a>
-                  <a className={classNames(styles["list"], styles["phoneLink"])} href="/faq">
+                  <a className={classNames(styles["list"], styles["phone_list"])} href="/faq">
                     Вопросы
                   </a>
                   <a className={classNames(styles["list"])} href="/support">
@@ -119,50 +152,58 @@ const Header = () => {
               </div>
             )}
           </div>
-          <a className={classNames(styles["swipePage"])} href="/faq">
-            Вопросы
-          </a>
+          <Swipe to="/faq" name="Вопросы" />
         </div>
-        <div className={classNames(styles["rightBlock"], styles["blockNumbered"])}>
+        <div className={classNames(styles["right_block"], styles["container_numbered"])}>
           {!resParams?.data?.discordUser ? (
-            <a className={classNames(styles["swipePage"])} href="/api/login">
-              Войти
-            </a>
+            <Swipe to="/api/login" name="Войти" />
           ) : (
-            <div className={classNames(styles["wrapperBoxCab"])} onClick={() => setCabDropMenu(!cabDropMenu)}>
-              <div className={classNames(styles["cabOpen"])}>
-                {resParams.data.discordUser.avatar === null ? (
-                  <img
-                    className={classNames(styles["iconPlayer"])}
-                    src={`../site_assets/pages/webp/avatar_undefined.webp`}
-                    alt="none"
-                  />
-                ) : (
-                  <img
-                    className={classNames(styles["iconPlayer"])}
-                    src={`https://cdn.discordapp.com/avatars/${resParams.data.discordUser.id}/${resParams.data.discordUser.avatar}.png`}
-                    alt="none"
-                  />
-                )}
-                <label className={classNames(styles["nameUser"])}>{resParams.data.discordUser.username}</label>
-              </div>
+            <div className={classNames(styles["profile_button"])} onClick={() => setCabDropMenu(!cabDropMenu)}>
+              <DiscordIcon />
+              <label className={classNames(styles["name_user"])}>{resParams.data.discordUser.username}</label>
               {cabDropMenu === false ? undefined : (
-                <div className={classNames(styles["dropMenuCab"])} data-aos="zoom-out-down" data-aos-duration="250">
-                  <div className={classNames(styles["boxList"])}>
-                    <div className={classNames(styles["prevDropUser"])}>
-                      <label className={classNames(styles["miniName"])}>{resParams.data.discordUser.username}</label>
+                <div
+                  className={classNames(styles["dropdown_menu_profile"])}
+                  data-aos="zoom-out-down"
+                  data-aos-duration="250"
+                >
+                  <div className={classNames(styles["box_page_list"])}>
+                    <div className={classNames(styles["discord_name"])}>
+                      <DiscordIcon />
+                      <label className={classNames(styles["string"])}>{resParams.data.discordUser.username}</label>
                     </div>
+                    <div className={classNames(styles["br_line"])} />
+                    {!resParams?.data?.user ? null : (
+                      <div className={classNames(styles["balance"])}>
+                        <span className={classNames(styles["icon_list"])}>
+                          <CoinsSvgComponent width="100%" height="100%" color="#f4f4f4" />
+                        </span>
+                        <span className={classNames(styles["text"])}>{resParams.data.user.balance} монет</span>
+                        <a className={classNames(styles["info"])} href="/">
+                          ?
+                        </a>
+                      </div>
+                    )}
                     <a className={classNames(styles["list"])} href="/cab/profile">
+                      <span className={classNames(styles["icon_list"])}>
+                        <ProfileSvgComponent width="100%" height="100%" color="#f4f4f4" />
+                      </span>
                       Профиль
                     </a>
                     {resParams?.data?.discordUser?.role === "admin" && (
                       <a className={classNames(styles["list"])} href="/manager">
+                        <span className={classNames(styles["icon_list"])}>
+                          <ManagerSvgComponent width="100%" height="100%" color="#f4f4f4" />
+                        </span>
                         Менеджер
                       </a>
                     )}
-                    <span className={classNames(styles["list"], styles["last"])} onClick={logout}>
+                    <p className={classNames(styles["list"])} onClick={logout}>
+                      <span className={classNames(styles["icon_list"])}>
+                        <GoOutSvgComponent width="100%" height="100%" color="#f4f4f4" />
+                      </span>
                       Выйти из аккаунта
-                    </span>
+                    </p>
                   </div>
                 </div>
               )}
