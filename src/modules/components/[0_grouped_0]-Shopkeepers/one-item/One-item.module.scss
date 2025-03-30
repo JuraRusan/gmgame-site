@@ -5,13 +5,15 @@ $length: 34px;
 
 .item_block {
   display: flex;
+  margin: 2px;
+  //padding: 1px;
 
   .item {
     display: flex;
     width: $parameterItem;
     height: $parameterItem;
-    padding: 1px;
-    margin: 2px;
+    //padding: 1px;
+    //margin: 2px;
     border-radius: 4px;
     border: 2px solid $site-color-15;
     transition: all 0.3s ease;
@@ -51,6 +53,11 @@ $length: 34px;
     }
   }
 
+  .big {
+    width: $parameterItem * 3;
+    height: $parameterItem * 3;
+  }
+
   .tooltip {
     display: flex;
     position: fixed;
@@ -73,4 +80,3 @@ $length: 34px;
     }
   }
 }
-

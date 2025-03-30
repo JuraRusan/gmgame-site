@@ -1,0 +1,210 @@
+@import "src/Variables";
+
+.user_goods_edit {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+
+  .offers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    height: auto;
+
+    .item_box {
+      display: flex;
+      flex-direction: column;
+      width: auto;
+      height: auto;
+      position: relative;
+
+      .empty {
+        display: flex;
+        padding: 24px;
+        border-radius: 4px;
+        border: 2px solid $site-color-15;
+        transition: hover 0.3s ease;
+        background: $site-color-14;
+        cursor: pointer;
+
+        svg {
+          width: 144px;
+          height: 144px;
+
+          path {
+            fill: $site-color-15;
+            transition: all 0.3s ease;
+          }
+        }
+
+        &:hover {
+          svg {
+            path {
+              fill: $site-color-4;
+            }
+          }
+        }
+      }
+
+      .active {
+        display: flex;
+        flex-direction: column;
+        margin-top: 8px;
+
+        .actions_item {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+
+          button {
+            width: 120px;
+            height: auto;
+            font-size: 14px;
+            font-weight: 400;
+            font-family: $fontCustom2;
+            color: $site-color-2;
+            background: $site-color-14;
+            padding: 4px;
+            margin: 4px;
+            outline: none;
+            transition: all 0.35s ease;
+            border: 2px solid $site-color-15;
+            cursor: pointer;
+
+            &:hover {
+              color: $site-color-9;
+            }
+          }
+        }
+      }
+    }
+
+    .arrow_box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .arrow {
+        color: $site-color-5;
+        font-weight: 400;
+        font-size: 98px;
+        text-align: center;
+        width: 128px;
+        min-width: 128px;
+        max-width: 128px;
+        margin: 0 32px;
+      }
+    }
+  }
+
+  .double {
+    flex-direction: column;
+    margin: 0 auto;
+
+    .item_box {
+    }
+
+    .arrow_box {
+      flex-direction: row;
+      margin: 0 auto;
+
+      .arrow {
+        writing-mode: vertical-rl;
+        margin: 0;
+        width: auto;
+        min-width: auto;
+        max-width: none;
+      }
+    }
+  }
+
+  .comment {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 500px;
+    min-width: 500px;
+    margin: 12px auto 0 auto;
+  }
+}
+
+.overflow {
+  padding-right: 6px;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+}
+
+.modal_select_block {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+
+  .single {
+    display: flex;
+    transition: all 0.25s ease;
+    border-radius: 12px;
+    cursor: pointer;
+
+    &:hover {
+      background: $site-color-15;
+      box-shadow: 0 0 8px 5px $site-color-15;
+    }
+  }
+
+  .wrapper_type_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 12px;
+    max-width: 760px;
+
+    .single {
+      width: 168px;
+      height: 168px;
+      margin: 14px;
+    }
+  }
+
+  .wrapper_shulker_color {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 12px;
+    max-width: 760px;
+
+    .single {
+      width: 96px;
+      height: 96px;
+      margin: 8px;
+    }
+  }
+}
+
+.wrapper_editor {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  min-width: 800px;
+  width: 800px;
+  max-width: 800px;
+  height: auto;
+
+  .editor {
+    display: flex;
+    flex-direction: column;
+  }
+}

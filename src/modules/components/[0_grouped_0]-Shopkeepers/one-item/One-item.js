@@ -8,7 +8,7 @@ import { SHULKERS_TYPE } from "../../../pages/shopkeepers/ShulkersType";
 
 import styles from "./One-item.module.scss";
 
-const OneItem = ({ item, onClick, customLink, mini = false }) => {
+const OneItem = ({ item, onClick, size = "medium", mini = false, big = false }) => {
   const [showTooltip, setShowTooltip] = useState(false);
   const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
   const [tooltipVisible, setTooltipVisible] = useState(false);
@@ -61,7 +61,7 @@ const OneItem = ({ item, onClick, customLink, mini = false }) => {
 
   if (!item) {
     return (
-      <div className={classNames(styles["item_block"])}>
+      <div className={classNames(styles["item_block"])} onClick={onClick}>
         <div className={classNames(styles["item"], mini && styles["mini"])}></div>
       </div>
     );
@@ -70,11 +70,11 @@ const OneItem = ({ item, onClick, customLink, mini = false }) => {
   return (
     <div className={classNames(styles["item_block"])} onClick={onClick}>
       <div
-        className={classNames(styles["item"], styles["content"], mini && styles["mini"])}
+        className={classNames(styles["item"], styles["content"], mini && styles["mini"], big && styles["big"])}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <MinecraftImage item={item} width={mini ? 28 : 58} height={mini ? 28 : 58} />
+        <MinecraftImage item={item} width={big ? 187 : mini ? 28 : 58} height={big ? 187 : mini ? 28 : 58} />
         <span className={classNames(styles["count"])}>{item.amount}</span>
       </div>
       {showTooltip && (
@@ -85,7 +85,7 @@ const OneItem = ({ item, onClick, customLink, mini = false }) => {
           )}
           {SHULKERS_TYPE.includes(item.id) && (
             <div className={classNames(styles["shulker_wrapper"])}>
-              <ShulkerBox item={item} full={false} customLink={customLink} />
+              <ShulkerBox item={item} full={false} />
             </div>
           )}
           <MinecraftRegister item={item} />
