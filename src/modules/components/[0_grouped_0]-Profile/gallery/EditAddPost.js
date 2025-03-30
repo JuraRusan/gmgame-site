@@ -6,7 +6,7 @@ import Button from "../../button/Button";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { sendRequest, useAxios } from "../../../../DataProvider";
 import useLoading from "../../../loading/useLoading";
-import { useAlert } from "@blaumaus/react-alert"
+import { useAlert } from "@blaumaus/react-alert";
 import Preload from "../../preloader/Preload";
 import ExpandSvgComponent from "../../../../bases/icons/expandSvg/ExpandSvg";
 import CameraAddSvgComponent from "../../../../bases/icons/cameraAdd/CameraAddSvg";
@@ -26,13 +26,13 @@ import Input from "../../input/Input";
 import styles from "./EditAddPost.module.scss";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import "react-advanced-cropper/dist/style.css";
-
-const LOAD_AND_EDIT_WARN = "Внимание! При работе с файлами в большом разрешении могут наблюдаться задержки отрисовки изображения. Рекомендуется использовать изображения в умеренном качестве, в ином случае сохранять спокойствие."; // prettier-ignore
-
-const ERROR_VALUE_ONE = "Имя должно содержать от 3 до 16 символов.";
-const ERROR_VALUE_TWO = "Имя может содержать только буквы, цифры и символы подчеркивания.";
-const ERROR_VALUE_TREE = "Тег может содержать от 3 до 24 символов.";
-const ERROR_VALUE_FOUR = "Тег может содержать только буквы, цифры и символы подчеркивания.";
+import {
+  ERROR_VALUE_ONE,
+  ERROR_VALUE_FOUR,
+  ERROR_VALUE_TREE,
+  ERROR_VALUE_TWO,
+  LOAD_AND_EDIT_WARN,
+} from "../../../../common/utils/constants";
 
 const MAX_IMAGES = 16;
 const MAX_IMAGES_SIZE = 10;
@@ -296,7 +296,7 @@ const EditAddPost = () => {
 
       sendRequest("/api/upload_images", "POST", formData, { "Content-Type": "multipart/form-data" }).then(
         (response) => {
-          if (response.success === true) {
+          if (response.success) {
             if (response.data.length === 1) {
               alert.success("Изображение добавлено");
             } else {

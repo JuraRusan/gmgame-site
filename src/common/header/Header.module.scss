@@ -269,6 +269,7 @@ $line: 36px;
         cursor: pointer;
         border: none;
         border-radius: 8px;
+        background: transparent;
 
         &:visited {
           color: $site-color-2;
@@ -282,12 +283,17 @@ $line: 36px;
         &:nth-last-child(1) {
           margin: 0;
         }
+
+
       }
 
       .icon_list {
-        width: 20px;
-        height: 20px;
-        margin: 4px 6px 6px 0;
+        margin: 4px 8px 6px 0;
+
+        svg {
+          width: 20px;
+          height: 20px;
+        }
       }
 
       .phone_list {

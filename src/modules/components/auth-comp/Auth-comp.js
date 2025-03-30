@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import React from "react";
+import React, { useMemo } from "react";
 import { useForm } from "react-hook-form";
 import { ErrorMessage } from "@hookform/error-message";
 import { sendRequest } from "../../../DataProvider";
@@ -30,16 +30,16 @@ const AuthComponent = () => {
     );
   }
 
-  const registration = (d) => {
+  const registration = ({ username, password, type_account, age, about, interests, back_servers, friend_name }) => {
     sendRequest("/api/registration_user", "POST", {
-      login: d.username,
-      password: d.password,
-      type: d.type_account,
-      age: d.age,
-      from_about: d.about,
-      you_about: d.interests,
-      servers: d.back_servers,
-      friend_name: d.friend_name,
+      login: username,
+      password: password,
+      type: type_account,
+      age: age,
+      from_about: about,
+      you_about: interests,
+      servers: back_servers,
+      friend_name: friend_name,
     }).then((response) => {
       if (!response.error) {
         alert.success(response.message);
@@ -61,6 +61,23 @@ const AuthComponent = () => {
     checkbox: errors.checkbox,
   };
 
+  const formFields = useMemo(() => {
+    return {
+      username: register("username", {
+        required: { value: true, message: "Обязательное поле" },
+        maxLength: { value: 16, message: "Слишком длинный логин" },
+        pattern: {
+          value: /^[a-zA-Z0-9_]+$/,
+          message: "Недопустимые символы",
+        },
+      }),
+      password: register("password", {
+        required: { value: true, message: "Обязательное поле" },
+        minLength: { value: 8, message: "Пароль должен быть от 8 символов" },
+      }),
+    };
+  }, [register]);
+
   return (
     <div className={classNames(styles["auth-block"])}>
       <div className={classNames(styles["container"])}>
@@ -73,14 +90,7 @@ const AuthComponent = () => {
               placeholder="&nbsp;"
               autoComplete="off"
               className={errorInfo.username ? classNames(styles["inputErrors"]) : ""}
-              {...register("username", {
-                required: { value: true, message: "Обязательное поле" },
-                maxLength: { value: 16, message: "Слишком длинный логин" },
-                pattern: {
-                  value: /^[a-zA-Z0-9_]+$/,
-                  message: "Недопустимые символы",
-                },
-              })}
+              {...formFields["username"]}
             />
             <span className={classNames(styles["label"])}>Игровой ник</span>
             <ErrorRender name="username" />
@@ -91,11 +101,10 @@ const AuthComponent = () => {
               id="passwordFor"
               placeholder="&nbsp;"
               autoComplete="off"
-              className={errorInfo.password ? classNames(styles["inputErrors"]) : ""}
-              {...register("password", {
-                required: { value: true, message: "Обязательное поле" },
-                minLength: { value: 8, message: "Пароль должен быть от 8 символов" },
+              className={classNames({
+                [styles["inputErrors"]]: errorInfo.password,
               })}
+              {...formFields["password"]}
             />
             <span className={classNames(styles["label"])}>Пароль для входа на сервер</span>
             <ErrorRender name="password" />
@@ -210,7 +219,7 @@ const AuthComponent = () => {
             type="submit"
             label="Отправить"
             view="submit"
-            onClick={handleSubmit((d) => registration(d))}
+            onClick={handleSubmit(registration)}
           />
         </form>
       </div>
