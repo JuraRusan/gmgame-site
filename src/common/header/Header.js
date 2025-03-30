@@ -60,6 +60,29 @@ const Header = () => {
     );
   };
 
+  const ListMenu = ({ phone_show = false, href, name, icon = null, button = false, ...props }) => {
+    if (!button) {
+      return (
+        <a
+          className={classNames(styles["list"], phone_show && styles["phone_list"])}
+          href={href}
+          {...(href.startsWith("http") ? { target: "_blank", rel: "noreferrer" } : {})}
+          {...props}
+        >
+          <span className={classNames(styles["icon_list"])}>{icon}</span>
+          {name}
+        </a>
+      );
+    } else {
+      return (
+        <button className={classNames(styles["list"])} {...props}>
+          <span className={classNames(styles["icon_list"])}>{icon}</span>
+          {name}
+        </button>
+      );
+    }
+  };
+
   useEffect(() => {
     if (cabDropMenu) {
       document.addEventListener("click", closeMenuCab);
@@ -111,43 +134,15 @@ const Header = () => {
                 data-aos-duration="250"
               >
                 <div className={classNames(styles["box_page_list"])}>
-                  <a className={classNames(styles["list"], styles["phone_list"])} href="/regulations">
-                    Правила
-                  </a>
-                  <a className={classNames(styles["list"], styles["phone_list"])} href="/faq">
-                    Вопросы
-                  </a>
-                  <a className={classNames(styles["list"])} href="/support">
-                    Поддержать
-                  </a>
-                  <a className={classNames(styles["list"])} href="/online_map">
-                    Онлайн карта
-                  </a>
-                  <a className={classNames(styles["list"])} href="/statistic">
-                    Статистика
-                  </a>
-                  <a className={classNames(styles["list"])} href="/gallery">
-                    Галерея
-                  </a>
-                  <a
-                    className={classNames(styles["list"])}
-                    href="https://minecraft-calculator.netlify.app/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Калькулятор
-                  </a>
-                  <a
-                    className={classNames(styles["list"])}
-                    href="https://wiki.gmgame.ru/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Вики сервера
-                  </a>
-                  <a className={classNames(styles["list"])} href="/shopkeepers">
-                    Торговая зона
-                  </a>
+                  <ListMenu phone_show={true} name="Правила" href="/regulations" />
+                  <ListMenu phone_show={true} name="Вопросы" href="/faq" />
+                  <ListMenu name="Поддержать" href="/support" />
+                  <ListMenu name="Онлайн карта" href="/online_map" />
+                  <ListMenu name="Статистика" href="/statistic" />
+                  <ListMenu name="Галерея" href="/gallery" />
+                  <ListMenu name="Калькулятор" href="https://wiki.gmgame.ru/" />
+                  <ListMenu name="Вики сервера" href="https://wiki.gmgame.ru/" />
+                  <ListMenu name="Торговая зона" href="/shopkeepers" />
                 </div>
               </div>
             )}
@@ -184,26 +179,24 @@ const Header = () => {
                         </a>
                       </div>
                     )}
-                    <a className={classNames(styles["list"])} href="/cab/profile">
-                      <span className={classNames(styles["icon_list"])}>
-                        <ProfileSvgComponent width="100%" height="100%" color="#f4f4f4" />
-                      </span>
-                      Профиль
-                    </a>
+                    <ListMenu
+                      name="Профиль"
+                      href="/cab/profile"
+                      icon={<ProfileSvgComponent width="100%" height="100%" color="#f4f4f4" />}
+                    />
                     {resParams?.data?.discordUser?.role === "admin" && (
-                      <a className={classNames(styles["list"])} href="/manager">
-                        <span className={classNames(styles["icon_list"])}>
-                          <ManagerSvgComponent width="100%" height="100%" color="#f4f4f4" />
-                        </span>
-                        Менеджер
-                      </a>
+                      <ListMenu
+                        name="Менеджер"
+                        href="/manager"
+                        icon={<ManagerSvgComponent width="100%" height="100%" color="#f4f4f4" />}
+                      />
                     )}
-                    <p className={classNames(styles["list"])} onClick={logout}>
-                      <span className={classNames(styles["icon_list"])}>
-                        <GoOutSvgComponent width="100%" height="100%" color="#f4f4f4" />
-                      </span>
-                      Выйти из аккаунта
-                    </p>
+                    <ListMenu
+                      name="Выйти из аккаунта"
+                      onClick={logout}
+                      button={true}
+                      icon={<GoOutSvgComponent width="100%" height="100%" color="#f4f4f4" />}
+                    />
                   </div>
                 </div>
               )}
