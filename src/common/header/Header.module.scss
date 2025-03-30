@@ -15,7 +15,7 @@ $line: 36px;
   min-width: auto;
   margin: 0 auto;
 
-  .mainBox {
+  .main_container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -23,34 +23,30 @@ $line: 36px;
     width: 100%;
     height: auto;
 
-    .leftBlock {
+    .left_block {
       display: flex;
       flex-direction: row;
       width: auto;
       height: auto;
       margin: 0 32px;
 
-      .logoGeneral {
-        text-decoration: none;
-
-        .logo {
-          height: 36px;
-        }
+      .logo {
+        height: 36px;
       }
     }
 
-    .blockNumbered {
+    .container_numbered {
       flex: 1;
     }
 
-    .centerBlock {
+    .center_block {
       display: flex;
       flex-direction: row;
       justify-content: center;
       width: auto;
       height: auto;
 
-      .dropOpen {
+      .dropdown_menu_button {
         display: flex;
         flex-direction: row;
         width: $line;
@@ -82,7 +78,7 @@ $line: 36px;
       }
     }
 
-    .rightBlock {
+    .right_block {
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
@@ -90,59 +86,46 @@ $line: 36px;
       height: auto;
       margin: 0 16px;
 
-      .swipePage {
+      .swipe_page {
         padding: 0 12px;
         width: 96px;
         min-width: auto;
         max-width: none;
       }
 
-      .wrapperBoxCab {
+      .profile_button {
         display: flex;
         flex-direction: row;
+        width: auto;
+        height: auto;
+        transition: all 0.35s ease;
         position: relative;
 
-        .cabOpen {
-          display: flex;
-          flex-direction: row;
+        &:hover {
+          background: $site-color-1;
+          border: none;
+          border-radius: 6px;
+
+          .name_user {
+            color: $site-color-9;
+          }
+        }
+
+        .name_user {
           width: auto;
-          height: auto;
-          transition: all 0.35s ease;
+          font-size: 14px;
+          font-family: $fontCustom2;
+          color: $site-color-2;
+          padding: 0 8px 0 8px;
+          height: $line;
+          line-height: $line;
           cursor: pointer;
-
-          &:hover {
-            background: $site-color-1;
-            border: none;
-            border-radius: 6px;
-
-            .nameUser {
-              color: $site-color-9;
-            }
-          }
-
-          .iconPlayer {
-            width: $line;
-            height: $line;
-            border: none;
-            border-radius: 4px;
-          }
-
-          .nameUser {
-            width: auto;
-            font-size: 14px;
-            font-family: $fontCustom2;
-            color: $site-color-2;
-            padding: 0 8px 0 8px;
-            height: $line;
-            line-height: $line;
-            cursor: pointer;
-            transition: all 0.35s ease;
-          }
+          transition: all 0.35s ease;
         }
       }
     }
 
-    .swipePage {
+    .swipe_page {
       text-decoration: none;
       font-size: 14px;
       font-family: $fontCustom2;
@@ -165,8 +148,8 @@ $line: 36px;
       }
     }
 
-    .dropMenuMain,
-    .dropMenuCab {
+    .dropdown_menu_main,
+    .dropdown_menu_profile {
       position: absolute;
       display: flex;
       flex-direction: column;
@@ -175,12 +158,12 @@ $line: 36px;
       height: auto;
       width: auto;
       min-width: 160px;
-      max-width: 260px;
+      max-width: 290px;
       border: 1px solid $site-color-5;
       border-radius: 8px;
 
       &:before {
-        content: '';
+        content: "";
         top: -9px;
         width: 16px;
         height: 16px;
@@ -192,7 +175,7 @@ $line: 36px;
       }
     }
 
-    .dropMenuCab {
+    .dropdown_menu_profile {
       right: 0;
       transform: translate(0);
       top: $line + 12px;
@@ -203,7 +186,7 @@ $line: 36px;
       }
     }
 
-    .dropMenuMain {
+    .dropdown_menu_main {
       left: 50%;
       transform: translate(-50%);
       top: $line + 12px;
@@ -214,19 +197,66 @@ $line: 36px;
       }
     }
 
-    .boxList {
+    .box_page_list {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       width: auto;
       height: auto;
 
-      .prevDropUser {
+      .discord_name {
         display: none;
       }
 
+      .br_line {
+        display: none;
+      }
+
+      .balance {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 0 0 4px;
+
+        .text {
+          width: 100%;
+          height: 32px;
+          line-height: 32px;
+          font-size: 14px;
+          font-family: $fontCustom2;
+          color: $site-color-2;
+        }
+
+        .info {
+          width: 32px;
+          height: 32px;
+          line-height: 32px;
+          font-size: 16px;
+          text-decoration: none;
+          text-align: center;
+          font-weight: 600;
+          color: $site-color-2;
+          transition: all 0.35s ease;
+          border-radius: 3px;
+          border: none;
+          background: transparent;
+
+          &:visited {
+            color: $site-color-2;
+          }
+
+          &:hover,
+          &:active {
+            color: $site-color-9;
+            background: $site-color-5;
+          }
+        }
+      }
+
       .list {
-        width: 200px;
+        display: flex;
+        flex-direction: row;
+        width: 240px;
         height: 32px;
         line-height: 32px;
         text-decoration: none;
@@ -234,11 +264,12 @@ $line: 36px;
         font-family: $fontCustom2;
         color: $site-color-2;
         transition: all 0.35s ease;
-        padding: 0 12px;
+        padding: 0 12px 0 4px;
         margin: 0 0 4px 0;
         cursor: pointer;
         border: none;
         border-radius: 8px;
+        background: transparent;
 
         &:visited {
           color: $site-color-2;
@@ -248,15 +279,33 @@ $line: 36px;
           color: $site-color-9;
           background: $site-color-1;
         }
+
+        &:nth-last-child(1) {
+          margin: 0;
+        }
+
+
       }
 
-      .phoneLink {
+      .icon_list {
+        margin: 4px 8px 6px 0;
+
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      .phone_list {
         display: none;
       }
+    }
 
-      .last {
-        margin: 0;
-      }
+    .icon_player {
+      width: $line;
+      height: $line;
+      border: none;
+      border-radius: 4px;
     }
   }
 }
@@ -272,8 +321,8 @@ $line: 36px;
 
 @media screen and (max-width: 1024px) {
   .header {
-    .mainBox {
-      .dropMenuCab {
+    .main_container {
+      .dropdown_menu_profile {
         right: -4px;
       }
     }
@@ -282,57 +331,60 @@ $line: 36px;
 
 @media screen and (max-width: 960px) {
   .header {
-    .mainBox {
+    .main_container {
       justify-content: center;
 
-      .blockNumbered:nth-child(2) {
+      .container_numbered:nth-child(2) {
         order: -1;
       }
 
-      .leftBlock {
+      .left_block {
         justify-content: center;
         margin: 0;
       }
 
-      .centerBlock {
+      .center_block {
         justify-content: flex-start;
 
-        .swipePage {
+        .swipe_page {
           display: none;
         }
       }
 
-      .rightBlock {
+      .right_block {
         margin: 0;
         padding-right: 8px;
 
-        .swipePage {
+        .swipe_page {
           width: auto;
           min-width: auto;
           max-width: none;
           padding: 0 8px;
         }
 
-        .wrapperBoxCab {
-          .cabOpen {
-            margin-right: 10px;
+        .profile_button {
+          margin-right: 10px;
 
-            .nameUser {
-              display: none;
-            }
+          .name_user {
+            display: none;
           }
         }
       }
 
-      .dropMenuCab {
+      .dropdown_menu_profile {
         right: 4px;
 
         &:before {
           left: 90%;
         }
+
+        .list {
+          width: 100%;
+          min-width: 250px;
+        }
       }
 
-      .dropMenuMain {
+      .dropdown_menu_main {
         left: -4px;
         transform: translate(0);
 
@@ -342,34 +394,37 @@ $line: 36px;
         }
       }
 
-      .boxList {
-        .phoneLink {
+      .box_page_list {
+        .phone_list {
           display: flex;
         }
 
-        .prevDropUser {
+        .discord_name {
           display: flex;
           flex-direction: row;
-          height: 32px;
-          line-height: 32px;
-          padding: 0 12px;
-          margin: 0 0 4px 0;
+          height: 36px;
+          line-height: 36px;
+          padding: 0 12px 0 0;
 
-          .miniIco {
-            height: 32px;
-            width: 32px;
-            border: none;
-            border-radius: 4px;
-          }
-
-          .miniName {
-            height: 32px;
-            line-height: 32px;
-            font-size: 12px;
+          .string {
+            margin-left: 6px;
+            height: 36px;
+            line-height: 36px;
+            font-size: 16px;
             color: $site-color-9;
             font-weight: 400;
             font-family: $fontCustom2;
           }
+        }
+
+        .br_line {
+          display: flex;
+          width: 100%;
+          height: auto;
+          margin: 6px 0 6px 0;
+          border-width: 1px;
+          border-bottom-style: solid;
+          border-image: linear-gradient(to right, $site-color-5, rgba(0, 0, 0, 0)) 1 0;
         }
       }
     }
@@ -378,9 +433,9 @@ $line: 36px;
 
 @media screen and (max-width: 768px) {
   .header {
-    .mainBox {
-      .dropMenuMain,
-      .dropMenuCab {
+    .main_container {
+      .dropdown_menu_main,
+      .dropdown_menu_profile {
         position: fixed;
         width: auto;
         max-width: none;
@@ -394,16 +449,6 @@ $line: 36px;
           display: none;
         }
       }
-
-      .boxList {
-        .list {
-          width: 100%;
-        }
-
-        .last {
-          margin: 0;
-        }
-      }
     }
   }
 }
@@ -413,21 +458,21 @@ $line: 36px;
 
 @media screen and (max-width: 480px) {
   .header {
-    .mainBox {
-      .centerBlock {
-        .dropOpen {
+    .main_container {
+      .center_block {
+        .dropdown_menu_button {
           margin: 0 10px;
         }
       }
 
-      .rightBlock {
-        .wrapperBoxCab {
+      .right_block {
+        .profile_button {
           margin-right: 8px;
         }
       }
 
-      .dropMenuCab,
-      .dropMenuMain {
+      .dropdown_menu_profile,
+      .dropdown_menu_main {
         margin: 0 6px;
       }
     }

@@ -1,168 +1,142 @@
 import classNames from "classnames";
-import React, { useEffect, useState } from "react";
-import { sendRequest, useAxios } from "../../DataProvider";
-import AOS from "aos";
+import React from "react";
 import LogoMainTextSvgComponent from "../../bases/icons/LogoMainText";
+import GoOutSvgComponent from "../../bases/icons/goOutSvg/GoOutSvg";
+import ManagerSvgComponent from "../../bases/icons/managerSvg/ManagerSvg";
+import ProfileSvgComponent from "../../bases/icons/profileSvg/ProfileSvg";
+import CoinsSvgComponent from "../../bases/icons/coinsSvg/CoinsSvg";
 
 import styles from "./Header.module.scss";
 import "aos/dist/aos.css";
+import useHeader from "./useHeader";
 
 const Header = () => {
-  const resParams = useAxios("/api/", "GET", {});
+  const { cabDropMenu, mainDropMenu, resParams, logout, setCabDropMenu, setMainDropMenu } = useHeader();
 
-  const logout = () => {
-    sendRequest("/api/logout", "POST", {}).then((response) => {
-      localStorage.clear();
-      window.location.href = "/";
-    });
+  const DiscordIcon = () => {
+    const imgLink = !resParams.data.discordUser.avatar
+      ? "../site_assets/pages/webp/avatar_undefined.webp"
+      : `https://cdn.discordapp.com/avatars/${resParams.data.discordUser.id}/${resParams.data.discordUser.avatar}.png`;
+
+    return <img className={styles["icon_player"]} src={imgLink} alt="none" />;
   };
 
-  const [cabDropMenu, setCabDropMenu] = useState(false);
-  const closeMenuCab = () => {
-    setCabDropMenu(false);
+  const Swipe = ({ to, name }) => {
+    return (
+      <a className={styles["swipe_page"]} href={to}>
+        {name}
+      </a>
+    );
   };
 
-  useEffect(() => {
-    if (cabDropMenu) {
-      document.addEventListener("click", closeMenuCab);
+  const ListMenu = ({ phone_show = false, href, name, icon = null, button = false, ...props }) => {
+    if (!button) {
+      return (
+        <a
+          className={classNames(styles["list"], {
+            [styles["phone_list"]]: phone_show,
+          })}
+          href={href}
+          {...(href.startsWith("http") ? { target: "_blank", rel: "noreferrer" } : {})}
+          {...props}
+        >
+          <span className={styles["icon_list"]}>{icon}</span>
+          {name}
+        </a>
+      );
     } else {
-      document.removeEventListener("click", closeMenuCab);
+      return (
+        <button className={styles["list"]} {...props}>
+          <span className={styles["icon_list"]}>{icon}</span>
+          {name}
+        </button>
+      );
     }
-
-    return () => {
-      document.removeEventListener("click", closeMenuCab);
-    };
-  }, [cabDropMenu]);
-
-  const [mainDropMenu, setMainDropMenu] = useState(false);
-  const closeMenuMain = () => {
-    setMainDropMenu(false);
   };
-
-  useEffect(() => {
-    if (mainDropMenu) {
-      document.addEventListener("click", closeMenuMain);
-    } else {
-      document.removeEventListener("click", closeMenuMain);
-    }
-
-    return () => {
-      document.removeEventListener("click", closeMenuMain);
-    };
-  }, [mainDropMenu]);
-
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
 
   return (
-    <div className={classNames(styles["header"])}>
-      <div className={classNames(styles["mainBox"])}>
-        <div className={classNames(styles["leftBlock"], styles["blockNumbered"])}>
-          <a className={classNames(styles["logoGeneral"])} href="/">
-            <div className={classNames(styles["logo"])}>
-              <LogoMainTextSvgComponent height="100%" width="100%" />
-            </div>
+    <div className={styles["header"]}>
+      <div className={styles["main_container"]}>
+        <div className={classNames(styles["left_block"], styles["container_numbered"])}>
+          <a className={styles["logo"]} href="/">
+            <LogoMainTextSvgComponent height="100%" width="100%" />
           </a>
         </div>
-        <div className={classNames(styles["centerBlock"], styles["blockNumbered"])}>
-          <a className={classNames(styles["swipePage"])} href="/regulations">
-            Правила
-          </a>
-          <div className={classNames(styles["dropOpen"])} onClick={() => setMainDropMenu(!mainDropMenu)}>
+        <div className={classNames(styles["center_block"], styles["container_numbered"])}>
+          <Swipe to="/regulations" name="Правила" />
+          <div className={styles["dropdown_menu_button"]} onClick={() => setMainDropMenu(!mainDropMenu)}>
             {mainDropMenu === false ? (
               <span className={classNames(styles["ico"])}>&#9776;</span>
             ) : (
               <span className={classNames(styles["ico"])}>&#10006;</span>
             )}
             {mainDropMenu === false ? null : (
-              <div className={classNames(styles["dropMenuMain"])} data-aos="zoom-out-down" data-aos-duration="250">
-                <div className={classNames(styles["boxList"])}>
-                  <a className={classNames(styles["list"], styles["phoneLink"])} href="/regulations">
-                    Правила
-                  </a>
-                  <a className={classNames(styles["list"], styles["phoneLink"])} href="/faq">
-                    Вопросы
-                  </a>
-                  <a className={classNames(styles["list"])} href="/support">
-                    Поддержать
-                  </a>
-                  <a className={classNames(styles["list"])} href="/online_map">
-                    Онлайн карта
-                  </a>
-                  <a className={classNames(styles["list"])} href="/statistic">
-                    Статистика
-                  </a>
-                  <a className={classNames(styles["list"])} href="/gallery">
-                    Галерея
-                  </a>
-                  <a
-                    className={classNames(styles["list"])}
-                    href="https://minecraft-calculator.netlify.app/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Калькулятор
-                  </a>
-                  <a
-                    className={classNames(styles["list"])}
-                    href="https://wiki.gmgame.ru/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Вики сервера
-                  </a>
-                  <a className={classNames(styles["list"])} href="/shopkeepers">
-                    Торговая зона
-                  </a>
+              <div
+                className={classNames(styles["dropdown_menu_main"])}
+                data-aos="zoom-out-down"
+                data-aos-duration="250"
+              >
+                <div className={classNames(styles["box_page_list"])}>
+                  <ListMenu phone_show name="Правила" href="/regulations" />
+                  <ListMenu phone_show name="Вопросы" href="/faq" />
+                  <ListMenu name="Поддержать" href="/support" />
+                  <ListMenu name="Онлайн карта" href="/online_map" />
+                  <ListMenu name="Статистика" href="/statistic" />
+                  <ListMenu name="Галерея" href="/gallery" />
+                  <ListMenu name="Калькулятор" href="https://wiki.gmgame.ru/" />
+                  <ListMenu name="Вики сервера" href="https://wiki.gmgame.ru/" />
+                  <ListMenu name="Торговая зона" href="/shopkeepers" />
                 </div>
               </div>
             )}
           </div>
-          <a className={classNames(styles["swipePage"])} href="/faq">
-            Вопросы
-          </a>
+          <Swipe to="/faq" name="Вопросы" />
         </div>
-        <div className={classNames(styles["rightBlock"], styles["blockNumbered"])}>
+        <div className={classNames(styles["right_block"], styles["container_numbered"])}>
           {!resParams?.data?.discordUser ? (
-            <a className={classNames(styles["swipePage"])} href="/api/login">
-              Войти
-            </a>
+            <Swipe to="/api/login" name="Войти" />
           ) : (
-            <div className={classNames(styles["wrapperBoxCab"])} onClick={() => setCabDropMenu(!cabDropMenu)}>
-              <div className={classNames(styles["cabOpen"])}>
-                {resParams.data.discordUser.avatar === null ? (
-                  <img
-                    className={classNames(styles["iconPlayer"])}
-                    src={`../site_assets/pages/webp/avatar_undefined.webp`}
-                    alt="none"
-                  />
-                ) : (
-                  <img
-                    className={classNames(styles["iconPlayer"])}
-                    src={`https://cdn.discordapp.com/avatars/${resParams.data.discordUser.id}/${resParams.data.discordUser.avatar}.png`}
-                    alt="none"
-                  />
-                )}
-                <label className={classNames(styles["nameUser"])}>{resParams.data.discordUser.username}</label>
-              </div>
+            <div className={styles["profile_button"]} onClick={() => setCabDropMenu((prev) => !prev)}>
+              <DiscordIcon />
+              <label className={styles["name_user"]}>{resParams.data.discordUser.username}</label>
               {cabDropMenu === false ? undefined : (
-                <div className={classNames(styles["dropMenuCab"])} data-aos="zoom-out-down" data-aos-duration="250">
-                  <div className={classNames(styles["boxList"])}>
-                    <div className={classNames(styles["prevDropUser"])}>
-                      <label className={classNames(styles["miniName"])}>{resParams.data.discordUser.username}</label>
+                <div className={styles["dropdown_menu_profile"]} data-aos="zoom-out-down" data-aos-duration="250">
+                  <div className={styles["box_page_list"]}>
+                    <div className={styles["discord_name"]}>
+                      <DiscordIcon />
+                      <label className={styles["string"]}>{resParams.data.discordUser.username}</label>
                     </div>
-                    <a className={classNames(styles["list"])} href="/cab/profile">
-                      Профиль
-                    </a>
-                    {resParams?.data?.discordUser?.role === "admin" && (
-                      <a className={classNames(styles["list"])} href="/manager">
-                        Менеджер
-                      </a>
+                    <div className={styles["br_line"]} />
+                    {!resParams?.data?.user ? null : (
+                      <div className={styles["balance"]}>
+                        <span className={styles["icon_list"]}>
+                          <CoinsSvgComponent width="100%" height="100%" color="#f4f4f4" />
+                        </span>
+                        <span className={styles["text"]}>{resParams.data.user.balance} монет</span>
+                        <a className={styles["info"]} href="/">
+                          ?
+                        </a>
+                      </div>
                     )}
-                    <span className={classNames(styles["list"], styles["last"])} onClick={logout}>
-                      Выйти из аккаунта
-                    </span>
+                    <ListMenu
+                      name="Профиль"
+                      href="/cab/profile"
+                      icon={<ProfileSvgComponent width="100%" height="100%" color="#f4f4f4" />}
+                    />
+                    {resParams?.data?.discordUser?.role === "admin" ? (
+                      <ListMenu
+                        name="Менеджер"
+                        href="/manager"
+                        icon={<ManagerSvgComponent width="100%" height="100%" color="#f4f4f4" />}
+                      />
+                    ) : null}
+
+                    <ListMenu
+                      button
+                      name="Выйти из аккаунта"
+                      onClick={logout}
+                      icon={<GoOutSvgComponent width="100%" height="100%" color="#f4f4f4" />}
+                    />
                   </div>
                 </div>
               )}
