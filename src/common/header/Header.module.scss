@@ -35,10 +35,6 @@ $line: 36px;
       }
     }
 
-    .container_numbered {
-      flex: 1;
-    }
-
     .center_block {
       display: flex;
       flex-direction: row;
@@ -123,6 +119,10 @@ $line: 36px;
           transition: all 0.35s ease;
         }
       }
+    }
+
+    .container_numbered {
+      flex: 1;
     }
 
     .swipe_page {

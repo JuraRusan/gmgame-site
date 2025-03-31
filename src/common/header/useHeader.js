@@ -5,15 +5,15 @@ import AOS from "aos";
 const useHeader = () => {
   const resParams = useAxios("/api/profile", "GET", {});
 
-  const [cabDropMenu, setCabDropMenu] = useState(false);
-  const [mainDropMenu, setMainDropMenu] = useState(false);
+  const [profileDropdownMenu, setProfileDropdownMenu] = useState(false);
+  const [mainDropdownMenu, setMainDropdownMenu] = useState(false);
 
-  const closeMenuMain = useCallback(() => {
-    setMainDropMenu(false);
+  const closeMainMenu = useCallback(() => {
+    setMainDropdownMenu(false);
   }, []);
 
-  const closeMenuCab = useCallback(() => {
-    setCabDropMenu(false);
+  const closeProfileMenu = useCallback(() => {
+    setProfileDropdownMenu(false);
   }, []);
 
   const logout = () => {
@@ -24,40 +24,40 @@ const useHeader = () => {
   };
 
   useEffect(() => {
-    if (cabDropMenu) {
-      document.addEventListener("click", closeMenuCab);
+    if (profileDropdownMenu) {
+      document.addEventListener("click", closeProfileMenu);
     } else {
-      document.removeEventListener("click", closeMenuCab);
+      document.removeEventListener("click", closeProfileMenu);
     }
 
     return () => {
-      document.removeEventListener("click", closeMenuCab);
+      document.removeEventListener("click", closeProfileMenu);
     };
-  }, [cabDropMenu, closeMenuCab]);
+  }, [profileDropdownMenu, closeProfileMenu]);
 
   useEffect(() => {
-    if (mainDropMenu) {
-      document.addEventListener("click", closeMenuMain);
+    if (mainDropdownMenu) {
+      document.addEventListener("click", closeMainMenu);
     } else {
-      document.removeEventListener("click", closeMenuMain);
+      document.removeEventListener("click", closeMainMenu);
     }
 
     return () => {
-      document.removeEventListener("click", closeMenuMain);
+      document.removeEventListener("click", closeMainMenu);
     };
-  }, [closeMenuMain, mainDropMenu]);
+  }, [mainDropdownMenu, closeMainMenu]);
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
 
   return {
-    resParams,
-    cabDropMenu,
-    mainDropMenu,
     logout,
-    setMainDropMenu,
-    setCabDropMenu,
+    resParams,
+    profileDropdownMenu,
+    setProfileDropdownMenu,
+    mainDropdownMenu,
+    setMainDropdownMenu,
   };
 };
 
