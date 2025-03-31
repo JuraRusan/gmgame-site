@@ -56,7 +56,7 @@
       width: 4px !important;
     }
 
-    .onePrizesWrapperBox {
+    .prize_wrapper_container {
       width: 100%;
       height: 130px;
       display: flex;
@@ -66,7 +66,7 @@
       margin-top: 16px;
       background: $site-color-12;
 
-      .imgBlock {
+      .img_block {
         display: flex;
         width: 100px;
         min-width: 100px;
@@ -168,13 +168,13 @@
     }
 
     .allPrizesContainer {
-      .onePrizesWrapperBox {
+      .prize_wrapper_container {
         flex-direction: column;
         height: auto;
         margin-top: 8px;
         padding: 8px 0;
 
-        .imgBlock {
+        .img_block {
           margin: 0 auto;
         }
 

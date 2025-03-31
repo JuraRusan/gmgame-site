@@ -22,8 +22,8 @@ const Item = (props) => {
   }, [picturesItem.length]);
 
   return (
-    <div className={classNames(styles["onePrizesWrapperBox"])}>
-      <div className={classNames(styles["imgBlock"])}>
+    <div className={classNames(styles["prize_wrapper_container"])}>
+      <div className={classNames(styles["img_block"])}>
         <div className={classNames(styles["animationBackground"])}>
           {picturesItem.map((picture, i) => (
             <img
