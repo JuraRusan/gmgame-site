@@ -11,14 +11,14 @@
   }
 }
 
-.mainCab {
+.main_profile_container {
   display: flex;
   flex-direction: column;
   width: auto;
   height: auto;
   position: relative;
 
-  .boxWrapper {
+  .wrapper_container {
     max-width: 1580px;
     width: 100%;
     height: 88vh;
@@ -30,13 +30,13 @@
     border-radius: 8px;
     position: relative;
 
-    .phoneContent {
+    .phone_content {
       display: none;
     }
   }
 }
 
-.columnOne {
+.column_one {
   width: 275px;
   min-width: 275px;
   max-width: 275px;
@@ -46,7 +46,7 @@
   border: none;
   border-right: 1px solid $site-color-5;
 
-  .menuCab {
+  .menu_profile {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -54,7 +54,7 @@
     height: 100%;
     padding: 10px;
 
-    .blockLink {
+    .block_link {
       display: flex;
       flex-direction: column;
       width: auto;
@@ -66,7 +66,7 @@
         transition: all 0.35s ease;
         width: 100%;
         height: 32px;
-        line-height: 37px;
+        line-height: 36px;
         text-decoration: none;
         font-weight: 400;
         font-size: 16px;
@@ -91,20 +91,6 @@
             transition: all 0.35s ease;
           }
         }
-
-        //&:before {
-        //  content: '\2022';
-        //  position: absolute;
-        //  left: 8px;
-        //  margin-top: 2px;
-        //}
-
-        //&:after {
-        //  content: "\276F";
-        //  position: absolute;
-        //  font-size: 14px;
-        //  right: 8px;
-        //}
 
         &:active {
           color: $site-color-2;
@@ -164,7 +150,7 @@
       }
     }
 
-    .blockLinkLogout {
+    .block_link_logout {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
@@ -180,23 +166,11 @@
 
     .delimiter {
       display: none;
-      flex-direction: row;
-      justify-content: center;
-      width: 100%;
-      height: auto;
-
-      .bullet {
-        font-size: 24px;
-        font-weight: 400;
-        font-family: $fontCustom2;
-        color: $site-color-5;
-        margin: 8px 28px 0 28px;
-      }
     }
   }
 }
 
-.columnTwo {
+.column_two {
   width: 100%;
   height: 100%;
   display: flex;
@@ -204,8 +178,8 @@
 }
 
 @media screen and (max-width: 1600px) {
-  .mainCab {
-    .boxWrapper {
+  .main_profile_container {
+    .wrapper_container {
       max-width: none;
       width: auto;
       margin: 24px 16px;
@@ -217,8 +191,8 @@
 }
 
 @media screen and (max-width: 1280px) {
-  .mainCab {
-    .columnOne {
+  .main_profile_container {
+    .column_one {
       width: 260px;
       min-width: 260px;
       max-width: 260px;
@@ -227,18 +201,18 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .mainCab {
-    .boxWrapper {
+  .main_profile_container {
+    .wrapper_container {
       margin: 16px 12px;
     }
 
-    .columnOne {
+    .column_one {
       width: 225px;
       min-width: 225px;
       max-width: 225px;
 
-      .menuCab {
-        .blockLink {
+      .menu_profile {
+        .block_link {
           .tab {
             font-size: 14px;
           }
@@ -249,20 +223,20 @@
 }
 
 @media screen and (max-width: 960px) {
-  .mainCab {
-    .boxWrapper {
+  .main_profile_container {
+    .wrapper_container {
       flex-direction: column;
       height: auto;
       min-height: 100vh;
 
-      .phoneContent {
+      .phone_content {
         display: flex;
         flex-direction: row;
         justify-content: center;
         border-bottom: 1px solid $site-color-5;
         height: 32px;
 
-        .swipePhone {
+        .swipe_phone {
           display: flex;
           flex-direction: row;
           width: auto;
@@ -292,19 +266,19 @@
             font-size: 22px;
           }
 
+          .custom_color_ico {
+            color: $site-color-9;
+          }
+
           .text {
             font-size: 14px;
             font-family: $fontCustom2;
             margin-left: 8px;
           }
-
-          .customColorIco {
-            color: $site-color-9;
-          }
         }
       }
 
-      .columnOne {
+      .column_one {
         display: none;
         height: auto;
         width: 80%;
@@ -322,7 +296,7 @@
         border-bottom-right-radius: 8px;
         animation: display 0.35s both ease;
 
-        .blockLinkLogout {
+        .block_link_logout {
           height: auto;
 
           .logout {
@@ -332,6 +306,18 @@
 
         .delimiter {
           display: flex;
+          flex-direction: row;
+          justify-content: center;
+          width: 100%;
+          height: auto;
+
+          .bullet {
+            font-size: 24px;
+            font-weight: 400;
+            font-family: $fontCustom2;
+            color: $site-color-5;
+            margin: 8px 28px 0 28px;
+          }
         }
       }
 
@@ -351,17 +337,17 @@
 }
 
 @media screen and (max-width: 480px) {
-  .mainCab {
-    .boxWrapper {
+  .main_profile_container {
+    .wrapper_container {
       margin: 6px;
 
-      .columnOne {
+      .column_one {
         width: 100%;
         border-right: none;
         border-left: none;
       }
 
-      .columnTwo {
+      .column_two {
         padding: 4px 6px;
       }
     }
