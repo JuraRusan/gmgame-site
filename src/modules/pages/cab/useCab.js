@@ -1,16 +1,16 @@
 import { sendRequest, useAxios } from "../../../DataProvider";
 import cN from "classnames";
 import styles from "./Cab.module.scss";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 const useCab = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
   const resParams = useAxios("/api/profile", "GET", {});
 
-  const closeMenuMain = () => {
+  const closeMenuMain = useCallback(() => {
     setOpenMenu(false);
-  };
+  }, []);
 
   const logout = () => {
     sendRequest("/api/logout", "POST", {}).then(() => {
