@@ -5,9 +5,15 @@ import Button from "../button/Button";
 
 import styles from "./ConfirmModal.module.scss";
 
-const TIME = 3000;
-
-const ConfirmModal = ({ open = false, close, yes, no, message = "Подтвердите действие «Удалить»" }) => {
+const ConfirmModal = ({
+  open = false,
+  close,
+  yes,
+  no,
+  time = 5000,
+  message = "Подтвердите действие «Удалить»",
+  children,
+}) => {
   const [width, setWidth] = useState("100%");
   const [color, setColor] = useState("#00ff00");
 
@@ -30,7 +36,7 @@ const ConfirmModal = ({ open = false, close, yes, no, message = "Подтвер�
 
       const update = () => {
         const elapsed = Date.now() - startTime;
-        const progress = Math.min(elapsed / TIME, 1);
+        const progress = Math.min(elapsed / time, 1);
 
         const widthPercent = (1 - progress) * 100;
         setWidth(`${widthPercent}%`);
@@ -73,6 +79,7 @@ const ConfirmModal = ({ open = false, close, yes, no, message = "Подтвер�
     <MyModal open={open} showClose={false}>
       <div className={classNames(styles["confirm"])}>
         <p className={classNames(styles["text"])}>{message}</p>
+        {!children ? null : <div className={classNames(styles["children"])}>{children}</div>}
         <div className={classNames(styles["actions"])}>
           <Button onClick={handleNo} view="submit" label="Отменить" />
           <Button onClick={handleYes} view="delete" label="Подтвердить" />

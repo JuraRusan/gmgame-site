@@ -32,6 +32,10 @@
   .notifications_warn {
     color: $site-color-9;
   }
+
+  .text_center {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 1600px) {
