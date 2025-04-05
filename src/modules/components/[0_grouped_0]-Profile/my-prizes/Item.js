@@ -26,9 +26,9 @@ const Item = (props) => {
   }, [PICTURES.length]);
 
   return (
-    <div className={classNames(styles["prize_wrapper_container"])}>
+    <div className={classNames(styles["prize_wrapper_container"], styles["green"])}>
       <div className={classNames(styles["image_container"])}>
-        <div className={classNames(styles["animation_image"])}>
+        <div className={classNames(styles["animation"])}>
           {PICTURES.map((picture, i) => (
             <img
               key={i}
@@ -48,7 +48,7 @@ const Item = (props) => {
           <ConfirmModal
             children={
               <Notifications
-                inf="Для получения приза необходимо находиться онлайн на основном сервере!"
+                inf="Для получения предмета необходимо находиться онлайн на основном сервере!"
                 type="warn"
                 format="center"
               />
