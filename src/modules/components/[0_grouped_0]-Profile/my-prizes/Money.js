@@ -4,39 +4,39 @@ import Button from "../../button/Button";
 
 import styles from "./My-prizes.module.scss";
 
-const Item = (props) => {
-  const [indexItem, setIndexItem] = useState(0);
-  const picturesItem = [
-    "../site_assets/items/netherite_pickaxe.webp",
-    "../site_assets/items/netherite_axe.webp",
-    "../site_assets/items/netherite_hoe.webp",
-    "../site_assets/items/netherite_shovel.webp",
+const Money = (props) => {
+  const [indexMoney, setIndexMoney] = useState(0);
+  const picturesMoney = [
+    "../site_assets/items/deepslate_diamond_ore.webp",
+    "../site_assets/items/deepslate_emerald_ore.webp",
+    "../site_assets/items/deepslate_gold_ore.webp",
+    "../site_assets/items/deepslate_redstone_ore.webp",
   ];
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setIndexItem((prevIndex) => (prevIndex + 1) % picturesItem.length);
+      setIndexMoney((prevIndex) => (prevIndex + 1) % picturesMoney.length);
     }, 3000);
 
     return () => clearInterval(intervalId);
-  }, [picturesItem.length]);
+  }, [picturesMoney.length]);
 
   return (
     <div className={classNames(styles["onePrizesWrapperBox"])}>
       <div className={classNames(styles["imgBlock"])}>
         <div className={classNames(styles["animationBackground"])}>
-          {picturesItem.map((picture, i) => (
+          {picturesMoney.map((picture, i) => (
             <img
               key={i}
               src={picture}
               alt=" "
-              className={classNames(styles["fade"], i === indexItem ? styles["active"] : "")}
+              className={classNames(styles["fade"], i === indexMoney ? styles["active"] : "")}
             />
           ))}
         </div>
       </div>
       <div className={classNames(styles["prizesDescription"])}>
-        <h5 className={classNames(styles["textInformationH5"])}>Получение инструмента со случайными зачарованиями</h5>
+        <h5 className={classNames(styles["textInformationH5"])}>Пополнение внутриигрового виртуального баланса</h5>
         <div className={classNames(styles["btn_wrapper"])}>
           <Button label="Забрать" view="submit" onClick={(event) => props.action(props.id, event)} />
         </div>
@@ -45,4 +45,4 @@ const Item = (props) => {
   );
 };
 
-export default Item;
+export default Money;
