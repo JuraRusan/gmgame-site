@@ -4,7 +4,7 @@ import NotificationsSvgComponent from "../../../bases/icons/notificationsSvg/Not
 
 import styles from "./Notifications.module.scss";
 
-const Notifications = ({ inf, type }) => {
+const Notifications = ({ inf, type, format }) => {
   return (
     <div className={classNames(styles["notifications_container"])}>
       <span className={classNames(styles["span_icon"])}>
@@ -14,6 +14,7 @@ const Notifications = ({ inf, type }) => {
         className={classNames(styles["notifications_information"], {
           [styles["notifications_error"]]: type === "error",
           [styles["notifications_warn"]]: type === "warn",
+          [styles["text_center"]]: format === "center",
         })}
       >
         {inf}
