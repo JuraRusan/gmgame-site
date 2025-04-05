@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import cN from "classnames";
 import React, { useEffect, useState } from "react";
 import Button from "../../button/Button";
 import ConfirmModal from "../../confirm-modal/ConfirmModal";
@@ -23,44 +23,44 @@ const Item = (props) => {
     }, 3000);
 
     return () => clearInterval(intervalId);
-  }, [PICTURES.length]);
+  }, []);
 
   return (
-    <div className={classNames(styles["prize_wrapper_container"], styles["green"])}>
-      <div className={classNames(styles["image_container"])}>
-        <div className={classNames(styles["animation"])}>
+    <div className={cN(styles["prize_wrapper_container"], styles["green"])}>
+      <div className={styles["image_container"]}>
+        <div className={styles["animation"]}>
           {PICTURES.map((picture, i) => (
             <img
               key={i}
               src={picture}
               alt=""
-              className={classNames(styles["fade"], {
+              className={cN(styles["fade"], {
                 [styles["active"]]: i === indexItem,
               })}
             />
           ))}
         </div>
       </div>
-      <div className={classNames(styles["description"])}>
-        <h5 className={classNames(styles["information"])}>получение инструмента со случайными зачарованиями</h5>
-        <div className={classNames(styles["btn_wrapper"])}>
-          <Button label="Забрать" view="submit" onClick={() => setIsConfirmActive(true)} />
-          <ConfirmModal
-            children={
-              <Notifications
-                inf="Для получения предмета необходимо находиться онлайн на основном сервере!"
-                type="warn"
-                format="center"
-              />
-            }
-            time={10000}
-            message="Подтвердите действие «Забрать»"
-            open={isConfirmActive}
-            close={() => setIsConfirmActive(false)}
-            no={() => setIsConfirmActive(false)}
-            yes={(event) => props.action(props.id, event)}
-          />
-        </div>
+      <div className={styles["description"]}>
+        <h5 className={styles["information"]}>получение инструмента со случайными зачарованиями</h5>
+      </div>
+      <div className={styles["btn_wrapper"]}>
+        <Button label="Забрать" view="submit" onClick={() => setIsConfirmActive(true)} />
+        <ConfirmModal
+          children={
+            <Notifications
+              inf="Для получения предмета необходимо находиться онлайн на основном сервере!"
+              type="warn"
+              format="center"
+            />
+          }
+          time={10000}
+          message="Подтвердите действие «Забрать»"
+          open={isConfirmActive}
+          close={() => setIsConfirmActive(false)}
+          no={() => setIsConfirmActive(false)}
+          yes={(event) => props.action(props.id, event)}
+        />
       </div>
     </div>
   );

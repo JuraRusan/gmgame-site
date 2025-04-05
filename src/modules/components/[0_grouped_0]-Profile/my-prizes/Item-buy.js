@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import cN from "classnames";
 import React, { useState } from "react";
 import Button from "../../button/Button";
 import ConfirmModal from "../../confirm-modal/ConfirmModal";
@@ -6,7 +6,7 @@ import Notifications from "../../notifications/Notifications";
 
 import styles from "./My-prizes.module.scss";
 
-const defaultEnchantments = {
+const DEFAULT_ENCHANTMENTS = {
   mending: { lv: 1, name: "Починка" },
   soul_speed: { lv: 3, name: "Скорость души" },
   protection: { lv: 4, name: "Защита" },
@@ -54,50 +54,61 @@ const defaultEnchantments = {
 const ItemBuy = ({ item }) => {
   const [isConfirmActive, setIsConfirmActive] = useState(false);
 
-  const enchantments = Object.keys(item.enchantments);
+  const enchantments = !item.enchantments ? [] : Object.keys(item.enchantments);
+
+  const image = () => {
+    let src = "";
+    if (item.type === "item") src = process.env.PUBLIC_URL + `/site_assets/items/${item.id}.webp`;
+    if (item.type === "perms") src = process.env.PUBLIC_URL + `/site_assets/items/tipped_arrow_wind_charged.webp`;
+
+    return src;
+  };
 
   return (
-    <div className={classNames(styles["prize_wrapper_container"], styles["pink"])}>
-      <div className={classNames(styles["image_container"])}>
-        <div className={classNames(styles["animation"])}>
-          <img
-            src={process.env.PUBLIC_URL + `/site_assets/items/${item.id}.webp`}
-            alt=""
-            className={classNames(styles["fade"], styles["active"])}
-          />
+    <div className={cN(styles["prize_wrapper_container"], styles["pink"])}>
+      <div className={styles["image_container"]}>
+        <div className={styles["animation"]}>
+          <img src={image()} alt="" className={cN(styles["fade"], styles["active"])} />
         </div>
       </div>
-      <span className={classNames(styles["price"])}>{item.amount} монет</span>
-      <div className={classNames(styles["description"])}>
-        <div className={classNames(styles["custom_text"])}>
-          <p className={classNames(styles["name"])}>{item.name}</p>
-          <ul className={classNames(styles["list_container"])}>
-            {enchantments.map((el, i) => (
-              <li className={classNames(styles["list"])}>
-                &#8226; {defaultEnchantments[el].name} - {item.enchantments[el]} (v.{defaultEnchantments[el].lv})
-              </li>
-            ))}
-          </ul>
+      <span className={styles["price"]}>{item.amount} монет</span>
+      <div className={styles["description"]}>
+        <div className={styles["custom_text"]}>
+          <p className={styles["name"]}>{item.name}</p>
+          {!item.enchantments ? null : (
+            <ul className={styles["list_container"]}>
+              {enchantments.map((el, i) => (
+                <li className={styles["list"]}>
+                  &#8226; {DEFAULT_ENCHANTMENTS[el].name} - {item.enchantments[el]} (v.{DEFAULT_ENCHANTMENTS[el].lv})
+                </li>
+              ))}
+            </ul>
+          )}
+          {!item.comment ? null : <p className={styles["information"]}>{item.comment}</p>}
         </div>
-        <h5 className={classNames(styles["information"])}>покупка предмета из фиксированым зачарованием</h5>
-        <div className={classNames(styles["btn_wrapper"])}>
-          <Button label="Забрать" view="submit" onClick={() => setIsConfirmActive(true)} />
-          <ConfirmModal
-            children={
-              <Notifications
-                inf="Для получения предмета необходимо находиться онлайн на основном сервере!"
-                type="warn"
-                format="center"
-              />
-            }
-            time={10000}
-            message="Подтвердите действие «Купить»"
-            open={isConfirmActive}
-            close={() => setIsConfirmActive(false)}
-            no={() => setIsConfirmActive(false)}
-            yes={() => console.log("успех")}
-          />
-        </div>
+        <p className={styles["information"]}>
+          {item.type === "item"
+            ? "покупка предмета из фиксированым зачарованием"
+            : "покупка дополнения производится навсегда"}
+        </p>
+      </div>
+      <div className={styles["btn_wrapper"]}>
+        <Button label="Купить" view="submit" onClick={() => setIsConfirmActive(true)} />
+        <ConfirmModal
+          children={
+            <Notifications
+              inf="Для получения предмета необходимо находиться онлайн на основном сервере!"
+              type="warn"
+              format="center"
+            />
+          }
+          time={10000}
+          message="Подтвердите действие «Купить»"
+          open={isConfirmActive}
+          close={() => setIsConfirmActive(false)}
+          no={() => setIsConfirmActive(false)}
+          yes={() => console.log("успех")}
+        />
       </div>
     </div>
   );
