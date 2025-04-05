@@ -5,7 +5,6 @@ import Preload from "../../preloader/Preload.js";
 import { sendRequest, useAxios } from "../../../../DataProvider";
 import { useAlert } from "@blaumaus/react-alert";
 import useLoading from "../../../loading/useLoading";
-import Notifications from "../../notifications/Notifications";
 import Link from "../../link/Link";
 
 import styles from "./My-prizes.module.scss";
@@ -66,14 +65,6 @@ const MyPrizes = () => {
           {data.awards.map((el, index) => {
             return <Item id={el.id} action={giveReward} key={index} />;
           })}
-        </div>
-      )}
-      {!data.count ? null : (
-        <div className={classNames(styles["box_warn"])}>
-          <Notifications
-            inf="Для получения приза необходимо находиться онлайн на основном сервере (за исключением денежных призов)"
-            type="warn"
-          />
         </div>
       )}
     </div>

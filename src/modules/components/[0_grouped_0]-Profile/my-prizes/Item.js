@@ -2,6 +2,7 @@ import classNames from "classnames";
 import React, { useEffect, useState } from "react";
 import Button from "../../button/Button";
 import ConfirmModal from "../../confirm-modal/ConfirmModal";
+import Notifications from "../../notifications/Notifications";
 
 import styles from "./My-prizes.module.scss";
 
@@ -45,6 +46,14 @@ const Item = (props) => {
         <div className={classNames(styles["btn_wrapper"])}>
           <Button label="Забрать" view="submit" onClick={() => setIsConfirmActive(true)} />
           <ConfirmModal
+            children={
+              <Notifications
+                inf="Для получения приза необходимо находиться онлайн на основном сервере!"
+                type="warn"
+                format="center"
+              />
+            }
+            time={10000}
             message="Подтвердите действие «Забрать»"
             open={isConfirmActive}
             close={() => setIsConfirmActive(false)}
