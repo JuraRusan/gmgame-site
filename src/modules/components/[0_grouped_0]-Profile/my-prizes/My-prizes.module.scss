@@ -6,17 +6,6 @@
   display: flex;
   flex-direction: column;
 
-  .prizesTitleH4 {
-    width: auto;
-    height: 30px;
-    line-height: 30px;
-    color: $site-color-2;
-    font-size: 18px;
-    font-weight: 400;
-    font-family: $fontCustom2;
-    margin: 8px auto;
-  }
-
   .warn_title {
     font-size: 18px;
     font-weight: 400;
@@ -27,20 +16,9 @@
     margin-top: 18%;
     line-height: 1.35;
 
-    a {
-      font-weight: inherit;
+    .link_size {
+      margin-left: 5px;
       font-size: inherit;
-      font-family: inherit;
-      height: inherit;
-      color: $color-1;
-      width: auto;
-      margin: 0 0 0 4px;
-      transition: all 0.55s ease;
-      text-decoration: none;
-
-      &:hover {
-        color: $color-12;
-      }
     }
   }
 
@@ -48,7 +26,9 @@
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     overflow: auto;
     padding-right: 10px;
 
@@ -56,41 +36,58 @@
       width: 4px !important;
     }
 
-    .onePrizesWrapperBox {
-      width: 100%;
-      height: 130px;
+    .prize_wrapper_container {
+      width: 225px;
+      height: 325px;
       display: flex;
-      flex-direction: row;
-      border: 1px solid $site-color-5;
+      flex-direction: column;
+      border: 2px solid $site-color-15;
       border-radius: 7px;
-      margin-top: 16px;
+      margin: 8px;
       background: $site-color-12;
+      position: relative;
 
-      .imgBlock {
+      &:hover {
+        &:before {
+          opacity: 0.5;
+        }
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 75%;
+        height: 60%;
+        opacity: 0.25;
+        border-radius: 7px;
+        background: radial-gradient(ellipse at right top, $site-color-8 0%, $site-color-12 75%);
+        transition: all 0.35s ease;
+      }
+
+      .image_container {
         display: flex;
-        width: 100px;
-        min-width: 100px;
-        max-width: 100px;
-        height: 100px;
-        min-height: 100px;
-        max-height: 100px;
-        margin: 15px;
+        width: 180px;
+        min-width: 180px;
+        max-width: 180px;
+        height: 180px;
+        min-height: 180px;
+        max-height: 180px;
 
-        .animationBackground {
+        .animation_image {
           display: flex;
-          width: 100px;
-          height: 100px;
           position: relative;
 
           .fade {
             position: absolute;
-            top: -10px;
-            left: -10px;
-            right: -10px;
-            bottom: -10px;
+            top: -25px;
+            left: -25px;
+            right: -25px;
+            bottom: -25px;
             opacity: 0;
-            width: 120px;
-            height: 120px;
+            width: 190px;
+            height: 190px;
             transition: opacity 1s ease-in-out;
           }
 
@@ -100,41 +97,36 @@
         }
       }
 
-      .prizesDescription {
+      .description {
         display: flex;
-        flex-direction: row;
-        width: 100%;
+        flex-direction: column;
+        width: 90%;
         height: auto;
-        padding: 4px;
-        border: none;
-        border-left: 1px solid $site-color-5;
-        margin-right: 8px;
+        position: relative;
+        top: -20px;
+        margin: 0 auto;
 
-        .textInformationH5 {
+        .information {
           font-family: $fontCustom2;
           font-weight: 400;
-          font-size: 14px;
+          font-size: 13px;
           color: $color-3;
           text-align: center;
           height: auto;
-          line-height: 25px;
+          line-height: 20px;
           width: 100%;
-          margin-top: auto;
-          margin-bottom: auto;
-          margin-right: 8px;
+          margin: 0 0 32px 0;
         }
 
         .btn_wrapper {
           display: flex;
-          flex-direction: column;
+          flex-direction: row;
           justify-content: center;
+          margin: 0 auto;
+          max-width: 50%;
         }
       }
     }
-  }
-
-  .box_warn {
-    margin: 8px 0 0 0;
   }
 }
 
@@ -151,59 +143,15 @@
 }
 
 @media screen and (max-width: 960px) {
-  .boxPrizesWrapper {
-    .allPrizesContainer {
-      padding: 0;
-    }
-  }
 }
 
 @media screen and (max-width: 768px) {
 }
 
 @media screen and (max-width: 640px) {
-  .boxPrizesWrapper {
-    .warn_title {
-      font-size: 16px;
-    }
-
-    .allPrizesContainer {
-      .onePrizesWrapperBox {
-        flex-direction: column;
-        height: auto;
-        margin-top: 8px;
-        padding: 8px 0;
-
-        .imgBlock {
-          margin: 0 auto;
-        }
-
-        .prizesDescription {
-          flex-direction: column;
-          border: none;
-
-          .textInformationH5 {
-            font-size: 12px;
-            width: 100%;
-            margin: 0 auto 8px auto;
-            padding: 5px;
-            border-width: 1px;
-            border-bottom-style: solid;
-            border-top-style: solid;
-            border-image: linear-gradient(to right, rgba(0, 0, 0, 0), $site-color-5, $site-color-5, $site-color-5, rgba(0, 0, 0, 0)) 1 0;
-          }
-        }
-      }
-    }
-  }
 }
 
 @media screen and (max-width: 480px) {
-  .boxPrizesWrapper {
-    .warn_title {
-      font-size: 15px;
-    }
-  }
 }
 
 @media screen and (max-width: 360px) {
