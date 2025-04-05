@@ -6,12 +6,14 @@ import { sendRequest, useAxios } from "../../../../DataProvider";
 import { useAlert } from "@blaumaus/react-alert";
 import useLoading from "../../../loading/useLoading";
 import Notifications from "../../notifications/Notifications";
+import Link from "../../link/Link";
 
 import styles from "./My-prizes.module.scss";
 
 const MyPrizes = () => {
   const isLoading = useLoading();
   const alert = useAlert();
+
   const [refreshData, setRefreshData] = useState(false);
   const [refresh, setRefresh] = useState(false);
 
@@ -44,31 +46,20 @@ const MyPrizes = () => {
     });
   };
 
-  function getWordForm(count) {
-    if (count % 10 === 1 && count % 100 !== 11) {
-      return "выигрыш";
-    } else if (count % 10 >= 2 && count % 10 <= 4 && (count % 100 < 10 || count % 100 >= 20)) {
-      return "выигрыша";
-    } else {
-      return "выигрышей";
-    }
-  }
-
-  const wordForm = getWordForm(data.count);
-
-  console.log({ body });
-
   return (
     <div className={classNames(styles["boxPrizesWrapper"])}>
-      <h4 className={classNames(styles["prizesTitleH4"])}>
-        У Вас {data.count} {wordForm}
-      </h4>
       {data.count <= 0 ? (
         <h4 className={classNames(styles["warn_title"])}>
           Если у Вас нет выигрышей, примите участие в розыгрыше на
-          <a target="_blank" rel="noreferrer" href="https://discord.gg/AesVsdPsFj">
+          <Link
+            className={styles["link_size"]}
+            href="https://discord.gg/AesVsdPsFj"
+            rel="noreferrer"
+            target="_blank"
+            show={false}
+          >
             мониторинге
-          </a>
+          </Link>
         </h4>
       ) : (
         <div className={classNames(styles["allPrizesContainer"])}>
@@ -90,29 +81,3 @@ const MyPrizes = () => {
 };
 
 export default MyPrizes;
-
-// import classNames from "classnames";
-// import React from "react";
-// import Preload from "../../preloader/Preload.js";
-// import useLoading from "../../../loading/useLoading";
-//
-// import styles from "./My-prizes.module.scss";
-//
-// const MyPrizes = () => {
-//   const isLoading = useLoading();
-//
-//   if (isLoading) {
-//     return <Preload full={false} />;
-//   }
-//
-//   return (
-//     <div className={classNames(styles["boxPrizesWrapper"])}>
-//       <h4 className={classNames(styles["warn_title"])}>
-//         В данный момент забрать призы невозможно, но не беспокойтесь — все они сохраняются, и вы сможете получить их
-//         позже.
-//       </h4>
-//     </div>
-//   );
-// };
-//
-// export default MyPrizes;
