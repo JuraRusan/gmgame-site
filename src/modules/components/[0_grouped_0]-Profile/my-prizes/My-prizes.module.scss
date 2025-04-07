@@ -254,7 +254,7 @@
       height: 325px;
 
       &:before {
-        background: radial-gradient(ellipse at right top, $site-color-8 0%, $site-color-12 75%);
+        background: radial-gradient(ellipse at right top, $site-color-8 0%, rgba(0, 0, 0, 0) 75%);
       }
     }
 
@@ -263,7 +263,7 @@
       height: 425px;
 
       &:before {
-        background: radial-gradient(ellipse at right top, $site-color-10 0%, $site-color-12 75%);
+        background: radial-gradient(ellipse at right top, $site-color-10 0%, rgba(0, 0, 0, 0) 75%);
       }
     }
   }
