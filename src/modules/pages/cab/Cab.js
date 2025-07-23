@@ -22,7 +22,7 @@ const Cab = () => {
   const isLoading = useLoading();
   const { resParams, openMenu, setOpenMenu, closeMenuMain, activeTab, logout } = useCab();
 
-  const compact = cN(styles["tab"], styles["checked"]);
+  const compact = cN(styles["tab"], styles["disabled"]);
 
   if (resParams.loading || isLoading) {
     return <Preload full={true} />;
