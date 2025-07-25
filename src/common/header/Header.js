@@ -37,7 +37,7 @@ const Header = () => {
           <CoinsSvgComponent width="100%" height="100%" color="#f4f4f4" />
         </span>
         <span className={styles["text"]}>{resParams.data.user.balance} монет</span>
-        <a className={styles["info"]} href="/">
+        <a className={styles["info"]} href="/cab/prize">
           ?
         </a>
       </div>
