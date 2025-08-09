@@ -5,5 +5,5 @@ function completeArray(arr, length, key) {
   });
 }
 
-export const completeArrayShulker = (arr) => completeArray(arr, 26, "slot");
-export const completeArrayBundle = (arr) => completeArray(arr, 63, "pos");
+export const arrayShulker = (arr) => completeArray(arr, 26, "slot");
+export const arrayBundle = (arr) => completeArray(arr, 63, "pos");

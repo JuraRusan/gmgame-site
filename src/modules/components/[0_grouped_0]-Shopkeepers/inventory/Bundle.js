@@ -1,13 +1,13 @@
 import CN from "classnames";
 import React from "react";
 import OneItem from "../one-item/One-item.js";
-import { completeArrayBundle } from "../function/CompleteArray";
+import { arrayBundle } from "../function/CompleteArray";
 
 import styles from "./Bundle.module.scss";
 import common from "./Inventory-elements.module.scss";
 
 const Bundle = ({ item, size = "medium" }) => {
-  const filledArray = completeArrayBundle(item.bundle);
+  const filledArray = arrayBundle(item.bundle);
 
   return (
     <div
