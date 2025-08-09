@@ -1,4 +1,3 @@
-import classNames from "classnames";
 import React, { useState } from "react";
 import { useAxios } from "../../../DataProvider";
 import Preload from "../../components/preloader/Preload";
@@ -211,10 +210,10 @@ const Statistic = () => {
   }
 
   return (
-    <div className={classNames(styles["mainStatistic"])}>
-      <div className={classNames(styles["statistic"])}>
+    <div className={styles["box_statistic"]}>
+      <div className={styles["statistic"]}>
         <Title>Статистика игроков сервера</Title>
-        <div className={classNames(styles["wrapper"])}>
+        <div className={styles["wrapper"]}>
           <div style={{ width: "100%", height: "100%" }} className="ag-theme-alpine-dark">
             <AgGridReact
               rowData={resParams.data}
