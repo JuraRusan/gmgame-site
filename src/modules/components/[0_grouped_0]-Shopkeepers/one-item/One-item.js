@@ -1,14 +1,15 @@
-import classNames from "classnames";
+import CN from "classnames";
 import React, { useEffect, useState } from "react";
 import MinecraftName from "../mini-component/Minecraft-name";
 import MinecraftRegister from "../mini-component/Minecraft-register";
 import MinecraftImage from "../mini-component/Minecraft-image";
-import ShulkerBox from "../shulker-box/Shulker-box";
-import { SHULKERS_TYPE } from "../../../pages/shopkeepers/ShulkersType";
+import ShulkerBox from "../inventory/Shulker-box";
+import Bundle from "../inventory/Bundle";
+import { BUNDLES_TYPE, SHULKERS_TYPE } from "../../../pages/shopkeepers/ShulkersType";
 
 import styles from "./One-item.module.scss";
 
-const OneItem = ({ item, onClick, customLink, mini = false }) => {
+const OneItem = ({ item, onClick, size = "medium" }) => {
   const [showTooltip, setShowTooltip] = useState(false);
   const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
   const [tooltipVisible, setTooltipVisible] = useState(false);
@@ -61,31 +62,44 @@ const OneItem = ({ item, onClick, customLink, mini = false }) => {
 
   if (!item) {
     return (
-      <div className={classNames(styles["item_block"])}>
-        <div className={classNames(styles["item"], mini && styles["mini"])}></div>
+      <div className={styles["item_block"]}>
+        <div
+          className={CN(styles["item"], {
+            [styles["small"]]: size === "small",
+            [styles["medium"]]: size === "medium",
+          })}
+        />
       </div>
     );
   }
 
   return (
-    <div className={classNames(styles["item_block"])} onClick={onClick}>
+    <div className={styles["item_block"]} onClick={onClick}>
       <div
-        className={classNames(styles["item"], styles["content"], mini && styles["mini"])}
+        className={CN(styles["item"], styles["content"], {
+          [styles["small"]]: size === "small",
+          [styles["medium"]]: size === "medium",
+        })}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <MinecraftImage item={item} width={mini ? 28 : 58} height={mini ? 28 : 58} />
-        <span className={classNames(styles["count"])}>{item.amount}</span>
+        <MinecraftImage item={item} width={size === "small" ? 28 : 58} height={size === "small" ? 28 : 58} />
+        <span className={styles["count"]}>{item.amount}</span>
       </div>
       {showTooltip && (
-        <div className={classNames(styles["tooltip"])} style={tooltipStyle}>
+        <div className={styles["tooltip"]} style={tooltipStyle}>
           <MinecraftName item={item} />
           {(item.trim || item.shield || item.banner_pattern) && (
             <MinecraftImage item={item} width={256} height={256} background="#27272a" />
           )}
           {SHULKERS_TYPE.includes(item.id) && (
-            <div className={classNames(styles["shulker_wrapper"])}>
-              <ShulkerBox item={item} full={false} customLink={customLink} />
+            <div className={styles["_wrapper"]}>
+              <ShulkerBox item={item} size="small" />
+            </div>
+          )}
+          {BUNDLES_TYPE.includes(item.id) && (
+            <div className={styles["_wrapper"]}>
+              <Bundle item={item} size="small" />
             </div>
           )}
           <MinecraftRegister item={item} />

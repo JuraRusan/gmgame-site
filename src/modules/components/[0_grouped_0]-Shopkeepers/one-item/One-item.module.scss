@@ -1,17 +1,11 @@
 @import "src/Variables";
 
-$parameterItem: 64px;
-$length: 34px;
-
 .item_block {
   display: flex;
 
   .item {
     display: flex;
-    width: $parameterItem;
-    height: $parameterItem;
     padding: 1px;
-    margin: 2px;
     border-radius: 4px;
     border: 2px solid $site-color-15;
     transition: all 0.3s ease;
@@ -30,18 +24,27 @@ $length: 34px;
       height: auto;
       position: absolute;
       display: flex;
-      right: 3px;
-      bottom: 3px;
-      font-size: 13px;
       font-weight: 400;
       color: $site-color-2;
       font-family: $fontCustom2;
     }
   }
 
-  .mini {
-    width: $length;
-    height: $length;
+  .medium {
+    width: 64px;
+    height: 64px;
+    margin: 2px;
+
+    .count {
+      font-size: 13px;
+      right: 3px;
+      bottom: 3px;
+    }
+  }
+
+  .small {
+    width: 32px;
+    height: 32px;
     margin: 1px;
 
     .count {
@@ -63,14 +66,13 @@ $length: 34px;
     z-index: 50;
     margin-left: 28px;
 
-    .shulker_wrapper {
+    ._wrapper {
       display: flex;
       flex-direction: row;
       width: max-content;
       height: max-content;
-      background: $site-color-12;
-      border-radius: 5px;
+      background: $site-color-1;
+      border-radius: 4px;
     }
   }
 }
-

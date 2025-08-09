@@ -15,7 +15,9 @@ const MinecraftName = ({ item }) => {
       ) : (
         <h3 className={classNames(styles["name"])} dangerouslySetInnerHTML={{ __html: item.minecraft_custom }}></h3>
       )}
-      {item.leather_color && <h3 className={classNames(styles["name"], styles["color"])}>{item.leather_color}</h3>}
+      {item.leather_color && (
+        <h3 className={classNames(styles["name"], styles["color"])}>Цвет: {item.leather_color}</h3>
+      )}
       {item.instrument && (
         <h3 className={classNames(styles["name"], styles["color"])}>{lang[`goat_horn.${item.instrument}`]}</h3>
       )}
@@ -27,6 +29,11 @@ const MinecraftName = ({ item }) => {
       )}
       {item.trim?.material && (
         <h3 className={classNames(styles["name"], styles["color"])}>{lang[`trim_material.${item.trim.material}`]}</h3>
+      )}
+      {item.suspicious?.effect && (
+        <h3 className={classNames(styles["name"], styles["color"])}>
+          {lang[`suspicious_stew.${item.suspicious.effect}`]} {item.suspicious.duration / 20} сек.
+        </h3>
       )}
       {item.id.includes("smithing_template") && (
         <h3 className={classNames(styles["name"], styles["color"])}>

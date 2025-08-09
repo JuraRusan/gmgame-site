@@ -8,8 +8,9 @@ import { useAlert } from "@blaumaus/react-alert";
 import Preload from "../../preloader/Preload";
 import useLoading from "../../../loading/useLoading";
 import MyModal from "../../../../common/modal/MyModal";
-import ShulkerBox from "../../[0_grouped_0]-Shopkeepers/shulker-box/Shulker-box";
-import { SHULKERS_TYPE } from "../../../pages/shopkeepers/ShulkersType";
+import ShulkerBox from "../../[0_grouped_0]-Shopkeepers/inventory/Shulker-box";
+import Bundle from "../../[0_grouped_0]-Shopkeepers/inventory/Bundle";
+import { BUNDLES_TYPE, SHULKERS_TYPE } from "../../../pages/shopkeepers/ShulkersType";
 import BackButton from "../../back-button/BackButton";
 import Notifications from "../../notifications/Notifications";
 
@@ -27,10 +28,11 @@ const LogTrade = () => {
 
   const [dataLogs, setDataLogs] = useState([]);
 
-  const [selected, setSelected] = useState(0);
+  const [selected, setSelected] = useState([]);
+  const [typeContent, setTypeContent] = useState("");
   const [open, setOpen] = React.useState(false);
 
-  const [isLarge, setIsLarge] = useState(window.innerWidth >= 640);
+  const [isLarge, setIsLarge] = useState(window.innerWidth >= 640 ? "medium" : "small");
 
   const [loaded, setLoaded] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -38,9 +40,21 @@ const LogTrade = () => {
 
   const openModal = (el) => {
     if (SHULKERS_TYPE.includes(el.id)) {
+      setTypeContent("shulker");
       setSelected(el);
       setOpen(true);
     }
+    if (BUNDLES_TYPE.includes(el.id)) {
+      setTypeContent("bundle");
+      setSelected(el);
+      setOpen(true);
+    }
+  };
+
+  const closeModal = () => {
+    setOpen(false);
+    setTypeContent("bundle");
+    setSelected([]);
   };
 
   useEffect(() => {
@@ -64,9 +78,10 @@ const LogTrade = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsLarge(window.innerWidth >= 640);
+      setIsLarge(window.innerWidth >= 640 ? "medium" : "small");
     };
     window.addEventListener("resize", handleResize);
+
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -96,23 +111,15 @@ const LogTrade = () => {
           {dataLogs.map((el, index) =>
             Array.from({ length: el.trade_count }).map((_, tradeIndex) => (
               <div className={classNames(styles["one_trade"])} key={`${index}-${tradeIndex}`}>
-                <span className={classNames(styles["text"])}>{el.data + " " + el.time}</span>
+                <span className={classNames(styles["text"])}>{new Date(el.time).toLocaleString()}</span>
                 <div className={classNames(styles["items"])}>
-                  {!el.item1?.id ? (
-                    <OneItem />
-                  ) : (
-                    <OneItem customLink="../.." item={el.item1} onClick={() => openModal(el.item1)} />
-                  )}
-                  {!el.item2?.id ? (
-                    <OneItem />
-                  ) : (
-                    <OneItem customLink="../.." item={el.item2} onClick={() => openModal(el.item2)} />
-                  )}
+                  {!el.item1?.id ? <OneItem /> : <OneItem item={el.item1} onClick={() => openModal(el.item1)} />}
+                  {!el.item2?.id ? <OneItem /> : <OneItem item={el.item2} onClick={() => openModal(el.item2)} />}
                   <span className={classNames(styles["arrow_suggestions"])}>&#10132;</span>
                   {!el.resultItem?.id ? (
                     <OneItem />
                   ) : (
-                    <OneItem customLink="../.." item={el.resultItem} onClick={() => openModal(el.resultItem)} />
+                    <OneItem item={el.resultItem} onClick={() => openModal(el.resultItem)} />
                   )}
                 </div>
                 <span className={classNames(styles["text"])}>{el.player_name}</span>
@@ -123,10 +130,17 @@ const LogTrade = () => {
       )}
       <Notifications inf={INFO_DEFAULT} type="warn" />
 
-      <MyModal open={open} close={() => setOpen(false)}>
-        <div className={classNames(styles["shulker_wrapper"])}>
-          <ShulkerBox customLink="../.." item={selected} full={isLarge} />
-        </div>
+      <MyModal open={open} close={closeModal}>
+        {typeContent !== "shulker" ? null : (
+          <div className={styles["_wrapper"]}>
+            <ShulkerBox item={selected} size={isLarge} />
+          </div>
+        )}
+        {typeContent !== "bundle" ? null : (
+          <div className={styles["_wrapper"]}>
+            <Bundle item={selected} size={isLarge} />
+          </div>
+        )}
       </MyModal>
     </div>
   );
