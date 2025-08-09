@@ -1,0 +1,149 @@
+@import "src/Variables";
+
+@keyframes type {
+  from {
+    box-shadow: inset -3px 0 0 $color-3;
+  }
+  to {
+    box-shadow: inset -3px 0 0 transparent;
+  }
+}
+
+.status_wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 190px;
+  width: auto;
+  height: auto;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+      font-size: 72px;
+      display: flex;
+      margin: 0 auto;
+      padding-right: 14px;
+      font-weight: 400;
+      font-family: $fontCustom2;
+      color: $site-color-2;
+      animation: type 0.5s alternate infinite;
+    }
+
+    .description {
+      text-align: center;
+      color: $site-color-2;
+      font-weight: 400;
+      font-size: 22px;
+      font-family: $fontCustom2;
+      height: auto;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    .sub_description {
+      text-align: center;
+      color: $site-color-2;
+      font-weight: 400;
+      font-size: 18px;
+      font-family: $fontCustom2;
+      height: auto;
+      padding: 0 15px;
+    }
+
+    ._back {
+      width: auto;
+      height: auto;
+      font-weight: 400;
+      font-size: 17px;
+      font-family: $fontCustom2;
+      text-decoration: none;
+      text-align: center;
+      margin: 55px auto 0 auto;
+      outline: none;
+      color: $site-color-9;
+      transition: all 0.35s ease;
+
+      &:active,
+      &:hover,
+      &:visited {
+        color: $site-color-9;
+        outline: none;
+      }
+
+      &:hover {
+        color: $site-color-8;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 960px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 640px) {
+}
+
+@media screen and (max-width: 480px) {
+  .status_wrapper {
+    .container {
+      .title {
+        font-size: 54px;
+      }
+
+      .description {
+        font-size: 18px;
+        padding: 0 10px;
+        margin-bottom: 30px;
+      }
+
+      .sub_description {
+        font-size: 16px;
+      }
+
+      ._back {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .status_wrapper {
+    .container {
+      .title {
+        font-size: 48px;
+      }
+
+      .description {
+        font-size: 15px;
+      }
+
+      .sub_description {
+        font-size: 15px;
+      }
+
+      ._back {
+        font-size: 12px;
+      }
+    }
+  }
+}
