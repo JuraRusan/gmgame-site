@@ -1,6 +1,6 @@
 @import "src/Variables";
 
-.mainStatistic {
+.box_statistic {
   display: flex;
   flex-direction: column;
   width: auto;
@@ -24,7 +24,7 @@
 }
 
 @media screen and (max-width: 1400px) {
-  .mainStatistic {
+  .box_statistic {
     .statistic {
       width: auto;
       margin: 0 48px 32px 48px;
@@ -33,7 +33,7 @@
 }
 
 @media screen and (max-width: 1280px) {
-  .mainStatistic {
+  .box_statistic {
     .statistic {
       margin: 0 44px 32px 44px;
     }
@@ -41,7 +41,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .mainStatistic {
+  .box_statistic {
     .statistic {
       margin: 0 40px 32px 40px;
     }
@@ -52,7 +52,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .mainStatistic {
+  .box_statistic {
     .statistic {
       margin: 0 18px 24px 18px;
     }
@@ -60,7 +60,7 @@
 }
 
 @media screen and (max-width: 640px) {
-  .mainStatistic {
+  .box_statistic {
     .statistic {
       margin: 0 16px 16px 16px;
     }
@@ -68,7 +68,7 @@
 }
 
 @media screen and (max-width: 480px) {
-  .mainStatistic {
+  .box_statistic {
     .statistic {
       margin: 0 12px 12px 12px;
     }
@@ -76,7 +76,7 @@
 }
 
 @media screen and (max-width: 360px) {
-  .mainStatistic {
+  .box_statistic {
     .statistic {
       margin: 0 8px 8px 8px;
     }
