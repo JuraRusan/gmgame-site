@@ -1,6 +1,6 @@
 @import "src/Variables";
 
-.shulker_box {
+.inventory {
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
@@ -8,15 +8,10 @@
   width: max-content;
   height: auto;
   border-radius: 5px;
-  border: 1px solid $site-color-5;
   transition: all 0.25s ease;
   padding: 3px;
-}
 
-.medium {
-  max-width: 620px;
-}
-
-.small {
-  max-width: 333px;
+  &:hover {
+    background: $site-color-1;
+  }
 }

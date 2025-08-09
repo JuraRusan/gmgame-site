@@ -4,13 +4,14 @@ import OneItem from "../one-item/One-item.js";
 import { completeArrayBundle } from "../function/CompleteArray";
 
 import styles from "./Bundle.module.scss";
+import common from "./Inventory-elements.module.scss";
 
 const Bundle = ({ item, size = "medium" }) => {
   const filledArray = completeArrayBundle(item.bundle);
 
   return (
     <div
-      className={CN(styles["bundle"], {
+      className={CN(common["inventory"], {
         [styles["medium"]]: size === "medium",
         [styles["small"]]: size === "small",
       })}

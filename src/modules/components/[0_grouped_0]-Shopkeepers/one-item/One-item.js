@@ -3,8 +3,8 @@ import React, { useEffect, useState } from "react";
 import MinecraftName from "../mini-component/Minecraft-name";
 import MinecraftRegister from "../mini-component/Minecraft-register";
 import MinecraftImage from "../mini-component/Minecraft-image";
-import ShulkerBox from "../shulker-box/Shulker-box";
-import Bundle from "../bundle/Bundle";
+import ShulkerBox from "../inventory/Shulker-box";
+import Bundle from "../inventory/Bundle";
 import { BUNDLES_TYPE, SHULKERS_TYPE } from "../../../pages/shopkeepers/ShulkersType";
 
 import styles from "./One-item.module.scss";
