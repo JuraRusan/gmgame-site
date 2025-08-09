@@ -9,8 +9,9 @@ import General from "./modules/pages/general/General.js";
 
 // --
 const Auth = lazy(() => import(/* webpackChunkName: "auth" */ /* webpackPreload: true */ /* webPackPrefetch: true */ "./modules/pages/auth/Auth.js")); // prettier-ignore
-const NotFound = lazy(() => import(/* webpackChunkName: "404" */ "./modules/pages/not-found/NotFound.js")); // prettier-ignore
-const NoAccess = lazy(() => import(/* webpackChunkName: "no_access" */ "./modules/pages/no-access/NoAccess.js")); // prettier-ignore
+const NotFound = lazy(() => import(/* webpackChunkName: "not_found" */ "./modules/pages/status-pages/NotFound")); // prettier-ignore
+const NoAccess = lazy(() => import(/* webpackChunkName: "no_access" */ "./modules/pages/status-pages/NoAccess")); // prettier-ignore
+const NotAvailable = lazy(() => import(/* webpackChunkName: "not_available" */ "./modules/pages/status-pages/NotAvailable")); // prettier-ignore
 
 // --
 // const CabNotAvailable = lazy(() => import(/* webpackChunkName: "cab" */ "./modules/components/[0_grouped_0]-Profile/cab-not-available/CabNotAvailable")); // prettier-ignore
@@ -75,7 +76,8 @@ const Router = () => {
         <Routes>
           <Route path="/" element={<General />} />
           <Route path="/auth" element={<Auth />} />
-          <Route path="/no-access" element={<NoAccess />} />
+          <Route path="/no_access" element={<NoAccess />} />
+          <Route path="/not_available" element={<NotAvailable />} />
           <Route exac path="*" element={<NotFound />} />
           <Route exact path="/cab" element={<Cab />}>
             {/* ---------- */}
