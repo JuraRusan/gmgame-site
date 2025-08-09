@@ -1,27 +1,9 @@
-export function completeArrayShulker(arr) {
-  const filledArray = [];
-
-  for (let i = 0; i <= 26; i++) {
-    const item = arr.find((el) => Number(el.slot) === i);
-    if (item) {
-      filledArray.push(item);
-    } else {
-      filledArray.push({ slot: String(i), id: null, amount: null });
-    }
-  }
-  return filledArray;
+function completeArray(arr, length, key) {
+  return Array.from({ length: length + 1 }, (_, i) => {
+    const item = arr.find((el) => Number(el[key]) === i);
+    return item || { [key]: String(i), id: null, amount: null };
+  });
 }
 
-export function completeArrayBundle(arr) {
-  const filledArray = [];
-
-  for (let i = 0; i <= 63; i++) {
-    const item = arr.find((el) => Number(el.pos) === i);
-    if (item) {
-      filledArray.push(item);
-    } else {
-      filledArray.push({ pos: String(i), id: null, amount: null });
-    }
-  }
-  return filledArray;
-}
+export const completeArrayShulker = (arr) => completeArray(arr, 26, "slot");
+export const completeArrayBundle = (arr) => completeArray(arr, 63, "pos");
