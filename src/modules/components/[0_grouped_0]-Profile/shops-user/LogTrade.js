@@ -32,7 +32,7 @@ const LogTrade = () => {
   const [typeContent, setTypeContent] = useState("");
   const [open, setOpen] = React.useState(false);
 
-  const [isLarge, setIsLarge] = useState(window.innerWidth >= 640);
+  const [isLarge, setIsLarge] = useState(window.innerWidth >= 640 ? "medium" : "small");
 
   const [loaded, setLoaded] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -78,9 +78,10 @@ const LogTrade = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsLarge(window.innerWidth >= 640);
+      setIsLarge(window.innerWidth >= 640 ? "medium" : "small");
     };
     window.addEventListener("resize", handleResize);
+
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -132,12 +133,12 @@ const LogTrade = () => {
       <MyModal open={open} close={closeModal}>
         {typeContent !== "shulker" ? null : (
           <div className={styles["_wrapper"]}>
-            <ShulkerBox item={selected} full={isLarge} />
+            <ShulkerBox item={selected} size={isLarge} />
           </div>
         )}
         {typeContent !== "bundle" ? null : (
           <div className={styles["_wrapper"]}>
-            <Bundle item={selected} full={isLarge} />
+            <Bundle item={selected} size={isLarge} />
           </div>
         )}
       </MyModal>

@@ -1,17 +1,22 @@
-import classNames from "classnames";
+import CN from "classnames";
 import React from "react";
 import OneItem from "../one-item/One-item.js";
 import { completeArrayBundle } from "../function/CompleteArray";
 
 import styles from "./Bundle.module.scss";
 
-const Bundle = ({ item, full = true }) => {
+const Bundle = ({ item, size = "medium" }) => {
   const filledArray = completeArrayBundle(item.bundle);
 
   return (
-    <div className={classNames(styles["bundle"], full ? styles["full"] : styles["mini"])}>
+    <div
+      className={CN(styles["bundle"], {
+        [styles["medium"]]: size === "medium",
+        [styles["small"]]: size === "small",
+      })}
+    >
       {filledArray.map((el, index) =>
-        el.id === null ? <OneItem key={index} mini={!full} /> : <OneItem key={index} item={el} mini={!full} />
+        el.id === null ? <OneItem key={index} size={size} /> : <OneItem key={index} item={el} size={size} />
       )}
     </div>
   );
