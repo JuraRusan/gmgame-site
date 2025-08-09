@@ -4,11 +4,12 @@ import MinecraftName from "../mini-component/Minecraft-name";
 import MinecraftRegister from "../mini-component/Minecraft-register";
 import MinecraftImage from "../mini-component/Minecraft-image";
 import ShulkerBox from "../shulker-box/Shulker-box";
-import { SHULKERS_TYPE } from "../../../pages/shopkeepers/ShulkersType";
+import Bundle from "../bundle/Bundle";
+import { BUNDLES_TYPE, SHULKERS_TYPE } from "../../../pages/shopkeepers/ShulkersType";
 
 import styles from "./One-item.module.scss";
 
-const OneItem = ({ item, onClick, customLink, mini = false }) => {
+const OneItem = ({ item, onClick, mini = false }) => {
   const [showTooltip, setShowTooltip] = useState(false);
   const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
   const [tooltipVisible, setTooltipVisible] = useState(false);
@@ -85,7 +86,12 @@ const OneItem = ({ item, onClick, customLink, mini = false }) => {
           )}
           {SHULKERS_TYPE.includes(item.id) && (
             <div className={classNames(styles["shulker_wrapper"])}>
-              <ShulkerBox item={item} full={false} customLink={customLink} />
+              <ShulkerBox item={item} full={false} />
+            </div>
+          )}
+          {BUNDLES_TYPE.includes(item.id) && (
+            <div className={classNames(styles["shulker_wrapper"])}>
+              <Bundle item={item} full={false} />
             </div>
           )}
           <MinecraftRegister item={item} />

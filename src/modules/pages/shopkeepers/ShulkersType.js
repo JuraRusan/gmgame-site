@@ -17,3 +17,23 @@ export const SHULKERS_TYPE = [
   "white_shulker_box",
   "yellow_shulker_box",
 ];
+
+export const BUNDLES_TYPE = [
+  "black_bundle",
+  "blue_bundle",
+  "brown_bundle",
+  "cyan_bundle",
+  "gray_bundle",
+  "green_bundle",
+  "light_blue_bundle",
+  "light_gray_bundle",
+  "lime_bundle",
+  "magenta_bundle",
+  "orange_bundle",
+  "pink_bundle",
+  "purple_bundle",
+  "red_bundle",
+  "bundle",
+  "white_bundle",
+  "yellow_bundle",
+];

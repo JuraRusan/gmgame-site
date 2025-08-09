@@ -1,14 +1,5 @@
 @import "src/Variables";
 
-@keyframes show {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .log_wrapper {
   display: flex;
   flex-direction: column;
@@ -100,7 +91,7 @@
   }
 }
 
-.shulker_wrapper {
+._wrapper {
   padding: 16px;
 }
 
