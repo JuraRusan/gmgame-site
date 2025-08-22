@@ -15,7 +15,7 @@ const AuthComponent = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors, isValid },
   } = useForm({ mode: "onChange" });
 
   const onSubmit = (data) => console.log(data);
@@ -240,6 +240,7 @@ const AuthComponent = () => {
             type="submit"
             label="Отправить"
             view="submit"
+            disabled={!isValid}
             onClick={handleSubmit(registration)}
           />
         </form>

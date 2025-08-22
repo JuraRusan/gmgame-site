@@ -20,6 +20,12 @@
   &:hover {
     color: $site-color-1;
   }
+
+  &[disabled] {
+    background: $site-color-5;
+    color: $site-color-4;
+    cursor: default;
+  }
 }
 
 .submit {
