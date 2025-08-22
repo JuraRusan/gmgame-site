@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import React from "react";
+import React, { useMemo } from "react";
 import { useForm } from "react-hook-form";
 import { ErrorMessage } from "@hookform/error-message";
 import { sendRequest } from "../../../DataProvider";
@@ -30,16 +30,16 @@ const AuthComponent = () => {
     );
   }
 
-  const registration = (d) => {
+  const registration = ({ username, password, type_account, age, about, interests, back_servers, friend_name }) => {
     sendRequest("/api/registration_user", "POST", {
-      login: d.username,
-      password: d.password,
-      type: d.type_account,
-      age: d.age,
-      from_about: d.about,
-      you_about: d.interests,
-      servers: d.back_servers,
-      friend_name: d.friend_name,
+      login: username,
+      password: password,
+      type: type_account,
+      age: age,
+      from_about: about,
+      you_about: interests,
+      servers: back_servers,
+      friend_name: friend_name,
     }).then((response) => {
       if (!response.error) {
         alert.success(response.message);
@@ -61,6 +61,49 @@ const AuthComponent = () => {
     checkbox: errors.checkbox,
   };
 
+  const formFields = useMemo(() => {
+    return {
+      username: register("username", {
+        required: { value: true, message: "Обязательное поле" },
+        maxLength: { value: 16, message: "Слишком длинный логин" },
+        pattern: {
+          value: /^[a-zA-Z0-9_]+$/,
+          message: "Недопустимые символы",
+        },
+      }),
+      password: register("password", {
+        required: { value: true, message: "Обязательное поле" },
+        minLength: { value: 8, message: "Пароль должен быть от 8 символов" },
+      }),
+      type_account: register("type_account", {
+        required: { value: true, message: "Обязательное поле" },
+      }),
+      age: register("age", {
+        required: { value: true, message: "Обязательное поле" },
+        pattern: { value: /^[0-9]+$/, message: "Только цифры" },
+      }),
+      friend_name: register("friend_name"),
+      about: register("about", {
+        required: { value: true, message: "Обязательное поле" },
+        minLength: { value: 24, message: "Слишком короткий текст" },
+        maxLength: { value: 256, message: "Слишком длинный текст" },
+      }),
+      interests: register("interests", {
+        required: { value: true, message: "Обязательное поле" },
+        minLength: { value: 32, message: "Слишком короткий текст" },
+        maxLength: { value: 1000, message: "Слишком длинный текст" },
+      }),
+      back_servers: register("back_servers", {
+        required: { value: true, message: "Обязательное поле" },
+        minLength: { value: 12, message: "Слишком короткий текст" },
+        maxLength: { value: 256, message: "Слишком длинный текст" },
+      }),
+      checkbox: register("checkbox", {
+        required: { value: true, message: "Обязательное подтверждение" },
+      }),
+    };
+  }, [register]);
+
   return (
     <div className={classNames(styles["auth-block"])}>
       <div className={classNames(styles["container"])}>
@@ -72,15 +115,10 @@ const AuthComponent = () => {
               id="usernameFor"
               placeholder="&nbsp;"
               autoComplete="off"
-              className={errorInfo.username ? classNames(styles["inputErrors"]) : ""}
-              {...register("username", {
-                required: { value: true, message: "Обязательное поле" },
-                maxLength: { value: 16, message: "Слишком длинный логин" },
-                pattern: {
-                  value: /^[a-zA-Z0-9_]+$/,
-                  message: "Недопустимые символы",
-                },
+              className={classNames({
+                [styles["inputErrors"]]: errorInfo.username,
               })}
+              {...formFields["username"]}
             />
             <span className={classNames(styles["label"])}>Игровой ник</span>
             <ErrorRender name="username" />
@@ -91,11 +129,10 @@ const AuthComponent = () => {
               id="passwordFor"
               placeholder="&nbsp;"
               autoComplete="off"
-              className={errorInfo.password ? classNames(styles["inputErrors"]) : ""}
-              {...register("password", {
-                required: { value: true, message: "Обязательное поле" },
-                minLength: { value: 8, message: "Пароль должен быть от 8 символов" },
+              className={classNames({
+                [styles["inputErrors"]]: errorInfo.password,
               })}
+              {...formFields["password"]}
             />
             <span className={classNames(styles["label"])}>Пароль для входа на сервер</span>
             <ErrorRender name="password" />
@@ -104,10 +141,10 @@ const AuthComponent = () => {
             <select
               id="type_accountFor"
               placeholder="&nbsp;"
-              className={errorInfo.type_account ? classNames(styles["inputErrors"]) : ""}
-              {...register("type_account", {
-                required: { value: true, message: "Обязательное поле" },
+              className={classNames({
+                [styles["inputErrors"]]: errorInfo.type_account,
               })}
+              {...formFields["type_account"]}
             >
               <option value=" "></option>
               <option value="1">Лицензия</option>
@@ -122,11 +159,10 @@ const AuthComponent = () => {
               id="ageFor"
               placeholder="&nbsp;"
               autoComplete="off"
-              className={errorInfo.age ? classNames(styles["inputErrors"]) : ""}
-              {...register("age", {
-                required: { value: true, message: "Обязательное поле" },
-                pattern: { value: /^[0-9]+$/, message: "Только цифры" },
+              className={classNames({
+                [styles["inputErrors"]]: errorInfo.age,
               })}
+              {...formFields["age"]}
             />
             <span className={classNames(styles["label"])}>Возраст</span>
             <ErrorRender name="age" />
@@ -137,7 +173,7 @@ const AuthComponent = () => {
               id="friend_nameFor"
               placeholder="&nbsp;"
               autoComplete="off"
-              {...register("friend_name")}
+              {...formFields["friend_name"]}
             />
             <span className={classNames(styles["label"])}>Ник друга, если играете с кем-то</span>
           </label>
@@ -147,12 +183,10 @@ const AuthComponent = () => {
               id="aboutFor"
               placeholder="&nbsp;"
               autoComplete="off"
-              className={errorInfo.about ? classNames(styles["inputErrors"]) : ""}
-              {...register("about", {
-                required: { value: true, message: "Обязательное поле" },
-                minLength: { value: 24, message: "Слишком короткий текст" },
-                maxLength: { value: 256, message: "Слишком длинный текст" },
+              className={classNames({
+                [styles["inputErrors"]]: errorInfo.about,
               })}
+              {...formFields["about"]}
             />
             <span className={classNames(styles["label"])}>Откуда узнали о проекте</span>
             <ErrorRender name="about" />
@@ -163,12 +197,10 @@ const AuthComponent = () => {
               id="interestsFor"
               placeholder="&nbsp;"
               autoComplete="off"
-              className={errorInfo.interests ? classNames(styles["inputErrors"]) : ""}
-              {...register("interests", {
-                required: { value: true, message: "Обязательное поле" },
-                minLength: { value: 32, message: "Слишком короткий текст" },
-                maxLength: { value: 1000, message: "Слишком длинный текст" },
+              className={classNames({
+                [styles["inputErrors"]]: errorInfo.interests,
               })}
+              {...formFields["interests"]}
             />
             <span className={classNames(styles["label"])}>Интересы в майнкрафте</span>
             <ErrorRender name="interests" />
@@ -179,12 +211,10 @@ const AuthComponent = () => {
               id="back_serversFor"
               placeholder="&nbsp;"
               autoComplete="off"
-              className={errorInfo.back_servers ? classNames(styles["inputErrors"]) : ""}
-              {...register("back_servers", {
-                required: { value: true, message: "Обязательное поле" },
-                minLength: { value: 12, message: "Слишком короткий текст" },
-                maxLength: { value: 256, message: "Слишком длинный текст" },
+              className={classNames({
+                [styles["inputErrors"]]: errorInfo.back_servers,
               })}
+              {...formFields["back_servers"]}
             />
             <span className={classNames(styles["label"])}>Предыдущие сервера</span>
             <ErrorRender name="back_servers" />
@@ -193,10 +223,10 @@ const AuthComponent = () => {
             <input
               type="checkbox"
               id="box-1"
-              className={errorInfo.checkbox ? classNames(styles["checkboxErrors"]) : ""}
-              {...register("checkbox", {
-                required: { value: true, message: "Обязательное подтверждение" },
+              className={classNames({
+                [styles["inputErrors"]]: errorInfo.checkbox,
               })}
+              {...formFields["checkbox"]}
             />
             <label htmlFor="box-1">Да, я прочитал правила и обязуюсь им следовать.</label>
           </div>
@@ -210,7 +240,7 @@ const AuthComponent = () => {
             type="submit"
             label="Отправить"
             view="submit"
-            onClick={handleSubmit((d) => registration(d))}
+            onClick={handleSubmit(registration)}
           />
         </form>
       </div>
