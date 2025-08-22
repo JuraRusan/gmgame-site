@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import CN from "classnames";
 import React, { useMemo } from "react";
 import { useForm } from "react-hook-form";
 import { ErrorMessage } from "@hookform/error-message";
@@ -25,7 +25,7 @@ const AuthComponent = () => {
       <ErrorMessage
         errors={errors}
         name={name.name}
-        render={({ message }) => <span className={classNames(styles["error"])}>{message}</span>}
+        render={({ message }) => <span className={styles["error"]}>{message}</span>}
       />
     );
   }
@@ -105,43 +105,43 @@ const AuthComponent = () => {
   }, [register]);
 
   return (
-    <div className={classNames(styles["auth-block"])}>
-      <div className={classNames(styles["container"])}>
-        <h4 className={classNames(styles["title-register"])}>Создание заявки на GMGame</h4>
+    <div className={styles["auth-block"]}>
+      <div className={styles["container"]}>
+        <h4 className={styles["title-register"]}>Создание заявки на GMGame</h4>
         <form onSubmit={handleSubmit(onSubmit)}>
-          <label htmlFor="usernameFor" className={classNames(styles["line"])}>
+          <label htmlFor="usernameFor" className={styles["line"]}>
             <input
               type="text"
               id="usernameFor"
               placeholder="&nbsp;"
               autoComplete="off"
-              className={classNames({
+              className={CN({
                 [styles["inputErrors"]]: errorInfo.username,
               })}
               {...formFields["username"]}
             />
-            <span className={classNames(styles["label"])}>Игровой ник</span>
+            <span className={styles["label"]}>Игровой ник</span>
             <ErrorRender name="username" />
           </label>
-          <label htmlFor="passwordFor" className={classNames(styles["line"])}>
+          <label htmlFor="passwordFor" className={styles["line"]}>
             <input
               type="password"
               id="passwordFor"
               placeholder="&nbsp;"
               autoComplete="off"
-              className={classNames({
+              className={CN({
                 [styles["inputErrors"]]: errorInfo.password,
               })}
               {...formFields["password"]}
             />
-            <span className={classNames(styles["label"])}>Пароль для входа на сервер</span>
+            <span className={styles["label"]}>Пароль для входа на сервер</span>
             <ErrorRender name="password" />
           </label>
-          <label htmlFor="type_accountFor" className={classNames(styles["line"])}>
+          <label htmlFor="type_accountFor" className={styles["line"]}>
             <select
               id="type_accountFor"
               placeholder="&nbsp;"
-              className={classNames({
+              className={CN({
                 [styles["inputErrors"]]: errorInfo.type_account,
               })}
               {...formFields["type_account"]}
@@ -150,24 +150,24 @@ const AuthComponent = () => {
               <option value="1">Лицензия</option>
               <option value="0">Пиратка</option>
             </select>
-            <span className={classNames(styles["label"])}>Тип аккаунта</span>
+            <span className={styles["label"]}>Тип аккаунта</span>
             <ErrorRender name="type_account" />
           </label>
-          <label htmlFor="ageFor" className={classNames(styles["line"])}>
+          <label htmlFor="ageFor" className={styles["line"]}>
             <input
               type="text"
               id="ageFor"
               placeholder="&nbsp;"
               autoComplete="off"
-              className={classNames({
+              className={CN({
                 [styles["inputErrors"]]: errorInfo.age,
               })}
               {...formFields["age"]}
             />
-            <span className={classNames(styles["label"])}>Возраст</span>
+            <span className={styles["label"]}>Возраст</span>
             <ErrorRender name="age" />
           </label>
-          <label htmlFor="friend_nameFor" className={classNames(styles["line"])}>
+          <label htmlFor="friend_nameFor" className={styles["line"]}>
             <input
               type="text"
               id="friend_nameFor"
@@ -175,55 +175,55 @@ const AuthComponent = () => {
               autoComplete="off"
               {...formFields["friend_name"]}
             />
-            <span className={classNames(styles["label"])}>Ник друга, если играете с кем-то</span>
+            <span className={styles["label"]}>Ник друга, если играете с кем-то</span>
           </label>
-          <label htmlFor="aboutFor" className={classNames(styles["line"])}>
+          <label htmlFor="aboutFor" className={styles["line"]}>
             <input
               type="text"
               id="aboutFor"
               placeholder="&nbsp;"
               autoComplete="off"
-              className={classNames({
+              className={CN({
                 [styles["inputErrors"]]: errorInfo.about,
               })}
               {...formFields["about"]}
             />
-            <span className={classNames(styles["label"])}>Откуда узнали о проекте</span>
+            <span className={styles["label"]}>Откуда узнали о проекте</span>
             <ErrorRender name="about" />
           </label>
-          <label htmlFor="interestsFor" className={classNames(styles["line"])}>
+          <label htmlFor="interestsFor" className={styles["line"]}>
             <input
               type="text"
               id="interestsFor"
               placeholder="&nbsp;"
               autoComplete="off"
-              className={classNames({
+              className={CN({
                 [styles["inputErrors"]]: errorInfo.interests,
               })}
               {...formFields["interests"]}
             />
-            <span className={classNames(styles["label"])}>Интересы в майнкрафте</span>
+            <span className={styles["label"]}>Интересы в майнкрафте</span>
             <ErrorRender name="interests" />
           </label>
-          <label htmlFor="back_serversFor" className={classNames(styles["line"])}>
+          <label htmlFor="back_serversFor" className={styles["line"]}>
             <input
               type="text"
               id="back_serversFor"
               placeholder="&nbsp;"
               autoComplete="off"
-              className={classNames({
+              className={CN({
                 [styles["inputErrors"]]: errorInfo.back_servers,
               })}
               {...formFields["back_servers"]}
             />
-            <span className={classNames(styles["label"])}>Предыдущие сервера</span>
+            <span className={styles["label"]}>Предыдущие сервера</span>
             <ErrorRender name="back_servers" />
           </label>
-          <div className={classNames(styles["check-block"])}>
+          <div className={styles["check-block"]}>
             <input
               type="checkbox"
               id="box-1"
-              className={classNames({
+              className={CN({
                 [styles["inputErrors"]]: errorInfo.checkbox,
               })}
               {...formFields["checkbox"]}
@@ -231,10 +231,10 @@ const AuthComponent = () => {
             <label htmlFor="box-1">Да, я прочитал правила и обязуюсь им следовать.</label>
           </div>
         </form>
-        <div className={classNames(styles["wrapper-warn"])}>
+        <div className={styles["wrapper-warn"]}>
           <Notifications inf="Относитесь ответственно к заполнению заявки" type="warn" />
         </div>
-        <form className={classNames(styles["action_block"])}>
+        <form className={styles["action_block"]}>
           <Button
             id="submitButton"
             type="submit"
