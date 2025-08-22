@@ -6,8 +6,16 @@ import { sendRequest } from "../../../DataProvider";
 import { useAlert } from "@blaumaus/react-alert";
 import Notifications from "../notifications/Notifications";
 import Button from "../button/Button";
+import FormTitle from "../form-title/FormTitle";
+import Input from "../input/Input";
+import Select from "../select/Select";
 
 import styles from "./Auth-comp.module.scss";
+
+const AKK_VALUE = [
+  { value: "1", name: "Лицензия" },
+  { value: "0", name: "Пиратка" },
+];
 
 const AuthComponent = () => {
   const alert = useAlert();
@@ -15,6 +23,7 @@ const AuthComponent = () => {
   const {
     register,
     handleSubmit,
+    watch,
     formState: { errors, isValid },
   } = useForm({ mode: "onChange" });
 
@@ -74,6 +83,7 @@ const AuthComponent = () => {
       password: register("password", {
         required: { value: true, message: "Обязательное поле" },
         minLength: { value: 8, message: "Пароль должен быть от 8 символов" },
+        maxLength: { value: 32, message: "Слишком длинный пароль" },
       }),
       type_account: register("type_account", {
         required: { value: true, message: "Обязательное поле" },
@@ -109,50 +119,65 @@ const AuthComponent = () => {
       <div className={styles["container"]}>
         <h4 className={styles["title-register"]}>Создание заявки на GMGame</h4>
         <form onSubmit={handleSubmit(onSubmit)}>
-          <label htmlFor="usernameFor" className={styles["line"]}>
-            <input
-              type="text"
-              id="usernameFor"
-              placeholder="&nbsp;"
-              autoComplete="off"
-              className={CN({
-                [styles["inputErrors"]]: errorInfo.username,
-              })}
-              {...formFields["username"]}
-            />
-            <span className={styles["label"]}>Игровой ник</span>
-            <ErrorRender name="username" />
-          </label>
-          <label htmlFor="passwordFor" className={styles["line"]}>
-            <input
-              type="password"
-              id="passwordFor"
-              placeholder="&nbsp;"
-              autoComplete="off"
-              className={CN({
-                [styles["inputErrors"]]: errorInfo.password,
-              })}
-              {...formFields["password"]}
-            />
-            <span className={styles["label"]}>Пароль для входа на сервер</span>
-            <ErrorRender name="password" />
-          </label>
-          <label htmlFor="type_accountFor" className={styles["line"]}>
-            <select
-              id="type_accountFor"
-              placeholder="&nbsp;"
-              className={CN({
-                [styles["inputErrors"]]: errorInfo.type_account,
-              })}
-              {...formFields["type_account"]}
-            >
-              <option value=" "></option>
-              <option value="1">Лицензия</option>
-              <option value="0">Пиратка</option>
-            </select>
-            <span className={styles["label"]}>Тип аккаунта</span>
-            <ErrorRender name="type_account" />
-          </label>
+          {/* ------------------------------------------------------------------------------------ */}
+          <FormTitle title="Игровой ник:" min={3} max={16} length={watch("username")?.length || 0} />
+          <Input type="text" autoComplete="off" placeholder="&nbsp;" {...formFields["username"]} />
+          <ErrorRender name="username" />
+          {/* ------------------------------------------------------------------------------------ */}
+          {/*<label htmlFor="usernameFor" className={styles["line"]}>*/}
+          {/*  <input*/}
+          {/*    type="text"*/}
+          {/*    id="usernameFor"*/}
+          {/*    placeholder="&nbsp;"*/}
+          {/*    autoComplete="off"*/}
+          {/*    className={CN({*/}
+          {/*      [styles["inputErrors"]]: errorInfo.username,*/}
+          {/*    })}*/}
+          {/*    {...formFields["username"]}*/}
+          {/*  />*/}
+          {/*  <span className={styles["label"]}>Игровой ник</span>*/}
+          {/*  <ErrorRender name="username" />*/}
+          {/*</label>*/}
+          {/* ------------------------------------------------------------------------------------ */}
+          <FormTitle title="Пароль для входа на сервер:" min={8} max={32} length={watch("password")?.length || 0} />
+          <Input type="password" autoComplete="off" placeholder="&nbsp;" {...formFields["password"]} />
+          <ErrorRender name="password" />
+          {/* ------------------------------------------------------------------------------------ */}
+          {/*<label htmlFor="passwordFor" className={styles["line"]}>*/}
+          {/*  <input*/}
+          {/*    type="password"*/}
+          {/*    id="passwordFor"*/}
+          {/*    placeholder="&nbsp;"*/}
+          {/*    autoComplete="off"*/}
+          {/*    className={CN({*/}
+          {/*      [styles["inputErrors"]]: errorInfo.password,*/}
+          {/*    })}*/}
+          {/*    {...formFields["password"]}*/}
+          {/*  />*/}
+          {/*  <span className={styles["label"]}>Пароль для входа на сервер</span>*/}
+          {/*  <ErrorRender name="password" />*/}
+          {/*</label>*/}
+          {/* ------------------------------------------------------------------------------------ */}
+          {/*<FormTitle title="Тип аккаунта:" count={false} />*/}
+          {/*<Select list={AKK_VALUE} {...formFields["type_account"]} />*/}
+          {/*<ErrorRender name="type_account" />*/}
+          {/* ------------------------------------------------------------------------------------ */}
+          {/*<label htmlFor="type_accountFor" className={styles["line"]}>*/}
+          {/*  <select*/}
+          {/*    id="type_accountFor"*/}
+          {/*    placeholder="&nbsp;"*/}
+          {/*    className={CN({*/}
+          {/*      [styles["inputErrors"]]: errorInfo.type_account,*/}
+          {/*    })}*/}
+          {/*    {...formFields["type_account"]}*/}
+          {/*  >*/}
+          {/*    <option value=" "></option>*/}
+          {/*    <option value="1">Лицензия</option>*/}
+          {/*    <option value="0">Пиратка</option>*/}
+          {/*  </select>*/}
+          {/*  <span className={styles["label"]}>Тип аккаунта</span>*/}
+          {/*  <ErrorRender name="type_account" />*/}
+          {/*</label>*/}
           <label htmlFor="ageFor" className={styles["line"]}>
             <input
               type="text"

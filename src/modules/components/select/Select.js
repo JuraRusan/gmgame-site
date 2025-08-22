@@ -1,19 +1,19 @@
-import classNames from "classnames";
-import React from "react";
+import CN from "classnames";
+import React, { forwardRef } from "react";
 
 import styles from "./Select.module.scss";
 
-const Select = ({ list, ...props }) => {
+const Select = forwardRef(({ list, className, ...props }, ref) => {
   return (
-    <select className={classNames(styles["select"])} {...props}>
-      <option className={classNames(styles["options"])} value="" disabled={true} />
+    <select ref={ref ?? null} className={CN(styles["select"], className)} {...props}>
+      <option className={CN(styles["options"], styles["no_use"])} value="" selected="selected" disabled />
       {list.map((el, index) => (
-        <option className={classNames(styles["options"])} value={el.value} key={index}>
+        <option className={styles["options"]} value={el.value} key={index}>
           {el.name}
         </option>
       ))}
     </select>
   );
-};
+});
 
 export default Select;

@@ -27,6 +27,10 @@
     font-family: $fontCustom2;
     font-size: 12px;
   }
+
+  .no_use {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1600px) {
