@@ -158,9 +158,9 @@ const AuthComponent = () => {
           {/*  <ErrorRender name="password" />*/}
           {/*</label>*/}
           {/* ------------------------------------------------------------------------------------ */}
-          {/*<FormTitle title="Тип аккаунта:" count={false} />*/}
-          {/*<Select list={AKK_VALUE} {...formFields["type_account"]} />*/}
-          {/*<ErrorRender name="type_account" />*/}
+          <FormTitle title="Тип аккаунта:" count={false} />
+          <Select list={AKK_VALUE} {...formFields["type_account"]} />
+          <ErrorRender name="type_account" />
           {/* ------------------------------------------------------------------------------------ */}
           {/*<label htmlFor="type_accountFor" className={styles["line"]}>*/}
           {/*  <select*/}
