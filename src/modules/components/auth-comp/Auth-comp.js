@@ -1,4 +1,3 @@
-import CN from "classnames";
 import React, { useMemo } from "react";
 import { useForm } from "react-hook-form";
 import { ErrorMessage } from "@hookform/error-message";
@@ -9,9 +8,11 @@ import Button from "../button/Button";
 import FormTitle from "../form-title/FormTitle";
 import Input from "../input/Input";
 import Select from "../select/Select";
+import Textarea from "../textarea/Textarea";
+import Checkbox from "../checkbox/Checkbox";
 
 import styles from "./Auth-comp.module.scss";
-import Textarea from "../textarea/Textarea";
+import Title from "../title/Title";
 
 const AKK_VALUE = [
   { value: "1", name: "Лицензия" },
@@ -58,17 +59,6 @@ const AuthComponent = () => {
         alert.error(response.body?.error || response.error);
       }
     });
-  };
-
-  const errorInfo = {
-    username: errors.username,
-    password: errors.password,
-    type_account: errors.type_account,
-    age: errors.age,
-    about: errors.about,
-    interests: errors.interests,
-    back_servers: errors.back_servers,
-    checkbox: errors.checkbox,
   };
 
   const formFields = useMemo(() => {
@@ -118,8 +108,8 @@ const AuthComponent = () => {
 
   return (
     <div className={styles["auth-block"]}>
+      <Title>Создание заявки на GMGame</Title>
       <div className={styles["container"]}>
-        <h4 className={styles["title-register"]}>Создание заявки на GMGame</h4>
         <form onSubmit={handleSubmit(onSubmit)}>
           {/* --- */}
           <FormTitle title="Игровой ник:" min={3} max={16} length={watch("username")?.length || 0} />
@@ -154,17 +144,7 @@ const AuthComponent = () => {
           <Textarea {...formFields["back_servers"]} style={{ maxHeight: "250px" }} />
           <ErrorRender name="back_servers" />
           {/* --- */}
-          <div className={styles["check-block"]}>
-            <input
-              type="checkbox"
-              id="box-1"
-              className={CN({
-                [styles["inputErrors"]]: errorInfo.checkbox,
-              })}
-              {...formFields["checkbox"]}
-            />
-            <label htmlFor="box-1">Да, я прочитал правила и обязуюсь им следовать.</label>
-          </div>
+          <Checkbox message="Да, я прочитал правила и обязуюсь им следовать" {...formFields["checkbox"]} />
         </form>
         <div className={styles["wrapper-warn"]}>
           <Notifications inf="Относитесь ответственно к заполнению заявки" type="warn" />
