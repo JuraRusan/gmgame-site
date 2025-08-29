@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { ErrorMessage } from "@hookform/error-message";
 import { sendRequest } from "../../../DataProvider";
 import { useAlert } from "@blaumaus/react-alert";
+import Title from "../title/Title";
 import Notifications from "../notifications/Notifications";
 import Button from "../button/Button";
 import FormTitle from "../form-title/FormTitle";
@@ -12,7 +13,6 @@ import Textarea from "../textarea/Textarea";
 import Checkbox from "../checkbox/Checkbox";
 
 import styles from "./Auth-comp.module.scss";
-import Title from "../title/Title";
 
 const AKK_VALUE = [
   { value: "1", name: "Лицензия" },
