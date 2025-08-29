@@ -91,9 +91,10 @@ const AuthComponent = () => {
       }),
       age: register("age", {
         required: { value: true, message: "Обязательное поле" },
-        pattern: { value: /^[0-9]+$/, message: "Только цифры" },
       }),
-      friend_name: register("friend_name"),
+      friend_name: register("friend_name", {
+        maxLength: { value: 255, message: "Слишком длинный текст" },
+      }),
       about: register("about", {
         required: { value: true, message: "Обязательное поле" },
         minLength: { value: 24, message: "Слишком короткий текст" },
@@ -120,155 +121,39 @@ const AuthComponent = () => {
       <div className={styles["container"]}>
         <h4 className={styles["title-register"]}>Создание заявки на GMGame</h4>
         <form onSubmit={handleSubmit(onSubmit)}>
-          {/* ------------------------------------------------------------------------------------ */}
+          {/* --- */}
           <FormTitle title="Игровой ник:" min={3} max={16} length={watch("username")?.length || 0} />
           <Input type="text" autoComplete="off" placeholder="&nbsp;" {...formFields["username"]} />
           <ErrorRender name="username" />
-          {/* ------------------------------------------------------------------------------------ */}
-          {/*<label htmlFor="usernameFor" className={styles["line"]}>*/}
-          {/*  <input*/}
-          {/*    type="text"*/}
-          {/*    id="usernameFor"*/}
-          {/*    placeholder="&nbsp;"*/}
-          {/*    autoComplete="off"*/}
-          {/*    className={CN({*/}
-          {/*      [styles["inputErrors"]]: errorInfo.username,*/}
-          {/*    })}*/}
-          {/*    {...formFields["username"]}*/}
-          {/*  />*/}
-          {/*  <span className={styles["label"]}>Игровой ник</span>*/}
-          {/*  <ErrorRender name="username" />*/}
-          {/*</label>*/}
-          {/* ------------------------------------------------------------------------------------ */}
+          {/* --- */}
           <FormTitle title="Пароль для входа на сервер:" min={8} max={32} length={watch("password")?.length || 0} />
           <Input type="password" autoComplete="off" placeholder="&nbsp;" {...formFields["password"]} />
           <ErrorRender name="password" />
-          {/* ------------------------------------------------------------------------------------ */}
-          {/*<label htmlFor="passwordFor" className={styles["line"]}>*/}
-          {/*  <input*/}
-          {/*    type="password"*/}
-          {/*    id="passwordFor"*/}
-          {/*    placeholder="&nbsp;"*/}
-          {/*    autoComplete="off"*/}
-          {/*    className={CN({*/}
-          {/*      [styles["inputErrors"]]: errorInfo.password,*/}
-          {/*    })}*/}
-          {/*    {...formFields["password"]}*/}
-          {/*  />*/}
-          {/*  <span className={styles["label"]}>Пароль для входа на сервер</span>*/}
-          {/*  <ErrorRender name="password" />*/}
-          {/*</label>*/}
-          {/* ------------------------------------------------------------------------------------ */}
+          {/* --- */}
           <FormTitle title="Тип аккаунта:" count={false} />
           <Select list={AKK_VALUE} {...formFields["type_account"]} />
           <ErrorRender name="type_account" />
-          {/* ------------------------------------------------------------------------------------ */}
-          {/*<label htmlFor="type_accountFor" className={styles["line"]}>*/}
-          {/*  <select*/}
-          {/*    id="type_accountFor"*/}
-          {/*    placeholder="&nbsp;"*/}
-          {/*    className={CN({*/}
-          {/*      [styles["inputErrors"]]: errorInfo.type_account,*/}
-          {/*    })}*/}
-          {/*    {...formFields["type_account"]}*/}
-          {/*  >*/}
-          {/*    <option value=" "></option>*/}
-          {/*    <option value="1">Лицензия</option>*/}
-          {/*    <option value="0">Пиратка</option>*/}
-          {/*  </select>*/}
-          {/*  <span className={styles["label"]}>Тип аккаунта</span>*/}
-          {/*  <ErrorRender name="type_account" />*/}
-          {/*</label>*/}
-          {/* ------------------------------------------------------------------------------------ */}
+          {/* --- */}
           <FormTitle title="Возраст:" count={false} />
           <Input type="number" {...formFields["age"]} />
           <ErrorRender name="age" />
-          {/* ------------------------------------------------------------------------------------ */}
-          {/*<label htmlFor="ageFor" className={styles["line"]}>*/}
-          {/*  <input*/}
-          {/*    type="text"*/}
-          {/*    id="ageFor"*/}
-          {/*    placeholder="&nbsp;"*/}
-          {/*    autoComplete="off"*/}
-          {/*    className={CN({*/}
-          {/*      [styles["inputErrors"]]: errorInfo.age,*/}
-          {/*    })}*/}
-          {/*    {...formFields["age"]}*/}
-          {/*  />*/}
-          {/*  <span className={styles["label"]}>Возраст</span>*/}
-          {/*  <ErrorRender name="age" />*/}
-          {/*</label>*/}
-          {/* ------------------------------------------------------------------------------------ */}
-          <FormTitle title="Ник друга, если играете с кем-то:" count={false} required={false} />
+          {/* --- */}
+          {/* prettier-ignore */}
+          <FormTitle title="Ник друга, если играете с кем-то:" required={false} min={0} max={255} length={watch("friend_name")?.length || 0}/>
           <Input type="text" autoComplete="off" placeholder="&nbsp;" {...formFields["friend_name"]} />
-          {/* ------------------------------------------------------------------------------------ */}
-          {/*<label htmlFor="friend_nameFor" className={styles["line"]}>*/}
-          {/*  <input*/}
-          {/*    type="text"*/}
-          {/*    id="friend_nameFor"*/}
-          {/*    placeholder="&nbsp;"*/}
-          {/*    autoComplete="off"*/}
-          {/*    {...formFields["friend_name"]}*/}
-          {/*  />*/}
-          {/*  <span className={styles["label"]}>Ник друга, если играете с кем-то</span>*/}
-          {/*</label>*/}
-          {/* ------------------------------------------------------------------------------------ */}
+          {/* --- */}
           <FormTitle title="Откуда узнали о проекте:" min={24} max={255} length={watch("about")?.length || 0} />
           <Textarea {...formFields["about"]} />
           <ErrorRender name="about" />
-          {/* ------------------------------------------------------------------------------------ */}
-          {/*<label htmlFor="aboutFor" className={styles["line"]}>*/}
-          {/*  <input*/}
-          {/*    type="text"*/}
-          {/*    id="aboutFor"*/}
-          {/*    placeholder="&nbsp;"*/}
-          {/*    autoComplete="off"*/}
-          {/*    className={CN({*/}
-          {/*      [styles["inputErrors"]]: errorInfo.about,*/}
-          {/*    })}*/}
-          {/*    {...formFields["about"]}*/}
-          {/*  />*/}
-          {/*  <span className={styles["label"]}>Откуда узнали о проекте</span>*/}
-          {/*  <ErrorRender name="about" />*/}
-          {/*</label>*/}
-          {/* ------------------------------------------------------------------------------------ */}
+          {/* --- */}
           <FormTitle title="Интересы в майнкрафте:" min={32} max={1000} length={watch("interests")?.length || 0} />
           <Textarea {...formFields["interests"]} />
           <ErrorRender name="interests" />
-          {/* ------------------------------------------------------------------------------------ */}
-          {/*<label htmlFor="interestsFor" className={styles["line"]}>*/}
-          {/*  <input*/}
-          {/*    type="text"*/}
-          {/*    id="interestsFor"*/}
-          {/*    placeholder="&nbsp;"*/}
-          {/*    autoComplete="off"*/}
-          {/*    className={CN({*/}
-          {/*      [styles["inputErrors"]]: errorInfo.interests,*/}
-          {/*    })}*/}
-          {/*    {...formFields["interests"]}*/}
-          {/*  />*/}
-          {/*  <span className={styles["label"]}>Интересы в майнкрафте</span>*/}
-          {/*  <ErrorRender name="interests" />*/}
-          {/*</label>*/}
-          {/* ------------------------------------------------------------------------------------ */}
+          {/* --- */}
           <FormTitle title="Предыдущие сервера:" min={12} max={255} length={watch("back_servers")?.length || 0} />
-          <Textarea {...formFields["back_servers"]} />
+          <Textarea {...formFields["back_servers"]} style={{ maxHeight: "250px" }} />
           <ErrorRender name="back_servers" />
-          {/* ------------------------------------------------------------------------------------ */}
-          {/*<label htmlFor="back_serversFor" className={styles["line"]}>*/}
-          {/*  <input*/}
-          {/*    type="text"*/}
-          {/*    id="back_serversFor"*/}
-          {/*    placeholder="&nbsp;"*/}
-          {/*    autoComplete="off"*/}
-          {/*    className={CN({*/}
-          {/*      [styles["inputErrors"]]: errorInfo.back_servers,*/}
-          {/*    })}*/}
-          {/*    {...formFields["back_servers"]}*/}
-          {/*  />*/}
-          {/*  <span className={styles["label"]}>Предыдущие сервера</span>*/}
-          {/*  <ErrorRender name="back_servers" />*/}
-          {/*</label>*/}
+          {/* --- */}
           <div className={styles["check-block"]}>
             <input
               type="checkbox"
