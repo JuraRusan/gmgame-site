@@ -107,7 +107,7 @@ const AuthComponent = () => {
   }, [register]);
 
   return (
-    <div className={styles["auth-block"]}>
+    <div className={styles["application_block"]}>
       <Title>Создание заявки на GMGame</Title>
       <div className={styles["container"]}>
         <form onSubmit={handleSubmit(onSubmit)}>
@@ -144,9 +144,10 @@ const AuthComponent = () => {
           <Textarea rows="3" max_height="large" {...formFields["back_servers"]} />
           <ErrorRender name="back_servers" />
           {/* --- */}
-          <Checkbox message="Да, я прочитал правила и обязуюсь им следовать" {...formFields["checkbox"]} />
+          {/* prettier-ignore */}
+          <Checkbox className={styles["check"]} message="Да, я прочитал правила и обязуюсь им следовать" {...formFields["checkbox"]} />
         </form>
-        <div className={styles["wrapper-warn"]}>
+        <div className={styles["wrapper_warn"]}>
           <Notifications inf="Относитесь ответственно к заполнению заявки" type="warn" />
         </div>
         <form className={styles["action_block"]}>
