@@ -133,15 +133,15 @@ const AuthComponent = () => {
           <Input type="text" autoComplete="off" placeholder="&nbsp;" {...formFields["friend_name"]} />
           {/* --- */}
           <FormTitle title="Откуда узнали о проекте:" min={24} max={255} length={watch("about")?.length || 0} />
-          <Textarea {...formFields["about"]} />
+          <Textarea rows="3" {...formFields["about"]} max_height="large" />
           <ErrorRender name="about" />
           {/* --- */}
           <FormTitle title="Интересы в майнкрафте:" min={32} max={1000} length={watch("interests")?.length || 0} />
-          <Textarea {...formFields["interests"]} />
+          <Textarea rows="3" {...formFields["interests"]} max_height="large" />
           <ErrorRender name="interests" />
           {/* --- */}
           <FormTitle title="Предыдущие сервера:" min={12} max={255} length={watch("back_servers")?.length || 0} />
-          <Textarea {...formFields["back_servers"]} style={{ maxHeight: "250px" }} />
+          <Textarea {...formFields["back_servers"]} rows="3" max_height="large" />
           <ErrorRender name="back_servers" />
           {/* --- */}
           <Checkbox message="Да, я прочитал правила и обязуюсь им следовать" {...formFields["checkbox"]} />
@@ -151,7 +151,6 @@ const AuthComponent = () => {
         </div>
         <form className={styles["action_block"]}>
           <Button
-            id="submitButton"
             type="submit"
             label="Отправить"
             view="submit"

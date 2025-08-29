@@ -41,6 +41,18 @@
   }
 }
 
+.height_small {
+  max-height: 64px;
+}
+
+.height_medium {
+  max-height: 128px;
+}
+
+.height_large {
+  max-height: 256px;
+}
+
 @media screen and (max-width: 1600px) {
 }
 
