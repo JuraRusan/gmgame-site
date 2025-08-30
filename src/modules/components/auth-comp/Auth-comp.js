@@ -81,6 +81,8 @@ const AuthComponent = () => {
       }),
       age: register("age", {
         required: { value: true, message: "Обязательное поле" },
+        min: { value: 1, message: "Минимум 1" },
+        max: { value: 99, message: "Максимум 99" },
       }),
       friend_name: register("friend_name", {
         maxLength: { value: 255, message: "Слишком длинный текст" },
