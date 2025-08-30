@@ -10,16 +10,13 @@
   margin: 0 auto 96px auto;
 
   .container {
-    width: auto;
-    height: 100%;
-    max-height: none;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 
     .main_form {
       display: flex;
       flex-direction: column;
-      height: auto;
       width: 60%;
 
       form {
@@ -27,7 +24,7 @@
         flex-direction: column;
         justify-content: flex-start;
         border-radius: 12px;
-        border: 1px solid $site-color-5;
+        border: 2px solid $site-color-5;
         background: $site-color-4;
         padding: 12px;
         margin: 0 12px;
@@ -48,23 +45,20 @@
           margin: 8px auto 0 auto;
         }
       }
-
-      .wrapper_warn {
-        margin: 8px auto;
-      }
     }
 
     .check_form {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      min-width: 40%;
       max-width: 40%;
 
       .card_wrapper {
         display: flex;
         flex-direction: column;
         border-radius: 12px;
-        border: 1px solid $site-color-5;
+        border: 2px solid $site-color-5;
         background: $site-color-4;
         padding: 12px;
 
@@ -109,13 +103,17 @@
         }
       }
 
+      .wrapper_warn {
+        margin: 8px auto;
+      }
+
       .action_block {
         display: flex;
         flex-direction: row;
         justify-content: center;
         width: 100%;
         height: auto;
-        margin: 16px auto 0 auto;
+        margin: 0 auto;
       }
     }
   }

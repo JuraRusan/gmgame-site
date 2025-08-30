@@ -13,6 +13,7 @@ import Textarea from "../textarea/Textarea";
 import Checkbox from "../checkbox/Checkbox";
 import ReactSkinview3d from "react-skinview3d";
 import * as skinview3d from "skinview3d";
+import { motion, AnimatePresence } from "framer-motion";
 
 import styles from "./Auth-comp.module.scss";
 
@@ -53,6 +54,8 @@ const AuthComponent = () => {
     formState: { errors, isValid },
   } = useForm({ mode: "onChange" });
 
+  const allValues = watch();
+
   const onSubmit = (data) => console.log(data);
 
   const registration = ({ username, password, type_account, age, about, interests, back_servers, friend_name }) => {
@@ -79,7 +82,7 @@ const AuthComponent = () => {
     const subscription = watch((data) => {
       let username = "steve";
 
-      if (data.username && data.username.length < 17) {
+      if (!errors.username && data.username) {
         username = data.username;
       }
 
@@ -88,7 +91,7 @@ const AuthComponent = () => {
     });
 
     return () => subscription.unsubscribe();
-  }, [watch, setOutputSkin, setOutputTypeAkk]);
+  }, [watch, setOutputSkin, setOutputTypeAkk, errors]);
 
   const formFields = useMemo(() => {
     return {
@@ -137,6 +140,10 @@ const AuthComponent = () => {
     };
   }, [register]);
 
+  const hasAnyValue = useMemo(() => {
+    return Object.values(allValues).some((val) => val && val.toString().trim() !== "");
+  }, [allValues]);
+
   return (
     <div className={styles["application_block"]}>
       <Title>Создание заявки на GMGame</Title>
@@ -179,46 +186,56 @@ const AuthComponent = () => {
             {/* prettier-ignore */}
             <Checkbox className={styles["check"]} message="Да, я прочитал правила и обязуюсь им следовать" {...formFields["checkbox"]} />
           </form>
-          <div className={styles["wrapper_warn"]}>
-            <Notifications inf="Относитесь ответственно к заполнению заявки" type="warn" />
-          </div>
         </div>
-        <div className={styles["check_form"]}>
-          <div className={styles["card_wrapper"]}>
-            <div className={styles["main_watch"]}>
-              <ReactSkinview3d
-                skinUrl={outputSkin}
-                height={300}
-                width={150}
-                onReady={({ viewer }) => {
-                  viewer.animation = new skinview3d.IdleAnimation();
-                  viewer.animation.speed = 1;
-                }}
-                options={{ zoom: 0.9 }}
-              />
-              <div className={styles["main_info"]}>
-                <WatchText text="Мой ник в игре:" watch={watch("username")} />
-                <WatchText text="Мой возраст:" watch={watch("age")} />
-                <WatchText text="Тип аккаунта:" watch={outputTypeAkk} />
-                <WatchText text="Ник друга с которым я играю:" watch={watch("friend_name")} />
+        <AnimatePresence>
+          {!hasAnyValue ? null : (
+            <motion.div
+              className={styles["check_form"]}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
+            >
+              <div className={styles["card_wrapper"]}>
+                <div className={styles["main_watch"]}>
+                  <ReactSkinview3d
+                    skinUrl={outputSkin || undefined}
+                    height={300}
+                    width={150}
+                    onReady={({ viewer }) => {
+                      viewer.animation = new skinview3d.IdleAnimation();
+                      viewer.animation.speed = 1;
+                    }}
+                    options={{ zoom: 0.9 }}
+                  />
+                  <div className={styles["main_info"]}>
+                    <WatchText text="Мой ник в игре:" watch={watch("username")} />
+                    <WatchText text="Мой возраст:" watch={watch("age")} />
+                    <WatchText text="Тип аккаунта:" watch={outputTypeAkk} />
+                    <WatchText text="Ник друга с которым я играю:" watch={watch("friend_name")} />
+                  </div>
+                </div>
+                <div className={styles["additional_watch"]}>
+                  <WatchText text="Я узнал о проекте:" watch={watch("about")} />
+                  <WatchText text="Интересы в майнкрафте:" watch={watch("interests")} />
+                  <WatchText text="Предыдущие сервера:" watch={watch("back_servers")} />
+                </div>
               </div>
-            </div>
-            <div className={styles["additional_watch"]}>
-              <WatchText text="Я узнал о проекте:" watch={watch("about")} />
-              <WatchText text="Интересы в майнкрафте:" watch={watch("interests")} />
-              <WatchText text="Предыдущие сервера:" watch={watch("back_servers")} />
-            </div>
-          </div>
-          <div className={styles["action_block"]}>
-            <Button
-              type="submit"
-              label="Отправить"
-              view="submit"
-              disabled={!isValid}
-              onClick={handleSubmit(registration)}
-            />
-          </div>
-        </div>
+              <div className={styles["wrapper_warn"]}>
+                <Notifications inf="Относитесь ответственно к заполнению заявки" type="warn" />
+              </div>
+              <div className={styles["action_block"]}>
+                <Button
+                  type="submit"
+                  label="Отправить"
+                  view="submit"
+                  disabled={!isValid}
+                  onClick={handleSubmit(registration)}
+                />
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </div>
   );
