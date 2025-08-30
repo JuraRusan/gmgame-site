@@ -9,50 +9,114 @@
   height: auto;
   margin: 0 auto 96px auto;
 
-  .error {
-    width: 100%;
-    font-size: 12px;
-    font-weight: 400;
-    font-family: $fontCustom2;
-    height: 22px;
-    line-height: 22px;
-    text-align: center;
-    color: $site-color-11;
-    transition: all 0.35s ease;
-  }
-
   .container {
     width: auto;
     height: 100%;
     max-height: none;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    border-radius: 16px;
-    border: 1px solid $site-color-5;
-    background: $site-color-4;
-    padding: 12px;
-    margin: 0 12px;
+    flex-direction: row;
 
-    form {
+    .main_form {
       display: flex;
       flex-direction: column;
+      height: auto;
+      width: 60%;
 
-      .check {
-        margin: 8px auto 0 auto;
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 12px;
+        border: 1px solid $site-color-5;
+        background: $site-color-4;
+        padding: 12px;
+        margin: 0 12px;
+
+        .error {
+          width: 100%;
+          font-size: 12px;
+          font-weight: 400;
+          font-family: $fontCustom2;
+          height: 22px;
+          line-height: 22px;
+          text-align: center;
+          color: $site-color-11;
+          transition: all 0.35s ease;
+        }
+
+        .check {
+          margin: 8px auto 0 auto;
+        }
+      }
+
+      .wrapper_warn {
+        margin: 8px auto;
       }
     }
 
-    .wrapper_warn {
-      margin: 8px auto;
-    }
-
-    .action_block {
+    .check_form {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: center;
-      width: 100%;
-      height: auto;
+      max-width: 40%;
+
+      .card_wrapper {
+        display: flex;
+        flex-direction: column;
+        border-radius: 12px;
+        border: 1px solid $site-color-5;
+        background: $site-color-4;
+        padding: 12px;
+
+        .main_watch {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          width: auto;
+          height: auto;
+
+          .main_info {
+            width: 100%;
+            height: auto;
+            min-height: 130px;
+          }
+        }
+
+        .additional_watch {
+          display: flex;
+          flex-direction: column;
+          width: auto;
+          height: auto;
+        }
+
+        .display_watch {
+          color: $site-color-2;
+          padding: 2px;
+          margin: 3px;
+          font-size: 14px;
+          font-weight: 400;
+          font-family: $fontCustom2;
+          line-height: 1.25;
+          width: auto;
+          height: auto;
+
+          .colored {
+            font-size: inherit;
+            font-weight: inherit;
+            font-family: inherit;
+            color: $site-color-8;
+          }
+        }
+      }
+
+      .action_block {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        margin: 16px auto 0 auto;
+      }
     }
   }
 }
