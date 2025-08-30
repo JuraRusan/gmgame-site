@@ -30,6 +30,16 @@ const WatchText = ({ text, watch }) => {
   );
 };
 
+const ErrorRender = ({ name, errors }) => {
+  return (
+    <ErrorMessage
+      errors={errors}
+      name={name.name}
+      render={({ message }) => <span className={styles["error"]}>{message}</span>}
+    />
+  );
+};
+
 const AuthComponent = () => {
   const alert = useAlert();
 
@@ -44,16 +54,6 @@ const AuthComponent = () => {
   } = useForm({ mode: "onChange" });
 
   const onSubmit = (data) => console.log(data);
-
-  function ErrorRender(name) {
-    return (
-      <ErrorMessage
-        errors={errors}
-        name={name.name}
-        render={({ message }) => <span className={styles["error"]}>{message}</span>}
-      />
-    );
-  }
 
   const registration = ({ username, password, type_account, age, about, interests, back_servers, friend_name }) => {
     sendRequest("/api/registration_user", "POST", {
@@ -146,19 +146,19 @@ const AuthComponent = () => {
             {/* --- */}
             <FormTitle title="Игровой ник:" min={3} max={16} length={watch("username")?.length || 0} />
             <Input type="text" autoComplete="off" placeholder="&nbsp;" {...formFields["username"]} />
-            <ErrorRender name="username" />
+            <ErrorRender errors={errors} name="username" />
             {/* --- */}
             <FormTitle title="Пароль для входа на сервер:" min={8} max={32} length={watch("password")?.length || 0} />
             <Input type="password" autoComplete="off" placeholder="&nbsp;" {...formFields["password"]} />
-            <ErrorRender name="password" />
+            <ErrorRender errors={errors} name="password" />
             {/* --- */}
             <FormTitle title="Тип аккаунта:" count={false} />
             <Select list={AKK_VALUE} {...formFields["type_account"]} />
-            <ErrorRender name="type_account" />
+            <ErrorRender errors={errors} name="type_account" />
             {/* --- */}
             <FormTitle title="Возраст:" count={false} />
             <Input type="number" {...formFields["age"]} />
-            <ErrorRender name="age" />
+            <ErrorRender errors={errors} name="age" />
             {/* --- */}
             {/* prettier-ignore */}
             <FormTitle title="Ник друга, если играете с кем-то:" required={false} min={0} max={255} length={watch("friend_name")?.length || 0}/>
@@ -166,15 +166,15 @@ const AuthComponent = () => {
             {/* --- */}
             <FormTitle title="Откуда узнали о проекте:" min={24} max={255} length={watch("about")?.length || 0} />
             <Textarea rows="3" max_height="large" {...formFields["about"]} />
-            <ErrorRender name="about" />
+            <ErrorRender errors={errors} name="about" />
             {/* --- */}
             <FormTitle title="Интересы в майнкрафте:" min={32} max={1000} length={watch("interests")?.length || 0} />
             <Textarea rows="3" max_height="large" {...formFields["interests"]} />
-            <ErrorRender name="interests" />
+            <ErrorRender errors={errors} name="interests" />
             {/* --- */}
             <FormTitle title="Предыдущие сервера:" min={12} max={255} length={watch("back_servers")?.length || 0} />
             <Textarea rows="3" max_height="large" {...formFields["back_servers"]} />
-            <ErrorRender name="back_servers" />
+            <ErrorRender errors={errors} name="back_servers" />
             {/* --- */}
             {/* prettier-ignore */}
             <Checkbox className={styles["check"]} message="Да, я прочитал правила и обязуюсь им следовать" {...formFields["checkbox"]} />
