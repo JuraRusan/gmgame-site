@@ -14,6 +14,7 @@ import Checkbox from "../checkbox/Checkbox";
 import ReactSkinview3d from "react-skinview3d";
 import * as skinview3d from "skinview3d";
 import { motion, AnimatePresence } from "framer-motion";
+import { debounce } from "lodash";
 
 import styles from "./Auth-comp.module.scss";
 
@@ -35,7 +36,7 @@ const ErrorRender = ({ name, errors }) => {
   return (
     <ErrorMessage
       errors={errors}
-      name={name.name}
+      name={name}
       render={({ message }) => <span className={styles["error"]}>{message}</span>}
     />
   );
@@ -78,20 +79,30 @@ const AuthComponent = () => {
     });
   };
 
+  const debouncedUpdate = useMemo(
+    () =>
+      debounce((data, errors) => {
+        let username = "steve";
+
+        if (!errors.username && data.username) {
+          username = data.username;
+        }
+
+        setOutputSkin("https://mineskin.eu/skin/" + username);
+        setOutputTypeAkk(data.type_account === "1" ? "лицензия" : "пиратка");
+      }, 350),
+    [setOutputSkin, setOutputTypeAkk]
+  );
+
   useEffect(() => {
     const subscription = watch((data) => {
-      let username = "steve";
-
-      if (!errors.username && data.username) {
-        username = data.username;
-      }
-
-      setOutputSkin("https://mineskin.eu/skin/" + username);
-      setOutputTypeAkk(data.type_account === "1" ? "лицензия" : "пиратка");
+      debouncedUpdate(data, errors);
     });
-
-    return () => subscription.unsubscribe();
-  }, [watch, setOutputSkin, setOutputTypeAkk, errors]);
+    return () => {
+      subscription.unsubscribe();
+      debouncedUpdate.cancel();
+    };
+  }, [watch, errors, debouncedUpdate]);
 
   const formFields = useMemo(() => {
     return {
