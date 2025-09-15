@@ -11,7 +11,7 @@ import { prepare } from "../../text-editor/functions/Prepare";
 
 import styles from "./My-profile.module.scss";
 
-const IP_LIST = ["fi.gmgame.ru", "lv.gmgame.ru", "by.gmgame.ru"];
+const IP_LIST = ["fi.gmgame.ru", "by.gmgame.ru", "msk.gmgame.ru", "msk2.gmgame.ru"];
 
 const ANSWER = [
   {
