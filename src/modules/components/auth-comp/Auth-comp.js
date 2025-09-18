@@ -11,10 +11,7 @@ import Input from "../input/Input";
 import Select from "../select/Select";
 import Textarea from "../textarea/Textarea";
 import Checkbox from "../checkbox/Checkbox";
-import ReactSkinview3d from "react-skinview3d";
-import * as skinview3d from "skinview3d";
 import { motion, AnimatePresence } from "framer-motion";
-import { debounce } from "lodash";
 
 import styles from "./Auth-comp.module.scss";
 
@@ -34,18 +31,14 @@ const WatchText = ({ text, watch }) => {
 
 const ErrorRender = ({ name, errors }) => {
   return (
-    <ErrorMessage
-      errors={errors}
-      name={name}
-      render={({ message }) => <span className={styles["error"]}>{message}</span>}
-    />
+    <ErrorMessage errors={errors} name={name} render={({ message }) => <Notifications inf={message} type="error" />} />
   );
 };
 
 const AuthComponent = () => {
   const alert = useAlert();
 
-  const [outputSkin, setOutputSkin] = useState("https://mineskin.eu/skin/steve");
+  const [outputSkin, setOutputSkin] = useState("https://minotar.net/helm/steve/130");
   const [outputTypeAkk, setOutputTypeAkk] = useState("");
 
   const {
@@ -79,30 +72,20 @@ const AuthComponent = () => {
     });
   };
 
-  const debouncedUpdate = useMemo(
-    () =>
-      debounce((data, errors) => {
-        let username = "steve";
-
-        if (!errors.username && data.username) {
-          username = data.username;
-        }
-
-        setOutputSkin("https://mineskin.eu/skin/" + username);
-        setOutputTypeAkk(data.type_account === "1" ? "лицензия" : "пиратка");
-      }, 350),
-    [setOutputSkin, setOutputTypeAkk]
-  );
-
   useEffect(() => {
     const subscription = watch((data) => {
-      debouncedUpdate(data, errors);
+      let username = "steve";
+
+      if (!errors.username && data.username) {
+        username = data.username;
+      }
+
+      setOutputSkin(`https://minotar.net/helm/${username}/130`);
+      setOutputTypeAkk(data.type_account === "1" ? "лицензия" : "пиратка");
     });
-    return () => {
-      subscription.unsubscribe();
-      debouncedUpdate.cancel();
-    };
-  }, [watch, errors, debouncedUpdate]);
+
+    return () => subscription.unsubscribe();
+  }, [watch, setOutputSkin, setOutputTypeAkk, errors]);
 
   const formFields = useMemo(() => {
     return {
@@ -209,16 +192,7 @@ const AuthComponent = () => {
             >
               <div className={styles["card_wrapper"]}>
                 <div className={styles["main_watch"]}>
-                  <ReactSkinview3d
-                    skinUrl={outputSkin || undefined}
-                    height={300}
-                    width={150}
-                    onReady={({ viewer }) => {
-                      viewer.animation = new skinview3d.IdleAnimation();
-                      viewer.animation.speed = 1;
-                    }}
-                    options={{ zoom: 0.9 }}
-                  />
+                  <img className={styles["avatar"]} src={outputSkin} alt="icon" />
                   <div className={styles["main_info"]}>
                     <WatchText text="Мой ник в игре:" watch={watch("username")} />
                     <WatchText text="Мой возраст:" watch={watch("age")} />

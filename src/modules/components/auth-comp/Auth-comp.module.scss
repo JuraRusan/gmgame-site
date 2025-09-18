@@ -29,18 +29,6 @@
         padding: 12px;
         margin: 0 12px;
 
-        .error {
-          width: 100%;
-          font-size: 12px;
-          font-weight: 400;
-          font-family: $fontCustom2;
-          height: 22px;
-          line-height: 22px;
-          text-align: center;
-          color: $site-color-11;
-          transition: all 0.35s ease;
-        }
-
         .check {
           margin: 8px auto 0 auto;
         }
@@ -69,6 +57,11 @@
           width: auto;
           height: auto;
 
+          .avatar {
+            width: 130px;
+            height: 130px;
+          }
+
           .main_info {
             width: 100%;
             height: auto;
@@ -81,6 +74,7 @@
           flex-direction: column;
           width: auto;
           height: auto;
+          min-height: 180px;
         }
 
         .display_watch {
