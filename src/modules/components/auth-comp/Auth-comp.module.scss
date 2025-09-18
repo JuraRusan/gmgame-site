@@ -18,6 +18,7 @@
       display: flex;
       flex-direction: column;
       width: 60%;
+      max-width: 60%;
 
       form {
         display: flex;
@@ -41,6 +42,7 @@
       justify-content: center;
       min-width: 40%;
       max-width: 40%;
+      padding: 0 12px;
 
       .card_wrapper {
         display: flex;
@@ -117,12 +119,38 @@
 }
 
 @media screen and (max-width: 1600px) {
+  .application_block {
+    .container {
+      .main_form {
+        width: 50%;
+        max-width: 50%;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1400px) {
 }
 
 @media screen and (max-width: 1280px) {
+  .application_block {
+    .container {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+
+      .main_form {
+        width: 90%;
+        max-width: 90%;
+      }
+
+      .check_form {
+        width: 90%;
+        max-width: 90%;
+        margin: 16px 0 0 0;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -132,9 +160,46 @@
 }
 
 @media screen and (max-width: 768px) {
+  .application_block {
+    .container {
+      .main_form {
+        width: 98%;
+        max-width: 98%;
+      }
+
+      .check_form {
+        width: 98%;
+        max-width: 98%;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 640px) {
+  .application_block {
+    margin: 0 auto 12px auto;
+
+    .container {
+      .check_form {
+        .card_wrapper {
+          .main_watch {
+            .avatar {
+              width: 100px;
+              height: 100px;
+            }
+
+            .main_info {
+              min-height: 100px;
+            }
+          }
+
+          .display_watch {
+            font-size: 12.5px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 480px) {

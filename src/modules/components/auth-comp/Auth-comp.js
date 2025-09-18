@@ -168,7 +168,7 @@ const AuthComponent = () => {
             <Input type="text" autoComplete="off" placeholder="&nbsp;" {...formFields["friend_name"]} />
             {/* --- */}
             <FormTitle title="Откуда узнали о проекте:" min={24} max={255} length={watch("about")?.length || 0} />
-            <Textarea rows="3" max_height="large" {...formFields["about"]} />
+            <Textarea rows="3" max_height="medium" {...formFields["about"]} />
             <ErrorRender errors={errors} name="about" />
             {/* --- */}
             <FormTitle title="Интересы в майнкрафте:" min={32} max={1000} length={watch("interests")?.length || 0} />
@@ -176,7 +176,7 @@ const AuthComponent = () => {
             <ErrorRender errors={errors} name="interests" />
             {/* --- */}
             <FormTitle title="Предыдущие сервера:" min={12} max={255} length={watch("back_servers")?.length || 0} />
-            <Textarea rows="3" max_height="large" {...formFields["back_servers"]} />
+            <Textarea rows="3" max_height="medium" {...formFields["back_servers"]} />
             <ErrorRender errors={errors} name="back_servers" />
             {/* --- */}
             {/* prettier-ignore */}
