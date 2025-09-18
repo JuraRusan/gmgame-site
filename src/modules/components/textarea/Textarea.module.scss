@@ -31,7 +31,7 @@
   &:disabled {
     border: none;
     border-radius: 0;
-    color: $site-color-2;
+    color: $site-color-6;
 
     &:hover,
     &:active,
@@ -39,6 +39,18 @@
       background: $site-color-12;
     }
   }
+}
+
+.height_small {
+  max-height: 64px;
+}
+
+.height_medium {
+  max-height: 128px;
+}
+
+.height_large {
+  max-height: 256px;
 }
 
 @media screen and (max-width: 1600px) {
