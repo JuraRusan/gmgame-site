@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { useForm } from "react-hook-form";
 import { ErrorMessage } from "@hookform/error-message";
 import { sendRequest } from "../../../DataProvider";
@@ -11,7 +11,7 @@ import Input from "../input/Input";
 import Select from "../select/Select";
 import Textarea from "../textarea/Textarea";
 import Checkbox from "../checkbox/Checkbox";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 import styles from "./Auth-comp.module.scss";
 
@@ -211,15 +211,13 @@ const AuthComponent = () => {
               <div className={styles["wrapper_warn"]}>
                 <Notifications inf="Относитесь ответственно к заполнению заявки" type="warn" />
               </div>
-              <div className={styles["action_block"]}>
-                <Button
-                  type="submit"
-                  label="Отправить"
-                  view="submit"
-                  disabled={!isValid}
-                  onClick={handleSubmit(registration)}
-                />
-              </div>
+              <Button
+                className={styles["action"]}
+                label="Отправить"
+                view="submit"
+                disabled={!isValid}
+                onClick={handleSubmit(registration)}
+              />
             </motion.div>
           )}
         </AnimatePresence>
