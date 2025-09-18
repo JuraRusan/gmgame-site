@@ -20,11 +20,13 @@ const AKK_VALUE = [
   { value: "0", name: "Пиратка" },
 ];
 
-const WatchText = ({ text, watch }) => {
+const WatchText = ({ text, length = 120, watch }) => {
   return (
     <p className={styles["display_watch"]}>
       {text}{" "}
-      <span className={styles["colored"]}>{watch && watch.length > 120 ? watch.substring(0, 120) + "..." : watch}</span>
+      <span className={styles["colored"]}>
+        {watch && watch.length > length ? watch.substring(0, length) + "..." : watch}
+      </span>
     </p>
   );
 };
@@ -65,7 +67,7 @@ const AuthComponent = () => {
     }).then((response) => {
       if (!response.error) {
         alert.success(response.message);
-        window.location.reload(true);
+        window.location.reload();
       } else {
         alert.error(response.body?.error || response.error);
       }
@@ -201,9 +203,9 @@ const AuthComponent = () => {
                   </div>
                 </div>
                 <div className={styles["additional_watch"]}>
-                  <WatchText text="Я узнал о проекте:" watch={watch("about")} />
-                  <WatchText text="Интересы в майнкрафте:" watch={watch("interests")} />
-                  <WatchText text="Предыдущие сервера:" watch={watch("back_servers")} />
+                  <WatchText text="Я узнал о проекте:" length={180} watch={watch("about")} />
+                  <WatchText text="Интересы в майнкрафте:" length={180} watch={watch("interests")} />
+                  <WatchText text="Предыдущие сервера:" length={180} watch={watch("back_servers")} />
                 </div>
               </div>
               <div className={styles["wrapper_warn"]}>

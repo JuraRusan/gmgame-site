@@ -38,12 +38,17 @@
 
   .swipe {
     position: absolute;
-    right: 9px;
+    right: 10px;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%) rotate(90deg);
     font-size: 11px;
     color: $site-color-8;
     pointer-events: none;
+    transition: transform 0.35s ease;
+  }
+
+  .select:focus + .swipe {
+    transform: translateY(-50%) rotate(0deg);
   }
 }
 
