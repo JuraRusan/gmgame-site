@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useMemo, useState } from "react";
 import Notifications from "../../notifications/Notifications";
 import { sendRequest, useAxios } from "../../../../DataProvider";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
@@ -48,8 +48,6 @@ const EditAddMarker = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const { id } = useParams();
-
-  console.log(location);
 
   const [isConfirmActive, setIsConfirmActive] = useState(false);
   const [init, setInit] = useState(false);
@@ -102,7 +100,7 @@ const EditAddMarker = () => {
       showMessage(response);
 
       if (req === "delete") navigate(-1);
-      if (req === "create") navigate(`${location.pathname.replace("new", response.id)}`);
+      if (req === "create") navigate(`${location.pathname.replace("new", response.id)}`, { replace: true });
     });
   };
 
