@@ -161,37 +161,36 @@ const EditAddMarker = () => {
 
   return (
     <div className={styles["box_map_add_wrapper"]}>
-      <div className={styles["columns_add_one"]}>
-        <form>
-          <div className={styles["row_wrapper_content"]}>
-            <BackButton onClick={() => navigate(-1)} />
-            <FormTitle title="Имя:" min={12} max={255} length={watch("name")?.length || 0} />
-            <Input type="text" autoComplete="off" placeholder="&nbsp;" {...formFields["name"]} />
-            <ErrorRender errors={errors} name="name" />
-            <FormTitle title="Описание:" min={24} max={255} length={watch("description")?.length || 0} />
-            <Textarea rows="4" max_height="medium" {...formFields["description"]} />
-            <ErrorRender errors={errors} name="description" />
-          </div>
-          <div className={styles["row_wrapper_content"]}>
-            <FormTitle title="Сервер:" count={false} />
-            <Select list={WORLD_VALUE} {...formFields["server"]} />
-            <FormTitle title="Тип метки:" count={false} />
-            <Select list={OPTION_VALUE} {...formFields["type"]} />
-          </div>
-          <div className={styles["coordinates_wrapper"]}>
-            <FormTitle title="Координаты:" count={false} required={false} />
-            <div className={styles["block_row"]}>
-              <div className={styles["row_wrapper_content_custom"]}>
-                <FormTitle title="X:" count={false} />
-                <Input type="number" {...formFields["cordX"]} />
-              </div>
-              <div className={styles["row_wrapper_content_custom"]}>
-                <FormTitle title="Z:" count={false} />
-                <Input type="number" {...formFields["cordZ"]} />
-              </div>
+      <div className={styles["form_wrapper"]}>
+        <form className={styles["form"]}>
+          <BackButton onClick={() => navigate(-1)} />
+          {/* --- */}
+          <FormTitle title="Имя:" min={12} max={255} length={watch("name")?.length || 0} />
+          <Input type="text" autoComplete="off" placeholder="&nbsp;" {...formFields["name"]} />
+          <ErrorRender errors={errors} name="name" />
+          {/* --- */}
+          <FormTitle title="Описание:" min={24} max={255} length={watch("description")?.length || 0} />
+          <Textarea rows="4" max_height="medium" {...formFields["description"]} />
+          <ErrorRender errors={errors} name="description" />
+          {/* --- */}
+          <FormTitle title="Сервер:" count={false} />
+          <Select list={WORLD_VALUE} {...formFields["server"]} />
+          {/* --- */}
+          <FormTitle title="Тип метки:" count={false} />
+          <Select list={OPTION_VALUE} {...formFields["type"]} />
+          {/* --- */}
+          <FormTitle title="Координаты:" count={false} required={false} />
+          <div className={styles["coordinates"]}>
+            <div className={styles["row_block"]}>
+              <FormTitle title="X:" count={false} />
+              <Input type="number" {...formFields["cordX"]} />
             </div>
-            <Notifications inf="Учтите, что визуально точки смещаются примерно на 30-50 блоков вниз!" type="warn" />
+            <div className={styles["row_block"]}>
+              <FormTitle title="Z:" count={false} />
+              <Input type="number" {...formFields["cordZ"]} />
+            </div>
           </div>
+          <Notifications inf="Учтите, что визуально точки смещаются примерно на 30-50 блоков вниз!" type="warn" />
         </form>
         <div className={styles["actions_box"]}>
           <Button
@@ -209,7 +208,7 @@ const EditAddMarker = () => {
           />
         </div>
       </div>
-      <div className={styles["columns_add_two"]}>
+      <div className={styles["map_wrapper"]}>
         {markerId === -1 ? (
           <iframe title="map" src="https://map.gmgame.ru/#/-7/64/-54/-4/GMGameWorld/over" width="100%" height="100%" />
         ) : (
