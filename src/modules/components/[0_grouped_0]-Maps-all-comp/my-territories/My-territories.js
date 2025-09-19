@@ -1,8 +1,7 @@
-import classNames from "classnames";
 import { useState } from "react";
 import { sendRequest, useAxios } from "../../../../DataProvider";
 import Preload from "../../preloader/Preload.js";
-import { useAlert } from "@blaumaus/react-alert"
+import { useAlert } from "@blaumaus/react-alert";
 import MapViewBlock from "../mini-marker-components/map-view-block/MapViewBlock";
 import CabSearch from "../../[0_grouped_0]-Profile/cab-search/CabSearch";
 import useLoading from "../../../loading/useLoading";
@@ -51,7 +50,7 @@ const MyTerritories = () => {
   }
 
   return (
-    <div className={classNames(styles["boxMapWrapper"])}>
+    <div className={styles["boxMapWrapper"]}>
       <CabSearch
         count={data.count}
         onChange={(e) => setFilter(e.target.value)}
@@ -59,7 +58,7 @@ const MyTerritories = () => {
         to={"edit_add_terr/new"}
         href="https://wiki.gmgame.ru/books/gaidy/page/kak-dobavit-territoriiu-na-kartu"
       />
-      <div className={classNames(styles["boxListWrapper"])}>
+      <div className={styles["boxListWrapper"]}>
         {data.terrs.map((el, index) => {
           if (filter && !el.name.toLowerCase().includes(filter.toLowerCase())) {
             return false;
@@ -67,7 +66,7 @@ const MyTerritories = () => {
 
           return (
             <MapViewBlock
-              key={el.id}
+              key={index}
               index={index}
               name={el.name}
               link_to={`edit_add_terr/${el.id}`}
