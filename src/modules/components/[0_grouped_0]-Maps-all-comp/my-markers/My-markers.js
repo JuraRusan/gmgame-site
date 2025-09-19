@@ -16,7 +16,7 @@ const MyMarkers = () => {
   const [filter, setFilter] = useState(null);
   const [data, setData] = useState({ markers: [], count: -1 });
 
-  const resParams = useAxios("/api/get_markers/", "GET", {});
+  const resParams = useAxios("/api/get_markers", "GET", {});
 
   const showMessage = (response, id) => {
     if (response.message) {
