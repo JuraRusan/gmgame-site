@@ -1,9 +1,8 @@
-import classNames from "classnames";
 import React, { useEffect, useState } from "react";
 import Notifications from "../../notifications/Notifications";
 import { sendRequest, useAxios } from "../../../../DataProvider";
 import { useNavigate, useParams, useSearchParams } from "react-router-dom";
-import { useAlert } from "@blaumaus/react-alert"
+import { useAlert } from "@blaumaus/react-alert";
 import Preload from "../../preloader/Preload";
 import useLoading from "../../../loading/useLoading";
 import { checkName } from "../mini-marker-components/function/CheckName";
@@ -176,9 +175,9 @@ const EditAddTerr = (params) => {
   }
 
   return (
-    <div className={classNames(styles["box_map_add_wrapper"])}>
-      <div className={classNames(styles["columns_add_one"])}>
-        <div className={classNames(styles["row_wrapper_content"])}>
+    <div className={styles["box_map_add_wrapper"]}>
+      <div className={styles["columns_add_one"]}>
+        <div className={styles["row_wrapper_content"]}>
           <BackButton
             onClick={() => {
               navigate(-1);
@@ -193,14 +192,14 @@ const EditAddTerr = (params) => {
             }}
           />
         </div>
-        <div className={classNames(styles["row_wrapper_content"])}>
+        <div className={styles["row_wrapper_content"]}>
           <FormTitle title="Сервер:" count={false} />
           <Select list={VALUE_OPTION} onChange={(e) => setFormServer(e.target.value)} defaultValue={formServer} />
         </div>
-        <div className={classNames(styles["coordinates_wrapper"])}>
+        <div className={styles["coordinates_wrapper"]}>
           <FormTitle title="Начальные координаты:" count={false} required={false} />
-          <div className={classNames(styles["block_row"])}>
-            <div className={classNames(styles["row_wrapper_content_custom"])}>
+          <div className={styles["block_row"]}>
+            <div className={styles["row_wrapper_content_custom"]}>
               <FormTitle title="X:" count={false} />
               <Input
                 defaultValue={formXStart}
@@ -210,7 +209,7 @@ const EditAddTerr = (params) => {
                 }}
               />
             </div>
-            <div className={classNames(styles["row_wrapper_content_custom"])}>
+            <div className={styles["row_wrapper_content_custom"]}>
               <FormTitle title="Z:" count={false} />
               <Input
                 defaultValue={formZStart}
@@ -222,8 +221,8 @@ const EditAddTerr = (params) => {
             </div>
           </div>
           <FormTitle title="Конечные координаты:" count={false} required={false} />
-          <div className={classNames(styles["block_row"])}>
-            <div className={classNames(styles["row_wrapper_content_custom"])}>
+          <div className={styles["block_row"]}>
+            <div className={styles["row_wrapper_content_custom"]}>
               <FormTitle title="X:" count={false} />
               <Input
                 defaultValue={formXStop}
@@ -233,7 +232,7 @@ const EditAddTerr = (params) => {
                 }}
               />
             </div>
-            <div className={classNames(styles["row_wrapper_content_custom"])}>
+            <div className={styles["row_wrapper_content_custom"]}>
               <FormTitle title="Z:" count={false} />
               <Input
                 defaultValue={formZStop}
@@ -246,7 +245,7 @@ const EditAddTerr = (params) => {
           </div>
           <Notifications inf="Учтите, что визуально точки смещаются примерно на 30-50 блоков вниз!" type="warn" />
         </div>
-        <div className={classNames(styles["actions_box"])}>
+        <div className={styles["actions_box"]}>
           <Button view="submit" label="Сохранить" onClick={id === "new" ? addTerr : saveTerr} />
           {id === "new" ? null : (
             <Button
@@ -265,7 +264,7 @@ const EditAddTerr = (params) => {
           />
         </div>
       </div>
-      <div className={classNames(styles["columns_add_two"])}>
+      <div className={styles["columns_add_two"]}>
         <iframe title="map" key={url} src={url} width="100%" height="100%" />
       </div>
     </div>

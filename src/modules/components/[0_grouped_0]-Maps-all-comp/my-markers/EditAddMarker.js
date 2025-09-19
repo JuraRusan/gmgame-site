@@ -1,9 +1,8 @@
-import classNames from "classnames";
 import React, { useEffect, useState } from "react";
 import Notifications from "../../notifications/Notifications";
 import { sendRequest, useAxios } from "../../../../DataProvider";
 import { useNavigate, useParams, useSearchParams } from "react-router-dom";
-import { useAlert } from "@blaumaus/react-alert"
+import { useAlert } from "@blaumaus/react-alert";
 import Preload from "../../preloader/Preload";
 import useLoading from "../../../loading/useLoading";
 import Button from "../../button/Button";
@@ -191,9 +190,9 @@ const EditAddMarker = (params) => {
   }
 
   return (
-    <div className={classNames(styles["box_map_add_wrapper"])}>
-      <div className={classNames(styles["columns_add_one"])}>
-        <div className={classNames(styles["row_wrapper_content"])}>
+    <div className={styles["box_map_add_wrapper"]}>
+      <div className={styles["columns_add_one"]}>
+        <div className={styles["row_wrapper_content"]}>
           <BackButton
             onClick={() => {
               navigate(-1);
@@ -217,16 +216,16 @@ const EditAddMarker = (params) => {
             rows="4"
           />
         </div>
-        <div className={classNames(styles["row_wrapper_content"])}>
+        <div className={styles["row_wrapper_content"]}>
           <FormTitle title="Сервер:" count={false} />
           <Select list={WORLD_VALUE} onChange={(e) => setFormServer(e.target.value)} defaultValue={formServer} />
           <FormTitle title="Тип метки:" count={false} />
           <Select list={VALUE_OPTION} onChange={(e) => setFormType(e.target.value)} defaultValue={formType} />
         </div>
-        <div className={classNames(styles["coordinates_wrapper"])}>
+        <div className={styles["coordinates_wrapper"]}>
           <FormTitle title="Координаты:" count={false} required={false} />
-          <div className={classNames(styles["block_row"])}>
-            <div className={classNames(styles["row_wrapper_content_custom"])}>
+          <div className={styles["block_row"]}>
+            <div className={styles["row_wrapper_content_custom"]}>
               <FormTitle title="X:" count={false} />
               <Input
                 defaultValue={formX}
@@ -236,7 +235,7 @@ const EditAddMarker = (params) => {
                 }}
               />
             </div>
-            <div className={classNames(styles["row_wrapper_content_custom"])}>
+            <div className={styles["row_wrapper_content_custom"]}>
               <FormTitle title="Z:" count={false} />
               <Input
                 defaultValue={formZ}
@@ -249,7 +248,7 @@ const EditAddMarker = (params) => {
           </div>
           <Notifications inf="Учтите, что визуально точки смещаются примерно на 30-50 блоков вниз!" type="warn" />
         </div>
-        <div className={classNames(styles["actions_box"])}>
+        <div className={styles["actions_box"]}>
           <Button view="submit" label="Сохранить" onClick={id === "new" ? addMarker : saveMarker} />
           {id === "new" ? null : (
             <Button
@@ -268,7 +267,7 @@ const EditAddMarker = (params) => {
           />
         </div>
       </div>
-      <div className={classNames(styles["columns_add_two"])}>
+      <div className={styles["columns_add_two"]}>
         {id === "new" ? (
           <iframe title="map" src="https://map.gmgame.ru/#/-7/64/-54/-4/GMGameWorld/over" width="100%" height="100%" />
         ) : (
