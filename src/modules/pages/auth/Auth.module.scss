@@ -1,19 +1,153 @@
 @import "src/Variables";
 
-.main_reg {
+.application_block {
   display: flex;
   flex-direction: column;
-  width: auto;
+  justify-content: center;
+  width: 100%;
+  max-width: 1600px;
   height: auto;
+  margin: 0 auto 96px auto;
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .main_form {
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      max-width: 60%;
+
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 12px;
+        border: 2px solid $site-color-5;
+        background: $site-color-4;
+        padding: 12px;
+        margin: 0 12px;
+
+        .check {
+          margin: 8px auto 0 auto;
+        }
+      }
+    }
+
+    .check_form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-width: 40%;
+      max-width: 40%;
+      padding: 0 12px;
+
+      .card_wrapper {
+        display: flex;
+        flex-direction: column;
+        border-radius: 12px;
+        border: 2px solid $site-color-5;
+        background: $site-color-4;
+        padding: 12px;
+
+        .main_watch {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          width: auto;
+          height: auto;
+
+          .avatar {
+            width: 130px;
+            height: 130px;
+            border-radius: 8px;
+            padding: 4px;
+          }
+
+          .main_info {
+            width: 100%;
+            height: auto;
+            min-height: 130px;
+            overflow: hidden;
+          }
+        }
+
+        .additional_watch {
+          display: flex;
+          flex-direction: column;
+          width: auto;
+          height: auto;
+          min-height: 180px;
+          overflow: hidden;
+        }
+
+        .display_watch {
+          color: $site-color-2;
+          padding: 2px;
+          margin: 3px;
+          font-size: 14px;
+          font-weight: 400;
+          font-family: $fontCustom2;
+          line-height: 1.25;
+          width: auto;
+          height: auto;
+
+          .colored {
+            font-size: inherit;
+            font-weight: inherit;
+            font-family: inherit;
+            color: $site-color-8;
+          }
+        }
+      }
+
+      .wrapper_warn {
+        margin: 8px auto;
+      }
+
+      .action {
+        width: 150px;
+        margin: 0 auto;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1600px) {
+  .application_block {
+    .container {
+      .main_form {
+        width: 50%;
+        max-width: 50%;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1400px) {
 }
 
 @media screen and (max-width: 1280px) {
+  .application_block {
+    .container {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+
+      .main_form {
+        width: 90%;
+        max-width: 90%;
+      }
+
+      .check_form {
+        width: 90%;
+        max-width: 90%;
+        margin: 16px 0 0 0;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -23,9 +157,47 @@
 }
 
 @media screen and (max-width: 768px) {
+  .application_block {
+    .container {
+      .main_form {
+        width: 98%;
+        max-width: 98%;
+      }
+
+      .check_form {
+        width: 98%;
+        max-width: 98%;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 640px) {
+  .application_block {
+    margin: 0 auto 12px auto;
+
+    .container {
+      .check_form {
+        .card_wrapper {
+          .main_watch {
+            .avatar {
+              width: 100px;
+              height: 100px;
+              padding: 2px;
+            }
+
+            .main_info {
+              min-height: 100px;
+            }
+          }
+
+          .display_watch {
+            font-size: 12.5px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 480px) {
