@@ -22,7 +22,7 @@ const WORLD_VALUE = [
   { value: "farm", name: "Фермерский мир" },
 ];
 
-const OPTION_VALUE = [
+const TYPE_VALUE = [
   { value: "basePlayers", name: "Базы игроков" },
   { value: "city", name: "Города" },
   { value: "shopping_centers", name: "Торговые центры - over" },
@@ -165,7 +165,7 @@ const EditAddMarker = () => {
         <form className={styles["form"]}>
           <BackButton onClick={() => navigate(-1)} />
           {/* --- */}
-          <FormTitle title="Имя:" min={12} max={255} length={watch("name")?.length || 0} />
+          <FormTitle title="Название:" min={12} max={255} length={watch("name")?.length || 0} />
           <Input type="text" autoComplete="off" placeholder="&nbsp;" {...formFields["name"]} />
           <ErrorRender errors={errors} name="name" />
           {/* --- */}
@@ -177,7 +177,7 @@ const EditAddMarker = () => {
           <Select list={WORLD_VALUE} {...formFields["server"]} />
           {/* --- */}
           <FormTitle title="Тип метки:" count={false} />
-          <Select list={OPTION_VALUE} {...formFields["type"]} />
+          <Select list={TYPE_VALUE} {...formFields["type"]} />
           {/* --- */}
           <FormTitle title="Координаты:" count={false} required={false} />
           <div className={styles["coordinates"]}>
@@ -190,6 +190,7 @@ const EditAddMarker = () => {
               <Input type="number" {...formFields["cordZ"]} />
             </div>
           </div>
+          {/* --- */}
           <Notifications inf="Учтите, что визуально точки смещаются примерно на 30-50 блоков вниз!" type="warn" />
         </form>
         <div className={styles["actions_box"]}>
