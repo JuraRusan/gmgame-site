@@ -100,7 +100,8 @@ const EditAddMarker = () => {
       showMessage(response);
 
       if (req === "delete") navigate(-1);
-      if (req === "create") navigate(`${location.pathname.replace("new", response.id)}`, { replace: true });
+      if (req === "create") navigate(-1);
+      // if (req === "create") navigate(`${location.pathname.replace("new", response.id)}`, { replace: true });
     });
   };
 
