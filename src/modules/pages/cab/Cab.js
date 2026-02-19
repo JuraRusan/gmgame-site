@@ -1,6 +1,5 @@
 import cN from "classnames";
-import React from "react";
-import { Link, Navigate, NavLink, Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 import PlayerCabinet from "../../components/[0_grouped_0]-Profile/player-cabinet/Player-cabinet.js";
 import Auth from "../../../modules/pages/auth/Auth.js";
 import Preload from "../../components/preloader/Preload.js";
@@ -29,7 +28,8 @@ const Cab = () => {
   }
 
   if (!resParams.data?.discordUser) {
-    return <Navigate to="/api/login" replace={true} />;
+    window.location.href = "/api/login";
+    return <Preload full={true} />;
   }
 
   if (!resParams.data.user || !resParams.data.user?.username) {
