@@ -1,11 +1,11 @@
-import classNames from "classnames";
+import CN from "classnames";
 import React from "react";
 
 import styles from "./ActionsButton.module.scss";
 
-const ActionsButton = ({ onClick, ico }) => {
+const ActionsButton = ({ ico, className, ...props }) => {
   return (
-    <button className={classNames(styles["actions"])} onClick={onClick}>
+    <button className={CN(styles["actions"], className)} {...props}>
       {ico}
     </button>
   );
